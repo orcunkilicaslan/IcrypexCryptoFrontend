@@ -1,0 +1,17 @@
+$svgIconImgPath : "../../img/mainpage/svg";
+
+.icon{
+  &-svg{
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    overflow: hidden;
+
+    &-icrypexsymbol{
+      background-image: url(#{$svgIconImgPath}/Icrypex_Symbol.svg);
+    }
+    &-search{
+      background-image: url(#{$svgIconImgPath}/Search_Icon.svg);
+    }
+  }
+}

@@ -1,1 +1,171 @@
 $headerImgPath : "../../img/mainpage";
+$svgIconImgPath : "../../img/mainpage/svg";
+
+.header{
+
+  &-top{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid $main-color-light-stale-gray-border;
+
+    ul{text-align: center; margin: 0;}
+    li{
+      display: inline-block;
+      color: $main-color-light-stale-gray;
+      font-size: $main-font-size;
+    }
+    a{color: $main-color-white;}
+
+    &-language{
+      &-item{
+        position: relative;
+        padding: 0 10px;
+        &:before{
+          content: "";
+          position: absolute;
+          width: 1px;
+          height: 10px;
+          top: calc(50% - 5px);
+          right: -3px;
+          background: $main-color-light-stale-gray-border;
+        }
+        &:first-child{
+          padding-left: 0;
+        }
+        &:last-child{
+          padding-right: 0;
+          &:before{display: none;}
+        }
+
+      }
+      &-selection{
+        &.active{color: $main-color-light-stale-gray; opacity: 0.75;}
+      }
+    }
+
+    &-city{
+      &-item{
+        position: relative;
+        padding: 0 5px;
+        opacity: 0.75;
+        &:before{
+          content: "";
+          position: absolute;
+          width: 4px;
+          height: 4px;
+          top: calc(50% - 2px);
+          right: -3px;
+          background: $main-color-light-stale-gray-border;
+          @include border-radius(50%)
+        }
+        &:first-child{
+          padding-left: 0;
+        }
+        &:last-child{
+          padding-right: 0;
+          &:before{display: none;}
+        }
+      }
+      &-name,
+      &-clock{display: inline-block; margin: 0 1px;}
+    }
+
+    &-singin{
+      &-item{
+        position: relative;
+        padding: 0 10px;
+        &:before{
+          content: "";
+          position: absolute;
+          width: 1px;
+          height: 10px;
+          top: calc(50% - 5px);
+          right: -3px;
+          background: $main-color-light-stale-gray-border;
+          @include border-radius(50%)
+        }
+        &:first-child{
+          padding-left: 0;
+        }
+        &:last-child{
+          padding-right: 0;
+          &:before{display: none;}
+        }
+      }
+      &-register{}
+      &-login{}
+    }
+  }
+
+  &-bottom{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+
+    &-logo{
+      color: $main-color-white;
+      font-family: $main-font-family-barlow;
+      width: 140px;
+      line-height: 0.9;
+      margin-top: 5px;
+      &:hover{color: $main-color-white;}
+      &-symbol{
+        float: left;
+        width: 38px;
+        height: 38px;
+        margin: 1px 0;
+        margin-right: 8px;
+      }
+      &-icrypex{
+        display: block;
+        font-size: 30px;
+        font-weight: 300;
+        letter-spacing: 0.5px;
+        margin: 0;
+        line-height: 0.9;
+      }
+      &-cryptoexchange{
+        display: block;
+        font-size: 13px;
+        font-weight: 500;
+        margin: 0;
+        line-height: 1;
+      }
+    }
+    &-navbar{}
+    &-search{
+      position: relative;
+      max-width: 140px;
+      width: 100%;
+      margin-top: 5px;
+      &-input{
+        background-color: transparent;
+        color: $main-color-white;
+        font-size: $main-font-size;;
+        width: 100%;
+        padding: 2px;
+        border-bottom: 1px solid $main-color-light-stale-gray-border;
+      }
+      &-button{
+        background-color: transparent;
+        background-image: url(#{$svgIconImgPath}/Search_Icon.svg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: contain;
+        overflow: hidden;
+        position: absolute;
+        top: 2px;
+        right: 0;
+        width: 17px;
+        height: 17px;
+        text-indent: -9999px;
+      }
+      @include placeholder {
+        color: $main-color-light-stale-gray;
+        opacity: 0.75;
+      }
+    }
+  }
+
+}

@@ -1,31 +1,31 @@
 /* Navbar Menu */
 $(function() {
-    $('#jcq-navtggle').click(function () {
-        $('.jcq-menucontainer').toggleClass('jcqcanvaskapat');
+    $('#orc-navtggle').click(function () {
+        $('.orc-menu-container').toggleClass('orc-canvaskapat');
     });
-    $('.jcq-mobilemenublckmask').click(function () {
-        $('.jcq-menucontainer').removeClass('jcqcanvaskapat');
+    $('.orc-mobilemenublckmask').click(function () {
+        $('.orc-menu-container').removeClass('orc-canvaskapat');
     });
 
     // First Menu CSS
-    $('.jcq-menu-list > li').has('.jcq-menu-altmenu').prepend('<span class="jcq-menu-tikla"><i class="fa fa-angle-down"></i></span>');
-    $('.jcq-menu-list > li').has('.jcq-buyukmenu').prepend('<span class="jcq-menu-tikla"><i class="fa fa-angle-down"></i></span>');
-    $('.jcq-menu-tikla').click(function(){
-        $(this).toggleClass('jcq-menuaktifok')
-            .parent().siblings().children().removeClass('jcq-menuaktifok');
+    $('.orc-menu-list > li').has('.orc-menu-altmenu').prepend('<span class="orc-menu-tikla"><i class="fa fa-angle-down"></i></span>');
+    $('.orc-menu-list > li').has('.orc-menu-buyuk').prepend('<span class="orc-menu-tikla"><i class="fa fa-angle-down"></i></span>');
+    $('.orc-menu-tikla').click(function(){
+        $(this).toggleClass('orc-menu-aktifok')
+            .parent().siblings().children().removeClass('orc-menu-aktifok');
 
-        $(".jcq-menu-altmenu, .jcq-buyukmenu").not($(this).siblings('.jcq-menu-altmenu')).slideUp('slow');
-        $(this).siblings('.jcq-menu-altmenu').slideToggle('slow');
+        $(".orc-menu-altmenu, .orc-menu-buyuk").not($(this).siblings('.orc-menu-altmenu')).slideUp('slow');
+        $(this).siblings('.orc-menu-altmenu').slideToggle('slow');
     });
 
     // Sub Menu ul Show JS
-    $('.jcq-menu-list > li > ul > li').has('.jcq-menu-altmenu-alt').prepend('<span class="jcq-menu-tikla"><i class="fa fa-angle-down"></i></span>');
-    $('.jcq-menu-list > li > ul > li > ul > li').has('.jcq-menu-altmenu-alt-alt').prepend('<span class="jcq-menu-tikla"><i class="fa fa-angle-down"></i></span>');
+    $('.orc-menu-list > li > ul > li').has('.orc-menu-altmenu-alt').prepend('<span class="orc-menu-tikla"><i class="fa fa-angle-down"></i></span>');
+    $('.orc-menu-list > li > ul > li > ul > li').has('.orc-menu-altmenu-alt-alt').prepend('<span class="orc-menu-tikla"><i class="fa fa-angle-down"></i></span>');
 
-    $('.jcq-menu-tikla').click(function(){
-        $(this).children('.jcq-menuaktifok').toggleClass('jcq-menu-rotate');
-        $(this).siblings('.jcq-menu-altmenu-alt').slideToggle('slow');
-        $(this).siblings('.jcq-menu-altmenu-alt-alt').slideToggle('slow');
+    $('.orc-menu-tikla').click(function(){
+        $(this).children('.orc-menu-aktifok').toggleClass('orc-menu-rotate');
+        $(this).siblings('.orc-menu-altmenu-alt').slideToggle('slow');
+        $(this).siblings('.orc-menu-altmenu-alt-alt').slideToggle('slow');
 
     });
 });
