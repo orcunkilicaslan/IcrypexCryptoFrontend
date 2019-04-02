@@ -1,0 +1,29 @@
+/* Custom */
+body{
+  color: $main-font-color-black;
+  font-size: $main-font-size;
+}
+body, input, textarea, select, button {
+  font-family: $main-font-family;
+}
+h1,h2,h3,h4,h5,h6{
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+blockquote, p, ul, li{
+  color: lighten($main-font-color-black, 30%);
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+img, svg {
+  vertical-align: middle;
+}
+
+.form-control{
+  font-size: $main-font-size;
+}
+/* Custom */
