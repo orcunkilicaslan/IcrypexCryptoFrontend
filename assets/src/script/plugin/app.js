@@ -31,6 +31,20 @@ $(function() {
 });
 /* Navbar Menu */
 
+/* Owl Carousel */
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    nav:false,
+    autoplay:false,
+    autoplayTimeout:5000,
+    autoplayHoverPause:false,
+    items:1,
+    margin:10,
+    animateOut: 'fadeOut'
+})
+/* Owl Carousel */
+
 /* Loading Info */
 console.log("Plugin App Javascript Loading Successful");
 /* Loading Info */
+

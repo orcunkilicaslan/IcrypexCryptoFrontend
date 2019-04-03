@@ -41,10 +41,11 @@
     "webpack-stream": "^5.2.1"
   },
   "dependencies": {
-    "bootstrap": "^4.3.1",
-    "font-awesome": "^4.7.0",
-    "bootstrap-select": "^1.13.5",
     "awesome-bootstrap-checkbox": "^1.0.1",
-    "bootstrap-input-spinner": "^1.10.16"
+    "bootstrap": "^4.3.1",
+    "bootstrap-input-spinner": "^1.10.16",
+    "bootstrap-select": "^1.13.5",
+    "font-awesome": "^4.7.0",
+    "owl.carousel": "^2.3.4"
   }
 }

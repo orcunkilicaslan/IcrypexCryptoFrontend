@@ -1,0 +1,13 @@
+$homepageImgPath : "../../img/mainpage";
+
+.homepage{
+
+  &-slider{
+    color: $main-color-white;
+    .item{
+      background-color: $main-color-dark-blue;
+      padding: 20px;
+    }
+  }
+
+}
