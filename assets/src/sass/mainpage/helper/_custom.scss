@@ -1,6 +1,8 @@
 $mainpageImgPath : "../../img/mainpage";
 
 /* Custom */
+*{outline: 0 !important;}
+
 body{
   font-size: $main-font-size;
   background-color: #011326;

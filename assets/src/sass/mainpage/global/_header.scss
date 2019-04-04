@@ -2,6 +2,7 @@ $headerImgPath : "../../img/mainpage";
 $svgIconImgPath : "../../img/mainpage/svg";
 
 .header{
+  margin-bottom: 30px;
 
   &-top{
     display: flex;
@@ -28,7 +29,7 @@ $svgIconImgPath : "../../img/mainpage/svg";
           height: 10px;
           top: calc(50% - 5px);
           right: -3px;
-          background: $main-color-light-stale-gray-border;
+          background-color: $main-color-light-stale-gray-border;
         }
         &:first-child{
           padding-left: 0;
@@ -56,7 +57,7 @@ $svgIconImgPath : "../../img/mainpage/svg";
           height: 4px;
           top: calc(50% - 2px);
           right: -3px;
-          background: $main-color-light-stale-gray-border;
+          background-color: $main-color-light-stale-gray-border;
           @include border-radius(50%)
         }
         &:first-child{
@@ -82,7 +83,7 @@ $svgIconImgPath : "../../img/mainpage/svg";
           height: 10px;
           top: calc(50% - 5px);
           right: -3px;
-          background: $main-color-light-stale-gray-border;
+          background-color: $main-color-light-stale-gray-border;
           @include border-radius(50%)
         }
         &:first-child{
