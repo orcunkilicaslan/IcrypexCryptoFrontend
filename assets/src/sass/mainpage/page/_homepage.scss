@@ -3,23 +3,28 @@ $homepageImgPath : "../../img/mainpage";
 .homepage{
 
   &-top{
-
-    &-left{}
-    &-right{}
-
+    &-left{
+      padding-left: 0;
+      padding-right: 40px;
+    }
+    &-right{
+      padding-left: 0;
+      padding-right: 0;
+    }
   }
 
   &-slider{
-
     &-wapper{
       position: relative;
       margin: 0;
       padding-top: 40px;
+
       &-item{
         color: $main-color-white;
         padding: 20px 0;
       }
       .owl{
+
         &-dots{
           margin: 0 !important;
           position: absolute;
@@ -27,6 +32,7 @@ $homepageImgPath : "../../img/mainpage";
           top: 0;
         }
         &-dot{
+
           span{
             background-color: $main-color-light-stale-gray !important;
             width: 40px !important;
@@ -35,44 +41,51 @@ $homepageImgPath : "../../img/mainpage";
             margin-right: 5px !important;
             @include border-radius(0px !important);
           }
+
           &.active span,
           &:hover span{
             background-color: $main-color-blue !important;
           }
+
           &:last-child{
             span{margin-right: 0 !important;}
           }
         }
+
         &-stage-outer{
           height: 225px;
           overflow: hidden;
         }
       }
     }
+
     &-title{
       color: $main-color-white;
       font-size: 44px;
       font-weight: 300;
       line-height: 1.07;
     }
+
     &-desc{
       color: $main-color-white;
       font-size: 26px;
       font-weight: 300;
       line-height: 1.07;
     }
-
   }
 
   &-chartarea{
     color: $main-color-white;
     margin-bottom: 50px;
+
     &-column{
+
       &-headtitle{
         display: flex;
         justify-content: space-between;
         border-bottom: 1px solid $main-color-light-stale-gray-border;
         padding-bottom: 5px;
+
         &-title,
         &-volume{
           font-size: 20px;
@@ -81,9 +94,11 @@ $homepageImgPath : "../../img/mainpage";
           padding: 0;
           line-height: 1;
         }
+
         &-title{color: $main-color-white;}
         &-volume{color: $main-color-light-stale-gray;}
       }
+
       &-chartbox{}
     }
   }
@@ -103,6 +118,7 @@ $homepageImgPath : "../../img/mainpage";
         line-height: 0.9;
         letter-spacing: -0.3px;
         position: relative;
+
         &:before{
           content: "";
           position: absolute;
@@ -112,11 +128,13 @@ $homepageImgPath : "../../img/mainpage";
           right: -25px;
           background-color: $main-color-light-stale-gray-border;
         }
+
         &:last-child{
           &:before{display: none;}
         }
       }
     }
+
     &-title{
       color: $main-color-light-stale-gray;
       font-size: 18px;
@@ -124,9 +142,12 @@ $homepageImgPath : "../../img/mainpage";
       letter-spacing: -0.2px;
       margin: 0;
     }
+
     &-volume{
       display: block;
+
       .colorgreen{color: $main-color-green;}
+
       sup{
         font-size: 12px;
         font-weight: 900;
@@ -134,6 +155,61 @@ $homepageImgPath : "../../img/mainpage";
         text-align: center;
         position: relative;
         top: -12px;
+      }
+    }
+  }
+
+  &-register{
+    margin-top: 30px;
+
+    &-formarea{
+      padding-top: 20px;
+
+      .form-group{
+        margin-bottom: 13px;
+      }
+      .form-control{
+        color: $main-color-white;
+        background-color: transparent;
+        border-color: $main-color-light-stale-gray-border;
+        border-right: none;
+        border-top: none;
+        height: auto;
+        padding: 5px 10px 8px;
+        font-size: 17px;
+        @include border-radius(0px);
+        &:focus{
+          @include box-shadow(0,0,0,transparent);
+        }
+      }
+      @include placeholder{
+        color: $main-color-light-stale-gray;
+      }
+      .recaptcha{
+        background-color: black;
+        margin-bottom: 13px;
+        @include border-radius(6px);
+      }
+      .form-check{
+        margin-bottom: 13px;
+        *{color: $main-color-light-stale-gray;}
+        a{
+          text-decoration: underline !important;
+          &:hover{
+            color: $main-color-green;
+          }
+        }
+      }
+      .form-button{
+        .btn{
+          width: 100%;
+          font-size: 19px;
+          font-weight: 300;
+          letter-spacing: -0.2px;
+          padding: 14px 10px;
+          border:none;
+          @include gradient(#0a93ea, #00387c);
+        }
       }
     }
   }
