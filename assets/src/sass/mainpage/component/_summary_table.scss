@@ -145,3 +145,68 @@ $svgIconImgPath : "../../img/mainpage/svg";
   }
 
 }
+
+.depthtable{
+  min-height: 220px;
+  &-container,
+  &-rectangle{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+    &.rectangle{
+      &-left{right: 0;}
+      &-right{left: 0}
+      img{width: 100%; height: 185px;}
+    }
+  }
+
+  &-chart{
+    padding-top: 35px;
+    &-green{}
+    &-red{}
+  }
+
+  &-table{
+    color: $main-color-light-stale-gray;
+    margin: 0;
+
+    td, th{
+      border-color: $main-color-light-stale-gray-border;
+      vertical-align: middle;
+      font-size: 12px;
+      font-weight: normal;
+      line-height: 1;
+      padding: 0 10px;
+      text-align: right;
+    }
+
+    thead th{
+      font-size: 15px;
+      border-top-width: 0;
+      border-bottom-width: 1px;
+      border-color: $main-color-light-stale-gray-border;
+      padding-top: 3px;
+      padding-bottom: 3px;
+    }
+
+    tbody tr:first-child td{
+      padding-top: 16px;
+    }
+
+    tbody td{
+      border: none;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      line-height: 0.6;
+    }
+
+    &-count{text-align: center !important;}
+    &-amount{}
+    &-total{}
+    &-price{}
+
+  }
+
+}

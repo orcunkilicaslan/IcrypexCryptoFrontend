@@ -247,7 +247,8 @@ $homepageImgPath : "../../img/mainpage";
       display: flex;
       justify-content: space-between;
       border-bottom: 1px solid $main-color-light-stale-gray-border;
-      margin-bottom: 10px;
+      margin-bottom: 2px;
+      padding-bottom: 5px;
 
       &-title{
         margin: 0;
@@ -266,14 +267,41 @@ $homepageImgPath : "../../img/mainpage";
       }
     }
 
-    &-depth{
-      padding-left: 0;
-    }
-
     &-converter{
       padding-right: 0;
     }
 
+  }
+
+  &-depth{
+    padding-left: 0;
+
+    .tablecolumn{
+      margin: 0;
+      &-grid{
+        position: relative;
+
+        &-01{
+          padding-right: 1px;
+          padding-left: 0;
+          .table{
+            th, td{
+              text-align: right;
+            }
+          }
+        }
+        &-02{
+          padding-left: 1px;
+          padding-right: 0;
+          .table{
+            th, td{
+              text-align: left;
+            }
+          }
+        }
+
+      }
+    }
   }
 
   &-whyicrypex{
