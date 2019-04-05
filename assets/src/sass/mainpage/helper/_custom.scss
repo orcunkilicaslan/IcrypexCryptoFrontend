@@ -9,6 +9,7 @@ body{
   background-image: url(#{$mainpageImgPath}/background/Dark_Blue_Bg_Image.jpg);
   background-repeat: no-repeat;
   background-position: top center;
+  background-attachment: fixed;
 }
 body, input, textarea, select, button {
   font-family: $main-font-family-barlow;

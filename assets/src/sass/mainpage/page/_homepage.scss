@@ -109,6 +109,7 @@ $homepageImgPath : "../../img/mainpage";
     &-list{
       display: flex;
       justify-content: space-between;
+      margin-bottom: 0;
 
       &-item{
         color: $main-color-white;
@@ -212,6 +213,72 @@ $homepageImgPath : "../../img/mainpage";
         }
       }
     }
+  }
+
+  &-summarytable{
+    color: $main-color-white;
+    padding-top: 110px;
+    overflow: hidden;
+
+    > .container{
+      position: relative;
+      padding-bottom: 20px;
+
+      &:before,
+      &:after{
+        content: "";
+        background-color: $main-color-white;
+        position: absolute;
+        width: 1000%;
+        height: 100%;
+        bottom: 0;
+        top: 400px;
+        z-index: 1;
+      }
+      &:before{
+        left: calc(100% + 20px);
+      }
+      &:after{
+        right: calc(100% + 20px);
+      }
+    }
+
+    &-columntitle{
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid $main-color-light-stale-gray-border;
+      margin-bottom: 10px;
+
+      &-title{
+        margin: 0;
+        padding: 0;
+        font-weight: 300;
+        font-size: 20px;
+      }
+      &-select{
+        color: $main-color-light-stale-gray;
+        background-color: transparent;
+        border: none;
+        font-size: 20px;
+        option{
+          background-color: $main-color-dark-blue;
+        }
+      }
+    }
+
+    &-depth{
+      padding-left: 0;
+    }
+
+    &-converter{
+      padding-right: 0;
+    }
+
+  }
+
+  &-whyicrypex{
+    background-color: $main-color-white;
+    min-height: 50px;
   }
 
 }
