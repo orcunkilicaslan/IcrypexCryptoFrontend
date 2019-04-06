@@ -157,8 +157,8 @@ $svgIconImgPath : "../../img/mainpage/svg";
 
     &.rectangle{
       opacity: 0.8;
-      &-left{right: 0;}
-      &-right{left: 0}
+      &-left{right: 0; padding-right: 1px;}
+      &-right{left: 0; padding-left: 1px;}
       img{width: 100%; height: 185px;}
     }
   }
