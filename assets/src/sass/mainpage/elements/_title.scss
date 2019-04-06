@@ -1,6 +1,5 @@
 .columntitle{
-  color: $main-color-white;
-  text-align: center;
+  width: 100%;
   font-weight: 300;
   letter-spacing: -0.2px;
   margin: 0;
@@ -13,21 +12,23 @@
     padding: 0;
   }
 
+  &-xs{font-size: 20px;}
   &-sm{font-size: 23px;}
+  &-lg{font-size: 35px;}
 
   &-border{
-    display: initial;
     position: relative;
     padding-bottom: 10px !important;
 
     &:before{
       content: "";
-      background-color: $main-color-light-stale-gray-border;
-      width: 100%;
+      background-color: $main-color-light-stale-gray;
+      width: 300px;
       height: 2px;
       position: absolute;
       bottom: 0;
-      left: 0;
+      left: calc(50% - 150px);
+      opacity: 0.3;
     }
     &:after{
       content: "";
@@ -39,10 +40,20 @@
       left: 0;
     }
 
-    &-left{}
-    &-center:after{
-      width: 40px;
-      left: calc(50% - 20px);
+    &-left{
+      text-align: left;
+      &:before{
+        left: 0;
+      }
+      &:after{
+        left: 0;
+      }
+    }
+    &-center{
+      text-align: center;
+      &:after{
+        left: calc(50% - 20px);
+      }
     }
   }
 
