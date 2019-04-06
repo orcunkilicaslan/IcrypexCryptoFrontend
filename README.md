@@ -15,7 +15,7 @@ yazmamız gerekmektedir. Bu sayade Gulp’un cli(Command Line Interface)sini bil
 ## Projeyi PC'ye İndirme
 Komut Satırına Aşağıdaki Kodu Yazın
 
-    git clone --branch devel --single-branch https://github.com/orcunkilicaslan/IcrypexCryptoFrontend.git
+    git clone https://github.com/orcunkilicaslan/IcrypexCryptoFrontend.git
 
 ## Projeyi PC'de Çalıştırma
 Komut Satırına Aşağıdaki Kodu Yazın
