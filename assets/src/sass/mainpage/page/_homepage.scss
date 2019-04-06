@@ -163,6 +163,19 @@ $homepageImgPath : "../../img/mainpage";
   &-register{
     margin-top: 30px;
 
+    .columntitle{
+      color: $main-color-white;
+      &-border{
+        display: initial;
+        &:before{
+          background-color: $main-color-light-stale-gray-border;
+          opacity: 1;
+          width: 100%;
+          left: 0;
+        }
+      }
+    }
+
     &-formarea{
       padding-top: 20px;
 
@@ -330,7 +343,67 @@ $homepageImgPath : "../../img/mainpage";
 
   &-whyicrypex{
     background-color: $main-color-white;
+    padding: 90px 0 125px;
     min-height: 500px;
+
+    .container > .row > .columntitle{
+      margin-bottom: 30px;
+      color: $main-color-title-blue;
+    }
+
+    &-list{
+      div[class*="col-"]{
+        padding-left: 0;
+        padding-right: 65px;
+      }
+      &-item{
+        display: flex;
+        padding-top: 23px;
+        padding-bottom: 23px;
+
+        &-icon{
+          flex: 0 0 70px;
+          background-color: lighten(#78787b, 45%);
+          margin-right: 15px;
+          min-height: 50px;
+
+          .icon-svg{
+            width: 42px;
+            height: 42px;
+            display: block;
+            margin: 0 auto;
+            margin-top: 12px;
+          }
+
+        }
+        &-text{
+          flex: 0 0 calc(100% - 85px);
+          color: $main-color-title-blue;
+
+          .columntitle{
+            font-weight: normal;
+            &-border{
+              &:before{
+                width: 100%;
+              }
+              &:after{
+                height: 2px;
+              }
+            }
+          }
+
+          p{
+            color: $main-color-title-blue;
+            font-size: 17px;
+            line-height: 1.12;
+            margin: 0;
+            margin-top: 10px;
+          }
+
+        }
+      }
+
+    }
   }
 
 }
