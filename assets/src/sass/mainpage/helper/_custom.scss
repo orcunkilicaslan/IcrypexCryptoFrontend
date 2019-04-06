@@ -1,0 +1,39 @@
+$mainpageImgPath : "../../img/mainpage";
+
+/* Custom */
+*{outline: 0 !important;}
+
+body{
+  font-size: $main-font-size;
+  background-color: #011326;
+  background-image: url(#{$mainpageImgPath}/background/Dark_Blue_Bg_Image.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-attachment: fixed;
+}
+body, input, textarea, select, button {
+  font-family: $main-font-family-barlow;
+}
+h1,h2,h3,h4,h5,h6{
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+blockquote, p, ul, li{}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+img, svg {
+  vertical-align: middle;
+}
+
+.form-control{
+  font-size: $main-font-size;
+}
+
+.container-1920{
+  max-width: 1920px;
+}
+/* Custom */

@@ -1,0 +1,336 @@
+$homepageImgPath : "../../img/mainpage";
+
+.homepage{
+
+  &-top{
+    &-left{
+      padding-left: 0;
+      padding-right: 40px;
+    }
+    &-right{
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  &-slider{
+    &-wapper{
+      position: relative;
+      margin: 0;
+      padding-top: 40px;
+
+      &-item{
+        color: $main-color-white;
+        padding: 20px 0;
+      }
+      .owl{
+
+        &-dots{
+          margin: 0 !important;
+          position: absolute;
+          left: 0;
+          top: 0;
+        }
+        &-dot{
+
+          span{
+            background-color: $main-color-light-stale-gray !important;
+            width: 40px !important;
+            height: 3px !important;
+            margin: 0 !important;
+            margin-right: 5px !important;
+            @include border-radius(0px !important);
+          }
+
+          &.active span,
+          &:hover span{
+            background-color: $main-color-blue !important;
+          }
+
+          &:last-child{
+            span{margin-right: 0 !important;}
+          }
+        }
+
+        &-stage-outer{
+          height: 225px;
+          overflow: hidden;
+        }
+      }
+    }
+
+    &-title{
+      color: $main-color-white;
+      font-size: 44px;
+      font-weight: 300;
+      line-height: 1.07;
+    }
+
+    &-desc{
+      color: $main-color-white;
+      font-size: 26px;
+      font-weight: 300;
+      line-height: 1.07;
+    }
+  }
+
+  &-chartarea{
+    color: $main-color-white;
+    margin-bottom: 50px;
+
+    &-column{
+
+      &-headtitle{
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid $main-color-light-stale-gray-border;
+        padding-bottom: 5px;
+
+        &-title,
+        &-volume{
+          font-size: 20px;
+          font-weight: normal;
+          margin: 0;
+          padding: 0;
+          line-height: 1;
+        }
+
+        &-title{color: $main-color-white;}
+        &-volume{color: $main-color-light-stale-gray;}
+      }
+
+      &-chartbox{}
+    }
+  }
+
+  &-bigprice{
+    color: $main-color-white;
+
+    &-list{
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 0;
+
+      &-item{
+        color: $main-color-white;
+        text-align: center;
+        font-size: 30px;
+        font-weight: 300;
+        line-height: 0.9;
+        letter-spacing: -0.3px;
+        position: relative;
+
+        &:before{
+          content: "";
+          position: absolute;
+          width: 1px;
+          height: 44px;
+          top: calc(50% - 20px);
+          right: -25px;
+          background-color: $main-color-light-stale-gray-border;
+        }
+
+        &:last-child{
+          &:before{display: none;}
+        }
+      }
+    }
+
+    &-title{
+      color: $main-color-light-stale-gray;
+      font-size: 18px;
+      font-weight: 300;
+      letter-spacing: -0.2px;
+      margin: 0;
+    }
+
+    &-volume{
+      display: block;
+
+      .colorgreen{color: $main-color-green;}
+
+      sup{
+        font-size: 12px;
+        font-weight: 900;
+        letter-spacing: normal;
+        text-align: center;
+        position: relative;
+        top: -12px;
+      }
+    }
+  }
+
+  &-register{
+    margin-top: 30px;
+
+    &-formarea{
+      padding-top: 20px;
+
+      .form-group{
+        margin-bottom: 13px;
+      }
+      .form-control{
+        color: $main-color-white;
+        background-color: transparent;
+        border-color: $main-color-light-stale-gray-border;
+        border-right: none;
+        border-top: none;
+        height: auto;
+        padding: 5px 10px 8px;
+        font-size: 17px;
+        @include border-radius(0px);
+        &:focus{
+          @include box-shadow(0,0,0,transparent);
+        }
+      }
+      @include placeholder{
+        color: $main-color-light-stale-gray;
+      }
+      .recaptcha{
+        background-color: black;
+        margin-bottom: 13px;
+        @include border-radius(6px);
+      }
+      .form-check{
+        margin-bottom: 13px;
+        *{color: $main-color-light-stale-gray;}
+        a{
+          text-decoration: underline !important;
+          &:hover{
+            color: $main-color-green;
+          }
+        }
+      }
+      .form-button{
+        .btn{
+          width: 100%;
+          font-size: 19px;
+          font-weight: 300;
+          letter-spacing: -0.2px;
+          padding: 14px 10px;
+          border:none;
+          @include gradient(#0a93ea, #00387c);
+        }
+      }
+    }
+  }
+
+  &-summarytable{
+    color: $main-color-white;
+    padding-top: 110px;
+    overflow: hidden;
+
+    > .container{
+      position: relative;
+      padding-bottom: 20px;
+
+      &:before,
+      &:after{
+        content: "";
+        background-color: $main-color-white;
+        position: absolute;
+        width: 1000%;
+        height: 50%;
+        bottom: 0;
+        top: 50%;
+        z-index: 1;
+      }
+      &:before{
+        left: calc(100% + 20px);
+      }
+      &:after{
+        right: calc(100% + 20px);
+      }
+    }
+
+    > .container > .row{
+      &:before,
+      &:after{
+        content: "";
+        background-color: $main-color-white;
+        position: absolute;
+        width: 4px;
+        height: 4px;
+        bottom: -2px;
+        z-index: 1;
+        @include rotate(45);
+      }
+      &:before{
+        left: -22px;
+      }
+      &:after{
+        right: -22px;
+      }
+    }
+
+    &-columntitle{
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid $main-color-light-stale-gray-border;
+      margin-bottom: 2px;
+      padding-bottom: 5px;
+
+      &-title{
+        margin: 0;
+        padding: 0;
+        font-weight: 300;
+        font-size: 20px;
+      }
+      &-select{
+        color: $main-color-light-stale-gray;
+        background-color: transparent;
+        border: none;
+        font-size: 20px;
+        option{
+          background-color: $main-color-dark-blue;
+        }
+      }
+    }
+
+  }
+
+  &-depth{
+    padding-left: 0;
+
+    .tablecolumn{
+      margin: 0;
+      &-grid{
+        position: relative;
+
+        &-01{
+          padding-right: 1px;
+          padding-left: 0;
+          .table{
+            th, td{
+              text-align: right;
+            }
+          }
+        }
+        &-02{
+          padding-left: 1px;
+          padding-right: 0;
+          .table{
+            th, td{
+              text-align: left;
+            }
+          }
+        }
+
+      }
+    }
+  }
+
+  &-converter{
+    padding-right: 0;
+
+    &-column{
+      margin-top: 15px;
+    }
+  }
+
+  &-whyicrypex{
+    background-color: $main-color-white;
+    min-height: 500px;
+  }
+
+}
