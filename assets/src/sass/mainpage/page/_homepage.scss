@@ -165,6 +165,7 @@ $homepageImgPath : "../../img/mainpage";
 
     .columntitle{
       color: $main-color-white;
+      text-align: center;
       &-border{
         display: initial;
         &:before{
