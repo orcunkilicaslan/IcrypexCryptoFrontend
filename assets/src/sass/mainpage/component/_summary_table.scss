@@ -142,6 +142,30 @@ $svgIconImgPath : "../../img/mainpage/svg";
       &.minichart{}
     }
 
+    .tableicon{
+      display: inline-block;
+      margin-left: 2px;
+      position: relative;
+      bottom: -4px;
+      i{
+        background-color: transparent;
+        background-repeat: no-repeat;
+        background-position: center center;
+        display: block;
+        cursor: pointer;
+        width: 8px;
+        height: 4px;
+        margin: 1px 0;
+        padding: 4px 0;
+      }
+      &-arrowup{
+        background-image: url(#{$svgIconImgPath}/Arrow_Up.svg);
+      }
+      &-arrowdown{
+        background-image: url(#{$svgIconImgPath}/Arrow_Down.svg);
+      }
+    }
+
   }
 
 }
