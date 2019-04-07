@@ -12,10 +12,6 @@
     padding: 0;
   }
 
-  &-xs{font-size: 20px;}
-  &-sm{font-size: 23px;}
-  &-lg{font-size: 35px;}
-
   &-border{
     position: relative;
     padding-bottom: 10px !important;
@@ -54,6 +50,15 @@
       &:after{
         left: calc(50% - 20px);
       }
+    }
+  }
+
+  &-xs{font-size: 20px;}
+  &-sm{font-size: 23px;}
+  &-lg{
+    font-size: 35px;
+    &:after{
+      width: 60px;
     }
   }
 

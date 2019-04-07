@@ -407,4 +407,17 @@ $homepageImgPath : "../../img/mainpage";
     }
   }
 
+  &-platform{
+    min-height: 120px;
+
+    &-content{
+      padding-top: 105px;
+      padding-left: 0;
+      .columntitle{
+        color: $main-color-white;
+      }
+
+    }
+  }
+
 }
