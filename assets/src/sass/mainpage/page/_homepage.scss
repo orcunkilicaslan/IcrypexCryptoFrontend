@@ -347,7 +347,7 @@ $homepageImgPath : "../../img/mainpage";
     padding: 90px 0 125px;
     min-height: 500px;
 
-    .container > .row > .columntitle{
+    .container > .columntitle{
       margin-bottom: 30px;
       color: $main-color-title-blue;
     }
@@ -381,7 +381,7 @@ $homepageImgPath : "../../img/mainpage";
           flex: 0 0 calc(100% - 85px);
           color: $main-color-title-blue;
 
-          .columntitle{
+          > .columntitle{
             font-weight: normal;
             &-border{
               &:before{
@@ -407,17 +407,123 @@ $homepageImgPath : "../../img/mainpage";
     }
   }
 
-  &-platform{
-    min-height: 120px;
+  &-webtrader{
+    background-color: $main-color-dark-blue;
 
     &-content{
       padding-top: 105px;
       padding-left: 0;
+      padding-right: 45px;
       .columntitle{
         color: $main-color-white;
+        &:before{
+          width: 200px;
+        }
       }
 
+      &-desc{
+        color: $main-color-light-stale-gray;
+        font-size: 17px;
+        margin: 0;
+        margin-top: 15px;
+        line-height: 1.18;
+      }
+      &-list{
+        color: $main-color-light-stale-gray;
+        font-size: 17px;
+        margin: 0;
+        margin-top: 15px;
+        line-height: 1.29;
+      }
+      &-btn{
+        margin: 0;
+        margin-top: 35px;
+        background-color: $main-color-btn-blue;
+        border: none;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 1.6;
+        letter-spacing: -0.2px;
+      }
     }
+
+    &-image{
+      &-img{
+        max-width: none;
+        width: 790px;
+        height: 656px;
+        object-fit: contain;
+        margin-top: -35px;
+      }
+    }
+  }
+
+  &-mobiletrader{
+    background-color: $main-color-white;
+    min-height: 300px;
+
+    &-content{
+      padding-top: 105px;
+      padding-right: 0;
+      .columntitle{
+        &:before{
+          width: 200px;
+        }
+      }
+
+      &-desc{
+        color: $main-color-title-blue;
+        font-size: 17px;
+        margin: 0;
+        margin-top: 15px;
+        line-height: 1.18;
+      }
+      &-list{
+        color: $main-color-title-blue;
+        font-size: 17px;
+        margin: 0;
+        margin-top: 15px;
+        line-height: 1.29;
+      }
+      &-btn{
+        margin-top: 35px;
+        &-item{
+          margin-right: 35px;
+          &:last-child{
+            margin-right: 0;
+          }
+
+          &.apple{}
+          &.android{}
+        }
+      }
+    }
+
+    &-image{
+      padding-left: 0;
+      &-list{
+        margin-top: -45px;
+        margin-bottom: 0;
+        &-item{
+          display: inline-block;
+          height: 646px;
+          overflow: hidden;
+
+          img{
+            max-width: none;
+          }
+
+          &.apple{
+            width: 350px;
+          }
+          &.android{
+            width: 355px;
+            margin-left: -250px;
+          }
+        }
+      }
+    }
+
   }
 
 }

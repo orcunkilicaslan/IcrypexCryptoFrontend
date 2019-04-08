@@ -1,0 +1,22 @@
+$svgIconImgPath : "../../img/mainpage/svg";
+
+.content{
+  &-list{
+    &-item{
+      position: relative;
+      padding-left: 10px;
+      &:before{
+        content: "";
+        position: absolute;
+        background-image: url(#{$svgIconImgPath}/Arrow_Li.svg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: contain;
+        width: 6px;
+        height: 12px;
+        top: calc(50% - 6px);
+        left: 0;
+      }
+    }
+  }
+}
