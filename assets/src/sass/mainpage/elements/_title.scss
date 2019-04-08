@@ -12,11 +12,7 @@
     padding: 0;
   }
 
-  &-xs{font-size: 20px;}
-  &-sm{font-size: 23px;}
-  &-lg{font-size: 35px;}
-
-  &-border{
+  &.bottomborder{
     position: relative;
     padding-bottom: 10px !important;
 
@@ -33,14 +29,13 @@
     &:after{
       content: "";
       background-color: $main-color-blue;
-      width: 40px;
       height: 4px;
       position: absolute;
       bottom: 0;
       left: 0;
     }
 
-    &-left{
+    &.titleleft{
       text-align: left;
       &:before{
         left: 0;
@@ -48,13 +43,91 @@
       &:after{
         left: 0;
       }
+
     }
-    &-center{
+    &.titlecenter{
       text-align: center;
+    }
+  }
+
+  &-ftmenu{
+    font-size: 17px;
+    &.bottomborder{
+      &:before{
+        width: 150px;
+        height: 1px;
+      }
+      &:after{
+        width: 40px;
+        height: 2px;
+      }
+    }
+    &.titlecenter{
       &:after{
         left: calc(50% - 20px);
       }
     }
+  }
+
+  &-xs{
+    font-size: 20px;
+    &.bottomborder{
+      &:before{
+        width: 300px;
+      }
+      &:after{
+        width: 40px;
+        height: 2px;
+      }
+    }
+    &.titlecenter{
+      &:after{
+        left: calc(50% - 20px);
+      }
+    }
+  }
+
+  &-sm{
+    font-size: 23px;
+    &.bottomborder{
+      &:before{
+        width: 300px;
+      }
+      &:after{
+        width: 40px;
+      }
+    }
+    &.titlecenter{
+      &:before{
+        left: calc(50% - 150px);
+      }
+      &:after{
+        left: calc(50% - 20px);
+      }
+    }
+  }
+
+  &-lg{
+    font-size: 35px;
+    line-height: 1.17;
+    &.bottomborder{
+      &:before{
+        width: 300px;
+        left: 0;
+      }
+      &:after{
+        width: 60px;
+      }
+    }
+    &.titlecenter{
+      &:before{
+        left: calc(50% - 150px);
+      }
+      &:after{
+        left: calc(50% - 30px);
+      }
+    }
+
   }
 
 }

@@ -163,10 +163,16 @@ $homepageImgPath : "../../img/mainpage";
   &-register{
     margin-top: 30px;
 
+    &-title{
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+
     .columntitle{
       color: $main-color-white;
       text-align: center;
-      &-border{
+      &.bottomborder{
         display: initial;
         &:before{
           background-color: $main-color-light-stale-gray-border;
@@ -289,6 +295,7 @@ $homepageImgPath : "../../img/mainpage";
         padding: 0;
         font-weight: 300;
         font-size: 20px;
+        min-height: 26px;
       }
       &-select{
         color: $main-color-light-stale-gray;
@@ -347,7 +354,7 @@ $homepageImgPath : "../../img/mainpage";
     padding: 90px 0 125px;
     min-height: 500px;
 
-    .container > .row > .columntitle{
+    .container > .columntitle{
       margin-bottom: 30px;
       color: $main-color-title-blue;
     }
@@ -381,9 +388,9 @@ $homepageImgPath : "../../img/mainpage";
           flex: 0 0 calc(100% - 85px);
           color: $main-color-title-blue;
 
-          .columntitle{
+          > .columntitle{
             font-weight: normal;
-            &-border{
+            &.bottomborder{
               &:before{
                 width: 100%;
               }
@@ -404,6 +411,219 @@ $homepageImgPath : "../../img/mainpage";
         }
       }
 
+    }
+  }
+
+  &-webtrader{
+    background-color: $main-color-dark-blue;
+
+    &-content{
+      padding-top: 105px;
+      padding-left: 0;
+      padding-right: 45px;
+      .columntitle{
+        color: $main-color-white;
+        &:before{
+          width: 200px;
+        }
+      }
+
+      &-desc{
+        color: $main-color-light-stale-gray;
+        font-size: 17px;
+        margin: 0;
+        margin-top: 20px;
+        line-height: 1.18;
+      }
+      &-list{
+        color: $main-color-light-stale-gray;
+        font-size: 17px;
+        margin: 0;
+        margin-top: 15px;
+        line-height: 1.29;
+      }
+      &-btn{
+        margin: 0;
+        margin-top: 35px;
+        background-color: $main-color-btn-blue;
+        border: none;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 1.6;
+        letter-spacing: -0.2px;
+      }
+    }
+
+    &-image{
+      &-img{
+        max-width: none;
+        width: 790px;
+        height: 656px;
+        object-fit: contain;
+        margin-top: -35px;
+      }
+    }
+  }
+
+  &-mobiletrader{
+    background-color: $main-color-white;
+
+    &-content{
+      padding-top: 105px;
+      padding-right: 30px;
+      padding-left: 30px;
+      .columntitle{
+        &:before{
+          width: 200px;
+        }
+      }
+
+      &-desc{
+        color: $main-color-title-blue;
+        font-size: 17px;
+        margin: 0;
+        margin-top: 20px;
+        line-height: 1.18;
+      }
+      &-list{
+        color: $main-color-title-blue;
+        font-size: 17px;
+        margin: 0;
+        margin-top: 15px;
+        line-height: 1.29;
+      }
+      &-btn{
+        margin-top: 35px;
+        &-item{
+          margin-right: 35px;
+          &:last-child{
+            margin-right: 0;
+          }
+          &.apple{}
+          &.android{}
+        }
+      }
+    }
+
+    &-image{
+      margin-top: -45px;
+      padding-left: 0;
+      overflow: hidden;
+
+      &-list{
+        margin-bottom: 0;
+        position: relative;
+        &-item{
+          display: inline-block;
+          position: absolute;
+          height: 646px;
+
+          img{
+            max-width: none;
+          }
+
+          &.apple{
+            width: 350px;
+            left: 0;
+          }
+          &.android{
+            width: 355px;
+            left: 110px;
+            position: relative;
+            img{
+              &:before{
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 20px;
+                height: 100%;
+                box-shadow: -10px 10px 10px rgba(0,0,0,0.5);
+              }
+            }
+          }
+        }
+      }
+    }
+
+  }
+
+  .cryptinvestment{
+    color: $main-color-white;
+    background-color: $main-color-dark-blue;
+    padding-top: 135px;
+    padding-bottom: 70px;
+    min-height: 300px;
+
+    &-threebox{
+      margin-top: 50px;
+      &-item{
+        padding: 0;
+
+        &-bluebg{
+          color: $main-color-white;
+          background-color: transparentize($main-color-btn-blue, 0.5);
+          width: 70px;
+          height: 150px;
+          font-size: 50px;
+          font-weight: 100;
+          line-height: 0.64;
+          font-style: normal;
+          text-align: center;
+          display: block;
+          margin: 0 auto;
+          padding: 15px 0;
+          position: relative;
+
+          &:before{
+            content: "";
+            background-color: $main-color-blue;
+            width: 40px;
+            height: 2px;
+            position: absolute;
+            bottom: 15px;
+            left: calc(50% - 20px);
+          }
+        }
+        &-title{
+          color: $main-color-white;
+          font-size: 20px;
+          font-weight: 300;
+          text-align: center;
+          margin: 0;
+          margin-top: 15px;
+        }
+      }
+    }
+
+    &-content{
+      color: $main-color-light-stale-gray;
+      text-align: center;
+      margin-top: 50px;
+
+      &-title{
+        color: $main-color-light-stale-gray;
+        font-size: 22px;
+        font-weight: normal;
+        line-height: 1.45;
+        margin-bottom: 10px;
+      }
+      &-desc{
+        color: $main-color-light-stale-gray;
+        font-size: 17px;
+        line-height: 1.12;
+        margin: 0;
+      }
+      &-btn{
+        margin: 0;
+        margin-top: 50px;
+        background-color: $main-color-btn-blue;
+        border: none;
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 1.6;
+        letter-spacing: -0.2px;
+      }
     }
   }
 
