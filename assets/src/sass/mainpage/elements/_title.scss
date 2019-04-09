@@ -4,7 +4,7 @@
   letter-spacing: -0.2px;
   margin: 0;
   padding: 0;
-  padding-bottom: 10px;
+  padding-bottom: 12px;
 
   h1, h2, h3, h4, h5, h6{
     font-weight: 300;
@@ -14,7 +14,6 @@
 
   &.bottomborder{
     position: relative;
-    padding-bottom: 10px !important;
 
     &:before{
       content: "";
@@ -50,7 +49,7 @@
     }
   }
 
-  &-ftmenu{
+  &-xs{
     font-size: 17px;
     &.bottomborder{
       &:before{
@@ -69,11 +68,11 @@
     }
   }
 
-  &-xs{
+  &-sm{
     font-size: 20px;
     &.bottomborder{
       &:before{
-        width: 300px;
+        max-width: 250px;
       }
       &:after{
         width: 40px;
@@ -87,7 +86,7 @@
     }
   }
 
-  &-sm{
+  &-md{
     font-size: 23px;
     &.bottomborder{
       &:before{
@@ -107,7 +106,7 @@
     }
   }
 
-  &-lg{
+  &-xl{
     font-size: 35px;
     line-height: 1.17;
     &.bottomborder{
