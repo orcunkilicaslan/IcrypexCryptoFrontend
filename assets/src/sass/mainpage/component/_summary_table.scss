@@ -3,18 +3,17 @@ $svgIconImgPath : "../../img/mainpage/svg";
 
 .summarytable{
   width: 100%;
-  padding-bottom: 20px;
+  padding-bottom: 23px;
 
   &-tabnav{
     border-bottom: 5px solid $main-color-blue;
     position: relative;
     &:before{
       content: "";
-      background-color: $main-color-blue;
+      background-color: transparentize($main-color-blue, 0.85);
       position: absolute;
       width: 100%;
       height: 100%;
-      opacity: 0.1;
     }
     &:after{
       content: "";
@@ -33,7 +32,7 @@ $svgIconImgPath : "../../img/mainpage/svg";
         font-size: 20px;
       }
       &-link{
-        color: $main-color-light-stale-gray;
+        color: transparentize($main-color-light-stale-gray, 0.50);
         border-color: rgba(0,0,0,0.9);
         border-style: solid;
         border-right-width: 4px;
@@ -62,7 +61,7 @@ $svgIconImgPath : "../../img/mainpage/svg";
         }
       }
       &-search{
-        color: $main-color-light-stale-gray;
+        color: transparentize($main-color-light-stale-gray, 0.50);
         position: absolute;
         width: 250px;
         right: 0;
@@ -108,7 +107,9 @@ $svgIconImgPath : "../../img/mainpage/svg";
     color: $main-color-white;
   }
 
-  &-tablearea{}
+  &-tablearea{
+    padding-top: 2px;
+  }
 
   &-table{
     color: $main-color-light-stale-gray;
@@ -117,12 +118,12 @@ $svgIconImgPath : "../../img/mainpage/svg";
     thead th{
       border-top-width: 0;
       border-bottom-width: 1px;
-      border-color: $main-color-light-stale-gray-border;
+      border-color: transparentize($main-color-light-stale-gray, 0.7);
     }
 
     td, th{
       border-top: 0;
-      border-bottom:1px solid $main-color-light-stale-gray-border;
+      border-bottom:1px solid transparentize($main-color-light-stale-gray, 0.7);
       vertical-align: middle;
       font-size: 17px;
       font-weight: normal;
@@ -201,7 +202,7 @@ $svgIconImgPath : "../../img/mainpage/svg";
     margin: 0;
 
     td, th{
-      border-color: $main-color-light-stale-gray-border;
+      border-color: transparentize($main-color-light-stale-gray, 0.7);
       vertical-align: middle;
       font-size: 12px;
       font-weight: normal;
@@ -214,7 +215,7 @@ $svgIconImgPath : "../../img/mainpage/svg";
       font-size: 15px;
       border-top-width: 0;
       border-bottom-width: 1px;
-      border-color: $main-color-light-stale-gray-border;
+      border-color: transparentize($main-color-light-stale-gray, 0.7);
       padding-top: 3px;
       padding-bottom: 3px;
     }
@@ -278,16 +279,16 @@ $svgIconImgPath : "../../img/mainpage/svg";
       background-color: rgba(0,0,0,0.2);
       font-size: 20px;
       font-weight: 100;
-      padding: 5px 10px;
+      padding: 5px 9px;
       height: auto;
       border-width: 1px;
       border-style: solid;
-      border-color: $main-color-light-stale-gray-border;
+      border-color: transparentize($main-color-light-stale-gray, 0.7);
       @include border-radius(0);
       &:focus{
         color: $main-color-white;
         background-color: rgba(0,0,0,0.2);
-        border-color: $main-color-light-stale-gray-border;
+        border-color: transparentize($main-color-light-stale-gray, 0.7);
         @include box-shadow(0,0,0,transparent);
         @include border-radius(0);
       }

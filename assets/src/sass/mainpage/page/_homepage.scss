@@ -29,9 +29,10 @@ $homepageImgPath : "../../img/mainpage";
           margin: 0 !important;
           position: absolute;
           left: 0;
-          top: 0;
+          top: 4px;
         }
         &-dot{
+          height: 25px;
 
           span{
             background-color: $main-color-light-stale-gray !important;
@@ -39,14 +40,32 @@ $homepageImgPath : "../../img/mainpage";
             height: 3px !important;
             margin: 0 !important;
             margin-right: 5px !important;
+            position: relative;
             @include border-radius(0px !important);
+
+            &:before{
+              content: "";
+              position: absolute;
+              background: transparent;
+              width: 100%;
+              height: 3px;
+              left: 0;
+              top: 0;
+              transition: all 0.2s linear;
+            }
+
           }
 
           &.active span,
           &:hover span{
             background-color: $main-color-blue !important;
           }
-
+          &:hover span{
+            &:before{
+              background-color: $main-color-blue !important;
+              top: -3px;
+            }
+          }
           &:last-child{
             span{margin-right: 0 !important;}
           }
@@ -83,7 +102,7 @@ $homepageImgPath : "../../img/mainpage";
       &-headtitle{
         display: flex;
         justify-content: space-between;
-        border-bottom: 1px solid $main-color-light-stale-gray-border;
+        border-bottom: 1px solid transparentize($main-color-light-stale-gray, 0.7);
         padding-bottom: 5px;
 
         &-title,
@@ -127,7 +146,7 @@ $homepageImgPath : "../../img/mainpage";
           height: 44px;
           top: calc(50% - 20px);
           right: -25px;
-          background-color: $main-color-light-stale-gray-border;
+          background-color: transparentize($main-color-light-stale-gray, 0.7);
         }
 
         &:last-child{
@@ -175,7 +194,7 @@ $homepageImgPath : "../../img/mainpage";
       &.bottomborder{
         display: initial;
         &:before{
-          background-color: $main-color-light-stale-gray-border;
+          background-color: transparentize($main-color-light-stale-gray, 0.7);
           opacity: 1;
           width: 100%;
           left: 0;
@@ -187,12 +206,12 @@ $homepageImgPath : "../../img/mainpage";
       padding-top: 20px;
 
       .form-group{
-        margin-bottom: 13px;
+        margin-bottom: 14px;
       }
       .form-control{
         color: $main-color-white;
         background-color: transparent;
-        border-color: $main-color-light-stale-gray-border;
+        border-color: transparentize($main-color-light-stale-gray, 0.7);
         border-right: none;
         border-top: none;
         height: auto;
@@ -227,7 +246,7 @@ $homepageImgPath : "../../img/mainpage";
           font-size: 19px;
           font-weight: 300;
           letter-spacing: -0.2px;
-          padding: 14px 10px;
+          padding: 11px 10px;
           border:none;
           @include gradient(#0a93ea, #00387c);
         }
@@ -237,12 +256,12 @@ $homepageImgPath : "../../img/mainpage";
 
   &-summarytable{
     color: $main-color-white;
-    padding-top: 110px;
+    padding-top: 114px;
     overflow: hidden;
 
     > .container{
       position: relative;
-      padding-bottom: 20px;
+      padding-bottom: 15px;
 
       &:before,
       &:after{
@@ -286,9 +305,9 @@ $homepageImgPath : "../../img/mainpage";
     &-columntitle{
       display: flex;
       justify-content: space-between;
-      border-bottom: 1px solid $main-color-light-stale-gray-border;
+      border-bottom: 1px solid transparentize($main-color-light-stale-gray, 0.7);
       margin-bottom: 2px;
-      padding-bottom: 5px;
+      padding-bottom: 2px;
 
       &-title{
         margin: 0;
@@ -345,14 +364,13 @@ $homepageImgPath : "../../img/mainpage";
     padding-right: 0;
 
     &-column{
-      margin-top: 15px;
+      margin-top: 12px;
     }
   }
 
   &-whyicrypex{
     background-color: $main-color-white;
-    padding: 90px 0 125px;
-    min-height: 500px;
+    padding: 90px 0 110px;
 
     .container > .columntitle{
       margin-bottom: 30px;
@@ -362,7 +380,7 @@ $homepageImgPath : "../../img/mainpage";
     &-list{
       div[class*="col-"]{
         padding-left: 0;
-        padding-right: 65px;
+        padding-right: 35px;
       }
       &-item{
         display: flex;
@@ -371,9 +389,8 @@ $homepageImgPath : "../../img/mainpage";
 
         &-icon{
           flex: 0 0 70px;
-          background-color: lighten(#78787b, 45%);
+          background-color: transparentize(#78787b, 0.85);
           margin-right: 15px;
-          min-height: 50px;
 
           .icon-svg{
             width: 42px;
@@ -418,9 +435,10 @@ $homepageImgPath : "../../img/mainpage";
     background-color: $main-color-dark-blue;
 
     &-content{
-      padding-top: 105px;
+      padding-top: 100px;
+      padding-bottom: 140px;
       padding-left: 0;
-      padding-right: 45px;
+      padding-right: 30px;
       .columntitle{
         color: $main-color-white;
         &:before{
@@ -432,7 +450,7 @@ $homepageImgPath : "../../img/mainpage";
         color: $main-color-light-stale-gray;
         font-size: 17px;
         margin: 0;
-        margin-top: 20px;
+        margin-top: 25px;
         line-height: 1.18;
       }
       &-list{
@@ -451,6 +469,7 @@ $homepageImgPath : "../../img/mainpage";
         font-weight: 300;
         line-height: 1.6;
         letter-spacing: -0.2px;
+        padding: 10px 20px;
       }
     }
 
@@ -460,7 +479,7 @@ $homepageImgPath : "../../img/mainpage";
         width: 790px;
         height: 656px;
         object-fit: contain;
-        margin-top: -35px;
+        margin-top: -37px;
       }
     }
   }
@@ -469,9 +488,9 @@ $homepageImgPath : "../../img/mainpage";
     background-color: $main-color-white;
 
     &-content{
-      padding-top: 105px;
+      padding-top: 110px;
       padding-right: 30px;
-      padding-left: 30px;
+      padding-left: 28px;
       .columntitle{
         &:before{
           width: 200px;
@@ -482,7 +501,7 @@ $homepageImgPath : "../../img/mainpage";
         color: $main-color-title-blue;
         font-size: 17px;
         margin: 0;
-        margin-top: 20px;
+        margin-top: 25px;
         line-height: 1.18;
       }
       &-list{
@@ -551,12 +570,11 @@ $homepageImgPath : "../../img/mainpage";
   .cryptinvestment{
     color: $main-color-white;
     background-color: $main-color-dark-blue;
-    padding-top: 135px;
+    padding-top: 125px;
     padding-bottom: 70px;
-    min-height: 300px;
 
     &-threebox{
-      margin-top: 50px;
+      margin-top: 53px;
       &-item{
         padding: 0;
 
@@ -599,7 +617,7 @@ $homepageImgPath : "../../img/mainpage";
     &-content{
       color: $main-color-light-stale-gray;
       text-align: center;
-      margin-top: 50px;
+      margin-top: 40px;
 
       &-title{
         color: $main-color-light-stale-gray;
@@ -623,6 +641,7 @@ $homepageImgPath : "../../img/mainpage";
         font-weight: 300;
         line-height: 1.6;
         letter-spacing: -0.2px;
+        padding: 10px 30px
       }
     }
   }
