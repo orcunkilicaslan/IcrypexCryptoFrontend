@@ -51,7 +51,7 @@ $homepageImgPath : "../../img/mainpage";
               height: 3px;
               left: 0;
               top: 0;
-              transition: all 0.2s linear;
+              @include transition(all, 0.2s, linear);
             }
 
           }
@@ -236,7 +236,7 @@ $homepageImgPath : "../../img/mainpage";
         a{
           text-decoration: underline !important;
           &:hover{
-            color: $main-color-green;
+            color: $main-color-blue;
           }
         }
       }
