@@ -1,4 +1,4 @@
-$svgIconImgPath : "../../img/tradepage/svg";
+$tradepageSvgIconImgPath : "../../img/tradepage/svg";
 
 .icon{
   &-svg{
@@ -6,5 +6,10 @@ $svgIconImgPath : "../../img/tradepage/svg";
     background-position: center center;
     background-size: contain;
     overflow: hidden;
+    display: block;
+
+    &-icrypexsymbol{
+      background-image: url(#{$tradepageSvgIconImgPath}/Icrypex_Symbol.svg);
+    }
   }
 }

@@ -1,2 +1,42 @@
+.orc{
+  &-header{
+    background-color: transparent;
+  }
+  &-menu{
+    color: $tradepage-color-white;
+    font-size: 17px;
 
-
+    &-list{
+      min-height: 36px;
+      > li{
+        &:before{
+          content: "";
+          position: absolute;
+          width: 1px;
+          height: 10px;
+          top: calc(50% - 5px);
+          right: 0;
+          background: transparentize($tradepage-color-light-stale-gray, 0.7);
+          @include border-radius(50%)
+        }
+        &:first-child{
+          padding-left: 0;
+        }
+        &:last-child{
+          padding-right: 0;
+          &:before{display: none;}
+        }
+      }
+      > li > a{
+        color: $tradepage-color-white;
+        padding: 5px 20px
+      }
+      li:hover,
+      li:hover a,
+      li a.active,
+      li a:hover{
+        background-color: rgba(255,255,255,0.01);
+      }
+    }
+  }
+}
