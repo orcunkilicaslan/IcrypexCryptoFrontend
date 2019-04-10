@@ -1,4 +1,4 @@
-$svgIconImgPath : "../../img/mainpage/svg";
+$mainpageSvgIconImgPath : "../../img/mainpage/svg";
 
 .container-1890{
   max-width: 1890px;
@@ -12,7 +12,7 @@ $svgIconImgPath : "../../img/mainpage/svg";
       &:before{
         content: "";
         position: absolute;
-        background-image: url(#{$svgIconImgPath}/Arrow_Li.svg);
+        background-image: url(#{$mainpageSvgIconImgPath}/Arrow_Li.svg);
         background-repeat: no-repeat;
         background-position: center center;
         background-size: contain;

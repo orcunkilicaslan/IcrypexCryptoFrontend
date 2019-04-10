@@ -17,7 +17,7 @@
 
     &:before{
       content: "";
-      background-color: $main-color-light-stale-gray;
+      background-color: $mainpage-color-light-stale-gray;
       width: 300px;
       height: 2px;
       position: absolute;
@@ -27,7 +27,7 @@
     }
     &:after{
       content: "";
-      background-color: $main-color-blue;
+      background-color: $mainpage-color-blue;
       height: 4px;
       position: absolute;
       bottom: 0;

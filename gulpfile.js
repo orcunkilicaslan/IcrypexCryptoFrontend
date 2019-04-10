@@ -144,7 +144,7 @@ gulp.task('script-tradepage', () => {
 
 
 /* GENERAL START */
-gulp.task('clear', () => del([ folder_dist_main ]));
+gulp.task('clear', () => del([ folder_dist_main, folder_dist_node_modules ]));
 
 gulp.task('html', () => {
     return gulp.src([ folder_src_main + '**/*.html' ], { base: folder_src_main })

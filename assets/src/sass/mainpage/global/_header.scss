@@ -1,5 +1,5 @@
-$headerImgPath : "../../img/mainpage";
-$svgIconImgPath : "../../img/mainpage/svg";
+$mainpageHeaderImgPath : "../../img/mainpage";
+$mainpageSvgIconImgPath : "../../img/mainpage/svg";
 
 .header{
   margin-bottom: 26px;
@@ -10,15 +10,15 @@ $svgIconImgPath : "../../img/mainpage/svg";
 
   &-top{
     padding: 10px 0;
-    border-bottom: 1px solid transparentize($main-color-light-stale-gray, 0.7);
+    border-bottom: 1px solid transparentize($mainpage-color-light-stale-gray, 0.7);
 
     ul{text-align: center; margin: 0;}
     li{
       display: inline-block;
-      color: $main-color-light-stale-gray;
-      font-size: $main-font-size;
+      color: $mainpage-color-light-stale-gray;
+      font-size: $mainpage-font-size;
     }
-    a{color: $main-color-white;}
+    a{color: $mainpage-color-white;}
 
     &-language{
       &-item{
@@ -31,7 +31,7 @@ $svgIconImgPath : "../../img/mainpage/svg";
           height: 10px;
           top: calc(50% - 5px);
           right: -3px;
-          background-color: transparentize($main-color-light-stale-gray, 0.7);
+          background-color: transparentize($mainpage-color-light-stale-gray, 0.7);
         }
         &:first-child{
           padding-left: 0;
@@ -43,7 +43,7 @@ $svgIconImgPath : "../../img/mainpage/svg";
 
       }
       &-selection{
-        &.active{color: $main-color-light-stale-gray; opacity: 0.75;}
+        &.active{color: $mainpage-color-light-stale-gray; opacity: 0.75;}
       }
     }
 
@@ -60,7 +60,7 @@ $svgIconImgPath : "../../img/mainpage/svg";
           height: 3px;
           top: calc(50% - 1px);
           right: -3px;
-          background-color: transparentize($main-color-light-stale-gray, 0.7);
+          background-color: transparentize($mainpage-color-light-stale-gray, 0.7);
           @include border-radius(50%)
         }
         &:first-child{
@@ -86,7 +86,7 @@ $svgIconImgPath : "../../img/mainpage/svg";
           height: 10px;
           top: calc(50% - 5px);
           right: -3px;
-          background-color: transparentize($main-color-light-stale-gray, 0.7);
+          background-color: transparentize($mainpage-color-light-stale-gray, 0.7);
           @include border-radius(50%)
         }
         &:first-child{
@@ -106,12 +106,12 @@ $svgIconImgPath : "../../img/mainpage/svg";
     padding: 5px 0;
 
     &-logo{
-      color: $main-color-white;
-      font-family: $main-font-family-barlow;
+      color: $mainpage-color-white;
+      font-family: $mainpage-font-family-barlow;
       width: 140px;
       line-height: 0.9;
       margin-top: 5px;
-      &:hover{color: $main-color-white;}
+      &:hover{color: $mainpage-color-white;}
       &-symbol{
         float: left;
         width: 38px;
@@ -143,15 +143,15 @@ $svgIconImgPath : "../../img/mainpage/svg";
       margin-top: 5px;
       &-input{
         background-color: transparent;
-        color: $main-color-white;
-        font-size: $main-font-size;;
+        color: $mainpage-color-white;
+        font-size: $mainpage-font-size;
         width: 100%;
         padding: 2px;
-        border-bottom: 1px solid transparentize($main-color-light-stale-gray, 0.7);
+        border-bottom: 1px solid transparentize($mainpage-color-light-stale-gray, 0.7);
       }
       &-button{
         background-color: transparent;
-        background-image: url(#{$svgIconImgPath}/Search_Icon.svg);
+        background-image: url(#{$mainpageSvgIconImgPath}/Search_Icon.svg);
         background-repeat: no-repeat;
         background-position: center center;
         background-size: contain;
@@ -164,7 +164,7 @@ $svgIconImgPath : "../../img/mainpage/svg";
         text-indent: -9999px;
       }
       @include placeholder {
-        color: $main-color-light-stale-gray;
+        color: $mainpage-color-light-stale-gray;
         opacity: 0.75;
       }
     }

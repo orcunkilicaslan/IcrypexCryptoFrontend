@@ -3,7 +3,7 @@
     background-color: transparent;
   }
   &-menu{
-    color: $main-color-white;
+    color: $mainpage-color-white;
     font-size: 17px;
 
     &-list{
@@ -16,7 +16,7 @@
           height: 10px;
           top: calc(50% - 5px);
           right: 0;
-          background: transparentize($main-color-light-stale-gray, 0.7);
+          background: transparentize($mainpage-color-light-stale-gray, 0.7);
           @include border-radius(50%)
         }
         &:first-child{
@@ -28,7 +28,7 @@
         }
       }
       > li > a{
-        color: $main-color-white;
+        color: $mainpage-color-white;
         padding: 5px 20px
       }
       li:hover,
