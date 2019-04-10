@@ -1,0 +1,10 @@
+$svgIconImgPath : "../../img/tradepage/svg";
+
+.icon{
+  &-svg{
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    overflow: hidden;
+  }
+}

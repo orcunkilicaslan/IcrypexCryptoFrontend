@@ -1,0 +1,31 @@
+$tradepageImgPath : "../../img/tradepage";
+
+/* Custom */
+*{outline: 0 !important;}
+
+body{
+  font-size: $tradepage-font-size;
+  background-color: #011326;
+}
+body, input, textarea, select, button {
+  font-family: $tradepage-font-family-barlow;
+}
+h1,h2,h3,h4,h5,h6{
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+blockquote, p, ul, li{}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+img, svg {
+  vertical-align: middle;
+}
+
+.form-control{
+  font-size: $tradepage-font-size;
+}
+/* Custom */

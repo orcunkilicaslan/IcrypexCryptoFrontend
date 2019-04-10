@@ -1,12 +1,12 @@
-$footerImgPath : "../../img/mainpage/footer";
-$svgIconImgPath : "../../img/mainpage/svg";
+$mainpageFooterImgPath : "../../img/mainpage/footer";
+$mainpageSvgIconImgPath : "../../img/mainpage/svg";
 
 .footer{
-  color: $main-color-white;
-  @include gradient($main-color-dark-blue, #003158);
+  color: $mainpage-color-white;
+  @include gradient($mainpage-color-dark-blue, #003158);
 
   &-bg{
-    background-image: url(#{$footerImgPath}/Point_Earth_Image.png);
+    background-image: url(#{$mainpageFooterImgPath}/Point_Earth_Image.png);
     background-position: top center;
     background-repeat: no-repeat;
     padding-top: 75px;
@@ -20,7 +20,7 @@ $svgIconImgPath : "../../img/mainpage/svg";
     &:before,
     &:after{
       content: "";
-      background-color: transparentize($main-color-light-stale-gray, 0.7);
+      background-color: transparentize($mainpage-color-light-stale-gray, 0.7);
       position: absolute;
       width: 1000%;
       height: 1px;
@@ -54,7 +54,7 @@ $svgIconImgPath : "../../img/mainpage/svg";
     &-title{
       margin-bottom: 15px;
       a{
-        color: $main-color-white;
+        color: $mainpage-color-white;
       }
     }
     &-list{
@@ -64,7 +64,7 @@ $svgIconImgPath : "../../img/mainpage/svg";
         font-size: 17px;
         line-height: 1.18;
         a{
-          color: transparentize($main-color-light-stale-gray, 0.1);
+          color: transparentize($mainpage-color-light-stale-gray, 0.1);
         }
       }
     }
@@ -82,7 +82,7 @@ $svgIconImgPath : "../../img/mainpage/svg";
         margin: 0 3px;
 
         a{
-          background-color: transparentize($main-color-btn-blue, 0.6);
+          background-color: transparentize($mainpage-color-btn-blue, 0.6);
           width: 30px;
           height: 30px;
           text-align: center;
@@ -100,10 +100,10 @@ $svgIconImgPath : "../../img/mainpage/svg";
       display: block;
       margin: 8px auto;
 
-      &.facebook{background-image: url(#{$footerImgPath}/Facebook_Logo.svg);}
-      &.twitter{background-image: url(#{$footerImgPath}/Twitter_Logo.svg);}
-      &.instagram{background-image: url(#{$footerImgPath}/Instagram_Logo.svg);}
-      &.linkedin{background-image: url(#{$footerImgPath}/Linkedin_Logo.svg);}
+      &.facebook{background-image: url(#{$mainpageFooterImgPath}/Facebook_Logo.svg);}
+      &.twitter{background-image: url(#{$mainpageFooterImgPath}/Twitter_Logo.svg);}
+      &.instagram{background-image: url(#{$mainpageFooterImgPath}/Instagram_Logo.svg);}
+      &.linkedin{background-image: url(#{$mainpageFooterImgPath}/Linkedin_Logo.svg);}
     }
   }
 
@@ -112,13 +112,13 @@ $svgIconImgPath : "../../img/mainpage/svg";
     padding: 15px 0;
 
     &-phone{
-      color: $main-color-white;
+      color: $mainpage-color-white;
       font-size: 20px;
       line-height: 0.85;
       margin-bottom: 10px;
     }
     &-desc{
-      color: $main-color-light-stale-gray;
+      color: $mainpage-color-light-stale-gray;
       opacity: 0.9;
       font-size: 15px;
       line-height: 1.13;
@@ -134,7 +134,7 @@ $svgIconImgPath : "../../img/mainpage/svg";
     &:before,
     &:after{
       content: "";
-      background-color: transparentize($main-color-light-stale-gray, 0.7);
+      background-color: transparentize($mainpage-color-light-stale-gray, 0.7);
       position: absolute;
       width: 1000%;
       height: 1px;
@@ -162,7 +162,7 @@ $svgIconImgPath : "../../img/mainpage/svg";
           height: 14px;
           top: calc(50% - 4px);
           right: -3px;
-          background-color: transparentize($main-color-light-stale-gray, 0.7);
+          background-color: transparentize($mainpage-color-light-stale-gray, 0.7);
         }
         &:first-child{
           padding-left: 0;
