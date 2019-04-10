@@ -7,8 +7,12 @@
     font-size: 17px;
 
     &-list{
+      display: block;
+      text-align: center;
       min-height: 36px;
       > li{
+        display: inline-flex;
+
         &:before{
           content: "";
           position: absolute;

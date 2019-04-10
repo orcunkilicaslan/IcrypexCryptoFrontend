@@ -11,5 +11,24 @@ $tradepageSvgIconImgPath : "../../img/tradepage/svg";
     &-icrypexsymbol{
       background-image: url(#{$tradepageSvgIconImgPath}/Icrypex_Symbol.svg);
     }
+    &-headersearch{
+      background-image: url(#{$tradepageSvgIconImgPath}/Icon_Search.svg);
+    }
+    &-headerchat{
+      background-image: url(#{$tradepageSvgIconImgPath}/Icon_Chat.svg);
+    }
+    &-headertheme{
+      background-image: url(#{$tradepageSvgIconImgPath}/Icon_Theme.svg);
+    }
+    &-headerbell{
+      background-image: url(#{$tradepageSvgIconImgPath}/Icon_Bell.svg);
+    }
+    &-headerbell{
+      background-image: url(#{$tradepageSvgIconImgPath}/Icon_Bell.svg);
+    }
+
+    &-arrowdown{
+      background-image: url(#{$tradepageSvgIconImgPath}/Arrow_Down.svg);
+    }
   }
 }
