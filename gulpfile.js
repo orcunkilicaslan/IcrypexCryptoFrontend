@@ -20,14 +20,7 @@ const   gulp                      = require('gulp'),
 
         node_dependencies         = Object.keys(require('./package.json').dependencies || {});
 
-gulp.task('clear', () => del([ folder_dist_main ]));
-
-gulp.task('html', () => {
-  return gulp.src([ folder_src_main + '**/*.html' ], { base: folder_src_main })
-    .pipe(gulp.dest(folder_dist_main))
-    .pipe(browserSync.stream());
-});
-
+/* BOOTSTRAP START */
 gulp.task('sass-bootstrap', () => {
   return gulp.src([ folder_src_main + 'sass/bootstrap/**/*.scss' ])
       .pipe(sourcemaps.init())
@@ -42,7 +35,10 @@ gulp.task('sass-bootstrap', () => {
       .pipe(gulp.dest(folder_dist_main + 'css'))
       .pipe(browserSync.stream());
 });
+/* BOOTSTRAP END */
 
+
+/* PLUGINS START */
 gulp.task('sass-plugin', () => {
   return gulp.src([ folder_src_main + 'sass/plugin/**/*.scss' ])
       .pipe(sourcemaps.init())
@@ -56,36 +52,6 @@ gulp.task('sass-plugin', () => {
       .pipe(sourcemaps.write('.'))
       .pipe(gulp.dest(folder_dist_main + 'css'))
       .pipe(browserSync.stream());
-});
-
-gulp.task('sass-mainpage', () => {
-  return gulp.src([ folder_src_main + 'sass/mainpage/**/*.scss' ])
-    .pipe(sourcemaps.init())
-      .pipe(plumber())
-      .pipe(sass())
-      .pipe(autoprefixer({
-        browsers: [ 'last 3 versions', '> 0.5%' ]
-      }))
-      .pipe(cssnano())
-      .pipe(concat('mainpage-app.css'))
-    .pipe(sourcemaps.write('.'))
-    .pipe(gulp.dest(folder_dist_main + 'css'))
-    .pipe(browserSync.stream());
-});
-
-gulp.task('sass-tradepage', () => {
-    return gulp.src([ folder_src_main + 'sass/tradepage/**/*.scss' ])
-        .pipe(sourcemaps.init())
-        .pipe(plumber())
-        .pipe(sass())
-        .pipe(autoprefixer({
-            browsers: [ 'last 3 versions', '> 0.5%' ]
-        }))
-        .pipe(cssnano())
-        .pipe(concat('tradepage-app.css'))
-        .pipe(sourcemaps.write('.'))
-        .pipe(gulp.dest(folder_dist_main + 'css'))
-        .pipe(browserSync.stream());
 });
 
 gulp.task('script-plugin', () => {
@@ -104,22 +70,58 @@ gulp.task('script-plugin', () => {
         .pipe(gulp.dest(folder_dist_main + 'js'))
         .pipe(browserSync.stream());
 });
+/* PLUGINS END */
+
+
+/* MAINPAGE START */
+gulp.task('sass-mainpage', () => {
+  return gulp.src([ folder_src_main + 'sass/mainpage/**/*.scss' ])
+    .pipe(sourcemaps.init())
+      .pipe(plumber())
+      .pipe(sass())
+      .pipe(autoprefixer({
+        browsers: [ 'last 3 versions', '> 0.5%' ]
+      }))
+      .pipe(cssnano())
+      .pipe(concat('mainpage-app.css'))
+    .pipe(sourcemaps.write('.'))
+    .pipe(gulp.dest(folder_dist_main + 'css'))
+    .pipe(browserSync.stream());
+});
 
 gulp.task('script-mainpage', () => {
-  return gulp.src([ folder_src_main + 'script/mainpage/**/app.js' ])
-    .pipe(plumber())
-    .pipe(webpack({
-      mode: 'production'
-    }))
-    .pipe(sourcemaps.init())
-      .pipe(babel({
-        presets: [ '@babel/env' ]
-      }))
-      .pipe(concat('mainpage-app.js'))
-      .pipe(uglify('mainpage-app.min.js'))
-    .pipe(sourcemaps.write('.'))
-    .pipe(gulp.dest(folder_dist_main + 'js'))
-    .pipe(browserSync.stream());
+    return gulp.src([ folder_src_main + 'script/mainpage/**/app.js' ])
+        .pipe(plumber())
+        .pipe(webpack({
+            mode: 'production'
+        }))
+        .pipe(sourcemaps.init())
+        .pipe(babel({
+            presets: [ '@babel/env' ]
+        }))
+        .pipe(concat('mainpage-app.js'))
+        .pipe(uglify('mainpage-app.min.js'))
+        .pipe(sourcemaps.write('.'))
+        .pipe(gulp.dest(folder_dist_main + 'js'))
+        .pipe(browserSync.stream());
+});
+/* MAINPAGE END */
+
+
+/* TRADEPAGE START */
+gulp.task('sass-tradepage', () => {
+    return gulp.src([ folder_src_main + 'sass/tradepage/**/*.scss' ])
+        .pipe(sourcemaps.init())
+        .pipe(plumber())
+        .pipe(sass())
+        .pipe(autoprefixer({
+            browsers: [ 'last 3 versions', '> 0.5%' ]
+        }))
+        .pipe(cssnano())
+        .pipe(concat('tradepage-app.css'))
+        .pipe(sourcemaps.write('.'))
+        .pipe(gulp.dest(folder_dist_main + 'css'))
+        .pipe(browserSync.stream());
 });
 
 gulp.task('script-tradepage', () => {
@@ -138,73 +140,85 @@ gulp.task('script-tradepage', () => {
         .pipe(gulp.dest(folder_dist_main + 'js'))
         .pipe(browserSync.stream());
 });
+/* TRADEPAGE END */
+
+
+/* GENERAL START */
+gulp.task('clear', () => del([ folder_dist_main ]));
+
+gulp.task('html', () => {
+    return gulp.src([ folder_src_main + '**/*.html' ], { base: folder_src_main })
+        .pipe(gulp.dest(folder_dist_main))
+        .pipe(browserSync.stream());
+});
 
 gulp.task('vendor', () => {
-  if (node_dependencies.length === 0) {
-    return new Promise((resolve) => {
-      console.log("No dependencies specified");
-      resolve();
-    });
-  }
+    if (node_dependencies.length === 0) {
+        return new Promise((resolve) => {
+            console.log("No dependencies specified");
+            resolve();
+        });
+    }
 
-  return gulp.src(node_dependencies.map(dependency => folder_node_modules + dependency + '/**/*.*'), { base: folder_node_modules })
-    .pipe(gulp.dest(folder_dist_node_modules))
-    .pipe(browserSync.stream());
+    return gulp.src(node_dependencies.map(dependency => folder_node_modules + dependency + '/**/*.*'), { base: folder_node_modules })
+        .pipe(gulp.dest(folder_dist_node_modules))
+        .pipe(browserSync.stream());
 });
 
 gulp.task('serve', () => {
-  return browserSync.init({
-    server: {
-      baseDir: [ './' ],
-      index: "index.html",
-      https: false,
-      port: 3000
-    },
-    //open: "local",
-    callbacks: {
-      /**
-       * This 'ready' callback can be used
-       * to access the Browsersync instance
-       */
-      ready: function(err, bs) {
+    return browserSync.init({
+        server: {
+            baseDir: [ './' ],
+            index: "index.html",
+            https: false,
+            port: 3000
+        },
+        //open: "local",
+        callbacks: {
+            /**
+             * This 'ready' callback can be used
+             * to access the Browsersync instance
+             */
+            ready: function(err, bs) {
 
-        // example of accessing URLS
-        console.log(bs.options.get('urls'));
+                // example of accessing URLS
+                console.log(bs.options.get('urls'));
 
-        // example of adding a middleware at the end
-        // of the stack after Browsersync is running
-        bs.addMiddleware("*", function (req, res) {
-          res.writeHead(302, {
-            location: "404.html"
-          });
-          res.end("Redirecting!");
-        });
-      }
-    }
-  });
+                // example of adding a middleware at the end
+                // of the stack after Browsersync is running
+                bs.addMiddleware("*", function (req, res) {
+                    res.writeHead(302, {
+                        location: "404.html"
+                    });
+                    res.end("Redirecting!");
+                });
+            }
+        }
+    });
 });
 
 gulp.task('watch', () => {
+    const watchVendor = [];
 
-  const watchVendor = [];
+    node_dependencies.forEach(dependency => {
+        watchVendor.push(folder_node_modules + dependency + '/**/*.*');
+    });
 
-  node_dependencies.forEach(dependency => {
-    watchVendor.push(folder_node_modules + dependency + '/**/*.*');
-  });
+    const watch = [
+        folder_src_main + '**/*.html',
+        folder_src_main + 'bootstrap/**/*.scss',
+        folder_src_main + 'sass/**/*.scss',
+        folder_src_main + 'script/**/*.js',
+        folder_assets_main + 'img/**/*.+(png|jpg|jpeg|gif|svg|ico)'
+    ];
 
-  const watch = [
-    folder_src_main + '**/*.html',
-    folder_src_main + 'bootstrap/**/*.scss',
-    folder_src_main + 'sass/**/*.scss',
-    folder_src_main + 'script/**/*.js',
-    folder_assets_main + 'img/**/*.+(png|jpg|jpeg|gif|svg|ico)'
-  ];
-
-  gulp.watch(watch, gulp.series('devel')).on('change', browserSync.reload);
-  gulp.watch(watchVendor, gulp.series('vendor')).on('change', browserSync.reload);
+    gulp.watch(watch, gulp.series('devel')).on('change', browserSync.reload);
+    gulp.watch(watchVendor, gulp.series('vendor')).on('change', browserSync.reload);
 });
+/* GENERAL END */
 
 
+/* GULP START */
 gulp.task('bootstrap', gulp.series('sass-bootstrap'));
 gulp.task('plugin', gulp.series('sass-plugin', 'script-plugin'));
 gulp.task('mainpage', gulp.series('sass-mainpage', 'script-mainpage'));
@@ -217,4 +231,5 @@ gulp.task('build', gulp.series('clear', 'vendor', 'html', 'bootstrap', 'plugin',
 gulp.task('devel', gulp.series('html', 'bootstrap', 'plugin', 'mainpage', 'tradepage', gulp.parallel('watch')));
 
 gulp.task('start', gulp.series('build', gulp.parallel('serve', 'watch')));
-gulp.task('default', gulp.series('devel'));
+gulp.task('default', gulp.series('build', 'devel'));
+/* GULP END */
