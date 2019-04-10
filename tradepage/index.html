@@ -12,17 +12,22 @@
 
 <!-- Header Start -->
 <header class="header">
+
+    <!-- Top Header -->
     <div class="container-fluid">
-        <!-- Top Header -->
-        <div class="header-top d-flex justify-content-between">
-            <div class="p-2">
+    <div class="header-top">
+        <div class="row align-items-center">
+            <!-- Logo -->
+            <div class="col-3">
                 <a class="header-top-logo" href="#" title="ICRYPEX Crypto Exchange" rel="bookmark">
                     <i class="header-top-logo-symbol icon-svg icon-svg-icrypexsymbol"></i>
                     <h1 class="header-top-logo-icrypex">ICRYPEX</h1>
                     <h2 class="header-top-logo-cryptoexchange">CRYPTO EXCHANGE</h2>
                 </a>
             </div>
-            <div class="p-2">
+            <!-- Logo -->
+            <!-- Navigasyon -->
+            <div class="col-6">
                 <div class="header-top-navbar orc-header">
                     <nav class="orc-menu">
                         <ul class="orc-mobil-alt orc-menu-list">
@@ -36,20 +41,107 @@
                     </nav>
                 </div>
             </div>
-            <div class="p-2">
-                <ul class="header-top-singin">
-                    <li class="header-top-singin-item"><a class="header-top-singin-register" href="#" title="YENİ ÜYELİK" rel="bookmark">YENİ ÜYELİK</a></li>
-                    <li class="header-top-singin-item"><a class="header-top-singin-login" href="#" title="ÜYE GİRİŞİ" rel="bookmark">ÜYE GİRİŞİ</a></li>
-                </ul>
+            <!-- Navigasyon -->
+            <!-- User Area -->
+            <div class="col-3">
+                <div class="header-top-userarea d-flex align-items-center justify-content-end">
+                    <ul class="header-top-iconset d-flex align-items-center">
+                        <li class="header-top-iconset-search header-top-iconset-item">
+                            <i class="icon-svg icon-svg-headersearch"></i>
+                        </li>
+                        <li class="header-top-iconset-chat header-top-iconset-item">
+                            <i class="icon-svg icon-svg-headerchat"></i>
+                        </li>
+                        <li class="header-top-iconset-theme header-top-iconset-item">
+                            <i class="icon-svg icon-svg-headertheme"></i>
+                        </li>
+                        <li class="header-top-iconset-bell header-top-iconset-item">
+                            <i class="icon-svg icon-svg-headerbell"></i>
+                        </li>
+                    </ul>
+                    <div class="header-top-user btn-group d-flex align-items-center">
+                        <a class="header-top-user-title d-flex align-items-center" href="#" title="" rel="bookmark">
+                            <img class="header-top-user-image" src="../assets/img/tradepage/header/Profile_Pic.png" width="30" height="30" alt="UserPic" />
+                            <span class="header-top-user-name">İSİM İSİM SOYİSİM</span>
+                        </a>
+                        <button class="header-top-user-dropdown dropdown-toggle dropdown-toggle-split" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Separated link</a>
+                        </div>
+                    </div>
+                </div>
             </div>
+            <!-- User Area -->
         </div>
-        <!-- Top Header -->
-        <!-- Bottom Header -->
-        <div class="header-bottom d-flex justify-content-between">
-            <div class="p-2">AAAA</div>
-        </div>
-        <!-- Bottom Header -->
     </div>
+    </div>
+    <!-- Top Header -->
+    <!-- Bottom Header -->
+    <div class="container">
+    <div class="header-bottom">
+    <div class="header-bottom-bigprice row align-items-center">
+        <!-- Select -->
+        <div class="header-bottom-bigprice-select col-2">
+            <form class="d-flex">
+                <select class="col">
+                    <option value="0">BTC</option>
+                    <option value="1">ETH</option>
+                    <option value="2">LTC</option>
+                    <option value="3">XRP</option>
+                </select>
+                <select class="col">
+                    <option value="0">USD</option>
+                    <option value="1">EUR</option>
+                    <option value="2">TRY</option>
+                </select>
+            </form>
+        </div>
+        <!-- Select -->
+        <!-- Big Price -->
+        <div class="col-10">
+            <ul class="header-bottom-bigprice-list d-flex">
+                <li class="header-bottom-bigprice-list-item col">
+                    <h4 class="header-bottom-bigprice-title">GÜNCEL</h4>
+                    <span class="header-bottom-bigprice-volume">21.750,00 TRY</span>
+                </li>
+                <li class="header-bottom-bigprice-list-item col">
+                    <h4 class="header-bottom-bigprice-title">24S DEĞİŞİM</h4>
+                    <span class="header-bottom-bigprice-volume">32,00 TRY <span class="colorgreen">0.15<sup>%</sup></span></span>
+                </li>
+                <li class="header-bottom-bigprice-list-item col">
+                    <h4 class="header-bottom-bigprice-title">24S EN YÜKSEK</h4>
+                    <span class="header-bottom-bigprice-volume">22.499,00 TRY</span>
+                </li>
+                <li class="header-bottom-bigprice-list-item col">
+                    <h4 class="header-bottom-bigprice-title">24S EN DÜŞÜK</h4>
+                    <span class="header-bottom-bigprice-volume">22.499,00 TRY</span>
+                </li>
+                <li class="header-bottom-bigprice-list-item col">
+                    <h4 class="header-bottom-bigprice-title">24S ORTALAMA</h4>
+                    <span class="header-bottom-bigprice-volume">21.720,25 TRY</span>
+                </li>
+
+                <li class="header-bottom-bigprice-list-item col">
+                    <h4 class="header-bottom-bigprice-title">24S HACİM</h4>
+                    <span class="header-bottom-bigprice-volume">296.261349 BTC</span>
+                </li>
+                <li class="header-bottom-bigprice-list-item col">
+                    <h4 class="header-bottom-bigprice-title">7G DEĞİŞİM</h4>
+                    <span class="header-bottom-bigprice-volume">3,405,775 <span class="colorgreen">0.15<sup>%</sup></span></span>
+                </li>
+            </ul>
+        </div>
+        <!-- Big Price -->
+    </div>
+    </div>
+    </div>
+    <!-- Bottom Header -->
+
+
 </header>
 <!-- Header End -->
 

@@ -5,21 +5,12 @@ $tradepageSvgIconImgPath : "../../img/tradepage/svg";
   color: $tradepage-color-white;
   @include gradient(#001934, #003661);
 
-  .p-2{
-    padding: 0 !important;
-  }
-
   &-top{
-    padding: 10px 0;
+    padding: 5px 0;
     border-bottom: 1px solid transparentize($tradepage-color-light-stale-gray, 0.7);
 
-    ul{text-align: center; margin: 0;}
-    li{
-      display: inline-block;
-      color: $tradepage-color-white;
-      font-size: $tradepage-font-size;
-    }
-    a{color: $tradepage-color-white;}
+    > ul{text-align: center; margin: 0;}
+
 
     &-logo{
       color: $tradepage-color-white;
@@ -52,35 +43,180 @@ $tradepageSvgIconImgPath : "../../img/tradepage/svg";
       }
     }
 
-    &-singin{
+    &-userarea{}
+
+    &-iconset{
+      text-align: center; margin: 0;
       &-item{
         position: relative;
-        padding: 0 10px;
+        padding: 0 12px;
+        color: $tradepage-color-white;
+        font-size: $tradepage-font-size;
+
+        a{color: $tradepage-color-white;}
+
         &:before{
           content: "";
           position: absolute;
           width: 1px;
           height: 10px;
           top: calc(50% - 5px);
-          right: -3px;
+          right: 0;
           background-color: transparentize($tradepage-color-light-stale-gray, 0.7);
           @include border-radius(50%)
         }
         &:first-child{
           padding-left: 0;
         }
-        &:last-child{
-          padding-right: 0;
-          &:before{display: none;}
+      }
+
+      &-search{
+        i{width: 17px; height: 17px;}
+      }
+
+      &-chat{
+        i{width: 18px; height: 18px;}
+      }
+
+      &-theme{
+        i{width: 18px; height: 18px;}
+      }
+
+      &-bell{
+        i{width: 18px; height: 18px;}
+      }
+    }
+
+    &-user{
+      padding-left: 15px;
+      > a{color: $tradepage-color-white;}
+      &.btn-group{}
+      &-title,
+      &-dropdown{}
+      &-image{
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+        @include border-radius(15px);
+      }
+      &-name{
+        margin-right: 10px;
+        font-size: 17px;
+        font-weight: normal;
+      }
+      &-dropdown{
+        color: $tradepage-color-white;
+        background-color: transparent;
+        padding: 0;
+        width: 24px;
+        height: 24px;
+        border:1px solid transparentize($tradepage-color-light-stale-gray, 0.7);
+        position: relative;
+
+        &:after{
+          background-image: url(#{$tradepageSvgIconImgPath}/Arrow_Down.svg);
+          background-repeat: no-repeat;
+          background-position: center center;
+          background-size: contain;
+          position: absolute;
+          width: 10px;
+          height: 6px;
+          border: none;
+          top: calc(50% - 3px);
+          left: calc(50% - 5px);
         }
       }
-      &-register{}
-      &-login{}
+
     }
+
   }
 
   &-bottom{
-    padding: 5px 0;
+    padding: 15px 0;
+
+
+    &-bigprice{
+      color: $tradepage-color-white;
+
+      &-select{
+        padding-right: 0;
+
+        select[class*="col"]{
+          margin-right: 4px;
+          &:last-child{
+            margin-right: 0;
+          }
+        }
+
+        select{
+          color: $tradepage-color-white;
+          background-color: transparent;
+          border: 1px solid transparentize($tradepage-color-light-stale-gray, 0.7);;
+          font-size: 20px;
+          text-align: left;
+          padding: 6px 10px;
+          option{
+            background-color: $tradepage-color-dark-blue;
+          }
+        }
+      }
+
+      &-list{
+        margin-bottom: 0;
+
+        > li[class*="col"]{
+          padding: 0;
+        }
+
+        &-item{
+          color: $tradepage-color-white;
+          text-align: left;
+          font-size: 20px;
+          font-weight: 300;
+          line-height: 0.95;
+          letter-spacing: -0.3px;
+          position: relative;
+
+          &:before{
+            content: "";
+            position: absolute;
+            width: 1px;
+            height: 34px;
+            top: calc(50% - 16px);
+            right: 15%;
+            background-color: transparentize($tradepage-color-light-stale-gray, 0.7);
+          }
+
+          &:last-child{
+            &:before{display: none;}
+          }
+        }
+      }
+
+      &-title{
+        color: $tradepage-color-light-stale-gray;
+        font-size: 17px;
+        font-weight: 300;
+        letter-spacing: -0.2px;
+        margin: 0;
+      }
+
+      &-volume{
+        display: block;
+
+        .colorgreen{color: $tradepage-color-green;}
+
+        sup{
+          font-size: 12px;
+          font-weight: 900;
+          letter-spacing: normal;
+          text-align: center;
+          position: relative;
+          top: -6px;
+        }
+      }
+    }
+
   }
 
 }

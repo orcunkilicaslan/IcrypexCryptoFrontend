@@ -4,10 +4,6 @@ $mainpageSvgIconImgPath : "../../img/mainpage/svg";
 .header{
   margin-bottom: 26px;
 
-  .p-2{
-    padding: 0 !important;
-  }
-
   &-top{
     padding: 10px 0;
     border-bottom: 1px solid transparentize($mainpage-color-light-stale-gray, 0.7);
