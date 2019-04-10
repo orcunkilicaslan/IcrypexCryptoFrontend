@@ -31,7 +31,6 @@ Komut Satırına Aşağıdaki Kodu Yazın
 
     gulp tradedevel
 
-
 Tüm Projede Çalışacaksanız İse Komut Satırına Aşağıdaki Kodu Yazın
 
     gulp devel
