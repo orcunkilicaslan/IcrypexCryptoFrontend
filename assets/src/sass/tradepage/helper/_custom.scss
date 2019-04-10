@@ -5,7 +5,7 @@ $tradepageImgPath : "../../img/tradepage";
 
 body{
   font-size: $tradepage-font-size;
-  background-color: #011326;
+  background-color: $tradepage-color-white;
 }
 body, input, textarea, select, button {
   font-family: $tradepage-font-family-barlow;

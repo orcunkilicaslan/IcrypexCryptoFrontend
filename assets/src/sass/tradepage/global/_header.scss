@@ -1,2 +1,86 @@
-$headerImgPath : "../../img/tradepage";
-$svgIconImgPath : "../../img/tradepage/svg";
+$tradepageHeaderImgPath : "../../img/tradepage";
+$tradepageSvgIconImgPath : "../../img/tradepage/svg";
+
+.header{
+  color: $tradepage-color-white;
+  @include gradient(#001934, #003661);
+
+  .p-2{
+    padding: 0 !important;
+  }
+
+  &-top{
+    padding: 10px 0;
+    border-bottom: 1px solid transparentize($tradepage-color-light-stale-gray, 0.7);
+
+    ul{text-align: center; margin: 0;}
+    li{
+      display: inline-block;
+      color: $tradepage-color-white;
+      font-size: $tradepage-font-size;
+    }
+    a{color: $tradepage-color-white;}
+
+    &-logo{
+      color: $tradepage-color-white;
+      font-family: $tradepage-font-family-barlow;
+      width: 140px;
+      line-height: 0.9;
+      margin-top: 5px;
+      &:hover{color: $tradepage-color-white;}
+      &-symbol{
+        float: left;
+        width: 38px;
+        height: 38px;
+        margin: 1px 0;
+        margin-right: 8px;
+      }
+      &-icrypex{
+        display: block;
+        font-size: 30px;
+        font-weight: 300;
+        letter-spacing: 0.5px;
+        margin: 0;
+        line-height: 0.9;
+      }
+      &-cryptoexchange{
+        display: block;
+        font-size: 13px;
+        font-weight: 500;
+        margin: 0;
+        line-height: 1;
+      }
+    }
+
+    &-singin{
+      &-item{
+        position: relative;
+        padding: 0 10px;
+        &:before{
+          content: "";
+          position: absolute;
+          width: 1px;
+          height: 10px;
+          top: calc(50% - 5px);
+          right: -3px;
+          background-color: transparentize($tradepage-color-light-stale-gray, 0.7);
+          @include border-radius(50%)
+        }
+        &:first-child{
+          padding-left: 0;
+        }
+        &:last-child{
+          padding-right: 0;
+          &:before{display: none;}
+        }
+      }
+      &-register{}
+      &-login{}
+    }
+  }
+
+  &-bottom{
+    padding: 5px 0;
+  }
+
+}
