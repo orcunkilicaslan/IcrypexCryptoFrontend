@@ -1,0 +1,73 @@
+.bigchart{
+
+  &-marketdata{
+
+    .boxtitle{
+      margin-bottom: 5px;
+    }
+
+    &-table{
+
+      thead{}
+      tbody{}
+
+      td, th{
+        border-top: 0;
+        border-bottom:1px solid transparentize($tradepage-color-light-stale-gray, 0.7);
+        vertical-align: middle;
+        font-size: 15px;
+        font-weight: normal;
+        padding: 1px 5px;
+        line-height: 1.4;
+
+        &.colorgreen{color: $tradepage-color-green;}
+        &.colorred{color: $tradepage-color-red;}
+
+        &:first-child{padding-left: 5px;}
+        &:last-child{padding-right: 0;}
+      }
+
+      thead th{
+        color: $tradepage-color-white;
+        background-color: $tradepage-color-light-stale-gray;
+        border: none;
+      }
+      tbody td{
+        font-weight: 500;
+        position: relative;
+
+        i.arrow{
+          display: block;
+          width: 0;
+          height: 0;
+          position: absolute;
+          left: 5px;
+          top: calc(50% - 2px);
+          &up{
+            border-left: 4px solid transparent;
+            border-right: 4px solid transparent;
+            border-bottom: 4px solid $tradepage-color-green;
+          }
+          &down{
+            border-left: 4px solid transparent;
+            border-right: 4px solid transparent;
+            border-top: 4px solid $tradepage-color-red;
+          }
+        }
+        &:first-child{padding-left: 18px;}
+      }
+
+      &-symbol{
+        color: $tradepage-color-dark-blue;
+        font-weight: normal !important;
+      }
+      &-bid{}
+      &-ask{}
+
+    }
+
+  }
+
+  &-chart{}
+
+}

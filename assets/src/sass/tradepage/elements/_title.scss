@@ -1,0 +1,156 @@
+.columntitle{
+  width: 100%;
+  font-weight: normal;
+  letter-spacing: -0.2px;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 12px;
+
+  &.bottomborder{
+    position: relative;
+
+    &:before{
+      content: "";
+      background-color: $tradepage-color-light-stale-gray;
+      width: 300px;
+      height: 1px;
+      position: absolute;
+      bottom: 0;
+      left: calc(50% - 150px);
+      opacity: 0.3;
+    }
+    &:after{
+      content: "";
+      background-color: $tradepage-color-blue;
+      height: 4px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+
+    &.titleleft{
+      text-align: left;
+      &:before{
+        left: 0;
+      }
+      &:after{
+        left: 0;
+      }
+
+    }
+    &.titlecenter{
+      text-align: center;
+    }
+  }
+
+  &-xs{
+    font-size: 17px;
+    &.bottomborder{
+      &:before{
+        width: 150px;
+      }
+      &:after{
+        width: 40px;
+      }
+    }
+    &.titlecenter{
+      &:after{
+        left: calc(50% - 20px);
+      }
+    }
+  }
+
+  &-sm{
+    font-size: 20px;
+    &.bottomborder{
+      &:before{
+        max-width: 250px;
+      }
+      &:after{
+        width: 40px;
+      }
+    }
+    &.titlecenter{
+      &:after{
+        left: calc(50% - 20px);
+      }
+    }
+  }
+
+  &-md{
+    font-size: 23px;
+    &.bottomborder{
+      &:before{
+        width: 300px;
+      }
+      &:after{
+        width: 40px;
+      }
+    }
+    &.titlecenter{
+      &:before{
+        left: calc(50% - 150px);
+      }
+      &:after{
+        left: calc(50% - 20px);
+      }
+    }
+  }
+
+  &-lg{
+    font-size: 25px;
+    &.bottomborder{
+      &:before{
+        width: 300px;
+        left: 0;
+      }
+      &:after{
+        width: 60px;
+      }
+    }
+    &.titlecenter{
+      &:before{
+        left: calc(50% - 150px);
+      }
+      &:after{
+        left: calc(50% - 30px);
+      }
+    }
+  }
+
+  &-xl{
+    font-size: 35px;
+    line-height: 1.17;
+    &.bottomborder{
+      &:before{
+        width: 300px;
+        left: 0;
+      }
+      &:after{
+        width: 60px;
+      }
+    }
+    &.titlecenter{
+      &:before{
+        left: calc(50% - 150px);
+      }
+      &:after{
+        left: calc(50% - 30px);
+      }
+    }
+
+  }
+
+}
+
+.boxtitle{
+  color: $tradepage-color-dark-blue;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+
+  &-xs{font-size: 17px;}
+  &-sm{font-size: 20px;}
+  &-lg{}
+  &-xl{}
+}

@@ -1,0 +1,97 @@
+.login{
+  padding: 40px 0;
+
+  .columntitle{
+    &:before{
+      width: 100%;
+      left: 0;
+    }
+    &:after{
+      width: 74px;
+      left: calc(50% - 37px);
+    }
+  }
+
+  &-bigicon{
+    width: 90px;
+    height: 90px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    border: 2px solid $tradepage-color-blue;
+    position: relative;
+    @include border-radius(50%);
+    i{
+      width: 50px;
+      height: 50px;
+      position: absolute;
+      left: calc(50% - 25px);
+      top: calc(50% - 25px);
+    }
+    i[class*="loginlock"]{
+      top: calc(50% - 28px);
+    }
+  }
+
+  &-column{
+    margin-top: 30px;
+  }
+
+  &-form{
+
+    &-tags{
+      width: 300px;
+      margin: 0 auto;
+    }
+
+    &-input{}
+
+    &-info{
+      color: $tradepage-color-blue;
+      font-size: 17px;
+      margin-top: 5px;
+
+      a{color: $tradepage-color-blue;}
+
+      &-icon{
+        width: 18px;
+        height: 18px;
+        display: inline-block;
+        font-size: 12px;
+        font-weight: 500;
+        font-style: normal;
+        line-height: 1.4;
+        text-align: center;
+        border: 1px solid transparentize($tradepage-color-light-stale-gray, 0.70);
+        @include border-radius(50%);
+      }
+    }
+
+    &-btn{
+      margin-top: 40px;
+      position: relative;
+
+      .btn{
+        width: 300px;
+        margin: 0 auto;
+        display: block;
+        border:none;
+        background-color: $tradepage-color-green;
+        font-size: 20px;
+        font-weight: normal;
+        position: relative;
+        z-index: 1;
+      }
+
+      &:before{
+        content: "";
+        background-color: $tradepage-color-green;
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        top: 50%;
+      }
+    }
+
+  }
+
+}

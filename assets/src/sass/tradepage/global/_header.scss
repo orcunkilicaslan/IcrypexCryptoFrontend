@@ -6,7 +6,8 @@ $tradepageSvgIconImgPath : "../../img/tradepage/svg";
   @include gradient(#001934, #003661);
 
   &-top{
-    padding: 5px 0;
+    min-height: 53px;
+    padding: 2px 0;
     border-bottom: 1px solid transparentize($tradepage-color-light-stale-gray, 0.7);
 
     > ul{text-align: center; margin: 0;}
@@ -44,6 +45,36 @@ $tradepageSvgIconImgPath : "../../img/tradepage/svg";
     }
 
     &-userarea{}
+
+    &-login{
+      text-align: center; margin: 0;
+      &-item{
+        position: relative;
+        padding: 0 12px;
+        color: $tradepage-color-white;
+        font-size: $tradepage-font-size;
+
+        a{color: $tradepage-color-white;}
+
+        &:before{
+          content: "";
+          position: absolute;
+          width: 1px;
+          height: 10px;
+          top: calc(50% - 5px);
+          left: 0;
+          background-color: transparentize($tradepage-color-light-stale-gray, 0.7);
+          @include border-radius(50%)
+        }
+        &:first-child{
+          padding-left: 0;
+          &:before{display: none;}
+        }
+        &:last-child{
+          padding-right: 0;
+        }
+      }
+    }
 
     &-iconset{
       text-align: center; margin: 0;
@@ -84,6 +115,17 @@ $tradepageSvgIconImgPath : "../../img/tradepage/svg";
 
       &-bell{
         i{width: 18px; height: 18px;}
+      }
+
+      &-badge{
+        width: 10px;
+        height: 10px;
+        display: block;
+        background-color: #ff2e00;
+        position: absolute;
+        top: 0;
+        right: 10px;
+        @include border-radius(50%);
       }
     }
 
@@ -126,38 +168,47 @@ $tradepageSvgIconImgPath : "../../img/tradepage/svg";
           left: calc(50% - 5px);
         }
       }
-
     }
-
   }
 
   &-bottom{
-    padding: 15px 0;
+    padding: 18px 0;
+    min-height: 76px;
 
+    .columntitle{
+      &:before{
+        width: 100%;
+      }
+      &:after{
+        width: 60px;
+      }
+    }
 
     &-bigprice{
       color: $tradepage-color-white;
 
-      &-select{
+      &-left{
+        padding-left: 0;
         padding-right: 0;
+      }
 
-        select[class*="col"]{
-          margin-right: 4px;
-          &:last-child{
-            margin-right: 0;
-          }
+      &-right{
+        padding-right: 0;
+      }
+
+      &-select{
+        color: $tradepage-color-white;
+        background-color: transparent;
+        border: 1px solid transparentize($tradepage-color-light-stale-gray, 0.7);;
+        font-size: 20px;
+        text-align: left;
+        padding: 6px 10px;
+        margin-right: 4px;
+        option{
+          background-color: $tradepage-color-dark-blue;
         }
-
-        select{
-          color: $tradepage-color-white;
-          background-color: transparent;
-          border: 1px solid transparentize($tradepage-color-light-stale-gray, 0.7);;
-          font-size: 20px;
-          text-align: left;
-          padding: 6px 10px;
-          option{
-            background-color: $tradepage-color-dark-blue;
-          }
+        &:last-child{
+          margin-right: 0;
         }
       }
 
@@ -165,7 +216,10 @@ $tradepageSvgIconImgPath : "../../img/tradepage/svg";
         margin-bottom: 0;
 
         > li[class*="col"]{
-          padding: 0;
+          padding-right: 10px;
+          padding-left: 15px;
+          &:first-child{padding-left: 0}
+          &:last-child{padding-right: 0}
         }
 
         &-item{
@@ -183,7 +237,7 @@ $tradepageSvgIconImgPath : "../../img/tradepage/svg";
             width: 1px;
             height: 34px;
             top: calc(50% - 16px);
-            right: 15%;
+            right: 10px;
             background-color: transparentize($tradepage-color-light-stale-gray, 0.7);
           }
 
