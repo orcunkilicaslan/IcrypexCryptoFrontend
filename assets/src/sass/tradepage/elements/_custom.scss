@@ -1,3 +1,22 @@
+.onepage{
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  main,
+  section{flex: 1;}
+}
+
 .container-1890{
   max-width: 1890px;
+}
+
+.maincont{
+  &-left{
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  &-right{
+    padding-right: 0;
+  }
 }

@@ -3,7 +3,7 @@ $tradepageSvgIconImgPath : "../../img/tradepage/svg";
 
 .header{
   color: $tradepage-color-white;
-  @include gradient(#001934, #003661);
+  @include gradient($tradepage-gradient-darkblue01, $tradepage-gradient-darkblue02);
 
   &-top{
     min-height: 53px;
@@ -186,15 +186,6 @@ $tradepageSvgIconImgPath : "../../img/tradepage/svg";
 
     &-bigprice{
       color: $tradepage-color-white;
-
-      &-left{
-        padding-left: 0;
-        padding-right: 0;
-      }
-
-      &-right{
-        padding-right: 0;
-      }
 
       &-select{
         color: $tradepage-color-white;

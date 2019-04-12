@@ -1,2 +1,175 @@
 $tradepageFooterImgPath : "../../img/tradepage/footer";
 $tradepageSvgIconImgPath : "../../img/tradepage/svg";
+
+.footer{
+  color: $tradepage-color-white;
+  padding-top: 50px;
+  @include gradient($tradepage-gradient-darkblue01, $tradepage-gradient-darkblue02);
+  min-height: 120px;
+
+  &-logo{
+    color: $tradepage-color-white;
+    font-family: $tradepage-font-family-barlow;
+    width: 140px;
+    margin-bottom: 17px;
+    line-height: 0.9;
+    &:hover{color: $tradepage-color-white;}
+    &-symbol{
+      float: left;
+      width: 38px;
+      height: 38px;
+      margin: 1px 0;
+      margin-right: 8px;
+    }
+    &-icrypex{
+      display: block;
+      font-size: 30px;
+      font-weight: 300;
+      letter-spacing: 0.5px;
+      margin: 0;
+      line-height: 0.9;
+    }
+    &-cryptoexchange{
+      display: block;
+      font-size: 13px;
+      font-weight: 500;
+      margin: 0;
+      line-height: 1;
+    }
+  }
+
+  &-address{
+    line-height: 1.13;
+    font-size: 14px;
+    position: relative;
+
+    &-desc{
+      color: $tradepage-color-light-stale-gray;
+      margin: 0;
+      margin-top: 25px;
+    }
+
+    &:before{
+      content: "";
+      position: absolute;
+      background-color: transparentize($tradepage-color-light-stale-gray, 0.7);
+      right: 0;
+      top: 0;
+      width: 1px;
+      height: 100%;
+    }
+
+  }
+
+  &-nav{
+    padding-left: 10px;
+  }
+
+  &-menu{
+    max-width: 230px;
+
+    &-title{
+      margin-bottom: 12px;
+
+      &:after{
+        height: 2px !important;
+      }
+
+      a{
+        color: $tradepage-color-white;
+      }
+    }
+    &-list{
+      margin: 0;
+      &-item{
+        opacity: 0.9;
+        font-size: 17px;
+        line-height: 1.18;
+        a{
+          color: transparentize($tradepage-color-light-stale-gray, 0.1);
+        }
+      }
+    }
+  }
+
+  &-social{
+    &-list{
+      margin: 0;
+      text-align: left;
+
+      &-item{
+        display: inline-block;
+        margin: 0 1px;
+
+        &:first-child{
+          margin-left: 0;
+        }
+        &:last-child{
+          margin-right: 0;
+        }
+        a{
+          background-color: transparentize($tradepage-color-btn-blue, 0.6);
+          width: 30px;
+          height: 30px;
+          text-align: center;
+          @include border-radius(30px);
+        }
+      }
+    }
+    &-icon{
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: contain;
+      overflow: hidden;
+      width: 14px;
+      height: 14px;
+      display: block;
+      margin: 8px auto;
+
+      &.facebook{background-image: url(#{$tradepageFooterImgPath}/Facebook_Logo.svg);}
+      &.twitter{background-image: url(#{$tradepageFooterImgPath}/Twitter_Logo.svg);}
+      &.instagram{background-image: url(#{$tradepageFooterImgPath}/Instagram_Logo.svg);}
+      &.linkedin{background-image: url(#{$tradepageFooterImgPath}/Linkedin_Logo.svg);}
+    }
+  }
+
+  &-bottom{
+    background-color: transparentize($tradepage-gradient-darkblue01, 0.50);
+    padding: 10px 15px;
+    margin-top: 50px;
+
+    &-list{
+      margin: 0;
+      text-align: center;
+      &-item{
+        position: relative;
+        padding: 0 12px;
+        display: inline-block;
+        &:before{
+          content: "";
+          position: absolute;
+          width: 1px;
+          height: 14px;
+          top: calc(50% - 4px);
+          right: -3px;
+          background-color: transparentize($tradepage-color-light-stale-gray, 0.7);
+        }
+        &:first-child{
+          padding-left: 0;
+        }
+        &:last-child{
+          padding-right: 0;
+          &:before{display: none;}
+        }
+
+        img{position: relative}
+        .akbank{}
+        .ziraat{top: -2px;}
+        .odeabank{top: -2px;}
+        .papara{top: 3px;}
+
+      }
+    }
+  }
+
+}

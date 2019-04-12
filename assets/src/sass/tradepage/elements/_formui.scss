@@ -2,6 +2,7 @@
 .formui{
 
   label{
+    color: $tradepage-color-dark-blue;
     font-weight:500;
   }
   fieldset{
@@ -44,17 +45,22 @@
   .form-control{
     box-shadow:none;
     border-radius:0;
-    border-color:#eeeeee;
+    border-color:$tradepage-color-light-bg-gray;
     height:auto;
     padding:10px 15px;
     color:#282828;
-    background:#fdfdfd;
+    background-color:$tradepage-color-light-bg-gray;
 
     &:focus{
       box-shadow:none;
       border-color:#cccccc;
-      background-color:rgba(0,0,0,0.01);
+      background-color:$tradepage-color-light-bg-gray;
     }
+  }
+
+  @include placeholder{
+    color: $tradepage-color-dark-blue;
+    opacity: 0.75;
   }
 
 }

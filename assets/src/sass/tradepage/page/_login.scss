@@ -1,7 +1,10 @@
 .login{
-  padding: 40px 0;
+  padding: 35px 0;
 
   .columntitle{
+    padding-bottom: 8px;
+    letter-spacing: normal;
+
     &:before{
       width: 100%;
       left: 0;
@@ -16,7 +19,7 @@
     width: 90px;
     height: 90px;
     margin: 0 auto;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     border: 2px solid $tradepage-color-blue;
     position: relative;
     @include border-radius(50%);
@@ -43,11 +46,38 @@
       margin: 0 auto;
     }
 
-    &-input{}
+    label{
+      font-size: 16px;
+      margin-bottom: 5px;
+    }
+
+    .form-group{
+      margin-bottom: 15px;
+    }
+
+    &-input{
+      color: $tradepage-color-dark-blue !important;
+      font-size: 20px;
+      font-weight: 500;
+      padding: 4px 10px !important;
+
+      &.email{
+        border-color: transparentize($tradepage-color-green, 0.50);
+        &:focus{
+          border-color: $tradepage-color-green;
+        }
+      }
+      &.password{
+        border-color: transparentize($tradepage-color-red, 0.50);
+        &:focus{
+          border-color: $tradepage-color-red;
+        }
+      }
+    }
 
     &-info{
       color: $tradepage-color-blue;
-      font-size: 17px;
+      font-size: 16px;
       margin-top: 5px;
 
       a{color: $tradepage-color-blue;}
