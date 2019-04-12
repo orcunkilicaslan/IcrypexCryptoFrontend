@@ -2,6 +2,7 @@
   padding: 35px 0;
 
   .columntitle{
+    color: $tradepage-color-dark-blue;
     padding-bottom: 8px;
     letter-spacing: normal;
 
@@ -47,8 +48,14 @@
     }
 
     label{
-      font-size: 16px;
+      font-size: 17px;
+      font-weight: normal;
       margin-bottom: 5px;
+    }
+
+    .error-message{
+      display: block;
+      margin: 5px 0;
     }
 
     .form-group{
@@ -101,6 +108,7 @@
       position: relative;
 
       .btn{
+        color: $tradepage-color-white !important;
         width: 300px;
         margin: 0 auto;
         display: block;

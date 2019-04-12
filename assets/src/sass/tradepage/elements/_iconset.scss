@@ -15,6 +15,9 @@ $tradepageSvgIconImgPath : "../../img/tradepage/svg";
     &-loginlock{
       background-image: url(#{$tradepageSvgIconImgPath}/Icon_Login.svg);
     }
+    &-loginf2a{
+      background-image: url(#{$tradepageSvgIconImgPath}/Icon_2FA.svg);
+    }
 
     &-headersearch{
       background-image: url(#{$tradepageSvgIconImgPath}/Icon_Search.svg);
