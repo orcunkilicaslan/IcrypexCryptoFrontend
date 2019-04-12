@@ -1,3 +1,20 @@
 $tradepageHomepageImgPath : "../../img/tradepage";
 
-.homepage{}
+.homepage{
+
+  &-bigchart{
+    background-color: $tradepage-color-light-bg-gray;
+    padding: 20px 0;
+  }
+
+  &-order{
+
+    &-tabs{}
+
+    &-book{}
+
+    &-open{}
+
+  }
+
+}

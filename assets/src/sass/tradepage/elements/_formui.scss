@@ -1,0 +1,67 @@
+/* Form UI */
+.formui{
+
+  label{
+    color: $tradepage-color-dark-blue;
+    font-weight:500;
+  }
+  fieldset{
+    font-size:16px;
+    margin-bottom:20px;
+    padding:10px 15px;
+    border:1px solid;
+    border-top:0;
+    text-align:center;
+  }
+  .alert{
+    border-radius:0;
+    strong{
+      display:block;
+      margin-bottom:5px;
+    }
+  }
+  .form-group{
+    margin-bottom:20px;
+
+    .btn{
+      width:100%;
+    }
+
+    .dropdown-menu{
+      padding:0;
+      margin:0;
+      margin-top:-1px;
+      @include border-radius(0);
+      @include box-shadow(0,0,0,transparent);
+
+      > li > a{padding:10px 15px;}
+    }
+
+    &:last-child{
+      margin-bottom:0;
+    }
+  }
+
+  .form-control{
+    box-shadow:none;
+    border-radius:0;
+    border-color:$tradepage-color-light-bg-gray;
+    height:auto;
+    padding:10px 15px;
+    color:#282828;
+    background-color:$tradepage-color-light-bg-gray;
+
+    &:focus{
+      box-shadow:none;
+      border-color:#cccccc;
+      background-color:$tradepage-color-light-bg-gray;
+    }
+  }
+
+  @include placeholder{
+    color: $tradepage-color-dark-blue;
+    opacity: 0.75;
+  }
+
+}
+/* Form UI */
