@@ -154,3 +154,26 @@
   &-lg{}
   &-xl{}
 }
+
+.boxcolumn{
+
+  &-headtitle{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid transparentize($tradepage-color-light-stale-gray, 0.7);
+    padding-bottom: 5px;
+
+    &-title,
+    &-wallet{
+      color: $tradepage-color-dark-blue;
+      font-size: 20px;
+      margin: 0;
+      padding: 0;
+      line-height: 1;
+    }
+    &-title{font-weight: 500;}
+    &-wallet{font-weight: normal;}
+  }
+
+  &-chartbox{}
+}
