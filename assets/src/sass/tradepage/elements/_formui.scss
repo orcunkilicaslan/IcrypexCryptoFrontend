@@ -3,10 +3,12 @@
 
   label{
     color: $tradepage-color-dark-blue;
-    font-weight:500;
+    font-size: 17px;
+    font-weight:normal;
+    margin-bottom: 5px;
   }
   fieldset{
-    font-size:16px;
+    font-size:17px;
     margin-bottom:20px;
     padding:10px 15px;
     border:1px solid;
@@ -27,6 +29,48 @@
       width:100%;
     }
 
+    .input-group{
+
+      *{@include transition(border-color, 0.15s, ease-in-out);}
+
+      .form-control{
+        border-right: none;
+        padding-right: 0;
+      }
+
+      &:focus-within{
+        .input-group-append{
+          border-color:transparentize($tradepage-color-light-stale-gray, 0.40);
+          &.graybg{
+            border-color: transparentize($tradepage-color-light-stale-gray, 0.40);
+          }
+        }
+      }
+
+      .input-group-append{
+        border: 1px solid transparentize($tradepage-color-light-stale-gray, 0.70);
+        border-left: none;
+        &.graybg{
+          border-color: $tradepage-color-light-bg-gray;
+        }
+      }
+      .input-group-text{
+        font-size: 20px;
+        padding: 6px 10px 9px;
+        line-height: 1;
+        background-color:$tradepage-color-light-bg-gray;
+        border: none;
+        @include border-radius(0);
+
+        &.whitebg{
+          background-color:$tradepage-color-white;
+        }
+        &.graybg{
+          background-color:$tradepage-color-light-bg-gray;
+        }
+      }
+    }
+
     .dropdown-menu{
       padding:0;
       margin:0;
@@ -43,19 +87,40 @@
   }
 
   .form-control{
-    box-shadow:none;
-    border-radius:0;
-    border-color:$tradepage-color-light-bg-gray;
-    height:auto;
-    padding:10px 15px;
     color:#282828;
-    background-color:$tradepage-color-light-bg-gray;
+    background-color:$tradepage-color-white;
+    border-color:transparentize($tradepage-color-light-stale-gray, 0.70);
+    padding:6px 10px 8px;
+    font-size: 20px;
+    line-height: 1;
+    height:auto;
+    @include box-shadow(0,0,0,transparent);
+    @include border-radius(0);
+
+    &.whitebg{
+      background-color:$tradepage-color-white;
+      &:focus{
+        background-color:$tradepage-color-white;
+      }
+    }
+
+    &.graybg{
+      background-color:$tradepage-color-light-bg-gray;
+      border-color: $tradepage-color-light-bg-gray;
+      &:focus{
+        background-color:$tradepage-color-light-bg-gray;
+      }
+    }
 
     &:focus{
       box-shadow:none;
-      border-color:#cccccc;
-      background-color:$tradepage-color-light-bg-gray;
+      border-color:transparentize($tradepage-color-light-stale-gray, 0.40);
+      background-color:$tradepage-color-white;
     }
+  }
+
+  select.form-control{
+    padding-bottom: 7px;
   }
 
   @include placeholder{

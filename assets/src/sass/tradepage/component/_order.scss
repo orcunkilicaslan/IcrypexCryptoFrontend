@@ -1,5 +1,8 @@
+$tradepageSvgIconImgPath : "../../img/tradepage/svg";
+
 .order{
 
+  /* Balance */
   &-balance{
 
     .boxtitle{
@@ -41,7 +44,9 @@
 
     }
   }
+  /* Balance */
 
+  /* Orders */
   &-orders{
     &-tabnav{
       border-bottom: 5px solid $tradepage-color-blue;
@@ -55,7 +60,7 @@
       }
       &:after{
         background-color: $tradepage-color-white;
-        height: 4px;
+        height: 2px;
         bottom: 0;
       }
 
@@ -71,7 +76,7 @@
           color: $tradepage-color-white;
           border-color: $tradepage-color-white;
           border-style: solid;
-          border-right-width: 4px;
+          border-right-width: 2px;
           border-left-width: 0;
           border-top: none;
           border-bottom-width: 0;
@@ -91,7 +96,7 @@
           &:before{
             content: "";
             position: absolute;
-            width: calc(100% - 4px);
+            width: calc(100% - 2px);
             height: 0;
             left: 0;
             bottom: 0;
@@ -126,6 +131,10 @@
       padding: 16px;
       position: relative;
 
+      div[class*="col-"]{
+        padding: 0;
+      }
+
       &:before{
         content: "";
         position: absolute;
@@ -134,10 +143,6 @@
         background-color: transparentize($tradepage-color-light-stale-gray, 0.7);
         top: 16px;
         left: 50%;
-      }
-
-      div[class*="col-"]{
-        padding: 0;
       }
     }
 
@@ -148,5 +153,283 @@
       padding-left: 16px !important;
     }
 
+    &-form{
+      padding: 0 16px;
+
+      input, select{
+        font-weight: 500;
+      }
+
+      .form-group{
+        margin-bottom: 15px !important;
+        .form-control,
+        .input-group-text{color: $tradepage-color-dark-blue;}
+      }
+
+      .price,
+      .amount{
+        padding-right: 16px !important;
+        flex: 0 0 40%;
+        max-width: 40%;
+      }
+      .price{
+        .input-group *{color: $tradepage-color-light-stale-gray !important;}
+      }
+      .percent{
+        flex: 0 0 20%;
+        max-width: 20%;
+      }
+
+      .button{
+        margin-bottom: 0 !important;
+
+        .btn{
+          font-size: 20px;
+          font-weight: normal;
+          border:none;
+        }
+
+        &-buy{
+          background-color: $tradepage-color-green;
+        }
+        &-sell{
+          background-color: $tradepage-color-red;
+        }
+      }
+
+    }
+
+    &-info{
+      font-size: 17px;
+      text-align: center;
+      margin-bottom: 15px;
+      line-height: 1;
+    }
+
   }
+  /* Orders */
+
+  /* Book */
+  &-book{
+    &-contentbox{
+      color: $tradepage-color-dark-blue;
+      padding: 16px;
+      border: 1px solid transparentize($tradepage-color-light-stale-gray, 0.7);
+
+      .boxcolumn-headtitle{margin-bottom: 0; padding-bottom: 10px;}
+      .colorgreen{color: $tradepage-color-green;}
+      .colorred{color: $tradepage-color-red;}
+
+      > .row{
+        position: relative;
+
+        &:before{
+          content: "";
+          position: absolute;
+          width: 1px;
+          height: calc(100% - 0);
+          background-color: transparentize($tradepage-color-light-stale-gray, 0.7);
+          top: 0;
+          left: 50%;
+        }
+      }
+    }
+
+    &-buy{
+      padding-right: 16px !important;
+    }
+    &-sell{
+      padding-left: 16px !important;
+    }
+
+
+    &-box{
+      min-height: 440px;
+      position: relative;
+
+      &-container,
+      &-rectangle{
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+
+        &.rectangle{
+          opacity: 0.8;
+          img{height: 401px;}
+        }
+      }
+
+      &-chart{
+        padding-top: 35px;
+        &-green{text-align: left;}
+        &-red{text-align: right;}
+      }
+
+      &-table{
+        color: $tradepage-color-dark-blue;
+        margin: 0;
+
+        td, th{
+          border-color: transparentize($tradepage-color-light-stale-gray, 0.7);
+          vertical-align: middle;
+          font-size: 15px;
+          font-weight: normal;
+          line-height: 1;
+          padding: 0 5px;
+          text-align: left;
+        }
+
+        thead th{
+          font-size: 17px;
+          border-top-width: 0;
+          border-bottom-width: 1px;
+          border-color: transparentize($tradepage-color-light-stale-gray, 0.7);
+          padding-top: 3px;
+          padding-bottom: 3px;
+
+          &:first-child{
+            padding-left: 0;
+          }
+          &:last-child{
+            width: 20%;
+          }
+        }
+
+        tbody tr:first-child td{
+          padding-top: 17px;
+        }
+
+        tbody td{
+          border: none;
+          padding-top: 5px;
+          padding-bottom: 5px;
+          line-height: 0.6;
+        }
+
+        &-price{}
+        &-btc{}
+        &-try{}
+        &-sum{}
+
+      }
+
+      .tableicon{
+        display: inline-block;
+        margin-left: 2px;
+        position: relative;
+        bottom: -2px;
+        i{
+          background-color: transparent;
+          background-repeat: no-repeat;
+          background-position: center center;
+          display: block;
+          cursor: pointer;
+          width: 8px;
+          height: 4px;
+          margin: 1px 0;
+          padding: 3px 0;
+        }
+        &-arrowup{
+          background-image: url(#{$tradepageSvgIconImgPath}/Arrow_Up.svg);
+        }
+        &-arrowdown{
+          background-image: url(#{$tradepageSvgIconImgPath}/Arrow_Down.svg);
+        }
+      }
+
+    }
+
+
+  }
+  /* Book */
+
+  /* Open */
+  &-open{
+    &-contentbox{
+      color: $tradepage-color-dark-blue;
+      padding: 16px;
+      border: 1px solid transparentize($tradepage-color-light-stale-gray, 0.7);
+
+      .boxcolumn-headtitle{margin-bottom: 0; padding-bottom: 10px;}
+    }
+
+    &-box{
+
+      &-table{
+        color: $tradepage-color-dark-blue;
+        margin: 0;
+
+        td, th{
+          border-color: transparentize($tradepage-color-light-stale-gray, 0.7);
+          vertical-align: middle;
+          font-size: 15px;
+          font-weight: normal;
+          line-height: 1;
+          padding: 0 5px;
+          text-align: left;
+
+          &:first-child{
+            padding-left: 0;
+          }
+        }
+
+        thead th{
+          font-size: 17px;
+          border-top-width: 0;
+          border-bottom-width: 1px;
+          border-color: transparentize($tradepage-color-light-stale-gray, 0.7);
+          padding-top: 3px;
+          padding-bottom: 3px;
+        }
+
+        tbody tr:first-child td{
+          padding-top: 15px;
+        }
+
+        tbody td{
+          border: none;
+          padding-top: 5px;
+          padding-bottom: 5px;
+          line-height: 1;
+        }
+
+        .colorgreen{color: $tradepage-color-green;}
+        .colorred{color: $tradepage-color-red;}
+
+        &-price{}
+        &-btc{}
+        &-try{}
+        &-sum{}
+
+        .tableicon{
+          display: inline-block;
+          margin-left: 2px;
+          position: relative;
+          bottom: -2px;
+          i{
+            background-color: transparent;
+            background-repeat: no-repeat;
+            background-position: center center;
+            display: block;
+            cursor: pointer;
+            width: 8px;
+            height: 4px;
+            margin: 1px 0;
+            padding: 3px 0;
+          }
+          &-arrowup{
+            background-image: url(#{$tradepageSvgIconImgPath}/Arrow_Up.svg);
+          }
+          &-arrowdown{
+            background-image: url(#{$tradepageSvgIconImgPath}/Arrow_Down.svg);
+          }
+        }
+
+      }
+    }
+
+  }
+  /* Open */
+
 }

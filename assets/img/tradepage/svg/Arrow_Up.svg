@@ -9,5 +9,5 @@
       }
     </style>
   </defs>
-  <path id="Arrow_Down" class="cls-1" d="M8.35.35l-4,4-4-4" transform="translate(0.18 0.18)"/>
+  <path id="Arrow_Up" class="cls-1" d="M8.35.35l-4,4-4-4" transform="translate(8.881 5.416) rotate(180)"/>
 </svg>

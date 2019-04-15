@@ -11,14 +11,12 @@ $tradepageSvgIconImgPath : "../../img/tradepage/svg";
     &-icrypexsymbol{
       background-image: url(#{$tradepageSvgIconImgPath}/Icrypex_Symbol.svg);
     }
-
     &-loginlock{
       background-image: url(#{$tradepageSvgIconImgPath}/Icon_Login.svg);
     }
     &-loginf2a{
       background-image: url(#{$tradepageSvgIconImgPath}/Icon_2FA.svg);
     }
-
     &-headersearch{
       background-image: url(#{$tradepageSvgIconImgPath}/Icon_Search.svg);
     }
@@ -36,6 +34,15 @@ $tradepageSvgIconImgPath : "../../img/tradepage/svg";
     }
     &-arrowdown{
       background-image: url(#{$tradepageSvgIconImgPath}/Arrow_Down.svg);
+    }
+    &-arrowup{
+      background-image: url(#{$tradepageSvgIconImgPath}/Arrow_Up.svg);
+    }
+    &-orderwallet{
+      background-image: url(#{$tradepageSvgIconImgPath}/Icon_Wallet.svg);
+    }
+    &-orderinformation{
+      background-image: url(#{$tradepageSvgIconImgPath}/Icon_Information.svg);
     }
   }
 }
