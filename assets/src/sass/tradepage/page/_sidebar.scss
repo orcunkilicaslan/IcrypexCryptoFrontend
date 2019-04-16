@@ -2,6 +2,14 @@ $tradepageSvgIconImgPath : "../../img/tradepage/svg";
 
 .sidebar{
 
+  > div[class*="sidebar-"]{
+    margin-top: 15px;
+
+    &:first-child{
+      margin-top: 0;
+    }
+  }
+
   /* Market Data */
   &-marketdata{
 
@@ -10,6 +18,7 @@ $tradepageSvgIconImgPath : "../../img/tradepage/svg";
     }
 
     &-table{
+      margin-bottom: 0;
 
       thead{}
       tbody{}
@@ -80,6 +89,7 @@ $tradepageSvgIconImgPath : "../../img/tradepage/svg";
     }
 
     &-table{
+      margin-bottom: 0;
 
       td, th{
         border-top: 0;

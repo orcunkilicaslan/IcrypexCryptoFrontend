@@ -32,6 +32,9 @@ $tradepageSvgIconImgPath : "../../img/tradepage/svg";
     &-headerbell{
       background-image: url(#{$tradepageSvgIconImgPath}/Icon_Bell.svg);
     }
+    &-paginationarrow{
+      background-image: url(#{$tradepageSvgIconImgPath}/Icon_Arrow.svg);
+    }
     &-arrowdown{
       background-image: url(#{$tradepageSvgIconImgPath}/Arrow_Down.svg);
     }
@@ -43,6 +46,15 @@ $tradepageSvgIconImgPath : "../../img/tradepage/svg";
     }
     &-orderinformation{
       background-image: url(#{$tradepageSvgIconImgPath}/Icon_Information.svg);
+    }
+    &-titleiconbtc{
+      background-image: url(#{$tradepageSvgIconImgPath}/Icon_Title_Btc.svg);
+    }
+    &-titleiconeth{
+      background-image: url(#{$tradepageSvgIconImgPath}/Icon_Title_Eth.svg);
+    }
+    &-titleiconxrp{
+      background-image: url(#{$tradepageSvgIconImgPath}/Icon_Title_Xrp.svg);
     }
   }
 }
