@@ -1,0 +1,54 @@
+.pagenavigation{
+  background-color: $tradepage-color-light-bg-gray;
+  margin-top: 15px;
+
+  .pagination{
+    padding: 5px 0;
+
+    .page{
+
+      &-item{
+        margin: 0 3px;
+      }
+
+      &-link{
+        color: $tradepage-color-light-stale-gray;
+        background-color: transparent;
+        font-size: 17px;
+        line-height: 1;
+        min-width: 32px;
+        height: 100%;
+        padding: 6px 10px;
+        text-align: center;
+        border-color: transparentize($tradepage-color-light-stale-gray, 0.70);
+        @include border-radius(0);
+        @include transition(all, 0.1s, linear);
+
+        &.prev,
+        &.next{
+          background-color: transparentize($tradepage-color-light-stale-gray, 0.70) !important;
+          border-color: transparent;
+        }
+
+        i[class*="icon-svg"]{
+          width: 12px;
+          height: 12px;
+          margin: 4px 0;
+        }
+        i.prev{@include rotate(180);}
+        i.next{@include rotate(0);}
+
+        &.active,
+        &:hover{
+          color: $tradepage-color-white;
+          background-color: $tradepage-color-light-stale-gray;
+          border-color: $tradepage-color-light-stale-gray;
+        }
+
+      }
+
+    }
+
+  }
+
+}
