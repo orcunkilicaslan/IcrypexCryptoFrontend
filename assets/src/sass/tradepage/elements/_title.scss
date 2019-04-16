@@ -1,3 +1,5 @@
+
+/* Title Border Bottom */
 .columntitle{
   width: 100%;
   font-weight: normal;
@@ -142,7 +144,9 @@
   }
 
 }
+/* Title Border Bottom */
 
+/* Title Box */
 .boxtitle{
   color: $tradepage-color-dark-blue;
   font-weight: 500;
@@ -154,10 +158,12 @@
   &-lg{}
   &-xl{}
 }
+/* Title Box */
 
+/* Title Column */
 .boxcolumn{
 
-  &-headtitle{
+  &-boxtitle{
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid transparentize($tradepage-color-light-stale-gray, 0.7);
@@ -183,5 +189,5 @@
     &-wallet{font-weight: normal;}
   }
 
-  &-chartbox{}
 }
+/* Title Column */

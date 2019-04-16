@@ -2,8 +2,14 @@ $tradepageSvgIconImgPath : "../../img/tradepage/svg";
 
 .easybuysell{
 
-  &-wrapper{}
+  &-order{
+    padding: 20px 0;
 
-  &-order{}
+    div[class*="tabcontent"]{
+      border-top: 4px solid $tradepage-color-blue;
+    }
+  }
+
+  &-wrapper{}
 
 }
