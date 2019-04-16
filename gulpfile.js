@@ -105,6 +105,24 @@ gulp.task('script-mainpage', () => {
         .pipe(gulp.dest(folder_dist_main + 'js'))
         .pipe(browserSync.stream());
 });
+
+gulp.task('watch-mainpage', () => {
+    const watchMainpageVendor = [];
+
+    node_dependencies.forEach(dependency => {
+        watchMainpageVendor.push(folder_node_modules + dependency + '/**/*.*');
+    });
+
+    const watchMainpage = [
+        folder_src_main + 'sass/plugin/**/*.scss',
+        folder_src_main + 'script/plugin/**/*.js',
+        folder_src_main + 'sass/mainpage/**/*.scss',
+        folder_src_main + 'script/mainpage/**/*.js',
+    ];
+
+    gulp.watch(watchMainpage, gulp.series('mainpage')).on('change', browserSync.reload);
+    gulp.watch(watchMainpageVendor, gulp.series('vendor')).on('change', browserSync.reload);
+});
 /* MAINPAGE END */
 
 
@@ -139,6 +157,24 @@ gulp.task('script-tradepage', () => {
         .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest(folder_dist_main + 'js'))
         .pipe(browserSync.stream());
+});
+
+gulp.task('watch-tradepage', () => {
+    const watchTradepageVendor = [];
+
+    node_dependencies.forEach(dependency => {
+        watchTradepageVendor.push(folder_node_modules + dependency + '/**/*.*');
+    });
+
+    const watchTradepage = [
+        folder_src_main + 'sass/plugin/**/*.scss',
+        folder_src_main + 'script/plugin/**/*.js',
+        folder_src_main + 'sass/tradepage/**/*.scss',
+        folder_src_main + 'script/tradepage/**/*.js',
+    ];
+
+    gulp.watch(watchTradepage, gulp.series('tradepage')).on('change', browserSync.reload);
+    gulp.watch(watchTradepageVendor, gulp.series('vendor')).on('change', browserSync.reload);
 });
 /* TRADEPAGE END */
 
@@ -224,8 +260,8 @@ gulp.task('plugin', gulp.series('sass-plugin', 'script-plugin'));
 gulp.task('mainpage', gulp.series('sass-mainpage', 'script-mainpage'));
 gulp.task('tradepage', gulp.series('sass-tradepage', 'script-tradepage'));
 
-gulp.task('maindevel', gulp.series('html', 'plugin', 'mainpage', gulp.parallel('watch')));
-gulp.task('tradedevel', gulp.series('html', 'plugin', 'tradepage', gulp.parallel('watch')));
+gulp.task('maindevel', gulp.series('html', 'plugin', 'mainpage', gulp.parallel('watch-mainpage')));
+gulp.task('tradedevel', gulp.series('html', 'plugin', 'tradepage', gulp.parallel('watch-tradepage')));
 
 gulp.task('build', gulp.series('clear', 'vendor', 'html', 'bootstrap', 'plugin', 'mainpage', 'tradepage'));
 gulp.task('devel', gulp.series('html', 'bootstrap', 'plugin', 'mainpage', 'tradepage', gulp.parallel('watch')));
