@@ -8,12 +8,18 @@ $tradepageHomepageImgPath : "../../img/tradepage";
   }
 
   &-order{
+    padding: 20px 0 40px;
+    min-height: 800px;
 
-    &-tabs{}
+    &-orders{}
 
-    &-book{}
+    &-book{
+      margin-top: 15px;
+    }
 
-    &-open{}
+    &-open{
+      margin-top: 15px;
+    }
 
   }
 

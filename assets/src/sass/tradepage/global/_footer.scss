@@ -65,6 +65,49 @@ $tradepageSvgIconImgPath : "../../img/tradepage/svg";
     padding-left: 10px;
   }
 
+  &-loginnav{
+    border-top: 1px solid transparentize($tradepage-color-light-stale-gray, 0.7);
+    border-bottom: 1px solid transparentize($tradepage-color-light-stale-gray, 0.7);
+    padding: 2px 0;
+    margin-left: 10px;
+    margin-bottom: 20px;
+
+    &-list{
+      font-size: 17px;
+
+      &.linkgray{
+        a{color: transparentize($tradepage-color-light-stale-gray, 0.1);}
+      }
+
+      &-item{
+        position: relative;
+        padding: 0 12px;
+        color: $tradepage-color-white;
+
+        a{color: $tradepage-color-white;}
+
+        &:before{
+          content: "";
+          position: absolute;
+          width: 1px;
+          height: 10px;
+          top: calc(50% - 5px);
+          right: 0;
+          background-color: transparentize($tradepage-color-light-stale-gray, 0.7);
+        }
+        &:first-child{
+          padding-left: 0;
+        }
+        &:last-child{
+          padding-right: 0;
+          &:before{
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
   &-menu{
     max-width: 230px;
 

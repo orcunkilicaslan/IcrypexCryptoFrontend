@@ -156,7 +156,7 @@ $tradepageSvgIconImgPath : "../../img/tradepage/svg";
         position: relative;
 
         &:after{
-          background-image: url(#{$tradepageSvgIconImgPath}/Arrow_Down.svg);
+          background-image: url(#{$tradepageSvgIconImgPath}/Arrow_Down_Dropdown.svg);
           background-repeat: no-repeat;
           background-position: center center;
           background-size: contain;
