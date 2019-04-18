@@ -184,84 +184,241 @@ $tradepageSvgIconImgPath : "../../img/tradepage/svg";
       }
     }
 
-    &-bigprice{
-      color: $tradepage-color-white;
+    &-title{
+      width: 100%;
 
-      &-select{
-        color: $tradepage-color-white;
-        background-color: transparent;
-        border: 1px solid transparentize($tradepage-color-light-stale-gray, 0.7);;
-        font-size: 20px;
-        text-align: left;
-        padding: 6px 10px;
-        margin-right: 4px;
-        option{
-          background-color: $tradepage-color-dark-blue;
-        }
-        &:last-child{
-          margin-right: 0;
-        }
-      }
+      &-icon{
+        display: flex;
 
-      &-list{
-        margin-bottom: 0;
-
-        > li[class*="col"]{
-          padding-right: 10px;
-          padding-left: 15px;
-          &:first-child{padding-left: 0}
-          &:last-child{padding-right: 0}
+        &-span{
+          width: 40px;
+          border: 1px solid transparentize($tradepage-color-light-stale-gray, 0.7);
+          border-left: none;
+          display: flex;
+          align-items: center;
         }
 
-        &-item{
-          color: $tradepage-color-white;
-          text-align: left;
-          font-size: 20px;
-          font-weight: 300;
-          line-height: 0.95;
-          letter-spacing: -0.3px;
-          position: relative;
-
-          &:before{
-            content: "";
-            position: absolute;
-            width: 1px;
-            height: 34px;
-            top: calc(50% - 16px);
-            right: 10px;
-            background-color: transparentize($tradepage-color-light-stale-gray, 0.7);
-          }
-
-          &:last-child{
-            &:before{display: none;}
-          }
+        .icon-svg{
+          width: 19px;
+          height: 14px;
+          margin: 7px;
         }
       }
 
-      &-title{
-        color: $tradepage-color-light-stale-gray;
-        font-size: 17px;
-        font-weight: 300;
-        letter-spacing: -0.2px;
-        margin: 0;
-      }
-
-      &-volume{
-        display: block;
-
-        .colorgreen{color: $tradepage-color-green;}
-
-        sup{
-          font-size: 12px;
-          font-weight: 900;
-          letter-spacing: normal;
-          text-align: center;
-          position: relative;
-          top: -6px;
-        }
-      }
     }
 
-  }
 
+    &-price{
+      color: $tradepage-color-white;
+
+      &-big{
+        color: $tradepage-color-white;
+
+        &-select{
+          color: $tradepage-color-white;
+          background-color: transparent;
+          border: 1px solid transparentize($tradepage-color-light-stale-gray, 0.7);;
+          font-size: 20px;
+          text-align: left;
+          padding: 6px 10px;
+          margin-right: 4px;
+          option{
+            background-color: $tradepage-color-dark-blue;
+          }
+          &:last-child{
+            margin-right: 0;
+          }
+        }
+
+        &-list{
+          margin-bottom: 0;
+
+          > li[class*="col"]{
+            padding-right: 10px;
+            padding-left: 15px;
+            &:first-child{padding-left: 0}
+            &:last-child{padding-right: 0}
+          }
+
+          &-item{
+            color: $tradepage-color-white;
+            text-align: left;
+            font-size: 20px;
+            font-weight: 300;
+            line-height: 0.95;
+            letter-spacing: -0.3px;
+            position: relative;
+
+            &:before{
+              content: "";
+              position: absolute;
+              width: 1px;
+              height: 34px;
+              top: calc(50% - 16px);
+              right: 10px;
+              background-color: transparentize($tradepage-color-light-stale-gray, 0.7);
+            }
+
+            &:last-child{
+              &:before{display: none;}
+            }
+          }
+        }
+
+        &-title{
+          color: $tradepage-color-light-stale-gray;
+          font-size: 17px;
+          font-weight: 300;
+          letter-spacing: -0.2px;
+          margin: 0;
+        }
+
+        &-volume{
+          display: block;
+
+          .colorgreen{color: $tradepage-color-green;}
+
+          sup{
+            font-size: 12px;
+            font-weight: 900;
+            letter-spacing: normal;
+            text-align: center;
+            position: relative;
+            top: -6px;
+          }
+        }
+      }
+
+      &-lite{
+        color: $tradepage-color-white;
+
+        &-list{
+          display: flex !important;
+          align-items: center;
+          padding: 0 10px 0 35px;
+          margin-bottom: 0;
+          position: relative;
+
+          > li[class*="col"]{
+            padding-right: 10px;
+            padding-left: 15px;
+            &:first-child{padding-left: 0}
+            &:last-child{padding-right: 0}
+          }
+
+          &-item{
+            color: $tradepage-color-white;
+            text-align: left;
+            font-size: 20px;
+            font-weight: 300;
+            line-height: 0.95;
+            letter-spacing: -0.3px;
+            position: relative;
+
+
+          }
+
+          .owl{
+            &-item{
+              position: relative;
+
+              &:before{
+                content: "";
+                position: absolute;
+                width: 1px;
+                height: 34px;
+                top: calc(50% - 16px);
+                right: 10px;
+                background-color: transparentize($tradepage-color-light-stale-gray, 0.7);
+              }
+
+              &:last-child{
+                &:before{display: none;}
+              }
+            }
+
+            &-nav{
+              button[class*="owl-"]{
+                background-color: transparentize($tradepage-gradient-darkblue02, 0.4);
+                border: 1px solid transparentize($tradepage-color-light-stale-gray, 0.7);
+                @include border-radius(0);
+                width: 20px;
+                height: calc(100% + 2px);
+                margin: 0;
+                top: -1px;
+
+                &:hover{
+                  background-color: $tradepage-gradient-darkblue02;
+                }
+
+              }
+            }
+
+            &-prev,
+            &-next{
+              position: absolute;
+
+              &:before{
+                content: "";
+                position: absolute;
+                width: 12px;
+                height: 12px;
+                left: calc(50% - 6px);
+                top: calc(50% - 6px);
+                background-image: url(#{$tradepageSvgIconImgPath}/Arrow_Down_Dropdown.svg);
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size: contain;
+              }
+
+
+              span{
+                display: none;
+              }
+
+            }
+
+            &-prev{
+              left: 0;
+              &:before{
+                @include rotate(90);
+              }
+            }
+            &-next{
+              right: 0;
+              &:before{
+                @include rotate(270);
+              }
+            }
+
+          }
+
+        }
+
+        &-title{
+          color: $tradepage-color-light-stale-gray;
+          font-size: 15px;
+          font-weight: 300;
+          letter-spacing: -0.2px;
+          margin: 0;
+        }
+
+        &-volume{
+          display: block;
+
+          .colorgreen{color: $tradepage-color-green;}
+
+          sup{
+            font-size: 12px;
+            font-weight: 900;
+            letter-spacing: normal;
+            text-align: center;
+            position: relative;
+            top: -6px;
+          }
+        }
+      }
+
+    }
+  }
 }

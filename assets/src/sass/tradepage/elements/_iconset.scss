@@ -47,6 +47,9 @@ $tradepageSvgIconImgPath : "../../img/tradepage/svg";
     &-orderinformation{
       background-image: url(#{$tradepageSvgIconImgPath}/Icon_Information.svg);
     }
+    &-headtitleiconwallet{
+      background-image: url(#{$tradepageSvgIconImgPath}/Icon_Wallet_02.svg);
+    }
     &-titleiconbtc{
       background-image: url(#{$tradepageSvgIconImgPath}/Icon_Title_Btc.svg);
     }
@@ -56,5 +59,18 @@ $tradepageSvgIconImgPath : "../../img/tradepage/svg";
     &-titleiconxrp{
       background-image: url(#{$tradepageSvgIconImgPath}/Icon_Title_Xrp.svg);
     }
+    &-wizardiconbank{
+      background-image: url(#{$tradepageSvgIconImgPath}/Wizard_Icon_Bank.svg);
+    }
+    &-wizardiconpapara{
+      background-image: url(#{$tradepageSvgIconImgPath}/Wizard_Papara_Logo.svg);
+    }
+    &-wizardicondigitalwallet{
+      background-image: url(#{$tradepageSvgIconImgPath}/Wizard_Icon_Digital_Wallet.svg);
+    }
+    &-wizardiconinformation{
+      background-image: url(#{$tradepageSvgIconImgPath}/Wizard_Information_Icon.svg);
+    }
+
   }
 }

@@ -1,0 +1,25 @@
+.depositandwithdraw{
+
+  &-section{}
+
+  &-tablist{
+    background-color: $tradepage-color-light-bg-gray;
+    padding: 25px 0;
+  }
+
+  &-tabcont{
+    background-color: $tradepage-color-white;
+    padding: 40px 0;
+
+    .columntitle{
+      color: $tradepage-color-dark-blue;
+    }
+
+  }
+
+  &-latesttransactions{
+    background-color: $tradepage-color-light-bg-gray;
+    padding: 30px 0;
+  }
+
+}
