@@ -43,6 +43,12 @@
     &.titlecenter{
       text-align: center;
     }
+    &.fullborder{
+      &:before{
+        width: 100% !important;
+        left: 0 !important;
+      }
+    }
   }
 
   &-xs{
@@ -194,6 +200,7 @@
   &-boxtitle{
     display: flex;
     justify-content: space-between;
+    color: $tradepage-color-dark-blue;
     border-bottom: 1px solid transparentize($tradepage-color-light-stale-gray, 0.7);
     padding-bottom: 7px;
     margin-bottom: 5px;
@@ -206,8 +213,9 @@
     }
 
     &-title,
-    &-wallet{
-      color: $tradepage-color-dark-blue;
+    &-wallet,
+    &-date{
+
       font-size: 20px;
       margin: 0;
       padding: 0;
@@ -215,6 +223,7 @@
     }
     &-title{font-weight: 500;}
     &-wallet{font-weight: normal;}
+    &-date{font-size:17px; font-weight: normal;}
   }
 
 }

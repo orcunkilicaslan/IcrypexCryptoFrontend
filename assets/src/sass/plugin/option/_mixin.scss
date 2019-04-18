@@ -35,16 +35,54 @@
 
 @mixin transition($property, $duration, $easing: linear) {
   transition: $property $duration $easing;
-  -webkit-transition: $property $duration $easing;
+  -o-transition: $property $duration $easing;
+  -ms-transition: $property $duration $easing;
   -moz-transition: $property $duration $easing;
+  -webkit-transition: $property $duration $easing;
+  -khtml-transition: $property $duration $easing;
+}
+
+@mixin transition-property($property...) {
+  transition-property: $property;
+  -o-transition-property: $property;
+  -ms-transition-property: $property;
+  -moz-transition-property: $property;
+  -webkit-transition-property: $property;
+  -khtml-transition-property: $property;
+
+}
+@mixin transition-duration($duration...) {
+  transition-property: $duration;
+  -o-transition-property: $duration;
+  -ms-transition-property: $duration;
+  -moz-transition-property: $duration;
+  -webkit-transition-property: $duration;
+  -khtml-transition-property: $duration;
+}
+@mixin transition-timing-function($timing...) {
+  transition-timing-function: $timing;
+  -o-transition-timing-function: $timing;
+  -ms-transition-timing-function: $timing;
+  -moz-transition-timing-function: $timing;
+  -webkit-transition-timing-function: $timing;
+  -khtml-transition-timing-function: $timing;
+}
+@mixin transition-delay($delay...) {
+  transition-delay: $delay;
+  -o-transition-delay: $delay;
+  -ms-transition-delay: $delay;
+  -moz-transition-delay: $delay;
+  -webkit-transition-delay: $delay;
+  -khtml-transition-delay: $delay;
 }
 
 @mixin transform($transforms) {
-  -moz-transform: $transforms;
+  transform: $transforms;
   -o-transform: $transforms;
   -ms-transform: $transforms;
+  -moz-transform: $transforms;
   -webkit-transform: $transforms;
-  transform: $transforms;
+  -khtml-transform: $transforms;
 }
 
 @mixin rotate ($deg) {
@@ -64,11 +102,12 @@
 }
 
 @mixin transform-origin ($origin) {
-  moz-transform-origin: $origin;
+  transform-origin: $origin;
   -o-transform-origin: $origin;
   -ms-transform-origin: $origin;
+  -moz-transform-origin: $origin;
   -webkit-transform-origin: $origin;
-  transform-origin: $origin;
+  -khtml-transform-origin: $origin;
 }
 
 @mixin placeholder {
@@ -79,8 +118,10 @@
 }
 
 @mixin background-size($background-size) {
-  -webkit-background-size: $background-size;
-  -moz-background-size: $background-size;
-  -o-background-size: $background-size;
   background-size: $background-size;
+  -o-background-size: $background-size;
+  -ms-background-size: $background-size;
+  -moz-background-size: $background-size;
+  -webkit-background-size: $background-size;
+  -khtml-background-size: $background-size;
 }

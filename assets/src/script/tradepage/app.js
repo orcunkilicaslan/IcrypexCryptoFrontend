@@ -91,6 +91,44 @@ class LoginForm{
 window.login = new LoginForm();
 /* Login */
 
+/* Header Bottom Lite Price */
+$('#headerbottompricelite').owlCarousel({
+    loop:true,
+    nav:true,
+    dots:false,
+    autoplay:false,
+    autoplayTimeout:5000,
+    autoplayHoverPause:false,
+    items:3,
+    margin:10,
+    animateOut: 'fadeOut'
+});
+/* Header Bottom Lite Price */
+
+/* Deposit and Withdraw */
+$(document).ready(function() {
+    $('#depositwizard').bootstrapWizard({onNext: function(tab, navigation, index) {
+            if(index==2) {
+                // Make sure we entered the name
+                if(!$('#name').val()) {
+                    alert('You must enter your name');
+                    $('#name').focus();
+                    return false;
+                }
+            }
+
+            // Set the name for the next tab
+            $('#tab3').html('Hello, ' + $('#name').val());
+
+        }, onTabShow: function(tab, navigation, index) {
+            var $total = navigation.find('li').length;
+            var $current = index+1;
+            var $percent = ($current/$total) * 100;
+            $('#depositwizard .progress-bar').css({width:$percent+'%'});
+        }});
+    window.prettyPrint && prettyPrint()
+});
+/* Deposit and Withdraw */
 
 
 /* Loading Info */
