@@ -68,6 +68,9 @@
         &.graybg{
           background-color:$tradepage-color-light-bg-gray;
         }
+        &.colorgreen{
+          color:$tradepage-color-green;
+        }
       }
     }
 
@@ -87,7 +90,7 @@
   }
 
   .form-control{
-    color:#282828;
+    color:$tradepage-color-dark-blue;
     background-color:$tradepage-color-white;
     border-color:transparentize($tradepage-color-light-stale-gray, 0.70);
     padding:6px 10px 8px;
@@ -110,6 +113,10 @@
       &:focus{
         background-color:$tradepage-color-light-bg-gray;
       }
+    }
+
+    &.colorgreen{
+      color:$tradepage-color-green;
     }
 
     &:focus{

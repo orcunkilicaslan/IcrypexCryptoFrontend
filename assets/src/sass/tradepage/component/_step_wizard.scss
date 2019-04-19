@@ -62,6 +62,7 @@ $tradepageSvgIconImgPath : "../../img/tradepage/svg";
           line-height:1;
           font-weight: normal;
           text-align:center;
+          display: block;
           margin: 0;
           @include transition(all, 0.4s, linear);
         }
@@ -107,30 +108,20 @@ $tradepageSvgIconImgPath : "../../img/tradepage/svg";
             border-color: $tradepage-color-blue;
             position:relative;
             text-indent: -9999px;
+            animation-name:pulse;
+            animation-duration:1s;
+            animation-fill-mode:both;
 
-            i{
-              width: 44px;
-              height: 44px;
-              background-color: transparent;
+            &:after{
+              content:"";
               position:absolute;
-              top:calc(50% - 22px);
-              right:calc(50% - 22px);
-              animation-name:pulse;
-              animation-duration:1s;
-              animation-fill-mode:both;
-              @include border-radius(26px);
-
-              &:before{
-                content:"";
-                width: 26px;
-                height: 12px;
-                position:absolute;
-                top: 14px;
-                left: 10px;
-                border-bottom:2px solid #fff;
-                border-left:2px solid #fff;
-                @include rotate(-50);
-              }
+              width: 26px;
+              height: 12px;
+              top: 14px;
+              left: 10px;
+              border-bottom:2px solid $tradepage-color-white;
+              border-left:2px solid $tradepage-color-white;
+              @include rotate(-50);
             }
           }
 
@@ -170,6 +161,7 @@ $tradepageSvgIconImgPath : "../../img/tradepage/svg";
   }
 
   &-tabcont{
+    $tabcont: &;
 
     &-boxarea{
       display:flex;
@@ -203,7 +195,6 @@ $tradepageSvgIconImgPath : "../../img/tradepage/svg";
           align-items: center;
           width: 100%;
           height: 100px;
-
 
           i[class*="bank"]{
             width: 58px;
@@ -251,6 +242,62 @@ $tradepageSvgIconImgPath : "../../img/tradepage/svg";
       }
     }
 
+    &-formarea{
+      display:flex;
+      flex-flow:column nowrap;
+      justify-content:space-around;
+      margin: 40px 0;
+
+      &-form{
+        margin: auto;
+
+        &-tags{
+          max-width: 700px;
+          margin: 0 auto;
+        }
+
+        #{$tabcont}-infoarea{
+          padding: 20px 40px;
+
+        }
+
+        &-check{
+          &-single{
+            display: flex;
+            margin: auto;
+          }
+        }
+
+        &-btn{
+          margin-top: 40px;
+          position: relative;
+
+          .btn{
+            color: $tradepage-color-white !important;
+            width: 200px;
+            margin: 0 auto;
+            display: block;
+            border:none;
+            background-color: $tradepage-color-green;
+            font-size: 20px;
+            font-weight: normal;
+            position: relative;
+            z-index: 1;
+          }
+
+          &:before{
+            content: "";
+            background-color: $tradepage-color-green;
+            position: absolute;
+            width: 100%;
+            height: 1px;
+            top: 50%;
+          }
+        }
+
+      }
+    }
+
     &-infoarea{
       display: flex;
       flex-flow: column nowrap;
@@ -267,10 +314,41 @@ $tradepageSvgIconImgPath : "../../img/tradepage/svg";
           height: 40px;
         }
       }
+      &-title{
+        color: $tradepage-color-dark-blue;
+        margin: 0;
+        margin-bottom: 10px;
+        font-size: 20px;
+        font-weight: 500;
+      }
       &-desc{
         color: $tradepage-color-dark-blue;
         font-size: 17px;
         line-height: 1.18;
+      }
+      &-contlist{
+        color: $tradepage-color-dark-blue;
+        font-size: 17px;
+        line-height: 1.5;
+        text-align: left;
+
+        li{
+          position: relative;
+          padding-left: 15px;
+
+          &:before{
+            content:"";
+            position:absolute;
+            width: 9px;
+            height: 9px;
+            top: 9px;
+            left: 0;
+            border-top:2px solid $tradepage-color-blue;
+            border-right:2px solid $tradepage-color-blue;
+            @include rotate(45);
+          }
+        }
+
       }
       &-callcenter{
         margin-top: 15px;
@@ -289,6 +367,51 @@ $tradepageSvgIconImgPath : "../../img/tradepage/svg";
 
     }
 
+    &-navigation{
+      margin-top: 10px;
+
+      &-buttons{
+        color: $tradepage-color-light-stale-gray;
+        position: relative;
+        display: flex;
+        font-size: 17px;
+        align-items: center;
+
+        i.iconcircleback{
+          width: 20px;
+          height: 20px;
+          margin-right: 5px;
+          position:relative;
+          display: block;
+          border: 1px solid transparentize($tradepage-color-light-stale-gray, 0.7);
+          @include border-radius(100%);
+
+          &:after{
+            content:"";
+            position:absolute;
+            width: 6px;
+            height: 6px;
+            top: calc(50% - 3px);
+            left: calc(50% - 2px);
+            border-bottom:1px solid $tradepage-color-blue;
+            border-left:1px solid $tradepage-color-blue;
+            @include rotate(45);
+          }
+        }
+
+      }
+
+    }
+
+  }
+
+  .formui{
+    .form-control{
+      font-weight: 500;
+    }
+    @include placeholder{
+      font-weight: 500;
+    }
   }
 
 }
