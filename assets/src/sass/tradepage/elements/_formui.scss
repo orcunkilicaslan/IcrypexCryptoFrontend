@@ -6,6 +6,7 @@
     font-size: 17px;
     font-weight:normal;
     margin-bottom: 5px;
+    display: block;
   }
   fieldset{
     font-size:17px;
@@ -71,6 +72,9 @@
         &.colorgreen{
           color:$tradepage-color-green;
         }
+        &.colorgray{
+          color:$tradepage-color-light-stale-gray;
+        }
       }
     }
 
@@ -106,7 +110,6 @@
         background-color:$tradepage-color-white;
       }
     }
-
     &.graybg{
       background-color:$tradepage-color-light-bg-gray;
       border-color: $tradepage-color-light-bg-gray;
@@ -114,9 +117,11 @@
         background-color:$tradepage-color-light-bg-gray;
       }
     }
-
     &.colorgreen{
       color:$tradepage-color-green;
+    }
+    &.colorgray{
+      color:$tradepage-color-light-stale-gray;
     }
 
     &:focus{
@@ -124,6 +129,11 @@
       border-color:transparentize($tradepage-color-light-stale-gray, 0.40);
       background-color:$tradepage-color-white;
     }
+  }
+
+  div.form-control{
+    padding-top: 8px;
+    padding-bottom: 10px;
   }
 
   select.form-control{
