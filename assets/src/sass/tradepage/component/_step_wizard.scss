@@ -276,7 +276,7 @@ $tradepageSvgIconImgPath : "../../img/tradepage/svg";
 
         #{$tabcont}-infoarea{
           padding: 20px 40px 0;
-
+          margin-top: 0;
         }
 
         &-check{
@@ -298,6 +298,7 @@ $tradepageSvgIconImgPath : "../../img/tradepage/svg";
       flex-flow: column nowrap;
       color: $tradepage-color-dark-blue;
       text-align: center;
+      margin-top: 15px;
 
       &-icon{
         display: block;
