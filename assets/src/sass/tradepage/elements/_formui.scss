@@ -7,6 +7,11 @@
     font-weight:normal;
     margin-bottom: 5px;
     display: block;
+    span.labelright{
+      color: $tradepage-color-light-stale-gray;
+      display: inline-block;
+      float: right;
+    }
   }
   fieldset{
     font-size:17px;
@@ -28,6 +33,43 @@
 
     .btn{
       width:100%;
+    }
+
+    &-icons{
+      &-buttons{
+        color: $tradepage-color-blue;
+        position: relative;
+        display: flex;
+        font-size: 17px;
+        align-items: center;
+        max-width: 100px;
+        margin-top: 5px;
+
+        i.iconcopy{
+          width: 20px;
+          height: 20px;
+          margin-right: 5px;
+          position:relative;
+          display: block;
+          border: 1px solid transparentize($tradepage-color-light-stale-gray, 0.7);
+          @include border-radius(100%);
+
+          &:before,
+          &:after{
+            content:"";
+            position:absolute;
+            background-color: $tradepage-color-blue;
+            width: 10px;
+            height: 2px;
+            top: calc(50% - 1px);
+            left: calc(50% - 5px);
+            @include rotate(0);
+          }
+          &:after{
+            @include rotate(90);
+          }
+        }
+      }
     }
 
     .input-group{
