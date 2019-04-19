@@ -133,7 +133,7 @@
                 <li class="stepwizard-tablist-list-item check">
                     <span class="stepwizard-tablist-list-item-step">ADIM</span>
                     <span class="stepwizard-tablist-list-item-circle">1</span>
-                    <h4 class="stepwizard-tablist-list-item-title">BANKA TRANSFERİ</h4>
+                    <h4 class="stepwizard-tablist-list-item-title">PAPARA</h4>
                 </li>
                 <li class="stepwizard-tablist-list-item active">
                     <span class="stepwizard-tablist-list-item-step">ADIM</span>
@@ -157,7 +157,7 @@
     <div class="container">
 
         <!-- Title -->
-        <h2 class="columntitle columntitle-lg bottomborder fullborder titlecenter">PARA YATIRMA - BANKA TRANSFERİ</h2>
+        <h2 class="columntitle columntitle-lg bottomborder fullborder titlecenter">PARA YATIRMA - PAPARA</h2>
         <!-- Title -->
         <!-- Content -->
         <div class="stepwizard-tabcont">
@@ -166,21 +166,23 @@
                 <form class="stepwizard-tabcont-formarea-form" autocomplete="off" novalidate>
                     <div class="stepwizard-tabcont-formarea-form-tags700 row">
                         <div class="form-group col-4">
-                            <label for="selectbank">BANKA SEÇİNİZ</label>
-                            <select class="graybg form-control" id="selectbank">
-                                <option value="01">AKBANK</option>
-                                <option value="02">GARANTİ</option>
-                                <option value="03">FİNANSBANK</option>
-                            </select>
-                        </div>
-                        <div class="form-group col-4">
-                            <label for="amount">MİKTAR</label>
+                            <label for="amount">YATIRMAK İSTEDİĞİNİZ MİKTAR</label>
                             <div class="input-group">
                                 <input class="graybg form-control" id="amount" type="text" />
                                 <div class="input-group-append graybg">
                                     <span class="input-group-text">TRY</span>
                                 </div>
                             </div>
+                        </div>
+                        <div class="form-group col-4">
+                            <label for="percentage">PAPARA KOMİSYONU</label>
+                            <div class="input-group">
+                                <input class="whitebg colorgray form-control" id="percentage" type="text" />
+                                <div class="input-group-append">
+                                    <span class="input-group-text whitebg colorgray">TRY</span>
+                                </div>
+                            </div>
+                            <p class="form-group-info">%2 [En fazla 50.00 TRY] + KDV</p>
                         </div>
                         <div class="form-group col-4">
                             <label for="totalmoney">HESABA GEÇECEK MİKTAR</label>
@@ -195,8 +197,10 @@
                     <div class="stepwizard-tabcont-infoarea">
                         <h3 class="stepwizard-tabcont-infoarea-title">İŞLEMİNİZİ TAMAMLAMAK İÇİN LÜTFEN DİKKATLE OKUYUP ONAYLAYINIZ</h3>
                         <ul class="stepwizard-tabcont-infoarea-contlist">
-                            <li>TL yatırma işlemi gerçekleştirebilmek için, yatırmak istediğiniz tutarı girerek ‘’TL YATIRMA TALEBİ OLUŞTUR’’ butonuna tıklayarak, işleminize özel açıklama kodunu oluşturunuz.</li>
-                            <li>TL yatırma işlemlerinde yalnızca sistemimize kayıt olduğunuz isim, soy isim ve T.C. Kimlik Numarası’na ait banka hesaplarından gelen tutarlar kabul edilmektedir.</li>
+                            <li>Papara TL yatırma işlemlerinde yalnızca sistemimize kayıt olduğunuz isim, soy isim ve T.C. Kimlik Numarası’na ait Papara hesabından yatırılan tutarlar kabul edilmektedir.</li>
+                            <li>Para yatırma için Papara sistemine yönlendirildikten sonra, 1 saat içerisinde tamamlanmayan işlemler Papara tarafından iptal edilir.</li>
+                            <li>Papara ile yapılan para yatırma işlemleri işlemin başarılı olduğu yönünde size bildiri yapılmasından 1 ila 5dk sonra gerçekleşir.</li>
+                            <li>Para yatırma işlemlerinde Papara tarafından, tutarı en fazla 50.00TL + %18KDV olmak üzere %2 + %18KDV komisyon uygulanır. Bu tutar düşüldükten sonra kalan tutar hesabınıza yansır.</li>
                         </ul>
                     </div>
                     <div class="stepwizard-tabcont-formarea-form-check-single d-flex justify-content-center">
@@ -206,7 +210,7 @@
                         </div>
                     </div>
                     <div class="stepwizard-tabcont-formarea-form-btn buttons-formbottom-btn success">
-                        <a class="btn btn-success" href="#" title="">TALEP OLUŞTUR</a>
+                        <a class="btn btn-success" href="#" title="">PAPARA İLE YATIR</a>
                     </div>
                 </form>
                 <div class="stepwizard-tabcont-navigation d-flex justify-content-center">
