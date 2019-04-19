@@ -238,7 +238,6 @@ $tradepageSvgIconImgPath : "../../img/tradepage/svg";
           border: none;
           padding: 5px 10px;
         }
-
       }
     }
 
@@ -248,16 +247,35 @@ $tradepageSvgIconImgPath : "../../img/tradepage/svg";
       justify-content:space-around;
       margin: 40px 0;
 
+      &-title{
+        color: $tradepage-color-dark-blue;
+        margin: 0;
+        margin-bottom: 30px;
+        font-size: 20px;
+        font-weight: normal;
+      }
+
       &-form{
         margin: auto;
 
-        &-tags{
+        &-tags700,
+        &-tags960{
+
+          > div[class*="col-"]{
+            padding-left: 7px;
+            padding-right: 7px;
+          }
+        }
+        &-tags960{
+          max-width: 960px;
+        }
+        &-tags700{
           max-width: 700px;
-          margin: 0 auto;
+          margin: auto;
         }
 
         #{$tabcont}-infoarea{
-          padding: 20px 40px;
+          padding: 20px 40px 0;
 
         }
 
@@ -265,6 +283,7 @@ $tradepageSvgIconImgPath : "../../img/tradepage/svg";
           &-single{
             display: flex;
             margin: auto;
+            margin-top: 20px;
           }
         }
 
@@ -272,29 +291,41 @@ $tradepageSvgIconImgPath : "../../img/tradepage/svg";
           margin-top: 40px;
           position: relative;
 
-          .btn{
-            color: $tradepage-color-white !important;
-            width: 200px;
-            margin: 0 auto;
-            display: block;
-            border:none;
-            background-color: $tradepage-color-green;
-            font-size: 20px;
-            font-weight: normal;
-            position: relative;
-            z-index: 1;
-          }
-
           &:before{
             content: "";
-            background-color: $tradepage-color-green;
+            background-color: $tradepage-color-light-stale-gray;
             position: absolute;
             width: 100%;
             height: 1px;
             top: 50%;
           }
-        }
+          &.success{
+            &:before{background-color: $tradepage-color-green;}
+          }
+          &.info{
+            &:before{background-color: $tradepage-color-blue;}
+          }
 
+          .btn{
+            color: $tradepage-color-white !important;
+            background-color: $tradepage-color-light-stale-gray;
+            width: 200px;
+            margin: 0 auto;
+            display: block;
+            border:none;
+            font-size: 20px;
+            font-weight: normal;
+            position: relative;
+            z-index: 1;
+
+            &-success{
+              background-color: $tradepage-color-green;
+            }
+            &-info{
+              background-color: $tradepage-color-blue;
+            }
+          }
+        }
       }
     }
 
@@ -319,7 +350,7 @@ $tradepageSvgIconImgPath : "../../img/tradepage/svg";
         margin: 0;
         margin-bottom: 10px;
         font-size: 20px;
-        font-weight: 500;
+        font-weight: normal;
       }
       &-desc{
         color: $tradepage-color-dark-blue;
@@ -364,7 +395,6 @@ $tradepageSvgIconImgPath : "../../img/tradepage/svg";
           font-weight: 500;
         }
       }
-
     }
 
     &-navigation{
@@ -398,9 +428,80 @@ $tradepageSvgIconImgPath : "../../img/tradepage/svg";
             @include rotate(45);
           }
         }
+      }
+    }
+
+    &-bigicon{
+      width: 90px;
+      height: 90px;
+      margin: 0 auto;
+      margin-bottom: 20px;
+      border: 2px solid $tradepage-color-green;
+      position: relative;
+      @include border-radius(50%);
+      animation-name:pulse;
+      animation-duration:1s;
+      animation-fill-mode:both;
+      i{
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        left: calc(50% - 25px);
+        top: calc(50% - 25px);
+      }
+      i[class*="check"]{
+        top: calc(50% - 25px);
+
+        &:after{
+          content:"";
+          position:absolute;
+          width: 42px;
+          height: 18px;
+          top: 10px;
+          left: 6px;
+          border-bottom:2px solid $tradepage-color-green;
+          border-left:2px solid $tradepage-color-green;
+          @include rotate(-50);
+        }
 
       }
+    }
 
+    &-icons{
+      &-buttons{
+        color: $tradepage-color-blue;
+        position: relative;
+        display: flex;
+        font-size: 17px;
+        align-items: center;
+        max-width: 100px;
+        margin-top: 5px;
+
+        i.iconcopy{
+          width: 20px;
+          height: 20px;
+          margin-right: 5px;
+          position:relative;
+          display: block;
+          border: 1px solid transparentize($tradepage-color-light-stale-gray, 0.7);
+          @include border-radius(100%);
+
+          &:before,
+          &:after{
+            content:"";
+            position:absolute;
+            background-color: $tradepage-color-blue;
+            width: 10px;
+            height: 2px;
+            top: calc(50% - 1px);
+            left: calc(50% - 5px);
+            @include rotate(0);
+          }
+          &:after{
+            @include rotate(90);
+          }
+        }
+      }
     }
 
   }
@@ -412,6 +513,13 @@ $tradepageSvgIconImgPath : "../../img/tradepage/svg";
     @include placeholder{
       font-weight: 500;
     }
+
+    span.bankname{
+      color: $tradepage-color-light-stale-gray;
+      display: inline-block;
+      float: right;
+    }
+
   }
 
 }
