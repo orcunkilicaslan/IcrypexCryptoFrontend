@@ -45,10 +45,9 @@
       &-buttons{
         color: $tradepage-color-blue;
         position: relative;
-        display: flex;
+        display: inline-flex;
         font-size: 17px;
         align-items: center;
-        max-width: 100px;
         margin-top: 5px;
 
         i.iconcopy{
@@ -75,6 +74,17 @@
             @include rotate(90);
           }
         }
+
+        i[class*="icon-svg"]{
+          display: block;
+          margin-right: 5px;
+        }
+
+        i[class*="wizardiconallbank"]{
+          width: 20px;
+          height: 20px;
+        }
+
       }
     }
 
@@ -119,6 +129,9 @@
         }
         &.colorgreen{
           color:$tradepage-color-green;
+        }
+        &.colorred{
+          color:$tradepage-color-red;
         }
         &.colorgray{
           color:$tradepage-color-light-stale-gray;
@@ -167,6 +180,9 @@
     }
     &.colorgreen{
       color:$tradepage-color-green;
+    }
+    &.colorred{
+      color:$tradepage-color-red;
     }
     &.colorgray{
       color:$tradepage-color-light-stale-gray;

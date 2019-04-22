@@ -1,0 +1,54 @@
+.site{
+
+  &-bg{
+
+    &-white{
+      background-color: $tradepage-color-white !important;
+    }
+    &-orange{
+      background-color: $tradepage-color-orange !important;
+    }
+    &-blue{
+      background-color: $tradepage-color-blue !important;
+    }
+    &-red{
+      background-color: $tradepage-color-red !important;
+    }
+    &-green{
+      background-color: $tradepage-color-green !important;
+    }
+    &-gray{
+      background-color: $tradepage-color-light-stale-gray !important;
+      &-light{
+        background-color: $tradepage-color-light-bg-gray !important;
+      }
+    }
+  }
+
+  &-color{
+
+    &-white{
+      color: $tradepage-color-white !important;
+    }
+    &-orange{
+      color: $tradepage-color-orange !important;
+    }
+    &-blue{
+      color: $tradepage-color-blue !important;
+    }
+    &-red{
+      color: $tradepage-color-red !important;
+    }
+    &-green{
+      color: $tradepage-color-green !important;
+    }
+    &-gray{
+      color: $tradepage-color-light-stale-gray !important;
+      &-light{
+        color: $tradepage-color-light-bg-gray !important;
+      }
+    }
+  }
+
+
+}

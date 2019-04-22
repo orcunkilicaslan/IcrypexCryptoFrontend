@@ -1,0 +1,48 @@
+.site{
+
+  &-bg{
+
+    &-white{
+      background-color: $mainpage-color-white !important;
+    }
+    &-blue{
+      background-color: $mainpage-color-blue !important;
+    }
+    &-red{
+      background-color: $mainpage-color-red !important;
+    }
+    &-green{
+      background-color: $mainpage-color-green !important;
+    }
+    &-gray{
+      background-color: $mainpage-color-light-stale-gray !important;
+      &-light{
+        background-color: transparentize($mainpage-color-light-stale-gray, 0.7) !important;
+      }
+    }
+  }
+
+  &-color{
+
+    &-white{
+      color: $mainpage-color-white !important;
+    }
+    &-blue{
+      color: $mainpage-color-blue !important;
+    }
+    &-red{
+      color: $mainpage-color-red !important;
+    }
+    &-green{
+      color: $mainpage-color-green !important;
+    }
+    &-gray{
+      color: $mainpage-color-light-stale-gray !important;
+      &-light{
+        color: transparentize($mainpage-color-light-stale-gray, 0.7) !important;
+      }
+    }
+  }
+
+
+}
