@@ -12,6 +12,8 @@
  - [07_Deposit_Step_2_Bank_1](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/tradepage/07_Deposit_Step_2_Bank_1.html)
  - [08_Deposit_Step_2_Bank_2](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/tradepage/08_Deposit_Step_2_Bank_2.html)
  - [09_Deposit_Step_2_Papara_1](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/tradepage/09_Deposit_Step_2_Papara_1.html)
+ - [10_Deposit_Step_2_Papara_2](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/tradepage/10_Deposit_Step_2_Papara_2.html)
+ - [11_Deposit_Step_2_Kripto_1](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/tradepage/11_Deposit_Step_2_Kripto_1.html)
 
 
   
