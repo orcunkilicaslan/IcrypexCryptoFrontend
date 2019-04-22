@@ -1,50 +1,50 @@
 .site{
 
-  &-bg{
+  &bg{
 
-    &-white{
+    &white{
       background-color: $tradepage-color-white !important;
     }
-    &-orange{
+    &orange{
       background-color: $tradepage-color-orange !important;
     }
-    &-blue{
+    &blue{
       background-color: $tradepage-color-blue !important;
     }
-    &-red{
+    &red{
       background-color: $tradepage-color-red !important;
     }
-    &-green{
+    &green{
       background-color: $tradepage-color-green !important;
     }
-    &-gray{
+    &gray{
       background-color: $tradepage-color-light-stale-gray !important;
-      &-light{
+      &light{
         background-color: $tradepage-color-light-bg-gray !important;
       }
     }
   }
 
-  &-color{
+  &color{
 
-    &-white{
+    &white{
       color: $tradepage-color-white !important;
     }
-    &-orange{
+    &orange{
       color: $tradepage-color-orange !important;
     }
-    &-blue{
+    &blue{
       color: $tradepage-color-blue !important;
     }
-    &-red{
+    &red{
       color: $tradepage-color-red !important;
     }
-    &-green{
+    &green{
       color: $tradepage-color-green !important;
     }
-    &-gray{
+    &gray{
       color: $tradepage-color-light-stale-gray !important;
-      &-light{
+      &light{
         color: $tradepage-color-light-bg-gray !important;
       }
     }
