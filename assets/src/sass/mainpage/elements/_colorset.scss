@@ -1,44 +1,44 @@
 .site{
 
-  &-bg{
+  &bg{
 
-    &-white{
+    &white{
       background-color: $mainpage-color-white !important;
     }
-    &-blue{
+    &blue{
       background-color: $mainpage-color-blue !important;
     }
-    &-red{
+    &red{
       background-color: $mainpage-color-red !important;
     }
-    &-green{
+    &green{
       background-color: $mainpage-color-green !important;
     }
-    &-gray{
+    &gray{
       background-color: $mainpage-color-light-stale-gray !important;
-      &-light{
+      &light{
         background-color: transparentize($mainpage-color-light-stale-gray, 0.7) !important;
       }
     }
   }
 
-  &-color{
+  &color{
 
-    &-white{
+    &white{
       color: $mainpage-color-white !important;
     }
-    &-blue{
+    &blue{
       color: $mainpage-color-blue !important;
     }
-    &-red{
+    &red{
       color: $mainpage-color-red !important;
     }
-    &-green{
+    &green{
       color: $mainpage-color-green !important;
     }
-    &-gray{
+    &gray{
       color: $mainpage-color-light-stale-gray !important;
-      &-light{
+      &light{
         color: transparentize($mainpage-color-light-stale-gray, 0.7) !important;
       }
     }
