@@ -87,7 +87,7 @@
     <div class="row align-items-center">
         <!-- Title -->
         <div class="maincont-left header-bottom-title-icon col-8">
-            <h1 class="columntitle columntitle-md bottomborder titleleft">PARA YATIRMA</h1>
+            <h1 class="columntitle columntitle-md bottomborder titleleft">PARA ÇEKME</h1>
             <span class="header-bottom-title-icon-span"><i class="icon-svg icon-svg-headtitleiconwallet"></i></span>
         </div>
         <!-- Title -->
@@ -130,12 +130,12 @@
 
         <div class="stepwizard-tablist">
             <ul class="stepwizard-tablist-list">
-                <li class="stepwizard-tablist-list-item active">
+                <li class="stepwizard-tablist-list-item check">
                     <span class="stepwizard-tablist-list-item-step">ADIM</span>
                     <span class="stepwizard-tablist-list-item-circle">1</span>
-                    <h4 class="stepwizard-tablist-list-item-title">TRANSFER YÖNTEMİ</h4>
+                    <h4 class="stepwizard-tablist-list-item-title">BANKA TRANSFERİ</h4>
                 </li>
-                <li class="stepwizard-tablist-list-item">
+                <li class="stepwizard-tablist-list-item active">
                     <span class="stepwizard-tablist-list-item-step">ADIM</span>
                     <span class="stepwizard-tablist-list-item-circle">2</span>
                     <h4 class="stepwizard-tablist-list-item-title">TRANSFER DETAYI</h4>
@@ -157,36 +157,72 @@
     <div class="container">
 
         <!-- Title -->
-        <h2 class="columntitle columntitle-lg bottomborder fullborder titlecenter">PARA YATIRMAK İÇİN TRANSFER YÖNTEMİ SEÇİNİZ</h2>
+        <h2 class="columntitle columntitle-lg bottomborder fullborder titlecenter">PARA ÇEKME - BANKA TRANSFERİ</h2>
         <!-- Title -->
         <!-- Content -->
         <div class="stepwizard-tabcont">
 
-            <div class="stepwizard-tabcont-boxarea">
-                <ul class="stepwizard-tabcont-boxarea-list">
-                    <li class="stepwizard-tabcont-boxarea-list-item">
-                        <span class="stepwizard-tabcont-boxarea-list-iconbox"><i class="icon-svg icon-svg-wizardiconbank"></i></span>
-                        <h4 class="stepwizard-tabcont-boxarea-list-boxtitle">BANKA TRANSFERİ İLE</h4>
-                        <a class="stepwizard-tabcont-boxarea-list-btn btn btn-success" href="#" title="">PARA YATIR</a>
-                    </li>
-                    <li class="stepwizard-tabcont-boxarea-list-item">
-                        <span class="stepwizard-tabcont-boxarea-list-iconbox"><i class="icon-svg icon-svg-wizardiconpapara"></i></span>
-                        <h4 class="stepwizard-tabcont-boxarea-list-boxtitle">PAPARA İLE</h4>
-                        <a class="stepwizard-tabcont-boxarea-list-btn btn btn-success" href="#" title="">PARA YATIR</a>
-                    </li>
-                    <li class="stepwizard-tabcont-boxarea-list-item">
-                        <span class="stepwizard-tabcont-boxarea-list-iconbox"><i class="icon-svg icon-svg-wizardicondigitalwallet"></i></span>
-                        <h4 class="stepwizard-tabcont-boxarea-list-boxtitle">KRİPTO PARA İLE</h4>
-                        <a class="stepwizard-tabcont-boxarea-list-btn btn btn-success" href="#" title="">PARA YATIR</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="stepwizard-tabcont-infoarea">
-                <span class="stepwizard-tabcont-infoarea-icon"><i class="icon-svg icon-svg-wizardiconinformation"></i></span>
-                <p class="stepwizard-tabcont-infoarea-desc">Deposits into your account may be made by Bank Transfer or Bank/Credit Card only. No other payment types will be accepted.<br />The quickest method to deposit funds is by Bank/Credit Card. Select the payment method below to either make a payment or receive instructions on payment method.</p>
-                <div class="stepwizard-tabcont-infoarea-callcenter">
-                    <h5 class="stepwizard-tabcont-infoarea-callcenter-title">Müşteri Hizmetleri</h5>
-                    <p class="stepwizard-tabcont-infoarea-callcenter-number">0850 250 1079</p>
+            <div class="stepwizard-tabcont-formarea formui">
+                <form class="stepwizard-tabcont-formarea-form" autocomplete="off" novalidate>
+                    <div class="stepwizard-tabcont-formarea-form-tags900 row justify-content-md-center">
+                        <div class="form-group col">
+                            <label for="selectbank">HESAP SEÇİNİZ</label>
+                            <select class="site-bg-gray-light form-control" id="selectbank">
+                                <option value="01">AKBANK-TR15 0004 6006 4588 8000 2309 75</option>
+                                <option value="02">GARANTİ</option>
+                                <option value="03">FİNANSBANK</option>
+                            </select>
+                            <a href="#" class="form-group-icons-buttons"><i class="icon-svg icon-svg-wizardiconallbank"></i> KAYITLI HESAPLARIM [EKLE-KALDIR]</a>
+                        </div>
+                        <div class="form-group col-md-auto">
+                            <label for="ibanno">ÇEKMEK İSTEDİĞİNİZ MİKTAR</label>
+                            <div class="input-group">
+                                <div class="site-bg-white form-control" id="amount">22,430.000</div>
+                                <div class="input-group-append">
+                                    <span class="input-group-text site-bg-white">TRY</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group col-md-auto">
+                            <label for="trackingno">BANKA İŞLEM ÜCRETİ</label>
+                            <div class="input-group">
+                                <div class="site-bg-white site-color-gray form-control" id="amount">27.00</div>
+                                <div class="input-group-append">
+                                    <span class="input-group-text site-bg-white site-color-gray">TRY</span>
+                                </div>
+                            </div>
+                            <p class="form-group-info">EFT-Havale Komisyonu</p>
+                        </div>
+                        <div class="form-group col-md-auto">
+                            <label for="amount">HESABA GEÇECEK MİKTAR</label>
+                            <div class="input-group">
+                                <div class="site-bg-white site-color-red form-control" id="amount">22,430.000</div>
+                                <div class="input-group-append">
+                                    <span class="input-group-text site-bg-white site-color-red">TRY</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stepwizard-tabcont-infoarea">
+                        <h3 class="stepwizard-tabcont-infoarea-title">İŞLEMİNİZİ TAMAMLAMAK İÇİN LÜTFEN DİKKATLE OKUYUP ONAYLAYINIZ</h3>
+                        <ul class="stepwizard-tabcont-infoarea-contlist">
+                            <li>TL para çekim taleplerinizde sadece sizin adınıza olan hesapları kullanabilirsiniz.</li>
+                            <li>Üçüncü şahıslara para gönderimi yapılmamaktadır.</li>
+                            <li>Bu şekildeki çekim talepleri iptal edilecektir.</li>
+                        </ul>
+                    </div>
+                    <div class="stepwizard-tabcont-formarea-form-check-single d-flex justify-content-center">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="iReadCheck" />
+                            <label class="form-check-label" for="iReadCheck">Okudum, anladım.</label>
+                        </div>
+                    </div>
+                    <div class="stepwizard-tabcont-formarea-form-btn site-button-formbottom-btn success">
+                        <a class="btn btn-success" href="#" title="">TALEP OLUŞTUR</a>
+                    </div>
+                </form>
+                <div class="stepwizard-tabcont-navigation d-flex justify-content-center">
+                    <a href="#" class="stepwizard-tabcont-navigation-buttons"><i class="iconcircleback"></i> İPTAL ET</a>
                 </div>
             </div>
 
@@ -199,174 +235,6 @@
 
 </section>
 <!-- Deposit and Withdraw End -->
-
-<!-- Latest Transactions Start -->
-<section class="depositandwithdraw-latesttransactions latesttransactions">
-<div class="container">
-<div class="row">
-
-    <div class="latesttransactions-box">
-        <div class="boxcolumn-boxtitle">
-            <h3 class="boxcolumn-boxtitle-title">ÖNCEKİ İŞLEMLER</h3>
-            <span class="boxcolumn-boxtitle-date"><span>02.04.2019</span> - <span>13.07.2019</span></span>
-        </div>
-        <div class="latesttransactions-area">
-            <table class="latesttransactions-table table">
-                <thead>
-                <tr>
-                    <th class="latesttransactions-table-status">DURUM <span class="tableicon"><i class="tableicon-arrowup"></i><i class="tableicon-arrowdown"></i></span></th>
-                    <th class="latesttransactions-table-type">TİP <span class="tableicon"><i class="tableicon-arrowup"></i><i class="tableicon-arrowdown"></i></span></th>
-                    <th class="latesttransactions-table-method">YÖNTEM <span class="tableicon"><i class="tableicon-arrowup"></i><i class="tableicon-arrowdown"></i></span></th>
-                    <th class="latesttransactions-table-date">TARİH <span class="tableicon"><i class="tableicon-arrowup"></i><i class="tableicon-arrowdown"></i></span></th>
-                    <th class="latesttransactions-table-hour">SAAT <span class="tableicon"><i class="tableicon-arrowup"></i><i class="tableicon-arrowdown"></i></span></th>
-                    <th class="latesttransactions-table-unit">BİRİM <span class="tableicon"><i class="tableicon-arrowup"></i><i class="tableicon-arrowdown"></i></span></th>
-                    <th class="latesttransactions-table-amount">MİKTAR <span class="tableicon"><i class="tableicon-arrowup"></i><i class="tableicon-arrowdown"></i></span></th>
-                    <th class="latesttransactions-table-draw">IBAN-ADRES <span class="tableicon"><i class="tableicon-arrowup"></i><i class="tableicon-arrowdown"></i></span></th>
-                    <th class="latesttransactions-table-code">KOD <span class="tableicon"><i class="tableicon-arrowup"></i><i class="tableicon-arrowdown"></i></span></th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <td class="latesttransactions-table-status site-color-orange">BEKLEMEDE</td>
-                    <td class="latesttransactions-table-type site-color-green">YATIRMA</td>
-                    <td class="latesttransactions-table-method">PAPARA</td>
-                    <td class="latesttransactions-table-date">25.03.2019</td>
-                    <td class="latesttransactions-table-hour">19:08</td>
-                    <td class="latesttransactions-table-unit">USD</td>
-                    <td class="latesttransactions-table-amount">22,430.124</td>
-                    <td class="latesttransactions-table-draw">TR83 0123 1234 5678 9123 4567 89</td>
-                    <td class="latesttransactions-table-code">739203</td>
-                </tr>
-                <tr>
-                    <td class="latesttransactions-table-status site-color-blue">GERÇEKEŞTİ</td>
-                    <td class="latesttransactions-table-type site-color-red">ÇEKME</td>
-                    <td class="latesttransactions-table-method">PAPARA</td>
-                    <td class="latesttransactions-table-date">25.03.2019</td>
-                    <td class="latesttransactions-table-hour">19:08</td>
-                    <td class="latesttransactions-table-unit">USD</td>
-                    <td class="latesttransactions-table-amount">22,430.124</td>
-                    <td class="latesttransactions-table-draw">TR83 0123 1234 5678 9123 4567 89</td>
-                    <td class="latesttransactions-table-code">739203</td>
-                </tr>
-                <tr>
-                    <td class="latesttransactions-table-status site-color-orange">BEKLEMEDE</td>
-                    <td class="latesttransactions-table-type site-color-green">YATIRMA</td>
-                    <td class="latesttransactions-table-method">PAPARA</td>
-                    <td class="latesttransactions-table-date">25.03.2019</td>
-                    <td class="latesttransactions-table-hour">19:08</td>
-                    <td class="latesttransactions-table-unit">USD</td>
-                    <td class="latesttransactions-table-amount">22,430.124</td>
-                    <td class="latesttransactions-table-draw">TR83 0123 1234 5678 9123 4567 89</td>
-                    <td class="latesttransactions-table-code">739203</td>
-                </tr>
-                <tr>
-                    <td class="latesttransactions-table-status site-color-orange">BEKLEMEDE</td>
-                    <td class="latesttransactions-table-type site-color-green">YATIRMA</td>
-                    <td class="latesttransactions-table-method">PAPARA</td>
-                    <td class="latesttransactions-table-date">25.03.2019</td>
-                    <td class="latesttransactions-table-hour">19:08</td>
-                    <td class="latesttransactions-table-unit">USD</td>
-                    <td class="latesttransactions-table-amount">22,430.124</td>
-                    <td class="latesttransactions-table-draw">TR83 0123 1234 5678 9123 4567 89</td>
-                    <td class="latesttransactions-table-code">739203</td>
-                </tr>
-                <tr>
-                    <td class="latesttransactions-table-status site-color-blue">GERÇEKEŞTİ</td>
-                    <td class="latesttransactions-table-type site-color-red">ÇEKME</td>
-                    <td class="latesttransactions-table-method">PAPARA</td>
-                    <td class="latesttransactions-table-date">25.03.2019</td>
-                    <td class="latesttransactions-table-hour">19:08</td>
-                    <td class="latesttransactions-table-unit">USD</td>
-                    <td class="latesttransactions-table-amount">22,430.124</td>
-                    <td class="latesttransactions-table-draw">TR83 0123 1234 5678 9123 4567 89</td>
-                    <td class="latesttransactions-table-code">739203</td>
-                </tr>
-                <tr>
-                    <td class="latesttransactions-table-status site-color-orange">BEKLEMEDE</td>
-                    <td class="latesttransactions-table-type site-color-green">YATIRMA</td>
-                    <td class="latesttransactions-table-method">PAPARA</td>
-                    <td class="latesttransactions-table-date">25.03.2019</td>
-                    <td class="latesttransactions-table-hour">19:08</td>
-                    <td class="latesttransactions-table-unit">USD</td>
-                    <td class="latesttransactions-table-amount">22,430.124</td>
-                    <td class="latesttransactions-table-draw">TR83 0123 1234 5678 9123 4567 89</td>
-                    <td class="latesttransactions-table-code">739203</td>
-                </tr>
-                <tr>
-                    <td class="latesttransactions-table-status site-color-orange">BEKLEMEDE</td>
-                    <td class="latesttransactions-table-type site-color-green">YATIRMA</td>
-                    <td class="latesttransactions-table-method">PAPARA</td>
-                    <td class="latesttransactions-table-date">25.03.2019</td>
-                    <td class="latesttransactions-table-hour">19:08</td>
-                    <td class="latesttransactions-table-unit">USD</td>
-                    <td class="latesttransactions-table-amount">22,430.124</td>
-                    <td class="latesttransactions-table-draw">TR83 0123 1234 5678 9123 4567 89</td>
-                    <td class="latesttransactions-table-code">739203</td>
-                </tr>
-                <tr>
-                    <td class="latesttransactions-table-status site-color-blue">GERÇEKEŞTİ</td>
-                    <td class="latesttransactions-table-type site-color-red">ÇEKME</td>
-                    <td class="latesttransactions-table-method">PAPARA</td>
-                    <td class="latesttransactions-table-date">25.03.2019</td>
-                    <td class="latesttransactions-table-hour">19:08</td>
-                    <td class="latesttransactions-table-unit">USD</td>
-                    <td class="latesttransactions-table-amount">22,430.124</td>
-                    <td class="latesttransactions-table-draw">TR83 0123 1234 5678 9123 4567 89</td>
-                    <td class="latesttransactions-table-code">739203</td>
-                </tr>
-                <tr>
-                    <td class="latesttransactions-table-status site-color-orange">BEKLEMEDE</td>
-                    <td class="latesttransactions-table-type site-color-green">YATIRMA</td>
-                    <td class="latesttransactions-table-method">PAPARA</td>
-                    <td class="latesttransactions-table-date">25.03.2019</td>
-                    <td class="latesttransactions-table-hour">19:08</td>
-                    <td class="latesttransactions-table-unit">USD</td>
-                    <td class="latesttransactions-table-amount">22,430.124</td>
-                    <td class="latesttransactions-table-draw">TR83 0123 1234 5678 9123 4567 89</td>
-                    <td class="latesttransactions-table-code">739203</td>
-                </tr>
-                <tr>
-                    <td class="latesttransactions-table-status site-color-orange">BEKLEMEDE</td>
-                    <td class="latesttransactions-table-type site-color-green">YATIRMA</td>
-                    <td class="latesttransactions-table-method">PAPARA</td>
-                    <td class="latesttransactions-table-date">25.03.2019</td>
-                    <td class="latesttransactions-table-hour">19:08</td>
-                    <td class="latesttransactions-table-unit">USD</td>
-                    <td class="latesttransactions-table-amount">22,430.124</td>
-                    <td class="latesttransactions-table-draw">TR83 0123 1234 5678 9123 4567 89</td>
-                    <td class="latesttransactions-table-code">739203</td>
-                </tr>
-                <tr>
-                    <td class="latesttransactions-table-status site-color-blue">GERÇEKEŞTİ</td>
-                    <td class="latesttransactions-table-type site-color-red">ÇEKME</td>
-                    <td class="latesttransactions-table-method">PAPARA</td>
-                    <td class="latesttransactions-table-date">25.03.2019</td>
-                    <td class="latesttransactions-table-hour">19:08</td>
-                    <td class="latesttransactions-table-unit">USD</td>
-                    <td class="latesttransactions-table-amount">22,430.124</td>
-                    <td class="latesttransactions-table-draw">TR83 0123 1234 5678 9123 4567 89</td>
-                    <td class="latesttransactions-table-code">739203</td>
-                </tr>
-                <tr>
-                    <td class="latesttransactions-table-status site-color-orange">BEKLEMEDE</td>
-                    <td class="latesttransactions-table-type site-color-green">YATIRMA</td>
-                    <td class="latesttransactions-table-method">PAPARA</td>
-                    <td class="latesttransactions-table-date">25.03.2019</td>
-                    <td class="latesttransactions-table-hour">19:08</td>
-                    <td class="latesttransactions-table-unit">USD</td>
-                    <td class="latesttransactions-table-amount">22,430.124</td>
-                    <td class="latesttransactions-table-draw">TR83 0123 1234 5678 9123 4567 89</td>
-                    <td class="latesttransactions-table-code">739203</td>
-                </tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
-
-</div>
-</div>
-</section>
-<!-- Latest Transactions End -->
 
 <!-- Footer Start -->
 <footer class="footer">

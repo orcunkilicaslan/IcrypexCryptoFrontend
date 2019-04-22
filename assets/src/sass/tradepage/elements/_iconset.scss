@@ -71,6 +71,10 @@ $tradepageSvgIconImgPath : "../../img/tradepage/svg";
     &-wizardiconinformation{
       background-image: url(#{$tradepageSvgIconImgPath}/Wizard_Information_Icon.svg);
     }
+    &-wizardiconallbank{
+      background-image: url(#{$tradepageSvgIconImgPath}/Wizard_Icon_All_Bank.svg);
+    }
+
 
   }
 }

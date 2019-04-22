@@ -232,11 +232,20 @@ $tradepageSvgIconImgPath : "../../img/tradepage/svg";
         }
         &-btn{
           display: block;
-          background-color: $tradepage-color-green;
           font-size: 20px;
           font-weight: normal;
           border: none;
           padding: 5px 10px;
+
+          &.btn{
+            &-success{
+              background-color: $tradepage-color-green;
+            }
+            &-danger{
+              background-color: $tradepage-color-red;
+            }
+          }
+
         }
       }
     }
@@ -256,22 +265,22 @@ $tradepageSvgIconImgPath : "../../img/tradepage/svg";
       }
 
       &-form{
+        width: 100%;
         margin: auto;
 
         &-tags700,
-        &-tags960{
-
+        &-tags900{
+          margin: auto;
           > div[class*="col-"]{
             padding-left: 7px;
             padding-right: 7px;
           }
         }
-        &-tags960{
-          max-width: 960px;
+        &-tags900{
+          max-width: 900px;
         }
         &-tags700{
           max-width: 700px;
-          margin: auto;
         }
 
         #{$tabcont}-infoarea{
@@ -333,6 +342,7 @@ $tradepageSvgIconImgPath : "../../img/tradepage/svg";
         font-size: 17px;
         line-height: 1.5;
         text-align: left;
+        margin: auto;
 
         li{
           position: relative;
