@@ -100,18 +100,12 @@
       &:focus-within{
         .input-group-append{
           border-color:transparentize($tradepage-color-light-stale-gray, 0.40);
-          &.graybg{
-            border-color: transparentize($tradepage-color-light-stale-gray, 0.40);
-          }
         }
       }
 
       .input-group-append{
         border: 1px solid transparentize($tradepage-color-light-stale-gray, 0.70);
         border-left: none;
-        &.graybg{
-          border-color: $tradepage-color-light-bg-gray;
-        }
       }
       .input-group-text{
         font-size: 20px;
@@ -120,22 +114,6 @@
         background-color:$tradepage-color-light-bg-gray;
         border: none;
         @include border-radius(0);
-
-        &.whitebg{
-          background-color:$tradepage-color-white;
-        }
-        &.graybg{
-          background-color:$tradepage-color-light-bg-gray;
-        }
-        &.colorgreen{
-          color:$tradepage-color-green;
-        }
-        &.colorred{
-          color:$tradepage-color-red;
-        }
-        &.colorgray{
-          color:$tradepage-color-light-stale-gray;
-        }
       }
     }
 
@@ -164,30 +142,6 @@
     height:auto;
     @include box-shadow(0,0,0,transparent);
     @include border-radius(0);
-
-    &.whitebg{
-      background-color:$tradepage-color-white;
-      &:focus{
-        background-color:$tradepage-color-white;
-      }
-    }
-    &.graybg{
-      background-color:$tradepage-color-light-bg-gray;
-      border-color: $tradepage-color-light-bg-gray;
-      &:focus{
-        background-color:$tradepage-color-light-bg-gray;
-      }
-    }
-    &.colorgreen{
-      color:$tradepage-color-green;
-    }
-    &.colorred{
-      color:$tradepage-color-red;
-    }
-    &.colorgray{
-      color:$tradepage-color-light-stale-gray;
-    }
-
     &:focus{
       box-shadow:none;
       border-color:transparentize($tradepage-color-light-stale-gray, 0.40);

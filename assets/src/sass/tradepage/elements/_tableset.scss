@@ -1,0 +1,31 @@
+$tradepageSvgIconImgPath : "../../img/tradepage/svg";
+
+.site{
+
+  &table{}
+
+}
+
+.tableicon{
+  display: inline-block;
+  margin-left: 2px;
+  position: relative;
+  bottom: -2px;
+  i{
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: block;
+    cursor: pointer;
+    width: 8px;
+    height: 4px;
+    margin: 1px 0;
+    padding: 3px 0;
+  }
+  &-arrowup{
+    background-image: url(#{$tradepageSvgIconImgPath}/Arrow_Up.svg);
+  }
+  &-arrowdown{
+    background-image: url(#{$tradepageSvgIconImgPath}/Arrow_Down.svg);
+  }
+}

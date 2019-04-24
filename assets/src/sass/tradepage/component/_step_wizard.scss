@@ -236,16 +236,6 @@ $tradepageSvgIconImgPath : "../../img/tradepage/svg";
           font-weight: normal;
           border: none;
           padding: 5px 10px;
-
-          &.btn{
-            &-success{
-              background-color: $tradepage-color-green;
-            }
-            &-danger{
-              background-color: $tradepage-color-red;
-            }
-          }
-
         }
       }
     }

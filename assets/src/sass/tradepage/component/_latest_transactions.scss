@@ -16,8 +16,6 @@ $tradepageSvgIconImgPath : "../../img/tradepage/svg";
     border: 1px solid transparentize($tradepage-color-light-stale-gray, 0.7);
 
     div[class*="boxtitle"]{margin-bottom: 0; padding-bottom: 10px;}
-    .colorgreen{color: $tradepage-color-green;}
-    .colorred{color: $tradepage-color-red;}
 
     > .row{
       position: relative;
@@ -103,39 +101,6 @@ $tradepageSvgIconImgPath : "../../img/tradepage/svg";
     &-code{
       width: 15%;
     }
-
-    .colororange{color: $tradepage-color-orange;}
-    .colorblue{color: $tradepage-color-blue;}
-    .colorgreen{color: $tradepage-color-green;}
-    .colorred{color: $tradepage-color-red;}
-
   }
-
-  .tableicon{
-    display: inline-block;
-    margin-left: 2px;
-    position: relative;
-    bottom: -2px;
-    i{
-      background-color: transparent;
-      background-repeat: no-repeat;
-      background-position: center center;
-      display: block;
-      cursor: pointer;
-      width: 8px;
-      height: 4px;
-      margin: 1px 0;
-      padding: 3px 0;
-    }
-    &-arrowup{
-      background-image: url(#{$tradepageSvgIconImgPath}/Arrow_Up.svg);
-    }
-    &-arrowdown{
-      background-image: url(#{$tradepageSvgIconImgPath}/Arrow_Down.svg);
-    }
-  }
-
-
-
 
 }
