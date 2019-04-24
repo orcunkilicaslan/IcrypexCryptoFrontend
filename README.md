@@ -18,7 +18,7 @@
  - [13_Withdraw_Step_1_Home](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/tradepage/13_Withdraw_Step_1_Home.html)
  - [14_Withdraw_Step_2_Bank_1](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/tradepage/14_Withdraw_Step_2_Bank_1.html)
  - [15_Withdraw_Step_2_Bank_1_Add_Account](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/tradepage/15_Withdraw_Step_2_Bank_1_Add_Account.html)
-
+ - [16_Withdraw_Step_2_Bank_2](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/tradepage/16_Withdraw_Step_2_Bank_2.html)
 
   
 # NodeJS Kurulumu
