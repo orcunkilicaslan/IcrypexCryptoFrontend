@@ -1,0 +1,150 @@
+.modal-backdrop{
+  background-color: $tradepage-gradient-darkblue01;
+
+  &.show{
+    opacity: 0.8;
+  }
+}
+
+.site{
+
+  &modal{
+
+    .modal{
+
+      &-content{
+        padding: 10px;
+        border: none;
+        @include border-radius(0);
+      }
+
+      &-header{
+        color: $tradepage-color-white;
+        @include gradient($tradepage-gradient-darkblue01, $tradepage-gradient-darkblue02);
+        @include border-radius(0);
+        padding: 5px 10px;
+
+        .close{
+          position: relative;
+          text-indent: -9999px;
+          opacity: 1;
+
+          &:before,
+          &:after{
+            content: "";
+            position: absolute;
+            background-color: $tradepage-color-white;
+            width: 18px;
+            height: 2px;
+            left: 0;
+            top: calc(50% - -2px);
+          }
+
+          &:before{
+            @include rotate(45);
+          }
+          &:after{
+            @include rotate(135);
+          }
+
+        }
+
+      }
+
+      &-title{
+        font-size: 20px;
+      }
+
+      &-body{
+        border: 1px solid transparentize($tradepage-color-light-stale-gray, 0.70);
+        margin-top: -2px;
+        padding: 0;
+      }
+
+      &-form{
+        padding: 15px;
+        padding-bottom: 0;
+
+        .row > div[class*="col"]{
+          padding-left: 7px;
+          padding-right: 7px;
+
+          &:first-child{
+            padding-left: 15px;
+          }
+          &:last-child{
+            padding-right: 15px;
+          }
+        }
+
+        .btnwidth110{
+          width: 110px;
+        }
+
+      }
+
+      &-graybg{
+        background-color: $tradepage-color-light-bg-gray;
+        padding: 15px;
+        margin: 3px;
+      }
+
+      &-table{
+        color: $tradepage-color-dark-blue;
+        margin: 0;
+        margin-top: -5px;
+        border-bottom: 1px solid transparentize($tradepage-color-light-stale-gray, 0.7);
+
+        .btn{
+          padding: 2px 5px;
+        }
+
+        td, th{
+          border-color: transparentize($tradepage-color-light-stale-gray, 0.7);
+          vertical-align: middle;
+          font-size: 17px;
+          font-weight: normal;
+          line-height: 1;
+          padding: 0 5px;
+          text-align: left;
+
+          &:first-child{
+            padding-left: 0;
+          }
+          &:last-child{
+            padding-right: 0;
+          }
+        }
+
+        thead th{
+          border-top-width: 0;
+          border-bottom-width: 1px;
+          border-color: transparentize($tradepage-color-light-stale-gray, 0.7);
+          padding-top: 3px;
+          padding-bottom: 3px;
+
+          &:last-child{
+            width: 110px;
+          }
+        }
+
+        tbody td{
+          border-color: transparentize($tradepage-color-light-stale-gray, 0.9);
+          padding-top: 3px;
+          padding-bottom: 3px;
+          line-height: 0.6;
+
+          &:last-child{
+            width: 110px;
+          }
+        }
+      }
+
+      &-footer{
+        display: none;
+      }
+
+    }
+  }
+
+}

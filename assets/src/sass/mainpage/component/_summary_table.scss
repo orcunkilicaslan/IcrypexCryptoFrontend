@@ -147,10 +147,7 @@ $mainpageSvgIconImgPath : "../../img/mainpage/svg";
 
     &-symbol{}
     &-price{}
-    &-change{
-      &.colorgreen{color: $mainpage-color-green;}
-      &.colorred{color: $mainpage-color-red;}
-    }
+    &-change{}
     &-high{}
     &-low{}
     &-volume{}
@@ -159,31 +156,6 @@ $mainpageSvgIconImgPath : "../../img/mainpage/svg";
       text-align: center;
       &.minichart{}
     }
-
-    .tableicon{
-      display: inline-block;
-      margin-left: 2px;
-      position: relative;
-      bottom: -4px;
-      i{
-        background-color: transparent;
-        background-repeat: no-repeat;
-        background-position: center center;
-        display: block;
-        cursor: pointer;
-        width: 8px;
-        height: 4px;
-        margin: 1px 0;
-        padding: 4px 0;
-      }
-      &-arrowup{
-        background-image: url(#{$mainpageSvgIconImgPath}/Arrow_Up.svg);
-      }
-      &-arrowdown{
-        background-image: url(#{$mainpageSvgIconImgPath}/Arrow_Down.svg);
-      }
-    }
-
   }
 
 }
