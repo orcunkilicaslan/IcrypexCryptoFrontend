@@ -21,6 +21,7 @@
  - [16_Withdraw_Step_2_Bank_2](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/tradepage/16_Withdraw_Step_2_Bank_2.html)
  - [17_Withdraw_Step_2_Papara_1](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/tradepage/17_Withdraw_Step_2_Papara_1.html)
  - [18_Withdraw_Step_2_Papara_2](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/tradepage/18_Withdraw_Step_2_Papara_2.html)
+ - [19_Withdraw_Step_2_Kripto_1](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/tradepage/19_Withdraw_Step_2_Kripto_1.html)
  
 
 

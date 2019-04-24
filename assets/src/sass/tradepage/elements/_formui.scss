@@ -108,10 +108,11 @@
         border-left: none;
       }
       .input-group-text{
+        color: $tradepage-color-dark-blue;
+        background-color:$tradepage-color-light-bg-gray;
         font-size: 20px;
         padding: 6px 10px 9px;
         line-height: 1;
-        background-color:$tradepage-color-light-bg-gray;
         border: none;
         @include border-radius(0);
       }
@@ -133,7 +134,7 @@
   }
 
   .form-control{
-    color:$tradepage-color-dark-blue;
+    color: $tradepage-color-dark-blue;
     background-color:$tradepage-color-white;
     border-color:transparentize($tradepage-color-light-stale-gray, 0.70);
     padding:6px 10px 8px;
