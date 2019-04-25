@@ -2,7 +2,7 @@ $tradepageSvgIconImgPath : "../../img/tradepage/svg";
 
 .sidebar{
 
-  > div[class*="sidebar-"]{
+  > *[class*="sidebar-"]{
     margin-top: 15px;
 
     &:first-child{
@@ -18,7 +18,6 @@ $tradepageSvgIconImgPath : "../../img/tradepage/svg";
     }
 
     &-table{
-
       td, th{
         padding: 1px 5px;
         line-height: 1.4;
@@ -42,10 +41,7 @@ $tradepageSvgIconImgPath : "../../img/tradepage/svg";
         color: $tradepage-color-dark-blue;
         font-weight: normal !important;
       }
-      &-bid{}
-      &-ask{}
     }
-
   }
   /* Market Data */
 
@@ -57,7 +53,6 @@ $tradepageSvgIconImgPath : "../../img/tradepage/svg";
     }
 
     &-table{
-
       td, th{
         border-top: 0;
         border-bottom:1px solid transparentize($tradepage-color-light-stale-gray, 0.7);
@@ -82,12 +77,44 @@ $tradepageSvgIconImgPath : "../../img/tradepage/svg";
           font-weight: normal;
         }
       }
-
-      &-currency{}
-      &-amount{}
-
     }
   }
   /* Balance */
+
+  /* Navigasyon */
+  &-navigasyon{
+
+    .columntitle{
+      color: $tradepage-color-dark-blue;
+      padding-bottom: 8px;
+      margin-bottom: 10px;
+    }
+
+    &-list{
+      &-item{
+        margin-top: 5px;
+        font-size: 17px;
+
+        &:first-child{
+          margin-top: 0;
+        }
+      }
+
+      .nav{
+        &-link{
+          color: $tradepage-color-white;
+          background-color: $tradepage-color-light-stale-gray;
+          padding: 8px 12px;
+          @include border-radius(3px);
+
+          &.active{
+            background-color: $tradepage-color-blue;
+          }
+        }
+      }
+    }
+
+  }
+  /* Navigasyon */
 
 }
