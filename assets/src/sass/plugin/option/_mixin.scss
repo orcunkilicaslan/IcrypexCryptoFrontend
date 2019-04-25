@@ -1,14 +1,20 @@
-//Cross browser CSS3 mixins
+// Cross browser CSS3 mixins
 @mixin box-shadow($left, $top, $radius, $color) {
   box-shadow: $left $top $radius $color;
-  -webkit-box-shadow: $left $top $radius $color;
+  -o-box-shadow: $left $top $radius $color;
+  -ms-box-shadow: $left $top $radius $color;
   -moz-box-shadow: $left $top $radius $color;
+  -webkit-box-shadow: $left $top $radius $color;
+  -khtml-box-shadow: $left $top $radius $color;
 }
 
 @mixin border-radius($radius) {
   border-radius: $radius;
-  -webkit-border-radius: $radius;
+  -o-border-radius: $radius;
+  -ms-border-radius: $radius;
   -moz-border-radius: $radius;
+  -webkit-border-radius: $radius;
+  -khtml-border-radius: $radius;
 }
 
 @mixin border-radii($topleft, $topright, $bottomright, $bottomleft) {

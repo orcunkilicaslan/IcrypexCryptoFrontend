@@ -14,7 +14,8 @@
     &:before{
       content: "";
       background-color: $tradepage-color-light-stale-gray;
-      width: 300px;
+      width: 100%;
+      max-width: 300px;
       height: 1px;
       position: absolute;
       bottom: 0;
@@ -51,11 +52,21 @@
     }
   }
 
+  &.bottomorange{
+    &:after{
+      background-color: $tradepage-color-orange;
+    }
+  }
+
+  &.titlebold{
+    font-weight: 500;
+  }
+
   &-xs{
     font-size: 17px;
     &.bottomborder{
       &:before{
-        width: 150px;
+        max-width: 150px;
       }
       &:after{
         width: 40px;
@@ -89,7 +100,7 @@
     font-size: 23px;
     &.bottomborder{
       &:before{
-        width: 300px;
+        max-width: 300px;
       }
       &:after{
         width: 40px;
@@ -109,7 +120,7 @@
     font-size: 25px;
     &.bottomborder{
       &:before{
-        width: 300px;
+        max-width: 300px;
         left: 0;
       }
       &:after{
@@ -131,7 +142,7 @@
     line-height: 1.17;
     &.bottomborder{
       &:before{
-        width: 300px;
+        max-width: 300px;
         left: 0;
       }
       &:after{

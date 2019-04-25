@@ -177,7 +177,7 @@ $tradepageSvgIconImgPath : "../../img/tradepage/svg";
 
     .columntitle{
       &:before{
-        width: 100%;
+        max-width: inherit;
       }
       &:after{
         width: 60px;

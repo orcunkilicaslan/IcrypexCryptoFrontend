@@ -13,6 +13,9 @@
 
     .columntitle{
       color: $tradepage-color-dark-blue;
+      &:before{
+        max-width: inherit;
+      }
     }
 
   }
