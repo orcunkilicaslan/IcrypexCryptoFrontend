@@ -184,30 +184,8 @@ $tradepageSvgIconImgPath : "../../img/tradepage/svg";
       }
 
       &-table{
-        color: $tradepage-color-dark-blue;
-        margin: 0;
-
-        td, th{
-          border-color: transparentize($tradepage-color-light-stale-gray, 0.7);
-          vertical-align: middle;
-          font-size: 15px;
-          font-weight: normal;
-          line-height: 1;
-          padding: 0 5px;
-          text-align: left;
-        }
 
         thead th{
-          font-size: 17px;
-          border-top-width: 0;
-          border-bottom-width: 1px;
-          border-color: transparentize($tradepage-color-light-stale-gray, 0.7);
-          padding-top: 3px;
-          padding-bottom: 3px;
-
-          &:first-child{
-            padding-left: 0;
-          }
           &:last-child{
             width: 20%;
           }
@@ -219,16 +197,8 @@ $tradepageSvgIconImgPath : "../../img/tradepage/svg";
 
         tbody td{
           border: none;
-          padding-top: 5px;
-          padding-bottom: 5px;
           line-height: 0.6;
         }
-
-        &-price{}
-        &-btc{}
-        &-try{}
-        &-sum{}
-
       }
     }
 
@@ -249,31 +219,6 @@ $tradepageSvgIconImgPath : "../../img/tradepage/svg";
     &-box{
 
       &-table{
-        color: $tradepage-color-dark-blue;
-        margin: 0;
-
-        td, th{
-          border-color: transparentize($tradepage-color-light-stale-gray, 0.7);
-          vertical-align: middle;
-          font-size: 15px;
-          font-weight: normal;
-          line-height: 1;
-          padding: 0 5px;
-          text-align: left;
-
-          &:first-child{
-            padding-left: 0;
-          }
-        }
-
-        thead th{
-          font-size: 17px;
-          border-top-width: 0;
-          border-bottom-width: 1px;
-          border-color: transparentize($tradepage-color-light-stale-gray, 0.7);
-          padding-top: 3px;
-          padding-bottom: 3px;
-        }
 
         tbody tr:first-child td{
           padding-top: 15px;
@@ -281,15 +226,7 @@ $tradepageSvgIconImgPath : "../../img/tradepage/svg";
 
         tbody td{
           border: none;
-          padding-top: 5px;
-          padding-bottom: 5px;
-          line-height: 1;
         }
-
-        &-price{}
-        &-btc{}
-        &-try{}
-        &-sum{}
       }
     }
 
