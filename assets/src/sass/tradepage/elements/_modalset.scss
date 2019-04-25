@@ -90,8 +90,6 @@
       }
 
       &-table{
-        color: $tradepage-color-dark-blue;
-        margin: 0;
         margin-top: -5px;
         border-bottom: 1px solid transparentize($tradepage-color-light-stale-gray, 0.7);
 
@@ -100,50 +98,23 @@
         }
 
         td, th{
-          border-color: transparentize($tradepage-color-light-stale-gray, 0.7);
-          vertical-align: middle;
           font-size: 17px;
-          font-weight: normal;
-          line-height: 1;
-          padding: 0 5px;
-          text-align: left;
-
-          &:first-child{
-            padding-left: 0;
-          }
-          &:last-child{
-            padding-right: 0;
-          }
+          padding-top: 3px;
+          padding-bottom: 3px;
         }
 
         thead th{
-          border-top-width: 0;
-          border-bottom-width: 1px;
-          border-color: transparentize($tradepage-color-light-stale-gray, 0.7);
-          padding-top: 3px;
-          padding-bottom: 3px;
-
           &:last-child{
             width: 110px;
           }
         }
 
         tbody td{
-          border-color: transparentize($tradepage-color-light-stale-gray, 0.9);
-          padding-top: 3px;
-          padding-bottom: 3px;
-          line-height: 0.6;
-
           &:last-child{
             width: 110px;
           }
         }
       }
-
-      &-footer{
-        display: none;
-      }
-
     }
   }
 
