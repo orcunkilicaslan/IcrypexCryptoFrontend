@@ -145,7 +145,7 @@ gulp.task('sass-tradepage', () => {
 });
 
 gulp.task('script-tradepage', () => {
-    return gulp.src([ folder_src_main + 'script/tradepage/**/app.js' ])
+    return gulp.src([ folder_src_main + 'script/tradepage/**/app.js', folder_src_main + 'script/tradepage/**/validates.js' ])
         .pipe(plumber())
         .pipe(webpack({
             mode: 'production'
