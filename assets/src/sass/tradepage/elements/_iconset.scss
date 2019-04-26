@@ -74,7 +74,21 @@ $tradepageSvgIconImgPath : "../../img/tradepage/svg";
     &-wizardiconallbank{
       background-image: url(#{$tradepageSvgIconImgPath}/Wizard_Icon_All_Bank.svg);
     }
-
+    &-profileinformationred{
+      background-image: url(#{$tradepageSvgIconImgPath}/Icon_Information_Red.svg);
+    }
+    &-profileinformationyellow{
+      background-image: url(#{$tradepageSvgIconImgPath}/Icon_Information_Yellow.svg);
+    }
+    &-profilehelp{
+      background-image: url(#{$tradepageSvgIconImgPath}/Icon_Help.svg);
+    }
+    &-profilesendagain{
+      background-image: url(#{$tradepageSvgIconImgPath}/Icon_Sent_Again.svg);
+    }
+    &-profilefileuploaddragdrop{
+      background-image: url(#{$tradepageSvgIconImgPath}/File_Upload_Drag_Drop_Icon.svg);
+    }
 
   }
 }

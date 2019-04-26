@@ -158,6 +158,8 @@
     <div class="profile-wrapper maincont-right col-10">
     <h3 class="columntitle columntitle-sm titleleft titlebold">HESAP ONAYI</h3>
     <div class="profile-box">
+
+        <!-- Progress -->
         <div class="profile-progress">
             <ul class="profile-progress-list">
                 <li class="profile-progress-list-item check">
@@ -178,6 +180,63 @@
                 </li>
             </ul>
         </div>
+        <!-- Progress -->
+        <!-- Content -->
+        <div class="profile-box-content formui">
+            <div class="boxcolumn-boxtitle">
+                <h3 class="boxcolumn-boxtitle-title">GİRİŞ SEVİYESİ BİLGİLERİ</h3>
+                <span class="boxcolumn-boxtitle-info d-flex align-items-center"><i class="icon-svg icon-svg-profileinformationred"></i> Akti̇vasyon kodu girilmeden devam edi̇lemez</span>
+            </div>
+            <form autocomplete="off" novalidate>
+                <div class="row d-inline-flex">
+                    <div class="form-group col">
+                        <label>IBAN NO</label>
+                        <input class="sitebggraylight form-control" type="text" />
+                        <a href="#" class="form-group-icons-buttons"><i class="icon-svg icon-svg-profilesendagain"></i> TEKRAR GÖNDER</a>
+                    </div>
+                    <div class="form-group col-md-auto">
+                        <label style="visibility: hidden;">TAMAM</label>
+                        <button type="button" class="btn btn-success btnwidth110">TAMAM</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <!-- Content -->
+        <!-- Content -->
+        <div class="profile-box-content formui">
+            <div class="boxcolumn-boxtitle">
+                <h3 class="boxcolumn-boxtitle-title">BİRİNCİ SEVİYE BİLGİLERİ</h3>
+                <span class="boxcolumn-boxtitle-info d-flex align-items-center"><i class="icon-svg icon-svg-profileinformationyellow"></i>  <strong>Limit:</stron Günlük <strong>0-100.000 TRY</strong>, Aylık <strong>0-1.000.000 TRY</strong> veya karşılığı Kripto Para</span>
+            </div>
+            <div class="profile-fileupload row d-lg-inline-flex">
+                <div class="col">
+                    <label class="text-center">KİMLİK ÖN YÜZÜ</label>
+                    <form id="profileKimlikOnYuz" class="dropzone" action="/file-upload">
+                        <div class="fallback">
+                            <input name="file" type="file" />
+                        </div>
+                    </form>
+                </div>
+                <div class="col">
+                    <label class="text-center">KİMLİK ARKA YÜZÜ</label>
+                    <form id="profileKimlikOnYuz" class="dropzone" action="/file-upload">
+                        <div class="fallback">
+                            <input name="file" type="file" />
+                        </div>
+                    </form>
+                </div>
+                <div class="col">
+                    <label class="text-center d-flex align-items-center justify-content-center">DİLEKÇELİ FOTOĞRAF <i class="icon-svg icon-svg-profilehelp"></i></label>
+                    <form id="profileKimlikOnYuz" class="dropzone" action="/file-upload">
+                        <div class="fallback">
+                            <input name="file" type="file" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- Content -->
+
     </div>
     </div>
     <!-- Profile -->
@@ -297,6 +356,7 @@
 <!-- Javascript End -->
 <!-- Plugins Start -->
 <script id="script-owl-carousel" src="../assets/vendor/owl.carousel/dist/owl.carousel.min.js"></script>
+<script id="script-dropzone" src="../assets/vendor/dropzone/dist/dropzone.js"></script>
 <script id="script-plugin-app" src="../assets/dist/js/plugin-app.js"></script>
 <script id="script-tradepage-app" src="../assets/dist/js/tradepage-app.js"></script>
 <!-- Plugins End -->
