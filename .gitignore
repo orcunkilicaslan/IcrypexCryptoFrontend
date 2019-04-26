@@ -1,6 +1,8 @@
 .idea/
 node_modules/
 
+assets/vendor/bootstrap/README.md
+assets/vendor/bootstrap/package.json
 assets/vendor/bootstrap/dist/
 assets/vendor/bootstrap/js/
 assets/vendor/bootstrap/js/package.json
