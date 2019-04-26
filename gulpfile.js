@@ -22,7 +22,7 @@ const   gulp                      = require('gulp'),
 
 /* BOOTSTRAP START */
 gulp.task('sass-bootstrap', () => {
-  return gulp.src([ folder_src_main + 'sass/bootstrap/**/*.scss' ])
+  return gulp.src([ folder_src_main + 'sass/bootstrap/**/*.scss', folder_src_main + 'sass/bootstrap/**/*.sass' ])
       .pipe(sourcemaps.init())
       .pipe(plumber())
       .pipe(sass())
@@ -40,7 +40,7 @@ gulp.task('sass-bootstrap', () => {
 
 /* PLUGINS START */
 gulp.task('sass-plugin', () => {
-  return gulp.src([ folder_src_main + 'sass/plugin/**/*.scss' ])
+  return gulp.src([ folder_src_main + 'sass/plugin/**/*.scss', folder_src_main + 'sass/plugin/**/*.sass' ])
       .pipe(sourcemaps.init())
       .pipe(plumber())
       .pipe(sass())
@@ -75,7 +75,7 @@ gulp.task('script-plugin', () => {
 
 /* MAINPAGE START */
 gulp.task('sass-mainpage', () => {
-  return gulp.src([ folder_src_main + 'sass/mainpage/**/*.scss' ])
+  return gulp.src([ folder_src_main + 'sass/mainpage/**/*.scss', folder_src_main + 'sass/mainpage/**/*.sass' ])
     .pipe(sourcemaps.init())
       .pipe(plumber())
       .pipe(sass())
@@ -115,8 +115,10 @@ gulp.task('watch-mainpage', () => {
 
     const watchMainpage = [
         folder_src_main + 'sass/plugin/**/*.scss',
+        folder_src_main + 'sass/plugin/**/*.sass',
         folder_src_main + 'script/plugin/**/*.js',
         folder_src_main + 'sass/mainpage/**/*.scss',
+        folder_src_main + 'sass/mainpage/**/*.sass',
         folder_src_main + 'script/mainpage/**/*.js',
     ];
 
@@ -128,7 +130,7 @@ gulp.task('watch-mainpage', () => {
 
 /* TRADEPAGE START */
 gulp.task('sass-tradepage', () => {
-    return gulp.src([ folder_src_main + 'sass/tradepage/**/*.scss' ])
+    return gulp.src([ folder_src_main + 'sass/tradepage/**/*.scss', folder_src_main + 'sass/tradepage/**/*.sass' ])
         .pipe(sourcemaps.init())
         .pipe(plumber())
         .pipe(sass())
@@ -168,8 +170,10 @@ gulp.task('watch-tradepage', () => {
 
     const watchTradepage = [
         folder_src_main + 'sass/plugin/**/*.scss',
+        folder_src_main + 'sass/plugin/**/*.sass',
         folder_src_main + 'script/plugin/**/*.js',
         folder_src_main + 'sass/tradepage/**/*.scss',
+        folder_src_main + 'sass/tradepage/**/*.sass',
         folder_src_main + 'script/tradepage/**/*.js',
     ];
 
@@ -242,8 +246,8 @@ gulp.task('watch', () => {
 
     const watch = [
         folder_src_main + '**/*.html',
-        folder_src_main + 'bootstrap/**/*.scss',
         folder_src_main + 'sass/**/*.scss',
+        folder_src_main + 'sass/**/*.sass',
         folder_src_main + 'script/**/*.js',
         folder_assets_main + 'img/**/*.+(png|jpg|jpeg|gif|svg|ico)'
     ];
