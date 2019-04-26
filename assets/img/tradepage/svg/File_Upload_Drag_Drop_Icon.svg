@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="26.5" height="34.5" viewBox="0 0 26.5 34.5">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #758ca3;
+        stroke-miterlimit: 10;
+        stroke-width: 1.5px;
+      }
+
+      .cls-2 {
+        fill: #758ca3;
+      }
+    </style>
+  </defs>
+  <g id="Icon_Drag_Drop" transform="translate(-6.25 -3.25)">
+    <path id="Path" class="cls-1" d="M23.5,3.5H8.5c-1.483,0-2,.517-2,2v29c0,1.483.517,2,2,2h20c1.483,0,3-.517,3-2v-22Z" transform="translate(0.5 0.5)"/>
+    <path id="Path-2" data-name="Path" class="cls-1" d="M18.8,3.4v7.657A1.33,1.33,0,0,0,20.111,12.4H26.8" transform="translate(5.2 0.6)"/>
+    <path id="Path-3" data-name="Path" class="cls-2" d="M12.6,10.827v8.51c0,.525.424.42.53.42l2.121-.946,1.379,3.047a.671.671,0,0,0,.955.315l.636-.315a.637.637,0,0,0,.424-.946l-1.379-3.047,2.121-.946c.106-.105.212-.21.212-.315,0-.21,0-.315-.106-.42L13.13,10.407c-.106-.105-.318-.21-.424-.105S12.6,10.512,12.6,10.827Z" transform="translate(3.401 4.741)"/>
+  </g>
+</svg>

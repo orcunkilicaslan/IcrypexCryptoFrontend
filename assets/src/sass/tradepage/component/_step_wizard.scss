@@ -50,7 +50,7 @@ $tradepageSvgIconImgPath : "../../img/tradepage/svg";
             display:none;
             left:0;
             top:0;
-            border:2px solid #fff;
+            border:2px solid $tradepage-color-white;
             @include border-radius(48px);
           }
         }

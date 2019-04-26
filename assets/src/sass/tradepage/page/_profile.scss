@@ -27,6 +27,11 @@
       left: -1px;
       position: absolute;
     }
+
+    &-content{
+      padding: 15px;
+    }
+
   }
 
   &-progress{
@@ -37,18 +42,6 @@
 
     &-list{
       margin: 20px auto 15px;
-      position: relative;
-
-      &:before{
-        content:"";
-        width: calc(100% - 140px);
-        height:5px;
-        background-color: lighten($tradepage-color-light-stale-gray, 25%);
-        position:absolute;
-        top:11px;
-        left:70px;
-        overflow: hidden;
-      }
 
       &-item{
         width:140px;
@@ -90,7 +83,7 @@
             display:none;
             left:0;
             top:0;
-            border:2px solid #fff;
+            border:2px solid $tradepage-color-white;
             @include border-radius(48px);
           }
         }
@@ -133,15 +126,10 @@
         }
 
         &.active{
-          &:before{
-            display:block;
-            width: 50%;
-            background-color: $tradepage-color-blue;
-          }
+          &:after{width: 50%;}
         }
 
         &.check{
-
           &:after{width: 100%;}
           &:before{opacity:0;}
         }
@@ -165,6 +153,30 @@
         }
       }
     }
+  }
+
+  &-fileupload{
+    > div[class*="col"]{
+      padding-left: 7px;
+      padding-right: 7px;
+
+      &:first-child{
+        padding-left: 15px;
+      }
+      &:last-child{
+        padding-right: 15px;
+      }
+    }
+
+    label i[class*="icon-svg"]{
+      margin-left: 5px;
+      display: inline-block;
+    }
+    label i[class*="profilehelp"]{
+      width: 18px;
+      height: 18px;
+    }
+
   }
 
 
