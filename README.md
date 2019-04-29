@@ -24,6 +24,8 @@
  - [19_Withdraw_Step_2_Kripto_1](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/tradepage/19_Withdraw_Step_2_Kripto_1.html)
  - [20_Withdraw_Step_2_Kripto_2](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/tradepage/20_Withdraw_Step_2_Kripto_2.html)
  - [21_Profile_Account_Confirmation](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/tradepage/21_Profile_Account_Confirmation.html)
+ - [22_Profile_Account_Confirmation_Help_Box](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/tradepage/22_Profile_Account_Confirmation_Help_Box.html)
+ 
 
   
 # NodeJS Kurulumu

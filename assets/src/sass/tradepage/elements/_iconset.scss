@@ -82,6 +82,11 @@ $tradepageSvgIconImgPath : "../../img/tradepage/svg";
     }
     &-profilehelp{
       background-image: url(#{$tradepageSvgIconImgPath}/Icon_Help.svg);
+
+      &[data-toggle^="tooltip"]:hover{
+        background-image: url(#{$tradepageSvgIconImgPath}/Icon_Help_Active.svg);
+      }
+
     }
     &-profilesendagain{
       background-image: url(#{$tradepageSvgIconImgPath}/Icon_Sent_Again.svg);
