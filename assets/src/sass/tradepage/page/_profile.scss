@@ -1,7 +1,7 @@
 .profile{
 
   &-section{
-    padding: 35px 0 40px;
+    padding: 35px 0 60px;
   }
 
   &-wrapper{
@@ -9,6 +9,16 @@
       color: $tradepage-color-dark-blue;
       padding-bottom: 6px;
       margin-bottom: 0;
+    }
+
+    .formui{
+      .form-control{
+        font-weight: 500;
+        color: $tradepage-color-dark-blue;
+      }
+      @include placeholder{
+        font-weight: 500;
+      }
     }
   }
 
@@ -18,6 +28,7 @@
     border-top: none;
     position: relative;
     min-height: 400px;
+    font-size: 17px;
 
     &:before{
       content: "";
@@ -28,8 +39,70 @@
       position: absolute;
     }
 
+    a.link{
+      color: $tradepage-color-blue;
+      text-decoration: underline;
+    }
+
     &-content{
       padding: 15px;
+      padding-top: 25px;
+      border-bottom: 1px solid transparentize($tradepage-color-light-stale-gray, 0.7);
+
+      div[class*="boxtitle"]{
+        margin-bottom: 10px;
+        padding-bottom: 5px;
+      }
+
+      .row .form-group{
+        margin-bottom: 0;
+      }
+
+      label > i{
+        cursor: pointer;
+      }
+    }
+
+    &-info{
+
+      &-list{
+        margin-top: 15px;
+        margin-bottom: 5px;
+
+        &-item{
+          position: relative;
+          padding-left: 22px;
+          line-height: 1.2;
+
+          &:before{
+            content: "";
+            position: absolute;
+            background-image: url(#{$tradepageSvgIconImgPath}/Icon_Information_Red.svg);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: contain;
+            width: 18px;
+            height: 18px;
+            left: 0;
+            top: 2px;
+          }
+
+        }
+
+      }
+
+    }
+
+    &-btn{
+      margin-top: 20px;
+      margin-bottom: -20px;
+
+      &:before{
+        width: calc(100% + 2px);
+        height: 4px;
+        left: -1px;
+        top: calc(50% - 2px);
+      }
     }
 
   }
@@ -175,6 +248,14 @@
     label i[class*="profilehelp"]{
       width: 18px;
       height: 18px;
+    }
+
+    &-box{
+      margin: 5px 0;
+
+      .btn{
+        margin-top: 10px;
+      }
     }
 
   }
