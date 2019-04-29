@@ -190,7 +190,7 @@
             <form autocomplete="off" novalidate>
                 <div class="row d-inline-flex">
                     <div class="form-group col">
-                        <label>IBAN NO</label>
+                        <label>E-POSTA AKTİVASYON KODU</label>
                         <input class="sitebggraylight form-control" type="text" />
                         <a href="#" class="form-group-icons-buttons"><i class="icon-svg icon-svg-profilesendagain"></i> TEKRAR GÖNDER</a>
                     </div>
@@ -209,33 +209,113 @@
                 <span class="boxcolumn-boxtitle-info d-flex align-items-center"><i class="icon-svg icon-svg-profileinformationyellow"></i>  <strong>Limit:</stron Günlük <strong>0-100.000 TRY</strong>, Aylık <strong>0-1.000.000 TRY</strong> veya karşılığı Kripto Para</span>
             </div>
             <div class="profile-fileupload row d-lg-inline-flex">
-                <div class="col">
+                <div class="profile-fileupload-box col">
                     <label class="text-center">KİMLİK ÖN YÜZÜ</label>
                     <form id="profileKimlikOnYuz" class="dropzone" action="/file-upload">
                         <div class="fallback">
                             <input name="file" type="file" />
                         </div>
                     </form>
+                    <a class="btn btn-primary btnwidth100100" href="#" title="" rel="bookmark">VEYA DOSYA SEÇ</a>
                 </div>
-                <div class="col">
+                <div class="profile-fileupload-box col">
                     <label class="text-center">KİMLİK ARKA YÜZÜ</label>
-                    <form id="profileKimlikOnYuz" class="dropzone" action="/file-upload">
+                    <form id="profileKimlikArkaYuz" class="dropzone" action="/file-upload">
                         <div class="fallback">
                             <input name="file" type="file" />
                         </div>
                     </form>
+                    <a class="btn btn-primary btnwidth100100" href="#" title="" rel="bookmark">TEKRAR YÜKLE</a>
                 </div>
-                <div class="col">
+                <div class="profile-fileupload-box col">
                     <label class="text-center d-flex align-items-center justify-content-center">DİLEKÇELİ FOTOĞRAF <i class="icon-svg icon-svg-profilehelp"></i></label>
-                    <form id="profileKimlikOnYuz" class="dropzone" action="/file-upload">
+                    <form id="profileDilekceliFotograf" class="dropzone" action="/file-upload">
                         <div class="fallback">
                             <input name="file" type="file" />
                         </div>
                     </form>
+                    <a class="btn btn-primary btnwidth100100" href="#" title="" rel="bookmark">YÜKLENİYOR</a>
                 </div>
             </div>
         </div>
         <!-- Content -->
+        <!-- Content -->
+        <div class="profile-box-content formui">
+            <div class="boxcolumn-boxtitle">
+                <h3 class="boxcolumn-boxtitle-title">İKİNCİ SEVİYE BİLGİLERİ</h3>
+                <span class="boxcolumn-boxtitle-info d-flex align-items-center"><i class="icon-svg icon-svg-profileinformationyellow"></i>  <strong>Limit:</stron Günlük <strong>0-250.000 TRY</strong>, Aylık <strong>0-2.500.000 TRY</strong> veya karşılığı Kripto Para</span>
+            </div>
+            <div class="profile-fileupload row d-lg-inline-flex">
+                <div class="profile-fileupload-box col">
+                    <label class="text-center d-flex align-items-center justify-content-center">ADRES TEYİDİ <i class="icon-svg icon-svg-profilehelp"></i></label>
+                    <form id="profileAdresTeyidi" class="dropzone" action="/file-upload">
+                        <div class="fallback">
+                            <input name="file" type="file" />
+                        </div>
+                    </form>
+                    <a class="btn btn-primary btnwidth100100" href="#" title="" rel="bookmark">VEYA DOSYA SEÇ</a>
+                </div>
+                <div class="profile-fileupload-box col">
+                    <label class="text-center d-flex align-items-center justify-content-center">BANKA DÖKÜMÜ <i class="icon-svg icon-svg-profilehelp"></i></label>
+                    <form id="profileBankaDokumu" class="dropzone" action="/file-upload">
+                        <div class="fallback">
+                            <input name="file" type="file" />
+                        </div>
+                    </form>
+                    <a class="btn btn-primary btnwidth100100" href="#" title="" rel="bookmark">TEKRAR YÜKLE</a>
+                </div>
+            </div>
+            <ul class="profile-box-info-list">
+                <li class="profile-box-info-list-item">
+                    Dosya boyutları ile ilgili sorun yaşıyorsanız aşağıdaki sitelerden küçültme işlemi yapabilirsiniz:<br />
+                    JPG ve PNG: <a class="link" href="http://www.imagecompressor.com/tr" title="" rel="external nofollow">www.imagecompressor.com/tr</a> PDF: <a class="link" href="http://www.smallpdf.com/tr/compress-pdf" title="" rel="external nofollow">www.smallpdf.com/tr/compress-pdf</a>
+                </li>
+            </ul>
+        </div>
+        <!-- Content -->
+        <!-- Content -->
+        <div class="profile-box-content formui">
+            <div class="boxcolumn-boxtitle">
+                <h3 class="boxcolumn-boxtitle-title">ÜÇÜNCÜ SEVİYE BİLGİLERİ</h3>
+                <span class="boxcolumn-boxtitle-info d-flex align-items-center"><i class="icon-svg icon-svg-profileinformationyellow"></i>  <strong>Limit:</stron Günlük <strong>0-500.000 TRY</strong>, Aylık <strong>0-5.000.000 TRY</strong> veya karşılığı Kripto Para</span>
+            </div>
+            <div class="profile-fileupload row d-lg-inline-flex">
+                <div class="profile-fileupload-box col">
+                    <label class="text-center d-flex align-items-center justify-content-center">ÇALIŞMA BELGESİ <i class="icon-svg icon-svg-profilehelp"></i></label>
+                    <form id="profileCalismaBelgesi" class="dropzone" action="/file-upload">
+                        <div class="fallback">
+                            <input name="file" type="file" />
+                        </div>
+                    </form>
+                    <a class="btn btn-primary btnwidth100100" href="#" title="" rel="bookmark">VEYA DOSYA SEÇ</a>
+                </div>
+                <div class="profile-fileupload-box col">
+                    <label class="text-center d-flex align-items-center justify-content-center">BANKA REFERANSI <i class="icon-svg icon-svg-profilehelp"></i></label>
+                    <form id="profileBankaReferansi" class="dropzone" action="/file-upload">
+                        <div class="fallback">
+                            <input name="file" type="file" />
+                        </div>
+                    </form>
+                    <a class="btn btn-primary btnwidth100100" href="#" title="" rel="bookmark">VEYA DOSYA SEÇ</a>
+                </div>
+                <div class="profile-fileupload-box col">
+                    <label class="text-center d-flex align-items-center justify-content-center">EK BELGE <i class="icon-svg icon-svg-profilehelp"></i></label>
+                    <form id="profileEkBelge" class="dropzone" action="/file-upload">
+                        <div class="fallback">
+                            <input name="file" type="file" />
+                        </div>
+                    </form>
+                    <a class="btn btn-primary btnwidth100100" href="#" title="" rel="bookmark">VEYA DOSYA SEÇ</a>
+                </div>
+            </div>
+        </div>
+        <!-- Content -->
+        <!-- Button -->
+        <div class="profile-box-btn site-button-formbottom-btn success">
+            <a href="#" class="btn btn-success" title="" rel="bookmark">KAYDET</a>
+        </div>
+        <!-- Button -->
+
 
     </div>
     </div>

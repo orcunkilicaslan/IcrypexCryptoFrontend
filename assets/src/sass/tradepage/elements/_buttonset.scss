@@ -1,7 +1,12 @@
 .btn{
   font-size: 17px;
   font-weight: normal;
+  @include border-radius(3px);
 
+  &-primary{
+    background-color: $tradepage-color-blue !important;
+    border-color: $tradepage-color-blue !important;
+  }
   &-success{
     background-color: $tradepage-color-green !important;
     border-color: $tradepage-color-green !important;
@@ -14,6 +19,15 @@
     background-color: $tradepage-color-blue !important;
     border-color: $tradepage-color-blue !important;
   }
+
+  &.btnwidth110{
+    width: 110px !important;
+  }
+
+  &.btnwidth100100{
+    width: 100% !important;
+  }
+
 }
 
 
