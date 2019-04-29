@@ -48,6 +48,11 @@ Dropzone.options.profileEkBelge = {
 };
 /* DropZone JS */
 
+/* Tooltip */
+$(function(){
+    $('[data-toggle="tooltip"]').tooltip()
+});
+/* Tooltip */
 
 /* Loading Info */
 console.log("Tradepage App Javascript Loading Successful");

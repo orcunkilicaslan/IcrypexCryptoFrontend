@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #758ca3;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        font-size: 14px;
+        font-family: BarlowCondensed-Medium, Barlow;
+        font-weight: 500;
+      }
+    </style>
+  </defs>
+  <g id="Icon_Help_Active" transform="translate(20 -1)">
+    <circle id="Circle" class="cls-1" cx="9" cy="9" r="9" transform="translate(-20 1)"/>
+    <text id="Text" class="cls-2" transform="translate(-11 15)"><tspan x="-2.758" y="0">?</tspan></text>
+  </g>
+</svg>
