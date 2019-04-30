@@ -26,7 +26,7 @@
  - [21_Profile_Account_Confirmation](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/tradepage/21_Profile_Account_Confirmation.html)
  - [22_Profile_Account_Confirmation_Help_Box](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/tradepage/22_Profile_Account_Confirmation_Help_Box.html)
  - [23_Profile_Assets](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/tradepage/23_Profile_Assets.html)
-
+ - [24_Profile_Commision](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/tradepage/24_Profile_Commision.html)
 
   
 # NodeJS Kurulumu
