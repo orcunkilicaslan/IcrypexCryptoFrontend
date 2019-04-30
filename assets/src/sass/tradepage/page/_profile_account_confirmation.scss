@@ -1,0 +1,174 @@
+
+.profile{
+
+  &-progress{
+    display:flex;
+    flex-flow:column nowrap;
+    justify-content:space-around;
+    background-color: $tradepage-color-light-bg-gray;
+
+    &-list{
+      margin: 20px auto 15px;
+
+      &-item{
+        width:140px;
+        margin: 0 6px;
+        float: left;
+        position:relative;
+        $liitem: &;
+
+        &:first-child{
+          margin-left:0;
+          &:before{display:none;}
+        }
+
+        &:last-child{
+          margin-right: 0;
+          &:before{display:none;}
+        }
+
+        &-circle{
+          color: lighten($tradepage-color-light-stale-gray, 25%);
+          background-color: lighten($tradepage-color-light-stale-gray, 25%);
+          width:26px;
+          height:26px;
+          display:block;
+          font-size:12px;
+          line-height:26px;
+          text-align:center;
+          margin:0 auto;
+          position:relative;
+          z-index: 1;
+          @include border-radius(52px);
+          @include transition(all, 0.4s, linear);
+
+          &:before{
+            content:"";
+            width:48px;
+            height:48px;
+            position:absolute;
+            display:none;
+            left:0;
+            top:0;
+            border:2px solid $tradepage-color-white;
+            @include border-radius(48px);
+          }
+        }
+
+        &-title{
+          color: $tradepage-color-dark-blue;
+          font-size:17px;
+          line-height:1;
+          font-weight: normal;
+          text-align:center;
+          display: block;
+          margin: 0;
+          padding-top: 7px;
+          @include transition(all, 0.4s, linear);
+        }
+
+        &.active,
+        &.check{
+          #{$liitem}-circle{
+            color: $tradepage-color-blue;
+            background-color: $tradepage-color-blue;
+            position:relative;
+            text-indent: -9999px;
+            animation-name:pulse;
+            animation-duration:1s;
+            animation-fill-mode:both;
+
+            &:after{
+              content:"";
+              position:absolute;
+              width: 12px;
+              height: 6px;
+              top: 9px;
+              left: 7px;
+              border-bottom:2px solid $tradepage-color-white;
+              border-left:2px solid $tradepage-color-white;
+              @include rotate(-50);
+            }
+          }
+        }
+
+        &.active{
+          &:after{width: 50%;}
+        }
+
+        &.check{
+          &:after{width: 100%;}
+          &:before{opacity:0;}
+        }
+
+        &:after,
+        &:before{
+          content:"";
+          width: 100%;
+          height:5px;
+          background-color: lighten($tradepage-color-light-stale-gray, 25%);
+          position:absolute;
+          top:11px;
+          left:calc(50% + 6px);
+          @include border-radius(5px);
+          @include transition-delay (0.4s);
+          @include transition(all, 0.5s, ease-in-out);
+        }
+        &:after{
+          background-color: $tradepage-color-blue;
+          width:0;
+        }
+      }
+    }
+  }
+
+  &-fileupload{
+    > div[class*="col"]{
+      padding-left: 7px;
+      padding-right: 7px;
+
+      &:first-child{
+        padding-left: 15px;
+      }
+      &:last-child{
+        padding-right: 15px;
+      }
+    }
+
+    &-box{
+      margin: 5px 0;
+
+      .btn{
+        margin-top: 10px;
+      }
+    }
+  }
+
+  &-info{
+
+    &-list{
+      margin-top: 15px;
+      margin-bottom: 5px;
+
+      &-item{
+        position: relative;
+        padding-left: 22px;
+        line-height: 1.2;
+
+        &:before{
+          content: "";
+          position: absolute;
+          background-image: url(#{$tradepageSvgIconImgPath}/Icon_Information_Red.svg);
+          background-repeat: no-repeat;
+          background-position: center center;
+          background-size: contain;
+          width: 18px;
+          height: 18px;
+          left: 0;
+          top: 2px;
+        }
+      }
+    }
+  }
+
+}

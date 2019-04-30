@@ -1,0 +1,143 @@
+
+.profile{
+
+  &-limitprogress{
+    background-color: $tradepage-color-light-bg-gray;
+    padding: 20px 0;
+
+    &-list {
+      &-item{
+        position: relative;
+        text-align: center;
+
+        .limittext.d-flex{
+          *{margin: 0 2px;}
+        }
+
+        &:before{
+          content: "";
+          position: absolute;
+          width: 1px;
+          height: 34px;
+          top: calc(50% - 16px);
+          right: 0;
+          background-color: transparentize($tradepage-color-light-stale-gray, 0.7);
+        }
+
+        &:last-child{
+          &:before{display: none;}
+        }
+      }
+    }
+
+    .limitprogress{
+      margin-top: 5px;
+    }
+
+    .progress,
+    .progress-bar{
+      height: 5px;
+    }
+  }
+
+  &-summarychart{
+    padding-top: 10px;
+    padding-bottom: 5px;
+
+    &.row > div[class*="col"]{
+      padding-left: 10px;
+      padding-right: 10px;
+
+      &:first-child{
+        padding-left: 15px;
+      }
+      &:last-child{
+        padding-right: 15px;
+      }
+    }
+
+    &-big{
+      &-pie{
+        width: 140px;
+        height: 140px;
+        position: relative;
+      }
+
+      &-text{
+        text-align: center;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        font-size: 17px;
+        line-height: 1.1;
+
+        span{
+          display: block;
+          font-weight: 500;
+        }
+      }
+    }
+
+    &-small{
+      &-list{
+        flex-wrap: wrap;
+
+        &-item{
+          width: 20%;
+          margin: 10px 0;
+        }
+      }
+
+      &-pie{
+        width: 40px;
+        height: 40px;
+        margin-right: 7px;
+      }
+
+      &-text{
+        font-size: 17px;
+        line-height: 0.9;
+
+        *{display: block;}
+      }
+    }
+  }
+
+  &-tabswallet{
+
+    &-table{
+      thead th{
+        border-top-width: 1px;
+        &.btnwidth110{
+          width: 110px;
+        }
+      }
+
+      tbody{
+
+        td{
+          padding-top: 2px;
+          padding-bottom: 2px;
+        }
+
+        tr:last-child{
+          td{
+            border-bottom-width: 1px;
+            border-bottom-style: solid;
+          }
+        }
+      }
+
+      &-btn{
+        .btn{
+          display: block;
+          padding: 1px 5px;
+        }
+      }
+
+    }
+
+  }
+
+}
