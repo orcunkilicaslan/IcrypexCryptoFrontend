@@ -217,6 +217,10 @@
     padding-bottom: 7px;
     margin-bottom: 5px;
 
+    [class*="boxtitle"].d-flex{
+      *{margin: 0 4px;}
+    }
+
     i[class*="icon-svg"]{
       margin-right: 5px;
       display: inline-block;
