@@ -1,0 +1,52 @@
+
+.profile{
+
+  &-commision{
+
+    &-table{
+      max-width: 750px;
+
+      .columngray{
+        background-color: $tradepage-color-light-bg-gray;
+        width: 80px;
+      }
+
+      th, td{
+        text-align: center;
+        padding-top: 7px !important;
+        padding-bottom: 7px !important;
+
+        &:first-child{
+          text-align: left;
+        }
+      }
+
+      thead{
+
+        th{
+          font-size: 17px;
+        }
+
+        tr:first-child{
+          th{
+            font-weight: 500;
+          }
+        }
+      }
+
+      tbody{
+        tr:last-child{
+          td{
+            border-bottom-width: 1px;
+            border-bottom-style: solid;
+          }
+        }
+      }
+
+
+
+    }
+
+  }
+
+}
