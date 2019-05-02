@@ -82,17 +82,27 @@ $tradepageSvgIconImgPath : "../../img/tradepage/svg";
     }
     &-profilehelp{
       background-image: url(#{$tradepageSvgIconImgPath}/Icon_Help.svg);
-
       &[data-toggle^="tooltip"]:hover{
         background-image: url(#{$tradepageSvgIconImgPath}/Icon_Help_Active.svg);
       }
-
     }
     &-profilesendagain{
       background-image: url(#{$tradepageSvgIconImgPath}/Icon_Sent_Again.svg);
     }
     &-profilefileuploaddragdrop{
       background-image: url(#{$tradepageSvgIconImgPath}/File_Upload_Drag_Drop_Icon.svg);
+    }
+    &-profiledownloadblue{
+      background-image: url(#{$tradepageSvgIconImgPath}/Icon_Download_Blue.svg);
+    }
+    &-profiledownloadred{
+      background-image: url(#{$tradepageSvgIconImgPath}/Icon_Download_Red.svg);
+    }
+    &-profiledownloadgreen{
+      background-image: url(#{$tradepageSvgIconImgPath}/Icon_Download_Green.svg);
+    }
+    &-profileprint{
+      background-image: url(#{$tradepageSvgIconImgPath}/Icon_Print.svg);
     }
 
   }

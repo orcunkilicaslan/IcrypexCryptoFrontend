@@ -1,0 +1,73 @@
+
+.profile{
+
+  &-transaction{
+
+    div[class*=boxtitle] {
+      margin-bottom: 0;
+    }
+
+    i[class*="icon-svg"]{
+      width: 18px;
+      height: 18px;
+      margin-left: 0;
+    }
+
+    a{
+      color: $tradepage-color-blue;
+      margin-left: 5px;
+
+      &:first-child{
+        margin-left: 0;
+      }
+
+    }
+
+    &-history{
+
+
+      &-table{
+
+        th, td{
+          &:first-child{
+            text-align: center;
+          }
+        }
+
+        thead{
+          th{
+            font-size: 17px;
+          }
+        }
+
+        tbody{
+          tr:last-child{
+            td{
+              border-bottom-width: 1px;
+              border-bottom-style: solid;
+            }
+          }
+        }
+
+        tr.message-read{
+          td{
+            opacity: 0.5;
+
+            &:first-child,
+            &:last-child{
+              opacity: 1;
+            }
+
+          }
+        }
+
+        &-btn{
+          .btn{
+            display: block;
+            padding: 1px 5px;
+          }
+        }
+      }
+    }
+  }
+}
