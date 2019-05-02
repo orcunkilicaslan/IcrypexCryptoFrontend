@@ -1,0 +1,100 @@
+
+.profile{
+
+  &-notification{
+
+    &-table{
+
+      .headbutton{
+        text-align: right;
+        float: right;
+
+        a{
+          color: $tradepage-color-blue;
+        }
+
+        i.iconclose{
+          position: relative;
+          width: 16px;
+          height: 16px;
+          border: 1px solid transparentize($tradepage-color-light-stale-gray, 0.7);
+          @include border-radius(18px);
+          display: inline-block;
+          margin: 0 2px;
+
+          &:before,
+          &:after{
+            content: "";
+            position: absolute;
+            background-color: $tradepage-color-blue;
+            width: 9px;
+            height: 2px;
+            left: calc(50% - 4px);
+            top: calc(50% - 1px);
+          }
+
+          &:before{
+            @include rotate(45);
+          }
+          &:after{
+            @include rotate(135);
+          }
+
+          &.darkblue{
+            &:before,
+            &:after{
+              background-color: $tradepage-color-dark-blue;
+            }
+          }
+
+          &.darkred{
+            &:before,
+            &:after{
+              background-color: $tradepage-color-red;
+            }
+          }
+        }
+      }
+
+      thead{
+        th{
+          font-size: 17px;
+          border-top: 1px solid transparentize($tradepage-color-light-stale-gray, 0.7);
+        }
+      }
+
+      tbody{
+        td{
+          padding-top: 10px !important;
+          padding-bottom: 10px !important;
+        }
+
+        tr:last-child{
+          td{
+            border-bottom-width: 1px;
+            border-bottom-style: solid;
+          }
+        }
+      }
+
+      tr.message-read{
+        td{
+          opacity: 0.5;
+
+          &:first-child,
+          &:last-child{
+            opacity: 1;
+          }
+
+        }
+      }
+
+      &-btn{
+        .btn{
+          display: block;
+          padding: 1px 5px;
+        }
+      }
+    }
+  }
+}
