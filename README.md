@@ -30,6 +30,7 @@
  - [25_Profile_Notification](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/tradepage/25_Profile_Notification.html)
  - [26_Profile_Transaction_History](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/tradepage/26_Profile_Transaction_History.html)
  - [27_Profile_Profile](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/tradepage/27_Profile_Profile.html)
+ - [29_Profile_Bank_Account](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/tradepage/29_Profile_Bank_Account.html)
 
   
 # NodeJS Kurulumu

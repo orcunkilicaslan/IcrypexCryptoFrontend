@@ -12,12 +12,10 @@
       &:last-child{
         padding-right: 15px;
       }
-
       .btn{
         padding-top: 4px;
         padding-bottom: 5px;
       }
-
     }
   }
 
@@ -171,6 +169,7 @@
     font-size: 20px;
     line-height: 1;
     height:auto;
+    min-height: 37px;
     @include box-shadow(0,0,0,transparent);
     @include border-radius(0);
     &:focus{
