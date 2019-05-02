@@ -1,0 +1,53 @@
+
+.profile{
+
+  &-bank-account{
+    max-width: 750px;
+
+    &.formui{
+      .form-control{
+        font-size: 17px;
+      }
+    }
+
+    &-tablebox{
+
+      div[class*=boxtitle] {
+        margin-bottom: 0;
+      }
+
+    }
+
+    &-table{
+
+      thead th{
+
+        &.btnwidth110{
+          width: 110px;
+        }
+      }
+
+      tbody{
+
+        td{
+          padding-top: 2px;
+          padding-bottom: 2px;
+        }
+
+        tr:last-child{
+          td{
+            border-bottom-width: 1px;
+            border-bottom-style: solid;
+          }
+        }
+      }
+
+      &-btn{
+        .btn{
+          display: block;
+          padding: 1px 5px;
+        }
+      }
+    }
+  }
+}
