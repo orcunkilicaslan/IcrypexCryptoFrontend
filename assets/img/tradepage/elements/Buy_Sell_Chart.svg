@@ -1,0 +1,231 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="903" height="173" viewBox="0 0 903 173">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="836" height="33" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Buy_Sell_Chart" transform="translate(-611 -275)">
+    <g id="Date" transform="translate(800.5 362.5)">
+      <g id="Bg_Row" transform="translate(-815.5 -213.5)">
+        <rect id="Rectangle_Bg" width="30" height="40" transform="translate(1468 237)" fill="#f2f5f6"/>
+        <rect id="Rectangle_Bg-2" data-name="Rectangle_Bg" width="30" height="40" transform="translate(1438 237)" fill="#fff"/>
+        <rect id="Rectangle_Bg-3" data-name="Rectangle_Bg" width="30" height="40" transform="translate(1408 237)" fill="#f2f5f6"/>
+        <rect id="Rectangle_Bg-4" data-name="Rectangle_Bg" width="30" height="40" transform="translate(1378 237)" fill="#fff"/>
+        <rect id="Rectangle_Bg-5" data-name="Rectangle_Bg" width="30" height="40" transform="translate(1348 237)" fill="#f2f5f6"/>
+        <rect id="Rectangle_Bg-6" data-name="Rectangle_Bg" width="30" height="40" transform="translate(1318 237)" fill="#fff"/>
+        <rect id="Rectangle_Bg-7" data-name="Rectangle_Bg" width="30" height="40" transform="translate(1288 237)" fill="#f2f5f6"/>
+        <rect id="Rectangle_Bg-8" data-name="Rectangle_Bg" width="30" height="40" transform="translate(1258 237)" fill="#fff"/>
+        <rect id="Rectangle_Bg-9" data-name="Rectangle_Bg" width="30" height="40" transform="translate(1228 237)" fill="#f2f5f6"/>
+        <rect id="Rectangle_Bg-10" data-name="Rectangle_Bg" width="30" height="40" transform="translate(1198 237)" fill="#fff"/>
+        <rect id="Rectangle_Bg-11" data-name="Rectangle_Bg" width="30" height="40" transform="translate(1168 237)" fill="#f2f5f6"/>
+        <rect id="Rectangle_Bg-12" data-name="Rectangle_Bg" width="30" height="40" transform="translate(1138 237)" fill="#fff"/>
+        <rect id="Rectangle_Bg-13" data-name="Rectangle_Bg" width="30" height="40" transform="translate(1108 237)" fill="#f2f5f6"/>
+        <rect id="Rectangle_Bg-14" data-name="Rectangle_Bg" width="30" height="40" transform="translate(1078 237)" fill="#fff"/>
+        <rect id="Rectangle_Bg-15" data-name="Rectangle_Bg" width="30" height="40" transform="translate(1048 237)" fill="#f2f5f6"/>
+        <rect id="Rectangle_Bg-16" data-name="Rectangle_Bg" width="30" height="40" transform="translate(1018 237)" fill="#fff"/>
+        <rect id="Rectangle_Bg-17" data-name="Rectangle_Bg" width="30" height="40" transform="translate(988 237)" fill="#f2f5f6"/>
+        <rect id="Rectangle_Bg-18" data-name="Rectangle_Bg" width="30" height="40" transform="translate(958 237)" fill="#fff"/>
+        <rect id="Rectangle_Bg-19" data-name="Rectangle_Bg" width="30" height="40" transform="translate(928 237)" fill="#f2f5f6"/>
+        <rect id="Rectangle_Bg-20" data-name="Rectangle_Bg" width="30" height="40" transform="translate(898 237)" fill="#fff"/>
+        <rect id="Rectangle_Bg-21" data-name="Rectangle_Bg" width="30" height="40" transform="translate(868 237)" fill="#f2f5f6"/>
+        <rect id="Rectangle_Bg-22" data-name="Rectangle_Bg" width="30" height="40" transform="translate(838 237)" fill="#fff"/>
+        <rect id="Rectangle_Bg-23" data-name="Rectangle_Bg" width="30" height="40" transform="translate(808 237)" fill="#f2f5f6"/>
+        <rect id="Rectangle_Bg-24" data-name="Rectangle_Bg" width="30" height="40" transform="translate(777 237)" fill="#fff"/>
+        <rect id="Rectangle_Bg-25" data-name="Rectangle_Bg" width="30" height="40" transform="translate(747 237)" fill="#f2f5f6"/>
+        <rect id="Rectangle_Bg-26" data-name="Rectangle_Bg" width="30" height="40" transform="translate(717 237)" fill="#fff"/>
+        <rect id="Rectangle_Bg-27" data-name="Rectangle_Bg" width="30" height="40" transform="translate(687 237)" fill="#f2f5f6"/>
+        <rect id="Rectangle_Bg-28" data-name="Rectangle_Bg" width="30" height="40" transform="translate(657 237)" fill="#fff"/>
+      </g>
+      <g id="Pager" transform="translate(-2382.5 -1499.5)">
+        <path id="Arrow" d="M10,0,5.006,5,0,0" transform="translate(3078.5 1548.5) rotate(-90)" fill="none" stroke="#758ca3" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.5"/>
+        <path id="Arrow-2" data-name="Arrow" d="M10,0,5.006,5,0,0" transform="translate(2210.5 1538.5) rotate(90)" fill="none" stroke="#758ca3" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.5"/>
+      </g>
+      <g id="Day" transform="translate(-153.5 26)" clip-path="url(#clip-path)">
+        <g transform="translate(-651 -622.5)">
+          <text id="Text" transform="translate(661 637.5)" fill="#758ca3" font-size="15" font-family="BarlowCondensed-Regular, Barlow"><tspan x="-5.76" y="0">27</tspan><tspan x="-9.712" y="15">ÇAR</tspan></text>
+        </g>
+        <g transform="translate(-621 -622.5)">
+          <text id="Text-2" data-name="Text" transform="translate(661 637.5)" fill="#758ca3" font-size="15" font-family="BarlowCondensed-Regular, Barlow"><tspan x="-6.18" y="0">28</tspan><tspan x="-9.855" y="15">PER</tspan></text>
+        </g>
+        <g transform="translate(-591 -622.5)">
+          <text id="Text-3" data-name="Text" transform="translate(661 637.5)" fill="#758ca3" font-size="15" font-family="BarlowCondensed-Regular, Barlow"><tspan x="-6.037" y="0">29</tspan><tspan x="-10.823" y="15">CUM</tspan></text>
+        </g>
+        <g transform="translate(-561 -622.5)">
+          <text id="Text-4" data-name="Text" transform="translate(661 637.5)" fill="#758ca3" font-size="15" font-family="BarlowCondensed-Regular, Barlow"><tspan x="-6.39" y="0">30</tspan><tspan x="-10.425" y="15">CMT</tspan></text>
+        </g>
+        <g transform="translate(-531 -622.5)">
+          <text id="Text-5" data-name="Text" transform="translate(661 637.5)" fill="#758ca3" font-size="15" font-family="BarlowCondensed-Regular, Barlow"><tspan x="-4.68" y="0">31</tspan><tspan x="-9.157" y="15">PAZ</tspan></text>
+        </g>
+        <g transform="translate(-501 -622.5)">
+          <text id="Text-6" data-name="Text" transform="translate(661 637.5)" fill="#758ca3" font-size="15" font-family="BarlowCondensed-Regular, Barlow"><tspan x="-1.92" y="0">1</tspan><tspan x="-9.45" y="15">PZT</tspan></text>
+        </g>
+        <g transform="translate(-471 -622.5)">
+          <text id="Text-7" data-name="Text" transform="translate(661 637.5)" fill="#758ca3" font-size="15" font-family="BarlowCondensed-Regular, Barlow"><tspan x="-3.015" y="0">2</tspan><tspan x="-9.165" y="15">SAL</tspan></text>
+        </g>
+        <g transform="translate(-441 -622.5)">
+          <text id="Text-8" data-name="Text" transform="translate(661 637.5)" fill="#758ca3" font-size="15" font-family="BarlowCondensed-Regular, Barlow"><tspan x="-3.06" y="0">3</tspan><tspan x="-9.712" y="15">ÇAR</tspan></text>
+        </g>
+        <g transform="translate(-411 -622.5)">
+          <text id="Text-9" data-name="Text" transform="translate(661 637.5)" fill="#758ca3" font-size="15" font-family="BarlowCondensed-Regular, Barlow"><tspan x="-3.112" y="0">4</tspan><tspan x="-9.855" y="15">PER</tspan></text>
+        </g>
+        <g transform="translate(-381 -622.5)">
+          <text id="Text-10" data-name="Text" transform="translate(661 637.5)" fill="#758ca3" font-size="15" font-family="BarlowCondensed-Regular, Barlow"><tspan x="-3.067" y="0">5</tspan><tspan x="-10.823" y="15">CUM</tspan></text>
+        </g>
+        <g transform="translate(-351 -622.5)">
+          <text id="Text-11" data-name="Text" transform="translate(661 637.5)" fill="#758ca3" font-size="15" font-family="BarlowCondensed-Regular, Barlow"><tspan x="-3.075" y="0">6</tspan><tspan x="-10.425" y="15">CMT</tspan></text>
+        </g>
+        <g transform="translate(-321 -622.5)">
+          <text id="Text-12" data-name="Text" transform="translate(661 637.5)" fill="#758ca3" font-size="15" font-family="BarlowCondensed-Regular, Barlow"><tspan x="-2.745" y="0">7</tspan><tspan x="-9.157" y="15">PAZ</tspan></text>
+        </g>
+        <g transform="translate(-291 -622.5)">
+          <text id="Text-13" data-name="Text" transform="translate(661 637.5)" fill="#758ca3" font-size="15" font-family="BarlowCondensed-Regular, Barlow"><tspan x="-3.165" y="0">8</tspan><tspan x="-9.45" y="15">PZT</tspan></text>
+        </g>
+        <g transform="translate(-261 -622.5)">
+          <text id="Text-14" data-name="Text" transform="translate(661 637.5)" fill="#758ca3" font-size="15" font-family="BarlowCondensed-Regular, Barlow"><tspan x="-3.023" y="0">9</tspan><tspan x="-9.165" y="15">SAL</tspan></text>
+        </g>
+        <g transform="translate(-231 -622.5)">
+          <text id="Text-15" data-name="Text" transform="translate(661 637.5)" fill="#758ca3" font-size="15" font-family="BarlowCondensed-Regular, Barlow"><tspan x="-5.25" y="0">10</tspan><tspan x="-9.712" y="15">ÇAR</tspan></text>
+        </g>
+        <g transform="translate(-201 -622.5)">
+          <text id="Text-16" data-name="Text" transform="translate(661 637.5)" fill="#758ca3" font-size="15" font-family="BarlowCondensed-Regular, Barlow"><tspan x="-3.682" y="0">11</tspan><tspan x="-9.855" y="15">PER</tspan></text>
+        </g>
+        <g transform="translate(-171 -622.5)">
+          <text id="Text-17" data-name="Text" transform="translate(661 637.5)" fill="#758ca3" font-size="15" font-family="BarlowCondensed-Regular, Barlow"><tspan x="-4.943" y="0">12</tspan><tspan x="-10.823" y="15">CUM</tspan></text>
+        </g>
+        <g transform="translate(-141 -622.5)">
+          <text id="Text-18" data-name="Text" transform="translate(661 637.5)" fill="#758ca3" font-size="15" font-family="BarlowCondensed-Regular, Barlow"><tspan x="-4.98" y="0">13</tspan><tspan x="-10.425" y="15">CMT</tspan></text>
+        </g>
+        <g transform="translate(-111 -622.5)">
+          <text id="Text-19" data-name="Text" transform="translate(661 637.5)" fill="#758ca3" font-size="15" font-family="BarlowCondensed-Regular, Barlow"><tspan x="-5.032" y="0">14</tspan><tspan x="-9.157" y="15">PAZ</tspan></text>
+        </g>
+        <g transform="translate(-81 -622.5)">
+          <text id="Text-20" data-name="Text" transform="translate(661 637.5)" fill="#758ca3" font-size="15" font-family="BarlowCondensed-Regular, Barlow"><tspan x="-4.987" y="0">15</tspan><tspan x="-9.45" y="15">PZT</tspan></text>
+        </g>
+        <g transform="translate(-51 -622.5)">
+          <text id="Text-21" data-name="Text" transform="translate(661 637.5)" fill="#758ca3" font-size="15" font-family="BarlowCondensed-Regular, Barlow"><tspan x="-4.995" y="0">16</tspan><tspan x="-9.165" y="15">SAL</tspan></text>
+        </g>
+        <g transform="translate(-21 -622.5)">
+          <text id="Text-22" data-name="Text" transform="translate(661 637.5)" fill="#758ca3" font-size="15" font-family="BarlowCondensed-Regular, Barlow"><tspan x="-4.665" y="0">17</tspan><tspan x="-9.712" y="15">ÇAR</tspan></text>
+        </g>
+        <g transform="translate(9 -622.5)">
+          <text id="Text-23" data-name="Text" transform="translate(661 637.5)" fill="#758ca3" font-size="15" font-family="BarlowCondensed-Regular, Barlow"><tspan x="-5.085" y="0">18</tspan><tspan x="-9.855" y="15">PER</tspan></text>
+        </g>
+        <g transform="translate(39 -622.5)">
+          <text id="Text-24" data-name="Text" transform="translate(661 637.5)" fill="#758ca3" font-size="15" font-family="BarlowCondensed-Regular, Barlow"><tspan x="-4.943" y="0">19</tspan><tspan x="-10.823" y="15">CUM</tspan></text>
+        </g>
+        <g transform="translate(69 -622.5)">
+          <text id="Text-25" data-name="Text" transform="translate(661 637.5)" fill="#758ca3" font-size="15" font-family="BarlowCondensed-Regular, Barlow"><tspan x="-6.345" y="0">20</tspan><tspan x="-10.425" y="15">CMT</tspan></text>
+        </g>
+        <g transform="translate(99 -622.5)">
+          <text id="Text-26" data-name="Text" transform="translate(661 637.5)" fill="#758ca3" font-size="15" font-family="BarlowCondensed-Regular, Barlow"><tspan x="-4.673" y="0">21</tspan><tspan x="-9.157" y="15">PAZ</tspan></text>
+        </g>
+        <g transform="translate(129 -622.5)">
+          <text id="Text-27" data-name="Text" transform="translate(661 637.5)" fill="#758ca3" font-size="15" font-family="BarlowCondensed-Regular, Barlow"><tspan x="-4.673" y="0">21</tspan><tspan x="-9.45" y="15">PZT</tspan></text>
+        </g>
+        <g transform="translate(159 -622.5)">
+          <text id="Text-28" data-name="Text" transform="translate(661 637.5)" fill="#758ca3" font-size="15" font-family="BarlowCondensed-Regular, Barlow"><tspan x="-6.03" y="0">22</tspan><tspan x="-9.165" y="15">SAL</tspan></text>
+        </g>
+      </g>
+      <text id="Text-29" data-name="Text" transform="translate(487.5 82)" fill="#098cdf" font-size="15" font-family="BarlowCondensed-Medium, Barlow" font-weight="500"><tspan x="-17.632" y="0">BUGÜN</tspan></text>
+      <text id="Text-30" data-name="Text" transform="translate(-2.5 82)" fill="#758ca3" font-size="15" font-family="BarlowCondensed-Regular, Barlow"><tspan x="0" y="0">NİSAN 2019</tspan></text>
+      <text id="Text-31" data-name="Text" transform="translate(-153.5 82)" fill="#758ca3" font-size="15" font-family="BarlowCondensed-Regular, Barlow"><tspan x="0" y="0">MART 2019</tspan></text>
+    </g>
+    <g id="Buy_Sell_Bar" transform="translate(-15)">
+      <g id="Bg_Row-2" data-name="Bg_Row" transform="translate(0 41)">
+        <rect id="Rectangle_Bg-29" data-name="Rectangle_Bg" width="30" height="107" transform="translate(1408 237)" fill="#f2f5f6"/>
+        <rect id="Rectangle_Bg-30" data-name="Rectangle_Bg" width="30" height="107" transform="translate(1438 237)" fill="#fff"/>
+        <rect id="Rectangle_Bg-31" data-name="Rectangle_Bg" width="30" height="107" transform="translate(1468 237)" fill="#f2f5f6"/>
+        <rect id="Rectangle_Bg-32" data-name="Rectangle_Bg" width="30" height="107" transform="translate(1378 237)" fill="#fff"/>
+        <rect id="Rectangle_Bg-33" data-name="Rectangle_Bg" width="30" height="107" transform="translate(1348 237)" fill="#f2f5f6"/>
+        <rect id="Rectangle_Bg-34" data-name="Rectangle_Bg" width="30" height="107" transform="translate(1318 237)" fill="#fff"/>
+        <rect id="Rectangle_Bg-35" data-name="Rectangle_Bg" width="30" height="107" transform="translate(1288 237)" fill="#f2f5f6"/>
+        <rect id="Rectangle_Bg-36" data-name="Rectangle_Bg" width="30" height="107" transform="translate(1258 237)" fill="#fff"/>
+        <rect id="Rectangle_Bg-37" data-name="Rectangle_Bg" width="30" height="107" transform="translate(1228 237)" fill="#f2f5f6"/>
+        <rect id="Rectangle_Bg-38" data-name="Rectangle_Bg" width="30" height="107" transform="translate(1198 237)" fill="#fff"/>
+        <rect id="Rectangle_Bg-39" data-name="Rectangle_Bg" width="30" height="107" transform="translate(1168 237)" fill="#f2f5f6"/>
+        <rect id="Rectangle_Bg-40" data-name="Rectangle_Bg" width="30" height="107" transform="translate(1138 237)" fill="#fff"/>
+        <rect id="Rectangle_Bg-41" data-name="Rectangle_Bg" width="30" height="107" transform="translate(1108 237)" fill="#f2f5f6"/>
+        <rect id="Rectangle_Bg-42" data-name="Rectangle_Bg" width="30" height="107" transform="translate(1078 237)" fill="#fff"/>
+        <rect id="Rectangle_Bg-43" data-name="Rectangle_Bg" width="30" height="107" transform="translate(1048 237)" fill="#f2f5f6"/>
+        <rect id="Rectangle_Bg-44" data-name="Rectangle_Bg" width="30" height="107" transform="translate(1018 237)" fill="#fff"/>
+        <rect id="Rectangle_Bg-45" data-name="Rectangle_Bg" width="30" height="107" transform="translate(988 237)" fill="#f2f5f6"/>
+        <rect id="Rectangle_Bg-46" data-name="Rectangle_Bg" width="30" height="107" transform="translate(958 237)" fill="#fff"/>
+        <rect id="Rectangle_Bg-47" data-name="Rectangle_Bg" width="30" height="107" transform="translate(928 237)" fill="#f2f5f6"/>
+        <rect id="Rectangle_Bg-48" data-name="Rectangle_Bg" width="30" height="107" transform="translate(898 237)" fill="#fff"/>
+        <rect id="Rectangle_Bg-49" data-name="Rectangle_Bg" width="30" height="107" transform="translate(868 237)" fill="#f2f5f6"/>
+        <rect id="Rectangle_Bg-50" data-name="Rectangle_Bg" width="30" height="107" transform="translate(838 237)" fill="#fff"/>
+        <rect id="Rectangle_Bg-51" data-name="Rectangle_Bg" width="30" height="107" transform="translate(808 237)" fill="#f2f5f6"/>
+        <rect id="Rectangle_Bg-52" data-name="Rectangle_Bg" width="30" height="107" transform="translate(777 237)" fill="#fff"/>
+        <rect id="Rectangle_Bg-53" data-name="Rectangle_Bg" width="30" height="107" transform="translate(747 237)" fill="#f2f5f6"/>
+        <rect id="Rectangle_Bg-54" data-name="Rectangle_Bg" width="30" height="107" transform="translate(717 237)" fill="#fff"/>
+        <rect id="Rectangle_Bg-55" data-name="Rectangle_Bg" width="30" height="107" transform="translate(687 237)" fill="#f2f5f6"/>
+        <rect id="Rectangle_Bg-56" data-name="Rectangle_Bg" width="30" height="107" transform="translate(657 237)" fill="#fff"/>
+      </g>
+      <g id="Buy_Bar">
+        <rect id="Rectangle_Bg-57" data-name="Rectangle_Bg" width="28" height="13" transform="translate(1439 317)" fill="#70a800"/>
+        <rect id="Rectangle_Bg-58" data-name="Rectangle_Bg" width="28" height="36" transform="translate(1469 294)" fill="#70a800"/>
+        <rect id="Rectangle_Bg-59" data-name="Rectangle_Bg" width="28" height="22" transform="translate(1409 308)" fill="#70a800"/>
+        <rect id="Rectangle_Bg-60" data-name="Rectangle_Bg" width="28" height="30" transform="translate(1349 300)" fill="#70a800"/>
+        <rect id="Rectangle_Bg-61" data-name="Rectangle_Bg" width="28" height="16" transform="translate(1289 314)" fill="#70a800"/>
+        <rect id="Rectangle_Bg-62" data-name="Rectangle_Bg" width="28" height="31" transform="translate(1259 299)" fill="#70a800"/>
+        <rect id="Rectangle_Bg-63" data-name="Rectangle_Bg" width="28" height="43" transform="translate(1229 287)" fill="#70a800"/>
+        <rect id="Rectangle_Bg-64" data-name="Rectangle_Bg" width="28" height="24" transform="translate(1199 306)" fill="#70a800"/>
+        <rect id="Rectangle_Bg-65" data-name="Rectangle_Bg" width="28" height="11" transform="translate(1139 319)" fill="#70a800"/>
+        <rect id="Rectangle_Bg-66" data-name="Rectangle_Bg" width="28" height="31" transform="translate(1109 299)" fill="#70a800"/>
+        <rect id="Rectangle_Bg-67" data-name="Rectangle_Bg" width="28" height="25" transform="translate(1019 305)" fill="#70a800"/>
+        <rect id="Rectangle_Bg-68" data-name="Rectangle_Bg" width="28" height="47" transform="translate(989 283)" fill="#70a800"/>
+        <rect id="Rectangle_Bg-69" data-name="Rectangle_Bg" width="28" height="35" transform="translate(959 295)" fill="#70a800"/>
+        <rect id="Rectangle_Bg-70" data-name="Rectangle_Bg" width="28" height="47" transform="translate(899 283)" fill="#70a800"/>
+        <rect id="Rectangle_Bg-71" data-name="Rectangle_Bg" width="28" height="26" transform="translate(839 304)" fill="#70a800"/>
+        <rect id="Rectangle_Bg-72" data-name="Rectangle_Bg" width="28" height="35" transform="translate(809 295)" fill="#70a800"/>
+        <rect id="Rectangle_Bg-73" data-name="Rectangle_Bg" width="28" height="24" transform="translate(748 306)" fill="#70a800"/>
+        <rect id="Rectangle_Bg-74" data-name="Rectangle_Bg" width="28" height="35" transform="translate(688 295)" fill="#70a800"/>
+        <rect id="Rectangle_Bg-75" data-name="Rectangle_Bg" width="28" height="12" transform="translate(658 318)" fill="#70a800"/>
+      </g>
+      <g id="Sell_Bar">
+        <rect id="Rectangle_Bg-76" data-name="Rectangle_Bg" width="28" height="20" transform="translate(1469 333)" fill="#b82c0d"/>
+        <rect id="Rectangle_Bg-77" data-name="Rectangle_Bg" width="28" height="14" transform="translate(1409 333)" fill="#b82c0d"/>
+        <rect id="Rectangle_Bg-78" data-name="Rectangle_Bg" width="28" height="24" transform="translate(1379 333)" fill="#b82c0d"/>
+        <rect id="Rectangle_Bg-79" data-name="Rectangle_Bg" width="28" height="14" transform="translate(1349 333)" fill="#b82c0d"/>
+        <rect id="Rectangle_Bg-80" data-name="Rectangle_Bg" width="28" height="18" transform="translate(1289 333)" fill="#b82c0d"/>
+        <rect id="Rectangle_Bg-81" data-name="Rectangle_Bg" width="28" height="10" transform="translate(1259 333)" fill="#b82c0d"/>
+        <rect id="Rectangle_Bg-82" data-name="Rectangle_Bg" width="28" height="33" transform="translate(1199 333)" fill="#b82c0d"/>
+        <rect id="Rectangle_Bg-83" data-name="Rectangle_Bg" width="28" height="25" transform="translate(1169 333)" fill="#b82c0d"/>
+        <rect id="Rectangle_Bg-84" data-name="Rectangle_Bg" width="28" height="10" transform="translate(1109 333)" fill="#b82c0d"/>
+        <rect id="Rectangle_Bg-85" data-name="Rectangle_Bg" width="28" height="17" transform="translate(1079 333)" fill="#b82c0d"/>
+        <rect id="Rectangle_Bg-86" data-name="Rectangle_Bg" width="28" height="25" transform="translate(989 333)" fill="#b82c0d"/>
+        <rect id="Rectangle_Bg-87" data-name="Rectangle_Bg" width="28" height="14" transform="translate(959 333)" fill="#b82c0d"/>
+        <rect id="Rectangle_Bg-88" data-name="Rectangle_Bg" width="28" height="42" transform="translate(929 333)" fill="#b82c0d"/>
+        <rect id="Rectangle_Bg-89" data-name="Rectangle_Bg" width="28" height="7" transform="translate(839 333)" fill="#b82c0d"/>
+        <rect id="Rectangle_Bg-90" data-name="Rectangle_Bg" width="28" height="17" transform="translate(809 333)" fill="#b82c0d"/>
+        <rect id="Rectangle_Bg-91" data-name="Rectangle_Bg" width="28" height="35" transform="translate(778 333)" fill="#b82c0d"/>
+        <rect id="Rectangle_Bg-92" data-name="Rectangle_Bg" width="28" height="9" transform="translate(718 333)" fill="#b82c0d"/>
+        <rect id="Rectangle_Bg-93" data-name="Rectangle_Bg" width="28" height="21" transform="translate(688 333)" fill="#b82c0d"/>
+      </g>
+    </g>
+    <g id="Max_Min" transform="translate(-21)">
+      <text id="Text-32" data-name="Text" transform="translate(1523 359) rotate(-90)" fill="#758ca3" font-size="12" font-family="BarlowCondensed-Medium, Barlow" font-weight="500"><tspan x="-17.832" y="0">-700 BİN</tspan></text>
+      <text id="Text-33" data-name="Text" transform="translate(1523 305) rotate(-90)" fill="#758ca3" font-size="12" font-family="BarlowCondensed-Medium, Barlow" font-weight="500"><tspan x="-18.42" y="0">+700 BİN</tspan></text>
+      <text id="Text-34" data-name="Text" transform="translate(652 359) rotate(-90)" fill="#758ca3" font-size="12" font-family="BarlowCondensed-Medium, Barlow" font-weight="500"><tspan x="-17.832" y="0">-700 BİN</tspan></text>
+      <text id="Text-35" data-name="Text" transform="translate(652 305) rotate(-90)" fill="#758ca3" font-size="12" font-family="BarlowCondensed-Medium, Barlow" font-weight="500"><tspan x="-18.42" y="0">+700 BİN</tspan></text>
+    </g>
+    <g id="Container" transform="translate(625.5 -42.5)" opacity="0.3">
+      <rect id="Seperator_Hr" width="901" height="1" transform="translate(-13.5 468.5)" fill="#758ca3"/>
+      <rect id="Seperator_Hr-2" data-name="Seperator_Hr" width="902" height="1" transform="translate(-14.5 427.5)" fill="#758ca3"/>
+      <rect id="Seperator_Hr-3" data-name="Seperator_Hr" width="902" height="1" transform="translate(-14.5 373.5)" fill="#758ca3"/>
+      <rect id="Seperator_Hr-4" data-name="Seperator_Hr" width="903" height="1" transform="translate(-14.5 319.5)" fill="#758ca3"/>
+      <rect id="Seperator_Vr" width="1" height="149" transform="translate(887.5 320.5)" fill="#758ca3"/>
+      <rect id="Seperator_Vr-2" data-name="Seperator_Vr" width="1" height="148" transform="translate(857.5 320.5)" fill="#758ca3"/>
+      <rect id="Seperator_Vr-3" data-name="Seperator_Vr" width="1" height="170" transform="translate(166.5 320.5)" fill="#758ca3" opacity="0.65"/>
+      <rect id="Seperator_Vr-4" data-name="Seperator_Vr" width="1" height="170" transform="translate(15.5 320.5)" fill="#758ca3"/>
+      <rect id="Seperator_Vr-5" data-name="Seperator_Vr" width="1" height="149" transform="translate(-14.5 320.5)" fill="#758ca3"/>
+    </g>
+    <g id="Today_Highligth">
+      <g id="Today_Highligth_White_Border" transform="translate(1270 275)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="4">
+        <rect width="36" height="154" rx="3" stroke="none"/>
+        <rect x="2" y="2" width="32" height="150" rx="1" fill="none"/>
+      </g>
+      <rect id="Today_Highligth_Blue_Border" width="32" height="150" rx="1" transform="translate(1272 277)" fill="none" stroke="#098cdf" stroke-linecap="round" stroke-width="2"/>
+    </g>
+  </g>
+</svg>
