@@ -29,6 +29,7 @@
  - [24_Profile_Commision](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/tradepage/24_Profile_Commision.html)
  - [25_Profile_Notification](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/tradepage/25_Profile_Notification.html)
  - [26_Profile_Transaction_History](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/tradepage/26_Profile_Transaction_History.html)
+ - [27_Profile_Profile](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/tradepage/27_Profile_Profile.html)
 
   
 # NodeJS Kurulumu
