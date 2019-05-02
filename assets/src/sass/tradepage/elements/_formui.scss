@@ -12,6 +12,12 @@
       &:last-child{
         padding-right: 15px;
       }
+
+      .btn{
+        padding-top: 4px;
+        padding-bottom: 5px;
+      }
+
     }
   }
 
@@ -181,6 +187,9 @@
 
   select.form-control{
     padding-bottom: 7px;
+  }
+  textarea.form-control{
+    min-height: 100px;
   }
 
   @include placeholder{

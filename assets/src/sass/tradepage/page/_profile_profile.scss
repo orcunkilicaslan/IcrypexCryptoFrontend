@@ -1,0 +1,17 @@
+
+.profile{
+
+  &-profile{
+    max-width: 500px;
+
+    &.formui{
+
+      .form-control{
+        color: $tradepage-color-light-stale-gray;
+        font-size: 17px;
+      }
+
+    }
+
+  }
+}
