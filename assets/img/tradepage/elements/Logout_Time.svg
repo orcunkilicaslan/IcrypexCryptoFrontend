@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="526" height="59" viewBox="0 0 526 59">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="479" height="7" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect width="526" height="20" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Logout_Time" transform="translate(-611.406 -260)">
+    <g id="Slider" transform="translate(-251.816 -122)">
+      <rect id="Slider_Bar_Track" width="472" height="5" rx="2.5" transform="translate(886.821 392)" fill="#ccd5dd"/>
+      <rect id="Slider_Bar" width="236" height="5" rx="2.5" transform="translate(886.821 392)" fill="#098cdf"/>
+      <g id="Slider_Button">
+        <g id="Ellipse_Bg" transform="translate(1110.817 382)" fill="#098cdf" stroke="#098cdf" stroke-width="2">
+          <circle cx="12.5" cy="12.5" r="12.5" stroke="none"/>
+          <circle cx="12.5" cy="12.5" r="11.5" fill="none"/>
+        </g>
+        <path id="Arrow" d="M10,0,5.006,5,0,0" transform="translate(1117.815 393)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.5"/>
+      </g>
+    </g>
+    <g id="Arrow-2" data-name="Arrow" transform="translate(633 289)" clip-path="url(#clip-path)">
+      <g transform="translate(-884.065 -413.939)">
+        <path id="Arrow-3" data-name="Arrow" d="M10,0,5.006,5,0,0" transform="translate(894.815 420) rotate(180)" fill="none" stroke="#098cdf" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.5"/>
+      </g>
+      <g transform="translate(-768.065 -413.939)">
+        <path id="Arrow-4" data-name="Arrow" d="M10,0,5.006,5,0,0" transform="translate(894.815 420) rotate(180)" fill="none" stroke="#098cdf" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.5"/>
+      </g>
+      <g transform="translate(-652.065 -413.939)">
+        <path id="Arrow-5" data-name="Arrow" d="M10,0,5.006,5,0,0" transform="translate(894.815 420) rotate(180)" fill="none" stroke="#098cdf" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.5"/>
+      </g>
+      <g transform="translate(-536.065 -413.939)">
+        <path id="Arrow-6" data-name="Arrow" d="M10,0,5.006,5,0,0" transform="translate(894.815 420) rotate(180)" fill="none" stroke="#098cdf" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.5"/>
+      </g>
+      <g transform="translate(-420.065 -413.939)">
+        <path id="Arrow-7" data-name="Arrow" d="M10,0,5.006,5,0,0" transform="translate(894.815 420) rotate(180)" fill="none" stroke="#098cdf" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1.5"/>
+      </g>
+    </g>
+    <g id="Minute" transform="translate(611.406 299)" clip-path="url(#clip-path-2)">
+      <g transform="translate(-850.222 -410)">
+        <text id="Text" transform="translate(875.222 427)" fill="#004378" font-size="17" font-family="BarlowCondensed-Regular, Barlow"><tspan x="-25.611" y="0">5 DAKİKA</tspan></text>
+      </g>
+      <g transform="translate(-733.222 -410)">
+        <text id="Text-2" data-name="Text" transform="translate(875.222 427)" fill="#004378" font-size="17" font-family="BarlowCondensed-Regular, Barlow"><tspan x="-28.084" y="0">10 DAKİKA</tspan></text>
+      </g>
+      <g transform="translate(-616.222 -410)">
+        <text id="Text-3" data-name="Text" transform="translate(875.222 427)" fill="#004378" font-size="17" font-family="BarlowCondensed-Regular, Barlow"><tspan x="-27.787" y="0">15 DAKİKA</tspan></text>
+      </g>
+      <g transform="translate(-499.222 -410)">
+        <text id="Text-4" data-name="Text" transform="translate(875.222 427)" fill="#004378" font-size="17" font-family="BarlowCondensed-Regular, Barlow"><tspan x="-29.376" y="0">30 DAKİKA</tspan></text>
+      </g>
+      <g transform="translate(-382.222 -410)">
+        <text id="Text-5" data-name="Text" transform="translate(875.222 427)" fill="#004378" font-size="17" font-family="BarlowCondensed-Regular, Barlow"><tspan x="-29.393" y="0">60 DAKİKA</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>

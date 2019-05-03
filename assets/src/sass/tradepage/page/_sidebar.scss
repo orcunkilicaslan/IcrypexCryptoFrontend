@@ -84,6 +84,8 @@ $tradepageSvgIconImgPath : "../../img/tradepage/svg";
   /* Navigasyon */
   &-navigasyon{
 
+    &.navorange{}
+
     .columntitle{
       color: $tradepage-color-dark-blue;
       padding-bottom: 8px;
@@ -112,8 +114,13 @@ $tradepageSvgIconImgPath : "../../img/tradepage/svg";
           }
         }
       }
-    }
 
+      &.navorange{
+        .active{
+          background-color: $tradepage-color-orange;
+        }
+      }
+    }
   }
   /* Navigasyon */
 
