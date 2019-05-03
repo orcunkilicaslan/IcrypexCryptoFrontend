@@ -63,9 +63,47 @@
       }
     }
 
+    &-info{
+
+      &-list{
+        margin-top: 15px;
+        margin-bottom: 5px;
+
+        &-item{
+          position: relative;
+          padding-left: 22px;
+          line-height: 1.2;
+
+          &:before{
+            content: "";
+            position: absolute;
+            background-image: url(#{$tradepageSvgIconImgPath}/Icon_Information.svg);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: contain;
+            width: 18px;
+            height: 18px;
+            left: 0;
+            top: 2px;
+          }
+
+          &.infoyellow{
+            &:before{
+              background-image: url(#{$tradepageSvgIconImgPath}/Icon_Information_Yellow.svg);
+            }
+          }
+          &.infored{
+            &:before{
+              background-image: url(#{$tradepageSvgIconImgPath}/Icon_Information_Red.svg);
+            }
+          }
+
+        }
+      }
+    }
+
     &-btn{
-      margin-top: 20px;
-      margin-bottom: -20px;
+      top: 20px;
 
       &:before{
         width: calc(100% + 2px);
@@ -75,7 +113,6 @@
       }
     }
   }
-
 
   &-tabs{
 
@@ -168,7 +205,6 @@
       }
     }
   }
-
 
   i[class*="icon-svg"]{
     margin: 0 5px;

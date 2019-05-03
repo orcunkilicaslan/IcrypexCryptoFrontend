@@ -53,6 +53,10 @@
       width:100%;
     }
 
+    .sitebggraylight{
+      border-color: $tradepage-color-light-bg-gray !important;
+    }
+
     > .d-flex{
       > *{
         margin-left: 7px;
@@ -216,6 +220,5 @@
       }
     }
   }
-
 }
 /* Form UI */
