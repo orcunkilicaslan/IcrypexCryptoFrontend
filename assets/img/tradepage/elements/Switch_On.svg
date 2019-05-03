@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="111" height="21" viewBox="0 0 111 21">
+  <g id="Switch_On" transform="translate(42 1)">
+    <g id="Track" fill="none" stroke="#70a800" stroke-width="2">
+      <rect width="40" height="20" rx="10" stroke="none"/>
+      <rect x="1" y="1" width="38" height="18" rx="9" fill="none"/>
+    </g>
+    <circle id="Circle" cx="6" cy="6" r="6" transform="translate(24 4)" fill="#70a800"/>
+    <text id="Value" transform="translate(44 16)" fill="#70a800" font-size="17" font-family="BarlowCondensed-Medium, Barlow" font-weight="500"><tspan x="0" y="0">Açık</tspan></text>
+    <text id="Value-2" data-name="Value" transform="translate(-42 16)" fill="#758ca3" font-size="17" font-family="BarlowCondensed-Regular, Barlow" opacity="0.6"><tspan x="0" y="0">Kapalı</tspan></text>
+  </g>
+</svg>
