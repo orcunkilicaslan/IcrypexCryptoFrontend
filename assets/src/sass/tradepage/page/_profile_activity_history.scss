@@ -1,0 +1,45 @@
+
+.profile{
+
+  &-activity-history{
+    max-width: 600px;
+
+    &-table{
+
+      thead{
+        th{
+          font-size: 17px;
+          border-top: 1px solid transparentize($tradepage-color-light-stale-gray, 0.7);
+        }
+
+        th.btnwidth110{
+          width: 110px;
+        }
+
+      }
+
+      tbody{
+        td{
+          padding-top: 3px !important;
+          padding-bottom: 3px !important;
+        }
+
+        tr:last-child{
+          td{
+            border-bottom-width: 1px;
+            border-bottom-style: solid;
+          }
+        }
+      }
+
+      &-btn{
+        .btn{
+          display: block;
+          padding: 1px 5px;
+        }
+      }
+    }
+
+  }
+
+}
