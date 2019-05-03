@@ -70,6 +70,23 @@
       }
     }
 
+    .infotext{
+      width: 100%;
+      padding-left: 15px;
+      padding-right: 15px;
+      margin-top: 7px;
+      display: flex;
+      align-items: center;
+      align-self: flex-start;
+
+      i[class*="icon-svg"]{
+        width: 18px;
+        height: 18px;
+        margin-left: 0;
+      }
+
+    }
+
     &-info{
       color: $tradepage-color-light-stale-gray;
       font-size: 15px;

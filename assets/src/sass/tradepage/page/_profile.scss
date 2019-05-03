@@ -39,6 +39,12 @@
       position: absolute;
     }
 
+    &.lineorange{
+      &:before{
+        background-color: $tradepage-color-orange;
+      }
+    }
+
     a.link{
       color: $tradepage-color-blue;
       text-decoration: underline;
