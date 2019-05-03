@@ -34,6 +34,7 @@
  - [29_Profile_Bank_Account](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/tradepage/29_Profile_Bank_Account.html)
  - [30_Profile_Login_Settings](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/tradepage/30_Profile_Login_Settings.html)
  - [31_Profile_2FA_Activation](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/tradepage/31_Profile_2FA_Activation.html)
+ - [32_Profile_Key_Create](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/tradepage/32_Profile_Key_Create.html)
  
 
 # NodeJS Kurulumu
