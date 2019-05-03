@@ -2,7 +2,7 @@
 .formui{
 
   form{
-    .row > div[class*="col"]{
+    .row > *[class*="col"]{
       padding-left: 7px;
       padding-right: 7px;
 
@@ -49,6 +49,23 @@
   .form-group{
     margin-bottom:20px;
 
+    &.borderbottom{
+      border-bottom: 1px solid transparentize($tradepage-color-light-stale-gray, 0.7);
+      margin-left: 0;
+      margin-right: 0;
+      margin-bottom: 15px;
+
+      &:last-child{
+        border-bottom: none;
+        margin-bottom: 0;
+      }
+
+      > *[class*="col"]{
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+      }
+    }
+
     .btn{
       width:100%;
     }
@@ -84,7 +101,12 @@
         height: 18px;
         margin-left: 0;
       }
+    }
 
+    .width100100{
+      width: 100%;
+      padding-left: 15px;
+      padding-right: 15px;
     }
 
     &-info{
