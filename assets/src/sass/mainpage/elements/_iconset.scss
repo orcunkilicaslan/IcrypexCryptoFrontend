@@ -6,6 +6,7 @@ $mainpageSvgIconImgPath : "../../img/mainpage/svg";
     background-position: center center;
     background-size: contain;
     overflow: hidden;
+    display: block;
 
     &-icrypexsymbol{
       background-image: url(#{$mainpageSvgIconImgPath}/Icrypex_Symbol.svg);
@@ -13,29 +14,42 @@ $mainpageSvgIconImgPath : "../../img/mainpage/svg";
     &-search{
       background-image: url(#{$mainpageSvgIconImgPath}/Search_Icon.svg);
     }
-
     &-why-2fa{
       background-image: url(#{$mainpageSvgIconImgPath}/2FA_Icon.svg);
     }
-
     &-why-speed{
       background-image: url(#{$mainpageSvgIconImgPath}/Speed_Icon.svg);
     }
-
     &-why-api{
       background-image: url(#{$mainpageSvgIconImgPath}/API_Icon.svg);
     }
-
     &-why-segwit{
       background-image: url(#{$mainpageSvgIconImgPath}/Segwit_Icon.svg);
     }
-
     &-why-freeze{
       background-image: url(#{$mainpageSvgIconImgPath}/Freeze_Icon.svg);
     }
-
     &-why-deep{
       background-image: url(#{$mainpageSvgIconImgPath}/Deep_Icon.svg);
+    }
+
+    &-productslistbtc{
+      background-image: url(#{$mainpageSvgIconImgPath}/Icon_Btc.svg);
+    }
+    &-productslisteth{
+      background-image: url(#{$mainpageSvgIconImgPath}/Icon_Eth.svg);
+    }
+    &-productslistxrp{
+      background-image: url(#{$mainpageSvgIconImgPath}/Icon_Xrp.svg);
+    }
+    &-productslistltc{
+      background-image: url(#{$mainpageSvgIconImgPath}/Icon_Ltc.svg);
+    }
+    &-productslistmpay{
+      background-image: url(#{$mainpageSvgIconImgPath}/Icon_Mpay.svg);
+    }
+    &-productslistxlm{
+      background-image: url(#{$mainpageSvgIconImgPath}/Icon_Xlm.svg);
     }
 
   }

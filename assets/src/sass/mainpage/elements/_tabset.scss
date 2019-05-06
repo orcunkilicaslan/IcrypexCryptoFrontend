@@ -1,0 +1,79 @@
+.site{
+
+  &tabs{
+
+    &light{
+      border-bottom: 5px solid $mainpage-color-blue;
+      position: relative;
+      justify-content: center!important;
+
+      &:after{
+        content: "";
+        position: absolute;
+        width: 100%;
+      }
+      &:after{
+        background-color: $mainpage-color-white;
+        height: 2px;
+        bottom: 0;
+      }
+
+      .nav{
+        &-item{
+          position: relative;
+          margin-bottom: 0;
+          font-size: 18px;
+          overflow: hidden;
+          color: transparentize($mainpage-color-white, 0.5);
+          background-color: $mainpage-color-light-stale-gray;
+        }
+        &-link{
+          color: $mainpage-color-white;
+          border-color: $mainpage-color-white;
+          border-style: solid;
+          border-right-width: 2px;
+          border-left-width: 0;
+          border-top: none;
+          border-bottom-width: 0;
+          padding: 5px 20px 6px;
+          min-width: 120px;
+          text-align: center;
+          cursor: pointer;
+          @include border-radius(0);
+          @include transition(color, 0.2s, linear);
+
+          span{
+            position: relative;
+            z-index: 1;
+            display: block;
+            margin-bottom: 1px;
+          }
+
+          &:before{
+            content: "";
+            position: absolute;
+            width: calc(100% - 2px);
+            height: 0;
+            left: 0;
+            bottom: 0;
+            background-color: transparent;
+            @include transition(height, 0.2s, linear);
+          }
+
+          &.active,
+          &.show,
+          &:hover{
+            color: $mainpage-color-white;
+            background-color: transparent;
+            border-color: $mainpage-color-white;
+            &:before{
+              height: 100%;
+              background-color: $mainpage-color-blue;
+              z-index: 1;
+            }
+          }
+        }
+      }
+    }
+  }
+}

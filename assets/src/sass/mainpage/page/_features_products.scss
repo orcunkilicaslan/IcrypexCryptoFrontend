@@ -1,0 +1,48 @@
+
+.features{
+
+  &-products{
+    background-color: $mainpage-color-white;
+
+    .container > .row > .col-12{
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    &-list{
+      padding: 30px 0;
+      border-bottom: 1px solid red;
+
+      > div[class*="col"]{
+        padding-left: 7px;
+        padding-right: 7px;
+
+        &:first-child{
+          padding-left: 0;
+        }
+        &:last-child{
+          padding-right: 0;
+        }
+      }
+
+      &-icons{
+
+        .iconbox{
+          background-color: $mainpage-color-light-bg-gray;
+          width: 70px;
+          min-height: 190px;
+          padding: 12px 0;
+          display: flex;
+          justify-content: center;
+        }
+
+        i[class*="icon-svg"]{
+          width: 40px;
+          height: 40px;
+        }
+      }
+
+    }
+
+  }
+}
