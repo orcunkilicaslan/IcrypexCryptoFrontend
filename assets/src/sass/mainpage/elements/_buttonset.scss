@@ -1,0 +1,33 @@
+.btn{
+  color: $mainpage-color-white !important;
+  font-size: 17px;
+  font-weight: normal;
+  @include border-radius(3px);
+
+  &-primary{
+    background-color: $mainpage-color-btn-blue !important;
+    border-color: $mainpage-color-btn-blue !important;
+  }
+  &-success{
+    background-color: $mainpage-color-green !important;
+    border-color: $mainpage-color-green !important;
+  }
+  &-danger{
+    background-color: $mainpage-color-red !important;
+    border-color: $mainpage-color-red !important;
+  }
+  &-info{
+    background-color: $mainpage-color-blue !important;
+    border-color: $mainpage-color-blue !important;
+  }
+
+  &.btnwidth110{
+    width: 110px !important;
+  }
+  &.btnwidth160{
+    width: 160px !important;
+  }
+  &.btnwidth100100{
+    width: 100% !important;
+  }
+}

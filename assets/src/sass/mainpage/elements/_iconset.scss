@@ -51,6 +51,8 @@ $mainpageSvgIconImgPath : "../../img/mainpage/svg";
     &-productslistxlm{
       background-image: url(#{$mainpageSvgIconImgPath}/Icon_Xlm.svg);
     }
-
+    &-productsfullwidth{
+      background-image: url(#{$mainpageSvgIconImgPath}/Full_Width_Icon.svg);
+    }
   }
 }
