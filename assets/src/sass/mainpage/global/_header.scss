@@ -2,10 +2,12 @@ $mainpageHeaderImgPath : "../../img/mainpage";
 $mainpageSvgIconImgPath : "../../img/mainpage/svg";
 
 .header{
-  margin-bottom: 26px;
+  color: $mainpage-color-white;
+  @include gradient($mainpage-gradient-darkblue01, $mainpage-gradient-darkblue02);
+
 
   &-top{
-    padding: 10px 0;
+    padding: 0;
     border-bottom: 1px solid transparentize($mainpage-color-light-stale-gray, 0.7);
 
     ul{text-align: center; margin: 0;}
@@ -99,14 +101,16 @@ $mainpageSvgIconImgPath : "../../img/mainpage/svg";
   }
 
   &-bottom{
-    padding: 5px 0;
+    padding: 5px 0 0 0;
+    align-items: flex-end;
 
     &-logo{
       color: $mainpage-color-white;
       font-family: $mainpage-font-family-barlow;
       width: 140px;
       line-height: 0.9;
-      margin-top: 5px;
+      margin-top: 0px;
+      margin-bottom: 7px;
       &:hover{color: $mainpage-color-white;}
       &-symbol{
         float: left;
@@ -137,6 +141,7 @@ $mainpageSvgIconImgPath : "../../img/mainpage/svg";
       max-width: 140px;
       width: 100%;
       margin-top: 5px;
+      margin-bottom: 15px;
       &-input{
         background-color: transparent;
         color: $mainpage-color-white;
@@ -165,5 +170,4 @@ $mainpageSvgIconImgPath : "../../img/mainpage/svg";
       }
     }
   }
-
 }

@@ -63,7 +63,7 @@
           &.active,
           &.show,
           &:hover{
-            color: $mainpage-color-white;
+            color: $mainpage-color-white !important;
             background-color: transparent;
             border-color: $mainpage-color-white;
             &:before{
