@@ -76,4 +76,102 @@
       }
     }
   }
+
+  &alttabs{
+    &dark{
+      background-color: $mainpage-color-btn-blue;
+      position: relative;
+      justify-content: center!important;
+
+      .nav{
+        &-item{
+          position: relative;
+
+          &:before{
+            content: "";
+            position: absolute;
+            width: 1px;
+            height: 14px;
+            background-color: transparentize($mainpage-color-white, 0.7);
+            top: calc(50% - 7px);
+            left: 0;
+          }
+
+          &:first-child{
+            &:before{
+              display: none;
+            }
+          }
+
+        }
+        &-link{
+          color: transparentize($mainpage-color-white, 0.5);
+          font-size: 17px;
+          padding: 7px 20px 8px;
+          position: relative;
+
+          &.active,
+          &.show,
+          &:hover{
+            color: $mainpage-color-white;
+          }
+          &.active,
+          &.show{
+            &:before{
+              content: "";
+              position: absolute;
+              width: 12px;
+              height: 12px;
+              background-color: $mainpage-color-btn-blue;
+              left: calc(50% - 6px);
+              bottom: -6px;
+              z-index: 1;
+              @include rotate(45);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &altalttabs{
+    &light{
+      background-color: $mainpage-color-white;
+      border-bottom: 1px solid transparentize($mainpage-color-light-stale-gray, 0.7);
+      padding-top: 5px;
+      position: relative;
+      justify-content: center!important;
+
+      .nav{
+        &-item{
+          padding: 0 17px;
+        }
+        &-link{
+          color: transparentize($mainpage-color-title-blue, 0.5);
+          font-size: 17px;
+          padding: 7px 3px 8px;
+          position: relative;
+
+          &.active,
+          &.show,
+          &:hover{
+            color: $mainpage-color-title-blue;
+          }
+          &.active,
+          &.show{
+            &:before{
+              content: "";
+              position: absolute;
+              width: 100%;
+              height: 4px;
+              background-color: $mainpage-color-blue;
+              left: 0;
+              bottom: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+
 }
