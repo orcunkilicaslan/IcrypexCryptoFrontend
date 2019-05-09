@@ -3,7 +3,7 @@
   &-products{
 
     &-zoom{
-      padding-top: 15px;
+      padding-top: 10px;
       padding-bottom: 30px;
 
       &-sidebar{
@@ -12,9 +12,23 @@
         *[class*="boxtitle"]{
           font-size: 20px;
           margin: 0;
+          margin-bottom: 6px;
           padding: 0;
           border: none;
           font-weight: 500;
+        }
+
+        &-icon{
+          height: 32px;
+
+          i[class*="icon-svg"]{
+            width: 60px;
+            height: 60px;
+            margin: 0 auto;
+            position: relative;
+            top: -28px;
+            margin-top: 24px;
+          }
         }
 
         &-box{
@@ -31,6 +45,12 @@
             width: calc(100% + 2px);
             left: -1px;
             position: absolute;
+          }
+
+          &.lineorange{
+            &:before {
+              background-color: $mainpage-color-orange;
+            }
           }
 
           &-buttons{
@@ -103,8 +123,28 @@
 
         &-boxtitle{
           border-bottom: 1px solid lighten($mainpage-color-light-stale-gray, 30%);
-          height: 25px;
+          height: 34px;
           font-size: 15px;
+
+          *[class*="boxtitle"]{
+            font-size: 20px;
+            margin: 0;
+            padding: 0;
+            border: none;
+            font-weight: 500;
+            position: relative;
+
+            &:before{
+              content: "";
+              position: absolute;
+              width: 30px;
+              height: 4px;
+              bottom: 0;
+              left: 0;
+              background-color: $mainpage-color-blue;
+            }
+
+          }
 
           .chartdate{
 
@@ -130,8 +170,7 @@
                 color: $mainpage-color-title-blue;
                 font-size: 15px;
                 margin: 0;
-                padding: 4px 2px 5px;
-                border-bottom: 1px solid lighten($mainpage-color-light-stale-gray, 30%);
+                padding: 6px 2px;
                 position: relative;
 
                 &:before{
@@ -161,18 +200,16 @@
 
             &-select{
               color: $mainpage-color-title-blue;
+              padding: 6px 2px;
+              display: block;
             }
-
           }
-
         }
-
       }
 
       &-historychart{
         border-left: 1px solid lighten($mainpage-color-light-stale-gray, 30%);
       }
-
     }
   }
 }
