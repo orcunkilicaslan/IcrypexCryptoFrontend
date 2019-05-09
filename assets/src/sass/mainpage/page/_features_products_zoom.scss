@@ -56,10 +56,11 @@
           &-buttons{
             background-color: $mainpage-color-light-bg-gray;
             margin: 2px;
-            padding: 13px;
+            padding: 8px 13px;
 
             .btn-group{
               width: 100%;
+              padding: 5px 0;
 
               .btn{
                 border-left: 1px solid $mainpage-color-white !important;
@@ -72,6 +73,31 @@
                   border-right: none !important;;
                 }
               }
+            }
+
+            .coininfolink{
+              display: flex;
+              flex-wrap: wrap;
+
+              li{
+                font-size: 15px;
+                width: 50%;
+                margin: 5px 0;
+
+                i[class*="icon-svg"]{
+                  width: 25px;
+                  height: 25px;
+                  margin-right: 4px;
+                }
+
+                a{
+                  display: flex;
+                  align-items: center;
+                  line-height: 1;
+                }
+
+              }
+
             }
           }
         }
@@ -123,13 +149,14 @@
 
         &-boxtitle{
           border-bottom: 1px solid lighten($mainpage-color-light-stale-gray, 30%);
-          height: 34px;
+          height: 29px;
           font-size: 15px;
 
           *[class*="boxtitle"]{
             font-size: 20px;
             margin: 0;
             padding: 0;
+            padding-bottom: 10px;
             border: none;
             font-weight: 500;
             position: relative;
@@ -137,14 +164,19 @@
             &:before{
               content: "";
               position: absolute;
-              width: 30px;
+              width: 60px;
               height: 4px;
               bottom: 0;
               left: 0;
               background-color: $mainpage-color-blue;
             }
-
           }
+        }
+
+        &-charttitle{
+          border-bottom: 1px solid lighten($mainpage-color-light-stale-gray, 30%);
+          height: 34px;
+          font-size: 15px;
 
           .chartdate{
 
@@ -205,10 +237,29 @@
             }
           }
         }
+
       }
 
       &-historychart{
         border-left: 1px solid lighten($mainpage-color-light-stale-gray, 30%);
+      }
+
+      &-content{
+        color: $mainpage-color-title-blue;
+        font-size: 17px;
+        padding-top: 10px;
+        line-height: 1.25;
+
+        *{color: $mainpage-color-title-blue;}
+
+        p{
+          margin-bottom: 15px;
+
+          &:last-child{
+            margin-bottom: 0;
+          }
+        }
+
       }
     }
   }

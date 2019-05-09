@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
+  <g id="Link_Telegram" transform="translate(-2481 -4513)">
+    <circle id="Circle_Background" cx="12.5" cy="12.5" r="12.5" transform="translate(2481 4513)" fill="#098cdf"/>
+    <path id="Icon_Telegram" d="M37.966,64.022l-1.811,8.486c-.137.6-.493.748-1,.466L32.4,70.954l-1.331,1.272a.694.694,0,0,1-.555.269l.2-2.792,5.114-4.592c.222-.2-.048-.306-.346-.109l-6.322,3.956-2.722-.846c-.592-.184-.6-.588.123-.87L37.2,63.165C37.7,62.981,38.127,63.274,37.966,64.022Z" transform="translate(2460 4457.888)" fill="#fff"/>
+  </g>
+</svg>
