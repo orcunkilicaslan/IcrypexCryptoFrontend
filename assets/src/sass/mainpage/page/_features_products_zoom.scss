@@ -3,7 +3,7 @@
   &-products{
 
     &-zoom{
-      padding-top: 15px;
+      padding-top: 10px;
       padding-bottom: 30px;
 
       &-sidebar{
@@ -123,7 +123,7 @@
 
         &-boxtitle{
           border-bottom: 1px solid lighten($mainpage-color-light-stale-gray, 30%);
-          height: 30px;
+          height: 34px;
           font-size: 15px;
 
           *[class*="boxtitle"]{
@@ -170,8 +170,7 @@
                 color: $mainpage-color-title-blue;
                 font-size: 15px;
                 margin: 0;
-                padding: 4px 2px 5px;
-                border-bottom: 1px solid lighten($mainpage-color-light-stale-gray, 30%);
+                padding: 6px 2px;
                 position: relative;
 
                 &:before{
@@ -201,6 +200,8 @@
 
             &-select{
               color: $mainpage-color-title-blue;
+              padding: 6px 2px;
+              display: block;
             }
           }
         }
