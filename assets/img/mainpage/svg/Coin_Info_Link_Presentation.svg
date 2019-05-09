@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 25 25">
+  <g id="Link_Presentation" transform="translate(-2481 -4513)">
+    <circle id="Circle_Background" cx="12.5" cy="12.5" r="12.5" transform="translate(2481 4513)" fill="#098cdf"/>
+    <g id="Icon_Presentation" transform="translate(1959 3804)">
+      <rect id="Path" width="13" height="9" rx="1" transform="translate(528 716)" fill="#fff"/>
+      <line id="Path-2" data-name="Path" y2="4" transform="translate(531.5 724.5)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="1"/>
+      <line id="Path-3" data-name="Path" y2="4" transform="translate(537.5 724.5)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="1"/>
+      <line id="Path-4" data-name="Path" x2="4" transform="translate(530.5 722.5)" fill="none" stroke="#098cdf" stroke-linecap="square" stroke-width="1"/>
+      <line id="Path-5" data-name="Path" x2="8" transform="translate(530.5 720.5)" fill="none" stroke="#098cdf" stroke-linecap="square" stroke-width="1"/>
+      <line id="Path-6" data-name="Path" x2="7" transform="translate(530.5 718.5)" fill="none" stroke="#098cdf" stroke-linecap="square" stroke-width="1"/>
+      <line id="Path-7" data-name="Path" y2="2" transform="translate(534.5 714.5)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="1"/>
+    </g>
+  </g>
+</svg>

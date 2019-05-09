@@ -54,5 +54,31 @@ $mainpageSvgIconImgPath : "../../img/mainpage/svg";
     &-productsfullwidth{
       background-image: url(#{$mainpageSvgIconImgPath}/Full_Width_Icon.svg);
     }
+
+    &-productscoininfolinkblog{
+      background-image: url(#{$mainpageSvgIconImgPath}/Coin_Info_Link_Blog.svg);
+    }
+    &-productscoininfolinkfacebook{
+      background-image: url(#{$mainpageSvgIconImgPath}/Coin_Info_Link_Facebook.svg);
+    }
+    &-productscoininfolinklinkedin{
+      background-image: url(#{$mainpageSvgIconImgPath}/Coin_Info_Link_Linkedin.svg);
+    }
+    &-productscoininfolinkpresentation{
+      background-image: url(#{$mainpageSvgIconImgPath}/Coin_Info_Link_Presentation.svg);
+    }
+    &-productscoininfolinktelegram{
+      background-image: url(#{$mainpageSvgIconImgPath}/Coin_Info_Link_Telegram.svg);
+    }
+    &-productscoininfolinktwitter{
+      background-image: url(#{$mainpageSvgIconImgPath}/Coin_Info_Link_Twitter.svg);
+    }
+    &-productscoininfolinkwebsite{
+      background-image: url(#{$mainpageSvgIconImgPath}/Coin_Info_Link_Website.svg);
+    }
+    &-productscoininfolinkwhitepaper{
+      background-image: url(#{$mainpageSvgIconImgPath}/Coin_Info_Link_Whitepaper.svg);
+    }
+
   }
 }
