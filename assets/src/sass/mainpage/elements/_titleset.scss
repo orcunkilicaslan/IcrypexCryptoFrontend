@@ -127,7 +127,80 @@
         left: calc(50% - 30px);
       }
     }
+  }
+}
+
+
+/* Title Column */
+.boxcolumn{
+
+  &-headtitle{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+
+    i[class*="titleicon"]{
+      width: 30px;
+      height: 30px;
+      margin-right: 4px;
+      display: inline-block;
+    }
+
+    &-title,
+    &-wallet{
+      color: $mainpage-color-title-blue;
+      font-size: 20px;
+      margin: 0;
+      padding: 0;
+      line-height: 1;
+      display: flex;
+      align-items: center;
+    }
+    &-title{font-weight: 500;}
+    &-wallet{font-weight: normal;}
+    &-info{font-size: 17px}
 
   }
 
+  &-boxtitle{
+    display: flex;
+    justify-content: space-between;
+    color: $mainpage-color-title-blue;
+    border-bottom: 1px solid transparentize($mainpage-color-light-stale-gray, 0.7);
+    padding-bottom: 7px;
+    margin-bottom: 5px;
+
+    [class*="boxtitle"].d-flex{
+      *{margin: 0 4px;}
+    }
+
+    i[class*="icon-svg"]{
+      margin-right: 5px;
+      display: inline-block;
+    }
+
+    i[class*="wallet"]{
+      width: 19px;
+      height: 14px;
+    }
+    i[class*="profileinformation"]{
+      width: 18px;
+      height: 18px;
+    }
+
+    &-title,
+    &-wallet,
+    &-date{
+      font-size: 20px;
+      margin: 0;
+      padding: 0;
+      line-height: 1;
+    }
+    &-title{font-weight: 500;}
+    &-wallet{font-weight: normal;}
+    &-date{font-size:17px; font-weight: normal;}
+  }
+
 }
+/* Title Column */

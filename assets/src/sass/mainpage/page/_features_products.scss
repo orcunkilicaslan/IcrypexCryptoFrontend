@@ -24,10 +24,10 @@
 
     &-list{
       padding: 30px 0;
-      border-top: 1px solid lighten($mainpage-color-light-stale-gray, 30%);
+      border-bottom: 1px solid lighten($mainpage-color-light-stale-gray, 30%);
 
-      &:first-child{
-        border-top: none;
+      &:last-child{
+        border-bottom: none;
       }
 
       &-icons{
