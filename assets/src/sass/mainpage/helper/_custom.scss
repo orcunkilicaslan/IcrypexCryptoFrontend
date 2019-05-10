@@ -15,8 +15,16 @@ body, input, textarea, select, button {
   font-family: $mainpage-font-family-barlow;
 }
 h1,h2,h3,h4,h5,h6{
-  font-weight: 600;
+  font-weight: 500;
   margin-bottom: 15px;
+}
+
+strong{
+  font-weight: 500;
+}
+
+sup {
+  top: -0.30em;
 }
 
 blockquote, p, ul, li{}
@@ -25,6 +33,7 @@ img{
   max-width: 100%;
   height: auto;
 }
+
 img, svg {
   vertical-align: middle;
 }

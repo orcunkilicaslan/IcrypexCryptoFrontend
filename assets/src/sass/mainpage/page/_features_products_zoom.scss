@@ -20,6 +20,7 @@
 
         &-icon{
           height: 32px;
+          margin-bottom: 5px;
 
           i[class*="icon-svg"]{
             width: 60px;
@@ -106,7 +107,6 @@
           padding: 5px 15px;
 
           &-card{
-            border-bottom: 1px solid lighten($mainpage-color-light-stale-gray, 30%);
             padding: 10px 0;
             align-items: flex-end;
 
@@ -127,19 +127,6 @@
             span.bigperc{
               font-size: 20px;
               font-weight: 500;
-            }
-          }
-
-          &-list{
-
-            li{
-              border-bottom: 1px solid lighten($mainpage-color-light-stale-gray, 30%);
-              padding: 5px 0;
-              font-size: 15px;
-
-              &:last-child{
-                border-bottom: none;
-              }
             }
           }
         }
@@ -260,7 +247,40 @@
           }
         }
 
+        .contentwidth600{
+          max-width: 600px;
+        }
       }
+
+      &-detail{
+        &-table{
+
+          tbody{
+            tr:first-child {
+              td {
+                border-top: none;
+              }
+            }
+            tr:last-child {
+              td {
+                border-bottom: 1px solid transparentize($mainpage-color-light-stale-gray, 0.85);
+              }
+            }
+
+            td{
+              padding-top: 8px;
+              padding-bottom: 8px;
+
+              &:last-child{
+                font-weight: 500;
+              }
+
+            }
+          }
+
+        }
+      }
+
     }
   }
 }
