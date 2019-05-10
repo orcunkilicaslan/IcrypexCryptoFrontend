@@ -5,6 +5,10 @@
     background-color: $mainpage-color-white;
     padding-bottom: 10px;
 
+    sup {
+      font-weight: bold;
+    }
+
     .container > .row > .col-12{
       padding-left: 0;
       padding-right: 0;
@@ -237,6 +241,23 @@
           &:last-child{
             border-bottom: none;
           }
+        }
+      }
+    }
+
+    &-ultwocolumn{
+
+      &.bordertop{
+        border-top: 1px solid transparentize($mainpage-color-light-stale-gray, 0.85);
+      }
+
+      li{
+        border-bottom: 1px solid transparentize($mainpage-color-light-stale-gray, 0.85);
+        padding: 5px 0;
+        font-size: 15px;
+
+        &:last-child{
+          border-bottom: none;
         }
       }
     }
