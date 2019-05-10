@@ -6,6 +6,7 @@
  - [03_Features_Products_Zoom_Price](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mainpage/03_Features_Products_Zoom_Price.html)
  - [04_Features_Products_Zoom_Overview](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mainpage/04_Features_Products_Zoom_Overview.html)
  - [05_Features_Products_Zoom_Detail](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mainpage/05_Features_Products_Zoom_Detail.html)
+ - [06_Features_Products_Zoom_Feed](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mainpage/06_Features_Products_Zoom_Feed.html)
 
 #### Tradepage Frontend List
  - [01_Login_Step_1](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/tradepage/01_Login_Step_1.html)
