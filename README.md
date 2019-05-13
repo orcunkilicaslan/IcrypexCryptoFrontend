@@ -7,8 +7,9 @@
  - [04_Features_Products_Zoom_Overview](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mainpage/04_Features_Products_Zoom_Overview.html)
  - [05_Features_Products_Zoom_Detail](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mainpage/05_Features_Products_Zoom_Detail.html)
  - [06_Features_Products_Zoom_Feed](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mainpage/06_Features_Products_Zoom_Feed.html)
- - [07_Features_Products_Commision](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mainpage/07_Features_Products_Commision.html)
- - [08_Features_Products_Limit](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mainpage/08_Features_Products_Limit.html)
+ - [07_Features_Commision](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mainpage/07_Features_Commision.html)
+ - [08_Features_Limit](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mainpage/08_Features_Limit.html)
+
 
 #### Tradepage Frontend List
  - [01_Login_Step_1](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/tradepage/01_Login_Step_1.html)
