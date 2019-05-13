@@ -59,12 +59,22 @@
           width: 33%;
         }
 
+        &.textallleft{
+          th, td{
+            text-align: left !important;
+          }
+        }
+
         td, th{
           text-align: center;
+          padding-left: 9px;
+          padding-right: 9px;
 
           &:first-child{
             text-align: left;
+            padding-left: 0;
           }
+
         }
 
         thead{
