@@ -17,7 +17,7 @@
     &gray{
       background-color: $mainpage-color-light-stale-gray !important;
       &light{
-        background-color: transparentize($mainpage-color-light-stale-gray, 0.7) !important;
+        background-color: $mainpage-color-light-bg-gray !important;
       }
     }
   }
