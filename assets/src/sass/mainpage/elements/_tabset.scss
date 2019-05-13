@@ -73,6 +73,22 @@
           }
         }
       }
+
+      &.darkblue{
+        border-bottom-color: $mainpage-color-btn-blue;
+
+        .nav{
+          &-link{
+            &.active,
+            &.show,
+            &:hover{
+              &:before{
+                background-color: $mainpage-color-btn-blue !important;
+              }
+            }
+          }
+        }
+      }
     }
 
     &-content{

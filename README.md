@@ -9,6 +9,7 @@
  - [06_Features_Products_Zoom_Feed](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mainpage/06_Features_Products_Zoom_Feed.html)
  - [07_Features_Commision](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mainpage/07_Features_Commision.html)
  - [08_Features_Limit](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mainpage/08_Features_Limit.html)
+ - [13_Features_Technology_Chain_Summary](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mainpage/13_Features_Technology_Chain_Summary.html)
 
 
 #### Tradepage Frontend List
