@@ -14,6 +14,9 @@ $mainpageSvgIconImgPath : "../../img/mainpage/svg";
     &-search{
       background-image: url(#{$mainpageSvgIconImgPath}/Search_Icon.svg);
     }
+    &-conn{
+      background-image: url(#{$mainpageSvgIconImgPath}/Icon_Conn.svg);
+    }
     &-why-2fa{
       background-image: url(#{$mainpageSvgIconImgPath}/2FA_Icon.svg);
     }
