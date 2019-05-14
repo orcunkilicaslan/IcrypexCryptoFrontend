@@ -3,11 +3,16 @@
 
   &-chain{
 
-    &-summary{
-      padding: 15px;
+    &-box{
+      position: relative;
+      width: 100%;
 
-      &-box{
-        position: relative;
+      &.allblocktables{
+        max-width: 620px;
+        margin: 0 auto;
+      }
+
+      &[class*="col"]{
         padding-left: 15px !important;
         padding-right: 15px !important;
 
@@ -28,55 +33,68 @@
         &:last-child{
           padding-right: 0 !important;
         }
+      }
 
-        &-title{
-          color: $mainpage-color-title-blue;
-          font-size: 20px;
-          font-weight: 500;
-          margin-bottom: 5px;
+      &-title{
+        color: $mainpage-color-title-blue;
+        font-size: 20px;
+        font-weight: 500;
+        margin-bottom: 5px;
+      }
+
+      &-date{
+        color: $mainpage-color-title-blue;
+        font-size: 17px;
+      }
+    }
+
+    &-table{
+
+      td, th{
+        text-align: left;
+        padding-left: 9px;
+        padding-right: 9px;
+
+        &:first-child{
+          padding-left: 0;
         }
       }
 
-      &-table{
-
-        td, th{
-          text-align: left;
-          padding-left: 9px;
-          padding-right: 9px;
-
-          &:first-child{
-            padding-left: 0;
-          }
+      thead{
+        th{
+          border-top-width: 1px;
+          border-top-style: solid;
         }
 
-        thead{
-          th{
-            border-top-width: 1px;
-            border-top-style: solid;
-          }
+        th.buttons{
+          width: 90px;
         }
+      }
 
-        tbody{
-          tr:last-child{
-            td{
-              border-bottom-width: 1px;
-              border-bottom-style: solid;
-            }
-          }
-
+      tbody{
+        tr:last-child{
           td{
-            padding-top: 2px;
-            padding-bottom: 2px;
+            border-bottom-width: 1px;
+            border-bottom-style: solid;
           }
         }
 
-        .btn{
-          padding: 7px 5px;
-          font-size: 15px;
-          line-height: 1;
-          min-width: 80px;
+        td{
+          padding-top: 2px;
+          padding-bottom: 2px;
         }
       }
+
+      .btn{
+        padding: 7px 5px;
+        font-size: 15px;
+        line-height: 1;
+        min-width: 80px;
+      }
+    }
+
+    &-summary{
+      padding: 15px;
     }
   }
 }

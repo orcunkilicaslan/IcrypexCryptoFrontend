@@ -37,8 +37,9 @@
 
       &-search{
         background-color: transparentize($mainpage-color-light-stale-gray, 0.85);
-        width: 394px;
+        width: 388px;
         height: 40px;
+        margin-right: 4px;
 
         .input-group,
         .form-control{
@@ -83,6 +84,77 @@
             background-image: url(#{$mainpageSvgIconImgPath}/Search_Icon.svg);
             left: calc(50% - 9px);
             top: calc(50% - 9px);
+          }
+        }
+      }
+    }
+
+    &-pagination{
+      background-color: $mainpage-color-light-bg-gray;
+      padding: 15px;
+      display: flex;
+      justify-content: center;
+
+      .pagination{
+
+        .page{
+
+          &-item{
+            margin: 0 5px;
+          }
+
+          &-link{
+            color: $mainpage-color-light-stale-gray;
+            background-color: transparent;
+            font-size: 15px;
+            line-height: 1;
+            min-width: 100px;
+            height: 100%;
+            padding: 0;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-color: lighten($mainpage-color-light-stale-gray, 30%);
+            @include border-radius(0);
+            @include transition(all, 0.1s, linear);
+
+            i{
+              width: 28px;
+              height: 28px;
+              display: inline-block;
+            }
+
+            &-prev,
+            &-next{
+              background-color: lighten($mainpage-color-light-stale-gray, 30%);
+            }
+
+            &-date{
+              width: 70px;
+            }
+
+            &:hover{
+              background-color: transparent;
+              border-color: lighten($mainpage-color-light-stale-gray, 20%);
+
+              .page-link-prev,
+              .page-link-next{
+                background-color: lighten($mainpage-color-light-stale-gray, 20%);
+              }
+
+
+            }
+            &.active{
+              color: $mainpage-color-white;
+              background-color: $mainpage-color-light-stale-gray;
+              border-color: $mainpage-color-light-stale-gray;
+
+              .page-link-date{
+                width: 100%;
+              }
+
+            }
           }
         }
       }
