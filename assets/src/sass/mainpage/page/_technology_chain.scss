@@ -5,6 +5,12 @@
 
     &-box{
       position: relative;
+      width: 100%;
+
+      &.allblocktables{
+        max-width: 620px;
+        margin: 0 auto;
+      }
 
       &[class*="col"]{
         padding-left: 15px !important;
@@ -35,6 +41,11 @@
         font-weight: 500;
         margin-bottom: 5px;
       }
+
+      &-date{
+        color: $mainpage-color-title-blue;
+        font-size: 17px;
+      }
     }
 
     &-table{
@@ -53,6 +64,10 @@
         th{
           border-top-width: 1px;
           border-top-style: solid;
+        }
+
+        th.buttons{
+          width: 90px;
         }
       }
 
