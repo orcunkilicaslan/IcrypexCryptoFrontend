@@ -1,0 +1,91 @@
+
+.technology{
+
+  &-section{
+    background-color: $mainpage-color-white;
+    padding: 0 0 40px;
+
+    .container > .row > .col-12{
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    .d-flex > *[class*="col"]{
+      padding-left: 7px;
+      padding-right: 7px;
+
+      &:first-child{
+        padding-left: 0;
+      }
+      &:last-child{
+        padding-right: 0;
+      }
+    }
+  }
+
+  &-tabcontent{
+    border: 1px solid transparentize($mainpage-color-light-stale-gray, 0.7);
+    border-top: none;
+    width: 100%;
+    min-height: 200px;
+
+    &-searchbox{
+      background-color: $mainpage-color-light-bg-gray;
+      padding: 15px;
+      display: flex;
+      justify-content: center;
+
+      &-search{
+        background-color: transparentize($mainpage-color-light-stale-gray, 0.85);
+        width: 394px;
+        height: 40px;
+
+        .input-group,
+        .form-control{
+          height: 100%;
+        }
+
+        .form-control{
+          color: $mainpage-color-light-stale-gray;
+          background-color: transparent;
+          border: 0;
+          font-size: 17px;
+          padding-top: 3px;
+
+          &:focus{
+            color: $mainpage-color-light-stale-gray;
+            @include box-shadow(0,0,0,0);
+          }
+        }
+
+        @include placeholder{
+          color: $mainpage-color-light-stale-gray;
+        }
+
+        .btn{
+          border: none;
+          background-color: transparent;
+          width: 40px;
+          text-indent: -9999px;
+          position: relative;
+          &:not(:disabled):not(.disabled):active:focus,
+          &:active,
+          &:focus{
+            @include box-shadow(0,0,0,0);
+            background-color: transparent;
+          }
+
+          &:before{
+            content: "";
+            position: absolute;
+            width: 17px;
+            height: 17px;
+            background-image: url(#{$mainpageSvgIconImgPath}/Search_Icon.svg);
+            left: calc(50% - 9px);
+            top: calc(50% - 9px);
+          }
+        }
+      }
+    }
+  }
+}

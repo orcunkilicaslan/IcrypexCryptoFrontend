@@ -1,7 +1,7 @@
 # ICRYPEX
 
 #### Mainpage Frontend List
- - [01_Icp_Home_Page](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mainpage/01_Icp_Home_Page.html)
+ - [00_Home_Page](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mainpage/00_Home_Page.html)
  - [02_Features_Products](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mainpage/02_Features_Products.html)
  - [03_Features_Products_Zoom_Price](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mainpage/03_Features_Products_Zoom_Price.html)
  - [04_Features_Products_Zoom_Overview](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mainpage/04_Features_Products_Zoom_Overview.html)
@@ -9,7 +9,7 @@
  - [06_Features_Products_Zoom_Feed](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mainpage/06_Features_Products_Zoom_Feed.html)
  - [07_Features_Commision](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mainpage/07_Features_Commision.html)
  - [08_Features_Limit](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mainpage/08_Features_Limit.html)
- - [13_Features_Technology_Chain_Summary](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mainpage/13_Features_Technology_Chain_Summary.html)
+ - [10_Technology_Chain_Summary](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mainpage/10_Technology_Chain_Summary.html)
 
 
 #### Tradepage Frontend List

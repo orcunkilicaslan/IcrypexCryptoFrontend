@@ -23,6 +23,7 @@
           position: relative;
           margin-bottom: 0;
           font-size: 18px;
+          letter-spacing: -0.02em;
           overflow: hidden;
           color: transparentize($mainpage-color-white, 0.5);
           background-color: $mainpage-color-light-stale-gray;
@@ -34,8 +35,8 @@
           border-left-width: 0;
           border-top: none;
           border-bottom-width: 0;
-          padding: 5px 20px 6px;
-          min-width: 120px;
+          padding: 5px 2px 6px;
+          min-width: 130px;
           text-align: center;
           cursor: pointer;
           @include border-radius(0);
