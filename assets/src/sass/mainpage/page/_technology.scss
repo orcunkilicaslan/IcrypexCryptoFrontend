@@ -128,6 +128,33 @@
             &-prev,
             &-next{
               background-color: lighten($mainpage-color-light-stale-gray, 30%);
+              position: relative;
+              @include transition(all, 0.2s, linear);
+
+              &:before{
+                content: "";
+                position:absolute;
+                width: 9px;
+                height: 9px;
+                top: calc(50% - 5px);
+                padding: 0;
+                border-top: 2px solid $mainpage-color-light-stale-gray;
+                border-right: 2px solid $mainpage-color-light-stale-gray;
+              }
+            }
+
+            &-prev{
+              &:before{
+                @include rotate(225);
+                left: calc(50% - 3px);
+              }
+            }
+
+            &-next{
+              &:before{
+                @include rotate(45);
+                left: calc(50% - 5px);
+              }
             }
 
             &-date{
@@ -143,7 +170,6 @@
                 background-color: lighten($mainpage-color-light-stale-gray, 20%);
               }
 
-
             }
             &.active{
               color: $mainpage-color-white;
@@ -153,7 +179,6 @@
               .page-link-date{
                 width: 100%;
               }
-
             }
           }
         }
