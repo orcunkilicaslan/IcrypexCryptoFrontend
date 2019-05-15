@@ -107,7 +107,6 @@
       padding: 15px;
 
       &-title{
-
         &.d-flex{
           *[class*="dropdown"]{
             margin: 0 2px;
@@ -125,6 +124,10 @@
         &-box{
           border-bottom: 1px solid transparentize($mainpage-color-light-stale-gray, 0.7);
         }
+      }
+
+      &-wrapper{
+        margin-top: 20px;
       }
     }
   }
