@@ -147,6 +147,7 @@
             *[class*="col"]{
               &:first-child{
                 width: 100px;
+                white-space: nowrap;
               }
               &:last-child{
                 white-space: nowrap;
