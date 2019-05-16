@@ -14,6 +14,8 @@
  - [12_Technology_Chain_Block](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mainpage/12_Technology_Chain_Block.html)
  - [13_Technology_Chain_Address](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mainpage/13_Technology_Chain_Address.html)
  - [14_Technology_Chain_Transaction](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mainpage/14_Technology_Chain_Transaction.html)
+ - [15_Technology_Chain_Status](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mainpage/15_Technology_Chain_Status.html)
+
 
 
 #### Tradepage Frontend List
