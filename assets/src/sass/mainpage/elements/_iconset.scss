@@ -57,7 +57,6 @@ $mainpageSvgIconImgPath : "../../img/mainpage/svg";
     &-productsfullwidth{
       background-image: url(#{$mainpageSvgIconImgPath}/Full_Width_Icon.svg);
     }
-
     &-productscoininfolinkblog{
       background-image: url(#{$mainpageSvgIconImgPath}/Coin_Info_Link_Blog.svg);
     }
@@ -81,6 +80,10 @@ $mainpageSvgIconImgPath : "../../img/mainpage/svg";
     }
     &-productscoininfolinkwhitepaper{
       background-image: url(#{$mainpageSvgIconImgPath}/Coin_Info_Link_Whitepaper.svg);
+    }
+
+    &-technologytransactionsdetail{
+      background-image: url(#{$mainpageSvgIconImgPath}/Transactions_Icon_Detail.svg);
     }
 
   }
