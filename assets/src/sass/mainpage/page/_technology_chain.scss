@@ -138,6 +138,9 @@
           &.bordertop{
             border-top: 1px solid transparentize($mainpage-color-light-stale-gray, 0.85);
           }
+          &.borderbottom{
+            border-bottom: 1px solid transparentize($mainpage-color-light-stale-gray, 0.85);
+          }
 
           li{
             border-bottom: 1px solid transparentize($mainpage-color-light-stale-gray, 0.85);
@@ -146,7 +149,7 @@
 
             *[class*="col"]{
               &:first-child{
-                width: 100px;
+                width: 45%;
                 white-space: nowrap;
               }
               &:last-child{
@@ -266,11 +269,20 @@
       &-transactions{
         padding-top: 10px;
 
-        > *[class*="boxtitle"]{
+        *[class*="boxtitle"]{
           font-size: 20px;
           font-weight: 500;
           padding-bottom: 7px;
           margin-bottom: 12px;
+        }
+
+        .divwidth600{
+          max-width: 600px;
+          margin-top: 15px;
+
+          &:first-child{
+            margin-top: 0;
+          }
         }
 
         &-box{
