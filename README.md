@@ -17,6 +17,7 @@
  - [14_Technology_Chain_Transaction](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mainpage/14_Technology_Chain_Transaction.html)
  - [15_Technology_Chain_Status](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mainpage/15_Technology_Chain_Status.html)
  - [16_Technology_Api](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mainpage/16_Technology_Api.html)
+ - [20_Technology_Segwit](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mainpage/20_Technology_Segwit.html)
 
 
 
