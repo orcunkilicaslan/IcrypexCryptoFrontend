@@ -280,8 +280,56 @@
           max-width: 600px;
           margin-top: 15px;
 
+          *[class*="boxtitle"]{
+            margin-bottom: 0;
+            padding-bottom: 5px;
+          }
+
           &:first-child{
             margin-top: 0;
+          }
+        }
+
+        &-ultwocolumn{
+          color: $mainpage-color-title-blue;
+
+          &.bordertop{
+            border-top: 1px solid transparentize($mainpage-color-light-stale-gray, 0.85);
+          }
+          &.borderbottom{
+            border-bottom: 1px solid transparentize($mainpage-color-light-stale-gray, 0.85);
+          }
+
+          li{
+            border-bottom: 1px solid transparentize($mainpage-color-light-stale-gray, 0.85);
+            padding: 5px 0;
+            font-size: 15px;
+
+            *[class*="col"]{
+              &:first-child{
+                width: 45%;
+                white-space: nowrap;
+              }
+              &:last-child{
+                white-space: nowrap;
+              }
+            }
+
+            &:last-child{
+              border-bottom: none;
+            }
+
+            .progress{
+              max-width: 100px;
+              height: 12px;
+              padding: 0 !important;
+              @include border-radius(12px);
+
+              &-bar{
+                height: 12px;
+                background-color: $mainpage-color-green;
+              }
+            }
           }
         }
 
