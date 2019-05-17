@@ -1,6 +1,28 @@
 
 .features{
 
+  &-section{
+    background-color: $mainpage-color-white;
+    padding: 0 0 10px;
+
+    .container > .row > .col-12{
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    .d-flex > *[class*="col"]{
+      padding-left: 7px;
+      padding-right: 7px;
+
+      &:first-child{
+        padding-left: 0;
+      }
+      &:last-child{
+        padding-right: 0;
+      }
+    }
+  }
+
   &-tabscontent{
 
     &-wrapper{
