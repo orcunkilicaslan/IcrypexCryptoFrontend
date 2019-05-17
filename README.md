@@ -16,6 +16,7 @@
  - [13_Technology_Chain_Address](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mainpage/13_Technology_Chain_Address.html)
  - [14_Technology_Chain_Transaction](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mainpage/14_Technology_Chain_Transaction.html)
  - [15_Technology_Chain_Status](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mainpage/15_Technology_Chain_Status.html)
+ - [16_Technology_Api](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mainpage/16_Technology_Api.html)
 
 
 
