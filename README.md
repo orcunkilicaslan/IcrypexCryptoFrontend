@@ -19,6 +19,7 @@
  - [16_Technology_Api](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mainpage/16_Technology_Api.html)
  - [17_Technology_Converter](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mainpage/17_Technology_Converter.html)
  - [18_Technology_Mining](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mainpage/18_Technology_Mining.html)
+ - [19_Technology_Multiple](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mainpage/19_Technology_Multiple.html)
  - [20_Technology_Segwit](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mainpage/20_Technology_Segwit.html)
 
 

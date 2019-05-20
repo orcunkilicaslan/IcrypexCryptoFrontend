@@ -20,6 +20,10 @@
     background-color: $mainpage-color-blue !important;
     border-color: $mainpage-color-blue !important;
   }
+  &-warning{
+    background-color: #ff9900;
+    border-color: #ff9900;
+  }
 
   &.btnwidth110{
     width: 110px !important;
