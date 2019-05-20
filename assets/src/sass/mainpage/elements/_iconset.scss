@@ -39,6 +39,9 @@ $mainpageSvgIconImgPath : "../../img/mainpage/svg";
     &-productslistbtc{
       background-image: url(#{$mainpageSvgIconImgPath}/Icon_Btc.svg);
     }
+    &-productslistbch{
+      background-image: url(#{$mainpageSvgIconImgPath}/Icon_Bch.svg);
+    }
     &-productslisteth{
       background-image: url(#{$mainpageSvgIconImgPath}/Icon_Eth.svg);
     }
@@ -53,6 +56,9 @@ $mainpageSvgIconImgPath : "../../img/mainpage/svg";
     }
     &-productslistxlm{
       background-image: url(#{$mainpageSvgIconImgPath}/Icon_Xlm.svg);
+    }
+    &-productslisttrx{
+      background-image: url(#{$mainpageSvgIconImgPath}/Icon_Tron.svg);
     }
     &-productsfullwidth{
       background-image: url(#{$mainpageSvgIconImgPath}/Full_Width_Icon.svg);
@@ -84,6 +90,12 @@ $mainpageSvgIconImgPath : "../../img/mainpage/svg";
 
     &-technologytransactionsdetail{
       background-image: url(#{$mainpageSvgIconImgPath}/Transactions_Icon_Detail.svg);
+    }
+    &-technologyapproximatelyblue{
+      background-image: url(#{$mainpageSvgIconImgPath}/Icon_Approximately_Blue.svg);
+    }
+    &-technologyapproximatelydarkblue{
+      background-image: url(#{$mainpageSvgIconImgPath}/Icon_Approximately_Dark_Blue.svg);
     }
 
   }
