@@ -137,6 +137,13 @@
       text-align: center;
       font-size: 17px;
       line-height: 1.2;
+
+      p{
+        margin-top: 10px;
+        &:first-child{
+          margin-top: 0;
+        }
+      }
     }
   }
 
