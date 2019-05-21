@@ -21,6 +21,7 @@
  - [18_Technology_Mining](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mainpage/18_Technology_Mining.html)
  - [19_Technology_Multiple](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mainpage/19_Technology_Multiple.html)
  - [20_Technology_Segwit](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mainpage/20_Technology_Segwit.html)
+ - [21_Company_About](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mainpage/21_Company_About.html)
 
 
 #### Tradepage Frontend List
