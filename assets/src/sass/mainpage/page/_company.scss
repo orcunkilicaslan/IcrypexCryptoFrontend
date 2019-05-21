@@ -1,0 +1,135 @@
+
+.company{
+
+  &-section{
+    background-color: $mainpage-color-white;
+    padding: 0 0 40px;
+
+    .container > .row > .col-12{
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    .d-flex > *[class*="col"]{
+      padding-left: 7px;
+      padding-right: 7px;
+
+      &:first-child{
+        padding-left: 0;
+      }
+      &:last-child{
+        padding-right: 0;
+      }
+    }
+  }
+
+  &-content{
+    padding-top: 30px;
+
+    *{
+      color: $mainpage-color-title-blue;
+    }
+
+    *[class*="columntitle"]{
+      padding-bottom: 10px;
+      margin-bottom: 10px;
+
+      &:before{
+        width: 100%;
+        max-width: inherit;
+        height: 1px;
+      }
+      &:after{
+        width: 60px;
+        height: 4px;
+      }
+    }
+
+    p{
+      font-size: 17px;
+      margin-bottom: 15px;
+
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
+
+    &-layout02{
+
+      &-wrapper{
+        &.d-flex > *[class*="col"]{
+          padding: 0 !important;
+        }
+
+        &.layoutleft{
+          div[class*="layout02-cont"]{
+            padding-left: 0 !important;
+            border-left: 0;
+            &:before{
+              left: 0;
+            }
+          }
+          div[class*="layout02-imagebox"]{
+            &:before{
+              border-right: 0;
+            }
+          }
+        }
+        &.layoutright{
+          div[class*="layout02-cont"]{
+            padding-right: 0 !important;
+            border-right: 0;
+            &:before{
+              right: 0;
+            }
+          }
+          div[class*="layout02-imagebox"]{
+            &:before{
+              border-left: 0;
+            }
+          }
+        }
+      }
+
+      &-box{
+        padding: 15px;
+        height: 100%;
+        position: relative;
+      }
+      &-cont{
+        padding: 15px;
+        line-height: 1.2;
+        height: 100%;
+        border: 1px solid transparentize($mainpage-color-light-stale-gray, 0.7);
+        position: relative;
+
+        &:before{
+          content: "";
+          position: absolute;
+          width: calc(100% - 100px);
+          height: 1px;
+          top: -1px;
+          background-color: $mainpage-color-white;
+        }
+
+      }
+      &-imagebox{
+        height: 100%;
+        position: relative;
+
+        &:before{
+          content: "";
+          position: absolute;
+          width: calc(100% - 30px);
+          height: calc(100% - 30px);
+          top: 15px;
+          left: 15px;
+          border: 1px solid $mainpage-color-white;
+          border-bottom: 0;
+        }
+
+      }
+      &-image{}
+    }
+  }
+}
