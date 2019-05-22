@@ -24,6 +24,7 @@
  - [21_Company_About](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mainpage/21_Company_About.html)
  - [22_Company_Legal_Terms](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mainpage/22_Company_Legal_Terms.html)
  - [23_Company_Legal_Privacy](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mainpage/23_Company_Legal_Privacy.html)
+ - [24_Company_Legal_Aml](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mainpage/24_Company_Legal_Aml.html)
 
 
 #### Tradepage Frontend List
