@@ -28,6 +28,7 @@
  - [25_Company_Legal_Cookie](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mainpage/25_Company_Legal_Cookie.html)
  - [26_Company_Legal_Kvkk](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mainpage/26_Company_Legal_Kvkk.html)
  - [27_Company_Contact](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mainpage/27_Company_Contact.html)
+ - [28_What_How](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mainpage/28_What_How.html)
 
 
 #### Tradepage Frontend List
