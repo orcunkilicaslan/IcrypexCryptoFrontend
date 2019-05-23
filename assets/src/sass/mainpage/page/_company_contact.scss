@@ -1,0 +1,102 @@
+
+.company{
+
+  &-contact{
+
+    &-form{
+      padding-right: 10px !important;
+
+      *[class*="columntitle"]{
+        font-weight: normal;
+      }
+
+      form{
+        margin-top: 15px;
+      }
+
+      .form-group{
+        margin-bottom: 15px;
+      }
+
+      .form-control{
+        font-size: 17px !important;
+        font-weight: 500;
+      }
+    }
+
+    &-maps{
+      width: 570px;
+
+      &-box{
+        color: $mainpage-color-title-blue;
+        border: 1px solid transparentize($mainpage-color-light-stale-gray, 0.7);
+        position: relative;
+        font-size: 17px;
+        margin-top: 15px;
+
+        &:first-child{
+          margin-top: 0;
+        }
+
+        &-iframe{
+          margin: 15px;
+        }
+
+        &-address{
+          background-color: $mainpage-color-light-bg-gray;
+          margin: 2px;
+          margin-top: 0;
+          padding: 10px 15px;
+
+          *{
+            color: transparentize($mainpage-color-light-stale-gray, 0.1);
+            display: block;
+            margin: 0 !important;
+            padding: 0 !important;
+            line-height: 1.10;
+          }
+
+          .contact{
+            &adress{
+              font-size: 15px;
+              h6, p{
+                font-size: 15px;
+              }
+            }
+            &callcenter{
+              position: relative;
+              padding-top: 5px !important;
+              padding-bottom: 5px !important;
+              text-align: center;
+
+              h6{
+                font-size: 13px;
+              }
+              p{
+                font-size: 20px;
+                line-height: 0.9;
+              }
+              &:before,
+              &:after{
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 1px;
+                left: 0;
+                background-color: transparentize($mainpage-color-light-stale-gray, 0.5);
+              }
+              &:before{
+                top: 0;
+              }
+              &:after{
+                bottom: 0;
+              }
+            }
+          }
+
+        }
+
+      }
+    }
+  }
+}
