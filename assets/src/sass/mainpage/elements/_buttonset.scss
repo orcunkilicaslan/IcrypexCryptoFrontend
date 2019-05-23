@@ -35,3 +35,47 @@
     width: 100% !important;
   }
 }
+
+.site{
+
+  &-button{
+
+    &-formbottom{
+
+      &-btn{
+        position: relative;
+
+        &:before{
+          content: "";
+          background-color: $mainpage-color-light-stale-gray;
+          position: absolute;
+          width: 100%;
+          height: 1px;
+          top: 50%;
+        }
+        &.success{
+          &:before{background-color: $mainpage-color-green;}
+        }
+        &.info{
+          &:before{background-color: $mainpage-color-blue;}
+        }
+
+        .btn{
+          color: $mainpage-color-white !important;
+          background-color: $mainpage-color-light-stale-gray;
+          width: 300px;
+          margin: 0 auto;
+          display: block;
+          border:none;
+          font-size: 20px;
+          font-weight: normal;
+          position: relative;
+          z-index: 1;
+        }
+      }
+
+    }
+
+  }
+
+}
