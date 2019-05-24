@@ -2,6 +2,7 @@
 
 #### Mainpage Frontend List
  - [00_Home_Page](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mainpage/00_Home_Page.html)
+ - [01_Sign_Up](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mainpage/01_Sign_Up.html)
  - [02_Features_Products](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mainpage/02_Features_Products.html)
  - [03_Features_Products_Zoom_Price](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mainpage/03_Features_Products_Zoom_Price.html)
  - [04_Features_Products_Zoom_Overview](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mainpage/04_Features_Products_Zoom_Overview.html)
