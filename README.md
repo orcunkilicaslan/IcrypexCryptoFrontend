@@ -29,6 +29,7 @@
  - [26_Company_Legal_Kvkk](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mainpage/26_Company_Legal_Kvkk.html)
  - [27_Company_Contact](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mainpage/27_Company_Contact.html)
  - [28_What_How](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mainpage/28_What_How.html)
+ - [29_Announcements](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mainpage/29_Announcements.html)
 
 
 #### Tradepage Frontend List
