@@ -11,29 +11,30 @@ $('#homepageslider').owlCarousel({
 });
 /* Homepage Slider */
 
-// SSSPage Accordion
+/* Accordion */
 $(document).ready(function () {
-    $('.whathow-accordion-item .heading').on('click', function (e) {
+    $('.accordion-item .heading').on('click', function (e) {
         e.preventDefault();
 
         // Add the correct active class
-        if ($(this).closest('.whathow-accordion-item').hasClass('active')) {
+        if ($(this).closest('.accordion-item').hasClass('active')) {
             // Remove active classes
-            $('.whathow-accordion-item').removeClass('active');
+            $('.accordion-item').removeClass('active');
         } else {
             // Remove active classes
-            $('.whathow-accordion-item').removeClass('active');
+            $('.accordion-item').removeClass('active');
 
             // Add the active class
-            $(this).closest('.whathow-accordion-item').addClass('active');
+            $(this).closest('.accordion-item').addClass('active');
         }
 
         // Show the content
         var $content = $(this).next();
         $content.slideToggle(100);
-        $('.whathow-accordion-item .content').not($content).slideUp('fast');
+        $('.accordion-item .content').not($content).slideUp('fast');
     });
 });
+/* Accordion */
 
 /* Loading Info */
 console.log("Mainpage App Javascript Loading Successful");
