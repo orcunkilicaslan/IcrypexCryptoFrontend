@@ -68,6 +68,10 @@
  - [32_Profile_Activity_History](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/tradepage/32_Profile_Activity_History.html)
  
 
+#### E-Mail Template List
+ - [02_Eml_Withdraw_Btc_Request](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mailling/02_Eml_Withdraw_Btc_Request.html)
+ 
+
 # NodeJS Kurulumu
   
 ### NodeJS Kurulumu  
