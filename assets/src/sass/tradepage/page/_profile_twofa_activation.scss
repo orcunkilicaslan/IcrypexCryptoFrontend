@@ -75,6 +75,16 @@
         max-width: 350px;
       }
 
+      .ioscheckbox{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        > span{
+          margin: 0 5px;
+        }
+      }
+
       &-qrcode{
         max-width: 600px;
         margin-top: 10px;
