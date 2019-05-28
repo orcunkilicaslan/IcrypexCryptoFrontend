@@ -69,16 +69,16 @@
  
 
 #### System E-Mail Template List
- - [01_Eml_General_Information](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mailling/01_Eml_General_Information.html)
- - [02_Eml_Withdraw_Btc_Request](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mailling/02_Eml_Withdraw_Btc_Request.html)
- - [03_Eml_Withdraw_Btc_Ok](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mailling/03_Eml_Withdraw_Btc_Ok.html)
- - [04_Eml_Deposit_Btc_Ok](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mailling/04_Eml_Deposit_Btc_Ok.html)
- - [05_Eml_Logged_Information](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mailling/05_Eml_Logged_Information.html)
- - [06_Eml_Account_Detail](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mailling/06_Eml_Account_Detail.html)
- - [07_Eml_Password_Change_Request](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mailling/07_Eml_Password_Change_Request.html)
- - [08_Eml_Password_Change_Ok](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mailling/08_Eml_Password_Change_Ok.html)
- - [09_Eml_Withdraw_Try_Request](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mailling/09_Eml_Withdraw_Try_Request.html)
- - [10_Eml_Withdraw_Try_Ok](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mailling/10_Eml_Withdraw_Try_Ok.html)
+ - [01_Eml_General_Information](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/email-system/01_Eml_General_Information.html)
+ - [02_Eml_Withdraw_Btc_Request](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/email-system/02_Eml_Withdraw_Btc_Request.html)
+ - [03_Eml_Withdraw_Btc_Ok](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/email-system/03_Eml_Withdraw_Btc_Ok.html)
+ - [04_Eml_Deposit_Btc_Ok](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/email-system/04_Eml_Deposit_Btc_Ok.html)
+ - [05_Eml_Logged_Information](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/email-system/05_Eml_Logged_Information.html)
+ - [06_Eml_Account_Detail](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/email-system/06_Eml_Account_Detail.html)
+ - [07_Eml_Password_Change_Request](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/email-system/07_Eml_Password_Change_Request.html)
+ - [08_Eml_Password_Change_Ok](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/email-system/08_Eml_Password_Change_Ok.html)
+ - [09_Eml_Withdraw_Try_Request](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/email-system/09_Eml_Withdraw_Try_Request.html)
+ - [10_Eml_Withdraw_Try_Ok](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/email-system/10_Eml_Withdraw_Try_Ok.html)
  
 
 # NodeJS Kurulumu
