@@ -70,6 +70,7 @@
 
 #### E-Mail Template List
  - [02_Eml_Withdraw_Btc_Request](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mailling/02_Eml_Withdraw_Btc_Request.html)
+ - [03_Eml_Withdraw_Btc_Ok](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mailling/03_Eml_Withdraw_Btc_Ok.html)
  
 
 # NodeJS Kurulumu
