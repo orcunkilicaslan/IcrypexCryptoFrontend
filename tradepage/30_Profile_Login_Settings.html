@@ -247,10 +247,23 @@
                     <h3 class="boxcolumn-boxtitle-title">OTURUM SÜRESİNİ DEĞİŞTİR</h3>
                 </div>
                 <form autocomplete="off" novalidate>
-                    <img style="margin: 10px 0" src="../assets/img/tradepage/elements/Logout_Time.svg" alt="Logout" width="526" height="59" />
-                    <div class="range-slider">
-                        <input class="range-slider__range" type="range" value="0" min="0" max="60" step="10">
-                        <span class="range-slider__value">0</span>
+                    <div class="profile-login-settings-range-slider">
+                        <div class="profile-login-settings-range-slider-group">
+                            <div class="profile-login-settings-range-slider-progress progress">
+                                <div id="progressbar" class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <div class="profile-login-settings-range-slider-input">
+                                <input class="profile-login-settings-range-slider-range" type="range" value="50" min="0" max="100" step="25">
+                                <span class="profile-login-settings-range-slider-value">0</span>
+                            </div>
+                        </div>
+                        <div class="profile-login-settings-range-slider-grid">
+                            <span>5 DAKİKA</span>
+                            <span>10 DAKİKA</span>
+                            <span>15 DAKİKA</span>
+                            <span>30 DAKİKA</span>
+                            <span>60 DAKİKA</span>
+                        </div>
                     </div>
                     <div class="form-group row d-flex">
                         <div class="infotext"><i class="icon-svg icon-svg-profileinformationyellow"></i> Süre sonunda sistem otomatik çıkış yapacaktır. Tekrar giriş yapmanız gerekecektir.</div>
