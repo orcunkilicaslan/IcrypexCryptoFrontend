@@ -5,6 +5,169 @@
 
     &-settings{
       max-width: 550px;
+
+      &-range{
+
+        &-slider{
+          width: 100%;
+          padding-top: 7px;
+
+          &-group{
+            width: calc(100% - 42px);
+            height: 38px;
+            position: relative;
+            left: 16px;
+          }
+
+          &-progress{
+            width: calc(100% - 8px);
+            height: 5px;
+            @include border-radius(5px);
+            position: absolute;
+            top: 15px;
+            left: 8px;
+          }
+
+          &-input{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+          }
+
+          &-grid{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            span{
+              display: block;
+              position: relative;
+              padding-top: 10px;
+
+              &:before{
+                content: "";
+                position:absolute;
+                width: 9px;
+                height: 9px;
+                padding: 0;
+                border-top: 2px solid $tradepage-color-blue;
+                border-right: 2px solid $tradepage-color-blue;
+                top: 0;
+                left: calc(50% - 2px);
+                @include rotate(315);
+              }
+              &:first-child:before{
+                left: calc(50% - 3px);
+              }
+              &:last-child:before{
+                left: calc(50% - 7px);
+              }
+            }
+          }
+
+          &-range {
+            -webkit-appearance: none;
+            //width: calc(100% - (60px + 13px}));
+            width: calc(100% + 8px);
+            height: 5px;
+            @include border-radius(5px);
+            background-color: transparent;
+            outline: none;
+            padding: 0;
+            margin: 0;
+            left: -2px;
+            position: relative;
+
+            // Range Handle
+            &::-webkit-slider-thumb {
+              appearance: none;
+              width: 26px;
+              height: 26px;
+              border-radius: 50%;
+              background: $tradepage-color-blue;
+              cursor: pointer;
+              transition: background .15s ease-in-out;
+
+              &:hover {
+                background: $tradepage-color-blue;
+              }
+            }
+
+            &:active::-webkit-slider-thumb {
+              background: $tradepage-color-blue;
+            }
+
+            &::-moz-range-thumb {
+              width: 26px;
+              height: 26px;
+              border: 0;
+              border-radius: 50%;
+              background: $tradepage-color-blue;
+              cursor: pointer;
+              transition: background .15s ease-in-out;
+
+              &:hover {
+                background: $tradepage-color-blue;
+              }
+            }
+
+            &:active::-moz-range-thumb {
+              background: $tradepage-color-blue;
+            }
+
+            // Focus state
+            &:focus {
+
+              &::-webkit-slider-thumb {
+                box-shadow: 0 0 0 3px $tradepage-color-white,
+                0 0 0 6px $tradepage-color-blue;
+              }
+            }
+          }
+
+          &-value {
+            //display: inline-block;
+            display: none;
+            position: relative;
+            width: 60px;
+            color: $tradepage-color-white;
+            line-height: 20px;
+            text-align: center;
+            border-radius: 3px;
+            background: $tradepage-color-blue;
+            padding: 5px 10px;
+            margin-left: 8px;
+            top: 4px;
+
+            &:after {
+              position: absolute;
+              top: 8px;
+              left: -7px;
+              width: 0;
+              height: 0;
+              border-top: 7px solid transparent;
+              border-right: 7px solid $tradepage-color-blue;
+              border-bottom: 7px solid transparent;
+              content: '';
+            }
+          }
+
+          // Firefox Overrides
+          ::-moz-range-track {
+            background: transparent;
+            border: 0;
+          }
+
+          input::-moz-focus-inner,
+          input::-moz-focus-outer {
+            border: 0;
+          }
+        }
+      }
     }
   }
 }

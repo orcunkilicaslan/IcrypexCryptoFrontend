@@ -54,6 +54,28 @@ $(function(){
 });
 /* Tooltip */
 
+/* Profile Login Settings Range Slider */
+var rangeSlider = function(){
+    var slider = $('.profile-login-settings-range-slider'),
+        range = $('.profile-login-settings-range-slider-range'),
+        value = $('.profile-login-settings-range-slider-value');
+
+    slider.each(function(){
+
+        value.each(function(){
+            var value = $(this).prev().attr('value');
+            $(this).html(value);
+        });
+
+        range.on('input', function(){
+            $(this).next(value).html(this.value);
+        });
+    });
+};
+
+rangeSlider();
+/* Profile Login Settings Range Slider */
+
 /* Loading Info */
 console.log("Tradepage App Javascript Loading Successful");
 /* Loading Info */
