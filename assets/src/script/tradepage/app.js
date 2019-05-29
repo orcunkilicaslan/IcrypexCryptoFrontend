@@ -4,9 +4,9 @@ $('#headerbottompricelite').owlCarousel({
     loop:true,
     nav:true,
     dots:false,
-    autoplay:false,
-    autoplayTimeout:5000,
-    autoplayHoverPause:false,
+    autoplay:true,
+    autoplayTimeout:3000,
+    autoplayHoverPause:true,
     items:3,
     margin:10,
     animateOut: 'fadeOut'
