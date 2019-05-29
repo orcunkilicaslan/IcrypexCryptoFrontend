@@ -59,6 +59,18 @@ $tradepageSvgIconImgPath : "../../img/tradepage/svg";
     &-titleiconxrp{
       background-image: url(#{$tradepageSvgIconImgPath}/Icon_Title_Xrp.svg);
     }
+    &-titleiconltc{
+      background-image: url(#{$tradepageSvgIconImgPath}/Icon_Title_Ltc.svg);
+    }
+    &-titleiconmpay{
+      background-image: url(#{$tradepageSvgIconImgPath}/Icon_Title_Mpay.svg);
+    }
+    &-titleiconxlm{
+      background-image: url(#{$tradepageSvgIconImgPath}/Icon_Title_Xlm.svg);
+    }
+    &-titleicontrx{
+      background-image: url(#{$tradepageSvgIconImgPath}/Icon_Title_Tron.svg);
+    }
     &-wizardiconbank{
       background-image: url(#{$tradepageSvgIconImgPath}/Wizard_Icon_Bank.svg);
     }
