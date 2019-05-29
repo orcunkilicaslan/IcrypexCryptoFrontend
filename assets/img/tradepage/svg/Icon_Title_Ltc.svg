@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #afafaf;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <g id="Icon_Ltc" transform="translate(-277 -265)">
+    <circle id="Ellipse" class="cls-1" cx="20" cy="20" r="20" transform="translate(277 265)"/>
+    <path id="Path" class="cls-2" d="M10.9,22.952,9,23.691l.917-3.679,1.925-.773L14.617,8h6.839l-2.025,8.261,1.88-.761L20.4,19.167l-1.9.761-1.131,4.644h10.3L26.5,29.333H9.336Z" transform="translate(278.667 266.333)"/>
+  </g>
+</svg>
