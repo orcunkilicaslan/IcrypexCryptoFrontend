@@ -131,9 +131,9 @@
   }
 
   i[class*="icon-svg"]{
-    display: block;
-    margin: auto;
-    margin-bottom: 10px;
+    display: block !important;
+    margin: auto !important;
+    margin-bottom: 10px !important;
   }
 
   i[class*="profilefileuploaddragdrop"]{

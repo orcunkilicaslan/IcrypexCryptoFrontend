@@ -19,7 +19,7 @@
 
         &:first-child{
           margin-left:0;
-          &:before{display:none;}
+          //&:before{display:none;}
         }
 
         &:last-child{
@@ -99,6 +99,29 @@
         &.check{
           &:after{width: 100%;}
           &:before{opacity:0;}
+        }
+        &.finished{
+          #{$liitem}-circle{
+            color: $tradepage-color-blue;
+            background-color: $tradepage-color-blue;
+            position:relative;
+            text-indent: -9999px;
+            animation-name:pulse;
+            animation-duration:1s;
+            animation-fill-mode:both;
+
+            &:after{
+              content:"";
+              position:absolute;
+              width: 12px;
+              height: 6px;
+              top: 9px;
+              left: 7px;
+              border-bottom:2px solid $tradepage-color-white;
+              border-left:2px solid $tradepage-color-white;
+              @include rotate(-50);
+            }
+          }
         }
 
         &:after,
