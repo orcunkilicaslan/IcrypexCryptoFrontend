@@ -4,6 +4,7 @@ $mainpageHomepageImgPath : "../../img/mainpage";
 
   &-top{
     padding-top: 20px;
+    min-height: 630px;
 
     &-left{
       padding-left: 0;
@@ -16,6 +17,8 @@ $mainpageHomepageImgPath : "../../img/mainpage";
   }
 
   &-slider{
+    min-height: 265px;
+
     &-wapper{
       position: relative;
       margin: 0;
