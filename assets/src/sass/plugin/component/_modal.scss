@@ -1,0 +1,30 @@
+
+.site{
+
+  &modal{
+
+    &alerts{
+      div[class*="bg-"]{
+        h1,h2,h3,h4,h5,h6,p,i{
+          color: white;
+        }
+      }
+    }
+
+    &filled{
+      .modal-footer,
+      .modal-header{
+        border:none !important;
+      }
+
+      .modal-header,
+      .modal-body{
+        border:none !important;
+        *{color: white;}
+      }
+    }
+
+  }
+
+}
+
