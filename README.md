@@ -67,6 +67,7 @@
  - [32_Profile_Key_Create](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/tradepage/32_Profile_Key_Create.html)
  - [33_Profile_Activity_History](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/tradepage/33_Profile_Activity_History.html)
  - [99_Component_Form_UI](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/tradepage/99_Component_Form_UI.html)
+ - [99_Component_Alerts](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/tradepage/99_Component_Alerts.html)
  
 
 #### System E-Mail Template List
