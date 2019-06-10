@@ -1,5 +1,5 @@
 .modal-backdrop{
-  background-color: $tradepage-gradient-darkblue01;
+  background-color: $global-grdint-darkblue01;
 
   &.show{
     opacity: 0.8;
@@ -19,8 +19,8 @@
       }
 
       &-header{
-        color: $tradepage-color-white;
-        @include gradient($tradepage-gradient-darkblue01, $tradepage-gradient-darkblue02);
+        color: $global-clr-white;
+        @include gradient($global-grdint-darkblue01, $global-grdint-darkblue02);
         @include border-radius(0);
         padding: 5px 10px;
 
@@ -33,7 +33,7 @@
           &:after{
             content: "";
             position: absolute;
-            background-color: $tradepage-color-white;
+            background-color: $global-clr-white;
             width: 18px;
             height: 2px;
             left: 0;
@@ -64,7 +64,7 @@
       }
 
       &-body{
-        border: 1px solid transparentize($tradepage-color-light-stale-gray, 0.70);
+        border: 1px solid transparentize($global-clr-soft-gray, 0.70);
         margin-top: -2px;
         padding: 0;
       }
@@ -87,14 +87,14 @@
       }
 
       &-graybg{
-        background-color: $tradepage-color-light-bg-gray;
+        background-color: $global-clr-light-gray;
         padding: 15px;
         margin: 3px;
       }
 
       &-table{
         margin-top: -5px;
-        border-bottom: 1px solid transparentize($tradepage-color-light-stale-gray, 0.7);
+        border-bottom: 1px solid transparentize($global-clr-soft-gray, 0.7);
 
         .btn{
           padding: 2px 5px;

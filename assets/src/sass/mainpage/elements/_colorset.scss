@@ -3,24 +3,24 @@
   &bg{
 
     &white{
-      background-color: $mainpage-color-white !important;
+      background-color: $global-clr-white !important;
     }
     &orange{
-      background-color: $mainpage-color-orange !important;
+      background-color: $global-clr-orange !important;
     }
     &blue{
-      background-color: $mainpage-color-blue !important;
+      background-color: $global-clr-soft-blue !important;
     }
     &red{
-      background-color: $mainpage-color-red !important;
+      background-color: $global-clr-red !important;
     }
     &green{
-      background-color: $mainpage-color-green !important;
+      background-color: $global-clr-green !important;
     }
     &gray{
-      background-color: $mainpage-color-light-stale-gray !important;
+      background-color: $global-clr-soft-gray !important;
       &light{
-        background-color: $mainpage-color-light-bg-gray !important;
+        background-color: $global-clr-light-gray !important;
       }
     }
   }
@@ -28,24 +28,24 @@
   &color{
 
     &white{
-      color: $mainpage-color-white !important;
+      color: $global-clr-white !important;
     }
     &orange{
-      color: $mainpage-color-orange !important;
+      color: $global-clr-orange !important;
     }
     &blue{
-      color: $mainpage-color-blue !important;
+      color: $global-clr-soft-blue !important;
     }
     &red{
-      color: $mainpage-color-red !important;
+      color: $global-clr-red !important;
     }
     &green{
-      color: $mainpage-color-green !important;
+      color: $global-clr-green !important;
     }
     &gray{
-      color: $mainpage-color-light-stale-gray !important;
+      color: $global-clr-soft-gray !important;
       &light{
-        color: transparentize($mainpage-color-light-stale-gray, 0.7) !important;
+        color: transparentize($global-clr-soft-gray, 0.7) !important;
       }
     }
   }

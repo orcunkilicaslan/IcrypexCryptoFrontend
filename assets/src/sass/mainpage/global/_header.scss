@@ -2,21 +2,21 @@ $mainpageHeaderImgPath : "../../img/mainpage";
 $mainpageSvgIconImgPath : "../../img/mainpage/svg";
 
 .header{
-  color: $mainpage-color-white;
-  @include gradient($mainpage-gradient-darkblue01, $mainpage-gradient-darkblue02);
+  color: $global-clr-white;
+  @include gradient($global-grdint-darkblue01, $global-grdint-darkblue02);
 
 
   &-top{
     padding: 0;
-    border-bottom: 1px solid transparentize($mainpage-color-light-stale-gray, 0.7);
+    border-bottom: 1px solid transparentize($global-clr-soft-gray, 0.7);
 
     ul{text-align: center; margin: 0;}
     li{
       display: inline-block;
-      color: $mainpage-color-light-stale-gray;
-      font-size: $mainpage-font-size;
+      color: $global-clr-soft-gray;
+      font-size: $global-font-size;
     }
-    a{color: $mainpage-color-white;}
+    a{color: $global-clr-white;}
 
     &-language{
       &-item{
@@ -29,7 +29,7 @@ $mainpageSvgIconImgPath : "../../img/mainpage/svg";
           height: 10px;
           top: calc(50% - 5px);
           right: -3px;
-          background-color: transparentize($mainpage-color-light-stale-gray, 0.7);
+          background-color: transparentize($global-clr-soft-gray, 0.7);
         }
         &:first-child{
           padding-left: 0;
@@ -41,7 +41,7 @@ $mainpageSvgIconImgPath : "../../img/mainpage/svg";
 
       }
       &-selection{
-        &.active{color: $mainpage-color-light-stale-gray; opacity: 0.75;}
+        &.active{color: $global-clr-soft-gray; opacity: 0.75;}
       }
     }
 
@@ -58,7 +58,7 @@ $mainpageSvgIconImgPath : "../../img/mainpage/svg";
           height: 3px;
           top: calc(50% - 1px);
           right: -3px;
-          background-color: transparentize($mainpage-color-light-stale-gray, 0.7);
+          background-color: transparentize($global-clr-soft-gray, 0.7);
           @include border-radius(50%)
         }
         &:first-child{
@@ -84,7 +84,7 @@ $mainpageSvgIconImgPath : "../../img/mainpage/svg";
           height: 10px;
           top: calc(50% - 5px);
           right: -3px;
-          background-color: transparentize($mainpage-color-light-stale-gray, 0.7);
+          background-color: transparentize($global-clr-soft-gray, 0.7);
           @include border-radius(50%)
         }
         &:first-child{
@@ -105,13 +105,13 @@ $mainpageSvgIconImgPath : "../../img/mainpage/svg";
     align-items: flex-end;
 
     &-logo{
-      color: $mainpage-color-white;
-      font-family: $mainpage-font-family-barlow;
+      color: $global-clr-white;
+      font-family: $global-font-family-barlow;
       width: 140px;
       line-height: 0.9;
       margin-top: 0px;
       margin-bottom: 7px;
-      &:hover{color: $mainpage-color-white;}
+      &:hover{color: $global-clr-white;}
       &-symbol{
         float: left;
         width: 38px;
@@ -144,11 +144,11 @@ $mainpageSvgIconImgPath : "../../img/mainpage/svg";
       margin-bottom: 15px;
       &-input{
         background-color: transparent;
-        color: $mainpage-color-white;
-        font-size: $mainpage-font-size;
+        color: $global-clr-white;
+        font-size: $global-font-size;
         width: 100%;
         padding: 2px;
-        border-bottom: 1px solid transparentize($mainpage-color-light-stale-gray, 0.7);
+        border-bottom: 1px solid transparentize($global-clr-soft-gray, 0.7);
       }
       &-button{
         background-color: transparent;
@@ -165,7 +165,7 @@ $mainpageSvgIconImgPath : "../../img/mainpage/svg";
         text-indent: -9999px;
       }
       @include placeholder {
-        color: $mainpage-color-light-stale-gray;
+        color: $global-clr-soft-gray;
         opacity: 0.75;
       }
     }

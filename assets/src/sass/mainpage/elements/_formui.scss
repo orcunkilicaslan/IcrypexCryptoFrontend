@@ -20,13 +20,13 @@
   }
 
   label{
-    color: $mainpage-color-title-blue;
+    color: $global-clr-dark-blue;
     font-size: 17px;
     font-weight:normal;
     margin-bottom: 5px;
     display: block;
     span.labelright{
-      color: $mainpage-color-light-stale-gray;
+      color: $global-clr-soft-gray;
       display: inline-block;
       float: right;
     }
@@ -50,7 +50,7 @@
     margin-bottom:20px;
 
     &.borderbottom{
-      border-bottom: 1px solid transparentize($mainpage-color-light-stale-gray, 0.7);
+      border-bottom: 1px solid transparentize($global-clr-soft-gray, 0.7);
       margin-left: 0;
       margin-right: 0;
       margin-bottom: 15px;
@@ -71,7 +71,7 @@
     }
 
     .sitebggraylight{
-      border-color: $mainpage-color-light-bg-gray !important;
+      border-color: $global-clr-light-gray !important;
     }
 
     > .d-flex{
@@ -110,14 +110,14 @@
     }
 
     &-info{
-      color: $mainpage-color-light-stale-gray;
+      color: $global-clr-soft-gray;
       font-size: 15px;
       margin-top: 5px;
     }
 
     &-icons{
       &-buttons{
-        color: $mainpage-color-blue;
+        color: $global-clr-soft-blue;
         position: relative;
         display: inline-flex;
         font-size: 17px;
@@ -130,14 +130,14 @@
           margin-right: 5px;
           position:relative;
           display: block;
-          border: 1px solid transparentize($mainpage-color-light-stale-gray, 0.7);
+          border: 1px solid transparentize($global-clr-soft-gray, 0.7);
           @include border-radius(100%);
 
           &:before,
           &:after{
             content:"";
             position:absolute;
-            background-color: $mainpage-color-blue;
+            background-color: $global-clr-soft-blue;
             width: 10px;
             height: 2px;
             top: calc(50% - 1px);
@@ -170,17 +170,17 @@
 
       &:focus-within{
         .input-group-append{
-          border-color:transparentize($mainpage-color-light-stale-gray, 0.40);
+          border-color:transparentize($global-clr-soft-gray, 0.40);
         }
       }
 
       .input-group-append{
-        border: 1px solid transparentize($mainpage-color-light-stale-gray, 0.70);
+        border: 1px solid transparentize($global-clr-soft-gray, 0.70);
         border-left: none;
       }
       .input-group-text{
-        color: $mainpage-color-title-blue;
-        background-color:$mainpage-color-light-bg-gray;
+        color: $global-clr-dark-blue;
+        background-color:$global-clr-light-gray;
         font-size: 20px;
         padding: 6px 10px 9px;
         line-height: 1;
@@ -205,9 +205,9 @@
   }
 
   .form-control{
-    color: $mainpage-color-title-blue;
-    background-color:$mainpage-color-white;
-    border-color:transparentize($mainpage-color-light-stale-gray, 0.70);
+    color: $global-clr-dark-blue;
+    background-color:$global-clr-white;
+    border-color:transparentize($global-clr-soft-gray, 0.70);
     padding:6px 10px 8px;
     font-size: 20px;
     line-height: 1;
@@ -217,8 +217,8 @@
     @include border-radius(0);
     &:focus{
       box-shadow:none;
-      border-color:transparentize($mainpage-color-light-stale-gray, 0.40);
-      background-color:$mainpage-color-white;
+      border-color:transparentize($global-clr-soft-gray, 0.40);
+      background-color:$global-clr-white;
     }
   }
 
@@ -248,8 +248,8 @@
         height: 9px;
         top: -4px;
         left: 0;
-        border-top:2px solid $mainpage-color-blue;
-        border-right:2px solid $mainpage-color-blue;
+        border-top:2px solid $global-clr-soft-blue;
+        border-right:2px solid $global-clr-soft-blue;
         @include rotate(45);
       }
     }

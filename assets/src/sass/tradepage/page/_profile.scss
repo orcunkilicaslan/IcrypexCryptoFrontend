@@ -6,7 +6,7 @@
 
   &-wrapper{
     > .columntitle{
-      color: $tradepage-color-dark-blue;
+      color: $global-clr-dark-blue;
       padding-bottom: 6px;
       margin-bottom: 0;
     }
@@ -14,7 +14,7 @@
     .formui{
       .form-control{
         font-weight: 500;
-        color: $tradepage-color-dark-blue;
+        color: $global-clr-dark-blue;
       }
       @include placeholder{
         font-weight: 500;
@@ -23,8 +23,8 @@
   }
 
   &-box{
-    color: $tradepage-color-dark-blue;
-    border: 1px solid transparentize($tradepage-color-light-stale-gray, 0.7);
+    color: $global-clr-dark-blue;
+    border: 1px solid transparentize($global-clr-soft-gray, 0.7);
     border-bottom: none;
     border-top: none;
     position: relative;
@@ -32,7 +32,7 @@
 
     &:before{
       content: "";
-      background-color: $tradepage-color-blue;
+      background-color: $global-clr-soft-blue;
       height: 4px;
       width: calc(100% + 2px);
       left: -1px;
@@ -41,19 +41,19 @@
 
     &.lineorange{
       &:before{
-        background-color: $tradepage-color-orange;
+        background-color: $global-clr-orange;
       }
     }
 
     a.link{
-      color: $tradepage-color-blue;
+      color: $global-clr-soft-blue;
       text-decoration: underline;
     }
 
     &-content{
       padding: 15px;
       padding-top: 20px;
-      border-bottom: 1px solid transparentize($tradepage-color-light-stale-gray, 0.7);
+      border-bottom: 1px solid transparentize($global-clr-soft-gray, 0.7);
 
       &.nobottomborder{
         border-bottom: none;
@@ -127,7 +127,7 @@
   &-tabs{
 
     &-tabnav{
-      border-bottom: 5px solid $tradepage-color-blue;
+      border-bottom: 5px solid $global-clr-soft-blue;
       position: relative;
 
       &:after{
@@ -136,7 +136,7 @@
         width: 100%;
       }
       &:after{
-        background-color: $tradepage-color-white;
+        background-color: $global-clr-white;
         height: 2px;
         bottom: 0;
       }
@@ -147,11 +147,11 @@
           margin-bottom: 0;
           font-size: 18px;
           overflow: hidden;
-          background-color: $tradepage-color-light-stale-gray;
+          background-color: $global-clr-soft-gray;
         }
         &-link{
-          color: $tradepage-color-white;
-          border-color: $tradepage-color-white;
+          color: $global-clr-white;
+          border-color: $global-clr-white;
           border-style: solid;
           border-right-width: 2px;
           border-left-width: 0;
@@ -184,12 +184,12 @@
           &.active,
           &.show,
           &:hover{
-            color: $tradepage-color-white;
+            color: $global-clr-white;
             background-color: transparent;
-            border-color: $tradepage-color-white;
+            border-color: $global-clr-white;
             &:before{
               height: 100%;
-              background-color: $tradepage-color-blue;
+              background-color: $global-clr-soft-blue;
               z-index: 1;
             }
           }
@@ -198,7 +198,7 @@
       }
     }
     &-content{
-      border: 1px solid transparentize($tradepage-color-light-stale-gray, 0.7);
+      border: 1px solid transparentize($global-clr-soft-gray, 0.7);
       border-top: none;
 
       &-tablebox{
@@ -206,7 +206,7 @@
       }
 
       &-footer{
-        background-color: $tradepage-color-light-bg-gray;
+        background-color: $global-clr-light-gray;
         padding: 15px;
       }
 

@@ -54,8 +54,8 @@
                 width: 9px;
                 height: 9px;
                 padding: 0;
-                border-top: 2px solid $tradepage-color-blue;
-                border-right: 2px solid $tradepage-color-blue;
+                border-top: 2px solid $global-clr-soft-blue;
+                border-right: 2px solid $global-clr-soft-blue;
                 top: 0;
                 left: calc(50% - 2px);
                 @include rotate(315);
@@ -88,17 +88,17 @@
               width: 26px;
               height: 26px;
               border-radius: 50%;
-              background: $tradepage-color-blue;
+              background: $global-clr-soft-blue;
               cursor: pointer;
               transition: background .15s ease-in-out;
 
               &:hover {
-                background: $tradepage-color-blue;
+                background: $global-clr-soft-blue;
               }
             }
 
             &:active::-webkit-slider-thumb {
-              background: $tradepage-color-blue;
+              background: $global-clr-soft-blue;
             }
 
             &::-moz-range-thumb {
@@ -106,25 +106,25 @@
               height: 26px;
               border: 0;
               border-radius: 50%;
-              background: $tradepage-color-blue;
+              background: $global-clr-soft-blue;
               cursor: pointer;
               transition: background .15s ease-in-out;
 
               &:hover {
-                background: $tradepage-color-blue;
+                background: $global-clr-soft-blue;
               }
             }
 
             &:active::-moz-range-thumb {
-              background: $tradepage-color-blue;
+              background: $global-clr-soft-blue;
             }
 
             // Focus state
             &:focus {
 
               &::-webkit-slider-thumb {
-                box-shadow: 0 0 0 3px $tradepage-color-white,
-                0 0 0 6px $tradepage-color-blue;
+                box-shadow: 0 0 0 3px $global-clr-white,
+                0 0 0 6px $global-clr-soft-blue;
               }
             }
           }
@@ -134,11 +134,11 @@
             display: none;
             position: relative;
             width: 60px;
-            color: $tradepage-color-white;
+            color: $global-clr-white;
             line-height: 20px;
             text-align: center;
             border-radius: 3px;
-            background: $tradepage-color-blue;
+            background: $global-clr-soft-blue;
             padding: 5px 10px;
             margin-left: 8px;
             top: 4px;
@@ -150,7 +150,7 @@
               width: 0;
               height: 0;
               border-top: 7px solid transparent;
-              border-right: 7px solid $tradepage-color-blue;
+              border-right: 7px solid $global-clr-soft-blue;
               border-bottom: 7px solid transparent;
               content: '';
             }

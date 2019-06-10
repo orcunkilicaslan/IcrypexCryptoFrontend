@@ -3,7 +3,7 @@ $tradepageHomepageImgPath : "../../img/tradepage";
 .homepage{
 
   &-bigchart{
-    background-color: $tradepage-color-light-bg-gray;
+    background-color: $global-clr-light-gray;
     padding: 20px 0;
   }
 
@@ -15,7 +15,7 @@ $tradepageHomepageImgPath : "../../img/tradepage";
     &-orders{
 
       &-tabnav{
-        border-bottom: 5px solid $tradepage-color-blue;
+        border-bottom: 5px solid $global-clr-soft-blue;
         position: relative;
         justify-content: center!important;
 
@@ -25,7 +25,7 @@ $tradepageHomepageImgPath : "../../img/tradepage";
           width: 100%;
         }
         &:after{
-          background-color: $tradepage-color-white;
+          background-color: $global-clr-white;
           height: 2px;
           bottom: 0;
         }
@@ -36,11 +36,11 @@ $tradepageHomepageImgPath : "../../img/tradepage";
             margin-bottom: 0;
             font-size: 18px;
             overflow: hidden;
-            background-color: $tradepage-color-light-stale-gray;
+            background-color: $global-clr-soft-gray;
           }
           &-link{
-            color: $tradepage-color-white;
-            border-color: $tradepage-color-white;
+            color: $global-clr-white;
+            border-color: $global-clr-white;
             border-style: solid;
             border-right-width: 2px;
             border-left-width: 0;
@@ -73,12 +73,12 @@ $tradepageHomepageImgPath : "../../img/tradepage";
             &.active,
             &.show,
             &:hover{
-              color: $tradepage-color-white;
+              color: $global-clr-white;
               background-color: transparent;
-              border-color: $tradepage-color-white;
+              border-color: $global-clr-white;
               &:before{
                 height: 100%;
-                background-color: $tradepage-color-blue;
+                background-color: $global-clr-soft-blue;
                 z-index: 1;
               }
             }

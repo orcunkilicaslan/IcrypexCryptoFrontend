@@ -48,7 +48,7 @@
         padding: 15px;
         line-height: 1.2;
         height: 100%;
-        border: 1px solid transparentize($mainpage-color-light-stale-gray, 0.7);
+        border: 1px solid transparentize($global-clr-soft-gray, 0.7);
         position: relative;
 
         &:before{
@@ -57,7 +57,7 @@
           width: calc(100% - 100px);
           height: 1px;
           top: -1px;
-          background-color: $mainpage-color-white;
+          background-color: $global-clr-white;
         }
 
       }
@@ -72,7 +72,7 @@
           height: calc(100% - 30px);
           top: 15px;
           left: 15px;
-          border: 1px solid $mainpage-color-white;
+          border: 1px solid $global-clr-white;
           border-bottom: 0;
         }
 

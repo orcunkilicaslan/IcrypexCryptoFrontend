@@ -2,17 +2,17 @@
 .profile{
 
   &-infoarea{
-    color: $tradepage-color-dark-blue;
+    color: $global-clr-dark-blue;
 
     &-title{
-      color: $tradepage-color-dark-blue;
+      color: $global-clr-dark-blue;
       margin: 0;
       margin-bottom: 10px;
       font-size: 20px;
       font-weight: normal;
     }
     &-contlist{
-      color: $tradepage-color-dark-blue;
+      color: $global-clr-dark-blue;
       font-size: 17px;
       line-height: 1.5;
 
@@ -27,8 +27,8 @@
           height: 9px;
           top: 9px;
           left: 0;
-          border-top:2px solid $tradepage-color-blue;
-          border-right:2px solid $tradepage-color-blue;
+          border-top:2px solid $global-clr-soft-blue;
+          border-right:2px solid $global-clr-soft-blue;
           @include rotate(45);
         }
       }

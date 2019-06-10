@@ -2,7 +2,7 @@
 .formuinew{
 
   label{
-    color: $tradepage-color-dark-blue;
+    color: $global-clr-dark-blue;
     font-size: 17px;
     margin-bottom: 5px;
   }
@@ -16,13 +16,13 @@
         .form-control,
         .input-group-append,
         .input-group-text{
-          background-color: $tradepage-color-light-bg-gray;
-          border-color: $tradepage-color-light-bg-gray;
+          background-color: $global-clr-light-gray;
+          border-color: $global-clr-light-gray;
         }
         .input-group{
           &:focus-within{
             *{
-              border-color:$tradepage-color-light-bg-gray;
+              border-color:$global-clr-light-gray;
             }
           }
         }
@@ -31,21 +31,21 @@
         .form-control,
         .input-group-append,
         .input-group-text{
-          color: $tradepage-color-light-stale-gray;
+          color: $global-clr-soft-gray;
         }
       }
       &green{
         .form-control,
         .input-group-append,
         .input-group-text{
-          color: $tradepage-color-green;
+          color: $global-clr-green;
         }
       }
       &red{
         .form-control,
         .input-group-append,
         .input-group-text{
-          color: $tradepage-color-red;
+          color: $global-clr-red;
         }
       }
 
@@ -54,7 +54,7 @@
     }
 
     &-inputinfo{
-      color: $tradepage-color-light-stale-gray;
+      color: $global-clr-soft-gray;
       font-size: 15px;
       margin-top: 5px;
     }
@@ -72,14 +72,14 @@
         margin-right: 5px;
         position:relative;
         display: block;
-        border: 1px solid transparentize($tradepage-color-light-stale-gray, 0.7);
+        border: 1px solid transparentize($global-clr-soft-gray, 0.7);
         @include border-radius(100%);
 
         &:before,
         &:after{
           content:"";
           position:absolute;
-          background-color: $tradepage-color-blue;
+          background-color: $global-clr-soft-blue;
           width: 10px;
           height: 2px;
           top: calc(50% - 1px);
@@ -101,7 +101,7 @@
   }
 
   .form-control{
-    color: $tradepage-color-dark-blue;
+    color: $global-clr-dark-blue;
     font-size: 17px;
     font-weight: 500;
     height: 40px;
@@ -116,15 +116,15 @@
     }
 
     &:focus{
-      border-color:transparentize($tradepage-color-light-stale-gray, 0.40);
+      border-color:transparentize($global-clr-soft-gray, 0.40);
       box-shadow:none;
     }
 
     &.disabled,
     &:disabled,
     &[readonly] {
-      background-color: $tradepage-color-light-bg-gray;
-      border-color: $tradepage-color-light-bg-gray;
+      background-color: $global-clr-light-gray;
+      border-color: $global-clr-light-gray;
     }
 
     &.inputnoborder{
@@ -141,7 +141,7 @@
     @include border-radius(0);
 
     &:focus{
-      border-color:transparentize($tradepage-color-light-stale-gray, 0.40);
+      border-color:transparentize($global-clr-soft-gray, 0.40);
       box-shadow:none;
     }
 
@@ -161,28 +161,28 @@
       height: 22px;
       top: 0.14rem;
       left: -1.75rem;
-      border-color: transparentize($tradepage-color-light-stale-gray, 0.7);
+      border-color: transparentize($global-clr-soft-gray, 0.7);
     }
   }
 
   .custom-control-input {
     &:checked ~ .custom-control-label::before {
-      border-color: $tradepage-color-blue;
-      background-color: $tradepage-color-blue;
+      border-color: $global-clr-soft-blue;
+      background-color: $global-clr-soft-blue;
     }
     &:focus:not(:checked) ~ .custom-control-label::before {
-      border-color: $tradepage-color-light-bg-gray;
+      border-color: $global-clr-light-gray;
     }
     &:not(:disabled):active ~ .custom-control-label::before {
-      background-color: $tradepage-color-light-bg-gray;
-      border-color: $tradepage-color-light-bg-gray;
+      background-color: $global-clr-light-gray;
+      border-color: $global-clr-light-gray;
     }
     &:disabled {
       ~ .custom-control-label {
-        color: $tradepage-color-light-stale-gray;
+        color: $global-clr-soft-gray;
 
         &::before {
-          background-color: $tradepage-color-light-bg-gray;
+          background-color: $global-clr-light-gray;
         }
       }
     }
@@ -204,7 +204,7 @@
 
     &:focus-within{
       .input-group-append{
-        border-color:transparentize($tradepage-color-light-stale-gray, 0.40);
+        border-color:transparentize($global-clr-soft-gray, 0.40);
       }
     }
 
@@ -214,23 +214,23 @@
     }
 
     .input-group-append{
-      border: 1px solid transparentize($tradepage-color-light-stale-gray, 0.70);
+      border: 1px solid transparentize($global-clr-soft-gray, 0.70);
       border-left: none;
     }
 
     .input-group-text{
-      color: $tradepage-color-dark-blue;
+      color: $global-clr-dark-blue;
       font-size: 17px;
       font-weight: 500;
       padding: 2px 10px 2px;
-      background-color: $tradepage-color-white;
+      background-color: $global-clr-white;
       border: none;
       @include border-radius(0);
     }
   }
 
   @include placeholder{
-    color: transparentize($tradepage-color-light-stale-gray, 0.50);
+    color: transparentize($global-clr-soft-gray, 0.50);
     opacity: 1;
   }
 

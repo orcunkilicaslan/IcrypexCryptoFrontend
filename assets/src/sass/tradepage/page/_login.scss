@@ -2,7 +2,7 @@
   padding: 35px 0;
 
   .columntitle{
-    color: $tradepage-color-dark-blue;
+    color: $global-clr-dark-blue;
     padding-bottom: 8px;
     letter-spacing: normal;
 
@@ -22,7 +22,7 @@
     height: 90px;
     margin: 0 auto;
     margin-bottom: 15px;
-    border: 2px solid $tradepage-color-blue;
+    border: 2px solid $global-clr-soft-blue;
     position: relative;
     @include border-radius(50%);
     i{
@@ -64,31 +64,31 @@
     }
 
     &-input{
-      color: $tradepage-color-dark-blue !important;
+      color: $global-clr-dark-blue !important;
       font-size: 20px;
       font-weight: 500;
       padding: 4px 10px !important;
 
       &.email{
-        border-color: transparentize($tradepage-color-green, 0.50);
+        border-color: transparentize($global-clr-green, 0.50);
         &:focus{
-          border-color: $tradepage-color-green;
+          border-color: $global-clr-green;
         }
       }
       &.password{
-        border-color: transparentize($tradepage-color-red, 0.50);
+        border-color: transparentize($global-clr-red, 0.50);
         &:focus{
-          border-color: $tradepage-color-red;
+          border-color: $global-clr-red;
         }
       }
     }
 
     &-info{
-      color: $tradepage-color-blue;
+      color: $global-clr-soft-blue;
       font-size: 16px;
       margin-top: 5px;
 
-      a{color: $tradepage-color-blue;}
+      a{color: $global-clr-soft-blue;}
 
       &-icon{
         width: 18px;
@@ -99,7 +99,7 @@
         font-style: normal;
         line-height: 1.4;
         text-align: center;
-        border: 1px solid transparentize($tradepage-color-light-stale-gray, 0.70);
+        border: 1px solid transparentize($global-clr-soft-gray, 0.70);
         @include border-radius(50%);
       }
     }

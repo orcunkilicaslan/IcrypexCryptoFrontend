@@ -1,6 +1,6 @@
 
 .headbreadcrumb{
-  background-color: $mainpage-color-white;
+  background-color: $global-clr-white;
   padding: 25px 0 15px;
 
   > .container{
@@ -9,7 +9,7 @@
 
     &:before{
       content: "";
-      background-color: transparentize($mainpage-color-light-stale-gray, 0.7);
+      background-color: transparentize($global-clr-soft-gray, 0.7);
       width: 100%;
       height: 1px;
       position: absolute;
@@ -18,7 +18,7 @@
     }
     &:after{
       content: "";
-      background-color: $mainpage-color-blue;
+      background-color: $global-clr-soft-blue;
       width: 60px;
       height: 4px;
       position: absolute;
@@ -28,7 +28,7 @@
   }
 
   .breadcrumb{
-    color: $mainpage-color-title-blue;
+    color: $global-clr-dark-blue;
     background-color: transparent;
     margin: 0;
     padding: 0;
@@ -47,14 +47,14 @@
           top: calc(50% - 5px);
           left: 4px;
           padding: 0;
-          border-top: 2px solid $mainpage-color-blue;
-          border-right: 2px solid $mainpage-color-blue;
+          border-top: 2px solid $global-clr-soft-blue;
+          border-right: 2px solid $global-clr-soft-blue;
           @include rotate(45);
         }
       }
 
       &.active {
-        color: $mainpage-color-blue;
+        color: $global-clr-soft-blue;
       }
     }
   }

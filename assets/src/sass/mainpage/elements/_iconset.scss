@@ -109,7 +109,7 @@ $mainpageSvgIconImgPath : "../../img/mainpage/svg";
       padding: 0;
       width: 24px;
       height: 24px;
-      border:1px solid transparentize($mainpage-color-light-stale-gray, 0.7);
+      border:1px solid transparentize($global-clr-soft-gray, 0.7);
       position: relative;
 
       &:after{
@@ -122,8 +122,8 @@ $mainpageSvgIconImgPath : "../../img/mainpage/svg";
         width: 9px;
         height: 9px;
         padding: 0;
-        border-top: 2px solid $mainpage-color-light-stale-gray;
-        border-right: 2px solid $mainpage-color-light-stale-gray;
+        border-top: 2px solid $global-clr-soft-gray;
+        border-right: 2px solid $global-clr-soft-gray;
       }
 
       &.updirection{

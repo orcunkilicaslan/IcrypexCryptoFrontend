@@ -6,7 +6,7 @@ $mainpageSvgIconImgPath : "../../img/mainpage/svg";
   padding-bottom: 23px;
 
   &-tabnav{
-    border-bottom: 5px solid $mainpage-color-blue;
+    border-bottom: 5px solid $global-clr-soft-blue;
     position: relative;
     &:before,
     &:after{
@@ -15,7 +15,7 @@ $mainpageSvgIconImgPath : "../../img/mainpage/svg";
       width: 100%;
     }
     &:before{
-      background-color: transparentize($mainpage-color-blue, 0.85);
+      background-color: transparentize($global-clr-soft-blue, 0.85);
       height: 100%;
     }
     &:after{
@@ -32,7 +32,7 @@ $mainpageSvgIconImgPath : "../../img/mainpage/svg";
         overflow: hidden;
       }
       &-link{
-        color: transparentize($mainpage-color-light-stale-gray, 0.50);
+        color: transparentize($global-clr-soft-gray, 0.50);
         border-color: rgba(0,0,0,0.9);
         border-style: solid;
         border-right-width: 4px;
@@ -64,18 +64,18 @@ $mainpageSvgIconImgPath : "../../img/mainpage/svg";
         &.active,
         &.show,
         &:hover{
-          color: $mainpage-color-white;
+          color: $global-clr-white;
           background-color: transparent;
           border-color: black;
           &:before{
             height: 100%;
-            background-color: $mainpage-color-blue;
+            background-color: $global-clr-soft-blue;
             z-index: 1;
           }
         }
       }
       &-search{
-        color: transparentize($mainpage-color-light-stale-gray, 0.50);
+        color: transparentize($global-clr-soft-gray, 0.50);
         position: absolute;
         width: 250px;
         right: 0;
@@ -87,8 +87,8 @@ $mainpageSvgIconImgPath : "../../img/mainpage/svg";
 
         &-input{
           background-color: transparent;
-          color: $mainpage-color-white;
-          font-size: $mainpage-font-size;
+          color: $global-clr-white;
+          font-size: $global-font-size;
           width: 100%;
           padding: 2px;
           border: none;
@@ -110,7 +110,7 @@ $mainpageSvgIconImgPath : "../../img/mainpage/svg";
           text-indent: -9999px;
         }
         @include placeholder {
-          color: $mainpage-color-light-stale-gray;
+          color: $global-clr-soft-gray;
           opacity: 0.75;
         }
       }
@@ -118,7 +118,7 @@ $mainpageSvgIconImgPath : "../../img/mainpage/svg";
     }
   }
   &-tabcontent{
-    color: $mainpage-color-white;
+    color: $global-clr-white;
   }
 
   &-tablearea{
@@ -126,18 +126,18 @@ $mainpageSvgIconImgPath : "../../img/mainpage/svg";
   }
 
   &-table{
-    color: $mainpage-color-light-stale-gray;
+    color: $global-clr-soft-gray;
     margin: 0;
 
     thead th{
       border-top-width: 0;
       border-bottom-width: 1px;
-      border-color: transparentize($mainpage-color-light-stale-gray, 0.7);
+      border-color: transparentize($global-clr-soft-gray, 0.7);
     }
 
     td, th{
       border-top: 0;
-      border-bottom:1px solid transparentize($mainpage-color-light-stale-gray, 0.7);
+      border-bottom:1px solid transparentize($global-clr-soft-gray, 0.7);
       vertical-align: middle;
       font-size: 17px;
       font-weight: normal;
@@ -184,11 +184,11 @@ $mainpageSvgIconImgPath : "../../img/mainpage/svg";
   }
 
   &-table{
-    color: $mainpage-color-light-stale-gray;
+    color: $global-clr-soft-gray;
     margin: 0;
 
     td, th{
-      border-color: transparentize($mainpage-color-light-stale-gray, 0.7);
+      border-color: transparentize($global-clr-soft-gray, 0.7);
       vertical-align: middle;
       font-size: 12px;
       font-weight: normal;
@@ -201,7 +201,7 @@ $mainpageSvgIconImgPath : "../../img/mainpage/svg";
       font-size: 15px;
       border-top-width: 0;
       border-bottom-width: 1px;
-      border-color: transparentize($mainpage-color-light-stale-gray, 0.7);
+      border-color: transparentize($global-clr-soft-gray, 0.7);
       padding-top: 3px;
       padding-bottom: 3px;
     }
@@ -247,12 +247,12 @@ $mainpageSvgIconImgPath : "../../img/mainpage/svg";
         font-size: 17px;
       }
       &-select{
-        color: $mainpage-color-light-stale-gray;
+        color: $global-clr-soft-gray;
         background-color: transparent;
         border: none;
         font-size: 17px;
         option{
-          background-color: $mainpage-color-dark-blue;
+          background-color: darken($global-clr-dark-blue,16%);
         }
       }
     }
@@ -261,7 +261,7 @@ $mainpageSvgIconImgPath : "../../img/mainpage/svg";
   &-form{
 
     &-input{
-      color: $mainpage-color-white;
+      color: $global-clr-white;
       background-color: rgba(0,0,0,0.2);
       font-size: 20px;
       font-weight: 100;
@@ -269,22 +269,22 @@ $mainpageSvgIconImgPath : "../../img/mainpage/svg";
       height: auto;
       border-width: 1px;
       border-style: solid;
-      border-color: transparentize($mainpage-color-light-stale-gray, 0.7);
+      border-color: transparentize($global-clr-soft-gray, 0.7);
       @include border-radius(0);
       &:focus{
-        color: $mainpage-color-white;
+        color: $global-clr-white;
         background-color: rgba(0,0,0,0.2);
-        border-color: transparentize($mainpage-color-light-stale-gray, 0.7);
+        border-color: transparentize($global-clr-soft-gray, 0.7);
         @include box-shadow(0,0,0,transparent);
         @include border-radius(0);
       }
       &.colorgreen{
-        color: $mainpage-color-green;
+        color: $global-clr-green;
         font-weight: normal;
       }
     }
     &-info{
-      color: $mainpage-color-light-stale-gray;
+      color: $global-clr-soft-gray;
       font-size: 17px;
       margin: 0;
       margin-top: 5px;

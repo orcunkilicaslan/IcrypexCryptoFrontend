@@ -2,18 +2,18 @@ $tradepageFooterImgPath : "../../img/tradepage/footer";
 $tradepageSvgIconImgPath : "../../img/tradepage/svg";
 
 .footer{
-  color: $tradepage-color-white;
+  color: $global-clr-white;
   padding-top: 50px;
-  @include gradient($tradepage-gradient-darkblue01, $tradepage-gradient-darkblue02);
+  @include gradient($global-grdint-darkblue01, $global-grdint-darkblue02);
   min-height: 120px;
 
   &-logo{
-    color: $tradepage-color-white;
-    font-family: $tradepage-font-family-barlow;
+    color: $global-clr-white;
+    font-family: $global-font-family-barlow;
     width: 140px;
     margin-bottom: 17px;
     line-height: 0.9;
-    &:hover{color: $tradepage-color-white;}
+    &:hover{color: $global-clr-white;}
     &-symbol{
       float: left;
       width: 38px;
@@ -44,7 +44,7 @@ $tradepageSvgIconImgPath : "../../img/tradepage/svg";
     position: relative;
 
     &-desc{
-      color: $tradepage-color-light-stale-gray;
+      color: $global-clr-soft-gray;
       margin: 0;
       margin-top: 25px;
     }
@@ -52,7 +52,7 @@ $tradepageSvgIconImgPath : "../../img/tradepage/svg";
     &:before{
       content: "";
       position: absolute;
-      background-color: transparentize($tradepage-color-light-stale-gray, 0.7);
+      background-color: transparentize($global-clr-soft-gray, 0.7);
       right: 0;
       top: 0;
       width: 1px;
@@ -66,8 +66,8 @@ $tradepageSvgIconImgPath : "../../img/tradepage/svg";
   }
 
   &-loginnav{
-    border-top: 1px solid transparentize($tradepage-color-light-stale-gray, 0.7);
-    border-bottom: 1px solid transparentize($tradepage-color-light-stale-gray, 0.7);
+    border-top: 1px solid transparentize($global-clr-soft-gray, 0.7);
+    border-bottom: 1px solid transparentize($global-clr-soft-gray, 0.7);
     padding: 2px 0;
     margin-left: 10px;
     margin-bottom: 20px;
@@ -76,15 +76,15 @@ $tradepageSvgIconImgPath : "../../img/tradepage/svg";
       font-size: 17px;
 
       &.linkgray{
-        a{color: transparentize($tradepage-color-light-stale-gray, 0.1);}
+        a{color: transparentize($global-clr-soft-gray, 0.1);}
       }
 
       &-item{
         position: relative;
         padding: 0 12px;
-        color: $tradepage-color-white;
+        color: $global-clr-white;
 
-        a{color: $tradepage-color-white;}
+        a{color: $global-clr-white;}
 
         &:before{
           content: "";
@@ -93,7 +93,7 @@ $tradepageSvgIconImgPath : "../../img/tradepage/svg";
           height: 10px;
           top: calc(50% - 5px);
           right: 0;
-          background-color: transparentize($tradepage-color-light-stale-gray, 0.7);
+          background-color: transparentize($global-clr-soft-gray, 0.7);
         }
         &:first-child{
           padding-left: 0;
@@ -119,7 +119,7 @@ $tradepageSvgIconImgPath : "../../img/tradepage/svg";
       }
 
       a{
-        color: $tradepage-color-white;
+        color: $global-clr-white;
       }
     }
     &-list{
@@ -129,7 +129,7 @@ $tradepageSvgIconImgPath : "../../img/tradepage/svg";
         font-size: 17px;
         line-height: 1.18;
         a{
-          color: transparentize($tradepage-color-light-stale-gray, 0.1);
+          color: transparentize($global-clr-soft-gray, 0.1);
         }
       }
     }
@@ -151,7 +151,7 @@ $tradepageSvgIconImgPath : "../../img/tradepage/svg";
           margin-right: 0;
         }
         a{
-          background-color: transparentize($tradepage-color-btn-blue, 0.6);
+          background-color: transparentize($global-clr-btn-blue, 0.6);
           width: 30px;
           height: 30px;
           text-align: center;
@@ -177,7 +177,7 @@ $tradepageSvgIconImgPath : "../../img/tradepage/svg";
   }
 
   &-bottom{
-    background-color: transparentize($tradepage-gradient-darkblue01, 0.50);
+    background-color: transparentize($global-grdint-darkblue01, 0.50);
     padding: 10px 15px;
     margin-top: 50px;
 
@@ -195,7 +195,7 @@ $tradepageSvgIconImgPath : "../../img/tradepage/svg";
           height: 14px;
           top: calc(50% - 4px);
           right: -3px;
-          background-color: transparentize($tradepage-color-light-stale-gray, 0.7);
+          background-color: transparentize($global-clr-soft-gray, 0.7);
         }
         &:first-child{
           padding-left: 0;

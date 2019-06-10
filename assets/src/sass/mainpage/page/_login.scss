@@ -1,9 +1,9 @@
 .login{
   padding: 35px 0;
-  background-color: $mainpage-color-white;
+  background-color: $global-clr-white;
 
   .columntitle{
-    color: $mainpage-color-title-blue;
+    color: $global-clr-dark-blue;
     padding-bottom: 8px;
     letter-spacing: normal;
     font-size: 25px;
@@ -25,7 +25,7 @@
     margin-top: 25px;
 
     &-top{
-      color: $mainpage-color-title-blue;
+      color: $global-clr-dark-blue;
       text-align: center;
       margin-bottom: 20px;
 
@@ -67,7 +67,7 @@
     }
 
     .form-control{
-      color: $mainpage-color-title-blue;
+      color: $global-clr-dark-blue;
       font-size: 17px !important;
       font-weight: 500;
     }

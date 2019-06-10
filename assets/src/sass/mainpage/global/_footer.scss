@@ -2,8 +2,8 @@ $mainpageFooterImgPath : "../../img/mainpage/footer";
 $mainpageSvgIconImgPath : "../../img/mainpage/svg";
 
 .footer{
-  color: $mainpage-color-white;
-  @include gradient($mainpage-color-dark-blue, #003158);
+  color: $global-clr-white;
+  @include gradient(darken($global-clr-dark-blue,16%), darken($global-clr-dark-blue,6%));
 
   &-bg{
     background-image: url(#{$mainpageFooterImgPath}/Point_Earth_Image.png);
@@ -20,7 +20,7 @@ $mainpageSvgIconImgPath : "../../img/mainpage/svg";
     &:before,
     &:after{
       content: "";
-      background-color: transparentize($mainpage-color-light-stale-gray, 0.7);
+      background-color: transparentize($global-clr-soft-gray, 0.7);
       position: absolute;
       width: 1000%;
       height: 1px;
@@ -54,7 +54,7 @@ $mainpageSvgIconImgPath : "../../img/mainpage/svg";
     &-title{
       margin-bottom: 15px;
       a{
-        color: $mainpage-color-white;
+        color: $global-clr-white;
       }
     }
     &-list{
@@ -64,7 +64,7 @@ $mainpageSvgIconImgPath : "../../img/mainpage/svg";
         font-size: 17px;
         line-height: 1.18;
         a{
-          color: transparentize($mainpage-color-light-stale-gray, 0.1);
+          color: transparentize($global-clr-soft-gray, 0.1);
         }
       }
     }
@@ -82,7 +82,7 @@ $mainpageSvgIconImgPath : "../../img/mainpage/svg";
         margin: 0 3px;
 
         a{
-          background-color: transparentize($mainpage-color-btn-blue, 0.6);
+          background-color: transparentize($global-clr-btn-blue, 0.6);
           width: 30px;
           height: 30px;
           text-align: center;
@@ -112,13 +112,13 @@ $mainpageSvgIconImgPath : "../../img/mainpage/svg";
     padding: 15px 0;
 
     &-phone{
-      color: $mainpage-color-white;
+      color: $global-clr-white;
       font-size: 20px;
       line-height: 0.85;
       margin-bottom: 10px;
     }
     &-desc{
-      color: $mainpage-color-light-stale-gray;
+      color: $global-clr-soft-gray;
       opacity: 0.9;
       font-size: 15px;
       line-height: 1.13;
@@ -134,7 +134,7 @@ $mainpageSvgIconImgPath : "../../img/mainpage/svg";
     &:before,
     &:after{
       content: "";
-      background-color: transparentize($mainpage-color-light-stale-gray, 0.7);
+      background-color: transparentize($global-clr-soft-gray, 0.7);
       position: absolute;
       width: 1000%;
       height: 1px;
@@ -162,7 +162,7 @@ $mainpageSvgIconImgPath : "../../img/mainpage/svg";
           height: 14px;
           top: calc(50% - 4px);
           right: -3px;
-          background-color: transparentize($mainpage-color-light-stale-gray, 0.7);
+          background-color: transparentize($global-clr-soft-gray, 0.7);
         }
         &:first-child{
           padding-left: 0;

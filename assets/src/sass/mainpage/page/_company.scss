@@ -2,7 +2,7 @@
 .company{
 
   &-section{
-    background-color: $mainpage-color-white;
+    background-color: $global-clr-white;
     padding: 0 0 40px;
 
     .container > .row > .col-12{
@@ -27,7 +27,7 @@
     padding-top: 30px;
 
     *{
-      color: $mainpage-color-title-blue;
+      color: $global-clr-dark-blue;
     }
 
     *[class*="columntitle"]{
@@ -52,7 +52,7 @@
     }
 
     &-contlist{
-      color: $mainpage-color-title-blue;
+      color: $global-clr-dark-blue;
       text-align: left;
       margin: auto;
       margin-bottom: 15px;
@@ -68,15 +68,15 @@
           height: 9px;
           top: calc(50% - 3px);
           left: 0;
-          border-top:2px solid $mainpage-color-blue;
-          border-right:2px solid $mainpage-color-blue;
+          border-top:2px solid $global-clr-soft-blue;
+          border-right:2px solid $global-clr-soft-blue;
           @include rotate(45);
         }
       }
     }
 
     .urllink{
-      color: $mainpage-color-blue;
+      color: $global-clr-soft-blue;
       text-decoration: underline;
     }
 

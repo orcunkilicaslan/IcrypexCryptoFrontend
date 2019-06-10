@@ -3,11 +3,11 @@ $tradepageSvgIconImgPath : "../../img/tradepage/svg";
 .site{
 
   &table{
-    color: $tradepage-color-dark-blue;
+    color: $global-clr-dark-blue;
     margin: 0;
 
     td, th{
-      border-color: transparentize($tradepage-color-light-stale-gray, 0.7);
+      border-color: transparentize($global-clr-soft-gray, 0.7);
       vertical-align: middle;
       font-size: 15px;
       font-weight: normal;
@@ -46,12 +46,12 @@ $tradepageSvgIconImgPath : "../../img/tradepage/svg";
       &up{
         border-left: 4px solid transparent;
         border-right: 4px solid transparent;
-        border-bottom: 4px solid $tradepage-color-green;
+        border-bottom: 4px solid $global-clr-green;
       }
       &down{
         border-left: 4px solid transparent;
         border-right: 4px solid transparent;
-        border-top: 4px solid $tradepage-color-red;
+        border-top: 4px solid $global-clr-red;
       }
     }
   }

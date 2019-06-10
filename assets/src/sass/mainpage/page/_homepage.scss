@@ -25,7 +25,7 @@ $mainpageHomepageImgPath : "../../img/mainpage";
       padding-top: 40px;
 
       &-item{
-        color: $mainpage-color-white;
+        color: $global-clr-white;
         padding: 20px 0;
       }
       .owl{
@@ -40,7 +40,7 @@ $mainpageHomepageImgPath : "../../img/mainpage";
           height: 25px;
 
           span{
-            background-color: $mainpage-color-light-stale-gray !important;
+            background-color: $global-clr-soft-gray !important;
             width: 40px !important;
             height: 3px !important;
             margin: 0 !important;
@@ -63,11 +63,11 @@ $mainpageHomepageImgPath : "../../img/mainpage";
 
           &.active span,
           &:hover span{
-            background-color: $mainpage-color-blue !important;
+            background-color: $global-clr-soft-blue !important;
           }
           &:hover span{
             &:before{
-              background-color: $mainpage-color-blue !important;
+              background-color: $global-clr-soft-blue !important;
               top: -3px;
             }
           }
@@ -84,14 +84,14 @@ $mainpageHomepageImgPath : "../../img/mainpage";
     }
 
     &-title{
-      color: $mainpage-color-white;
+      color: $global-clr-white;
       font-size: 44px;
       font-weight: 300;
       line-height: 1.07;
     }
 
     &-desc{
-      color: $mainpage-color-white;
+      color: $global-clr-white;
       font-size: 26px;
       font-weight: 300;
       line-height: 1.07;
@@ -99,7 +99,7 @@ $mainpageHomepageImgPath : "../../img/mainpage";
   }
 
   &-chartarea{
-    color: $mainpage-color-white;
+    color: $global-clr-white;
     margin-bottom: 50px;
 
     &-column{
@@ -107,7 +107,7 @@ $mainpageHomepageImgPath : "../../img/mainpage";
       &-headtitle{
         display: flex;
         justify-content: space-between;
-        border-bottom: 1px solid transparentize($mainpage-color-light-stale-gray, 0.7);
+        border-bottom: 1px solid transparentize($global-clr-soft-gray, 0.7);
         padding-bottom: 5px;
 
         &-title,
@@ -119,8 +119,8 @@ $mainpageHomepageImgPath : "../../img/mainpage";
           line-height: 1;
         }
 
-        &-title{color: $mainpage-color-white;}
-        &-volume{color: $mainpage-color-light-stale-gray;}
+        &-title{color: $global-clr-white;}
+        &-volume{color: $global-clr-soft-gray;}
       }
 
       &-chartbox{}
@@ -128,7 +128,7 @@ $mainpageHomepageImgPath : "../../img/mainpage";
   }
 
   &-bigprice{
-    color: $mainpage-color-white;
+    color: $global-clr-white;
 
     &-list{
       display: flex;
@@ -136,7 +136,7 @@ $mainpageHomepageImgPath : "../../img/mainpage";
       margin-bottom: 0;
 
       &-item{
-        color: $mainpage-color-white;
+        color: $global-clr-white;
         text-align: center;
         font-size: 30px;
         font-weight: 300;
@@ -151,7 +151,7 @@ $mainpageHomepageImgPath : "../../img/mainpage";
           height: 44px;
           top: calc(50% - 20px);
           right: -25px;
-          background-color: transparentize($mainpage-color-light-stale-gray, 0.7);
+          background-color: transparentize($global-clr-soft-gray, 0.7);
         }
 
         &:last-child{
@@ -161,7 +161,7 @@ $mainpageHomepageImgPath : "../../img/mainpage";
     }
 
     &-title{
-      color: $mainpage-color-light-stale-gray;
+      color: $global-clr-soft-gray;
       font-size: 18px;
       font-weight: 300;
       letter-spacing: -0.2px;
@@ -192,12 +192,12 @@ $mainpageHomepageImgPath : "../../img/mainpage";
 
 
     .columntitle{
-      color: $mainpage-color-white;
+      color: $global-clr-white;
       text-align: center;
       &.bottomborder{
         display: initial;
         &:before{
-          background-color: transparentize($mainpage-color-light-stale-gray, 0.7);
+          background-color: transparentize($global-clr-soft-gray, 0.7);
           opacity: 1;
           width: 100%;
           left: 0;
@@ -212,9 +212,9 @@ $mainpageHomepageImgPath : "../../img/mainpage";
         margin-bottom: 14px;
       }
       .form-control{
-        color: $mainpage-color-white;
+        color: $global-clr-white;
         background-color: transparent;
-        border-color: transparentize($mainpage-color-light-stale-gray, 0.7);
+        border-color: transparentize($global-clr-soft-gray, 0.7);
         border-right: none;
         border-top: none;
         height: auto;
@@ -226,7 +226,7 @@ $mainpageHomepageImgPath : "../../img/mainpage";
         }
       }
       @include placeholder{
-        color: $mainpage-color-light-stale-gray;
+        color: $global-clr-soft-gray;
       }
       .recaptcha{
         background-color: black;
@@ -235,11 +235,11 @@ $mainpageHomepageImgPath : "../../img/mainpage";
       }
       .form-check{
         margin-bottom: 13px;
-        *{color: $mainpage-color-light-stale-gray;}
+        *{color: $global-clr-soft-gray;}
         a{
           text-decoration: underline !important;
           &:hover{
-            color: $mainpage-color-blue;
+            color: $global-clr-soft-blue;
           }
         }
       }
@@ -258,7 +258,7 @@ $mainpageHomepageImgPath : "../../img/mainpage";
   }
 
   &-summarytable{
-    color: $mainpage-color-white;
+    color: $global-clr-white;
     padding-top: 114px;
     overflow: hidden;
 
@@ -269,7 +269,7 @@ $mainpageHomepageImgPath : "../../img/mainpage";
       &:before,
       &:after{
         content: "";
-        background-color: $mainpage-color-white;
+        background-color: $global-clr-white;
         position: absolute;
         width: 1000%;
         height: 50%;
@@ -289,7 +289,7 @@ $mainpageHomepageImgPath : "../../img/mainpage";
       &:before,
       &:after{
         content: "";
-        background-color: $mainpage-color-white;
+        background-color: $global-clr-white;
         position: absolute;
         width: 4px;
         height: 4px;
@@ -308,7 +308,7 @@ $mainpageHomepageImgPath : "../../img/mainpage";
     &-columntitle{
       display: flex;
       justify-content: space-between;
-      border-bottom: 1px solid transparentize($mainpage-color-light-stale-gray, 0.7);
+      border-bottom: 1px solid transparentize($global-clr-soft-gray, 0.7);
       margin-bottom: 2px;
       padding-bottom: 2px;
 
@@ -320,12 +320,12 @@ $mainpageHomepageImgPath : "../../img/mainpage";
         min-height: 26px;
       }
       &-select{
-        color: $mainpage-color-light-stale-gray;
+        color: $global-clr-soft-gray;
         background-color: transparent;
         border: none;
         font-size: 20px;
         option{
-          background-color: $mainpage-color-dark-blue;
+          background-color: $global-clr-dark-blue;
         }
       }
     }
@@ -372,12 +372,12 @@ $mainpageHomepageImgPath : "../../img/mainpage";
   }
 
   &-whyicrypex{
-    background-color: $mainpage-color-white;
+    background-color: $global-clr-white;
     padding: 90px 0 110px;
 
     .container > .columntitle{
       margin-bottom: 30px;
-      color: $mainpage-color-title-blue;
+      color: $global-clr-dark-blue;
     }
 
     &-list{
@@ -406,7 +406,7 @@ $mainpageHomepageImgPath : "../../img/mainpage";
         }
         &-text{
           flex: 0 0 calc(100% - 85px);
-          color: $mainpage-color-title-blue;
+          color: $global-clr-dark-blue;
 
           > .columntitle{
             font-weight: normal;
@@ -421,7 +421,7 @@ $mainpageHomepageImgPath : "../../img/mainpage";
           }
 
           p{
-            color: $mainpage-color-title-blue;
+            color: $global-clr-dark-blue;
             font-size: 17px;
             line-height: 1.12;
             margin: 0;
@@ -435,7 +435,7 @@ $mainpageHomepageImgPath : "../../img/mainpage";
   }
 
   &-webtrader{
-    background-color: $mainpage-color-dark-blue;
+    background-color: darken($global-clr-dark-blue,16%);
 
     &-content{
       padding-top: 100px;
@@ -443,21 +443,21 @@ $mainpageHomepageImgPath : "../../img/mainpage";
       padding-left: 0;
       padding-right: 30px;
       .columntitle{
-        color: $mainpage-color-white;
+        color: $global-clr-white;
         &:before{
           width: 200px;
         }
       }
 
       &-desc{
-        color: $mainpage-color-light-stale-gray;
+        color: $global-clr-soft-gray;
         font-size: 17px;
         margin: 0;
         margin-top: 25px;
         line-height: 1.18;
       }
       &-list{
-        color: $mainpage-color-light-stale-gray;
+        color: $global-clr-soft-gray;
         font-size: 17px;
         margin: 0;
         margin-top: 15px;
@@ -466,7 +466,7 @@ $mainpageHomepageImgPath : "../../img/mainpage";
       &-btn{
         margin: 0;
         margin-top: 35px;
-        background-color: $mainpage-color-btn-blue;
+        background-color: $global-clr-btn-blue;
         border: none;
         font-size: 20px;
         font-weight: 300;
@@ -488,7 +488,7 @@ $mainpageHomepageImgPath : "../../img/mainpage";
   }
 
   &-mobiletrader{
-    background-color: $mainpage-color-white;
+    background-color: $global-clr-white;
 
     &-content{
       padding-top: 110px;
@@ -501,14 +501,14 @@ $mainpageHomepageImgPath : "../../img/mainpage";
       }
 
       &-desc{
-        color: $mainpage-color-title-blue;
+        color: $global-clr-dark-blue;
         font-size: 17px;
         margin: 0;
         margin-top: 25px;
         line-height: 1.18;
       }
       &-list{
-        color: $mainpage-color-title-blue;
+        color: $global-clr-dark-blue;
         font-size: 17px;
         margin: 0;
         margin-top: 15px;

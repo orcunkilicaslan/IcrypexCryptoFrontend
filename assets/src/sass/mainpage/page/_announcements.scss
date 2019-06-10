@@ -2,7 +2,7 @@
 .announcements{
 
   &-section{
-    background-color: $mainpage-color-white;
+    background-color: $global-clr-white;
     padding: 5px 0 40px;
 
     .container > .row > .col-12{
@@ -26,8 +26,8 @@
   &-wrapper{
     &-column{
       &-box{
-        color: $mainpage-color-title-blue;
-        border: 1px solid transparentize($mainpage-color-light-stale-gray, 0.7);
+        color: $global-clr-dark-blue;
+        border: 1px solid transparentize($global-clr-soft-gray, 0.7);
         position: relative;
         padding: 10px 15px 15px;
         margin-top: 30px;
@@ -52,7 +52,7 @@
     }
 
     &-date{
-      color: $mainpage-color-white !important;
+      color: $global-clr-white !important;
       width: 110px;
       min-height: 42px;
       font-size: 17px;
@@ -60,17 +60,17 @@
     }
 
     &-item{
-      background-color: $mainpage-color-light-bg-gray;
+      background-color: $global-clr-light-gray;
       position: relative;
 
       &.active{
         .heading {
-          color: $mainpage-color-white;
-          background-color: $mainpage-color-light-stale-gray;
+          color: $global-clr-white;
+          background-color: $global-clr-soft-gray;
           font-weight: normal;
 
           .title{
-            color: $mainpage-color-white;
+            color: $global-clr-white;
           }
         }
         .icon {
@@ -80,7 +80,7 @@
             top: calc(50% - -1px);
             left: calc(50% - 4px);
             @include rotate(315);
-            border-color: $mainpage-color-white;
+            border-color: $global-clr-white;
           }
           &:after {
             content: "";
@@ -89,8 +89,8 @@
             width: 9px;
             height: 9px;
             padding: 0;
-            border-top: 2px solid $mainpage-color-white;
-            border-right: 2px solid $mainpage-color-white;
+            border-top: 2px solid $global-clr-white;
+            border-right: 2px solid $global-clr-white;
             top: calc(50% - 9px);
             left: calc(50% - 4px);
             @include rotate(135);
@@ -99,8 +99,8 @@
       }
 
       .heading {
-        color: $mainpage-color-title-blue;
-        background-color: $mainpage-color-light-bg-gray;
+        color: $global-clr-dark-blue;
+        background-color: $global-clr-light-gray;
         display: block;
         text-decoration: none;
         font-size:17px;
@@ -110,7 +110,7 @@
         @include transition(all, 0.2s, linear);
 
         &:hover {
-          background-color: transparentize($mainpage-color-light-stale-gray, 0.2);
+          background-color: transparentize($global-clr-soft-gray, 0.2);
 
           .icon {
             background-color: transparent;
@@ -118,12 +118,12 @@
             &:before,
             &:after {
               background: transparent;
-              border-color: $mainpage-color-white;
+              border-color: $global-clr-white;
             }
           }
 
           .title{
-            color: $mainpage-color-white;
+            color: $global-clr-white;
           }
         }
       }
@@ -167,8 +167,8 @@
           width: 9px;
           height: 9px;
           padding: 0;
-          border-top: 2px solid $mainpage-color-title-blue;
-          border-right: 2px solid $mainpage-color-title-blue;
+          border-top: 2px solid $global-clr-dark-blue;
+          border-right: 2px solid $global-clr-dark-blue;
           top: calc(50% - 6px);
           left: calc(50% - 4px);
           @include rotate(135);
@@ -181,7 +181,7 @@
         display: none;
 
         .accimage{
-          border: 5px solid $mainpage-color-light-stale-gray;
+          border: 5px solid $global-clr-soft-gray;
           margin-bottom: 15px;
         }
       }
@@ -191,7 +191,7 @@
   &-content{
 
     *{
-      color: $mainpage-color-title-blue;
+      color: $global-clr-dark-blue;
     }
 
     *[class*="columntitle"]{
@@ -216,7 +216,7 @@
     }
 
     &-contlist{
-      color: $mainpage-color-title-blue;
+      color: $global-clr-dark-blue;
       text-align: left;
       margin: auto;
       margin-bottom: 15px;
@@ -232,15 +232,15 @@
           height: 9px;
           top: calc(50% - 3px);
           left: 0;
-          border-top:2px solid $mainpage-color-blue;
-          border-right:2px solid $mainpage-color-blue;
+          border-top:2px solid $global-clr-soft-blue;
+          border-right:2px solid $global-clr-soft-blue;
           @include rotate(45);
         }
       }
     }
 
     .urllink{
-      color: $mainpage-color-blue;
+      color: $global-clr-soft-blue;
       text-decoration: underline;
     }
 

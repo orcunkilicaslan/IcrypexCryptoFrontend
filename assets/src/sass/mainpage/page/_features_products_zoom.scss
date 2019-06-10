@@ -33,15 +33,15 @@
         }
 
         &-box{
-          color: $mainpage-color-title-blue;
-          border: 1px solid transparentize($mainpage-color-light-stale-gray, 0.7);
+          color: $global-clr-dark-blue;
+          border: 1px solid transparentize($global-clr-soft-gray, 0.7);
           border-top: none;
           position: relative;
           font-size: 17px;
 
           &:before {
             content: "";
-            background-color: $mainpage-color-blue;
+            background-color: $global-clr-soft-blue;
             height: 4px;
             width: calc(100% + 2px);
             left: -1px;
@@ -50,12 +50,12 @@
 
           &.lineorange{
             &:before {
-              background-color: $mainpage-color-orange;
+              background-color: $global-clr-orange;
             }
           }
 
           &-buttons{
-            background-color: $mainpage-color-light-bg-gray;
+            background-color: $global-clr-light-gray;
             margin: 2px;
             padding: 8px 13px;
 
@@ -64,8 +64,8 @@
               padding: 5px 0;
 
               .btn{
-                border-left: 1px solid $mainpage-color-white !important;
-                border-right: 1px solid $mainpage-color-white !important;;
+                border-left: 1px solid $global-clr-white !important;
+                border-right: 1px solid $global-clr-white !important;;
 
                 &:first-child{
                   border-left: none !important;;
@@ -115,7 +115,7 @@
             }
 
             span{
-              color: $mainpage-color-title-blue;
+              color: $global-clr-dark-blue;
               display: block;
               line-height: 1;
             }
@@ -135,7 +135,7 @@
       &-wrapper{
 
         &-boxtitle{
-          border-bottom: 1px solid lighten($mainpage-color-light-stale-gray, 30%);
+          border-bottom: 1px solid lighten($global-clr-soft-gray, 30%);
           height: 29px;
           font-size: 15px;
 
@@ -155,13 +155,13 @@
               height: 4px;
               bottom: 0;
               left: 0;
-              background-color: $mainpage-color-blue;
+              background-color: $global-clr-soft-blue;
             }
           }
         }
 
         &-charttitle{
-          border-bottom: 1px solid lighten($mainpage-color-light-stale-gray, 30%);
+          border-bottom: 1px solid lighten($global-clr-soft-gray, 30%);
           height: 34px;
           font-size: 15px;
 
@@ -186,7 +186,7 @@
               }
 
               &-link{
-                color: $mainpage-color-title-blue;
+                color: $global-clr-dark-blue;
                 font-size: 15px;
                 margin: 0;
                 padding: 6px 2px;
@@ -204,21 +204,21 @@
 
                 &:hover{
                   &:before{
-                    background-color: lighten($mainpage-color-light-stale-gray, 30%);
+                    background-color: lighten($global-clr-soft-gray, 30%);
                   }
                 }
 
                 &.active{
                   font-weight: 500;
                   &:before{
-                    background-color: $mainpage-color-blue;
+                    background-color: $global-clr-soft-blue;
                   }
                 }
               }
             }
 
             &-select{
-              color: $mainpage-color-title-blue;
+              color: $global-clr-dark-blue;
               padding: 6px 2px;
               display: block;
             }
@@ -228,17 +228,17 @@
       }
 
       &-historychart{
-        border-left: 1px solid lighten($mainpage-color-light-stale-gray, 30%);
+        border-left: 1px solid lighten($global-clr-soft-gray, 30%);
       }
 
       &-content{
-        color: $mainpage-color-title-blue;
+        color: $global-clr-dark-blue;
         font-size: 17px;
         padding-top: 10px;
         line-height: 1.25;
         overflow: hidden;
 
-        *{color: $mainpage-color-title-blue;}
+        *{color: $global-clr-dark-blue;}
 
         p{
           margin-bottom: 15px;
@@ -263,7 +263,7 @@
             }
             tr:last-child {
               td {
-                border-bottom: 1px solid transparentize($mainpage-color-light-stale-gray, 0.85);
+                border-bottom: 1px solid transparentize($global-clr-soft-gray, 0.85);
               }
             }
 

@@ -1,5 +1,5 @@
 .pagenavigation{
-  background-color: $tradepage-color-light-bg-gray;
+  background-color: $global-clr-light-gray;
   margin-top: 15px;
 
   .pagination{
@@ -12,7 +12,7 @@
       }
 
       &-link{
-        color: $tradepage-color-light-stale-gray;
+        color: $global-clr-soft-gray;
         background-color: transparent;
         font-size: 17px;
         line-height: 1;
@@ -20,13 +20,13 @@
         height: 100%;
         padding: 6px 10px;
         text-align: center;
-        border-color: transparentize($tradepage-color-light-stale-gray, 0.70);
+        border-color: transparentize($global-clr-soft-gray, 0.70);
         @include border-radius(0);
         @include transition(all, 0.1s, linear);
 
         &.prev,
         &.next{
-          background-color: transparentize($tradepage-color-light-stale-gray, 0.70) !important;
+          background-color: transparentize($global-clr-soft-gray, 0.70) !important;
           border-color: transparent;
         }
 
@@ -40,9 +40,9 @@
 
         &.active,
         &:hover{
-          color: $tradepage-color-white;
-          background-color: $tradepage-color-light-stale-gray;
-          border-color: $tradepage-color-light-stale-gray;
+          color: $global-clr-white;
+          background-color: $global-clr-soft-gray;
+          border-color: $global-clr-soft-gray;
         }
 
       }

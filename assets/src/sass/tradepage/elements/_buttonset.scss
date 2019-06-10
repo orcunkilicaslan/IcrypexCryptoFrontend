@@ -4,20 +4,20 @@
   @include border-radius(3px);
 
   &-primary{
-    background-color: $tradepage-color-blue !important;
-    border-color: $tradepage-color-blue !important;
+    background-color: $global-clr-soft-blue !important;
+    border-color: $global-clr-soft-blue !important;
   }
   &-success{
-    background-color: $tradepage-color-green !important;
-    border-color: $tradepage-color-green !important;
+    background-color: $global-clr-green !important;
+    border-color: $global-clr-green !important;
   }
   &-danger{
-    background-color: $tradepage-color-red !important;
-    border-color: $tradepage-color-red !important;
+    background-color: $global-clr-red !important;
+    border-color: $global-clr-red !important;
   }
   &-info{
-    background-color: $tradepage-color-blue !important;
-    border-color: $tradepage-color-blue !important;
+    background-color: $global-clr-soft-blue !important;
+    border-color: $global-clr-soft-blue !important;
   }
 
   &.btnwidth110{
@@ -44,22 +44,22 @@
 
         &:before{
           content: "";
-          background-color: $tradepage-color-light-stale-gray;
+          background-color: $global-clr-soft-gray;
           position: absolute;
           width: 100%;
           height: 1px;
           top: 50%;
         }
         &.success{
-          &:before{background-color: $tradepage-color-green;}
+          &:before{background-color: $global-clr-green;}
         }
         &.info{
-          &:before{background-color: $tradepage-color-blue;}
+          &:before{background-color: $global-clr-soft-blue;}
         }
 
         .btn{
-          color: $tradepage-color-white !important;
-          background-color: $tradepage-color-light-stale-gray;
+          color: $global-clr-white !important;
+          background-color: $global-clr-soft-gray;
           width: 200px;
           margin: 0 auto;
           display: block;

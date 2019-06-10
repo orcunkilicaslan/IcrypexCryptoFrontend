@@ -4,7 +4,7 @@ $mainpageImgPath : "../../img/mainpage";
 *{outline: 0 !important;}
 
 body{
-  font-size: $mainpage-font-size;
+  font-size: $global-font-size;
   background-color: #011326;
   background-image: url(#{$mainpageImgPath}/background/Dark_Blue_Bg_Image.jpg);
   background-repeat: no-repeat;
@@ -12,7 +12,7 @@ body{
   background-attachment: fixed;
 }
 body, input, textarea, select, button {
-  font-family: $mainpage-font-family-barlow;
+  font-family: $global-font-family-barlow;
 }
 h1,h2,h3,h4,h5,h6{
   font-weight: 500;
@@ -39,6 +39,6 @@ img, svg {
 }
 
 .form-control{
-  font-size: $mainpage-font-size;
+  font-size: $global-font-size;
 }
 /* Custom */
