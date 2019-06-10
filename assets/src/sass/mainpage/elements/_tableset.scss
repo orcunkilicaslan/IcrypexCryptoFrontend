@@ -3,11 +3,11 @@ $tradepageSvgIconImgPath : "../../img/tradepage/svg";
 .site{
 
   &table{
-    color: $mainpage-color-title-blue;
+    color: $global-clr-dark-blue;
     margin: 0;
 
     td, th{
-      border-color: transparentize($mainpage-color-light-stale-gray, 0.85);
+      border-color: transparentize($global-clr-soft-gray, 0.85);
       vertical-align: middle;
       font-size: 15px;
       font-weight: normal;

@@ -1,12 +1,12 @@
 
 .dropzone{
-  background-color: $tradepage-color-light-bg-gray;
+  background-color: $global-clr-light-gray;
   min-width: 160px;
   min-height: 150px;
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px dashed transparentize($tradepage-color-light-stale-gray, 0.7);
+  border: 1px dashed transparentize($global-clr-soft-gray, 0.7);
   padding: 10px;
 
   .dz{
@@ -15,7 +15,7 @@
       margin: 0;
     }
     &-message{
-      color: $tradepage-color-light-stale-gray;
+      color: $global-clr-soft-gray;
       font-size: 15px;
       line-height: 1.15;
 
@@ -30,7 +30,7 @@
       margin: 0;
     }
     &-details{
-      color: $tradepage-color-light-stale-gray !important;
+      color: $global-clr-soft-gray !important;
       font-size: 15px !important;
       opacity: 1 !important;
       padding: 0 !important;
@@ -58,7 +58,7 @@
       top: 10px !important;
       left: calc(50% - 18px) !important;
       margin:0 auto !important;
-      border: 1px solid lighten($tradepage-color-light-stale-gray, 25%);
+      border: 1px solid lighten($global-clr-soft-gray, 25%);
       @include border-radius(52px !important);
       @include transition(all, 0.4s, linear);
     }
@@ -74,7 +74,7 @@
       z-index: 1;
       top: 10px !important;
       left: calc(50% - 18px) !important;
-      border: 1px solid lighten($tradepage-color-light-stale-gray, 25%);
+      border: 1px solid lighten($global-clr-soft-gray, 25%);
       @include border-radius(52px);
       @include transition(all, 0.4s, linear);
 
@@ -94,8 +94,8 @@
         height: 8px;
         top: 12px;
         left: 9px;
-        border-bottom:2px solid $tradepage-color-green;
-        border-left:2px solid $tradepage-color-green;
+        border-bottom:2px solid $global-clr-green;
+        border-left:2px solid $global-clr-green;
         @include rotate(-50);
       }
     }
@@ -105,7 +105,7 @@
       &:after{
         content: "";
         position: absolute;
-        background-color: $tradepage-color-red;
+        background-color: $global-clr-red;
         width: 18px;
         height: 2px;
         left: calc(50% - 9px);

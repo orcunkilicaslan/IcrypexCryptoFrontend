@@ -10,14 +10,14 @@
         float: right;
 
         a{
-          color: $tradepage-color-blue;
+          color: $global-clr-soft-blue;
         }
 
         i.iconclose{
           position: relative;
           width: 16px;
           height: 16px;
-          border: 1px solid transparentize($tradepage-color-light-stale-gray, 0.7);
+          border: 1px solid transparentize($global-clr-soft-gray, 0.7);
           @include border-radius(18px);
           display: inline-block;
           margin: 0 2px;
@@ -26,7 +26,7 @@
           &:after{
             content: "";
             position: absolute;
-            background-color: $tradepage-color-blue;
+            background-color: $global-clr-soft-blue;
             width: 9px;
             height: 2px;
             left: calc(50% - 4px);
@@ -43,14 +43,14 @@
           &.darkblue{
             &:before,
             &:after{
-              background-color: $tradepage-color-dark-blue;
+              background-color: $global-clr-dark-blue;
             }
           }
 
           &.darkred{
             &:before,
             &:after{
-              background-color: $tradepage-color-red;
+              background-color: $global-clr-red;
             }
           }
         }
@@ -59,7 +59,7 @@
       thead{
         th{
           font-size: 17px;
-          border-top: 1px solid transparentize($tradepage-color-light-stale-gray, 0.7);
+          border-top: 1px solid transparentize($global-clr-soft-gray, 0.7);
         }
       }
 

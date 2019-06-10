@@ -9,18 +9,18 @@
     &-box{
 
       &-title{
-        color: $mainpage-color-title-blue;
+        color: $global-clr-dark-blue;
         font-size: 20px;
         font-weight: 500;
         margin-bottom: 5px;
 
         &-date{
-          color: $mainpage-color-title-blue;
+          color: $global-clr-dark-blue;
           font-size: 17px;
         }
 
         &-hash{
-          color: $mainpage-color-title-blue;
+          color: $global-clr-dark-blue;
           font-size: 17px;
           font-weight: 500;
         }
@@ -41,8 +41,8 @@
         .btn-group{
           .btn{
             font-size: 15px;
-            border-left: 1px solid $mainpage-color-white !important;
-            border-right: 1px solid $mainpage-color-white !important;
+            border-left: 1px solid $global-clr-white !important;
+            border-right: 1px solid $global-clr-white !important;
 
             &:first-child{
               border-left: none !important;

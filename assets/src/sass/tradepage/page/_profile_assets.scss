@@ -2,7 +2,7 @@
 .profile{
 
   &-limitprogress{
-    background-color: $tradepage-color-light-bg-gray;
+    background-color: $global-clr-light-gray;
     padding: 20px 0;
 
     &-list {
@@ -21,7 +21,7 @@
           height: 34px;
           top: calc(50% - 16px);
           right: 0;
-          background-color: transparentize($tradepage-color-light-stale-gray, 0.7);
+          background-color: transparentize($global-clr-soft-gray, 0.7);
         }
 
         &:last-child{

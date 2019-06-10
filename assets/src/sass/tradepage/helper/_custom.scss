@@ -4,11 +4,11 @@ $tradepageImgPath : "../../img/tradepage";
 *{outline: 0 !important;}
 
 body{
-  font-size: $tradepage-font-size;
-  background-color: $tradepage-color-white;
+  font-size: $global-font-size;
+  background-color: $global-clr-white;
 }
 body, input, textarea, select, button {
-  font-family: $tradepage-font-family-barlow;
+  font-family: $global-font-family-barlow;
 }
 h1,h2,h3,h4,h5,h6{
   font-weight: normal;
@@ -32,13 +32,13 @@ img, svg {
 }
 
 .form-control{
-  font-size: $tradepage-font-size;
+  font-size: $global-font-size;
 }
 
 .progress{
   background-color: #ccd5dd;
 }
 .progress-bar{
-  background-color: $tradepage-color-blue;
+  background-color: $global-clr-soft-blue;
 }
 /* Custom */

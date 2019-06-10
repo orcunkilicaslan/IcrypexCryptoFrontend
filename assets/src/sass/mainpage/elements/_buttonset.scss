@@ -1,24 +1,24 @@
 .btn{
-  color: $mainpage-color-white !important;
+  color: $global-clr-white !important;
   font-size: 17px;
   font-weight: normal;
   @include border-radius(3px);
 
   &-primary{
-    background-color: $mainpage-color-btn-blue !important;
-    border-color: $mainpage-color-btn-blue !important;
+    background-color: $global-clr-btn-blue !important;
+    border-color: $global-clr-btn-blue !important;
   }
   &-success{
-    background-color: $mainpage-color-green !important;
-    border-color: $mainpage-color-green !important;
+    background-color: $global-clr-green !important;
+    border-color: $global-clr-green !important;
   }
   &-danger{
-    background-color: $mainpage-color-red !important;
-    border-color: $mainpage-color-red !important;
+    background-color: $global-clr-red !important;
+    border-color: $global-clr-red !important;
   }
   &-info{
-    background-color: $mainpage-color-blue !important;
-    border-color: $mainpage-color-blue !important;
+    background-color: $global-clr-soft-blue !important;
+    border-color: $global-clr-soft-blue !important;
   }
   &-warning{
     background-color: #ff9900;
@@ -47,22 +47,22 @@
 
         &:before{
           content: "";
-          background-color: $mainpage-color-light-stale-gray;
+          background-color: $global-clr-soft-gray;
           position: absolute;
           width: 100%;
           height: 1px;
           top: 50%;
         }
         &.success{
-          &:before{background-color: $mainpage-color-green;}
+          &:before{background-color: $global-clr-green;}
         }
         &.info{
-          &:before{background-color: $mainpage-color-blue;}
+          &:before{background-color: $global-clr-soft-blue;}
         }
 
         .btn{
-          color: $mainpage-color-white !important;
-          background-color: $mainpage-color-light-stale-gray;
+          color: $global-clr-white !important;
+          background-color: $global-clr-soft-gray;
           width: 300px;
           margin: 0 auto;
           display: block;

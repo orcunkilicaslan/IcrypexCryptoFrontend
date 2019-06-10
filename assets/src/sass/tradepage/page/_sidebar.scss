@@ -26,8 +26,8 @@ $tradepageSvgIconImgPath : "../../img/tradepage/svg";
       }
 
       thead th{
-        color: $tradepage-color-white;
-        background-color: $tradepage-color-light-stale-gray;
+        color: $global-clr-white;
+        background-color: $global-clr-soft-gray;
         border: none;
       }
       tbody td{
@@ -38,7 +38,7 @@ $tradepageSvgIconImgPath : "../../img/tradepage/svg";
       }
 
       &-symbol{
-        color: $tradepage-color-dark-blue;
+        color: $global-clr-dark-blue;
         font-weight: normal !important;
       }
     }
@@ -55,7 +55,7 @@ $tradepageSvgIconImgPath : "../../img/tradepage/svg";
     &-table{
       td, th{
         border-top: 0;
-        border-bottom:1px solid transparentize($tradepage-color-light-stale-gray, 0.7);
+        border-bottom:1px solid transparentize($global-clr-soft-gray, 0.7);
         font-size: 15px;
         padding: 1px 5px;
         line-height: 1.4;
@@ -65,12 +65,12 @@ $tradepageSvgIconImgPath : "../../img/tradepage/svg";
       }
 
       thead th{
-        color: $tradepage-color-white;
-        background-color: $tradepage-color-light-stale-gray;
+        color: $global-clr-white;
+        background-color: $global-clr-soft-gray;
         border: none;
       }
       tbody td{
-        color: $tradepage-color-dark-blue;
+        color: $global-clr-dark-blue;
         font-weight: 500;
 
         &:first-child{
@@ -87,7 +87,7 @@ $tradepageSvgIconImgPath : "../../img/tradepage/svg";
     &.navorange{}
 
     .columntitle{
-      color: $tradepage-color-dark-blue;
+      color: $global-clr-dark-blue;
       padding-bottom: 8px;
       margin-bottom: 10px;
     }
@@ -104,20 +104,20 @@ $tradepageSvgIconImgPath : "../../img/tradepage/svg";
 
       .nav{
         &-link{
-          color: $tradepage-color-white;
-          background-color: $tradepage-color-light-stale-gray;
+          color: $global-clr-white;
+          background-color: $global-clr-soft-gray;
           padding: 8px 12px;
           @include border-radius(3px);
 
           &.active{
-            background-color: $tradepage-color-blue;
+            background-color: $global-clr-soft-blue;
           }
         }
       }
 
       &.navorange{
         .active{
-          background-color: $tradepage-color-orange;
+          background-color: $global-clr-orange;
         }
       }
     }

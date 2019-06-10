@@ -3,7 +3,7 @@
   &tabs{
 
     &light{
-      border-bottom: 5px solid $mainpage-color-blue;
+      border-bottom: 5px solid $global-clr-soft-blue;
       position: relative;
       justify-content: center!important;
 
@@ -13,7 +13,7 @@
         width: 100%;
       }
       &:after{
-        background-color: $mainpage-color-white;
+        background-color: $global-clr-white;
         height: 2px;
         bottom: 0;
       }
@@ -25,11 +25,11 @@
           font-size: 18px;
           letter-spacing: -0.02em;
           overflow: hidden;
-          color: transparentize($mainpage-color-white, 0.5);
-          background-color: $mainpage-color-light-stale-gray;
+          color: transparentize($global-clr-white, 0.5);
+          background-color: $global-clr-soft-gray;
         }
         &-link{
-          border-color: $mainpage-color-white;
+          border-color: $global-clr-white;
           border-style: solid;
           border-right-width: 2px;
           border-left-width: 0;
@@ -63,12 +63,12 @@
           &.active,
           &.show,
           &:hover{
-            color: $mainpage-color-white !important;
+            color: $global-clr-white !important;
             background-color: transparent;
-            border-color: $mainpage-color-white;
+            border-color: $global-clr-white;
             &:before{
               height: 100%;
-              background-color: $mainpage-color-blue;
+              background-color: $global-clr-soft-blue;
               z-index: 1;
             }
           }
@@ -76,7 +76,7 @@
       }
 
       &.darkblue{
-        border-bottom-color: $mainpage-color-btn-blue;
+        border-bottom-color: $global-clr-btn-blue;
 
         .nav{
           &-link{
@@ -84,7 +84,7 @@
             &.show,
             &:hover{
               &:before{
-                background-color: $mainpage-color-btn-blue !important;
+                background-color: $global-clr-btn-blue !important;
               }
             }
           }
@@ -96,7 +96,7 @@
       position: relative;
 
       &-leftright{
-        color: $mainpage-color-title-blue;
+        color: $global-clr-dark-blue;
         font-size: 17px;
         position: absolute;
         width: 100%;
@@ -132,7 +132,7 @@
     }
 
     &-content{
-      color: $mainpage-color-title-blue;
+      color: $global-clr-dark-blue;
       padding: 20px 0;
       text-align: center;
       font-size: 17px;
@@ -149,7 +149,7 @@
 
   &alttabs{
     &dark{
-      background-color: $mainpage-color-btn-blue;
+      background-color: $global-clr-btn-blue;
       position: relative;
       justify-content: center!important;
 
@@ -162,7 +162,7 @@
             position: absolute;
             width: 1px;
             height: 14px;
-            background-color: transparentize($mainpage-color-white, 0.7);
+            background-color: transparentize($global-clr-white, 0.7);
             top: calc(50% - 7px);
             left: 0;
           }
@@ -175,7 +175,7 @@
 
         }
         &-link{
-          color: transparentize($mainpage-color-white, 0.5);
+          color: transparentize($global-clr-white, 0.5);
           font-size: 17px;
           padding: 7px 20px 8px;
           position: relative;
@@ -183,7 +183,7 @@
           &.active,
           &.show,
           &:hover{
-            color: $mainpage-color-white;
+            color: $global-clr-white;
           }
           &.active,
           &.show{
@@ -192,7 +192,7 @@
               position: absolute;
               width: 12px;
               height: 12px;
-              background-color: $mainpage-color-btn-blue;
+              background-color: $global-clr-btn-blue;
               left: calc(50% - 6px);
               bottom: -6px;
               z-index: 1;
@@ -206,8 +206,8 @@
 
   &altalttabs{
     &light{
-      background-color: $mainpage-color-white;
-      border-bottom: 1px solid transparentize($mainpage-color-light-stale-gray, 0.7);
+      background-color: $global-clr-white;
+      border-bottom: 1px solid transparentize($global-clr-soft-gray, 0.7);
       padding-top: 5px;
       position: relative;
       justify-content: center!important;
@@ -217,7 +217,7 @@
           padding: 0 17px;
         }
         &-link{
-          color: transparentize($mainpage-color-title-blue, 0.5);
+          color: transparentize($global-clr-dark-blue, 0.5);
           font-size: 17px;
           padding: 7px 3px 8px;
           position: relative;
@@ -225,7 +225,7 @@
           &.active,
           &.show,
           &:hover{
-            color: $mainpage-color-title-blue;
+            color: $global-clr-dark-blue;
           }
           &.active,
           &.show{
@@ -234,7 +234,7 @@
               position: absolute;
               width: 100%;
               height: 4px;
-              background-color: $mainpage-color-blue;
+              background-color: $global-clr-soft-blue;
               left: 0;
               bottom: 0;
             }

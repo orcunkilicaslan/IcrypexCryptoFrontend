@@ -28,7 +28,7 @@ $tradepageSvgIconImgPath : "../../img/tradepage/svg";
         }
 
         &-circle{
-          color: transparentize($tradepage-color-light-stale-gray, 0.50);
+          color: transparentize($global-clr-soft-gray, 0.50);
           background-color:transparent;
           width:52px;
           height:52px;
@@ -38,7 +38,7 @@ $tradepageSvgIconImgPath : "../../img/tradepage/svg";
           text-align:center;
           margin:10px auto;
           position:relative;
-          border:2px solid transparentize($tradepage-color-light-stale-gray, 0.50);
+          border:2px solid transparentize($global-clr-soft-gray, 0.50);
           @include border-radius(52px);
           @include transition(all, 0.4s, linear);
 
@@ -50,14 +50,14 @@ $tradepageSvgIconImgPath : "../../img/tradepage/svg";
             display:none;
             left:0;
             top:0;
-            border:2px solid $tradepage-color-white;
+            border:2px solid $global-clr-white;
             @include border-radius(48px);
           }
         }
 
         &-step,
         &-title{
-          color: $tradepage-color-light-stale-gray;
+          color: $global-clr-soft-gray;
           font-size:20px;
           line-height:1;
           font-weight: normal;
@@ -76,7 +76,7 @@ $tradepageSvgIconImgPath : "../../img/tradepage/svg";
             position: absolute;
             width: 20px;
             height: 2px;
-            background-color: transparentize($tradepage-color-light-stale-gray, 0.50);
+            background-color: transparentize($global-clr-soft-gray, 0.50);
             top: 0;
             left: calc(50% - 10px);
           }
@@ -85,17 +85,17 @@ $tradepageSvgIconImgPath : "../../img/tradepage/svg";
         &.active{
 
           #{$liitem}-circle{
-            color: $tradepage-color-blue;
+            color: $global-clr-soft-blue;
             background-color:transparent;
-            border-color: $tradepage-color-blue;
+            border-color: $global-clr-soft-blue;
           }
           #{$liitem}-step,
           #{$liitem}-title{
-            color:$tradepage-color-dark-blue;
+            color:$global-clr-dark-blue;
           }
           #{$liitem}-title{
             &:before{
-              background-color:$tradepage-color-blue;
+              background-color:$global-clr-soft-blue;
             }
           }
           &:before{display:block;}
@@ -104,8 +104,8 @@ $tradepageSvgIconImgPath : "../../img/tradepage/svg";
         &.check{
 
           #{$liitem}-circle{
-            background-color:$tradepage-color-blue;
-            border-color: $tradepage-color-blue;
+            background-color:$global-clr-soft-blue;
+            border-color: $global-clr-soft-blue;
             position:relative;
             text-indent: -9999px;
             animation-name:pulse;
@@ -119,19 +119,19 @@ $tradepageSvgIconImgPath : "../../img/tradepage/svg";
               height: 12px;
               top: 14px;
               left: 10px;
-              border-bottom:2px solid $tradepage-color-white;
-              border-left:2px solid $tradepage-color-white;
+              border-bottom:2px solid $global-clr-white;
+              border-left:2px solid $global-clr-white;
               @include rotate(-50);
             }
           }
 
           #{$liitem}-step,
           #{$liitem}-title{
-            color:$tradepage-color-blue;
+            color:$global-clr-soft-blue;
           }
           #{$liitem}-title{
             &:before{
-              background-color:$tradepage-color-blue;
+              background-color:$global-clr-soft-blue;
             }
           }
           &:after{width: 124px;}
@@ -179,7 +179,7 @@ $tradepageSvgIconImgPath : "../../img/tradepage/svg";
           float: left;
           padding: 15px;
           margin: 0 15px;
-          border: 1px solid transparentize($tradepage-color-light-stale-gray, 0.70);
+          border: 1px solid transparentize($global-clr-soft-gray, 0.70);
 
           &:first-child{
             margin-left: 0;
@@ -210,7 +210,7 @@ $tradepageSvgIconImgPath : "../../img/tradepage/svg";
           }
         }
         &-boxtitle{
-          color: $tradepage-color-dark-blue;
+          color: $global-clr-dark-blue;
           font-size: 20px;
           font-weight: normal;
           position: relative;
@@ -224,8 +224,8 @@ $tradepageSvgIconImgPath : "../../img/tradepage/svg";
             position:absolute;
             bottom: -11px;
             left: calc(50% - 6px);
-            border-bottom:2px solid $tradepage-color-dark-blue;
-            border-left:2px solid $tradepage-color-dark-blue;
+            border-bottom:2px solid $global-clr-dark-blue;
+            border-left:2px solid $global-clr-dark-blue;
             @include rotate(-45);
           }
 
@@ -247,7 +247,7 @@ $tradepageSvgIconImgPath : "../../img/tradepage/svg";
       margin: 40px 0;
 
       &-title{
-        color: $tradepage-color-dark-blue;
+        color: $global-clr-dark-blue;
         margin: 0;
         margin-bottom: 30px;
         font-size: 20px;
@@ -309,7 +309,7 @@ $tradepageSvgIconImgPath : "../../img/tradepage/svg";
     &-infoarea{
       display: flex;
       flex-flow: column nowrap;
-      color: $tradepage-color-dark-blue;
+      color: $global-clr-dark-blue;
       text-align: center;
       margin-top: 15px;
 
@@ -324,25 +324,25 @@ $tradepageSvgIconImgPath : "../../img/tradepage/svg";
         }
       }
       &-title{
-        color: $tradepage-color-dark-blue;
+        color: $global-clr-dark-blue;
         margin: 0;
         margin-bottom: 10px;
         font-size: 20px;
         font-weight: normal;
       }
       &-desc{
-        color: $tradepage-color-dark-blue;
+        color: $global-clr-dark-blue;
         font-size: 17px;
         line-height: 1.18;
 
         a.link{
-          color: $tradepage-color-blue;
+          color: $global-clr-soft-blue;
           text-decoration: underline;
         }
 
       }
       &-contlist{
-        color: $tradepage-color-dark-blue;
+        color: $global-clr-dark-blue;
         font-size: 17px;
         line-height: 1.5;
         text-align: left;
@@ -359,8 +359,8 @@ $tradepageSvgIconImgPath : "../../img/tradepage/svg";
             height: 9px;
             top: 9px;
             left: 0;
-            border-top:2px solid $tradepage-color-blue;
-            border-right:2px solid $tradepage-color-blue;
+            border-top:2px solid $global-clr-soft-blue;
+            border-right:2px solid $global-clr-soft-blue;
             @include rotate(45);
           }
         }
@@ -375,7 +375,7 @@ $tradepageSvgIconImgPath : "../../img/tradepage/svg";
           font-weight: normal;
         }
         &-number{
-          color: $tradepage-color-dark-blue;
+          color: $global-clr-dark-blue;
           font-size: 17px;
           font-weight: 500;
         }
@@ -394,7 +394,7 @@ $tradepageSvgIconImgPath : "../../img/tradepage/svg";
             width: 152px;
             height: 152px;
             padding: 3px;
-            border: 1px solid transparentize($tradepage-color-light-stale-gray, 0.7);
+            border: 1px solid transparentize($global-clr-soft-gray, 0.7);
           }
         }
 
@@ -416,7 +416,7 @@ $tradepageSvgIconImgPath : "../../img/tradepage/svg";
       margin-top: 10px;
 
       &-buttons{
-        color: $tradepage-color-light-stale-gray;
+        color: $global-clr-soft-gray;
         position: relative;
         display: flex;
         font-size: 17px;
@@ -428,7 +428,7 @@ $tradepageSvgIconImgPath : "../../img/tradepage/svg";
           margin-right: 5px;
           position:relative;
           display: block;
-          border: 1px solid transparentize($tradepage-color-light-stale-gray, 0.7);
+          border: 1px solid transparentize($global-clr-soft-gray, 0.7);
           @include border-radius(100%);
 
           &:after{
@@ -438,8 +438,8 @@ $tradepageSvgIconImgPath : "../../img/tradepage/svg";
             height: 6px;
             top: calc(50% - 3px);
             left: calc(50% - 2px);
-            border-bottom:1px solid $tradepage-color-blue;
-            border-left:1px solid $tradepage-color-blue;
+            border-bottom:1px solid $global-clr-soft-blue;
+            border-left:1px solid $global-clr-soft-blue;
             @include rotate(45);
           }
         }
@@ -451,7 +451,7 @@ $tradepageSvgIconImgPath : "../../img/tradepage/svg";
       height: 90px;
       margin: 0 auto;
       margin-bottom: 20px;
-      border: 2px solid $tradepage-color-green;
+      border: 2px solid $global-clr-green;
       position: relative;
       @include border-radius(50%);
       animation-name:pulse;
@@ -474,8 +474,8 @@ $tradepageSvgIconImgPath : "../../img/tradepage/svg";
           height: 18px;
           top: 10px;
           left: 6px;
-          border-bottom:2px solid $tradepage-color-green;
-          border-left:2px solid $tradepage-color-green;
+          border-bottom:2px solid $global-clr-green;
+          border-left:2px solid $global-clr-green;
           @include rotate(-50);
         }
 

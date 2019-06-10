@@ -13,8 +13,8 @@
       width: 570px;
 
       &-box{
-        color: $mainpage-color-title-blue;
-        border: 1px solid transparentize($mainpage-color-light-stale-gray, 0.7);
+        color: $global-clr-dark-blue;
+        border: 1px solid transparentize($global-clr-soft-gray, 0.7);
         position: relative;
         font-size: 17px;
         padding: 10px 15px 15px;
@@ -25,19 +25,19 @@
         }
 
         &-title{
-          color: $mainpage-color-title-blue;
+          color: $global-clr-dark-blue;
           font-size: 20px;
           font-weight: 500;
           margin: 0;
           padding: 0;
 
           &-box{
-            border-bottom: 1px solid transparentize($mainpage-color-light-stale-gray, 0.7);
+            border-bottom: 1px solid transparentize($global-clr-soft-gray, 0.7);
             padding-bottom: 5px;
           }
 
           &-converter{
-            color: $mainpage-color-title-blue;
+            color: $global-clr-dark-blue;
             font-size: 20px;
             font-weight: 500;
           }
@@ -63,7 +63,7 @@
               position: absolute;
               width: 3px;
               height: calc(100% + 2px);
-              background-color: $mainpage-color-white;
+              background-color: $global-clr-white;
               left: 1px;
               top: -1px;
             }
@@ -79,8 +79,8 @@
             position: absolute;
             width: 14px;
             height: 14px;
-            border-bottom: 3px solid $mainpage-color-blue;
-            border-left: 3px solid $mainpage-color-blue;
+            border-bottom: 3px solid $global-clr-soft-blue;
+            border-left: 3px solid $global-clr-soft-blue;
             top: 0;
             left: calc(50% - 8px);
             @include rotate(-45);
@@ -91,8 +91,8 @@
           padding-top: 8px;
 
           &-tr{
-            border-top: 1px solid transparentize($mainpage-color-light-stale-gray, 0.7);
-            border-bottom: 1px solid transparentize($mainpage-color-light-stale-gray, 0.7);
+            border-top: 1px solid transparentize($global-clr-soft-gray, 0.7);
+            border-bottom: 1px solid transparentize($global-clr-soft-gray, 0.7);
             margin-top: 10px;
             padding: 2px 0;
 
@@ -120,7 +120,7 @@
               }
 
               &[class*="sitebg"]{
-                color: $mainpage-color-white;
+                color: $global-clr-white;
               }
 
               span, strong, small{
@@ -151,7 +151,7 @@
                 position: absolute;
                 width: 1px;
                 height: 32px;
-                background-color: transparentize($mainpage-color-light-stale-gray, 0.7);
+                background-color: transparentize($global-clr-soft-gray, 0.7);
                 left: -5px;
                 top: calc(50% - 14px);
               }

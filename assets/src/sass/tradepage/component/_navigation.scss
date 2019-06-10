@@ -3,7 +3,7 @@
     background-color: transparent;
   }
   &-menu{
-    color: $tradepage-color-white;
+    color: $global-clr-white;
     font-size: 17px;
 
     &-list{
@@ -20,7 +20,7 @@
           height: 10px;
           top: calc(50% - 5px);
           right: 0;
-          background: transparentize($tradepage-color-light-stale-gray, 0.7);
+          background: transparentize($global-clr-soft-gray, 0.7);
           @include border-radius(50%)
         }
         &:first-child{
@@ -32,7 +32,7 @@
         }
       }
       > li > a{
-        color: $tradepage-color-white;
+        color: $global-clr-white;
         padding: 5px 20px
       }
       li:hover,

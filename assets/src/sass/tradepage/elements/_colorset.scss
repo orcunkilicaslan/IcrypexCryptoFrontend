@@ -3,24 +3,24 @@
   &bg{
 
     &white{
-      background-color: $tradepage-color-white !important;
+      background-color: $global-clr-white !important;
     }
     &orange{
-      background-color: $tradepage-color-orange !important;
+      background-color: $global-clr-orange !important;
     }
     &blue{
-      background-color: $tradepage-color-blue !important;
+      background-color: $global-clr-soft-blue !important;
     }
     &red{
-      background-color: $tradepage-color-red !important;
+      background-color: $global-clr-red !important;
     }
     &green{
-      background-color: $tradepage-color-green !important;
+      background-color: $global-clr-green !important;
     }
     &gray{
-      background-color: $tradepage-color-light-stale-gray !important;
+      background-color: $global-clr-soft-gray !important;
       &light{
-        background-color: $tradepage-color-light-bg-gray !important;
+        background-color: $global-clr-light-gray !important;
       }
     }
   }
@@ -28,24 +28,24 @@
   &color{
 
     &white{
-      color: $tradepage-color-white !important;
+      color: $global-clr-white !important;
     }
     &orange{
-      color: $tradepage-color-orange !important;
+      color: $global-clr-orange !important;
     }
     &blue{
-      color: $tradepage-color-blue !important;
+      color: $global-clr-soft-blue !important;
     }
     &red{
-      color: $tradepage-color-red !important;
+      color: $global-clr-red !important;
     }
     &green{
-      color: $tradepage-color-green !important;
+      color: $global-clr-green !important;
     }
     &gray{
-      color: $tradepage-color-light-stale-gray !important;
+      color: $global-clr-soft-gray !important;
       &light{
-        color: $tradepage-color-light-bg-gray !important;
+        color: $global-clr-light-gray !important;
       }
     }
   }
