@@ -1,0 +1,275 @@
+// Global Variables
+@import "../../global/option/variables";
+
+// Global Mixib
+@import "../../global/option/mixin";
+
+$globalSvgIconImgPath : "../../img/global/svg";
+
+.icon{
+  &-svg{
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    overflow: hidden;
+    display: block;
+
+    &-icrypexsymbol{
+      background-image: url(#{$globalSvgIconImgPath}/Icrypex_Symbol.svg);
+    }
+    &-search{
+      background-image: url(#{$globalSvgIconImgPath}/Search_Icon.svg);
+    }
+    &-conn{
+      background-image: url(#{$globalSvgIconImgPath}/Icon_Conn.svg);
+    }
+    &-why-2fa{
+      background-image: url(#{$globalSvgIconImgPath}/2FA_Icon.svg);
+    }
+    &-why-speed{
+      background-image: url(#{$globalSvgIconImgPath}/Speed_Icon.svg);
+    }
+    &-why-api{
+      background-image: url(#{$globalSvgIconImgPath}/API_Icon.svg);
+    }
+    &-why-segwit{
+      background-image: url(#{$globalSvgIconImgPath}/Segwit_Icon.svg);
+    }
+    &-why-freeze{
+      background-image: url(#{$globalSvgIconImgPath}/Freeze_Icon.svg);
+    }
+    &-why-deep{
+      background-image: url(#{$globalSvgIconImgPath}/Deep_Icon.svg);
+    }
+    &-productslistbtc{
+      background-image: url(#{$globalSvgIconImgPath}/Icon_Btc.svg);
+    }
+    &-productslistbch{
+      background-image: url(#{$globalSvgIconImgPath}/Icon_Bch.svg);
+    }
+    &-productslisteth{
+      background-image: url(#{$globalSvgIconImgPath}/Icon_Eth.svg);
+    }
+    &-productslistxrp{
+      background-image: url(#{$globalSvgIconImgPath}/Icon_Xrp.svg);
+    }
+    &-productslistltc{
+      background-image: url(#{$globalSvgIconImgPath}/Icon_Ltc.svg);
+    }
+    &-productslistmpay{
+      background-image: url(#{$globalSvgIconImgPath}/Icon_Mpay.svg);
+    }
+    &-productslistxlm{
+      background-image: url(#{$globalSvgIconImgPath}/Icon_Xlm.svg);
+    }
+    &-productslisttrx{
+      background-image: url(#{$globalSvgIconImgPath}/Icon_Tron.svg);
+    }
+    &-productsfullwidth{
+      background-image: url(#{$globalSvgIconImgPath}/Full_Width_Icon.svg);
+    }
+    &-productscoininfolinkblog{
+      background-image: url(#{$globalSvgIconImgPath}/Coin_Info_Link_Blog.svg);
+    }
+    &-productscoininfolinkfacebook{
+      background-image: url(#{$globalSvgIconImgPath}/Coin_Info_Link_Facebook.svg);
+    }
+    &-productscoininfolinklinkedin{
+      background-image: url(#{$globalSvgIconImgPath}/Coin_Info_Link_Linkedin.svg);
+    }
+    &-productscoininfolinkpresentation{
+      background-image: url(#{$globalSvgIconImgPath}/Coin_Info_Link_Presentation.svg);
+    }
+    &-productscoininfolinktelegram{
+      background-image: url(#{$globalSvgIconImgPath}/Coin_Info_Link_Telegram.svg);
+    }
+    &-productscoininfolinktwitter{
+      background-image: url(#{$globalSvgIconImgPath}/Coin_Info_Link_Twitter.svg);
+    }
+    &-productscoininfolinkwebsite{
+      background-image: url(#{$globalSvgIconImgPath}/Coin_Info_Link_Website.svg);
+    }
+    &-productscoininfolinkwhitepaper{
+      background-image: url(#{$globalSvgIconImgPath}/Coin_Info_Link_Whitepaper.svg);
+    }
+    &-technologytransactionsdetail{
+      background-image: url(#{$globalSvgIconImgPath}/Transactions_Icon_Detail.svg);
+    }
+    &-technologyapproximatelyblue{
+      background-image: url(#{$globalSvgIconImgPath}/Icon_Approximately_Blue.svg);
+    }
+    &-technologyapproximatelydarkblue{
+      background-image: url(#{$globalSvgIconImgPath}/Icon_Approximately_Dark_Blue.svg);
+    }
+
+
+
+
+
+    &-loginlock{
+      background-image: url(#{$globalSvgIconImgPath}/Icon_Login.svg);
+    }
+    &-loginf2a{
+      background-image: url(#{$globalSvgIconImgPath}/Icon_2FA.svg);
+    }
+    &-headersearch{
+      background-image: url(#{$globalSvgIconImgPath}/Icon_Search.svg);
+    }
+    &-headerchat{
+      background-image: url(#{$globalSvgIconImgPath}/Icon_Chat.svg);
+    }
+    &-headertheme{
+      background-image: url(#{$globalSvgIconImgPath}/Icon_Theme.svg);
+    }
+    &-headerbell{
+      background-image: url(#{$globalSvgIconImgPath}/Icon_Bell.svg);
+    }
+    &-headerbell{
+      background-image: url(#{$globalSvgIconImgPath}/Icon_Bell.svg);
+    }
+    &-paginationarrow{
+      background-image: url(#{$globalSvgIconImgPath}/Icon_Arrow.svg);
+    }
+    &-arrowdown{
+      background-image: url(#{$globalSvgIconImgPath}/Arrow_Down.svg);
+    }
+    &-arrowup{
+      background-image: url(#{$globalSvgIconImgPath}/Arrow_Up.svg);
+    }
+    &-orderwallet{
+      background-image: url(#{$globalSvgIconImgPath}/Icon_Wallet.svg);
+    }
+    &-orderinformation{
+      background-image: url(#{$globalSvgIconImgPath}/Icon_Information.svg);
+    }
+    &-headtitleiconwallet{
+      background-image: url(#{$globalSvgIconImgPath}/Icon_Wallet_02.svg);
+    }
+    &-titleiconbtc{
+      background-image: url(#{$globalSvgIconImgPath}/Icon_Title_Btc.svg);
+    }
+    &-titleiconeth{
+      background-image: url(#{$globalSvgIconImgPath}/Icon_Title_Eth.svg);
+    }
+    &-titleiconxrp{
+      background-image: url(#{$globalSvgIconImgPath}/Icon_Title_Xrp.svg);
+    }
+    &-titleiconltc{
+      background-image: url(#{$globalSvgIconImgPath}/Icon_Title_Ltc.svg);
+    }
+    &-titleiconmpay{
+      background-image: url(#{$globalSvgIconImgPath}/Icon_Title_Mpay.svg);
+    }
+    &-titleiconxlm{
+      background-image: url(#{$globalSvgIconImgPath}/Icon_Title_Xlm.svg);
+    }
+    &-titleicontrx{
+      background-image: url(#{$globalSvgIconImgPath}/Icon_Title_Tron.svg);
+    }
+    &-wizardiconbank{
+      background-image: url(#{$globalSvgIconImgPath}/Wizard_Icon_Bank.svg);
+    }
+    &-wizardiconpapara{
+      background-image: url(#{$globalSvgIconImgPath}/Wizard_Papara_Logo.svg);
+    }
+    &-wizardicondigitalwallet{
+      background-image: url(#{$globalSvgIconImgPath}/Wizard_Icon_Digital_Wallet.svg);
+    }
+    &-wizardiconinformation{
+      background-image: url(#{$globalSvgIconImgPath}/Wizard_Information_Icon.svg);
+    }
+    &-wizardiconallbank{
+      background-image: url(#{$globalSvgIconImgPath}/Wizard_Icon_All_Bank.svg);
+    }
+    &-profileinformationred{
+      background-image: url(#{$globalSvgIconImgPath}/Icon_Information_Red.svg);
+    }
+    &-profileinformationyellow{
+      background-image: url(#{$globalSvgIconImgPath}/Icon_Information_Yellow.svg);
+    }
+    &-profilehelp{
+      background-image: url(#{$globalSvgIconImgPath}/Icon_Help.svg);
+      &[data-toggle^="tooltip"]:hover{
+        background-image: url(#{$globalSvgIconImgPath}/Icon_Help_Active.svg);
+      }
+    }
+    &-profilesendagain{
+      background-image: url(#{$globalSvgIconImgPath}/Icon_Sent_Again.svg);
+    }
+    &-profilefileuploaddragdrop{
+      background-image: url(#{$globalSvgIconImgPath}/File_Upload_Drag_Drop_Icon.svg);
+    }
+    &-profiledownloadblue{
+      background-image: url(#{$globalSvgIconImgPath}/Icon_Download_Blue.svg);
+    }
+    &-profiledownloadred{
+      background-image: url(#{$globalSvgIconImgPath}/Icon_Download_Red.svg);
+    }
+    &-profiledownloadgreen{
+      background-image: url(#{$globalSvgIconImgPath}/Icon_Download_Green.svg);
+    }
+    &-profileprint{
+      background-image: url(#{$globalSvgIconImgPath}/Icon_Print.svg);
+    }
+
+  }
+}
+
+.site{
+  &icons{
+
+    &dropdown{
+      background-color: transparent;
+      padding: 0;
+      width: 24px;
+      height: 24px;
+      border:1px solid transparentize($global-clr-soft-gray, 0.7);
+      position: relative;
+
+      &:after{
+        display: none;
+      }
+
+      &:before{
+        content: "";
+        position:absolute;
+        width: 9px;
+        height: 9px;
+        padding: 0;
+        border-top: 2px solid $global-clr-soft-gray;
+        border-right: 2px solid $global-clr-soft-gray;
+      }
+
+      &.updirection{
+        &:before{
+          top: calc(50% - 2px);
+          left: calc(50% - 4px);
+          @include rotate(315);
+        }
+      }
+      &.downdirection{
+        &:before{
+          top: calc(50% - 6px);
+          left: calc(50% - 4px);
+          @include rotate(135);
+        }
+      }
+      &.leftdirection{
+        &:before{
+          top: calc(50% - 4px);
+          left: calc(50% - 2px);
+          @include rotate(225);
+        }
+      }
+      &.rightdirection{
+        &:before{
+          top: calc(50% - 4px);
+          left: calc(50% - 5px);
+          @include rotate(45);
+        }
+      }
+
+    }
+
+  }
+}
