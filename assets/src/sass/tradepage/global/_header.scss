@@ -1,5 +1,5 @@
 $tradepageHeaderImgPath : "../../img/tradepage";
-$tradepageSvgIconImgPath : "../../img/tradepage/svg";
+$globalSvgIconImgPath : "../../img/global/svg";
 
 .header{
   color: $global-clr-white;
@@ -177,7 +177,7 @@ $tradepageSvgIconImgPath : "../../img/tradepage/svg";
         position: relative;
 
         &:after{
-          background-image: url(#{$tradepageSvgIconImgPath}/Arrow_Down_Dropdown.svg);
+          background-image: url(#{$globalSvgIconImgPath}/Arrow_Down_Dropdown.svg);
           background-repeat: no-repeat;
           background-position: center center;
           background-size: contain;
@@ -386,7 +386,7 @@ $tradepageSvgIconImgPath : "../../img/tradepage/svg";
                 height: 12px;
                 left: calc(50% - 6px);
                 top: calc(50% - 6px);
-                background-image: url(#{$tradepageSvgIconImgPath}/Arrow_Down_Dropdown.svg);
+                background-image: url(#{$globalSvgIconImgPath}/Arrow_Down_Dropdown.svg);
                 background-repeat: no-repeat;
                 background-position: center center;
                 background-size: contain;

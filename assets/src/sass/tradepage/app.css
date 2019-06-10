@@ -700,85 +700,6 @@ img, svg {
     position: relative;
     z-index: 1; }
 
-.icon-svg {
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: contain;
-  overflow: hidden;
-  display: block; }
-  .icon-svg-icrypexsymbol {
-    background-image: url(../../img/tradepage/svg/Icrypex_Symbol.svg); }
-  .icon-svg-loginlock {
-    background-image: url(../../img/tradepage/svg/Icon_Login.svg); }
-  .icon-svg-loginf2a {
-    background-image: url(../../img/tradepage/svg/Icon_2FA.svg); }
-  .icon-svg-headersearch {
-    background-image: url(../../img/tradepage/svg/Icon_Search.svg); }
-  .icon-svg-headerchat {
-    background-image: url(../../img/tradepage/svg/Icon_Chat.svg); }
-  .icon-svg-headertheme {
-    background-image: url(../../img/tradepage/svg/Icon_Theme.svg); }
-  .icon-svg-headerbell {
-    background-image: url(../../img/tradepage/svg/Icon_Bell.svg); }
-  .icon-svg-headerbell {
-    background-image: url(../../img/tradepage/svg/Icon_Bell.svg); }
-  .icon-svg-paginationarrow {
-    background-image: url(../../img/tradepage/svg/Icon_Arrow.svg); }
-  .icon-svg-arrowdown {
-    background-image: url(../../img/tradepage/svg/Arrow_Down.svg); }
-  .icon-svg-arrowup {
-    background-image: url(../../img/tradepage/svg/Arrow_Up.svg); }
-  .icon-svg-orderwallet {
-    background-image: url(../../img/tradepage/svg/Icon_Wallet.svg); }
-  .icon-svg-orderinformation {
-    background-image: url(../../img/tradepage/svg/Icon_Information.svg); }
-  .icon-svg-headtitleiconwallet {
-    background-image: url(../../img/tradepage/svg/Icon_Wallet_02.svg); }
-  .icon-svg-titleiconbtc {
-    background-image: url(../../img/tradepage/svg/Icon_Title_Btc.svg); }
-  .icon-svg-titleiconeth {
-    background-image: url(../../img/tradepage/svg/Icon_Title_Eth.svg); }
-  .icon-svg-titleiconxrp {
-    background-image: url(../../img/tradepage/svg/Icon_Title_Xrp.svg); }
-  .icon-svg-titleiconltc {
-    background-image: url(../../img/tradepage/svg/Icon_Title_Ltc.svg); }
-  .icon-svg-titleiconmpay {
-    background-image: url(../../img/tradepage/svg/Icon_Title_Mpay.svg); }
-  .icon-svg-titleiconxlm {
-    background-image: url(../../img/tradepage/svg/Icon_Title_Xlm.svg); }
-  .icon-svg-titleicontrx {
-    background-image: url(../../img/tradepage/svg/Icon_Title_Tron.svg); }
-  .icon-svg-wizardiconbank {
-    background-image: url(../../img/tradepage/svg/Wizard_Icon_Bank.svg); }
-  .icon-svg-wizardiconpapara {
-    background-image: url(../../img/tradepage/svg/Wizard_Papara_Logo.svg); }
-  .icon-svg-wizardicondigitalwallet {
-    background-image: url(../../img/tradepage/svg/Wizard_Icon_Digital_Wallet.svg); }
-  .icon-svg-wizardiconinformation {
-    background-image: url(../../img/tradepage/svg/Wizard_Information_Icon.svg); }
-  .icon-svg-wizardiconallbank {
-    background-image: url(../../img/tradepage/svg/Wizard_Icon_All_Bank.svg); }
-  .icon-svg-profileinformationred {
-    background-image: url(../../img/tradepage/svg/Icon_Information_Red.svg); }
-  .icon-svg-profileinformationyellow {
-    background-image: url(../../img/tradepage/svg/Icon_Information_Yellow.svg); }
-  .icon-svg-profilehelp {
-    background-image: url(../../img/tradepage/svg/Icon_Help.svg); }
-    .icon-svg-profilehelp[data-toggle^="tooltip"]:hover {
-      background-image: url(../../img/tradepage/svg/Icon_Help_Active.svg); }
-  .icon-svg-profilesendagain {
-    background-image: url(../../img/tradepage/svg/Icon_Sent_Again.svg); }
-  .icon-svg-profilefileuploaddragdrop {
-    background-image: url(../../img/tradepage/svg/File_Upload_Drag_Drop_Icon.svg); }
-  .icon-svg-profiledownloadblue {
-    background-image: url(../../img/tradepage/svg/Icon_Download_Blue.svg); }
-  .icon-svg-profiledownloadred {
-    background-image: url(../../img/tradepage/svg/Icon_Download_Red.svg); }
-  .icon-svg-profiledownloadgreen {
-    background-image: url(../../img/tradepage/svg/Icon_Download_Green.svg); }
-  .icon-svg-profileprint {
-    background-image: url(../../img/tradepage/svg/Icon_Print.svg); }
-
 /* Title Border Bottom */
 .columntitle {
   width: 100%;
@@ -1175,9 +1096,9 @@ img, svg {
     margin: 1px 0;
     padding: 3px 0; }
   .tableicon-arrowup {
-    background-image: url(../../img/tradepage/svg/Arrow_Up.svg); }
+    background-image: url(../../img/global/svg/Arrow_Up.svg); }
   .tableicon-arrowdown {
-    background-image: url(../../img/tradepage/svg/Arrow_Down.svg); }
+    background-image: url(../../img/global/svg/Arrow_Down.svg); }
 
 .onepage {
   display: flex;
@@ -1563,7 +1484,7 @@ img, svg {
         content: "";
         width: 124px;
         height: 4px;
-        background-image: url(../../img/tradepage/svg/Step_Wizard_Point_Line_Gray.svg);
+        background-image: url(../../img/global/svg/Step_Wizard_Point_Line_Gray.svg);
         background-position: left center;
         background-repeat: no-repeat;
         position: absolute;
@@ -1582,7 +1503,7 @@ img, svg {
         -webkit-transition: all 0.5s ease-in-out;
         -khtml-transition: all 0.5s ease-in-out; }
       .stepwizard-tablist-list-item:after {
-        background-image: url(../../img/tradepage/svg/Step_Wizard_Point_Line_Blue.svg);
+        background-image: url(../../img/global/svg/Step_Wizard_Point_Line_Blue.svg);
         width: 0; }
 .stepwizard-tabcont-boxarea {
   display: flex;
@@ -2063,7 +1984,7 @@ img, svg {
         border: 1px solid rgba(117, 140, 163, 0.3);
         position: relative; }
         .header-top-user-dropdown:after {
-          background-image: url(../../img/tradepage/svg/Arrow_Down_Dropdown.svg);
+          background-image: url(../../img/global/svg/Arrow_Down_Dropdown.svg);
           background-repeat: no-repeat;
           background-position: center center;
           background-size: contain;
@@ -2213,7 +2134,7 @@ img, svg {
               height: 12px;
               left: calc(50% - 6px);
               top: calc(50% - 6px);
-              background-image: url(../../img/tradepage/svg/Arrow_Down_Dropdown.svg);
+              background-image: url(../../img/global/svg/Arrow_Down_Dropdown.svg);
               background-repeat: no-repeat;
               background-position: center center;
               background-size: contain; }
@@ -2747,7 +2668,7 @@ img, svg {
       .profile-box-info-list-item:before {
         content: "";
         position: absolute;
-        background-image: url(../../img/tradepage/svg/Icon_Information.svg);
+        background-image: url(../../img/global/svg/Icon_Information.svg);
         background-repeat: no-repeat;
         background-position: center center;
         background-size: contain;
@@ -2756,9 +2677,9 @@ img, svg {
         left: 0;
         top: 2px; }
       .profile-box-info-list-item.infoyellow:before {
-        background-image: url(../../img/tradepage/svg/Icon_Information_Yellow.svg); }
+        background-image: url(../../img/global/svg/Icon_Information_Yellow.svg); }
       .profile-box-info-list-item.infored:before {
-        background-image: url(../../img/tradepage/svg/Icon_Information_Red.svg); }
+        background-image: url(../../img/global/svg/Icon_Information_Red.svg); }
   .profile-box-btn {
     top: 20px; }
     .profile-box-btn:before {

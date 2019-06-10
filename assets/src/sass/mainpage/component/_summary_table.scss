@@ -1,5 +1,5 @@
 $mainpageSummaryTableImgPath : "../../img/mainpage";
-$mainpageSvgIconImgPath : "../../img/mainpage/svg";
+$globalSvgIconImgPath : "../../img/global/svg";
 
 .summarytable{
   width: 100%;
@@ -97,7 +97,7 @@ $mainpageSvgIconImgPath : "../../img/mainpage/svg";
         }
         &-button{
           background-color: transparent;
-          background-image: url(#{$mainpageSvgIconImgPath}/Search_Icon.svg);
+          background-image: url(#{$globalSvgIconImgPath}/Search_Icon.svg);
           background-repeat: no-repeat;
           background-position: center center;
           background-size: contain;

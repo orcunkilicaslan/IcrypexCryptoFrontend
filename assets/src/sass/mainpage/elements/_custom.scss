@@ -1,4 +1,4 @@
-$mainpageSvgIconImgPath : "../../img/mainpage/svg";
+$globalSvgIconImgPath : "../../img/global/svg";
 
 .onepage{
   display: flex;
@@ -31,7 +31,7 @@ $mainpageSvgIconImgPath : "../../img/mainpage/svg";
       &:before{
         content: "";
         position: absolute;
-        background-image: url(#{$mainpageSvgIconImgPath}/Arrow_Li.svg);
+        background-image: url(#{$globalSvgIconImgPath}/Arrow_Li.svg);
         background-repeat: no-repeat;
         background-position: center center;
         background-size: contain;

@@ -351,125 +351,6 @@ img, svg {
     position: relative;
     z-index: 1; }
 
-.icon-svg {
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: contain;
-  overflow: hidden;
-  display: block; }
-  .icon-svg-icrypexsymbol {
-    background-image: url(../../img/mainpage/svg/Icrypex_Symbol.svg); }
-  .icon-svg-search {
-    background-image: url(../../img/mainpage/svg/Search_Icon.svg); }
-  .icon-svg-conn {
-    background-image: url(../../img/mainpage/svg/Icon_Conn.svg); }
-  .icon-svg-why-2fa {
-    background-image: url(../../img/mainpage/svg/2FA_Icon.svg); }
-  .icon-svg-why-speed {
-    background-image: url(../../img/mainpage/svg/Speed_Icon.svg); }
-  .icon-svg-why-api {
-    background-image: url(../../img/mainpage/svg/API_Icon.svg); }
-  .icon-svg-why-segwit {
-    background-image: url(../../img/mainpage/svg/Segwit_Icon.svg); }
-  .icon-svg-why-freeze {
-    background-image: url(../../img/mainpage/svg/Freeze_Icon.svg); }
-  .icon-svg-why-deep {
-    background-image: url(../../img/mainpage/svg/Deep_Icon.svg); }
-  .icon-svg-productslistbtc {
-    background-image: url(../../img/mainpage/svg/Icon_Btc.svg); }
-  .icon-svg-productslistbch {
-    background-image: url(../../img/mainpage/svg/Icon_Bch.svg); }
-  .icon-svg-productslisteth {
-    background-image: url(../../img/mainpage/svg/Icon_Eth.svg); }
-  .icon-svg-productslistxrp {
-    background-image: url(../../img/mainpage/svg/Icon_Xrp.svg); }
-  .icon-svg-productslistltc {
-    background-image: url(../../img/mainpage/svg/Icon_Ltc.svg); }
-  .icon-svg-productslistmpay {
-    background-image: url(../../img/mainpage/svg/Icon_Mpay.svg); }
-  .icon-svg-productslistxlm {
-    background-image: url(../../img/mainpage/svg/Icon_Xlm.svg); }
-  .icon-svg-productslisttrx {
-    background-image: url(../../img/mainpage/svg/Icon_Tron.svg); }
-  .icon-svg-productsfullwidth {
-    background-image: url(../../img/mainpage/svg/Full_Width_Icon.svg); }
-  .icon-svg-productscoininfolinkblog {
-    background-image: url(../../img/mainpage/svg/Coin_Info_Link_Blog.svg); }
-  .icon-svg-productscoininfolinkfacebook {
-    background-image: url(../../img/mainpage/svg/Coin_Info_Link_Facebook.svg); }
-  .icon-svg-productscoininfolinklinkedin {
-    background-image: url(../../img/mainpage/svg/Coin_Info_Link_Linkedin.svg); }
-  .icon-svg-productscoininfolinkpresentation {
-    background-image: url(../../img/mainpage/svg/Coin_Info_Link_Presentation.svg); }
-  .icon-svg-productscoininfolinktelegram {
-    background-image: url(../../img/mainpage/svg/Coin_Info_Link_Telegram.svg); }
-  .icon-svg-productscoininfolinktwitter {
-    background-image: url(../../img/mainpage/svg/Coin_Info_Link_Twitter.svg); }
-  .icon-svg-productscoininfolinkwebsite {
-    background-image: url(../../img/mainpage/svg/Coin_Info_Link_Website.svg); }
-  .icon-svg-productscoininfolinkwhitepaper {
-    background-image: url(../../img/mainpage/svg/Coin_Info_Link_Whitepaper.svg); }
-  .icon-svg-technologytransactionsdetail {
-    background-image: url(../../img/mainpage/svg/Transactions_Icon_Detail.svg); }
-  .icon-svg-technologyapproximatelyblue {
-    background-image: url(../../img/mainpage/svg/Icon_Approximately_Blue.svg); }
-  .icon-svg-technologyapproximatelydarkblue {
-    background-image: url(../../img/mainpage/svg/Icon_Approximately_Dark_Blue.svg); }
-
-.siteiconsdropdown {
-  background-color: transparent;
-  padding: 0;
-  width: 24px;
-  height: 24px;
-  border: 1px solid rgba(117, 140, 163, 0.3);
-  position: relative; }
-  .siteiconsdropdown:after {
-    display: none; }
-  .siteiconsdropdown:before {
-    content: "";
-    position: absolute;
-    width: 9px;
-    height: 9px;
-    padding: 0;
-    border-top: 2px solid #758ca3;
-    border-right: 2px solid #758ca3; }
-  .siteiconsdropdown.updirection:before {
-    top: calc(50% - 2px);
-    left: calc(50% - 4px);
-    transform: rotate(315deg);
-    -o-transform: rotate(315deg);
-    -ms-transform: rotate(315deg);
-    -moz-transform: rotate(315deg);
-    -webkit-transform: rotate(315deg);
-    -khtml-transform: rotate(315deg); }
-  .siteiconsdropdown.downdirection:before {
-    top: calc(50% - 6px);
-    left: calc(50% - 4px);
-    transform: rotate(135deg);
-    -o-transform: rotate(135deg);
-    -ms-transform: rotate(135deg);
-    -moz-transform: rotate(135deg);
-    -webkit-transform: rotate(135deg);
-    -khtml-transform: rotate(135deg); }
-  .siteiconsdropdown.leftdirection:before {
-    top: calc(50% - 4px);
-    left: calc(50% - 2px);
-    transform: rotate(225deg);
-    -o-transform: rotate(225deg);
-    -ms-transform: rotate(225deg);
-    -moz-transform: rotate(225deg);
-    -webkit-transform: rotate(225deg);
-    -khtml-transform: rotate(225deg); }
-  .siteiconsdropdown.rightdirection:before {
-    top: calc(50% - 4px);
-    left: calc(50% - 5px);
-    transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-    -khtml-transform: rotate(45deg); }
-
 .columntitle {
   width: 100%;
   font-weight: 300;
@@ -826,7 +707,7 @@ img, svg {
   .content-list-item:before {
     content: "";
     position: absolute;
-    background-image: url(../../img/mainpage/svg/Arrow_Li.svg);
+    background-image: url(../../img/global/svg/Arrow_Li.svg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
@@ -964,7 +845,7 @@ img, svg {
         padding-right: 20px; }
       .summarytable-tabnav .nav-search-button {
         background-color: transparent;
-        background-image: url(../../img/mainpage/svg/Search_Icon.svg);
+        background-image: url(../../img/global/svg/Search_Icon.svg);
         background-repeat: no-repeat;
         background-position: center center;
         background-size: contain;
@@ -1381,7 +1262,7 @@ img, svg {
         border-bottom: 1px solid rgba(117, 140, 163, 0.3); }
       .header-bottom-search-button {
         background-color: transparent;
-        background-image: url(../../img/mainpage/svg/Search_Icon.svg);
+        background-image: url(../../img/global/svg/Search_Icon.svg);
         background-repeat: no-repeat;
         background-position: center center;
         background-size: contain;
@@ -2466,7 +2347,7 @@ img, svg {
       .technology-section-info-list-item:before {
         content: "";
         position: absolute;
-        background-image: url(../../img/mainpage/svg/Icon_Information.svg);
+        background-image: url(../../img/global/svg/Icon_Information.svg);
         background-repeat: no-repeat;
         background-position: center center;
         background-size: contain;
@@ -2475,9 +2356,9 @@ img, svg {
         left: 0;
         top: 2px; }
       .technology-section-info-list-item.infoyellow:before {
-        background-image: url(../../img/mainpage/svg/Icon_Information_Yellow.svg); }
+        background-image: url(../../img/global/svg/Icon_Information_Yellow.svg); }
       .technology-section-info-list-item.infored:before {
-        background-image: url(../../img/mainpage/svg/Icon_Information_Red.svg); }
+        background-image: url(../../img/global/svg/Icon_Information_Red.svg); }
   .technology-section-navigation {
     margin-top: 10px;
     width: 100%; }
@@ -2692,7 +2573,7 @@ img, svg {
           position: absolute;
           width: 17px;
           height: 17px;
-          background-image: url(../../img/mainpage/svg/Search_Icon.svg);
+          background-image: url(../../img/global/svg/Search_Icon.svg);
           left: calc(50% - 9px);
           top: calc(50% - 9px); }
   .technology-tabcontent-pagination {
@@ -3122,7 +3003,7 @@ img, svg {
     position: absolute;
     width: 16px;
     height: 12px;
-    background-image: url(../../img/mainpage/svg/Icon_Approximately_Blue.svg);
+    background-image: url(../../img/global/svg/Icon_Approximately_Blue.svg);
     top: calc(50% - 10px);
     left: calc(50% - 8px); }
   .technology-converter-top.d-flex > *[class*="col"] {
@@ -3217,7 +3098,7 @@ img, svg {
           position: absolute;
           width: 12px;
           height: 9px;
-          background-image: url(../../img/mainpage/svg/Icon_Approximately_Dark_Blue.svg);
+          background-image: url(../../img/global/svg/Icon_Approximately_Dark_Blue.svg);
           top: calc(50% - 4px);
           left: 0; }
 
@@ -3623,7 +3504,7 @@ img, svg {
         position: absolute;
         width: 17px;
         height: 17px;
-        background-image: url(../../img/mainpage/svg/Search_Icon.svg);
+        background-image: url(../../img/global/svg/Search_Icon.svg);
         left: calc(50% - 9px);
         top: calc(50% - 9px); }
 .whathow-wrapper-column-box {
