@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2, .cls-4 {
+        fill: #758ca3;
+      }
+
+      .cls-3, .cls-4 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="Icon_Chat" transform="translate(-2607 -19)">
+    <g id="Path" class="cls-1" transform="translate(2607 19)">
+      <path class="cls-3" d="M14,14H1a1.166,1.166,0,0,1-1-1V1A1.285,1.285,0,0,1,1,0H17a1.285,1.285,0,0,1,1,1V18Z"/>
+      <path class="cls-4" d="M 16.5 14.37868022918701 L 16.5 1.5 L 1.5 1.5 L 1.5 12.5 L 14 12.5 L 14.62131977081299 12.5 L 15.06066036224365 12.93933963775635 L 16.5 14.37868022918701 M 18 18 L 14 14 L 1 14 C 0.5 14 0 13.39999961853027 0 13 L 0 1 C 0 0.6000000238418579 0.6000000238418579 0 1 0 L 17 0 C 17.39999961853027 0 18 0.6000000238418579 18 1 L 18 18 Z"/>
+    </g>
+    <path id="Path-2" data-name="Path" class="cls-2" d="M11.5,10A1.5,1.5,0,1,0,10,8.5,1.5,1.5,0,0,0,11.5,10Z" transform="translate(2604.578 17.305)"/>
+    <path id="Path-3" data-name="Path" class="cls-2" d="M6.5,10A1.5,1.5,0,1,0,5,8.5,1.5,1.5,0,0,0,6.5,10Z" transform="translate(2605.791 17.305)"/>
+    <path id="Path-4" data-name="Path" class="cls-2" d="M16.5,10A1.5,1.5,0,1,0,15,8.5,1.5,1.5,0,0,0,16.5,10Z" transform="translate(2603.369 17.305)"/>
+  </g>
+</svg>

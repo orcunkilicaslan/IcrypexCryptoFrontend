@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="21.811" height="16.811" viewBox="0 0 21.811 16.811">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke: #758ca3;
+        stroke-miterlimit: 10;
+        stroke-width: 1.5px;
+      }
+
+      .cls-1 {
+        stroke-linecap: round;
+      }
+    </style>
+  </defs>
+  <g id="Icon_Theme" transform="translate(-971.75 -624.439)">
+    <line id="Path" class="cls-1" y1="6" x2="6" transform="translate(981.5 625.5)"/>
+    <line id="Path-2" data-name="Path" class="cls-1" y1="8" x2="8" transform="translate(984.5 625.5)"/>
+    <path id="Path-3" data-name="Path" class="cls-2" d="M983.5,624.5v12a1.027,1.027,0,0,1-1,1h-16a1.027,1.027,0,0,1-1-1v-12a1.027,1.027,0,0,1,1-1h13" transform="translate(7 3)"/>
+    <path id="Path-4" data-name="Path" class="cls-2" d="M972.919,634.5h0a6.773,6.773,0,0,1-2.669-.595l-.726-.351.8-.116c.773-.112,1.059-1.17,1.461-2.886a2.288,2.288,0,0,1,2.412-1.836,3.37,3.37,0,0,1,.721.074l.066.016,1.637,1.607.019.052a2.846,2.846,0,0,1-.808,2.884A3.923,3.923,0,0,1,972.919,634.5Z" transform="translate(7 3)"/>
+  </g>
+</svg>
