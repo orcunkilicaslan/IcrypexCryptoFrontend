@@ -1,4 +1,4 @@
-$tradepageSvgIconImgPath : "../../img/tradepage/svg";
+$globalSvgIconImgPath : "../../img/global/svg";
 
 .site{
 
@@ -75,9 +75,9 @@ $tradepageSvgIconImgPath : "../../img/tradepage/svg";
     padding: 3px 0;
   }
   &-arrowup{
-    background-image: url(#{$tradepageSvgIconImgPath}/Arrow_Up.svg);
+    background-image: url(#{$globalSvgIconImgPath}/Arrow_Up.svg);
   }
   &-arrowdown{
-    background-image: url(#{$tradepageSvgIconImgPath}/Arrow_Down.svg);
+    background-image: url(#{$globalSvgIconImgPath}/Arrow_Down.svg);
   }
 }

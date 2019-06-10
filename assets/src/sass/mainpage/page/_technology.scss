@@ -36,7 +36,7 @@
           &:before{
             content: "";
             position: absolute;
-            background-image: url(#{$mainpageSvgIconImgPath}/Icon_Information.svg);
+            background-image: url(#{$globalSvgIconImgPath}/Icon_Information.svg);
             background-repeat: no-repeat;
             background-position: center center;
             background-size: contain;
@@ -48,12 +48,12 @@
 
           &.infoyellow{
             &:before{
-              background-image: url(#{$mainpageSvgIconImgPath}/Icon_Information_Yellow.svg);
+              background-image: url(#{$globalSvgIconImgPath}/Icon_Information_Yellow.svg);
             }
           }
           &.infored{
             &:before{
-              background-image: url(#{$mainpageSvgIconImgPath}/Icon_Information_Red.svg);
+              background-image: url(#{$globalSvgIconImgPath}/Icon_Information_Red.svg);
             }
           }
         }
@@ -302,7 +302,7 @@
             position: absolute;
             width: 17px;
             height: 17px;
-            background-image: url(#{$mainpageSvgIconImgPath}/Search_Icon.svg);
+            background-image: url(#{$globalSvgIconImgPath}/Search_Icon.svg);
             left: calc(50% - 9px);
             top: calc(50% - 9px);
           }
