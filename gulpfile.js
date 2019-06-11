@@ -60,7 +60,9 @@ gulp.task('sass-plugin', () => {
 });
 
 gulp.task('script-plugin', () => {
-    return gulp.src([ folder_src_main + 'script/plugin/**/app.js' ])
+    return gulp.src([
+        folder_src_main + 'script/plugin/**/app.js'
+    ])
         .pipe(plumber())
         .pipe(webpack({
             mode: 'production'
@@ -80,7 +82,10 @@ gulp.task('script-plugin', () => {
 
 /* MAINPAGE START */
 gulp.task('sass-mainpage', () => {
-  return gulp.src([ folder_src_main + 'sass/mainpage/**/*.scss', folder_src_main + 'sass/mainpage/**/*.sass' ])
+  return gulp.src([
+      folder_src_main + 'sass/mainpage/**/*.scss',
+      folder_src_main + 'sass/mainpage/**/*.sass'
+  ])
     .pipe(sourcemaps.init())
       .pipe(plumber())
       .pipe(sass())
@@ -95,7 +100,9 @@ gulp.task('sass-mainpage', () => {
 });
 
 gulp.task('script-mainpage', () => {
-    return gulp.src([ folder_src_main + 'script/mainpage/**/app.js' ])
+    return gulp.src([
+        folder_src_main + 'script/mainpage/**/app.js'
+    ])
         .pipe(plumber())
         .pipe(webpack({
             mode: 'production'
@@ -137,7 +144,10 @@ gulp.task('watch-mainpage', () => {
 
 /* TRADEPAGE START */
 gulp.task('sass-tradepage', () => {
-    return gulp.src([ folder_src_main + 'sass/tradepage/**/*.scss', folder_src_main + 'sass/tradepage/**/*.sass' ])
+    return gulp.src([
+        folder_src_main + 'sass/tradepage/**/*.scss',
+        folder_src_main + 'sass/tradepage/**/*.sass'
+    ])
         .pipe(sourcemaps.init())
         .pipe(plumber())
         .pipe(sass())
@@ -152,7 +162,9 @@ gulp.task('sass-tradepage', () => {
 });
 
 gulp.task('script-tradepage', () => {
-    return gulp.src([ folder_src_main + 'script/tradepage/**/*.js' ])
+    return gulp.src([
+        folder_src_main + 'script/tradepage/**/*.js'
+    ])
         .pipe(plumber())
         .pipe(webpack({
             mode: 'production'
