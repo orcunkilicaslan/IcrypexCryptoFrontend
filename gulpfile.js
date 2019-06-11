@@ -27,7 +27,7 @@ gulp.task('sass-bootstrap', () => {
       .pipe(plumber())
       .pipe(sass())
       .pipe(autoprefixer({
-        browsers: [ 'last 3 versions', '> 0.5%' ]
+          flexbox: 'no-2009'
       }))
       .pipe(cssnano())
       .pipe(concat('bootstrap.css'))
@@ -50,7 +50,7 @@ gulp.task('sass-plugin', () => {
       .pipe(plumber())
       .pipe(sass())
       .pipe(autoprefixer({
-        browsers: [ 'last 3 versions', '> 0.5%' ]
+          flexbox: 'no-2009'
       }))
       .pipe(cssnano())
       .pipe(concat('plugin.css'))
@@ -90,7 +90,7 @@ gulp.task('sass-mainpage', () => {
       .pipe(plumber())
       .pipe(sass())
       .pipe(autoprefixer({
-        browsers: [ 'last 3 versions', '> 0.5%' ]
+          flexbox: 'no-2009'
       }))
       .pipe(cssnano())
       .pipe(concat('mainpage-app.css'))
@@ -152,7 +152,7 @@ gulp.task('sass-tradepage', () => {
         .pipe(plumber())
         .pipe(sass())
         .pipe(autoprefixer({
-            browsers: [ 'last 3 versions', '> 0.5%' ]
+            flexbox: 'no-2009'
         }))
         .pipe(cssnano())
         .pipe(concat('tradepage-app.css'))
