@@ -6,6 +6,12 @@
     color: $global-clr-white;
     font-size: 17px;
 
+    &-wrapper{
+      background-color: $global-grdint-darkblue02;
+      border-top-color: $global-clr-soft-blue;
+      border-bottom-color: $global-clr-soft-blue;
+    }
+
     &-list{
       min-height: 36px;
       > li{
@@ -13,8 +19,8 @@
           content: "";
           position: absolute;
           width: 1px;
-          height: 10px;
-          top: calc(50% - 5px);
+          height: 15px;
+          top: calc(50% - 10px);
           right: 0;
           background: transparentize($global-clr-soft-gray, 0.7);
           @include border-radius(50%)
@@ -29,26 +35,18 @@
       }
       > li > a{
         color: $global-clr-white;
-        padding: 10px 20px
+        padding: 5px 5px 13px;
+        margin: auto 15px;
+
+        &::after {
+          background: $global-clr-soft-blue;
+        }
       }
       li:hover,
       li:hover a,
       li a.active,
       li a:hover{
-        background-color: rgba(255,255,255,0.01);
-      }
-    }
-  }
-}
-
-.homepage{
-  .orc{
-    &-menu{
-      &-list{
-        > li > a{
-          padding-top: 5px;
-          padding-bottom: 5px;
-        }
+        background-color: transparent;
       }
     }
   }
