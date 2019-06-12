@@ -99,6 +99,14 @@
   @include transform(scale($scale));
 }
 
+@mixin scaleX($scaleX) {
+  @include transform(scaleX($scaleX));
+}
+
+@mixin scaleY($scaleY) {
+  @include transform(scaleY($scaleY));
+}
+
 @mixin translate ($x, $y) {
   @include transform(translate($x, $y));
 }

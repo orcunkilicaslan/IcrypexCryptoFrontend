@@ -1,10 +1,16 @@
-.orc{
-  &-header{
+.dfn{
+  &-nav{
     background-color: transparent;
   }
   &-menu{
     color: $global-clr-white;
     font-size: 17px;
+
+    &-megadropdown{
+      background-color: $global-grdint-darkblue02;
+      border-top-color: $global-clr-soft-blue;
+      border-bottom-color: $global-clr-soft-blue;
+    }
 
     &-list{
       min-height: 36px;
@@ -13,8 +19,8 @@
           content: "";
           position: absolute;
           width: 1px;
-          height: 10px;
-          top: calc(50% - 5px);
+          height: 15px;
+          top: calc(50% - 10px);
           right: 0;
           background: transparentize($global-clr-soft-gray, 0.7);
           @include border-radius(50%)
@@ -26,28 +32,15 @@
           padding-right: 0;
           &:before{display: none;}
         }
-      }
-      > li > a{
-        color: $global-clr-white;
-        padding: 10px 20px
-      }
-      li:hover,
-      li:hover a,
-      li a.active,
-      li a:hover{
-        background-color: rgba(255,255,255,0.01);
-      }
-    }
-  }
-}
 
-.homepage{
-  .orc{
-    &-menu{
-      &-list{
-        > li > a{
-          padding-top: 5px;
-          padding-bottom: 5px;
+        > a{
+          color: $global-clr-white;
+          padding: 5px 5px 13px;
+          margin: auto 15px;
+
+          &::after {
+            background: $global-clr-soft-blue;
+          }
         }
       }
     }
