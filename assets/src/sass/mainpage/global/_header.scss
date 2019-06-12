@@ -4,10 +4,28 @@ $globalSvgIconImgPath : "../../img/global/svg";
 .header{
   color: $global-clr-white;
   @include gradient($global-grdint-darkblue01, $global-grdint-darkblue02);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 2;
+  @include transition(all, 0.3s, ease-out);
 
+  *{transition: all 1s ease-out;}
+
+  &.navscroll{
+    background-color: transparentize(darken($global-clr-dark-blue,16%), 0.02);
+    background-image: none;
+    top: -40px;
+  }
+
+  &-spacebottom{
+    height: 94px;
+    background-color: $global-clr-white;
+  }
 
   &-top{
     padding: 0;
+    height: 40px;
     border-bottom: 1px solid transparentize($global-clr-soft-gray, 0.7);
 
     ul{text-align: center; margin: 0;}

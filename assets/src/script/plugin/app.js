@@ -1,21 +1,40 @@
+/* Header Nav Fixed */
+$(window).scroll(function () {
+
+    //var bodyWidth = window.innerWidth;
+    //var bodyHeight = window.innerHeight;
+    //var sliderHeight = $( ".scrollbannerheight" ).innerHeight();
+    var scroll = $(window).scrollTop();
+
+    if (scroll > 30) {
+        $(".header").addClass("navscroll")
+    } else {
+        $(".header").removeClass("navscroll")
+    }
+
+});
+/* Header Nav Fixed */
+
 /* Navbar Menu */
 $(function() {
 
     // Mobile Menu
-    $('#orc-navtggle').click(function () {
-        $('.orc-megamenu').toggleClass('orc-canvaskapat');
+    $('#dfn-navtggle').click(function () {
+        $('.dfn-megamenu').toggleClass('dfn-canvaskapat');
     });
-    $('.orc-mobilemenublckmask').click(function () {
-        $('.orc-megamenu').removeClass('orc-canvaskapat');
+    $('.dfn-mobilemenu-mask').click(function () {
+        $('.dfn-megamenu').removeClass('dfn-canvaskapat');
     });
 
     // Menu Active Class Added
-    $('.orc-menu-list > li > a').click(function() {
-        $('.orc-menu-list > li').removeClass();
-        $(this).parent().addClass('active');
-    });
+    $('.dfn-menu-list > li > a').click(
+        function(){
 
+            $('.dfn-menu-list > li').removeClass();
+            $(this).parent().addClass('active navdropdown');
 
+        }
+    );
 
 });
 /* Navbar Menu */

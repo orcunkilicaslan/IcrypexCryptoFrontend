@@ -8,6 +8,14 @@ $globalSvgIconImgPath : "../../img/global/svg";
     background-image: none;
     padding-bottom: 6px;
 
+    &.navscroll{
+      background-color: transparentize(darken($global-clr-dark-blue,16%), 0.02);
+    }
+
+    &-spacebottom{
+      background-color: transparent;
+    }
+
     &-bottom{
 
       &-logo{

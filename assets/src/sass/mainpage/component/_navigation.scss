@@ -1,12 +1,12 @@
-.orc{
-  &-header{
+.dfn{
+  &-nav{
     background-color: transparent;
   }
   &-menu{
     color: $global-clr-white;
     font-size: 17px;
 
-    &-wrapper{
+    &-megadropdown{
       background-color: $global-grdint-darkblue02;
       border-top-color: $global-clr-soft-blue;
       border-bottom-color: $global-clr-soft-blue;
@@ -32,21 +32,16 @@
           padding-right: 0;
           &:before{display: none;}
         }
-      }
-      > li > a{
-        color: $global-clr-white;
-        padding: 5px 5px 13px;
-        margin: auto 15px;
 
-        &::after {
-          background: $global-clr-soft-blue;
+        > a{
+          color: $global-clr-white;
+          padding: 5px 5px 13px;
+          margin: auto 15px;
+
+          &::after {
+            background: $global-clr-soft-blue;
+          }
         }
-      }
-      li:hover,
-      li:hover a,
-      li a.active,
-      li a:hover{
-        background-color: transparent;
       }
     }
   }
