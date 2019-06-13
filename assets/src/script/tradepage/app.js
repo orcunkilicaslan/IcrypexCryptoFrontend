@@ -1,6 +1,6 @@
 
 /* Header Bottom Lite Price */
-$('#headerbottompricelite').owlCarousel({
+$('#headertitleareapricelite').owlCarousel({
     loop:true,
     nav:true,
     dots:false,

@@ -1,0 +1,185 @@
+$mainpageFooterImgPath : "../../img/mainpage/footer";
+$globalSvgIconImgPath : "../../img/global/svg";
+
+.footer-mainpage{
+  color: $global-clr-white;
+  @include gradient(darken($global-clr-dark-blue,16%), darken($global-clr-dark-blue,6%));
+
+  &-bg{
+    background-image: url(#{$mainpageFooterImgPath}/Point_Earth_Image.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+    padding-top: 75px;
+    padding-bottom: 35px;
+  }
+
+  &-topline{
+    position: relative;
+    overflow: hidden;
+
+    &:before,
+    &:after{
+      content: "";
+      background-color: transparentize($global-clr-soft-gray, 0.7);
+      position: absolute;
+      width: 1000%;
+      height: 1px;
+      top: 50%;
+      z-index: 1;
+    }
+    &:before{
+      left: calc(50% + 20px);
+    }
+    &:after{
+      right: calc(50% + 20px);
+    }
+
+    &-symbol{
+      width: 50px;
+      height: 50px;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+
+  &-nav{
+    padding-top: 45px;
+    padding-bottom: 15px;
+    padding-left: 60px;
+  }
+
+  &-menu{
+    max-width: 230px;
+
+    &-title{
+      margin-bottom: 15px;
+      a{
+        color: $global-clr-white;
+      }
+    }
+    &-list{
+      margin: 0;
+      &-item{
+        opacity: 0.9;
+        font-size: 17px;
+        line-height: 1.18;
+        a{
+          color: transparentize($global-clr-soft-gray, 0.1);
+        }
+      }
+    }
+  }
+
+  &-social{
+    padding: 30px 0;
+
+    &-list{
+      margin: 0;
+      text-align: center;
+
+      &-item{
+        display: inline-block;
+        margin: 0 3px;
+
+        a{
+          background-color: transparentize($global-clr-btn-blue, 0.6);
+          width: 30px;
+          height: 30px;
+          text-align: center;
+          @include border-radius(30px);
+        }
+      }
+    }
+    &-icon{
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: contain;
+      overflow: hidden;
+      width: 14px;
+      height: 14px;
+      display: block;
+      margin: 8px auto;
+
+      &.facebook{background-image: url(#{$mainpageFooterImgPath}/Facebook_Logo.svg);}
+      &.twitter{background-image: url(#{$mainpageFooterImgPath}/Twitter_Logo.svg);}
+      &.instagram{background-image: url(#{$mainpageFooterImgPath}/Instagram_Logo.svg);}
+      &.linkedin{background-image: url(#{$mainpageFooterImgPath}/Linkedin_Logo.svg);}
+    }
+  }
+
+  &-copyright{
+    text-align: center;
+    padding: 15px 0;
+
+    &-phone{
+      color: $global-clr-white;
+      font-size: 20px;
+      line-height: 0.85;
+      margin-bottom: 10px;
+    }
+    &-desc{
+      color: $global-clr-soft-gray;
+      opacity: 0.9;
+      font-size: 15px;
+      line-height: 1.13;
+      margin: 0;
+    }
+  }
+
+  &-bottom{
+    margin-top: 30px;
+    position: relative;
+    overflow: hidden;
+
+    &:before,
+    &:after{
+      content: "";
+      background-color: transparentize($global-clr-soft-gray, 0.7);
+      position: absolute;
+      width: 1000%;
+      height: 1px;
+      top: 50%;
+      z-index: 1;
+    }
+    &:before{
+      left: calc(50% + 210px);
+    }
+    &:after{
+      right: calc(50% + 210px);
+    }
+
+    &-list{
+      margin: 0;
+      text-align: center;
+      &-item{
+        position: relative;
+        padding: 0 12px;
+        display: inline-block;
+        &:before{
+          content: "";
+          position: absolute;
+          width: 1px;
+          height: 14px;
+          top: calc(50% - 4px);
+          right: -3px;
+          background-color: transparentize($global-clr-soft-gray, 0.7);
+        }
+        &:first-child{
+          padding-left: 0;
+        }
+        &:last-child{
+          padding-right: 0;
+          &:before{display: none;}
+        }
+
+        img{position: relative}
+        .akbank{}
+        .ziraat{top: -2px;}
+        .odeabank{top: -2px;}
+        .papara{top: 3px;}
+
+      }
+    }
+  }
+
+}

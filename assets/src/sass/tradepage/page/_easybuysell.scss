@@ -3,6 +3,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
 .easybuysell{
 
   &-order{
+    background-color: $global-clr-white;
     padding: 30px 0;
 
     div[class*="tabcontent"]{
