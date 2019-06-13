@@ -1,9 +1,8 @@
 {
-  "name": "Icrypex",
+  "name": "ICRYPEX",
   "version": "1.0.0",
   "keywords": [
     "gulp",
-    "gulp-starter-kit",
     "sass",
     "babel",
     "browser-sync",
@@ -16,7 +15,7 @@
   "scripts": {
     "start": "gulp start",
     "build": "gulp build",
-    "dev": "gulp dev"
+    "devel": "gulp devel"
   },
   "author": "Orcun KILICASLAN",
   "license": "UNLICENSED",

@@ -105,19 +105,11 @@ Komut Satırına Aşağıdaki Kodu Yazın
      npm install
      npm install -g npm  
 
-Çalışacağınız Proje Mainpage İse Komut Satırına Aşağıdaki Kodu Yazın  
-
-     gulp maindevel  
-
-Çalışacağınız Proje Tradepage İse Komut Satırına Aşağıdaki Kodu Yazın  
-
-     gulp tradedevel  
-
-Tüm Projede Çalışacaksanız İse Komut Satırına Aşağıdaki Kodu Yazın  
+Projede Çalışacaksanız İse Komut Satırına Aşağıdaki Kodu Yazın  
 
      gulp devel  
 
-Tüm Projeyi Derleyecekseniz İse Komut Satırına Aşağıdaki Kodu Yazın  
+Projeyi Derleyecekseniz İse Komut Satırına Aşağıdaki Kodu Yazın  
 
      gulp build
 
