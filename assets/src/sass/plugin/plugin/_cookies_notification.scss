@@ -1,0 +1,23 @@
+
+.cookies-notification{
+
+  &-modal{
+    background-color: transparentize(darken($global-clr-soft-blue,16%), 0.02);
+    color: $global-clr-white;
+    font-size: 17px;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+
+    &-body{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px;
+    }
+
+  }
+}

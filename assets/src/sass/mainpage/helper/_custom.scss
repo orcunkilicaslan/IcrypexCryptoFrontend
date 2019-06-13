@@ -5,11 +5,7 @@ $mainpageImgPath : "../../img/mainpage";
 
 body{
   font-size: $global-font-size;
-  background-color: #011326;
-  background-image: url(#{$mainpageImgPath}/background/Dark_Blue_Bg_Image.jpg);
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-attachment: fixed;
+  background-color: $global-clr-white;
 }
 body, input, textarea, select, button {
   font-family: $global-font-family-barlow;

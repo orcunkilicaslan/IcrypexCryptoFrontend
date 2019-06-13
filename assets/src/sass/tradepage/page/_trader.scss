@@ -1,6 +1,6 @@
 $tradepageHomepageImgPath : "../../img/tradepage";
 
-.homepage{
+.trader{
 
   &-bigchart{
     background-color: $global-clr-light-gray;
@@ -8,6 +8,7 @@ $tradepageHomepageImgPath : "../../img/tradepage";
   }
 
   &-order{
+    background-color: $global-clr-white;
     padding: 20px 0 40px;
 
     &-wrapper{}

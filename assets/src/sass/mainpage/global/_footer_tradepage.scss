@@ -1,7 +1,7 @@
 $tradepageFooterImgPath : "../../img/tradepage/footer";
 $globalSvgIconImgPath : "../../img/global/svg";
 
-.footer{
+.footer-tradepage{
   color: $global-clr-white;
   padding-top: 50px;
   @include gradient($global-grdint-darkblue01, $global-grdint-darkblue02);

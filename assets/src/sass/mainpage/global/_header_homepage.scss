@@ -2,6 +2,11 @@ $mainpageHeaderImgPath : "../../img/mainpage";
 $globalSvgIconImgPath : "../../img/global/svg";
 
 .homepage{
+  background-color: darken($global-clr-dark-blue,16%);
+  background-image: url(#{$mainpageImgPath}/background/Dark_Blue_Bg_Image.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-attachment: fixed;
 
   .header{
     background-color: transparent;
