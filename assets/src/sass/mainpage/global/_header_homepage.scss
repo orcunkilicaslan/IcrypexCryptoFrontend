@@ -2,7 +2,7 @@ $mainpageHeaderImgPath : "../../img/mainpage";
 $globalSvgIconImgPath : "../../img/global/svg";
 
 .homepage{
-  background-color: darken($global-clr-dark-blue,16%);
+  background-color: $global-sitebg-darkblue01;
   background-image: url(#{$mainpageImgPath}/background/Dark_Blue_Bg_Image.jpg);
   background-repeat: no-repeat;
   background-position: top center;
@@ -14,7 +14,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
     padding-bottom: 6px;
 
     &.navscroll{
-      background-color: transparentize(darken($global-clr-dark-blue,16%), 0.02);
+      background-color: transparentize($global-sitebg-darkblue01, 0.02);
     }
 
     .dfn{

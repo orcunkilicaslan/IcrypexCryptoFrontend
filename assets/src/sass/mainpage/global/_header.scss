@@ -12,7 +12,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
   $headerclassname: &;
 
   &.navscroll{
-    background-color: transparentize(darken($global-clr-dark-blue,16%), 0.02);
+    background-color: transparentize($global-sitebg-darkblue01, 0.02);
     background-image: none;
 
     #{$headerclassname}-top,
