@@ -26,10 +26,10 @@
           @include border-radius(50%)
         }
         &:first-child{
-          padding-left: 0;
+          > a{margin-left: 0;}
         }
         &:last-child{
-          padding-right: 0;
+          > a{margin-right: 0;}
           &:before{display: none;}
         }
 
@@ -39,7 +39,7 @@
           margin: auto 15px;
 
           &::after {
-            background: $global-clr-soft-blue;
+            background-color: $global-clr-soft-blue;
           }
         }
 

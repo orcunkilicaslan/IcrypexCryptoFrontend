@@ -342,11 +342,9 @@ $globalSvgIconImgPath : "../../img/global/svg";
             @include border-radius(50%)
           }
           &:first-child{
-            padding-left: 0;
             > a{margin-left: 0;}
           }
           &:last-child{
-            padding-right: 0;
             > a{margin-right: 0;}
             &:before{display: none;}
           }
@@ -355,6 +353,28 @@ $globalSvgIconImgPath : "../../img/global/svg";
             color: $global-clr-white;
             padding: 5px 5px 13px;
             margin: auto 15px;
+            position: relative;
+
+            &::after {
+              content: '';
+              position: absolute;
+              background: $global-clr-soft-blue;
+              width: 100%;
+              height: 4px;
+              display: block;
+              bottom: 0;
+              left: 0;
+              @include scaleX(0);
+              @include transition(transform, 250ms, ease-in-out);
+            }
+          }
+          &:hover,
+          &.active{
+            > a{
+              &::after {
+                @include scaleX(1);
+              }
+            }
           }
         }
       }
