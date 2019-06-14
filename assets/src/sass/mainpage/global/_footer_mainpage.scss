@@ -52,7 +52,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
     max-width: 230px;
 
     &-title{
-      margin-bottom: 15px;
+      margin-bottom: 15px !important;
       a{
         color: $global-clr-white;
       }
