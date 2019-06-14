@@ -435,7 +435,7 @@ $mainpageHomepageImgPath : "../../img/mainpage";
   }
 
   &-webtrader{
-    background-color: darken($global-clr-dark-blue,16%);
+    background-color: $global-sitebg-darkblue01;
 
     &-content{
       padding-top: 100px;

@@ -3,7 +3,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
 .footer-mainpage{
   color: $global-clr-white;
-  @include gradient(darken($global-clr-dark-blue,16%), darken($global-clr-dark-blue,6%));
+  @include gradient($global-sitebg-darkblue01, $global-sitebg-darkblue02);
 
   &-bg{
     background-image: url(#{$mainpageFooterImgPath}/Point_Earth_Image.png);
