@@ -15,24 +15,17 @@ $globalSvgIconImgPath : "../../img/global/svg";
     background-color: transparentize(darken($global-clr-dark-blue,16%), 0.02);
     background-image: none;
 
-    #{$headerclassname}-top{
-      overflow: hidden;
-      height: 0;
-    }
-    #{$headerclassname}-stats{
-      overflow: hidden;
-      height: 0;
-      padding: 0;
-    }
-    #{$headerclassname}-titlearea{
-      overflow: hidden;
-      height: 0;
-      padding: 0;
-    }
+    #{$headerclassname}-top,
+    #{$headerclassname}-stats,
+    #{$headerclassname}-titlearea,
     #{$headerclassname}-onlytitle{
       overflow: hidden;
       height: 0;
       padding: 0;
+    }
+
+    #{$headerclassname}-navigation-search{
+      margin-bottom: 10px;
     }
   }
 
@@ -172,7 +165,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
       font-family: $global-font-family-barlow;
       width: 140px;
       line-height: 0.9;
-      margin-top: 0px;
+      margin-top: 0;
       margin-bottom: 7px;
       &:hover{color: $global-clr-white;}
       &-symbol{
