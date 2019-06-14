@@ -7,6 +7,10 @@ $globalSvgIconImgPath : "../../img/global/svg";
   @include gradient($global-grdint-darkblue01, $global-grdint-darkblue02);
   min-height: 120px;
 
+  .maincont-right{
+    padding-left: 30px;
+  }
+
   &-logo{
     color: $global-clr-white;
     font-family: $global-font-family-barlow;
@@ -40,25 +44,24 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
   &-address{
     line-height: 1.13;
-    font-size: 14px;
+    font-size: 15px;
     position: relative;
 
     &-desc{
       color: $global-clr-soft-gray;
       margin: 0;
-      margin-top: 25px;
+      margin-top: 20px;
     }
 
     &:before{
       content: "";
       position: absolute;
       background-color: transparentize($global-clr-soft-gray, 0.7);
-      right: 0;
+      right: -15px;
       top: 0;
       width: 1px;
       height: 100%;
     }
-
   }
 
   &-nav{
@@ -112,7 +115,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
     max-width: 230px;
 
     &-title{
-      margin-bottom: 12px;
+      margin-bottom: 12px !important;
 
       &:after{
         height: 2px !important;
