@@ -21,8 +21,8 @@
     border-color: $global-clr-soft-blue !important;
   }
   &-warning{
-    background-color: #ff9900;
-    border-color: #ff9900;
+    background-color: $global-clr-orange !important;
+    border-color: $global-clr-orange !important;
   }
 
   &.btnwidth110{
@@ -73,9 +73,6 @@
           z-index: 1;
         }
       }
-
     }
-
   }
-
 }
