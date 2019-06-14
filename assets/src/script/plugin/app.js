@@ -55,14 +55,6 @@ $(function() {
 });
 /* Navbar Menu */
 
-/* Cookies Notification Messages */
-$(window).on('load',function(){
-    $('#cookies-notification-modal').modal('show');
-    $('.modal-backdrop').hide();
-    $('body').removeClass('modal-open');
-});
-/* Cookies Notification Messages */
-
 /* Loading Info */
 console.log("Plugin App Javascript Loading Successful");
 /* Loading Info */
