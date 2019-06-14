@@ -17,6 +17,18 @@ $globalSvgIconImgPath : "../../img/global/svg";
       background-color: transparentize(darken($global-clr-dark-blue,16%), 0.02);
     }
 
+    .dfn{
+      &-menu{
+        &-list{
+          > li{
+            > a{
+              color: $global-clr-white;
+            }
+          }
+        }
+      }
+    }
+
     &-spacebottom{
       background-color: transparent;
     }

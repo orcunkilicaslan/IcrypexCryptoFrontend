@@ -26,20 +26,27 @@
           @include border-radius(50%)
         }
         &:first-child{
-          padding-left: 0;
+          > a{margin-left: 0;}
         }
         &:last-child{
-          padding-right: 0;
+          > a{margin-right: 0;}
           &:before{display: none;}
         }
 
         > a{
-          color: $global-clr-white;
+          color: transparentize($global-clr-white, 0.5);
           padding: 5px 5px 13px;
           margin: auto 15px;
 
           &::after {
-            background: $global-clr-soft-blue;
+            background-color: $global-clr-soft-blue;
+          }
+        }
+
+        &:hover,
+        &.active{
+          > a{
+            color: $global-clr-white;
           }
         }
       }
