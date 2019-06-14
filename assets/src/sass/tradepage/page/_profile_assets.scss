@@ -3,7 +3,7 @@
 
   &-limitprogress{
     background-color: $global-clr-light-gray;
-    padding: 20px 0;
+    padding: 20px 0 15px;
 
     &-list {
       &-item{
@@ -26,6 +26,17 @@
 
         &:last-child{
           &:before{display: none;}
+        }
+      }
+    }
+
+    .profile-box-info-list{
+      > li{
+        text-align: center;
+
+        &:before{
+          left: auto;
+          margin-left: -23px;
         }
       }
     }
