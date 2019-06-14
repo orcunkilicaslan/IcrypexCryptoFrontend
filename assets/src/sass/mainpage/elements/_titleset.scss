@@ -1,6 +1,8 @@
+
+/* Title Border Bottom */
 .columntitle{
   width: 100%;
-  font-weight: 300;
+  font-weight: normal;
   letter-spacing: -0.2px;
   margin: 0;
   padding: 0;
@@ -18,8 +20,9 @@
     &:before{
       content: "";
       background-color: $global-clr-soft-gray;
-      width: 300px;
-      height: 2px;
+      width: 100%;
+      max-width: 300px;
+      height: 1px;
       position: absolute;
       bottom: 0;
       left: calc(50% - 150px);
@@ -47,18 +50,32 @@
     &.titlecenter{
       text-align: center;
     }
+    &.fullborder{
+      &:before{
+        width: 100% !important;
+        left: 0 !important;
+      }
+    }
+  }
+
+  &.bottomorange{
+    &:after{
+      background-color: $global-clr-orange;
+    }
+  }
+
+  &.titlebold{
+    font-weight: 500;
   }
 
   &-xs{
     font-size: 17px;
     &.bottomborder{
       &:before{
-        width: 150px;
-        height: 1px;
+        max-width: 150px;
       }
       &:after{
         width: 40px;
-        height: 2px;
       }
     }
     &.titlecenter{
@@ -70,14 +87,12 @@
 
   &-sm{
     font-size: 20px;
-    font-weight: 500;
     &.bottomborder{
       &:before{
         max-width: 250px;
       }
       &:after{
         width: 40px;
-        height: 2px;
       }
     }
     &.titlecenter{
@@ -91,7 +106,7 @@
     font-size: 23px;
     &.bottomborder{
       &:before{
-        width: 300px;
+        max-width: 300px;
       }
       &:after{
         width: 40px;
@@ -107,12 +122,33 @@
     }
   }
 
+  &-lg{
+    font-size: 25px;
+    &.bottomborder{
+      &:before{
+        max-width: 300px;
+        left: 0;
+      }
+      &:after{
+        width: 60px;
+      }
+    }
+    &.titlecenter{
+      &:before{
+        left: calc(50% - 150px);
+      }
+      &:after{
+        left: calc(50% - 30px);
+      }
+    }
+  }
+
   &-xl{
     font-size: 35px;
     line-height: 1.17;
     &.bottomborder{
       &:before{
-        width: 300px;
+        max-width: 300px;
         left: 0;
       }
       &:after{
@@ -129,7 +165,21 @@
     }
   }
 }
+/* Title Border Bottom */
 
+/* Title Box */
+.boxtitle{
+  color: $global-clr-dark-blue;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+
+  &-xs{font-size: 17px;}
+  &-sm{font-size: 20px;}
+  &-lg{}
+  &-xl{}
+}
+/* Title Box */
 
 /* Title Column */
 .boxcolumn{
@@ -160,7 +210,6 @@
     &-title{font-weight: 500;}
     &-wallet{font-weight: normal;}
     &-info{font-size: 17px}
-
   }
 
   &-boxtitle{
