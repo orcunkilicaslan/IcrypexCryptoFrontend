@@ -67,7 +67,6 @@
         .heading {
           color: $global-clr-white;
           background-color: $global-clr-soft-gray;
-          font-weight: normal;
 
           .title{
             color: $global-clr-white;
@@ -104,7 +103,7 @@
         display: block;
         text-decoration: none;
         font-size:17px;
-        font-weight: 500;
+        font-weight: normal;
         position: relative;
         padding: 8px 35px 9px 15px;
         @include transition(all, 0.2s, linear);

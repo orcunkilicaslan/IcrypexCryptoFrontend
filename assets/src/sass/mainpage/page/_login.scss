@@ -39,7 +39,7 @@
 
   &-bigicon{
     width: 90px;
-    height: 105px;
+    height: 90px;
     margin: 0 auto;
     margin-bottom: 15px;
     border: 2px solid $global-clr-soft-blue;
@@ -58,7 +58,6 @@
   }
 
   &-column{
-    margin-top: 25px;
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -66,6 +65,7 @@
     &-top{
       color: $global-clr-dark-blue;
       text-align: center;
+      margin-top: 25px;
       margin-bottom: 20px;
 
       &-title{

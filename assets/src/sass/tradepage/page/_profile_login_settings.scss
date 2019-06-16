@@ -87,10 +87,10 @@
               appearance: none;
               width: 26px;
               height: 26px;
-              border-radius: 50%;
+              @include border-radius(50%);
               background: $global-clr-soft-blue;
               cursor: pointer;
-              transition: background .15s ease-in-out;
+              @include transition(background, 0.3s, ease-in-out);
 
               &:hover {
                 background: $global-clr-soft-blue;
@@ -108,7 +108,7 @@
               border-radius: 50%;
               background: $global-clr-soft-blue;
               cursor: pointer;
-              transition: background .15s ease-in-out;
+              @include transition(background, 0.3s, ease-in-out);
 
               &:hover {
                 background: $global-clr-soft-blue;
@@ -120,11 +120,12 @@
             }
 
             // Focus state
-            &:focus {
+            &:hover {
 
               &::-webkit-slider-thumb {
                 box-shadow: 0 0 0 3px $global-clr-white,
                 0 0 0 6px $global-clr-soft-blue;
+                @include transition(all, 0.3s, ease-in-out);
               }
             }
           }
