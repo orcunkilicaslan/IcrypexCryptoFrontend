@@ -29,6 +29,18 @@ $globalSvgIconImgPath : "../../img/global/svg";
       }
     }
 
+    &-top{
+      &-userarea{
+
+        .header-navigation-userarea-user-droplist{
+          background-color: $global-sitebg-darkblue01;
+          .headusermenu-box{
+            background-color: darken($global-sitebg-darkblue01, 3%);
+          }
+        }
+      }
+    }
+
     &-spacebottom{
       background-color: transparent;
     }
