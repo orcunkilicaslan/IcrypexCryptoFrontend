@@ -27,6 +27,13 @@ $globalSvgIconImgPath : "../../img/global/svg";
     #{$headerclassname}-navigation-search{
       margin-bottom: 10px;
     }
+
+    #{$headerclassname}-navigation-userarea-user-droplist{
+      background-color: transparentize($global-sitebg-darkblue01, 0.02);
+      visibility: hidden;
+      transition: none !important;
+      *, * &:before, * &:after{transition:none !important;}
+    }
   }
 
   *{@include transition(all, 0.3s, ease-out);}
@@ -61,7 +68,15 @@ $globalSvgIconImgPath : "../../img/global/svg";
     border-bottom: 1px solid transparentize($global-clr-soft-gray, 0.7);
     @include transition(all, 0.1s, ease-out);
 
-    ul{text-align: center; margin: 0;}
+    > div[class*="col"]{
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    ul{
+      text-align: center;
+      margin: 0;
+    }
     li{
       display: inline-block;
       color: $global-clr-soft-gray;
@@ -148,6 +163,23 @@ $globalSvgIconImgPath : "../../img/global/svg";
       }
       &-register{}
       &-login{}
+    }
+
+    &-userarea{
+
+      #{$headerclassname}-navigation-userarea-user{
+
+        &-name{
+          font-size: 15px;
+        }
+
+        .dropdown-menu{
+          padding-top: 8px;
+        }
+
+        &-droplist{
+        }
+      }
     }
   }
 
@@ -276,7 +308,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
           background-color: #ff2e00;
           position: absolute;
           top: 0;
-          right: 15px;
+          right: 10px;
           @include border-radius(50%);
         }
       }
@@ -318,6 +350,137 @@ $globalSvgIconImgPath : "../../img/global/svg";
             border: none;
             top: calc(50% - 3px);
             left: calc(50% - 5px);
+          }
+        }
+
+        .dropdown-menu{
+          background-color: transparent;
+          padding: 0;
+          padding-top: 14px;
+          margin: 0;
+          border: none;
+          transition: none !important;
+        }
+
+        &-droplist{
+          background-color: $global-grdint-darkblue02;
+          min-width: 300px;
+
+          .headusermenu{
+            padding:10px;
+            padding-bottom: 0;
+            text-align: left;
+
+            &-userbg{
+              display: flex;
+              align-items: center;
+            }
+
+            &-box{
+              background-color: transparentize($global-grdint-darkblue01, 0.50);
+              border-top-left-radius:3px;
+              border-top-right-radius:3px;
+              padding: 15px;
+
+              &-avatar{
+                width:30px;
+                height:30px;
+                margin-right:15px;
+
+                img{
+                  width:30px;
+                  height:30px;
+                  border-radius:50%;
+                }
+              }
+
+              &-textarea{
+                line-height: 0.5;
+                margin-top: -5px;
+
+                &-username{
+                  color: $global-clr-white;
+                  font-size: 17px;
+                  margin: 0;
+                }
+                small a{
+                  color: $global-clr-soft-blue;
+                  font-weight:500;
+                  margin-top: 5px;
+                }
+              }
+            }
+
+            &-userarea{
+              display: flex;
+              align-items: center;
+              padding-bottom: 10px;
+            }
+
+            .btnarea{
+              text-align:center;
+              border-bottom-left-radius:3px;
+              border-bottom-right-radius:3px;
+
+              a{
+                padding:5px;
+                border-bottom-left-radius:3px;
+                border-bottom-right-radius:3px;
+                display:inline-block;
+
+                &.logout{
+                  background-color: $global-clr-btn-blue;
+                  color: $global-clr-white;
+                  width:100%;
+                }
+              }
+            }
+          }
+
+          .usermenulist{
+            padding-bottom: 10px;
+            text-align: left;
+
+            .userlink{
+              padding: 5px 10px;
+              position: relative;
+              display: block;
+
+              a{
+                color: $global-clr-white;
+                padding:3px 0;
+                display: block;
+                position: relative;
+
+                &:before{
+                  content: "";
+                  background-color: $global-clr-soft-gray;
+                  width: 100%;
+                  max-width: 300px;
+                  height: 1px;
+                  position: absolute;
+                  bottom: 0;
+                  left: 0;
+                  opacity: 0.3;
+                }
+                &:after{
+                  content: "";
+                  background-color: $global-clr-soft-blue;
+                  width: 40px;
+                  height: 2px;
+                  position: absolute;
+                  bottom: 0;
+                  left: 0;
+                  @include transition(all, 0.5s, ease-in-out);
+                }
+
+                &:hover{
+                  &:after{
+                    width: 100%;
+                  }
+                }
+              }
+            }
           }
         }
       }
