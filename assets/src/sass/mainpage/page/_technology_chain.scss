@@ -89,6 +89,31 @@
           padding-top: 2px;
           padding-bottom: 2px;
         }
+
+        td.blockhash{
+          span{
+            overflow: hidden;
+            display: block;
+            max-width: 340px;
+            position: relative;
+            &:after{
+              content: "...";
+              position: absolute;
+              right: 0;
+              top: 0;
+              background: white;
+              width: 11px;
+              text-align: right;
+            }
+          }
+        }
+        td.valueout{
+          width: 100px;
+        }
+        td.detailbtn{
+          width: 80px;
+        }
+
       }
 
       .btn{
