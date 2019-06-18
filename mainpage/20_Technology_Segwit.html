@@ -192,25 +192,25 @@
         <!-- Content -->
         <div class="technology-tabscontent-content col">
             <div class="technology-tabscontent-content-box">
-                <h3 class="technology-tabscontent-content-box-title">SEGREHATED WITNESS</h3>
-                <p>(Abbreviated as SegWit) is an implemented protocol upgrade intended to provide protection <a class="urllink" href="#" title="" rel="external nofollow">from transaction</a> malleability and increase block capacity.</p>
-                <p>SegWit separates the witness from the list of inputs. The witness contains data required to check transaction validity but is not required to determine transaction effects. Additionally, a new weight parameter is defined, and blocks are allowed to have at most 4 million <a class="urllink" href="#" title="" rel="external nofollow">weight units</a> (WU). Non-witness and pre-segwit witness bytes weigh 4 WU, but each byte of Segwit witness data only weighs 1 WU, allowing blocks that are larger than 1 MB without a hardforking change.</p>
-                <h4 class="technology-tabscontent-content-box-subtitle">SEGWIT BENEFITS</h4>
-                <p>SegWit improves Bitcoin and fixes a number of bugs. The main features of Segwit are described in detail below.</p>
-                <h4 class="technology-tabscontent-content-box-subtitle">Capacity Increase</h4>
-                <p>Segwit doubled the capacity of the Bitcoin network.<br />
-                A lot of people are claiming that SegWit did not increase the block size. It’s very easy to<br />
-                see that, yes, SegWit was a block size increase!<br />
-                Here, for example, we can see a 2,177 KB (2.17 MB) Bitcoin block mined in January 2018.</p>
-                <h4 class="technology-tabscontent-content-box-subtitle">SEGWIT FIXES TRANSACTION MALLEABILITY</h4>
-                <p>In addition to increasing Bitcoin’s ability to process transactions, SegWit fixes a fatal flaw in Bitcoin’s protocol that allowed users to tamper with transaction identities.</p>
-                <p>Before SegWit, the Transaction ID of a transaction could have been <a class="urllink" href="#" title="" rel="external nofollow">changed</a> by manipulating the unlocking code of the transaction (your digital signature). After you digitally sign a transaction, it is sent through Bitcoin’s cryptographic hash function which results in a unique transaction ID. If one character is changed in the digital signature, it will result in an entirely different transaction ID. SegWit moves the signature to the end of the transaction data, so the Transaction ID is created from everything but the digital signature.</p>
-                <p>In effect, this change renders it impossible to change the Transaction ID – if malicious nodes were able to tamper with Transaction IDs, the Lightning Network wouldn’t be possible.</p>
-                <h4 class="technology-tabscontent-content-box-subtitle">Segwit Adoption</h4>
-                <p>Segwit adoption is increasing. Nearly 40% of all Bitcoin transactions use <a class="urllink" href="#" title="" rel="external nofollow">SegWit addresses</a>.</p>
-                <h4 class="technology-tabscontent-content-box-subtitle">WHY SEGWIT IS IMPORTANT</h4>
-                <p>Bitcoin is by far the largest cryptocurrency by market cap, and for good reason. However, many in the crypto space have criticized Bitcoin because it is having trouble scaling to its ever-expanding user base. Bitcoin is only capable of processing a mere 7-10 transactions per second on the base layer. Bitcoin’s underlying technology, although revolutionary, has also become one of Bitcoin’s most significant challenges.</p>
-                <p>Nevertheless, prominent developers in the Bitcoin community are working to develop a solution to the problem. <strong>SegWit and the Lightning Network together will allow Bitcoin to process millions (or more) transactions per second.</strong></p>
+                <h3 class="technology-tabscontent-content-box-title">SEGWIT</h3>
+                <p><strong>SegWit</strong>, Segregated Witness’ın kısaltılmış halidir ve Türkçe’ye "<strong>ayrılmış tanık</strong>" olarak çevirebiliriz. SegWit,  İşlem yapılabilirlikten korunmayı sağlayan ve blok kapasitesini artırmayı amaçlayan uygulamalı bir protokol yükseltmesidir.</p>
+                <p>SegWit, tanığı girdi listesinden ayırır. Tanık, işlemin geçerliliğini kontrol etmek için gerekli verileri içerir ancak işlem etkilerini belirlemek için gerekli değildir. Ek olarak, yeni bir ağırlık parametresi tanımlanır ve blokların en fazla 4 milyon <a class="urllink" href="#" title="/technology/segwit" rel="bookmark">ağırlık birimine</a> (WU) sahip olmalarına izin verilir. Tanık olmayan ve bölüm öncesi tanık baytları 4 WU ağırlığındadır, ancak Segwit tanık verilerinin her bir baytı yalnızca 1 WU ağırlığındadır ve sert bir değişim olmadan 1 MB'den büyük bloklara izin vermektedir.</p>
+                <h4 class="technology-tabscontent-content-box-subtitle">SEGWIT’IN FAYDALARI</h4>
+                <p>SegWit Bitcoin’in kullanımını iyileştirir ve bir takım hataları giderir. SegWit’in temel özellikleri aşağıda ayrıntılı olarak açıklanmaktadır.</p>
+                <h4 class="technology-tabscontent-content-box-subtitle">Kapasite Artışı</h4>
+                <p>SegWit, Bitcoin ağının kapasitesini iki katına çıkarmakradır.<br />
+                    Birçok kişi SegWit'in blok boyutunu artırmadığını iddia ediyor. <br />
+                    Ancak SegWit’in blok büyüklüğünden bir artış sağladığını anlamak oldukça basit.<br />
+                    Örneğin, Ocak 2018 yılında 2,177 KB boyutunda yani 1 MB’den büyük Bitcoin bloğu olduğunu görüyoruz.</p>
+                <h4 class="technology-tabscontent-content-box-subtitle">SEGWIT İŞLEM KİMLİKLERİNİN DEĞİŞTİRİLEBİLİRLİĞİ</h4>
+                <p>Bitcoin blok kapasitesini arttırmaya ek olarak, SegWit, Bitcoin protokolünde kullanıcıların işlem kimliklerini değiştirmelerine izin veren önemli bir sorunu giderir.</p>
+                <p>SegWit'ten önce, işlemin kilit açma kodu (dijital imzanız) <a class="urllink" href="#" title="/technology/segwit" rel="bookmark">değiştirilerek</a> işlemin İşlem Kimliği <a class="urllink" href="#" title="/technology/segwit" rel="bookmark">değiştirilebilir</a>. Bir işlemi dijital olarak imzaladıktan sonra, benzersiz bir işlem kimliği ile sonuçlanan Bitcoin şifreleme, karma işlevi aracılığıyla gönderilir. Dijital imzada bir karakter değiştirilirse, tamamen farklı bir işlem kimliği ile sonuçlanır. SegWit imzayı işlem verilerinin sonuna taşır, böylece İşlem Kimliği dijital imza dışında her şeyden oluşturulur.</p>
+                <p>Aslında, bu değişiklik İşlem Kimliğini değiştirmeyi imkansız kılıyor - eğer kötü niyetli düğümler İşlem Kimliklerini değiştirebilseydi, Lightning Network mümkün olamazdı.</p>
+                <h4 class="technology-tabscontent-content-box-subtitle">SegWit Kullanım Yaygınlığı</h4>
+                <p>SegWit'in son dönemlerde kullanımları artmaktadır. Tüm Bitcoin işlemlerinin yaklaşık %40'ı SegWit adresilerini kullanıyor.</p>
+                <h4 class="technology-tabscontent-content-box-subtitle">SEGWIT NEDEN ÖNEMLİ</h4>
+                <p>Bitcoin bugüne kadar piyasa değeri açısından en iyi şifreleme para birimidir. Ancak, kripto alanındaki birçok kişi Bitcoin'i eleştirdi, çünkü sürekli genişleyen kullanıcı tabanına ölçeklemekte zorluk çekiyorlardı. Bitcoin, taban katmanında yalnızca saniyede 7-10 işlem gerçekleştirebilir. Bitcoin'in altında yatan teknoloji, devrimci olmasına rağmen, aynı zamanda Bitcoin'in en önemli zorluklarından biri haline geldi.</p>
+                <p>Bununla birlikte, Bitcoin topluluğunda öne çıkan geliştiriciler, soruna bir çözüm geliştirmek için çalışıyor. SegWit ve Lightning Network birlikte Bitcoin'in saniyede milyonlarca (veya daha fazla) işlemi işlemesine izin verecektir.</p>
             </div>
         </div>
         <!-- Content -->
