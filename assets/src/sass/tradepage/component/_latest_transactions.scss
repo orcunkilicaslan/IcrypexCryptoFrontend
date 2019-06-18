@@ -40,6 +40,14 @@ $globalSvgIconImgPath : "../../img/global/svg";
       }
     }
 
+    tbody tr{
+      @include transition(all, 0.2s, ease-in-out);
+    }
+
+    tbody tr:hover{
+      background-color: darken($global-clr-light-gray, 5%);
+    }
+
     tbody tr:first-child td{
       padding-top: 17px;
     }
