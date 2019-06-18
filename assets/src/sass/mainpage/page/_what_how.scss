@@ -231,6 +231,45 @@
           margin-bottom: 15px;
         }
 
+        p{
+          font-size: 15px;
+          margin-bottom: 15px;
+
+          &:last-child{
+            margin-bottom: 0;
+          }
+        }
+
+        &-subtitle{
+          font-size: 17px;
+          font-weight: 500;
+          margin: 0;
+        }
+
+        &-contlist{
+          color: $global-clr-dark-blue;
+          text-align: left;
+          margin: auto;
+          margin-bottom: 15px;
+
+          li{
+            position: relative;
+            padding-left: 17px;
+
+            &:before{
+              content:"";
+              position:absolute;
+              width: 9px;
+              height: 9px;
+              top: calc(50% - 3px);
+              left: 0;
+              border-top:2px solid $global-clr-soft-blue;
+              border-right:2px solid $global-clr-soft-blue;
+              @include rotate(45);
+            }
+          }
+        }
+
         &-commision{
           background-color: $global-clr-white;
           padding: 10px;
