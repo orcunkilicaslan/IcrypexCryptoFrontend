@@ -650,6 +650,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
       &-icon{
         display: flex;
+        min-height: 39px;
 
         &-span{
           width: 40px;
