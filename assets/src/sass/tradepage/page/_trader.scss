@@ -11,6 +11,10 @@ $tradepageHomepageImgPath : "../../img/tradepage";
     background-color: $global-clr-white;
     padding: 20px 0 40px;
 
+    .sidebar{
+      margin-top: 7px;
+    }
+
     &-wrapper{}
 
     &-orders{
