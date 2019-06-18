@@ -230,6 +230,46 @@
           border: 5px solid $global-clr-soft-gray;
           margin-bottom: 15px;
         }
+
+        &-commision{
+          background-color: $global-clr-white;
+          padding: 10px;
+
+          &-table{
+
+            .sitebggraylight{
+              width: 60px;
+            }
+
+            th, td{
+              font-size: 14px;
+              text-align: center;
+              padding: 4px !important;
+
+              &:first-child{
+                text-align: left;
+                padding-left: 0 !important;
+              }
+            }
+
+            thead{
+              tr:first-child{
+                th{
+                  font-weight: 500;
+                }
+              }
+            }
+
+            tbody{
+              tr:last-child{
+                td{
+                  border-bottom-width: 1px;
+                  border-bottom-style: solid;
+                }
+              }
+            }
+          }
+        }
       }
     }
   }
