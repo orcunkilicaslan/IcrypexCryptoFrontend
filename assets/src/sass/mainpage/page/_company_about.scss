@@ -10,6 +10,10 @@
         }
 
         &.layoutleft{
+
+          div[class*="layout02-box"]{
+            padding-left: 0 !important;
+          }
           div[class*="layout02-cont"]{
             padding-left: 0 !important;
             border-left: 0;
@@ -24,6 +28,10 @@
           }
         }
         &.layoutright{
+
+          div[class*="layout02-box"]{
+            padding-right: 0 !important;
+          }
           div[class*="layout02-cont"]{
             padding-right: 0 !important;
             border-right: 0;
