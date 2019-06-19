@@ -6,20 +6,13 @@ $mainpageHomepageImgPath : "../../img/mainpage";
     padding-top: 20px;
     min-height: 630px;
 
-    .col-xl-3{
-      flex: 0 0 27%;
-      max-width: 27%;
-    }
-    .col-xl-9{
-      flex: 0 0 73%;
-      max-width: 73%;
-    }
-
     &-left{
+      max-width: 840px;
       padding-left: 0;
       padding-right: 40px;
     }
     &-right{
+      max-width: 300px;
       padding-left: 0;
       padding-right: 0;
     }
@@ -238,7 +231,7 @@ $mainpageHomepageImgPath : "../../img/mainpage";
         color: $global-clr-soft-gray;
       }
       .recaptcha{
-        background-color: black;
+        //background-color: black;
         margin-bottom: 13px;
         @include border-radius(6px);
       }
@@ -505,6 +498,7 @@ $mainpageHomepageImgPath : "../../img/mainpage";
       padding-right: 30px;
       padding-left: 28px;
       .columntitle{
+        color: $global-clr-dark-blue;
         &:before{
           width: 200px;
         }
