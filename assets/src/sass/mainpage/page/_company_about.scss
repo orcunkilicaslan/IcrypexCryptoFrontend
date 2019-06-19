@@ -87,5 +87,30 @@
       }
       &-image{}
     }
+
+    &-contlist{
+      color: $global-clr-dark-blue;
+      text-align: left;
+      margin: auto;
+      margin-bottom: 15px;
+
+      li{
+        font-size: 17px;
+        position: relative;
+        padding-left: 17px;
+
+        &:before{
+          content:"";
+          position:absolute;
+          width: 9px;
+          height: 9px;
+          top: 8px;
+          left: 0;
+          border-top:2px solid $global-clr-soft-blue;
+          border-right:2px solid $global-clr-soft-blue;
+          @include rotate(45);
+        }
+      }
+    }
   }
 }
