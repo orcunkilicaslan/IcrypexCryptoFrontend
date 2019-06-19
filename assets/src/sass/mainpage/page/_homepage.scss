@@ -6,6 +6,15 @@ $mainpageHomepageImgPath : "../../img/mainpage";
     padding-top: 20px;
     min-height: 630px;
 
+    .col-xl-3{
+      flex: 0 0 27%;
+      max-width: 27%;
+    }
+    .col-xl-9{
+      flex: 0 0 73%;
+      max-width: 73%;
+    }
+
     &-left{
       padding-left: 0;
       padding-right: 40px;
