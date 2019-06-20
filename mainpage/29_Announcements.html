@@ -8,7 +8,7 @@
     <link id="css-plugin" rel="stylesheet" href="../assets/dist/css/plugin.css">
     <link id="css-mainpage-app" rel="stylesheet" href="../assets/dist/css/mainpage-app.css">
 </head>
-<body class="dfn-megamenu fullpages announcements">
+<body class="dfn-megamenu fullpages mainpage">
 
 <!-- Header Start -->
 <header class="header">
@@ -25,13 +25,13 @@
 
         <!-- Top Header Start -->
         <div class="header-top d-flex justify-content-between align-items-center">
-            <div>
+            <div class="col-3 d-flex justify-content-start">
                 <ul class="header-top-language">
                     <li class="header-top-language-item"><a class="header-top-language-selection" href="#" title="ENGLISH" rel="bookmark">ENGLISH</a></li>
                     <li class="header-top-language-item"><a class="header-top-language-selection active" href="#" title="TÜRKÇE" rel="bookmark">TÜRKÇE</a></li>
                 </ul>
             </div>
-            <div>
+            <div class="col-6 d-flex justify-content-center">
                 <ul class="header-top-city">
                     <li class="header-top-city-item"><span class="header-top-city-name">İSTANBUL</span><span class="header-top-city-clock">12:56:03</span></li>
                     <li class="header-top-city-item"><span class="header-top-city-name">NEW YORK</span><span class="header-top-city-clock">7:48:06</span></li>
@@ -40,11 +40,57 @@
                     <li class="header-top-city-item"><span class="header-top-city-name">TOKYO</span><span class="header-top-city-clock">21:47:45</span></li>
                 </ul>
             </div>
-            <div>
-                <ul class="header-top-singin">
-                    <li class="header-top-singin-item"><a class="header-top-singin-register" href="#" title="YENİ ÜYELİK" rel="bookmark">YENİ ÜYELİK</a></li>
-                    <li class="header-top-singin-item"><a class="header-top-singin-login" href="#" title="ÜYE GİRİŞİ" rel="bookmark">ÜYE GİRİŞİ</a></li>
-                </ul>
+            <div class="col-3 d-flex justify-content-end">
+                <div class="header-top-signin" style="display: none !important;">
+                    <ul class="header-signin">
+                        <li class="header-signin-item"><a class="header-signin-register" href="#" title="YENİ ÜYELİK" rel="bookmark">YENİ ÜYELİK</a></li>
+                        <li class="header-signin-item"><a class="header-signin-login" href="#" title="ÜYE GİRİŞİ" rel="bookmark">ÜYE GİRİŞİ</a></li>
+                    </ul>
+                </div>
+                <div class="header-top-userarea d-flex align-items-center">
+                    <ul class="header-userarea-iconset d-flex align-items-center">
+                        <li class="header-userarea-iconset-search header-userarea-iconset-item">
+                            <i class="icon-svg icon-svg-headersearch"></i>
+                        </li>
+                        <li class="header-userarea-iconset-chat header-userarea-iconset-item">
+                            <i class="icon-svg icon-svg-headerchat"></i>
+                        </li>
+                        <li class="header-userarea-iconset-theme header-userarea-iconset-item">
+                            <i class="icon-svg icon-svg-headertheme"></i>
+                        </li>
+                        <li class="header-userarea-iconset-bell header-userarea-iconset-item">
+                            <i class="icon-svg icon-svg-headerbell"></i>
+                            <span class="header-userarea-iconset-badge"></span>
+                        </li>
+                    </ul>
+                    <div class="header-userarea-user btn-group d-flex align-items-center">
+                        <a class="header-userarea-user-title d-flex align-items-center" href="#" title="" rel="bookmark">
+                            <img class="header-userarea-user-image" src="../assets/img/tradepage/header/Profile_Pic.png" width="30" height="30" alt="UserPic" />
+                            <span class="header-userarea-user-name">İSİM İSİM SOYİSİM</span>
+                        </a>
+                        <button class="header-userarea-user-dropdown dropdown-toggle dropdown-toggle-split" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <div class="header-userarea-user-droplist">
+                                <div class="headusermenu">
+                                    <div class="headusermenu-box">
+                                        <div class="headusermenu-userbg">
+                                            <div class="headusermenu-box-avatar"><img src="../assets/img/tradepage/header/Profile_Pic.png" width="30" height="30" alt="UserPic"></div>
+                                            <div class="headusermenu-box-textarea">
+                                                <h5 class="headusermenu-box-textarea-username">ORCUN KILICASLAN</h5>
+                                                <small><a href="#" title="" rel="bookmark">1 Yeni Mesajınız Var</a></small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="btnarea"><a class="logout" href="#" title="Çıkış Yapın" rel="external nofollow">Çıkış Yapın</a></div>
+                                </div>
+                                <ul class="usermenulist">
+                                    <li class="userlink"><a href="#" title="PROFİLİM" rel="category">PROFİLİM</a></li>
+                                    <li class="userlink"><a href="#" title="MESAJLARIM" rel="category">MESAJLARIM</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <!-- Top Header End -->
@@ -61,7 +107,7 @@
                 <div class="header-navigation-navbar dfn-nav">
                     <nav class="dfn-menu">
                         <ul class="dfn-mobil-alt dfn-menu-list">
-                            <li>
+                            <li class="active">
                                 <a href="#" title="ÖZELLİKLER" rel="category">ÖZELLİKLER</a>
                                 <div class="dfn-menu-megadropdown">
                                     <div class="d-flex justify-content-center">
@@ -102,17 +148,25 @@
                                 </div>
                             </li>
                             <li><a href="#" title="NEDİR? NASIL ÇALIŞIR?" rel="category">NEDİR? NASIL ÇALIŞIR?</a></li>
-                            <li class="active"><a href="#" title="DUYURULAR" rel="category">DUYURULAR</a></li>
+                            <li><a href="#" title="DUYURULAR" rel="category">DUYURULAR</a></li>
                             <li><a href="#" title="DESTEK" rel="category">DESTEK</a></li>
                         </ul>
                     </nav>
                 </div>
             </div>
             <div class="col-3 d-flex justify-content-end">
-                <form class="header-navigation-search">
-                    <input class="header-navigation-search-input" type="search" name="headersearch" placeholder="ARA" />
-                    <button class="header-navigation-search-button" type="submit"></button>
-                </form>
+                <div class="header-navigation-signin" style="display: none !important;">
+                    <ul class="header-signin">
+                        <li class="header-signin-item"><a class="header-signin-register" href="#" title="YENİ ÜYELİK" rel="bookmark">YENİ ÜYELİK</a></li>
+                        <li class="header-signin-item"><a class="header-signin-login" href="#" title="ÜYE GİRİŞİ" rel="bookmark">ÜYE GİRİŞİ</a></li>
+                    </ul>
+                </div>
+                <div class="header-navigation-search">
+                    <form class="header-search">
+                        <input class="header-search-input" type="search" name="headersearch" placeholder="ARA" />
+                        <button class="header-search-button" type="submit"></button>
+                    </form>
+                </div>
             </div>
         </div>
         <!-- Navigation End -->
