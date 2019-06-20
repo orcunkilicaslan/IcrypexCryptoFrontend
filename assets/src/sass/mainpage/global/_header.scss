@@ -120,7 +120,9 @@ $globalSvgIconImgPath : "../../img/global/svg";
         position: relative;
         padding: 0 8px;
         opacity: 0.75;
-        display: inline-block;
+        //display: inline-block;
+        display: inline-flex;
+        min-width: 110px;
         color: $global-clr-soft-gray;
         font-size: $global-font-size;
 
@@ -130,7 +132,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
           width: 3px;
           height: 3px;
           top: calc(50% - 1px);
-          right: -3px;
+          right: 0;
           background-color: transparentize($global-clr-soft-gray, 0.7);
           @include border-radius(50%)
         }
@@ -144,10 +146,10 @@ $globalSvgIconImgPath : "../../img/global/svg";
       }
       &-name,
       &-clock{display: inline-block; margin: 0 1px;}
+      &-clock{min-width: 45px; text-align: left;}
     }
 
-    &-singin{
-    }
+    &-singin{}
 
     &-userarea{
 
