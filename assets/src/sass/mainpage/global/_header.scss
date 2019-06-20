@@ -122,7 +122,6 @@ $globalSvgIconImgPath : "../../img/global/svg";
         opacity: 0.75;
         //display: inline-block;
         display: inline-flex;
-        min-width: 110px;
         color: $global-clr-soft-gray;
         font-size: $global-font-size;
 
@@ -145,7 +144,8 @@ $globalSvgIconImgPath : "../../img/global/svg";
         }
       }
       &-name,
-      &-clock{display: inline-block; margin: 0 1px;}
+      &-clock{display: inline-block; margin: 0 2px;}
+      
       &-clock{min-width: 45px; text-align: left;}
     }
 
