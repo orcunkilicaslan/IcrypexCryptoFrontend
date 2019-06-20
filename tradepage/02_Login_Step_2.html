@@ -37,7 +37,7 @@
                 <div class="header-navigation-navbar dfn-nav">
                     <nav class="dfn-menu">
                         <ul class="dfn-mobil-alt dfn-menu-list">
-                            <li>
+                            <li class="active">
                                 <a href="#" title="ÖZELLİKLER" rel="category">ÖZELLİKLER</a>
                                 <div class="dfn-menu-megadropdown">
                                     <div class="d-flex justify-content-center">
@@ -85,11 +85,17 @@
                 </div>
             </div>
             <div class="col-3 d-flex justify-content-end">
-                <div class="header-navigation-login">
-                    <ul class="header-navigation-login-list d-flex align-items-center">
-                        <li><a href="#" title="YENİ ÜYELİK" rel="bookmark">YENİ ÜYELİK</a></li>
-                        <li class="active"><a href="#" title="ÜYE GİRİŞİ" rel="bookmark">ÜYE GİRİŞİ</a></li>
+                <div class="header-navigation-signin">
+                    <ul class="header-signin">
+                        <li class="header-signin-item"><a class="header-signin-register" href="#" title="YENİ ÜYELİK" rel="bookmark">YENİ ÜYELİK</a></li>
+                        <li class="header-signin-item"><a class="header-signin-login" href="#" title="ÜYE GİRİŞİ" rel="bookmark">ÜYE GİRİŞİ</a></li>
                     </ul>
+                </div>
+                <div class="header-navigation-search" style="display: none !important;">
+                    <form class="header-search">
+                        <input class="header-search-input" type="search" name="headersearch" placeholder="ARA" />
+                        <button class="header-search-button" type="submit"></button>
+                    </form>
                 </div>
             </div>
         </div>

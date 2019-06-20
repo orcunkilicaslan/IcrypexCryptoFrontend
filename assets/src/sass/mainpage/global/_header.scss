@@ -24,16 +24,17 @@ $globalSvgIconImgPath : "../../img/global/svg";
       padding: 0;
     }
 
-    #{$headerclassname}-navigation-search{
-      margin-bottom: 10px;
-    }
-
-    #{$headerclassname}-navigation-userarea-user-droplist{
+    #{$headerclassname}-userarea-user-droplist{
       background-color: transparentize($global-sitebg-darkblue01, 0.02);
       visibility: hidden;
       transition: none !important;
       *, * &:before, * &:after{transition:none !important;}
     }
+
+    #{$headerclassname}-search{
+      margin-bottom: 10px;
+    }
+
   }
 
   *{@include transition(all, 0.3s, ease-out);}
@@ -73,21 +74,19 @@ $globalSvgIconImgPath : "../../img/global/svg";
       padding-right: 0;
     }
 
-    ul{
+    &-language{
       text-align: center;
       margin: 0;
-    }
-    li{
-      display: inline-block;
-      color: $global-clr-soft-gray;
-      font-size: $global-font-size;
-    }
-    a{color: $global-clr-white;}
 
-    &-language{
+      a{color: $global-clr-white;}
+
       &-item{
         position: relative;
         padding: 0 10px;
+        display: inline-block;
+        color: $global-clr-soft-gray;
+        font-size: $global-font-size;
+
         &:before{
           content: "";
           position: absolute;
@@ -112,11 +111,19 @@ $globalSvgIconImgPath : "../../img/global/svg";
     }
 
     &-city{
-      margin-left: 30px !important;
+      margin: 0;
+      text-align: center;
+
+      a{color: $global-clr-white;}
+
       &-item{
         position: relative;
         padding: 0 8px;
         opacity: 0.75;
+        display: inline-block;
+        color: $global-clr-soft-gray;
+        font-size: $global-font-size;
+
         &:before{
           content: "";
           position: absolute;
@@ -140,34 +147,11 @@ $globalSvgIconImgPath : "../../img/global/svg";
     }
 
     &-singin{
-      &-item{
-        position: relative;
-        padding: 0 10px;
-        &:before{
-          content: "";
-          position: absolute;
-          width: 1px;
-          height: 10px;
-          top: calc(50% - 5px);
-          right: -3px;
-          background-color: transparentize($global-clr-soft-gray, 0.7);
-          @include border-radius(50%)
-        }
-        &:first-child{
-          padding-left: 0;
-        }
-        &:last-child{
-          padding-right: 0;
-          &:before{display: none;}
-        }
-      }
-      &-register{}
-      &-login{}
     }
 
     &-userarea{
 
-      #{$headerclassname}-navigation-userarea-user{
+      #{$headerclassname}-userarea-user{
 
         &-name{
           font-size: 15px;
@@ -176,8 +160,302 @@ $globalSvgIconImgPath : "../../img/global/svg";
         .dropdown-menu{
           padding-top: 8px;
         }
+      }
+    }
+  }
 
-        &-droplist{
+  &-search{
+    position: relative;
+    max-width: 140px;
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 17px;
+    &-input{
+      background-color: transparent;
+      color: $global-clr-white;
+      font-size: $global-font-size;
+      width: 100%;
+      padding: 2px;
+      border-bottom: 1px solid transparentize($global-clr-soft-gray, 0.7);
+    }
+    &-button{
+      background-color: transparent;
+      background-image: url(#{$globalSvgIconImgPath}/Search_Icon.svg);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: contain;
+      overflow: hidden;
+      position: absolute;
+      top: 2px;
+      right: 0;
+      width: 17px;
+      height: 17px;
+      text-indent: -9999px;
+    }
+    @include placeholder {
+      color: $global-clr-soft-gray;
+      opacity: 0.75;
+    }
+  }
+
+  &-signin{
+    text-align: center;
+    margin: 0;
+
+    &-item{
+      position: relative;
+      padding: 0 10px;
+      display: inline-block;
+      color: $global-clr-soft-gray;
+      font-size: $global-font-size;
+
+      a{color: $global-clr-white;}
+
+      &:before{
+        content: "";
+        position: absolute;
+        width: 1px;
+        height: 10px;
+        top: calc(50% - 5px);
+        right: -3px;
+        background-color: transparentize($global-clr-soft-gray, 0.7);
+        @include border-radius(50%)
+      }
+      &:first-child{
+        padding-left: 0;
+      }
+      &:last-child{
+        padding-right: 0;
+        &:before{display: none;}
+      }
+    }
+    &-register{}
+    &-login{}
+  }
+
+  &-userarea{
+
+    &-iconset{
+      text-align: center; margin: 0;
+      &-item{
+        position: relative;
+        padding: 0 12px;
+        color: $global-clr-white;
+        font-size: $global-font-size;
+
+        a{color: $global-clr-white;}
+
+        &:before{
+          content: "";
+          position: absolute;
+          width: 1px;
+          height: 10px;
+          top: calc(50% - 5px);
+          right: 0;
+          background-color: transparentize($global-clr-soft-gray, 0.7);
+          @include border-radius(50%)
+        }
+        &:first-child{
+          padding-left: 0;
+        }
+      }
+
+      &-search{
+        i{width: 17px; height: 17px;}
+      }
+
+      &-chat{
+        i{width: 18px; height: 18px;}
+      }
+
+      &-theme{
+        i{width: 18px; height: 18px;}
+      }
+
+      &-bell{
+        i{width: 18px; height: 18px;}
+      }
+
+      &-badge{
+        width: 10px;
+        height: 10px;
+        display: block;
+        background-color: #ff2e00;
+        position: absolute;
+        top: 0;
+        right: 10px;
+        @include border-radius(50%);
+      }
+    }
+
+    &-user{
+      padding-left: 15px;
+      > a{color: $global-clr-white;}
+      &.btn-group{}
+      &-title,
+      &-dropdown{}
+      &-image{
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+        @include border-radius(15px);
+      }
+      &-name{
+        margin-right: 10px;
+        font-size: 17px;
+        font-weight: normal;
+      }
+      &-dropdown{
+        color: $global-clr-white;
+        background-color: transparent;
+        padding: 0;
+        width: 24px;
+        height: 24px;
+        border:1px solid transparentize($global-clr-soft-gray, 0.7);
+        position: relative;
+
+        &:after{
+          background-image: url(#{$globalSvgIconImgPath}/Arrow_Down_Dropdown.svg);
+          background-repeat: no-repeat;
+          background-position: center center;
+          background-size: contain;
+          position: absolute;
+          width: 10px;
+          height: 6px;
+          border: none;
+          top: calc(50% - 3px);
+          left: calc(50% - 5px);
+        }
+      }
+
+      .dropdown-menu{
+        background-color: transparent;
+        padding: 0;
+        padding-top: 14px;
+        margin: 0;
+        border: none;
+        transition: none !important;
+      }
+
+      &-droplist{
+        background-color: $global-grdint-darkblue02;
+        min-width: 250px;
+
+        .headusermenu{
+          padding:10px;
+          padding-bottom: 0;
+          text-align: left;
+
+          &-userbg{
+            display: flex;
+            align-items: center;
+          }
+
+          &-box{
+            background-color: transparentize($global-grdint-darkblue01, 0.50);
+            border-top-left-radius:3px;
+            border-top-right-radius:3px;
+            padding: 15px;
+
+            &-avatar{
+              width:30px;
+              height:30px;
+              margin-right:15px;
+
+              img{
+                width:30px;
+                height:30px;
+                border-radius:50%;
+              }
+            }
+
+            &-textarea{
+              line-height: 0.5;
+              margin-top: -5px;
+
+              &-username{
+                color: $global-clr-white;
+                font-size: 17px;
+                margin: 0;
+              }
+              small a{
+                color: $global-clr-soft-blue;
+                font-weight:500;
+                margin-top: 5px;
+              }
+            }
+          }
+
+          &-userarea{
+            display: flex;
+            align-items: center;
+            padding-bottom: 10px;
+          }
+
+          .btnarea{
+            text-align:center;
+            border-bottom-left-radius:3px;
+            border-bottom-right-radius:3px;
+
+            a{
+              padding:5px;
+              border-bottom-left-radius:3px;
+              border-bottom-right-radius:3px;
+              display:inline-block;
+
+              &.logout{
+                background-color: $global-clr-btn-blue;
+                color: $global-clr-white;
+                width:100%;
+              }
+            }
+          }
+        }
+
+        .usermenulist{
+          padding-bottom: 10px;
+          text-align: left;
+
+          .userlink{
+            padding: 5px 10px;
+            position: relative;
+            display: block;
+
+            a{
+              color: $global-clr-white;
+              padding:3px 0;
+              display: block;
+              position: relative;
+
+              &:before{
+                content: "";
+                background-color: $global-clr-soft-gray;
+                width: 100%;
+                max-width: 300px;
+                height: 1px;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                opacity: 0.3;
+              }
+              &:after{
+                content: "";
+                background-color: $global-clr-soft-blue;
+                width: 40px;
+                height: 2px;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                @include transition(all, 0.5s, ease-in-out);
+              }
+
+              &:hover{
+                &:after{
+                  width: 100%;
+                }
+              }
+            }
+          }
         }
       }
     }
@@ -190,6 +468,10 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
     > div[class*="col-"]{
       padding: 0;
+    }
+
+    &-userarea{
+      margin-bottom: 10px;
     }
 
     &-logo{
@@ -224,321 +506,12 @@ $globalSvgIconImgPath : "../../img/global/svg";
       }
     }
     &-navbar{}
-    &-search{
-      position: relative;
-      max-width: 140px;
-      width: 100%;
-      margin-top: 5px;
-      margin-bottom: 17px;
-      &-input{
-        background-color: transparent;
-        color: $global-clr-white;
-        font-size: $global-font-size;
-        width: 100%;
-        padding: 2px;
-        border-bottom: 1px solid transparentize($global-clr-soft-gray, 0.7);
-      }
-      &-button{
-        background-color: transparent;
-        background-image: url(#{$globalSvgIconImgPath}/Search_Icon.svg);
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: contain;
-        overflow: hidden;
-        position: absolute;
-        top: 2px;
-        right: 0;
-        width: 17px;
-        height: 17px;
-        text-indent: -9999px;
-      }
-      @include placeholder {
-        color: $global-clr-soft-gray;
-        opacity: 0.75;
-      }
-    }
-    &-userarea{
-      margin-bottom: 10px;
-
-      &-iconset{
-        text-align: center; margin: 0;
-        &-item{
-          position: relative;
-          padding: 0 12px;
-          color: $global-clr-white;
-          font-size: $global-font-size;
-
-          a{color: $global-clr-white;}
-
-          &:before{
-            content: "";
-            position: absolute;
-            width: 1px;
-            height: 10px;
-            top: calc(50% - 5px);
-            right: 0;
-            background-color: transparentize($global-clr-soft-gray, 0.7);
-            @include border-radius(50%)
-          }
-          &:first-child{
-            padding-left: 0;
-          }
-        }
-
-        &-search{
-          i{width: 17px; height: 17px;}
-        }
-
-        &-chat{
-          i{width: 18px; height: 18px;}
-        }
-
-        &-theme{
-          i{width: 18px; height: 18px;}
-        }
-
-        &-bell{
-          i{width: 18px; height: 18px;}
-        }
-
-        &-badge{
-          width: 10px;
-          height: 10px;
-          display: block;
-          background-color: #ff2e00;
-          position: absolute;
-          top: 0;
-          right: 10px;
-          @include border-radius(50%);
-        }
-      }
-
-      &-user{
-        padding-left: 15px;
-        > a{color: $global-clr-white;}
-        &.btn-group{}
-        &-title,
-        &-dropdown{}
-        &-image{
-          width: 30px;
-          height: 30px;
-          margin-right: 10px;
-          @include border-radius(15px);
-        }
-        &-name{
-          margin-right: 10px;
-          font-size: 17px;
-          font-weight: normal;
-        }
-        &-dropdown{
-          color: $global-clr-white;
-          background-color: transparent;
-          padding: 0;
-          width: 24px;
-          height: 24px;
-          border:1px solid transparentize($global-clr-soft-gray, 0.7);
-          position: relative;
-
-          &:after{
-            background-image: url(#{$globalSvgIconImgPath}/Arrow_Down_Dropdown.svg);
-            background-repeat: no-repeat;
-            background-position: center center;
-            background-size: contain;
-            position: absolute;
-            width: 10px;
-            height: 6px;
-            border: none;
-            top: calc(50% - 3px);
-            left: calc(50% - 5px);
-          }
-        }
-
-        .dropdown-menu{
-          background-color: transparent;
-          padding: 0;
-          padding-top: 14px;
-          margin: 0;
-          border: none;
-          transition: none !important;
-        }
-
-        &-droplist{
-          background-color: $global-grdint-darkblue02;
-          min-width: 250px;
-
-          .headusermenu{
-            padding:10px;
-            padding-bottom: 0;
-            text-align: left;
-
-            &-userbg{
-              display: flex;
-              align-items: center;
-            }
-
-            &-box{
-              background-color: transparentize($global-grdint-darkblue01, 0.50);
-              border-top-left-radius:3px;
-              border-top-right-radius:3px;
-              padding: 15px;
-
-              &-avatar{
-                width:30px;
-                height:30px;
-                margin-right:15px;
-
-                img{
-                  width:30px;
-                  height:30px;
-                  border-radius:50%;
-                }
-              }
-
-              &-textarea{
-                line-height: 0.5;
-                margin-top: -5px;
-
-                &-username{
-                  color: $global-clr-white;
-                  font-size: 17px;
-                  margin: 0;
-                }
-                small a{
-                  color: $global-clr-soft-blue;
-                  font-weight:500;
-                  margin-top: 5px;
-                }
-              }
-            }
-
-            &-userarea{
-              display: flex;
-              align-items: center;
-              padding-bottom: 10px;
-            }
-
-            .btnarea{
-              text-align:center;
-              border-bottom-left-radius:3px;
-              border-bottom-right-radius:3px;
-
-              a{
-                padding:5px;
-                border-bottom-left-radius:3px;
-                border-bottom-right-radius:3px;
-                display:inline-block;
-
-                &.logout{
-                  background-color: $global-clr-btn-blue;
-                  color: $global-clr-white;
-                  width:100%;
-                }
-              }
-            }
-          }
-
-          .usermenulist{
-            padding-bottom: 10px;
-            text-align: left;
-
-            .userlink{
-              padding: 5px 10px;
-              position: relative;
-              display: block;
-
-              a{
-                color: $global-clr-white;
-                padding:3px 0;
-                display: block;
-                position: relative;
-
-                &:before{
-                  content: "";
-                  background-color: $global-clr-soft-gray;
-                  width: 100%;
-                  max-width: 300px;
-                  height: 1px;
-                  position: absolute;
-                  bottom: 0;
-                  left: 0;
-                  opacity: 0.3;
-                }
-                &:after{
-                  content: "";
-                  background-color: $global-clr-soft-blue;
-                  width: 40px;
-                  height: 2px;
-                  position: absolute;
-                  bottom: 0;
-                  left: 0;
-                  @include transition(all, 0.5s, ease-in-out);
-                }
-
-                &:hover{
-                  &:after{
-                    width: 100%;
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-
-    &-login{
-      text-align: center; margin: 0;
-
-      &-list{
-
-        > li{
-          position: relative;
-
-          &:before{
-            content: "";
-            position: absolute;
-            width: 1px;
-            height: 15px;
-            top: calc(50% - 10px);
-            right: 0;
-            background: transparentize($global-clr-soft-gray, 0.7);
-            @include border-radius(50%)
-          }
-          &:first-child{
-            > a{margin-left: 0;}
-          }
-          &:last-child{
-            > a{margin-right: 0;}
-            &:before{display: none;}
-          }
-
-          > a{
-            color: $global-clr-white;
-            padding: 5px 5px 13px;
-            margin: auto 15px;
-            position: relative;
-
-            &::after {
-              content: '';
-              position: absolute;
-              background: $global-clr-soft-blue;
-              width: 100%;
-              height: 4px;
-              display: block;
-              bottom: 0;
-              left: 0;
-              @include scaleX(0);
-              @include transition(transform, 250ms, ease-in-out);
-            }
-          }
-          &:hover,
-          &.active{
-            > a{
-              &::after {
-                @include scaleX(1);
-              }
-            }
-          }
+    &-search{}
+    &-signin{
+      #{$headerclassname}-signin-item{
+        a{
+          padding-top: 5px;
+          padding-bottom: 13px;
         }
       }
     }
@@ -801,6 +774,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
     .columntitle{
       color: $global-clr-white !important;
+      min-height: 40px;
       &:before{
         max-width: inherit !important;
       }

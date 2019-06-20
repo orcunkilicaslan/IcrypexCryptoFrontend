@@ -42,7 +42,7 @@ $mainpageHomepageImgPath : "../../img/mainpage";
           height: 25px;
 
           span{
-            background-color: $global-clr-soft-gray !important;
+            background-color: transparentize($global-clr-soft-gray, 0.7) !important;
             width: 40px !important;
             height: 3px !important;
             margin: 0 !important;
@@ -202,6 +202,7 @@ $mainpageHomepageImgPath : "../../img/mainpage";
           background-color: transparentize($global-clr-soft-gray, 0.7);
           opacity: 1;
           width: 100%;
+          height: 2px;
           left: 0;
         }
       }
