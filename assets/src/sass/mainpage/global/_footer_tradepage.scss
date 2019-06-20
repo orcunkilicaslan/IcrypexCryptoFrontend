@@ -1,5 +1,4 @@
 $tradepageFooterImgPath : "../../img/tradepage/footer";
-$globalSvgIconImgPath : "../../img/global/svg";
 
 .footer-tradepage{
   color: $global-clr-white;
@@ -111,71 +110,10 @@ $globalSvgIconImgPath : "../../img/global/svg";
     }
   }
 
-  &-menu{
-    max-width: 230px;
-
-    &-title{
-      margin-bottom: 12px !important;
-
-      &:after{
-        height: 2px !important;
-      }
-
-      a{
-        color: $global-clr-white;
-      }
-    }
-    &-list{
-      margin: 0;
-      &-item{
-        opacity: 0.9;
-        font-size: 17px;
-        line-height: 1.18;
-        a{
-          color: transparentize($global-clr-soft-gray, 0.1);
-        }
-      }
-    }
-  }
 
   &-social{
     &-list{
-      margin: 0;
       text-align: left;
-
-      &-item{
-        display: inline-block;
-        margin: 0 1px;
-
-        &:first-child{
-          margin-left: 0;
-        }
-        &:last-child{
-          margin-right: 0;
-        }
-        a{
-          background-color: transparentize($global-clr-btn-blue, 0.6);
-          width: 30px;
-          height: 30px;
-          text-align: center;
-          @include border-radius(30px);
-        }
-      }
-    }
-    &-icon{
-      background-repeat: no-repeat;
-      background-position: center center;
-      background-size: contain;
-      overflow: hidden;
-      width: 14px;
-      height: 14px;
-      display: block;
-      margin: 8px auto;
-
-      &.facebook{background-image: url(#{$tradepageFooterImgPath}/Facebook_Logo.svg);}
-      &.twitter{background-image: url(#{$tradepageFooterImgPath}/Twitter_Logo.svg);}
-      &.instagram{background-image: url(#{$tradepageFooterImgPath}/Instagram_Logo.svg);}
-      &.linkedin{background-image: url(#{$tradepageFooterImgPath}/Linkedin_Logo.svg);}
     }
   }
 
