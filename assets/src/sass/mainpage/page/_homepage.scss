@@ -325,11 +325,7 @@ $mainpageHomepageImgPath : "../../img/mainpage";
       &-select{
         color: $global-clr-soft-gray;
         background-color: transparent;
-        border: none;
         font-size: 20px;
-        option{
-          background-color: $global-clr-dark-blue;
-        }
       }
     }
 
