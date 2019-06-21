@@ -1,0 +1,193 @@
+.site{
+
+  &modal{
+
+    .modal{
+
+      &-content{
+        padding: 10px;
+        border: none;
+        @include border-radius(0);
+      }
+
+      &-header{
+        color: $global-clr-white;
+        @include gradient($global-grdint-darkblue01, $global-grdint-darkblue02);
+        @include border-radius(0);
+        padding: 5px 10px;
+
+        .close{
+          position: relative;
+          text-indent: -9999px;
+          opacity: 1;
+
+          &:before,
+          &:after{
+            content: "";
+            position: absolute;
+            background-color: $global-clr-white;
+            width: 18px;
+            height: 2px;
+            left: 0;
+            top: calc(50% - -2px);
+          }
+
+          &:before{
+            @include rotate(45);
+          }
+          &:after{
+            @include rotate(135);
+          }
+        }
+      }
+
+      &-footer{
+        border: none;
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 0;
+        padding-top: 10px;
+      }
+
+      &-title{
+        font-size: 20px;
+      }
+
+      &-body{
+        border: 1px solid transparentize($global-clr-soft-gray, 0.70);
+        margin-top: -2px;
+        padding: 0;
+      }
+
+      &-form{
+        padding: 15px;
+        padding-bottom: 0;
+
+        .row > div[class*="col"]{
+          padding-left: 7px;
+          padding-right: 7px;
+
+          &:first-child{
+            padding-left: 15px;
+          }
+          &:last-child{
+            padding-right: 15px;
+          }
+        }
+      }
+
+      &-graybg{
+        background-color: $global-clr-light-gray;
+        padding: 15px;
+        margin: 3px;
+      }
+
+      &-table{
+        margin-top: -5px;
+        border-bottom: 1px solid transparentize($global-clr-soft-gray, 0.7);
+
+        .btn{
+          padding: 2px 5px;
+        }
+
+        td, th{
+          font-size: 17px;
+          padding-top: 3px;
+          padding-bottom: 3px;
+        }
+
+        thead th{
+          &:last-child{
+            width: 110px;
+          }
+        }
+
+        tbody td{
+          &:last-child{
+            width: 110px;
+          }
+        }
+      }
+    }
+
+    &alerts{
+      div[class*="bg-"]{
+        h1,h2,h3,h4,h5,h6,p,i{
+          color: white;
+        }
+      }
+    }
+
+    &filled{
+      .modal-footer,
+      .modal-header{
+        border:none !important;
+      }
+
+      .modal-header,
+      .modal-body{
+        border:none !important;
+        *{color: white;}
+      }
+    }
+
+    &.imagemodal{
+
+      .close{
+        width: 36px;
+        height: 36px;
+        position: fixed;
+        top: 15px;
+        right: 20px;
+        text-indent: -9999px;
+        opacity: 1;
+
+        &:before,
+        &:after{
+          content: "";
+          position: absolute;
+          background-color: $global-clr-white;
+          width: 36px;
+          height: 2px;
+          left: 0;
+          top: calc(50% - -2px);
+        }
+
+        &:before{
+          @include rotate(45);
+        }
+        &:after{
+          @include rotate(135);
+        }
+      }
+
+      .modal.fade .modal-dialog{
+        transform: none;
+      }
+
+      .modal-dialog-centered {
+        min-height: 100vh;
+      }
+      .modal-dialog{
+        max-width: 96%;
+        margin: 0 auto;
+      }
+      .modal-content{
+        background-color: transparent;
+      }
+      .modal-body{
+        text-align: center;
+        border: none;
+      }
+    }
+
+  }
+}
+
+.modal-backdrop{
+  background-color: $global-grdint-darkblue01;
+
+  &.show{
+    opacity: 0.8;
+  }
+}
