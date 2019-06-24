@@ -120,6 +120,10 @@ $globalSvgIconImgPath : "../../img/global/svg";
           width: 17px;
           height: 17px;
           text-indent: -9999px;
+
+          @include ReSassResponsive(1400){
+            top: 2px;
+          }
         }
         @include placeholder {
           color: $global-clr-soft-gray;

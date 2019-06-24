@@ -25,6 +25,10 @@ $globalSvgIconImgPath : "../../img/global/svg";
         max-width: 60%;
       }
     }
+    @include ReSassResponsive(992){
+      align-items: center;
+      padding: 0;
+    }
 
     &-userarea{
       margin-bottom: 10px;
@@ -40,7 +44,24 @@ $globalSvgIconImgPath : "../../img/global/svg";
       &:hover{color: $global-clr-white;}
 
       @include ReSassResponsive(1400){
-        width: 125px;
+        width: 135px;
+      }
+      @include ReSassResponsive(992){
+        margin-left: 40px;
+        margin-bottom: 0;
+        padding-left: 10px;
+        position: relative;
+
+        &::before{
+          content: "";
+          position: absolute;
+          background-color: transparentize($global-clr-soft-gray, 0.7);
+          width: 1px;
+          height: 100%;
+          top: 0;
+          left: 0;
+        }
+
       }
 
       &-symbol{

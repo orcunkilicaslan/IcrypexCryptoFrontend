@@ -37,6 +37,10 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
     #{$headerclassname}-search{
       margin-bottom: 14px;
+
+      @include ReSassResponsive(992){
+        margin-bottom: 5px;
+      }
     }
   }
 
@@ -75,6 +79,9 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
     @include ReSassResponsive(1400){
       margin-bottom: 12px;
+    }
+    @include ReSassResponsive(992){
+      margin-bottom: 5px;
     }
 
     &-input{
@@ -149,6 +156,11 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
     &-iconset{
       text-align: center; margin: 0;
+
+      @include ReSassResponsive(1140){
+        display: none !important;
+      }
+
       &-item{
         position: relative;
         padding: 0 12px;

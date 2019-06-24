@@ -14,6 +14,10 @@ $mainpageHomepageImgPath : "../../img/mainpage";
       max-width: 840px;
       padding-left: 0;
       padding-right: 40px;
+
+      @include ReSassResponsive(1200){
+        max-width: 660px;
+      }
     }
     &-right{
       max-width: 300px;
@@ -131,6 +135,10 @@ $mainpageHomepageImgPath : "../../img/mainpage";
     color: $global-clr-white;
     margin-bottom: 50px;
 
+    @include ReSassResponsive(1200){
+      margin-bottom: 25px;
+    }
+
     &-column{
 
       &-headtitle{
@@ -164,6 +172,11 @@ $mainpageHomepageImgPath : "../../img/mainpage";
       justify-content: space-between;
       margin-bottom: 0;
 
+      @include ReSassResponsive(1200){
+        flex-wrap: wrap;
+        //border: 1px solid transparentize($global-clr-soft-gray, 0.7);
+      }
+
       &-item{
         color: $global-clr-white;
         text-align: center;
@@ -172,10 +185,6 @@ $mainpageHomepageImgPath : "../../img/mainpage";
         line-height: 0.9;
         letter-spacing: -0.3px;
         position: relative;
-
-        @include ReSassResponsive(1400){
-          font-size: 28px;
-        }
 
         &::before{
           content: "";
@@ -189,6 +198,32 @@ $mainpageHomepageImgPath : "../../img/mainpage";
 
         &:last-child{
           &::before{display: none;}
+        }
+
+        @include ReSassResponsive(1400){
+          font-size: 28px;
+        }
+        @include ReSassResponsive(1200){
+
+          &::before{right: 0;}
+
+          &:nth-child(1),
+          &:nth-child(2),
+          &:nth-child(3){
+            width: calc(100% / 3);
+            padding-top: 10px;
+            padding-bottom: 10px;
+          }
+          &:nth-child(3):before{
+            display: none;
+          }
+          &:nth-child(4),
+          &:nth-child(5){
+            width: calc(100% / 2);
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-top: 1px solid transparentize($global-clr-soft-gray, 0.7);
+          }
         }
       }
     }
@@ -308,6 +343,9 @@ $mainpageHomepageImgPath : "../../img/mainpage";
     @include ReSassResponsive(1400){
       padding-top: 80px;
     }
+    @include ReSassResponsive(1200){
+      padding-top: 50px;
+    }
 
     > .container{
       position: relative;
@@ -421,6 +459,9 @@ $mainpageHomepageImgPath : "../../img/mainpage";
     @include ReSassResponsive(1400){
       padding: 70px 0 90px;
     }
+    @include ReSassResponsive(1200){
+      padding: 40px 0 50px;
+    }
 
     .container > .columntitle{
       color: $global-clr-dark-blue;
@@ -473,6 +514,11 @@ $mainpageHomepageImgPath : "../../img/mainpage";
 
             &::before{
               height: 2px;
+
+              @include ReSassResponsive(1200){
+                width: 100% !important;
+                max-width: inherit !important;
+              }
             }
 
             &.bottomborder{
@@ -511,6 +557,12 @@ $mainpageHomepageImgPath : "../../img/mainpage";
       @include ReSassResponsive(1400){
         padding: 90px 30px 100px 0;
       }
+      @include ReSassResponsive(1280){
+        padding: 50px 30px 70px 0;
+      }
+      @include ReSassResponsive(1200){
+        padding: 30px 30px 60px 0;
+      }
 
       .columntitle{
         color: $global-clr-white;
@@ -529,6 +581,9 @@ $mainpageHomepageImgPath : "../../img/mainpage";
 
         @include ReSassResponsive(1400){
           font-size: 16px;
+        }
+        @include ReSassResponsive(1200){
+          margin-top: 15px;
         }
 
       }
@@ -553,6 +608,10 @@ $mainpageHomepageImgPath : "../../img/mainpage";
         line-height: 1.6;
         letter-spacing: -0.2px;
         padding: 10px 20px;
+
+        @include ReSassResponsive(1200){
+          margin-top: 20px;
+        }
       }
     }
 
@@ -567,6 +626,27 @@ $mainpageHomepageImgPath : "../../img/mainpage";
         @include ReSassResponsive(1400){
           width: 720px;
           height: 590px;
+          margin-top: -32px;
+        }
+        @include ReSassResponsive(1280){
+          width: 650px;
+          height: 535px;
+          margin-top: -32px;
+        }
+        @include ReSassResponsive(1200){
+          width: 530px;
+          height: 465px;
+          margin-top: -38px;
+        }
+        @include ReSassResponsive(1140){
+          width: 480px;
+          height: 425px;
+          margin-top: -38px;
+        }
+        @include ReSassResponsive(1024){
+          width: 480px;
+          height: 400px;
+          margin-top: -25px;
         }
       }
     }
@@ -582,6 +662,12 @@ $mainpageHomepageImgPath : "../../img/mainpage";
 
       @include ReSassResponsive(1400){
         padding-top: 80px;
+      }
+      @include ReSassResponsive(1280){
+        padding-top: 50px;
+      }
+      @include ReSassResponsive(1200){
+        padding-top: 30px;
       }
 
       .columntitle{
@@ -601,6 +687,9 @@ $mainpageHomepageImgPath : "../../img/mainpage";
 
         @include ReSassResponsive(1400){
           font-size: 16px;
+        }
+        @include ReSassResponsive(1200){
+          margin-top: 15px;
         }
       }
       &-list{
@@ -644,12 +733,18 @@ $mainpageHomepageImgPath : "../../img/mainpage";
           @include ReSassResponsive(1400){
             height: 550px;
           }
+          @include ReSassResponsive(1280){
+            height: 500px;
+          }
 
           img{
             max-width: none;
 
             @include ReSassResponsive(1400){
               width: 300px;
+            }
+            @include ReSassResponsive(1280){
+              width: 270px;
             }
           }
 

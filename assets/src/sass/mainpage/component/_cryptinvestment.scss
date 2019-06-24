@@ -8,6 +8,10 @@
     padding-top: 90px;
     padding-bottom: 40px;
   }
+  @include ReSassResponsive(1200){
+    padding-top: 60px;
+    padding-bottom: 30px;
+  }
 
   .columntitle{
     &::before{
@@ -20,6 +24,11 @@
 
     @include ReSassResponsive(1400){
       margin-top: 45px;
+    }
+
+    @include ReSassResponsive(1200){
+      max-width: 80%;
+      margin: 45px auto 0;
     }
 
     &-item{
