@@ -13,7 +13,7 @@
       > li{
         display: inline-flex;
 
-        &:before{
+        &::before{
           content: "";
           position: absolute;
           width: 1px;
@@ -28,7 +28,7 @@
         }
         &:last-child{
           padding-right: 0;
-          &:before{display: none;}
+          &::before{display: none;}
         }
       }
       > li > a{

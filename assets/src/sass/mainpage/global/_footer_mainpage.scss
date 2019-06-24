@@ -16,8 +16,8 @@ $mainpageFooterImgPath : "../../img/mainpage/footer";
     position: relative;
     overflow: hidden;
 
-    &:before,
-    &:after{
+    &::before,
+    &::after{
       content: "";
       background-color: transparentize($global-clr-soft-gray, 0.7);
       position: absolute;
@@ -26,10 +26,10 @@ $mainpageFooterImgPath : "../../img/mainpage/footer";
       top: 50%;
       z-index: 1;
     }
-    &:before{
+    &::before{
       left: calc(50% + 20px);
     }
-    &:after{
+    &::after{
       right: calc(50% + 20px);
     }
 
@@ -79,8 +79,8 @@ $mainpageFooterImgPath : "../../img/mainpage/footer";
     position: relative;
     overflow: hidden;
 
-    &:before,
-    &:after{
+    &::before,
+    &::after{
       content: "";
       background-color: transparentize($global-clr-soft-gray, 0.7);
       position: absolute;
@@ -89,10 +89,10 @@ $mainpageFooterImgPath : "../../img/mainpage/footer";
       top: 50%;
       z-index: 1;
     }
-    &:before{
+    &::before{
       left: calc(50% + 210px);
     }
-    &:after{
+    &::after{
       right: calc(50% + 210px);
     }
 
@@ -103,7 +103,7 @@ $mainpageFooterImgPath : "../../img/mainpage/footer";
         position: relative;
         padding: 0 12px;
         display: inline-block;
-        &:before{
+        &::before{
           content: "";
           position: absolute;
           width: 1px;
@@ -117,7 +117,7 @@ $mainpageFooterImgPath : "../../img/mainpage/footer";
         }
         &:last-child{
           padding-right: 0;
-          &:before{display: none;}
+          &::before{display: none;}
         }
 
         img{position: relative}

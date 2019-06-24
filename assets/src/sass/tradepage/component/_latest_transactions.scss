@@ -20,7 +20,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
     > .row{
       position: relative;
 
-      &:before{
+      &::before{
         content: "";
         position: absolute;
         width: 1px;

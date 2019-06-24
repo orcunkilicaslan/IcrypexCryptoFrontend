@@ -30,7 +30,7 @@
     position: relative;
     font-size: 17px;
 
-    &:before{
+    &::before{
       content: "";
       background-color: $global-clr-soft-blue;
       height: 4px;
@@ -40,7 +40,7 @@
     }
 
     &.lineorange{
-      &:before{
+      &::before{
         background-color: $global-clr-orange;
       }
     }
@@ -84,7 +84,7 @@
           padding-left: 22px;
           line-height: 1.2;
 
-          &:before{
+          &::before{
             content: "";
             position: absolute;
             background-image: url(#{$globalSvgIconImgPath}/Icon_Information.svg);
@@ -98,12 +98,12 @@
           }
 
           &.infoyellow{
-            &:before{
+            &::before{
               background-image: url(#{$globalSvgIconImgPath}/Icon_Information_Yellow.svg);
             }
           }
           &.infored{
-            &:before{
+            &::before{
               background-image: url(#{$globalSvgIconImgPath}/Icon_Information_Red.svg);
             }
           }
@@ -115,7 +115,7 @@
     &-btn{
       top: 20px;
 
-      &:before{
+      &::before{
         width: calc(100% + 2px);
         height: 4px;
         left: -1px;
@@ -130,12 +130,12 @@
       border-bottom: 5px solid $global-clr-soft-blue;
       position: relative;
 
-      &:after{
+      &::after{
         content: "";
         position: absolute;
         width: 100%;
       }
-      &:after{
+      &::after{
         background-color: $global-clr-white;
         height: 2px;
         bottom: 0;
@@ -170,7 +170,7 @@
             margin-bottom: 1px;
           }
 
-          &:before{
+          &::before{
             content: "";
             position: absolute;
             width: calc(100% - 2px);
@@ -187,7 +187,7 @@
             color: $global-clr-white;
             background-color: transparent;
             border-color: $global-clr-white;
-            &:before{
+            &::before{
               height: 100%;
               background-color: $global-clr-soft-blue;
               z-index: 1;
@@ -210,7 +210,7 @@
         padding: 15px;
       }
 
-      &:before{
+      &::before{
         display: none;
       }
     }

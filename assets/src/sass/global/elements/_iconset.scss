@@ -226,11 +226,11 @@ $globalSvgIconImgPath : "../../img/global/svg";
       border:1px solid transparentize($global-clr-soft-gray, 0.7);
       position: relative;
 
-      &:after{
+      &::after{
         display: none;
       }
 
-      &:before{
+      &::before{
         content: "";
         position:absolute;
         width: 9px;
@@ -241,28 +241,28 @@ $globalSvgIconImgPath : "../../img/global/svg";
       }
 
       &.updirection{
-        &:before{
+        &::before{
           top: calc(50% - 2px);
           left: calc(50% - 4px);
           @include rotate(315);
         }
       }
       &.downdirection{
-        &:before{
+        &::before{
           top: calc(50% - 6px);
           left: calc(50% - 4px);
           @include rotate(135);
         }
       }
       &.leftdirection{
-        &:before{
+        &::before{
           top: calc(50% - 4px);
           left: calc(50% - 2px);
           @include rotate(225);
         }
       }
       &.rightdirection{
-        &:before{
+        &::before{
           top: calc(50% - 4px);
           left: calc(50% - 5px);
           @include rotate(45);

@@ -45,7 +45,7 @@
       &-btn{
         position: relative;
 
-        &:before{
+        &::before{
           content: "";
           background-color: $global-clr-soft-gray;
           position: absolute;
@@ -54,10 +54,10 @@
           top: 50%;
         }
         &.success{
-          &:before{background-color: $global-clr-green;}
+          &::before{background-color: $global-clr-green;}
         }
         &.info{
-          &:before{background-color: $global-clr-soft-blue;}
+          &::before{background-color: $global-clr-soft-blue;}
         }
 
         .btn{

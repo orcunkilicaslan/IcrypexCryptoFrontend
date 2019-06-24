@@ -19,7 +19,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
       border-top: none;
       position: relative;
 
-      &:before{
+      &::before{
         content: "";
         background-color: $global-clr-soft-blue;
         height: 4px;
@@ -39,7 +39,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
         padding: 0;
       }
 
-      &:before{
+      &::before{
         content: "";
         position: absolute;
         width: 1px;
@@ -140,7 +140,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
       > .row{
         position: relative;
 
-        &:before{
+        &::before{
           content: "";
           position: absolute;
           width: 1px;

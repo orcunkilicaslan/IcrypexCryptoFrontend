@@ -21,8 +21,8 @@
           text-indent: -9999px;
           opacity: 1;
 
-          &:before,
-          &:after{
+          &::before,
+          &::after{
             content: "";
             position: absolute;
             background-color: $global-clr-white;
@@ -32,10 +32,10 @@
             top: calc(50% - -2px);
           }
 
-          &:before{
+          &::before{
             @include rotate(45);
           }
-          &:after{
+          &::after{
             @include rotate(135);
           }
         }
@@ -142,8 +142,8 @@
         text-indent: -9999px;
         opacity: 1;
 
-        &:before,
-        &:after{
+        &::before,
+        &::after{
           content: "";
           position: absolute;
           background-color: $global-clr-white;
@@ -153,10 +153,10 @@
           top: calc(50% - -2px);
         }
 
-        &:before{
+        &::before{
           @include rotate(45);
         }
-        &:after{
+        &::after{
           @include rotate(135);
         }
       }

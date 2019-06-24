@@ -13,7 +13,7 @@
 
     .columntitle{
       color: $global-clr-dark-blue;
-      &:before{
+      &::before{
         max-width: inherit;
       }
     }

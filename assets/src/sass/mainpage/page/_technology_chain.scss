@@ -16,7 +16,7 @@
         padding-left: 15px !important;
         padding-right: 15px !important;
 
-        &:before{
+        &::before{
           content: "";
           position: absolute;
           left: 0;
@@ -28,7 +28,7 @@
 
         &:first-child{
           padding-left: 0 !important;
-          &:before{display: none}
+          &::before{display: none}
         }
         &:last-child{
           padding-right: 0 !important;
@@ -96,7 +96,7 @@
             display: block;
             max-width: 340px;
             position: relative;
-            &:after{
+            &::after{
               content: "...";
               position: absolute;
               right: 0;
@@ -235,7 +235,7 @@
                   position: relative;
                   @include transition(all, 0.2s, linear);
 
-                  &:before{
+                  &::before{
                     content: "";
                     position:absolute;
                     width: 9px;
@@ -248,14 +248,14 @@
                 }
 
                 &-prev{
-                  &:before{
+                  &::before{
                     @include rotate(225);
                     left: calc(50% - 3px);
                   }
                 }
 
                 &-next{
-                  &:before{
+                  &::before{
                     @include rotate(45);
                     left: calc(50% - 5px);
                   }
@@ -387,7 +387,7 @@
                 line-height: 1;
                 font-weight: 500;
 
-                &:before{
+                &::before{
                   content: "";
                   position: absolute;
                   width: 1px;
@@ -399,7 +399,7 @@
 
                 &:first-child{
                   padding-left: 0;
-                  &:before{display: none;}
+                  &::before{display: none;}
                 }
                 &:last-child{
                   padding-right: 0;
@@ -423,7 +423,7 @@
                 &.rightarrow{
                   position: relative;
 
-                  &:before{
+                  &::before{
                     content: "";
                     position: absolute;
                     width: 14px;

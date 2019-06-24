@@ -48,7 +48,7 @@
               position: relative;
               padding-top: 10px;
 
-              &:before{
+              &::before{
                 content: "";
                 position:absolute;
                 width: 9px;
@@ -60,10 +60,10 @@
                 left: calc(50% - 2px);
                 @include rotate(315);
               }
-              &:first-child:before{
+              &:first-child::before{
                 left: calc(50% - 3px);
               }
-              &:last-child:before{
+              &:last-child::before{
                 left: calc(50% - 7px);
               }
             }
@@ -144,7 +144,7 @@
             margin-left: 8px;
             top: 4px;
 
-            &:after {
+            &::after {
               position: absolute;
               top: 8px;
               left: -7px;

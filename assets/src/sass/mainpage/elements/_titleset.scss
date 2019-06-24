@@ -17,7 +17,7 @@
   &.bottomborder{
     position: relative;
 
-    &:before{
+    &::before{
       content: "";
       background-color: $global-clr-soft-gray;
       width: 100%;
@@ -28,7 +28,7 @@
       left: calc(50% - 150px);
       opacity: 0.3;
     }
-    &:after{
+    &::after{
       content: "";
       background-color: $global-clr-soft-blue;
       height: 4px;
@@ -39,10 +39,10 @@
 
     &.titleleft{
       text-align: left;
-      &:before{
+      &::before{
         left: 0;
       }
-      &:after{
+      &::after{
         left: 0;
       }
 
@@ -51,7 +51,7 @@
       text-align: center;
     }
     &.fullborder{
-      &:before{
+      &::before{
         width: 100% !important;
         left: 0 !important;
       }
@@ -59,7 +59,7 @@
   }
 
   &.bottomorange{
-    &:after{
+    &::after{
       background-color: $global-clr-orange;
     }
   }
@@ -71,15 +71,15 @@
   &-xs{
     font-size: 17px;
     &.bottomborder{
-      &:before{
+      &::before{
         max-width: 150px;
       }
-      &:after{
+      &::after{
         width: 40px;
       }
     }
     &.titlecenter{
-      &:after{
+      &::after{
         left: calc(50% - 20px);
       }
     }
@@ -88,15 +88,15 @@
   &-sm{
     font-size: 20px;
     &.bottomborder{
-      &:before{
+      &::before{
         max-width: 250px;
       }
-      &:after{
+      &::after{
         width: 40px;
       }
     }
     &.titlecenter{
-      &:after{
+      &::after{
         left: calc(50% - 20px);
       }
     }
@@ -104,19 +104,22 @@
 
   &-md{
     font-size: 23px;
+    @include ReSassResponsive(1400){
+      font-size: 21px;
+    }
     &.bottomborder{
-      &:before{
+      &::before{
         max-width: 300px;
       }
-      &:after{
+      &::after{
         width: 40px;
       }
     }
     &.titlecenter{
-      &:before{
+      &::before{
         left: calc(50% - 150px);
       }
-      &:after{
+      &::after{
         left: calc(50% - 20px);
       }
     }
@@ -125,19 +128,19 @@
   &-lg{
     font-size: 25px;
     &.bottomborder{
-      &:before{
+      &::before{
         max-width: 300px;
         left: 0;
       }
-      &:after{
+      &::after{
         width: 60px;
       }
     }
     &.titlecenter{
-      &:before{
+      &::before{
         left: calc(50% - 150px);
       }
-      &:after{
+      &::after{
         left: calc(50% - 30px);
       }
     }
@@ -147,19 +150,19 @@
     font-size: 35px;
     line-height: 1.17;
     &.bottomborder{
-      &:before{
+      &::before{
         max-width: 300px;
         left: 0;
       }
-      &:after{
+      &::after{
         width: 60px;
       }
     }
     &.titlecenter{
-      &:before{
+      &::before{
         left: calc(50% - 150px);
       }
-      &:after{
+      &::after{
         left: calc(50% - 30px);
       }
     }

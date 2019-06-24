@@ -76,8 +76,8 @@
                 font-size: 20px;
                 line-height: 0.9;
               }
-              &:before,
-              &:after{
+              &::before,
+              &::after{
                 content: "";
                 position: absolute;
                 width: 100%;
@@ -85,10 +85,10 @@
                 left: 0;
                 background-color: transparentize($global-clr-soft-gray, 0.5);
               }
-              &:before{
+              &::before{
                 top: 0;
               }
-              &:after{
+              &::after{
                 bottom: 0;
               }
             }

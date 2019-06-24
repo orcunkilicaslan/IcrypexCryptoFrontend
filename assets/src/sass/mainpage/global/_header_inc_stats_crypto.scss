@@ -1,0 +1,93 @@
+$mainpageHeaderImgPath : "../../img/mainpage";
+$globalSvgIconImgPath : "../../img/global/svg";
+
+.header{
+  $headerclassname: &;
+
+  &-stats{
+    padding: 18px 0;
+    height: 80px;
+    border-top: 1px solid transparentize($global-clr-soft-gray, 0.7);
+
+    &-price{
+      color: $global-clr-white;
+
+      &-big{
+        color: $global-clr-white;
+
+        &-select{
+          color: $global-clr-white;
+          background-color: transparent;
+          border: 1px solid transparentize($global-clr-soft-gray, 0.7);;
+          font-size: 20px;
+          text-align: left;
+          padding: 6px 10px;
+          margin-right: 4px;
+          option{
+            background-color: $global-clr-dark-blue;
+          }
+          &:last-child{
+            margin-right: 0;
+          }
+        }
+
+        &-list{
+          margin-bottom: 0;
+
+          > li[class*="col"]{
+            padding-right: 10px;
+            padding-left: 15px;
+            &:first-child{padding-left: 0}
+            &:last-child{padding-right: 0}
+          }
+
+          &-item{
+            color: $global-clr-white;
+            text-align: left;
+            font-size: 20px;
+            font-weight: 300;
+            line-height: 0.95;
+            letter-spacing: -0.3px;
+            position: relative;
+
+            &::before{
+              content: "";
+              position: absolute;
+              width: 1px;
+              height: 34px;
+              top: calc(50% - 16px);
+              right: 10px;
+              background-color: transparentize($global-clr-soft-gray, 0.7);
+            }
+
+            &:last-child{
+              &::before{display: none;}
+            }
+          }
+        }
+
+        &-title{
+          color: $global-clr-soft-gray;
+          font-size: 17px;
+          font-weight: 300;
+          letter-spacing: -0.2px;
+          margin: 0;
+        }
+
+        &-volume{
+          display: block;
+
+          sup{
+            font-size: 12px;
+            font-weight: 900;
+            letter-spacing: normal;
+            text-align: center;
+            position: relative;
+            top: -6px;
+          }
+        }
+      }
+    }
+  }
+
+}

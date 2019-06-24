@@ -1,0 +1,95 @@
+$mainpageHeaderImgPath : "../../img/mainpage";
+$globalSvgIconImgPath : "../../img/global/svg";
+
+.header{
+  $headerclassname: &;
+
+  &-navigation{
+    padding: 7px 0 0 0;
+    min-height: 55px;
+    align-items: flex-end;
+
+    > div[class*="col-"]{
+      padding: 0;
+    }
+
+    @include ReSassResponsive(1400){
+      min-height: 50px;
+
+      .col-3{
+        flex: 0 0 20%;
+        max-width: 20%;
+      }
+      .col-6{
+        flex: 0 0 60%;
+        max-width: 60%;
+      }
+    }
+
+    &-userarea{
+      margin-bottom: 10px;
+    }
+
+    &-logo{
+      color: $global-clr-white;
+      font-family: $global-font-family-barlow;
+      width: 140px;
+      line-height: 0.9;
+      margin-top: 0;
+      margin-bottom: 7px;
+      &:hover{color: $global-clr-white;}
+
+      @include ReSassResponsive(1400){
+        width: 125px;
+      }
+
+      &-symbol{
+        float: left;
+        width: 38px;
+        height: 38px;
+        margin: 1px 0;
+        margin-right: 8px;
+
+        @include ReSassResponsive(1400){
+          width: 34px;
+          height: 34px;
+          margin-right: 6px;
+        }
+      }
+      &-icrypex{
+        display: block;
+        font-size: 30px;
+        font-weight: 300;
+        letter-spacing: 0.5px;
+        margin: 0;
+        line-height: 0.9;
+
+        @include ReSassResponsive(1400){
+          font-size: 27px;
+        }
+      }
+      &-cryptoexchange{
+        display: block;
+        font-size: 13px;
+        font-weight: 500;
+        margin: 0;
+        line-height: 1;
+
+        @include ReSassResponsive(1400){
+          font-size: 12px;
+        }
+      }
+    }
+    &-navbar{}
+    &-search{}
+    &-signin{
+      #{$headerclassname}-signin-item{
+        a{
+          padding-top: 5px;
+          padding-bottom: 13px;
+        }
+      }
+    }
+  }
+
+}

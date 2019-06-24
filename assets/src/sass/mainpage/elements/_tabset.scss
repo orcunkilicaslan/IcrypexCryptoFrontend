@@ -7,12 +7,12 @@
       position: relative;
       justify-content: center!important;
 
-      &:after{
+      &::after{
         content: "";
         position: absolute;
         width: 100%;
       }
-      &:after{
+      &::after{
         background-color: $global-clr-white;
         height: 2px;
         bottom: 0;
@@ -49,7 +49,7 @@
             margin-bottom: 1px;
           }
 
-          &:before{
+          &::before{
             content: "";
             position: absolute;
             width: calc(100% - 2px);
@@ -66,7 +66,7 @@
             color: $global-clr-white !important;
             background-color: transparent;
             border-color: $global-clr-white;
-            &:before{
+            &::before{
               height: 100%;
               background-color: $global-clr-soft-blue;
               z-index: 1;
@@ -83,7 +83,7 @@
             &.active,
             &.show,
             &:hover{
-              &:before{
+              &::before{
                 background-color: $global-clr-btn-blue !important;
               }
             }
@@ -157,7 +157,7 @@
         &-item{
           position: relative;
 
-          &:before{
+          &::before{
             content: "";
             position: absolute;
             width: 1px;
@@ -168,7 +168,7 @@
           }
 
           &:first-child{
-            &:before{
+            &::before{
               display: none;
             }
           }
@@ -187,7 +187,7 @@
           }
           &.active,
           &.show{
-            &:before{
+            &::before{
               content: "";
               position: absolute;
               width: 12px;
@@ -229,7 +229,7 @@
           }
           &.active,
           &.show{
-            &:before{
+            &::before{
               content: "";
               position: absolute;
               width: 100%;

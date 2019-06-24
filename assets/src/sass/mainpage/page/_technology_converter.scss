@@ -24,7 +24,7 @@
       margin: 7px;
       padding-bottom: 7px;
 
-      &:before{
+      &::before{
         content: "";
         position: absolute;
         width: 16px;
@@ -140,7 +140,7 @@
               padding-left: 16px;
               position: relative;
 
-              &:before{
+              &::before{
                 content: "";
                 position: absolute;
                 width: 12px;

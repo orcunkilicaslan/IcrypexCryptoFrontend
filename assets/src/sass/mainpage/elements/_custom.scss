@@ -28,7 +28,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
     &-item{
       position: relative;
       padding-left: 10px;
-      &:before{
+      &::before{
         content: "";
         position: absolute;
         background-image: url(#{$globalSvgIconImgPath}/Arrow_Li.svg);
