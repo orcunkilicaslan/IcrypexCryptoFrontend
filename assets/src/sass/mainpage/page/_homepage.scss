@@ -306,7 +306,7 @@ $mainpageHomepageImgPath : "../../img/mainpage";
     overflow: hidden;
 
     @include ReSassResponsive(1400){
-      padding-top: 90px;
+      padding-top: 80px;
     }
 
     > .container{
@@ -418,9 +418,21 @@ $mainpageHomepageImgPath : "../../img/mainpage";
     background-color: $global-clr-white;
     padding: 90px 0 110px;
 
+    @include ReSassResponsive(1400){
+      padding: 70px 0 90px;
+    }
+
     .container > .columntitle{
-      margin-bottom: 30px;
       color: $global-clr-dark-blue;
+      margin-bottom: 30px;
+
+      &::before{
+        height: 2px;
+      }
+
+      @include ReSassResponsive(1400){
+        margin-bottom: 25px;
+      }
     }
 
     &-list{
@@ -433,6 +445,10 @@ $mainpageHomepageImgPath : "../../img/mainpage";
         padding-top: 23px;
         padding-bottom: 23px;
         min-height: 210px;
+
+        @include ReSassResponsive(1400){
+          min-height: 200px;
+        }
 
         &-icon{
           flex: 0 0 70px;
@@ -454,6 +470,11 @@ $mainpageHomepageImgPath : "../../img/mainpage";
 
           > .columntitle{
             font-weight: normal;
+
+            &::before{
+              height: 2px;
+            }
+
             &.bottomborder{
               &::before{
                 width: 100%;
@@ -470,8 +491,11 @@ $mainpageHomepageImgPath : "../../img/mainpage";
             line-height: 1.12;
             margin: 0;
             margin-top: 10px;
-          }
 
+            @include ReSassResponsive(1400){
+              font-size: 16px;
+            }
+          }
         }
       }
 
@@ -482,14 +506,17 @@ $mainpageHomepageImgPath : "../../img/mainpage";
     background-color: $global-sitebg-darkblue01;
 
     &-content{
-      padding-top: 100px;
-      padding-bottom: 140px;
-      padding-left: 0;
-      padding-right: 30px;
+      padding: 100px 30px 140px 0;
+
+      @include ReSassResponsive(1400){
+        padding: 90px 30px 100px 0;
+      }
+
       .columntitle{
         color: $global-clr-white;
         &::before{
           width: 200px;
+          height: 2px;
         }
       }
 
@@ -499,6 +526,11 @@ $mainpageHomepageImgPath : "../../img/mainpage";
         margin: 0;
         margin-top: 25px;
         line-height: 1.18;
+
+        @include ReSassResponsive(1400){
+          font-size: 16px;
+        }
+
       }
       &-list{
         color: $global-clr-soft-gray;
@@ -506,6 +538,10 @@ $mainpageHomepageImgPath : "../../img/mainpage";
         margin: 0;
         margin-top: 15px;
         line-height: 1.29;
+
+        @include ReSassResponsive(1400){
+          font-size: 16px;
+        }
       }
       &-btn{
         margin: 0;
@@ -527,6 +563,11 @@ $mainpageHomepageImgPath : "../../img/mainpage";
         height: 656px;
         object-fit: contain;
         margin-top: -37px;
+
+        @include ReSassResponsive(1400){
+          width: 720px;
+          height: 590px;
+        }
       }
     }
   }
@@ -538,10 +579,16 @@ $mainpageHomepageImgPath : "../../img/mainpage";
       padding-top: 110px;
       padding-right: 30px;
       padding-left: 28px;
+
+      @include ReSassResponsive(1400){
+        padding-top: 80px;
+      }
+
       .columntitle{
         color: $global-clr-dark-blue;
         &::before{
           width: 200px;
+          height: 2px;
         }
       }
 
@@ -551,6 +598,10 @@ $mainpageHomepageImgPath : "../../img/mainpage";
         margin: 0;
         margin-top: 25px;
         line-height: 1.18;
+
+        @include ReSassResponsive(1400){
+          font-size: 16px;
+        }
       }
       &-list{
         color: $global-clr-dark-blue;
@@ -558,6 +609,10 @@ $mainpageHomepageImgPath : "../../img/mainpage";
         margin: 0;
         margin-top: 15px;
         line-height: 1.29;
+
+        @include ReSassResponsive(1400){
+          font-size: 16px;
+        }
       }
       &-btn{
         margin-top: 35px;
@@ -580,13 +635,22 @@ $mainpageHomepageImgPath : "../../img/mainpage";
       &-list{
         margin-bottom: 0;
         position: relative;
+
         &-item{
           display: inline-block;
           position: absolute;
           height: 646px;
 
+          @include ReSassResponsive(1400){
+            height: 550px;
+          }
+
           img{
             max-width: none;
+
+            @include ReSassResponsive(1400){
+              width: 300px;
+            }
           }
 
           &.apple{

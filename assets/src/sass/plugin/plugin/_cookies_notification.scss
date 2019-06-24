@@ -1,6 +1,8 @@
 
 .cookies-notification{
 
+  display: none;
+
   &.alert{
     background-color: transparentize(darken($global-clr-soft-blue,16%), 0.02);
     color: $global-clr-white;
