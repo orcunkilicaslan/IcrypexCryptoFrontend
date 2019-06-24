@@ -2,10 +2,16 @@
 
 #### Web Public Area Frontend List
  - [00_Home_Page](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mainpage/00_Home_Page.html)
+ - [00_Home_Page_User_Logged_In](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mainpage/00_Home_Page_User_Logged_In.html)
  - [01_Sign_Up](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mainpage/01_Sign_Up.html)
  - [02_Features_Products](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mainpage/02_Features_Products.html)
  - [03_Features_Products_Zoom_Price](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mainpage/03_Features_Products_Zoom_Price.html)
  - [04_Features_Products_Zoom_Overview](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mainpage/04_Features_Products_Zoom_Overview.html)
+ - [04_Features_Products_Zoom_Overview-Bitcoin](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mainpage/04_Features_Products_Zoom_Overview-Bitcoin.html)
+ - [04_Features_Products_Zoom_Overview-Ethereum](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mainpage/04_Features_Products_Zoom_Overview-Ethereum.html)
+ - [04_Features_Products_Zoom_Overview-Litecoin](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mainpage/04_Features_Products_Zoom_Overview-Litecoin.html)
+ - [04_Features_Products_Zoom_Overview-MenaPay](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mainpage/04_Features_Products_Zoom_Overview-MenaPay.html)
+ - [04_Features_Products_Zoom_Overview-Ripple](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mainpage/04_Features_Products_Zoom_Overview-Ripple.html)
  - [05_Features_Products_Zoom_Detail](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mainpage/05_Features_Products_Zoom_Detail.html)
  - [06_Features_Products_Zoom_Feed](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mainpage/06_Features_Products_Zoom_Feed.html)
  - [07_Features_Commision](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mainpage/07_Features_Commision.html)
