@@ -34,7 +34,6 @@ $globalSvgIconImgPath : "../../img/global/svg";
     #{$headerclassname}-search{
       margin-bottom: 10px;
     }
-
   }
 
   *{@include transition(all, 0.3s, ease-out);}
@@ -63,115 +62,17 @@ $globalSvgIconImgPath : "../../img/global/svg";
     }
   }
 
-  &-top{
-    padding: 0;
-    height: 40px;
-    border-bottom: 1px solid transparentize($global-clr-soft-gray, 0.7);
-    @include transition(all, 0.1s, ease-out);
-
-    > div[class*="col"]{
-      padding-left: 0;
-      padding-right: 0;
-    }
-
-    &-language{
-      text-align: center;
-      margin: 0;
-
-      a{color: $global-clr-white;}
-
-      &-item{
-        position: relative;
-        padding: 0 10px;
-        display: inline-block;
-        color: $global-clr-soft-gray;
-        font-size: $global-font-size;
-
-        &::before{
-          content: "";
-          position: absolute;
-          width: 1px;
-          height: 10px;
-          top: calc(50% - 5px);
-          right: -3px;
-          background-color: transparentize($global-clr-soft-gray, 0.7);
-        }
-        &:first-child{
-          padding-left: 0;
-        }
-        &:last-child{
-          padding-right: 0;
-          &::before{display: none;}
-        }
-
-      }
-      &-selection{
-        &.active{color: $global-clr-soft-gray; opacity: 0.75;}
-      }
-    }
-
-    &-city{
-      margin: 0;
-      text-align: center;
-
-      a{color: $global-clr-white;}
-
-      &-item{
-        position: relative;
-        padding: 0 8px;
-        opacity: 0.75;
-        //display: inline-block;
-        display: inline-flex;
-        color: $global-clr-soft-gray;
-        font-size: $global-font-size;
-
-        &::before{
-          content: "";
-          position: absolute;
-          width: 3px;
-          height: 3px;
-          top: calc(50% - 1px);
-          right: 0;
-          background-color: transparentize($global-clr-soft-gray, 0.7);
-          @include border-radius(50%)
-        }
-        &:first-child{
-          padding-left: 0;
-        }
-        &:last-child{
-          padding-right: 0;
-          &::before{display: none;}
-        }
-      }
-      &-name,
-      &-clock{display: inline-block; margin: 0 2px;}
-      
-      &-clock{min-width: 45px; text-align: left;}
-    }
-
-    &-singin{}
-
-    &-userarea{
-
-      #{$headerclassname}-userarea-user{
-
-        &-name{
-          font-size: 15px;
-        }
-
-        .dropdown-menu{
-          padding-top: 8px;
-        }
-      }
-    }
-  }
-
   &-search{
     position: relative;
     max-width: 140px;
     width: 100%;
     margin-top: 5px;
     margin-bottom: 17px;
+
+    @include ReSassResponsive(1400){
+      margin-bottom: 12px;
+    }
+
     &-input{
       background-color: transparent;
       color: $global-clr-white;
@@ -245,6 +146,10 @@ $globalSvgIconImgPath : "../../img/global/svg";
         color: $global-clr-white;
         font-size: $global-font-size;
 
+        @include ReSassResponsive(1400){
+          padding: 0 10px;
+        }
+
         a{color: $global-clr-white;}
 
         &::before{
@@ -263,19 +168,51 @@ $globalSvgIconImgPath : "../../img/global/svg";
       }
 
       &-search{
-        i{width: 17px; height: 17px;}
+        i{
+          width: 17px;
+          height: 17px;
+
+          @include ReSassResponsive(1400){
+            width: 14px;
+            height: 14px;
+          }
+        }
       }
 
       &-chat{
-        i{width: 18px; height: 18px;}
+        i{
+          width: 18px;
+          height: 18px;
+
+          @include ReSassResponsive(1400){
+            width: 14px;
+            height: 14px;
+          }
+        }
       }
 
       &-theme{
-        i{width: 18px; height: 18px;}
+        i{
+          width: 18px;
+          height: 18px;
+
+          @include ReSassResponsive(1400){
+            width: 14px;
+            height: 14px;
+          }
+        }
       }
 
       &-bell{
-        i{width: 18px; height: 18px;}
+        i{
+          width: 18px;
+          height: 18px;
+
+          @include ReSassResponsive(1400){
+            width: 14px;
+            height: 14px;
+          }
+        }
       }
 
       &-badge{
@@ -287,6 +224,11 @@ $globalSvgIconImgPath : "../../img/global/svg";
         top: 0;
         right: 10px;
         @include border-radius(50%);
+
+        @include ReSassResponsive(1400){
+          width: 8px;
+          height: 8px;
+        }
       }
     }
 
@@ -301,11 +243,17 @@ $globalSvgIconImgPath : "../../img/global/svg";
         height: 30px;
         margin-right: 10px;
         @include border-radius(15px);
+
+        @include ReSassResponsive(1400){
+          width: 26px;
+          height: 26px;
+        }
       }
       &-name{
         margin-right: 10px;
         font-size: 17px;
         font-weight: normal;
+        white-space: nowrap;
       }
       &-dropdown{
         color: $global-clr-white;
@@ -459,329 +407,6 @@ $globalSvgIconImgPath : "../../img/global/svg";
             }
           }
         }
-      }
-    }
-  }
-
-  &-navigation{
-    padding: 7px 0 0 0;
-    min-height: 55px;
-    align-items: flex-end;
-
-    > div[class*="col-"]{
-      padding: 0;
-    }
-
-    &-userarea{
-      margin-bottom: 10px;
-    }
-
-    &-logo{
-      color: $global-clr-white;
-      font-family: $global-font-family-barlow;
-      width: 140px;
-      line-height: 0.9;
-      margin-top: 0;
-      margin-bottom: 7px;
-      &:hover{color: $global-clr-white;}
-      &-symbol{
-        float: left;
-        width: 38px;
-        height: 38px;
-        margin: 1px 0;
-        margin-right: 8px;
-      }
-      &-icrypex{
-        display: block;
-        font-size: 30px;
-        font-weight: 300;
-        letter-spacing: 0.5px;
-        margin: 0;
-        line-height: 0.9;
-      }
-      &-cryptoexchange{
-        display: block;
-        font-size: 13px;
-        font-weight: 500;
-        margin: 0;
-        line-height: 1;
-      }
-    }
-    &-navbar{}
-    &-search{}
-    &-signin{
-      #{$headerclassname}-signin-item{
-        a{
-          padding-top: 5px;
-          padding-bottom: 13px;
-        }
-      }
-    }
-  }
-
-  &-stats{
-    padding: 18px 0;
-    height: 80px;
-    border-top: 1px solid transparentize($global-clr-soft-gray, 0.7);
-
-    &-price{
-      color: $global-clr-white;
-
-      &-big{
-        color: $global-clr-white;
-
-        &-select{
-          color: $global-clr-white;
-          background-color: transparent;
-          border: 1px solid transparentize($global-clr-soft-gray, 0.7);;
-          font-size: 20px;
-          text-align: left;
-          padding: 6px 10px;
-          margin-right: 4px;
-          option{
-            background-color: $global-clr-dark-blue;
-          }
-          &:last-child{
-            margin-right: 0;
-          }
-        }
-
-        &-list{
-          margin-bottom: 0;
-
-          > li[class*="col"]{
-            padding-right: 10px;
-            padding-left: 15px;
-            &:first-child{padding-left: 0}
-            &:last-child{padding-right: 0}
-          }
-
-          &-item{
-            color: $global-clr-white;
-            text-align: left;
-            font-size: 20px;
-            font-weight: 300;
-            line-height: 0.95;
-            letter-spacing: -0.3px;
-            position: relative;
-
-            &::before{
-              content: "";
-              position: absolute;
-              width: 1px;
-              height: 34px;
-              top: calc(50% - 16px);
-              right: 10px;
-              background-color: transparentize($global-clr-soft-gray, 0.7);
-            }
-
-            &:last-child{
-              &::before{display: none;}
-            }
-          }
-        }
-
-        &-title{
-          color: $global-clr-soft-gray;
-          font-size: 17px;
-          font-weight: 300;
-          letter-spacing: -0.2px;
-          margin: 0;
-        }
-
-        &-volume{
-          display: block;
-
-          sup{
-            font-size: 12px;
-            font-weight: 900;
-            letter-spacing: normal;
-            text-align: center;
-            position: relative;
-            top: -6px;
-          }
-        }
-      }
-    }
-  }
-
-  &-titlearea{
-    padding: 18px 0;
-    height: 80px;
-    border-top: 1px solid transparentize($global-clr-soft-gray, 0.7);
-
-    .columntitle{
-      color: $global-clr-white !important;
-      &::before{
-        max-width: inherit !important;
-      }
-      &::after{
-        width: 60px;
-      }
-    }
-
-    &-title{
-      width: 100%;
-
-      &-icon{
-        display: flex;
-        min-height: 39px;
-
-        &-span{
-          width: 40px;
-          border: 1px solid transparentize($global-clr-soft-gray, 0.7);
-          border-left: none;
-          display: flex;
-          align-items: center;
-        }
-
-        .icon-svg{
-          width: 19px;
-          height: 14px;
-          margin: 7px;
-        }
-      }
-    }
-
-    &-price{
-      color: $global-clr-white;
-
-      &-lite{
-        color: $global-clr-white;
-
-        &-list{
-          display: flex !important;
-          align-items: center;
-          padding: 0 10px 0 35px;
-          margin-bottom: 0;
-          position: relative;
-
-          > li[class*="col"]{
-            padding-right: 10px;
-            padding-left: 15px;
-            &:first-child{padding-left: 0}
-            &:last-child{padding-right: 0}
-          }
-
-          &-item{
-            color: $global-clr-white;
-            text-align: left;
-            font-size: 20px;
-            font-weight: 300;
-            line-height: 0.95;
-            letter-spacing: -0.3px;
-            position: relative;
-          }
-
-          .owl{
-            &-item{
-              position: relative;
-
-              &::before{
-                content: "";
-                position: absolute;
-                width: 1px;
-                height: 34px;
-                top: calc(50% - 16px);
-                right: 10px;
-                background-color: transparentize($global-clr-soft-gray, 0.7);
-              }
-
-              &:last-child{
-                &::before{display: none;}
-              }
-            }
-
-            &-nav{
-              button[class*="owl-"]{
-                background-color: transparentize($global-grdint-darkblue02, 0.4);
-                border: 1px solid transparentize($global-clr-soft-gray, 0.7);
-                @include border-radius(0);
-                width: 20px;
-                height: calc(100% + 2px);
-                margin: 0;
-                top: -1px;
-
-                &:hover{
-                  background-color: $global-grdint-darkblue02;
-                }
-              }
-            }
-
-            &-prev,
-            &-next{
-              position: absolute;
-
-              &::before{
-                content: "";
-                position: absolute;
-                width: 12px;
-                height: 12px;
-                left: calc(50% - 6px);
-                top: calc(50% - 6px);
-                background-image: url(#{$globalSvgIconImgPath}/Arrow_Down_Dropdown.svg);
-                background-repeat: no-repeat;
-                background-position: center center;
-                background-size: contain;
-              }
-
-              span{
-                display: none;
-              }
-            }
-
-            &-prev{
-              left: 0;
-              &::before{
-                @include rotate(90);
-              }
-            }
-            &-next{
-              right: 0;
-              &::before{
-                @include rotate(270);
-              }
-            }
-          }
-        }
-
-        &-title{
-          color: $global-clr-soft-gray;
-          font-size: 15px;
-          font-weight: 300;
-          letter-spacing: -0.2px;
-          margin: 0;
-        }
-
-        &-volume{
-          display: block;
-
-          sup{
-            font-size: 12px;
-            font-weight: 900;
-            letter-spacing: normal;
-            text-align: center;
-            position: relative;
-            top: -6px;
-          }
-        }
-      }
-    }
-  }
-
-  &-onlytitle{
-    padding: 18px 0;
-    height: 80px;
-    border-top: 1px solid transparentize($global-clr-soft-gray, 0.7);
-
-    .columntitle{
-      color: $global-clr-white !important;
-      min-height: 40px;
-      &::before{
-        max-width: inherit !important;
-      }
-      &::after{
-        width: 60px;
       }
     }
   }

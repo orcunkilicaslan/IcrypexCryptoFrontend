@@ -1,0 +1,24 @@
+$mainpageHeaderImgPath : "../../img/mainpage";
+$globalSvgIconImgPath : "../../img/global/svg";
+
+.header{
+  $headerclassname: &;
+
+  &-onlytitle{
+    padding: 18px 0;
+    height: 80px;
+    border-top: 1px solid transparentize($global-clr-soft-gray, 0.7);
+
+    .columntitle{
+      color: $global-clr-white !important;
+      min-height: 40px;
+      &::before{
+        max-width: inherit !important;
+      }
+      &::after{
+        width: 60px;
+      }
+    }
+  }
+
+}
