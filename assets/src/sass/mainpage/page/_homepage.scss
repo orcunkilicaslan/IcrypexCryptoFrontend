@@ -6,6 +6,10 @@ $mainpageHomepageImgPath : "../../img/mainpage";
     padding-top: 20px;
     min-height: 630px;
 
+    @include ReSassResponsive(1400){
+      padding-top: 15px;
+    }
+
     &-left{
       max-width: 840px;
       padding-left: 0;
@@ -16,15 +20,30 @@ $mainpageHomepageImgPath : "../../img/mainpage";
       padding-left: 0;
       padding-right: 0;
     }
+    &-fullwidth{
+      flex: 0 0 100% !important;
+      max-width: 100% !important;
+    }
+    &-hidden{
+      display: none !important;
+    }
   }
 
   &-slider{
     min-height: 265px;
 
+    @include ReSassResponsive(1400){
+      min-height: 260px;
+    }
+
     &-wapper{
       position: relative;
       margin: 0;
       padding-top: 40px;
+
+      @include ReSassResponsive(1400){
+        padding-top: 35px;
+      }
 
       &-item{
         color: $global-clr-white;
@@ -90,6 +109,10 @@ $mainpageHomepageImgPath : "../../img/mainpage";
       font-size: 44px;
       font-weight: 300;
       line-height: 1.07;
+
+      @include ReSassResponsive(1400){
+        font-size: 38px;
+      }
     }
 
     &-desc{
@@ -97,6 +120,10 @@ $mainpageHomepageImgPath : "../../img/mainpage";
       font-size: 26px;
       font-weight: 300;
       line-height: 1.07;
+
+      @include ReSassResponsive(1400){
+        font-size: 23px;
+      }
     }
   }
 
@@ -146,6 +173,10 @@ $mainpageHomepageImgPath : "../../img/mainpage";
         letter-spacing: -0.3px;
         position: relative;
 
+        @include ReSassResponsive(1400){
+          font-size: 28px;
+        }
+
         &::before{
           content: "";
           position: absolute;
@@ -168,6 +199,10 @@ $mainpageHomepageImgPath : "../../img/mainpage";
       font-weight: 300;
       letter-spacing: -0.2px;
       margin: 0;
+
+      @include ReSassResponsive(1400){
+        font-size: 17px;
+      }
     }
 
     &-volume{
@@ -180,6 +215,11 @@ $mainpageHomepageImgPath : "../../img/mainpage";
         text-align: center;
         position: relative;
         top: -12px;
+
+        @include ReSassResponsive(1400){
+          font-size: 11px;
+          top: -11px;
+        }
       }
     }
   }
@@ -264,6 +304,10 @@ $mainpageHomepageImgPath : "../../img/mainpage";
     color: $global-clr-white;
     padding-top: 114px;
     overflow: hidden;
+
+    @include ReSassResponsive(1400){
+      padding-top: 90px;
+    }
 
     > .container{
       position: relative;

@@ -30,6 +30,10 @@ $globalSvgIconImgPath : "../../img/global/svg";
         margin-bottom: 0;
         font-size: 20px;
         overflow: hidden;
+
+        @include ReSassResponsive(1400){
+          font-size: 18px;
+        }
       }
       &-link{
         color: transparentize($global-clr-soft-gray, 0.50);

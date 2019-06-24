@@ -104,6 +104,9 @@
 
   &-md{
     font-size: 23px;
+    @include ReSassResponsive(1400){
+      font-size: 21px;
+    }
     &.bottomborder{
       &::before{
         max-width: 300px;
