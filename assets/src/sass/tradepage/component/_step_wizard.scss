@@ -19,12 +19,12 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
         &:first-child{
           margin-left:0;
-          &:before{display:none;}
+          &::before{display:none;}
         }
 
         &:last-child{
           margin-right: 0;
-          &:before{display:none;}
+          &::before{display:none;}
         }
 
         &-circle{
@@ -42,7 +42,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
           @include border-radius(52px);
           @include transition(all, 0.4s, linear);
 
-          &:before{
+          &::before{
             content:"";
             width:48px;
             height:48px;
@@ -71,7 +71,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
           position: relative;
           padding-top: 7px;
 
-          &:before{
+          &::before{
             content: "";
             position: absolute;
             width: 20px;
@@ -94,11 +94,11 @@ $globalSvgIconImgPath : "../../img/global/svg";
             color:$global-clr-dark-blue;
           }
           #{$liitem}-title{
-            &:before{
+            &::before{
               background-color:$global-clr-soft-blue;
             }
           }
-          &:before{display:block;}
+          &::before{display:block;}
         }
 
         &.check{
@@ -112,7 +112,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
             animation-duration:1s;
             animation-fill-mode:both;
 
-            &:after{
+            &::after{
               content:"";
               position:absolute;
               width: 26px;
@@ -130,16 +130,16 @@ $globalSvgIconImgPath : "../../img/global/svg";
             color:$global-clr-soft-blue;
           }
           #{$liitem}-title{
-            &:before{
+            &::before{
               background-color:$global-clr-soft-blue;
             }
           }
-          &:after{width: 124px;}
-          &:before{opacity:0;}
+          &::after{width: 124px;}
+          &::before{opacity:0;}
         }
 
-        &:after,
-        &:before{
+        &::after,
+        &::before{
           content:"";
           width: 124px;
           height:4px;
@@ -152,7 +152,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
           @include transition-delay (0.4s);
           @include transition(all, 0.5s, ease-in-out);
         }
-        &:after{
+        &::after{
           background-image: url(#{$globalSvgIconImgPath}/Step_Wizard_Point_Line_Blue.svg);
           width:0;
         }
@@ -217,7 +217,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
           margin-top: 4px;
           margin-bottom: 20px;
 
-          &:before{
+          &::before{
             content:"";
             width: 12px;
             height: 12px;
@@ -352,7 +352,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
           position: relative;
           padding-left: 15px;
 
-          &:before{
+          &::before{
             content:"";
             position:absolute;
             width: 9px;
@@ -431,7 +431,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
           border: 1px solid transparentize($global-clr-soft-gray, 0.7);
           @include border-radius(100%);
 
-          &:after{
+          &::after{
             content:"";
             position:absolute;
             width: 6px;
@@ -467,7 +467,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
       i[class*="check"]{
         top: calc(50% - 25px);
 
-        &:after{
+        &::after{
           content:"";
           position:absolute;
           width: 42px;

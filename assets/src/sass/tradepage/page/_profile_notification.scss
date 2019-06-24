@@ -22,8 +22,8 @@
           display: inline-block;
           margin: 0 2px;
 
-          &:before,
-          &:after{
+          &::before,
+          &::after{
             content: "";
             position: absolute;
             background-color: $global-clr-soft-blue;
@@ -33,23 +33,23 @@
             top: calc(50% - 1px);
           }
 
-          &:before{
+          &::before{
             @include rotate(45);
           }
-          &:after{
+          &::after{
             @include rotate(135);
           }
 
           &.darkblue{
-            &:before,
-            &:after{
+            &::before,
+            &::after{
               background-color: $global-clr-dark-blue;
             }
           }
 
           &.darkred{
-            &:before,
-            &:after{
+            &::before,
+            &::after{
               background-color: $global-clr-red;
             }
           }

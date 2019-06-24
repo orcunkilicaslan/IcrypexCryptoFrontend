@@ -17,12 +17,12 @@
           div[class*="layout02-cont"]{
             padding-left: 0 !important;
             border-left: 0;
-            &:before{
+            &::before{
               left: 0;
             }
           }
           div[class*="layout02-imagebox"]{
-            &:before{
+            &::before{
               border-right: 0;
             }
           }
@@ -35,12 +35,12 @@
           div[class*="layout02-cont"]{
             padding-right: 0 !important;
             border-right: 0;
-            &:before{
+            &::before{
               right: 0;
             }
           }
           div[class*="layout02-imagebox"]{
-            &:before{
+            &::before{
               border-left: 0;
             }
           }
@@ -59,7 +59,7 @@
         border: 1px solid transparentize($global-clr-soft-gray, 0.7);
         position: relative;
 
-        &:before{
+        &::before{
           content: "";
           position: absolute;
           width: calc(100% - 100px);
@@ -73,7 +73,7 @@
         height: 100%;
         position: relative;
 
-        &:before{
+        &::before{
           content: "";
           position: absolute;
           width: calc(100% - 30px);
@@ -99,7 +99,7 @@
         position: relative;
         padding-left: 17px;
 
-        &:before{
+        &::before{
           content:"";
           position:absolute;
           width: 9px;

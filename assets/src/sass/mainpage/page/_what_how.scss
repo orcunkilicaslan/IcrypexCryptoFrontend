@@ -68,7 +68,7 @@
           background-color: transparent;
         }
 
-        &:before{
+        &::before{
           content: "";
           position: absolute;
           width: 17px;
@@ -122,14 +122,14 @@
         }
         .icon {
           background: transparent;
-          &:before {
+          &::before {
             background: transparent;
             top: calc(50% - -1px);
             left: calc(50% - 4px);
             @include rotate(315);
             border-color: $global-clr-white;
           }
-          &:after {
+          &::after {
             content: "";
             position:absolute;
             background-color: transparent;
@@ -161,8 +161,8 @@
           .icon {
             background-color: transparent;
 
-            &:before,
-            &:after {
+            &::before,
+            &::after {
               background: transparent;
               border-color: $global-clr-white;
             }
@@ -187,8 +187,8 @@
         @include transition(all, 0.3s, ease-in-out);
 
         /*
-        &:before,
-        &:after {
+        &::before,
+        &::after {
           content: '';
           width: 8px;
           height: 2px;
@@ -200,13 +200,13 @@
           @include transition(all, 0.3s, ease-in-out);
           @include translate(-50%,-50%);
         }
-        &:after {
+        &::after {
           transform: translate(-50%, -50%) rotate(90deg);
           z-index: -1;
         }
         */
 
-        &:before{
+        &::before{
           content: "";
           position:absolute;
           background-color: transparent;
@@ -256,7 +256,7 @@
             position: relative;
             padding-left: 17px;
 
-            &:before{
+            &::before{
               content:"";
               position:absolute;
               width: 9px;
@@ -323,12 +323,12 @@
       padding-bottom: 10px;
       margin-bottom: 10px;
 
-      &:before{
+      &::before{
         width: 100%;
         max-width: inherit;
         height: 1px;
       }
-      &:after{
+      &::after{
         width: 60px;
         height: 4px;
       }
@@ -350,7 +350,7 @@
         position: relative;
         padding-left: 17px;
 
-        &:before{
+        &::before{
           content:"";
           position:absolute;
           width: 9px;

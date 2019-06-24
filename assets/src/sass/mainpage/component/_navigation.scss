@@ -15,7 +15,7 @@
     &-list{
       min-height: 36px;
       > li{
-        &:before{
+        &::before{
           content: "";
           position: absolute;
           width: 1px;
@@ -30,7 +30,7 @@
         }
         &:last-child{
           > a{margin-right: 0;}
-          &:before{display: none;}
+          &::before{display: none;}
         }
 
         > a{

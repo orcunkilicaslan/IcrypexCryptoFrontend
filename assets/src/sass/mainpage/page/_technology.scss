@@ -33,7 +33,7 @@
           line-height: 1.2;
           color: $global-clr-dark-blue;
 
-          &:before{
+          &::before{
             content: "";
             position: absolute;
             background-image: url(#{$globalSvgIconImgPath}/Icon_Information.svg);
@@ -47,12 +47,12 @@
           }
 
           &.infoyellow{
-            &:before{
+            &::before{
               background-image: url(#{$globalSvgIconImgPath}/Icon_Information_Yellow.svg);
             }
           }
           &.infored{
-            &:before{
+            &::before{
               background-image: url(#{$globalSvgIconImgPath}/Icon_Information_Red.svg);
             }
           }
@@ -80,7 +80,7 @@
           border: 1px solid transparentize($global-clr-soft-gray, 0.7);
           @include border-radius(100%);
 
-          &:after{
+          &::after{
             content:"";
             position:absolute;
             width: 6px;
@@ -178,7 +178,7 @@
             position: relative;
             padding-left: 17px;
 
-            &:before{
+            &::before{
               content:"";
               position:absolute;
               width: 9px;
@@ -217,8 +217,8 @@
             border: 1px solid transparentize($global-clr-soft-gray, 0.7);
             @include border-radius(100%);
 
-            &:before,
-            &:after{
+            &::before,
+            &::after{
               content:"";
               position:absolute;
               background-color: $global-clr-soft-blue;
@@ -228,7 +228,7 @@
               left: calc(50% - 5px);
               @include rotate(0);
             }
-            &:after{
+            &::after{
               @include rotate(90);
             }
           }
@@ -297,7 +297,7 @@
             background-color: transparent;
           }
 
-          &:before{
+          &::before{
             content: "";
             position: absolute;
             width: 17px;
@@ -352,7 +352,7 @@
               position: relative;
               @include transition(all, 0.2s, linear);
 
-              &:before{
+              &::before{
                 content: "";
                 position:absolute;
                 width: 9px;
@@ -365,14 +365,14 @@
             }
 
             &-prev{
-              &:before{
+              &::before{
                 @include rotate(225);
                 left: calc(50% - 3px);
               }
             }
 
             &-next{
-              &:before{
+              &::before{
                 @include rotate(45);
                 left: calc(50% - 5px);
               }

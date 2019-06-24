@@ -28,7 +28,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
       background-color: transparentize($global-sitebg-darkblue01, 0.02);
       visibility: hidden;
       transition: none !important;
-      *, * &:before, * &:after{transition:none !important;}
+      *, * &::before, * &::after{transition:none !important;}
     }
 
     #{$headerclassname}-search{
@@ -87,7 +87,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
         color: $global-clr-soft-gray;
         font-size: $global-font-size;
 
-        &:before{
+        &::before{
           content: "";
           position: absolute;
           width: 1px;
@@ -101,7 +101,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
         }
         &:last-child{
           padding-right: 0;
-          &:before{display: none;}
+          &::before{display: none;}
         }
 
       }
@@ -125,7 +125,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
         color: $global-clr-soft-gray;
         font-size: $global-font-size;
 
-        &:before{
+        &::before{
           content: "";
           position: absolute;
           width: 3px;
@@ -140,7 +140,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
         }
         &:last-child{
           padding-right: 0;
-          &:before{display: none;}
+          &::before{display: none;}
         }
       }
       &-name,
@@ -213,7 +213,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
       a{color: $global-clr-white;}
 
-      &:before{
+      &::before{
         content: "";
         position: absolute;
         width: 1px;
@@ -228,7 +228,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
       }
       &:last-child{
         padding-right: 0;
-        &:before{display: none;}
+        &::before{display: none;}
       }
     }
     &-register{}
@@ -247,7 +247,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
         a{color: $global-clr-white;}
 
-        &:before{
+        &::before{
           content: "";
           position: absolute;
           width: 1px;
@@ -316,7 +316,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
         border:1px solid transparentize($global-clr-soft-gray, 0.7);
         position: relative;
 
-        &:after{
+        &::after{
           background-image: url(#{$globalSvgIconImgPath}/Arrow_Down_Dropdown.svg);
           background-repeat: no-repeat;
           background-position: center center;
@@ -429,7 +429,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
               display: block;
               position: relative;
 
-              &:before{
+              &::before{
                 content: "";
                 background-color: $global-clr-soft-gray;
                 width: 100%;
@@ -440,7 +440,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
                 left: 0;
                 opacity: 0.3;
               }
-              &:after{
+              &::after{
                 content: "";
                 background-color: $global-clr-soft-blue;
                 width: 40px;
@@ -452,7 +452,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
               }
 
               &:hover{
-                &:after{
+                &::after{
                   width: 100%;
                 }
               }
@@ -565,7 +565,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
             letter-spacing: -0.3px;
             position: relative;
 
-            &:before{
+            &::before{
               content: "";
               position: absolute;
               width: 1px;
@@ -576,7 +576,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
             }
 
             &:last-child{
-              &:before{display: none;}
+              &::before{display: none;}
             }
           }
         }
@@ -612,10 +612,10 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
     .columntitle{
       color: $global-clr-white !important;
-      &:before{
+      &::before{
         max-width: inherit !important;
       }
-      &:after{
+      &::after{
         width: 60px;
       }
     }
@@ -677,7 +677,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
             &-item{
               position: relative;
 
-              &:before{
+              &::before{
                 content: "";
                 position: absolute;
                 width: 1px;
@@ -688,7 +688,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
               }
 
               &:last-child{
-                &:before{display: none;}
+                &::before{display: none;}
               }
             }
 
@@ -712,7 +712,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
             &-next{
               position: absolute;
 
-              &:before{
+              &::before{
                 content: "";
                 position: absolute;
                 width: 12px;
@@ -732,13 +732,13 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
             &-prev{
               left: 0;
-              &:before{
+              &::before{
                 @include rotate(90);
               }
             }
             &-next{
               right: 0;
-              &:before{
+              &::before{
                 @include rotate(270);
               }
             }
@@ -777,10 +777,10 @@ $globalSvgIconImgPath : "../../img/global/svg";
     .columntitle{
       color: $global-clr-white !important;
       min-height: 40px;
-      &:before{
+      &::before{
         max-width: inherit !important;
       }
-      &:after{
+      &::after{
         width: 60px;
       }
     }

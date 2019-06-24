@@ -129,8 +129,8 @@
         @include transition(all, 0.3s, ease-in-out);
 
         span,
-        span:before,
-        span:after{
+        span::before,
+        span::after{
           content:'';
           position:absolute;
           background-color:#411e75;
@@ -139,18 +139,18 @@
           display:block;
           cursor:pointer;
         }
-        span:before{
+        span::before{
           top:-7px;
         }
-        span:after{
+        span::after{
           bottom:-7px;
         }
         span,
-        span:before,
-        span:after{
+        span::before,
+        span::after{
           @include transition(all, 0.3s, ease-in-out);
         }
-        &.active span:after{top:7px;}
+        &.active span::after{top:7px;}
       }
     }
 
@@ -168,15 +168,15 @@
         span{
           background-color:transparent;
 
-          &:before,
-          &:after{background-color:#333333;}
+          &::before,
+          &::after{background-color:#333333;}
 
-          &:before{
+          &::before{
             top:7px;
             bottom:0;
             @include rotate(45);
           }
-          &:after{
+          &::after{
             @include rotate(-45);
           }
         }

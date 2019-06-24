@@ -20,7 +20,7 @@
         position: relative;
         padding-left: 15px;
 
-        &:before{
+        &::before{
           content:"";
           position:absolute;
           width: 9px;

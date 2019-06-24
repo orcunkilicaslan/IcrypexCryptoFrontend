@@ -75,8 +75,8 @@
         border: 1px solid transparentize($global-clr-soft-gray, 0.7);
         @include border-radius(100%);
 
-        &:before,
-        &:after{
+        &::before,
+        &::after{
           content:"";
           position:absolute;
           background-color: $global-clr-soft-blue;
@@ -86,7 +86,7 @@
           left: calc(50% - 5px);
           @include rotate(0);
         }
-        &:after{
+        &::after{
           @include rotate(90);
         }
       }

@@ -24,7 +24,7 @@
         padding: 15px 0;
         position: relative;
 
-        &:before{
+        &::before{
           content: "";
           background-color: $global-clr-soft-blue;
           width: 40px;

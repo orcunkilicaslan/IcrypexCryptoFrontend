@@ -282,7 +282,7 @@ select.selectpicker {
   }
 
   .dropdown-toggle {
-    &:before {
+    &::before {
       content: '';
       border-left: 7px solid transparent;
       border-right: 7px solid transparent;
@@ -293,7 +293,7 @@ select.selectpicker {
       display: none;
     }
 
-    &:after {
+    &::after {
       content: '';
       border-left: 6px solid transparent;
       border-right: 6px solid transparent;
@@ -306,14 +306,14 @@ select.selectpicker {
   }
 
   &.dropup .dropdown-toggle {
-    &:before {
+    &::before {
       bottom: auto;
       top: -3px;
       border-top: 7px solid $color-grey-arrow;
       border-bottom: 0;
     }
 
-    &:after {
+    &::after {
       bottom: auto;
       top: -3px;
       border-top: 6px solid white;
@@ -322,20 +322,20 @@ select.selectpicker {
   }
 
   &.pull-right .dropdown-toggle {
-    &:before {
+    &::before {
       right: 12px;
       left: auto;
     }
 
-    &:after {
+    &::after {
       right: 13px;
       left: auto;
     }
   }
 
   &.open > .dropdown-toggle {
-    &:before,
-    &:after {
+    &::before,
+    &::after {
       display: block;
     }
   }

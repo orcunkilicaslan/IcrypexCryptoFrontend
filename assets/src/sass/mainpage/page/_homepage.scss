@@ -50,7 +50,7 @@ $mainpageHomepageImgPath : "../../img/mainpage";
             position: relative;
             @include border-radius(0px !important);
 
-            &:before{
+            &::before{
               content: "";
               position: absolute;
               background: transparent;
@@ -68,7 +68,7 @@ $mainpageHomepageImgPath : "../../img/mainpage";
             background-color: $global-clr-soft-blue !important;
           }
           &:hover span{
-            &:before{
+            &::before{
               background-color: $global-clr-soft-blue !important;
               top: -3px;
             }
@@ -146,7 +146,7 @@ $mainpageHomepageImgPath : "../../img/mainpage";
         letter-spacing: -0.3px;
         position: relative;
 
-        &:before{
+        &::before{
           content: "";
           position: absolute;
           width: 1px;
@@ -157,7 +157,7 @@ $mainpageHomepageImgPath : "../../img/mainpage";
         }
 
         &:last-child{
-          &:before{display: none;}
+          &::before{display: none;}
         }
       }
     }
@@ -198,7 +198,7 @@ $mainpageHomepageImgPath : "../../img/mainpage";
       text-align: center;
       &.bottomborder{
         display: initial;
-        &:before{
+        &::before{
           background-color: transparentize($global-clr-soft-gray, 0.7);
           opacity: 1;
           width: 100%;
@@ -269,8 +269,8 @@ $mainpageHomepageImgPath : "../../img/mainpage";
       position: relative;
       padding-bottom: 15px;
 
-      &:before,
-      &:after{
+      &::before,
+      &::after{
         content: "";
         background-color: $global-clr-white;
         position: absolute;
@@ -280,17 +280,17 @@ $mainpageHomepageImgPath : "../../img/mainpage";
         top: 50%;
         z-index: 1;
       }
-      &:before{
+      &::before{
         left: calc(100% + 20px);
       }
-      &:after{
+      &::after{
         right: calc(100% + 20px);
       }
     }
 
     > .container > .row{
-      &:before,
-      &:after{
+      &::before,
+      &::after{
         content: "";
         background-color: $global-clr-white;
         position: absolute;
@@ -300,10 +300,10 @@ $mainpageHomepageImgPath : "../../img/mainpage";
         z-index: 1;
         @include rotate(45);
       }
-      &:before{
+      &::before{
         left: -22px;
       }
-      &:after{
+      &::after{
         right: -22px;
       }
     }
@@ -411,10 +411,10 @@ $mainpageHomepageImgPath : "../../img/mainpage";
           > .columntitle{
             font-weight: normal;
             &.bottomborder{
-              &:before{
+              &::before{
                 width: 100%;
               }
-              &:after{
+              &::after{
                 height: 2px;
               }
             }
@@ -444,7 +444,7 @@ $mainpageHomepageImgPath : "../../img/mainpage";
       padding-right: 30px;
       .columntitle{
         color: $global-clr-white;
-        &:before{
+        &::before{
           width: 200px;
         }
       }
@@ -496,7 +496,7 @@ $mainpageHomepageImgPath : "../../img/mainpage";
       padding-left: 28px;
       .columntitle{
         color: $global-clr-dark-blue;
-        &:before{
+        &::before{
           width: 200px;
         }
       }
@@ -554,7 +554,7 @@ $mainpageHomepageImgPath : "../../img/mainpage";
             left: 110px;
             position: relative;
             img{
-              &:before{
+              &::before{
                 content: "";
                 position: absolute;
                 left: 0;

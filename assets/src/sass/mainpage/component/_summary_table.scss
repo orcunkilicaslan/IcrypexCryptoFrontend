@@ -8,17 +8,17 @@ $globalSvgIconImgPath : "../../img/global/svg";
   &-tabnav{
     border-bottom: 5px solid $global-clr-soft-blue;
     position: relative;
-    &:before,
-    &:after{
+    &::before,
+    &::after{
       content: "";
       position: absolute;
       width: 100%;
     }
-    &:before{
+    &::before{
       background-color: transparentize($global-clr-soft-blue, 0.85);
       height: 100%;
     }
-    &:after{
+    &::after{
       background-color: rgba(0,0,0,0.9);
       height: 4px;
       bottom: 0;
@@ -50,7 +50,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
           margin-bottom: 1px;
         }
 
-        &:before{
+        &::before{
           content: "";
           position: absolute;
           width: calc(100% - 4px);
@@ -67,7 +67,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
           color: $global-clr-white;
           background-color: transparent;
           border-color: black;
-          &:before{
+          &::before{
             height: 100%;
             background-color: $global-clr-soft-blue;
             z-index: 1;
