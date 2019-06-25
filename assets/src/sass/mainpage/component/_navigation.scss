@@ -7,6 +7,10 @@
     color: $global-clr-white;
     font-size: 17px;
 
+    @include ReSassResponsive(992){
+      background-color: $global-sitebg-darkblue01;
+    }
+
     &-megadropdown{
       background-color: $global-grdint-darkblue02;
       border-top-color: $global-clr-soft-blue;
@@ -15,7 +19,17 @@
 
     &-list{
       min-height: 36px;
+
       > li{
+
+        @include ReSassResponsive(992){
+          border-bottom: 1px solid transparentize($global-clr-soft-gray, 0.7);
+
+          &::before{
+            display: none;
+          }
+        }
+
         &::before{
           content: "";
           position: absolute;
@@ -43,6 +57,10 @@
             font-size: 16px;
             margin: auto 10px;
           }
+          @include ReSassResponsive(992){
+            margin: 0;
+            padding: 10px 0;
+          }
 
           &::after {
             background-color: $global-clr-soft-blue;
@@ -61,27 +79,110 @@
 
   &-mobilemenu{
 
+    &-mask{
+      background-color: transparentize($global-clr-dark-blue, 0.5);
+    }
+
+    &-header{
+
+      @include ReSassResponsive(992){
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+
+        &::before{
+          background-color: transparentize($global-clr-soft-gray, 0.7);
+        }
+
+        .header-navigation-logo{
+          margin: 0;
+
+          &-symbol {
+            width: 30px;
+            height: 30px;
+            margin-right: 4px;
+          }
+          &-icrypex {
+            font-size: 25px;
+          }
+          &-cryptoexchange {
+            font-size: 11px;
+          }
+        }
+      }
+    }
+
     &-btn{
       @include ReSassResponsive(992){
-        padding: 15px 32px 17px 10px;
-        margin: 45px 10px 10px 10px;
-      }
 
-      span,
-      span::before,
-      span::after{
-        background-color: $global-clr-soft-blue;
+        .btntext{
+          small{
+            font-size: 14px;
+            line-height: 14px;
+          }
+        }
+        .btnicon{
+          span,
+          span::before,
+          span::after{
+            background-color: $global-clr-white;
+          }
+        }
+
       }
     }
   }
+
+  &-onlymobile{
+
+    &-menu{
+      background-color: transparentize($global-clr-soft-gray, 0.8);
+      min-height: inherit;
+      margin: 0;
+      padding: 10px;
+
+      .header-signin{
+        display: flex;
+        justify-content: space-between;
+
+        &-item{
+          background-color: $global-sitebg-darkblue01;
+          width: 50%;
+          padding: 0;
+          margin: 0 5px;
+
+          &::before{
+            display: none;
+          }
+          &:first-child{
+            margin-left: 0;
+          }
+          &:last-child{
+            margin-right: 0;
+          }
+
+          a{
+            display: block;
+            font-size: 16px;
+            padding: 5px;
+          }
+
+        }
+      }
+    }
+
+  }
+
 }
 
 .header{
   &.navscroll{
 
-    .dfn-mobilemenu-btn{
+    .dfn-mobilemenu-header{
       @include ReSassResponsive(992){
-        margin-top: 10px;
+        &::before{
+          @include scaleX(0);
+        }
       }
     }
   }

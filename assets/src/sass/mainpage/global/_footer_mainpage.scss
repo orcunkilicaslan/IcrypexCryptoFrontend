@@ -54,6 +54,11 @@ $mainpageFooterImgPath : "../../img/mainpage/footer";
     @include ReSassResponsive(1400){
       padding-top: 35px;
     }
+    @include ReSassResponsive(992){
+      padding-left: 0;
+      max-width: 700px;
+      margin: 0 auto;
+    }
   }
 
   &-social{

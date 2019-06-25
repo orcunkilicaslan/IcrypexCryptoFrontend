@@ -28,6 +28,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
     @include ReSassResponsive(992){
       align-items: center;
       padding: 0;
+      min-height: 46px;
     }
 
     &-userarea{
@@ -45,23 +46,6 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
       @include ReSassResponsive(1400){
         width: 135px;
-      }
-      @include ReSassResponsive(992){
-        margin-left: 40px;
-        margin-bottom: 0;
-        padding-left: 10px;
-        position: relative;
-
-        &::before{
-          content: "";
-          position: absolute;
-          background-color: transparentize($global-clr-soft-gray, 0.7);
-          width: 1px;
-          height: 100%;
-          top: 0;
-          left: 0;
-        }
-
       }
 
       &-symbol{

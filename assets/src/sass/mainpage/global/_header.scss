@@ -37,10 +37,6 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
     #{$headerclassname}-search{
       margin-bottom: 14px;
-
-      @include ReSassResponsive(992){
-        margin-bottom: 5px;
-      }
     }
   }
 

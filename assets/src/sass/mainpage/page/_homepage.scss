@@ -18,11 +18,19 @@ $mainpageHomepageImgPath : "../../img/mainpage";
       @include ReSassResponsive(1200){
         max-width: 660px;
       }
+      @include ReSassResponsive(992){
+        max-width: 100%;
+        padding-right: 0;
+      }
     }
     &-right{
       max-width: 300px;
       padding-left: 0;
       padding-right: 0;
+
+      @include ReSassResponsive(992){
+        max-width: 100%;
+      }
     }
     &-fullwidth{
       flex: 0 0 100% !important;
@@ -38,6 +46,9 @@ $mainpageHomepageImgPath : "../../img/mainpage";
 
     @include ReSassResponsive(1400){
       min-height: 260px;
+    }
+    @include ReSassResponsive(992){
+      min-height: 215px;
     }
 
     &-wapper{
@@ -104,6 +115,10 @@ $mainpageHomepageImgPath : "../../img/mainpage";
         &-stage-outer{
           height: 225px;
           overflow: hidden;
+
+          @include ReSassResponsive(992){
+            height: 200px;
+          }
         }
       }
     }
@@ -351,6 +366,10 @@ $mainpageHomepageImgPath : "../../img/mainpage";
       position: relative;
       padding-bottom: 15px;
 
+      @include ReSassResponsive(992){
+        padding-bottom: 10px;
+      }
+
       &::before,
       &::after{
         content: "";
@@ -364,9 +383,17 @@ $mainpageHomepageImgPath : "../../img/mainpage";
       }
       &::before{
         left: calc(100% + 20px);
+
+        @include ReSassResponsive(992){
+          left: calc(100% + 15px);
+        }
       }
       &::after{
         right: calc(100% + 20px);
+
+        @include ReSassResponsive(992){
+          right: calc(100% + 15px);
+        }
       }
     }
 
@@ -384,9 +411,17 @@ $mainpageHomepageImgPath : "../../img/mainpage";
       }
       &::before{
         left: -22px;
+
+        @include ReSassResponsive(992){
+          left: -17px;
+        }
       }
       &::after{
         right: -22px;
+
+        @include ReSassResponsive(992){
+          right: -17px;
+        }
       }
     }
 
@@ -561,7 +596,14 @@ $mainpageHomepageImgPath : "../../img/mainpage";
         padding: 50px 30px 70px 0;
       }
       @include ReSassResponsive(1200){
-        padding: 30px 30px 60px 0;
+        padding: 60px 30px 90px 0;
+      }
+      @include ReSassResponsive(1024){
+        padding: 50px 30px 80px 40px;
+      }
+      @include ReSassResponsive(992){
+        padding: 30px 0 50px;
+        order: 2;
       }
 
       .columntitle{
@@ -616,6 +658,11 @@ $mainpageHomepageImgPath : "../../img/mainpage";
     }
 
     &-image{
+      @include ReSassResponsive(992){
+        order: 1;
+        text-align: center;
+      }
+
       &-img{
         max-width: none;
         width: 790px;
@@ -643,10 +690,11 @@ $mainpageHomepageImgPath : "../../img/mainpage";
           height: 425px;
           margin-top: -38px;
         }
-        @include ReSassResponsive(1024){
-          width: 480px;
-          height: 400px;
-          margin-top: -25px;
+        @include ReSassResponsive(992){
+          width: 100%;
+          max-width: 600px;
+          height: auto;
+          margin-top: -30px;
         }
       }
     }
@@ -661,13 +709,16 @@ $mainpageHomepageImgPath : "../../img/mainpage";
       padding-left: 28px;
 
       @include ReSassResponsive(1400){
-        padding-top: 80px;
+        padding: 75px 0;
       }
       @include ReSassResponsive(1280){
-        padding-top: 50px;
+        padding: 50px 0;
+        margin-left: -40px;
       }
-      @include ReSassResponsive(1200){
-        padding-top: 30px;
+      @include ReSassResponsive(992){
+        order: 1;
+        padding: 40px 0;
+        margin-left: 0;
       }
 
       .columntitle{
@@ -720,6 +771,15 @@ $mainpageHomepageImgPath : "../../img/mainpage";
       margin-top: -45px;
       padding-left: 0;
       overflow: hidden;
+
+      @include ReSassResponsive(1280){
+        padding: 0;
+      }
+      @include ReSassResponsive(992){
+        padding: 0;
+        margin: 0;
+        order: 2;
+      }
 
       &-list{
         margin-bottom: 0;

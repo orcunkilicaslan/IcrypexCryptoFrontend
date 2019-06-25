@@ -2,6 +2,12 @@
 .dfn{
   $navheadclassname: &;
 
+  &-megamenu{
+    left: 0;
+    position: relative;
+    @include transition(all, 250ms, ease-in-out);
+  }
+
   &-mobilemenu{
     &-header{display:none;}
     &-mask{display:none;}
@@ -22,6 +28,11 @@
       //justify-content: space-between;
       min-height:44px;
       margin: 0;
+
+      @include ReSassResponsive(992){
+        flex-direction: column;
+        margin: 0 10px;
+      }
 
       li{position: relative;}
 
@@ -44,6 +55,15 @@
             left: 0;
             @include scaleX(0);
             @include transition(transform, 250ms, ease-in-out);
+          }
+
+          @include ReSassResponsive(992){
+            margin: 0;
+            padding: 10px 0;
+
+            &::after{
+              bottom: -1px;
+            }
           }
         }
 
@@ -86,9 +106,9 @@
     &-menu{
       position:fixed;
       background-color:#333333;
-      width:260px;
+      width:335px;
       height:100%;
-      left:-260px;
+      left:-335px;
       top:0;
       margin:0;
       border:none;
@@ -99,13 +119,30 @@
     }
 
     &-mobilemenu{
+
       &-header{
+        background-color: transparent;
+        height: 46px;
+        position: fixed;
         display:block !important;
-        position:relative;
         top:0;
         right:0;
         left:0;
+        transform: translate(0);
         @include transition(all, 0.3s, ease-in-out);
+
+        &::before{
+          content: "";
+          position: absolute;
+          width: calc(100% - 24px);
+          height: 1px;
+          background-color: #333333;
+          left: 12px;
+          right: 12px;
+          bottom: 0;
+          @include scaleX(1);
+          @include transition(transform, 0.3s, ease-in-out);
+        }
       }
       &-mask{
         background-color:#252525;
@@ -119,42 +156,61 @@
         z-index:102;
       }
       &-btn{
+        width: 60px;
+        height: 46px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         position:fixed;
         left:0;
         top:0;
+        margin: 0 12px;
         cursor:pointer;
-        padding:13px 35px 16px 0;
-        margin:10px 0 0 15px;
         z-index:102;
         @include transition(all, 0.3s, ease-in-out);
 
-        span,
-        span::before,
-        span::after{
-          content:'';
-          position:absolute;
-          background-color:#411e75;
-          height:3px;
-          width:23px;
-          display:block;
-          cursor:pointer;
+        .btntext{
         }
-        span::before{
-          top:-7px;
+        .btnicon{
+          width: 23px;
+          height: 23px;
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          span,
+          span::before,
+          span::after{
+            content:'';
+            position:absolute;
+            background-color:#411e75;
+            height:2px;
+            width:23px;
+            display:block;
+            cursor:pointer;
+          }
+          span::before{
+            top:-7px;
+          }
+          span::after{
+            bottom:-7px;
+          }
+          span,
+          span::before,
+          span::after{
+            @include transition(all, 0.3s, ease-in-out);
+          }
+          &.active span::after{top:7px;}
         }
-        span::after{
-          bottom:-7px;
-        }
-        span,
-        span::before,
-        span::after{
-          @include transition(all, 0.3s, ease-in-out);
-        }
-        &.active span::after{top:7px;}
       }
     }
 
     &-canvaskapat{
+      overflow: hidden !important;
+      left: 335px;
+      position: fixed;
+
       #{$navheadclassname}-menu{
         left:0;
         @include transition(all, 0.3s, ease-in-out);
@@ -162,22 +218,37 @@
       #{$navheadclassname}-mobilemenu-mask{
         display:block !important;
       }
+
+      #{$navheadclassname}-mobilemenu-header{
+        transform: translate(335px);
+      }
+
       #{$navheadclassname}-mobilemenu-btn{
-        left:260px;
+        //left:335px;
+        left: 0;
 
-        span{
-          background-color:transparent;
+        .btntext{
+          opacity: 0;
+        }
+        .btnicon{
+          opacity: 0;
 
-          &::before,
-          &::after{background-color:#333333;}
+          span{
+            background-color:transparent !important;
 
-          &::before{
-            top:7px;
-            bottom:0;
-            @include rotate(45);
-          }
-          &::after{
-            @include rotate(-45);
+            &::before,
+            &::after{background-color:#333333;}
+
+            &::before{
+              top:0;
+              bottom:0;
+              @include rotate(45);
+            }
+            &::after{
+              top:0;
+              bottom:0;
+              @include rotate(-45);
+            }
           }
         }
       }
@@ -186,7 +257,6 @@
     &-megamenu{
       #{$navheadclassname}-canvaskapat{
         display:block;
-        margin-left:260px;
       }
     }
   }

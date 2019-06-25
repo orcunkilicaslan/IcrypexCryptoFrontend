@@ -25,10 +25,12 @@
     @include ReSassResponsive(1400){
       margin-top: 45px;
     }
-
     @include ReSassResponsive(1200){
       max-width: 80%;
       margin: 45px auto 0;
+    }
+    @include ReSassResponsive(992){
+      max-width: 100%;
     }
 
     &-item{
