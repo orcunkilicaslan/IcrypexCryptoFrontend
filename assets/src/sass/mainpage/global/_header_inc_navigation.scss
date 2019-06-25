@@ -25,6 +25,11 @@ $globalSvgIconImgPath : "../../img/global/svg";
         max-width: 60%;
       }
     }
+    @include ReSassResponsive(992){
+      align-items: center;
+      padding: 0;
+      min-height: 46px;
+    }
 
     &-userarea{
       margin-bottom: 10px;
@@ -40,7 +45,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
       &:hover{color: $global-clr-white;}
 
       @include ReSassResponsive(1400){
-        width: 125px;
+        width: 135px;
       }
 
       &-symbol{

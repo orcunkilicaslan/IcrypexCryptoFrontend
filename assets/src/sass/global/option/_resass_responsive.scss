@@ -9,42 +9,42 @@
  */
 @mixin ReSassResponsive( $point ) {
 	@if $point==240 {
-		@media ( max-width: 240px ) {
+		@media ( max-width: 239px ) {
 			@content;
 		}
 	}
 	@if $point==320 {
-		@media ( max-width: 320px ) {
+		@media ( max-width: 319px ) {
 			@content;
 		}
 	}
 	@if $point==480 {
-		@media ( max-width: 480px ) {
+		@media ( max-width: 479px ) {
 			@content;
 		}
 	}
 	@if $point==600 {
-		@media ( max-width: 600px ) {
+		@media ( max-width: 599px ) {
 			@content;
 		}
 	}
 	@if $point==768 {
-		@media ( max-width: 768px ) {
+		@media ( max-width: 767px ) {
 			@content;
 		}
 	}
 	@if $point==992 {
-		@media ( max-width: 992px ) {
+		@media ( max-width: 991px ) {
 			@content;
 		}
 	}
 	@if $point==1024 {
-		@media ( max-width: 1024px ) {
+		@media ( max-width: 1023px ) {
 			@content;
 		}
 	}
 	@if $point==1140 {
-		@media ( max-width: 1140px ) {
+		@media ( max-width: 1139px ) {
 			@content;
 		}
 	}
@@ -54,17 +54,17 @@
 		}
 	}
 	@if $point==1280 {
-		@media ( max-width: 1280px ) {
+		@media ( max-width: 1279px ) {
 			@content;
 		}
 	}
 	@if $point==1400 {
-		@media ( max-width: 1400px ) {
+		@media ( max-width: 1399px ) {
 			@content;
 		}
 	}
 	@if $point==1500 {
-		@media ( max-width: 1500px ) {
+		@media ( max-width: 1499px ) {
 			@content;
 		}
 	}

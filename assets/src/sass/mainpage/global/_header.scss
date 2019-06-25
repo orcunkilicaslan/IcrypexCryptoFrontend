@@ -24,6 +24,10 @@ $globalSvgIconImgPath : "../../img/global/svg";
       padding: 0;
     }
 
+    .homepage #{$headerclassname}{
+      padding-bottom: 0 !important;
+    }
+
     #{$headerclassname}-userarea-user-droplist{
       background-color: transparentize($global-sitebg-darkblue01, 0.02);
       visibility: hidden;
@@ -32,7 +36,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
     }
 
     #{$headerclassname}-search{
-      margin-bottom: 10px;
+      margin-bottom: 14px;
     }
   }
 
@@ -71,6 +75,9 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
     @include ReSassResponsive(1400){
       margin-bottom: 12px;
+    }
+    @include ReSassResponsive(992){
+      margin-bottom: 5px;
     }
 
     &-input{
@@ -112,6 +119,11 @@ $globalSvgIconImgPath : "../../img/global/svg";
       color: $global-clr-soft-gray;
       font-size: $global-font-size;
 
+      @include ReSassResponsive(1400){
+        font-size: 13px;
+        padding: 0 6px;
+      }
+
       a{color: $global-clr-white;}
 
       &::before{
@@ -120,7 +132,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
         width: 1px;
         height: 10px;
         top: calc(50% - 5px);
-        right: -3px;
+        right: -1px;
         background-color: transparentize($global-clr-soft-gray, 0.7);
         @include border-radius(50%)
       }
@@ -140,6 +152,11 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
     &-iconset{
       text-align: center; margin: 0;
+
+      @include ReSassResponsive(1140){
+        display: none !important;
+      }
+
       &-item{
         position: relative;
         padding: 0 12px;

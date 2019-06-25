@@ -5,6 +5,10 @@ $globalSvgIconImgPath : "../../img/global/svg";
   width: 100%;
   padding-bottom: 23px;
 
+  @include ReSassResponsive(1400){
+    padding-bottom: 18px;
+  }
+
   &-tabnav{
     border-bottom: 5px solid $global-clr-soft-blue;
     position: relative;
@@ -46,6 +50,10 @@ $globalSvgIconImgPath : "../../img/global/svg";
         padding: 4px 22px 8px;
         @include border-radius(0);
         @include transition(color, 0.2s, linear);
+
+        @include ReSassResponsive(1400){
+          padding: 2px 18px 5px;
+        }
 
         span{
           position: relative;
@@ -112,6 +120,10 @@ $globalSvgIconImgPath : "../../img/global/svg";
           width: 17px;
           height: 17px;
           text-indent: -9999px;
+
+          @include ReSassResponsive(1400){
+            top: 2px;
+          }
         }
         @include placeholder {
           color: $global-clr-soft-gray;
@@ -145,7 +157,17 @@ $globalSvgIconImgPath : "../../img/global/svg";
       vertical-align: middle;
       font-size: 17px;
       font-weight: normal;
-      padding: 6px 5px;
+      padding-top: 6px !important;
+      padding-bottom: 6px !important;
+      padding-left: 5px;
+      padding-right: 5px;
+
+      @include ReSassResponsive(1400){
+        font-size: 15px;
+        padding-top: 5px !important;
+        padding-bottom: 5px !important;
+      }
+
       &:first-child{padding-left: 0;}
     }
 

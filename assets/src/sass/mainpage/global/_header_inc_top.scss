@@ -10,6 +10,21 @@ $globalSvgIconImgPath : "../../img/global/svg";
     border-bottom: 1px solid transparentize($global-clr-soft-gray, 0.7);
     @include transition(all, 0.1s, ease-out);
 
+    @include ReSassResponsive(1400){
+      height: 36px;
+    }
+    @include ReSassResponsive(1140){
+
+      .col-3{
+        flex: 0 0 24%;
+        max-width: 24%;
+      }
+      .col-6{
+        flex: 0 0 52%;
+        max-width: 52%;
+      }
+    }
+
     > div[class*="col"]{
       padding-left: 0;
       padding-right: 0;

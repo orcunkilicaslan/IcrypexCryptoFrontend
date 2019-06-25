@@ -15,6 +15,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
     &.navscroll{
       background-color: transparentize($global-sitebg-darkblue01, 0.02);
+      padding-bottom: 0 !important;
     }
 
     .dfn{

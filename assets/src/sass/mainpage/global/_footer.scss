@@ -5,8 +5,19 @@ $globalSvgIconImgPath : "../../img/global/svg";
   &-menu{
     max-width: 230px;
 
+    .columntitle{
+      &::after{
+        height: 2px;
+      }
+    }
+
     &-title{
       margin-bottom: 15px !important;
+
+      @include ReSassResponsive(1400){
+        margin-bottom: 12px !important;
+      }
+
       a{
         color: $global-clr-white;
       }
@@ -17,6 +28,12 @@ $globalSvgIconImgPath : "../../img/global/svg";
         opacity: 0.9;
         font-size: 17px;
         line-height: 1.18;
+        margin-bottom: 3px;
+
+        @include ReSassResponsive(1400){
+          font-size: 16px;
+        }
+
         a{
           color: transparentize($global-clr-soft-gray, 0.1);
         }

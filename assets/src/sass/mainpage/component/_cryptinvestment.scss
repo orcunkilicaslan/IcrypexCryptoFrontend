@@ -4,8 +4,35 @@
   padding-top: 125px;
   padding-bottom: 70px;
 
+  @include ReSassResponsive(1400){
+    padding-top: 90px;
+    padding-bottom: 40px;
+  }
+  @include ReSassResponsive(1200){
+    padding-top: 60px;
+    padding-bottom: 30px;
+  }
+
+  .columntitle{
+    &::before{
+      height: 2px;
+    }
+  }
+
   &-threebox{
     margin-top: 53px;
+
+    @include ReSassResponsive(1400){
+      margin-top: 45px;
+    }
+    @include ReSassResponsive(1200){
+      max-width: 80%;
+      margin: 45px auto 0;
+    }
+    @include ReSassResponsive(992){
+      max-width: 100%;
+    }
+
     &-item{
       padding: 0;
 
@@ -24,6 +51,11 @@
         padding: 15px 0;
         position: relative;
 
+        @include ReSassResponsive(1400){
+          font-size: 44px;
+          height: 135px;
+        }
+
         &::before{
           content: "";
           background-color: $global-clr-soft-blue;
@@ -41,6 +73,10 @@
         text-align: center;
         margin: 0;
         margin-top: 15px;
+
+        @include ReSassResponsive(1400){
+          font-size: 18px;
+        }
       }
     }
   }
@@ -56,12 +92,20 @@
       font-weight: normal;
       line-height: 1.45;
       margin-bottom: 10px;
+
+      @include ReSassResponsive(1400){
+        font-size: 20px;
+      }
     }
     &-desc{
       color: $global-clr-soft-gray;
       font-size: 17px;
       line-height: 1.12;
       margin: 0;
+
+      @include ReSassResponsive(1400){
+        font-size: 16px;
+      }
     }
     &-btn{
       margin: 0;
