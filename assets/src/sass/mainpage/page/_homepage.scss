@@ -413,11 +413,6 @@ $mainpageHomepageImgPath : "../../img/mainpage";
           @include gradient(#0a93ea, #00387c);
         }
       }
-
-      .urllink{
-        color: $global-clr-soft-blue;
-        text-decoration: underline;
-      }
     }
   }
 
@@ -448,11 +443,6 @@ $mainpageHomepageImgPath : "../../img/mainpage";
       padding: 5px 0 20px;
       color: $global-clr-soft-gray;
       border-bottom: 2px solid transparentize($global-clr-soft-gray, 0.7);
-
-      .urllink{
-        color: $global-clr-soft-blue;
-        text-decoration: underline;
-      }
     }
 
     &-totalassets{
