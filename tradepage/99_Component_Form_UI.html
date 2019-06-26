@@ -557,6 +557,57 @@
         <!-- Form -->
 
     </div>
+
+    <h3 class="columntitle columntitle-sm titleleft titlebold mt-4">FORM UI</h3>
+    <div class="profile-box">
+        <!-- Form -->
+        <div class="profile-box-content">
+            <div class="profile-profile formuinew" style="max-width: 100%;">
+                <div class="boxcolumn-boxtitle">
+                    <h3 class="boxcolumn-boxtitle-title">Form Label</h3>
+                </div>
+                <form action="" class="formuilabel" autocomplete="off" novalidate>
+                    <div class="form-group">
+                    <div class="labelanimation">
+                        <input type="text" class="form-control" name="name" id="name" placeholder="" required onkeyup="contact.verifyContent('name','name','msgname','iconname')" onfocusout="contact.verifyContentErrorDelete('name','name','msgname','iconname')" >
+                        <span class="error-message" id="msgname"></span>
+                        <i class="contactformicon contactformicon--check" id="iconname"></i>
+                        <span class="bar"></span>
+                        <label for="Label Name">Label Name</label>
+                    </div>
+                    </div>
+                    <div class="form-group">
+                    <div class="labelanimation">
+                        <input type="text"class="form-control" name="phone" id="phone" placeholder="" required onkeyup="contact.verifyContent('phone','phone','msgphone','iconphone')" onfocusout="contact.verifyContentErrorDelete('phone','phone','msgphone','phonename')" >
+                        <span class="error-message" id="msgphone"></span>
+                        <i class="contactformicon contactformicon--check" id="iconphone"></i>
+                        <span class="bar"></span>
+                        <label for="Label Name">Label Name</label>
+                    </div>
+                    </div>
+                    <div class="form-group">
+                    <div class="labelanimation">
+                        <input type="text"class="form-control" name="email" id="email" placeholder="" required onkeyup="contact.verifyContent('email','email','msgemail','iconemail')" onfocusout="contact.verifyContentErrorDelete('email','email','msgemail','emailname')" >
+                        <span class="error-message" id="msgemail"></span>
+                        <i class="contactformicon contactformicon--check" id="iconemail"></i>
+                        <span class="bar"></span>
+                        <label for="Label Name">Label Name</label>
+                    </div>
+                    </div>
+                    <div class="form-group">
+                    <div class="labelanimation labelanimation-textarea">
+                        <textarea class="form-control" name="message" id="message" placeholder="" required onkeyup="contact.verifyContent('message','message','msgmessage','iconmessage')" onfocusout="contact.verifyContentErrorDelete('message','message','msgmessage','messagename')" maxlength="2000"></textarea>
+                        <span class="error-message" id="msgmessage"></span>
+                        <i class="contactformicon contactformicon--check" id="iconmessage"></i>
+                        <span class="bar"></span>
+                        <label for="Label Name">Label Name</label>
+                    </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- Form -->
+    </div>
     </div>
     <!-- Component -->
 
