@@ -157,6 +157,10 @@ $globalSvgIconImgPath : "../../img/global/svg";
         display: none !important;
       }
 
+      &-link{
+        display: inherit;
+      }
+
       &-item{
         position: relative;
         padding: 0 12px;

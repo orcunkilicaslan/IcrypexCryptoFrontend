@@ -48,9 +48,6 @@
           color: $global-clr-red;
         }
       }
-
-
-
     }
 
     &-inputinfo{
@@ -162,6 +159,21 @@
       top: 0.14rem;
       left: -1.75rem;
       border-color: transparentize($global-clr-soft-gray, 0.7);
+    }
+  }
+
+  .custom-control-input:checked ~ .custom-control-label {
+    &::after {
+      background-image: none;
+      content:"";
+      position:absolute;
+      width: 11px;
+      height: 7px;
+      top: 0.5rem;
+      left: -1.4rem;
+      border-bottom:2px solid $global-clr-white;
+      border-left:2px solid $global-clr-white;
+      @include rotate(-50);
     }
   }
 
