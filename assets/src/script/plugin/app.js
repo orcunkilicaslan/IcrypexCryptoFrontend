@@ -55,6 +55,12 @@ $(function() {
 });
 /* Navbar Menu */
 
+/* Tooltip */
+$(function(){
+    $('[data-toggle="tooltip"]').tooltip()
+});
+/* Tooltip */
+
 /* Loading Info */
 console.log("Plugin App Javascript Loading Successful");
 /* Loading Info */

@@ -48,12 +48,6 @@ Dropzone.options.profileEkBelge = {
 };
 /* DropZone JS */
 
-/* Tooltip */
-$(function(){
-    $('[data-toggle="tooltip"]').tooltip()
-});
-/* Tooltip */
-
 /* Profile Login Settings Range Slider */
 var rangeSlider = function(){
     var slider = $('.profile-login-settings-range-slider'),

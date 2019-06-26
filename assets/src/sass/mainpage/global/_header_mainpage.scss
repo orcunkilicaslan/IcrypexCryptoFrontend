@@ -2,7 +2,9 @@
 .mainpage{
 
   .header-top-userarea{
-    .header-userarea-iconset-search{
+    .header-userarea-iconset-search,
+    .header-userarea-iconset-chat,
+    .header-userarea-iconset-theme{
       display: none !important;
     }
   }

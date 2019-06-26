@@ -49,26 +49,32 @@
                 </ul>
             </div>
             <div class="col-3 d-flex justify-content-end">
-                <div class="header-top-signin" style="display: none !important;">
+                <div class="header-top-signin">
                     <ul class="header-signin">
                         <li class="header-signin-item"><a class="header-signin-register" href="#" title="YENİ ÜYELİK" rel="bookmark">YENİ ÜYELİK</a></li>
                         <li class="header-signin-item"><a class="header-signin-login" href="#" title="ÜYE GİRİŞİ" rel="bookmark">ÜYE GİRİŞİ</a></li>
                     </ul>
                 </div>
-                <div class="header-top-userarea d-flex align-items-center">
+                <div class="header-top-userarea d-flex align-items-center" style="display: none !important;">
                     <ul class="header-userarea-iconset d-flex align-items-center">
                         <li class="header-userarea-iconset-search header-userarea-iconset-item">
                             <i class="icon-svg icon-svg-headersearch"></i>
                         </li>
                         <li class="header-userarea-iconset-chat header-userarea-iconset-item">
-                            <i class="icon-svg icon-svg-headerchat"></i>
+                            <a class="header-userarea-iconset-link" href="#">
+                                <i class="icon-svg icon-svg-headerchat"></i>
+                            </a>
                         </li>
                         <li class="header-userarea-iconset-theme header-userarea-iconset-item">
-                            <i class="icon-svg icon-svg-headertheme"></i>
+                            <a class="header-userarea-iconset-link" href="#">
+                                <i class="icon-svg icon-svg-headertheme"></i>
+                            </a>
                         </li>
                         <li class="header-userarea-iconset-bell header-userarea-iconset-item">
-                            <i class="icon-svg icon-svg-headerbell"></i>
-                            <span class="header-userarea-iconset-badge"></span>
+                            <a class="header-userarea-iconset-link" href="#" data-toggle="tooltip" data-placement="bottom" title="1 Yeni Bildiriminiz Var">
+                                <i class="icon-svg icon-svg-headerbell"></i>
+                                <span class="header-userarea-iconset-badge"></span>
+                            </a>
                         </li>
                     </ul>
                     <div class="header-userarea-user btn-group d-flex align-items-center">
@@ -248,23 +254,23 @@
             <ul class="homepage-bigprice-list">
                 <li class="homepage-bigprice-list-item">
                     <h4 class="homepage-bigprice-title">BTC GÜNCEL</h4>
-                    <span class="homepage-bigprice-volume">21.750,00 TRY</span>
+                    <span class="homepage-bigprice-volume"><span id="a-BTCUSD">12643.9</span> USD</span>
                 </li>
                 <li class="homepage-bigprice-list-item">
                     <h4 class="homepage-bigprice-title">BTC 24S ORTALAMA</h4>
-                    <span class="homepage-bigprice-volume">21.720,25 TRY</span>
+                    <span class="homepage-bigprice-volume">11475.24 USD</span>
                 </li>
                 <li class="homepage-bigprice-list-item">
                     <h4 class="homepage-bigprice-title">BTC 24S DEĞİŞİM</h4>
-                    <span class="homepage-bigprice-volume">32,00 TRY <span class="sitecolorgreen">0.15<sup>%</sup></span></span>
+                    <span class="homepage-bigprice-volume">128.46  USD <span class="sitecolorred">-1.57<sup>%</sup></span></span>
                 </li>
                 <li class="homepage-bigprice-list-item">
-                    <h4 class="homepage-bigprice-title">BTC VOLUME</h4>
-                    <span class="homepage-bigprice-volume">8,232.532 USD</span>
+                    <h4 class="homepage-bigprice-title">BTC HACİM</h4>
+                    <span class="homepage-bigprice-volume">8,125,760,000 USD</span>
                 </li>
                 <li class="homepage-bigprice-list-item">
-                    <h4 class="homepage-bigprice-title">BTC TO MINE</h4>
-                    <span class="homepage-bigprice-volume">3,405,775</span>
+                    <h4 class="homepage-bigprice-title">KAZILACAK BTC</h4>
+                    <span class="homepage-bigprice-volume">3221500 BTC</span>
                 </li>
             </ul>
         </div>
@@ -275,7 +281,7 @@
     <!-- Header Top Right -->
     <div class="homepage-top-right col-xl-3">
         <!-- Register -->
-        <div class="homepage-register">
+        <div class="homepage-register formuinew">
             <div class="homepage-register-title"><h2 class="columntitle columntitle-md bottomborder titlecenter">ÜCRETSİZ ÜYELİK OLUŞTURUN</h2></div>
             <form class="homepage-register-formarea" action="" autocomplete="off" novalidate>
                 <div class="form-group">
@@ -299,13 +305,13 @@
                 <div class="recaptcha">
                     <img src="../assets/img/mainpage/elements/Homepage-Top-Recaptcha.png" alt="" width="300" height="76" />
                 </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="termsOfUseCheck" />
-                    <label class="form-check-label" for="termsOfUseCheck"><a href="#" title="Title" rel="bookmark">Kullanım Sözleşmesini</a> okudum ve onaylıyorum.</label>
+                <div class="custom-control custom-checkbox form-check">
+                    <input class="form-check-input custom-control-input" type="checkbox" name="termsofuse" value="" id="termsOfUseCheck">
+                    <label class="form-check-label custom-control-label" id="labeltermsOfUseCheck" for="termsOfUseCheck"><a class="urllink" href="/company/legal/terms" title="Kullanım Sözleşmesi" rel="bookmark">Kullanım Sözleşmesini</a> okudum ve onaylıyorum.</label>
                 </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="announcementsCheck" />
-                    <label class="form-check-label" for="announcementsCheck">Gelişmeler ve duyurulardan haber almak istiyorum.</label>
+                <div class="custom-control custom-checkbox form-check">
+                    <input class="form-check-input custom-control-input" type="checkbox" value="" id="announcementsCheck">
+                    <label class="form-check-label custom-control-label" for="announcementsCheck">Ticari reklam ve duyurulardan haber almak istiyorum.</label>
                 </div>
                 <div class="form-button">
                     <button type="submit" class="btn btn-primary">ÜYELİK OLUŞTUR</button>
@@ -991,7 +997,7 @@
         </div>
         <div class="cookies-notification-body-btn">
             <a class="btn btn-link" href="#" title="">Decline</a>
-            <a class="btn btn-warning" href="#" title="" data-dismiss="alert" aria-label="Close">Allow Cookies</a>
+            <a class="btn btn-success" href="#" title="" data-dismiss="alert" aria-label="Close">Allow Cookies</a>
         </div>
     </div>
 </div>
