@@ -54,6 +54,9 @@ $globalSvgIconImgPath : "../../img/global/svg";
         @include ReSassResponsive(1400){
           padding: 2px 18px 5px;
         }
+        @include ReSassResponsive(768){
+          padding: 1px 12px 4px;
+        }
 
         span{
           position: relative;
@@ -92,6 +95,10 @@ $globalSvgIconImgPath : "../../img/global/svg";
         width: 250px;
         right: 0;
         padding: 6px 15px;
+
+        @include ReSassResponsive(768){
+          display: none;
+        }
 
         &-form{
           position: relative;
@@ -167,6 +174,10 @@ $globalSvgIconImgPath : "../../img/global/svg";
         padding-top: 5px !important;
         padding-bottom: 5px !important;
       }
+      @include ReSassResponsive(768){
+        font-size: 13px;
+      }
+
 
       &:first-child{padding-left: 0;}
     }
@@ -188,6 +199,11 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
 .depthtable{
   min-height: 225px;
+
+  @include ReSassResponsive(768){
+    min-height: 470px;
+  }
+
   &-container,
   &-rectangle{
     position: absolute;
