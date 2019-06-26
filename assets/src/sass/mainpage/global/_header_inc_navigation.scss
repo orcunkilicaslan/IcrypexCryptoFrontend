@@ -5,9 +5,11 @@ $globalSvgIconImgPath : "../../img/global/svg";
   $headerclassname: &;
 
   &-navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
     padding: 7px 0 0 0;
     min-height: 55px;
-    align-items: flex-end;
 
     > div[class*="col-"]{
       padding: 0;
@@ -33,6 +35,12 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
     &-userarea{
       margin-bottom: 10px;
+    }
+
+    &-resp{
+      @include ReSassResponsive(992){
+        display: none !important;
+      }
     }
 
     &-logo{

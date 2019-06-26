@@ -106,9 +106,9 @@
     &-menu{
       position:fixed;
       background-color:#333333;
-      width:335px;
+      width:260px;
       height:100%;
-      left:-335px;
+      left:-260px;
       top:0;
       margin:0;
       border:none;
@@ -208,7 +208,7 @@
 
     &-canvaskapat{
       overflow: hidden !important;
-      left: 335px;
+      left: 260px;
       position: fixed;
 
       #{$navheadclassname}-menu{
@@ -220,11 +220,11 @@
       }
 
       #{$navheadclassname}-mobilemenu-header{
-        transform: translate(335px);
+        transform: translate(260px);
       }
 
       #{$navheadclassname}-mobilemenu-btn{
-        //left:335px;
+        //left:260px;
         left: 0;
 
         .btntext{

@@ -28,6 +28,10 @@ $globalSvgIconImgPath : "../../img/global/svg";
       border-bottom-width: 1px;
       padding-top: 3px;
       padding-bottom: 3px;
+
+      @include ReSassResponsive(768){
+        font-size: 15px;
+      }
     }
 
     tbody td{
@@ -62,6 +66,11 @@ $globalSvgIconImgPath : "../../img/global/svg";
   margin-left: 2px;
   position: relative;
   bottom: -2px;
+
+  @include ReSassResponsive(768){
+    display: none;
+  }
+
   i{
     background-color: transparent;
     background-repeat: no-repeat;
