@@ -5,174 +5,119 @@
     position:relative;
     margin-top:25px;
 
-    .form-control{
-      background-color: transparent;
-      border-color: transparent !important;
-      border-bottom-color: grey !important;
-      width: 100%;
-      display:block;
-      resize: none;
-
-      &::placeholder {
-        color: #e94e49;
-      }
-    }
-
-    label {
+    label{
       position:absolute;
-      top: 6px;
+      top: 7px;
       left: 10px;
       margin: 0;
       z-index: -1;
-      transition : 0.3s ease all;
-      -webkit-transition:0.3s ease all;
+      @include transition(all, 0.3s, ease-in-out);
     }
 
-    input{
+    .form-control{
+      background-color: transparent;
+      //border-color: transparent !important;
+      //border-bottom-color: grey !important;
+      width: 100%;
       height: 40px;
+      display: block;
+      resize: none;
+
+      &:focus{
+        //border:none;
+        outline: none;
+      }
+
+      &:focus ~ label,
+      &:valid ~ label{
+        top: -20px;
+        left: 0;
+        font-size:12px;
+        color: #b82c0d;
+      }
+
+      &:focus ~ .inputbottombar:before,
+      &:focus ~ .inputbottombar:after{
+        width:50%;
+      }
+
+      &:focus ~ .inputbottombar:before,
+      &:focus ~ .inputbottombar:after{
+        background: #098cdf;
+      }
+
+      &:valid ~ .inputbottombar:before,
+      &:valid ~ .inputbottombar:after{
+        background: #70a800;
+      }
+
+      &:focus ~ .inputerrormessage,
+      &:valid ~ .inputerrormessage{
+        top: -20px;
+        right: 0;
+        font-size: 12px;
+      }
+
+      &:valid ~ label{
+        color: #70a800;
+      }
     }
+  }
 
-    textarea{
-      height: 80px;
-      position: relative;
-      top: 15px;
-    }
+  .inputbottombar{
+    position: relative;
+    display: block;
 
-
-
-    .bar {
-      position:relative;
-      display:block;
-    }
-
-    .bar:before,
-    .bar:after {
-      content:'';
-      height:2px;
-      width:0;
-      bottom:0;
-      position:absolute;
-      transition:0.2s ease all;
-      -moz-transition:0.2s ease all;
-      -webkit-transition:0.2s ease all;
-    }
-
-    .bar:before {
-      left:50%;
-    }
-
-    .bar:after {
-      right:50%;
-    }
-
-    input:focus,
-    textarea:focus{
-      border:none;
-      outline:none;
-    }
-
-    input:focus ~ label,
-    .labelanimation input:valid ~ label,
-    textarea:focus ~ label,
-    .labelanimation textarea:valid ~ label{
-      top:-15px;
-      left: 0;
-      font-size:12px;
-      color:#e94e49;
-    }
-
-    input:focus ~ .bar:before,
-    input:focus ~ .bar:after,
-    textarea:focus ~ .bar:before,
-    textarea:focus ~ .bar:after{
-      width:50%;
-    }
-
-    input:valid ~ .bar:before,
-    input:valid ~ .bar:after,
-    textarea:valid ~ .bar:before,
-    textarea:valid ~ .bar:after{
-      background:#2ecc71;
-    }
-
-    input:invalid ~ .bar:before,
-    input:invalid ~ .bar:after,
-    textarea:invalid ~ .bar:before,
-    textarea:invalid ~ .bar:after{
-      background:#e94e49;
-    }
-
-    .error-message{
+    &::before,
+    &::after {
+      content: "";
+      height: 2px;
+      width: 0;
+      bottom: 0;
       position: absolute;
-      top: 20px;
-      right: 5px;
-      color: #e94e49;
-      font-size: 12px;
-      transition : 0.3s ease all;
-      -webkit-transition:0.3s ease all;
+      @include transition(all, 0.3s, ease-in-out);
     }
+    &::before{left:50%;}
+    &::after{right:50%;}
+  }
 
-    .contactformicon{
-      display: none;
+  .inputerrormessage{
+    position: absolute;
+    top: 9px;
+    right: 10px;
+    color: #b82c0d;
+    font-size: 14px;
+    @include transition(all, 0.3s, ease-in-out);
+  }
+
+  .inputcheckicon{
+    display: none;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 13px;
+    right: 10px;
+    @include transition(all, 0.3s, ease-in-out);
+
+    &:before{
+      content: "";
+      position: absolute;
       width: 15px;
       height: 15px;
-      position: absolute;
-      top: 15px;
-      right: 5px;
-      transition : 0.3s ease all;
-      -webkit-transition:0.3s ease all;
-
+    }
+    &-check{
       &:before{
         content: "";
         position: absolute;
-        width: 15px;
-        height: 15px;
-        background-position: center center;
-        background-repeat: no-repeat;
-      }
-
-      &--check{
-
-        &:before{
-          background-image: url("../../../../img/global/icon-check-green.svg");
-        }
-
-      }
-
-    }
-
-    input:focus ~ .error-message,
-    .labelanimation input:valid ~ .error-message,
-    textarea:focus ~ .error-message,
-    .labelanimation textarea:valid ~ .error-message{
-      top: -5px;
-      font-size:10px;
-    }
-
-    &-textarea{
-      label{
-        top: 13px;
-      }
-      .bar {
-        top: 15px;
+        width: 14px;
+        height: 7px;
+        top: 2px;
+        left: 1px;
+        border-bottom: 2px solid $global-clr-green;
+        border-left: 2px solid $global-clr-green;
+        @include rotate(-50);
       }
     }
-
   }
-
-  .labelanimation input:valid ~ label,
-  .labelanimation textarea:valid ~ label{
-    top:-15px;
-    left: 0;
-    font-size:12px;
-    color:#2ecc71;
-  }
-
-  .labelanimation input:valid ~ .error-message,
-  .labelanimation textarea:valid ~ .error-message{
-    top:-5px;
-    font-size:10px;
-  }
-
 }
 /* Form UI New */
