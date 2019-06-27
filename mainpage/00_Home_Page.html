@@ -281,26 +281,64 @@
     <!-- Header Top Right -->
     <div class="homepage-top-right col-xl-3">
         <!-- Register -->
-        <div class="homepage-register formuinew" style="display: none !important;">
+        <div class="homepage-register formuinew">
             <div class="homepage-register-title"><h2 class="columntitle columntitle-md bottomborder titlecenter">ÜCRETSİZ ÜYELİK OLUŞTURUN</h2></div>
             <form class="homepage-register-formarea" action="" autocomplete="off" novalidate>
-                <div class="form-group">
-                    <input type="text" class="form-control" placeholder="İSİM" />
-                </div>
-                <div class="form-group">
-                    <input type="text" class="form-control" placeholder="SOYİSİM" />
-                </div>
-                <div class="form-group">
-                    <input type="tel" class="form-control" placeholder="TELEFON" />
-                </div>
-                <div class="form-group">
-                    <input type="email" class="form-control" placeholder="E-POSTA" />
-                </div>
-                <div class="form-group">
-                    <input type="password" class="form-control" placeholder="ŞİFRE" />
-                </div>
-                <div class="form-group">
-                    <input type="password" class="form-control" placeholder="ŞİFRE DOĞRULAMA" />
+                <div class="formuilabel">
+                    <div class="form-group">
+                        <div class="labelanimation">
+                            <input type="text" class="form-control" name="firstname" id="inputFirstNameId" required onkeyup="homepageregisterform.verifyContent('inputFirstNameProcess','inputFirstNameId','msgFirstNameId','iconFirstNameId')" onfocusout="homepageregisterform.verifyContentErrorDelete('inputFirstNameProcess','inputFirstNameId','msgFirstNameId','iconFirstNameId')" >
+                            <i class="inputcheckicon inputcheckicon-check" id="iconFirstNameId"></i>
+                            <span class="inputerrormessage" id="msgFirstNameId"></span>
+                            <span class="inputbottombar"></span>
+                            <label>İSİM</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="labelanimation">
+                            <input type="text" class="form-control" name="lastname" id="inputLastNameId" required onkeyup="homepageregisterform.verifyContent('inputLastNameProcess','inputLastNameId','msgLastNameId','iconLastNameId')" onfocusout="homepageregisterform.verifyContentErrorDelete('inputLastNameProcess','inputLastNameId','msgLastNameId','iconLastNameId')" >
+                            <i class="inputcheckicon inputcheckicon-check" id="iconLastNameId"></i>
+                            <span class="inputerrormessage" id="msgLastNameId"></span>
+                            <span class="inputbottombar"></span>
+                            <label>SOYİSİM</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="labelanimation">
+                            <input type="text" class="form-control" name="phone" id="inputPhoneId" required onkeyup="homepageregisterform.verifyContent('inputPhoneProcess','inputPhoneId','msgPhoneId','iconPhoneId')" onfocusout="homepageregisterform.verifyContentErrorDelete('inputPhoneProcess','inputPhoneId','msgPhoneId','iconPhoneId')" >
+                            <i class="inputcheckicon inputcheckicon-check" id="iconPhoneId"></i>
+                            <span class="inputerrormessage" id="msgPhoneId"></span>
+                            <span class="inputbottombar"></span>
+                            <label>TELEFON</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="labelanimation">
+                            <input type="text" class="form-control" name="email" id="inputEmailId" required onkeyup="homepageregisterform.verifyContent('inputEmailProcess','inputEmailId','msgEmailId','iconEmailId')" onfocusout="homepageregisterform.verifyContentErrorDelete('inputEmailProcess','inputEmailId','msgEmailId','iconEmailId')" >
+                            <i class="inputcheckicon inputcheckicon-check" id="iconEmailId"></i>
+                            <span class="inputerrormessage" id="msgEmailId"></span>
+                            <span class="inputbottombar"></span>
+                            <label>E-POSTA</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="labelanimation">
+                            <input type="password" class="form-control" name="password" id="inputPasswordId" required onkeyup="homepageregisterform.verifyContent('inputPasswordProcess','inputPasswordId','msgPasswordId','iconPasswordId')" onfocusout="homepageregisterform.verifyContentErrorDelete('inputPasswordProcess','inputPasswordId','msgPasswordId','iconPasswordId')" >
+                            <i class="inputcheckicon inputcheckicon-check" id="iconPasswordId"></i>
+                            <span class="inputerrormessage" id="msgPasswordId"></span>
+                            <span class="inputbottombar"></span>
+                            <label>ŞİFRE</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="labelanimation">
+                            <input type="password" class="form-control" name="confirm" id="inputRePasswordId" required onkeyup="homepageregisterform.verifyContent('inputRePasswordProcess','inputRePasswordId','msgRePasswordId','iconRePasswordId')" onfocusout="homepageregisterform.verifyContentErrorDelete('inputRePasswordProcess','inputRePasswordId','msgRePasswordId','iconRePasswordId')" >
+                            <i class="inputcheckicon inputcheckicon-check" id="iconRePasswordId"></i>
+                            <span class="inputerrormessage" id="msgRePasswordId"></span>
+                            <span class="inputbottombar"></span>
+                            <label>ŞİFRE DOĞRULAMA</label>
+                        </div>
+                    </div>
                 </div>
                 <div class="recaptcha">
                     <img src="../assets/img/mainpage/elements/Homepage-Top-Recaptcha.png" alt="" width="300" height="76" />
@@ -319,84 +357,6 @@
             </form>
         </div>
         <!-- Register -->
-        <!-- Register New -->
-        <div class="homepage-register formuinew">
-            <div class="homepage-register-title"><h2 class="columntitle columntitle-md bottomborder titlecenter">ÜCRETSİZ ÜYELİK OLUŞTURUN</h2></div>
-            <form class="homepage-register-formlabelarea formuilabel" action="" autocomplete="off" novalidate>
-
-
-
-                <div class="form-group">
-                    <div class="labelanimation">
-                        <input type="text" class="form-control" id="inputNameId" required onkeyup="homepageregisterform.verifyContent('inputNameProcess','inputNameId','msgNameId','iconNameId')" onfocusout="homepageregisterform.verifyContentErrorDelete('inputNameProcess','inputNameId','msgNameId','iconNameId')" >
-                        <i class="inputcheckicon inputcheckicon-check" id="iconNameId"></i>
-                        <span class="inputerrormessage" id="msgNameId"></span>
-                        <span class="inputbottombar"></span>
-                        <label>İSİM</label>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <div class="labelanimation">
-                        <input type="text" class="form-control" id="inputSurnameId" required onkeyup="homepageregisterform.verifyContent('inputSurnameProcess','inputSurnameId','msgSurnameId','iconSurnameId')" onfocusout="homepageregisterform.verifyContentErrorDelete('inputSurnameProcess','inputSurnameId','msgSurnameId','iconSurnameId')" >
-                        <i class="inputcheckicon inputcheckicon-check" id="iconSurnameId"></i>
-                        <span class="inputerrormessage" id="msgSurnameId"></span>
-                        <span class="inputbottombar"></span>
-                        <label>SOYİSİM</label>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <div class="labelanimation">
-                        <input type="text" class="form-control" name="phone" id="inputPhoneId" required onkeyup="homepageregisterform.verifyContent('inputPhoneProcess','inputPhoneId','msgPhoneId','iconPhoneId')" onfocusout="homepageregisterform.verifyContentErrorDelete('inputPhoneProcess','inputPhoneId','msgPhoneId','iconPhoneId')" >
-                        <i class="inputcheckicon inputcheckicon-check" id="iconPhoneId"></i>
-                        <span class="inputerrormessage" id="msgPhoneId"></span>
-                        <span class="inputbottombar"></span>
-                        <label>TELEFON</label>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <div class="labelanimation">
-                        <input type="email" class="form-control" name="email" id="inputEmailId" required onkeyup="homepageregisterform.verifyContent('inputEmailProcess','inputEmailId','msgEmailId','iconEmailId')" onfocusout="homepageregisterform.verifyContentErrorDelete('inputEmailProcess','inputEmailId','msgEmailId','iconEmailId')" >
-                        <i class="inputcheckicon inputcheckicon-check" id="iconEmailId"></i>
-                        <span class="inputerrormessage" id="msgEmailId"></span>
-                        <span class="inputbottombar"></span>
-                        <label>E-POSTA</label>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <div class="labelanimation">
-                        <input type="password" class="form-control" name="phone" id="inputPasswordId" required onkeyup="homepageregisterform.verifyContent('inputPasswordProcess','inputPasswordId','msgPasswordId','iconPasswordId')" onfocusout="homepageregisterform.verifyContentErrorDelete('inputPasswordProcess','inputPasswordId','msgPasswordId','iconPasswordId')" >
-                        <i class="inputcheckicon inputcheckicon-check" id="iconPasswordId"></i>
-                        <span class="inputerrormessage" id="msgPasswordId"></span>
-                        <span class="inputbottombar"></span>
-                        <label>ŞİFRE</label>
-                    </div>
-                </div>
-                <div class="form-group">
-                    <div class="labelanimation">
-                        <input type="password" class="form-control" name="phone" id="inputRePasswordId" required onkeyup="homepageregisterform.verifyContent('inputRePasswordProcess','inputRePasswordId','msgRePasswordId','iconRePasswordId')" onfocusout="homepageregisterform.verifyContentErrorDelete('inputRePasswordProcess','inputRePasswordId','msgRePasswordId','iconRePasswordId')" >
-                        <i class="inputcheckicon inputcheckicon-check" id="iconRePasswordId"></i>
-                        <span class="inputerrormessage" id="msgRePasswordId"></span>
-                        <span class="inputbottombar"></span>
-                        <label>ŞİFRE DOĞRULAMA</label>
-                    </div>
-                </div>
-                <div class="recaptcha">
-                    <img src="../assets/img/mainpage/elements/Homepage-Top-Recaptcha.png" alt="" width="300" height="76" />
-                </div>
-                <div class="custom-control custom-checkbox form-check">
-                    <input class="form-check-input custom-control-input" type="checkbox" name="termsofuse" value="" id="termsOfUseCheck">
-                    <label class="form-check-label custom-control-label" id="labeltermsOfUseCheck" for="termsOfUseCheck"><a class="urllink" href="/company/legal/terms" title="Kullanım Sözleşmesi" rel="bookmark">Kullanım Sözleşmesini</a> okudum ve onaylıyorum.</label>
-                </div>
-                <div class="custom-control custom-checkbox form-check">
-                    <input class="form-check-input custom-control-input" type="checkbox" value="" id="announcementsCheck">
-                    <label class="form-check-label custom-control-label" for="announcementsCheck">Ticari reklam ve duyurulardan haber almak istiyorum.</label>
-                </div>
-                <div class="form-button">
-                    <button type="submit" class="btn btn-primary">ÜYELİK OLUŞTUR</button>
-                </div>
-            </form>
-        </div>
-        <!-- Register New -->
     </div>
     <!-- Header Top Right -->
 

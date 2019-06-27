@@ -32,11 +32,14 @@ class HomepageRegisterForm {
 
         let val = inputSelectorTag.value.trim();
 
+        let Password = document.getElementById("inputPasswordId").value.trim();
+        let RePassword = document.getElementById("inputRePasswordId").value.trim();
+
         switch (inputProcessName) {
 
-            case "inputNameProcess":
-                if(val.length<3){
-                    this.setHomepageRegisterFormErrorMessages(messageSpanSelector,"EN AZ 3 KARAKTER", "");
+            case "inputFirstNameProcess":
+                if(val.length<2){
+                    this.setHomepageRegisterFormErrorMessages(messageSpanSelector,"EN AZ 2 KARAKTER", "");
                     this.setHomepageRegisterFormErrorMessages(messageIconSelector,"", "none");
                     this.setHomepageRegisterFormErrorInput(inputIdSelector,"#b82c0d", "");
                 }else{
@@ -46,9 +49,9 @@ class HomepageRegisterForm {
                 }
                 break;
 
-            case "inputSurnameProcess":
-                if(val.length<3){
-                    this.setHomepageRegisterFormErrorMessages(messageSpanSelector,"EN AZ 3 KARAKTER", "");
+            case "inputLastNameProcess":
+                if(val.length<2){
+                    this.setHomepageRegisterFormErrorMessages(messageSpanSelector,"EN AZ 2 KARAKTER", "");
                     this.setHomepageRegisterFormErrorMessages(messageIconSelector,"", "none");
                     this.setHomepageRegisterFormErrorInput(inputIdSelector,"#b82c0d", "");
                 }else{
@@ -95,7 +98,7 @@ class HomepageRegisterForm {
                 break;
 
             case "inputRePasswordProcess":
-                if(val.length<6){
+                if(val.length<6 || (Password !== RePassword)){
                     this.setHomepageRegisterFormErrorMessages(messageSpanSelector,"ŞİFRELER UYUŞMUYOR", "");
                     this.setHomepageRegisterFormErrorMessages(messageIconSelector,"", "none");
                     this.setHomepageRegisterFormErrorInput(inputIdSelector,"#b82c0d", "");
@@ -117,17 +120,17 @@ class HomepageRegisterForm {
 
         switch (inputProcessName) {
 
-            case "inputNameProcess":
+            case "inputFirstNameProcess":
                 if(val.length===0){
-                    this.setHomepageRegisterFormErrorMessages(messageSpanSelector,"EN AZ 3 KARAKTER", "");
+                    this.setHomepageRegisterFormErrorMessages(messageSpanSelector,"EN AZ 2 KARAKTER", "");
                     this.setHomepageRegisterFormErrorMessages(messageIconSelector,"", "none");
                     this.setHomepageRegisterFormErrorInput(inputIdSelector,"#b82c0d");
                 }
                 break;
 
-            case "inputSurnameProcess":
+            case "inputLastNameProcess":
                 if(val.length===0){
-                    this.setHomepageRegisterFormErrorMessages(messageSpanSelector,"EN AZ 3 KARAKTER", "");
+                    this.setHomepageRegisterFormErrorMessages(messageSpanSelector,"EN AZ 2 KARAKTER", "");
                     this.setHomepageRegisterFormErrorMessages(messageIconSelector,"", "none");
                     this.setHomepageRegisterFormErrorInput(inputIdSelector,"#b82c0d");
                 }
@@ -159,7 +162,7 @@ class HomepageRegisterForm {
 
             case "inputRePasswordProcess":
                 if(val.length===0){
-                    this.setHomepageRegisterFormErrorMessages(messageSpanSelector,"EN AZ 6 KARAKTER", "");
+                    this.setHomepageRegisterFormErrorMessages(messageSpanSelector,"ŞİFRELER UYUŞMUYOR", "");
                     this.setHomepageRegisterFormErrorMessages(messageIconSelector,"", "none");
                     this.setHomepageRegisterFormErrorInput(inputIdSelector,"#b82c0d");
                 }
