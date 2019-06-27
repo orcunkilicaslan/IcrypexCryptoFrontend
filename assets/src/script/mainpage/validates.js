@@ -176,6 +176,6 @@ window.homepageregisterform = new HomepageRegisterForm();
 
 /* Masked Input Plugin for jQuery */
 jQuery(function($){
-    $("#inputPhoneId").mask("0999 999 99 99");
+    $("#inputPhoneId").mask("0599 999 99 99");
 });
 /* Masked Input Plugin for jQuery */
