@@ -101,7 +101,8 @@ gulp.task('sass-mainpage', () => {
 
 gulp.task('script-mainpage', () => {
     return gulp.src([
-        folder_src_main + 'script/mainpage/**/app.js'
+        folder_src_main + 'script/mainpage/**/app.js',
+        folder_src_main + 'script/mainpage/**/validates.js'
     ])
         .pipe(plumber())
         .pipe(webpack({

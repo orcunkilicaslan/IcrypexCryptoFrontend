@@ -198,7 +198,12 @@ $mainpageHomepageImgPath : "../../img/mainpage";
         &-volume{color: $global-clr-soft-gray;}
       }
 
-      &-chartbox{}
+      &-chartbox{
+        .ct-chart,
+        .ct-chart-left{
+          overflow: hidden;
+        }
+      }
     }
   }
 
@@ -218,7 +223,7 @@ $mainpageHomepageImgPath : "../../img/mainpage";
       &-item{
         color: $global-clr-white;
         text-align: center;
-        font-size: 30px;
+        font-size: 28px;
         font-weight: 300;
         line-height: 0.9;
         letter-spacing: -0.3px;
@@ -293,6 +298,7 @@ $mainpageHomepageImgPath : "../../img/mainpage";
 
     &-volume{
       display: block;
+      white-space: nowrap;
 
       sup{
         font-size: 12px;
@@ -337,9 +343,9 @@ $mainpageHomepageImgPath : "../../img/mainpage";
       padding-top: 20px;
 
       label{
-        font-size: 15px;
+        color: $global-clr-soft-gray;
+        font-size: 17px;
         line-height: 1;
-        padding-top: 5px;
       }
 
       .form-group{
@@ -348,20 +354,84 @@ $mainpageHomepageImgPath : "../../img/mainpage";
       .form-control{
         color: $global-clr-white;
         background-color: transparent;
-        border-color: transparentize($global-clr-soft-gray, 0.7);
-        border-right: none;
-        border-top: none;
-        height: auto;
-        padding: 5px 10px 8px;
+        border-left-color: transparentize($global-clr-soft-gray, 0.7);
+        border-bottom-color: transparentize($global-clr-soft-gray, 0.7);
+        border-right-color: transparent !important;
+        border-top-color: transparent !important;
+        height: 40px;
         font-size: 17px;
         @include border-radius(0px);
         &:focus{
           @include box-shadow(0,0,0,transparent);
         }
       }
-      @include placeholder{
-        color: $global-clr-soft-gray;
+
+      .labelanimation{
+        margin-top: 0;
+
+        label{
+          top: 10px;
+        }
+
+        .form-control{
+          padding: 10px 10px 5px !important;
+
+          &:focus{
+            border-left-color: $global-clr-soft-blue !important;
+            border-bottom-color: $global-clr-soft-blue !important;
+          }
+
+          &:valid{
+            border-left-color: $global-clr-soft-blue;
+            border-bottom-color: $global-clr-soft-blue;
+          }
+
+          &:focus ~ label,
+          &:valid ~ label{
+            top: -3px;
+            left: 10px;
+            color: $global-clr-soft-gray;
+          }
+
+          &:focus ~ .inputbottombar:before,
+          &:focus ~ .inputbottombar:after{
+            width:50%;
+          }
+
+          &:focus ~ .inputbottombar:before,
+          &:focus ~ .inputbottombar:after{
+            background-color: $global-clr-soft-blue;
+          }
+
+          &:valid ~ .inputbottombar:before,
+          &:valid ~ .inputbottombar:after{
+            //background-color: $global-clr-green;
+          }
+
+          &:focus ~ .inputerrormessage,
+          &:valid ~ .inputerrormessage{
+            top: -3px;
+            right: 0;
+            font-size: 12px;
+          }
+
+          &:focus ~ label{
+            color: $global-clr-soft-blue;
+          }
+
+          &:valid ~ label{
+            color: $global-clr-green;
+          }
+        }
+
+        .inputbottombar{
+          &::before,
+          &::after {
+            height: 1px;
+          }
+        }
       }
+
       .recaptcha{
         //background-color: black;
         margin-bottom: 13px;
@@ -369,7 +439,16 @@ $mainpageHomepageImgPath : "../../img/mainpage";
       }
       .form-check{
         margin-bottom: 13px;
+
         *{color: $global-clr-soft-gray;}
+
+        label{
+          color: $global-clr-soft-gray;
+          font-size: 15px;
+          line-height: 1;
+          padding-top: 5px;
+        }
+
         a{
           text-decoration: underline !important;
           &:hover{
@@ -413,11 +492,6 @@ $mainpageHomepageImgPath : "../../img/mainpage";
           @include gradient(#0a93ea, #00387c);
         }
       }
-
-      .urllink{
-        color: $global-clr-soft-blue;
-        text-decoration: underline;
-      }
     }
   }
 
@@ -448,11 +522,6 @@ $mainpageHomepageImgPath : "../../img/mainpage";
       padding: 5px 0 20px;
       color: $global-clr-soft-gray;
       border-bottom: 2px solid transparentize($global-clr-soft-gray, 0.7);
-
-      .urllink{
-        color: $global-clr-soft-blue;
-        text-decoration: underline;
-      }
     }
 
     &-totalassets{

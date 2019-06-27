@@ -31,3 +31,13 @@ assets/vendor/dropzone/index.js
 assets/vendor/dropzone/package.json
 assets/vendor/dropzone/README.md
 assets/vendor/dropzone/dist/readme.md
+
+assets/vendor/jquery.maskedinput/demo/
+assets/vendor/jquery.maskedinput/lib/
+assets/vendor/jquery.maskedinput/spec/
+assets/vendor/jquery.maskedinput/bower.json
+assets/vendor/jquery.maskedinput/CONTRIBUTING.md
+assets/vendor/jquery.maskedinput/gruntfile.js
+assets/vendor/jquery.maskedinput/jquery.maskedinput.nuspec
+assets/vendor/jquery.maskedinput/package.json
+assets/vendor/jquery.maskedinput/README.md
