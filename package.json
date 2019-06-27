@@ -45,8 +45,9 @@
   },
   "dependencies": {
     "bootstrap": "^4.3.1",
+    "owl.carousel": "^2.3.4",
     "dropzone": "^5.5.1",
-    "owl.carousel": "^2.3.4"
+    "jquery.maskedinput": "^1.4.1"
   },
   "browserslist": [
     "defaults"
