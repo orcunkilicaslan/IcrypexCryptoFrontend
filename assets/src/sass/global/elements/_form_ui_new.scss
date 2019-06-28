@@ -50,6 +50,21 @@
       }
     }
 
+    &.fontsize{
+      &20px{
+
+        .form-control,
+        .input-group-text{
+          font-size: 20px;
+        }
+        .form-control{
+        }
+        div.form-control{
+          padding: 4px 10px;
+        }
+      }
+    }
+
     &-inputinfo{
       color: $global-clr-soft-gray;
       font-size: 15px;
@@ -102,7 +117,7 @@
     font-size: 17px;
     font-weight: 500;
     height: 40px;
-    padding: 2px 10px 4px;
+    padding: 4px 10px;
     @include box-shadow(0,0,0,transparent);
     @include border-radius(0);
 
@@ -129,6 +144,10 @@
     }
   }
 
+  div.form-control{
+    padding: 7px 10px;
+  }
+
   .custom-select{
     font-size: 17px;
     height: 40px;
@@ -143,7 +162,7 @@
     }
 
     &:disabled{
-      background-color: #f2f2f2;
+      background-color: $global-clr-soft-gray;
     }
   }
 
@@ -170,24 +189,24 @@
       width: 13px;
       height: 7px;
       top: .5rem;
-      left: -1.45rem;
-      border-bottom:2px solid $global-clr-white;
-      border-left:2px solid $global-clr-white;
+      left: -1.40rem;
+      border-bottom:2px solid $global-clr-dark-blue;
+      border-left:2px solid $global-clr-dark-blue;
       @include rotate(-50);
     }
   }
 
   .custom-control-input {
     &:checked ~ .custom-control-label::before {
-      border-color: $global-clr-soft-blue;
-      background-color: $global-clr-soft-blue;
+      background-color: $global-clr-white;
+      border-color: transparentize($global-clr-soft-gray, 0.7);
     }
     &:focus:not(:checked) ~ .custom-control-label::before {
-      border-color: $global-clr-light-gray;
+      border-color: transparentize($global-clr-soft-gray, 0.7);
     }
     &:not(:disabled):active ~ .custom-control-label::before {
       background-color: $global-clr-light-gray;
-      border-color: $global-clr-light-gray;
+      border-color: transparentize($global-clr-soft-gray, 0.7);
     }
     &:disabled {
       ~ .custom-control-label {
