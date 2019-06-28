@@ -68,8 +68,6 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
   &-search{
     position: relative;
-    max-width: 140px;
-    width: 100%;
     margin-top: 5px;
     margin-bottom: 17px;
 
@@ -84,10 +82,26 @@ $globalSvgIconImgPath : "../../img/global/svg";
       background-color: transparent;
       color: $global-clr-white;
       font-size: $global-font-size;
-      width: 100%;
-      padding: 2px;
+      width: 140px;
+      padding: 2px 20px 2px 0;
       border-bottom: 1px solid transparentize($global-clr-soft-gray, 0.7);
+
+      &:focus{
+        width: 180px;
+        border-bottom-color: $global-clr-white;
+
+        &::placeholder{color: $global-clr-white;}
+        &::-webkit-input-placeholder{color: $global-clr-white;}
+        &:-moz-placeholder{color: $global-clr-white;}
+        &::-moz-placeholder{color: $global-clr-white;}
+        &:-ms-input-placeholder{color: $global-clr-white;}
+      }
+
+      &:focus ~ button{
+        background-image: url(#{$globalSvgIconImgPath}/Search_Icon_White.svg);
+      }
     }
+
     &-button{
       background-color: transparent;
       background-image: url(#{$globalSvgIconImgPath}/Search_Icon.svg);
@@ -101,6 +115,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
       width: 17px;
       height: 17px;
       text-indent: -9999px;
+      @include transition(background, 50ms);
     }
     @include placeholder {
       color: $global-clr-soft-gray;
