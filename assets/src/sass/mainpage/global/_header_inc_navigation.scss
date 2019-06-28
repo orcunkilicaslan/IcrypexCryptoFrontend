@@ -87,6 +87,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
         font-weight: 500;
         margin: 0;
         line-height: 1;
+        padding-left: 47px;
 
         @include ReSassResponsive(1400){
           font-size: 12px;

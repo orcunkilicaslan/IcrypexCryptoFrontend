@@ -135,6 +135,11 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
       #{$headerclassname}-userarea-user{
 
+        &-image{
+          width: 26px;
+          height: 26px;
+        }
+
         &-name{
           font-size: 15px;
 

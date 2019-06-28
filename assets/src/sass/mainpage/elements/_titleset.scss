@@ -39,6 +39,7 @@
       position: absolute;
       bottom: 0;
       left: 0;
+      @include transition(all, 0.3s, ease-in-out);
     }
 
     &.titleleft{

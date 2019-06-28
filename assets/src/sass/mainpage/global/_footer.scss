@@ -20,6 +20,12 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
       a{
         color: $global-clr-white;
+        display: block;
+        @include transition(color, 0.3s, ease-in-out);
+
+        &:hover{
+          color: $global-clr-soft-blue;
+        }
       }
     }
     &-list{
@@ -36,6 +42,22 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
         a{
           color: transparentize($global-clr-soft-gray, 0.1);
+          display: block;
+          @include transition(all, 0.3s, ease-in-out);
+
+          &:hover{
+            color: $global-clr-white;
+          }
+        }
+      }
+    }
+  }
+
+  &-underlinehover{
+    &:hover{
+      .columntitle{
+        &::after{
+          width: 60px;
         }
       }
     }
@@ -63,6 +85,11 @@ $globalSvgIconImgPath : "../../img/global/svg";
           height: 30px;
           text-align: center;
           @include border-radius(30px);
+          @include transition(background, 0.3s, ease-in-out);
+
+          &:hover{
+            background-color: $global-clr-btn-blue;
+          }
         }
       }
     }

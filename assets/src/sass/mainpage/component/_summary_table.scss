@@ -110,7 +110,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
           background-color: transparent;
           color: $global-clr-white;
           font-size: $global-font-size;
-          width: 180px;
+          width: 90px;
           position: absolute;
           right: 0;
           padding: 3px 20px 3px 0;
@@ -119,8 +119,8 @@ $globalSvgIconImgPath : "../../img/global/svg";
           @include transition(all, 0.3s, ease-in-out);
 
           &:focus{
-            width: 220px;
-            border-bottom-color: $global-clr-white;
+            width: 100px;
+            border-bottom-color: $global-clr-soft-blue;
 
             &::placeholder{color: $global-clr-white;}
             &::-webkit-input-placeholder{color: $global-clr-white;}
@@ -130,7 +130,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
           }
 
           &:focus ~ button{
-            background-image: url(#{$globalSvgIconImgPath}/Search_Icon_White.svg);
+            background-image: url(#{$globalSvgIconImgPath}/Search_Icon_Soft_Blue.svg);
           }
         }
 
@@ -177,6 +177,14 @@ $globalSvgIconImgPath : "../../img/global/svg";
       border-top-width: 0;
       border-bottom-width: 1px;
       border-color: transparentize($global-clr-soft-gray, 0.7);
+    }
+
+    tbody tr{
+      @include transition(all, 0.2s, ease-in-out);
+    }
+
+    tbody tr:hover{
+      background-color: transparentize($global-clr-soft-blue, 0.85);
     }
 
     td, th{

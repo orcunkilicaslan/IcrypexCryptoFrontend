@@ -50,6 +50,10 @@ $tradepageFooterImgPath : "../../img/tradepage/footer";
       color: $global-clr-soft-gray;
       margin: 0;
       margin-top: 20px;
+
+      a{
+        color: $global-clr-soft-gray;
+      }
     }
 
     &::before{
@@ -78,7 +82,13 @@ $tradepageFooterImgPath : "../../img/tradepage/footer";
       font-size: 17px;
 
       &.linkgray{
-        a{color: transparentize($global-clr-soft-gray, 0.1);}
+        a{
+          color: transparentize($global-clr-soft-gray, 0.1);
+
+          &:hover{
+            color: $global-clr-white;
+          }
+        }
       }
 
       &-item{
@@ -86,7 +96,14 @@ $tradepageFooterImgPath : "../../img/tradepage/footer";
         padding: 0 12px;
         color: $global-clr-white;
 
-        a{color: $global-clr-white;}
+        a{
+          color: $global-clr-white;
+          @include transition(all, 0.3s, ease-in-out);
+
+          &:hover{
+            color: $global-clr-soft-blue;
+          }
+        }
 
         &::before{
           content: "";
