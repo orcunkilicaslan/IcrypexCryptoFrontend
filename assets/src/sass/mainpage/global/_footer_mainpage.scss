@@ -82,6 +82,11 @@ $mainpageFooterImgPath : "../../img/mainpage/footer";
       font-size: 20px;
       line-height: 0.85;
       margin-bottom: 10px;
+
+      a{
+        color: $global-clr-white;
+      }
+
     }
     &-desc{
       color: $global-clr-soft-gray;

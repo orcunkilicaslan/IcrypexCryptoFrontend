@@ -88,7 +88,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
       &:focus{
         width: 180px;
-        border-bottom-color: $global-clr-white;
+        border-bottom-color: $global-clr-soft-blue;
 
         &::placeholder{color: $global-clr-white;}
         &::-webkit-input-placeholder{color: $global-clr-white;}
@@ -98,7 +98,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
       }
 
       &:focus ~ button{
-        background-image: url(#{$globalSvgIconImgPath}/Search_Icon_White.svg);
+        background-image: url(#{$globalSvgIconImgPath}/Search_Icon_Soft_Blue.svg);
       }
     }
 
@@ -277,7 +277,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
       &-image{
         width: 30px;
         height: 30px;
-        margin-right: 10px;
+        margin-right: 7px;
         @include border-radius(15px);
 
         @include ReSassResponsive(1400){
@@ -326,38 +326,38 @@ $globalSvgIconImgPath : "../../img/global/svg";
       &-droplist{
         background-color: $global-grdint-darkblue02;
         min-width: 250px;
+        @include border-radius(3px);
 
         .headusermenu{
-          padding:10px;
-          padding-bottom: 0;
-          text-align: left;
+          padding:0;
+          @include border-radius(3px);
 
           &-userbg{
             display: flex;
+            flex-direction: column;
             align-items: center;
           }
 
           &-box{
-            background-color: transparentize($global-grdint-darkblue01, 0.50);
-            border-top-left-radius:3px;
-            border-top-right-radius:3px;
+            background-color: transparentize($global-sitebg-darkblue01, 0.50);
+            @include border-radii(3px,3px,0,0);
             padding: 15px;
 
             &-avatar{
-              width:30px;
-              height:30px;
-              margin-right:15px;
+              width:60px;
+              height:60px;
+              margin-bottom: 5px;
 
               img{
-                width:30px;
-                height:30px;
+                width:60px;
+                height:60px;
                 border-radius:50%;
               }
             }
 
             &-textarea{
-              line-height: 0.5;
-              margin-top: -5px;
+              line-height: 1;
+              text-align: center;
 
               &-username{
                 color: $global-clr-white;
@@ -367,9 +367,14 @@ $globalSvgIconImgPath : "../../img/global/svg";
               small a{
                 color: $global-clr-soft-blue;
                 font-weight:500;
-                margin-top: 5px;
               }
             }
+          }
+
+          &-menulist{
+            background-color: transparentize($global-grdint-darkblue02, 0.50);
+            padding: 0;
+            text-align: left;
           }
 
           &-userarea{
@@ -380,35 +385,46 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
           .btnarea{
             text-align:center;
-            border-bottom-left-radius:3px;
-            border-bottom-right-radius:3px;
+            @include border-radii(0,0,3px,3px);
 
             a{
-              padding:5px;
-              border-bottom-left-radius:3px;
-              border-bottom-right-radius:3px;
+              padding:6px 5px 8px;
               display:inline-block;
+              @include border-radii(0,0,3px,3px);
 
               &.logout{
-                background-color: $global-clr-btn-blue;
+                background-color: $global-clr-red;
                 color: $global-clr-white;
                 width:100%;
+                @include transition(background, 0.3s, ease-in-out);
+
+                &:hover{
+                  background-color: lighten($global-clr-red, 10%);
+                }
               }
             }
           }
         }
 
         .usermenulist{
-          padding-bottom: 10px;
+          padding: 2px 0 10px;
           text-align: left;
 
           .userlink{
-            padding: 5px 10px;
+            padding: 5px 10px 0;
             position: relative;
             display: block;
 
+            &:first-child{
+              padding-top: 0;
+            }
+            &:last-child{
+              padding-bottom: 0;
+            }
+
             a{
               color: $global-clr-white;
+              font-size: 15px;
               padding:3px 0;
               display: block;
               position: relative;

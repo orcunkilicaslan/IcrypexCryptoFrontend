@@ -90,28 +90,33 @@
                     </ul>
                     <div class="header-userarea-user btn-group d-flex align-items-center">
                         <a class="header-userarea-user-title d-flex align-items-center" href="#" title="" rel="bookmark">
-                            <img class="header-userarea-user-image" src="../assets/img/tradepage/header/Profile_Pic.png" width="30" height="30" alt="UserPic" />
+                            <img class="header-userarea-user-image" src="../assets/img/global/svg/Unknown_Profile_Avatar_Icon.svg" width="200" height="200" alt="UserPic" />
                             <span class="header-userarea-user-name">İSİM İSİM SOYİSİM</span>
                         </a>
                         <button class="header-userarea-user-dropdown dropdown-toggle dropdown-toggle-split" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
-                        <div class="dropdown-menu dropdown-menu-right">
+                        <div class="dropdown-menu dropdown-menu-right show" x-placement="bottom-end" style="position: absolute; transform: translate3d(-63px, 27px, 0px); top: 0px; left: 0px; will-change: transform;">
                             <div class="header-userarea-user-droplist">
                                 <div class="headusermenu">
                                     <div class="headusermenu-box">
                                         <div class="headusermenu-userbg">
-                                            <div class="headusermenu-box-avatar"><img src="../assets/img/tradepage/header/Profile_Pic.png" width="30" height="30" alt="UserPic"></div>
+                                            <div class="headusermenu-box-avatar"><img src="../assets/img/global/svg/Unknown_Profile_Avatar_Icon.svg" width="200" height="200" alt="UserPic"></div>
                                             <div class="headusermenu-box-textarea">
                                                 <h5 class="headusermenu-box-textarea-username">ORCUN KILICASLAN</h5>
                                                 <small><a href="#" title="" rel="bookmark">1 Yeni Mesajınız Var</a></small>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="btnarea"><a class="logout" href="#" title="Çıkış Yapın" rel="external nofollow">Çıkış Yapın</a></div>
+                                    <div class="headusermenu-menulist">
+                                        <ul class="usermenulist">
+                                            <li class="userlink"><a href="/profile" title="HESABIM" rel="category">HESABIM</a></li>
+                                            <li class="userlink"><a href="/easy-buy-sell" title="KOLAY AL-SAT" rel="category">KOLAY AL-SAT</a></li>
+                                            <li class="userlink"><a href="/trading" title="PRO GÖRÜNÜM" rel="category">PRO GÖRÜNÜM</a></li>
+                                            <li class="userlink"><a href="/deposit" title="YATIRMA" rel="category">YATIRMA</a></li>
+                                            <li class="userlink"><a href="/withdraw" title="ÇEKME" rel="category">ÇEKME</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="btnarea"><a class="logout" href="/logout" title="ÇIKIŞ YAPIN" rel="external nofollow">ÇIKIŞ YAPIN</a></div>
                                 </div>
-                                <ul class="usermenulist">
-                                    <li class="userlink"><a href="#" title="PROFİLİM" rel="category">PROFİLİM</a></li>
-                                    <li class="userlink"><a href="#" title="MESAJLARIM" rel="category">MESAJLARIM</a></li>
-                                </ul>
                             </div>
                         </div>
                     </div>
@@ -146,32 +151,32 @@
                         <ul class="header-stats-price-big-list d-flex">
                             <li class="header-stats-price-big-list-item col">
                                 <h4 class="header-stats-price-big-title">GÜNCEL</h4>
-                                <span class="header-stats-price-big-volume">21.750,00 TRY</span>
+                                <span class="header-stats-price-big-volume" id="hc"> 68542.50  TRY</span>
                             </li>
                             <li class="header-stats-price-big-list-item col">
                                 <h4 class="header-stats-price-big-title">24S DEĞİŞİM</h4>
-                                <span class="header-stats-price-big-volume">32,00 TRY <span class="sitecolorgreen">0.15<sup>%</sup></span></span>
+                                <span class="header-stats-price-big-volume" id="24hc">  563.83  TRY <span class="sitecolorgreen">21.39 <sup>%</sup></span></span>
                             </li>
                             <li class="header-stats-price-big-list-item col">
                                 <h4 class="header-stats-price-big-title">24S EN YÜKSEK</h4>
-                                <span class="header-stats-price-big-volume">22.499,00 TRY</span>
+                                <span class="header-stats-price-big-volume">76683.19  TRY</span>
                             </li>
                             <li class="header-stats-price-big-list-item col">
                                 <h4 class="header-stats-price-big-title">24S EN DÜŞÜK</h4>
-                                <span class="header-stats-price-big-volume">21.660,00 TRY</span>
+                                <span class="header-stats-price-big-volume">60086.19  TRY</span>
                             </li>
                             <li class="header-stats-price-big-list-item col">
                                 <h4 class="header-stats-price-big-title">24S ORTALAMA</h4>
-                                <span class="header-stats-price-big-volume">21.720,25 TRY</span>
+                                <span class="header-stats-price-big-volume">67811.81  TRY</span>
                             </li>
 
                             <li class="header-stats-price-big-list-item col">
                                 <h4 class="header-stats-price-big-title">24S HACİM</h4>
-                                <span class="header-stats-price-big-volume">296.261349 BTC</span>
+                                <span class="header-stats-price-big-volume" id="vol">  1631616.67  BTC</span>
                             </li>
                             <li class="header-stats-price-big-list-item col">
                                 <h4 class="header-stats-price-big-title">7G DEĞİŞİM</h4>
-                                <span class="header-stats-price-big-volume">980,00 TRY <span class="sitecolorgreen">0.27<sup>%</sup></span></span>
+                                <span class="header-stats-price-big-volume">9561.14 TRY <span class="sitecolorgreen">0.27<sup>%</sup></span></span>
                             </li>
                         </ul>
                     </div>
@@ -937,7 +942,7 @@
                     </a>
                     <p class="footer-tradepage-address-desc mt-0">Tüm Hakları Saklıdır © 2018-2019<br />Icrypex Crypto Exchange</p>
                     <p class="footer-tradepage-address-desc">Icrypex Bilişim ve Teknoloji A.Ş.<br />Maslak Meydan Sokak<br />Spring Giz Plaza Kat:19<br />34398 Sarıyer/Maslak/İstanbul</p>
-                    <p class="footer-tradepage-address-desc">Müşteri Hizmetleri: 0850 250 1079</p>
+                    <p class="footer-tradepage-address-desc">Müşteri Hizmetleri: <a href="tel:08502551079" title="Müşteri Hizmetleri" rel="external nofollow">0850 255 1079</a></p>
                 </div>
             </div>
             <!-- Address -->

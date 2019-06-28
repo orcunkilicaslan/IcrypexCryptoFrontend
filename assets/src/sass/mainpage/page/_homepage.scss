@@ -1,4 +1,5 @@
 $mainpageHomepageImgPath : "../../img/mainpage";
+$globalSvgIconImgPath : "../../img/global/svg";
 
 .homepage{
 
@@ -489,7 +490,17 @@ $mainpageHomepageImgPath : "../../img/mainpage";
           letter-spacing: -0.2px;
           padding: 11px 10px;
           border:none;
+          @include transition(all, 0.3s, ease-in-out);
           @include gradient(#0a93ea, #00387c);
+
+          &:hover{
+            //box-shadow: 0 0 0 0.1rem $global-clr-soft-blue;
+          }
+
+          &:not(:disabled):not(.disabled).active:focus,
+          &:not(:disabled):not(.disabled):active:focus{
+            //box-shadow: 0 0 0 0.1rem $global-clr-soft-blue;
+          }
         }
       }
     }
@@ -796,7 +807,7 @@ $mainpageHomepageImgPath : "../../img/mainpage";
 
   &-whyicrypex{
     background-color: $global-clr-white;
-    padding: 90px 0 110px;
+    padding: 70px 0 110px;
 
     @include ReSassResponsive(1400){
       padding: 70px 0 90px;
@@ -1065,11 +1076,35 @@ $mainpageHomepageImgPath : "../../img/mainpage";
         margin-top: 35px;
         &-item{
           margin-right: 35px;
+          background-position: center;
+          background-repeat: no-repeat;
+          @include transition(all, 0.3s, ease-in-out);
+
           &:last-child{
             margin-right: 0;
           }
-          &.apple{}
-          &.android{}
+
+          &.apple{
+            width: 135px;
+            height: 37px;
+            background-image: url(#{$globalSvgIconImgPath}/App_App_Store_Button.svg);
+            &:hover{
+              background-image: url(#{$globalSvgIconImgPath}/App_App_Store_Button_Hover.svg);
+            }
+          }
+          &.android{
+            width: 146px;
+            height: 40px;
+            background-image: url(#{$globalSvgIconImgPath}/App_Google_Play_Button.svg);
+            &:hover{
+              background-image: url(#{$globalSvgIconImgPath}/App_Google_Play_Button_Hover.svg);
+            }
+          }
+
+          img{
+            display: none;
+          }
+
         }
       }
     }
