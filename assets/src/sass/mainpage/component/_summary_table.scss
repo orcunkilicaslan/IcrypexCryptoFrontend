@@ -94,7 +94,9 @@ $globalSvgIconImgPath : "../../img/global/svg";
         position: absolute;
         width: 250px;
         right: 0;
-        padding: 6px 15px;
+        padding: 8px 15px;
+        height: 100%;
+
 
         @include ReSassResponsive(768){
           display: none;
@@ -108,12 +110,30 @@ $globalSvgIconImgPath : "../../img/global/svg";
           background-color: transparent;
           color: $global-clr-white;
           font-size: $global-font-size;
-          width: 100%;
-          padding: 2px;
-          border: none;
-          text-align: right;
-          padding-right: 20px;
+          width: 180px;
+          position: absolute;
+          right: 0;
+          padding: 3px 20px 3px 0;
+          border-bottom: 1px solid transparentize($global-clr-soft-gray, 0.7);
+          text-align: left;
+          @include transition(all, 0.3s, ease-in-out);
+
+          &:focus{
+            width: 220px;
+            border-bottom-color: $global-clr-white;
+
+            &::placeholder{color: $global-clr-white;}
+            &::-webkit-input-placeholder{color: $global-clr-white;}
+            &:-moz-placeholder{color: $global-clr-white;}
+            &::-moz-placeholder{color: $global-clr-white;}
+            &:-ms-input-placeholder{color: $global-clr-white;}
+          }
+
+          &:focus ~ button{
+            background-image: url(#{$globalSvgIconImgPath}/Search_Icon_White.svg);
+          }
         }
+
         &-button{
           background-color: transparent;
           background-image: url(#{$globalSvgIconImgPath}/Search_Icon.svg);
@@ -122,11 +142,12 @@ $globalSvgIconImgPath : "../../img/global/svg";
           background-size: contain;
           overflow: hidden;
           position: absolute;
-          top: 5px;
+          top: 2px;
           right: 0;
           width: 17px;
           height: 17px;
           text-indent: -9999px;
+          @include transition(background, 50ms);
 
           @include ReSassResponsive(1400){
             top: 2px;
