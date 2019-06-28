@@ -32,14 +32,9 @@ $globalSvgIconImgPath : "../../img/global/svg";
         }
 
         &-list{
+          display: flex;
+          justify-content: space-between;
           margin-bottom: 0;
-
-          > li[class*="col"]{
-            padding-right: 10px;
-            padding-left: 15px;
-            &:first-child{padding-left: 0}
-            &:last-child{padding-right: 0}
-          }
 
           &-item{
             color: $global-clr-white;
@@ -49,6 +44,8 @@ $globalSvgIconImgPath : "../../img/global/svg";
             line-height: 0.95;
             letter-spacing: -0.3px;
             position: relative;
+            padding-right: 15px;
+            padding-left: 15px;
 
             &::before{
               content: "";
@@ -56,11 +53,16 @@ $globalSvgIconImgPath : "../../img/global/svg";
               width: 1px;
               height: 34px;
               top: calc(50% - 16px);
-              right: 10px;
+              right: -10px;
               background-color: transparentize($global-clr-soft-gray, 0.7);
             }
 
+            &:first-child{
+              padding-left: 0;
+            }
             &:last-child{
+              padding-right: 0;
+
               &::before{display: none;}
             }
           }
