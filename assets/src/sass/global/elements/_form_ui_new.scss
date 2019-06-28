@@ -3,16 +3,21 @@
 
   label{
     color: $global-clr-dark-blue;
-    font-size: 17px;
-    margin-bottom: 5px;
   }
 
   .form-group{
+    margin-bottom: 10px;
+
+    label{
+      font-size: 17px;
+      line-height: 1;
+      margin-bottom: 6px;
+    }
 
     &.colorset{
 
       &disabled,
-      &graybg{
+      &bggray{
         .form-control,
         .input-group-append,
         .input-group-text{
@@ -26,12 +31,31 @@
             }
           }
         }
+        @include placeholder{
+          color: transparentize($global-clr-soft-gray, 0.50);
+          opacity: 1;
+        }
       }
-      &graytxt{
+      &gray{
         .form-control,
         .input-group-append,
         .input-group-text{
           color: $global-clr-soft-gray;
+        }
+        @include placeholder{
+          color: transparentize($global-clr-soft-gray, 0.50);
+          opacity: 1;
+        }
+      }
+      &darkblue{
+        .form-control,
+        .input-group-append,
+        .input-group-text{
+          color: $global-clr-dark-blue;
+        }
+        @include placeholder{
+          color: transparentize($global-clr-dark-blue, 0.50);
+          opacity: 1;
         }
       }
       &green{
@@ -40,12 +64,20 @@
         .input-group-text{
           color: $global-clr-green;
         }
+        @include placeholder{
+          color: transparentize($global-clr-green, 0.50);
+          opacity: 1;
+        }
       }
       &red{
         .form-control,
         .input-group-append,
         .input-group-text{
           color: $global-clr-red;
+        }
+        @include placeholder{
+          color: transparentize($global-clr-red, 0.50);
+          opacity: 1;
         }
       }
     }
@@ -166,6 +198,39 @@
     }
   }
 
+  .input-group{
+
+    *{
+      @include transition(border-color, 0.15s, ease-in-out);
+    }
+
+    &:focus-within{
+      .input-group-append{
+        border-color:transparentize($global-clr-soft-gray, 0.40);
+      }
+    }
+
+    .form-control{
+      border-right: none;
+      padding-right: 0;
+    }
+
+    .input-group-append{
+      border: 1px solid transparentize($global-clr-soft-gray, 0.70);
+      border-left: none;
+    }
+
+    .input-group-text{
+      color: $global-clr-dark-blue;
+      font-size: 17px;
+      font-weight: 500;
+      padding: 2px 10px 2px;
+      background-color: $global-clr-white;
+      border: none;
+      @include border-radius(0);
+    }
+  }
+
   .custom-control{
     padding-left: 1.75rem;
   }
@@ -227,39 +292,6 @@
     }
   }
 
-  .input-group{
-
-    *{
-      @include transition(border-color, 0.15s, ease-in-out);
-    }
-
-    &:focus-within{
-      .input-group-append{
-        border-color:transparentize($global-clr-soft-gray, 0.40);
-      }
-    }
-
-    .form-control{
-      border-right: none;
-      padding-right: 0;
-    }
-
-    .input-group-append{
-      border: 1px solid transparentize($global-clr-soft-gray, 0.70);
-      border-left: none;
-    }
-
-    .input-group-text{
-      color: $global-clr-dark-blue;
-      font-size: 17px;
-      font-weight: 500;
-      padding: 2px 10px 2px;
-      background-color: $global-clr-white;
-      border: none;
-      @include border-radius(0);
-    }
-  }
-
   @include placeholder{
     color: transparentize($global-clr-soft-gray, 0.50);
     opacity: 1;
@@ -267,7 +299,7 @@
 
   .btn{
     height: 40px;
-    padding-top: 2px;
+    padding-top: 4px;
     padding-bottom: 4px;
   }
 }
