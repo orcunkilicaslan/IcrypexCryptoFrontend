@@ -112,6 +112,9 @@ $globalSvgIconImgPath : "../../img/global/svg";
     &-loginf2a{
       background-image: url(#{$globalSvgIconImgPath}/Icon_2FA.svg);
     }
+    &-loginforgotpassword{
+      background-image: url(#{$globalSvgIconImgPath}/Icon_Forgot_Password.svg);
+    }
     &-headersearch{
       background-image: url(#{$globalSvgIconImgPath}/Icon_Search.svg);
     }
