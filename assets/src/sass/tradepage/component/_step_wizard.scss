@@ -264,7 +264,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
         }
       }
       &-tags900{
-        max-width: 960px;
+        max-width: 100%;
       }
       &-tags700{
         max-width: 700px;
@@ -275,6 +275,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
       .maxwidth190{width: 205px;}
       .maxwidth220{width: 220px;}
       .maxwidth300{width: 300px;}
+      .maxwidth350{width: 350px;}
       .maxwidth400{width: 400px;}
       .btnwidth100100{width: 100%;}
 
