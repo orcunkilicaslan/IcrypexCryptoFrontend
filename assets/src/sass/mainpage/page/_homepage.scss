@@ -445,9 +445,6 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
         label{
           color: $global-clr-soft-gray;
-          font-size: 15px;
-          line-height: 1;
-          padding-top: 5px;
         }
 
         a{
@@ -462,9 +459,6 @@ $globalSvgIconImgPath : "../../img/global/svg";
         &::before,
         &::after{
           background-color: transparent;
-          width: 20px;
-          height: 20px;
-          top: 0.145rem;
           border-color: transparentize($global-clr-soft-gray, 0.7);
         }
       }

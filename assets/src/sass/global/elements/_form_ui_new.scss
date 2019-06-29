@@ -84,12 +84,9 @@
 
     &.fontsize{
       &20px{
-
         .form-control,
         .input-group-text{
           font-size: 20px;
-        }
-        .form-control{
         }
         div.form-control{
           padding: 4px 10px;
@@ -97,13 +94,50 @@
       }
     }
 
-    &-inputinfo{
+    &.selectheightsize{
+      &-80-24{
+        width: 80px;
+        height: 24px;
+        position: relative;
+
+        &:before{
+          content: "";
+          position: absolute;
+          background-color: transparent;
+          width: 23px;
+          height: 22px;
+          top: 2px;
+          right: 0;
+          border: 1px solid transparentize($global-clr-soft-gray, 0.7);
+        }
+
+        select.form-control{
+          font-size: 17px;
+          height: 24px;
+          line-height: 1;
+          font-weight: normal;
+          padding: 0 !important;
+          padding-right: 26px !important;
+          text-align-last: right;
+          background-color: transparent;
+          background-position: 61px 9px;
+          position: relative;
+        }
+      }
+    }
+
+    &-inputinfotext{
       color: $global-clr-soft-gray;
       font-size: 15px;
       margin-top: 5px;
+
+      &.infotextdarkblue{
+        color: $global-clr-dark-blue;
+      }
     }
 
-    &-inputbottomicons{
+    &-inputiconlink{
+      color: $global-clr-soft-blue;
       position: relative;
       display: inline-flex;
       font-size: 17px;
@@ -173,6 +207,10 @@
 
     &.inputnoborder{
       border-color: transparent;
+      &:focus{
+        border-color: transparent;
+        box-shadow: none;
+      }
     }
   }
 
@@ -218,6 +256,12 @@
     .input-group-append{
       border: 1px solid transparentize($global-clr-soft-gray, 0.70);
       border-left: none;
+
+      select.form-control{
+        border: none;
+        height: 38px;
+        min-width: 70px;
+      }
     }
 
     .input-group-text{
@@ -232,16 +276,26 @@
   }
 
   .custom-control{
-    padding-left: 1.75rem;
+    padding-left: 26px;
+
+    .form-check-input{
+      margin-top: 0;
+      margin-left: -26px;
+      width: 20px;
+      height: 20px;
+    }
   }
 
   .custom-control-label{
+    font-size: 15px;
+    line-height: 1.2;
+
     &::before,
     &::after{
-      width: 22px;
-      height: 22px;
-      top: 0.14rem;
-      left: -1.75rem;
+      width: 20px;
+      height: 20px;
+      top: -0.03rem;
+      left: -26px;
       border-color: transparentize($global-clr-soft-gray, 0.7);
     }
   }
@@ -253,8 +307,8 @@
       position:absolute;
       width: 13px;
       height: 7px;
-      top: .5rem;
-      left: -1.40rem;
+      top: 5px;
+      left: -22px;
       border-bottom:2px solid $global-clr-dark-blue;
       border-left:2px solid $global-clr-dark-blue;
       @include rotate(-50);

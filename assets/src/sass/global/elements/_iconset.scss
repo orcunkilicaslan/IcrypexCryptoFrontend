@@ -115,6 +115,9 @@ $globalSvgIconImgPath : "../../img/global/svg";
     &-loginforgotpassword{
       background-image: url(#{$globalSvgIconImgPath}/Icon_Forgot_Password.svg);
     }
+    &-forgotpasswordicon{
+      background-image: url(#{$globalSvgIconImgPath}/Icon_Help.svg);
+    }
     &-headersearch{
       background-image: url(#{$globalSvgIconImgPath}/Icon_Search.svg);
     }

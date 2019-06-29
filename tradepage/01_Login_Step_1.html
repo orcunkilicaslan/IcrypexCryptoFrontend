@@ -129,29 +129,27 @@
     <!-- Form -->
     <div class="login-column">
 
-        <form class="login-form formui" autocomplete="off" novalidate>
+        <form class="login-form formuinew" autocomplete="off" novalidate>
             <h2 class="columntitle columntitle-lg bottomborder titlecenter">HOŞ GELDİNİZ, LÜTFEN E-POSTA ADRESİNİZİ VE ŞİFRENİZİ GİRİNİZ</h2>
             <div class="login-form-tags-300">
                 <div class="login-bigicon">
                     <i class="icon-svg icon-svg-loginlock"></i>
                 </div>
-                <div class="form-group">
-                    <label for="loginemail">E-POSTA ADRESİ</label>
-                    <input class="login-form-input email form-control" id="loginemail" name="loginemail" type="email" onkeyup="login.verifyFormContent('email','loginemail','msgemail')" onfocusout="login.verifyFormContentErrorDelete('email','loginemail','msgemail')" />
-                    <span class="error-message" id="msgemail"></span>
+                <div class="form-group colorsetdarkblue">
+                    <label>E-POSTA ADRESİ</label>
+                    <input type="text" class="form-control" placeholder="">
                 </div>
-                <div class="form-group">
-                    <label for="loginpassword">ŞİFRE</label>
-                    <input class="login-form-input password form-control" id="loginpassword" name="loginpassword" type="password" onkeyup="login.verifyFormContent('password','loginpassword','msgpassword')" onfocusout="login.verifyFormContentErrorDelete('password','loginpassword','msgpassword')" />
-                    <span class="error-message" id="msgpassword"></span>
-                    <p class="login-form-info"><a href="#" title="ŞİFREMİ UNUTTUM" rel="bookmark"><i class="login-form-info-icon">?</i> ŞİFREMİ UNUTTUM</a></p>
+                <div class="form-group colorsetdarkblue">
+                    <label>ŞİFRE</label>
+                    <input type="text" class="form-control" placeholder="">
+                    <a href="#" class="form-group-inputiconlink"><i class="icon-svg icon-svg-forgotpasswordicon"></i> ŞİFREMİ UNUTTUM</a>
                 </div>
                 <div class="form-group">
                     <img src="../assets/img/tradepage/elements/Recaptcha.svg" alt="Recaptcha" width="300" height="76" />
                 </div>
             </div>
             <div class="login-form-btn site-button-formbottom-btn success">
-                <button class="btn btn-success" onclick="login.sendLoginForm()">2FA KODUNU GÖNDER</button>
+                <button class="btn btn-success">2FA KODUNU GÖNDER</button>
             </div>
         </form>
     </div>

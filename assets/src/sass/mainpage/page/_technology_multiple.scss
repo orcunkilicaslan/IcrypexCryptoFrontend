@@ -13,23 +13,12 @@
         font-size: 20px;
         font-weight: 500;
         margin-bottom: 5px;
-
-        &-date{
-          color: $global-clr-dark-blue;
-          font-size: 17px;
-        }
-
-        &-hash{
-          color: $global-clr-dark-blue;
-          font-size: 17px;
-          font-weight: 500;
-        }
       }
     }
 
     &-table{
 
-      &.formui{
+      &.formuinew{
 
         .form-control{
           font-size: 15px;
@@ -41,6 +30,7 @@
         .btn-group{
           .btn{
             font-size: 15px;
+            height: 30px;
             border-left: 1px solid $global-clr-white !important;
             border-right: 1px solid $global-clr-white !important;
 
@@ -70,9 +60,16 @@
           border-top-style: solid;
         }
 
-        th.buttons{
-          width: 90px;
+        th.balance{
+          width: 80px;
         }
+        th.buttons{
+          width: 245px;
+        }
+        th.amount{
+          width: 120px;
+        }
+
       }
 
       tbody{
