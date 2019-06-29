@@ -29,7 +29,7 @@
 
     &-table{
 
-      &.formui{
+      &.formuinew{
 
         .form-control{
           font-size: 15px;
@@ -41,6 +41,7 @@
         .btn-group{
           .btn{
             font-size: 15px;
+            height: 30px;
             border-left: 1px solid $global-clr-white !important;
             border-right: 1px solid $global-clr-white !important;
 
