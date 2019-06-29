@@ -5,6 +5,19 @@
     color: $global-clr-dark-blue;
   }
 
+  .form-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -8px;
+    margin-left: -8px;
+
+    > .col,
+    > [class*="col-"] {
+      padding-right: 8px;
+      padding-left: 8px;
+    }
+  }
+
   .form-group{
     margin-bottom: 10px;
 
@@ -77,6 +90,17 @@
         }
         @include placeholder{
           color: transparentize($global-clr-red, 0.50);
+          opacity: 1;
+        }
+      }
+      &orange{
+        .form-control,
+        .input-group-append,
+        .input-group-text{
+          color: $global-clr-orange;
+        }
+        @include placeholder{
+          color: transparentize($global-clr-orange, 0.50);
           opacity: 1;
         }
       }
@@ -216,6 +240,7 @@
 
   div.form-control{
     padding: 7px 10px;
+    overflow: hidden;
   }
 
   .custom-select{
