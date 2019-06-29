@@ -97,13 +97,14 @@
       }
     }
 
-    &-inputinfo{
+    &-inputinfotext{
       color: $global-clr-soft-gray;
       font-size: 15px;
       margin-top: 5px;
     }
 
-    &-inputbottomicons{
+    &-inputiconlink{
+      color: $global-clr-soft-blue;
       position: relative;
       display: inline-flex;
       font-size: 17px;
