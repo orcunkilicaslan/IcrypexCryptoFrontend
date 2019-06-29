@@ -10,16 +10,6 @@
       padding-bottom: 6px;
       margin-bottom: 0;
     }
-
-    .formui{
-      .form-control{
-        font-weight: 500;
-        color: $global-clr-dark-blue;
-      }
-      @include placeholder{
-        font-weight: 500;
-      }
-    }
   }
 
   &-box{
@@ -66,6 +56,9 @@
 
       label > i{
         cursor: pointer;
+        width: 18px;
+        height: 18px;
+        margin-left: 3px;
       }
 
       span[class*="wallet"]{
