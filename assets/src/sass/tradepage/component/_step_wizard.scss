@@ -262,22 +262,11 @@ $globalSvgIconImgPath : "../../img/global/svg";
         &-tags900{
           margin: auto;
           margin-top: 20px;
+          display: flex;
+          justify-content: center;
 
           &:first-child{
             margin-top: 0;
-          }
-
-          > div[class*="col"]{
-            padding-left: 7px;
-            padding-right: 7px;
-
-            &:first-child{
-              padding-left: 15px;
-            }
-            &:last-child{
-              padding-right: 15px;
-            }
-
           }
         }
         &-tags900{
@@ -286,6 +275,9 @@ $globalSvgIconImgPath : "../../img/global/svg";
         &-tags700{
           max-width: 700px;
         }
+
+        .maxwidth160{width: 160px;}
+        .maxwidth190{width: 190px;}
 
         #{$tabcont}-infoarea{
           padding: 20px 40px 0;
@@ -407,7 +399,6 @@ $globalSvgIconImgPath : "../../img/global/svg";
             }
           }
         }
-
       }
 
     }
