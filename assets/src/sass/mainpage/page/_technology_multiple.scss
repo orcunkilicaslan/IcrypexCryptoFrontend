@@ -13,17 +13,6 @@
         font-size: 20px;
         font-weight: 500;
         margin-bottom: 5px;
-
-        &-date{
-          color: $global-clr-dark-blue;
-          font-size: 17px;
-        }
-
-        &-hash{
-          color: $global-clr-dark-blue;
-          font-size: 17px;
-          font-weight: 500;
-        }
       }
     }
 
@@ -71,9 +60,16 @@
           border-top-style: solid;
         }
 
-        th.buttons{
-          width: 90px;
+        th.balance{
+          width: 80px;
         }
+        th.buttons{
+          width: 245px;
+        }
+        th.amount{
+          width: 120px;
+        }
+
       }
 
       tbody{
