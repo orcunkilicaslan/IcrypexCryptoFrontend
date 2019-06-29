@@ -232,16 +232,26 @@
   }
 
   .custom-control{
-    padding-left: 1.75rem;
+    padding-left: 26px;
+
+    .form-check-input{
+      margin-top: 0;
+      margin-left: -26px;
+      width: 20px;
+      height: 20px;
+    }
   }
 
   .custom-control-label{
+    font-size: 15px;
+    line-height: 1.2;
+
     &::before,
     &::after{
-      width: 22px;
-      height: 22px;
-      top: 0.14rem;
-      left: -1.75rem;
+      width: 20px;
+      height: 20px;
+      top: -0.03rem;
+      left: -26px;
       border-color: transparentize($global-clr-soft-gray, 0.7);
     }
   }
@@ -253,8 +263,8 @@
       position:absolute;
       width: 13px;
       height: 7px;
-      top: .5rem;
-      left: -1.40rem;
+      top: 5px;
+      left: -22px;
       border-bottom:2px solid $global-clr-dark-blue;
       border-left:2px solid $global-clr-dark-blue;
       @include rotate(-50);

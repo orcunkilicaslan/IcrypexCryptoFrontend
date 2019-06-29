@@ -75,6 +75,7 @@
         margin-bottom: 2px;
       }
       &-desc{
+        color: $global-clr-dark-blue;
         font-size: 17px;
       }
     }
@@ -160,10 +161,9 @@
     }
 
     .form-group{
-      margin-bottom: 15px;
 
       &.recaptcha{
-        margin-top: 20px;
+        margin-top: 10px;
       }
     }
 
@@ -213,6 +213,8 @@
     }
 
     &-check{
+      display: flex;
+      justify-content: center;
       max-width: 700px;
       margin: auto;
       margin-top: 20px;
