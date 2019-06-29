@@ -3,6 +3,9 @@
 
   label{
     color: $global-clr-dark-blue;
+    font-size: 17px;
+    line-height: 1;
+    margin-bottom: 6px;
   }
 
   .form-row {
@@ -21,11 +24,7 @@
   .form-group{
     margin-bottom: 10px;
 
-    label{
-      font-size: 17px;
-      line-height: 1;
-      margin-bottom: 6px;
-    }
+    label{}
 
     &.colorset{
 
@@ -378,8 +377,17 @@
 
   .btn{
     height: 40px;
-    padding-top: 4px;
-    padding-bottom: 4px;
+    padding-top: 6px;
+    padding-bottom: 6px;
   }
+
+  .maxwidth110{width: 110px;}
+  .maxwidth160{width: 175px;}
+  .maxwidth190{width: 205px;}
+  .maxwidth220{width: 220px;}
+  .maxwidth300{width: 300px;}
+  .maxwidth350{width: 350px;}
+  .maxwidth400{width: 400px;}
+  .btnwidth100100{width: 100%;}
 }
 /* Form UI New */
