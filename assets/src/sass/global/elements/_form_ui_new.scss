@@ -256,6 +256,12 @@
     .input-group-append{
       border: 1px solid transparentize($global-clr-soft-gray, 0.70);
       border-left: none;
+
+      select.form-control{
+        border: none;
+        height: 38px;
+        min-width: 70px;
+      }
     }
 
     .input-group-text{
