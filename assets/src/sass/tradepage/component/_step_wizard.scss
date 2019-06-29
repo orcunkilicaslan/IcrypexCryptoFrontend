@@ -279,6 +279,32 @@ $globalSvgIconImgPath : "../../img/global/svg";
       .maxwidth400{width: 400px;}
       .btnwidth100100{width: 100%;}
 
+      div.rightarrows{
+        width: 44px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 !important;
+
+        i.rightarrows{
+          position: relative;
+          width: 8px;
+
+          &::before{
+            content:"";
+            position:absolute;
+            width: 9px;
+            height: 9px;
+            top: -4px;
+            left: -3px;
+            border-top:2px solid $global-clr-soft-blue;
+            border-right:2px solid $global-clr-soft-blue;
+            @include rotate(45);
+          }
+        }
+      }
+
       #{$tabcont}-infoarea{
         padding: 20px 0 0;
         margin-top: 0;
