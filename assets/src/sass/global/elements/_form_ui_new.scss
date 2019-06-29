@@ -84,15 +84,44 @@
 
     &.fontsize{
       &20px{
-
         .form-control,
         .input-group-text{
           font-size: 20px;
         }
-        .form-control{
-        }
         div.form-control{
           padding: 4px 10px;
+        }
+      }
+    }
+
+    &.selectheightsize{
+      &-80-24{
+        width: 80px;
+        height: 24px;
+        position: relative;
+
+        &:before{
+          content: "";
+          position: absolute;
+          background-color: transparent;
+          width: 23px;
+          height: 22px;
+          top: 2px;
+          right: 0;
+          border: 1px solid transparentize($global-clr-soft-gray, 0.7);
+        }
+
+        select.form-control{
+          font-size: 17px;
+          height: 24px;
+          line-height: 1;
+          font-weight: normal;
+          padding: 0 !important;
+          padding-right: 26px !important;
+          text-align-last: right;
+          background-color: transparent;
+          background-position: 61px 9px;
+          position: relative;
         }
       }
     }
@@ -101,6 +130,10 @@
       color: $global-clr-soft-gray;
       font-size: 15px;
       margin-top: 5px;
+
+      &.infotextdarkblue{
+        color: $global-clr-dark-blue;
+      }
     }
 
     &-inputiconlink{
@@ -174,6 +207,10 @@
 
     &.inputnoborder{
       border-color: transparent;
+      &:focus{
+        border-color: transparent;
+        box-shadow: none;
+      }
     }
   }
 
