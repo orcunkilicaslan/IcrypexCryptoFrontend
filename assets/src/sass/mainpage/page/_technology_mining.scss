@@ -61,11 +61,14 @@
             &::before{
               content: "";
               position: absolute;
-              width: 3px;
-              height: calc(100% + 2px);
-              background-color: $global-clr-white;
+              width: 1px;
+              height: 100%;
+              background-color: transparentize($global-clr-soft-gray, 0.70);
               left: 1px;
-              top: -1px;
+              top: 0;
+            }
+            select.form-control{
+              min-width: 75px !important;
             }
           }
         }
