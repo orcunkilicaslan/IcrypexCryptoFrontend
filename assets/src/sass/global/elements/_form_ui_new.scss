@@ -338,6 +338,7 @@
 
   .custom-control{
     padding-left: 26px;
+    min-height: 20px;
 
     .form-check-input{
       margin-top: 0;
@@ -403,6 +404,29 @@
     .custom-control-label{
       &::before {
         @include border-radius(0px);
+      }
+    }
+  }
+
+  .custom-control{
+    &.width20px{
+      min-height: 16px;
+
+      .custom-control-label{
+        &::before,
+        &::after{
+          width: 16px;
+          height: 16px;
+        }
+      }
+
+      .custom-control-input:checked ~ .custom-control-label {
+        &::after {
+          width: 11px;
+          height: 5px;
+          top: 4px;
+          left: -23px;
+        }
       }
     }
   }
