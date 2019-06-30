@@ -236,8 +236,8 @@ $globalSvgIconImgPath : "../../img/global/svg";
           display: block;
           font-size: 20px;
           font-weight: normal;
-          border: none;
-          padding: 5px 10px;
+          padding-top: 4px;
+          padding-bottom: 4px;
         }
       }
     }
@@ -383,7 +383,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
             position:absolute;
             width: 9px;
             height: 9px;
-            top: 8px;
+            top: 9px;
             left: 0;
             border-top:2px solid $global-clr-soft-blue;
             border-right:2px solid $global-clr-soft-blue;

@@ -58,28 +58,10 @@ $globalSvgIconImgPath : "../../img/global/svg";
     }
 
     &-form{
-      padding: 0 16px;
-
-      input, select{
-        font-weight: 500;
-      }
+      padding: 2px 16px 0;
 
       .form-group{
         margin-bottom: 15px !important;
-      }
-
-      .price,
-      .amount{
-        padding-right: 16px !important;
-        flex: 0 0 40%;
-        max-width: 40%;
-      }
-      .price{
-        .input-group *{color: $global-clr-soft-gray !important;}
-      }
-      .percent{
-        flex: 0 0 20%;
-        max-width: 20%;
       }
 
       .button{
@@ -87,16 +69,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
         .btn{
           font-size: 20px;
-          font-weight: normal;
           padding: 3px 10px 6px;
-          border:none;
-        }
-
-        &-buy{
-          background-color: $global-clr-green;
-        }
-        &-sell{
-          background-color: $global-clr-red;
         }
       }
 
