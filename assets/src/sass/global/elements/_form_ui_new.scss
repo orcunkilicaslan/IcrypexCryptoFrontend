@@ -224,8 +224,9 @@
     &.disabled,
     &:disabled,
     &[readonly] {
-      background-color: $global-clr-light-gray;
-      border-color: $global-clr-light-gray;
+      color: $global-clr-soft-gray !important;
+      background-color: $global-clr-light-gray !important;
+      border-color: $global-clr-light-gray !important;
     }
 
     &.inputnoborder{
@@ -388,6 +389,9 @@
   .maxwidth300{width: 300px;}
   .maxwidth350{width: 350px;}
   .maxwidth400{width: 400px;}
+  .btnwidth110{width: 110px;}
+  .btnwidth160{width: 160px;}
   .btnwidth100100{width: 100%;}
+  .labelwidth100100{width: 100%;}
 }
 /* Form UI New */
