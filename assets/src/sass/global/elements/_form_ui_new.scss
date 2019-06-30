@@ -26,6 +26,11 @@
 
     label{}
 
+    &.widthpercent50pr8{
+      width: 50%;
+      padding-right: 8px;
+    }
+
     &.colorset{
 
       &disabled,
@@ -380,6 +385,24 @@
     height: 40px;
     padding-top: 6px;
     padding-bottom: 6px;
+  }
+
+  .formrowinfotext{
+    width: 100%;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-top: -5px;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    align-self: flex-start;
+
+    i[class*="icon-svg"]{
+      width: 18px;
+      height: 18px;
+      margin-left: 0;
+      margin-right: 3px;
+    }
   }
 
   .maxwidth110{width: 110px;}
