@@ -38,6 +38,7 @@
         .form-control,
         .input-group-append,
         .input-group-text{
+          color: $global-clr-soft-gray;
           background-color: $global-clr-light-gray;
           border-color: $global-clr-light-gray;
         }
