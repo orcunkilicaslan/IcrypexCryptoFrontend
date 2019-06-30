@@ -184,39 +184,40 @@
 
         <!-- Content -->
         <div class="profile-box-content">
-            <div class="profile-profile formui">
+            <div class="profile-profile">
             <div class="boxcolumn-boxtitle">
                 <h3 class="boxcolumn-boxtitle-title">KİŞİSEL BİLGİLER</h3>
             </div>
-            <form autocomplete="off" novalidate>
-                <div class="row d-flex">
-                    <div class="form-group col">
+            <form class="formuinew" autocomplete="off" novalidate>
+
+                <div class="form-row">
+                    <div class="form-group colorsetdarkblue col">
                         <label>İSİM SOYİSİM</label>
-                        <input class="sitebgwhite form-control" type="text" />
+                        <input type="text" class="form-control" placeholder="" value="Tansel Sağlambilen" readonly>
                     </div>
-                    <div class="form-group col">
+                    <div class="form-group colorsetdarkblue col">
                         <label>KİMLİK NO</label>
-                        <input class="sitebgwhite form-control" type="text" />
+                        <input type="text" class="form-control" placeholder="" value="01234567891011" readonly>
                     </div>
                 </div>
-                <div class="row d-flex">
-                    <div class="form-group col">
+                <div class="form-row">
+                    <div class="form-group colorsetdarkblue col">
                         <label>TELEFON</label>
-                        <input class="sitebgwhite form-control" type="tel" />
+                        <input type="text" class="form-control" placeholder="" value="0532 444 44 44" readonly>
                     </div>
-                    <div class="form-group col">
-                        <label style="visibility: hidden;">DÜZENLE</label>
-                        <button type="button" class="btn btn-primary btnwidth110">DÜZENLE</button>
+                    <div class="form-group colorsetdarkblue col">
+                        <label class="labelwidth100100" style="visibility: hidden">BUTTON</label>
+                        <button type="button" class="btn btn-info btnwidth110">DÜZENLE</button>
                     </div>
                 </div>
-                <div class="row d-flex">
-                    <div class="form-group col">
+                <div class="form-row">
+                    <div class="form-group colorsetdarkblue col">
                         <label>E-POSTA ADRESİ</label>
-                        <input class="sitebgwhite form-control" type="email" />
+                        <input type="email" class="form-control" placeholder="" value="tansel.saglambilen@icrypex.com" readonly>
                     </div>
                     <div class="form-group col">
-                        <label style="visibility: hidden;">DÜZENLE</label>
-                        <button type="button" class="btn btn-primary btnwidth110">DÜZENLE</button>
+                        <label class="labelwidth100100" style="visibility: hidden">BUTTON</label>
+                        <button type="button" class="btn btn-info btnwidth110">DÜZENLE</button>
                     </div>
                 </div>
             </form>
@@ -225,51 +226,51 @@
         <!-- Content -->
         <!-- Content -->
         <div class="profile-box-content">
-            <div class="profile-profile formui">
+            <div class="profile-profile">
                 <div class="boxcolumn-boxtitle">
                     <h3 class="boxcolumn-boxtitle-title">ADRES BİLGİLERİ</h3>
                 </div>
-                <form autocomplete="off" novalidate>
-                    <div class="row d-flex">
-                        <div class="form-group col">
+
+                <form class="formuinew" autocomplete="off" novalidate>
+
+                    <div class="form-row">
+                        <div class="form-group colorsetdarkblue col">
                             <label>ÜLKE</label>
-                            <select class="sitebgwhite form-control">
+                            <select class="form-control custom-select" disabled>
                                 <option value="01">Amerika Birleşik Devletleri</option>
                                 <option value="02">Türkiye</option>
                             </select>
                         </div>
-                        <div class="form-group col">
+                        <div class="form-group colorsetdarkblue col">
                             <label>ŞEHİR</label>
-                            <select class="sitebgwhite form-control">
+                            <select class="form-control custom-select" disabled>
                                 <option value="01">İstanbul</option>
                                 <option value="02">İzmir</option>
                             </select>
                         </div>
                     </div>
-                    <div class="row d-flex">
-                        <div class="form-group col">
+                    <div class="form-row">
+                        <div class="form-group colorsetdarkblue col">
                             <label>İLÇE</label>
-                            <select class="sitebgwhite form-control">
+                            <select class="form-control custom-select" disabled>
                                 <option value="01">Sarıyer</option>
                                 <option value="02">Şişli</option>
                             </select>
                         </div>
-                        <div class="form-group col">
+                        <div class="form-group colorsetdarkblue col">
                             <label>MAHALLE</label>
-                            <select class="sitebgwhite form-control">
+                            <select class="form-control custom-select" disabled>
                                 <option value="01">Maslak</option>
                                 <option value="02">Sanayi</option>
                             </select>
                         </div>
                     </div>
-                    <div class="">
-                        <div class="form-group">
-                            <label>ADRES</label>
-                            <textarea class="sitebgwhite form-control"></textarea>
-                        </div>
-                        <div class="form-group">
-                            <button type="button" class="btn btn-primary btnwidth160">ADRESİ DÜZENLE</button>
-                        </div>
+                    <div class="form-group colorsetdarkblue">
+                        <label>ADRES</label>
+                        <textarea class="form-control" rows="3" readonly>Icrypex Bilişim ve Teknoloji A.Ş. Maslak Meydan Sokak Spring Giz Plaza Kat:19 34398 Sarıyer/Maslak/İstanbul</textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="button" class="btn btn-info btnwidth160 mt-1">ADRESİ DÜZENLE</button>
                     </div>
                 </form>
             </div>
