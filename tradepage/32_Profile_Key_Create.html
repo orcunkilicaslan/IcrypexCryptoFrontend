@@ -193,8 +193,8 @@
         <!-- Top Info -->
         <!-- Content -->
         <div class="profile-box-content">
-            <div class="profile-keycreate formui">
-            <form autocomplete="off" novalidate>
+            <div class="profile-keycreate">
+            <form class="formuinew" autocomplete="off" novalidate>
 
                 <div class="profile-infoarea">
                     <h3 class="profile-infoarea-title">İŞLEMİNİZİ TAMAMLAMAK İÇİN LÜTFEN DİKKATLE OKUYUP ONAYLAYINIZ</h3>
@@ -207,34 +207,34 @@
                         <li>Some wallets allow private keys to be imported without any transactions while other wallets or services require that the private key be swept.</li>
                         <li>When a private key is swept, a transaction is broadcast that sends the  balance controlled by the private key to a new address in the wallet.</li>
                     </ul>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="iReadCheck" />
-                        <label class="form-check-label" for="iReadCheck">Okudum, anladım.</label>
+                    <div class="form-check custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="iReadCheck">
+                        <label class="custom-control-label" for="iReadCheck">Okudum, anladım.</label>
                     </div>
                     <div class="profile-keycreate-tags500">
-                        <div class="row d-flex">
-                            <div class="form-group  col-md-auto">
+                        <div class="form-row">
+                            <div class="form-group colorsetdarkblue col">
                                 <label>ÖZEL ANAHTARI GÖSTERİLECEK CÜZDAN</label>
-                                <select class="sitebggraylight form-control">
+                                <select class="form-control custom-select">
                                     <option value="01">1CfaunqrVpcXmpLheUVWeSP1KPsKDha1Nb</option>
                                     <option value="02">1CfaunqrVpcXmpLheUVWeSP1KPsKDha1Nb</option>
                                 </select>
                             </div>
-                            <div class="form-group col-md-auto">
-                                <label style="visibility: hidden;">GÖSTER</label>
+                            <div class="form-group col-md-auto maxwidth110">
+                                <label style="visibility: hidden;">BUTTON</label>
                                 <button type="button" class="btn btn-success btnwidth110">GÖSTER</button>
                             </div>
                         </div>
-                        <div class="row d-flex">
-                            <div class="form-group  col-md-auto">
+                        <div class="form-row">
+                            <div class="form-group colorsetdisabled colorsetgreen col">
                                 <label>ÖZEL ANAHTARINIZ OLUŞTURULDU</label>
-                                <div class="sitebgwhite sitecolorgreen form-control">1CfaunqrVpcXmpLheUVWeSP1KPsKDha1Nb</div>
-                                <a href="#" class="form-group-icons-buttons"><i class="iconcopy"></i> KOPYALA</a>
+                                <div class="form-control">1CfaunqrVpcXmpLheUVWeSP1KPsKDha1Nb</div>
+                                <a href="#" class="form-group-inputiconlink"><i class="iconplus"></i> KOPYALA</a>
                             </div>
+                            <div class="form-group col-md-auto maxwidth110"></div>
                         </div>
                     </div>
                 </div>
-
             </form>
             </div>
         </div>
