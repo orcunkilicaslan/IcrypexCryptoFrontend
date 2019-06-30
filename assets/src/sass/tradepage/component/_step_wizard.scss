@@ -2,6 +2,8 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
 .stepwizard{
 
+
+
   &-tablist{
     display:flex;
     flex-flow:column nowrap;
@@ -240,11 +242,86 @@ $globalSvgIconImgPath : "../../img/global/svg";
       }
     }
 
+    &-form{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+
+      &-wrapper{
+        margin: 35px 0;
+      }
+
+      &-tags700,
+      &-tags900{
+        margin: auto;
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+
+        &:first-child{
+          margin-top: 0;
+        }
+      }
+      &-tags900{
+        max-width: 100%;
+      }
+      &-tags700{
+        max-width: 700px;
+      }
+
+      div.rightarrows{
+        width: 44px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 !important;
+
+        i.rightarrows{
+          position: relative;
+          width: 8px;
+
+          &::before{
+            content:"";
+            position:absolute;
+            width: 9px;
+            height: 9px;
+            top: -4px;
+            left: -3px;
+            border-top:2px solid $global-clr-soft-blue;
+            border-right:2px solid $global-clr-soft-blue;
+            @include rotate(45);
+          }
+        }
+      }
+
+      #{$tabcont}-infoarea{
+        padding: 20px 0 0;
+        margin-top: 0;
+      }
+
+      .custom-control-label{
+        font-size: 17px;
+        line-height: 1.1;
+      }
+
+      &-check{
+
+        &-single{
+          display: flex;
+          margin: auto;
+          margin-top: 20px;
+        }
+      }
+
+      &-btn{}
+    }
+
     &-formarea{
       display:flex;
       flex-flow:column nowrap;
       justify-content:space-around;
-      margin: 40px 0;
 
       &-title{
         color: $global-clr-dark-blue;
@@ -252,57 +329,6 @@ $globalSvgIconImgPath : "../../img/global/svg";
         margin-bottom: 30px;
         font-size: 20px;
         font-weight: normal;
-      }
-
-      &-form{
-        width: 100%;
-        margin: auto;
-
-        &-tags700,
-        &-tags900{
-          margin: auto;
-          margin-top: 20px;
-
-          &:first-child{
-            margin-top: 0;
-          }
-
-          > div[class*="col"]{
-            padding-left: 7px;
-            padding-right: 7px;
-
-            &:first-child{
-              padding-left: 15px;
-            }
-            &:last-child{
-              padding-right: 15px;
-            }
-
-          }
-        }
-        &-tags900{
-          max-width: 960px;
-        }
-        &-tags700{
-          max-width: 700px;
-        }
-
-        #{$tabcont}-infoarea{
-          padding: 20px 40px 0;
-          margin-top: 0;
-        }
-
-        &-check{
-          &-single{
-            display: flex;
-            margin: auto;
-            margin-top: 20px;
-          }
-        }
-
-        &-btn{
-          margin-top: 40px;
-        }
       }
     }
 
@@ -407,7 +433,6 @@ $globalSvgIconImgPath : "../../img/global/svg";
             }
           }
         }
-
       }
 
     }
@@ -483,14 +508,4 @@ $globalSvgIconImgPath : "../../img/global/svg";
     }
 
   }
-
-  .formui{
-    .form-control{
-      font-weight: 500;
-    }
-    @include placeholder{
-      font-weight: 500;
-    }
-  }
-
 }

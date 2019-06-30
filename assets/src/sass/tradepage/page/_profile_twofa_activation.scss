@@ -68,9 +68,7 @@
   }
 
   &-twofa{
-
     &-activation{
-
       &-tags350{
         max-width: 350px;
       }
@@ -105,17 +103,11 @@
           color: $global-clr-dark-blue;
           line-height: 1.2;
           font-size: 17px;
-          min-height: 63px;
+          min-height: 75px;
         }
 
         &-form{
-          .form-group{
-            margin-bottom: 12px !important;
-
-            &:last-child{
-              margin-bottom: 0 !important;
-            }
-          }
+          padding-left: 0;
         }
       }
     }

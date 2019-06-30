@@ -234,25 +234,6 @@
     min-height: 100px;
   }
 
-  div.rightarrows{
-    margin: 0 !important;
 
-    i.rightarrows{
-      position: relative;
-      width: 10px;
-
-      &::before{
-        content:"";
-        position:absolute;
-        width: 9px;
-        height: 9px;
-        top: -4px;
-        left: 0;
-        border-top:2px solid $global-clr-soft-blue;
-        border-right:2px solid $global-clr-soft-blue;
-        @include rotate(45);
-      }
-    }
-  }
 }
 /* Form UI */
