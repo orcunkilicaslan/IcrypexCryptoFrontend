@@ -58,6 +58,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
     }
 
     &-form{
+      flex-direction: column;
       padding: 2px 16px 0;
 
       .form-group{

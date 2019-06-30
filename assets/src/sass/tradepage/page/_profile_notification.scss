@@ -75,6 +75,13 @@
             border-bottom-style: solid;
           }
         }
+
+        td.nonotificationsalert{
+          color: $global-clr-dark-blue;
+          font-size: 17px;
+          padding: 50px 0 !important;
+        }
+
       }
 
       tr.message-read{
@@ -93,7 +100,12 @@
         .btn{
           display: block;
           padding: 1px 5px;
+          height: 30px;
         }
+      }
+
+      .custom-control{
+        top: -2px;
       }
     }
   }
