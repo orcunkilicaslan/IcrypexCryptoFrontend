@@ -184,80 +184,32 @@
 
         <!-- Content -->
         <div class="profile-box-content">
-            <div class="profile-login-settings formui">
-            <div class="boxcolumn-boxtitle">
-                <h3 class="boxcolumn-boxtitle-title">ŞİFRE DEĞİŞTİR</h3>
-            </div>
-            <form autocomplete="off" novalidate>
-                <div class="row d-flex">
-                    <div class="form-group col">
-                        <label>ESKİ ŞİFRE</label>
-                        <input class="sitebggraylight form-control" type="password" />
-                    </div>
-                    <div class="form-group col"></div>
-                </div>
-                <div class="form-group row d-flex">
-                    <div class="col">
-                        <label>YENİ ŞİFRE</label>
-                        <input class="sitebggraylight form-control" type="password" />
-                    </div>
-                    <div class="col">
-                        <label>YENİ ŞİFRE TEKRAR</label>
-                        <input class="sitebggraylight form-control" type="password" />
-                    </div>
-                    <div class="infotext"><i class="icon-svg icon-svg-profileinformationyellow"></i> 8 karakterden oluşmalı ve en az bir küçük harf, bir büyük harf ile bir sayı içermelidir.</div>
-                </div>
-                <div class="row d-flex">
-                    <div class="form-group col">
-                        <label>2FA KODU</label>
-                        <input class="sitebggraylight form-control" type="text" />
-                    </div>
-                    <div class="form-group col"></div>
-                </div>
-                <div class="row d-flex">
-                    <div class="form-group col">
-                        <button type="button" class="btn btn-success btnwidth110">GÜNCELLE</button>
-                    </div>
-                </div>
-            </form>
-            </div>
-        </div>
-        <!-- Content -->
-        <!-- Content -->
-        <div class="profile-box-content">
-            <div class="profile-login-settings formui">
+            <div class="profile-login-settings">
                 <div class="boxcolumn-boxtitle">
-                    <h3 class="boxcolumn-boxtitle-title">GÜVENLİK KELİMESİNİ DEĞİŞTİR</h3>
+                    <h3 class="boxcolumn-boxtitle-title">ŞİFRE DEĞİŞTİR</h3>
                 </div>
-                <form autocomplete="off" novalidate>
-                    <div class="row d-flex">
-                        <div class="form-group col">
-                            <label>ESKİ GÜVENLİK KELİMESİ</label>
-                            <input class="sitebggraylight form-control" type="password" />
-                        </div>
-                        <div class="form-group col"></div>
+                <form class="formuinew" autocomplete="off" novalidate>
+                    <div class="form-group widthpercent50pr8 colorsetdarkblue">
+                        <label>ESKİ ŞİFRE</label>
+                        <input type="password" class="form-control" placeholder="" value="">
                     </div>
-                    <div class="form-group row d-flex">
-                        <div class="col">
-                            <label>YENİ GÜVENLİK KELİMESİ</label>
-                            <input class="sitebggraylight form-control" type="password" />
+                    <div class="form-row">
+                        <div class="form-group colorsetdarkblue col">
+                            <label>YENİ ŞİFRE</label>
+                            <input type="password" class="form-control" placeholder="" value="">
                         </div>
-                        <div class="col">
-                            <label>YENİ GÜVENLİK KELİMESİ TEKRAR</label>
-                            <input class="sitebggraylight form-control" type="password" />
+                        <div class="form-group colorsetdarkblue col">
+                            <label>YENİ ŞİFRE TEKRAR</label>
+                            <input type="password" class="form-control" placeholder="" value="">
                         </div>
+                        <div class="formrowinfotext"><i class="icon-svg icon-svg-profileinformationyellow"></i> 8 karakterden oluşmalı ve en az bir küçük harf, bir büyük harf ile bir sayı içermelidir.</div>
                     </div>
-                    <div class="row d-flex">
-                        <div class="form-group col">
-                            <label>2FA KODU</label>
-                            <input class="sitebggraylight form-control" type="text" />
-                        </div>
-                        <div class="form-group col"></div>
+                    <div class="form-group widthpercent50pr8 colorsetdarkblue">
+                        <label>2FA KODU</label>
+                        <input type="email" class="form-control" placeholder="" value="">
                     </div>
-                    <div class="row d-flex">
-                        <div class="form-group col">
-                            <button type="button" class="btn btn-success btnwidth110">GÜNCELLE</button>
-                        </div>
+                    <div class="form-group">
+                        <button type="button" class="btn btn-success btnwidth110">DÜZENLE</button>
                     </div>
                 </form>
             </div>
@@ -267,9 +219,41 @@
         <div class="profile-box-content">
             <div class="profile-login-settings formui">
                 <div class="boxcolumn-boxtitle">
+                    <h3 class="boxcolumn-boxtitle-title">GÜVENLİK KELİMESİNİ DEĞİŞTİR</h3>
+                </div>
+                <form class="formuinew" autocomplete="off" novalidate>
+                    <div class="form-group widthpercent50pr8 colorsetdarkblue">
+                        <label>ESKİ GÜVENLİK KELİMESİ</label>
+                        <input type="text" class="form-control" placeholder="" value="">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group colorsetdarkblue col">
+                            <label>YENİ GÜVENLİK KELİMESİ</label>
+                            <input type="text" class="form-control" placeholder="" value="">
+                        </div>
+                        <div class="form-group colorsetdarkblue col">
+                            <label>YENİ GÜVENLİK KELİMESİ TEKRAR</label>
+                            <input type="text" class="form-control" placeholder="" value="">
+                        </div>
+                    </div>
+                    <div class="form-group widthpercent50pr8 colorsetdarkblue">
+                        <label>2FA KODU</label>
+                        <input type="email" class="form-control" placeholder="" value="">
+                    </div>
+                    <div class="form-group">
+                        <button type="button" class="btn btn-success btnwidth110">DÜZENLE</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- Content -->
+        <!-- Content -->
+        <div class="profile-box-content">
+            <div class="profile-login-settings">
+                <div class="boxcolumn-boxtitle">
                     <h3 class="boxcolumn-boxtitle-title">OTURUM SÜRESİNİ DEĞİŞTİR</h3>
                 </div>
-                <form autocomplete="off" novalidate>
+                <form class="formuinew" autocomplete="off" novalidate>
                     <div class="profile-login-settings-range-slider">
                         <div class="profile-login-settings-range-slider-group">
                             <div class="profile-login-settings-range-slider-progress progress">
@@ -288,8 +272,8 @@
                             <span>60 DAKİKA</span>
                         </div>
                     </div>
-                    <div class="form-group row d-flex">
-                        <div class="infotext"><i class="icon-svg icon-svg-profileinformationyellow"></i> Süre sonunda sistem otomatik çıkış yapacaktır. Tekrar giriş yapmanız gerekecektir.</div>
+                    <div class="form-group mt-4">
+                        <div class="formrowinfotext"><i class="icon-svg icon-svg-profileinformationyellow"></i> Süre sonunda sistem otomatik çıkış yapacaktır. Tekrar giriş yapmanız gerekecektir.</div>
                     </div>
                 </form>
             </div>
