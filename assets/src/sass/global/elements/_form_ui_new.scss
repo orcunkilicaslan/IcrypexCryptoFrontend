@@ -147,9 +147,10 @@
           background-color: transparent;
           width: 23px;
           height: 22px;
-          top: 2px;
+          top: 3px;
           right: 0;
           border: 1px solid transparentize($global-clr-soft-gray, 0.7);
+
         }
 
         select.form-control{
@@ -163,6 +164,12 @@
           background-color: transparent;
           background-position: right 5px center;
           position: relative;
+          cursor: pointer;
+
+          option{
+            font-family: $global-font-family-barlow;
+            font-size: 15px;
+          }
         }
       }
     }

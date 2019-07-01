@@ -4,7 +4,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
 .homepage{
 
   &-top{
-    padding-top: 20px;
+    padding-top: 40px;
     min-height: 630px;
 
     @include ReSassResponsive(1400){
@@ -46,7 +46,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
   }
 
   &-slider{
-    min-height: 265px;
+    min-height: 245px;
 
     @include ReSassResponsive(1400){
       min-height: 260px;
@@ -62,7 +62,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
     &-wapper{
       position: relative;
       margin: 0;
-      padding-top: 40px;
+      padding-top: 20px;
 
       @include ReSassResponsive(1400){
         padding-top: 35px;
@@ -81,7 +81,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
           margin: 0 !important;
           position: absolute;
           left: 0;
-          top: 4px;
+          top: -2px;
         }
         &-dot{
           height: 25px;
@@ -156,6 +156,11 @@ $globalSvgIconImgPath : "../../img/global/svg";
       font-size: 26px;
       font-weight: 300;
       line-height: 1.07;
+      margin-bottom: 10px;
+
+      &:last-child{
+        margin-bottom: 0;
+      }
 
       @include ReSassResponsive(1400){
         font-size: 23px;
@@ -168,7 +173,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
   &-chartarea{
     color: $global-clr-white;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 
     @include ReSassResponsive(1200){
       margin-bottom: 25px;
@@ -318,7 +323,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
   }
 
   &-register{
-    margin-top: 30px;
+    margin-top: 0;
 
     &-title{
       text-align: center;
@@ -455,7 +460,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
           width: 35px;
           height: 35px;
           top: 14px;
-          left: 14px;
+          left: 0px;
           border-radius: 6px;
 
           .g-recaptcha{
@@ -472,7 +477,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
           color: $global-clr-soft-gray;
           font-size: 17px;
           position: absolute;
-          width: 240px;
+          width: 255px;
           height: 100%;
           right: 0;
           display: flex;
