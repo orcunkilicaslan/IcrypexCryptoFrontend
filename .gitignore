@@ -41,3 +41,11 @@ assets/vendor/jquery.maskedinput/gruntfile.js
 assets/vendor/jquery.maskedinput/jquery.maskedinput.nuspec
 assets/vendor/jquery.maskedinput/package.json
 assets/vendor/jquery.maskedinput/README.md
+
+assets/vendor/animate.css/animate.css
+assets/vendor/animate.css/animate-config.json
+assets/vendor/animate.css/bower.json
+assets/vendor/animate.css/CODE_OF_CONDUCT.md
+assets/vendor/animate.css/gulpfile.js
+assets/vendor/animate.css/package.json
+assets/vendor/animate.css/README.md

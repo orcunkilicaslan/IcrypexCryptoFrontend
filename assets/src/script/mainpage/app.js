@@ -2,12 +2,17 @@
 $('#homepageslider').owlCarousel({
     loop:true,
     nav:false,
-    autoplay:false,
+    autoplay:true,
     autoplayTimeout:5000,
-    autoplayHoverPause:false,
+    autoplayHoverPause:true,
     items:1,
     margin:10,
-    animateOut: 'fadeOut'
+    //animateIn: 'bounceInDown',
+    //animateIn: 'bounceInLeft',
+    animateIn: 'fadeInDown',
+    //animateOut: 'slideOutDown',
+    //animateOut: 'bounceOutRight',
+    animateOut: 'fadeOutDown',
 });
 /* Homepage Slider */
 
