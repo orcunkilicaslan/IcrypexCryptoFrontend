@@ -44,7 +44,7 @@
           position:absolute;
           width: 9px;
           height: 9px;
-          top: calc(50% - 5px);
+          top: calc(50% - 3px);
           left: 4px;
           padding: 0;
           border-top: 2px solid $global-clr-soft-blue;
@@ -69,7 +69,7 @@
         &::before{
           width: 12px;
           height: 12px !important;
-          top: calc(50% - 6px);
+          top: calc(50% - 4px);
           left: 4px;
         }
       }

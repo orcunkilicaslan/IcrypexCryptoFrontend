@@ -264,8 +264,13 @@ $globalSvgIconImgPath : "../../img/global/svg";
       font-size: 12px;
       font-weight: normal;
       line-height: 1;
-      padding: 0 15px;
+      padding: 0 5px;
+      white-space: nowrap;
       text-align: right;
+
+      &:first-child{
+        text-align: left !important;
+      }
     }
 
     thead th{
@@ -297,7 +302,6 @@ $globalSvgIconImgPath : "../../img/global/svg";
     &-amount{}
     &-total{}
     &-price{}
-
   }
 
 }
