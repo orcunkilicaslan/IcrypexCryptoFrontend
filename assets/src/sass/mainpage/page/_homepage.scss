@@ -345,6 +345,17 @@ $globalSvgIconImgPath : "../../img/global/svg";
       }
     }
 
+    &:hover{
+      .columntitle{
+        &.bottomborder{
+          &::after{
+            width: 60px;
+            left: calc(50% - 30px);
+          }
+        }
+      }
+    }
+
     &-formarea{
       padding-top: 20px;
 
@@ -871,6 +882,17 @@ $globalSvgIconImgPath : "../../img/global/svg";
       }
     }
 
+    &:hover{
+      .container > .columntitle{
+        &.bottomborder{
+          &::after{
+            width: 80px;
+            left: calc(50% - 40px);
+          }
+        }
+      }
+    }
+
     &-list{
       div[class*="col-"]{
         padding-left: 0;
@@ -881,6 +903,21 @@ $globalSvgIconImgPath : "../../img/global/svg";
         padding-top: 23px;
         padding-bottom: 23px;
         min-height: 210px;
+
+        &:hover{
+          .columntitle{
+            &.bottomborder{
+              &::after{
+                width: 60px;
+              }
+            }
+          }
+
+          .icon-svg{
+            @include rotate(360);
+            @include transition(all, 0.3s, ease-in-out);
+          }
+        }
 
         @include ReSassResponsive(1400){
           min-height: 200px;
@@ -971,6 +1008,16 @@ $globalSvgIconImgPath : "../../img/global/svg";
         &::before{
           width: 200px;
           height: 2px;
+        }
+      }
+
+      &:hover{
+        .columntitle{
+          &.bottomborder{
+            &::after{
+              width: 80px;
+            }
+          }
         }
       }
 
@@ -1086,6 +1133,16 @@ $globalSvgIconImgPath : "../../img/global/svg";
         &::before{
           width: 200px;
           height: 2px;
+        }
+      }
+
+      &:hover{
+        .columntitle{
+          &.bottomborder{
+            &::after{
+              width: 80px;
+            }
+          }
         }
       }
 

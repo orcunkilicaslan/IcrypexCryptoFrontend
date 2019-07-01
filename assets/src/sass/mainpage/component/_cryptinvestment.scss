@@ -20,6 +20,17 @@
     }
   }
 
+  &:hover{
+    .columntitle{
+      &.bottomborder{
+        &::after{
+          width: 80px;
+          left: calc(50% - 40px);
+        }
+      }
+    }
+  }
+
   &-threebox{
     margin-top: 53px;
 
