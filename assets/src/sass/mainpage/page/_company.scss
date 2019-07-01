@@ -101,7 +101,7 @@
       }
     }
 
-    &-listmatter{
+    &-listterm{
       margin-left: 0 !important;
       margin-top: 30px !important;
       position: relative;
@@ -130,7 +130,7 @@
       }
     }
 
-    ol.listmatter{
+    ol.listterm{
       counter-reset: item;
       margin-left: 43px;
       margin-top: 0;
@@ -149,7 +149,7 @@
         }
       }
 
-      li.maddematter{
+      li.maddeterm{
         &::before {
           content: "MADDE " counters(item, ".") ": ";
           display: inline;
@@ -219,14 +219,6 @@
         }
       }
 
-      li.maddematter{
-        &::before {
-          content: "MADDE " counters(item, ".") ": ";
-          display: inline;
-          position: relative;
-        }
-      }
-
       ol.nomatter{
         margin-left: 0;
 
@@ -274,7 +266,5 @@
         }
       }
     }
-
-
   }
 }
