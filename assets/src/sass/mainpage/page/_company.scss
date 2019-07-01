@@ -85,13 +85,14 @@
         font-size: 17px;
         position: relative;
         padding-left: 17px;
+        line-height: 1.2;
 
         &::before{
           content:"";
           position:absolute;
           width: 9px;
           height: 9px;
-          top: 8px;
+          top: 7px;
           left: 0;
           border-top:2px solid $global-clr-soft-blue;
           border-right:2px solid $global-clr-soft-blue;
@@ -104,6 +105,7 @@
       margin-left: 0 !important;
       margin-top: 30px !important;
       position: relative;
+      line-height: 1.2;
 
       > li{
         margin-bottom: 20px !important;
