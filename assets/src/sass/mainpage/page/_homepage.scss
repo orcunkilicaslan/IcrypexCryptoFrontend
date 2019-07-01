@@ -142,6 +142,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
       font-size: 44px;
       font-weight: 300;
       line-height: 1.07;
+      text-transform: uppercase;
 
       @include ReSassResponsive(1400){
         font-size: 38px;
@@ -157,6 +158,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
       font-weight: 300;
       line-height: 1.07;
       margin-bottom: 10px;
+      text-transform: uppercase;
 
       &:last-child{
         margin-bottom: 0;

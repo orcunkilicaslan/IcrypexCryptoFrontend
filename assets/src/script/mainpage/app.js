@@ -3,7 +3,7 @@ $('#homepageslider').owlCarousel({
     loop:true,
     nav:false,
     autoplay:true,
-    autoplayTimeout:5000,
+    autoplayTimeout:8000,
     autoplayHoverPause:true,
     items:1,
     margin:10,
