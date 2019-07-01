@@ -102,43 +102,71 @@
 
     &-listmatter{
       margin-left: 0 !important;
+      margin-top: 30px !important;
+      position: relative;
 
       > li{
         margin-bottom: 20px !important;
+        padding-left: 0 !important;
       }
 
       li{
+        font-size: 17px;
+        text-align: justify;
         margin-bottom: 5px;
-      }
+        display: block;
 
-      h4{
-        margin-bottom: 10px;
+        h4{
+          margin: 0;
+          margin-bottom: 10px;
+          display: inline-block;
+        }
+
+        p{
+          margin-left: 30px;
+        }
       }
     }
 
     ol.listmatter{
       counter-reset: item;
-      margin-left: 30px;
-      margin-top: 5px;
-
-      li.nomatter{
-        &::before {
-          visibility: hidden;
-          position: absolute;
-          left: 0;
-        }
-      }
+      margin-left: 43px;
+      margin-top: 0;
 
       li{
-        font-size: 17px;
-        display: block;
-
+        padding-left: 30px;
+        position: relative;
         &::before {
           content: counters(item, ".") ". ";
           counter-increment: item;
           font-weight: 500;
           width: 30px;
           display: inline-block;
+          position: absolute;
+          left: 0;
+        }
+      }
+
+      li.maddematter{
+        &::before {
+          content: "MADDE " counters(item, ".") ": ";
+          display: inline;
+          position: relative;
+        }
+      }
+
+      ol.nomatter{
+        margin-left: 0;
+
+        li.nomatter{
+          padding-left: 0 !important;
+
+          &::before {
+            visibility: hidden;
+            position: absolute;
+            left: 0;
+            display: inline-block;
+          }
         }
       }
     }
