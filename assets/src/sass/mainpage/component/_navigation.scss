@@ -19,58 +19,22 @@
 
     &-dropdownmenu{
       background-color: $global-sitebg-darkblue01;
-      width: 200px;
-      margin-left: -1px;
+
+      &:before{
+        background-color: $global-clr-soft-blue;
+      }
 
       ul.dropdownsubmenu{
         background-color: transparentize($global-clr-btn-blue, 0.40);
-        padding: 5px 0 10px;
 
         li.submainmenu{
-          padding: 5px 10px 0;
-          position: relative;
-          display: block;
-
-          &:first-child{
-            padding-top: 0;
-          }
-          &:last-child{
-            padding-bottom: 0;
-          }
-
           a{
             color: $global-clr-white;
-            font-size: 15px;
-            padding:5px 0;
-            display: block;
-            position: relative;
-
             &::before{
-              content: "";
               background-color: $global-clr-soft-gray;
-              width: 100%;
-              max-width: 300px;
-              height: 1px;
-              position: absolute;
-              bottom: 0;
-              left: 0;
-              opacity: 0.3;
             }
             &::after{
-              content: "";
               background-color: $global-clr-soft-blue;
-              width: 40px;
-              height: 2px;
-              position: absolute;
-              bottom: 0;
-              left: 0;
-              @include transition(all, 0.5s, ease-in-out);
-            }
-
-            &:hover{
-              &::after{
-                width: 100%;
-              }
             }
           }
         }

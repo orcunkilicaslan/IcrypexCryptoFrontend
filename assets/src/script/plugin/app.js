@@ -45,12 +45,24 @@ $(function() {
     $('.dfn-menu-list > li > a').click(
         function(){
 
-            $('.dfn-menu-list > li').removeClass('active navdropdown');
-            $(this).parent().addClass('active navdropdown');
+            $('.dfn-menu-list > li').removeClass('active');
+            $(this).parent().addClass('active');
 
         }
     );
     // Menu Active Class Added
+
+    // Add slideDown animation to dropdown
+    $('.dfn-menu-list > li').on('show.bs.dropdown', function(e){
+        $(this).find('.dropdown-menu').first().stop(true, true).slideDown(150);
+    });
+    // Add slideDown animation to dropdown
+
+    // Add slideUp animation to dropdown
+    $('.dfn-menu-list > li').on('hide.bs.dropdown', function(e){
+        $(this).find('.dropdown-menu').first().stop(true, true).slideUp(150);
+    });
+    // Add slideUp animation to dropdown
 
 });
 /* Navbar Menu */
