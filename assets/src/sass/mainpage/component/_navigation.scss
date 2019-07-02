@@ -17,6 +17,34 @@
       border-bottom-color: $global-clr-soft-blue;
     }
 
+    &-dropdownmenu{
+      background-color: $global-sitebg-darkblue01;
+
+      &:before{
+        background-color: $global-clr-soft-blue;
+      }
+
+      ul.dropdownsubmenu{
+        background-color: transparentize($global-clr-btn-blue, 0.40);
+
+        li.submainmenu{
+          a{
+            color: $global-clr-white;
+            &::before{
+              background-color: $global-clr-soft-gray;
+            }
+            &::after{
+              background-color: $global-clr-soft-blue;
+            }
+          }
+        }
+      }
+
+      *{
+        color: $global-clr-white;
+      }
+    }
+
     &-list{
       min-height: 36px;
 

@@ -4,7 +4,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
 .homepage{
 
   &-top{
-    padding-top: 40px;
+    padding-top: 30px;
     min-height: 630px;
 
     @include ReSassResponsive(1400){
@@ -699,7 +699,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
   &-summarytable{
     color: $global-clr-white;
-    padding-top: 60px;
+    padding-top: 50px;
     overflow: hidden;
 
     @include ReSassResponsive(1400){
@@ -913,11 +913,6 @@ $globalSvgIconImgPath : "../../img/global/svg";
                 width: 60px;
               }
             }
-          }
-
-          .icon-svg{
-            @include rotate(360);
-            @include transition(all, 0.3s, ease-in-out);
           }
         }
 
