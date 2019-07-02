@@ -914,11 +914,6 @@ $globalSvgIconImgPath : "../../img/global/svg";
               }
             }
           }
-
-          .icon-svg{
-            @include rotate(360);
-            @include transition(all, 0.3s, ease-in-out);
-          }
         }
 
         @include ReSassResponsive(1400){

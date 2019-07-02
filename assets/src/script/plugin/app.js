@@ -45,7 +45,7 @@ $(function() {
     $('.dfn-menu-list > li > a').click(
         function(){
 
-            $('.dfn-menu-list > li').removeClass();
+            $('.dfn-menu-list > li').removeClass('active navdropdown');
             $(this).parent().addClass('active navdropdown');
 
         }

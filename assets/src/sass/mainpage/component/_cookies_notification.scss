@@ -31,6 +31,40 @@
         text-decoration: underline;
       }
     }
-    &-btn{}
+    &-btn{
+
+      .notificationclose{
+        width: 26px;
+        height: 26px;
+        position: absolute;
+        top: 15px;
+        right: 20px;
+        text-indent: -9999px;
+        opacity: 1;
+        @include transition(transform, 0.3s, ease-in-out);
+
+        &::before,
+        &::after{
+          content: "";
+          position: absolute;
+          background-color: $global-clr-red;
+          width: 26px;
+          height: 2px;
+          left: 0;
+          top: calc(50% - 1px);
+        }
+        &::before{
+          @include rotate(45);
+        }
+        &::after{
+          @include rotate(135);
+        }
+
+        &:hover{
+          @include rotate(90);
+        }
+
+      }
+    }
   }
 }

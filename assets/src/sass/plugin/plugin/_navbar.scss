@@ -98,6 +98,15 @@
       border-top: 1px solid #FFFFFF;
       border-bottom: 1px solid #FFFFFF;
     }
+
+    &-dropdownmenu{
+      background-color: #FFFFFF;
+      margin: -1px 0 0;
+      //padding: 10px 15px;
+      padding: 0;
+      border-bottom: 4px solid $global-clr-soft-blue;
+      @include border-radius(0);
+    }
   }
 
   /* Header Mobile Menu */
