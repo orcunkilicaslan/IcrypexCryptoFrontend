@@ -46,7 +46,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
   }
 
   &-slider{
-    min-height: 245px;
+    min-height: 227px;
 
     @include ReSassResponsive(1400){
       min-height: 260px;
@@ -124,7 +124,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
         }
 
         &-stage-outer{
-          height: 225px;
+          height: 207px;
           overflow: hidden;
 
           @include ReSassResponsive(992){
@@ -175,7 +175,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
   &-chartarea{
     color: $global-clr-white;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
 
     @include ReSassResponsive(1200){
       margin-bottom: 25px;
@@ -566,7 +566,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
     &-title{
       text-align: center;
-      margin-bottom: 10px;
+      margin-bottom: 5px;
     }
 
     .columntitle{
@@ -585,7 +585,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
     }
 
     &-wrapper{
-      padding: 5px 0 20px;
+      padding: 5px 0 18px;
       color: $global-clr-soft-gray;
       border-bottom: 2px solid transparentize($global-clr-soft-gray, 0.7);
     }
@@ -607,12 +607,12 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
     &-detail{
       max-width: 200px;
-      margin: 15px auto 0;
+      margin: 10px auto 0;
 
       &-row{
         display: flex;
         justify-content: space-between;
-        padding: 4px 0 9px;
+        padding: 3px 0 8px;
         border-bottom: 1px solid transparentize($global-clr-soft-gray, 0.7);
 
         &:first-child{
@@ -639,7 +639,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
     &-btngroup{
       display: flex;
       justify-content: space-between;
-      padding: 20px 0;
+      padding: 17px 0;
       border-bottom: 1px solid transparentize($global-clr-soft-gray, 0.7);
 
       .btn{
@@ -667,7 +667,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
     &-progress{
       &-bar{
-        padding-top: 15px;
+        padding-top: 13px;
 
         .progress{
           background-color: transparentize($global-clr-soft-gray, 0.65);
@@ -689,7 +689,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
     }
 
     &-notification{
-      padding-top: 20px;
+      padding-top: 15px;
       font-size: 15px;
       line-height: 1.1;
       text-align: center;
@@ -1187,18 +1187,20 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
           &.apple{
             width: 135px;
-            height: 37px;
-            background-image: url(#{$globalSvgIconImgPath}/App_App_Store_Button.svg);
+            height: 44px;
+            background-image: url(#{$globalSvgIconImgPath}/Sprite_App_Store_Button.svg);
+            background-position: 0 5px;
             &:hover{
-              background-image: url(#{$globalSvgIconImgPath}/App_App_Store_Button_Hover.svg);
+              background-position: 0 -44px;
             }
           }
           &.android{
             width: 146px;
-            height: 40px;
-            background-image: url(#{$globalSvgIconImgPath}/App_Google_Play_Button.svg);
+            height: 44px;
+            background-image: url(#{$globalSvgIconImgPath}/Sprite_Google_Play_Button.svg);
+            background-position: 0 5px;
             &:hover{
-              background-image: url(#{$globalSvgIconImgPath}/App_Google_Play_Button_Hover.svg);
+              background-position: 0 -44px;
             }
           }
 
