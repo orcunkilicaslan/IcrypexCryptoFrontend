@@ -6,7 +6,7 @@
 
   &-inner{
     color: $global-clr-white;
-    background-color: $global-clr-btn-blue;
+    background-color: transparentize($global-clr-btn-blue, 0.6);
     font-family: $global-font-family-barlow;
     @include border-radius(3px);
 
@@ -21,10 +21,12 @@
 }
 
 .bs-tooltip-top{
+  padding: 10px 0;
   .arrow{
-    bottom: 2px;
+    bottom: 4px;
     &::before {
-      border-top-color: $global-clr-btn-blue;
+      //border-width: 6px 6px 0;
+      border-top-color: transparentize($global-clr-btn-blue, 0.6);
     }
   }
 }
@@ -32,15 +34,17 @@
 .bs-tooltip-right{
   .arrow{
     &::before {
-      border-right-color: $global-clr-btn-blue;
+      border-right-color: transparentize($global-clr-btn-blue, 0.6);
     }
   }
 }
 
 .bs-tooltip-bottom {
+  padding: 10px 0;
   .arrow{
+    top: 4px;
     &::before {
-      border-bottom-color: $global-clr-btn-blue;
+      border-bottom-color: transparentize($global-clr-btn-blue, 0.6);
     }
   }
 }
@@ -48,7 +52,7 @@
 .bs-tooltip-left {
   .arrow{
     &::before {
-      border-left-color: $global-clr-btn-blue;
+      border-left-color: transparentize($global-clr-btn-blue, 0.6);
     }
   }
 }

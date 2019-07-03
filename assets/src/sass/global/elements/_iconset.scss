@@ -195,7 +195,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
     }
     &-profilehelp{
       background-image: url(#{$globalSvgIconImgPath}/Icon_Help.svg);
-      &[data-toggle^="tooltip"]:hover{
+      &[class*="profilelabelhelp"]:hover{
         background-image: url(#{$globalSvgIconImgPath}/Icon_Help_Active.svg);
       }
     }
@@ -217,7 +217,6 @@ $globalSvgIconImgPath : "../../img/global/svg";
     &-profileprint{
       background-image: url(#{$globalSvgIconImgPath}/Icon_Print.svg);
     }
-
   }
 }
 

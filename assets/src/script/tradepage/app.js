@@ -70,6 +70,12 @@ var rangeSlider = function(){
 rangeSlider();
 /* Profile Login Settings Range Slider */
 
+/* Profile Help Box Tooltip */
+$(document).ready(function(){
+    $('.profilelabelhelp').tooltip({container: ".profile-tooltiparea", html: true, placement: "bottom" });
+});
+/* Profile Help Box Tooltip */
+
 /* Loading Info */
 console.log("Tradepage App Javascript Loading Successful");
 /* Loading Info */
