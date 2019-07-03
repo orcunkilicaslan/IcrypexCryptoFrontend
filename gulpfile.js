@@ -22,7 +22,10 @@ const   gulp                      = require('gulp'),
 
 /* BOOTSTRAP START */
 gulp.task('sass-bootstrap', () => {
-  return gulp.src([ folder_src_main + 'sass/bootstrap/**/*.scss', folder_src_main + 'sass/bootstrap/**/*.sass' ])
+  return gulp.src([
+      folder_src_main + 'sass/bootstrap/**/*.scss',
+      folder_src_main + 'sass/bootstrap/**/*.sass'
+  ])
       .pipe(sourcemaps.init())
       .pipe(plumber())
       .pipe(sass())
@@ -61,7 +64,8 @@ gulp.task('sass-plugin', () => {
 
 gulp.task('script-plugin', () => {
     return gulp.src([
-        folder_src_main + 'script/plugin/**/app.js'
+        folder_src_main + 'script/plugin/**/app.js',
+        folder_src_main + 'script/plugin/**/validations-components.js'
     ])
         .pipe(plumber())
         .pipe(webpack({
@@ -102,7 +106,7 @@ gulp.task('sass-mainpage', () => {
 gulp.task('script-mainpage', () => {
     return gulp.src([
         folder_src_main + 'script/mainpage/**/app.js',
-        folder_src_main + 'script/mainpage/**/validates.js'
+        folder_src_main + 'script/mainpage/**/validations-homepage-register.js'
     ])
         .pipe(plumber())
         .pipe(webpack({
