@@ -1,6 +1,3 @@
-/* Loading Info */
-console.log("Mainpage App Validates Javascript Loading Successful");
-/* Loading Info */
 
 /* Component Label Form */
 class HomepageRegisterForm {
@@ -179,3 +176,7 @@ jQuery(function($){
     $("#inputPhoneId").mask("0599 999 99 99");
 });
 /* Masked Input Plugin for jQuery */
+
+/* Loading Info */
+console.log("Mainpage App Homepage Register Form Validations Javascript Loading Successful");
+/* Loading Info */

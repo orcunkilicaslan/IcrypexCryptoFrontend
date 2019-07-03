@@ -54,8 +54,8 @@
             bottom: 0;
             left: 0;
             @include scaleX(0);
-            @include transition(transform, 250ms, ease-in-out);
-            @include transition(width, 250ms, ease-in-out);
+            //@include transition(transform, 250ms, ease-in-out);
+            @include transition(all, 250ms, ease-in-out);
           }
 
           @include ReSassResponsive(992){
@@ -107,10 +107,16 @@
 
     &-dropdownmenu{
       background-color: #FFFFFF;
-      width: 200px;
       margin: -1px 0 0 -1px;
       padding: 0;
-      position: relative;
+      display: block !important;
+      opacity:0;
+      width: 200px !important;
+      min-width: inherit !important;
+      height: 0;
+      overflow: hidden;
+      position: absolute;
+      @include transition(all, 0.5s, ease-in-out);
       @include border-radius(0);
 
       &:before{
@@ -123,55 +129,67 @@
         bottom: 0;
       }
 
-      ul.dropdownsubmenu{
-        background-color: darkblue;
-        padding: 5px 0 17px;
+      &.show{
+        display: block !important;
+        opacity:1;
+        height: 100px;
+        width: 200px !important;
+        min-width: inherit !important;
+        @include transition(all, 0.5s, ease-in-out);
+      }
+    }
 
-        li.submainmenu{
-          padding: 5px 10px 0;
-          position: relative;
+    ul.dropdownsubmenu{
+      background-color: darkblue;
+      padding: 5px 0 17px;
+      height: 100%;
+      width: 100% !important;
+      min-width: inherit !important;
+
+      li.submainmenu{
+        padding: 5px 10px 0;
+        position: relative;
+        display: block;
+
+        &:first-child{
+          padding-top: 0;
+        }
+        &:last-child{
+          padding-bottom: 0;
+        }
+
+        a{
+          color: white;
+          font-size: 15px;
+          padding:5px 0;
           display: block;
+          position: relative;
 
-          &:first-child{
-            padding-top: 0;
+          &::before{
+            content: "";
+            background-color: grey;
+            width: 100%;
+            max-width: 300px;
+            height: 1px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            opacity: 0.3;
           }
-          &:last-child{
-            padding-bottom: 0;
+          &::after{
+            content: "";
+            background-color: blue;
+            width: 40px;
+            height: 2px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            @include transition(all, 0.5s, ease-in-out);
           }
 
-          a{
-            color: white;
-            font-size: 15px;
-            padding:5px 0;
-            display: block;
-            position: relative;
-
-            &::before{
-              content: "";
-              background-color: grey;
-              width: 100%;
-              max-width: 300px;
-              height: 1px;
-              position: absolute;
-              bottom: 0;
-              left: 0;
-              opacity: 0.3;
-            }
+          &:hover{
             &::after{
-              content: "";
-              background-color: blue;
-              width: 40px;
-              height: 2px;
-              position: absolute;
-              bottom: 0;
-              left: 0;
-              @include transition(all, 0.5s, ease-in-out);
-            }
-
-            &:hover{
-              &::after{
-                width: 100%;
-              }
+              width: 100%;
             }
           }
         }
