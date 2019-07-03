@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+  <g id="Icon_Edit_Order" transform="translate(20 -1)">
+    <g id="Circle" transform="translate(-20 1)" fill="none" stroke="#758ca3" stroke-width="1.2" opacity="0.3">
+      <circle cx="9" cy="9" r="9" stroke="none"/>
+      <circle cx="9" cy="9" r="8.4" fill="none"/>
+    </g>
+    <g id="Shape" transform="translate(-23 3)">
+      <path id="Path" d="M14.429,2,17,4.571,10.571,11H8V8.429Z" fill="none" stroke="#098cdf" stroke-linecap="round" stroke-width="1.5"/>
+      <path id="Path-2" data-name="Path" d="M0,0,3,3" transform="translate(13.5 2.5)" fill="none" stroke="#098cdf" stroke-width="2"/>
+      <path id="Path-3" data-name="Path" d="M-14256-11878.812l.141-3.047,2.813,2.766Z" transform="translate(14264 11890)" fill="#098cdf"/>
+    </g>
+  </g>
+</svg>
