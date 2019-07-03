@@ -52,19 +52,14 @@ $(function() {
     );
     // Menu Active Class Added
 
-    jQuery.easing.def = "string";
+    // Menu UL Passive Class Added
+    $('.dfn-menu-list > li > a').click(
+        function(){
+            $(this).parent().parent().addClass('passivemenu');
+        }
 
-    // Add slideDown animation to dropdown
-    $('.dfn-menu-list > li').on('show', function(e){
-        $(this).find('.dfn-menu-dropdownmenu').first().stop(true, true).slideUp(200);
-    });
-    // Add slideDown animation to dropdown
-
-    // Add slideUp animation to dropdown
-    $('.dfn-menu-list > li').on('', function(e){
-        $(this).find('.dfn-menu-dropdownmenu').first().stop(true, true).slideUp(200);
-    });
-    // Add slideUp animation to dropdown
+    );
+    // Menu UL Passive Class Added
 
 });
 /* Navbar Menu */
