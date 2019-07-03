@@ -207,6 +207,10 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
         tbody td{
           border: none;
+
+          button{
+            background-color: transparent !important;
+          }
         }
       }
     }
