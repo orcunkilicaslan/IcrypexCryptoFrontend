@@ -40,7 +40,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
     }
   }
 
-  *{@include transition(all, 0.3s, ease-out);}
+  //*{@include transition(all, 0.3s, ease-out);}
 
   &-alert{
     height: auto;
@@ -85,6 +85,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
       width: 140px;
       padding: 2px 20px 2px 0;
       border-bottom: 1px solid transparentize($global-clr-soft-gray, 0.7);
+      @include transition(width, 0.3s, ease-out);
 
       &:focus{
         width: 180px;

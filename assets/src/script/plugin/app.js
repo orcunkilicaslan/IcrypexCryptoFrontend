@@ -52,15 +52,17 @@ $(function() {
     );
     // Menu Active Class Added
 
+    jQuery.easing.def = "string";
+
     // Add slideDown animation to dropdown
-    $('.dfn-menu-list > li').on('show.bs.dropdown', function(e){
-        $(this).find('.dropdown-menu').first().stop(true, true).slideDown(150);
+    $('.dfn-menu-list > li').on('show', function(e){
+        $(this).find('.dfn-menu-dropdownmenu').first().stop(true, true).slideUp(200);
     });
     // Add slideDown animation to dropdown
 
     // Add slideUp animation to dropdown
-    $('.dfn-menu-list > li').on('hide.bs.dropdown', function(e){
-        $(this).find('.dropdown-menu').first().stop(true, true).slideUp(150);
+    $('.dfn-menu-list > li').on('', function(e){
+        $(this).find('.dfn-menu-dropdownmenu').first().stop(true, true).slideUp(200);
     });
     // Add slideUp animation to dropdown
 

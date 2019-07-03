@@ -1,3 +1,4 @@
+
 .dfn{
 
   &-nav{
@@ -24,24 +25,35 @@
         background-color: $global-clr-soft-blue;
       }
 
-      ul.dropdownsubmenu{
-        background-color: transparentize($global-clr-btn-blue, 0.40);
-
-        li.submainmenu{
-          a{
-            color: $global-clr-white;
-            &::before{
-              background-color: $global-clr-soft-gray;
-            }
-            &::after{
-              background-color: $global-clr-soft-blue;
-            }
-          }
-        }
+      &.dropdown-menu.show[aria-labelledby="FeaturesDropdownMenu"]{
+        height: 170px !important;
+      }
+      &.dropdown-menu.show[aria-labelledby="TechnologyDropdownMenu"]{
+        height: 242px!important;
+      }
+      &.dropdown-menu.show[aria-labelledby="CompanyDropdownMenu"]{
+        height: 132px !important;
       }
 
       *{
         color: $global-clr-white;
+      }
+    }
+
+    ul.dropdownsubmenu{
+      background-color: transparentize($global-clr-btn-blue, 0.40);
+      width: 200px !important;
+
+      li.submainmenu{
+        a{
+          color: $global-clr-white;
+          &::before{
+            background-color: $global-clr-soft-gray;
+          }
+          &::after{
+            background-color: $global-clr-soft-blue;
+          }
+        }
       }
     }
 
