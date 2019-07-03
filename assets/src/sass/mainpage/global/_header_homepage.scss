@@ -26,6 +26,14 @@ $globalSvgIconImgPath : "../../img/global/svg";
               color: $global-clr-white;
             }
           }
+
+          &.passivemenu{
+            > li{
+              > a{
+                color: $global-clr-soft-gray
+              }
+            }
+          }
         }
       }
     }

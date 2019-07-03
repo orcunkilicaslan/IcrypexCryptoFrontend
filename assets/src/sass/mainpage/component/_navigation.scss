@@ -34,28 +34,36 @@
       &.dropdown-menu.show[aria-labelledby="CompanyDropdownMenu"]{
         height: 132px !important;
       }
-
-      *{
-        color: $global-clr-white;
+      &.dropdown-menu[aria-labelledby="CompanyDropdownMenu"],
+      &.dropdown-menu[aria-labelledby="TechnologyDropdownMenu"]{
+        margin-left: 19px;
       }
-    }
 
-    ul.dropdownsubmenu{
-      background-color: transparentize($global-clr-btn-blue, 0.40);
-      width: 200px !important;
+      ul.dropdownsubmenu{
+        background-color: transparentize($global-clr-btn-blue, 0.90);
+        width: 200px !important;
 
-      li.submainmenu{
-        a{
-          color: $global-clr-white;
-          &::before{
-            background-color: $global-clr-soft-gray;
-          }
-          &::after{
-            background-color: $global-clr-soft-blue;
+        li.submainmenu{
+          a{
+            color: $global-clr-soft-gray;
+            @include transition(all, 0.3s, ease-in-out);
+
+            &::before{
+              background-color: $global-clr-soft-gray;
+            }
+            &::after{
+              background-color: $global-clr-soft-blue;
+            }
+
+            &:hover{
+              color: $global-clr-white;
+            }
           }
         }
       }
     }
+
+
 
     &-list{
       min-height: 36px;
@@ -90,8 +98,8 @@
 
         > a{
           color: transparentize($global-clr-white, 0.5);
-          padding: 5px 5px 13px;
-          margin: auto 15px;
+          padding: 5px 0 13px;
+          margin: auto 20px;
 
           @include ReSassResponsive(1400){
             font-size: 16px;
@@ -110,7 +118,7 @@
         &:hover,
         &.active{
           > a{
-            color: $global-clr-white;
+            color: $global-clr-white !important;
           }
         }
       }
