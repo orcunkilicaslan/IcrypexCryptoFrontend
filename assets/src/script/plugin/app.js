@@ -44,22 +44,30 @@ $(function() {
     // Menu Active Class Added
     $('.dfn-menu-list > li > a').click(
         function(){
-
             $('.dfn-menu-list > li').removeClass('active');
             $(this).parent().addClass('active');
-
         }
     );
     // Menu Active Class Added
 
-    // Menu UL Passive Class Added
-    $('.dfn-menu-list > li > a').click(
-        function(){
-            $(this).parent().parent().addClass('passivemenu');
+    // Homepage Menu UL Passive Class Added and Removed
+    jQuery(function($) {
+        if($('body').hasClass('homepage')){
+            $(document).ready(function(e) {
+                $(".dfn-menu-list > li > a").click(function(event) {
+                    $(this).parent().parent().addClass('passivemenu');
+                    //event.stopPropagation();
+                });
+                $(document).click(function(event) {
+                    if (!$(event.target).hasClass('active')) {
+                        $(".dfn-menu-list").removeClass("passivemenu");
+                        $(".dfn-menu-list > li").removeClass("active");
+                    }
+                });
+            });
         }
-
-    );
-    // Menu UL Passive Class Added
+    });
+    // Homepage Menu UL Passive Class Added and Removed
 
 });
 /* Navbar Menu */

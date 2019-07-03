@@ -8,5 +8,5 @@ jQuery(function($) {
 /* Mobile Responsive JS */
 
 /* Loading Info */
-console.log("Plugin App Component Label Form Validations Javascript Loading Successful");
+console.log("Plugin App Mobile Responsive Javascript Loading Successful");
 /* Loading Info */
