@@ -103,9 +103,6 @@ $globalSvgIconImgPath : "../../img/global/svg";
     }
 
 
-
-
-
     &-loginlock{
       background-image: url(#{$globalSvgIconImgPath}/Icon_Login.svg);
     }
@@ -199,6 +196,9 @@ $globalSvgIconImgPath : "../../img/global/svg";
         background-image: url(#{$globalSvgIconImgPath}/Icon_Help_Active.svg);
       }
     }
+    &-profileedit{
+      background-image: url(#{$globalSvgIconImgPath}/Icon_Edit.svg);
+    }
     &-profilesendagain{
       background-image: url(#{$globalSvgIconImgPath}/Icon_Sent_Again.svg);
     }
@@ -273,7 +273,48 @@ $globalSvgIconImgPath : "../../img/global/svg";
           @include rotate(45);
         }
       }
+    }
 
+    &close{
+      position: relative;
+      width: 16px;
+      height: 16px;
+      border: 1px solid transparentize($global-clr-soft-gray, 0.7);
+      @include border-radius(18px);
+      display: inline-block;
+      margin: 0 2px;
+
+      &::before,
+      &::after{
+        content: "";
+        position: absolute;
+        background-color: $global-clr-soft-blue;
+        width: 9px;
+        height: 2px;
+        left: calc(50% - 4px);
+        top: calc(50% - 1px);
+      }
+
+      &::before{
+        @include rotate(45);
+      }
+      &::after{
+        @include rotate(135);
+      }
+
+      &.darkblue{
+        &::before,
+        &::after{
+          background-color: $global-clr-dark-blue;
+        }
+      }
+
+      &.darkred{
+        &::before,
+        &::after{
+          background-color: $global-clr-red;
+        }
+      }
     }
 
   }
