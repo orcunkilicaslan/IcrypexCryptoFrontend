@@ -194,6 +194,13 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
       &-table{
 
+        i[class*=icon-svg] {
+          width: 18px;
+          height: 18px;
+          margin-left: 0;
+          margin-right: 3px;
+        }
+
         tbody tr:first-child td{
           padding-top: 15px;
         }
