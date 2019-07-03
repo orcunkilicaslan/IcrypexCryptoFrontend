@@ -222,4 +222,124 @@
     height: 18px;
   }
 
+  &-tooltiparea{
+    .tooltip{
+
+      &.show{
+        opacity: 1;
+      }
+
+      &-inner{
+        color: $global-clr-white;
+        background-color: $global-clr-soft-gray;
+        font-family: $global-font-family-barlow;
+        max-width: 380px;
+        width: 380px;
+        padding:15px;
+        @include border-radius(3px);
+
+        *{color: $global-clr-white;}
+
+        &.show{
+          opacity: 1;
+        }
+      }
+
+      &-html{
+
+        div[class*="boxtitle"]{
+          border-color: transparentize($global-clr-white, 0.7);
+          align-self: end;
+          margin-bottom: 10px;
+
+          > span[class*="-title"],
+          > span[class*="-info"]{
+            font-size: 17px;
+            font-weight: normal;
+            display: block;
+            line-height: 1;
+          }
+          > *[class*="-info"]{
+            opacity: 0.7;
+          }
+        }
+
+        img.image{
+          margin-bottom: 10px;
+          display: block;
+          max-width: 100%;
+          height: auto;
+          @include border-radius(3px);
+        }
+
+        p.desc{
+          margin-top: 10px;
+          line-height: 1.2;
+          font-size: 17px;
+          text-align: left;
+
+          &:first-child{
+            margin-top: 0;
+          }
+        }
+
+        ul.list{
+          font-size: 17px;
+          line-height: 1.3;
+          text-align: left;
+          margin-top: 10px;
+
+          li{
+            position: relative;
+            padding-left: 15px;
+
+            &::before{
+              content:"";
+              position:absolute;
+              width: 9px;
+              height: 9px;
+              top: 9px;
+              left: 0;
+              border-top:2px solid $global-clr-white;
+              border-right:2px solid $global-clr-white;
+              @include rotate(45);
+            }
+          }
+        }
+      }
+    }
+
+    .bs-tooltip-top{
+      .arrow {
+        &::before {
+          border-top-color: $global-clr-soft-gray;
+        }
+      }
+    }
+
+    .bs-tooltip-right{
+      .arrow {
+        &::before {
+          border-right-color: $global-clr-soft-gray;
+        }
+      }
+    }
+
+    .bs-tooltip-bottom {
+      .arrow {
+        &::before {
+          border-bottom-color: $global-clr-soft-gray;
+        }
+      }
+    }
+
+    .bs-tooltip-left {
+      .arrow {
+        &::before {
+          border-left-color: $global-clr-soft-gray;
+        }
+      }
+    }
+  }
+
 }

@@ -40,7 +40,9 @@
 }
 
 .bs-tooltip-bottom {
+  padding: 10px 0;
   .arrow{
+    top: 4px;
     &::before {
       border-bottom-color: transparentize($global-clr-btn-blue, 0.6);
     }
