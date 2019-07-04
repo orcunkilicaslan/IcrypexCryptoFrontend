@@ -40,11 +40,11 @@ gulp.task('sass-bootstrap', () => {
 });
 /* BOOTSTRAP END */
 
-/* SPECIAL START */
-gulp.task('sass-special', () => {
+/* XTRAS START */
+gulp.task('sass-xtras', () => {
     return gulp.src([
-        folder_src_main + 'sass/special/**/*.scss',
-        folder_src_main + 'sass/special/**/*.sass'
+        folder_src_main + 'sass/xtras/**/*.scss',
+        folder_src_main + 'sass/xtras/**/*.sass'
     ])
         .pipe(sourcemaps.init())
         .pipe(plumber())
@@ -53,12 +53,12 @@ gulp.task('sass-special', () => {
             flexbox: 'no-2009'
         }))
         .pipe(cssnano())
-        .pipe(concat('special.css'))
+        .pipe(concat('xtras.css'))
         .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest(folder_dist_main + 'css'))
         .pipe(browserSync.stream());
 });
-/* SPECIAL END */
+/* XTRAS END */
 
 /* PLUGINS START */
 gulp.task('sass-plugin', () => {
@@ -256,9 +256,10 @@ gulp.task('bootstrap', gulp.series('sass-bootstrap'));
 gulp.task('plugin', gulp.series('sass-plugin', 'script-plugin'));
 gulp.task('mainpage', gulp.series('sass-mainpage', 'script-mainpage'));
 gulp.task('tradepage', gulp.series('sass-tradepage', 'script-tradepage'));
+gulp.task('xtras', gulp.series('sass-xtras'));
 
-gulp.task('build', gulp.series('clear', 'vendor', 'bootstrap', 'plugin', 'mainpage', 'tradepage'));
-gulp.task('devel', gulp.series('bootstrap', 'plugin', 'mainpage', 'tradepage', gulp.parallel('watch')));
+gulp.task('build', gulp.series('clear', 'vendor', 'bootstrap', 'plugin', 'mainpage', 'tradepage', 'xtras'));
+gulp.task('devel', gulp.series('bootstrap', 'plugin', 'mainpage', 'tradepage', 'xtras', gulp.parallel('watch')));
 
 gulp.task('start', gulp.series('build', gulp.parallel('serve', 'watch')));
 gulp.task('default', gulp.series('build', 'devel'));

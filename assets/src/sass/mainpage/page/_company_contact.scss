@@ -36,7 +36,9 @@
         }
 
         &-iframe{
+          background-color: $global-clr-light-gray;
           margin: 15px;
+          height: 465px;
         }
 
         &-address{

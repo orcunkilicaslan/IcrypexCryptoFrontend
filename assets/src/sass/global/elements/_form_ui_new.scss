@@ -19,6 +19,12 @@
       padding-right: 8px;
       padding-left: 8px;
     }
+
+    &:last-child{
+      .form-group{
+        margin-bottom: 0 !important;
+      }
+    }
   }
 
   .form-group{

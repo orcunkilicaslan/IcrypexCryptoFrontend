@@ -42,7 +42,7 @@
     height: 90px;
     margin: 0 auto;
     margin-bottom: 15px;
-    border: 2px solid $global-clr-soft-blue;
+    border: 2px solid transparentize($global-clr-soft-gray, 0.7);
     position: relative;
     @include border-radius(50%);
     i{
@@ -168,6 +168,11 @@
       max-width: 700px;
       margin: auto;
       margin-top: 20px;
+    }
+
+    @include webkit-autofill{
+      -webkit-box-shadow: 0 0 0 30px #FFFFFF inset !important;
+      -webkit-text-fill-color: $global-clr-dark-blue !important;
     }
   }
 }

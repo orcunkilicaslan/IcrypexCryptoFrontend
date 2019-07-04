@@ -5,6 +5,10 @@
   @include border-radius(3px);
   @include transition(background, 0.3s, ease-in-out);
 
+  &:focus{
+    box-shadow: none !important;
+  }
+
   &-primary{
     background-color: $global-clr-btn-blue !important;
     border-color: $global-clr-btn-blue !important;
@@ -67,6 +71,7 @@
   &-button{
 
     &-formbottom{
+      margin-top: 20px;
 
       &-btn{
         position: relative;
