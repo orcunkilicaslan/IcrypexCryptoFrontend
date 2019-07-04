@@ -74,6 +74,7 @@
           }
           &-select{
             .custom-select{
+              background-position: 61px 9px !important;
               option{
                 background-color: $global-clr-light-gray;
               }
