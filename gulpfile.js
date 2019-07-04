@@ -40,6 +40,25 @@ gulp.task('sass-bootstrap', () => {
 });
 /* BOOTSTRAP END */
 
+/* SPECIAL START */
+gulp.task('sass-special', () => {
+    return gulp.src([
+        folder_src_main + 'sass/special/**/*.scss',
+        folder_src_main + 'sass/special/**/*.sass'
+    ])
+        .pipe(sourcemaps.init())
+        .pipe(plumber())
+        .pipe(sass())
+        .pipe(autoprefixer({
+            flexbox: 'no-2009'
+        }))
+        .pipe(cssnano())
+        .pipe(concat('special.css'))
+        .pipe(sourcemaps.write('.'))
+        .pipe(gulp.dest(folder_dist_main + 'css'))
+        .pipe(browserSync.stream());
+});
+/* SPECIAL END */
 
 /* PLUGINS START */
 gulp.task('sass-plugin', () => {
