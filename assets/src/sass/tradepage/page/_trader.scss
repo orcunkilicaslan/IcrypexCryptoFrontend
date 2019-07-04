@@ -100,8 +100,22 @@ $tradepageHomepageImgPath : "../../img/tradepage";
 
     &-open{
       margin-top: 15px;
-    }
 
+      #editOrder.modal{
+        .modal-content{
+          form{
+
+            .mt-3{
+              margin-top: 10px !important;
+            }
+
+            .form-group.button{
+              margin-bottom: 0 !important;
+            }
+          }
+        }
+      }
+    }
   }
 
 }
