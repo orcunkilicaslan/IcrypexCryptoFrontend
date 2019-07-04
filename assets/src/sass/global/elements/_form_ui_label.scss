@@ -60,6 +60,7 @@
 
       &:valid ~ label{
         color: #70a800;
+        z-index: 0 !important;
       }
     }
   }
