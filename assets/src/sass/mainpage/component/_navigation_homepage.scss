@@ -5,7 +5,7 @@
     &-menu{
       &-dropdownmenu{
         ul.dropdownsubmenu{
-          background-color: transparentize($global-clr-btn-blue, 0.1);
+          background-color: transparentize($global-clr-btn-blue, 0.9) !important;
         }
       }
     }
