@@ -8,6 +8,7 @@
 
       &-sidebar{
         width: 270px;
+        margin-top: 1px;
 
         *[class*="boxtitle"]{
           font-size: 20px;
@@ -76,6 +77,11 @@
           &.linempay{
             &::before {
               background-color: #E7094A;
+            }
+          }
+          &.linedefault{
+            &::before {
+              background-color: transparentize($global-clr-soft-gray, 0.7);
             }
           }
 
@@ -178,7 +184,7 @@
               position: absolute;
               width: 60px;
               height: 4px;
-              bottom: 0;
+              bottom: -1px;
               left: 0;
               background-color: $global-clr-soft-blue;
             }

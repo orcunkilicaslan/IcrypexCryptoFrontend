@@ -43,14 +43,23 @@
     &-content{
       padding: 20px 0 15px;
       margin: auto 15px;
-      border-top: 1px solid transparentize($global-clr-soft-gray, 0.7);
+      border-bottom: 1px solid transparentize($global-clr-soft-gray, 0.7);
 
-      &:first-child{
-        border-top: 0;
+      &:last-child{
+        border-bottom: 0;
       }
 
       &.nobordertop{
         border-top: 0;
+      }
+      &.noborderbottom{
+        border-bottom: 0;
+      }
+      &.bordertop{
+        border-top: 1px solid transparentize($global-clr-soft-gray, 0.7);
+      }
+      &.borderbottom{
+        border-bottom: 1px solid transparentize($global-clr-soft-gray, 0.7);
       }
 
       div[class*="boxtitle"]{

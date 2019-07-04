@@ -18,7 +18,7 @@ $(window).scroll(function () {
 /* Header Bottom Space */
 $(window).resize(function() {
     var headerHeight = $("header.header").height();
-    $(".header-spacebottom").height(headerHeight);
+    $(".header-spacebottom-xxx").height(headerHeight);
 });
 
 $(".header .header-alert .close").click(function(){
