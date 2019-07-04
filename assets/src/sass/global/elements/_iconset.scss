@@ -8,6 +8,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
 .icon{
   &-svg{
+    font-family: $global-font-family-barlow;
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
