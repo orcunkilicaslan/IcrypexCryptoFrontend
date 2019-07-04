@@ -558,6 +558,13 @@ $globalSvgIconImgPath : "../../img/global/svg";
           }
         }
       }
+
+      @include webkit-autofill{
+        -webkit-box-shadow: 0 0 0 30px #00050d inset !important;
+        -webkit-text-fill-color: $global-clr-white !important;
+        border-left-color: $global-clr-green !important;
+        border-bottom-color: $global-clr-green !important;
+      }
     }
   }
 

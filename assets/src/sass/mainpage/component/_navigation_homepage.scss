@@ -1,0 +1,15 @@
+
+.homepage{
+
+  .dfn{
+    &-menu{
+      &-dropdownmenu{
+        ul.dropdownsubmenu{
+          background-color: transparentize($global-clr-btn-blue, 0.9) !important;
+        }
+      }
+    }
+  }
+
+}
+

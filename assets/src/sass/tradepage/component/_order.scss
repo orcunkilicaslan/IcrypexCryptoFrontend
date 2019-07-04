@@ -208,13 +208,28 @@ $globalSvgIconImgPath : "../../img/global/svg";
         tbody td{
           border: none;
 
-          button{
+          button, a{
             background-color: transparent !important;
+            @include transition(color, 0.3s, ease-in-out);
+          }
+
+          .buttonedit{
+            color: $global-clr-soft-blue;
+
+            &:hover{
+              color: lighten($global-clr-soft-blue, 10%) !important;
+            }
+          }
+          .buttondelete{
+            color: $global-clr-red;
+
+            &:hover{
+              color: lighten($global-clr-red, 10%) !important;
+            }
           }
         }
       }
     }
-
   }
   /* Open */
 

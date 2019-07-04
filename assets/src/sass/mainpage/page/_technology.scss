@@ -123,7 +123,10 @@
         &-title{
           font-size: 20px;
           font-weight: 500;
-          margin-bottom: 5px;
+          text-align: center;
+          padding-bottom: 7px;
+          margin-bottom: 10px;
+          border-bottom: 1px solid transparentize($global-clr-soft-gray, 0.7);
         }
 
         img{

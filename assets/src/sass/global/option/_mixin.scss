@@ -131,6 +131,21 @@
   :-ms-input-placeholder      {@content}
 }
 
+@mixin webkit-autofill {
+  input:-webkit-autofill            {@content}
+  input:-webkit-autofill:hover      {@content}
+  input:-webkit-autofill:focus      {@content}
+  input:-webkit-autofill:active     {@content}
+  textarea:-webkit-autofill         {@content}
+  textarea:-webkit-autofill:hover   {@content}
+  textarea:-webkit-autofill:focus   {@content}
+  textarea:-webkit-autofill:active  {@content}
+  select:-webkit-autofill           {@content}
+  select:-webkit-autofill:hover     {@content}
+  select:-webkit-autofill:focus     {@content}
+  select:-webkit-autofill:active    {@content}
+}
+
 @mixin background-size($background-size) {
   background-size: $background-size;
   -o-background-size: $background-size;

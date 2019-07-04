@@ -78,6 +78,9 @@
  - [99_Component_Alerts](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/tradepage/99_Component_Alerts.html)
  - [99_Component_Modals](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/tradepage/99_Component_Modals.html)
  
+ #### Xtras
+  - [01_Xtras_Construction_Page](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/xtras/01_Xtras_Construction_Page.html)
+ 
 
 #### System E-Mail Template List
  - [01_Eml_General_Information](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/email-system/01_Eml_General_Information.html)

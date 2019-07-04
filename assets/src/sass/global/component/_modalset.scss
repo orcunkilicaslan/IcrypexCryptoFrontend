@@ -1,8 +1,27 @@
+.modal-open{
+  padding: 0 !important;
+  overflow: inherit !important;
+}
+
 .site{
 
   &modal{
 
     .modal{
+      padding: 0 !important;
+
+      &.show{
+        display: flex !important;
+        height: 100%;
+        align-items: center;
+      }
+
+      &-dialog{
+        display: flex;
+        align-items: center;
+        height: 100%;
+        margin: auto;
+      }
 
       &-content{
         padding: 10px;
@@ -134,11 +153,11 @@
     &.imagemodal{
 
       .close{
-        width: 36px;
-        height: 36px;
-        position: fixed;
-        top: 15px;
-        right: 20px;
+        width: 22px;
+        height: 22px;
+        position: absolute;
+        top: -18px;
+        right: 7px;
         text-indent: -9999px;
         opacity: 1;
 
@@ -147,10 +166,11 @@
           content: "";
           position: absolute;
           background-color: $global-clr-white;
-          width: 36px;
+          width: 22px;
           height: 2px;
           left: 0;
-          top: calc(50% - -2px);
+          top: calc(50% - 1px);
+          @include transition(all, 0.1s, ease-in-out);
         }
 
         &::before{
@@ -158,6 +178,13 @@
         }
         &::after{
           @include rotate(135);
+        }
+
+        &:hover{
+          &::before,
+          &::after{
+            background-color: $global-clr-red;
+          }
         }
       }
 

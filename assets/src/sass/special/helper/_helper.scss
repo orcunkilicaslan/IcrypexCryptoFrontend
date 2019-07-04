@@ -1,0 +1,30 @@
+// Normalize
+@import "normalize";
+
+// Basic
+@import "basic";
+
+// Basic
+@import "fonts";
+
+/* Custom */
+
+body{
+  font-size: $global-font-size;
+  background-color: $global-clr-white;
+}
+body, input, textarea, select, button {
+  font-family: $global-font-family-barlow;
+}
+h1,h2,h3,h4,h5,h6{
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+strong{
+  font-weight: 500;
+}
+
+a:hover{text-decoration: none !important;}
+input, select, textarea{resize:none !important;}
+/* Custom */
