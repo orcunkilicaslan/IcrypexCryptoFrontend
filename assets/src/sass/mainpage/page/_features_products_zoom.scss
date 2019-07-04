@@ -53,6 +53,31 @@
               background-color: $global-clr-orange;
             }
           }
+          &.linebtc{
+            &::before {
+              background-color: $global-clr-orange;
+            }
+          }
+          &.lineeth{
+            &::before {
+              background-color: #627eea;
+            }
+          }
+          &.lineltc{
+            &::before {
+              background-color: #afafaf;
+            }
+          }
+          &.linexrp{
+            &::before {
+              background-color: #0080BE;
+            }
+          }
+          &.linempay{
+            &::before {
+              background-color: #E7094A;
+            }
+          }
 
           &-buttons{
             background-color: $global-clr-light-gray;
