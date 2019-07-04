@@ -1,8 +1,27 @@
+.modal-open{
+  padding: 0 !important;
+  overflow: inherit !important;
+}
+
 .site{
 
   &modal{
 
     .modal{
+      padding: 0 !important;
+
+      &.show{
+        display: flex !important;
+        height: 100%;
+        align-items: center;
+      }
+
+      &-dialog{
+        display: flex;
+        align-items: center;
+        height: 100%;
+        margin: auto;
+      }
 
       &-content{
         padding: 10px;
