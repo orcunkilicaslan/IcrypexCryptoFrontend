@@ -2,6 +2,7 @@
 .headbreadcrumb{
   background-color: $global-clr-white;
   padding: 25px 0 15px;
+  flex: inherit !important;
 
   > .container{
     position: relative;
