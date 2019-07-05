@@ -1,10 +1,107 @@
+/* Translation */
+const translateObject = {
 
-/* Component Label Form */
+    'tr': {
+        'HomepageRegisterFirstNameAlert':'EN AZ 2 KARAKTER',
+        'HomepageRegisterLastNameAlert':'EN AZ 2 KARAKTER',
+        'HomepageRegisterPhoneAlert':'HATALI TELEFON',
+        'HomepageRegisterEmailAlert':'HATALI E-POSTA',
+        'HomepageRegisterPasswordAlert':'EN AZ 8 KARAKTER',
+        'HomepageRegisterRePasswordAlert':'ŞİFRELER UYUŞMUYOR'
+    },
+    'en':{
+        'HomepageRegisterFirstNameAlert':'EN AZ 2 KARAKTER',
+        'HomepageRegisterLastNameAlert':'EN AZ 2 KARAKTER',
+        'HomepageRegisterPhoneAlert':'HATALI TELEFON',
+        'HomepageRegisterEmailAlert':'HATALI E-POSTA',
+        'HomepageRegisterPasswordAlert':'EN AZ 8 KARAKTER',
+        'HomepageRegisterRePasswordAlert':'ŞİFRELER UYUŞMUYOR'
+    }
+};
+
+class Translation {
+    static translate(language, translationKey){
+        if(translateObject.hasOwnProperty(language)){
+
+            if(translateObject[language].hasOwnProperty(translationKey)){
+                return translateObject[language][translationKey];
+            }
+            return "";
+        }
+        return "";
+    }
+}
+/* Translation */
+
+/* Homepage Register Form */
 class HomepageRegisterForm {
 
     constructor(){}
 
-    sendHomepageRegisterForm(){}
+    sendHomepageRegisterForm(){
+        let FirstName = document.getElementById("inputFirstNameId").value;
+        let LastName = document.getElementById("inputLastNameId").value;
+        let Phone = document.getElementById("inputPhoneId").value;
+        let Email = document.getElementById("inputEmailId").value;
+        let Password = document.getElementById("inputPasswordId").value;
+        let RePassword = document.getElementById("inputRePasswordId").value;
+        let termsOfUseCheck = document.getElementById("termsOfUseCheck").checked;
+
+        let emailPattern = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/g;
+
+        if(FirstName.trim().length < 2){
+            this.setHomepageRegisterFormErrorMessages("msgFirstNameId", Translation.translate('tr','HomepageRegisterFirstNameAlert'));
+            this.setHomepageRegisterFormErrorInput("inputFirstNameId","#b82c0d");
+        }if(LastName.trim().length < 2){
+            this.setHomepageRegisterFormErrorMessages("msgLastNameId", Translation.translate('tr','HomepageRegisterLastNameAlert'));
+            this.setHomepageRegisterFormErrorInput("inputLastNameId","#b82c0d");
+        }if(Phone.trim().length < 14){
+            this.setHomepageRegisterFormErrorMessages("msgPhoneId", Translation.translate('tr','HomepageRegisterPhoneAlert'));
+            this.setHomepageRegisterFormErrorInput("inputPhoneId","#b82c0d");
+        }if(!emailPattern.test(Email)){
+            this.setHomepageRegisterFormErrorMessages("msgEmailId", Translation.translate('tr','HomepageRegisterEmailAlert'));
+            this.setHomepageRegisterFormErrorInput("inputEmailId","#b82c0d");
+        }if(Password.trim().length < 8){
+            this.setHomepageRegisterFormErrorMessages("msgPasswordId", Translation.translate('tr','HomepageRegisterPasswordAlert'));
+            this.setHomepageRegisterFormErrorInput("inputPasswordId","#b82c0d");
+        }if(RePassword.trim().length < 8 || (Password !== RePassword)){
+            this.setHomepageRegisterFormErrorMessages("msgRePasswordId", Translation.translate('tr','HomepageRegisterRePasswordAlert'));
+            this.setHomepageRegisterFormErrorInput("inputRePasswordId","#b82c0d");
+        }if(!termsOfUseCheck){
+            document.getElementById('labeltermsOfUseCheck').classList.add("checkederror");
+        }else{
+            document.getElementById('homepageregisterform').style.display = "none";
+            document.getElementById('homepageregisterinfo').style.display = "block";
+
+            document.getElementById('inputFirstNameId').value = "";
+            document.getElementById('inputLastNameId').value = "";
+            document.getElementById('inputPhoneId').value = "";
+            document.getElementById('inputEmailId').value = "";
+            document.getElementById('inputPasswordId').value = "";
+            document.getElementById('inputRePasswordId').value = "";
+
+            document.getElementById('inputFirstNameId').style.borderColor = "rgba(117,140,163,0.3)";
+            document.getElementById('inputLastNameId').style.borderColor = "rgba(117,140,163,0.3)";
+            document.getElementById('inputPhoneId').style.borderColor = "rgba(117,140,163,0.3)";
+            document.getElementById('inputEmailId').style.borderColor = "rgba(117,140,163,0.3)";
+            document.getElementById('inputPasswordId').style.borderColor = "rgba(117,140,163,0.3)";
+            document.getElementById('inputRePasswordId').style.borderColor = "rgba(117,140,163,0.3)";
+
+            document.getElementById('msgFirstNameId').innerHTML = " ";
+            document.getElementById('msgLastNameId').innerHTML = " ";
+            document.getElementById('msgPhoneId').innerHTML = " ";
+            document.getElementById('msgEmailId').innerHTML = " ";
+            document.getElementById('msgPasswordId').innerHTML = " ";
+            document.getElementById('msgRePasswordId').innerHTML = " ";
+
+            document.getElementById('iconFirstNameId').style.display = "none";
+            document.getElementById('iconLastNameId').style.display = "none";
+            document.getElementById('iconPhoneId').style.display = "none";
+            document.getElementById('iconEmailId').style.display = "none";
+            document.getElementById('iconPasswordId').style.display = "none";
+            document.getElementById('iconRePasswordId').style.display = "none";
+        }
+    }
 
     setHomepageRegisterFormErrorMessages(inputIdSelector, inputErrorMessage, inputIconCheck){
         let ErrorMessageText = document.getElementById(inputIdSelector);
@@ -35,8 +132,8 @@ class HomepageRegisterForm {
         switch (inputProcessName) {
 
             case "inputFirstNameProcess":
-                if(val.length<2){
-                    this.setHomepageRegisterFormErrorMessages(messageSpanSelector,"EN AZ 2 KARAKTER", "");
+                if(val.length < 2){
+                    this.setHomepageRegisterFormErrorMessages(messageSpanSelector, Translation.translate('tr','HomepageRegisterFirstNameAlert'), "");
                     this.setHomepageRegisterFormErrorMessages(messageIconSelector,"", "none");
                     this.setHomepageRegisterFormErrorInput(inputIdSelector,"#b82c0d", "");
                 }else{
@@ -47,8 +144,8 @@ class HomepageRegisterForm {
                 break;
 
             case "inputLastNameProcess":
-                if(val.length<2){
-                    this.setHomepageRegisterFormErrorMessages(messageSpanSelector,"EN AZ 2 KARAKTER", "");
+                if(val.length < 2){
+                    this.setHomepageRegisterFormErrorMessages(messageSpanSelector, Translation.translate('tr','HomepageRegisterLastNameAlert'), "");
                     this.setHomepageRegisterFormErrorMessages(messageIconSelector,"", "none");
                     this.setHomepageRegisterFormErrorInput(inputIdSelector,"#b82c0d", "");
                 }else{
@@ -59,8 +156,8 @@ class HomepageRegisterForm {
                 break;
 
             case "inputPhoneProcess":
-                if(val.length<14){
-                    this.setHomepageRegisterFormErrorMessages(messageSpanSelector,"HATALI TELEFON", "");
+                if(val.length < 14){
+                    this.setHomepageRegisterFormErrorMessages(messageSpanSelector, Translation.translate('tr','HomepageRegisterPhoneAlert'), "");
                     this.setHomepageRegisterFormErrorMessages(messageIconSelector,"", "none");
                     this.setHomepageRegisterFormErrorInput(inputIdSelector,"#b82c0d");
                 }else{
@@ -72,7 +169,7 @@ class HomepageRegisterForm {
 
             case "inputEmailProcess":
                 if(!emailPattern.test(val)){
-                    this.setHomepageRegisterFormErrorMessages(messageSpanSelector,"HATALI E-POSTA", "");
+                    this.setHomepageRegisterFormErrorMessages(messageSpanSelector, Translation.translate('tr','HomepageRegisterEmailAlert'), "");
                     this.setHomepageRegisterFormErrorMessages(messageIconSelector,"", "none");
                     this.setHomepageRegisterFormErrorInput(inputIdSelector,"#b82c0d");
                 }else{
@@ -83,8 +180,8 @@ class HomepageRegisterForm {
                 break;
 
             case "inputPasswordProcess":
-                if(val.length<6){
-                    this.setHomepageRegisterFormErrorMessages(messageSpanSelector,"EN AZ 6 KARAKTER", "");
+                if(val.length < 8){
+                    this.setHomepageRegisterFormErrorMessages(messageSpanSelector, Translation.translate('tr','HomepageRegisterPasswordAlert'), "");
                     this.setHomepageRegisterFormErrorMessages(messageIconSelector,"", "none");
                     this.setHomepageRegisterFormErrorInput(inputIdSelector,"#b82c0d", "");
                 }else{
@@ -95,8 +192,8 @@ class HomepageRegisterForm {
                 break;
 
             case "inputRePasswordProcess":
-                if(val.length<6 || (Password !== RePassword)){
-                    this.setHomepageRegisterFormErrorMessages(messageSpanSelector,"ŞİFRELER UYUŞMUYOR", "");
+                if(val.length < 8 || (Password !== RePassword)){
+                    this.setHomepageRegisterFormErrorMessages(messageSpanSelector, Translation.translate('tr','HomepageRegisterRePasswordAlert'), "");
                     this.setHomepageRegisterFormErrorMessages(messageIconSelector,"", "none");
                     this.setHomepageRegisterFormErrorInput(inputIdSelector,"#b82c0d", "");
                 }else{
@@ -119,7 +216,7 @@ class HomepageRegisterForm {
 
             case "inputFirstNameProcess":
                 if(val.length===0){
-                    this.setHomepageRegisterFormErrorMessages(messageSpanSelector,"EN AZ 2 KARAKTER", "");
+                    this.setHomepageRegisterFormErrorMessages(messageSpanSelector, Translation.translate('tr','HomepageRegisterFirstNameAlert'), "");
                     this.setHomepageRegisterFormErrorMessages(messageIconSelector,"", "none");
                     this.setHomepageRegisterFormErrorInput(inputIdSelector,"#b82c0d");
                 }
@@ -127,7 +224,7 @@ class HomepageRegisterForm {
 
             case "inputLastNameProcess":
                 if(val.length===0){
-                    this.setHomepageRegisterFormErrorMessages(messageSpanSelector,"EN AZ 2 KARAKTER", "");
+                    this.setHomepageRegisterFormErrorMessages(messageSpanSelector, Translation.translate('tr','HomepageRegisterLastNameAlert'), "");
                     this.setHomepageRegisterFormErrorMessages(messageIconSelector,"", "none");
                     this.setHomepageRegisterFormErrorInput(inputIdSelector,"#b82c0d");
                 }
@@ -135,7 +232,7 @@ class HomepageRegisterForm {
 
             case "inputPhoneProcess":
                 if(val.length===0){
-                    this.setHomepageRegisterFormErrorMessages(messageSpanSelector,"HATALI TELEFON", "");
+                    this.setHomepageRegisterFormErrorMessages(messageSpanSelector, Translation.translate('tr','HomepageRegisterPhoneAlert'), "");
                     this.setHomepageRegisterFormErrorMessages(messageIconSelector,"", "none");
                     this.setHomepageRegisterFormErrorInput(inputIdSelector,"#b82c0d");
                 }
@@ -143,7 +240,7 @@ class HomepageRegisterForm {
 
             case "inputEmailProcess":
                 if(val.length===0){
-                    this.setHomepageRegisterFormErrorMessages(messageSpanSelector,"HATALI E-POSTA", "");
+                    this.setHomepageRegisterFormErrorMessages(messageSpanSelector, Translation.translate('tr','HomepageRegisterEmailAlert'), "");
                     this.setHomepageRegisterFormErrorMessages(messageIconSelector,"", "none");
                     this.setHomepageRegisterFormErrorInput(inputIdSelector,"#b82c0d");
                 }
@@ -151,7 +248,7 @@ class HomepageRegisterForm {
 
             case "inputPasswordProcess":
                 if(val.length===0){
-                    this.setHomepageRegisterFormErrorMessages(messageSpanSelector,"EN AZ 6 KARAKTER", "");
+                    this.setHomepageRegisterFormErrorMessages(messageSpanSelector, Translation.translate('tr','HomepageRegisterPasswordAlert'), "");
                     this.setHomepageRegisterFormErrorMessages(messageIconSelector,"", "none");
                     this.setHomepageRegisterFormErrorInput(inputIdSelector,"#b82c0d");
                 }
@@ -159,7 +256,7 @@ class HomepageRegisterForm {
 
             case "inputRePasswordProcess":
                 if(val.length===0){
-                    this.setHomepageRegisterFormErrorMessages(messageSpanSelector,"ŞİFRELER UYUŞMUYOR", "");
+                    this.setHomepageRegisterFormErrorMessages(messageSpanSelector, Translation.translate('tr','HomepageRegisterRePasswordAlert'), "");
                     this.setHomepageRegisterFormErrorMessages(messageIconSelector,"", "none");
                     this.setHomepageRegisterFormErrorInput(inputIdSelector,"#b82c0d");
                 }
@@ -169,7 +266,7 @@ class HomepageRegisterForm {
 }
 
 window.homepageregisterform = new HomepageRegisterForm();
-/* Component Label Form */
+/* Homepage Register Form */
 
 /* Masked Input Plugin for jQuery */
 jQuery(function($){

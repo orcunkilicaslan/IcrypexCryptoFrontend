@@ -375,6 +375,13 @@
     }
   }
 
+  .custom-control-label.checkederror{
+    &::before,
+    &::after{
+      border-color: $global-clr-red;
+    }
+  }
+
   .custom-control-input:checked ~ .custom-control-label {
     &::after {
       background-image: none;

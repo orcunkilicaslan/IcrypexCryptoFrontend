@@ -291,7 +291,7 @@
         <!-- Register -->
         <div class="homepage-register formuinew">
             <div class="homepage-register-title"><h2 class="columntitle columntitle-md bottomborder titlecenter">ÜCRETSİZ ÜYELİK OLUŞTURUN</h2></div>
-            <form class="homepage-register-formarea" action="" autocomplete="off" novalidate>
+            <form id="homepageregisterform" class="homepage-register-formarea" style="display: block;" action="" autocomplete="off" novalidate>
                 <div class="formuilabel">
                     <div class="form-group">
                         <div class="labelanimation">
@@ -354,15 +354,34 @@
                 <div class="custom-control custom-checkbox form-check">
                     <input class="form-check-input custom-control-input" type="checkbox" name="termsofuse" value="" id="termsOfUseCheck">
                     <label class="form-check-label custom-control-label" id="labeltermsOfUseCheck" for="termsOfUseCheck"><a class="urllink" href="/company/legal/terms" title="Kullanım Sözleşmesi" rel="bookmark">Kullanım Sözleşmesini</a> okudum ve onaylıyorum.</label>
+                    <span class="inputerrormessage" id="msgtermsOfUseCheckId"></span>
                 </div>
                 <div class="custom-control custom-checkbox form-check">
                     <input class="form-check-input custom-control-input" type="checkbox" value="" id="announcementsCheck">
                     <label class="form-check-label custom-control-label" for="announcementsCheck">Ticari reklam ve duyurulardan haber almak istiyorum.</label>
                 </div>
                 <div class="form-button">
-                    <button type="submit" class="btn btn-primary btnunderlinescale softblue">ÜYELİK OLUŞTUR</button>
+                    <button type="button" class="btn btn-primary btnunderlinescale softblue" onclick="homepageregisterform.sendHomepageRegisterForm()">ÜYELİK OLUŞTUR</button>
                 </div>
             </form>
+            <div id="homepageregisterinfo" class="homepage-register-forminfo" style="display: none">
+                <div class="homepage-register-forminfo-wrapper">
+                    <div class="homepage-register-forminfo-bigicon">
+                        <i class="icon-svg check"></i>
+                    </div>
+                    <h2 class="columntitle columntitle-sm titlecenter">KAYIT İŞLEMİNİZ TAMAMLANDI</h2>
+                    <div class="homepage-register-forminfo-infoarea">
+                        <p class="homepage-register-forminfo-infoarea-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit maecenas nulla mauris, vestibulum nec lorem at, gravida condimentum enim.<br />Praesent sit amet magna blandit augue aliquam dictum. Maecenas dolor vitae felis ullamcorper, at tempor leo tempor.</p>
+                    </div>
+                    <div class="homepage-register-forminfo-button">
+                        <a class="btn btn-success btnwidth160 btnunderlinescale green" href="/login" title="ÜYE GİRİŞİ">ÜYE GİRİŞİ</a>
+                    </div>
+                    <div class="homepage-register-forminfo-callcenter">
+                        <h5 class="homepage-register-forminfo-callcenter-title">Müşteri Hizmetleri</h5>
+                        <p class="homepage-register-forminfo-callcenter-number">0850 250 1079</p>
+                    </div>
+                </div>
+            </div>
         </div>
         <!-- Register -->
     </div>
