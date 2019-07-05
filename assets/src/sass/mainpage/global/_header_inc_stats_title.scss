@@ -51,7 +51,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
         &-list{
           display: flex !important;
           align-items: center;
-          padding: 0 10px 0 35px;
+          padding: 0 20px 0 17px;
           margin-bottom: 0;
           position: relative;
 
@@ -70,6 +70,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
             line-height: 0.95;
             letter-spacing: -0.3px;
             position: relative;
+            padding: 0 20px;
           }
 
           .owl{
@@ -82,7 +83,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
                 width: 1px;
                 height: 34px;
                 top: calc(50% - 16px);
-                right: 10px;
+                right: 0;
                 background-color: transparentize($global-clr-soft-gray, 0.7);
               }
 
@@ -150,10 +151,12 @@ $globalSvgIconImgPath : "../../img/global/svg";
           font-weight: 300;
           letter-spacing: -0.2px;
           margin: 0;
+          white-space: nowrap;
         }
 
         &-volume{
           display: block;
+          white-space: nowrap;
 
           sup{
             font-size: 12px;

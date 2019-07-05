@@ -72,6 +72,30 @@ $(function() {
 });
 /* Navbar Menu */
 
+// Header User Dropdown Menu List
+jQuery(function($) {
+    if($('body').hasClass('mainpage')){
+        $(document).ready(function() {
+            $(".header-userarea-user-dropdown").click(function() {
+                $("#TradepageDropdownMenu").addClass("activeuserdropdownmenu");
+            });
+        });
+    }else if($('body').hasClass('tradepage')){
+        $(document).ready(function() {
+            $(".header-userarea-user-dropdown").click(function() {
+                $("#MainpageDropdownMenu").addClass("activeuserdropdownmenu");
+            });
+        });
+    } else {
+        $(document).ready(function() {
+            $(".header-userarea-user-dropdown").click(function() {
+                $("#TradepageDropdownMenu").addClass("activeuserdropdownmenu");
+            });
+        });
+    }
+});
+// Header User Dropdown Menu List
+
 /* Tooltip */
 $(function(){
     $('[data-toggle="tooltip"]').tooltip()

@@ -260,96 +260,98 @@
                     <!-- Step Content -->
 
                     <!-- RegisteredBankAccount Modal -->
-                    <div class="sitemodal modal fade" id="RegisteredBankAccount">
-                        <div class="modal-dialog modal-lg modal-dialog-centered">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h4 class="modal-title">BANKA VE HESAP BİLGİLERİ</h4>
-                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                </div>
-                                <div class="modal-body">
-                                    <div class="modal-form">
-                                        <div class="boxcolumn-boxtitle">
-                                            <h3 class="boxcolumn-boxtitle-title">YENİ HESAP EKLE</h3>
-                                        </div>
-                                        <form class="formuinew" autocomplete="off" novalidate>
-                                            <div class="form-row">
-                                                <div class="form-group fontsize20px colorsetdarkblue col">
-                                                    <label>BANKA SEÇİNİZ</label>
-                                                    <select class="form-control custom-select">
-                                                        <option value="01">AKBANK</option>
-                                                        <option value="02">GARANTİ</option>
-                                                        <option value="03">FİNANSBANK</option>
-                                                    </select>
-                                                </div>
-                                                <div class="form-group fontsize20px colorsetdarkblue col">
-                                                    <label>IBAN NO</label>
-                                                    <input type="text" class="form-control" placeholder="">
-                                                </div>
-                                                <div class="form-group fontsize20px colorsetdarkblue col-md-auto maxwidth110">
-                                                    <label style="visibility: hidden;">BUTTON</label>
-                                                    <button type="button" class="btn btn-success btnwidth100100">EKLE</button>
-                                                </div>
-                                            </div>
-                                        </form>
+                    <div class="sitemodal depositandwithdraw-modallg">
+                        <div class="modal fade" id="RegisteredBankAccount" tabindex="-1">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h4 class="modal-title">BANKA VE HESAP BİLGİLERİ</h4>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
                                     </div>
-                                    <div class="modal-graybg">
-                                        <div class="boxcolumn-boxtitle">
-                                            <h3 class="boxcolumn-boxtitle-title">KAYITLI HESAPLARIM</h3>
+                                    <div class="modal-body">
+                                        <div class="modal-form">
+                                            <div class="boxcolumn-boxtitle">
+                                                <h3 class="boxcolumn-boxtitle-title">YENİ HESAP EKLE</h3>
+                                            </div>
+                                            <form class="formuinew" autocomplete="off" novalidate>
+                                                <div class="form-row">
+                                                    <div class="form-group fontsize20px colorsetdarkblue col">
+                                                        <label>BANKA SEÇİNİZ</label>
+                                                        <select class="form-control custom-select">
+                                                            <option value="01">AKBANK</option>
+                                                            <option value="02">GARANTİ</option>
+                                                            <option value="03">FİNANSBANK</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group fontsize20px colorsetdarkblue col">
+                                                        <label>IBAN NO</label>
+                                                        <input type="text" class="form-control" placeholder="">
+                                                    </div>
+                                                    <div class="form-group fontsize20px colorsetdarkblue col-md-auto maxwidth110">
+                                                        <label style="visibility: hidden;">BUTTON</label>
+                                                        <button type="button" class="btn btn-success btnwidth100100">EKLE</button>
+                                                    </div>
+                                                </div>
+                                            </form>
                                         </div>
-                                        <table class="modal-table sitetable table">
-                                            <thead>
-                                            <tr>
-                                                <th>BANKA <span class="tableicon"><i class="tableicon-arrowup"></i><i class="tableicon-arrowdown"></i></span></th>
-                                                <th>IBAN NO</th>
-                                                <th></th>
-                                            </tr>
-                                            </thead>
-                                            <tbody>
-                                            <tr>
-                                                <td>ODEABANK</td>
-                                                <td>TR15 0004 6006 4588 8000 2309 75</td>
-                                                <td><a class="btn btn-danger d-block" href="#" title="" rel="bookmark">KALDIR</a></td>
-                                            </tr>
-                                            <tr>
-                                                <td>ODEABANK</td>
-                                                <td>TR15 0004 6006 4588 8000 2309 75</td>
-                                                <td><a class="btn btn-danger d-block" href="#" title="" rel="bookmark">KALDIR</a></td>
-                                            </tr>
-                                            <tr>
-                                                <td>ODEABANK</td>
-                                                <td>TR15 0004 6006 4588 8000 2309 75</td>
-                                                <td><a class="btn btn-danger d-block" href="#" title="" rel="bookmark">KALDIR</a></td>
-                                            </tr>
-                                            <tr>
-                                                <td>ODEABANK</td>
-                                                <td>TR15 0004 6006 4588 8000 2309 75</td>
-                                                <td><a class="btn btn-danger d-block" href="#" title="" rel="bookmark">KALDIR</a></td>
-                                            </tr>
-                                            <tr>
-                                                <td>ODEABANK</td>
-                                                <td>TR15 0004 6006 4588 8000 2309 75</td>
-                                                <td><a class="btn btn-danger d-block" href="#" title="" rel="bookmark">KALDIR</a></td>
-                                            </tr>
-                                            <tr>
-                                                <td>ODEABANK</td>
-                                                <td>TR15 0004 6006 4588 8000 2309 75</td>
-                                                <td><a class="btn btn-danger d-block" href="#" title="" rel="bookmark">KALDIR</a></td>
-                                            </tr>
-                                            </tbody>
-                                        </table>
-                                        <div class="pagenavigation">
-                                            <ul class="pagination justify-content-center">
-                                                <li class="page-item disabled">
-                                                    <a class="page-link prev" href="#" tabindex="-1"><i class="icon-svg icon-svg-paginationarrow prev"></i></a>
-                                                </li>
-                                                <li class="page-item"><a class="page-link active" href="#">1</a></li>
-                                                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                                                <li class="page-item">
-                                                    <a class="page-link next" href="#"><i class="icon-svg icon-svg-paginationarrow next"></i></a>
-                                                </li>
-                                            </ul>
+                                        <div class="modal-graybg">
+                                            <div class="boxcolumn-boxtitle">
+                                                <h3 class="boxcolumn-boxtitle-title">KAYITLI HESAPLARIM</h3>
+                                            </div>
+                                            <table class="modal-table sitetable table">
+                                                <thead>
+                                                <tr>
+                                                    <th>BANKA <span class="tableicon"><i class="tableicon-arrowup"></i><i class="tableicon-arrowdown"></i></span></th>
+                                                    <th>IBAN NO</th>
+                                                    <th></th>
+                                                </tr>
+                                                </thead>
+                                                <tbody>
+                                                <tr>
+                                                    <td>ODEABANK</td>
+                                                    <td>TR15 0004 6006 4588 8000 2309 75</td>
+                                                    <td><a class="btn btn-danger d-block" href="#" title="" rel="bookmark">KALDIR</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>ODEABANK</td>
+                                                    <td>TR15 0004 6006 4588 8000 2309 75</td>
+                                                    <td><a class="btn btn-danger d-block" href="#" title="" rel="bookmark">KALDIR</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>ODEABANK</td>
+                                                    <td>TR15 0004 6006 4588 8000 2309 75</td>
+                                                    <td><a class="btn btn-danger d-block" href="#" title="" rel="bookmark">KALDIR</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>ODEABANK</td>
+                                                    <td>TR15 0004 6006 4588 8000 2309 75</td>
+                                                    <td><a class="btn btn-danger d-block" href="#" title="" rel="bookmark">KALDIR</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>ODEABANK</td>
+                                                    <td>TR15 0004 6006 4588 8000 2309 75</td>
+                                                    <td><a class="btn btn-danger d-block" href="#" title="" rel="bookmark">KALDIR</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td>ODEABANK</td>
+                                                    <td>TR15 0004 6006 4588 8000 2309 75</td>
+                                                    <td><a class="btn btn-danger d-block" href="#" title="" rel="bookmark">KALDIR</a></td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                            <div class="pagenavigation">
+                                                <ul class="pagination justify-content-center">
+                                                    <li class="page-item disabled">
+                                                        <a class="page-link prev" href="#" tabindex="-1"><i class="icon-svg icon-svg-paginationarrow prev"></i></a>
+                                                    </li>
+                                                    <li class="page-item"><a class="page-link active" href="#">1</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                    <li class="page-item">
+                                                        <a class="page-link next" href="#"><i class="icon-svg icon-svg-paginationarrow next"></i></a>
+                                                    </li>
+                                                </ul>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
