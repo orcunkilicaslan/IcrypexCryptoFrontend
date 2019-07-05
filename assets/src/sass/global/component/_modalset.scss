@@ -3,11 +3,19 @@
   overflow: inherit !important;
 }
 
+.modal-backdrop{
+  background-color: $global-grdint-darkblue01;
+
+  &.show{
+    opacity: 0.8;
+  }
+}
+
 .site{
 
   &modal{
 
-    &.modal{
+    .modal{
       padding: 0 !important;
 
       &.show{
@@ -150,14 +158,14 @@
       }
     }
 
-    &.imagemodal{
+    .imagemodal{
 
       .close{
         width: 22px;
         height: 22px;
         position: absolute;
-        top: -15px;
-        right: 13px;
+        top: -18px;
+        right: 7px;
         text-indent: -9999px;
         opacity: 1;
 
@@ -208,13 +216,5 @@
       }
     }
 
-  }
-}
-
-.modal-backdrop{
-  background-color: $global-grdint-darkblue01;
-
-  &.show{
-    opacity: 0.8;
   }
 }
