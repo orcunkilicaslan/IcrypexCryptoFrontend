@@ -658,7 +658,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
   }
 
   &-loggedin{
-    margin-top: 30px;
+    margin-top: 0;
 
     &-title{
       text-align: center;
@@ -681,7 +681,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
     }
 
     &-wrapper{
-      padding: 5px 0 18px;
+      padding: 7px 0 20px;
       color: $global-clr-soft-gray;
       border-bottom: 2px solid transparentize($global-clr-soft-gray, 0.7);
     }
@@ -703,12 +703,12 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
     &-detail{
       max-width: 200px;
-      margin: 10px auto 0;
+      margin: 13px auto 0;
 
       &-row{
         display: flex;
         justify-content: space-between;
-        padding: 3px 0 8px;
+        padding: 5px 0 10px;
         border-bottom: 1px solid transparentize($global-clr-soft-gray, 0.7);
 
         &:first-child{
@@ -735,7 +735,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
     &-btngroup{
       display: flex;
       justify-content: space-between;
-      padding: 17px 0;
+      padding: 18px 0;
       border-bottom: 1px solid transparentize($global-clr-soft-gray, 0.7);
 
       .btn{
@@ -763,7 +763,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
     &-progress{
       &-bar{
-        padding-top: 13px;
+        padding-top: 16px;
 
         .progress{
           background-color: transparentize($global-clr-soft-gray, 0.65);
@@ -785,7 +785,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
     }
 
     &-notification{
-      padding-top: 15px;
+      padding-top: 17px;
       font-size: 15px;
       line-height: 1.1;
       text-align: center;
