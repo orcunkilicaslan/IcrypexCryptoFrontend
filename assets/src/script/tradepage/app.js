@@ -8,7 +8,8 @@ $('#headertitleareapricelite').owlCarousel({
     autoplayTimeout:3000,
     autoplayHoverPause:true,
     items:3,
-    margin:10,
+    margin:0,
+    autoWidth:true,
     animateOut: 'fadeOut'
 });
 /* Header Bottom Lite Price */
