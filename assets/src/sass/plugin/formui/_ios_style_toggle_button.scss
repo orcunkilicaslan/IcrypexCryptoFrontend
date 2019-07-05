@@ -32,8 +32,8 @@
     top: 0;
     width: 40px;
     height: 20px;
-    border: 2px solid #dddddd;
-    background: #dddddd;
+    border: 2px solid $global-clr-red;
+    background: $global-clr-red;
     border-radius: 1.1em;
     z-index: -1;
   }
@@ -49,8 +49,8 @@
     left: 24px;
   }
   [type="checkbox"]:checked + label::before {
-    background-color: #72da67;
-    border-color: #72da67;
+    background-color: $global-clr-green;
+    border-color: $global-clr-green;
   }
 
 }

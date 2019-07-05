@@ -173,7 +173,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
       display:flex;
       flex-flow:column nowrap;
       justify-content:space-around;
-      margin: 40px 0;
+      margin: 40px 0 20px;
 
       &-list{
         margin: auto;
@@ -240,8 +240,8 @@ $globalSvgIconImgPath : "../../img/global/svg";
           display: block;
           font-size: 20px;
           font-weight: normal;
-          padding-top: 4px;
-          padding-bottom: 4px;
+          padding-top: 4px !important;
+          padding-bottom: 4px !important;
         }
       }
     }
@@ -301,7 +301,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
       }
 
       #{$tabcont}-infoarea{
-        padding: 20px 0 0;
+        padding: 30px 0 0;
         margin-top: 0;
       }
 
@@ -479,7 +479,6 @@ $globalSvgIconImgPath : "../../img/global/svg";
       width: 90px;
       height: 90px;
       margin: 0 auto;
-      margin-bottom: 20px;
       border: 2px solid $global-clr-green;
       position: relative;
       @include border-radius(50%);

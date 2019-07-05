@@ -95,7 +95,9 @@ $globalSvgIconImgPath : "../../img/global/svg";
       }
     }
     &-navbar{}
-    &-search{}
+    &-search{
+      display: none;
+    }
     &-signin{
       #{$headerclassname}-signin-item{
         a{

@@ -16,15 +16,19 @@
     a{
       color: $global-clr-soft-blue;
       margin-left: 5px;
+      @include transition(all, 0.5s, ease-in-out);
 
       &:first-child{
         margin-left: 0;
       }
 
+      &:hover{
+        color: transparentize($global-clr-soft-blue, 0.3);
+      }
+
     }
 
     &-history{
-
 
       &-table{
 
