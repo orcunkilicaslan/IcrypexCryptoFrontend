@@ -94,7 +94,7 @@
           span{
             overflow: hidden;
             display: block;
-            max-width: 340px;
+            max-width: 320px;
             position: relative;
             &::after{
               content: "...";
@@ -109,6 +109,7 @@
         }
         td.valueout{
           width: 100px;
+          white-space: nowrap;
         }
         td.detailbtn{
           width: 80px;
