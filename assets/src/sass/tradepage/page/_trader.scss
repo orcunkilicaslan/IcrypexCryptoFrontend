@@ -4,6 +4,7 @@ $tradepageHomepageImgPath : "../../img/tradepage";
 
   &-bigchart{
     background-color: $global-clr-light-gray;
+    flex: inherit !important;
     padding: 20px 0;
   }
 
