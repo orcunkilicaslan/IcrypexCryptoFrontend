@@ -410,6 +410,11 @@ $globalSvgIconImgPath : "../../img/global/svg";
         .usermenulist{
           padding: 2px 0 10px;
           text-align: left;
+          display: none;
+
+          &.activeuserdropdownmenu{
+            display: block;
+          }
 
           .userlink{
             padding: 5px 10px 0;
