@@ -73,6 +73,41 @@
   &.btnwidth100100{
     width: 100% !important;
   }
+
+  &.btnunderlinescale{
+    position: relative;
+    overflow: hidden;
+
+    &::after {
+      content: '';
+      position: absolute;
+      background-color: $global-clr-white;
+      width: 100%;
+      height: 4px;
+      display: block;
+      bottom: 0;
+      left: 0;
+      @include scaleX(0);
+      @include transition(transform, 0.3s, ease-in-out);
+    }
+
+    &:hover{
+      &::after {
+        @include scaleX(1);
+      }
+    }
+
+    &.softblue{
+      &::after {
+        background-color: $global-clr-soft-blue;
+      }
+    }
+    &.green{
+      &::after {
+        background-color: $global-clr-green;
+      }
+    }
+  }
 }
 
 .site{
