@@ -9,6 +9,15 @@
     box-shadow: none !important;
   }
 
+  &:hover{
+    box-shadow: none !important;
+  }
+
+  &:not(:disabled):not(.disabled).active:focus,
+  &:not(:disabled):not(.disabled):active:focus{
+    box-shadow: none !important;
+  }
+
   &-primary{
     background-color: $global-clr-btn-blue !important;
     border-color: $global-clr-btn-blue !important;
