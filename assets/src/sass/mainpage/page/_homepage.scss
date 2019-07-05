@@ -627,9 +627,14 @@ $globalSvgIconImgPath : "../../img/global/svg";
         margin-top: 5px;
 
         &-desc{
-          color: $global-clr-white;
+          color: $global-clr-soft-gray;
           font-size: 17px;
           line-height: 1.18;
+          margin-bottom: 5px;
+
+          &:last-child{
+            margin-bottom: 0;
+          }
         }
       }
 

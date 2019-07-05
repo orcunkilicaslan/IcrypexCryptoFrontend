@@ -19,6 +19,12 @@
       li{
         position: relative;
         padding-left: 15px;
+        line-height: 1.2;
+        margin-bottom: 6px;
+
+        &:last-child{
+          margin-bottom: 0;
+        }
 
         &::before{
           content:"";

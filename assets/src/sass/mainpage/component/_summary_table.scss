@@ -90,6 +90,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
         }
       }
       &-search{
+        display: none;
         color: transparentize($global-clr-soft-gray, 0.50);
         position: absolute;
         width: 250px;
