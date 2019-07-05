@@ -40,7 +40,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
       text-align: center;
       margin: 0;
 
-      a{color: $global-clr-white;}
+      a{color: $global-clr-soft-gray;}
 
       &-item{
         position: relative;
@@ -73,7 +73,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
       }
       &-selection{
-        &.active{color: $global-clr-soft-gray; opacity: 0.75;}
+        &.active{color: $global-clr-white;}
       }
     }
 
