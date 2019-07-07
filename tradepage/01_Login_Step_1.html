@@ -129,7 +129,7 @@
     <!-- Form -->
     <div class="login-column">
 
-        <form class="login-form formuinew" autocomplete="off" novalidate>
+        <form class="login-form formuinew formlabelvalidation" action="" autocomplete="off" novalidate>
             <h2 class="columntitle columntitle-lg bottomborder titlecenter">HOŞ GELDİNİZ, LÜTFEN E-POSTA ADRESİNİZİ VE ŞİFRENİZİ GİRİNİZ</h2>
             <div class="login-form-tags-300">
                 <div class="login-bigicon">
@@ -137,11 +137,13 @@
                 </div>
                 <div class="form-group colorsetdarkblue">
                     <label>E-POSTA ADRESİ</label>
-                    <input type="text" class="form-control" placeholder="">
+                    <input id="loginemail" name="email" type="text" class="form-control" required onkeyup="loginform.verifyContent('inputEmailProcess','loginemail','msgEmailId')" onfocusout="loginform.verifyContentErrorDelete('inputEmailProcess','loginemail','msgEmailId')">
+                    <span class="inputerrormessage" id="msgEmailId"></span>
                 </div>
                 <div class="form-group colorsetdarkblue">
                     <label>ŞİFRE</label>
-                    <input type="text" class="form-control" placeholder="">
+                    <input id="loginpassword" name="password" type="password" class="form-control" required onkeyup="loginform.verifyContent('inputPasswordProcess','loginpassword','msgPasswordId')" onfocusout="loginform.verifyContentErrorDelete('inputPasswordProcess','loginpassword','msgPasswordId')">
+                    <span class="inputerrormessage" id="msgPasswordId"></span>
                     <a href="#" class="form-group-inputiconlink"><i class="icon-svg icon-svg-forgotpasswordicon"></i> ŞİFREMİ UNUTTUM</a>
                 </div>
                 <div class="form-group">
@@ -149,7 +151,7 @@
                 </div>
             </div>
             <div class="login-form-btn site-button-formbottom-btn success">
-                <button class="btn btn-success">2FA KODUNU GÖNDER</button>
+                <button type="button" class="btn btn-success" onclick="loginform.sendLoginForm()">GİRİŞ YAP</button>
             </div>
         </form>
     </div>
@@ -268,9 +270,11 @@
 <script id="script-bootstrap" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <!-- Javascript End -->
 <!-- Plugins Start -->
+<script id="script-owl-carousel" src="../assets/vendor/owl.carousel/dist/owl.carousel.min.js"></script>
+<script id="script-maskedinput" src="../assets/vendor/jquery.maskedinput/src/jquery.maskedinput.js"></script>
 <script id="script-plugin-app" src="../assets/dist/js/plugin-app.js"></script>
+<script id="script-mainpage-app" src="../assets/dist/js/mainpage-app.js"></script>
 <script id="script-tradepage-app" src="../assets/dist/js/tradepage-app.js"></script>
-
 <!-- Plugins End -->
 </body>
 </html>
