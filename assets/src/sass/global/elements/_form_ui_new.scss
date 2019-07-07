@@ -486,6 +486,69 @@
     }
   }
 
+  &.formlabelvalidation{
+    position: relative;
+
+    .form-control{
+      width: 100%;
+      resize: none;
+
+      &:focus{
+        outline: none;
+      }
+
+      &:focus ~ .inputerrormessage,
+      &:valid ~ .inputerrormessage{
+
+      }
+
+      &:valid ~ label{
+        color: #70a800;
+        z-index: 0 !important;
+      }
+    }
+
+    .inputerrormessage{
+      position: absolute;
+      top: 0;
+      right: 8px;
+      color: #b82c0d;
+      font-size: 15px;
+      z-index: 0;
+      @include transition(all, 0.3s, ease-in-out);
+    }
+
+    .inputcheckicon{
+      display: none;
+      width: 15px;
+      height: 15px;
+      position: absolute;
+      top: 38px;
+      right: 20px;
+      @include transition(all, 0.3s, ease-in-out);
+
+      &:before{
+        content: "";
+        position: absolute;
+        width: 15px;
+        height: 15px;
+      }
+      &-check{
+        &:before{
+          content: "";
+          position: absolute;
+          width: 14px;
+          height: 7px;
+          top: 2px;
+          left: 1px;
+          border-bottom: 2px solid $global-clr-green;
+          border-left: 2px solid $global-clr-green;
+          @include rotate(-50);
+        }
+      }
+    }
+  }
+
   .maxwidth90{width: 90px;}
   .maxwidth110{width: 110px;}
   .maxwidth160{width: 175px;}
