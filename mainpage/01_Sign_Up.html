@@ -128,7 +128,7 @@
 
             <!-- Form -->
             <div class="login-column">
-                <form class="login-form formuinew formlabelvalidation" autocomplete="off" novalidate>
+                <form id="signupform" class="login-form formuinew formlabelvalidation" style="display: block" action="" autocomplete="off" novalidate>
                     <div>
                         <h2 class="columntitle columntitle-lg bottomborder titlecenter">ÜCRETSİZ ÜYELİK OLUŞTURUN</h2>
                         <div class="login-column-top">
@@ -187,11 +187,11 @@
                         <div class="login-form-check">
                             <div class="form-row">
                                 <div class="form-check custom-control custom-checkbox col">
-                                    <input class="form-check-input custom-control-input" type="checkbox"  id="atou" name="termsofuse">
+                                    <input class="form-check-input custom-control-input" type="checkbox" id="atou" name="termsofuse" value="">
                                     <label class="form-check-label custom-control-label" for="atou" id="atoulabel"><a class="urllink" href="#" target="_blank">Ön Bilgilendirme Metni</a> ve <a class="urllink" href="/company/legal/terms" target="_blank">Kullanım Sözleşmesini</a> okudum ve onaylıyorum.</label>
                                 </div>
                                 <div class="form-check custom-control custom-checkbox col">
-                                    <input class="form-check-input custom-control-input" type="checkbox" id="an" name="notifyme">
+                                    <input class="form-check-input custom-control-input" type="checkbox" id="an" name="notifyme" value="">
                                     <label class="form-check-label custom-control-label" for="an">Promosyon, kampanya, tanıtım, yarışma ve benzeri nitelikte ticari ileti gönderilmesini kabul ediyorum.</label>
                                 </div>
                             </div>
@@ -201,6 +201,25 @@
                         <button type="button" class="btn btn-success" onclick="signupform.sendSignUpForm()">ÜYELİK OLUŞTUR</button>
                     </div>
                 </form>
+                <div id="signupinfo" class="login-forminfo" style="display: none">
+                    <div class="login-forminfo-wrapper">
+                        <h2 class="columntitle columntitle-lg bottomborder fullborder titlecenter">KAYIT İŞLEMİNİZ TAMAMLANDI</h2>
+                        <div class="login-forminfo-bigicon">
+                            <i class="icon-svg check"></i>
+                        </div>
+                        <div class="login-forminfo-infoarea">
+                            <p class="login-forminfo-infoarea-desc">Şimdi hemen üye girişinizi yapabilirsiniz. <br />Giriş yaptıktan sonra sizden istenen belgeleri yükleyerek, limitlerinizi yükseltebilirsiniz. <br />2FA doğrulamanızı hızlıca aktive etmenizi öneririz.</p>
+                            <p class="login-forminfo-infoarea-desc">İşlemlerinizde başarılar!</p>
+                        </div>
+                        <div class="login-forminfo-callcenter">
+                            <h5 class="login-forminfo-callcenter-title">Müşteri Hizmetleri</h5>
+                            <p class="login-forminfo-callcenter-number">0850 250 1079</p>
+                        </div>
+                        <div class="site-button site-button-formbottom-btn success">
+                            <a class="btn btn-success" href="/login" title="ÜYE GİRİŞİ">ÜYE GİRİŞİ</a>
+                        </div>
+                    </div>
+                </div>
             </div>
             <!-- Form -->
 

@@ -45,7 +45,7 @@ class SignUpForm {
         let Email = document.getElementById("inputEmailId").value;
         let Password = document.getElementById("inputPasswordId").value;
         let RePassword = document.getElementById("inputRePasswordId").value;
-        let atouLabel = document.getElementById("atoulabel").checked;
+        let atouLabel = document.getElementById("atou").checked;
 
         let emailPattern = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/g;
 
@@ -68,8 +68,11 @@ class SignUpForm {
             this.setSignUpFormErrorMessages("msgRePasswordId", Translation.translate('tr','SignUpRePasswordAlert'));
             this.setSignUpFormErrorInput("inputRePasswordId","#b82c0d");
         }if(!atouLabel){
-            document.getElementById('atoulabel').classList.add("checkederror");
+            document.getElementById('atou').classList.add("checkederror");
         }else{
+            document.getElementById('signupform').style.display = "none";
+            document.getElementById('signupinfo').style.display = "block";
+
             document.getElementById('inputFirstNameId').value = "";
             document.getElementById('inputLastNameId').value = "";
             document.getElementById('inputPhoneId').value = "";
