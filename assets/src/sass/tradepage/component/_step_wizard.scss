@@ -450,6 +450,11 @@ $globalSvgIconImgPath : "../../img/global/svg";
         display: flex;
         font-size: 17px;
         align-items: center;
+        @include transition(color, 0.3s, ease-in-out);
+
+        &:hover{
+          color: $global-clr-soft-blue;
+        }
 
         i.iconcircleback{
           width: 20px;

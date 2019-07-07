@@ -27,6 +27,15 @@
       border-color: lighten($global-clr-btn-blue, 10%) !important;
     }
   }
+  &-secondary{
+    background-color: $global-clr-soft-gray !important;
+    border-color: $global-clr-soft-gray !important;
+
+    &:hover{
+      background-color: lighten($global-clr-soft-gray, 10%) !important;
+      border-color: lighten($global-clr-soft-gray, 10%) !important;
+    }
+  }
   &-success{
     background-color: $global-clr-green !important;
     border-color: $global-clr-green !important;
@@ -129,6 +138,9 @@
           height: 1px;
           top: 50%;
           left: 0;
+        }
+        &.secondary{
+          &::before{background-color: $global-clr-soft-gray;}
         }
         &.success{
           &::before{background-color: $global-clr-green;}
