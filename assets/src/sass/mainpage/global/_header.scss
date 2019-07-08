@@ -20,6 +20,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
     #{$headerclassname}-titlearea,
     #{$headerclassname}-onlytitle{
       overflow: hidden;
+      opacity: 0;
       height: 0;
       padding: 0;
     }
