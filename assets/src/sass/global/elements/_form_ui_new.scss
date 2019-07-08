@@ -507,7 +507,7 @@
       }
 
       &:valid ~ label{
-        color: #70a800;
+        color: $global-clr-green;
         z-index: 0 !important;
       }
     }
@@ -516,7 +516,7 @@
       position: absolute;
       top: 0;
       right: 0;
-      color: #b82c0d;
+      color: $global-clr-red;
       font-size: 15px;
       z-index: 0;
       @include transition(all, 0.3s, ease-in-out);
@@ -562,6 +562,85 @@
     .form-row{
       .inputerrormessage{
         right: 8px;
+      }
+    }
+  }
+
+  &.formlabelinfo{
+    position: relative;
+
+    .form-group{
+      position: relative;
+    }
+
+    .inputinfomessage{
+      position: absolute;
+      top: 0;
+      right: 0;
+      color: $global-clr-green;
+      font-size: 15px;
+      z-index: 0;
+      @include transition(all, 0.3s, ease-in-out);
+    }
+
+    .form-row{
+      .inputinfomessage{
+        right: 8px;
+      }
+    }
+
+    .inputcheckicon{
+      display: none;
+      width: 15px;
+      height: 15px;
+      position: absolute;
+      top: 38px;
+      right: 20px;
+      @include transition(all, 0.3s, ease-in-out);
+
+      &:before{
+        content: "";
+        position: absolute;
+        width: 15px;
+        height: 15px;
+      }
+      &-check{
+        &:before{
+          content: "";
+          position: absolute;
+          width: 14px;
+          height: 7px;
+          top: 2px;
+          left: 1px;
+          border-bottom: 2px solid $global-clr-green;
+          border-left: 2px solid $global-clr-green;
+          @include rotate(-50);
+        }
+      }
+    }
+
+    .inputcopyicon{
+      display: none;
+      width: 18px;
+      height: 18px;
+      position: absolute;
+      top: 36px;
+      right: 15px;
+      @include transition(all, 0.3s, ease-in-out);
+
+      &::before,
+      &::after{
+        content:"";
+        position:absolute;
+        background-color: $global-clr-green;
+        width: 10px;
+        height: 2px;
+        top: calc(50% - 1px);
+        left: calc(50% - 5px);
+        @include rotate(0);
+      }
+      &::after{
+        @include rotate(90);
       }
     }
   }
