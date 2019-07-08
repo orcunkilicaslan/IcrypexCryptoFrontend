@@ -319,7 +319,56 @@ $globalSvgIconImgPath : "../../img/global/svg";
         }
       }
 
-      &-btn{}
+      &-btn{
+        &-tooltiparea{
+
+          .tooltip{
+
+            &.show{
+              opacity: 1;
+            }
+
+            &-inner{
+              background-color: $global-clr-red;
+              &.show{
+                opacity: 1;
+              }
+            }
+          }
+
+          .bs-tooltip-top{
+            .arrow {
+              &::before {
+                border-top-color: $global-clr-red;
+              }
+            }
+          }
+
+          .bs-tooltip-right{
+            .arrow {
+              &::before {
+                border-right-color: $global-clr-red;
+              }
+            }
+          }
+
+          .bs-tooltip-bottom {
+            .arrow {
+              &::before {
+                border-bottom-color: $global-clr-red;
+              }
+            }
+          }
+
+          .bs-tooltip-left {
+            .arrow {
+              &::before {
+                border-left-color: $global-clr-red;
+              }
+            }
+          }
+        }
+      }
     }
 
     &-formarea{
