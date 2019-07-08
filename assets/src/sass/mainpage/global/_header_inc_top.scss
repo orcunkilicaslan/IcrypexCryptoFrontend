@@ -11,7 +11,8 @@ $globalSvgIconImgPath : "../../img/global/svg";
     padding: 0;
     height: 40px;
     border-bottom: 1px solid transparentize($global-clr-soft-gray, 0.7);
-    @include transition(all, 0.1s, ease-out);
+    opacity: 1;
+    @include transition(all, 0.2s, ease-in-out);
 
     @include ReSassResponsive(1400){
       height: 36px;
