@@ -8,6 +8,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
     padding: 18px 0;
     height: 80px;
     border-top: 1px solid transparentize($global-clr-soft-gray, 0.7);
+    @include transition(all, 0.1s, ease-out);
 
     &-price{
       color: $global-clr-white;
