@@ -79,6 +79,12 @@ $(document).ready(function(){
 });
 /* Profile Help Box Tooltip */
 
+/* Easy Buy Sell Tooltip */
+$(document).ready(function(){
+    $('.orderinformationhelp').tooltip({container: ".order-orders-tooltiparea", html: true, placement: "bottom" });
+});
+/* Easy Buy Sell Tooltip */
+
 /* Loading Info */
 console.log("Tradepage App Javascript Loading Successful");
 /* Loading Info */
