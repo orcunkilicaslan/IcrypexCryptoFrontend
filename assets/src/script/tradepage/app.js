@@ -14,7 +14,8 @@ $('#headertitleareapricelite').owlCarousel({
 });
 /* Header Bottom Lite Price */
 
-/* DropZone JS */
+/* DropZone JS
+
 Dropzone.options.profileKimlikOnYuz = {
     paramName: "file", // The name that will be used to transfer the file
     dictDefaultMessage: "<i class='icon-svg icon-svg-profilefileuploaddragdrop'></i>" + "SÜRÜKLE & BIRAK" + "<br />" + "[JPG, PNG, PDF-MAKS 5MB]"
@@ -47,6 +48,7 @@ Dropzone.options.profileEkBelge = {
     paramName: "file", // The name that will be used to transfer the file
     dictDefaultMessage: "<i class='icon-svg icon-svg-profilefileuploaddragdrop'></i>" + "SÜRÜKLE & BIRAK" + "<br />" + "[JPG, PNG, PDF-MAKS 5MB]"
 };
+
 /* DropZone JS */
 
 /* Profile Login Settings Range Slider */
