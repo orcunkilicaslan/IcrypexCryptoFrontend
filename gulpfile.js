@@ -83,8 +83,8 @@ gulp.task('sass-plugin', () => {
 
 gulp.task('script-plugin', () => {
     return gulp.src([
-        folder_src_main + 'script/plugin/**/app.js',
-        folder_src_main + 'script/plugin/**/validations-components.js'
+        folder_src_main + 'script/plugin/**/app.js'
+        //folder_src_main + 'script/plugin/**/validations-components.js'
     ])
         .pipe(plumber())
         .pipe(webpack({
