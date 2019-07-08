@@ -5,6 +5,16 @@
   @include border-radius(3px);
   @include transition(background, 0.3s, ease-in-out);
 
+  &.disabled,
+  &:disabled{
+    opacity: 1;
+
+    &:hover{
+      background-color: $global-clr-soft-gray !important;
+      border-color: $global-clr-soft-gray !important;
+    }
+  }
+
   &:focus{
     box-shadow: none !important;
   }
