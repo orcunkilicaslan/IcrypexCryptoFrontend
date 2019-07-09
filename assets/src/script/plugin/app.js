@@ -76,19 +76,19 @@ $(function() {
 jQuery(function($) {
     if($('body').hasClass('mainpage')){
         $(document).ready(function() {
-            $(".header-userarea-user-dropdown").click(function() {
+            $(".header-userarea-user").click(function() {
                 $("#TradepageDropdownMenu").addClass("activeuserdropdownmenu");
             });
         });
     }else if($('body').hasClass('tradepage')){
         $(document).ready(function() {
-            $(".header-userarea-user-dropdown").click(function() {
+            $(".header-userarea-user").click(function() {
                 $("#MainpageDropdownMenu").addClass("activeuserdropdownmenu");
             });
         });
     } else {
         $(document).ready(function() {
-            $(".header-userarea-user-dropdown").click(function() {
+            $(".header-userarea-user").click(function() {
                 $("#TradepageDropdownMenu").addClass("activeuserdropdownmenu");
             });
         });

@@ -49,27 +49,56 @@ class HomepageRegisterForm {
 
         let emailPattern = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/g;
 
-        if(FirstName.trim().length < 2){
-            this.setHomepageRegisterFormErrorMessages("msgFirstNameId", Translation.translate('tr','HomepageRegisterFirstNameAlert'));
-            this.setHomepageRegisterFormErrorInput("inputFirstNameId","#b82c0d");
-        }if(LastName.trim().length < 2){
-            this.setHomepageRegisterFormErrorMessages("msgLastNameId", Translation.translate('tr','HomepageRegisterLastNameAlert'));
-            this.setHomepageRegisterFormErrorInput("inputLastNameId","#b82c0d");
-        }if(Phone.trim().length < 14){
-            this.setHomepageRegisterFormErrorMessages("msgPhoneId", Translation.translate('tr','HomepageRegisterPhoneAlert'));
-            this.setHomepageRegisterFormErrorInput("inputPhoneId","#b82c0d");
-        }if(!emailPattern.test(Email)){
-            this.setHomepageRegisterFormErrorMessages("msgEmailId", Translation.translate('tr','HomepageRegisterEmailAlert'));
-            this.setHomepageRegisterFormErrorInput("inputEmailId","#b82c0d");
-        }if(Password.trim().length < 8){
-            this.setHomepageRegisterFormErrorMessages("msgPasswordId", Translation.translate('tr','HomepageRegisterPasswordAlert'));
-            this.setHomepageRegisterFormErrorInput("inputPasswordId","#b82c0d");
-        }if(RePassword.trim().length < 8 || (Password !== RePassword)){
-            this.setHomepageRegisterFormErrorMessages("msgRePasswordId", Translation.translate('tr','HomepageRegisterRePasswordAlert'));
-            this.setHomepageRegisterFormErrorInput("inputRePasswordId","#b82c0d");
-        }if(!termsOfUseCheck){
-            document.getElementById('labeltermsOfUseCheck').classList.add("checkederror");
+        let validStatus = false;
+
+        if(!validStatus) {
+
+            if(FirstName.trim().length < 2){
+                this.setHomepageRegisterFormErrorMessages("msgFirstNameId", Translation.translate('tr','HomepageRegisterFirstNameAlert'));
+                this.setHomepageRegisterFormErrorInput("inputFirstNameId","#b82c0d");
+                //console.log("Error inputFirstNameId");
+                validStatus = true;
+            }
+            if(LastName.trim().length < 2){
+                this.setHomepageRegisterFormErrorMessages("msgLastNameId", Translation.translate('tr','HomepageRegisterLastNameAlert'));
+                this.setHomepageRegisterFormErrorInput("inputLastNameId","#b82c0d");
+                //console.log("Error inputLastNameId");
+                validStatus = true;
+            }
+            if(Phone.trim().length < 14){
+                this.setHomepageRegisterFormErrorMessages("msgPhoneId", Translation.translate('tr','HomepageRegisterPhoneAlert'));
+                this.setHomepageRegisterFormErrorInput("inputPhoneId","#b82c0d");
+                //console.log("Error inputPhoneId");
+                validStatus = true;
+            }
+            if(!emailPattern.test(Email)){
+                this.setHomepageRegisterFormErrorMessages("msgEmailId", Translation.translate('tr','HomepageRegisterEmailAlert'));
+                this.setHomepageRegisterFormErrorInput("inputEmailId","#b82c0d");
+                //console.log("Error inputEmailId");
+                validStatus = true;
+            }
+            if(Password.trim().length < 8){
+                this.setHomepageRegisterFormErrorMessages("msgPasswordId", Translation.translate('tr','HomepageRegisterPasswordAlert'));
+                this.setHomepageRegisterFormErrorInput("inputPasswordId","#b82c0d");
+                //console.log("Error inputPasswordId");
+                validStatus = true;
+            }
+            if(RePassword.trim().length < 8 || (Password !== RePassword)){
+                this.setHomepageRegisterFormErrorMessages("msgRePasswordId", Translation.translate('tr','HomepageRegisterRePasswordAlert'));
+                this.setHomepageRegisterFormErrorInput("inputRePasswordId","#b82c0d");
+                //console.log("Error inputRePasswordId");
+                validStatus = true;
+            }
+            if(!termsOfUseCheck){
+                document.getElementById('labeltermsOfUseCheck').classList.add("checkederror");
+                //console.log("Error labeltermsOfUseCheck");
+                validStatus = true;
+            }
+            return true;
+
         }else{
+            return false;
+
             document.getElementById('homepageregisterform').style.display = "none";
             document.getElementById('homepageregisterinfo').style.display = "block";
 

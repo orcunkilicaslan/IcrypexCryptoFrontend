@@ -673,6 +673,8 @@ $globalSvgIconImgPath : "../../img/global/svg";
     .columntitle{
       color: $global-clr-white;
       text-align: center;
+      text-transform: uppercase;
+
       &.bottomborder{
         display: block;
         &::before{
@@ -1023,7 +1025,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
         &-icon{
           flex: 0 0 70px;
-          background-color: transparentize(#78787b, 0.85);
+          background-color: $global-clr-light-gray;
           margin-right: 15px;
 
           .icon-svg{

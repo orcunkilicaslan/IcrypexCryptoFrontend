@@ -250,20 +250,23 @@
                                 </div>
                                 <div class="stepwizard-tabcont-form-check-single d-flex justify-content-center">
                                     <div class="form-check custom-control custom-checkbox">
-                                        <input type="checkbox" class="custom-control-input" id="iReadCheck">
-                                        <label class="custom-control-label" for="iReadCheck">Okudum, anladım.</label>
+                                        <input type="checkbox" class="custom-control-input" onclick="checkedCheckboxOnPageLoad()" id="WinzardiReadCheck" value="">
+                                        <label class="custom-control-label" for="WinzardiReadCheck">Okudum, anladım.</label>
                                     </div>
                                 </div>
                             </div>
                             <!-- Form -->
                             <!-- Button -->
                             <div class="stepwizard-tabcont-form-btn">
-                                <div class="site-button-formbottom-btn success">
-                                    <a class="btn btn-success" href="#" title="">TRANSFERİ BAŞLAT</a>
+                                <div id="WinzardBottomButtonDiv" class="site-button-formbottom-btn success">
+                                    <span id="WinzardBottomButtonArea" tabindex="0">
+                                        <button id="WinzardBottomButtonLink" class="btn btn-success" type="submit">TALEP OLUŞTUR</button>
+                                    </span>
                                 </div>
                                 <div class="stepwizard-tabcont-navigation d-flex justify-content-center">
                                     <a href="#" class="stepwizard-tabcont-navigation-buttons"><i class="iconcircleback"></i> İPTAL ET</a>
                                 </div>
+                                <div class="stepwizard-tabcont-form-btn-tooltiparea"></div>
                             </div>
                             <!-- Button -->
 

@@ -36,6 +36,7 @@
 
     &-item {
       position: relative;
+      text-transform: capitalize;
 
       + .breadcrumb-item{
         padding-left: 24px;

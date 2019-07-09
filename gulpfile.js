@@ -83,8 +83,8 @@ gulp.task('sass-plugin', () => {
 
 gulp.task('script-plugin', () => {
     return gulp.src([
-        folder_src_main + 'script/plugin/**/app.js',
-        folder_src_main + 'script/plugin/**/validations-components.js'
+        folder_src_main + 'script/plugin/**/app.js'
+        //folder_src_main + 'script/plugin/**/validations-components.js'
     ])
         .pipe(plumber())
         .pipe(webpack({
@@ -168,7 +168,8 @@ gulp.task('sass-tradepage', () => {
 
 gulp.task('script-tradepage', () => {
     return gulp.src([
-        folder_src_main + 'script/tradepage/**/*.js'
+        folder_src_main + 'script/tradepage/**/app.js',
+        folder_src_main + 'script/tradepage/**/deposit-withdraw.js'
     ])
         .pipe(plumber())
         .pipe(webpack({
