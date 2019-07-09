@@ -2,7 +2,7 @@
 .dropzone{
   background-color: $global-clr-light-gray;
   min-width: 160px;
-  min-height: 150px;
+  min-height: 170px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,6 +22,16 @@
       span{
         background-color: transparent !important;
       }
+
+      .dropzone{
+        &-formbigtext{
+          display: block;
+        }
+        &-formsmalltext{
+          display: block;
+        }
+      }
+
     }
     &-preview{
       background-color: transparent !important;
@@ -41,6 +51,14 @@
         background-color: transparent !important;
       }
     }
+
+    &-filename{
+      span{
+        display: block;
+        overflow: hidden;
+      }
+    }
+
     &-size{
       display: none;
     }

@@ -45,5 +45,3 @@ $(document).ready(function(){
 /* Loading Info */
 console.log("Tradepage App Deposit-Withdraw Bottom Button Validation Javascript Loading Successful");
 /* Loading Info */
-
-

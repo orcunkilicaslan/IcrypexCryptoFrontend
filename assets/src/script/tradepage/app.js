@@ -14,43 +14,6 @@ $('#headertitleareapricelite').owlCarousel({
 });
 /* Header Bottom Lite Price */
 
-/* DropZone JS
-
-Dropzone.options.profileKimlikOnYuz = {
-    paramName: "file", // The name that will be used to transfer the file
-    dictDefaultMessage: "<i class='icon-svg icon-svg-profilefileuploaddragdrop'></i>" + "SÜRÜKLE & BIRAK" + "<br />" + "[JPG, PNG, PDF-MAKS 5MB]"
-};
-Dropzone.options.profileKimlikArkaYuz = {
-    paramName: "file", // The name that will be used to transfer the file
-    dictDefaultMessage: "<i class='icon-svg icon-svg-profilefileuploaddragdrop'></i>" + "SÜRÜKLE & BIRAK" + "<br />" + "[JPG, PNG, PDF-MAKS 5MB]"
-};
-Dropzone.options.profileDilekceliFotograf = {
-    paramName: "file", // The name that will be used to transfer the file
-    dictDefaultMessage: "<i class='icon-svg icon-svg-profilefileuploaddragdrop'></i>" + "SÜRÜKLE & BIRAK" + "<br />" + "[JPG, PNG, PDF-MAKS 5MB]"
-};
-Dropzone.options.profileAdresTeyidi = {
-    paramName: "file", // The name that will be used to transfer the file
-    dictDefaultMessage: "<i class='icon-svg icon-svg-profilefileuploaddragdrop'></i>" + "SÜRÜKLE & BIRAK" + "<br />" + "[JPG, PNG, PDF-MAKS 5MB]"
-};
-Dropzone.options.profileBankaDokumu = {
-    paramName: "file", // The name that will be used to transfer the file
-    dictDefaultMessage: "<i class='icon-svg icon-svg-profilefileuploaddragdrop'></i>" + "SÜRÜKLE & BIRAK" + "<br />" + "[JPG, PNG, PDF-MAKS 5MB]"
-};
-Dropzone.options.profileCalismaBelgesi = {
-    paramName: "file", // The name that will be used to transfer the file
-    dictDefaultMessage: "<i class='icon-svg icon-svg-profilefileuploaddragdrop'></i>" + "SÜRÜKLE & BIRAK" + "<br />" + "[JPG, PNG, PDF-MAKS 5MB]"
-};
-Dropzone.options.profileBankaReferansi = {
-    paramName: "file", // The name that will be used to transfer the file
-    dictDefaultMessage: "<i class='icon-svg icon-svg-profilefileuploaddragdrop'></i>" + "SÜRÜKLE & BIRAK" + "<br />" + "[JPG, PNG, PDF-MAKS 5MB]"
-};
-Dropzone.options.profileEkBelge = {
-    paramName: "file", // The name that will be used to transfer the file
-    dictDefaultMessage: "<i class='icon-svg icon-svg-profilefileuploaddragdrop'></i>" + "SÜRÜKLE & BIRAK" + "<br />" + "[JPG, PNG, PDF-MAKS 5MB]"
-};
-
-/* DropZone JS */
-
 /* Profile Login Settings Range Slider */
 var rangeSlider = function(){
     var slider = $('.profile-login-settings-range-slider'),
