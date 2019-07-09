@@ -329,6 +329,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
         font-size: 17px;
         font-weight: normal;
         white-space: nowrap;
+        text-transform: uppercase;
       }
       &-dropdown{
         color: $global-clr-white;
@@ -402,6 +403,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
                 color: $global-clr-white;
                 font-size: 17px;
                 margin: 0;
+                text-transform: uppercase;
               }
               small a{
                 color: $global-clr-soft-blue;
