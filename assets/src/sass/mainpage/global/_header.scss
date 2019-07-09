@@ -140,9 +140,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
         font-size: 13px;
         padding: 0 6px;
       }
-
-      a{color: $global-clr-white;}
-
+      
       &::before{
         content: "";
         position: absolute;
@@ -160,6 +158,42 @@ $globalSvgIconImgPath : "../../img/global/svg";
         padding-right: 0;
         &::before{display: none;}
       }
+
+      > a{
+        color: $global-clr-soft-gray;
+        display: block;
+        padding:8px 0;
+        position:relative;
+        height: 100%;
+        @include transition(all, 0.3s, ease-in-out);
+
+        &::after {
+          content: '';
+          position: absolute;
+          background-color: $global-clr-soft-blue;
+          width: 100%;
+          height: 4px;
+          display: block;
+          bottom: 0;
+          left: 0;
+          @include scaleX(0);
+          //@include transition(transform, 250ms, ease-in-out);
+          @include transition(all, 250ms, ease-in-out);
+        }
+      }
+
+      &:hover,
+      &.active{
+        > a{
+          color: $global-clr-white;
+
+          &::after {
+            @include scaleX(1);
+          }
+        }
+      }
+
+
     }
     &-register{}
     &-login{}
