@@ -498,7 +498,9 @@
       top: 0;
       right: 0;
       color: $global-clr-red;
-      font-size: 15px;
+      font-size: 17px;
+      line-height: 1;
+      text-transform: uppercase;
       z-index: 0;
       @include transition(all, 0.3s, ease-in-out);
     }
@@ -560,7 +562,9 @@
       top: 0;
       right: 0;
       color: $global-clr-green;
-      font-size: 15px;
+      font-size: 17px;
+      line-height: 1;
+      text-transform: uppercase;
       z-index: 0;
       @include transition(all, 0.3s, ease-in-out);
     }
