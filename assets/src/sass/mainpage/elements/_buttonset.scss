@@ -83,19 +83,6 @@
     }
   }
 
-  &.btnwidth110{
-    width: 110px !important;
-  }
-  &.btnwidth160{
-    width: 160px !important;
-  }
-  &.btnwidth200{
-    width: 200px !important;
-  }
-  &.btnwidth100100{
-    width: 100% !important;
-  }
-
   &.btnunderlinescale{
     position: relative;
     overflow: hidden;
@@ -131,6 +118,11 @@
     }
   }
 }
+
+.btnwidth110{width: 110px !important;}
+.btnwidth160{width: 160px !important;}
+.btnwidth200{width: 200px !important;}
+.btnwidth100100{width: 100% !important;}
 
 .site{
 
@@ -176,6 +168,10 @@
           position: relative;
           z-index: 1;
         }
+
+        .tooltip-wrapper{display: block;}
+        .tooltip-wrapper.disabled{cursor: not-allowed;}
+        .tooltip-wrapper .btn[disabled]{pointer-events: none;}
       }
     }
   }

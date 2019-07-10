@@ -180,7 +180,7 @@
 
                     <!-- Step Content -->
                     <div class="depositandwithdraw-flex-wrapper-column-middle container depositandwithdraw-tabcont">
-                        <form class="stepwizard-tabcont-form formuinew" autocomplete="off" novalidate>
+                        <form class="stepwizard-tabcont-form stepwizard-validation formuinew formlabelvalidation" autocomplete="off" novalidate>
 
                             <!-- Title -->
                             <h2 class="columntitle columntitle-lg bottomborder fullborder titlecenter">PARA YATIRMA - PAPARA</h2>
@@ -230,7 +230,7 @@
                                 </div>
                                 <div class="stepwizard-tabcont-form-check-single d-flex justify-content-center">
                                     <div class="form-check custom-control custom-checkbox">
-                                        <input type="checkbox" class="custom-control-input" onclick="checkedCheckboxOnPageLoad()" id="WinzardiReadCheck" value="">
+                                        <input type="checkbox" class="custom-control-input" id="WinzardiReadCheck" value="">
                                         <label class="custom-control-label" for="WinzardiReadCheck">Okudum, anladım.</label>
                                     </div>
                                 </div>
@@ -238,10 +238,10 @@
                             <!-- Form -->
                             <!-- Button -->
                             <div class="stepwizard-tabcont-form-btn">
-                                <div id="WinzardBottomButtonDiv" class="site-button-formbottom-btn success">
-                                    <span id="WinzardBottomButtonArea" tabindex="0">
-                                        <button id="WinzardBottomButtonLink" class="btn btn-success" type="submit">TALEP OLUŞTUR</button>
-                                    </span>
+                                <div id="WinzardBottomButtonDiv" class="site-button-formbottom-btn secondary">
+                                    <div id="WinzardBottomButtonArea" class="tooltip-wrapper" tabindex="1">
+                                        <button id="WinzardBottomButtonLink" class="btn btn-secondary" type="submit"disabled="disabled">TALEP OLUŞTUR</button>
+                                    </div>
                                 </div>
                                 <div class="stepwizard-tabcont-navigation d-flex justify-content-center">
                                     <a href="#" class="stepwizard-tabcont-navigation-buttons"><i class="iconcircleback"></i> İPTAL ET</a>

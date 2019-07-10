@@ -493,25 +493,6 @@
       position: relative;
     }
 
-    .form-control{
-      width: 100%;
-      resize: none;
-
-      &:focus{
-        outline: none;
-      }
-
-      &:focus ~ .inputerrormessage,
-      &:valid ~ .inputerrormessage{
-
-      }
-
-      &:valid ~ label{
-        color: $global-clr-green;
-        z-index: 0 !important;
-      }
-    }
-
     .inputerrormessage{
       position: absolute;
       top: 0;
@@ -520,6 +501,12 @@
       font-size: 15px;
       z-index: 0;
       @include transition(all, 0.3s, ease-in-out);
+    }
+
+    .form-row{
+      .inputerrormessage{
+        right: 8px;
+      }
     }
 
     .inputcheckicon{
@@ -537,6 +524,7 @@
         width: 15px;
         height: 15px;
       }
+
       &-check{
         &:before{
           content: "";
@@ -556,12 +544,6 @@
       &::before{
         top: 0;
         left: 12px;
-      }
-    }
-
-    .form-row{
-      .inputerrormessage{
-        right: 8px;
       }
     }
   }
@@ -654,9 +636,6 @@
   .maxwidth350{width: 350px;}
   .maxwidth400{width: 400px;}
   .maxwidth100100{width: 100%;}
-  .btnwidth110{width: 110px;}
-  .btnwidth160{width: 160px;}
-  .btnwidth100100{width: 100%;}
   .labelwidth100100{width: 100%;}
 }
 /* Form UI New */
