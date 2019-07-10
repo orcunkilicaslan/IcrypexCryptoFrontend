@@ -43,6 +43,7 @@
 #### Web Client Area Frontend List
  - [01_Login_Step_1](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/tradepage/01_Login_Step_1.html)
  - [02_Login_Step_2](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/tradepage/02_Login_Step_2.html)
+ - [02_Login_Step_2_SMS](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/tradepage/02_Login_Step_2_SMS.html)
  - [02_Login_Step_3_Forgot_Password](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/tradepage/02_Login_Step_3_Forgot_Password.html)
  - [03_Trader_Home](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/tradepage/03_Trader_Home.html)
  - [04_Easy_Buy_Sell](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/tradepage/04_Easy_Buy_Sell.html)

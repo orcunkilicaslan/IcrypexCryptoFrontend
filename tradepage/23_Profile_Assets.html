@@ -393,7 +393,7 @@
                             </table>
                         </div>
                         <div class="profile-tabs-content-footer">
-                            <a class="btn btn-primary btnwidth160" href="#" title="" rel="bookmark">YENİ ADRES YARAT</a>
+                            <a class="btn btn-primary btnwidth160" href="#" title="" rel="bookmark" data-toggle="modal" data-target="#warning-alert-modal">YENİ ADRES YARAT</a>
                         </div>
                     </div>
                     <div class="tab-pane fade" id="BCH" role="tabpanel" aria-labelledby="tab-BCH">
@@ -403,6 +403,34 @@
             </div>
         </div>
         <!-- Content -->
+
+        <!-- Modal -->
+        <div class="sitemodalalerts">
+            <div id="warning-alert-modal" class="modal fade" tabindex="-1" role="dialog">
+                <div class="modal-dialog modal-sm">
+                    <div class="modal-content">
+                        <div class="modal-body p-4">
+                            <div class="text-center">
+                                <form class="formuinew" action="https://www.icrypex.com/profile/newcryptoaddress" method="post">
+                                    <input type="hidden" name="currency_id" id="currencyId">
+                                    <h4 class="mt-2">Yeni <span id="currency">BTC</span> Adresi Oluşturulacak</h4>
+                                    <p class="mt-3 mb-4">İşlemi Onaylıyor musunuz?</p>
+                                    <div class="form-row">
+                                        <div class="col">
+                                            <button type="button" class="btn btn-danger btnwidth100100" data-dismiss="modal">İPTAL</button>
+                                        </div>
+                                        <div class="col">
+                                            <button type="submit" class="btn btn-success btnwidth100100">ONAY</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal -->
 
     </div>
     </div>
