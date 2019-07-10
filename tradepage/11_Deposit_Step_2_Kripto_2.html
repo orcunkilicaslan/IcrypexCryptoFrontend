@@ -205,13 +205,13 @@
                                                 <label>ADRES</label>
                                                 <div id="adressNumber" class="form-control">1CfaunqrVpcXmpLheUVWeSP1KPsKDha1Nb</div>
                                                 <i id="adressNumberCopyIcon" class="inputcopyicon"></i>
-                                                <a href="javascript:;" class="form-group-inputiconlink" onclick="CopyToClipboard('adressNumber')"><i class="iconplus"></i> <span id="adressNumberCopyText">KOPYALA</span></a>
+                                                <a href="javascript:;" class="form-group-inputiconlink" onclick="copyToClipboard('adressNumber')"><i class="iconplus"></i> <span id="adressNumberCopyText">KOPYALA</span></a>
                                             </div>
                                             <div class="form-group fontsize20px colorsetdisabled maxwidth160">
                                                 <label>DESTINATION TAG</label>
                                                 <div id="destinationTagNumber" class="form-control">10002653</div>
                                                 <i id="destinationTagNumberCopyIcon" class="inputcopyicon"></i>
-                                                <a href="javascript:;" class="form-group-inputiconlink" onclick="CopyToClipboard('destinationTagNumber')"><i class="iconplus"></i> <span id="destinationTagNumberCopyText">KOPYALA</span></a>
+                                                <a href="javascript:;" class="form-group-inputiconlink" onclick="copyToClipboard('destinationTagNumber')"><i class="iconplus"></i> <span id="destinationTagNumberCopyText">KOPYALA</span></a>
                                             </div>
                                         </div>
                                     </div>
@@ -353,26 +353,7 @@
 <script id="script-owl-carousel" src="../assets/vendor/owl.carousel/dist/owl.carousel.min.js"></script>
 <script id="script-plugin-app" src="../assets/dist/js/plugin-app.js"></script>
 <script id="script-tradepage-app" src="../assets/dist/js/tradepage-app.js"></script>
+<script id="script-plugin-custom" src="../assets/cdn/plugin-custom.js"></script>
 <!-- Plugins End -->
-<!-- Copy Text to Clipboard Start -->
-<script type="text/javascript">
-    function CopyToClipboard(containerid){
-        if (document.selection) {
-            var range = document.body.createTextRange();
-            range.moveToElementText(document.getElementById(containerid));
-            range.select().createTextRange();
-            document.execCommand("copy");
-        } else if (window.getSelection) {
-            var range = document.createRange();
-            range.selectNode(document.getElementById(containerid));
-            window.getSelection().addRange(range);
-            document.execCommand("copy");
-            //alert("Kopyalandı: " + range);
-            document.getElementById((containerid)+'CopyText').innerHTML = "KOPYALANDI";
-            document.getElementById((containerid)+'CopyIcon').style.display = "block";
-        }
-    }
-</script>
-<!-- Copy Text to Clipboard End -->
 </body>
 </html>
