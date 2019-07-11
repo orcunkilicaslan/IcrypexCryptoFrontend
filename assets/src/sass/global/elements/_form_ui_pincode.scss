@@ -69,6 +69,7 @@
         letter-spacing: 10px;
       }
 
+      // Mobile
       &-container{
         &.touch{
           .touchwrapper{
@@ -79,16 +80,16 @@
             }
 
             .touchtable td{
-              border-color: transparentize($global-clr-soft-gray, 0.7) !important;
+              border-color: transparent !important;
             }
 
             .pincode-input-text{
               width: 100% !important;
               background: transparent !important;
-              letter-spacing: 44px !important;
+              padding-left: 30px !important;
+              letter-spacing: 10px !important;
               margin: 0 !important;
-              padding-left: 23px !important;
-              text-align: left !important;
+              text-align: center !important;
               box-shadow: none !important;
             }
           }
@@ -96,10 +97,5 @@
       }
     }
   }
-
-
-
-
-
 }
 /* Form UI Pin Code */
