@@ -8,6 +8,9 @@
     <link id="css-plugin" rel="stylesheet" href="../assets/dist/css/plugin.css">
     <link id="css-mainpage-app" rel="stylesheet" href="../assets/dist/css/mainpage-app.css">
     <link id="css-tradepage-app" rel="stylesheet" href="../assets/dist/css/tradepage-app.css">
+    <script id="script-jquery" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script id="script-popper" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script id="script-bootstrap" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </head>
 <body class="dfn-megamenu fullpages tradepage">
 
@@ -396,7 +399,7 @@
                 <li class="nav-item"><a class="nav-link" id="tab-STOPLIMIT" data-toggle="tab" href="#STOPLIMIT" role="tab" aria-controls="STOPLIMIT" aria-selected="false"><span>STOP-LİMİT</span></a></li>
             </ul>
             <div class="trader-order-orders-box order-orders-box tab-content">
-                <div class="tab-pane fade show active" id="MARKET" role="tabpanel" aria-labelledby="tab-MARKET">
+                <div class="tab-pane fade" id="MARKET" role="tabpanel" aria-labelledby="tab-MARKET">
                     <!-- Buy/Sell Start -->
                     <div class="order-orders-column row">
                         <div class="order-orders-buy col-6">
@@ -476,7 +479,7 @@
                     <!-- Info -->
                 </div>
                 <div class="tab-pane fade" id="LIMIT" role="tabpanel" aria-labelledby="tab-LIMIT">LIMIT</div>
-                <div class="tab-pane fade" id="STOPLIMIT" role="tabpanel" aria-labelledby="tab-STOPLIMIT">
+                <div class="tab-pane fade show active" id="STOPLIMIT" role="tabpanel" aria-labelledby="tab-STOPLIMIT">
                     <!-- Buy/Sell Start -->
                     <div class="order-orders-column row">
                         <div class="order-orders-buy col-6">
@@ -489,7 +492,7 @@
                                     <div class="form-group fontsize20px colorsetdarkblue col">
                                         <label>STOP FİYATI</label>
                                         <div class="input-group">
-                                            <input type="text" class="form-control" placeholder="" value="10">
+                                            <input type="text" class="form-control" value="" data-type="currency">
                                             <div class="input-group-append">
                                                 <span class="input-group-text">TRY</span>
                                             </div>
@@ -1154,7 +1157,7 @@
                         <h2 class="footer-tradepage-logo-cryptoexchange">CRYPTO EXCHANGE</h2>
                     </a>
                     <p class="footer-tradepage-address-desc mt-0">Tüm Hakları Saklıdır © 2018-2019<br />Icrypex Crypto Exchange</p>
-                    <p class="footer-tradepage-address-desc">Icrypex Bilişim ve Teknoloji A.Ş.<br />Maslak Meydan Sokak<br />Spring Giz Plaza Kat:19<br />34398 Sarıyer/Maslak/İstanbul</p>
+                    <p class="footer-tradepage-address-desc">Icrypex Bilişim A.Ş.<br />Maslak Meydan Sokak<br />Spring Giz Plaza Kat:19<br />34398 Sarıyer/Maslak/İstanbul</p>
                     <p class="footer-tradepage-address-desc">Müşteri Hizmetleri: <a href="tel:08502551079" title="Müşteri Hizmetleri" rel="external nofollow">0850 255 1079</a></p>
                 </div>
             </div>
@@ -1224,7 +1227,6 @@
                 </div>
             </div>
             <!-- Navigation -->
-
         </div>
     </div>
     <!-- Footer Top -->
@@ -1241,14 +1243,11 @@
 </footer>
 <!-- Footer End -->
 
-<!-- Javascript Start -->
-<script id="script-jquery" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script id="script-popper" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script id="script-bootstrap" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-<!-- Javascript End -->
 <!-- Plugins Start -->
 <script id="script-plugin-app" src="../assets/dist/js/plugin-app.js"></script>
+<script id="script-maskedinput" src="../assets/vendor/jquery.maskedinput/src/jquery.maskedinput.js"></script>
 <script id="script-tradepage-app" src="../assets/dist/js/tradepage-app.js"></script>
+<script id="script-plugin-custom" src="../assets/cdn/plugin-custom.js"></script>
 <!-- Plugins End -->
 </body>
 </html>
