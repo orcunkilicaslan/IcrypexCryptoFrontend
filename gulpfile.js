@@ -32,7 +32,12 @@ gulp.task('sass-bootstrap', () => {
       .pipe(autoprefixer({
           flexbox: 'no-2009'
       }))
-      .pipe(cssnano())
+      .pipe(cssnano({
+          reduceIdents: false,
+          discardComments: {
+              removeAll: true
+          }
+      }))
       .pipe(concat('bootstrap.css'))
       .pipe(sourcemaps.write('.'))
       .pipe(gulp.dest(folder_dist_main + 'css'))
@@ -52,7 +57,12 @@ gulp.task('sass-xtras', () => {
         .pipe(autoprefixer({
             flexbox: 'no-2009'
         }))
-        .pipe(cssnano())
+        .pipe(cssnano({
+            reduceIdents: false,
+            discardComments: {
+                removeAll: true
+            }
+        }))
         .pipe(concat('xtras.css'))
         .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest(folder_dist_main + 'css'))
@@ -74,7 +84,12 @@ gulp.task('sass-plugin', () => {
       .pipe(autoprefixer({
           flexbox: 'no-2009'
       }))
-      .pipe(cssnano())
+      .pipe(cssnano({
+          reduceIdents: false,
+          discardComments: {
+              removeAll: true
+          }
+      }))
       .pipe(concat('plugin.css'))
       .pipe(sourcemaps.write('.'))
       .pipe(gulp.dest(folder_dist_main + 'css'))
@@ -159,7 +174,12 @@ gulp.task('sass-tradepage', () => {
         .pipe(autoprefixer({
             flexbox: 'no-2009'
         }))
-        .pipe(cssnano())
+        .pipe(cssnano({
+            reduceIdents: false,
+            discardComments: {
+                removeAll: true
+            }
+        }))
         .pipe(concat('tradepage-app.css'))
         .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest(folder_dist_main + 'css'))
