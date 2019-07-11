@@ -180,7 +180,7 @@
 
                     <!-- Step Content -->
                     <div class="depositandwithdraw-flex-wrapper-column-middle container depositandwithdraw-tabcont">
-                        <form class="stepwizard-tabcont-form formuinew" autocomplete="off" novalidate>
+                        <form class="stepwizard-tabcont-form formuinew formlabelinfo" autocomplete="off" novalidate>
 
                             <!-- Title -->
                             <h2 class="columntitle columntitle-lg bottomborder fullborder titlecenter">KRİPTO PARA İLE PARA YATIRMA TALEBİNİZ ALINDI</h2>
@@ -198,20 +198,20 @@
                                             <div class="stepwizard-tabcont-infoarea-qrcode-code-svg">
                                                 <img src="../assets/img/tradepage/elements/Qr_Code_Sample.svg" alt="QR" width="144" height="144" />
                                             </div>
-                                            <a href="#" class="form-group-inputiconlink"><i class="iconplus"></i> DAHA BÜYÜK</a>
+                                            <a href="#" class="form-group-inputiconlink" data-toggle="modal" data-target="#QrCodeImage"><i class="iconplus"></i> DAHA BÜYÜK</a>
                                         </div>
                                         <div class="stepwizard-tabcont-infoarea-qrcode-form">
                                             <div class="form-group fontsize20px colorsetdisabled maxwidth350">
                                                 <label>ADRES</label>
                                                 <div id="adressNumber" class="form-control">1CfaunqrVpcXmpLheUVWeSP1KPsKDha1Nb</div>
                                                 <i id="adressNumberCopyIcon" class="inputcopyicon"></i>
-                                                <a href="javascript:;" class="form-group-inputiconlink" onclick="CopyToClipboard('adressNumber')"><i class="iconplus"></i> <span id="adressNumberCopyText">KOPYALA</span></a>
+                                                <a href="javascript:;" class="form-group-inputiconlink" onclick="copyToClipboard('adressNumber')"><i class="iconplus"></i> <span id="adressNumberCopyText">KOPYALA</span></a>
                                             </div>
                                             <div class="form-group fontsize20px colorsetdisabled maxwidth160">
                                                 <label>DESTINATION TAG</label>
                                                 <div id="destinationTagNumber" class="form-control">10002653</div>
                                                 <i id="destinationTagNumberCopyIcon" class="inputcopyicon"></i>
-                                                <a href="javascript:;" class="form-group-inputiconlink" onclick="CopyToClipboard('destinationTagNumber')"><i class="iconplus"></i> <span id="destinationTagNumberCopyText">KOPYALA</span></a>
+                                                <a href="javascript:;" class="form-group-inputiconlink" onclick="copyToClipboard('destinationTagNumber')"><i class="iconplus"></i> <span id="destinationTagNumberCopyText">KOPYALA</span></a>
                                             </div>
                                         </div>
                                     </div>
@@ -223,6 +223,20 @@
                                 </div>
                             </div>
                             <!-- Form -->
+                            <!-- Modal Image -->
+                            <div class="sitemodal">
+                                <div class="imagemodal modal fade" id="QrCodeImage" tabindex="-1">
+                                    <div class="modal-dialog modal-dialog-centered">
+                                        <div class="modal-content">
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                            <div class="modal-body sitebgwhite p-3">
+                                                <img src="../assets/img/tradepage/elements/Qr_Code_Sample.svg" alt="BTC COM" width="500" height="500" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Modal Image -->
                             <!-- Button -->
                             <div class="stepwizard-tabcont-form-btn">
                                 <div class="site-button-formbottom-btn info">
@@ -353,26 +367,7 @@
 <script id="script-owl-carousel" src="../assets/vendor/owl.carousel/dist/owl.carousel.min.js"></script>
 <script id="script-plugin-app" src="../assets/dist/js/plugin-app.js"></script>
 <script id="script-tradepage-app" src="../assets/dist/js/tradepage-app.js"></script>
+<script id="script-plugin-custom" src="../assets/cdn/plugin-custom.js"></script>
 <!-- Plugins End -->
-<!-- Copy Text to Clipboard Start -->
-<script type="text/javascript">
-    function CopyToClipboard(containerid){
-        if (document.selection) {
-            var range = document.body.createTextRange();
-            range.moveToElementText(document.getElementById(containerid));
-            range.select().createTextRange();
-            document.execCommand("copy");
-        } else if (window.getSelection) {
-            var range = document.createRange();
-            range.selectNode(document.getElementById(containerid));
-            window.getSelection().addRange(range);
-            document.execCommand("copy");
-            //alert("Kopyalandı: " + range);
-            document.getElementById((containerid)+'CopyText').innerHTML = "KOPYALANDI";
-            document.getElementById((containerid)+'CopyIcon').style.display = "block";
-        }
-    }
-</script>
-<!-- Copy Text to Clipboard End -->
 </body>
 </html>
