@@ -90,16 +90,8 @@
         padding: 15px;
         padding-bottom: 0;
 
-        .row > div[class*="col"]{
-          padding-left: 7px;
-          padding-right: 7px;
-
-          &:first-child{
-            padding-left: 15px;
-          }
-          &:last-child{
-            padding-right: 15px;
-          }
+        .boxcolumn-boxtitle{
+          margin-bottom: 15px;
         }
       }
 
