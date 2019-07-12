@@ -181,7 +181,7 @@ class ContactUsForm {
                     this.setContactUsFormErrorMessages(messageIconSelector,"", "none");
                     this.setContactUsFormErrorInput(inputIdSelector,"#b82c0d");
                 }else{
-                    this.setContactUsFormMessages(messageSpanSelector, "");
+                    this.setContactUsFormErrorMessages(messageSpanSelector, "");
                     this.setContactUsFormErrorMessages(messageIconSelector,"", "block");
                     this.setContactUsFormErrorInput(inputIdSelector,"#70a800");
                 }
