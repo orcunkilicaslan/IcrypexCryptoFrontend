@@ -1,7 +1,6 @@
 
 .cookies-notification{
-
-  //display: none;
+  @include transition(bottom, 0.3s, ease-in-out);
 
   &.alert{
     background-color: transparentize($global-sitebg-darkblue01, 0.10) !important;
@@ -17,6 +16,14 @@
     right: 0;
     bottom: 0;
     z-index: 2;
+  }
+
+  &.fade{
+    opacity: 1;
+  }
+
+  &.show{
+    bottom: 0 !important;
   }
 
   &-body{

@@ -15,7 +15,7 @@ $(window).scroll(function () {
 });
 /* Header Nav Fixed */
 
-/* Header Bottom Space */
+/* Header Bottom Space and Cookies Notification Messages */
 $(window).resize(function() {
     var headerHeight = $("header.header").height();
     $(".header-spacebottom").height(headerHeight);
@@ -26,8 +26,13 @@ $(".header .header-alert .close").click(function(){
     $(".header-spacebottom").height(headNavigation);
 });
 
+$(window).resize(function() {
+    var cookiesHeight = $(".cookies-notification").height();
+    $(".cookies-notification").css("bottom", ("-"+cookiesHeight)+"px");
+});
+
 $(window).trigger('resize');
-/* Header Bottom Space */
+/* Header Bottom Space Cookies Notification Messages */
 
 /* Navbar Menu */
 $(function() {
