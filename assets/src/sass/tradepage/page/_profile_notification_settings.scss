@@ -3,10 +3,16 @@
 
   &-notification{
 
+    &-alert{
+      .alert{
+        margin-bottom: 15px;
+      }
+    }
+
     &-settings{
+      //max-width: 800px;
 
       &-table{
-        max-width: 800px;
 
         .sitebggraylight{
           width: 140px;
@@ -35,13 +41,17 @@
 
         thead{
 
-          th{
-            font-size: 17px;
-          }
-
           tr:first-child{
             th{
               font-weight: 500;
+            }
+          }
+
+          th{
+            font-size: 17px;
+
+            &:last-child{
+              display: none;
             }
           }
         }

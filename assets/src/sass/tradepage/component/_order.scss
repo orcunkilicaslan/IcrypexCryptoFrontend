@@ -1,6 +1,7 @@
 $globalSvgIconImgPath : "../../img/global/svg";
 
 .order{
+  $orderclassname: &;
 
   /* Orders */
   &-orders{
@@ -29,9 +30,15 @@ $globalSvgIconImgPath : "../../img/global/svg";
       }
     }
 
+    &-alert{
+      margin: 0;
+      padding: 18px 16px 0;
+    }
+
     &-column{
       margin: 0;
       padding: 16px;
+      padding-top: 0;
       position: relative;
 
       div[class*="col-"]{

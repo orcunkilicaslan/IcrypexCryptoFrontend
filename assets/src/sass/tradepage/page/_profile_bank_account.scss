@@ -4,14 +4,8 @@
   &-bank-account{
     max-width: 750px;
 
-    &-tablebox{
-
-      div[class*=boxtitle] {
-        margin-bottom: 0;
-      }
-    }
-
     &-table{
+      margin-top: -10px;
 
       thead th{
 
@@ -25,6 +19,7 @@
         td{
           padding-top: 2px;
           padding-bottom: 2px;
+          text-transform: uppercase;
         }
 
         tr:last-child{

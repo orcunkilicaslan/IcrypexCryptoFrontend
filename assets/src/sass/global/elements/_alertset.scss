@@ -4,10 +4,14 @@
   line-height: 1.2;
   $alertclassname: &;
 
+  &:last-child{
+    //margin-bottom: 0;
+  }
+
   &-primary{
     color: $global-clr-dark-blue !important;
     background-color: transparentize($global-clr-dark-blue, 0.95) !important;
-    border-color: transparentize($global-clr-dark-blue, 0.70) !important;
+    border-color: transparentize($global-clr-dark-blue, 0.50) !important;
     &#{$alertclassname}-dismissible{
       .close{
         &::before,
@@ -20,7 +24,7 @@
   &-secondary{
     color: $global-clr-soft-gray !important;
     background-color: transparentize($global-clr-soft-gray, 0.95) !important;
-    border-color: transparentize($global-clr-soft-gray, 0.70) !important;
+    border-color: transparentize($global-clr-soft-gray, 0.50) !important;
     &#{$alertclassname}-dismissible{
       .close{
         &::before,
@@ -33,7 +37,7 @@
   &-success{
     color: $global-clr-green !important;
     background-color: transparentize($global-clr-green, 0.95) !important;
-    border-color: transparentize($global-clr-green, 0.70) !important;
+    border-color: transparentize($global-clr-green, 0.50) !important;
     &#{$alertclassname}-dismissible{
       .close{
         &::before,
@@ -46,7 +50,7 @@
   &-danger{
     color: $global-clr-red !important;
     background-color: transparentize($global-clr-red, 0.95) !important;
-    border-color: transparentize($global-clr-red, 0.70) !important;
+    border-color: transparentize($global-clr-red, 0.50) !important;
     &#{$alertclassname}-dismissible{
       .close{
         &::before,
@@ -59,7 +63,7 @@
   &-info{
     color: $global-clr-soft-blue !important;
     background-color: transparentize($global-clr-soft-blue, 0.95) !important;
-    border-color: transparentize($global-clr-soft-blue, 0.70) !important;
+    border-color: transparentize($global-clr-soft-blue, 0.50) !important;
     &#{$alertclassname}-dismissible{
       .close{
         &::before,
@@ -72,7 +76,7 @@
   &-warning{
     color: $global-clr-orange !important;
     background-color: transparentize($global-clr-orange, 0.95) !important;
-    border-color: transparentize($global-clr-orange, 0.70) !important;
+    border-color: transparentize($global-clr-orange, 0.30) !important;
     &#{$alertclassname}-dismissible{
       .close{
         &::before,
@@ -85,7 +89,7 @@
   &-light{
     color: $global-clr-soft-gray !important;
     background-color: transparentize($global-clr-white, 0.95) !important;
-    border-color: transparentize($global-clr-soft-gray, 0.70) !important;
+    border-color: transparentize($global-clr-soft-gray, 0.50) !important;
     &#{$alertclassname}-dismissible{
       .close{
         &::before,
@@ -98,7 +102,7 @@
   &-dark{
     color: $global-clr-soft-gray !important;
     background-color: transparentize($global-clr-soft-gray, 0.95) !important;
-    border-color: transparentize($global-clr-soft-gray, 0.70) !important;
+    border-color: transparentize($global-clr-soft-gray, 0.50) !important;
     &#{$alertclassname}-dismissible{
       .close{
         &::before,
@@ -197,20 +201,24 @@
         @include scale(0.5);
       }
 
-      #{$alertclassname}-heading,
-      p{
-        display: inline;
-      }
       #{$alertclassname}-heading{
         font-size: 17px;
         margin: 0;
         margin-right: 3px;
       }
 
-    }
+      #{$alertclassname}-icon,
+      #{$alertclassname}-big-desc{
+        margin-left: -10px;
+      }
 
-    &#{$alertclassname}-dismissible{
-      padding-right: 50px !important;
+      #{$alertclassname}-big-desc{
+        margin-top: -5px;
+      }
+
+      &#{$alertclassname}-dismissible{
+        padding-right: 30px !important;
+      }
     }
   }
 }

@@ -503,6 +503,14 @@
       text-transform: uppercase;
       z-index: 0;
       @include transition(all, 0.3s, ease-in-out);
+
+      &.errormsgtopcenter{
+        position: inherit;
+        width: 100%;
+        display: block;
+        margin-bottom: 7px;
+        text-align: center;
+      }
     }
 
     .form-row{
@@ -629,6 +637,11 @@
         @include rotate(90);
       }
     }
+  }
+
+  .g-recaptcha{
+    display: flex;
+    justify-content: center;
   }
 
   .maxwidth90{width: 90px;}
