@@ -80,6 +80,10 @@ $globalSvgIconImgPath : "../../img/global/svg";
         &-volume{
           display: block;
 
+          span[class*="sitecolor"]{
+            font-weight: normal;
+          }
+
           sup{
             font-size: 12px;
             font-weight: 900;

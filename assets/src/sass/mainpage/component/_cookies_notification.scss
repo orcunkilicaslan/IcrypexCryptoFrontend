@@ -4,8 +4,8 @@
   //display: none;
 
   &.alert{
-    background-color: transparentize($global-sitebg-darkblue01, 0.10);
-    color: $global-clr-white;
+    background-color: transparentize($global-sitebg-darkblue01, 0.10) !important;
+    color: $global-clr-white !important;
     font-size: 17px;
     position: fixed;
     width: 100%;
