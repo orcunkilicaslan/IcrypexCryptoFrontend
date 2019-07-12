@@ -185,6 +185,11 @@
     padding: 5px !important;
 
     &-small{
+
+      #{$alertclassname}-flex{
+        height: 70px;
+      }
+
       #{$alertclassname}-icon{
         width: 90px;
         height: 90px;
