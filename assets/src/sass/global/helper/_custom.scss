@@ -1,7 +1,49 @@
 /* Custom */
+*{outline: 0 !important;}
+
+body{
+  font-size: $global-font-size;
+  background-color: $global-clr-white;
+}
+body, input, textarea, select, button {
+  font-family: $global-font-family-barlow !important;
+}
+h1,h2,h3,h4,h5,h6{
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+strong, b{
+  font-weight: 500;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+img, svg {
+  vertical-align: middle;
+}
+
+.form-control{
+  font-size: $global-font-size;
+}
 
 p{
   hyphens: none !important;
+}
+
+a:hover{
+  text-decoration: none !important;
+}
+
+figure{
+  margin: 0 !important;
+}
+
+input, select, textarea{
+  resize:none !important;
 }
 
 .progress{
@@ -20,6 +62,49 @@ p{
   &:hover{
     color: transparentize($global-clr-soft-blue, 0.3) !important;
     text-decoration: underline !important;
+  }
+}
+
+.fullpages{
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  main, section{flex: 1;}
+}
+
+.container-1890{
+  //max-width: 1890px;
+}
+
+.maincont{
+  &-left{
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  &-right{
+    padding-right: 0;
+  }
+}
+
+.content{
+  &-list{
+    &-item{
+      position: relative;
+      padding-left: 10px;
+      &::before{
+        content: "";
+        position: absolute;
+        background-image: url(#{$globalSvgIconImgPath}/Arrow_Li.svg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: contain;
+        width: 6px;
+        height: 12px;
+        top: calc(50% - 6px);
+        left: 0;
+      }
+    }
   }
 }
 /* Custom */

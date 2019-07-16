@@ -1,0 +1,163 @@
+
+.dropzone{
+  background-color: $global-clr-light-gray !important;
+  min-width: 160px;
+  min-height: 170px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px dashed transparentize($global-clr-soft-gray, 0.7) !important;
+  padding: 10px;
+
+  .dz{
+
+    &-default{
+      margin: 0;
+    }
+    &-message{
+      color: $global-clr-soft-gray;
+      font-size: 15px;
+      line-height: 1.15;
+
+      span{
+        background-color: transparent !important;
+      }
+
+      .dropzone{
+        &-formbigtext{
+          display: block;
+        }
+        &-formsmalltext{
+          display: block;
+        }
+      }
+
+    }
+    &-preview{
+      background-color: transparent !important;
+      width: 100%;
+      height: 100px;
+      margin: 0;
+    }
+    &-details{
+      color: $global-clr-soft-gray !important;
+      font-size: 15px !important;
+      opacity: 1 !important;
+      padding: 0 !important;
+      top: auto !important;
+      bottom: 10px !important;
+
+      span{
+        background-color: transparent !important;
+      }
+    }
+
+    &-filename{
+      span{
+        display: block;
+        overflow: hidden;
+      }
+    }
+
+    &-size{
+      display: none;
+    }
+    &-image{
+      display: none !important;
+      img{
+        display: none !important;
+      }
+    }
+
+    &-progress{
+      background: transparent !important;
+      width: 36px !important;
+      height: 36px !important;
+      top: 10px !important;
+      left: calc(50% - 18px) !important;
+      margin:0 auto !important;
+      border: 1px solid lighten($global-clr-soft-gray, 25%);
+      @include border-radius(52px !important);
+      @include transition(all, 0.4s, linear);
+    }
+
+    &-success-mark,
+    &-error-mark{
+      background: transparent !important;
+      width:36px !important;
+      height:36px !important;
+      display:block;
+      margin:0 auto !important;
+      position:relative;
+      z-index: 1;
+      top: 10px !important;
+      left: calc(50% - 18px) !important;
+      border: 1px solid lighten($global-clr-soft-gray, 25%);
+      @include border-radius(52px);
+      @include transition(all, 0.4s, linear);
+
+      svg{
+        display: none !important;
+      }
+      &::before,
+      &::after{
+        content:"";
+        position:absolute;
+      }
+    }
+
+    &-success-mark{
+      &::after{
+        width: 16px;
+        height: 8px;
+        top: 12px;
+        left: 9px;
+        border-bottom:2px solid $global-clr-green;
+        border-left:2px solid $global-clr-green;
+        @include rotate(-50);
+      }
+    }
+
+    &-error-mark{
+      &::before,
+      &::after{
+        content: "";
+        position: absolute;
+        background-color: $global-clr-red;
+        width: 18px;
+        height: 2px;
+        left: calc(50% - 9px);
+        top: calc(50% - 1px);
+      }
+
+      &::before{
+        @include rotate(45);
+      }
+      &::after{
+        @include rotate(135);
+      }
+    }
+
+    &-error-message{
+      width: calc(100% + 20px) !important;
+
+      &::after{
+        left: calc(50% - 3px) !important;
+      }
+    }
+
+  }
+
+  i[class*="icon-svg"]{
+    display: block !important;
+    margin: auto !important;
+    margin-bottom: 10px !important;
+  }
+
+  i[class*="profilefileuploaddragdrop"]{
+    width: 25px;
+    height: 35px;
+  }
+
+}
+

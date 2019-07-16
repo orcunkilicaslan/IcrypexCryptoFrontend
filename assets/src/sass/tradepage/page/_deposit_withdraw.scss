@@ -45,11 +45,11 @@
 
     .columntitle{
       color: $global-clr-dark-blue;
+      font-weight: normal;
       &::before{
         max-width: inherit;
       }
     }
-
   }
 
   &-latesttransactions{

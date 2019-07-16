@@ -38,6 +38,15 @@
       position: relative;
       text-transform: capitalize;
 
+      a{
+        color: $global-clr-dark-blue;
+        @include transition(color, 0.3s, ease-in-out);
+
+        &:hover{
+          color: $global-clr-soft-blue;
+        }
+      }
+
       + .breadcrumb-item{
         padding-left: 24px;
 

@@ -343,6 +343,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
     .columntitle{
       color: $global-clr-white;
+      font-weight: 300;
       text-align: center;
       &.bottomborder{
         display: initial;
@@ -673,6 +674,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
     .columntitle{
       color: $global-clr-white;
+      font-weight: 300;
       text-align: center;
       text-transform: uppercase;
 
@@ -977,6 +979,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
     .container > .columntitle{
       color: $global-clr-dark-blue;
+      font-weight: normal;
       margin-bottom: 30px;
 
       &::before{
@@ -1106,6 +1109,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
       .columntitle{
         color: $global-clr-white;
+        font-weight: 300;
         &::before{
           width: 200px;
           height: 2px;
@@ -1231,6 +1235,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
       .columntitle{
         color: $global-clr-dark-blue;
+        font-weight: normal;
         &::before{
           width: 200px;
           height: 2px;

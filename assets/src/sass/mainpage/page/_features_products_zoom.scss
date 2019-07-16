@@ -40,6 +40,15 @@
           position: relative;
           font-size: 17px;
 
+          a{
+            color: $global-clr-dark-blue;
+            @include transition(color, 0.3s, ease-in-out);
+
+            &:hover{
+              color: $global-clr-soft-blue;
+            }
+          }
+
           &::before {
             content: "";
             background-color: $global-clr-soft-blue;
