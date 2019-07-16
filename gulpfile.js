@@ -189,7 +189,8 @@ gulp.task('sass-tradepage', () => {
 gulp.task('script-tradepage', () => {
     return gulp.src([
         folder_src_main + 'script/tradepage/**/app.js',
-        folder_src_main + 'script/tradepage/**/deposit-withdraw.js'
+        folder_src_main + 'script/tradepage/**/deposit-withdraw.js',
+        folder_src_main + 'script/tradepage/**/validations-profile-login-settings.js'
     ])
         .pipe(plumber())
         .pipe(webpack({

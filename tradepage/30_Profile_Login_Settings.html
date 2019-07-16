@@ -249,19 +249,22 @@
                 <div class="boxcolumn-boxtitle">
                     <h3 class="boxcolumn-boxtitle-title">ŞİFRE DEĞİŞTİR</h3>
                 </div>
-                <form class="formuinew" autocomplete="off" novalidate>
+                <form class="formuinew formlabelvalidation" autocomplete="off" novalidate>
                     <div class="form-group widthpercent50pr8 colorsetdarkblue">
                         <label>ESKİ ŞİFRE</label>
-                        <input type="password" class="form-control" placeholder="" value="" name="oldpassword">
+                        <input id="inputOldPasswordId" type="password" class="form-control" placeholder="" value="" name="oldpassword" autocomplete="off" required onkeyup="profilesettingsform.verifyContent('inputOldPasswordProcess','inputOldPasswordId','msgOldPasswordId')" onfocusout="profilesettingsform.verifyContentErrorDelete('inputOldPasswordProcess','inputOldPasswordId','msgOldPasswordId')">
+                        <span class="inputerrormessage" id="msgOldPasswordId"></span>
                     </div>
                     <div class="form-row">
                         <div class="form-group colorsetdarkblue col">
                             <label>YENİ ŞİFRE</label>
-                            <input type="password" class="form-control" placeholder="" value="" name="password">
+                            <input id="inputNewPasswordId" type="password" class="form-control" placeholder="" value="" name="password" autocomplete="off" required onkeyup="profilesettingsform.verifyContent('inputNewPasswordProcess','inputNewPasswordId','msgNewPasswordId')" onfocusout="profilesettingsform.verifyContentErrorDelete('inputNewPasswordProcess','inputNewPasswordId','msgNewPasswordId')">
+                            <span class="inputerrormessage" id="msgNewPasswordId"></span>
                         </div>
                         <div class="form-group colorsetdarkblue col">
                             <label>YENİ ŞİFRE TEKRAR</label>
-                            <input type="password" class="form-control" placeholder="" value="" name="confirm">
+                            <input id="inputNewRePasswordId" type="password" class="form-control" placeholder="" value="" name="confirm" autocomplete="off" required onkeyup="profilesettingsform.verifyContent('inputNewRePasswordProcess','inputNewRePasswordId','msgNewRePasswordId')" onfocusout="profilesettingsform.verifyContentErrorDelete('inputNewRePasswordProcess','inputNewRePasswordId','msgNewRePasswordId')">
+                            <span class="inputerrormessage" id="msgNewRePasswordId"></span>
                         </div>
                         <div class="formrowinfotext"><i class="icon-svg icon-svg-profileinformationyellow"></i> 8 karakterden oluşmalı ve en az bir küçük harf, bir büyük harf ile bir sayı içermelidir.</div>
                     </div>
@@ -343,19 +346,22 @@
                 <div class="boxcolumn-boxtitle">
                     <h3 class="boxcolumn-boxtitle-title">GÜVENLİK KELİMESİNİ DEĞİŞTİR</h3>
                 </div>
-                <form class="formuinew" autocomplete="off" novalidate>
+                <form class="formuinew formlabelvalidation" autocomplete="off" novalidate>
                     <div class="form-group widthpercent50pr8 colorsetdarkblue">
                         <label>ESKİ GÜVENLİK KELİMESİ</label>
-                        <input type="text" class="form-control" placeholder="" value="" name="oldkeyword">
+                        <input id="inputOldSecurityId" type="text" class="form-control" placeholder="" value="" name="oldkeyword" required onkeyup="profilesettingsform.verifyContent('inputOldSecurityProcess','inputOldSecurityId','msgOldSecurityId')" onfocusout="profilesettingsform.verifyContentErrorDelete('inputOldSecurityProcess','inputOldSecurityId','msgOldSecurityId')">
+                        <span class="inputerrormessage errormsgbottomleft" id="msgOldSecurityId"></span>
                     </div>
                     <div class="form-row">
                         <div class="form-group colorsetdarkblue col">
                             <label>YENİ GÜVENLİK KELİMESİ</label>
-                            <input type="text" class="form-control" placeholder="" value="" name="newkeyword">
+                            <input id="inputNewSecurityId" type="text" class="form-control" placeholder="" value="" name="newkeyword" autocomplete="off" required onkeyup="profilesettingsform.verifyContent('inputNewSecurityProcess','inputNewSecurityId','msgNewSecurityId')" onfocusout="profilesettingsform.verifyContentErrorDelete('inputNewSecurityProcess','inputNewSecurityId','msgNewSecurityId')">
+                            <span class="inputerrormessage errormsgbottomleft" id="msgNewSecurityId"></span>
                         </div>
                         <div class="form-group colorsetdarkblue col">
                             <label>YENİ GÜVENLİK KELİMESİ TEKRAR</label>
-                            <input type="text" class="form-control" placeholder="" value="" name="confirmkeyword">
+                            <input id="inputNewReSecurityId" type="text" class="form-control" placeholder="" value="" name="confirmkeyword" autocomplete="off" required onkeyup="profilesettingsform.verifyContent('inputNewReSecurityProcess','inputNewReSecurityId','msgNewReSecurityId')" onfocusout="profilesettingsform.verifyContentErrorDelete('inputNewReSecurityProcess','inputNewReSecurityId','msgNewReSecurityId')">
+                            <span class="inputerrormessage errormsgbottomleft" id="msgNewReSecurityId"></span>
                         </div>
                     </div>
                     <div class="form-group widthpercent50pr8 colorsetdarkblue">
@@ -583,6 +589,7 @@
 <script id="script-owl-carousel" src="../assets/vendor/owl.carousel/dist/owl.carousel.min.js"></script>
 <script id="script-dropzone" src="../assets/vendor/dropzone/dist/dropzone.js"></script>
 <script id="script-plugin-app" src="../assets/dist/js/plugin-app.js"></script>
+<script id="script-mainpage-app" src="../assets/dist/js/mainpage-app.js"></script>
 <script id="script-tradepage-app" src="../assets/dist/js/tradepage-app.js"></script>
 <!-- Plugins End -->
 </body>
