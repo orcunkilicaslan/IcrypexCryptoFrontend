@@ -29,6 +29,7 @@
           background-color: $global-clr-soft-gray;
         }
         &-link{
+          color: transparentize($global-clr-white, 0.50);
           border-color: $global-clr-white;
           border-style: solid;
           border-right-width: 2px;

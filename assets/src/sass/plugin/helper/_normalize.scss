@@ -15,11 +15,6 @@ article, aside, footer, header, nav, section {
   display: block;
 }
 
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
-}
-
 figcaption, figure, main {
   display: block;
 }
@@ -48,15 +43,6 @@ abbr[title] {
   border-bottom: none;
   text-decoration: underline;
   text-decoration: underline dotted;
-}
-
-b,
-strong {
-  font-weight: inherit;
-}
-
-b, strong {
-  font-weight: bolder;
 }
 
 code, kbd, samp {

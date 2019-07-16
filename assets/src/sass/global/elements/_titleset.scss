@@ -2,7 +2,7 @@
 /* Title Border Bottom */
 .columntitle{
   width: 100%;
-  font-weight: normal;
+  font-weight: 500;
   letter-spacing: -0.2px;
   margin: 0;
   padding: 0;
@@ -75,6 +75,7 @@
 
   &-xs{
     font-size: 17px;
+    font-weight: normal;
 
     @include ReSassResponsive(1400){
       font-size: 16px;
