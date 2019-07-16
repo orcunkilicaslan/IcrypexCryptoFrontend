@@ -181,6 +181,47 @@ class ProfileSettingsLoginForm {
 window.profilesettingsform = new ProfileSettingsLoginForm();
 /* Profile Login Settings Form */
 
+
+/* Profile Login Settings Button Validation */
+jQuery(function($) {
+
+    if($('.profile-box').hasClass('changepasswordandsecurity')){
+        window.onload = function(e){
+            if($('#inputOldPasswordId').val().trim() === "" && $('#inputNewPasswordId').val().trim() === "" && $('#inputNewRePasswordId').val().trim() === ""){
+                $('#ProfileNewPasswordTooltip').tooltip({container: '.profile-login-settings-tooltiparea', title: 'Bilgileri Eksiksiz Giriniz', placement: 'right'});
+                $('#ProfileNewPasswordButton').addClass('btn-secondary').removeClass('btn-success').attr("disabled", true);
+            }
+            if($('#inputOldSecurityId').val().trim() === "" && $('#inputNewSecurityId').val().trim() === "" && $('#inputNewReSecurityId').val().trim() === ""){
+                $('#ProfileNewSecurityTooltip').tooltip({container: '.profile-login-settings-tooltiparea', title: 'Bilgileri Eksiksiz Giriniz', placement: 'right'});
+                $('#ProfileNewSecurityButton').addClass('btn-secondary').removeClass('btn-success').attr("disabled", true);
+            }
+        }
+    }
+
+    $('.changepassword').keyup(function() {
+        if( $('#inputOldPasswordId').val().trim().length >= 8 && $('#inputNewPasswordId').val().trim().length >= 8 && ($('#inputNewPasswordId').val().trim() === $('#inputNewRePasswordId').val().trim()) ){
+            $('#ProfileNewPasswordTooltip').tooltip('disable');
+            $('#ProfileNewPasswordButton').addClass('btn-success').removeClass('btn-secondary').attr("disabled", false);
+        }else{
+            $('#ProfileNewPasswordTooltip').tooltip({container: '.profile-login-settings-tooltiparea', title: 'Bilgileri Eksiksiz Giriniz', placement: 'right'});
+            $('#ProfileNewPasswordButton').addClass('btn-secondary').removeClass('btn-success').attr("disabled", true);
+        }
+    });
+
+    $('.changesecurity').keyup(function() {
+        if( $('#inputOldSecurityId').val().trim().length >= 5 && $('#inputNewSecurityId').val().trim().length >= 5 && ($('#inputNewSecurityId').val().trim() === $('#inputNewReSecurityId').val().trim()) ){
+            $('#ProfileNewSecurityTooltip').tooltip('disable');
+            $('#ProfileNewSecurityButton').addClass('btn-success').removeClass('btn-secondary').attr("disabled", false);
+        }else{
+            $('#ProfileNewSecurityTooltip').tooltip({container: '.profile-login-settings-tooltiparea', title: 'Bilgileri Eksiksiz Giriniz', placement: 'right'});
+            $('#ProfileNewSecurityButton').addClass('btn-secondary').removeClass('btn-success').attr("disabled", true);
+        }
+    });
+
+});
+/* Profile Login Settings Button Validation */
+
+
 /* Loading Info */
 console.log("Tradepage App Profile Login Settings Login Form Validations Javascript Loading Successful");
 /* Loading Info */

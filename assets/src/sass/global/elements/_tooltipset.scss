@@ -21,7 +21,7 @@
 }
 
 .bs-tooltip-top{
-  padding: 10px 0;
+  padding: 8px 0;
   .arrow{
     bottom: 4px;
     &::before {
@@ -32,7 +32,9 @@
 }
 
 .bs-tooltip-right{
+  padding: 0 8px;
   .arrow{
+    left: 4px;
     &::before {
       border-right-color: transparentize($global-clr-btn-blue, 0.6);
     }
@@ -40,7 +42,7 @@
 }
 
 .bs-tooltip-bottom {
-  padding: 10px 0;
+  padding: 8px 0;
   .arrow{
     top: 4px;
     &::before {
@@ -50,7 +52,9 @@
 }
 
 .bs-tooltip-left {
+  padding: 0 8px;
   .arrow{
+    right: 4px;
     &::before {
       border-left-color: transparentize($global-clr-btn-blue, 0.6);
     }
