@@ -7,6 +7,10 @@ assets/dist/css/plugin.css.map
 assets/dist/css/tradepage-app.css.map
 assets/dist/css/xtras.css.map
 
+assets/dist/js/mainpage-app.js.map
+assets/dist/js/plugin-app.js.map
+assets/dist/js/tradepage-app.js.map
+
 assets/vendor/bootstrap/README.md
 assets/vendor/bootstrap/package.json
 assets/vendor/bootstrap/dist/
