@@ -206,7 +206,7 @@
                     </ul>
                 </div>
                 <div class="header-navigation-search">
-                    <form class="header-search">
+                    <form class="header-search" autocomplete="off" novalidate>
                         <input class="header-search-input" type="search" name="headersearch" placeholder="ARA" />
                         <button class="header-search-button" type="submit"></button>
                     </form>
@@ -223,162 +223,273 @@
 
 <!-- Header Top Start -->
 <section class="homepage-top">
-<div class="container">
-<div class="row">
-
-    <!-- Header Top Left -->
-    <div class="homepage-top-left col-xl-9">
-        <!-- Slider -->
-        <div class="homepage-slider">
-        <ul id="homepageslider" class="homepage-slider-wapper owl-carousel owl-theme">
-            <li class="homepage-slider-wapper-item">
-                <h2 class="homepage-slider-title">7 GÜN 24 SAAT CANLI ERİŞİLEBİLEN TEK BORSA!</h2>
-                <p class="homepage-slider-desc">BITCOIN, ETHEREUM, LITECOIN, BITCOIN CASH, RIPPLE VE DAHA FAZLASI...</p>
-                <p class="homepage-slider-desc">ICRYPEX CRYPTO EXCHANGE, 20'DEN FAZLA PARA BİRİMİ İLE İŞLEM <br class="d-none d-sm-block" />YAPABİLECEĞİNİZ ADİL, ETİK HIZLI VE GÜVENİLİR BİR KRİPTO PARA BORSASIDIR.</p>
-            </li>
-            <li class="homepage-slider-wapper-item">
-                <h2 class="homepage-slider-title">BITCOIN, ETHEREUM, LITECOIN, BITCOIN CASH!</h2>
-                <p class="homepage-slider-desc">BITCOIN, ETHEREUM, LITECOIN, BITCOIN CASH, RIPPLE VE DAHA FAZLASI...</p>
-                <p class="homepage-slider-desc">ICRYPEX CRYPTO EXCHANGE, 20'DEN FAZLA PARA BİRİMİ İLE İŞLEM YAPABİLECEĞİNİZ ADİL, ETİK HIZLI VE GÜVENİLİR BİR KRİPTO PARA BORSASIDIR.</p>
-            </li>
-            <li class="homepage-slider-wapper-item">
-                <h2 class="homepage-slider-title">20'DEN FAZLA PARA BİRİMİ İLE İŞLEM YAPABİLECEĞİNİZ!</h2>
-                <p class="homepage-slider-desc">BITCOIN, ETHEREUM, LITECOIN, BITCOIN CASH, RIPPLE VE DAHA FAZLASI...</p>
-                <p class="homepage-slider-desc">ICRYPEX CRYPTO EXCHANGE, 20'DEN FAZLA PARA BİRİMİ İLE İŞLEM YAPABİLECEĞİNİZ ADİL, ETİK HIZLI VE GÜVENİLİR BİR KRİPTO PARA BORSASIDIR.</p>
-            </li>
-        </ul>
-        </div>
-        <!-- Slider -->
-        <!-- Chart -->
-        <div class="homepage-chartarea">
+    <div class="container">
         <div class="row">
-            <div class="homepage-chartarea-column col-sm-6">
-                <div class="homepage-chartarea-column-headtitle">
-                    <h3 class="homepage-chartarea-column-headtitle-title">CRYPTO MARKET</h3>
-                    <span class="homepage-chartarea-column-headtitle-volume">VOLUME <span>2,274,273,489</span></span>
-                </div>
-                <div class="homepage-chartarea-column-chartbox">
-                    <img src="../assets/img/mainpage/elements/Homepage-Top-Volume_Chart-01.png" alt="chart" width="380" height="220" />
-                </div>
-            </div>
-            <div class="homepage-chartarea-column col-sm-6">
-                <div class="homepage-chartarea-column-headtitle">
-                    <h3 class="homepage-chartarea-column-headtitle-title">ICRYPEX</h3>
-                    <span class="homepage-chartarea-column-headtitle-volume">VOLUME <span>2,274,273,489</span></span>
-                </div>
-                <div class="homepage-chartarea-column-chartbox">
-                    <img src="../assets/img/mainpage/elements/Homepage-Top-Volume_Chart-02.png" alt="chart" width="380" height="220" />
-                </div>
-            </div>
-        </div>
-        </div>
-        <!-- Chart -->
-        <!-- Big Price -->
-        <div class="homepage-bigprice">
-            <ul class="homepage-bigprice-list">
-                <li class="homepage-bigprice-list-item">
-                    <h4 class="homepage-bigprice-title">BTC GÜNCEL</h4>
-                    <span class="homepage-bigprice-volume"><span id="a-BTCUSD">12643.9</span> USD</span>
-                </li>
-                <li class="homepage-bigprice-list-item">
-                    <h4 class="homepage-bigprice-title">BTC 24S ORTALAMA</h4>
-                    <span class="homepage-bigprice-volume">11475.24 USD</span>
-                </li>
-                <li class="homepage-bigprice-list-item">
-                    <h4 class="homepage-bigprice-title">BTC 24S DEĞİŞİM</h4>
-                    <span class="homepage-bigprice-volume">128.46  USD <span class="sitecolorred">-1.57<sup>%</sup></span></span>
-                </li>
-                <li class="homepage-bigprice-list-item">
-                    <h4 class="homepage-bigprice-title">BTC HACİM</h4>
-                    <span class="homepage-bigprice-volume">8,125,760,000 USD</span>
-                </li>
-                <li class="homepage-bigprice-list-item">
-                    <h4 class="homepage-bigprice-title">KAZILACAK BTC</h4>
-                    <span class="homepage-bigprice-volume">3221500 BTC</span>
-                </li>
-            </ul>
-        </div>
-        <!-- Big Price -->
-    </div>
-    <!-- Header Top Left -->
 
-    <!-- Header Top Right -->
-    <div class="homepage-top-right col-xl-3">
-        <!-- Logged In User -->
-        <div class="homepage-loggedin">
-            <div class="homepage-loggedin-title"><h2 class="columntitle columntitle-md bottomborder titlecenter titlelight" lang="tr">İSİM İSİM SOYİSİM</h2></div>
-            <div class="homepage-loggedin-wrapper">
-                <div class="homepage-loggedin-totalassets">
-                    <h4 class="homepage-loggedin-totalassets-title">TOPLAM VARLIK YAKLAŞIK OLARAK</h4>
-                    <span class="homepage-loggedin-totalassets-total">1.350.750,00 TRY / 44.815,00 BTC</span>
+            <!-- Header Top Left -->
+            <div class="homepage-top-left col-xl-9">
+                <!-- Slider -->
+                <div class="homepage-slider">
+                    <ul id="homepageslider" class="homepage-slider-wapper owl-carousel owl-theme">
+                        <!--
+                        <li class="homepage-slider-wapper-item">
+                            <h2 class="homepage-slider-title">7 GÜN 24 SAAT CANLI ERİŞİLEBİLEN TEK BORSA!</h2>
+                            <p class="homepage-slider-desc">BITCOIN, ETHEREUM, LITECOIN, BITCOIN CASH, RIPPLE VE DAHA FAZLASI...</p>
+                            <p class="homepage-slider-desc">ICRYPEX CRYPTO EXCHANGE, 20'DEN FAZLA PARA BİRİMİ İLE İŞLEM <br />YAPABİLECEĞİNİZ ADİL, ETİK HIZLI VE GÜVENİLİR BİR KRİPTO PARA BORSASIDIR.</p>
+                        </li>
+                        <li class="homepage-slider-wapper-item">
+                            <h2 class="homepage-slider-title">BITCOIN, ETHEREUM, LITECOIN, BITCOIN CASH!</h2>
+                            <p class="homepage-slider-desc">BITCOIN, ETHEREUM, LITECOIN, BITCOIN CASH, RIPPLE VE DAHA FAZLASI...</p>
+                            <p class="homepage-slider-desc">ICRYPEX CRYPTO EXCHANGE, 20'DEN FAZLA PARA BİRİMİ İLE İŞLEM YAPABİLECEĞİNİZ ADİL, ETİK HIZLI VE GÜVENİLİR BİR KRİPTO PARA BORSASIDIR.</p>
+                        </li>
+                        <li class="homepage-slider-wapper-item">
+                            <h2 class="homepage-slider-title">20'DEN FAZLA PARA BİRİMİ İLE İŞLEM YAPABİLECEĞİNİZ!</h2>
+                            <p class="homepage-slider-desc">BITCOIN, ETHEREUM, LITECOIN, BITCOIN CASH, RIPPLE VE DAHA FAZLASI...</p>
+                            <p class="homepage-slider-desc">ICRYPEX CRYPTO EXCHANGE, 20'DEN FAZLA PARA BİRİMİ İLE İŞLEM YAPABİLECEĞİNİZ ADİL, ETİK HIZLI VE GÜVENİLİR BİR KRİPTO PARA BORSASIDIR.</p>
+                        </li>
+                        -->
+                        <li class="homepage-slider-wapper-item">
+                            <h2 class="homepage-slider-title" lang="tr">GERÇEK BITCOIN! GERÇEK CÜZDAN!</h2>
+                            <p class="homepage-slider-desc" lang="tr">Icrypex ile gerçek çekirdekte işlem yaparsınız. Icrypex, kendi borsasını, çekirdeğini ve cüzdanlarını kendi teknolojisi ile oluşturur. </p>
+                        </li>
+                        <li class="homepage-slider-wapper-item">
+                            <h2 class="homepage-slider-title" lang="tr">HIZLI VE UCUZ!</h2>
+                            <p class="homepage-slider-desc" lang="tr">Bitcoin ve diğer altcoinlerde milisaniyeler içerisinde işlem yapabilir, piyasanın en ucuz komisyon oranlarını tecrübe edebilirsiniz.</p>
+                        </li>
+                        <li class="homepage-slider-wapper-item">
+                            <h2 class="homepage-slider-title" lang="tr">SİZİN İÇİN, SİZİN GİBİ...</h2>
+                            <p class="homepage-slider-desc" lang="tr">Icrypex sizin için, sizin gibi kripto para ve finans tutkunları tarafından yaratıldı. Hemen hesap açın, kripto para almaya başlayın!</p>
+                        </li>
+                    </ul>
                 </div>
-                <div class="homepage-loggedin-detail">
-                    <div class="homepage-loggedin-detail-row">
-                        <div class="homepage-loggedin-detail-cell">
-                            <h5 class="homepage-loggedin-detail-cell-title">TRY</h5>
-                            <span class="homepage-loggedin-detail-cell-asset">3.46597510</span>
+                <!-- Slider -->
+                <!-- Chart -->
+                <div class="homepage-chartarea">
+                    <div class="row">
+                        <div class="homepage-chartarea-column col-sm-6">
+                            <div class="homepage-chartarea-column-headtitle">
+                                <h3 class="homepage-chartarea-column-headtitle-title">CRYPTO MARKET</h3>
+                                <span class="homepage-chartarea-column-headtitle-volume">VOLUME <span>2,274,273,489</span></span>
+                            </div>
+                            <div class="homepage-chartarea-column-chartbox">
+                                <img src="../assets/img/mainpage/elements/Homepage-Top-Volume_Chart-01.png" alt="chart" width="380" height="220" />
+                            </div>
                         </div>
-                        <div class="homepage-loggedin-detail-cell">
-                            <h5 class="homepage-loggedin-detail-cell-title">USD</h5>
-                            <span class="homepage-loggedin-detail-cell-asset">1.32567545</span>
-                        </div>
-                    </div>
-                    <div class="homepage-loggedin-detail-row">
-                        <div class="homepage-loggedin-detail-cell">
-                            <h5 class="homepage-loggedin-detail-cell-title">BTC</h5>
-                            <span class="homepage-loggedin-detail-cell-asset">2.12981375</span>
-                        </div>
-                        <div class="homepage-loggedin-detail-cell">
-                            <h5 class="homepage-loggedin-detail-cell-title">LTC</h5>
-                            <span class="homepage-loggedin-detail-cell-asset">0.39781294</span>
-                        </div>
-                    </div>
-                    <div class="homepage-loggedin-detail-row">
-                        <div class="homepage-loggedin-detail-cell">
-                            <h5 class="homepage-loggedin-detail-cell-title">ETH</h5>
-                            <span class="homepage-loggedin-detail-cell-asset">7.98158291</span>
-                        </div>
-                        <div class="homepage-loggedin-detail-cell">
-                            <h5 class="homepage-loggedin-detail-cell-title">XRP</h5>
-                            <span class="homepage-loggedin-detail-cell-asset">0.34578984</span>
-                        </div>
-                    </div>
-                    <div class="homepage-loggedin-detail-row">
-                        <div class="homepage-loggedin-detail-cell">
-                            <h5 class="homepage-loggedin-detail-cell-title">MPAY</h5>
-                            <span class="homepage-loggedin-detail-cell-asset">3.46597510</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="homepage-loggedin-btngroup">
-                    <a class="btn btn-primary" href="/trading" title="PRO GÖRÜNÜM" rel="bookmark">PRO GÖRÜNÜM</a>
-                    <a class="btn btn-primary" href="/easy-buy-sell" title="KOLAY AL-SAT" rel="bookmark">KOLAY AL-SAT</a>
-                </div>
-                <div class="homepage-loggedin-progress">
-                    <div class="homepage-loggedin-progress-bar">
-                        <h5 class="homepage-loggedin-progress-desc"><strong>150.000,00 TRY</strong> günlük limitiniz kalmıştır</h5>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                    <div class="homepage-loggedin-progress-bar">
-                        <h5 class="homepage-loggedin-progress-desc"><strong>1.850.000,00 TRY</strong> aylık limitiniz kalmıştır</h5>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                        <div class="homepage-chartarea-column col-sm-6">
+                            <div class="homepage-chartarea-column-headtitle">
+                                <h3 class="homepage-chartarea-column-headtitle-title">ICRYPEX</h3>
+                                <span class="homepage-chartarea-column-headtitle-volume">VOLUME <span>2,274,273,489</span></span>
+                            </div>
+                            <div class="homepage-chartarea-column-chartbox">
+                                <img src="../assets/img/mainpage/elements/Homepage-Top-Volume_Chart-02.png" alt="chart" width="380" height="220" />
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="homepage-loggedin-notification">
-                    <p><strong class="sitecolorred">İkinci Seviye</strong> hesaba sahipsiniz. Daha fazla limit kullanmak istiyorsanız lütfen <a class="urllink" href="/profile/approval" rel="bookmark">Hesap Onayı & Limit</a> bölümünden bilgilerinizi tamamlayınız.</p>
+                <!-- Chart -->
+                <!-- Big Price -->
+                <div class="homepage-bigprice">
+                    <ul class="homepage-bigprice-list">
+                        <li class="homepage-bigprice-list-item">
+                            <h4 class="homepage-bigprice-title">BTC GÜNCEL</h4>
+                            <span class="homepage-bigprice-volume"><span id="a-BTCUSD">12643.9</span> USD</span>
+                        </li>
+                        <li class="homepage-bigprice-list-item">
+                            <h4 class="homepage-bigprice-title">BTC 24S ORTALAMA</h4>
+                            <span class="homepage-bigprice-volume">11475.24 USD</span>
+                        </li>
+                        <li class="homepage-bigprice-list-item">
+                            <h4 class="homepage-bigprice-title">BTC 24S DEĞİŞİM</h4>
+                            <span class="homepage-bigprice-volume">128.46  USD <span class="sitecolorred">-1.57<sup>%</sup></span></span>
+                        </li>
+                        <li class="homepage-bigprice-list-item">
+                            <h4 class="homepage-bigprice-title">BTC HACİM</h4>
+                            <span class="homepage-bigprice-volume">8,125,760,000 USD</span>
+                        </li>
+                        <li class="homepage-bigprice-list-item">
+                            <h4 class="homepage-bigprice-title">KAZILACAK BTC</h4>
+                            <span class="homepage-bigprice-volume">3221500 BTC</span>
+                        </li>
+                    </ul>
                 </div>
+                <!-- Big Price -->
             </div>
-        </div>
-        <!-- Logged In User -->
-    </div>
-    <!-- Header Top Right -->
+            <!-- Header Top Left -->
 
-</div>
-</div>
+            <!-- Header Top Right -->
+            <div class="homepage-top-right col-xl-3">
+                <!-- Register -->
+                <div class="homepage-register formuinew" style="display: none">
+                    <div class="homepage-register-title"><h2 class="columntitle columntitle-md bottomborder titlecenter titlelight">ÜCRETSİZ ÜYELİK OLUŞTURUN</h2></div>
+                    <form id="homepageregisterform" class="homepage-register-formarea" style="display: block;" action="" autocomplete="off" novalidate>
+                        <div class="formuilabel">
+                            <div class="form-group">
+                                <div class="labelanimation">
+                                    <input type="text" class="form-control" name="firstname" id="inputFirstNameId" required onkeyup="homepageregisterform.verifyContent('inputFirstNameProcess','inputFirstNameId','msgFirstNameId','iconFirstNameId')" onfocusout="homepageregisterform.verifyContentErrorDelete('inputFirstNameProcess','inputFirstNameId','msgFirstNameId','iconFirstNameId')" >
+                                    <i class="inputcheckicon inputcheckicon-check" id="iconFirstNameId"></i>
+                                    <span class="inputerrormessage" id="msgFirstNameId"></span>
+                                    <span class="inputbottombar"></span>
+                                    <label>İSİM</label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="labelanimation">
+                                    <input type="text" class="form-control" name="lastname" id="inputLastNameId" required onkeyup="homepageregisterform.verifyContent('inputLastNameProcess','inputLastNameId','msgLastNameId','iconLastNameId')" onfocusout="homepageregisterform.verifyContentErrorDelete('inputLastNameProcess','inputLastNameId','msgLastNameId','iconLastNameId')" >
+                                    <i class="inputcheckicon inputcheckicon-check" id="iconLastNameId"></i>
+                                    <span class="inputerrormessage" id="msgLastNameId"></span>
+                                    <span class="inputbottombar"></span>
+                                    <label>SOYİSİM</label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="labelanimation">
+                                    <input type="text" class="form-control" name="phone" id="inputPhoneId" required onkeyup="homepageregisterform.verifyContent('inputPhoneProcess','inputPhoneId','msgPhoneId','iconPhoneId')" onfocusout="homepageregisterform.verifyContentErrorDelete('inputPhoneProcess','inputPhoneId','msgPhoneId','iconPhoneId')" >
+                                    <i class="inputcheckicon inputcheckicon-check" id="iconPhoneId"></i>
+                                    <span class="inputerrormessage" id="msgPhoneId"></span>
+                                    <span class="inputbottombar"></span>
+                                    <label>TELEFON</label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="labelanimation">
+                                    <input type="text" class="form-control" name="email" id="inputEmailId" required onkeyup="homepageregisterform.verifyContent('inputEmailProcess','inputEmailId','msgEmailId','iconEmailId')" onfocusout="homepageregisterform.verifyContentErrorDelete('inputEmailProcess','inputEmailId','msgEmailId','iconEmailId')" >
+                                    <i class="inputcheckicon inputcheckicon-check" id="iconEmailId"></i>
+                                    <span class="inputerrormessage" id="msgEmailId"></span>
+                                    <span class="inputbottombar"></span>
+                                    <label>E-POSTA</label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="labelanimation">
+                                    <input type="password" class="form-control" name="password" id="inputPasswordId" autocomplete="off" required onkeyup="homepageregisterform.verifyContent('inputPasswordProcess','inputPasswordId','msgPasswordId','iconPasswordId')" onfocusout="homepageregisterform.verifyContentErrorDelete('inputPasswordProcess','inputPasswordId','msgPasswordId','iconPasswordId')" >
+                                    <i class="inputcheckicon inputcheckicon-check" id="iconPasswordId"></i>
+                                    <span class="inputerrormessage" id="msgPasswordId"></span>
+                                    <span class="inputbottombar"></span>
+                                    <label>ŞİFRE</label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="labelanimation">
+                                    <input type="password" class="form-control" name="confirm" id="inputRePasswordId" autocomplete="off" required onkeyup="homepageregisterform.verifyContent('inputRePasswordProcess','inputRePasswordId','msgRePasswordId','iconRePasswordId')" onfocusout="homepageregisterform.verifyContentErrorDelete('inputRePasswordProcess','inputRePasswordId','msgRePasswordId','iconRePasswordId')" >
+                                    <i class="inputcheckicon inputcheckicon-check" id="iconRePasswordId"></i>
+                                    <span class="inputerrormessage" id="msgRePasswordId"></span>
+                                    <span class="inputbottombar"></span>
+                                    <label>ŞİFRE DOĞRULAMA</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="recaptcha">
+                            <img src="../assets/img/mainpage/elements/Homepage-Top-Recaptcha.png" alt="" width="300" height="76" />
+                        </div>
+                        <div class="custom-control custom-checkbox form-check">
+                            <input class="form-check-input custom-control-input" type="checkbox" name="termsofuse" value="" id="termsOfUseCheck">
+                            <label class="form-check-label custom-control-label" id="labeltermsOfUseCheck" for="termsOfUseCheck"><a class="urllink" href="/company/legal/terms" title="Kullanım Sözleşmesi" rel="bookmark">Kullanım Sözleşmesini</a> okudum ve onaylıyorum.</label>
+                            <span class="inputerrormessage" id="msgtermsOfUseCheckId"></span>
+                        </div>
+                        <div class="custom-control custom-checkbox form-check">
+                            <input class="form-check-input custom-control-input" type="checkbox" value="" id="announcementsCheck">
+                            <label class="form-check-label custom-control-label" for="announcementsCheck">Ticari reklam ve duyurulardan haber almak istiyorum.</label>
+                        </div>
+                        <div class="form-button">
+                            <button type="button" class="btn btn-primary btnunderlinescale softblue" onclick="homepageregisterform.sendHomepageRegisterForm()">ÜYELİK OLUŞTUR</button>
+                        </div>
+                    </form>
+                    <div id="homepageregisterinfo" class="homepage-register-forminfo" style="display: none">
+                        <div class="homepage-register-forminfo-wrapper">
+                            <div class="homepage-register-forminfo-bigicon">
+                                <i class="icon-svg check"></i>
+                            </div>
+                            <h2 class="columntitle columntitle-sm titlecenter">KAYIT İŞLEMİNİZ TAMAMLANDI</h2>
+                            <div class="homepage-register-forminfo-infoarea">
+                                <p class="homepage-register-forminfo-infoarea-desc">Şimdi hemen üye girişinizi yapabilirsiniz. <br />Giriş yaptıktan sonra sizden istenen belgeleri yükleyerek, limitlerinizi yükseltebilirsiniz. <br />2FA doğrulamanızı hızlıca aktive etmenizi öneririz.</p>
+                                <p class="homepage-register-forminfo-infoarea-desc">İşlemlerinizde başarılar!</p>
+                            </div>
+                            <div class="homepage-register-forminfo-button">
+                                <a class="btn btn-success btnwidth160 btnunderlinescale green" href="/login" title="ÜYE GİRİŞİ">ÜYE GİRİŞİ</a>
+                            </div>
+                            <div class="homepage-register-forminfo-callcenter">
+                                <h5 class="homepage-register-forminfo-callcenter-title">Müşteri Hizmetleri</h5>
+                                <p class="homepage-register-forminfo-callcenter-number">0850 250 1079</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Register -->
+                <!-- Logged In User -->
+                <div class="homepage-loggedin" style="display: block">
+                    <div class="homepage-loggedin-title"><h2 class="columntitle columntitle-md bottomborder titlecenter" lang="tr">İSİM İSİM SOYİSİM</h2></div>
+                    <div class="homepage-loggedin-wrapper">
+                        <div class="homepage-loggedin-totalassets">
+                            <h4 class="homepage-loggedin-totalassets-title">TOPLAM VARLIK YAKLAŞIK OLARAK</h4>
+                            <span class="homepage-loggedin-totalassets-total">1.350.750,00 TRY / 44.815,00 BTC</span>
+                        </div>
+                        <div class="homepage-loggedin-detail">
+                            <div class="homepage-loggedin-detail-row">
+                                <div class="homepage-loggedin-detail-cell">
+                                    <h5 class="homepage-loggedin-detail-cell-title">TRY</h5>
+                                    <span class="homepage-loggedin-detail-cell-asset">3.46597510</span>
+                                </div>
+                                <div class="homepage-loggedin-detail-cell">
+                                    <h5 class="homepage-loggedin-detail-cell-title">USD</h5>
+                                    <span class="homepage-loggedin-detail-cell-asset">1.32567545</span>
+                                </div>
+                            </div>
+                            <div class="homepage-loggedin-detail-row">
+                                <div class="homepage-loggedin-detail-cell">
+                                    <h5 class="homepage-loggedin-detail-cell-title">BTC</h5>
+                                    <span class="homepage-loggedin-detail-cell-asset">2.12981375</span>
+                                </div>
+                                <div class="homepage-loggedin-detail-cell">
+                                    <h5 class="homepage-loggedin-detail-cell-title">LTC</h5>
+                                    <span class="homepage-loggedin-detail-cell-asset">0.39781294</span>
+                                </div>
+                            </div>
+                            <div class="homepage-loggedin-detail-row">
+                                <div class="homepage-loggedin-detail-cell">
+                                    <h5 class="homepage-loggedin-detail-cell-title">ETH</h5>
+                                    <span class="homepage-loggedin-detail-cell-asset">7.98158291</span>
+                                </div>
+                                <div class="homepage-loggedin-detail-cell">
+                                    <h5 class="homepage-loggedin-detail-cell-title">XRP</h5>
+                                    <span class="homepage-loggedin-detail-cell-asset">0.34578984</span>
+                                </div>
+                            </div>
+                            <div class="homepage-loggedin-detail-row">
+                                <div class="homepage-loggedin-detail-cell">
+                                    <h5 class="homepage-loggedin-detail-cell-title">MPAY</h5>
+                                    <span class="homepage-loggedin-detail-cell-asset">3.46597510</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="homepage-loggedin-btngroup">
+                            <a class="btn btn-primary" href="/trading" title="PRO GÖRÜNÜM" rel="bookmark">PRO GÖRÜNÜM</a>
+                            <a class="btn btn-primary" href="/easy-buy-sell" title="KOLAY AL-SAT" rel="bookmark">KOLAY AL-SAT</a>
+                        </div>
+                        <div class="homepage-loggedin-progress">
+                            <div class="homepage-loggedin-progress-bar">
+                                <h5 class="homepage-loggedin-progress-desc"><strong>150.000,00 TRY</strong> günlük limitiniz kalmıştır</h5>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="homepage-loggedin-progress-bar">
+                                <h5 class="homepage-loggedin-progress-desc"><strong>1.850.000,00 TRY</strong> aylık limitiniz kalmıştır</h5>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="homepage-loggedin-notification">
+                            <p><strong class="sitecolorred">İkinci Seviye</strong> hesaba sahipsiniz. Daha fazla limit kullanmak istiyorsanız lütfen <a class="urllink" href="/profile/approval" rel="bookmark">Hesap Onayı & Limit</a> bölümünden bilgilerinizi tamamlayınız.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Logged In User -->
+            </div>
+            <!-- Header Top Right -->
+
+        </div>
+    </div>
 </section>
 <!-- Header Top End -->
 
@@ -1079,7 +1190,7 @@
 <script id="script-maskedinput" src="../assets/vendor/jquery.maskedinput/src/jquery.maskedinput.js"></script>
 <script id="script-plugin-app" src="../assets/dist/js/plugin-app.js"></script>
 <script id="script-mainpage-app" src="../assets/dist/js/mainpage-app.js"></script>
-<script id="script-plugin-custom" src="../assets/cdn/plugin-custom.js"></script>
+<script id="script-plugin-custom" src="../assets/cdn/plugin-custom-pagemain.js"></script>
 <!-- Plugins End -->
 
 </body>
