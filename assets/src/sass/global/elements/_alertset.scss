@@ -232,4 +232,44 @@
       }
     }
   }
+
+  &-header{
+    color: $global-clr-white;
+    background-color: $global-clr-dark-blue;
+
+    &.alert{
+      margin: 0;
+      padding: 0 !important;
+      border: 0;
+      @include border-radius(0);
+    }
+
+    &-success{
+      background-color: $global-clr-green;
+    }
+
+    #{$alertclassname}-flex{
+      height: auto;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    #{$alertclassname}-icon,
+    #{$alertclassname}-big-desc{
+      margin: auto 0;
+      position: relative;
+    }
+
+    #{$alertclassname}-icon{
+      top: -10px;
+    }
+
+    #{$alertclassname}-big-desc{
+      top: -20px;
+    }
+
+    &#{$alertclassname}-dismissible{
+      padding-right: 0 !important;
+    }
+  }
 }
