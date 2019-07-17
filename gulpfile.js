@@ -74,10 +74,7 @@ gulp.task('sass-xtras', () => {
 gulp.task('sass-plugin', () => {
   return gulp.src([
       folder_src_main + 'sass/global/**/*.scss',
-      folder_src_main + 'sass/global/**/*.sass',
-      folder_src_main + 'sass/plugin/**/*.scss',
-      folder_src_main + 'sass/plugin/**/*.sass'
-
+      folder_src_main + 'sass/global/**/*.sass'
   ])
       .pipe(sourcemaps.init())
       .pipe(plumber())
