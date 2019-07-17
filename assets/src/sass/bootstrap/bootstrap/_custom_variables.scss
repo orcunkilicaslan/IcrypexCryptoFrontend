@@ -1,3 +1,6 @@
+// Global Variables
+@import "../../global/option/variables";
+
 /* Button & Input Settings */
 $btn-font-weight:               500 !global;
 $border-radius:                 .25rem !global;
@@ -8,3 +11,23 @@ $border-radius-sm:              .2rem !global;
 $btn-padding-y-lg:              .7rem !global;
 $btn-padding-x-lg:              1.5rem !global;
 /* Button & Input Settings */
+
+/* Color Settings */
+$white:    $global-clr-white !global;
+$gray-100: $global-clr-light-gray !global;
+$gray-200: #e9ecef !global;
+$gray-300: #dee2e6 !global;
+$gray-400: #ced4da !global;
+$gray-500: #adb5bd !global;
+$gray-600: #6c757d !global;
+$gray-700: #495057 !global;
+$gray-800: $global-clr-soft-gray !global;
+$gray-900: #212529 !global;
+$black:    #000 !global;
+
+$blue:    $global-clr-soft-blue !global;
+$red:     $global-clr-red !global;
+$orange:  $global-clr-orange !global;
+$yellow:  $global-clr-orange !global;
+$green:   $global-clr-green !global;
+/* Color Settings */
