@@ -13,6 +13,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
     .columntitle{
       color: $global-clr-white !important;
+      font-weight: normal;
       min-height: 40px;
       &::before{
         max-width: inherit !important;

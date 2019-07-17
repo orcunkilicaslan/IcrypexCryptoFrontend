@@ -7,7 +7,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
   position: fixed;
   width: 100%;
   top: 0;
-  z-index: 2;
+  z-index: 10;
   @include transition(all, 0.3s, ease-out);
   $headerclassname: &;
 
@@ -45,26 +45,8 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
   &-alert{
     height: auto;
+
     @include transition(all, 1s, ease-out);
-
-    &.alert{
-      position: relative;
-      margin: 0;
-      padding-top: 15px;
-      padding-bottom: 15px;
-      border:none;
-      @include border-radius(0);
-    }
-    &.alert-dismissible .close{
-      top: calc(50% - 14px);
-      right: 20px;
-      padding: 0;
-    }
-
-    &-content{
-      font-size: 17px;
-      text-align: center;
-    }
   }
 
   &-search{

@@ -123,6 +123,7 @@
 
   &-link{
     color: inherit !important;
+    font-weight: 500;
     text-decoration: underline;
     @include transition(opacity, 0.3s, ease-in-out);
 
@@ -180,7 +181,7 @@
       }
     }
     &-desc{
-
+      width: 100%;
     }
   }
 
@@ -188,10 +189,20 @@
     background-color: $global-clr-white !important;
     padding: 5px !important;
 
+    #{$alertclassname}-heading{
+      text-transform: uppercase;
+    }
+
+    #{$alertclassname}-big-desc{
+      p{
+        color: $global-clr-dark-blue;
+      }
+    }
+
     &-small{
 
       #{$alertclassname}-flex{
-        height: 70px;
+        height: 80px;
       }
 
       #{$alertclassname}-icon{
@@ -209,7 +220,7 @@
 
       #{$alertclassname}-icon,
       #{$alertclassname}-big-desc{
-        margin-left: -10px;
+        margin-left: -5px;
       }
 
       #{$alertclassname}-big-desc{
@@ -219,6 +230,46 @@
       &#{$alertclassname}-dismissible{
         padding-right: 30px !important;
       }
+    }
+  }
+
+  &-header{
+    color: $global-clr-white;
+    background-color: $global-clr-dark-blue;
+
+    &.alert{
+      margin: 0;
+      padding: 0 !important;
+      border: 0;
+      @include border-radius(0);
+    }
+
+    &-success{
+      background-color: $global-clr-green;
+    }
+
+    #{$alertclassname}-flex{
+      height: auto;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    #{$alertclassname}-icon,
+    #{$alertclassname}-big-desc{
+      margin: auto 0;
+      position: relative;
+    }
+
+    #{$alertclassname}-icon{
+      top: -10px;
+    }
+
+    #{$alertclassname}-big-desc{
+      top: -20px;
+    }
+
+    &#{$alertclassname}-dismissible{
+      padding-right: 0 !important;
     }
   }
 }

@@ -1,12 +1,12 @@
 
 .dropzone{
-  background-color: $global-clr-light-gray !important;
+  background-color: $global-clr-light-gray;
   min-width: 160px;
   min-height: 170px;
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px dashed transparentize($global-clr-soft-gray, 0.7) !important;
+  border: 1px dashed transparentize($global-clr-soft-gray, 0.7);
   padding: 10px;
 
   .dz{
@@ -31,7 +31,6 @@
           display: block;
         }
       }
-
     }
     &-preview{
       background-color: transparent !important;
@@ -158,6 +157,5 @@
     width: 25px;
     height: 35px;
   }
-
 }
 

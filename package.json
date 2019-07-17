@@ -52,6 +52,7 @@
     "owl.carousel": "^2.3.4"
   },
   "browserslist": [
-    "defaults"
+    "last 3 versions",
+    "> 0.5%"
   ]
 }
