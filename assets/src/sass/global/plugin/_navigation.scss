@@ -219,6 +219,10 @@
 
       &-list{
         > li{
+          a{
+            height: auto;
+          }
+
           &.show > a[data-toggle^="dropdown"]{
             &::after {
               width: 100%;
