@@ -6,12 +6,8 @@
   $cryptinvestmentclassname: &;
 
   @include ReSassResponsive(1400){
-    padding-top: 90px;
-    padding-bottom: 40px;
-  }
-  @include ReSassResponsive(1200){
     padding-top: 60px;
-    padding-bottom: 30px;
+    padding-bottom: 40px;
   }
 
   .columntitle{
@@ -142,7 +138,11 @@
       font-weight: 300;
       line-height: 1.6;
       letter-spacing: -0.2px;
-      padding: 10px 30px
+      padding: 10px 30px;
+
+      @include ReSassResponsive(1400){
+        margin-top: 40px;
+      }
     }
   }
 }

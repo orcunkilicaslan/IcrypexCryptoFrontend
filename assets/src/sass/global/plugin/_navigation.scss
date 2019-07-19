@@ -216,6 +216,35 @@
       z-index:103;
       @include border-radius(0);
       @include transition(all, 0.3s, ease-in-out);
+
+      &-list{
+        > li{
+          &.show > a[data-toggle^="dropdown"]{
+            &::after {
+              width: 100%;
+            }
+          }
+        }
+      }
+
+      &-dropdownmenu{
+        background-color: transparent !important;
+        position: relative !important;
+        top: 0 !important;
+        margin-left: 0 !important;
+        border: 0 !important;
+
+        &.show{
+          width: 100%!important;
+        }
+      }
+
+      ul.dropdownsubmenu{
+        li.submainmenu{
+          padding-left: 0;
+          padding-right: 0;
+        }
+      }
     }
 
     &-mobilemenu{
@@ -234,11 +263,11 @@
         &::before{
           content: "";
           position: absolute;
-          width: calc(100% - 24px);
+          width: calc(100% - 0);
           height: 1px;
           background-color: #333333;
-          left: 12px;
-          right: 12px;
+          left: 0;
+          right: 0;
           bottom: 0;
           @include scaleX(1);
           @include transition(transform, 0.3s, ease-in-out);

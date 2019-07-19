@@ -16,13 +16,22 @@ $globalSvgIconImgPath : "../../img/global/svg";
     background-image: none;
 
     #{$headerclassname}-top,
-    #{$headerclassname}-stats,
     #{$headerclassname}-titlearea,
     #{$headerclassname}-onlytitle{
       overflow: hidden;
       opacity: 0;
       height: 0;
       padding: 0;
+    }
+
+    #{$headerclassname}-stats{
+      padding: 0;
+      height: 60px;
+      opacity: 0.8;
+
+      &:hover{
+        opacity: 1;
+      }
     }
 
     .homepage #{$headerclassname}{
