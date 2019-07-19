@@ -41,7 +41,10 @@
 
       ul.dropdownsubmenu{
         background-color: transparentize($global-clr-btn-blue, 0.50);
-        width: 200px !important;
+
+        @include ReSassResponsive(992){
+          background-color: transparent;
+        }
 
         li.submainmenu{
           a{

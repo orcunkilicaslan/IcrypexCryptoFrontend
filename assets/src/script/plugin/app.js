@@ -113,6 +113,7 @@ jQuery(function($){
     $(".inputdatemask").mask("99/99/9999",{placeholder:"MM/DD/YYYY"});
     $(".inputphonemask").mask("0599 999 99 99",{placeholder:"05__ ___ __ __"});
     $(".inputibanmask").mask("TR99 9999 9999 9999 9999 9999 99",{placeholder:"TR__ ____ ____ ____ ____ ____ __"});
+    $(".inputgoogleauthmask").mask("999 999",{placeholder:"___ ___"});
 });
 /* Input Mask */
 

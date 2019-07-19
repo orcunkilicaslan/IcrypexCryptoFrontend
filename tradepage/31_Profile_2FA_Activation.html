@@ -222,7 +222,7 @@
         </div>
         <!-- Top Info -->
         <!-- Content -->
-        <div class="profile-box-content nobordertop">
+        <div class="profile-box-content noborderbottom">
             <div class="profile-twofa-activation">
             <form class="formuinew" autocomplete="off" novalidate>
                 <div class="profile-twofa-activation-tags350">
@@ -256,18 +256,15 @@
                             <div class="form-group">
                                 <p class="profile-twofa-activation-qrcode-info">Cep telefonunuza ya da tabletinize indireceğiniz <strong>Google Authenticator</strong> uygulamasını kullanarak QR kodunu okutunuz. Ardından uygulamanın yaratacağı kodu aşağıdaki alana giriniz.</p>
                             </div>
-                            <div class="form-row">
-                                <div class="form-group colorsetdarkblue col">
-                                    <label>2FA KODUNU GİRİNİZ</label>
-                                    <input type="text" class="form-control" placeholder="" value="1CfaunqrVpcXmpLheUVWeSP1KPsKDha1Nb">
-                                </div>
-                                <div class="form-group col-md-auto maxwidth110">
-                                    <label style="visibility: hidden;">TAMAM</label>
-                                    <button type="button" class="btn btn-success btnwidth100100">TAMAM</button>
-                                </div>
+                            <div class="form-group colorsetdarkblue">
+                                <label>2FA KODUNU GİRİNİZ</label>
+                                <input type="text" class="form-control inputgoogleauthmask" name="code" placeholder="___ ___" value="">
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="form-group maxwidth160 mt-2">
+                    <button type="button" class="btn btn-success btnwidth100100">KAYDET</button>
                 </div>
             </form>
             </div>
