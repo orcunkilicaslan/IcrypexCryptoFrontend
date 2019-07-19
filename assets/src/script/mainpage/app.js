@@ -16,32 +16,6 @@ $('#homepageslider').owlCarousel({
 });
 /* Homepage Slider */
 
-/* Homepage Register Collapse */
-jQuery(function($) {
-    if($(window).width() <= 991){
-        $(document).ready(function() {
-            //$(".homepage-register-collapse").removeClass("show");
-            //$(".homepage-register-collapse-btn").addClass("d-block").removeClass("d-none");
-        });
-    }else{
-        $(document).ready(function() {
-            //$(".homepage-register-collapse").addClass("show");
-            //$(".homepage-register-collapse-btn").addClass("d-none").removeClass("d-block");
-        });
-    }
-});
-
-jQuery(function($) {
-    if($('body').hasClass('homepage')){
-        $(document).ready(function() {
-            $(".homepage-register-collapse-btn").click(function() {
-                $(this).addClass("d-none").removeClass("d-block");
-            });
-        });
-    }
-});
-/* Homepage Register Collapse */
-
 /* Accordion */
 $(document).ready(function () {
     $('.accordion-item .heading').on('click', function (e) {
