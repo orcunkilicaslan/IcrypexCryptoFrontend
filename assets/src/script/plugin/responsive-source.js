@@ -1,7 +1,7 @@
 
 /* Mobile Responsive JS */
 jQuery(function($) {
-    if($(window).width() > 769){
+    if($(window).width() > 767){
 
     }
 });
