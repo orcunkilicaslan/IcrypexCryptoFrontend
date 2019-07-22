@@ -13,6 +13,9 @@ $globalSvgIconImgPath : "../../img/global/svg";
     margin-top: 25px;
     padding-bottom: 5px;
   }
+  @include ReSassResponsive(768){
+    padding-bottom: 0;
+  }
 
   &-tabnav{
     border-bottom: 5px solid $global-clr-soft-blue;

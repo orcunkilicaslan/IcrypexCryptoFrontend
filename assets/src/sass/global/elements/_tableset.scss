@@ -58,6 +58,66 @@ $globalSvgIconImgPath : "../../img/global/svg";
         border-top: 4px solid $global-clr-red;
       }
     }
+
+    &responsive{
+      @include ReSassResponsive(768){
+        display:block;
+        text-align:left !important;
+
+        thead, tbody, thead tr, tbody tr, thead th, tbody td{
+          display:block;
+          text-align:left !important;
+          font-size: 17px !important;
+        }
+
+        thead tr{
+          position:absolute;
+          top:-9999px;
+          left:-9999px;
+        }
+
+        thead tr, tbody tr{
+          //background:#FFFFFF;
+          border:1px solid transparentize($global-clr-soft-gray, 0.7);
+          border-bottom:0;
+          margin:10px 0;
+        }
+
+        tbody tr{
+          td{
+            padding:8px 0 !important;
+            border:none;
+            border-bottom:1px solid transparentize($global-clr-soft-gray, 0.7) !important;
+            position:relative;
+            padding-left:48% !important;
+            white-space:inherit !important;
+
+            &::before{
+              content: attr(data-title);
+              position:absolute;
+              left:0;
+              top:0;
+              padding:8px 10px;
+              width:40%;
+              min-width:100px;
+              height:100%;
+              white-space:nowrap;
+            }
+          }
+        }
+      }
+
+      &dataprice{
+        @include ReSassResponsive(768){
+          tbody tr{
+            td:first-child{
+              background-color: transparentize($global-clr-soft-blue, 0.85) !important;
+              font-weight: 500;
+            }
+          }
+        }
+      }
+    }
   }
 }
 
