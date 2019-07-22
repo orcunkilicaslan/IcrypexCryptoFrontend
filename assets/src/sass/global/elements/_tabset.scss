@@ -244,5 +244,61 @@
       }
     }
   }
-
 }
+
+/* Responsive Bootstrap Tabs Start */
+@include ReSassResponsive(768){
+  .nav-tabs-responsive{
+
+    .nav{
+      justify-content: normal !important;
+
+      &::before,
+      &::after{
+        display: none !important;
+      }
+
+      &-item{
+        display: none;
+        width: calc(100% /4);
+
+        &.active {
+          width: calc(100% /2);
+          &:first-child {
+            margin-left: calc(100% /4);
+          }
+        }
+        &.active,
+        &.prev,
+        &.next {
+          display: block;
+        }
+      }
+
+      &-link{
+        background-color: transparentize($global-clr-soft-blue, 0.85) !important;
+        display: block;
+        border: 0 !important;
+        width: 100%;
+        max-width: 100%;
+        padding: 4px 5px 2px !important;
+        text-align: center;
+        vertical-align: top;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        word-wrap: normal;
+
+        &::before,
+        &::after{
+          display: none !important;
+        }
+
+        &.active{
+          background-color: $global-clr-soft-blue !important;
+        }
+      }
+    }
+  }
+}
+/* Responsive Bootstrap Tabs End */

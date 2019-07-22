@@ -3,6 +3,13 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
 .homepage{
 
+  section{
+    @include ReSassResponsive(600){
+      padding-left: 15px !important;
+      padding-right: 15px !important;
+    }
+  }
+
   &-top{
     padding-top: 30px;
     min-height: 630px;
@@ -422,6 +429,9 @@ $globalSvgIconImgPath : "../../img/global/svg";
       margin-top: 25px;
       height: auto;
     }
+    @include ReSassResponsive(600){
+      padding: 20px;
+    }
 
     @keyframes pulse{
       from{transform:scale3d(1,1,1)}
@@ -516,6 +526,10 @@ $globalSvgIconImgPath : "../../img/global/svg";
             flex: 0 0 50%;
             padding-left: 8px;
             padding-right: 8px;
+          }
+          @include ReSassResponsive(600){
+            max-width: 100%;
+            flex: 0 0 100%;
           }
         }
       }
@@ -712,6 +726,9 @@ $globalSvgIconImgPath : "../../img/global/svg";
         @include ReSassResponsive(992){
           width: 300px;
           margin: 0 auto;
+        }
+        @include ReSassResponsive(600){
+          width: 100%;
         }
 
         .btn{
@@ -1159,7 +1176,6 @@ $globalSvgIconImgPath : "../../img/global/svg";
             }
           }
         }
-
       }
     }
   }
@@ -1174,6 +1190,9 @@ $globalSvgIconImgPath : "../../img/global/svg";
       flex-wrap: wrap;
       margin-top: 20px;
       padding: 15px 18px;
+    }
+    @include ReSassResponsive(600){
+      padding: 12px 15px;
     }
 
     &-column{
