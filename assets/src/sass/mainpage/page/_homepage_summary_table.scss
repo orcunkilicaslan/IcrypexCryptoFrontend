@@ -10,7 +10,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
   }
   @include ReSassResponsive(992){
     order: 1;
-    margin-top: 30px;
+    margin-top: 25px;
     padding-bottom: 5px;
   }
 
@@ -359,6 +359,8 @@ $globalSvgIconImgPath : "../../img/global/svg";
       border-style: solid;
       border-color: transparentize($global-clr-soft-gray, 0.7);
       @include border-radius(0);
+      @include transition(background, 0.3s, ease-in-out);
+
       &:focus{
         color: $global-clr-white;
         background-color: rgba(0,0,0,0.2);
@@ -366,9 +368,12 @@ $globalSvgIconImgPath : "../../img/global/svg";
         @include box-shadow(0,0,0,transparent);
         @include border-radius(0);
       }
-      &.colorgreen{
-        color: $global-clr-green;
-        font-weight: normal;
+
+      @include ReSassResponsive(992){
+        background-color: rgba(0,0,0,0.5);
+        &:focus{
+          background-color: rgba(0,0,0,0.8);
+        }
       }
     }
     &-info{

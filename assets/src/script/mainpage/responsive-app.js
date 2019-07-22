@@ -52,6 +52,34 @@ jQuery(function($) {
 });
 /* Responsive Homepage Chart Area Owl Carousel */
 
+/* Responsive Homepage Big Price Area Owl Carousel */
+jQuery(function($) {
+    if($(window).width() <= 767){
+        $(document).ready(function() {
+            $('#homepagebigpricearea').addClass("homepage-bigprice-owl owl-carousel owl-theme");
+            $('#homepagebigpricearea').owlCarousel({
+                loop:true,
+                nav:true,
+                dots:false,
+                autoplay:false,
+                autoplayTimeout:3000,
+                autoplayHoverPause:true,
+                items:2,
+                margin:0,
+                autoWidth:false,
+                animateOut: 'fadeOut'
+            });
+            $('.homepage-bigprice-list-item').addClass("item");
+        });
+    }else{
+        $(document).ready(function() {
+            $('#homepagebigpricearea').removeClass("homepage-bigprice-owl owl-carousel owl-theme owl-loaded owl-drag");
+            $('.homepage-bigprice-list-item').removeClass("item");
+        });
+    }
+});
+/* Responsive Homepage Big Price Area Owl Carousel */
+
 /* Loading Info */
 console.log("Mainpage App Responsive Javascript Loading Successful");
 /* Loading Info */
