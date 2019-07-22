@@ -1,5 +1,5 @@
 
-/* Responsive Bootstrap Tabs */
+/* Responsive Bootstrap Tabs - https://codepen.io/hayatbiralem/pen/KpzjOL */
 jQuery(function($) {
     if($(window).width() <= 767){
         $(document).ready(function(){
