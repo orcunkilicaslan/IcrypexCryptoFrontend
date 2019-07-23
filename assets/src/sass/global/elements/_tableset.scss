@@ -65,7 +65,8 @@ $globalSvgIconImgPath : "../../img/global/svg";
         text-align:left !important;
 
         thead, tbody, thead tr, tbody tr, thead th, tbody td{
-          display:block;
+          display:flex;
+          flex-wrap: wrap;
           text-align:left !important;
           font-size: 17px !important;
         }
@@ -83,26 +84,43 @@ $globalSvgIconImgPath : "../../img/global/svg";
           margin:10px 0;
         }
 
-        tbody tr{
-          td{
-            padding:8px 0 !important;
-            border:none;
-            border-bottom:1px solid transparentize($global-clr-soft-gray, 0.7) !important;
-            position:relative;
-            padding-left:48% !important;
-            white-space:inherit !important;
+        tbody{
+          margin-left: -5px;
+          margin-right: -5px;
 
-            &::before{
-              content: attr(data-title);
-              position:absolute;
-              left:0;
-              top:0;
-              padding:8px 10px;
-              width:40%;
-              min-width:100px;
-              height:100%;
-              white-space:nowrap;
+          tr{
+            width: calc(50% - 10px);
+            margin: 5px;
+
+            td{
+              width: 100%;
+              padding:8px 0 !important;
+              border:none;
+              border-bottom:1px solid transparentize($global-clr-soft-gray, 0.7) !important;
+              position:relative;
+              padding-left:48% !important;
+              white-space:inherit !important;
+
+              &::before{
+                content: attr(data-title);
+                position:absolute;
+                left:0;
+                top:0;
+                padding:8px 10px;
+                width:40%;
+                min-width:100px;
+                height:100%;
+                white-space:nowrap;
+              }
             }
+          }
+        }
+      }
+      @include ReSassResponsive(576){
+        tbody{
+          tr{
+            width: 100%;
+            margin: 5px;
           }
         }
       }

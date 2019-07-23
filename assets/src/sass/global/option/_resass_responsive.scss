@@ -23,8 +23,8 @@
 			@content;
 		}
 	}
-	@if $point==600 {
-		@media ( max-width: 599px ) {
+	@if $point==576 {
+		@media ( max-width: 575px ) {
 			@content;
 		}
 	}

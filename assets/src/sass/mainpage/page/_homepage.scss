@@ -4,7 +4,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
 .homepage{
 
   section{
-    @include ReSassResponsive(600){
+    @include ReSassResponsive(576){
       padding-left: 15px !important;
       padding-right: 15px !important;
     }
@@ -233,6 +233,14 @@ $globalSvgIconImgPath : "../../img/global/svg";
         .ct-chart-left{
           overflow: hidden;
         }
+
+        img.chartdemograph{
+          @include ReSassResponsive(768){
+            width: auto !important;
+            text-align: center;
+            margin: auto;
+          }
+        }
       }
     }
   }
@@ -339,11 +347,11 @@ $globalSvgIconImgPath : "../../img/global/svg";
       @include ReSassResponsive(768){
         .owl{
           &-stage-outer{
-            margin: 0;
           }
 
           &-item{
             position: relative;
+            padding: 0 20px;
 
             &::before{
               content: "";
@@ -429,7 +437,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
       margin-top: 25px;
       height: auto;
     }
-    @include ReSassResponsive(600){
+    @include ReSassResponsive(576){
       padding: 20px;
     }
 
@@ -527,7 +535,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
             padding-left: 8px;
             padding-right: 8px;
           }
-          @include ReSassResponsive(600){
+          @include ReSassResponsive(576){
             max-width: 100%;
             flex: 0 0 100%;
           }
@@ -727,7 +735,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
           width: 300px;
           margin: 0 auto;
         }
-        @include ReSassResponsive(600){
+        @include ReSassResponsive(576){
           width: 100%;
         }
 
@@ -1040,9 +1048,6 @@ $globalSvgIconImgPath : "../../img/global/svg";
       @include ReSassResponsive(992){
         padding-bottom: 10px;
       }
-      @include ReSassResponsive(768){
-        padding-bottom: 5px;
-      }
 
       &::before,
       &::after{
@@ -1146,8 +1151,30 @@ $globalSvgIconImgPath : "../../img/global/svg";
       padding: 0;
     }
 
+    &-scrollbar{
+      @include ReSassResponsive(768){
+        width: 540px;
+        height: 235px;
+        overflow-y: auto;
+        overflow-x: hidden;
+        margin: auto;
+        position: relative;
+      }
+      @include ReSassResponsive(576){
+        width: 450px;
+      }
+    }
+
     .tablecolumn{
       margin: 0;
+
+      @include ReSassResponsive(768){
+        width: calc(540px * 2);
+      }
+      @include ReSassResponsive(576){
+        width: calc(450px * 2);
+      }
+
       &-grid{
         position: relative;
 
@@ -1194,7 +1221,10 @@ $globalSvgIconImgPath : "../../img/global/svg";
       margin-top: 20px;
       padding: 15px 18px;
     }
-    @include ReSassResponsive(600){
+    @include ReSassResponsive(768){
+      margin-top: 15px;
+    }
+    @include ReSassResponsive(576){
       padding: 12px 15px;
     }
 
@@ -1206,6 +1236,16 @@ $globalSvgIconImgPath : "../../img/global/svg";
         flex: 0 0 calc(100% / 2);
         padding-left: 8px;
         padding-right: 8px;
+        margin-top: 5px;
+
+        &.columnleft{padding-left: 0}
+        &.columnright{padding-right: 0;}
+      }
+
+      @include ReSassResponsive(576){
+        max-width: calc(100% / 1);
+        flex: 0 0 calc(100% / 1);
+        padding: 0;
         margin-top: 5px;
 
         &.columnleft{padding-left: 0}
@@ -1460,8 +1500,6 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
       &-img{
         max-width: none;
-        //width: 790px;
-        //height: 656px;
         object-fit: contain;
         margin-top: -37px;
         margin-left: -20px;
@@ -1480,7 +1518,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
           max-width: 50%;
           margin: -25px auto 0;
         }
-        @include ReSassResponsive(600){
+        @include ReSassResponsive(576){
           max-width: 70%;
         }
       }

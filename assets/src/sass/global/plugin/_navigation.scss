@@ -303,6 +303,7 @@
         @include transition(all, 0.3s, ease-in-out);
 
         .btntext{
+          margin: 11px 0;
         }
         .btnicon{
           width: 23px;
@@ -311,6 +312,7 @@
           display: flex;
           justify-content: center;
           align-items: center;
+          margin: 10px 10px 10px 0;
 
           span,
           span::before,
