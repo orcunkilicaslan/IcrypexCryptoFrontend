@@ -6,6 +6,9 @@
     font-size: 17px;
     line-height: 1;
     margin-bottom: 6px;
+    @include ReSassResponsive(480){
+      font-size: 15px;
+    }
   }
 
   .form-row {
