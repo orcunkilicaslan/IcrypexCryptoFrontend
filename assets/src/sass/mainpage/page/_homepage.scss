@@ -1221,6 +1221,9 @@ $globalSvgIconImgPath : "../../img/global/svg";
       margin-top: 20px;
       padding: 15px 18px;
     }
+    @include ReSassResponsive(768){
+      margin-top: 15px;
+    }
     @include ReSassResponsive(576){
       padding: 12px 15px;
     }
