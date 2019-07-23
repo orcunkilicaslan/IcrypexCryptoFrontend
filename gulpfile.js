@@ -118,21 +118,26 @@ gulp.task('script-plugin', () => {
 
 /* MAINPAGE START */
 gulp.task('sass-mainpage', () => {
-  return gulp.src([
-      folder_src_main + 'sass/mainpage/**/*.scss',
-      folder_src_main + 'sass/mainpage/**/*.sass'
-  ])
-    .pipe(sourcemaps.init())
-      .pipe(plumber())
-      .pipe(sass())
-      .pipe(autoprefixer({
-          flexbox: 'no-2009'
-      }))
-      .pipe(cssnano())
-      .pipe(concat('mainpage-app.css'))
-    .pipe(sourcemaps.write('.'))
-    .pipe(gulp.dest(folder_dist_main + 'css'))
-    .pipe(browserSync.stream());
+    return gulp.src([
+        folder_src_main + 'sass/mainpage/**/*.scss',
+        folder_src_main + 'sass/mainpage/**/*.sass'
+    ])
+        .pipe(sourcemaps.init())
+        .pipe(plumber())
+        .pipe(sass())
+        .pipe(autoprefixer({
+            flexbox: 'no-2009'
+        }))
+        .pipe(cssnano({
+            reduceIdents: false,
+            discardComments: {
+                removeAll: true
+            }
+        }))
+        .pipe(concat('mainpage-app.css'))
+        .pipe(sourcemaps.write('.'))
+        .pipe(gulp.dest(folder_dist_main + 'css'))
+        .pipe(browserSync.stream());
 });
 
 gulp.task('script-mainpage', () => {
