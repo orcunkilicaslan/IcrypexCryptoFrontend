@@ -124,6 +124,11 @@ $globalSvgIconImgPath : "../../img/global/svg";
           }
         }
       }
+      @include ReSassResponsive(480){
+        thead, tbody, thead tr, tbody tr, thead th, tbody td{
+          font-size: 15px !important;
+        }
+      }
 
       &dataprice{
         @include ReSassResponsive(768){
