@@ -20,6 +20,9 @@ $globalSvgIconImgPath : "../../img/global/svg";
     @include ReSassResponsive(992){
       padding-top: 20px;
     }
+    @include ReSassResponsive(480){
+      padding-top: 10px;
+    }
 
     &-left{
       max-width: 840px;
@@ -70,6 +73,10 @@ $globalSvgIconImgPath : "../../img/global/svg";
     }
     @include ReSassResponsive(768){
       min-height: 180px;
+    }
+    @include ReSassResponsive(576){
+      min-height: inherit;
+      margin-bottom: 15px;
     }
 
     &-wapper{
@@ -146,6 +153,9 @@ $globalSvgIconImgPath : "../../img/global/svg";
           @include ReSassResponsive(768){
             height: 140px;
           }
+          @include ReSassResponsive(576){
+            height: auto;
+          }
         }
       }
     }
@@ -164,6 +174,9 @@ $globalSvgIconImgPath : "../../img/global/svg";
         font-size: 32px;
         margin-bottom: 10px;
       }
+      @include ReSassResponsive(480){
+        font-size: 26px;
+      }
     }
 
     &-desc{
@@ -179,6 +192,9 @@ $globalSvgIconImgPath : "../../img/global/svg";
       }
       @include ReSassResponsive(768){
         font-size: 22px;
+      }
+      @include ReSassResponsive(480){
+        font-size: 18px;
       }
 
       &:last-child{
@@ -222,6 +238,10 @@ $globalSvgIconImgPath : "../../img/global/svg";
           margin: 0;
           padding: 0;
           line-height: 1;
+
+          @include ReSassResponsive(480){
+            font-size: 18px;
+          }
         }
 
         &-title{color: $global-clr-white;}
@@ -298,8 +318,8 @@ $globalSvgIconImgPath : "../../img/global/svg";
             right: -5px;
           }
         }
-        @include ReSassResponsive(768){
-          //padding: 0 15px !important;
+        @include ReSassResponsive(480){
+          font-size: 22px;
         }
       }
     }
@@ -319,6 +339,9 @@ $globalSvgIconImgPath : "../../img/global/svg";
       }
       @include ReSassResponsive(992){
         font-size: 17px;
+      }
+      @include ReSassResponsive(480){
+        font-size: 15px;
       }
     }
 
@@ -467,6 +490,9 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
       @include ReSassResponsive(992){
         font-size: 26px;
+      }
+      @include ReSassResponsive(480){
+        font-size: 22px;
       }
     }
 
@@ -1141,7 +1167,6 @@ $globalSvgIconImgPath : "../../img/global/svg";
         }
       }
     }
-
   }
 
   &-depth{
@@ -1161,7 +1186,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
         position: relative;
       }
       @include ReSassResponsive(576){
-        width: 450px;
+        width: 100%;
       }
     }
 
@@ -1172,7 +1197,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
         width: calc(540px * 2);
       }
       @include ReSassResponsive(576){
-        width: calc(450px * 2);
+        width: 200%;
       }
 
       &-grid{

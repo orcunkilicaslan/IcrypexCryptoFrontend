@@ -67,7 +67,16 @@ jQuery(function($) {
                 items:2,
                 margin:0,
                 autoWidth:false,
-                animateOut: 'fadeOut'
+                animateOut: 'fadeOut',
+                responsiveClass:true,
+                responsive:{
+                    0:{
+                        items:1
+                    },
+                    480:{
+                        items:2
+                    }
+                }
             });
             $('.homepage-bigprice-list-item').addClass("item");
         });
