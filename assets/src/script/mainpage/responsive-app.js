@@ -34,7 +34,7 @@ jQuery(function($) {
                 nav:false,
                 dots:false,
                 autoplay:true,
-                autoplayTimeout:3000,
+                autoplayTimeout:5000,
                 autoplayHoverPause:true,
                 items:1,
                 margin:0,

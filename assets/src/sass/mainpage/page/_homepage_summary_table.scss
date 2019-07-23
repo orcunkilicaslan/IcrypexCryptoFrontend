@@ -240,10 +240,6 @@ $globalSvgIconImgPath : "../../img/global/svg";
 .depthtable{
   min-height: 225px;
 
-  @include ReSassResponsive(768){
-    min-height: 470px;
-  }
-
   &-container,
   &-rectangle{
     position: absolute;
