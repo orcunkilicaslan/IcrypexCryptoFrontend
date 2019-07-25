@@ -102,15 +102,6 @@ jQuery(function($) {
 });
 // Header User Dropdown Menu List
 
-// Login PassCode Input Focus
-$(document).ready(function() {
-    if($('body').hasClass('login')){
-        $('.first').addClass('form-control-inputfocus');
-        $(".form-control-inputfocus").focus();
-    }
-});
-// Login PassCode Input Focus
-
 /* Tooltip */
 $(function(){
     $('[data-toggle="tooltip"]').tooltip()

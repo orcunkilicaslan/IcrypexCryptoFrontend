@@ -138,7 +138,7 @@
 
     <!-- Form -->
     <div class="login-column">
-        <form class="login-form formuinew" action="" autocomplete="off" novalidate>
+        <form class="login-form formuinew" action="" method="post" autocomplete="off" novalidate>
             <h2 class="columntitle columntitle-lg bottomborder titlecenter titlenormal">LÜTFEN TEK KULLANIMLIK 2FA KODUNUZU GİRİNİZ</h2>
             <div class="login-form-tags-300">
                 <div class="login-bigicon">
@@ -162,10 +162,27 @@
     <script id="script-bootstrap-pincode-input" src="../assets/vendor/bootstrap-pincode-input/js/bootstrap-pincode-input.js"></script>
     <script>
         $(document).ready(function() {
+
+            // Input SixDigit
             $('#sixdigit-sms-pincode').pincodeInput({hidedigits:false,inputs:6,complete:function(value, e, errorElement){
                     //$("#pincode-callback").html(value);
                     //$(errorElement).html("HATALI KOD");
-                }});
+            }});
+
+            // Input Focus
+            $('.first').addClass('form-control-inputfocus');
+            $(".form-control-inputfocus").focus();
+
+            // Input Keypress
+            $('.last').addClass('form-control-inputkeypress');
+            $('.form-control-inputkeypress').keyup(function(event){
+                var keycode = (event.keyCode ? event.keyCode : event.which);
+                if($('.form-control-inputkeypress').val().trim().length === 1 && keycode == '13'){
+                    $("form.login-form").submit();
+                }
+                event.stopPropagation();
+            });
+
         });
     </script>
     <!-- Form -->
