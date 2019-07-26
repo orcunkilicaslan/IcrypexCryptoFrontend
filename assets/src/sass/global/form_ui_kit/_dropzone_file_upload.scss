@@ -34,17 +34,34 @@
     }
     &-preview{
       background-color: transparent !important;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
       width: 100%;
-      height: 100px;
-      margin: 0;
+      height: 145px;
+      margin: 3px 0 0 0;
+
+      &.dz-file-preview{
+        .dz-image{
+          background: none !important;
+          border: 1px solid transparentize($global-clr-soft-gray, 0.7) !important;
+          @include border-radius(3px !important);
+        }
+      }
+
+      &:hover{
+        .dz-image img{
+          @include blur(2);
+        }
+      }
     }
     &-details{
       color: $global-clr-soft-gray !important;
-      font-size: 15px !important;
+      font-size: 14px !important;
       opacity: 1 !important;
       padding: 0 !important;
       top: auto !important;
-      bottom: 10px !important;
+      bottom: -8px !important;
 
       span{
         background-color: transparent !important;
@@ -62,36 +79,39 @@
       display: none;
     }
     &-image{
-      display: none !important;
+      width: 130px !important;
+      height: 130px !important;
+      @include border-radius(3px !important);
       img{
-        display: none !important;
+        width: 100%;
+        @include transition(all, 0.3s, ease-in-out);
       }
     }
 
     &-progress{
-      background: transparent !important;
+      background-color: transparentize($global-clr-white, 0.9) !important;
       width: 36px !important;
       height: 36px !important;
-      top: 10px !important;
+      top: calc(50% - 25px)!important;
       left: calc(50% - 18px) !important;
       margin:0 auto !important;
-      border: 1px solid lighten($global-clr-soft-gray, 25%);
+      border: 1px solid transparentize($global-clr-soft-gray, 0.7) !important;
       @include border-radius(52px !important);
       @include transition(all, 0.4s, linear);
     }
 
     &-success-mark,
     &-error-mark{
-      background: transparent !important;
+      background-color: transparentize($global-clr-white, 0.9) !important;
       width:36px !important;
       height:36px !important;
       display:block;
       margin:0 auto !important;
       position:relative;
       z-index: 1;
-      top: 10px !important;
+      top: calc(50% - 25px)!important;
       left: calc(50% - 18px) !important;
-      border: 1px solid lighten($global-clr-soft-gray, 25%);
+      border: 1px solid transparentize($global-clr-soft-gray, 0.7) !important;
       @include border-radius(52px);
       @include transition(all, 0.4s, linear);
 
@@ -138,10 +158,15 @@
     }
 
     &-error-message{
+      background-color: $global-clr-red !important;
+      color: $global-clr-white !important;
+      border-bottom-color: $global-clr-red !important;
       width: calc(100% + 20px) !important;
+      top: 95px !important;
+      text-align: center;
 
       &::after{
-        left: calc(50% - 3px) !important;
+        left: calc(50% - 6px)!important;
       }
     }
 
