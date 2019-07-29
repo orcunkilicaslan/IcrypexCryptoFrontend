@@ -8,7 +8,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
   width: 100%;
   top: 0;
   z-index: 10;
-  @include transition(all, 0.3s, ease-out);
+  @include transition(all, 0.2s, ease-out);
   $headerclassname: &;
 
   &.navscroll{
@@ -47,6 +47,14 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
     #{$headerclassname}-search{
       margin-bottom: 14px;
+    }
+
+    .trader-stats{
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 10;
+      @include transition(all, 0.3s, ease-out);
     }
   }
 

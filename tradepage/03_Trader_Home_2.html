@@ -180,35 +180,129 @@
     <div class="container">
         <div class="trader-stats-price-big row align-items-center">
             <!-- Select -->
-            <div class="maincont-left col-2">
+            <div class="maincont-left col-3">
                 <form class="formuinew">
                     <div class="coinareaselect">
-                        <a class="dropdown-toggle coinareaselect-toggle" data-toggle="dropdown">
-                            <span class="coinareaselect-toggle-icons">
+                        <a class="dropdown-toggle coinareaselect-toggle" data-toggle="dropdown" data-value="">
+                            <span class="coinicons">
                                 <i class="icon-svg icon-svg-currencyiconbtc"></i>
                                 <i class="icon-svg icon-svg-currencyicontry"></i>
                             </span>
-                            <span class="coinareaselect-toggle-currency">BTC/TRY</span>
-                            <span class="coinareaselect-toggle-arrow caret"></span>
+                            <span class="currencytext">
+                                <span class="selectcoin">BTC</span>/<span class="selectcurrency">TRY</span>
+                            </span>
+                            <span class="coinareaselect-toggle-arrow"></span>
                         </a>
                         <ul class="dropdown-menu coinareaselect-menu">
-                            <li><a href="#">BTC</a></li>
-                            <li><a href="#">ETH</a></li>
-                            <li><a href="#">LTC</a></li>
-                            <li><a href="#">XRP</a></li>
+                            <li class="coinareaselect-menu-list" data-value="BTCTRY">
+                                <span class="coinicons">
+                                        <i class="icon-svg icon-svg-currencyiconbtc"></i>
+                                        <i class="icon-svg icon-svg-currencyicontry"></i>
+                                </span>
+                                <span class="currencytext">
+                                    <span class="selectcoin">BTC</span>/<span class="selectcurrency">TRY</span>
+                                </span>
+                            </li>
+                            <li class="coinareaselect-menu-list" data-value="BTCUSD">
+                                <span class="coinicons">
+                                        <i class="icon-svg icon-svg-currencyiconbtc"></i>
+                                        <i class="icon-svg icon-svg-currencyiconusd"></i>
+                                </span>
+                                <span class="currencytext">
+                                        <span class="selectcoin">BTC</span>/<span class="selectcurrency">USD</span>
+                                </span>
+                            </li>
+                            <li class="coinareaselect-menu-list" data-value="LTCTRY">
+                                <span class="coinicons">
+                                        <i class="icon-svg icon-svg-currencyiconltc"></i>
+                                        <i class="icon-svg icon-svg-currencyicontry"></i>
+                                </span>
+                                <span class="currencytext">
+                                        <span class="selectcoin">LTC</span>/<span class="selectcurrency">TRY</span>
+                                </span>
+                            </li>
+                            <li class="coinareaselect-menu-list" data-value="LTCUSD">
+                                <span class="coinicons">
+                                        <i class="icon-svg icon-svg-currencyiconltc"></i>
+                                        <i class="icon-svg icon-svg-currencyiconusd"></i>
+                                </span>
+                                <span class="currencytext">
+                                        <span class="selectcoin">LTC</span>/<span class="selectcurrency">USD</span>
+                                </span>
+                            </li>
+                            <li class="coinareaselect-menu-list" data-value="ETHTRY">
+                                <span class="coinicons">
+                                        <i class="icon-svg icon-svg-currencyiconeth"></i>
+                                        <i class="icon-svg icon-svg-currencyicontry"></i>
+                                </span>
+                                <span class="currencytext">
+                                        <span class="selectcoin">ETH</span>/<span class="selectcurrency">TRY</span>
+                                </span>
+                            </li>
+                            <li class="coinareaselect-menu-list" data-value="ETHUSD">
+                                <span class="coinicons">
+                                        <i class="icon-svg icon-svg-currencyiconeth"></i>
+                                        <i class="icon-svg icon-svg-currencyiconusd"></i>
+                                </span>
+                                <span class="currencytext">
+                                        <span class="selectcoin">ETH</span>/<span class="selectcurrency">USD</span>
+                                </span>
+                            </li>
+                            <li class="coinareaselect-menu-list" data-value="XRPTRY">
+                                <span class="coinicons">
+                                        <i class="icon-svg icon-svg-currencyiconxrp"></i>
+                                        <i class="icon-svg icon-svg-currencyicontry"></i>
+                                </span>
+                                <span class="currencytext">
+                                        <span class="selectcoin">XRP</span>/<span class="selectcurrency">TRY</span>
+                                </span>
+                            </li>
+                            <li class="coinareaselect-menu-list" data-value="XRPUSD">
+                                <span class="coinicons">
+                                        <i class="icon-svg icon-svg-currencyiconxrp"></i>
+                                        <i class="icon-svg icon-svg-currencyiconusd"></i>
+                                </span>
+                                <span class="currencytext">
+                                        <span class="selectcoin">XRP</span>/<span class="selectcurrency">USD</span>
+                                </span>
+                            </li>
+                            <li class="coinareaselect-menu-list" data-value="MPAYTRY">
+                                <span class="coinicons">
+                                        <i class="icon-svg icon-svg-currencyiconmpay"></i>
+                                        <i class="icon-svg icon-svg-currencyicontry"></i>
+                                </span>
+                                <span class="currencytext">
+                                        <span class="selectcoin">MPAY</span>/<span class="selectcurrency">TRY</span>
+                                </span>
+                            </li>
+                            <li class="coinareaselect-menu-list" data-value="MPAYUSD">
+                                <span class="coinicons">
+                                        <i class="icon-svg icon-svg-currencyiconmpay"></i>
+                                        <i class="icon-svg icon-svg-currencyiconusd"></i>
+                                </span>
+                                <span class="currencytext">
+                                        <span class="selectcoin">MPAY</span>/<span class="selectcurrency">USD</span>
+                                </span>
+                            </li>
                         </ul>
                     </div>
                 </form>
                 <script>
-                    $(".coinareaselect-menu li a").click(function(){
-                        var selText = $(this).text();
-                        $(this).parents('.coinareaselect').find('.coinareaselect-toggle').html(selText+' <span class="caret"></span>');
+                    $(".coinareaselect-menu li.coinareaselect-menu-list").click(function(){
+                        var currencyText    = $(this);
+                        var selCoin         = $(currencyText).find('.selectcoin').text();
+                        var selCurrency     = $(currencyText).find('.selectcurrency').text();
+                        var selDataValue    = $(currencyText).data("value");
+
+                        $(this).parents('.coinareaselect').find('.coinareaselect-toggle .coinicons').html('<i class="icon-svg icon-svg-currencyicon' + selCoin.toLocaleLowerCase() + '"></i><i class="icon-svg icon-svg-currencyicon' + selCurrency.toLocaleLowerCase() + '"></i>');
+                        $(this).parents('.coinareaselect').find('.coinareaselect-toggle .currencytext').html('<span class="selectcoin">' + selCoin.toUpperCase() + '</span>/<span class="selectcurrency">' + selCurrency.toUpperCase() + '</span>');
+                        $(this).parents('.coinareaselect').find('.coinareaselect-toggle').attr('data-value', selDataValue);
                     });
                 </script>
             </div>
             <!-- Select -->
             <!-- Big Price -->
-            <div class="maincont-right col-10">
+            <div class="maincont-right col-9">
                 <ul class="trader-stats-price-big-list">
                     <li class="trader-stats-price-big-list-item">
                         <h4 class="trader-stats-price-big-title">GÜNCEL</h4>
@@ -248,7 +342,7 @@
 <!-- Crypto Stats End -->
 
 <!-- Big Chart Start -->
-<section class="trader-bigchart">
+<section class="trader-bigchart trader-bigchart-mt">
 <div class="container">
 <div class="row">
 
@@ -332,21 +426,6 @@
             </tr>
             <tr>
                 <td class="sidebar-marketdata-table-symbol"><i class="arrow arrowup"></i>BTC/USD</td>
-                <td class="sidebar-marketdata-table-bid sitecolorgreen">4,075.5</td>
-                <td class="sidebar-marketdata-table-ask sitecolorgreen">4,075.5</td>
-            </tr>
-            <tr>
-                <td class="sidebar-marketdata-table-symbol"><i class="arrow arrowup"></i> BTC/USD</td>
-                <td class="sidebar-marketdata-table-bid sitecolorgreen">4,075.5</td>
-                <td class="sidebar-marketdata-table-ask sitecolorgreen">4,075.5</td>
-            </tr>
-            <tr>
-                <td class="sidebar-marketdata-table-symbol"><i class="arrow arrowup"></i>BTC/USD</td>
-                <td class="sidebar-marketdata-table-bid sitecolorgreen">4,075.5</td>
-                <td class="sidebar-marketdata-table-ask sitecolorgreen">4,075.5</td>
-            </tr>
-            <tr>
-                <td class="sidebar-marketdata-table-symbol"><i class="arrow arrowup"></i> BTC/USD</td>
                 <td class="sidebar-marketdata-table-bid sitecolorgreen">4,075.5</td>
                 <td class="sidebar-marketdata-table-ask sitecolorgreen">4,075.5</td>
             </tr>

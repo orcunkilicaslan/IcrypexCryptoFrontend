@@ -4,9 +4,15 @@ $tradepageHomepageImgPath : "../../img/tradepage";
 
   &-stats{
     background-color: #cfd7df;
-    padding: 5px 0;
+    padding: 0;
     height: 60px;
     opacity: 1;
+
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+    @include transition(all, 0.1s, ease-out);
 
     &-price{
       color: $global-clr-dark-blue;
@@ -16,44 +22,147 @@ $tradepageHomepageImgPath : "../../img/tradepage";
 
         .coinareaselect{
 
-          &-toggle{
+          .coinicons{
             display: flex;
             align-items: center;
+            margin-right: 5px;
 
-            &-icons{
-              display: flex;
-              align-items: center;
-              margin-right: 5px;
+            i[class*="icon-svg"]{
+              background-color: $global-clr-btn-blue;
+              display: block;
+              position: relative;
+              @include border-radius(50%);
 
-              i[class*="icon-svg"]{
-                background-color: $global-clr-btn-blue;
-                display: block;
-                width: 35px;
-                height: 35px;
-                position: relative;
-                @include border-radius(50%);
-
-                &:first-child{
-                  z-index: 1;
-                }
-                &:last-child{
-                  z-index: 0;
-                  margin-left: -5px;
-                }
+              &:first-child{
+                z-index: 1;
               }
-              i[class*="btc"]{
-                background-color: $global-clr-currency-btc;
+              &:last-child{
+                z-index: 0;
+                margin-left: -5px;
               }
             }
-            &-currency{
+            i[class*="btc"]{
+              background-color: transparentize($global-clr-currency-btc, 0.15);
+            }
+            i[class*="ltc"]{
+              background-color: transparentize($global-clr-currency-ltc, 0.15);
+            }
+            i[class*="eth"]{
+              background-color: transparentize($global-clr-currency-eth, 0.15);
+            }
+            i[class*="xrp"]{
+              background-color: transparentize($global-clr-currency-xrp, 0.15);
+            }
+            i[class*="mpay"]{
+              background-color: transparentize($global-clr-currency-mpay, 0.15);
+            }
+          }
+
+          &-toggle{
+            display: inline-flex;
+            align-items: center;
+            height: 60px;
+
+            &::after{
+              display: none;
+            }
+
+            .coinicons{
+              i[class*="icon-svg"]{
+                width: 35px;
+                height: 35px;
+              }
+            }
+
+            .currencytext{
               font-size: 45px;
               font-weight: 300;
               letter-spacing: -0.9px;
+              min-width: 130px;
             }
-            &-arrow{}
-          }
-          &-menu{}
 
+            &-arrow{
+              background-color: transparent;
+              padding: 0;
+              width: 24px;
+              height: 24px;
+              position: relative;
+
+              &::before{
+                content: "";
+                position:absolute;
+                width: 15px;
+                height: 14px;
+                padding: 0;
+                border-top: 2px solid $global-clr-btn-blue;
+                border-right: 2px solid $global-clr-btn-blue;
+                top: calc(50% - 10px);
+                left: calc(50% - 7px);
+                @include rotate(135);
+              }
+            }
+          }
+
+          &-menu{
+            background-color: $global-clr-soft-gray;
+            width: 100%;
+            max-width: 215px;
+            min-width: inherit;
+            margin: 0;
+            padding: 0;
+            border: none;
+            z-index: 1;
+            @include border-radii(0,0,3px,3px);
+
+            &::before{
+              background-color: $global-clr-soft-gray;
+              content: "";
+              position: absolute;
+              width: 14px;
+              height: 14px;
+              left: 25px;
+              top: -7px;
+              @include rotate(45);
+            }
+
+            *{color: $global-clr-white;}
+
+            &-list{
+              display: flex;
+              align-items: center;
+              padding: 8px 10px;
+              border-bottom: 1px solid lighten($global-clr-soft-gray, 10%);
+              cursor: pointer;
+              position: relative;
+              @include transition(all, 0.3s, ease-in-out);
+
+              &:hover{
+                background-color: lighten($global-clr-soft-gray, 10%);
+              }
+
+              &:first-child{
+                padding-top: 12px;
+              }
+
+              &:last-child{
+                padding-bottom: 12px;
+                border-bottom: none;
+              }
+            }
+
+            .coinicons{
+              i[class*="icon-svg"]{
+                width: 25px;
+                height: 25px;
+              }
+            }
+
+            .currencytext{
+              font-size: 20px;
+              font-weight: normal;
+              letter-spacing: -0.4px;
+            }
+          }
         }
 
         &-list{
@@ -79,7 +188,7 @@ $tradepageHomepageImgPath : "../../img/tradepage";
               height: 34px;
               top: calc(50% - 16px);
               right: 0;
-              background-color: $global-clr-soft-gray;
+              background-color: transparentize($global-clr-soft-gray, 0.7);
             }
 
             &:first-child{
@@ -121,9 +230,9 @@ $tradepageHomepageImgPath : "../../img/tradepage";
   }
 
   &-bigchart{
-    background-color: $global-clr-light-gray;
+    //background-color: $global-clr-light-gray;
     flex: inherit !important;
-    padding: 20px 0;
+    padding: 20px 0 0;
   }
 
   &-order{
