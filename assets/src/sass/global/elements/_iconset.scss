@@ -218,6 +218,27 @@ $globalSvgIconImgPath : "../../img/global/svg";
     &-profileprint{
       background-image: url(#{$globalSvgIconImgPath}/Icon_Print.svg);
     }
+    &-currencyiconbtc{
+      background-image: url(#{$globalSvgIconImgPath}/Currency_Icon_Btc.svg);
+    }
+    &-currencyiconeth{
+      background-image: url(#{$globalSvgIconImgPath}/Currency_Icon_Eth.svg);
+    }
+    &-currencyiconltc{
+      background-image: url(#{$globalSvgIconImgPath}/Currency_Icon_Ltc.svg);
+    }
+    &-currencyiconmpay{
+      background-image: url(#{$globalSvgIconImgPath}/Currency_Icon_Mpay.svg);
+    }
+    &-currencyicontry{
+      background-image: url(#{$globalSvgIconImgPath}/Currency_Icon_Try.svg);
+    }
+    &-currencyiconusd{
+      background-image: url(#{$globalSvgIconImgPath}/Currency_Icon_Usd.svg);
+    }
+    &-currencyiconxrp{
+      background-image: url(#{$globalSvgIconImgPath}/Currency_Icon_Xrp.svg);
+    }
   }
 }
 

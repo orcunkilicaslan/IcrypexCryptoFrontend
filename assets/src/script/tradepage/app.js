@@ -1,3 +1,27 @@
+/* Tradepage Stats Fixed */
+$(document).ready(function(){
+    if($('body').hasClass('tradepage')){
+        var headerHeight = $(".header").height();
+        var traderStatsHeight = $(".trader-stats").height();
+
+        $(".trader-stats").css("top", (headerHeight)+"px");
+        $(".trader-bigchart-mt").css("margin-top", (traderStatsHeight)+"px");
+
+        $(window).scroll(function () {
+
+            var scroll = $(window).scrollTop();
+            var headerScrollHeight = $(".navscroll").height();
+
+            if (scroll > 10) {
+                $(".trader-stats").css("top", (headerScrollHeight)+"px");
+            } else {
+                $(".trader-stats").removeClass("traderstatsscroll").css("top", (headerHeight)+"px");
+            }
+
+        });
+    }
+});
+/* Tradepage Stats Fixed */
 
 /* Header Bottom Lite Price */
 $('#headertitleareapricelite').owlCarousel({

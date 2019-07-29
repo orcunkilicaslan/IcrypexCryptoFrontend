@@ -65,27 +65,27 @@
           }
           &.linebtc{
             &::before {
-              background-color: $global-clr-orange;
+              background-color: $global-clr-currency-btc;
             }
           }
           &.lineeth{
             &::before {
-              background-color: #627eea;
+              background-color: $global-clr-currency-eth;
             }
           }
           &.lineltc{
             &::before {
-              background-color: #afafaf;
+              background-color: $global-clr-currency-ltc;
             }
           }
           &.linexrp{
             &::before {
-              background-color: #0080BE;
+              background-color: $global-clr-currency-xrp;
             }
           }
           &.linempay{
             &::before {
-              background-color: #E7094A;
+              background-color: $global-clr-currency-mpay;
             }
           }
           &.linedefault{

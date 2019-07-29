@@ -1,3 +1,18 @@
+/* Head Blur Tab Page Title */
+$(function(){
+    var $pageHeadTagTitle       = $('title');
+    var $pageHeadTagTitleText   = $pageHeadTagTitle.text();
+
+    $(window).focus(function(){
+        $pageHeadTagTitle.text($pageHeadTagTitleText)
+    });
+
+    $(window).blur(function(){
+        $pageHeadTagTitle.text('ICRYPEX')
+    });
+});
+/* Head Blur Tab Page Title */
+
 /* Header Nav Fixed */
 $(window).scroll(function () {
 
@@ -101,15 +116,6 @@ jQuery(function($) {
     }
 });
 // Header User Dropdown Menu List
-
-// Login PassCode Input Focus
-$(document).ready(function() {
-    if($('body').hasClass('login')){
-        $('.first').addClass('form-control-inputfocus');
-        $(".form-control-inputfocus").focus();
-    }
-});
-// Login PassCode Input Focus
 
 /* Tooltip */
 $(function(){
