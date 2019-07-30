@@ -98,7 +98,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
   }
 
   &-statscyrpto{
-    background-color: #cfd7df;
+    background-color: lighten($global-clr-soft-gray, 30%);
     padding: 0;
     height: 60px;
     opacity: 1;
@@ -107,7 +107,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
     &::before,
     &::after{
-      background-color: #cfd7df;
+      background-color: lighten($global-clr-soft-gray, 30%);
       content: "";
       width: 15px;
       height: 100%;
@@ -129,6 +129,14 @@ $globalSvgIconImgPath : "../../img/global/svg";
         color: $global-clr-dark-blue;
 
         .coinareaselect{
+
+          &:hover{
+            .coinareaselect-toggle-arrow{
+              &::before{
+                border-color: $global-clr-soft-blue !important;
+              }
+            }
+          }
 
           .coinicons{
             display: flex;
@@ -170,6 +178,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
             display: inline-flex;
             align-items: center;
             height: 60px;
+            cursor: pointer;
 
             &::after{
               display: none;
@@ -207,6 +216,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
                 top: calc(50% - 10px);
                 left: calc(50% - 7px);
                 @include rotate(135);
+                @include transition(border, 0.1s, ease-in-out);
               }
             }
           }
