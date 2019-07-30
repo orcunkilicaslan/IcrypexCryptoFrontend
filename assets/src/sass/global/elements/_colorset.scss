@@ -11,6 +11,12 @@
     &blue{
       background-color: $global-clr-soft-blue !important;
     }
+    &blue{
+      background-color: $global-clr-soft-blue !important;
+      &dark{
+        background-color: $global-clr-dark-blue !important;
+      }
+    }
     &red{
       background-color: $global-clr-red !important;
     }
@@ -35,6 +41,9 @@
     }
     &blue{
       color: $global-clr-soft-blue !important;
+      &dark{
+        color: $global-clr-dark-blue !important;
+      }
     }
     &red{
       color: $global-clr-red !important;
