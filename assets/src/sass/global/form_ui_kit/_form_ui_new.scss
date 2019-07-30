@@ -14,13 +14,13 @@
   .form-row {
     display: flex;
     flex-wrap: wrap;
-    margin-right: -8px;
-    margin-left: -8px;
+    margin-right: -5px;
+    margin-left: -5px;
 
     > .col,
     > [class*="col-"] {
-      padding-right: 8px;
-      padding-left: 8px;
+      padding-right: 5px;
+      padding-left: 5px;
     }
 
     &:last-child{
@@ -52,6 +52,12 @@
           background-color: $global-clr-light-gray;
           border-color: $global-clr-light-gray;
         }
+        .input-group-append.selectbox{
+          &::before{
+            background-color: $global-clr-white;
+            width: 2px;
+          }
+        }
         .input-group{
           &:focus-within{
             *{
@@ -70,6 +76,12 @@
         .input-group-text{
           color: $global-clr-soft-gray;
         }
+        .input-group-append.selectbox{
+          &::before{
+            background-color: transparentize($global-clr-soft-gray, 0.7);
+            width: 2px;
+          }
+        }
         @include placeholder{
           color: transparentize($global-clr-soft-gray, 0.50);
           opacity: 1;
@@ -80,6 +92,11 @@
         .input-group-append,
         .input-group-text{
           color: $global-clr-dark-blue;
+        }
+        .input-group-append.selectbox{
+          &::before{
+            background-color: transparentize($global-clr-soft-gray, 0.7);
+          }
         }
         @include placeholder{
           color: transparentize($global-clr-dark-blue, 0.50);
@@ -92,6 +109,11 @@
         .input-group-text{
           color: $global-clr-green;
         }
+        .input-group-append.selectbox{
+          &::before{
+            background-color: transparentize($global-clr-soft-gray, 0.7);
+          }
+        }
         @include placeholder{
           color: transparentize($global-clr-green, 0.50);
           opacity: 1;
@@ -102,6 +124,11 @@
         .input-group-append,
         .input-group-text{
           color: $global-clr-red;
+        }
+        .input-group-append.selectbox{
+          &::before{
+            background-color: transparentize($global-clr-soft-gray, 0.7);
+          }
         }
         @include placeholder{
           color: transparentize($global-clr-red, 0.50);
@@ -114,6 +141,11 @@
         .input-group-text{
           color: $global-clr-orange;
         }
+        .input-group-append.selectbox{
+          &::before{
+            background-color: transparentize($global-clr-soft-gray, 0.7);
+          }
+        }
         @include placeholder{
           color: transparentize($global-clr-orange, 0.50);
           opacity: 1;
@@ -124,6 +156,11 @@
         .input-group-append,
         .input-group-text{
           color: $global-clr-white;
+        }
+        .input-group-append.selectbox{
+          &::before{
+            background-color: transparentize($global-clr-soft-gray, 0.7);
+          }
         }
         @include placeholder{
           color: transparentize($global-clr-white, 0.50);
@@ -340,10 +377,25 @@
       border: 1px solid transparentize($global-clr-soft-gray, 0.70);
       border-left: none;
 
+      &.selectbox{
+        position: relative;
+
+        &::before{
+          content: "";
+          position: absolute;
+          width: 1px;
+          height: calc(100% + 2px);
+          left: 0;
+          top: -1px;
+        }
+      }
+
       select.form-control{
         border: none;
         height: 38px;
-        min-width: 70px;
+        min-width: 65px;
+        text-align: right;
+        padding-left: 10px;
       }
     }
 
