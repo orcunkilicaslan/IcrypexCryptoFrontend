@@ -271,6 +271,7 @@ gulp.task('watch', () => {
     const watch = [
         folder_src_main + 'sass/**/*.scss',
         folder_src_main + 'sass/**/*.sass',
+        folder_src_main + 'sass/**/*.css',
         folder_src_main + 'script/**/*.js'
     ];
 
