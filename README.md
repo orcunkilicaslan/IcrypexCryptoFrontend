@@ -81,7 +81,7 @@
  - [99_Component_Alerts](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/tradepage/99_Component_Alerts.html)
  - [99_Component_Modals](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/tradepage/99_Component_Modals.html)
  
- #### Xtras
+#### Xtras
   - [01_Xtras_Construction_Page](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/xtras/01_Xtras_Construction_Page.html)
  
 
@@ -96,6 +96,10 @@
  - [08_Eml_Password_Change_Ok](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/email-system/08_Eml_Password_Change_Ok.html)
  - [09_Eml_Withdraw_Try_Request](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/email-system/09_Eml_Withdraw_Try_Request.html)
  - [10_Eml_Withdraw_Try_Ok](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/email-system/10_Eml_Withdraw_Try_Ok.html)
+ 
+ 
+ #### Marketing E-Mail Template List
+  - [99_Investing_Mass_Mail](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/email-marketing/99_Investing_Mass_Mail.html)
  
 
 # NodeJS Kurulumu
