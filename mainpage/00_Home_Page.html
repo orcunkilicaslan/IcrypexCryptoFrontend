@@ -613,15 +613,19 @@
         <script id="script-perfect-scrollbar" src="../assets/cdn/perfect-scrollbar.min.js"></script>
         <script>
             if($(window).width() <= 767){
-                $(document).ready(function($){
-                    // Centered Depth Charts
+
+                // Centered Depth Charts
+                $(window).resize(function() {
                     var outerContent = $('.homepage-depth-scrollbar');
                     var innerContent = $('.homepage-depth-scrollbar > .depthtable');
                     outerContent.scrollLeft( (innerContent.width() - outerContent.width()) / 2);
+                });
 
-                    // Perfect Scrollbar
+                // Perfect Scrollbar
+                $(document).ready(function($){
                     $('#depthscrollbar').perfectScrollbar();
                 });
+                
             }
         </script>
         <div id="depthscrollbar" class="homepage-depth-scrollbar">
