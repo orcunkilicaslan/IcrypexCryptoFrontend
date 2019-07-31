@@ -616,16 +616,16 @@
 
                 // Centered Depth Charts
                 $(window).resize(function() {
-                    var outerContent = $('.homepage-depth-scrollbar');
-                    var innerContent = $('.homepage-depth-scrollbar > .depthtable');
-                    outerContent.scrollLeft( (innerContent.width() - outerContent.width()) / 2);
+                    var scrollbarOut    = $('.homepage-depth-scrollbar');
+                    var scrollbarIn     = $('.homepage-depth-scrollbar > .depthtable');
+                    scrollbarOut.scrollLeft((scrollbarIn.width() - scrollbarOut.width()) / 2);
                 });
 
                 // Perfect Scrollbar
                 $(document).ready(function($){
                     $('#depthscrollbar').perfectScrollbar();
                 });
-                
+
             }
         </script>
         <div id="depthscrollbar" class="homepage-depth-scrollbar">
