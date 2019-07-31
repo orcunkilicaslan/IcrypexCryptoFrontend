@@ -612,9 +612,17 @@
         <script id="script-perfect-scrollbar-jquery" src="../assets/cdn/perfect-scrollbar.jquery.min.js"></script>
         <script id="script-perfect-scrollbar" src="../assets/cdn/perfect-scrollbar.min.js"></script>
         <script>
-            $(document).ready(function($){
-                $('#depthscrollbar').perfectScrollbar();
-            });
+            if($(window).width() <= 767){
+                $(document).ready(function($){
+                    // Centered Depth Charts
+                    var outerContent = $('.homepage-depth-scrollbar');
+                    var innerContent = $('.homepage-depth-scrollbar > .depthtable');
+                    outerContent.scrollLeft( (innerContent.width() - outerContent.width()) / 2);
+
+                    // Perfect Scrollbar
+                    $('#depthscrollbar').perfectScrollbar();
+                });
+            }
         </script>
         <div id="depthscrollbar" class="homepage-depth-scrollbar">
             <div class="depthtable tablecolumn row">
