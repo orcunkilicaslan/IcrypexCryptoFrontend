@@ -250,6 +250,54 @@
 @include ReSassResponsive(768){
   .nav-tabs-responsive{
 
+    @-webkit-keyframes slidePrevArrowAnimation {
+      from {
+        -webkit-transform: translate3d(0, 0, 0) rotate(135deg);
+        transform: translate3d(0, 0, 0) rotate(135deg);
+      }
+      to {
+        -webkit-transform: translate3d(-100%, 0, 0) rotate(135deg);
+        transform: translate3d(-50%, 0, 0) rotate(135deg);
+        visibility: visible;
+      }
+    }
+
+    @keyframes slidePrevArrowAnimation {
+      from {
+        -webkit-transform: translate3d(0, 0, 0) rotate(135deg);
+        transform: translate3d(0, 0, 0) rotate(135deg);
+      }
+      to {
+        -webkit-transform: translate3d(-100%, 0, 0) rotate(135deg);
+        transform: translate3d(-50%, 0, 0) rotate(135deg);
+        visibility: visible;
+      }
+    }
+
+    @-webkit-keyframes slideNextArrowAnimation {
+      from {
+        -webkit-transform: translate3d(0, 0, 0) rotate(-45deg);
+        transform: translate3d(0, 0, 0) rotate(-45deg);
+      }
+      to {
+        -webkit-transform: translate3d(100%, 0, 0) rotate(-45deg);
+        transform: translate3d(50%, 0, 0) rotate(-45deg);
+        visibility: visible;
+      }
+    }
+
+    @keyframes slideNextArrowAnimation {
+      from {
+        -webkit-transform: translate3d(0, 0, 0) rotate(-45deg);
+        transform: translate3d(0, 0, 0) rotate(-45deg);
+      }
+      to {
+        -webkit-transform: translate3d(100%, 0, 0) rotate(-45deg);
+        transform: translate3d(50%, 0, 0) rotate(-45deg);
+        visibility: visible;
+      }
+    }
+
     .nav{
       justify-content: normal !important;
 
@@ -272,6 +320,49 @@
         &.prev,
         &.next {
           display: block;
+          position: relative;
+        }
+        &.prev,
+        &.next {
+          &::before{
+            content: "";
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            border-right: 2px solid $global-clr-soft-blue;
+            border-bottom: 2px solid $global-clr-soft-blue;
+            top: calc(50% - 5px);
+            animation-duration: 0.7s;
+            animation-fill-mode: both;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+          }
+        }
+        &.prev{
+          &::before{
+            animation-name: slidePrevArrowAnimation;
+            left: 20px;
+            @include rotate(135);
+          }
+
+          > a{
+            padding-right: 15px !important;
+            padding-left: 30px !important;
+            text-align: right !important;
+          }
+        }
+        &.next{
+          &::before{
+            animation-name: slideNextArrowAnimation;
+            right: 20px;
+            @include rotate(-45);
+          }
+
+          > a{
+            padding-left: 15px !important;
+            padding-right: 30px !important;
+            text-align: left !important;
+          }
         }
       }
 
@@ -288,6 +379,7 @@
         text-overflow: ellipsis;
         white-space: nowrap;
         word-wrap: normal;
+        position: relative;
 
         &::before,
         &::after{
@@ -296,6 +388,11 @@
 
         &.active{
           background-color: $global-clr-soft-blue !important;
+        }
+
+        span{
+          overflow: hidden;
+          z-index: 0;
         }
       }
     }
