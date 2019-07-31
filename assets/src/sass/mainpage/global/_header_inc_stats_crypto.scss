@@ -243,6 +243,21 @@ $globalSvgIconImgPath : "../../img/global/svg";
               @include rotate(45);
             }
 
+            &.slidingdropdown{
+              display: block !important;
+              height: 0;
+              opacity: 0;
+              @include transition(all, 0.3s, ease-out);
+
+              &.show{
+                height: 480px;
+                opacity: 1;
+                @include transition(all, 0.25s, ease-out);
+              }
+            }
+
+            &-ul{}
+
             *{color: $global-clr-white;}
 
             &-list{
