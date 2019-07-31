@@ -175,12 +175,13 @@
                     <div class="maincont-left col-3">
                         <form class="formuinew">
                             <div class="coinareaselect">
-                                <a class="dropdown-toggle coinareaselect-toggle" data-toggle="dropdown" data-value="">
+                                <a class="dropdown-toggle coinareaselect-toggle" id="CoinSelectDropdownMenu" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-value="">
                                     <span class="coinicons"><i class="icon-svg icon-svg-currencyiconbtc"></i><i class="icon-svg icon-svg-currencyicontry"></i></span>
                                     <span class="currencytext"><span class="selectcoin">BTC</span>/<span class="selectcurrency">TRY</span></span>
                                     <span class="coinareaselect-toggle-arrow"></span>
                                 </a>
-                                <ul class="dropdown-menu coinareaselect-menu">
+                                <div class="dropdown-menu coinareaselect-menu slidingdropdown" aria-labelledby="CoinSelectDropdownMenu">
+                                <ul class="coinareaselect-menu-ul">
                                     <li class="coinareaselect-menu-list" data-value="BTCTRY">
                                         <span class="coinicons"><i class="icon-svg icon-svg-currencyiconbtc"></i><i class="icon-svg icon-svg-currencyicontry"></i></span>
                                         <span class="currencytext"><span class="selectcoin">BTC</span>/<span class="selectcurrency">TRY</span></span>
@@ -222,6 +223,7 @@
                                         <span class="currencytext"><span class="selectcoin">MPAY</span>/<span class="selectcurrency">USD</span></span>
                                     </li>
                                 </ul>
+                                </div>
                             </div>
                         </form>
                         <script>
