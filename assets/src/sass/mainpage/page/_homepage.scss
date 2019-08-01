@@ -365,9 +365,6 @@ $globalSvgIconImgPath : "../../img/global/svg";
     &-owl{
       @include ReSassResponsive(768){
         .owl{
-          &-stage-outer{
-          }
-
           &-item{
             position: relative;
             padding: 0 20px;
@@ -436,6 +433,15 @@ $globalSvgIconImgPath : "../../img/global/svg";
             right: 0;
             &::before{
               @include rotate(270);
+            }
+          }
+        }
+      }
+      @include ReSassResponsive(400){
+        .owl{
+          &-item{
+            &::before{
+              display: none;
             }
           }
         }
@@ -573,10 +579,18 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
         label{
           top: 10px;
+
+          @include ReSassResponsive(992){
+            left: 0;
+          }
         }
 
         .form-control{
           padding: 10px 10px 5px !important;
+
+          @include ReSassResponsive(992){
+            padding: 10px 0 5px!important;
+          }
 
           &:focus{
             border-left-color: $global-clr-soft-blue !important;
@@ -593,6 +607,10 @@ $globalSvgIconImgPath : "../../img/global/svg";
             top: -3px;
             left: 10px;
             color: $global-clr-soft-gray;
+
+            @include ReSassResponsive(992){
+              left: 0;
+            }
           }
 
           &:focus ~ .inputbottombar:before,
