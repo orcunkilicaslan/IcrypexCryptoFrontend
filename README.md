@@ -96,6 +96,7 @@
  - [08_Eml_Password_Change_Ok](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/email-system/08_Eml_Password_Change_Ok.html)
  - [09_Eml_Withdraw_Try_Request](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/email-system/09_Eml_Withdraw_Try_Request.html)
  - [10_Eml_Withdraw_Try_Ok](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/email-system/10_Eml_Withdraw_Try_Ok.html)
+ - [11_Eml_Contact_Mail](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/email-system/11_Eml_Contact_Mail.html)
  
  
  #### Marketing E-Mail Template List
