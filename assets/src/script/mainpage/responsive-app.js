@@ -63,7 +63,7 @@ jQuery(function($) {
                 loop:true,
                 nav:true,
                 dots:false,
-                autoplay:false,
+                autoplay:true,
                 autoplayTimeout:3000,
                 autoplayHoverPause:true,
                 items:2,

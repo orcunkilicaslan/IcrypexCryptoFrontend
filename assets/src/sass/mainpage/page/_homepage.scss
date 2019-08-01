@@ -365,9 +365,6 @@ $globalSvgIconImgPath : "../../img/global/svg";
     &-owl{
       @include ReSassResponsive(768){
         .owl{
-          &-stage-outer{
-          }
-
           &-item{
             position: relative;
             padding: 0 20px;
@@ -436,6 +433,15 @@ $globalSvgIconImgPath : "../../img/global/svg";
             right: 0;
             &::before{
               @include rotate(270);
+            }
+          }
+        }
+      }
+      @include ReSassResponsive(400){
+        .owl{
+          &-item{
+            &::before{
+              display: none;
             }
           }
         }
