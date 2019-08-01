@@ -1184,6 +1184,52 @@ $globalSvgIconImgPath : "../../img/global/svg";
         overflow-x: hidden;
         margin: auto;
         position: relative;
+
+        .depthswipemask{
+          position: absolute;
+          width: 100%;
+          height: calc(100% - 15px);
+          left: 50%;
+          top: 0;
+          opacity: 0.5;
+
+          @-webkit-keyframes SwipeMaskAnimation {
+            form {
+              left: calc(50% - 0px);
+            }
+            to {
+              left: calc(50% - 80px);
+            }
+          }
+          @keyframes SwipeMaskAnimation {
+            form {
+              left: calc(50% - 0px);
+            }
+            to {
+              left: calc(50% - 80px);
+            }
+          }
+
+          &::before{
+            content: "";
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            top: calc(50% - 40px);
+            left: calc(50% - 0px);
+            z-index: 1;
+            background-image: url(#{$globalSvgIconImgPath}/Mobile_Touch_Swipe_Icon.svg);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: contain;
+            overflow: hidden;
+            animation-name: SwipeMaskAnimation;
+            animation-duration: 0.7s;
+            animation-fill-mode: both;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+          }
+        }
       }
       @include ReSassResponsive(576){
         width: 100%;

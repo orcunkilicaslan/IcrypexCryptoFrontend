@@ -249,7 +249,7 @@
             </li>
             -->
             <li class="homepage-slider-wapper-item">
-                <a class="colorsetwhite" href="#" title="YARIŞMA DETAYLARI İÇİN TIKLAYIN">
+                <a class="colorsetwhite" href="https://www.icrypex.com/announcement" title="YARIŞMA DETAYLARI İÇİN TIKLAYIN">
                 <h2 class="homepage-slider-title" lang="tr">1 BİTCOİN VE 50.000 RİPPLE ÖDÜLLÜ YARIŞMA BAŞLADI</h2>
                 <p class="homepage-slider-desc" lang="tr">SPONSORU OLDUĞUMUZ ONEDİO'NUN CANLI BİLGİ YARIŞMASI OYNA KAZAN KRİPTO FEST 5-6 AĞUSTOS'TA START VERİYOR. YARIŞMA DETAYLARI İÇİN TIKLAYIN.</p>
                 </a>
@@ -632,6 +632,19 @@
                     $('#depthscrollbar').perfectScrollbar();
                 });
 
+                // Swipe Mask Add
+                $(document).ready(function($){
+                    $('.homepage-depth-scrollbar').append($('<div class="depthswipemask"></div>'));
+
+                    $('.homepage-depth-scrollbar > .depthswipemask').on('click', function(){
+                        $('.depthswipemask').remove();
+                    });
+                });
+
+            } else {
+                $(document).ready(function($){
+                    $('.homepage-depth-scrollbar > .depthswipemask').remove();
+                });
             }
         </script>
         <div id="depthscrollbar" class="homepage-depth-scrollbar">
