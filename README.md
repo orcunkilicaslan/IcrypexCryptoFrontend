@@ -100,7 +100,7 @@
  
  #### Marketing E-Mail Template List
  - [50_20190801_Kripto_Fest](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/email-marketing/50_20190801_Kripto_Fest.html)
- - [99_Investing_Mass_Mail](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/email-marketing/99_Investing_Mass_Mail.html)
+ - [99_20190730_Investing_Mass_Mail](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/email-marketing/99_20190730_Investing_Mass_Mail.html)
  
 
 # NodeJS Kurulumu
