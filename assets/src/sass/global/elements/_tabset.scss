@@ -309,11 +309,20 @@
       &-item{
         display: none;
         width: calc(100% /4);
+        @include ReSassResponsive(400){
+          width: calc(100% /3.333);
+        }
 
         &.active {
           width: calc(100% /2);
+          @include ReSassResponsive(400){
+            width: calc(100% /2.5);
+          }
           &:first-child {
             margin-left: calc(100% /4);
+            @include ReSassResponsive(400){
+              margin-left: calc(100% /3.334);
+            }
           }
         }
         &.active,
@@ -372,7 +381,7 @@
         border: 0 !important;
         width: 100%;
         max-width: 100%;
-        padding: 4px 5px 2px !important;
+        padding: 8px 5px 6px!important;
         text-align: center;
         vertical-align: top;
         overflow: hidden;

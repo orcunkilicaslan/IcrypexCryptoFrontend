@@ -11,10 +11,12 @@ $globalSvgIconImgPath : "../../img/global/svg";
   @include ReSassResponsive(992){
     order: 1;
     margin-top: 25px;
-    padding-bottom: 5px;
   }
   @include ReSassResponsive(768){
-    padding-bottom: 0;
+    padding-bottom: 15px;
+  }
+  @include ReSassResponsive(400){
+    margin-top: 20px;
   }
 
   &-tabnav{

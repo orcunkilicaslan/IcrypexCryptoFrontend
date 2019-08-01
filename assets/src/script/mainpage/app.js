@@ -7,11 +7,7 @@ $('#homepageslider').owlCarousel({
     autoplayHoverPause:true,
     items:1,
     margin:10,
-    //animateIn: 'bounceInDown',
-    //animateIn: 'bounceInLeft',
     animateIn: 'fadeInDown',
-    //animateOut: 'slideOutDown',
-    //animateOut: 'bounceOutRight',
     animateOut: 'fadeOutDown',
 });
 /* Homepage Slider */

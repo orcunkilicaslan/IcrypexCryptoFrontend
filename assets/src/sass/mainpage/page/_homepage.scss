@@ -37,6 +37,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
         order: 1;
         max-width: 100%;
         padding-right: 0;
+        margin-bottom: 10px;
       }
     }
     &-right{
@@ -50,7 +51,6 @@ $globalSvgIconImgPath : "../../img/global/svg";
       @include ReSassResponsive(992){
         order: 2;
         max-width: 100%;
-        margin-bottom: 20px;
       }
     }
     &-fullwidth{
@@ -69,13 +69,9 @@ $globalSvgIconImgPath : "../../img/global/svg";
       min-height: 220px;
     }
     @include ReSassResponsive(992){
-      min-height: 200px;
-    }
-    @include ReSassResponsive(768){
-      min-height: 180px;
+      min-height: inherit;
     }
     @include ReSassResponsive(576){
-      min-height: inherit;
       margin-bottom: 15px;
     }
 
@@ -148,12 +144,6 @@ $globalSvgIconImgPath : "../../img/global/svg";
             height: 200px;
           }
           @include ReSassResponsive(992){
-            height: 180px;
-          }
-          @include ReSassResponsive(768){
-            height: 140px;
-          }
-          @include ReSassResponsive(576){
             height: auto;
           }
         }
@@ -321,6 +311,9 @@ $globalSvgIconImgPath : "../../img/global/svg";
         @include ReSassResponsive(480){
           font-size: 22px;
         }
+        @include ReSassResponsive(400){
+          font-size: 26px;
+        }
       }
     }
 
@@ -342,6 +335,9 @@ $globalSvgIconImgPath : "../../img/global/svg";
       }
       @include ReSassResponsive(480){
         font-size: 15px;
+      }
+      @include ReSassResponsive(400){
+        font-size: 17px;
       }
     }
 
@@ -457,11 +453,15 @@ $globalSvgIconImgPath : "../../img/global/svg";
       background-color: transparentize($global-clr-soft-gray, 0.9);
       border: 1px solid transparentize($global-clr-soft-gray, 0.7);
       padding: 30px;
-      margin-top: 25px;
+      margin: 20px 0 5px;
       height: auto;
     }
     @include ReSassResponsive(576){
       padding: 20px;
+    }
+    @include ReSassResponsive(400){
+      padding: 25px 10px 10px;
+      margin: 10px 0 0;
     }
 
     @keyframes pulse{
@@ -655,7 +655,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
           margin-bottom: 10px;
         }
         @include ReSassResponsive(992){
-          margin: 0 auto 15px;
+          margin: 0 0 15px;
         }
       }
 
@@ -672,7 +672,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
           margin-bottom: 10px;
         }
         @include ReSassResponsive(992){
-          margin: 10px auto 25px;
+          margin: 10px 0 25px;
         }
 
         &-captcha{
@@ -712,7 +712,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
         @include ReSassResponsive(992){
           display: flex;
           flex-direction: column;
-          align-items: center;
+          //align-items: center;
           margin-bottom: 15px;
         }
       }
@@ -1173,6 +1173,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
     padding: 0;
 
     @include ReSassResponsive(992){
+      order: 2;
       padding: 0;
     }
 
@@ -1213,10 +1214,10 @@ $globalSvgIconImgPath : "../../img/global/svg";
           &::before{
             content: "";
             position: absolute;
-            width: 80px;
-            height: 80px;
-            top: calc(50% - 40px);
-            left: calc(50% - 0px);
+            width: 60px;
+            height: 60px;
+            top: calc(50% - 30px);
+            left: calc(50% + 20px);
             z-index: 1;
             background-image: url(#{$globalSvgIconImgPath}/Mobile_Touch_Swipe_Icon.svg);
             background-repeat: no-repeat;
@@ -1224,7 +1225,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
             background-size: contain;
             overflow: hidden;
             animation-name: SwipeMaskAnimation;
-            animation-duration: 0.7s;
+            animation-duration: 1.5s;
             animation-fill-mode: both;
             animation-iteration-count: infinite;
             animation-direction: alternate;
@@ -1285,15 +1286,16 @@ $globalSvgIconImgPath : "../../img/global/svg";
     padding-right: 0;
 
     @include ReSassResponsive(992){
+      order: 3;
       background-color: transparentize($global-clr-soft-gray, 0.9);
       border: 1px solid transparentize($global-clr-soft-gray, 0.7);
       display: flex;
       flex-wrap: wrap;
-      margin-top: 20px;
+      margin: 15px 0 5px;
       padding: 15px 18px;
     }
     @include ReSassResponsive(768){
-      margin-top: 15px;
+      margin: 0 0 5px;
     }
     @include ReSassResponsive(576){
       padding: 12px 15px;
@@ -1367,6 +1369,10 @@ $globalSvgIconImgPath : "../../img/global/svg";
       div[class*="col-"]{
         padding-left: 0;
         padding-right: 35px;
+
+        @include ReSassResponsive(768){
+          padding-right: 0;
+        }
       }
       &-item{
         display: flex;
@@ -1553,7 +1559,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
             margin-bottom: 5px;
           }
           @include ReSassResponsive(480){
-            width: 100%;
+            //width: 100%;
           }
         }
       }
@@ -1637,6 +1643,9 @@ $globalSvgIconImgPath : "../../img/global/svg";
         max-width: 720px;
         margin: 0 auto;
       }
+      @include ReSassResponsive(400){
+        padding: 30px 0 20px;
+      }
 
       .columntitle{
         color: $global-clr-dark-blue;
@@ -1703,6 +1712,11 @@ $globalSvgIconImgPath : "../../img/global/svg";
       }
       &-btn{
         margin-top: 35px;
+
+        @include ReSassResponsive(400){
+          margin-top: 10px;
+        }
+
         &-item{
           margin-right: 35px;
           background-position: center;
@@ -1711,6 +1725,11 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
           &:last-child{
             margin-right: 0;
+          }
+
+          @include ReSassResponsive(400){
+            margin: 20px auto !important;
+            display: block;
           }
 
           &.apple{

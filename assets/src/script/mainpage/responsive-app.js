@@ -39,7 +39,9 @@ jQuery(function($) {
                 items:1,
                 margin:0,
                 autoWidth:false,
-                animateOut: 'fadeOut'
+                animateIn: 'slideInRight',
+                animateOut: 'slideOutLeft',
+
             });
             $('.homepage-chartarea-column').addClass("item");
         });
@@ -73,7 +75,7 @@ jQuery(function($) {
                     0:{
                         items:1
                     },
-                    480:{
+                    400:{
                         items:2
                     }
                 }
