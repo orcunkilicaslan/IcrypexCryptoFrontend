@@ -18,6 +18,11 @@
 			@content;
 		}
 	}
+	@if $point==400 {
+		@media ( max-width: 399px ) {
+			@content;
+		}
+	}
 	@if $point==480 {
 		@media ( max-width: 479px ) {
 			@content;

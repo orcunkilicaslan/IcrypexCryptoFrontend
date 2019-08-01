@@ -11,11 +11,15 @@
     padding: 0;
     margin-bottom: 0;
     border: none;
-    @include border-radius(0);
     left: 0;
     right: 0;
     bottom: 0;
     z-index: 2;
+    @include border-radius(0);
+
+    @include ReSassResponsive(992){
+      background-color: $global-sitebg-darkblue01 !important;
+    }
   }
 
   &.fade{
@@ -33,11 +37,25 @@
     align-items: center;
     padding: 15px;
 
+    @include ReSassResponsive(992){
+      padding-top: 25px;
+    }
+    @include ReSassResponsive(400){
+      padding: 10px;
+      padding-top: 20px;
+    }
+
     &-desc{
 
-      @include ReSassResponsive(1400){
-        p{
+      p{
+        @include ReSassResponsive(1400){
           font-size: 15px;
+        }
+        @include ReSassResponsive(992){
+          text-align: center;
+        }
+        @include ReSassResponsive(400){
+          font-size: 13px;
         }
       }
 
@@ -55,6 +73,7 @@
         top: calc(50% - 13px);
         right: 20px;
         text-indent: -9999px;
+        cursor: pointer;
         opacity: 1;
         @include transition(transform, 0.3s, ease-in-out);
 
@@ -87,6 +106,22 @@
           &::before,
           &::after{
             width: 20px;
+          }
+        }
+        @include ReSassResponsive(992){
+          background-color: $global-sitebg-darkblue01;
+          width: 36px;
+          height: 36px;
+          top: -16px;
+          right: auto;
+          left: calc(50% - 16px);
+          border: 1px solid transparentize($global-clr-soft-gray, 0.7);
+          @include border-radius(50%);
+
+          &::before,
+          &::after{
+            width: 16px;
+            left: calc(50% - 8px);
           }
         }
       }
