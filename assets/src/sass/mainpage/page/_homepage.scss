@@ -573,10 +573,18 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
         label{
           top: 10px;
+
+          @include ReSassResponsive(992){
+            left: 0;
+          }
         }
 
         .form-control{
           padding: 10px 10px 5px !important;
+
+          @include ReSassResponsive(992){
+            padding: 10px 0 5px!important;
+          }
 
           &:focus{
             border-left-color: $global-clr-soft-blue !important;
@@ -593,6 +601,10 @@ $globalSvgIconImgPath : "../../img/global/svg";
             top: -3px;
             left: 10px;
             color: $global-clr-soft-gray;
+
+            @include ReSassResponsive(992){
+              left: 0;
+            }
           }
 
           &:focus ~ .inputbottombar:before,

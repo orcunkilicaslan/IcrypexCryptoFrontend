@@ -69,7 +69,8 @@ jQuery(function($) {
                 items:2,
                 margin:0,
                 autoWidth:false,
-                animateOut: 'fadeOut',
+                animateIn: 'slideInRight',
+                animateOut: 'slideOutLeft',
                 responsiveClass:true,
                 responsive:{
                     0:{
