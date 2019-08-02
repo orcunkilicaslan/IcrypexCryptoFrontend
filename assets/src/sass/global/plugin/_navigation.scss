@@ -5,7 +5,7 @@
   &-megamenu{
     left: 0;
     position: relative;
-    @include transition(all, 250ms, ease-in-out);
+    @include transition(all, 0.3s, ease-in-out);
   }
 
   &-mobilemenu{
