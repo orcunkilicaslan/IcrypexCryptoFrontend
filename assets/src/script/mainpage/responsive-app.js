@@ -93,5 +93,5 @@ jQuery(function($) {
 /* Responsive Homepage Big Price Area Owl Carousel */
 
 /* Loading Info */
-console.log("Mainpage App Responsive Javascript Loading Successful");
+// console.log("Mainpage App Responsive Javascript Loading Successful");
 /* Loading Info */

@@ -38,5 +38,5 @@ $(document).ready(function () {
 /* Accordion */
 
 /* Loading Info */
-console.log("Mainpage App Javascript Loading Successful");
+// console.log("Mainpage App Javascript Loading Successful");
 /* Loading Info */

@@ -280,5 +280,5 @@ jQuery(function($){
 /* Masked Input Plugin for jQuery */
 
 /* Loading Info */
-console.log("Mainpage App Contact Us Form Validations Javascript Loading Successful");
+// console.log("Mainpage App Contact Us Form Validations Javascript Loading Successful");
 /* Loading Info */

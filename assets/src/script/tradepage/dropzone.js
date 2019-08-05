@@ -40,5 +40,5 @@ jQuery(function($) {
 /* DropZone JS */
 
 /* Loading Info */
-console.log("Tradepage App Dropzone Javascript Loading Successful");
+// console.log("Tradepage App Dropzone Javascript Loading Successful");
 /* Loading Info */

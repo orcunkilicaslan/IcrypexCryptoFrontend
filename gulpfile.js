@@ -97,6 +97,7 @@ gulp.task('sass-plugin', () => {
 gulp.task('script-plugin', () => {
     return gulp.src([
         folder_src_main + 'script/plugin/**/app.js',
+        folder_src_main + 'script/plugin/**/responsive-app.js',
         folder_src_main + 'script/plugin/**/responsive-tabs.js'
     ])
         .pipe(plumber())

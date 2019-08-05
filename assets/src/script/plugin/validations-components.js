@@ -115,5 +115,5 @@ jQuery(function($){
 /* Masked Input Plugin for jQuery */
 
 /* Loading Info */
-console.log("Plugin App Component Label Form Validations Javascript Loading Successful");
+// console.log("Plugin App Component Label Form Validations Javascript Loading Successful");
 /* Loading Info */

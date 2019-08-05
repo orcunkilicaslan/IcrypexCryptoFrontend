@@ -1,11 +1,11 @@
 
-/* Mobile Responsive JS */
+/* Responsive */
 jQuery(function($) {
     if($(window).width() > 767){
 
     }
 });
-/* Mobile Responsive JS */
+/* Responsive */
 
 /* Loading Info */
 // console.log("Plugin App Mobile Responsive Javascript Loading Successful");

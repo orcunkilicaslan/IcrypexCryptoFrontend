@@ -221,7 +221,6 @@ jQuery(function($) {
 });
 /* Profile Login Settings Button Validation */
 
-
 /* Loading Info */
-console.log("Tradepage App Profile Login Settings Login Form Validations Javascript Loading Successful");
+// console.log("Tradepage App Profile Login Settings Login Form Validations Javascript Loading Successful");
 /* Loading Info */

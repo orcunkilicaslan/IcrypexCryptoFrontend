@@ -304,5 +304,5 @@ jQuery(function($){
 /* Masked Input Plugin for jQuery */
 
 /* Loading Info */
-console.log("Mainpage App Homepage Register Form Validations Javascript Loading Successful");
+// console.log("Mainpage App Homepage Register Form Validations Javascript Loading Successful");
 /* Loading Info */

@@ -5,6 +5,9 @@
     background-color: transparent;
   }
   &-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     color: $global-clr-white;
     font-size: 17px;
 
@@ -70,6 +73,10 @@
 
     &-list{
       min-height: 36px;
+
+      @include ReSassResponsive(992){
+        min-height: auto;
+      }
 
       > li{
 
@@ -188,9 +195,12 @@
 
     &-menu{
       background-color: transparentize($global-clr-soft-gray, 0.8);
-      min-height: inherit;
+      width: calc(100% + 20px);
       margin: 0;
+      margin-left: -10px;
+      min-height: inherit;
       padding: 10px;
+      border: none !important;
 
       .header-signin{
         display: flex;
@@ -213,17 +223,98 @@
           }
 
           a{
+            color: $global-clr-white;
             display: block;
             font-size: 16px;
             padding: 5px;
-          }
 
+            &::after{
+              display: none !important;
+            }
+
+            &[class*="login"]{
+              background-color: $global-clr-green;
+            }
+            &[class*="register"]{
+              background-color: $global-clr-soft-blue;
+            }
+          }
         }
       }
     }
 
-  }
+    &-userarea{
+      width: calc(100% + 20px);
+      margin-left: -10px;
+      border: none !important;
 
+      .header-userarea-user-droplist{
+        min-width: auto !important;
+        margin: 10px 10px 0;
+      }
+
+      .headusermenu{
+        cursor: pointer;
+
+        &-box{
+          padding: 12px 10px!important;
+
+          &-avatar{
+            width: 44px !important;
+            height: 44px !important;
+            margin-bottom: 0 !important;
+            margin-right: 10px;
+
+            img{
+              width: 44px !important;
+              height: 44px !important;
+            }
+          }
+
+          &-textarea{
+            text-align: left !important;
+          }
+        }
+
+        &-userbg{
+          flex-direction: row !important;
+        }
+
+        &-menulist{
+          width: 100%;
+          height: 0;
+          overflow: hidden;
+          @include transition(height, 0.3s, ease-out);
+        }
+      }
+    }
+
+    &-bottom{
+      .btnarea{
+        text-align:center;
+        margin: 10px;
+        @include border-radius(3px);
+
+        a{
+          font-size: 16px;
+          padding:5px 5px 6px;
+          display:block;
+          @include border-radius(3px);
+
+          &.logout{
+            background-color: $global-clr-red;
+            color: $global-clr-white;
+            width:100%;
+            @include transition(background, 0.3s, ease-in-out);
+
+            &:hover{
+              background-color: lighten($global-clr-red, 10%);
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 .header{
