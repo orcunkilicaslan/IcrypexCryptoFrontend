@@ -7,7 +7,7 @@
     <link id="css-bootstrap" rel="stylesheet" href="../assets/dist/css/bootstrap.css">
     <link id="css-plugin" rel="stylesheet" href="../assets/dist/css/plugin.css">
     <link id="css-mainpage-app" rel="stylesheet" href="../assets/dist/css/mainpage-app.css">
-    <link id="css-mainpage-app" rel="stylesheet" href="../assets/dist/css/tradepage-app.css">
+    <link id="css-tradepage-app" rel="stylesheet" href="../assets/dist/css/tradepage-app.css">
     <script id="script-jquery" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script id="script-popper" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script id="script-bootstrap" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
@@ -20,7 +20,7 @@
     <!-- Mobile Header -->
     <div class="dfn-mobilemenu-mask"></div>
     <div class="dfn-mobilemenu-header clearfix">
-        <a class="header-navigation-logo" href="#" title="ICRYPEX Crypto Exchange" rel="bookmark">
+        <a class="header-navigation-logo" href="../mainpage/00_Home_Page.html" title="ICRYPEX Crypto Exchange" rel="bookmark">
             <i class="header-navigation-logo-symbol icon-svg icon-svg-icrypexsymbol"></i>
             <h1 class="header-navigation-logo-icrypex">ICRYPEX</h1>
             <h2 class="header-navigation-logo-cryptoexchange">CRYPTO EXCHANGE</h2>
@@ -37,31 +37,66 @@
 
         <!-- Navigation Start -->
         <div class="header-navigation">
+            <!-- Logo -->
             <div class="header-navigation-resp col-3 d-flex justify-content-start">
-                <a class="header-navigation-logo" href="#" title="ICRYPEX Crypto Exchange" rel="bookmark">
+                <a class="header-navigation-logo" href="../mainpage/00_Home_Page.html" title="ICRYPEX Crypto Exchange" rel="bookmark">
                     <i class="header-navigation-logo-symbol icon-svg icon-svg-icrypexsymbol"></i>
                     <h1 class="header-navigation-logo-icrypex">ICRYPEX</h1>
                     <h2 class="header-navigation-logo-cryptoexchange">CRYPTO EXCHANGE</h2>
                 </a>
             </div>
+            <!-- Logo -->
+            <!-- Navigasyon -->
             <div class="col-6 d-flex justify-content-center">
                 <div class="header-navigation-navbar dfn-nav">
                     <nav class="dfn-menu">
-                        <div class="dfn-mobil-alt dfn-menu-list dfn-onlymobile-menu d-lg-none">
-                            <ul class="header-signin">
-                                <li class="header-signin-item"><a class="header-signin-register" href="#" title="YENİ ÜYELİK" rel="bookmark">YENİ ÜYELİK</a></li>
-                                <li class="header-signin-item"><a class="header-signin-login" href="#" title="ÜYE GİRİŞİ" rel="bookmark">ÜYE GİRİŞİ</a></li>
-                            </ul>
-                        </div>
                         <ul class="dfn-mobil-alt dfn-menu-list">
+                            <li class="dfn-onlymobile-menu d-lg-none">
+                                <ul class="header-signin">
+                                    <li class="header-signin-item"><a class="header-signin-register" href="../mainpage/01_Sign_Up.html" title="YENİ ÜYELİK" rel="bookmark">YENİ ÜYELİK</a></li>
+                                    <li class="header-signin-item"><a class="header-signin-login" href="01_Login_Step_1.html" title="ÜYE GİRİŞİ" rel="bookmark">ÜYE GİRİŞİ</a></li>
+                                </ul>
+                            </li>
+                            <li class="dfn-onlymobile-userarea d-lg-none" style="display: none !important;">
+                                <div class="header-userarea-user-droplist">
+                                    <div class="headusermenu" id="MobileMenuUserDropdownMenu">
+                                        <div class="headusermenu-box">
+                                            <div class="headusermenu-userbg">
+                                                <div class="headusermenu-box-avatar"><img src="../assets/img/global/svg/Unknown_Profile_Avatar_Icon.svg" width="200" height="200" alt="UserPic"></div>
+                                                <div class="headusermenu-box-textarea">
+                                                    <h5 class="headusermenu-box-textarea-username">ORCUN KILICASLAN</h5>
+                                                    <small><a href="25_Profile_Notification.html" title="" rel="bookmark">1 Yeni Mesajınız Var</a></small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="headusermenu-menulist">
+                                            <ul id="MobileMenuMainpageDropdownMenu" class="usermenulist">
+                                                <li class="userlink"><a href="../mainpage/02_Features_Products.html" title="ÖZELLİKLER" rel="category">ÖZELLİKLER</a></li>
+                                                <li class="userlink"><a href="../mainpage/10_Technology_Chain_Summary.html" title="TEKNOLOJİ" rel="category">TEKNOLOJİ</a></li>
+                                                <li class="userlink"><a href="../mainpage/21_Company_About.html" title="ŞİRKET" rel="category">ŞİRKET</a></li>
+                                                <li class="userlink"><a href="../mainpage/28_What_How.html" title="NEDİR? NASIL ÇALIŞIR?" rel="category">NEDİR? NASIL ÇALIŞIR?</a></li>
+                                                <li class="userlink"><a href="../mainpage/29_Announcements.html" title="DUYURULAR" rel="category">DUYURULAR</a></li>
+                                                <li class="userlink"><a href="#" title="DESTEK" rel="category" target="_blank">DESTEK</a></li>
+                                            </ul>
+                                            <ul id="MobileMenuTradepageDropdownMenu" class="usermenulist">
+                                                <li class="userlink"><a href="04_Easy_Buy_Sell.html" title="KOLAY AL-SAT" rel="category">KOLAY AL-SAT</a></li>
+                                                <li class="userlink"><a href="03_Trader_Home_2.html" title="PRO GÖRÜNÜM" rel="category">PRO GÖRÜNÜM</a></li>
+                                                <li class="userlink"><a href="05_Deposit_Step_1_Home.html" title="PARA YATIRMA" rel="category">PARA YATIRMA</a></li>
+                                                <li class="userlink"><a href="12_Withdraw_Step_1_Home.html" title="PARA ÇEKME" rel="category">PARA ÇEKME</a></li>
+                                                <li class="userlink"><a href="27_Profile_Profile.html" title="HESAP & GÜVENLİK AYARLARI" rel="category">HESAP & GÜVENLİK AYARLARI</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
                             <li>
                                 <a href="#" title="ÖZELLİKLER" rel="category" id="FeaturesDropdownMenu" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ÖZELLİKLER</a>
                                 <div class="dfn-menu-dropdownmenu dropdown-menu" aria-labelledby="FeaturesDropdownMenu">
                                     <ul class="dropdownsubmenu">
-                                        <li class="submainmenu"><a href="/features/products" title="ÜRÜNLER" rel="category">ÜRÜNLER</a></li>
-                                        <li class="submainmenu"><a href="/features/commissions" title="KOMİSYONLAR" rel="category">KOMİSYONLAR</a></li>
-                                        <li class="submainmenu"><a href="/features/limits" title="LİMİTLER" rel="category">LİMİTLER</a></li>
-                                        <li class="submainmenu"><a href="/features/security" title="GÜVENLİK" rel="category">GÜVENLİK</a></li>
+                                        <li class="submainmenu"><a href="../mainpage/02_Features_Products.html" title="ÜRÜNLER" rel="category">ÜRÜNLER</a></li>
+                                        <li class="submainmenu"><a href="../mainpage/07_Features_Commision.html" title="KOMİSYONLAR" rel="category">KOMİSYONLAR</a></li>
+                                        <li class="submainmenu"><a href="../mainpage/08_Features_Limit.html" title="LİMİTLER" rel="category">LİMİTLER</a></li>
+                                        <li class="submainmenu"><a href="../mainpage/09_Features_Security.html" title="GÜVENLİK" rel="category">GÜVENLİK</a></li>
                                     </ul>
                                 </div>
                             </li>
@@ -69,12 +104,12 @@
                                 <a href="#" title="TEKNOLOJİ" rel="category" id="TechnologyDropdownMenu" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">TEKNOLOJİ</a>
                                 <div class="dfn-menu-dropdownmenu dropdown-menu animate slideIn" aria-labelledby="TechnologyDropdownMenu">
                                     <ul class="dropdownsubmenu">
-                                        <li class="submainmenu"><a href="/technology/chain" title="ZİNCİR VERİ TABANI" rel="category">ZİNCİR VERİ TABANI</a></li>
-                                        <li class="submainmenu"><a href="/technology/api" title="API" rel="category">API</a></li>
-                                        <li class="submainmenu"><a href="/technology/cryptoconverter" title="KRİPTO PARA ÇEVİRİCİ" rel="category">KRİPTO PARA ÇEVİRİCİ</a></li>
-                                        <li class="submainmenu"><a href="/technology/mining" title="MADENCİLİK" rel="category">MADENCİLİK</a></li>
-                                        <li class="submainmenu"><a href="/technology/bulksend" title="ÇOKLU GÖNDERİM" rel="category">ÇOKLU GÖNDERİM</a></li>
-                                        <li class="submainmenu"><a href="/technology/segwit" title="SEGWIT" rel="category">SEGWIT</a></li>
+                                        <li class="submainmenu"><a href="../mainpage/10_Technology_Chain_Summary.html" title="ZİNCİR VERİ TABANI" rel="category">ZİNCİR VERİ TABANI</a></li>
+                                        <li class="submainmenu"><a href="../mainpage/16_Technology_Api.html" title="API" rel="category">API</a></li>
+                                        <li class="submainmenu"><a href="../mainpage/17_Technology_Converter.html" title="KRİPTO PARA ÇEVİRİCİ" rel="category">KRİPTO PARA ÇEVİRİCİ</a></li>
+                                        <li class="submainmenu"><a href="../mainpage/18_Technology_Mining.html" title="MADENCİLİK" rel="category">MADENCİLİK</a></li>
+                                        <li class="submainmenu"><a href="../mainpage/19_Technology_Multiple.html" title="ÇOKLU GÖNDERİM" rel="category">ÇOKLU GÖNDERİM</a></li>
+                                        <li class="submainmenu"><a href="../mainpage/20_Technology_Segwit.html" title="SEGWIT" rel="category">SEGWIT</a></li>
                                     </ul>
                                 </div>
                             </li>
@@ -82,33 +117,39 @@
                                 <a href="#" title="ŞİRKET" rel="category" id="CompanyDropdownMenu" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ŞİRKET</a>
                                 <div class="dfn-menu-dropdownmenu dropdown-menu animate slideIn" aria-labelledby="CompanyDropdownMenu">
                                     <ul class="dropdownsubmenu">
-                                        <li class="submainmenu"><a href="/company/about" title="HAKKIMIZDA" rel="category">HAKKIMIZDA</a></li>
-                                        <li class="submainmenu"><a href="/company/legal/information" title="YASAL" rel="category">YASAL</a></li>
-                                        <li class="submainmenu"><a href="/company/contact" title="BİZE ULAŞIN" rel="category">BİZE ULAŞIN</a></li>
+                                        <li class="submainmenu"><a href="../mainpage/21_Company_About.html" title="HAKKIMIZDA" rel="category">HAKKIMIZDA</a></li>
+                                        <li class="submainmenu"><a href="../mainpage/22_Company_Legal_Terms_01.html" title="YASAL" rel="category">YASAL</a></li>
+                                        <li class="submainmenu"><a href="../mainpage/27_Company_Contact.html" title="BİZE ULAŞIN" rel="category">BİZE ULAŞIN</a></li>
                                     </ul>
                                 </div>
                             </li>
-                            <li><a href="#" title="NEDİR? NASIL ÇALIŞIR?" rel="category">NEDİR? NASIL ÇALIŞIR?</a></li>
-                            <li><a href="#" title="DUYURULAR" rel="category">DUYURULAR</a></li>
+                            <li><a href="../mainpage/28_What_How.html" title="NEDİR? NASIL ÇALIŞIR?" rel="category">NEDİR? NASIL ÇALIŞIR?</a></li>
+                            <li><a href="../mainpage/29_Announcements.html" title="DUYURULAR" rel="category">DUYURULAR</a></li>
                             <li><a href="#" title="DESTEK" rel="category">DESTEK</a></li>
+                        </ul>
+                        <ul class="dfn-mobil-alt dfn-onlymobile-bottom d-lg-none" style="display: none !important;">
+                            <li class="btnarea"><a class="logout" href="../mainpage/00_Home_Page.html" title="ÇIKIŞ YAPIN" rel="external nofollow">ÇIKIŞ YAPIN</a></li>
                         </ul>
                     </nav>
                 </div>
             </div>
+            <!-- Navigasyon -->
+            <!-- User Area -->
             <div class="header-navigation-resp col-3 d-flex justify-content-end">
                 <div class="header-navigation-signin">
                     <ul class="header-signin">
-                        <li class="header-signin-item"><a class="header-signin-register" href="#" title="YENİ ÜYELİK" rel="bookmark">YENİ ÜYELİK</a></li>
-                        <li class="header-signin-item"><a class="header-signin-login" href="#" title="ÜYE GİRİŞİ" rel="bookmark">ÜYE GİRİŞİ</a></li>
+                        <li class="header-signin-item"><a class="header-signin-register" href="../mainpage/01_Sign_Up.html" title="YENİ ÜYELİK" rel="bookmark">YENİ ÜYELİK</a></li>
+                        <li class="header-signin-item"><a class="header-signin-login" href="01_Login_Step_1.html" title="ÜYE GİRİŞİ" rel="bookmark">ÜYE GİRİŞİ</a></li>
                     </ul>
                 </div>
-                <div class="header-navigation-search" style="display: none !important;">
+                <div class="header-navigation-search">
                     <form class="header-search" autocomplete="off" novalidate>
                         <input class="header-search-input" type="search" name="headersearch" placeholder="ARA" />
                         <button class="header-search-button" type="submit"></button>
                     </form>
                 </div>
             </div>
+            <!-- User Area -->
         </div>
         <!-- Navigation End -->
         <!-- OnlyTitle Start -->
@@ -164,6 +205,11 @@
             </div>
         </div>
         <!-- Button -->
+        <!-- Next Page Button -->
+        <div style="margin: 30px auto 0">
+            <a href="../mainpage/00_Home_Page_User_Logged_In.html" class="btn btn-success btnwidth200">GİRİŞ YAP</a>
+        </div>
+        <!-- Next Page Button -->
 
     </div>
     <!-- Message -->
@@ -188,7 +234,7 @@
                         <h2 class="footer-tradepage-logo-cryptoexchange">CRYPTO EXCHANGE</h2>
                     </a>
                     <p class="footer-tradepage-address-desc mt-0">Tüm Hakları Saklıdır © 2018-2019<br />Icrypex Crypto Exchange</p>
-                    <p class="footer-tradepage-address-desc">Icrypex Bilişim A.Ş.<br />Maslak Meydan Sokak<br />Spring Giz Plaza Kat:19<br />34398 Sarıyer/Maslak/İstanbul</p>
+                    <p class="footer-tradepage-address-desc">Icrypex Bilişim A.Ş.<br />Maslak Mah. Maslak Meydan Sok.<br /> Spring Giz Plaza N:5/57 <br />34398 Sarıyer/İstanbul</p>
                     <p class="footer-tradepage-address-desc">Müşteri Hizmetleri: <a href="tel:08502551079" title="Müşteri Hizmetleri" rel="external nofollow">0850 255 1079</a></p>
                 </div>
             </div>
@@ -198,53 +244,65 @@
             <div class="maincont-right col-10">
                 <div class="footer-tradepage-loginnav d-flex justify-content-between" style="display: none !important;">
                     <ul class="footer-tradepage-loginnav-list d-flex">
-                        <li class="footer-tradepage-loginnav-list-item"><a href="#" title="" rel="category">KOLAY AL-SAT</a></li>
-                        <li class="footer-tradepage-loginnav-list-item"><a href="#" title="" rel="category">PRO GÖRÜNÜM</a></li>
-                        <li class="footer-tradepage-loginnav-list-item"><a href="#" title="" rel="category">YATIRMA</a></li>
-                        <li class="footer-tradepage-loginnav-list-item"><a href="#" title="" rel="category">ÇEKME</a></li>
-                        <li class="footer-tradepage-loginnav-list-item"><a href="#" title="" rel="category">HESABIM</a></li>
+                        <li class="footer-tradepage-loginnav-list-item"><a href="04_Easy_Buy_Sell.html" title="" rel="category">KOLAY AL-SAT</a></li>
+                        <li class="footer-tradepage-loginnav-list-item"><a href="03_Trader_Home_2.html" title="" rel="category">PRO GÖRÜNÜM</a></li>
+                        <li class="footer-tradepage-loginnav-list-item"><a href="05_Deposit_Step_1_Home.html" title="" rel="category">YATIRMA</a></li>
+                        <li class="footer-tradepage-loginnav-list-item"><a href="12_Withdraw_Step_1_Home.html" title="" rel="category">ÇEKME</a></li>
+                        <li class="footer-tradepage-loginnav-list-item"><a href="27_Profile_Profile.html" title="" rel="category">HESABIM</a></li>
                         <li class="footer-tradepage-loginnav-list-item"><a href="#" title="" rel="category">DESTEK</a></li>
                     </ul>
                     <ul class="footer-tradepage-loginnav-list linkgray d-flex">
-                        <li class="footer-tradepage-loginnav-list-item"><a href="#" title="" rel="category">CANLI YARDIM</a></li>
-                        <li class="footer-tradepage-loginnav-list-item"><a href="#" title="" rel="category">RENK</a></li>
-                        <li class="footer-tradepage-loginnav-list-item"><a href="#" title="" rel="category">BİLDİRİMLER</a></li>
-                        <li class="footer-tradepage-loginnav-list-item"><a href="#" title="" rel="category">AYARLAR</a></li>
+                        <li class="footer-tradepage-loginnav-list-item d-none"><a href="#" title="" rel="category">CANLI YARDIM</a></li>
+                        <li class="footer-tradepage-loginnav-list-item d-none"><a href="#" title="" rel="category">RENK</a></li>
+                        <li class="footer-tradepage-loginnav-list-item"><a href="25_Profile_Notification.html" title="" rel="category">BİLDİRİMLER</a></li>
+                        <li class="footer-tradepage-loginnav-list-item"><a href="27_Profile_Profile.html" title="" rel="category">AYARLAR</a></li>
                     </ul>
                 </div>
                 <div class="footer-tradepage-nav row justify-content-md-center">
                     <div class="footer-menu col">
-                        <h6 class="footer-menu-title columntitle columntitle-xs bottomborder titleleft">ÖZELLİKLER</h6>
-                        <ul class="footer-menu-list">
-                            <li class="footer-menu-list-item"><a href="#" title="" rel="category">ÜRÜNLER</a></li>
-                            <li class="footer-menu-list-item"><a href="#" title="" rel="category">KOMİSYONLAR</a></li>
-                            <li class="footer-menu-list-item"><a href="#" title="" rel="category">LİMİTLER</a></li>
-                            <li class="footer-menu-list-item"><a href="#" title="" rel="category">GÜVENLİK</a></li>
-                        </ul>
+                        <div class="footer-underlinehover">
+                            <h6 class="footer-menu-title columntitle columntitle-xs bottomborder titleleft">ÖZELLİKLER</h6>
+                            <ul class="footer-menu-list">
+                                <li class="footer-menu-list-item"><a href="../mainpage/02_Features_Products.html" title="" rel="category">ÜRÜNLER</a></li>
+                                <li class="footer-menu-list-item"><a href="../mainpage/07_Features_Commision.html" title="" rel="category">KOMİSYONLAR</a></li>
+                                <li class="footer-menu-list-item"><a href="../mainpage/08_Features_Limit.html" title="" rel="category">LİMİTLER</a></li>
+                                <li class="footer-menu-list-item"><a href="../mainpage/09_Features_Security.html" title="" rel="category">GÜVENLİK</a></li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="footer-menu col">
-                        <h6 class="footer-menu-title columntitle columntitle-xs bottomborder titleleft">TEKNOLOJİ</h6>
-                        <ul class="footer-menu-list">
-                            <li class="footer-menu-list-item"><a href="#" title="" rel="category">ZİNCİR VERİ TABANI</a></li>
-                            <li class="footer-menu-list-item"><a href="#" title="" rel="category">API</a></li>
-                            <li class="footer-menu-list-item"><a href="#" title="" rel="category">KRİPTO PARA ÇEVİRİCİ</a></li>
-                            <li class="footer-menu-list-item"><a href="#" title="" rel="category">MADENCİLİK</a></li>
-                            <li class="footer-menu-list-item"><a href="#" title="" rel="category">ÇOKLU GÖNDERİM</a></li>
-                            <li class="footer-menu-list-item"><a href="#" title="" rel="category">SEGWIT</a></li>
-                        </ul>
+                        <div class="footer-underlinehover">
+                            <h6 class="footer-menu-title columntitle columntitle-xs bottomborder titleleft">TEKNOLOJİ</h6>
+                            <ul class="footer-menu-list">
+                                <li class="footer-menu-list-item"><a href="../mainpage/10_Technology_Chain_Summary.html" title="" rel="category">ZİNCİR VERİ TABANI</a></li>
+                                <li class="footer-menu-list-item"><a href="../mainpage/16_Technology_Api.html" title="" rel="category">API</a></li>
+                                <li class="footer-menu-list-item"><a href="../mainpage/17_Technology_Converter.html" title="" rel="category">KRİPTO PARA ÇEVİRİCİ</a></li>
+                                <li class="footer-menu-list-item"><a href="../mainpage/18_Technology_Mining.html" title="" rel="category">MADENCİLİK</a></li>
+                                <li class="footer-menu-list-item"><a href="../mainpage/19_Technology_Multiple.html" title="" rel="category">ÇOKLU GÖNDERİM</a></li>
+                                <li class="footer-menu-list-item"><a href="../mainpage/20_Technology_Segwit.html" title="" rel="category">SEGWIT</a></li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="footer-menu col">
-                        <h6 class="footer-menu-title columntitle columntitle-xs bottomborder titleleft">ŞİRKET</h6>
-                        <ul class="footer-menu-list">
-                            <li class="footer-menu-list-item"><a href="#" title="" rel="category">HAKKIMIZDA</a></li>
-                            <li class="footer-menu-list-item"><a href="#" title="" rel="category">YASAL</a></li>
-                            <li class="footer-menu-list-item"><a href="#" title="" rel="category">BİZE ULAŞIN</a></li>
-                        </ul>
+                        <div class="footer-underlinehover">
+                            <h6 class="footer-menu-title columntitle columntitle-xs bottomborder titleleft">ŞİRKET</h6>
+                            <ul class="footer-menu-list">
+                                <li class="footer-menu-list-item"><a href="../mainpage/21_Company_About.html" title="" rel="category">HAKKIMIZDA</a></li>
+                                <li class="footer-menu-list-item"><a href="../mainpage/22_Company_Legal_Terms_01.html" title="" rel="category">YASAL</a></li>
+                                <li class="footer-menu-list-item"><a href="../mainpage/27_Company_Contact.html" title="" rel="category">BİZE ULAŞIN</a></li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="footer-menu col">
-                        <h6 class="footer-menu-title columntitle columntitle-xs bottomborder titleleft"><a href="#" title="" rel="category">NEDİR? NASIL ÇALIŞIR?</a></h6>
-                        <h6 class="footer-menu-title columntitle columntitle-xs bottomborder titleleft"><a href="#" title="" rel="category">DUYURULAR</a></h6>
-                        <h6 class="footer-menu-title columntitle columntitle-xs bottomborder titleleft"><a href="#" title="" rel="category">DESTEK</a></h6>
+                        <div class="footer-underlinehover">
+                            <h6 class="footer-menu-title columntitle columntitle-xs bottomborder titleleft"><a href="../mainpage/28_What_How.html" title="" rel="category">NEDİR? NASIL ÇALIŞIR?</a></h6>
+                        </div>
+                        <div class="footer-underlinehover">
+                            <h6 class="footer-menu-title columntitle columntitle-xs bottomborder titleleft"><a href="../mainpage/29_Announcements.html" title="" rel="category">DUYURULAR</a></h6>
+                        </div>
+                        <div class="footer-underlinehover">
+                            <h6 class="footer-menu-title columntitle columntitle-xs bottomborder titleleft"><a href="#" title="" rel="category">DESTEK</a></h6>
+                        </div>
                     </div>
                     <div class="footer-menu col">
                         <h6 class="footer-menu-title columntitle columntitle-xs bottomborder titleleft">BİZİ TAKİP EDİN</h6>
