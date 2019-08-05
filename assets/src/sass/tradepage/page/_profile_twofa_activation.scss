@@ -108,6 +108,32 @@
 
         &-form{
           padding-left: 0;
+
+          .formpincode{
+            max-width: 330px;
+
+            .pincode-input-container{
+              &::before{
+                color: $global-clr-dark-blue;
+                content: "-";
+                position: absolute;
+                left: calc(50% - 9px);
+                top: calc(50% - 4px);
+                font-size: 26px;
+                line-height: 1;
+
+                @include ReSassResponsive(992){
+                  display: none !important;
+                }
+              }
+
+              .form-control.mid{
+                &:nth-child(3){
+                  margin-right: 40px;
+                }
+              }
+            }
+          }
         }
       }
     }

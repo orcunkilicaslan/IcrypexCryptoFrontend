@@ -256,9 +256,10 @@
                             <div class="form-group">
                                 <p class="profile-twofa-activation-qrcode-info">Cep telefonunuza ya da tabletinize indireceğiniz <strong>Google Authenticator</strong> uygulamasını kullanarak QR kodunu okutunuz. Ardından uygulamanın yaratacağı kodu aşağıdaki alana giriniz.</p>
                             </div>
-                            <div class="form-group colorsetdarkblue">
+                            <div class="form-group formpincode colorsetdarkblue">
                                 <label>2FA KODUNU GİRİNİZ</label>
-                                <input type="text" class="form-control inputgoogleauthmask" name="code" placeholder="___ ___" value="">
+                                <input id="sixdigit-sms-pincode" type="text" class="form-control" name="code" placeholder="" value="">
+                                <span id="pincode-callback" class="pincode-input-callback"></span>
                             </div>
                         </div>
                     </div>
@@ -266,6 +267,33 @@
                 <div class="form-group maxwidth160 mt-2">
                     <button type="button" class="btn btn-success btnwidth100100">KAYDET</button>
                 </div>
+                <link id="css-bootstrap-pincode-input" rel="stylesheet" href="../assets/vendor/bootstrap-pincode-input/css/bootstrap-pincode-input.css">
+                <script id="script-bootstrap-pincode-input" src="../assets/vendor/bootstrap-pincode-input/js/bootstrap-pincode-input.js"></script>
+                <script>
+                    $(document).ready(function() {
+
+                        // Input SixDigit
+                        $('#sixdigit-sms-pincode').pincodeInput({hidedigits:false,inputs:6,complete:function(value, e, errorElement){
+                                //$("#pincode-callback").html(value);
+                                //$(errorElement).html("HATALI KOD");
+                            }});
+
+                        // Input Focus
+                        $('.first').addClass('form-control-inputfocus');
+                        $(".form-control-inputfocus").focus();
+
+                        // Input Keypress
+                        $('.last').addClass('form-control-inputkeypress');
+                        $('.form-control-inputkeypress').keyup(function(event){
+                            var keycode = (event.keyCode ? event.keyCode : event.which);
+                            if($('.form-control-inputkeypress').val().trim().length === 1 && keycode == '13'){
+                                $("form.login-form").submit();
+                            }
+                            event.stopPropagation();
+                        });
+
+                    });
+                </script>
             </form>
             </div>
         </div>
