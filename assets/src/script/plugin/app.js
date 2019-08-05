@@ -173,5 +173,5 @@ jQuery(function($){
 /* Input Mask */
 
 /* Loading Info */
-console.log("Plugin App Javascript Loading Successful");
+// console.log("Plugin App Javascript Loading Successful");
 /* Loading Info */

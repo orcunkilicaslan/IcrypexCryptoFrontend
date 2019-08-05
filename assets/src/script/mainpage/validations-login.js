@@ -126,5 +126,5 @@ window.loginform = new LoginForm();
 /* Login Sign Up Form */
 
 /* Loading Info */
-console.log("Mainpage App Login Form Validations Javascript Loading Successful");
+// console.log("Mainpage App Login Form Validations Javascript Loading Successful");
 /* Loading Info */

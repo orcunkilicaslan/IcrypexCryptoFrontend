@@ -49,5 +49,5 @@ $(document).ready(function(){
 /* Easy Buy Sell Tooltip */
 
 /* Loading Info */
-console.log("Tradepage App Javascript Loading Successful");
+// console.log("Tradepage App Javascript Loading Successful");
 /* Loading Info */

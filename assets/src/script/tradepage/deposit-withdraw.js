@@ -26,5 +26,5 @@ $("#WinzardiReadCheck").click(function(e){
 /* Deposit-Withdraw Checkbox Button Validation */
 
 /* Loading Info */
-console.log("Tradepage App Deposit-Withdraw Bottom Button Validation Javascript Loading Successful");
+// console.log("Tradepage App Deposit-Withdraw Bottom Button Validation Javascript Loading Successful");
 /* Loading Info */
