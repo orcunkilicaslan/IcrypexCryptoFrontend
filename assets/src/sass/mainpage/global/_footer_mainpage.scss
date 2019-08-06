@@ -201,9 +201,18 @@ $mainpageFooterImgPath : "../../img/mainpage/footer";
 
         img{position: relative}
         .akbank{}
-        .ziraat{top: -2px;}
-        .odeabank{top: -2px;}
-        .papara{top: 3px;}
+        .ziraat{
+          top: -2px;
+        }
+        .odeabank{
+          top: -2px;
+        }
+        .papara{
+          top: 3px;
+          @include ReSassResponsive(576){
+            top: 1px;
+          }
+        }
       }
     }
   }

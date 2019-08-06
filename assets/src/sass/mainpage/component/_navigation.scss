@@ -126,7 +126,7 @@
             padding: 10px 0;
 
             &::before{
-              border-color: darken($global-clr-soft-gray, 25%);
+              border-color: darken($global-clr-soft-gray, 25%) !important;
             }
           }
 
@@ -223,6 +223,8 @@
         height: 20px;
         display: inline-block;
         margin-left: 2px;
+        position: relative;
+        top: 7px;
       }
     }
   }
@@ -236,7 +238,7 @@
       margin-left: -10px;
       min-height: inherit;
       padding: 10px;
-      border: none !important;
+      border: 1px solid $global-sitebg-darkblue01 !important;
 
       .header-signin{
         display: flex;

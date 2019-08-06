@@ -69,7 +69,7 @@ jQuery(function($) {
                 autoplayHoverPause:true,
                 items:2,
                 margin:20,
-                stagePadding: 20,
+                //stagePadding: 20,
                 autoWidth:false,
                 animateIn: 'slideInRight',
                 animateOut: 'slideOutLeft',
