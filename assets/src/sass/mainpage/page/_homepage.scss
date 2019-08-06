@@ -263,6 +263,11 @@ $globalSvgIconImgPath : "../../img/global/svg";
       justify-content: space-between;
       margin-bottom: 0;
 
+      @include ReSassResponsive(768){
+        width: calc(100% - 40px);
+        margin: 0 auto;
+      }
+
       &-item{
         color: $global-clr-white;
         text-align: center;
@@ -365,9 +370,12 @@ $globalSvgIconImgPath : "../../img/global/svg";
     &-owl{
       @include ReSassResponsive(768){
         .owl{
+
+          &-stage-outer{}
+
           &-item{
             position: relative;
-            padding: 0 20px;
+            //padding: 0 20px;
 
             &::before{
               content: "";
@@ -375,7 +383,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
               width: 1px;
               height: 100%;
               top: 0;
-              right: 0;
+              right: -10px;
               background-color: transparentize($global-clr-soft-gray, 0.7);
             }
 
@@ -424,13 +432,15 @@ $globalSvgIconImgPath : "../../img/global/svg";
           }
 
           &-prev{
-            left: 0;
+            left: -20px;
+
             &::before{
               @include rotate(90);
             }
           }
           &-next{
-            right: 0;
+            right: -20px;
+
             &::before{
               @include rotate(270);
             }
@@ -1832,6 +1842,9 @@ $globalSvgIconImgPath : "../../img/global/svg";
             margin-right: 0;
           }
 
+          @include ReSassResponsive(576){
+            margin-right: 15px;
+          }
           @include ReSassResponsive(400){
             margin: 20px auto !important;
             display: block;
