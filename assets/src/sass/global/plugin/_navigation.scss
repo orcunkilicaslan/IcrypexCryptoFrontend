@@ -224,6 +224,29 @@
             height: auto;
           }
 
+          > a{
+            position: relative;
+
+            &::before{
+              content: "";
+              position: absolute;
+              width: 10px;
+              height: 10px;
+              right: 15px;
+              top: calc(50% - 5px);
+              border-right: 1px solid #FFFFFF;
+              border-top: 1px solid #FFFFFF;
+              z-index: 5;
+              @include rotate(45);
+            }
+
+            &[data-toggle^="dropdown"]{
+              &::before{
+                @include rotate(135);
+              }
+            }
+          }
+
           &.show > a[data-toggle^="dropdown"]{
             &::after {
               width: 100%;

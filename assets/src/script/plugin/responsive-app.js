@@ -45,6 +45,21 @@ jQuery(function($) {
 });
 /* Responsive Header User Dropdown Menu List */
 
+/* Responsive DFN Menu Navigation Language List */
+jQuery(function($) {
+    if($(window).width() < 767){
+        $(".dfn-onlymobile-bottom a.dropdown-item").click(function(){
+            var languageText    = $(this);
+            var selLanguage         = $(languageText).find('.sitelang-lang-text').text();
+            var selLanguageDataValue    = $(languageText).data("value");
+
+            $(this).parents('.sitelang').find('.sitelang-btn').html('<i class="icon-svg icon-svg-headersitelang"></i> <span class="sitelang-lang-text">' + selLanguage + '</span>');
+            $(this).parents('.sitelang').find('.sitelang-btn').attr('data-value', selLanguageDataValue);
+        });
+    }
+});
+/* Responsive DFN Menu Navigation Language List */
+
 /* Loading Info */
 // console.log("Plugin App Mobile Responsive Javascript Loading Successful");
 /* Loading Info */
