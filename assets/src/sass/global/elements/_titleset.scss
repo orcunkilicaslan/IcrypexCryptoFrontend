@@ -90,6 +90,10 @@
     &.bottomborder{
       &::before{
         max-width: 150px;
+
+        @include ReSassResponsive(768){
+          max-width: none;
+        }
       }
       &::after{
         width: 40px;

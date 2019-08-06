@@ -102,8 +102,6 @@ $globalSvgIconImgPath : "../../img/global/svg";
     &-technologyapproximatelydarkblue{
       background-image: url(#{$globalSvgIconImgPath}/Icon_Approximately_Dark_Blue.svg);
     }
-
-
     &-loginlock{
       background-image: url(#{$globalSvgIconImgPath}/Icon_Login.svg);
     }
@@ -122,6 +120,9 @@ $globalSvgIconImgPath : "../../img/global/svg";
     &-headerchat{
       background-image: url(#{$globalSvgIconImgPath}/Icon_Chat.svg);
     }
+    &-headerchatmobile{
+      background-image: url(#{$globalSvgIconImgPath}/Mobile_Header_Icon_Chat.svg);
+    }
     &-headertheme{
       background-image: url(#{$globalSvgIconImgPath}/Icon_Theme.svg);
     }
@@ -130,6 +131,9 @@ $globalSvgIconImgPath : "../../img/global/svg";
     }
     &-headerbell{
       background-image: url(#{$globalSvgIconImgPath}/Icon_Bell.svg);
+    }
+    &-headersitelang{
+      background-image: url(#{$globalSvgIconImgPath}/Icon_Sitelang_World.svg);
     }
     &-paginationarrow{
       background-image: url(#{$globalSvgIconImgPath}/Icon_Arrow.svg);

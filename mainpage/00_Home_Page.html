@@ -28,6 +28,10 @@
             <div class="btnicon"><span></span></div>
             <div class="btntext"><small>MENÜ</small></div>
         </a>
+        <a class="dfn-mobilemenu-livechat">
+            <small>LIVECHAT</small>
+            <i class="icon-svg icon-svg-headerchatmobile"></i>
+        </a>
     </div>
     <!-- Mobile Header -->
 
@@ -230,7 +234,16 @@
                             <li><a href="29_Announcements.html" title="DUYURULAR" rel="category">DUYURULAR</a></li>
                             <li><a href="#" title="DESTEK" rel="category">DESTEK</a></li>
                         </ul>
-                        <ul class="dfn-mobil-alt dfn-onlymobile-bottom d-lg-none" style="display: none !important;">
+                        <ul class="dfn-mobil-alt dfn-onlymobile-bottom d-lg-none">
+                            <li class="sitelang">
+                                <div class="dropup">
+                                    <button type="button" class="btn sitelang-btn dropdown-toggle" data-toggle="dropdown" data-value=""><i class="icon-svg icon-svg-headersitelang"></i> <span class="sitelang-lang-text">TÜRKÇE</span></button>
+                                    <div class="sitelang-dropdown dropdown-menu" x-placement="top-start" style="position: absolute; transform: translate3d(0px, -74px, 0px); top: 0px; left: 0px; will-change: transform;">
+                                        <a class="dropdown-item" href="#" data-value="TR"><i class="icon-svg icon-svg-headersitelang"></i> <span class="sitelang-lang-text">TÜRKÇE</span></a>
+                                        <a class="dropdown-item" href="#" data-value="EN"><i class="icon-svg icon-svg-headersitelang"></i> <span class="sitelang-lang-text">ENGLISH</span></a>
+                                    </div>
+                                </div>
+                            </li>
                             <li class="btnarea"><a class="logout" href="00_Home_Page.html" title="ÇIKIŞ YAPIN" rel="external nofollow">ÇIKIŞ YAPIN</a></li>
                         </ul>
                     </nav>
@@ -426,8 +439,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="recaptcha">
+                <div class="recaptcha d-none">
                     <img src="../assets/img/mainpage/elements/Homepage-Top-Recaptcha.png" alt="" width="300" height="76" />
+                </div>
+                <div class="recaptchav2">
+                    <div class="recaptchav2-captcha">
+                        <div class="g-recaptcha" data-theme="dark" data-sitekey="6LewOKAUAAAAAMDO2yohWeyDcjFAHfcuEqK2mIp4"><div style="width: 304px; height: 78px;"><div><iframe src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LewOKAUAAAAAMDO2yohWeyDcjFAHfcuEqK2mIp4&amp;co=aHR0cHM6Ly93d3cuaWNyeXBleC5jb206NDQz&amp;hl=tr&amp;v=v1563777128698&amp;theme=dark&amp;size=normal&amp;cb=z8rh0tg2xv7w" width="304" height="78" role="presentation" name="a-2mjs4ns0yygf" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div></div>
+                    </div>
+                    <div class="recaptchav2-text">Ben robot değilim</div>
                 </div>
                 <div class="custom-control-form-check">
                     <div class="custom-control custom-checkbox form-check">

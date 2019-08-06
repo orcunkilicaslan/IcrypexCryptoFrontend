@@ -57,6 +57,8 @@ $globalSvgIconImgPath : "../../img/global/svg";
       }
       @include ReSassResponsive(992){
         width: 110px;
+        top: -1px;
+        position: relative;
       }
 
       &-symbol{
