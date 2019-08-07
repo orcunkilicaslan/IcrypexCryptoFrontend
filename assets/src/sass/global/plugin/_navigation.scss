@@ -57,6 +57,10 @@
             @include scaleX(0);
             //@include transition(transform, 250ms, ease-in-out);
             @include transition(all, 250ms, ease-in-out);
+
+            @include ReSassResponsive(992){
+              height: 2px;
+            }
           }
 
           @include ReSassResponsive(992){
@@ -138,6 +142,9 @@
         background-color: #FFFFFF;
         left: 0;
         bottom: 0;
+        @include ReSassResponsive(992){
+          height: 2px;
+        }
       }
 
       &.show{
@@ -247,6 +254,12 @@
                 border-top: 1px solid #FFFFFF;
                 z-index: 5;
                 @include rotate(135);
+                @include transition(transform, 0.3s, ease-in-out);
+              }
+            }
+            &[aria-expanded^="true"]{
+              &::before{
+                @include rotate(-45);
               }
             }
           }

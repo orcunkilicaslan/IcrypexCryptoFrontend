@@ -150,7 +150,7 @@
 
     &-mask{
       //background-color: transparentize($global-clr-dark-blue, 0.5);
-      background-color: transparent;
+      background-color: rgba(0,0,0,0.6);
     }
 
     &-header{
@@ -352,7 +352,8 @@
           font-size: 15px;
           text-align: left;
           padding: 10px 0;
-          border: 1px solid darken($global-clr-soft-gray, 35%);
+          //border: 1px solid darken($global-clr-soft-gray, 35%);
+          border: 1px solid transparentize($global-clr-soft-gray, 0.7);
           border-left: none;
           border-right: none;
           @include border-radius(0);
@@ -365,8 +366,10 @@
             top: calc(50% - 2px);
             margin: 0;
             border: none;
-            border-left: 1px solid darken($global-clr-soft-gray, 25%);
-            border-top: 1px solid darken($global-clr-soft-gray, 25%);
+            //border-left: 1px solid darken($global-clr-soft-gray, 25%);
+            //border-top: 1px solid darken($global-clr-soft-gray, 25%);
+            border-left: 1px solid transparentize($global-clr-soft-gray, 0.5);
+            border-top: 1px solid transparentize($global-clr-soft-gray, 0.5);
             @include rotate(45);
           }
         }
@@ -378,7 +381,8 @@
           margin-bottom: 0;
           padding: 0;
           min-width: auto;
-          border: 1px solid darken($global-clr-soft-gray, 35%);
+          //border: 1px solid darken($global-clr-soft-gray, 35%);
+          border: 1px solid transparentize($global-clr-soft-gray, 0.7);
           border-left: none;
           border-right: none;
           top: auto !important;
@@ -390,7 +394,8 @@
             align-items: center;
             font-size: 15px;
             padding: 10px 0;
-            border-bottom: 1px solid darken($global-clr-soft-gray, 35%);
+            //border-bottom: 1px solid darken($global-clr-soft-gray, 35%);
+            border-bottom: 1px solid transparentize($global-clr-soft-gray, 0.7);
 
             &:last-child{
               border-bottom: none;
