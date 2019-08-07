@@ -78,6 +78,14 @@
           }
         }
 
+        > a[aria-expanded^="false"]{
+          &::after {
+            @include ReSassResponsive(992){
+              @include scaleX(0);
+            }
+          }
+        }
+
         &.show > a[data-toggle^="dropdown"]{
           &::after {
             width: 198px;

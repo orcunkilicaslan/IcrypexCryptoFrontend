@@ -47,10 +47,13 @@ jQuery(function($) {
 
 /* Responsive DFN Menu Navigation Language List */
 jQuery(function($) {
-    if($(window).width() < 767){
+    if($(window).width() < 991){
+        $(".dfn-onlymobile-bottom a.sitelang-btn").click(function(){
+            $(this).find('.sitelang-lang-text').html('DİL SEÇİNİZ');
+        });
         $(".dfn-onlymobile-bottom a.dropdown-item").click(function(){
-            var languageText    = $(this);
-            var selLanguage         = $(languageText).find('.sitelang-lang-text').text();
+            var languageText            = $(this);
+            var selLanguage             = $(languageText).find('.sitelang-lang-text').text();
             var selLanguageDataValue    = $(languageText).data("value");
 
             $(this).parents('.sitelang').find('.sitelang-btn').html('<i class="icon-svg icon-svg-headersitelang"></i> <span class="sitelang-lang-text">' + selLanguage + '</span>');
