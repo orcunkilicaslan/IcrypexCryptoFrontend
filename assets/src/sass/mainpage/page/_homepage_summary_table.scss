@@ -209,6 +209,8 @@ $globalSvgIconImgPath : "../../img/global/svg";
         td:first-child{
           font-size: 20px !important;
           padding-left: 8px !important;
+          color: $global-clr-white;
+          font-weight: normal;
 
           &::before{
             display: none;
@@ -390,12 +392,20 @@ $globalSvgIconImgPath : "../../img/global/svg";
       @include border-radius(0);
       @include transition(background, 0.3s, ease-in-out);
 
+      @include ReSassResponsive(768){
+        background-color: rgba(0,0,0,0.1);
+      }
+
       &:focus{
         color: $global-clr-white;
         background-color: rgba(0,0,0,0.2);
         border-color: transparentize($global-clr-soft-gray, 0.7);
         @include box-shadow(0,0,0,transparent);
         @include border-radius(0);
+
+        @include ReSassResponsive(768){
+          background-color: rgba(0,0,0,0.3);
+        }
       }
     }
     &-info{

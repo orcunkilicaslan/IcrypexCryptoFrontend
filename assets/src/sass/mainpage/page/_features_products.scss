@@ -11,25 +11,12 @@
         border-bottom: none;
       }
 
-      &-icons{
+      &-wrapper{
+        display: flex;
 
-        .iconbox{
-          background-color: $global-clr-light-gray;
-          width: 70px;
-          height: 100%;
-          display: flex;
-          justify-content: center;
+        @include ReSassResponsive(992){
+          flex-direction: column;
         }
-
-        i[class*="icon-svg"]{
-          width: 40px;
-          height: 40px;
-          margin: 12px 0;
-        }
-      }
-
-      &-currencyinfo{
-        max-width: 480px;
 
         .columntitle{
           color: $global-clr-dark-blue;
@@ -46,6 +33,43 @@
             height: 4px;
           }
         }
+      }
+
+      &-icons{
+        padding-right: 15px !important;
+
+        @include ReSassResponsive(768){
+          max-width: 85px;
+        }
+
+        .iconbox{
+          background-color: $global-clr-light-gray;
+          width: 70px;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+        }
+
+        i[class*="icon-svg"]{
+          width: 40px;
+          height: 40px;
+          margin: 12px 0;
+        }
+      }
+
+      &-mobiletitle{
+        @include ReSassResponsive(992){
+          order: 1;
+        }
+      }
+
+      &-currencyinfo{
+        padding-right: 0;
+
+        @include ReSassResponsive(992){
+          order: 3;
+          padding-right: 15px;
+        }
 
         &-desc{
           color: $global-clr-dark-blue;
@@ -53,6 +77,14 @@
           line-height: 1.1;
           margin-bottom: 10px;
           min-height: 108px;
+
+          @include ReSassResponsive(992){
+            margin-bottom: 15px;
+            min-height: auto;
+          }
+          @include ReSassResponsive(768){
+            text-align: justify;
+          }
         }
       }
 
@@ -60,8 +92,29 @@
         padding-top: 12px;
         overflow: hidden;
 
+        @include ReSassResponsive(992){
+          order: 2;
+          border-bottom: 1px solid lighten($global-clr-soft-gray, 30%);
+          margin: 5px 15px 13px;
+          padding: 0;
+        }
+        @include ReSassResponsive(768){
+          flex-direction: column;
+          margin: 0;
+          padding: 5px 15px 0;
+          border-bottom: none;
+        }
+
         &-box{
           position: relative;
+
+          @include ReSassResponsive(768){
+            flex: 0 0 100%;
+            max-width: 100%;
+            padding-right: 0 !important;
+            padding-left: 0 !important;
+          }
+
           &::before{
             content: "";
             position: absolute;
@@ -71,11 +124,49 @@
             top: 20px;
             background-color: lighten($global-clr-soft-gray, 30%);
           }
+
+          &.chartstats{
+            @include ReSassResponsive(768){
+              order: 2;
+              //border-bottom: 1px solid lighten($global-clr-soft-gray, 30%);
+
+              &::before{
+                display: none;
+              }
+            }
+          }
+
+          &.chartgraph{
+
+            @include ReSassResponsive(992){
+              &::after{
+                content: "";
+                background-color: lighten($global-clr-soft-gray, 30%);
+                width: 1px;
+                height: calc(100% - 20px);
+                position: absolute;
+                right: 0;
+                top: 20px;
+              }
+            }
+
+            @include ReSassResponsive(768){
+              order: 1;
+              border-bottom: 1px solid lighten($global-clr-soft-gray, 30%);
+              margin-bottom: 15px;
+            }
+          }
         }
         &-border{
           border-left: 1px solid lighten($global-clr-soft-gray, 30%);
           height: 100%;
           padding-left: 15px;
+
+          @include ReSassResponsive(768){
+            border-left: none;
+            padding-left: 0;
+            margin-top: -5px;
+          }
         }
 
         &-title{
@@ -87,6 +178,11 @@
           padding: 0;
           border-bottom: 1px solid red;
           padding-bottom: 5px;
+
+          @include ReSassResponsive(768){
+            border-bottom: none;
+            padding-bottom: 0;
+          }
         }
 
         &-detail{
@@ -94,8 +190,18 @@
           padding: 8px 0;
           align-items: flex-end;
 
+          &:first-child{
+            @include ReSassResponsive(768){
+              padding-top: 0;
+            }
+          }
+
           &:last-child{
             border-bottom: none;
+
+            @include ReSassResponsive(992){
+              padding-bottom: 15px;
+            }
           }
 
           span{
@@ -217,8 +323,24 @@
           padding: 7px 0;
           align-items: flex-end;
 
+          @include ReSassResponsive(992){
+            padding-right: 15px;
+          }
+          @include ReSassResponsive(768){
+            width: 100%;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-left: 1px solid lighten($global-clr-soft-gray, 30%);
+          }
+
           &:last-child{
             border-bottom: none;
+          }
+
+          > div{
+            overflow: hidden;
           }
         }
       }
