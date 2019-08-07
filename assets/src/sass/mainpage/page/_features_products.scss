@@ -109,8 +109,6 @@
           position: relative;
 
           @include ReSassResponsive(768){
-            flex: 0 0 100%;
-            max-width: 100%;
             padding-right: 0 !important;
             padding-left: 0 !important;
           }
