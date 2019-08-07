@@ -4,6 +4,10 @@
   padding: 25px 0 15px;
   flex: inherit !important;
 
+  @include ReSassResponsive(1400){
+    padding: 20px 0 15px;
+  }
+
   > .container{
     position: relative;
     padding-bottom: 5px;
@@ -75,6 +79,10 @@
     font-size: 25px;
     font-weight: normal;
 
+    @include ReSassResponsive(1400){
+      font-size: 23px;
+    }
+
     .breadcrumb-item{
       + .breadcrumb-item{
         &::before{
@@ -91,5 +99,9 @@
     justify-content: flex-end;
     font-size: 17px;
     font-weight: normal;
+
+    @include ReSassResponsive(1400){
+      font-size: 16px;
+    }
   }
 }

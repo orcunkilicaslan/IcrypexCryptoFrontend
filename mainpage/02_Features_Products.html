@@ -28,6 +28,10 @@
             <div class="btnicon"><span></span></div>
             <div class="btntext"><small>MENÜ</small></div>
         </a>
+        <a class="dfn-mobilemenu-livechat">
+            <small>LIVECHAT</small>
+            <i class="icon-svg icon-svg-headerchatmobile"></i>
+        </a>
     </div>
     <!-- Mobile Header -->
 
@@ -192,6 +196,7 @@
                                     </div>
                                 </div>
                             </li>
+                            <li class="d-lg-none"><a href="00_Home_Page.html" title="ANASAYFA" rel="category">ANASAYFA</a></li>
                             <li>
                                 <a href="#" title="ÖZELLİKLER" rel="category" id="FeaturesDropdownMenu" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ÖZELLİKLER</a>
                                 <div class="dfn-menu-dropdownmenu dropdown-menu" aria-labelledby="FeaturesDropdownMenu">
@@ -230,8 +235,26 @@
                             <li><a href="29_Announcements.html" title="DUYURULAR" rel="category">DUYURULAR</a></li>
                             <li><a href="#" title="DESTEK" rel="category">DESTEK</a></li>
                         </ul>
-                        <ul class="dfn-mobil-alt dfn-onlymobile-bottom d-lg-none" style="display: none !important;">
-                            <li class="btnarea"><a class="logout" href="00_Home_Page.html" title="ÇIKIŞ YAPIN" rel="external nofollow">ÇIKIŞ YAPIN</a></li>
+                        <ul class="dfn-mobil-alt dfn-onlymobile-bottom d-lg-none">
+                            <li class="sitelang dropup">
+                                <a href="#" class="btn sitelang-btn dropdown-toggle" data-toggle="dropdown" data-value="">
+                                    <i class="icon-svg icon-svg-headersitelang"></i>
+                                    <span class="sitelang-lang-text">TÜRKÇE</span>
+                                </a>
+                                <div class="sitelang-dropdown dropdown-menu">
+                                    <a class="dropdown-item" href="#" data-value="TR">
+                                        <i class="icon-svg icon-svg-headersitelang"></i>
+                                        <span class="sitelang-lang-text">TÜRKÇE</span>
+                                    </a>
+                                    <a class="dropdown-item" href="#" data-value="EN">
+                                        <i class="icon-svg icon-svg-headersitelang"></i>
+                                        <span class="sitelang-lang-text">ENGLISH</span>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="btnarea" style="display: none !important;">
+                                <a class="logout" href="00_Home_Page.html" title="ÇIKIŞ YAPIN" rel="external nofollow">ÇIKIŞ YAPIN</a>
+                            </li>
                         </ul>
                     </nav>
                 </div>
@@ -316,42 +339,47 @@
                 <i class="icon-svg icon-svg-productslistbtc"></i>
             </div>
         </div>
-        <div class="features-products-list-currencyinfo col">
-            <h2 class="columntitle columntitle-sm bottomborder titleleft">BITCOIN [BTC]</h2>
-            <p class="features-products-list-currencyinfo-desc">Bitcoin eşler arası teknolojiyi kullanarak herhangi bir merkezi otoriteye bağlı olmadan çalışır. İşlemlerin yönetimi ve Bitcoin’lerin cüzdanlar arası dağıtımı toplu olarak ağ tarafından idare edilir. Bitcoin açık kaynaklıdır. Kimse Bitcoin’in merkezinde değildir ve onu tek başına kontrol edemez. Herkes Bitcoin üretebilir, alabilir ve satabilir. Bitcoin kendine has birçok özelliği sayesinde diğer ödeme yollarıyla yapılamayacak çok farklı ödemelerin üstesinden gelebilir.</p>
-            <a href="03_Features_Products_Zoom_Price.html" class="btn btn-primary btnwidth160" title="" rel="bookmark">DAHA FAZLA BİLGİ</a>
-        </div>
-        <div class="features-products-list-price col d-flex">
-            <div class="features-products-list-price-box col">
-                <h3 class="features-products-list-price-title">GÜNCEL FİYAT</h3>
-                <div class="features-products-list-price-border">
-                    <div class="features-products-list-price-detail d-flex">
-                        <div class="col"><span class="bigtext">21.377,00 TRY</span></div>
-                        <div class="col-md-auto"><span class="bigperc sitecolorgreen">+7.00  +0.03</span></div>
-                    </div>
-                    <div class="features-products-list-price-detail d-flex">
-                        <div class="col"><span class="textup">OPEN</span><span class="textdown">21.050,00</span></div>
-                        <div class="col"><span class="textup">PREV CLOSE</span><span class="textdown">21.030,00</span></div>
-                        <div class="col"><span class="textup">YTD RETURN</span><span class="textdown">13.56</span></div>
-                    </div>
-                    <div class="features-products-list-price-detail d-flex">
-                        <div class="col"><span class="textup">DAY RANGE</span><span class="textdown">21.050,00-21.160,00</span><span class="dotchart"><i class="dothere" style="left: 10%"></i></span></div>
-                        <div class="col"><span class="textup">52W RANGE</span><span class="textdown">21.550,00-21.930,00</span><span class="dotchart"><i class="dothere" style="left: 40%"></i></span></div>
+        <div class="features-products-list-wrapper row">
+            <div class="features-products-list-currencyinfo col">
+                <h2 class="columntitle columntitle-sm bottomborder titleleft d-none d-lg-block">BITCOIN [BTC]</h2>
+                <p class="features-products-list-currencyinfo-desc">Bitcoin eşler arası teknolojiyi kullanarak herhangi bir merkezi otoriteye bağlı olmadan çalışır. İşlemlerin yönetimi ve Bitcoin’lerin cüzdanlar arası dağıtımı toplu olarak ağ tarafından idare edilir. Bitcoin açık kaynaklıdır. Kimse Bitcoin’in merkezinde değildir ve onu tek başına kontrol edemez. Herkes Bitcoin üretebilir, alabilir ve satabilir. Bitcoin kendine has birçok özelliği sayesinde diğer ödeme yollarıyla yapılamayacak çok farklı ödemelerin üstesinden gelebilir.</p>
+                <a href="03_Features_Products_Zoom_Price.html" class="btn btn-primary btnwidth160" title="" rel="bookmark">DAHA FAZLA BİLGİ</a>
+            </div>
+            <div class="features-products-list-mobiletitle col d-lg-none">
+                <h2 class="columntitle columntitle-sm bottomborder titleleft">BITCOIN [BTC]</h2>
+            </div>
+            <div class="features-products-list-price d-flex col-md-auto">
+                <div class="features-products-list-price-box chartstats col">
+                    <h3 class="features-products-list-price-title">GÜNCEL FİYAT</h3>
+                    <div class="features-products-list-price-border">
+                        <div class="features-products-list-price-detail d-flex">
+                            <div class="col"><span class="bigtext">21.377,00 TRY</span></div>
+                            <div class="col-md-auto"><span class="bigperc sitecolorgreen">+7.00  +0.03</span></div>
+                        </div>
+                        <div class="features-products-list-price-detail d-flex">
+                            <div class="col"><span class="textup">OPEN</span><span class="textdown">21.050,00</span></div>
+                            <div class="col"><span class="textup">PREV CLOSE</span><span class="textdown">21.030,00</span></div>
+                            <div class="col"><span class="textup">YTD RETURN</span><span class="textdown">13.56</span></div>
+                        </div>
+                        <div class="features-products-list-price-detail d-flex">
+                            <div class="col"><span class="textup">DAY RANGE</span><span class="textdown">21.050,00-21.160,00</span><span class="dotchart"><i class="dothere" style="left: 10%"></i></span></div>
+                            <div class="col"><span class="textup">52W RANGE</span><span class="textdown">21.550,00-21.930,00</span><span class="dotchart"><i class="dothere" style="left: 40%"></i></span></div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="features-products-list-price-box col-md-auto">
-                <ul class="features-products-list-chart-date">
-                    <li><a class="features-products-list-chart-date-link" href="#" title="" rel="bookmark">1D</a></li>
-                    <li><a class="features-products-list-chart-date-link" href="#" title="" rel="bookmark">1M</a></li>
-                    <li><a class="features-products-list-chart-date-link" href="#" title="" rel="bookmark">1Y</a></li>
-                    <li><a class="features-products-list-chart-date-link active" href="#" title="" rel="bookmark">5Y</a></li>
-                </ul>
-                <a class="features-products-list-chart-fullchart" href="#"><i class="icon-svg icon-svg-productsfullwidth"></i> TAM GRAFİK</a>
-                <div class="clearfix"></div>
-                <div class="features-products-list-chart-detail">
-                    <div>
-                        <img src="../assets/img/mainpage/elements/Features_Products_Chart.svg" alt="Chart" width="270" height="153" />
+                <div class="features-products-list-price-box chartgraph col-md-auto">
+                    <ul class="features-products-list-chart-date">
+                        <li><a class="features-products-list-chart-date-link" href="#" title="" rel="bookmark">1D</a></li>
+                        <li><a class="features-products-list-chart-date-link" href="#" title="" rel="bookmark">1M</a></li>
+                        <li><a class="features-products-list-chart-date-link" href="#" title="" rel="bookmark">1Y</a></li>
+                        <li><a class="features-products-list-chart-date-link active" href="#" title="" rel="bookmark">5Y</a></li>
+                    </ul>
+                    <a class="features-products-list-chart-fullchart" href="#"><i class="icon-svg icon-svg-productsfullwidth"></i> TAM GRAFİK</a>
+                    <div class="clearfix"></div>
+                    <div class="features-products-list-chart-detail">
+                        <div>
+                            <img src="../assets/img/mainpage/elements/Features_Products_Chart.svg" alt="Chart" width="270" height="153" />
+                        </div>
                     </div>
                 </div>
             </div>
@@ -365,42 +393,47 @@
                 <i class="icon-svg icon-svg-productslisteth"></i>
             </div>
         </div>
-        <div class="features-products-list-currencyinfo col">
-            <h2 class="columntitle columntitle-sm bottomborder titleleft">ETHEREUM [ETH]</h2>
-            <p class="features-products-list-currencyinfo-desc">Ethereum, mevcut istemci sunucu modelini merkezileştirerek “Dünyanın veri deposu” olmak amacıyla herhangi bir para birimine alternatif olarak değil, başlı başına bir para birimi olamak için 30 Temmuz 2015 tarihinde Vitalik Buterin tarafından oluşturulmuştur. Ethereum, akıllı kontrat özelliğine sahiptir. Bu şekilde yazılımcılar kendi projelerini oluşturabilmekte ve bunu Ethereum blok zinciri üzerine entegre edebilmektedirler. </p>
-            <a href="03_Features_Products_Zoom_Price.html" class="btn btn-primary btnwidth160" title="" rel="bookmark">DAHA FAZLA BİLGİ</a>
-        </div>
-        <div class="features-products-list-price col d-flex">
-            <div class="features-products-list-price-box col">
-                <h3 class="features-products-list-price-title">GÜNCEL FİYAT</h3>
-                <div class="features-products-list-price-border">
-                    <div class="features-products-list-price-detail d-flex">
-                        <div class="col"><span class="bigtext">21.377,00 TRY</span></div>
-                        <div class="col-md-auto"><span class="bigperc sitecolorgreen">+7.00  +0.03</span></div>
-                    </div>
-                    <div class="features-products-list-price-detail d-flex">
-                        <div class="col"><span class="textup">OPEN</span><span class="textdown">21.050,00</span></div>
-                        <div class="col"><span class="textup">PREV CLOSE</span><span class="textdown">21.030,00</span></div>
-                        <div class="col"><span class="textup">YTD RETURN</span><span class="textdown">13.56</span></div>
-                    </div>
-                    <div class="features-products-list-price-detail d-flex">
-                        <div class="col"><span class="textup">DAY RANGE</span><span class="textdown">21.050,00-21.160,00</span><span class="dotchart"><i class="dothere" style="left: 10%"></i></span></div>
-                        <div class="col"><span class="textup">52W RANGE</span><span class="textdown">21.550,00-21.930,00</span><span class="dotchart"><i class="dothere" style="left: 40%"></i></span></div>
+        <div class="features-products-list-wrapper row">
+            <div class="features-products-list-currencyinfo col">
+                <h2 class="columntitle columntitle-sm bottomborder titleleft">ETHEREUM [ETH]</h2>
+                <p class="features-products-list-currencyinfo-desc">Ethereum, mevcut istemci sunucu modelini merkezileştirerek “Dünyanın veri deposu” olmak amacıyla herhangi bir para birimine alternatif olarak değil, başlı başına bir para birimi olamak için 30 Temmuz 2015 tarihinde Vitalik Buterin tarafından oluşturulmuştur. Ethereum, akıllı kontrat özelliğine sahiptir. Bu şekilde yazılımcılar kendi projelerini oluşturabilmekte ve bunu Ethereum blok zinciri üzerine entegre edebilmektedirler. </p>
+                <a href="03_Features_Products_Zoom_Price.html" class="btn btn-primary btnwidth160" title="" rel="bookmark">DAHA FAZLA BİLGİ</a>
+            </div>
+            <div class="features-products-list-mobiletitle col d-lg-none">
+                <h2 class="columntitle columntitle-sm bottomborder titleleft">ETHEREUM [ETH]</h2>
+            </div>
+            <div class="features-products-list-price d-flex col-md-auto">
+                <div class="features-products-list-price-box chartstats col">
+                    <h3 class="features-products-list-price-title">GÜNCEL FİYAT</h3>
+                    <div class="features-products-list-price-border">
+                        <div class="features-products-list-price-detail d-flex">
+                            <div class="col"><span class="bigtext">21.377,00 TRY</span></div>
+                            <div class="col-md-auto"><span class="bigperc sitecolorgreen">+7.00  +0.03</span></div>
+                        </div>
+                        <div class="features-products-list-price-detail d-flex">
+                            <div class="col"><span class="textup">OPEN</span><span class="textdown">21.050,00</span></div>
+                            <div class="col"><span class="textup">PREV CLOSE</span><span class="textdown">21.030,00</span></div>
+                            <div class="col"><span class="textup">YTD RETURN</span><span class="textdown">13.56</span></div>
+                        </div>
+                        <div class="features-products-list-price-detail d-flex">
+                            <div class="col"><span class="textup">DAY RANGE</span><span class="textdown">21.050,00-21.160,00</span><span class="dotchart"><i class="dothere" style="left: 10%"></i></span></div>
+                            <div class="col"><span class="textup">52W RANGE</span><span class="textdown">21.550,00-21.930,00</span><span class="dotchart"><i class="dothere" style="left: 40%"></i></span></div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="features-products-list-price-box col-md-auto">
-                <ul class="features-products-list-chart-date">
-                    <li><a class="features-products-list-chart-date-link" href="#" title="" rel="bookmark">1D</a></li>
-                    <li><a class="features-products-list-chart-date-link" href="#" title="" rel="bookmark">1M</a></li>
-                    <li><a class="features-products-list-chart-date-link" href="#" title="" rel="bookmark">1Y</a></li>
-                    <li><a class="features-products-list-chart-date-link active" href="#" title="" rel="bookmark">5Y</a></li>
-                </ul>
-                <a class="features-products-list-chart-fullchart" href="#"><i class="icon-svg icon-svg-productsfullwidth"></i> TAM GRAFİK</a>
-                <div class="clearfix"></div>
-                <div class="features-products-list-chart-detail">
-                    <div>
-                        <img src="../assets/img/mainpage/elements/Features_Products_Chart.svg" alt="Chart" width="270" height="153" />
+                <div class="features-products-list-price-box chartgraph col-md-auto">
+                    <ul class="features-products-list-chart-date">
+                        <li><a class="features-products-list-chart-date-link" href="#" title="" rel="bookmark">1D</a></li>
+                        <li><a class="features-products-list-chart-date-link" href="#" title="" rel="bookmark">1M</a></li>
+                        <li><a class="features-products-list-chart-date-link" href="#" title="" rel="bookmark">1Y</a></li>
+                        <li><a class="features-products-list-chart-date-link active" href="#" title="" rel="bookmark">5Y</a></li>
+                    </ul>
+                    <a class="features-products-list-chart-fullchart" href="#"><i class="icon-svg icon-svg-productsfullwidth"></i> TAM GRAFİK</a>
+                    <div class="clearfix"></div>
+                    <div class="features-products-list-chart-detail">
+                        <div>
+                            <img src="../assets/img/mainpage/elements/Features_Products_Chart.svg" alt="Chart" width="270" height="153" />
+                        </div>
                     </div>
                 </div>
             </div>
@@ -414,42 +447,47 @@
                 <i class="icon-svg icon-svg-productslistxrp"></i>
             </div>
         </div>
-        <div class="features-products-list-currencyinfo col">
-            <h2 class="columntitle columntitle-sm bottomborder titleleft">RIPPLE [XRP]</h2>
-            <p class="features-products-list-currencyinfo-desc">Ripple, diğer kripto paraların aksine madenciliği yapılamayan ve ledger adı verilen blok zincir tabanlı defterlerin tamamen bir şirket tarafından yönetildiği bir krtipto para birimidir. Yine aynı şekilde Ripple’ın diğer kripto paralardan farkı bir merkezinin olmasıdır. Ödeme sistemi sağlayan Ripple, merkezi olması sayesinde ödeme sistemleri sağlayan büyük şirketlerin ve bankaların sıkça tercih ettikleri bir coin ve ağ olarak öne çıkmaktadır.</p>
-            <a href="03_Features_Products_Zoom_Price.html" class="btn btn-primary btnwidth160" title="" rel="bookmark">DAHA FAZLA BİLGİ</a>
-        </div>
-        <div class="features-products-list-price col d-flex">
-            <div class="features-products-list-price-box col">
-                <h3 class="features-products-list-price-title">GÜNCEL FİYAT</h3>
-                <div class="features-products-list-price-border">
-                    <div class="features-products-list-price-detail d-flex">
-                        <div class="col"><span class="bigtext">21.377,00 TRY</span></div>
-                        <div class="col-md-auto"><span class="bigperc sitecolorgreen">+7.00  +0.03</span></div>
-                    </div>
-                    <div class="features-products-list-price-detail d-flex">
-                        <div class="col"><span class="textup">OPEN</span><span class="textdown">21.050,00</span></div>
-                        <div class="col"><span class="textup">PREV CLOSE</span><span class="textdown">21.030,00</span></div>
-                        <div class="col"><span class="textup">YTD RETURN</span><span class="textdown">13.56</span></div>
-                    </div>
-                    <div class="features-products-list-price-detail d-flex">
-                        <div class="col"><span class="textup">DAY RANGE</span><span class="textdown">21.050,00-21.160,00</span><span class="dotchart"><i class="dothere" style="left: 10%"></i></span></div>
-                        <div class="col"><span class="textup">52W RANGE</span><span class="textdown">21.550,00-21.930,00</span><span class="dotchart"><i class="dothere" style="left: 40%"></i></span></div>
+        <div class="features-products-list-wrapper row">
+            <div class="features-products-list-currencyinfo col">
+                <h2 class="columntitle columntitle-sm bottomborder titleleft">RIPPLE [XRP]</h2>
+                <p class="features-products-list-currencyinfo-desc">Ripple, diğer kripto paraların aksine madenciliği yapılamayan ve ledger adı verilen blok zincir tabanlı defterlerin tamamen bir şirket tarafından yönetildiği bir krtipto para birimidir. Yine aynı şekilde Ripple’ın diğer kripto paralardan farkı bir merkezinin olmasıdır. Ödeme sistemi sağlayan Ripple, merkezi olması sayesinde ödeme sistemleri sağlayan büyük şirketlerin ve bankaların sıkça tercih ettikleri bir coin ve ağ olarak öne çıkmaktadır.</p>
+                <a href="03_Features_Products_Zoom_Price.html" class="btn btn-primary btnwidth160" title="" rel="bookmark">DAHA FAZLA BİLGİ</a>
+            </div>
+            <div class="features-products-list-mobiletitle col d-lg-none">
+                <h2 class="columntitle columntitle-sm bottomborder titleleft">RIPPLE [XRP]</h2>
+            </div>
+            <div class="features-products-list-price d-flex col-md-auto">
+                <div class="features-products-list-price-box chartstats col">
+                    <h3 class="features-products-list-price-title">GÜNCEL FİYAT</h3>
+                    <div class="features-products-list-price-border">
+                        <div class="features-products-list-price-detail d-flex">
+                            <div class="col"><span class="bigtext">21.377,00 TRY</span></div>
+                            <div class="col-md-auto"><span class="bigperc sitecolorgreen">+7.00  +0.03</span></div>
+                        </div>
+                        <div class="features-products-list-price-detail d-flex">
+                            <div class="col"><span class="textup">OPEN</span><span class="textdown">21.050,00</span></div>
+                            <div class="col"><span class="textup">PREV CLOSE</span><span class="textdown">21.030,00</span></div>
+                            <div class="col"><span class="textup">YTD RETURN</span><span class="textdown">13.56</span></div>
+                        </div>
+                        <div class="features-products-list-price-detail d-flex">
+                            <div class="col"><span class="textup">DAY RANGE</span><span class="textdown">21.050,00-21.160,00</span><span class="dotchart"><i class="dothere" style="left: 10%"></i></span></div>
+                            <div class="col"><span class="textup">52W RANGE</span><span class="textdown">21.550,00-21.930,00</span><span class="dotchart"><i class="dothere" style="left: 40%"></i></span></div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="features-products-list-price-box col-md-auto">
-                <ul class="features-products-list-chart-date">
-                    <li><a class="features-products-list-chart-date-link" href="#" title="" rel="bookmark">1D</a></li>
-                    <li><a class="features-products-list-chart-date-link" href="#" title="" rel="bookmark">1M</a></li>
-                    <li><a class="features-products-list-chart-date-link" href="#" title="" rel="bookmark">1Y</a></li>
-                    <li><a class="features-products-list-chart-date-link active" href="#" title="" rel="bookmark">5Y</a></li>
-                </ul>
-                <a class="features-products-list-chart-fullchart" href="#"><i class="icon-svg icon-svg-productsfullwidth"></i> TAM GRAFİK</a>
-                <div class="clearfix"></div>
-                <div class="features-products-list-chart-detail">
-                    <div>
-                        <img src="../assets/img/mainpage/elements/Features_Products_Chart.svg" alt="Chart" width="270" height="153" />
+                <div class="features-products-list-price-box chartgraph col-md-auto">
+                    <ul class="features-products-list-chart-date">
+                        <li><a class="features-products-list-chart-date-link" href="#" title="" rel="bookmark">1D</a></li>
+                        <li><a class="features-products-list-chart-date-link" href="#" title="" rel="bookmark">1M</a></li>
+                        <li><a class="features-products-list-chart-date-link" href="#" title="" rel="bookmark">1Y</a></li>
+                        <li><a class="features-products-list-chart-date-link active" href="#" title="" rel="bookmark">5Y</a></li>
+                    </ul>
+                    <a class="features-products-list-chart-fullchart" href="#"><i class="icon-svg icon-svg-productsfullwidth"></i> TAM GRAFİK</a>
+                    <div class="clearfix"></div>
+                    <div class="features-products-list-chart-detail">
+                        <div>
+                            <img src="../assets/img/mainpage/elements/Features_Products_Chart.svg" alt="Chart" width="270" height="153" />
+                        </div>
                     </div>
                 </div>
             </div>
@@ -463,42 +501,47 @@
                 <i class="icon-svg icon-svg-productslistltc"></i>
             </div>
         </div>
-        <div class="features-products-list-currencyinfo col">
-            <h2 class="columntitle columntitle-sm bottomborder titleleft">LITECOIN [LTC]</h2>
-            <p class="features-products-list-currencyinfo-desc">Litecoin eski bir Google çalışanı olan Charlie Lee tarafından 7 Ekim 2011 tarihinde piyasaya sürüldü. Litecoin ağı ise 13 Ekim 2011’de hayata geçti. Litecoin’in blok zinciri Bitcoin ile oldukça benzerlik göstermektedir. Litecoin blok zincirinde blok oluşturma süresi 2,5 dakika ve maksimum üretim miktarı 84 milyon olarak belirlenmiştir. Bu rakamlar Bitcoin için 10 dakika ve 21 milyondur. Litecoin algoritması Bitcoin’e göre nispeten değiştirilmiş ve Bitcoin Core istemcinin bir çatalı olarak ortaya çıktmıştır.</p>
-            <a href="03_Features_Products_Zoom_Price.html" class="btn btn-primary btnwidth160" title="" rel="bookmark">DAHA FAZLA BİLGİ</a>
-        </div>
-        <div class="features-products-list-price col d-flex">
-            <div class="features-products-list-price-box col">
-                <h3 class="features-products-list-price-title">GÜNCEL FİYAT</h3>
-                <div class="features-products-list-price-border">
-                    <div class="features-products-list-price-detail d-flex">
-                        <div class="col"><span class="bigtext">21.377,00 TRY</span></div>
-                        <div class="col-md-auto"><span class="bigperc sitecolorgreen">+7.00  +0.03</span></div>
-                    </div>
-                    <div class="features-products-list-price-detail d-flex">
-                        <div class="col"><span class="textup">OPEN</span><span class="textdown">21.050,00</span></div>
-                        <div class="col"><span class="textup">PREV CLOSE</span><span class="textdown">21.030,00</span></div>
-                        <div class="col"><span class="textup">YTD RETURN</span><span class="textdown">13.56</span></div>
-                    </div>
-                    <div class="features-products-list-price-detail d-flex">
-                        <div class="col"><span class="textup">DAY RANGE</span><span class="textdown">21.050,00-21.160,00</span><span class="dotchart"><i class="dothere" style="left: 10%"></i></span></div>
-                        <div class="col"><span class="textup">52W RANGE</span><span class="textdown">21.550,00-21.930,00</span><span class="dotchart"><i class="dothere" style="left: 40%"></i></span></div>
+        <div class="features-products-list-wrapper row">
+            <div class="features-products-list-currencyinfo col">
+                <h2 class="columntitle columntitle-sm bottomborder titleleft">LITECOIN [LTC]</h2>
+                <p class="features-products-list-currencyinfo-desc">Litecoin eski bir Google çalışanı olan Charlie Lee tarafından 7 Ekim 2011 tarihinde piyasaya sürüldü. Litecoin ağı ise 13 Ekim 2011’de hayata geçti. Litecoin’in blok zinciri Bitcoin ile oldukça benzerlik göstermektedir. Litecoin blok zincirinde blok oluşturma süresi 2,5 dakika ve maksimum üretim miktarı 84 milyon olarak belirlenmiştir. Bu rakamlar Bitcoin için 10 dakika ve 21 milyondur. Litecoin algoritması Bitcoin’e göre nispeten değiştirilmiş ve Bitcoin Core istemcinin bir çatalı olarak ortaya çıktmıştır.</p>
+                <a href="03_Features_Products_Zoom_Price.html" class="btn btn-primary btnwidth160" title="" rel="bookmark">DAHA FAZLA BİLGİ</a>
+            </div>
+            <div class="features-products-list-mobiletitle col d-lg-none">
+                <h2 class="columntitle columntitle-sm bottomborder titleleft">LITECOIN [LTC]</h2>
+            </div>
+            <div class="features-products-list-price d-flex col-md-auto">
+                <div class="features-products-list-price-box chartstats col">
+                    <h3 class="features-products-list-price-title">GÜNCEL FİYAT</h3>
+                    <div class="features-products-list-price-border">
+                        <div class="features-products-list-price-detail d-flex">
+                            <div class="col"><span class="bigtext">21.377,00 TRY</span></div>
+                            <div class="col-md-auto"><span class="bigperc sitecolorgreen">+7.00  +0.03</span></div>
+                        </div>
+                        <div class="features-products-list-price-detail d-flex">
+                            <div class="col"><span class="textup">OPEN</span><span class="textdown">21.050,00</span></div>
+                            <div class="col"><span class="textup">PREV CLOSE</span><span class="textdown">21.030,00</span></div>
+                            <div class="col"><span class="textup">YTD RETURN</span><span class="textdown">13.56</span></div>
+                        </div>
+                        <div class="features-products-list-price-detail d-flex">
+                            <div class="col"><span class="textup">DAY RANGE</span><span class="textdown">21.050,00-21.160,00</span><span class="dotchart"><i class="dothere" style="left: 10%"></i></span></div>
+                            <div class="col"><span class="textup">52W RANGE</span><span class="textdown">21.550,00-21.930,00</span><span class="dotchart"><i class="dothere" style="left: 40%"></i></span></div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="features-products-list-price-box col-md-auto">
-                <ul class="features-products-list-chart-date">
-                    <li><a class="features-products-list-chart-date-link" href="#" title="" rel="bookmark">1D</a></li>
-                    <li><a class="features-products-list-chart-date-link" href="#" title="" rel="bookmark">1M</a></li>
-                    <li><a class="features-products-list-chart-date-link" href="#" title="" rel="bookmark">1Y</a></li>
-                    <li><a class="features-products-list-chart-date-link active" href="#" title="" rel="bookmark">5Y</a></li>
-                </ul>
-                <a class="features-products-list-chart-fullchart" href="#"><i class="icon-svg icon-svg-productsfullwidth"></i> TAM GRAFİK</a>
-                <div class="clearfix"></div>
-                <div class="features-products-list-chart-detail">
-                    <div>
-                        <img src="../assets/img/mainpage/elements/Features_Products_Chart.svg" alt="Chart" width="270" height="153" />
+                <div class="features-products-list-price-box chartgraph col-md-auto">
+                    <ul class="features-products-list-chart-date">
+                        <li><a class="features-products-list-chart-date-link" href="#" title="" rel="bookmark">1D</a></li>
+                        <li><a class="features-products-list-chart-date-link" href="#" title="" rel="bookmark">1M</a></li>
+                        <li><a class="features-products-list-chart-date-link" href="#" title="" rel="bookmark">1Y</a></li>
+                        <li><a class="features-products-list-chart-date-link active" href="#" title="" rel="bookmark">5Y</a></li>
+                    </ul>
+                    <a class="features-products-list-chart-fullchart" href="#"><i class="icon-svg icon-svg-productsfullwidth"></i> TAM GRAFİK</a>
+                    <div class="clearfix"></div>
+                    <div class="features-products-list-chart-detail">
+                        <div>
+                            <img src="../assets/img/mainpage/elements/Features_Products_Chart.svg" alt="Chart" width="270" height="153" />
+                        </div>
                     </div>
                 </div>
             </div>
@@ -512,42 +555,47 @@
                 <i class="icon-svg icon-svg-productslistmpay"></i>
             </div>
         </div>
-        <div class="features-products-list-currencyinfo col">
-            <h2 class="columntitle columntitle-sm bottomborder titleleft">MENAPAY [MPAY]</h2>
-            <p class="features-products-list-currencyinfo-desc">MenaPay Platformu; restoranlar, kafeler, alışveriş merkezleri, benzin istasyonları, otomatlar, çevrimiçi platformlar ve daha fazlasında kullanım imkanı sunmaktadır. MenaPay, kullanıcıların günlük ihtiyaçları için güvenle para aktarmalarını sağlayan bir ödeme sistemidir diyebiliriz. MenaPay uygulaması ile, paranızı kendi dijital cüzdanınızdan gönderebilir, harcayabilir ve yönetebilirsiniz. Aynı zamanda bu işlemleri oldukça düşük maliyetle gerçekleştirebilirsiniz.</p>
-            <a href="03_Features_Products_Zoom_Price.html" class="btn btn-primary btnwidth160" title="" rel="bookmark">DAHA FAZLA BİLGİ</a>
-        </div>
-        <div class="features-products-list-price col d-flex">
-            <div class="features-products-list-price-box col">
-                <h3 class="features-products-list-price-title">GÜNCEL FİYAT</h3>
-                <div class="features-products-list-price-border">
-                    <div class="features-products-list-price-detail d-flex">
-                        <div class="col"><span class="bigtext">21.377,00 TRY</span></div>
-                        <div class="col-md-auto"><span class="bigperc sitecolorgreen">+7.00  +0.03</span></div>
-                    </div>
-                    <div class="features-products-list-price-detail d-flex">
-                        <div class="col"><span class="textup">OPEN</span><span class="textdown">21.050,00</span></div>
-                        <div class="col"><span class="textup">PREV CLOSE</span><span class="textdown">21.030,00</span></div>
-                        <div class="col"><span class="textup">YTD RETURN</span><span class="textdown">13.56</span></div>
-                    </div>
-                    <div class="features-products-list-price-detail d-flex">
-                        <div class="col"><span class="textup">DAY RANGE</span><span class="textdown">21.050,00-21.160,00</span><span class="dotchart"><i class="dothere" style="left: 10%"></i></span></div>
-                        <div class="col"><span class="textup">52W RANGE</span><span class="textdown">21.550,00-21.930,00</span><span class="dotchart"><i class="dothere" style="left: 40%"></i></span></div>
+        <div class="features-products-list-wrapper row">
+            <div class="features-products-list-currencyinfo col">
+                <h2 class="columntitle columntitle-sm bottomborder titleleft">MENAPAY [MPAY]</h2>
+                <p class="features-products-list-currencyinfo-desc">MenaPay Platformu; restoranlar, kafeler, alışveriş merkezleri, benzin istasyonları, otomatlar, çevrimiçi platformlar ve daha fazlasında kullanım imkanı sunmaktadır. MenaPay, kullanıcıların günlük ihtiyaçları için güvenle para aktarmalarını sağlayan bir ödeme sistemidir diyebiliriz. MenaPay uygulaması ile, paranızı kendi dijital cüzdanınızdan gönderebilir, harcayabilir ve yönetebilirsiniz. Aynı zamanda bu işlemleri oldukça düşük maliyetle gerçekleştirebilirsiniz.</p>
+                <a href="03_Features_Products_Zoom_Price.html" class="btn btn-primary btnwidth160" title="" rel="bookmark">DAHA FAZLA BİLGİ</a>
+            </div>
+            <div class="features-products-list-mobiletitle col d-lg-none">
+                <h2 class="columntitle columntitle-sm bottomborder titleleft">MENAPAY [MPAY]</h2>
+            </div>
+            <div class="features-products-list-price d-flex col-md-auto">
+                <div class="features-products-list-price-box chartstats col">
+                    <h3 class="features-products-list-price-title">GÜNCEL FİYAT</h3>
+                    <div class="features-products-list-price-border">
+                        <div class="features-products-list-price-detail d-flex">
+                            <div class="col"><span class="bigtext">21.377,00 TRY</span></div>
+                            <div class="col-md-auto"><span class="bigperc sitecolorgreen">+7.00  +0.03</span></div>
+                        </div>
+                        <div class="features-products-list-price-detail d-flex">
+                            <div class="col"><span class="textup">OPEN</span><span class="textdown">21.050,00</span></div>
+                            <div class="col"><span class="textup">PREV CLOSE</span><span class="textdown">21.030,00</span></div>
+                            <div class="col"><span class="textup">YTD RETURN</span><span class="textdown">13.56</span></div>
+                        </div>
+                        <div class="features-products-list-price-detail d-flex">
+                            <div class="col"><span class="textup">DAY RANGE</span><span class="textdown">21.050,00-21.160,00</span><span class="dotchart"><i class="dothere" style="left: 10%"></i></span></div>
+                            <div class="col"><span class="textup">52W RANGE</span><span class="textdown">21.550,00-21.930,00</span><span class="dotchart"><i class="dothere" style="left: 40%"></i></span></div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="features-products-list-price-box col-md-auto">
-                <ul class="features-products-list-chart-date">
-                    <li><a class="features-products-list-chart-date-link" href="#" title="" rel="bookmark">1D</a></li>
-                    <li><a class="features-products-list-chart-date-link" href="#" title="" rel="bookmark">1M</a></li>
-                    <li><a class="features-products-list-chart-date-link" href="#" title="" rel="bookmark">1Y</a></li>
-                    <li><a class="features-products-list-chart-date-link active" href="#" title="" rel="bookmark">5Y</a></li>
-                </ul>
-                <a class="features-products-list-chart-fullchart" href="#"><i class="icon-svg icon-svg-productsfullwidth"></i> TAM GRAFİK</a>
-                <div class="clearfix"></div>
-                <div class="features-products-list-chart-detail">
-                    <div>
-                        <img src="../assets/img/mainpage/elements/Features_Products_Chart.svg" alt="Chart" width="270" height="153" />
+                <div class="features-products-list-price-box chartgraph col-md-auto">
+                    <ul class="features-products-list-chart-date">
+                        <li><a class="features-products-list-chart-date-link" href="#" title="" rel="bookmark">1D</a></li>
+                        <li><a class="features-products-list-chart-date-link" href="#" title="" rel="bookmark">1M</a></li>
+                        <li><a class="features-products-list-chart-date-link" href="#" title="" rel="bookmark">1Y</a></li>
+                        <li><a class="features-products-list-chart-date-link active" href="#" title="" rel="bookmark">5Y</a></li>
+                    </ul>
+                    <a class="features-products-list-chart-fullchart" href="#"><i class="icon-svg icon-svg-productsfullwidth"></i> TAM GRAFİK</a>
+                    <div class="clearfix"></div>
+                    <div class="features-products-list-chart-detail">
+                        <div>
+                            <img src="../assets/img/mainpage/elements/Features_Products_Chart.svg" alt="Chart" width="270" height="153" />
+                        </div>
                     </div>
                 </div>
             </div>
@@ -561,42 +609,47 @@
                 <i class="icon-svg icon-svg-productslistxlm"></i>
             </div>
         </div>
-        <div class="features-products-list-currencyinfo col">
-            <h2 class="columntitle columntitle-sm bottomborder titleleft">STELLAR [XLM]</h2>
-            <p class="features-products-list-currencyinfo-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum placerat mauris nec pulvinar luctus. Nulla vel magna quam. Nullam ac massa velit. Integer ornare Vestibulum placerat mauris nec pulvinar luctus. urna eget neque condimentum imperdiet. Pellentesque ac justo dictum, condimentum risus in, auctor magna. In quam massa, sagittis vitae venenatis a, viverra vitae arcu eget neque curabitur vulputate ornare maximus.</p>
-            <a href="03_Features_Products_Zoom_Price.html" class="btn btn-primary btnwidth160" title="" rel="bookmark">DAHA FAZLA BİLGİ</a>
-        </div>
-        <div class="features-products-list-price col d-flex">
-            <div class="features-products-list-price-box col">
-                <h3 class="features-products-list-price-title">GÜNCEL FİYAT</h3>
-                <div class="features-products-list-price-border">
-                    <div class="features-products-list-price-detail d-flex">
-                        <div class="col"><span class="bigtext">21.377,00 TRY</span></div>
-                        <div class="col-md-auto"><span class="bigperc sitecolorgreen">+7.00  +0.03</span></div>
-                    </div>
-                    <div class="features-products-list-price-detail d-flex">
-                        <div class="col"><span class="textup">OPEN</span><span class="textdown">21.050,00</span></div>
-                        <div class="col"><span class="textup">PREV CLOSE</span><span class="textdown">21.030,00</span></div>
-                        <div class="col"><span class="textup">YTD RETURN</span><span class="textdown">13.56</span></div>
-                    </div>
-                    <div class="features-products-list-price-detail d-flex">
-                        <div class="col"><span class="textup">DAY RANGE</span><span class="textdown">21.050,00-21.160,00</span><span class="dotchart"><i class="dothere" style="left: 10%"></i></span></div>
-                        <div class="col"><span class="textup">52W RANGE</span><span class="textdown">21.550,00-21.930,00</span><span class="dotchart"><i class="dothere" style="left: 40%"></i></span></div>
+        <div class="features-products-list-wrapper row">
+            <div class="features-products-list-currencyinfo col">
+                <h2 class="columntitle columntitle-sm bottomborder titleleft">STELLAR [XLM]</h2>
+                <p class="features-products-list-currencyinfo-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum placerat mauris nec pulvinar luctus. Nulla vel magna quam. Nullam ac massa velit. Integer ornare Vestibulum placerat mauris nec pulvinar luctus. urna eget neque condimentum imperdiet. Pellentesque ac justo dictum, condimentum risus in, auctor magna. In quam massa, sagittis vitae venenatis a, viverra vitae arcu eget neque curabitur vulputate ornare maximus.</p>
+                <a href="03_Features_Products_Zoom_Price.html" class="btn btn-primary btnwidth160" title="" rel="bookmark">DAHA FAZLA BİLGİ</a>
+            </div>
+            <div class="features-products-list-mobiletitle col d-lg-none">
+                <h2 class="columntitle columntitle-sm bottomborder titleleft">STELLAR [XLM]</h2>
+            </div>
+            <div class="features-products-list-price d-flex col-md-auto">
+                <div class="features-products-list-price-box chartstats col">
+                    <h3 class="features-products-list-price-title">GÜNCEL FİYAT</h3>
+                    <div class="features-products-list-price-border">
+                        <div class="features-products-list-price-detail d-flex">
+                            <div class="col"><span class="bigtext">21.377,00 TRY</span></div>
+                            <div class="col-md-auto"><span class="bigperc sitecolorgreen">+7.00  +0.03</span></div>
+                        </div>
+                        <div class="features-products-list-price-detail d-flex">
+                            <div class="col"><span class="textup">OPEN</span><span class="textdown">21.050,00</span></div>
+                            <div class="col"><span class="textup">PREV CLOSE</span><span class="textdown">21.030,00</span></div>
+                            <div class="col"><span class="textup">YTD RETURN</span><span class="textdown">13.56</span></div>
+                        </div>
+                        <div class="features-products-list-price-detail d-flex">
+                            <div class="col"><span class="textup">DAY RANGE</span><span class="textdown">21.050,00-21.160,00</span><span class="dotchart"><i class="dothere" style="left: 10%"></i></span></div>
+                            <div class="col"><span class="textup">52W RANGE</span><span class="textdown">21.550,00-21.930,00</span><span class="dotchart"><i class="dothere" style="left: 40%"></i></span></div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="features-products-list-price-box col-md-auto">
-                <ul class="features-products-list-chart-date">
-                    <li><a class="features-products-list-chart-date-link" href="#" title="" rel="bookmark">1D</a></li>
-                    <li><a class="features-products-list-chart-date-link" href="#" title="" rel="bookmark">1M</a></li>
-                    <li><a class="features-products-list-chart-date-link" href="#" title="" rel="bookmark">1Y</a></li>
-                    <li><a class="features-products-list-chart-date-link active" href="#" title="" rel="bookmark">5Y</a></li>
-                </ul>
-                <a class="features-products-list-chart-fullchart" href="#"><i class="icon-svg icon-svg-productsfullwidth"></i> TAM GRAFİK</a>
-                <div class="clearfix"></div>
-                <div class="features-products-list-chart-detail">
-                    <div>
-                        <img src="../assets/img/mainpage/elements/Features_Products_Chart.svg" alt="Chart" width="270" height="153" />
+                <div class="features-products-list-price-box chartgraph col-md-auto">
+                    <ul class="features-products-list-chart-date">
+                        <li><a class="features-products-list-chart-date-link" href="#" title="" rel="bookmark">1D</a></li>
+                        <li><a class="features-products-list-chart-date-link" href="#" title="" rel="bookmark">1M</a></li>
+                        <li><a class="features-products-list-chart-date-link" href="#" title="" rel="bookmark">1Y</a></li>
+                        <li><a class="features-products-list-chart-date-link active" href="#" title="" rel="bookmark">5Y</a></li>
+                    </ul>
+                    <a class="features-products-list-chart-fullchart" href="#"><i class="icon-svg icon-svg-productsfullwidth"></i> TAM GRAFİK</a>
+                    <div class="clearfix"></div>
+                    <div class="features-products-list-chart-detail">
+                        <div>
+                            <img src="../assets/img/mainpage/elements/Features_Products_Chart.svg" alt="Chart" width="270" height="153" />
+                        </div>
                     </div>
                 </div>
             </div>
