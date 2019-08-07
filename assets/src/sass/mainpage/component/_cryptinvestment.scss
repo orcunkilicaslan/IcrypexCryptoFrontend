@@ -12,6 +12,9 @@
   @include ReSassResponsive(992){
     padding-top: 40px;
   }
+  @include ReSassResponsive(768){
+    padding-bottom: 15px;
+  }
 
   .columntitle{
     &::before{
