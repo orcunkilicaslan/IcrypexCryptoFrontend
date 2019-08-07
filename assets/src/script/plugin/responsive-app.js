@@ -48,9 +48,6 @@ jQuery(function($) {
 /* Responsive DFN Menu Navigation Language List */
 jQuery(function($) {
     if($(window).width() < 991){
-        $(".dfn-onlymobile-bottom a.sitelang-btn").click(function(){
-            $(this).find('.sitelang-lang-text').html('DİL SEÇİNİZ');
-        });
         $(".dfn-onlymobile-bottom a.dropdown-item").click(function(){
             var languageText            = $(this);
             var selLanguage             = $(languageText).find('.sitelang-lang-text').text();

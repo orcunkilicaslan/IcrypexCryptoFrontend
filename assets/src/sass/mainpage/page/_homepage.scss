@@ -1055,9 +1055,18 @@ $globalSvgIconImgPath : "../../img/global/svg";
       margin: 13px auto 0;
 
       @include ReSassResponsive(992){
-        max-width: 100%;
+        max-width: 70%;
         display: flex;
         flex-wrap: wrap;
+      }
+      @include ReSassResponsive(576){
+        max-width: 80%;
+      }
+      @include ReSassResponsive(480){
+        max-width: 90%;
+      }
+      @include ReSassResponsive(400){
+        max-width: 100%;
       }
 
       &-row{
@@ -1067,12 +1076,9 @@ $globalSvgIconImgPath : "../../img/global/svg";
         border-bottom: 1px solid darken($global-clr-soft-gray, 25%);
 
         @include ReSassResponsive(992){
-          width: 50%;
+          width: 100%;
           margin-top: -1px;
           border-top: 1px solid darken($global-clr-soft-gray, 25%);
-        }
-        @include ReSassResponsive(480){
-          width: 100%;
         }
 
         &:first-child{
