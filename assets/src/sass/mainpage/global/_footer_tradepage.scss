@@ -178,16 +178,51 @@ $tradepageFooterImgPath : "../../img/tradepage/footer";
   }
 
   &-loginnav{
+    display: flex;
+    justify-content: space-between;
     border-top: 1px solid transparentize($global-clr-soft-gray, 0.7);
     border-bottom: 1px solid transparentize($global-clr-soft-gray, 0.7);
     padding: 2px 0;
     margin-left: 10px;
     margin-bottom: 20px;
 
+    @include ReSassResponsive(992){
+      margin-left: 0;
+    }
+    @include ReSassResponsive(768){
+      flex-direction: column;
+    }
+    @include ReSassResponsive(576){
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
     &-list{
+      display: flex;
       font-size: 17px;
 
+      @include ReSassResponsive(768){
+        padding-top: 4px;
+        padding-bottom: 6px;
+      }
+      @include ReSassResponsive(576){
+        flex-direction: column;
+        flex: 0 0 50%;
+        max-width: 50%;
+        padding-top: 5px !important;
+        padding-bottom: 5px !important;
+      }
+
       &.linkgray{
+
+        @include ReSassResponsive(768){
+          padding-top: 7px;
+          border-top: 1px solid transparentize($global-clr-soft-gray, 0.7);
+        }
+        @include ReSassResponsive(576){
+          border-top: none;
+        }
+
         a{
           color: transparentize($global-clr-soft-gray, 0.1);
 
@@ -201,6 +236,10 @@ $tradepageFooterImgPath : "../../img/tradepage/footer";
         position: relative;
         padding: 0 12px;
         color: $global-clr-white;
+
+        @include ReSassResponsive(576){
+          padding: 0;
+        }
 
         a{
           color: $global-clr-white;
@@ -219,6 +258,10 @@ $tradepageFooterImgPath : "../../img/tradepage/footer";
           top: calc(50% - 5px);
           right: 0;
           background-color: transparentize($global-clr-soft-gray, 0.7);
+
+          @include ReSassResponsive(576){
+            display: none;
+          }
         }
         &:first-child{
           padding-left: 0;
