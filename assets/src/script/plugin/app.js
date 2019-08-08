@@ -138,7 +138,7 @@ $(document).ready(function(){
     $('.inputphonemask').inputmask({
         mask: '0599 999 99 99',
         placeholder: '',
-        showMaskOnFocus: false,
+        showMaskOnFocus: true,
         showMaskOnHover: false
     });
 });
