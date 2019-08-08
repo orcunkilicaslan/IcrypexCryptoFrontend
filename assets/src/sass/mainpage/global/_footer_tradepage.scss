@@ -6,8 +6,38 @@ $tradepageFooterImgPath : "../../img/tradepage/footer";
   @include gradient($global-grdint-darkblue01, $global-grdint-darkblue02);
   min-height: 120px;
 
+  @include ReSassResponsive(992){
+    padding-top: 30px;
+  }
+
+  .container > .row{
+    @include ReSassResponsive(992){
+      flex-direction: column;
+    }
+  }
+
+
+  .maincont-left{
+    @include ReSassResponsive(992){
+      order: 2;
+      flex: 0 0 100%;
+      max-width: 100%;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+
   .maincont-right{
     padding-left: 30px;
+
+    @include ReSassResponsive(992){
+      order: 1;
+      flex: 0 0 100%;
+      max-width: 700px;
+      margin: 0 auto;
+      padding-left: 30px;
+      padding-right: 30px;
+    }
   }
 
   &-logo{
@@ -39,6 +69,10 @@ $tradepageFooterImgPath : "../../img/tradepage/footer";
       margin: 0;
       line-height: 1;
     }
+
+    @include ReSassResponsive(992){
+      display: none;
+    }
   }
 
   &-address{
@@ -46,10 +80,40 @@ $tradepageFooterImgPath : "../../img/tradepage/footer";
     font-size: 15px;
     position: relative;
 
+    @include ReSassResponsive(992){
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+
     &-desc{
       color: $global-clr-soft-gray;
       margin: 0;
       margin-top: 20px;
+
+      @include ReSassResponsive(992){
+        &:nth-child(2){
+          order: 2;
+        }
+        &:nth-child(3){
+          order: 3;
+          margin-top: 0;
+        }
+        &:nth-child(4){
+          order: 1;
+          margin-top: 10px;
+          margin-bottom: 7px;
+
+          span{
+            display: none;
+          }
+          a{
+            color: $global-clr-white;
+            font-size: 20px;
+            line-height: .85;
+          }
+        }
+      }
 
       a{
         color: $global-clr-soft-gray;
@@ -64,11 +128,53 @@ $tradepageFooterImgPath : "../../img/tradepage/footer";
       top: 0;
       width: 1px;
       height: 100%;
+
+      @include ReSassResponsive(992){
+        display: none;
+      }
     }
   }
 
   &-nav{
     padding-left: 10px;
+
+    @include ReSassResponsive(992){
+      padding-left: 0;
+    }
+
+    > .col{
+      @include ReSassResponsive(992){
+        flex: 0 0 calc(100% / 4);
+        max-width: calc(100% / 4);
+
+        &:nth-child(5){
+          flex: 0 0 calc(100% / 1);
+          max-width: calc(100% / 1);
+
+          .columntitle{
+            display: none;
+          }
+        }
+      }
+      @include ReSassResponsive(576){
+        flex: 0 0 calc(100% / 3);
+        max-width: calc(100% / 3);
+
+        &:nth-child(4){
+          flex: 0 0 calc(100% / 1);
+          max-width: calc(100% / 1);
+        }
+      }
+      @include ReSassResponsive(480){
+        flex: 0 0 calc(100% / 2);
+        max-width: calc(100% / 2);
+
+        &:nth-child(4){
+          flex: 0 0 calc(100% / 2);
+          max-width: calc(100% / 2);
+        }
+      }
+    }
   }
 
   &-loginnav{
@@ -131,6 +237,17 @@ $tradepageFooterImgPath : "../../img/tradepage/footer";
   &-social{
     &-list{
       text-align: left;
+
+      @include ReSassResponsive(992){
+        text-align: center;
+        padding: 25px 0;
+      }
+      @include ReSassResponsive(480){
+        padding-bottom: 10px;
+      }
+      @include ReSassResponsive(400){
+        padding-top: 10px;
+      }
     }
   }
 
@@ -139,13 +256,43 @@ $tradepageFooterImgPath : "../../img/tradepage/footer";
     padding: 10px 15px;
     margin-top: 50px;
 
+    @include ReSassResponsive(768){
+      margin-top: 40px;
+    }
+    @include ReSassResponsive(576){
+      margin-top: 30px;
+    }
+    @include ReSassResponsive(480){
+      margin-top: 20px;
+    }
+
     &-list{
       margin: 0;
       text-align: center;
+
+      @include ReSassResponsive(480){
+        @include scale(0.8);
+      }
+      @include ReSassResponsive(400){
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+
       &-item{
         position: relative;
         padding: 0 12px;
         display: inline-block;
+
+        @include ReSassResponsive(480){
+          padding: 0 10px;
+        }
+        @include ReSassResponsive(400){
+          flex: 0 0 calc(100% / 2);
+          max-width: calc(100% / 2);
+          padding: 0;
+        }
+
         &::before{
           content: "";
           position: absolute;
@@ -154,6 +301,10 @@ $tradepageFooterImgPath : "../../img/tradepage/footer";
           top: calc(50% - 4px);
           right: -3px;
           background-color: transparentize($global-clr-soft-gray, 0.7);
+
+          @include ReSassResponsive(480){
+            display: none;
+          }
         }
         &:first-child{
           padding-left: 0;
@@ -165,10 +316,18 @@ $tradepageFooterImgPath : "../../img/tradepage/footer";
 
         img{position: relative}
         .akbank{}
-        .ziraat{top: -2px;}
-        .odeabank{top: -2px;}
-        .papara{top: 3px;}
-
+        .ziraat{
+          top: -2px;
+        }
+        .odeabank{
+          top: -2px;
+        }
+        .papara{
+          top: 3px;
+          @include ReSassResponsive(576){
+            top: 1px;
+          }
+        }
       }
     }
   }

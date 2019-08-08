@@ -96,6 +96,9 @@
     @include ReSassResponsive(1400){
       font-size: 23px;
     }
+    @include ReSassResponsive(480){
+      font-size: 20px;
+    }
 
     .breadcrumb-item{
       + .breadcrumb-item{

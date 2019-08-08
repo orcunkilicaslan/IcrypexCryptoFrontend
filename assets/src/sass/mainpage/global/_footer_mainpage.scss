@@ -176,6 +176,7 @@ $mainpageFooterImgPath : "../../img/mainpage/footer";
         @include ReSassResponsive(400){
           max-width: calc(100% /2);
           flex: 0 0 calc(100% /2);
+          padding: 0;
         }
 
         &::before{

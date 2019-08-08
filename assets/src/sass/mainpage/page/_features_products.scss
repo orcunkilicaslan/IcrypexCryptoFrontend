@@ -12,6 +12,10 @@
 
       @include ReSassResponsive(576){
         padding: 24px 0 30px;
+
+        &:last-child{
+          padding-bottom: 20px;
+        }
       }
 
       &:last-child{
@@ -80,6 +84,10 @@
         .columntitle{
           display: flex;
           align-items: center;
+
+          @include ReSassResponsive(992){
+            font-size: 20px;
+          }
         }
 
         i[class*="icon-svg"]{
@@ -87,8 +95,8 @@
 
           @include ReSassResponsive(480){
             display: block;
-            width: 24px;
-            height: 24px;
+            width: 28px;
+            height: 28px;
             margin-right: 5px;
           }
         }
@@ -100,6 +108,12 @@
         @include ReSassResponsive(992){
           order: 3;
           padding-right: 15px;
+        }
+
+        .columntitle{
+          @include ReSassResponsive(992){
+            display: none;
+          }
         }
 
         &-desc{
