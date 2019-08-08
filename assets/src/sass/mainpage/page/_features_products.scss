@@ -11,7 +11,7 @@
       flex-direction: row;
 
       @include ReSassResponsive(576){
-        padding: 20px 0;
+        padding: 24px 0 30px;
       }
 
       &:last-child{

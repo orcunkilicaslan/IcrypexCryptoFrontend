@@ -3,12 +3,56 @@
   &tabs{
     width: 100%;
 
+    &-dropdown{
+      &-btn{
+        display: block;
+        max-width: 300px;
+        margin: 0 auto;
+        padding: 7px 5px 5px;
+        font-size: 20px;
+        letter-spacing: -.02em;
+        border: none;
+        position: relative;
+        @include border-radius(0);
+
+        @include ReSassResponsive(400){
+          max-width: 260px;
+        }
+
+        &:before{
+          content: "";
+          position: absolute;
+          width: 10px;
+          height: 10px;
+          border-bottom: 2px solid transparentize($global-clr-white, 0.5);
+          border-left: 2px solid transparentize($global-clr-white, 0.5);
+          right: 15px;
+          top: calc(50% - 6px);
+          @include rotate(-45);
+        }
+
+      }
+      &-menu{
+        width: 100%;
+        min-width: auto;
+        max-width: 300px;
+        margin: 4px auto;
+        padding: 0;
+        border: none;
+        @include border-radius(0);
+
+        @include ReSassResponsive(400){
+          max-width: 260px;
+        }
+      }
+    }
+
     &light{
       border-bottom: 5px solid $global-clr-soft-blue;
       position: relative;
       justify-content: center!important;
 
-      @include ReSassResponsive(576){
+      @include ReSassResponsive(768){
         border-bottom: none;
         flex-direction: column;
         display: none;
@@ -24,7 +68,7 @@
         height: 2px;
         bottom: 0;
 
-        @include ReSassResponsive(576){
+        @include ReSassResponsive(768){
           display: none;
         }
       }
@@ -32,22 +76,8 @@
       &-dropdown{
         &-btn{
           background-color: $global-clr-soft-blue;
-          display: block;
-          font-size: 18px;
-          letter-spacing: -.02em;
-          border: none;
-          @include border-radius(0);
         }
-        &-menu{
-          width: 100%;
-          min-width: auto;
-          padding: 0;
-          margin: 0;
-          border: none;
-          top: 1px !important;
-          transform: translate3d(0, 0, 0) !important;
-          @include border-radius(0);
-        }
+        &-menu{}
       }
 
       .nav{
@@ -59,6 +89,12 @@
           overflow: hidden;
           color: transparentize($global-clr-white, 0.5);
           background-color: $global-clr-soft-gray;
+
+          &:last-child a{
+            @include ReSassResponsive(768){
+              border-bottom: none;
+            }
+          }
         }
         &-link{
           color: transparentize($global-clr-white, 0.50);
@@ -75,8 +111,11 @@
           @include border-radius(0);
           @include transition(color, 0.2s, linear);
 
-          @include ReSassResponsive(576){
+          @include ReSassResponsive(768){
+            font-size: 20px;
+            padding: 7px 2px;
             border: none;
+            border-bottom: 1px solid transparentize($global-clr-white , 0.7);
           }
 
           span{
@@ -96,7 +135,7 @@
             background-color: transparent;
             @include transition(height, 0.2s, linear);
 
-            @include ReSassResponsive(576){
+            @include ReSassResponsive(768){
               width: calc(100% - 0);
             }
           }
@@ -107,10 +146,21 @@
             color: $global-clr-white !important;
             background-color: transparent;
             border-color: $global-clr-white;
+
+            @include ReSassResponsive(768){
+              background-color: $global-clr-soft-blue;
+              border-bottom-color: transparentize($global-clr-white , 0.7);
+              border-bottom-style: solid;
+            }
+
             &::before{
               height: 100%;
               background-color: $global-clr-soft-blue;
               z-index: 1;
+
+              @include ReSassResponsive(768){
+                display: none;
+              }
             }
           }
         }
@@ -135,6 +185,10 @@
 
     &-wrapper{
       position: relative;
+
+      @include ReSassResponsive(768){
+        border-bottom: 4px solid $global-clr-soft-blue;
+      }
 
       &-leftright{
         color: $global-clr-dark-blue;
