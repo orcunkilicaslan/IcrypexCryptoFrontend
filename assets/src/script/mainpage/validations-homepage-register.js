@@ -303,7 +303,7 @@ $(document).ready(function(){
         mask: '0599 999 99 99',
         placeholder: '',
         greedy: false,
-        showMaskOnFocus: false,
+        showMaskOnFocus: true,
         showMaskOnHover: false
     });
 });
