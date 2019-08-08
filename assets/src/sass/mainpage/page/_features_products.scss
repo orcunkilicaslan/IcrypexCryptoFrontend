@@ -102,6 +102,12 @@
           padding-right: 15px;
         }
 
+        .columntitle{
+          @include ReSassResponsive(992){
+            display: none;
+          }
+        }
+
         &-desc{
           color: $global-clr-dark-blue;
           font-size: 17px;
