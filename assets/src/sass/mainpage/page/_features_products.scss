@@ -10,6 +10,10 @@
       display: flex;
       flex-direction: row;
 
+      @include ReSassResponsive(576){
+        padding: 20px 0;
+      }
+
       &:last-child{
         border-bottom: none;
       }
@@ -48,6 +52,10 @@
         @include ReSassResponsive(768){
           max-width: 85px;
         }
+        @include ReSassResponsive(480){
+          display: none;
+        }
+
 
         .iconbox{
           background-color: $global-clr-light-gray;
@@ -67,6 +75,22 @@
       &-mobiletitle{
         @include ReSassResponsive(992){
           order: 1;
+        }
+
+        .columntitle{
+          display: flex;
+          align-items: center;
+        }
+
+        i[class*="icon-svg"]{
+          display: none;
+
+          @include ReSassResponsive(480){
+            display: block;
+            width: 24px;
+            height: 24px;
+            margin-right: 5px;
+          }
         }
       }
 

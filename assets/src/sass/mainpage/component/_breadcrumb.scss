@@ -7,6 +7,9 @@
   @include ReSassResponsive(1400){
     padding: 20px 0 15px;
   }
+  @include ReSassResponsive(576){
+    padding: 10px 15px 15px;
+  }
 
   > .container{
     position: relative;
@@ -29,6 +32,17 @@
       position: absolute;
       bottom: 0;
       left: 0;
+    }
+  }
+
+  div[class*="-left"]{
+    @include ReSassResponsive(768){
+      padding: 0;
+    }
+  }
+  div[class*="-right"]{
+    @include ReSassResponsive(768){
+      display: none;
     }
   }
 
@@ -102,6 +116,9 @@
 
     @include ReSassResponsive(1400){
       font-size: 16px;
+    }
+    @include ReSassResponsive(768){
+      justify-content: flex-start;
     }
   }
 }
