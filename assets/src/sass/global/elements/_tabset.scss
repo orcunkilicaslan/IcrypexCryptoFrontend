@@ -1,11 +1,18 @@
 .site{
 
   &tabs{
+    width: 100%;
 
     &light{
       border-bottom: 5px solid $global-clr-soft-blue;
       position: relative;
       justify-content: center!important;
+
+      @include ReSassResponsive(576){
+        border-bottom: none;
+        flex-direction: column;
+        display: none;
+      }
 
       &::after{
         content: "";
@@ -16,6 +23,31 @@
         background-color: $global-clr-white;
         height: 2px;
         bottom: 0;
+
+        @include ReSassResponsive(576){
+          display: none;
+        }
+      }
+
+      &-dropdown{
+        &-btn{
+          background-color: $global-clr-soft-blue;
+          display: block;
+          font-size: 18px;
+          letter-spacing: -.02em;
+          border: none;
+          @include border-radius(0);
+        }
+        &-menu{
+          width: 100%;
+          min-width: auto;
+          padding: 0;
+          margin: 0;
+          border: none;
+          top: 1px !important;
+          transform: translate3d(0, 0, 0) !important;
+          @include border-radius(0);
+        }
       }
 
       .nav{
@@ -43,6 +75,10 @@
           @include border-radius(0);
           @include transition(color, 0.2s, linear);
 
+          @include ReSassResponsive(576){
+            border: none;
+          }
+
           span{
             position: relative;
             z-index: 1;
@@ -59,6 +95,10 @@
             bottom: 0;
             background-color: transparent;
             @include transition(height, 0.2s, linear);
+
+            @include ReSassResponsive(576){
+              width: calc(100% - 0);
+            }
           }
 
           &.active,

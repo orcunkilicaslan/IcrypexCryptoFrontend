@@ -60,6 +60,32 @@ jQuery(function($) {
 });
 /* Responsive DFN Menu Navigation Language List */
 
+/* Responsive Tab Menu Dropdown */
+jQuery(function($) {
+    if($(window).width() <= 575){
+        $(document).ready(function($){
+
+            var menuLocation    = $('.sitetabs');
+            var menuWrapper01    = $('.sitetabs-wrapper-01');
+            var menuWrapper02    = $('.sitetabs-wrapper-02');
+            var menuWrapper03    = $('.sitetabs-wrapper-03');
+            var activeMenuText  = $('ul.sitetabslight .nav-item').find('.active').text();
+
+            // Dropdown Menu Add Class
+            menuLocation.find(menuWrapper01).find('ul.nav').addClass('dropdown-menu sitetabslight-dropdown-menu');
+            menuLocation.find(menuWrapper02).find('ul.nav').addClass('dropdown-menu sitetabslight-dropdown-menu');
+            menuLocation.find(menuWrapper03).find('ul.nav').addClass('dropdown-menu sitetabslight-dropdown-menu');
+
+            // Dropdown Button Added
+            menuLocation.find(menuWrapper01).append($('<a class="sitetabslight-dropdown-btn btn" href="#" data-toggle="dropdown">' + activeMenuText + '</a>'));
+            menuLocation.find(menuWrapper02).append($('<a class="sitetabslight-dropdown-btn btn" href="#" data-toggle="dropdown">' + activeMenuText + '</a>'));
+            menuLocation.find(menuWrapper03).append($('<a class="sitetabslight-dropdown-btn btn" href="#" data-toggle="dropdown">' + activeMenuText + '</a>'));
+
+        });
+    }
+});
+/* Responsive Tab Menu Dropdown */
+
 /* Loading Info */
 // console.log("Plugin App Mobile Responsive Javascript Loading Successful");
 /* Loading Info */
