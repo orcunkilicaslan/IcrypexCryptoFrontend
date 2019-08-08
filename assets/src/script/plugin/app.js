@@ -132,11 +132,15 @@ $(function(){
 /* Tooltip */
 
 /* Input Mask */
-jQuery(function($){
-    $(".inputdatemask").mask("99/99/9999",{placeholder:"MM/DD/YYYY"});
-    $(".inputphonemask").mask("0599 999 99 99",{placeholder:"05__ ___ __ __"});
-    $(".inputibanmask").mask("TR99 9999 9999 9999 9999 9999 99",{placeholder:"TR__ ____ ____ ____ ____ ____ __"});
-    $(".inputgoogleauthmask").mask("999 999",{placeholder:"___ ___"});
+$(document).ready(function(){
+    $('.inputibanmask').inputmask('TR99 9999 9999 9999 9999 9999 99', {'placeholder': ""});
+    $('.inputdatemask').inputmask('99/99/9999', {'placeholder': "MM/DD/YYYY"});
+    $('.inputphonemask').inputmask({
+        mask: '0599 999 99 99',
+        placeholder: '',
+        showMaskOnFocus: false,
+        showMaskOnHover: false
+    });
 });
 /* Input Mask */
 

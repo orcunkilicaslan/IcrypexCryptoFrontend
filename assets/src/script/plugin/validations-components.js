@@ -109,8 +109,13 @@ window.testlabelform = new ComponentLabelForm();
 /* Component Label Form */
 
 /* Masked Input Plugin for jQuery */
-jQuery(function($){
-    $("#inputPhoneId").mask("0999 999 99 99");
+$(document).ready(function(){
+    $("#inputPhoneId").inputmask({
+        mask: '0599 999 99 99',
+        placeholder: '',
+        showMaskOnFocus: false,
+        showMaskOnHover: false
+    });
 });
 /* Masked Input Plugin for jQuery */
 
