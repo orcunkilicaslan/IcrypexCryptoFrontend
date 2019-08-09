@@ -69,21 +69,25 @@ jQuery(function($) {
             var menuWrapper         = $('.sitetabs-wrapper');
             var menuWrapper01       = $('.sitetabs-wrapper-01');
             var menuWrapper02       = $('.sitetabs-wrapper-02');
-            var menuWrapper03       = $('.sitetabs-wrapper-03');
-            var activeMenuText      = $('ul.sitetabslight .nav-item').find('.active').text();
+            //var menuWrapper03       = $('.sitetabs-wrapper-03');
+            var activeMenuText01      = menuLocation.find(menuWrapper01).find('ul.nav .nav-item').find('.active').text();
+            var activeMenuText02      = menuLocation.find(menuWrapper02).find('ul.nav .nav-item').find('.active').text();
+            //var activeMenuText03      = menuLocation.find(menuWrapper03).find('ul.nav .nav-item').find('.active').text();
+
 
             // Dropdown Menu Active Class Menu Remove
-            menuLocation.find(menuWrapper).find('ul.nav').find('.active').parent().remove();
+            menuLocation.find(menuWrapper01).find('ul.nav').find('.active').parent().remove();
+            menuLocation.find(menuWrapper02).find('ul.nav').find('.active').parent().remove();
 
             // Dropdown Menu Add Class
-            menuLocation.find(menuWrapper01).find('ul.nav').addClass('dropdown-menu sitetabs-dropdown-menu sitetabslight-dropdown-menu');
-            menuLocation.find(menuWrapper02).find('ul.nav').addClass('dropdown-menu sitetabs-dropdown-menu sitetabslight-dropdown-menu');
-            menuLocation.find(menuWrapper03).find('ul.nav').addClass('dropdown-menu sitetabs-dropdown-menu sitetabslight-dropdown-menu');
+            menuLocation.find(menuWrapper01).find('ul.nav').addClass('dropdown-menu responsive-dropdown-menu responsive-dropdown-top-menu');
+            menuLocation.find(menuWrapper02).find('ul.nav').addClass('dropdown-menu responsive-dropdown-menu responsive-dropdown-bottom-menu');
+            //menuLocation.find(menuWrapper03).find('ul.nav').addClass('dropdown-menu responsive-dropdown-menu');
 
             // Dropdown Button Added
-            menuLocation.find(menuWrapper01).append($('<a class="sitetabs-dropdown-btn sitetabslight-dropdown-btn btn" href="#" data-toggle="dropdown">' + activeMenuText + '</a>'));
-            menuLocation.find(menuWrapper02).append($('<a class="sitetabs-dropdown-btn sitetabslight-dropdown-btn btn" href="#" data-toggle="dropdown">' + activeMenuText + '</a>'));
-            menuLocation.find(menuWrapper03).append($('<a class="sitetabs-dropdown-btn sitetabslight-dropdown-btn btn" href="#" data-toggle="dropdown">' + activeMenuText + '</a>'));
+            menuLocation.find(menuWrapper01).append($('<a class="responsive-dropdown-btn responsive-dropdown-top-btn btn" href="#" data-toggle="dropdown">' + activeMenuText01 + '</a>'));
+            menuLocation.find(menuWrapper02).append($('<a class="responsive-dropdown-btn responsive-dropdown-bottom-btn btn" href="#" data-toggle="dropdown">' + activeMenuText02 + '</a>'));
+            //menuLocation.find(menuWrapper03).append($('<a class="responsive-dropdown-btn btn" href="#" data-toggle="dropdown">' + activeMenuText03 + '</a>'));
 
         });
     }
