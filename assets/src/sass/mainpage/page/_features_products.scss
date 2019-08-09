@@ -417,8 +417,18 @@
           margin-top: -1px;
 
           &:nth-child(odd){
-            //border-right: 1px solid transparentize($global-clr-soft-gray, 0.85);
             margin-right: 10px;
+          }
+        }
+        @include ReSassResponsive(576){
+          width: 100%;
+          padding: 5px 0;
+          border: none;
+          border-bottom: 1px solid transparentize($global-clr-soft-gray, 0.85);
+          margin-top: 0;
+
+          &:nth-child(odd){
+            margin-right: 0;
           }
         }
 
@@ -427,6 +437,9 @@
 
           @include ReSassResponsive(768){
             border-bottom: 1px solid transparentize($global-clr-soft-gray, 0.85);
+          }
+          @include ReSassResponsive(576){
+            border-bottom: none;
           }
         }
       }
