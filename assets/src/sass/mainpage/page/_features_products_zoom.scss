@@ -3,12 +3,22 @@
   &-products{
 
     &-zoom{
-      padding-top: 10px;
+      width: 100%;
+      padding-top: 20px;
       padding-bottom: 30px;
+
+      @include ReSassResponsive(768){
+        flex-direction: column;
+      }
 
       &-sidebar{
         width: 270px;
         margin-top: 1px;
+
+        @include ReSassResponsive(768){
+          width: 100%;
+          padding: 0 !important;
+        }
 
         *[class*="boxtitle"]{
           font-size: 20px;
@@ -125,6 +135,10 @@
                 width: 50%;
                 margin: 5px 0;
 
+                @include ReSassResponsive(768){
+                  width: 25%;
+                }
+
                 i[class*="icon-svg"]{
                   width: 25px;
                   height: 25px;
@@ -145,6 +159,10 @@
 
         &-price{
           padding: 5px 15px;
+
+          @include ReSassResponsive(768){
+            padding: 5px 15px 15px;
+          }
 
           &-card{
             padding: 10px 0;
@@ -173,6 +191,12 @@
       }
 
       &-wrapper{
+
+        @include ReSassResponsive(768){
+          width: 100%;
+          padding: 0 !important;
+          margin-top: 30px;
+        }
 
         &-boxtitle{
           border-bottom: 1px solid lighten($global-clr-soft-gray, 30%);

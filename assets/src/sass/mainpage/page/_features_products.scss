@@ -391,6 +391,12 @@
 
     &-ultwocolumn{
 
+      @include ReSassResponsive(768){
+        display: flex;
+        flex-wrap: wrap;
+        border: 1px solid transparentize($global-clr-soft-gray, 0.85);
+      }
+
       &.bordertop{
         border-top: 1px solid transparentize($global-clr-soft-gray, 0.85);
       }
@@ -399,6 +405,15 @@
         border-bottom: 1px solid transparentize($global-clr-soft-gray, 0.85);
         padding: 5px 0;
         font-size: 15px;
+
+        @include ReSassResponsive(768){
+          width: 50%;
+          padding: 5px 10px;
+
+          &:nth-child(odd){
+            border-right: 1px solid transparentize($global-clr-soft-gray, 0.85);
+          }
+        }
 
         &:last-child{
           border-bottom: none;

@@ -3,12 +3,14 @@
   &tabs{
     width: 100%;
 
-    &-dropdown{
+    .responsive-dropdown{
       &-btn{
-        display: block;
+        background-color: $global-clr-soft-gray;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         max-width: 300px;
         margin: 0 auto;
-        padding: 7px 5px 5px;
         font-size: 20px;
         letter-spacing: -.02em;
         border: none;
@@ -19,30 +21,72 @@
           max-width: 260px;
         }
 
-        &:before{
+        &::after{
           content: "";
-          position: absolute;
+          position: relative;
+          display: inline-block;
           width: 10px;
           height: 10px;
           border-bottom: 2px solid transparentize($global-clr-white, 0.5);
           border-left: 2px solid transparentize($global-clr-white, 0.5);
-          right: 15px;
-          top: calc(50% - 6px);
+          left: 10px;
+          margin-top: -2px;
           @include rotate(-45);
+          @include transition(all, 0.3s, ease-in-out);
         }
 
+        &[aria-expanded^="true"]{
+          &::after{
+            @include rotate(-225);
+            margin-top: 6px;
+          }
+        }
       }
       &-menu{
+        display: none;
         width: 100%;
         min-width: auto;
         max-width: 300px;
-        margin: 4px auto;
+        margin: 0 auto;
         padding: 0;
         border: none;
         @include border-radius(0);
 
         @include ReSassResponsive(400){
           max-width: 260px;
+        }
+
+        &.show{
+          display: block;
+        }
+
+        > li > a{
+          font-size: 20px;
+          text-align: center;
+          padding: 7px 2px;
+          border: none;
+          border-bottom: 1px solid transparentize($global-clr-white , 0.8);
+        }
+      }
+
+      &-top{
+        &-btn{
+          background-color: $global-clr-soft-blue;
+          padding: 7px 5px 5px;
+        }
+        &-menu{
+          margin: 4px auto;
+        }
+      }
+
+      &-bottom{
+        &-btn{
+          background-color: $global-clr-btn-blue;
+          padding: 4px 5px 8px;
+        }
+        &-menu{
+          background-color: lighten($global-clr-btn-blue, 3%);
+          margin: 0 auto;
         }
       }
     }
@@ -71,13 +115,6 @@
         @include ReSassResponsive(768){
           display: none;
         }
-      }
-
-      &-dropdown{
-        &-btn{
-          background-color: $global-clr-soft-blue;
-        }
-        &-menu{}
       }
 
       .nav{
@@ -110,13 +147,6 @@
           cursor: pointer;
           @include border-radius(0);
           @include transition(color, 0.2s, linear);
-
-          @include ReSassResponsive(768){
-            font-size: 20px;
-            padding: 7px 2px;
-            border: none;
-            border-bottom: 1px solid transparentize($global-clr-white , 0.7);
-          }
 
           span{
             position: relative;
@@ -187,8 +217,22 @@
       position: relative;
 
       @include ReSassResponsive(768){
-        border-bottom: 4px solid $global-clr-soft-blue;
+        margin: 2px 0;
       }
+
+      &-01{
+        @include ReSassResponsive(768){
+          border-bottom: 4px solid $global-clr-soft-blue;
+        }
+      }
+
+      &-02{
+        @include ReSassResponsive(768){
+          border-top: 4px solid $global-clr-btn-blue;
+        }
+      }
+
+      &-03{}
 
       &-leftright{
         color: $global-clr-dark-blue;

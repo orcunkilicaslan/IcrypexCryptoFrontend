@@ -36,11 +36,15 @@
   }
 
   div[class*="-left"]{
+    padding-right: 0;
+    padding-left: 0;
     @include ReSassResponsive(768){
       padding: 0;
     }
   }
   div[class*="-right"]{
+    padding-right: 0;
+    padding-left: 0;
     @include ReSassResponsive(768){
       display: none;
     }
