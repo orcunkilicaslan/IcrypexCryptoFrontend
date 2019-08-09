@@ -10,6 +10,9 @@
       @include ReSassResponsive(768){
         flex-direction: column;
       }
+      @include ReSassResponsive(576){
+        padding-bottom: 15px;
+      }
 
       &-sidebar{
         width: 270px;
@@ -137,6 +140,9 @@
 
                 @include ReSassResponsive(768){
                   width: 25%;
+                }
+                @include ReSassResponsive(480){
+                  width: 50%;
                 }
 
                 i[class*="icon-svg"]{

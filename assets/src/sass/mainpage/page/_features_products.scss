@@ -394,11 +394,15 @@
       @include ReSassResponsive(768){
         display: flex;
         flex-wrap: wrap;
-        border: 1px solid transparentize($global-clr-soft-gray, 0.85);
+        //border: 1px solid transparentize($global-clr-soft-gray, 0.85);
       }
 
       &.bordertop{
         border-top: 1px solid transparentize($global-clr-soft-gray, 0.85);
+
+        @include ReSassResponsive(768){
+          border: none;
+        }
       }
 
       li{
@@ -407,16 +411,36 @@
         font-size: 15px;
 
         @include ReSassResponsive(768){
-          width: 50%;
+          width: calc(50% - 5px);
           padding: 5px 10px;
+          border: 1px solid transparentize($global-clr-soft-gray, 0.85);
+          margin-top: -1px;
 
           &:nth-child(odd){
-            border-right: 1px solid transparentize($global-clr-soft-gray, 0.85);
+            margin-right: 10px;
+          }
+        }
+        @include ReSassResponsive(576){
+          width: 100%;
+          padding: 5px 0;
+          border: none;
+          border-bottom: 1px solid transparentize($global-clr-soft-gray, 0.85);
+          margin-top: 0;
+
+          &:nth-child(odd){
+            margin-right: 0;
           }
         }
 
         &:last-child{
           border-bottom: none;
+
+          @include ReSassResponsive(768){
+            border-bottom: 1px solid transparentize($global-clr-soft-gray, 0.85);
+          }
+          @include ReSassResponsive(576){
+            border-bottom: none;
+          }
         }
       }
     }

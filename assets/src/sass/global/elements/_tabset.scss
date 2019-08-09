@@ -18,7 +18,7 @@
         @include border-radius(0);
 
         @include ReSassResponsive(400){
-          max-width: 260px;
+          max-width: 250px;
         }
 
         &::after{
@@ -53,7 +53,7 @@
         @include border-radius(0);
 
         @include ReSassResponsive(400){
-          max-width: 260px;
+          max-width: 250px;
         }
 
         &.show{
@@ -354,6 +354,13 @@
       .nav{
         &-item{
           padding: 0 17px;
+
+          @include ReSassResponsive(480){
+            padding: 0 15px;
+          }
+          @include ReSassResponsive(400){
+            padding: 0 5px;
+          }
         }
         &-link{
           color: transparentize($global-clr-dark-blue, 0.5);
