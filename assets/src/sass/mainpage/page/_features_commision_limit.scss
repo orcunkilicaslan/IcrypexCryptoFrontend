@@ -7,10 +7,6 @@
 
   &-commision_limit{
 
-    @include ReSassResponsive(992){
-      flex-direction: column;
-    }
-
     &-table{
 
       .widthpercent30{
