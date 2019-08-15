@@ -370,8 +370,11 @@
 
       &-socialfeed{
         margin-top: -67px;
-      }
 
+        @include ReSassResponsive(480){
+          margin-top: -55px;
+        }
+      }
     }
   }
 }
