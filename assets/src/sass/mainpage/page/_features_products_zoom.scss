@@ -21,6 +21,8 @@
         @include ReSassResponsive(768){
           width: 100%;
           padding: 0 !important;
+          margin-bottom: 30px;
+          display: none;
         }
 
         *[class*="boxtitle"]{
@@ -196,12 +198,21 @@
         }
       }
 
+      &-price{}
+
+      &-overview{
+        .features-products-zoom-sidebar{
+          @include ReSassResponsive(768){
+            display: block;
+          }
+        }
+      }
+
       &-wrapper{
 
         @include ReSassResponsive(768){
           width: 100%;
           padding: 0 !important;
-          margin-top: 30px;
         }
 
         &-boxtitle{
@@ -345,8 +356,15 @@
                 font-weight: 500;
               }
             }
-          }
 
+            @include ReSassResponsive(768){
+              td{
+                &:last-child{
+                  white-space: nowrap;
+                }
+              }
+            }
+          }
         }
       }
 
