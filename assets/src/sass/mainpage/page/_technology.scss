@@ -346,6 +346,14 @@
             @include border-radius(0);
             @include transition(all, 0.1s, linear);
 
+            @include ReSassResponsive(400){
+              min-width: auto;
+
+              .page-link-date{
+                display: none;
+              }
+            }
+
             i{
               width: 28px;
               height: 28px;
@@ -403,8 +411,13 @@
               background-color: $global-clr-soft-gray;
               border-color: $global-clr-soft-gray;
 
+              @include ReSassResponsive(400){
+                min-width: 100px;
+              }
+
               .page-link-date{
                 width: 100%;
+                display: block;
               }
             }
           }
@@ -414,6 +427,12 @@
 
     &-sidebar{
       width: 270px;
+
+      @include ReSassResponsive(992){
+        width: 100%;
+        padding: 0 !important;
+        margin-bottom: 20px;
+      }
 
       &-box{
         border: 1px solid transparentize($global-clr-soft-gray, 0.7);
@@ -438,6 +457,10 @@
 
         &-p15{
           padding: 10px 15px 5px;
+
+          @include ReSassResponsive(992){
+            padding: 10px 15px 15px;
+          }
         }
       }
 
