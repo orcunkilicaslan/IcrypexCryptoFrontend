@@ -16,6 +16,17 @@
         padding-left: 15px !important;
         padding-right: 15px !important;
 
+        @include ReSassResponsive(1200){
+          padding: 0 !important;
+          padding-top: 20px !important;
+          margin-top: 30px;
+
+          &:first-child{
+            padding-top: 0 !important;
+            margin-top: 0;
+          }
+        }
+
         &::before{
           content: "";
           position: absolute;
@@ -24,6 +35,14 @@
           width: 1px;
           height: calc(100% - 5px);
           background-color: transparentize($global-clr-soft-gray, 0.7);
+
+          @include ReSassResponsive(1200){
+            width: calc(100% + 30px);
+            height: 1px;
+            bottom: auto;
+            top: 0;
+            left: -15px;
+          }
         }
 
         &:first-child{
@@ -82,12 +101,26 @@
           td{
             border-bottom-width: 1px;
             border-bottom-style: solid;
+
+            @include ReSassResponsive(1200){
+              border-bottom-width: 0;
+            }
           }
         }
 
         td{
           padding-top: 2px;
           padding-bottom: 2px;
+
+          &:last-child{
+            @include ReSassResponsive(768){
+              padding-left: 10px !important;
+              padding-right: 10px !important;
+            }
+          }
+          &::before{
+            color: $global-clr-dark-blue;
+          }
         }
 
         td.blockhash{
@@ -96,6 +129,20 @@
             display: block;
             max-width: 320px;
             position: relative;
+
+            @include ReSassResponsive(768){
+              max-width: 300px;
+            }
+            @include ReSassResponsive(576){
+              max-width: 200px;
+            }
+            @include ReSassResponsive(480){
+              max-width: 160px;
+            }
+            @include ReSassResponsive(400){
+              max-width: 120px;
+            }
+
             &::after{
               content: "...";
               position: absolute;
@@ -110,11 +157,18 @@
         td.valueout{
           width: 100px;
           white-space: nowrap;
+
+          @include ReSassResponsive(768){
+            width: 100%;
+          }
         }
         td.detailbtn{
           width: 80px;
-        }
 
+          @include ReSassResponsive(768){
+            width: 100%;
+          }
+        }
       }
 
       .btn{
@@ -122,11 +176,19 @@
         font-size: 15px;
         line-height: 1;
         min-width: 80px;
+
+        @include ReSassResponsive(768){
+          width: 100%;
+        }
       }
     }
 
     &-summary{
       padding: 15px;
+
+      @include ReSassResponsive(1200){
+        flex-direction: column;
+      }
     }
 
     &-block{

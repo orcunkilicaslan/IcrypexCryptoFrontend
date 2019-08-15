@@ -40,6 +40,8 @@
     padding-left: 0;
     @include ReSassResponsive(768){
       padding: 0;
+      flex: 0 0 100%;
+      max-width: 100%;
     }
   }
   div[class*="-right"]{

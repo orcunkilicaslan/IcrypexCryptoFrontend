@@ -9,7 +9,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        max-width: 300px;
+        max-width: 260px;
         margin: 0 auto;
         font-size: 20px;
         letter-spacing: -.02em;
@@ -18,7 +18,7 @@
         @include border-radius(0);
 
         @include ReSassResponsive(400){
-          max-width: 250px;
+          max-width: 240px;
         }
 
         &::after{
@@ -46,14 +46,14 @@
         display: none;
         width: 100%;
         min-width: auto;
-        max-width: 300px;
+        max-width: 260px;
         margin: 0 auto;
         padding: 0;
         border: none;
         @include border-radius(0);
 
         @include ReSassResponsive(400){
-          max-width: 250px;
+          max-width: 240px;
         }
 
         &.show{
@@ -229,6 +229,19 @@
       &-02{
         @include ReSassResponsive(768){
           border-top: 4px solid $global-clr-btn-blue;
+
+          &-bottomborder{
+            border-top: none;
+            border-bottom: 4px solid $global-clr-btn-blue;
+
+            .responsive-dropdown-bottom-menu{
+              margin: 4px auto;
+            }
+
+            .responsive-dropdown-bottom-btn{
+              padding: 7px 5px 5px;
+            }
+          }
         }
       }
 
@@ -241,11 +254,21 @@
         width: 100%;
         bottom: 10px;
 
+        @include ReSassResponsive(768){
+          bottom: 8px;
+        }
+
         &-dropdown{
           font-size: 20px;
           font-weight: 500;
           display: flex;
           align-items: center;
+
+          @include ReSassResponsive(768){
+            font-size: 18px;
+            position: relative;
+            z-index: 1;
+          }
 
           *{
             margin: 0 2px;
@@ -256,6 +279,10 @@
           font-size: 17px;
           display: flex;
           align-items: center;
+
+          @include ReSassResponsive(768){
+            font-size: 15px;
+          }
 
           *{
             margin: 0 2px;

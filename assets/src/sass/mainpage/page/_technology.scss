@@ -5,6 +5,14 @@
     background-color: $global-clr-white;
     padding: 0 0 40px;
 
+    @include ReSassResponsive(992){
+      padding: 0 0 25px;
+    }
+    @include ReSassResponsive(576){
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+
     .container > .row > .col-12{
       padding-left: 0;
       padding-right: 0;
