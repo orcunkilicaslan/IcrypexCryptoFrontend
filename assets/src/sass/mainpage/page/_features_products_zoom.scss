@@ -208,6 +208,10 @@
         }
       }
 
+      &-detail{}
+
+      &-feed{}
+
       &-wrapper{
 
         @include ReSassResponsive(768){
