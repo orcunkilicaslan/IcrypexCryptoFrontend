@@ -1,12 +1,36 @@
 
 .features{
 
+  &-commision{
+
+  }
+
   &-commision_limit{
+
+    @include ReSassResponsive(992){
+      flex-direction: column;
+    }
 
     &-table{
 
       .widthpercent30{
         width: 33%;
+
+        @include ReSassResponsive(768){
+          width: auto;
+        }
+
+        &-responsive{
+          @include ReSassResponsive(768){
+            width: 35%;
+          }
+        }
+      }
+
+      .widthpercentspace{
+        @include ReSassResponsive(768){
+          width: 1px;
+        }
       }
 
       &.textallleft{

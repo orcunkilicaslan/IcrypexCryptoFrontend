@@ -32,10 +32,18 @@
 
     &-wrapper{
       padding: 30px 0;
+
+      @include ReSassResponsive(768){
+        padding: 15px 0 0;
+      }
     }
 
     &-graphics{
-      width: 570px;
+
+      @include ReSassResponsive(992){
+        padding: 0 !important;
+        margin-bottom: 20px;
+      }
 
       &-box{
         color: $global-clr-dark-blue;
@@ -63,12 +71,21 @@
 
     &-content{
 
+      @include ReSassResponsive(992){
+        padding: 0 !important;
+      }
+
       &-box{
         padding: 10px 0 15px;
         font-size: 17px;
         line-height: 1.2;
 
+        @include ReSassResponsive(992){
+          padding: 0;
+        }
+
         *{color: $global-clr-dark-blue;}
+
         &-title{
           font-size: 20px;
           font-weight: 500;
