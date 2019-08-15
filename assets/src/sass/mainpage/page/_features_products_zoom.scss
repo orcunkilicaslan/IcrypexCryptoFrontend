@@ -176,6 +176,10 @@
             padding: 10px 0;
             align-items: flex-end;
 
+            @include ReSassResponsive(576){
+              border-bottom: 1px solid transparentize($global-clr-soft-gray, 0.85);
+            }
+
             &:last-child{
               border-bottom: none;
             }
@@ -198,8 +202,7 @@
         }
       }
 
-      &-price{}
-
+      &-price,
       &-overview{
         .features-products-zoom-sidebar{
           @include ReSassResponsive(768){
@@ -208,9 +211,14 @@
         }
       }
 
-      &-detail{}
-
-      &-feed{}
+      &-detail,
+      &-feed{
+        .features-products-zoom-sidebar{
+          @include ReSassResponsive(768){
+            display: none;
+          }
+        }
+      }
 
       &-wrapper{
 
@@ -246,6 +254,8 @@
         }
 
         &-charttitle{
+          justify-content: space-between;
+          align-items: flex-end;
           border-bottom: 1px solid lighten($global-clr-soft-gray, 30%);
           height: 34px;
           font-size: 15px;
@@ -306,6 +316,7 @@
               color: $global-clr-dark-blue;
               padding: 6px 2px;
               display: block;
+              text-align: right;
             }
           }
         }
