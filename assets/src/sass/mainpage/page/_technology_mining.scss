@@ -5,12 +5,20 @@
 
     &-wrapper{
       padding-top: 30px;
+
+      @include ReSassResponsive(992){
+        flex-direction: column;
+      }
     }
 
     &-content{}
 
     &-graphics{
-      width: 570px;
+
+      @include ReSassResponsive(992){
+        padding: 0 !important;
+        margin-bottom: 20px;
+      }
 
       &-box{
         color: $global-clr-dark-blue;
