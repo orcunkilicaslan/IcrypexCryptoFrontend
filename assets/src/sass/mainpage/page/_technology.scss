@@ -108,13 +108,21 @@
     &-wrapper{
       padding: 10px 0 0;
 
+      @include ReSassResponsive(992){
+        flex-direction: column;
+      }
+
       &.ptop30{
         padding-top: 30px;
       }
     }
 
     &-graphics{
-      width: 570px;
+
+      @include ReSassResponsive(992){
+        padding: 0 !important;
+        margin-bottom: 20px;
+      }
 
       &-box{
         color: $global-clr-dark-blue;
@@ -123,6 +131,10 @@
         font-size: 17px;
         padding: 10px 15px 15px;
         margin-top: 15px;
+
+        @include ReSassResponsive(992){
+          text-align: center;
+        }
 
         &:first-child{
           margin-top: 0;
@@ -159,12 +171,21 @@
 
     &-content{
 
+      @include ReSassResponsive(992){
+        padding: 0 !important;
+      }
+
       &-box{
         padding: 10px 0 15px;
         font-size: 17px;
         line-height: 1.2;
 
+        @include ReSassResponsive(992){
+          padding: 0;
+        }
+
         *{color: $global-clr-dark-blue;}
+        
         &-title{
           font-size: 20px;
           font-weight: 500;
