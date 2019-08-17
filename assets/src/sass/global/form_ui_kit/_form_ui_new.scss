@@ -559,6 +559,11 @@
       z-index: 0;
       @include transition(all, 0.3s, ease-in-out);
 
+      @include ReSassResponsive(480){
+        font-size: 15px;
+        top: 4px;
+      }
+
       &.errormsgtopcenter{
         position: inherit;
         width: 100%;

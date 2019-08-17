@@ -2,12 +2,27 @@
 .company{
 
   &-contact{
+    width: 100%;
+
+    @include ReSassResponsive(992){
+      flex-direction: column;
+    }
 
     &-form{
       padding-right: 10px !important;
 
+      @include ReSassResponsive(992){
+        padding-right: 0 !important;
+      }
+
       form{
         margin-top: 0;
+
+        .form-row{
+          @include ReSassResponsive(400){
+            flex-direction: column;
+          }
+        }
 
         *[class*="columntitle"]{
           font-weight: normal;
@@ -24,7 +39,11 @@
     }
 
     &-maps{
-      width: 570px;
+
+      @include ReSassResponsive(992){
+        margin-top: 30px;
+        padding-left: 0 !important;
+      }
 
       &-box{
         color: $global-clr-dark-blue;
@@ -40,14 +59,25 @@
         &-iframe{
           background-color: $global-clr-light-gray;
           margin: 15px;
-          height: 465px;
+          //height: 465px;
+          min-height: 465px;
+
+          @include ReSassResponsive(576){
+            min-height: auto;
+          }
         }
 
         &-address{
           background-color: $global-clr-light-gray;
+          align-items: center;
+          justify-content: space-between;
           margin: 2px;
           margin-top: 0;
           padding: 10px 15px;
+
+          @include ReSassResponsive(480){
+            flex-direction: column;
+          }
 
           *{
             color: transparentize($global-clr-soft-gray, 0.1);
@@ -60,15 +90,26 @@
           .contact{
             &adress{
               font-size: 15px;
+
+              @include ReSassResponsive(480){
+                text-align: center;
+              }
+
               h6, p{
                 font-size: 15px;
               }
             }
             &callcenter{
+              width: 100px;
               position: relative;
               padding-top: 5px !important;
               padding-bottom: 5px !important;
               text-align: center;
+
+              @include ReSassResponsive(480){
+                width: 100%;
+                margin-top: 3px !important;
+              }
 
               h6{
                 font-size: 13px;

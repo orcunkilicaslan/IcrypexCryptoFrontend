@@ -5,14 +5,23 @@
     background-color: $global-clr-white;
     padding: 15px 0 40px;
 
-    .container > .row > .col-12{
-      padding-left: 0;
-      padding-right: 0;
+    @include ReSassResponsive(576){
+      padding: 5px 0 25px;
+    }
+
+    @include ReSassResponsive(576){
+      padding-left: 15px !important;
+      padding-right: 15px !important;
     }
 
     .d-flex > *[class*="col"]{
       padding-left: 15px;
       padding-right: 15px;
+
+      @include ReSassResponsive(992){
+        padding-left: 0;
+        padding-right: 0;
+      }
 
       &:first-child{
         padding-left: 0;
@@ -24,9 +33,15 @@
   }
 
   &-top{
+    width: 100%;
     border-bottom: 1px solid transparentize($global-clr-soft-gray, 0.7);
     padding-bottom: 30px;
     margin-bottom: 30px;
+
+    @include ReSassResponsive(576){
+      padding-bottom: 15px;
+      margin-bottom: 15px;
+    }
 
     &-search{
       background-color: transparentize($global-clr-soft-gray, 0.85);
@@ -44,6 +59,10 @@
         border: 0;
         font-size: 20px;
         padding-top: 3px;
+
+        @include ReSassResponsive(576){
+          font-size: 17px;
+        }
 
         &:focus{
           color: $global-clr-dark-blue;
@@ -82,13 +101,47 @@
   }
 
   &-wrapper{
+    width: 100%;
+
+    @include ReSassResponsive(992){
+      flex-direction: column;
+    }
+
     &-column{
+
+      @include ReSassResponsive(992){
+        margin-top: 30px;
+
+        &:first-child{
+          margin-top: 0;
+        }
+      }
+
+      @include ReSassResponsive(576){
+        margin-top: 15px;
+
+        &:first-child{
+          margin-top: 0;
+        }
+      }
+
       &-box{
         color: $global-clr-dark-blue;
         border: 1px solid transparentize($global-clr-soft-gray, 0.7);
         position: relative;
         padding: 10px 15px 15px;
         margin-top: 30px;
+
+        @include ReSassResponsive(576){
+          margin-top: 15px;
+
+          &:first-child{
+            margin-top: 0;
+          }
+        }
+        @include ReSassResponsive(400){
+          padding: 7px 10px 10px;
+        }
 
         &:first-child{
           margin-top: 0;
