@@ -141,6 +141,24 @@ $globalSvgIconImgPath : "../../img/global/svg";
         }
       }
     }
+
+    &responsivebottom{
+      @include ReSassResponsive(768){
+        tbody tr{
+          td{
+            padding: 10px !important;
+
+            &::before{
+              position: inherit;
+              width: 100%;
+              height: inherit;
+              padding: 0;
+              margin-bottom: 5px;
+            }
+          }
+        }
+      }
+    }
   }
 }
 

@@ -4,6 +4,7 @@
   &-multiple{
 
     &-wrapper{
+      width: 100%;
     }
 
     &-box{
@@ -83,6 +84,31 @@
         td{
           padding-top: 5px;
           padding-bottom: 5px;
+
+          @include ReSassResponsive(768){
+            background-color: $global-clr-light-gray;
+          }
+
+          &:last-child{
+            @include ReSassResponsive(768){
+              &::before{
+                display: none;
+              }
+            }
+          }
+
+          > div[class*="colorset"]{
+            @include ReSassResponsive(768){
+              width: 100%;
+            }
+          }
+
+          > div[class*="btn"]{
+            @include ReSassResponsive(768){
+              width: 100%;
+              margin: 0 auto;
+            }
+          }
         }
       }
 
