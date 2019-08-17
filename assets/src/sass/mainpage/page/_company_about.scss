@@ -3,20 +3,46 @@
 
   &-aboutus{
     &-layout02{
+      width: 100%;
 
       &-wrapper{
+
+        @include ReSassResponsive(992){
+          flex-direction: column;
+        }
+
         &.d-flex > *[class*="col"]{
           padding: 0 !important;
         }
 
         &.layoutleft{
 
+          @include ReSassResponsive(992){
+            > div[class*="col"]{
+              &:first-child{
+                order: 2;
+              }
+              &:last-child{
+                order: 1;
+              }
+            }
+          }
+
           div[class*="layout02-box"]{
             padding-left: 0 !important;
+
+            @include ReSassResponsive(992){
+              padding-right: 0 !important;
+            }
           }
           div[class*="layout02-cont"]{
             padding-left: 0 !important;
             border-left: 0;
+
+            @include ReSassResponsive(992){
+              padding-top: 0;
+            }
+
             &::before{
               left: 0;
             }
@@ -26,15 +52,44 @@
               border-right: 0;
             }
           }
+          div[class*="layout02-image"]{
+            background-color: $global-clr-light-gray;
+            height: 100%;
+            overflow: hidden;
+
+            img{
+              height: 100%;
+
+              @include ReSassResponsive(992){
+                width: 100%;
+              }
+            }
+          }
         }
         &.layoutright{
 
+          @include ReSassResponsive(992){
+            > div[class*="col"]{
+              &:first-child{
+                order: 1;
+              }
+              &:last-child{
+                order: 2;
+              }
+            }
+          }
+
           div[class*="layout02-box"]{
             padding-right: 0 !important;
+
+            @include ReSassResponsive(992){
+              padding-left: 0 !important;
+            }
           }
           div[class*="layout02-cont"]{
             padding-right: 0 !important;
             border-right: 0;
+
             &::before{
               right: 0;
             }
@@ -42,6 +97,19 @@
           div[class*="layout02-imagebox"]{
             &::before{
               border-left: 0;
+            }
+          }
+          div[class*="layout02-image"]{
+            background-color: $global-clr-light-gray;
+            height: 100%;
+            overflow: hidden;
+
+            img{
+              height: 100%;
+
+              @include ReSassResponsive(992){
+                width: 100%;
+              }
             }
           }
         }

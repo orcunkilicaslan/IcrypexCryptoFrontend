@@ -5,6 +5,18 @@
     background-color: $global-clr-white;
     padding: 0 0 40px;
 
+    @include ReSassResponsive(576){
+      padding-left: 15px !important;
+      padding-right: 15px !important;
+    }
+
+    @include ReSassResponsive(992){
+      padding: 0 0 20px;
+    }
+    @include ReSassResponsive(576){
+      padding: 0 0 15px;
+    }
+
     .container > .row > .col-12{
       padding-left: 0;
       padding-right: 0;
@@ -25,6 +37,13 @@
 
   &-content{
     padding-top: 30px;
+
+    @include ReSassResponsive(992){
+      padding-top: 20px;
+    }
+    @include ReSassResponsive(768){
+      padding-top: 15px;
+    }
 
     *{
       color: $global-clr-dark-blue;
