@@ -36,6 +36,7 @@
   }
 
   &-content{
+    width: 100%;
     padding-top: 30px;
 
     @include ReSassResponsive(992){
@@ -91,9 +92,31 @@
         strong.widthspaces{
           display: inline-block;
           width: 200px;
+
+          @include ReSassResponsive(768){
+            display: block;
+            width: auto;
+            position: relative;
+            margin-top: 5px;
+            padding-top: 5px;
+
+            &::before{
+              background-color: transparentize($global-clr-soft-gray, 0.7);
+              content: "";
+              position: absolute;
+              width: 100%;
+              height: 1px;
+              left: 0;
+              top: 0;
+            }
+          }
         }
         span.dottedright{
           float: right;
+
+          @include ReSassResponsive(768){
+            display: none;
+          }
         }
       }
     }
