@@ -181,6 +181,10 @@
       margin-left: 43px;
       margin-top: 0;
 
+      @include ReSassResponsive(400){
+        margin-left: 0;
+      }
+
       li{
         padding-left: 30px;
         position: relative;
