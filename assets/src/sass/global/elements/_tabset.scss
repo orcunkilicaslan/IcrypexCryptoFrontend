@@ -149,6 +149,10 @@
           @include border-radius(0);
           @include transition(color, 0.2s, linear);
 
+          @include ReSassResponsive(992){
+            min-width: 120px;
+          }
+
           span{
             position: relative;
             z-index: 1;
