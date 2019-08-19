@@ -63,7 +63,7 @@
           min-height: 465px;
 
           @include ReSassResponsive(576){
-            min-height: auto;
+            min-height: 400px;
           }
         }
 

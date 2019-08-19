@@ -64,6 +64,21 @@
       }
 
     }
+
+    &-return{
+      margin-top: 35px;
+
+      &-btn{
+        color: $global-clr-white;
+        background-color: $global-clr-soft-blue;
+        min-width: 200px;
+        padding: 11px 15px;
+        font-size: 20px;
+        font-weight: normal;
+        @include border-radius(3px);
+      }
+    }
+
     &-callcenter{
       margin-top: 23px;
 
