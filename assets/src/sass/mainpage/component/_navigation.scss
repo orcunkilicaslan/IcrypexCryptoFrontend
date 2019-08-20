@@ -203,7 +203,7 @@
     }
 
     &-livechat{
-      color: $global-clr-white;
+      color: $global-clr-white !important;
       position: fixed;
       width: 75px;
       height: 46px;
