@@ -172,6 +172,10 @@
           font-weight: normal;
           position: relative;
           z-index: 1;
+
+          @include ReSassResponsive(400){
+            width: 100%;
+          }
         }
 
         .tooltip-wrapper{display: block;}

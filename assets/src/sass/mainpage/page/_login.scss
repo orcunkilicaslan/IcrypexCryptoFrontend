@@ -5,6 +5,10 @@
     background-color: $global-clr-white;
     display: flex;
 
+    @include ReSassResponsive(576){
+      padding: 25px 0;
+    }
+
     > .container{
       display: flex;
       flex-direction: column;
@@ -22,6 +26,10 @@
       padding-bottom: 8px;
       letter-spacing: normal;
       font-size: 25px;
+
+      @include ReSassResponsive(576){
+        font-size: 20px;
+      }
 
       &::before{
         width: 100%;
@@ -44,15 +52,21 @@
     border: 2px solid transparentize($global-clr-soft-gray, 0.7);
     position: relative;
     @include border-radius(50%);
+
+    @include ReSassResponsive(576){
+      width: 70px;
+      height: 70px;
+    }
+
     i{
-      width: 50px;
-      height: 50px;
+      width: 36px;
+      height: 36px;
       position: absolute;
-      left: calc(50% - 25px);
-      top: calc(50% - 25px);
+      left: calc(50% - 18px);
+      top: calc(50% - 18px);
     }
     i[class*="loginlock"]{
-      top: calc(50% - 28px);
+      top: calc(50% - 20px);
     }
   }
 
@@ -159,6 +173,13 @@
 
     &-btn{
       margin-top: 40px;
+
+      @include ReSassResponsive(576){
+        margin-top: 20px;
+      }
+      @include ReSassResponsive(480){
+        margin-top: 0;
+      }
     }
 
     &-check{
