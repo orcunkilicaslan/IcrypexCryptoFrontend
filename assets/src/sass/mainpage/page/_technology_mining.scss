@@ -262,7 +262,7 @@
                 @include ReSassResponsive(576){
                   left: 0;
                 }
-                @include ReSassResponsive(480){
+                @include ReSassResponsive(400){
                   width: calc(100% - 20px);
                   height: 1px;
                   top: 0;

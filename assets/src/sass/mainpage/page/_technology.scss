@@ -229,6 +229,10 @@
       &-icons{
         margin-top: 10px;
 
+        @include ReSassResponsive(992){
+          margin-bottom: -7px;
+        }
+
         &-buttons{
           color: $global-clr-soft-blue;
           position: relative;
