@@ -142,6 +142,16 @@
     &-tags-530{
       width: 530px;
       margin: 0 auto;
+
+      @include ReSassResponsive(576){
+        width: auto;
+      }
+
+      .form-row{
+        @include ReSassResponsive(576){
+          flex-direction: column;
+        }
+      }
     }
 
     .form-group{
@@ -188,6 +198,29 @@
       max-width: 700px;
       margin: auto;
       margin-top: 20px;
+
+      @include ReSassResponsive(576){
+        padding-left: 30px;
+        margin-bottom: 40px;
+      }
+
+      .form-row{
+        @include ReSassResponsive(768){
+          flex-direction: column;
+        }
+
+        div[class*="col"]{
+          &:first-child{
+            margin-top: 0;
+          }
+          @include ReSassResponsive(768){
+            margin-top: 15px;
+          }
+          @include ReSassResponsive(480){
+            margin-top: 25px;
+          }
+        }
+      }
     }
 
     @include webkit-autofill{

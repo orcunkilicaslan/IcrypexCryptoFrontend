@@ -44,7 +44,7 @@ class ComponentLabelForm {
                 break;
 
             case "inputPhoneProcess":
-                if(val.length<14){
+                if(val.replace(/\s/g, "").length < 11){
                     this.setComponentLabelFormErrorMessages(messageSpanSelector,"HATA", "");
                     this.setComponentLabelFormErrorMessages(messageIconSelector,"", "none");
                     this.setComponentLabelFormErrorInput(inputIdSelector,"#b82c0d");
@@ -87,7 +87,7 @@ class ComponentLabelForm {
                 break;
 
             case "inputPhoneProcess":
-                if(val.length===0){
+                if(val.replace(/\s/g, "").length===0){
                     this.setComponentLabelFormErrorMessages(messageSpanSelector,"HATA", "");
                     this.setComponentLabelFormErrorMessages(messageIconSelector,"", "none");
                     this.setComponentLabelFormErrorInput(inputIdSelector,"#b82c0d");
