@@ -65,7 +65,7 @@ class HomepageRegisterForm {
                 //console.log("Error inputLastNameId");
                 validStatus = true;
             }
-            if(Phone.trim().length < 14){
+            if(Phone.trim().replace(/\s/g, "").length < 11){
                 this.setHomepageRegisterFormErrorMessages("msgPhoneId", Translation.translate('tr','HomepageRegisterPhoneAlert'));
                 this.setHomepageRegisterFormErrorInput("inputPhoneId","#b82c0d");
                 //console.log("Error inputPhoneId");
@@ -185,7 +185,7 @@ class HomepageRegisterForm {
                 break;
 
             case "inputPhoneProcess":
-                if(val.length < 14){
+                if(val.replace(/\s/g, "").length < 11){
                     this.setHomepageRegisterFormErrorMessages(messageSpanSelector, Translation.translate('tr','HomepageRegisterPhoneAlert'), "");
                     this.setHomepageRegisterFormErrorMessages(messageIconSelector,"", "none");
                     this.setHomepageRegisterFormErrorInput(inputIdSelector,"#b82c0d");
@@ -260,7 +260,7 @@ class HomepageRegisterForm {
                 break;
 
             case "inputPhoneProcess":
-                if(val.length===0){
+                if(val.replace(/\s/g, "").length===0){
                     this.setHomepageRegisterFormErrorMessages(messageSpanSelector, Translation.translate('tr','HomepageRegisterPhoneAlert'), "");
                     this.setHomepageRegisterFormErrorMessages(messageIconSelector,"", "none");
                     this.setHomepageRegisterFormErrorInput(inputIdSelector,"#b82c0d");

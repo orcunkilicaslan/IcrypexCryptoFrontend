@@ -156,7 +156,7 @@ class SignUpForm {
                 break;
 
             case "inputPhoneProcess":
-                if(val.length < 14){
+                if(val.replace(/\s/g, "").length < 11){
                     this.setSignUpFormErrorMessages(messageSpanSelector, Translation.translate('tr','SignUpPhoneAlert'), "");
                     this.setSignUpFormErrorMessages(messageIconSelector,"", "none");
                     this.setSignUpFormErrorInput(inputIdSelector,"#b82c0d");
@@ -231,7 +231,7 @@ class SignUpForm {
                 break;
 
             case "inputPhoneProcess":
-                if(val.length===0){
+                if(val.replace(/\s/g, "").length===0){
                     this.setSignUpFormErrorMessages(messageSpanSelector, Translation.translate('tr','SignUpPhoneAlert'), "");
                     this.setSignUpFormErrorMessages(messageIconSelector,"", "none");
                     this.setSignUpFormErrorInput(inputIdSelector,"#b82c0d");

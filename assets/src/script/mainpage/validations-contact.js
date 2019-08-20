@@ -152,7 +152,7 @@ class ContactUsForm {
                 break;
 
             case "inputPhoneProcess":
-                if(val.length < 14){
+                if(val.replace(/\s/g, "").length < 11){
                     this.setContactUsFormErrorMessages(messageSpanSelector, Translation.translate('tr','ContactUsPhoneAlert'), "");
                     this.setContactUsFormErrorMessages(messageIconSelector,"", "none");
                     this.setContactUsFormErrorInput(inputIdSelector,"#b82c0d");
@@ -232,7 +232,7 @@ class ContactUsForm {
                 break;
 
             case "inputPhoneProcess":
-                if(val.length===0){
+                if(val.replace(/\s/g, "").length===0){
                     this.setContactUsFormErrorMessages(messageSpanSelector, Translation.translate('tr','ContactUsPhoneAlert'), "");
                     this.setContactUsFormErrorMessages(messageIconSelector,"", "none");
                     this.setContactUsFormErrorInput(inputIdSelector,"#b82c0d");
