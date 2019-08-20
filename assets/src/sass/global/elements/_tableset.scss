@@ -147,6 +147,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
         tbody tr{
           td{
             padding: 10px !important;
+            border-bottom: none !important;
 
             &::before{
               position: inherit;
@@ -156,6 +157,9 @@ $globalSvgIconImgPath : "../../img/global/svg";
               margin-bottom: 5px;
             }
           }
+        }
+        thead tr, tbody tr{
+          border-bottom:1px solid transparentize($global-clr-soft-gray, 0.7);
         }
       }
     }

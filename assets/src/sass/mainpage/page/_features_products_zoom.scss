@@ -202,6 +202,16 @@
         }
       }
 
+      &-price{
+        .features-products-zoom-sidebar{
+          @include ReSassResponsive(768){
+            order: 2;
+            margin-bottom: 0;
+            margin-top: 30px;
+          }
+        }
+      }
+
       &-price,
       &-overview{
         .features-products-zoom-sidebar{
