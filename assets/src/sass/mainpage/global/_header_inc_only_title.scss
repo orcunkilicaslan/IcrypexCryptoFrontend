@@ -11,10 +11,30 @@ $globalSvgIconImgPath : "../../img/global/svg";
     opacity: 1;
     @include transition(all, 0.3s, ease-in-out);
 
+    @include ReSassResponsive(576){
+      padding: 10px 0;
+      height: 50px;
+      border-top: none;
+    }
+
+    .col-12{
+      @include ReSassResponsive(576){
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+
     .columntitle{
       color: $global-clr-white !important;
       font-weight: normal;
       min-height: 40px;
+
+      @include ReSassResponsive(576){
+        font-size: 17px;
+        min-height: 28px;
+        padding-bottom: 8px;
+      }
+
       &::before{
         max-width: inherit !important;
       }
