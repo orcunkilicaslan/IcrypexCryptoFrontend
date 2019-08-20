@@ -308,7 +308,15 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
     &-user{
       padding-left: 15px;
+
+      &:hover{
+        #{$headerclassname}-userarea-user-dropdown{
+          background-color: transparentize($global-clr-soft-blue, 0.7);
+        }
+      }
+
       > a{color: $global-clr-white;}
+
       &.btn-group{}
       &-title,
       &-dropdown{}
@@ -338,6 +346,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
         height: 24px;
         border:1px solid transparentize($global-clr-soft-gray, 0.7);
         position: relative;
+        @include transition(background, 0.3s, ease-in-out);
 
         &::after{
           background-image: url(#{$globalSvgIconImgPath}/Arrow_Down_Dropdown.svg);
