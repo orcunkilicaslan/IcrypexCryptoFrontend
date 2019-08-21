@@ -7,10 +7,23 @@ $('#headertitleareapricelite').owlCarousel({
     autoplay:true,
     autoplayTimeout:3000,
     autoplayHoverPause:true,
-    items:3,
+    //items:3,
     margin:0,
     autoWidth:true,
-    animateOut: 'fadeOut'
+    animateOut: 'fadeOut',
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+            autoWidth:false
+        },
+        992:{
+            items:2,
+        },
+        1400:{
+            items:3
+        }
+    }
 });
 /* Header Bottom Lite Price */
 
