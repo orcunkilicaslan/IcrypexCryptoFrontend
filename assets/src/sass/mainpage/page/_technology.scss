@@ -456,6 +456,9 @@
     &-sidebar{
       width: 270px;
 
+      @include ReSassResponsive(1200){
+        width: 250px;
+      }
       @include ReSassResponsive(992){
         width: 100%;
         padding: 0 !important;

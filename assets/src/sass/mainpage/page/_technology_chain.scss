@@ -295,11 +295,13 @@
           padding: 5px 7px;
 
           .pagination{
+            justify-content: space-between;
 
             .page{
 
               &-item{
                 margin: 0 3px;
+                min-height: 30px;
 
                 &:first-child{
                   margin-left: 0;
@@ -324,6 +326,10 @@
                 border-color: lighten($global-clr-soft-gray, 30%);
                 @include border-radius(0);
                 @include transition(all, 0.1s, linear);
+
+                @include ReSassResponsive(1200){
+                  min-width: auto;
+                }
 
                 i{
                   width: 28px;
@@ -365,6 +371,11 @@
 
                 &-height{
                   width: 50px;
+                  padding: 7px 0 6px;
+
+                  @include ReSassResponsive(1200){
+                    display: none;
+                  }
                 }
 
                 &:hover{
@@ -383,8 +394,17 @@
                   border-color: $global-clr-soft-gray;
                   justify-content: center;
 
-                  .page-link-date{
-                    width: 100%;
+                  &.page-link{
+                    @include ReSassResponsive(1200){
+                      min-width: 100%;
+                    }
+                  }
+
+                  .page-link-height{
+                    @include ReSassResponsive(1200){
+                      display: block;
+                      width: 150px;
+                    }
                   }
                 }
               }
@@ -525,7 +545,7 @@
             i[class*="icon-svg"]{
               width: 18px;
               height: 18px;
-              margin-right: 4px;
+              //margin-right: 4px;
             }
           }
           &-footer{
@@ -606,11 +626,50 @@
                   border-width: 1px;
                   border-style: solid;
                   border-color: transparent;
-
                   margin-top: 15px;
 
                   &:first-child{
                     margin-top: 0;
+                  }
+
+                  strong{
+                    overflow: hidden;
+
+                    &:first-child{
+                      position: relative;
+                      width: 100%;
+                      flex-basis: 0;
+                      flex-grow: 1;
+                      text-align: left;
+                      overflow: hidden;
+                    }
+
+                    &:last-child{
+                      position: relative;
+                      text-align: right;
+                      overflow: hidden;
+                      flex: 0 0 auto;
+                      width: auto;
+                      max-width: 100%;
+                    }
+
+                    &.sitecolorblue{
+                      position: relative;
+                      display: inline-block;
+
+                      &::after{
+                        content: "...";
+                        background-color: $global-clr-light-gray;
+                        position: absolute;
+                        width: 20px;
+                        top: 0;
+                        right: auto;
+
+                        @include ReSassResponsive(1200){
+                          right: 0;
+                        }
+                      }
+                    }
                   }
 
                   &.dashedinput{
