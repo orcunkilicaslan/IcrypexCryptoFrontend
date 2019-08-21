@@ -90,6 +90,8 @@
           }
 
           &:last-child{
+            background-color: $global-clr-light-gray;
+            
             @include ReSassResponsive(768){
               &::before{
                 display: none;
