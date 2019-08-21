@@ -55,10 +55,10 @@ $globalSvgIconImgPath : "../../img/global/svg";
         color: $global-clr-white;
 
         &-list{
+          width: calc(100% - 40px);
+          margin: 0 auto;
           display: flex !important;
           align-items: center;
-          padding: 0 20px 0 17px;
-          margin-bottom: 0;
           position: relative;
 
           > li[class*="col"]{
@@ -111,6 +111,12 @@ $globalSvgIconImgPath : "../../img/global/svg";
                 &:hover{
                   background-color: $global-grdint-darkblue02;
                 }
+              }
+              button[class*="owl-prev"]{
+                left: -19px;
+              }
+              button[class*="owl-next"]{
+                right: -19px;
               }
             }
 
