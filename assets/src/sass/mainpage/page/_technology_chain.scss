@@ -73,6 +73,8 @@
           @include ReSassResponsive(768){
             margin-top: 5px;
             margin-bottom: 10px;
+            overflow: hidden;
+            width: 100%;
           }
         }
       }
@@ -199,6 +201,10 @@
     &-block{
       padding: 15px;
 
+      @include ReSassResponsive(400){
+        padding: 10px;
+      }
+
       &-title{
         &.d-flex{
           *[class*="dropdown"]{
@@ -318,6 +324,9 @@
                 @include ReSassResponsive(992){
                   width: 100%;
                 }
+                @include ReSassResponsive(400){
+                  width: auto;
+                }
 
                 &:first-child{
                   margin-left: 0;
@@ -395,6 +404,9 @@
                   @include ReSassResponsive(992){
                     display: block;
                   }
+                  @include ReSassResponsive(400){
+                    display: none;
+                  }
                 }
 
                 &:hover{
@@ -423,6 +435,9 @@
                     @include ReSassResponsive(1200){
                       display: block;
                       min-width: 150px;
+                    }
+                    @include ReSassResponsive(576){
+                      min-width: 100px;
                     }
                   }
                 }
@@ -576,6 +591,14 @@
               @include ReSassResponsive(768){
                 padding-right: 0 !important;
               }
+
+              > a{
+                @include ReSassResponsive(768){
+                  overflow: hidden;
+                  width: 100%;
+                }
+              }
+
             }
 
             &-date{
@@ -590,13 +613,27 @@
             align-items: center;
             padding: 10px 15px;
 
+            @include ReSassResponsive(480){
+              flex-direction: column;
+              padding: 5px 10px;
+            }
+
             &-fee{
               text-align: left;
+
+              @include ReSassResponsive(480){
+                padding: 0 !important;
+              }
             }
 
             &-confirm{
               display: flex;
               justify-content: flex-end;
+
+              @include ReSassResponsive(480){
+                justify-content: flex-start;
+                padding: 0 !important;
+              }
 
               li{
                 position: relative;
@@ -630,6 +667,10 @@
           &-body{
             padding: 15px;
 
+            @include ReSassResponsive(576){
+              padding: 10px;
+            }
+
             &-form{
 
               &-group{
@@ -652,6 +693,15 @@
                     top: 13px;
                     left: calc(50% - 9px);
                     @include rotate(45);
+
+                    @include ReSassResponsive(576){
+                      width: 10px;
+                      height: 10px;
+                      border-top-width: 2px;
+                      border-right-width: 2px;
+                      top: 22px;
+                      left: calc(50% - 7px);
+                    }
                   }
                 }
 
@@ -660,14 +710,24 @@
 
                   &:nth-child(odd){
                     padding-right: 20px !important;
+
+                    @include ReSassResponsive(576){
+                      padding-right: 10px !important;
+                    }
                   }
 
                   &:nth-child(even){
                     padding-left: 20px !important;
+
+                    @include ReSassResponsive(576){
+                      padding-left: 10px !important;
+                    }
                   }
                 }
 
                 .transactionsinput{
+                  justify-content: space-between;
+                  align-items: center;
                   height: 40px;
                   padding: 10px;
                   border-width: 1px;
@@ -675,12 +735,29 @@
                   border-color: transparent;
                   margin-top: 15px;
 
+                  @include ReSassResponsive(576){
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: center;
+                    height: auto;
+                    min-height: 56px;
+                    max-height: 56px;
+                    padding: 5px 10px;
+                    overflow: hidden;
+                  }
+
                   &:first-child{
                     margin-top: 0;
                   }
 
                   strong{
                     overflow: hidden;
+
+                    @include ReSassResponsive(576){
+                      flex: 0 0 100% !important;
+                      max-width: 100% !important;
+                      padding: 0 !important;
+                    }
 
                     &:first-child{
                       position: relative;
@@ -714,6 +791,9 @@
 
                         @include ReSassResponsive(1200){
                           right: 0;
+                        }
+                        @include ReSassResponsive(576){
+                          width: 10px;
                         }
                       }
                     }
