@@ -69,6 +69,11 @@
           color: $global-clr-dark-blue;
           font-size: 17px;
           font-weight: 500;
+
+          @include ReSassResponsive(768){
+            margin-top: 5px;
+            margin-bottom: 10px;
+          }
         }
       }
     }
@@ -210,7 +215,14 @@
           }
         }
         &-box{
+          justify-content: space-between;
+          align-items: center;
           border-bottom: 1px solid transparentize($global-clr-soft-gray, 0.7);
+
+          @include ReSassResponsive(768){
+            flex-direction: column;
+            align-items: flex-start;
+          }
         }
       }
 
@@ -547,24 +559,52 @@
           }
 
           &-header{
+            justify-content: space-between;
             padding: 10px 15px;
+
+            @include ReSassResponsive(768){
+              flex-direction: column;
+            }
 
             i[class*="icon-svg"]{
               width: 18px;
               height: 18px;
               //margin-right: 4px;
             }
+
+            &-hash{
+              @include ReSassResponsive(768){
+                padding-right: 0 !important;
+              }
+            }
+
+            &-date{
+              @include ReSassResponsive(768){
+                padding-left: 25px !important;
+              }
+            }
+
           }
           &-footer{
+            justify-content: space-between;
+            align-items: center;
             padding: 10px 15px;
 
-            ul{
+            &-fee{
+              text-align: left;
+            }
+
+            &-confirm{
+              display: flex;
+              justify-content: flex-end;
+
               li{
                 position: relative;
                 float: left;
                 padding: 0 10px;
                 line-height: 1;
                 font-weight: 500;
+                white-space: nowrap;
 
                 &::before{
                   content: "";
