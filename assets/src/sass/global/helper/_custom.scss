@@ -80,7 +80,20 @@ input, select, textarea{
   display: flex;
   min-height: 100vh;
   flex-direction: column;
-  main, section{flex: 1;}
+
+  @include ReSassResponsive(576){
+    display: block;
+  }
+
+  main,
+  section{
+    flex: 1;
+
+    @include ReSassResponsive(576){
+      flex: inherit;
+      display: block;
+    }
+  }
 }
 
 .container-1890{
