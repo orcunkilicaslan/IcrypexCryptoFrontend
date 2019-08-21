@@ -89,7 +89,7 @@ input, select, textarea{
   section{
     flex: 1;
 
-    @include ReSassResponsive(576){
+    @include ReSassResponsive(992){
       flex: inherit;
       display: block;
     }
