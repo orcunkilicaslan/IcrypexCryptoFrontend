@@ -11,11 +11,20 @@ $globalSvgIconImgPath : "../../img/global/svg";
     opacity: 1;
     @include transition(all, 0.3s, ease-in-out);
 
+    @include ReSassResponsive(1400){
+      padding: 10px 0;
+      height: 65px;
+    }
+
     .columntitle{
       color: $global-clr-white !important;
       font-size: 25px;
       font-weight: normal;
       padding-bottom: 8px;
+
+      @include ReSassResponsive(1400){
+        font-size: 23px;
+      }
 
       &::before{
         max-width: inherit !important;
@@ -30,10 +39,12 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
       &-icon{
         display: flex;
+        align-items: flex-end;
         min-height: 39px;
 
         &-span{
           width: 40px;
+          height: 39px;
           border: 1px solid transparentize($global-clr-soft-gray, 0.7);
           border-left: none;
           display: flex;

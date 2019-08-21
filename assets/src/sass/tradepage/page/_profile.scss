@@ -2,9 +2,19 @@
 
   &-section{
     padding: 35px 0 60px;
+
+    @include ReSassResponsive(1400){
+      padding: 25px 0 50px;
+    }
   }
 
   &-wrapper{
+
+    @include ReSassResponsive(1200){
+      flex: 0 0 80%;
+      max-width: 80%;
+    }
+
     > .columntitle{
       color: $global-clr-dark-blue;
       padding-bottom: 6px;

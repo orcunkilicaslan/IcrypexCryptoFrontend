@@ -2,6 +2,11 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
 .sidebar{
 
+  @include ReSassResponsive(1200){
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+
   > *[class*="sidebar-"]{
     margin-top: 15px;
 
