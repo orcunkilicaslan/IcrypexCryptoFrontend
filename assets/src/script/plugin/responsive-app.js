@@ -1,7 +1,7 @@
 
 /* Responsive Header User Dropdown Menu List */
 jQuery(function($) {
-    if($(window).width() < 767){
+    if($(window).width() < 991){
         jQuery(function($) {
             if($('body').hasClass('mainpage')){
                 $(document).ready(function() {
