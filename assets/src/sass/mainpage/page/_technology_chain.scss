@@ -303,6 +303,10 @@
                 margin: 0 3px;
                 min-height: 30px;
 
+                @include ReSassResponsive(992){
+                  width: 100%;
+                }
+
                 &:first-child{
                   margin-left: 0;
                 }
@@ -376,6 +380,9 @@
                   @include ReSassResponsive(1200){
                     display: none;
                   }
+                  @include ReSassResponsive(992){
+                    display: block;
+                  }
                 }
 
                 &:hover{
@@ -403,7 +410,7 @@
                   .page-link-height{
                     @include ReSassResponsive(1200){
                       display: block;
-                      width: 150px;
+                      min-width: 150px;
                     }
                   }
                 }
