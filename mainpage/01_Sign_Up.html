@@ -18,8 +18,8 @@
 
     <!-- Mobile Header -->
     <div class="dfn-mobilemenu-mask"></div>
-    <div class="dfn-mobilemenu-header clearfix">
-        <a class="header-navigation-logo" href="#" title="ICRYPEX Crypto Exchange" rel="bookmark">
+    <div class="dfn-mobilemenu-header">
+        <a class="header-navigation-logo" href="00_Home_Page.html" title="ICRYPEX Crypto Exchange" rel="bookmark">
             <i class="header-navigation-logo-symbol icon-svg icon-svg-icrypexsymbol"></i>
             <h1 class="header-navigation-logo-icrypex">ICRYPEX</h1>
             <h2 class="header-navigation-logo-cryptoexchange">CRYPTO EXCHANGE</h2>
@@ -27,6 +27,10 @@
         <a id="dfn-navtggle" class="dfn-mobilemenu-btn">
             <div class="btnicon"><span></span></div>
             <div class="btntext"><small>MENÜ</small></div>
+        </a>
+        <a class="dfn-mobilemenu-livechat">
+            <small>LIVECHAT</small>
+            <i class="icon-svg icon-svg-headerchatmobile"></i>
         </a>
     </div>
     <!-- Mobile Header -->
@@ -88,6 +92,7 @@
                                     </div>
                                 </div>
                             </li>
+                            <li class="d-lg-none"><a href="00_Home_Page.html" title="ANASAYFA" rel="category">ANASAYFA</a></li>
                             <li>
                                 <a href="#" title="ÖZELLİKLER" rel="category" id="FeaturesDropdownMenu" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ÖZELLİKLER</a>
                                 <div class="dfn-menu-dropdownmenu dropdown-menu" aria-labelledby="FeaturesDropdownMenu">
@@ -126,8 +131,26 @@
                             <li><a href="29_Announcements.html" title="DUYURULAR" rel="category">DUYURULAR</a></li>
                             <li><a href="#" title="DESTEK" rel="category">DESTEK</a></li>
                         </ul>
-                        <ul class="dfn-mobil-alt dfn-onlymobile-bottom d-lg-none" style="display: none !important;">
-                            <li class="btnarea"><a class="logout" href="00_Home_Page.html" title="ÇIKIŞ YAPIN" rel="external nofollow">ÇIKIŞ YAPIN</a></li>
+                        <ul class="dfn-mobil-alt dfn-onlymobile-bottom d-lg-none">
+                            <li class="sitelang dropup">
+                                <a href="#" class="btn sitelang-btn dropdown-toggle" data-toggle="dropdown" data-value="">
+                                    <i class="icon-svg icon-svg-headersitelang"></i>
+                                    <span class="sitelang-lang-text">TÜRKÇE</span>
+                                </a>
+                                <div class="sitelang-dropdown dropdown-menu">
+                                    <a class="dropdown-item" href="#" data-value="TR">
+                                        <i class="icon-svg icon-svg-headersitelang"></i>
+                                        <span class="sitelang-lang-text">TÜRKÇE</span>
+                                    </a>
+                                    <a class="dropdown-item" href="#" data-value="EN">
+                                        <i class="icon-svg icon-svg-headersitelang"></i>
+                                        <span class="sitelang-lang-text">ENGLISH</span>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="btnarea" style="display: none !important;">
+                                <a class="logout" href="00_Home_Page.html" title="ÇIKIŞ YAPIN" rel="external nofollow">ÇIKIŞ YAPIN</a>
+                            </li>
                         </ul>
                     </nav>
                 </div>
@@ -135,13 +158,13 @@
             <!-- Navigasyon -->
             <!-- User Area -->
             <div class="header-navigation-resp col-3 d-flex justify-content-end">
-                <div class="header-navigation-signin">
+                <div class="header-navigation-signin" style="display: none !important;">
                     <ul class="header-signin">
                         <li class="header-signin-item"><a class="header-signin-register" href="01_Sign_Up.html" title="YENİ ÜYELİK" rel="bookmark">YENİ ÜYELİK</a></li>
                         <li class="header-signin-item"><a class="header-signin-login" href="../tradepage/01_Login_Step_1.html" title="ÜYE GİRİŞİ" rel="bookmark">ÜYE GİRİŞİ</a></li>
                     </ul>
                 </div>
-                <div class="header-navigation-search" style="display: none !important;">
+                <div class="header-navigation-search">
                     <form class="header-search" autocomplete="off" novalidate>
                         <input class="header-search-input" type="search" name="headersearch" placeholder="ARA" />
                         <button class="header-search-button" type="submit"></button>
