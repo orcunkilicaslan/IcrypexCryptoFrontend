@@ -525,6 +525,12 @@
           @include ReSassResponsive(992){
             padding: 10px 15px 15px;
           }
+          @include ReSassResponsive(576){
+            padding: 10px 15px 8px;
+          }
+          @include ReSassResponsive(480){
+            padding: 7px 10px 4px;
+          }
         }
       }
 

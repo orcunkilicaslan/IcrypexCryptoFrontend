@@ -150,6 +150,37 @@
           }
         }
 
+        &-address{
+          color: $global-clr-dark-blue;
+          font-size: 17px;
+          font-weight: 500;
+
+          @include ReSassResponsive(768){
+            margin-top: 5px;
+            margin-bottom: 5px;
+            overflow: hidden;
+            width: 100%;
+            text-align: left;
+          }
+          @include ReSassResponsive(576){
+            position: relative;
+            display: inline-block;
+            padding-top: 5px;
+            text-align: center;
+          }
+
+          &::after{
+            @include ReSassResponsive(400){
+              content: "...";
+              background-color: $global-clr-white;
+              position: absolute;
+              width: 12px;
+              text-align: left;
+              right: auto;
+            }
+          }
+        }
+
         &-pag{
 
           &.d-flex{
@@ -386,6 +417,9 @@
 
         @include ReSassResponsive(992){
           flex-direction: column;
+        }
+        @include ReSassResponsive(480){
+          margin-top: 15px;
         }
       }
 
