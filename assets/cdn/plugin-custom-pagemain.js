@@ -30,3 +30,23 @@ function CopyToClipboard (text) {
     }
 }
 /*  Copy Text to Clipboard Start End */
+
+/*  Select Text Start End */
+function selectText(target) {
+    if (document.selection) { // IE
+        var range = document.body.createTextRange();
+        range.moveToElementText(document.getElementById(target));
+        range.select();
+
+        document.getElementById((target)+'CopyText').innerHTML = "SEÇİLİ HALE GELDİ";
+
+    } else if (window.getSelection) {
+        var range = document.createRange();
+        range.selectNode(document.getElementById(target));
+        window.getSelection().removeAllRanges();
+        window.getSelection().addRange(range);
+
+        document.getElementById((target)+'CopyText').innerHTML = "SEÇİLİ HALE GELDİ";
+    }
+}
+/*  Select Text Start End */

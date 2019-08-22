@@ -231,6 +231,10 @@
               @include ReSassResponsive(576){
                 margin-left: 0;
                 margin-bottom: 0;
+
+                > span{
+                  display: inline-block !important;
+                }
               }
             }
 
