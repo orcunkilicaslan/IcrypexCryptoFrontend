@@ -18,39 +18,79 @@
 
         @include ReSassResponsive(1200){
           padding: 0 !important;
-          padding-top: 20px !important;
-          margin-top: 30px;
+          padding-top: 40px !important;
 
           &:first-child{
             padding-top: 0 !important;
             margin-top: 0;
           }
         }
+        @include ReSassResponsive(768){
+          padding-top: 30px !important;
+        }
 
         &::before{
           content: "";
+          background-color: transparentize($global-clr-soft-gray, 0.7);
           position: absolute;
           left: 0;
           bottom: 0;
           width: 1px;
           height: calc(100% - 5px);
-          background-color: transparentize($global-clr-soft-gray, 0.7);
+
 
           @include ReSassResponsive(1200){
-            width: calc(100% + 30px);
-            height: 1px;
+            background-color: $global-clr-white;
+            width: calc(100% + 32px);
+            height: 30px;
             bottom: auto;
             top: 0;
+            left: -16px;
+          }
+          @include ReSassResponsive(768){
+            height: 20px;
+          }
+          @include ReSassResponsive(400){
+            width: calc(100% + 22px);
+            left: -11px;
+          }
+        }
+
+        &::after{
+          @include ReSassResponsive(1200){
+            content: "";
+            background-color: transparentize($global-clr-soft-gray, 0.7);
+            position: absolute;
+            width: calc(100% + 30px);
+            height: 1px;
             left: -15px;
+          }
+          @include ReSassResponsive(400){
+            width: calc(100% + 20px);
+            left: -10px;
           }
         }
 
         &:first-child{
           padding-left: 0 !important;
+          padding-bottom: 15px !important;
+
+          @include ReSassResponsive(400){
+            padding-bottom: 7px !important;
+          }
+
           &::before{display: none}
+          &::after{bottom: 0;}
         }
         &:last-child{
           padding-right: 0 !important;
+          &::after{
+            top: 30px;
+
+            @include ReSassResponsive(768){
+              top: 20px;
+            }
+          }
         }
       }
 
@@ -193,6 +233,10 @@
 
     &-summary{
       padding: 15px;
+
+      @include ReSassResponsive(400){
+        padding: 10px;
+      }
 
       @include ReSassResponsive(1200){
         flex-direction: column;
