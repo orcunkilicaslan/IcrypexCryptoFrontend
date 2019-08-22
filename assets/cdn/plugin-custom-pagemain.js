@@ -29,16 +29,4 @@ function CopyToClipboard (text) {
         }
     }
 }
-
-
-// Mobile
-function selectToMobileText(target) {
-    var element = document.getElementById(target);
-
-    $(function(){
-        $(element).focus(function(){
-            $(this).select();
-        });
-    });
-}
 /*  Copy Text to Clipboard Start End */
