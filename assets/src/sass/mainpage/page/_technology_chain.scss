@@ -102,6 +102,11 @@
 
         @include ReSassResponsive(576){
           margin-bottom: -5px;
+          text-align: center;
+
+          > span{
+            display: block;
+          }
         }
 
         &-date{
