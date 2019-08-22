@@ -122,12 +122,17 @@ jQuery(function($) {
             menuLocation.find(menuWrapper02).append($('<a class="responsive-dropdown-btn responsive-dropdown-bottom-btn btn" href="#" data-toggle="dropdown">' + activeMenuText02 + '</a>'));
             //menuLocation.find(menuWrapper03).append($('<a class="responsive-dropdown-btn btn" href="#" data-toggle="dropdown">' + activeMenuText03 + '</a>'));
 
+            if(!activeMenuText02){
+                menuLocation.find(menuWrapper02).find('a.responsive-dropdown-btn').remove();
+                menuLocation.find(menuWrapper02).append($('<a class="responsive-dropdown-btn responsive-dropdown-bottom-btn btn" href="#" data-toggle="dropdown">' + 'MENÜ' + '</a>'));
+            }
+
         });
     }
 });
 /* Responsive Tab Menu Dropdown */
 
-/* Responsive Tab Menu Dropdown */
+/* Responsive Block Chain Tab Menu Dropdown */
 jQuery(function($) {
     if($(window).width() <= 767){
         $(document).ready(function($){
@@ -145,7 +150,7 @@ jQuery(function($) {
         });
     }
 });
-/* Responsive Tab Menu Dropdown */
+/* Responsive Block Chain Tab Menu Dropdown */
 
 /* Loading Info */
 // console.log("Mainpage App Responsive Javascript Loading Successful");
