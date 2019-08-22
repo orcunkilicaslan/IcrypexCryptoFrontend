@@ -649,6 +649,13 @@
             margin-bottom: 0;
             border-bottom: none;
           }
+
+          &.mobileborderbottom{
+            @include ReSassResponsive(992){
+              border-bottom: 1px solid transparentize($global-clr-soft-gray, 0.7);
+            }
+          }
+
         }
 
         .divwidth600{
