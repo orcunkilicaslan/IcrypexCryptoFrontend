@@ -108,7 +108,6 @@ jQuery(function($) {
             var activeMenuText02      = menuLocation.find(menuWrapper02).find('ul.nav .nav-item').find('.active').text();
             //var activeMenuText03      = menuLocation.find(menuWrapper03).find('ul.nav .nav-item').find('.active').text();
 
-
             // Dropdown Menu Active Class Menu Remove
             menuLocation.find(menuWrapper01).find('ul.nav').find('.active').parent().remove();
             menuLocation.find(menuWrapper02).find('ul.nav').find('.active').parent().remove();
@@ -122,6 +121,26 @@ jQuery(function($) {
             menuLocation.find(menuWrapper01).append($('<a class="responsive-dropdown-btn responsive-dropdown-top-btn btn" href="#" data-toggle="dropdown">' + activeMenuText01 + '</a>'));
             menuLocation.find(menuWrapper02).append($('<a class="responsive-dropdown-btn responsive-dropdown-bottom-btn btn" href="#" data-toggle="dropdown">' + activeMenuText02 + '</a>'));
             //menuLocation.find(menuWrapper03).append($('<a class="responsive-dropdown-btn btn" href="#" data-toggle="dropdown">' + activeMenuText03 + '</a>'));
+
+        });
+    }
+});
+/* Responsive Tab Menu Dropdown */
+
+/* Responsive Tab Menu Dropdown */
+jQuery(function($) {
+    if($(window).width() <= 767){
+        $(document).ready(function($){
+
+            var menuLocation                    = $('.sitetabs');
+            var menuWrapperBlockChain01         = $('.sitetabs-wrapper-blockchain-01');
+
+            // Dropdown Menu Active Class Menu Remove
+            menuLocation.find(menuWrapperBlockChain01).find('ul.sitetabs-wrapper-blockchain-01-dropdown-menu').find('.active').parent().remove();
+
+            // Dropdown Menu Add Class
+            menuLocation.find(menuWrapperBlockChain01).find('a.sitetabs-wrapper-blockchain-01-dropdown-link').addClass('responsive-dropdown-btn responsive-dropdown-top-btn btn');
+            menuLocation.find(menuWrapperBlockChain01).find('ul.sitetabs-wrapper-blockchain-01-dropdown-menu').addClass('responsive-dropdown-menu responsive-dropdown-top-menu');
 
         });
     }

@@ -104,6 +104,35 @@
     }
   }
 
+  &-sitetabs{
+
+    > div[class*="-wrapper-01"]{
+      @include ReSassResponsive(768){
+        order: 1;
+      }
+    }
+
+    > article[class*="-content"]{
+      @include ReSassResponsive(768){
+        order: 2;
+      }
+    }
+
+    > div[class*="-wrapper-02"]{
+      @include ReSassResponsive(768){
+        order: 4;
+        margin-bottom: 15px;
+      }
+    }
+
+    > div[class*="-wrapper-blockchain-01"]{
+      @include ReSassResponsive(768){
+        order: 3;
+      }
+    }
+
+  }
+
   &-tabscontent{
     &-wrapper{
       width: 100%;
@@ -281,6 +310,10 @@
     border: 1px solid transparentize($global-clr-soft-gray, 0.7);
     border-top: none;
     width: 100%;
+
+    @include ReSassResponsive(768){
+      border: 1px solid transparentize($global-clr-soft-gray, 0.7);
+    }
 
     &-searchbox{
       background-color: $global-clr-light-gray;
