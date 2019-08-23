@@ -1,4 +1,32 @@
 
+/* Responsive Jquery Scroll to Top Button */
+jQuery(function($) {
+    if($(window).width() < 991){
+
+        $('.footer').append($('<div class="bottomtotopbutton"></div>'));
+
+        jQuery(document).ready(function() {
+            var duration = 300;
+            jQuery(window).scroll(function() {
+                if (jQuery(this).scrollTop() > 700) {
+                    jQuery('.bottomtotopbutton').fadeIn(duration);
+                } else {
+                    jQuery('.bottomtotopbutton').fadeOut(duration);
+                }
+            });
+
+            jQuery('.bottomtotopbutton').click(function(event) {
+                event.preventDefault();
+                jQuery('html').animate({scrollTop: 0}, duration);
+                return false;
+            })
+        });
+    } else {
+        $('.bottomtotopbutton').remove();
+    }
+});
+/* Responsive Jquery Scroll to Top Button */
+
 /* Responsive Header User Dropdown Menu List */
 jQuery(function($) {
     if($(window).width() < 991){
