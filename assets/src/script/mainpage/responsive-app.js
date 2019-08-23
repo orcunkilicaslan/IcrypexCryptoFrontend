@@ -61,12 +61,6 @@ $(window).on("load resize",function(e){
                         loop:true,
                         autoplay:true,
                         nav:true
-                    },
-                    991:{
-                        items:5,
-                        loop:false,
-                        autoplay:false,
-                        nav:false
                     }
                 }
             });
