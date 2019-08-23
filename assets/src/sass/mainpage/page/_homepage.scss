@@ -205,7 +205,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
     }
 
     &-owl{
-      @include ReSassResponsive(768){
+      @include ReSassResponsive(992){
         margin: 0 !important;
         .item{
           padding: 0 !important;
@@ -263,7 +263,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
       justify-content: space-between;
       margin-bottom: 0;
 
-      @include ReSassResponsive(768){
+      @include ReSassResponsive(992){
         width: calc(100% - 40px);
         margin: 0 auto;
       }
@@ -368,7 +368,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
     }
 
     &-owl{
-      @include ReSassResponsive(768){
+      @include ReSassResponsive(992){
         .owl{
 
           &-stage-outer{}

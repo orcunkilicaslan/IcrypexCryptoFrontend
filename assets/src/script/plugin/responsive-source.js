@@ -5,6 +5,12 @@ jQuery(function($) {
 
     }
 });
+
+$(window).on("load resize scroll",function(e){
+    if($(window).width() <= 767){
+
+    }
+});
 /* Mobile Responsive JS */
 
 /* Loading Info */
