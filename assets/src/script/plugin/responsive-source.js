@@ -11,6 +11,18 @@ $(window).on("load resize scroll",function(e){
 
     }
 });
+
+$(window).on({
+    load:function(){
+
+    },
+    resize:function(){
+
+    },
+    scroll:function(){
+
+    }
+});
 /* Mobile Responsive JS */
 
 /* Loading Info */
