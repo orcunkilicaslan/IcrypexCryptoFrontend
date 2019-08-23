@@ -102,6 +102,10 @@
       &-desc{
         color: $global-clr-dark-blue;
         font-size: 17px;
+
+        @include ReSassResponsive(768){
+          line-height: 1.1;
+        }
       }
     }
 
