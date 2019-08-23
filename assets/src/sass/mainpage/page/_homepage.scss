@@ -1324,6 +1324,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
         position: relative;
 
         .depthswipemask{
+          display: none;
           position: absolute;
           width: 100%;
           height: calc(100% - 15px);
