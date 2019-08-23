@@ -17,6 +17,10 @@
         position:relative;
         $liitem: &;
 
+        @include ReSassResponsive(768){
+          width: 120px;
+        }
+
         &:first-child{
           margin-left:0;
           //&::before{display:none;}
