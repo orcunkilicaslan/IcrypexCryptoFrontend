@@ -9,6 +9,7 @@
 
       @include ReSassResponsive(768){
         flex-direction: column;
+        display: block !important;
       }
       @include ReSassResponsive(576){
         padding-bottom: 15px;
@@ -355,7 +356,19 @@
         }
 
         .contentwidth600{max-width: 600px;}
-        .contentwidth500{max-width: 500px;}
+        .contentwidth500{
+          max-width: 500px;
+
+          @include ReSassResponsive(576){
+            max-width: 480px;
+          }
+          @include ReSassResponsive(480){
+            max-width: 400px;
+          }
+          @include ReSassResponsive(400){
+            max-width: 360px;
+          }
+        }
       }
 
       &-detail{

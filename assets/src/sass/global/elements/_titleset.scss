@@ -295,3 +295,24 @@
 
 }
 /* Title Column */
+
+/* Title Responsive Space */
+.titleresponsivespace{
+  &480{
+    display: none;
+
+    @include ReSassResponsive(480){
+      display: block;
+    }
+  }
+
+  &768{
+    display: none;
+
+    @include ReSassResponsive(768){
+      display: block;
+    }
+  }
+
+}
+/* Title Responsive Space */
