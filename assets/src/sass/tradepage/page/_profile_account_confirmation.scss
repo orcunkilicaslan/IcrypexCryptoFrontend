@@ -149,8 +149,17 @@
 
     &-box{
       margin: 5px 0;
-      flex: 0 0 25%;
-      max-width: 25%;
+      flex: 0 0 calc(100% / 5);
+      max-width: calc(100% / 5);
+
+      @include ReSassResponsive(1200){
+        flex: 0 0 calc(100% / 4);
+        max-width: calc(100% / 4);
+      }
+      @include ReSassResponsive(768){
+        flex: 0 0 calc(100% / 2);
+        max-width: calc(100% / 2);
+      }
 
       .btn{
         margin-top: 10px;
