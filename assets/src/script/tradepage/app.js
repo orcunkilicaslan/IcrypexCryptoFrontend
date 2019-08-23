@@ -19,8 +19,9 @@ $('#headertitleareapricelite').owlCarousel({
         },
         992:{
             items:2,
+            autoWidth:false
         },
-        1400:{
+        1200:{
             items:3
         }
     }
