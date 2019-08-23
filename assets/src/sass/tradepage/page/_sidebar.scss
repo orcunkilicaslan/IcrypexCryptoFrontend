@@ -2,9 +2,17 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
 .sidebar{
 
-  @include ReSassResponsive(1200){
-    flex: 0 0 20%;
-    max-width: 20%;
+  &.maincont-left{
+    @include ReSassResponsive(1200){
+      flex: 0 0 20%;
+      max-width: 20%;
+    }
+    @include ReSassResponsive(992){
+      flex: 0 0 100%;
+      max-width: 100%;
+      display: block !important;
+      padding: 0 !important;
+    }
   }
 
   > *[class*="sidebar-"]{

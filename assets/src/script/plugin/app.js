@@ -31,10 +31,11 @@ $(window).scroll(function () {
 /* Header Nav Fixed */
 
 /* Header Bottom Space and Cookies Notification Messages */
-$(window).resize(function() {
+$(window).on("load resize",function(e){
     var headerHeight = $("header.header").height();
     $(".header-spacebottom").height(headerHeight);
 });
+
 
 $(".header .header-alert .close").click(function(){
     var headNavigation = $(".header-web").height();

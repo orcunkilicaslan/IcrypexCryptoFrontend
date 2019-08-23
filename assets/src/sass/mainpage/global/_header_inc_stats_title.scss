@@ -5,6 +5,8 @@ $globalSvgIconImgPath : "../../img/global/svg";
   $headerclassname: &;
 
   &-titlearea{
+    justify-content: space-between;
+    align-items: center;
     padding: 18px 0;
     height: 80px;
     border-top: 1px solid transparentize($global-clr-soft-gray, 0.7);
@@ -15,6 +17,11 @@ $globalSvgIconImgPath : "../../img/global/svg";
       padding: 10px 0;
       height: 65px;
     }
+    @include ReSassResponsive(992){
+      padding: 4px 0;
+      height: 56px;
+      border-top: none;
+    }
 
     .columntitle{
       color: $global-clr-white !important;
@@ -24,6 +31,10 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
       @include ReSassResponsive(1400){
         font-size: 23px;
+      }
+      @include ReSassResponsive(992){
+        font-size: 20px;
+        padding-bottom: 10px;
       }
 
       &::before{

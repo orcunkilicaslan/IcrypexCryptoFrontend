@@ -146,20 +146,11 @@
   }
 
   &-fileupload{
-    > div[class*="col"]{
-      padding-left: 7px;
-      padding-right: 7px;
-
-      &:first-child{
-        padding-left: 15px;
-      }
-      &:last-child{
-        padding-right: 15px;
-      }
-    }
 
     &-box{
       margin: 5px 0;
+      flex: 0 0 25%;
+      max-width: 25%;
 
       .btn{
         margin-top: 10px;
