@@ -17,7 +17,7 @@ jQuery(function($) {
 
             jQuery('.bottomtotopbutton').click(function(event) {
                 event.preventDefault();
-                jQuery('html').animate({scrollTop: 0}, duration);
+                jQuery('html,body').animate({scrollTop: 0}, duration);
                 return false;
             })
         });
