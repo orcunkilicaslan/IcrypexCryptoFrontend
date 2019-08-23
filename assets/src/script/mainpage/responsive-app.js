@@ -24,50 +24,19 @@ jQuery(function($) {
 });
 /* Responsive Homepage Register Collapse */
 
-/* Responsive Homepage Chart Area Owl Carousel */
-jQuery(function($) {
-    if($(window).width() <= 767){
-        $(document).ready(function() {
-            $('#homepagechartarea').addClass("homepage-chartarea-owl owl-carousel owl-theme");
-            $('#homepagechartarea').owlCarousel({
-                loop:true,
-                nav:false,
-                dots:false,
-                autoplay:true,
-                autoplayTimeout:5000,
-                autoplayHoverPause:true,
-                items:1,
-                margin:15,
-                //stagePadding: 10,
-                autoWidth:false,
-                animateIn: 'slideInRight',
-                animateOut: 'slideOutLeft',
-
-            });
-            $('.homepage-chartarea-column').addClass("item");
-        });
-    }else{
-        $(document).ready(function() {
-            $('#homepagechartarea').removeClass("homepage-chartarea-owl owl-carousel owl-theme owl-loaded owl-drag");
-            $('.homepage-chartarea-column').removeClass("item");
-        });
-    }
-});
-/* Responsive Homepage Chart Area Owl Carousel */
-
 /* Responsive Homepage Big Price Area Owl Carousel */
-jQuery(function($) {
-    if($(window).width() <= 767){
+$(window).on("load resize",function(e){
+    if($(window).width() <= 991){
         $(document).ready(function() {
             $('#homepagebigpricearea').addClass("homepage-bigprice-owl owl-carousel owl-theme");
             $('#homepagebigpricearea').owlCarousel({
-                loop:true,
-                nav:true,
+                loop:false,
+                nav:false,
                 dots:false,
-                autoplay:true,
+                autoplay:false,
                 autoplayTimeout:3000,
                 autoplayHoverPause:true,
-                items:2,
+                items:5,
                 margin:20,
                 //stagePadding: 20,
                 autoWidth:false,
@@ -76,19 +45,39 @@ jQuery(function($) {
                 responsiveClass:true,
                 responsive:{
                     0:{
-                        items:1
+                        items:1,
+                        loop:true,
+                        autoplay:true,
+                        nav:true
                     },
                     400:{
-                        items:2
+                        items:2,
+                        loop:true,
+                        autoplay:true,
+                        nav:true
+                    },
+                    767:{
+                        items:3,
+                        loop:true,
+                        autoplay:true,
+                        nav:true
+                    },
+                    991:{
+                        items:5,
+                        loop:false,
+                        autoplay:false,
+                        nav:false
                     }
                 }
             });
-            $('.homepage-bigprice-list-item').addClass("item");
         });
     }else{
         $(document).ready(function() {
             $('#homepagebigpricearea').removeClass("homepage-bigprice-owl owl-carousel owl-theme owl-loaded owl-drag");
             $('.homepage-bigprice-list-item').removeClass("item");
+            $('.homepage-bigprice .owl-stage-outer').remove();
+            $('.homepage-bigprice-list .owl-nav').remove();
+            $('.homepage-bigprice-list .owl-dots').remove();
         });
     }
 });
