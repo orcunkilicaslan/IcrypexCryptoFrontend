@@ -78,6 +78,14 @@
       margin: auto 15px;
       border-bottom: 1px solid transparentize($global-clr-soft-gray, 0.7);
 
+      @include ReSassResponsive(576){
+        padding: 15px 0 10px;
+      }
+      @include ReSassResponsive(400){
+        padding: 9px 0 6px;
+        margin: auto 10px;
+      }
+
       &:last-child{
         border-bottom: 0;
       }
