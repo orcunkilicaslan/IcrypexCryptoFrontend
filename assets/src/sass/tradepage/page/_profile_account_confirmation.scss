@@ -20,6 +20,15 @@
         @include ReSassResponsive(768){
           width: 120px;
         }
+        @include ReSassResponsive(576){
+          width: 100px;
+        }
+        @include ReSassResponsive(480){
+          width: 80px;
+        }
+        @include ReSassResponsive(400){
+          width: 60px;
+        }
 
         &:first-child{
           margin-left:0;
@@ -69,6 +78,11 @@
           margin: 0;
           padding-top: 7px;
           @include transition(all, 0.4s, linear);
+
+          @include ReSassResponsive(480){
+            font-size:13px;
+            white-space: nowrap;
+          }
         }
 
         &.active,
@@ -163,6 +177,25 @@
       @include ReSassResponsive(768){
         flex: 0 0 calc(100% / 2);
         max-width: calc(100% / 2);
+
+        &:nth-child(4n+1),
+        &:nth-child(4n+2){
+          margin-top: 15px;
+          margin-bottom: 15px;
+        }
+      }
+      @include ReSassResponsive(400){
+        flex: 0 0 calc(100% / 1);
+        max-width: calc(100% / 1);
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+        &:first-child{
+          margin-top: 0;
+        }
+        &:last-child{
+          margin-bottom: 0;
+        }
       }
 
       .btn{

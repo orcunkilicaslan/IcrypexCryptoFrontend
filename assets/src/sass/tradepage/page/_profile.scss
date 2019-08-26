@@ -9,6 +9,10 @@
     @include ReSassResponsive(992){
       padding: 20px 0 50px;
     }
+    @include ReSassResponsive(576){
+      padding-left: 15px !important;
+      padding-right: 15px !important;
+    }
 
     > .container > .row{
       @include ReSassResponsive(992){
@@ -102,11 +106,28 @@
           //display: block !important;
           text-align: center;
         }
+        @include ReSassResponsive(400){
+          margin-bottom: 20px;
+        }
 
         span[class*="boxtitle-info"]{
           @include ReSassResponsive(768){
+            display: block !important;
+            text-align: center;
             margin-top: 5px;
           }
+          > *{
+            @include ReSassResponsive(768){
+              margin: 0;
+            }
+          }
+          > i{
+            @include ReSassResponsive(768){
+              position: relative;
+              top: 3px;
+            }
+          }
+
         }
       }
 

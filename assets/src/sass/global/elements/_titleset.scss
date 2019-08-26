@@ -257,7 +257,9 @@
     margin-bottom: 5px;
 
     [class*="boxtitle"].d-flex{
-      *{margin: 0 4px;}
+      *{
+        margin: 0 4px;
+      }
     }
 
     i[class*="icon-svg"]{

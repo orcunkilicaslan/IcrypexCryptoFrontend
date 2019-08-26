@@ -53,6 +53,11 @@ $globalSvgIconImgPath : "../../img/global/svg";
         align-items: flex-end;
         min-height: 39px;
 
+        @include ReSassResponsive(480){
+          flex: 0 0 100%;
+          max-width: 100%;
+        }
+
         &-span{
           width: 40px;
           height: 39px;
@@ -75,6 +80,10 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
       &-lite{
         color: $global-clr-white;
+
+        @include ReSassResponsive(480){
+          display: none;
+        }
 
         &-list{
           width: calc(100% - 40px);
@@ -99,6 +108,10 @@ $globalSvgIconImgPath : "../../img/global/svg";
             letter-spacing: -0.3px;
             position: relative;
             padding: 0 20px;
+
+            @include ReSassResponsive(576){
+              padding: 0 10px;
+            }
           }
 
           .owl{
