@@ -71,6 +71,14 @@ $globalSvgIconImgPath : "../../img/global/svg";
           padding: 2px 18px 5px;
         }
 
+        @include ReSassResponsive(768){
+          &.active{
+            span{
+              top: -1px !important;
+            }
+          }
+        }
+
         span{
           position: relative;
           z-index: 1;
