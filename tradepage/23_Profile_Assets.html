@@ -196,7 +196,7 @@
         </div>
         <!-- Navigation End -->
         <!-- TitleArea Start -->
-        <div class="header-titlearea d-flex justify-content-between align-items-center">
+        <div class="header-titlearea d-flex">
             <div class="container">
                 <div class="row align-items-center">
                     <!-- Title -->
@@ -280,13 +280,13 @@
         <div class="profile-limitprogress">
             <ul class="profile-limitprogress-list d-flex flex-row justify-content-between">
                 <li class="profile-limitprogress-list-item col">
-                    <span class="limittext d-flex align-items-center justify-content-center"><strong>500.000,00 TRY</strong> GÜNLÜK LİMİTİNİZDEN <strong>350.000,00 TRY</strong> KALMIŞTIR <i class="icon-svg icon-svg-profilehelp"></i></span>
+                    <span class="limittext"><strong>500.000,00 TRY</strong> GÜNLÜK LİMİTİNİZDEN <br class="d-block d-sm-none" /><strong>350.000,00 TRY</strong> KALMIŞTIR <i class="icon-svg icon-svg-profilehelp"></i></span>
                     <div class="limitprogress progress">
                         <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                 </li>
                 <li class="profile-limitprogress-list-item col">
-                    <span class="limittext d-flex align-items-center justify-content-center"><strong>5.000.000,00 TRY</strong> GÜNLÜK LİMİTİNİZDEN <strong>4.850.000,00 TRY</strong> KALMIŞTIR <i class="icon-svg icon-svg-profilehelp"></i></span>
+                    <span class="limittext"><strong>5.000.000,00 TRY</strong> GÜNLÜK LİMİTİNİZDEN <br class="d-block d-sm-none" /><strong>4.850.000,00 TRY</strong> KALMIŞTIR <i class="icon-svg icon-svg-profilehelp"></i></span>
                     <div class="limitprogress progress">
                         <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
@@ -390,32 +390,14 @@
                                 <strong>3.46597510</strong>
                             </div>
                         </li>
-                        <li class="profile-summarychart-small-list-item d-flex align-items-center">
-                            <div class="profile-summarychart-small-pie">
-                                <img src="../assets/img/tradepage/elements/Circle_Chart.svg" alt="Pie" width="40" height="40" />
-                            </div>
-                            <div class="profile-summarychart-small-text">
-                                <span>BTC</span>
-                                <strong>3.46597510</strong>
-                            </div>
-                        </li>
-                        <li class="profile-summarychart-small-list-item d-flex align-items-center">
-                            <div class="profile-summarychart-small-pie">
-                                <img src="../assets/img/tradepage/elements/Circle_Chart.svg" alt="Pie" width="40" height="40" />
-                            </div>
-                            <div class="profile-summarychart-small-text">
-                                <span>BTC</span>
-                                <strong>3.46597510</strong>
-                            </div>
-                        </li>
                     </ul>
                 </div>
             </div>
         </div>
         <!-- Content -->
         <!-- Content -->
-        <div class="profile-box-content">
-            <div class="profile-box-tabs">
+        <div class="profile-box-content noborderbottom">
+            <div class="profile-box-tabs nav-tabs-responsive nav-tabs-responsive-light">
                 <ul class="profile-tabs-tabnav nav nav-tabs" role="tablist">
                     <li class="nav-item"><a class="nav-link active" id="tab-BTC" data-toggle="tab" href="#BTC" role="tab" aria-controls="BTC" aria-selected="true"><span>BTC</span></a></li>
                     <li class="nav-item"><a class="nav-link" id="tab-BCH" data-toggle="tab" href="#BCH" role="tab" aria-controls="BCH" aria-selected="false"><span>BCH</span></a></li>
@@ -431,57 +413,66 @@
                 <div class="profile-tabs-content tab-content noborderbottom">
                     <div class="tab-pane fade show active" id="BTC" role="tabpanel" aria-labelledby="tab-BTC">
                         <div class="profile-tabs-content-tablebox">
-                            <table class="profile-tabswallet-table sitetable table">
+                            <table class="profile-tabswallet-table sitetable sitetableresponsive table">
                                 <thead>
                                 <tr>
-                                    <th>ADDRESS</th>
-                                    <th>BALANCE <span class="tableicon"><i class="tableicon-arrowup"></i><i class="tableicon-arrowdown"></i></span></th>
-                                    <th>BALANCE IN TRY <span class="tableicon"><i class="tableicon-arrowup"></i><i class="tableicon-arrowdown"></i></span></th>
-                                    <th>CREATED DATE <span class="tableicon"><i class="tableicon-arrowup"></i><i class="tableicon-arrowdown"></i></span></th>
-                                    <th class="btnwidth110"></th>
-                                    <th class="btnwidth110"></th>
+                                    <th>BTC ADRES</th>
+                                    <th>BAKİYE <span class="tableicon"><i class="tableicon-arrowup"></i><i class="tableicon-arrowdown"></i></span></th>
+                                    <th>TRY BAKİYESİ <span class="tableicon"><i class="tableicon-arrowup"></i><i class="tableicon-arrowdown"></i></span></th>
+                                    <th>OLUŞTURULMA TARİHİ <span class="tableicon"><i class="tableicon-arrowup"></i><i class="tableicon-arrowdown"></i></span></th>
+                                    <th class="btnwidth200"></th>
                                 </tr>
                                 </thead>
                                 <tbody>
                                 <tr>
-                                    <td>1CfaunqrVpcXmpLheUVWeSP1KPsKDha1Nb</td>
-                                    <td>1.02992777</td>
-                                    <td>22,430.124</td>
-                                    <td>25.03.2019</td>
-                                    <td class="profile-tabswallet-table-btn"><a class="btn btn-success" href="#" title="" rel="bookmark">YATIR</a></td>
-                                    <td class="profile-tabswallet-table-btn"><a class="btn btn-danger" href="#" title="" rel="bookmark">ÇEK</a></td>
+                                    <td data-title="BTC ADRES"><span class="coinaddress">1CfaunqrVpcXmpLheUVWeSP1KPsKDha1Nb</span></td>
+                                    <td data-title="BAKİYE">1.02992777</td>
+                                    <td data-title="TRY BAKİYESİ">22,430.124</td>
+                                    <td data-title="OLUŞTURULMA TARİHİ">25.03.2019</td>
+                                    <td data-title="" class="profile-tabswallet-table-btn resp-td-p-10">
+                                        <a class="btn btn-success" href="#" title="" rel="bookmark">YATIR</a>
+                                        <a class="btn btn-danger" href="#" title="" rel="bookmark">ÇEK</a>
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td>1CfaunqrVpcXmpLheUVWeSP1KPsKDha1Nb</td>
-                                    <td>1.02992777</td>
-                                    <td>22,430.124</td>
-                                    <td>25.03.2019</td>
-                                    <td class="profile-tabswallet-table-btn"><a class="btn btn-success" href="#" title="" rel="bookmark">YATIR</a></td>
-                                    <td class="profile-tabswallet-table-btn"><a class="btn btn-danger" href="#" title="" rel="bookmark">ÇEK</a></td>
+                                    <td data-title="BTC ADRES"><span class="coinaddress">1CfaunqrVpcXmpLheUVWeSP1KPsKDha1Nb</span></td>
+                                    <td data-title="BAKİYE">1.02992777</td>
+                                    <td data-title="TRY BAKİYESİ">22,430.124</td>
+                                    <td data-title="OLUŞTURULMA TARİHİ">25.03.2019</td>
+                                    <td data-title="" class="profile-tabswallet-table-btn resp-td-p-10">
+                                        <a class="btn btn-success" href="#" title="" rel="bookmark">YATIR</a>
+                                        <a class="btn btn-danger" href="#" title="" rel="bookmark">ÇEK</a>
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td>1CfaunqrVpcXmpLheUVWeSP1KPsKDha1Nb</td>
-                                    <td>1.02992777</td>
-                                    <td>22,430.124</td>
-                                    <td>25.03.2019</td>
-                                    <td class="profile-tabswallet-table-btn"><a class="btn btn-success" href="#" title="" rel="bookmark">YATIR</a></td>
-                                    <td class="profile-tabswallet-table-btn"><a class="btn btn-danger" href="#" title="" rel="bookmark">ÇEK</a></td>
+                                    <td data-title="BTC ADRES"><span class="coinaddress">1CfaunqrVpcXmpLheUVWeSP1KPsKDha1Nb</span></td>
+                                    <td data-title="BAKİYE">1.02992777</td>
+                                    <td data-title="TRY BAKİYESİ">22,430.124</td>
+                                    <td data-title="OLUŞTURULMA TARİHİ">25.03.2019</td>
+                                    <td data-title="" class="profile-tabswallet-table-btn resp-td-p-10">
+                                        <a class="btn btn-success" href="#" title="" rel="bookmark">YATIR</a>
+                                        <a class="btn btn-danger" href="#" title="" rel="bookmark">ÇEK</a>
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td>1CfaunqrVpcXmpLheUVWeSP1KPsKDha1Nb</td>
-                                    <td>1.02992777</td>
-                                    <td>22,430.124</td>
-                                    <td>25.03.2019</td>
-                                    <td class="profile-tabswallet-table-btn"><a class="btn btn-success" href="#" title="" rel="bookmark">YATIR</a></td>
-                                    <td class="profile-tabswallet-table-btn"><a class="btn btn-danger" href="#" title="" rel="bookmark">ÇEK</a></td>
+                                    <td data-title="BTC ADRES"><span class="coinaddress">1CfaunqrVpcXmpLheUVWeSP1KPsKDha1Nb</span></td>
+                                    <td data-title="BAKİYE">1.02992777</td>
+                                    <td data-title="TRY BAKİYESİ">22,430.124</td>
+                                    <td data-title="OLUŞTURULMA TARİHİ">25.03.2019</td>
+                                    <td data-title="" class="profile-tabswallet-table-btn resp-td-p-10">
+                                        <a class="btn btn-success" href="#" title="" rel="bookmark">YATIR</a>
+                                        <a class="btn btn-danger" href="#" title="" rel="bookmark">ÇEK</a>
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td>1CfaunqrVpcXmpLheUVWeSP1KPsKDha1Nb</td>
-                                    <td>1.02992777</td>
-                                    <td>22,430.124</td>
-                                    <td>25.03.2019</td>
-                                    <td class="profile-tabswallet-table-btn"><a class="btn btn-success" href="#" title="" rel="bookmark">YATIR</a></td>
-                                    <td class="profile-tabswallet-table-btn"><a class="btn btn-danger" href="#" title="" rel="bookmark">ÇEK</a></td>
+                                    <td data-title="BTC ADRES"><span class="coinaddress">1CfaunqrVpcXmpLheUVWeSP1KPsKDha1Nb</span></td>
+                                    <td data-title="BAKİYE">1.02992777</td>
+                                    <td data-title="TRY BAKİYESİ">22,430.124</td>
+                                    <td data-title="OLUŞTURULMA TARİHİ">25.03.2019</td>
+                                    <td data-title="" class="profile-tabswallet-table-btn resp-td-p-10">
+                                        <a class="btn btn-success" href="#" title="" rel="bookmark">YATIR</a>
+                                        <a class="btn btn-danger" href="#" title="" rel="bookmark">ÇEK</a>
+                                    </td>
                                 </tr>
                                 </tbody>
                             </table>

@@ -111,6 +111,17 @@ $globalSvgIconImgPath : "../../img/global/svg";
                 min-width:100px;
                 height:100%;
                 white-space:nowrap;
+                overflow: hidden;
+              }
+
+              &.resp-td-p-0{
+                padding-left: 0 !important;
+                padding-right: 0 !important;
+              }
+
+              &.resp-td-p-10{
+                padding-left: 10px !important;
+                padding-right: 10px !important;
               }
             }
           }

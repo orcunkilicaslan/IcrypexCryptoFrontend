@@ -5,23 +5,49 @@
     background-color: $global-clr-light-gray;
     padding: 20px 0 15px;
 
+    @include ReSassResponsive(992){
+      padding: 20px 10px 15px;
+    }
+    @include ReSassResponsive(768){
+      padding: 15px 10px;
+    }
+
     &-list {
+
+      @include ReSassResponsive(768){
+        display: block !important;
+      }
+
       &-item{
         position: relative;
         text-align: center;
 
-        .limittext.d-flex{
-          *{margin: 0 2px;}
+        @include ReSassResponsive(768){
+          margin-bottom: 15px;
+          padding-bottom: 15px;
+          border-bottom: 1px solid transparentize($global-clr-soft-gray, 0.7);
+
+          &:last-child{
+            margin-bottom: 0;
+          }
+        }
+
+        .limittext{
+          display: block;
         }
 
         &::before{
           content: "";
           position: absolute;
           width: 1px;
-          height: 34px;
-          top: calc(50% - 16px);
+          height: calc(100% - 5px);
+          top: 5px;
           right: 0;
           background-color: transparentize($global-clr-soft-gray, 0.7);
+
+          @include ReSassResponsive(768){
+            display: none;
+          }
         }
 
         &:last-child{
@@ -55,6 +81,10 @@
     padding-top: 10px;
     padding-bottom: 5px;
 
+    @include ReSassResponsive(768){
+      padding-bottom: 0;
+    }
+
     &.row > div[class*="col"]{
       padding-left: 10px;
       padding-right: 10px;
@@ -65,6 +95,11 @@
       &:last-child{
         padding-right: 15px;
       }
+
+      @include ReSassResponsive(768){
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+      }
     }
 
     &-big{
@@ -72,6 +107,10 @@
         width: 140px;
         height: 140px;
         position: relative;
+
+        @include ReSassResponsive(768){
+          margin: 0 auto 15px;
+        }
       }
 
       &-text{
@@ -97,6 +136,16 @@
         &-item{
           width: 20%;
           margin: 10px 0;
+
+          @include ReSassResponsive(1200){
+            width: 25%;
+          }
+          @include ReSassResponsive(768){
+            width: calc(100% / 3);
+          }
+          @include ReSassResponsive(480){
+            width: calc(100% / 2);
+          }
         }
       }
 
@@ -120,8 +169,11 @@
     &-table{
       thead th{
         border-top-width: 1px;
-        &.btnwidth110{
-          width: 110px;
+        &.btnwidth200{
+
+          @include ReSassResponsive(1200){
+            width: 150px !important;
+          }
         }
       }
 
@@ -130,6 +182,23 @@
         td{
           padding-top: 2px;
           padding-bottom: 2px;
+
+          span.coinaddress{
+            @include ReSassResponsive(768){
+              overflow: hidden;
+              margin-right: 15px;
+              position: relative;
+
+              &::after{
+                content: "...";
+                background-color: $global-clr-white;
+                width: 14px;
+                position: absolute;
+                top: 2px;
+                right: 0;
+              }
+            }
+          }
         }
 
         tr:last-child{
@@ -141,10 +210,28 @@
       }
 
       &-btn{
+
+        @include ReSassResponsive(768){
+          background-color: $global-clr-light-gray;
+
+          &::before{
+            display: none;
+          }
+        }
+
         .btn{
-          display: block;
+          display: inline-block;
           padding: 1px 5px;
-          width: 100%;
+          width: calc(50% - 5px);
+
+          &:first-child{
+            float: left;
+            margin-right: 5px;
+          }
+          &:last-child{
+            float: right;
+            margin-left: 5px;
+          }
         }
       }
     }

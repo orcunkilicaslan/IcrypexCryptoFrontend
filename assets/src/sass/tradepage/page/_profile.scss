@@ -7,7 +7,7 @@
       padding: 25px 0 50px;
     }
     @include ReSassResponsive(992){
-      padding: 20px 0 50px;
+      padding: 20px 0 40px;
     }
     @include ReSassResponsive(576){
       padding-left: 15px !important;
@@ -20,7 +20,6 @@
         display: block !important;
       }
     }
-
   }
 
   &-wrapper{
@@ -100,6 +99,12 @@
         margin-bottom: 10px;
         padding-bottom: 7px;
 
+        > *{
+          @include ReSassResponsive(576){
+            display: block !important;
+          }
+        }
+
         @include ReSassResponsive(768){
           flex-direction: column;
           align-items: center;
@@ -140,6 +145,10 @@
 
       span[class*="wallet"]{
         font-size: 17px;
+
+        @include ReSassResponsive(768){
+          margin-top: 5px;
+        }
       }
     }
 
@@ -170,6 +179,10 @@
             height: 18px;
             left: 0;
             top: 2px;
+
+            @include ReSassResponsive(768){
+              top: 0;
+            }
           }
 
           &.infoyellow{
@@ -278,11 +291,21 @@
 
       &-tablebox{
         padding: 15px;
+
+        @include ReSassResponsive(480){
+          padding: 10px;
+        }
       }
 
       &-footer{
         background-color: $global-clr-light-gray;
         padding: 15px;
+
+        .btn{
+          @include ReSassResponsive(768){
+            width: 100% !important;
+          }
+        }
       }
 
       &::before{
