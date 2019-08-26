@@ -8,6 +8,10 @@
 
       .sitebggraylight{
         width: 80px;
+
+        @include ReSassResponsive(768){
+          width: 100%;
+        }
       }
 
       th, td{
@@ -17,6 +21,78 @@
 
         &:first-child{
           text-align: left;
+
+          @include ReSassResponsive(768){
+            //color: $global-clr-white;
+            background-color: transparentize($global-clr-soft-gray, 0.7) !important;
+            font-weight: 500;
+            border-top: none !important;
+            border-bottom: none !important;
+          }
+        }
+
+        @include ReSassResponsive(768){
+          &.mobiletd{
+            border-top: 1px solid transparentize($global-clr-soft-gray, 0.7) !important;
+            border-bottom: none !important;
+            padding-top: 5px !important;
+            padding-bottom: 5px !important;
+
+            &::before{
+              width: 100% !important;
+              font-weight: 500;
+              padding-top: 5px !important;
+              padding-bottom: 5px !important;
+            }
+
+            &-01{
+              background-color: darken($global-clr-light-gray, 0%) !important;
+
+              &.mobiletd ~ .sitebggraylight{
+                background-color: darken($global-clr-light-gray, 0%) !important;
+                border-bottom: none !important;
+                padding-top: 5px !important;
+                padding-bottom: 5px !important;
+
+                &::before{
+                  padding-top: 5px !important;
+                  padding-bottom: 5px !important;
+                }
+              }
+            }
+
+            &-02{
+              background-color: darken($global-clr-light-gray, 5%) !important;
+
+              &.mobiletd ~ .sitebggraylight{
+                background-color: darken($global-clr-light-gray, 5%) !important;
+                border-bottom: none !important;
+                padding-top: 5px !important;
+                padding-bottom: 5px !important;
+
+                &::before{
+                  padding-top: 5px !important;
+                  padding-bottom: 5px !important;
+                }
+              }
+            }
+
+            &-03{
+              background-color: darken($global-clr-light-gray, 10%) !important;
+
+              &.mobiletd ~ .sitebggraylight{
+                background-color: darken($global-clr-light-gray, 10%) !important;
+                border-bottom: none !important;
+                padding-top: 5px !important;
+                padding-bottom: 5px !important;
+
+                &::before{
+                  padding-top: 5px !important;
+                  padding-bottom: 5px !important;
+                }
+              }
+            }
+          }
         }
       }
 
