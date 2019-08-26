@@ -68,6 +68,55 @@
         td{
           padding-top: 10px !important;
           padding-bottom: 10px !important;
+
+          &.notificationtd{
+            @include ReSassResponsive(768){
+              padding-left: 10px !important;
+              padding-right: 10px !important;
+              font-size: 15px !important;
+              overflow: hidden;
+              max-height: 120px;
+
+              &::before{
+                font-size: 17px !important;
+                width: 100% !important;
+                position: relative !important;
+                height: auto !important;
+                padding: 0 0 5px 0 !important;
+
+                @include ReSassResponsive(480){
+                  font-size: 15px !important;
+                }
+              }
+            }
+            @include ReSassResponsive(576){
+              max-height: none;
+            }
+          }
+
+          @include ReSassResponsive(768){
+            .custom-control{
+              &.width20px{
+                min-height: 20px;
+                top: 0 !important;
+
+                .custom-control-label{
+                  &::before,
+                  &::after{
+                    width: 20px;
+                    height: 20px;
+                  }
+                }
+
+                .custom-control-input:checked ~ .custom-control-label {
+                  &::after {
+                    top: 6px;
+                    left: -21px;
+                  }
+                }
+              }
+            }
+          }
         }
 
         tr:last-child{
@@ -98,10 +147,21 @@
       }
 
       &-btn{
+        @include ReSassResponsive(768){
+          background-color: $global-clr-light-gray;
+
+          &::before{
+            display: none !important;
+          }
+        }
         .btn{
           display: block;
           padding: 1px 5px;
           height: 30px;
+
+          @include ReSassResponsive(768){
+            width: 100% !important;
+          }
         }
       }
 
