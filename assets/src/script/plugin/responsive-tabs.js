@@ -1,8 +1,7 @@
 
 /* Responsive Bootstrap Tabs - https://codepen.io/hayatbiralem/pen/KpzjOL */
-jQuery(function($) {
+$(window).on("load resize",function(e){
     if($(window).width() <= 767){
-
         $('.nav-tabs-responsive').find('ul.nav').find('li.nav-item:nth-child(1)').addClass('active');
         $('.nav-tabs-responsive').find('ul.nav').find('li.nav-item:nth-child(2)').addClass('next');
 
@@ -35,7 +34,7 @@ jQuery(function($) {
             })(jQuery);
 
         });
-    }else{}
+    }
 });
 /* Responsive Bootstrap Tabs */
 
