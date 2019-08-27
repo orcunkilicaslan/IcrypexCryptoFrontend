@@ -75,7 +75,7 @@
             &:first-child{
               padding-left: 10px !important;
               font-weight: 500;
-              
+
               &::before{
                 @include ReSassResponsive(768){
                   display: none;
