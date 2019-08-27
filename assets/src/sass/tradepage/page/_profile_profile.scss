@@ -3,5 +3,35 @@
 
   &-profile{
     max-width: 500px;
+
+    @include ReSassResponsive(992){
+      max-width: none;
+    }
+
+    .form-row{
+      @include ReSassResponsive(480){
+        flex-direction: column;
+      }
+
+      &:last-child{
+        .form-group{
+          @include ReSassResponsive(480){
+            margin-bottom: 10px !important;
+          }
+        }
+      }
+
+      .labelwidth100100{
+        @include ReSassResponsive(480){
+          display: none;
+        }
+      }
+    }
+
+    .mobilebottombutton{
+      @include ReSassResponsive(480){
+        margin-bottom: 5px !important;
+      }
+    }
   }
 }
