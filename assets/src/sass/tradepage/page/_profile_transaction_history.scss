@@ -5,6 +5,16 @@
 
     div[class*=boxtitle] {
       margin-bottom: 0;
+
+      @include ReSassResponsive(768){
+        border-bottom: none;
+      }
+
+      > span[class*="boxtitle-date"]{
+        @include ReSassResponsive(768){
+          margin-top: 5px;
+        }
+      }
     }
 
     i[class*="icon-svg"]{
@@ -51,6 +61,12 @@
               border-bottom-style: solid;
             }
           }
+
+          td{
+            &::before{
+              color: $global-clr-dark-blue;
+            }
+          }
         }
 
         tr.message-read{
@@ -61,14 +77,29 @@
             &:last-child{
               opacity: 1;
             }
-
           }
         }
 
         &-btn{
-          .btn{
+          @include ReSassResponsive(768){
+            background-color: $global-clr-light-gray;
+
+            &::before{
+              display: none !important;
+            }
+          }
+          a{
             display: block;
             padding: 1px 5px;
+
+            @include ReSassResponsive(768){
+              width: 100% !important;
+              justify-content: center;
+            }
+
+            i[class*="icon-svg"]{
+              margin-right: 2px;
+            }
           }
         }
       }
