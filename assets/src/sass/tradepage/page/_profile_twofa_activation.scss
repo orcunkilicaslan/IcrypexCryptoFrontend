@@ -14,6 +14,13 @@
     background-color: $global-clr-light-gray;
     padding: 20px 15px;
 
+    @include ReSassResponsive(768){
+      display: block !important;
+    }
+    @include ReSassResponsive(400){
+      padding: 10px;
+    }
+
     &.borderbottom{
       border-bottom: 1px solid transparentize($global-clr-soft-gray, 0.7);
     }
@@ -23,14 +30,25 @@
       padding-right: 15px;
       position: relative;
 
+      @include ReSassResponsive(768){
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        margin-bottom: 10px;
+      }
+
       &:first-child{
         padding-left: 0;
+
         &::before{
           display: none;
         }
       }
       &:last-child{
         padding-right: 0;
+
+        @include ReSassResponsive(768){
+          margin-bottom: 0;
+        }
       }
 
       &::before{
@@ -71,6 +89,17 @@
     &-activation{
       &-tags350{
         max-width: 350px;
+
+        @include ReSassResponsive(400){
+        }
+
+        .form-group{
+          .col-md-auto{
+            @include ReSassResponsive(768){
+              width: auto !important;
+            }
+          }
+        }
       }
 
       .ioscheckbox{
@@ -86,6 +115,20 @@
       &-qrcode{
         max-width: 600px;
         margin-top: 10px;
+
+        @include ReSassResponsive(768){
+          width: 100%;
+        }
+
+        > .form-group.row{
+          @include ReSassResponsive(480){
+            display: block !important;
+          }
+        }
+
+        &-area{
+          width: 180px;
+        }
 
         &-code{
           margin-right: 15px;
@@ -104,13 +147,32 @@
           line-height: 1.2;
           font-size: 17px;
           min-height: 75px;
+
+          @include ReSassResponsive(576){
+            font-size: 15px;
+            min-height: 79px;
+          }
+          @include ReSassResponsive(480){
+            min-height: auto;
+          }
         }
 
         &-form{
           padding-left: 0;
 
+          @include ReSassResponsive(480){
+            padding-left: 15px;
+            padding-right: 15px;
+            margin-top: 5px;
+          }
+
           .formpincode{
             max-width: 300px;
+
+            @include ReSassResponsive(480){
+              max-width: none;
+              margin-top: 15px;
+            }
 
             .pincode-input-container{
               .form-control.mid{
