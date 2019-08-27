@@ -4,6 +4,44 @@
   &-bank-account{
     max-width: 750px;
 
+    @include ReSassResponsive(992){
+      max-width: none;
+    }
+
+    .form-row{
+      @include ReSassResponsive(768){
+        flex-direction: column;
+      }
+
+      div[class*="maxwidth"]{
+
+        @include ReSassResponsive(768){
+          margin-top: 10px;
+        }
+
+        label{
+          @include ReSassResponsive(768){
+            display: none;
+          }
+        }
+      }
+    }
+
+    &-tablebox{
+      > div[class*="boxtitle"]{
+        @include ReSassResponsive(768){
+          border-bottom: none;
+        }
+      }
+    }
+
+    div[class*="boxtitle"]{
+      @include ReSassResponsive(400){
+        margin-bottom: 5px;
+        margin-top: 10px;
+      }
+    }
+
     &-table{
       margin-top: -10px;
 
@@ -31,9 +69,18 @@
       }
 
       &-btn{
+
+        @include ReSassResponsive(768){
+          background-color: $global-clr-light-gray;
+        }
+
         .btn{
           display: block;
           padding: 1px 5px;
+
+          @include ReSassResponsive(768){
+            width: 100%;
+          }
         }
       }
     }
