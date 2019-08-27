@@ -49,8 +49,24 @@
 
     &-tags500{
       max-width: 500px;
-    }
 
+      @include ReSassResponsive(576){
+        max-width: none;
+      }
+
+      .form-row{
+        @include ReSassResponsive(480){
+          flex-direction: column;
+        }
+
+        label[style]{
+          @include ReSassResponsive(480){
+            display: none;
+          }
+        }
+
+      }
+    }
   }
 
 }
