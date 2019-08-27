@@ -4,6 +4,10 @@
   &-activity-history{
     max-width: 600px;
 
+    @include ReSassResponsive(992){
+      max-width: none;
+    }
+
     &-table{
 
       thead{
@@ -33,9 +37,22 @@
       }
 
       &-btn{
+
+        @include ReSassResponsive(992){
+          background-color: $global-clr-light-gray;
+
+          &::before{
+            display: none;
+          }
+        }
+
         .btn{
           display: block;
           padding: 1px 5px;
+
+          @include ReSassResponsive(768){
+            width: 100% !important;
+          }
         }
       }
     }
