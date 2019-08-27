@@ -38,7 +38,7 @@
 
       &-btn{
 
-        @include ReSassResponsive(992){
+        @include ReSassResponsive(768){
           background-color: $global-clr-light-gray;
 
           &::before{
