@@ -6,6 +6,16 @@
     &-settings{
       max-width: 550px;
 
+      @include ReSassResponsive(992){
+        max-width: none;
+      }
+
+      .form-row{
+        @include ReSassResponsive(480){
+          flex-direction: column;
+        }
+      }
+
       .tooltip-wrapper{display: inline-block;}
       .tooltip-wrapper.disabled{cursor: not-allowed;}
       .tooltip-wrapper .btn[disabled]{pointer-events: none;}

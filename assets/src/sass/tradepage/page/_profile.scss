@@ -120,7 +120,8 @@
           text-align: center;
         }
         @include ReSassResponsive(400){
-          margin-bottom: 20px;
+          margin-bottom: 5px;
+          margin-top: 10px;
         }
 
         span[class*="boxtitle-info"]{

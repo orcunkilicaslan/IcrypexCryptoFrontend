@@ -39,6 +39,11 @@
       width: 50%;
       max-width: 50%;
       padding-right: 8px;
+
+      @include ReSassResponsive(480){
+        width: 100%;
+        max-width: 100%;
+      }
     }
 
     &.colorset{
@@ -533,11 +538,22 @@
     align-items: center;
     align-self: flex-start;
 
+    @include ReSassResponsive(992){
+      display: block;
+    }
+
     i[class*="icon-svg"]{
       width: 18px;
       height: 18px;
       margin-left: 0;
       margin-right: 3px;
+
+      @include ReSassResponsive(992){
+        display: inline-block;
+        position: relative;
+        top: 3px;
+        margin-right: 2px;
+      }
     }
   }
 
