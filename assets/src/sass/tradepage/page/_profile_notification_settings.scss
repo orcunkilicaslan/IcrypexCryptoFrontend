@@ -16,7 +16,13 @@
 
         .sitebggraylight{
           width: 140px;
-          //position: relative;
+
+          @include ReSassResponsive(992){
+            width: 130px;
+          }
+          @include ReSassResponsive(768){
+            width: 100%;
+          }
         }
 
         .ioscheckbox{
@@ -61,6 +67,26 @@
             td{
               border-bottom-width: 1px;
               border-bottom-style: solid;
+            }
+          }
+
+          td{
+
+            &:first-child{
+              padding-left: 10px !important;
+              font-weight: 500;
+              
+              &::before{
+                @include ReSassResponsive(768){
+                  display: none;
+                }
+              }
+            }
+
+            &.mobiletd{
+              @include ReSassResponsive(768){
+                display: none;
+              }
             }
           }
         }
