@@ -1,0 +1,5 @@
+.ps_messenger__toggle-content{
+  @include ReSassResponsive(992){
+    display: none !important;
+  }
+}
