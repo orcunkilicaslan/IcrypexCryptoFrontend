@@ -189,6 +189,9 @@ $globalSvgIconImgPath : "../../img/global/svg";
     &-wizardiconallbank{
       background-image: url(#{$globalSvgIconImgPath}/Wizard_Icon_All_Bank.svg);
     }
+    &-profileunknownavatar{
+      background-image: url(#{$globalSvgIconImgPath}/Unknown_Profile_Avatar_Icon.svg);
+    }
     &-profileinformationred{
       background-image: url(#{$globalSvgIconImgPath}/Icon_Information_Red.svg);
     }
