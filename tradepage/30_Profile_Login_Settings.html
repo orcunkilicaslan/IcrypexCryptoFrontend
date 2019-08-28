@@ -346,18 +346,18 @@
                 <form class="formuinew formlabelvalidation changepassword" autocomplete="off" novalidate>
                     <div class="form-group widthpercent50pr8 colorsetdarkblue">
                         <label>ESKİ ŞİFRE</label>
-                        <input id="inputOldPasswordId" type="password" class="form-control" placeholder="" value="" name="oldpassword" autocomplete="off" required onkeyup="profilesettingsform.verifyContent('inputOldPasswordProcess','inputOldPasswordId','msgOldPasswordId')" onfocusout="profilesettingsform.verifyContentErrorDelete('inputOldPasswordProcess','inputOldPasswordId','msgOldPasswordId')">
+                        <input id="inputOldPasswordId" type="password" class="form-control" placeholder="" value="" name="oldpassword" autocomplete="off" required oninput="profilesettingsform.verifyContent('inputOldPasswordProcess','inputOldPasswordId','msgOldPasswordId')" onfocusout="profilesettingsform.verifyContentErrorDelete('inputOldPasswordProcess','inputOldPasswordId','msgOldPasswordId')">
                         <span class="inputerrormessage" id="msgOldPasswordId"></span>
                     </div>
                     <div class="form-row">
                         <div class="form-group colorsetdarkblue col">
                             <label>YENİ ŞİFRE</label>
-                            <input id="inputNewPasswordId" type="password" class="form-control" placeholder="" value="" name="password" autocomplete="off" required onkeyup="profilesettingsform.verifyContent('inputNewPasswordProcess','inputNewPasswordId','msgNewPasswordId')" onfocusout="profilesettingsform.verifyContentErrorDelete('inputNewPasswordProcess','inputNewPasswordId','msgNewPasswordId')">
+                            <input id="inputNewPasswordId" type="password" class="form-control" placeholder="" value="" name="password" autocomplete="off" required oninput="profilesettingsform.verifyContent('inputNewPasswordProcess','inputNewPasswordId','msgNewPasswordId')" onfocusout="profilesettingsform.verifyContentErrorDelete('inputNewPasswordProcess','inputNewPasswordId','msgNewPasswordId')">
                             <span class="inputerrormessage" id="msgNewPasswordId"></span>
                         </div>
                         <div class="form-group colorsetdarkblue col">
                             <label>YENİ ŞİFRE TEKRAR</label>
-                            <input id="inputNewRePasswordId" type="password" class="form-control" placeholder="" value="" name="confirm" autocomplete="off" required onkeyup="profilesettingsform.verifyContent('inputNewRePasswordProcess','inputNewRePasswordId','msgNewRePasswordId')" onfocusout="profilesettingsform.verifyContentErrorDelete('inputNewRePasswordProcess','inputNewRePasswordId','msgNewRePasswordId')">
+                            <input id="inputNewRePasswordId" type="password" class="form-control" placeholder="" value="" name="confirm" autocomplete="off" required oninput="profilesettingsform.verifyContent('inputNewRePasswordProcess','inputNewRePasswordId','msgNewRePasswordId')" onfocusout="profilesettingsform.verifyContentErrorDelete('inputNewRePasswordProcess','inputNewRePasswordId','msgNewRePasswordId')">
                             <span class="inputerrormessage" id="msgNewRePasswordId"></span>
                         </div>
                         <div class="formrowinfotext"><i class="icon-svg icon-svg-profileinformationyellow"></i> 8 karakterden oluşmalı ve en az bir küçük harf, bir büyük harf ile bir sayı içermelidir.</div>
@@ -445,18 +445,18 @@
                 <form class="formuinew formlabelvalidation changesecurity" autocomplete="off" novalidate>
                     <div class="form-group widthpercent50pr8 colorsetdarkblue">
                         <label>ESKİ GÜVENLİK KELİMESİ</label>
-                        <input id="inputOldSecurityId" type="text" class="form-control" placeholder="" value="" name="oldkeyword" required onkeyup="profilesettingsform.verifyContent('inputOldSecurityProcess','inputOldSecurityId','msgOldSecurityId')" onfocusout="profilesettingsform.verifyContentErrorDelete('inputOldSecurityProcess','inputOldSecurityId','msgOldSecurityId')">
+                        <input id="inputOldSecurityId" type="text" class="form-control" placeholder="" value="" name="oldkeyword" required oninput="profilesettingsform.verifyContent('inputOldSecurityProcess','inputOldSecurityId','msgOldSecurityId')" onfocusout="profilesettingsform.verifyContentErrorDelete('inputOldSecurityProcess','inputOldSecurityId','msgOldSecurityId')">
                         <span class="inputerrormessage errormsgbottomleft" id="msgOldSecurityId"></span>
                     </div>
                     <div class="form-row">
                         <div class="form-group colorsetdarkblue col">
                             <label>YENİ GÜVENLİK KELİMESİ</label>
-                            <input id="inputNewSecurityId" type="text" class="form-control" placeholder="" value="" name="newkeyword" autocomplete="off" required onkeyup="profilesettingsform.verifyContent('inputNewSecurityProcess','inputNewSecurityId','msgNewSecurityId')" onfocusout="profilesettingsform.verifyContentErrorDelete('inputNewSecurityProcess','inputNewSecurityId','msgNewSecurityId')">
+                            <input id="inputNewSecurityId" type="text" class="form-control" placeholder="" value="" name="newkeyword" autocomplete="off" required oninput="profilesettingsform.verifyContent('inputNewSecurityProcess','inputNewSecurityId','msgNewSecurityId')" onfocusout="profilesettingsform.verifyContentErrorDelete('inputNewSecurityProcess','inputNewSecurityId','msgNewSecurityId')">
                             <span class="inputerrormessage errormsgbottomleft" id="msgNewSecurityId"></span>
                         </div>
                         <div class="form-group colorsetdarkblue col">
                             <label>YENİ GÜVENLİK KELİMESİ TEKRAR</label>
-                            <input id="inputNewReSecurityId" type="text" class="form-control" placeholder="" value="" name="confirmkeyword" autocomplete="off" required onkeyup="profilesettingsform.verifyContent('inputNewReSecurityProcess','inputNewReSecurityId','msgNewReSecurityId')" onfocusout="profilesettingsform.verifyContentErrorDelete('inputNewReSecurityProcess','inputNewReSecurityId','msgNewReSecurityId')">
+                            <input id="inputNewReSecurityId" type="text" class="form-control" placeholder="" value="" name="confirmkeyword" autocomplete="off" required oninput="profilesettingsform.verifyContent('inputNewReSecurityProcess','inputNewReSecurityId','msgNewReSecurityId')" onfocusout="profilesettingsform.verifyContentErrorDelete('inputNewReSecurityProcess','inputNewReSecurityId','msgNewReSecurityId')">
                             <span class="inputerrormessage errormsgbottomleft" id="msgNewReSecurityId"></span>
                         </div>
                     </div>

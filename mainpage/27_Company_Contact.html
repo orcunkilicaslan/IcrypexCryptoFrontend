@@ -405,13 +405,13 @@
                 <div class="form-row">
                     <div class="form-group colorsetdarkblue col">
                         <label>İSİM</label>
-                        <input type="text" class="form-control" name="firstname" id="inputFirstNameId" required onkeyup="contactform.verifyContent('inputFirstNameProcess','inputFirstNameId','msgFirstNameId','iconFirstNameId')" onfocusout="contactform.verifyContentErrorDelete('inputFirstNameProcess','inputFirstNameId','msgFirstNameId','iconFirstNameId')">
+                        <input type="text" class="form-control" name="firstname" id="inputFirstNameId" required oninput="contactform.verifyContent('inputFirstNameProcess','inputFirstNameId','msgFirstNameId','iconFirstNameId')" onfocusout="contactform.verifyContentErrorDelete('inputFirstNameProcess','inputFirstNameId','msgFirstNameId','iconFirstNameId')">
                         <i class="inputcheckicon inputcheckicon-check" id="iconFirstNameId"></i>
                         <span class="inputerrormessage" id="msgFirstNameId"></span>
                     </div>
                     <div class="form-group colorsetdarkblue col">
                         <label>SOYİSİM</label>
-                        <input type="text" class="form-control" name="lastname" id="inputLastNameId" required onkeyup="contactform.verifyContent('inputLastNameProcess','inputLastNameId','msgLastNameId','iconLastNameId')" onfocusout="contactform.verifyContentErrorDelete('inputLastNameProcess','inputLastNameId','msgLastNameId','iconLastNameId')">
+                        <input type="text" class="form-control" name="lastname" id="inputLastNameId" required oninput="contactform.verifyContent('inputLastNameProcess','inputLastNameId','msgLastNameId','iconLastNameId')" onfocusout="contactform.verifyContentErrorDelete('inputLastNameProcess','inputLastNameId','msgLastNameId','iconLastNameId')">
                         <i class="inputcheckicon inputcheckicon-check" id="iconLastNameId"></i>
                         <span class="inputerrormessage" id="msgLastNameId"></span>
                     </div>
@@ -419,20 +419,20 @@
                 <div class="form-row">
                     <div class="form-group colorsetdarkblue col">
                         <label>TELEFON</label>
-                        <input type="text" class="form-control" name="phone" id="inputPhoneId" required onkeyup="contactform.verifyContent('inputPhoneProcess','inputPhoneId','msgPhoneId','iconPhoneId')" onfocusout="contactform.verifyContentErrorDelete('inputPhoneProcess','inputPhoneId','msgPhoneId','iconPhoneId')">
+                        <input type="text" class="form-control" name="phone" id="inputPhoneId" required oninput="contactform.verifyContent('inputPhoneProcess','inputPhoneId','msgPhoneId','iconPhoneId')" onfocusout="contactform.verifyContentErrorDelete('inputPhoneProcess','inputPhoneId','msgPhoneId','iconPhoneId')">
                         <i class="inputcheckicon inputcheckicon-check" id="iconPhoneId"></i>
                         <span class="inputerrormessage" id="msgPhoneId"></span>
                     </div>
                     <div class="form-group colorsetdarkblue col">
                         <label>E-POSTA</label>
-                        <input type="text" class="form-control" name="email" id="inputEmailId" required onkeyup="contactform.verifyContent('inputEmailProcess','inputEmailId','msgEmailId','iconEmailId')" onfocusout="contactform.verifyContentErrorDelete('inputEmailProcess','inputEmailId','msgEmailId','iconEmailId')">
+                        <input type="text" class="form-control" name="email" id="inputEmailId" required oninput="contactform.verifyContent('inputEmailProcess','inputEmailId','msgEmailId','iconEmailId')" onfocusout="contactform.verifyContentErrorDelete('inputEmailProcess','inputEmailId','msgEmailId','iconEmailId')">
                         <i class="inputcheckicon inputcheckicon-check" id="iconEmailId"></i>
                         <span class="inputerrormessage" id="msgEmailId"></span>
                     </div>
                 </div>
                 <div class="form-group colorsetdarkblue">
                     <label>KONU BAŞLIĞI</label>
-                    <select class="form-control custom-select" name="subject" id="inputSubjectId" required onkeyup="contactform.verifyContent('inputSubjectProcess','inputSubjectId','msgSubjectId','iconSubjectId')" onfocusout="contactform.verifyContentErrorDelete('inputSubjectProcess','inputSubjectId','msgSubjectId','iconSubjectId')">
+                    <select class="form-control custom-select" name="subject" id="inputSubjectId" required oninput="contactform.verifyContent('inputSubjectProcess','inputSubjectId','msgSubjectId','iconSubjectId')" onfocusout="contactform.verifyContentErrorDelete('inputSubjectProcess','inputSubjectId','msgSubjectId','iconSubjectId')">
                         <option value="-1">LÜTFEN SEÇİNİZ</option>
                         <option value="2">Bakiye Bilgileri</option>
                         <option value="1">Telefon Numarası Değişikliği</option>
@@ -442,7 +442,7 @@
                 </div>
                 <div class="form-group colorsetdarkblue">
                     <label>MESAJINIZ</label>
-                    <textarea class="form-control" rows="" name="message" id="inputMessageId" required onkeyup="contactform.verifyContent('inputMessageProcess','inputMessageId','msgMessageId','iconMessageId')" onfocusout="contactform.verifyContentErrorDelete('inputMessageProcess','inputMessageId','msgMessageId','iconMessageId')"></textarea>
+                    <textarea class="form-control" rows="" name="message" id="inputMessageId" required oninput="contactform.verifyContent('inputMessageProcess','inputMessageId','msgMessageId','iconMessageId')" onfocusout="contactform.verifyContentErrorDelete('inputMessageProcess','inputMessageId','msgMessageId','iconMessageId')"></textarea>
                     <i class="inputcheckicon inputcheckicon-check" id="iconMessageId"></i>
                     <span class="inputerrormessage" id="msgMessageId"></span>
                 </div>
