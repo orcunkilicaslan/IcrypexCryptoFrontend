@@ -42,7 +42,7 @@ $(".header .header-alert .close").click(function(){
     $(".header-spacebottom").height(headNavigation);
 });
 
-$(window).resize(function() {
+$(window).on("load resize",function(e){
     var cookiesHeight = $(".cookies-notification").height();
     $(".cookies-notification").css("bottom", ("-"+cookiesHeight)+"px");
 });
