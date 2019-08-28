@@ -105,6 +105,11 @@
  - [50_20190801_Kripto_Fest](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/email-marketing/50_20190801_Kripto_Fest.html)
  - [99_20190730_Investing_Mass_Mail](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/email-marketing/99_20190730_Investing_Mass_Mail.html)
  
+ 
+  #### E-Mail Signature List
+  - [01_Email_Signature_v1](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/email-signature/01_Email_Signature_v1.html)
+  
+   
 
 # NodeJS Kurulumu
   
