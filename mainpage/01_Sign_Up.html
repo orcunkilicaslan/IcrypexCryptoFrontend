@@ -339,10 +339,12 @@
                 <script>
                     $(document).ready(function () {
                         document.addEventListener("DOMContentLoaded", function(event) {
+
                             $("#inputPhoneId").on('keyup input', function(){
-                                signupform.verifyContent('inputPhoneProcess','inputPhoneId','msgPhoneId','iconPhoneId');
-                                onfocusout="signupform.verifyContentErrorDelete('inputPhoneProcess','inputPhoneId','msgPhoneId','iconPhoneId')";
+
+                                signupform.verifyContent('inputPhoneProcess','inputPhoneId','msgPhoneId','iconPhoneId')" onfocusout="signupform.verifyContentErrorDelete('inputPhoneProcess','inputPhoneId','msgPhoneId','iconPhoneId');
                             });
+
                         });
                     });
                 </script>
