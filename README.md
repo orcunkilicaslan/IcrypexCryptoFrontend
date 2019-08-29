@@ -108,6 +108,7 @@
  
   #### E-Mail Signature List
   - [01_Email_Signature_v1](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/email-signature/01_Email_Signature_v1.html)
+  - [02_Email_Signature_v2](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/email-signature/02_Email_Signature_v2.html)
   - [Microsoft Outlook'da İmza Tanımlama Video](https://www.youtube.com/watch?v=SGfgyjHgzYs) 
   
    
