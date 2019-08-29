@@ -2,32 +2,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
 .sidebar{
 
-  &-tradepage{
-    &.maincont-left{
-      @include ReSassResponsive(1200){
-        flex: 0 0 20%;
-        max-width: 20%;
-      }
-      @include ReSassResponsive(992){
-        flex: 0 0 100%;
-        max-width: 100%;
-        display: block !important;
-        padding: 0 !important;
-      }
-    }
-
-    > *[class*="sidebar-"]{
-      margin-top: 15px;
-
-      &:first-child{
-        margin-top: 0;
-      }
-    }
-  }
-
-  &-mainpage{
-
-  }
+  &-mainpage{}
 
   /* Market Data */
   &-marketdata{
@@ -101,10 +76,31 @@ $globalSvgIconImgPath : "../../img/global/svg";
   }
   /* Balance */
 
-  /* Navigasyon */
-  &-navigasyon{
+  /* Tradepage Sidebar Start */
+  &-tradepage{
+    &.maincont-left{
+      @include ReSassResponsive(1200){
+        flex: 0 0 20%;
+        max-width: 20%;
+      }
+      @include ReSassResponsive(992){
+        flex: 0 0 100%;
+        max-width: 100%;
+        display: block !important;
+        padding: 0 !important;
+      }
+    }
 
-    &.navorange{}
+    > *[class*="sidebar-"]{
+      margin-top: 15px;
+
+      &:first-child{
+        margin-top: 0;
+      }
+    }
+  }
+
+  &-navigasyon{
 
     .columntitle{
       color: $global-clr-dark-blue;
@@ -157,6 +153,6 @@ $globalSvgIconImgPath : "../../img/global/svg";
       }
     }
   }
-  /* Navigasyon */
+  /* Tradepage Sidebar End */
 
 }
