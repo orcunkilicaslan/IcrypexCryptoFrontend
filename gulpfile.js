@@ -195,7 +195,8 @@ gulp.task('script-tradepage', () => {
     return gulp.src([
         folder_src_main + 'script/tradepage/**/app.js',
         folder_src_main + 'script/tradepage/**/deposit-withdraw.js',
-        folder_src_main + 'script/tradepage/**/validations-profile-login-settings.js'
+        folder_src_main + 'script/tradepage/**/validations-profile-login-settings.js',
+        folder_src_main + 'script/tradepage/**/responsive-app.js'
     ])
         .pipe(plumber())
         .pipe(webpack({
