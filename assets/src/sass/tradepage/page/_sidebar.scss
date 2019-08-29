@@ -76,7 +76,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
   }
   /* Balance */
 
-  /* Tradepage Sidebar Start */
+  /* Tradepage Profile Sidebar Start */
   &-tradepage{
     &.maincont-left{
       @include ReSassResponsive(1200){
@@ -84,15 +84,32 @@ $globalSvgIconImgPath : "../../img/global/svg";
         max-width: 20%;
       }
       @include ReSassResponsive(992){
+        display: flex;
+        flex-direction: row;
         flex: 0 0 100%;
         max-width: 100%;
-        display: block !important;
         padding: 0 !important;
+        margin-top: 10px;
+      }
+      @include ReSassResponsive(576){
+        flex-direction: column;
+        margin-top: 0;
       }
     }
 
     > *[class*="sidebar-"]{
       margin-top: 15px;
+
+      @include ReSassResponsive(992){
+        flex: 0 0 calc(100% / 2);
+        max-width: calc(100% / 2);
+        margin-top: 0;
+      }
+      @include ReSassResponsive(576){
+        flex: 0 0 calc(100% / 1);
+        max-width: calc(100% / 1);
+        margin-top: 4px;
+      }
 
       &:first-child{
         margin-top: 0;
@@ -102,10 +119,30 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
   &-navigasyon{
 
+    &-account{
+      @include ReSassResponsive(992){
+        border-bottom: 4px solid $global-clr-soft-blue;
+      }
+    }
+
+    &-security{
+      @include ReSassResponsive(992){
+        border-bottom: 4px solid $global-clr-soft-blue;
+      }
+      @include ReSassResponsive(576){
+        border-top: 4px solid $global-clr-orange;
+        border-bottom: none;
+      }
+    }
+
     .columntitle{
       color: $global-clr-dark-blue;
       padding-bottom: 10px;
       margin-bottom: 10px;
+
+      @include ReSassResponsive(992){
+        display: none;
+      }
     }
 
     &-list{
@@ -152,7 +189,113 @@ $globalSvgIconImgPath : "../../img/global/svg";
         }
       }
     }
+
+    .responsive-dropdown{
+      &-btn{
+        background-color: $global-clr-soft-gray;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 260px;
+        min-height: 42px;
+        margin: 0 auto;
+        font-size: 20px;
+        letter-spacing: -.02em;
+        border: none;
+        position: relative;
+        @include border-radius(0);
+
+        @include ReSassResponsive(400){
+          max-width: 240px;
+        }
+
+        &::after{
+          content: "";
+          position: relative;
+          display: inline-block;
+          width: 10px;
+          height: 10px;
+          border-bottom: 2px solid transparentize($global-clr-white, 0.5);
+          border-left: 2px solid transparentize($global-clr-white, 0.5);
+          left: 10px;
+          margin-top: -2px;
+          @include rotate(-45);
+          @include transition(all, 0.3s, ease-in-out);
+        }
+
+        &[aria-expanded^="true"]{
+          &::after{
+            @include rotate(-225);
+            margin-top: 6px;
+          }
+        }
+      }
+      &-menu{
+        display: none;
+        width: 100%;
+        min-width: auto;
+        max-width: 260px;
+        margin: 0 auto;
+        padding: 0;
+        border: none;
+        @include border-radius(0);
+
+        @include ReSassResponsive(576){
+          left: 1px !important;
+        }
+        @include ReSassResponsive(400){
+          max-width: 240px;
+        }
+
+        &.show{
+          display: block;
+        }
+
+        > li{
+          margin: 0 !important;
+        }
+
+        > li > a{
+          font-size: 20px;
+          text-align: center;
+          padding: 7px 2px;
+          border: none;
+          border-bottom: 1px solid transparentize($global-clr-white , 0.8);
+          @include border-radius(0);
+        }
+      }
+
+      &-account{
+        &-btn{
+          background-color: $global-clr-soft-blue;
+          padding: 7px 5px 5px;
+        }
+        &-menu{
+          margin: 4px auto;
+        }
+      }
+
+      &-security{
+        &-btn{
+          background-color: $global-clr-soft-blue;
+          padding: 7px 5px 5px;
+
+          @include ReSassResponsive(576){
+            background-color: $global-clr-orange;
+            padding: 4px 5px 8px;
+          }
+        }
+        &-menu{
+          background-color: lighten($global-clr-btn-blue, 3%);
+          margin: 4px auto;
+
+          @include ReSassResponsive(576){
+            margin: 0 auto;
+          }
+        }
+      }
+    }
   }
-  /* Tradepage Sidebar End */
+  /* Tradepage Profile Sidebar End */
 
 }
