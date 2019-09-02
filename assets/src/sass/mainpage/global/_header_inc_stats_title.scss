@@ -43,6 +43,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
       }
       @include ReSassResponsive(480){
         padding: 0;
+        text-align: center !important;
 
         &::before,
         &::after{
@@ -148,7 +149,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
             .icon-svg{
               width: 19px;
               height: 14px;
-              margin: 5px;
+              margin: 7px;
             }
           }
         }

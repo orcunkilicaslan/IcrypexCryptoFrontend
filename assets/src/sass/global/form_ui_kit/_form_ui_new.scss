@@ -744,5 +744,9 @@
   .maxwidth400{width: 400px;}
   .maxwidth100100{width: 100%;}
   .labelwidth100100{width: 100%;}
+
+  @include ReSassResponsive(480){
+    .mobile480width100100{max-width: 100%; flex-basis: 0; flex-grow: 1;}
+  }
 }
 /* Form UI New */
