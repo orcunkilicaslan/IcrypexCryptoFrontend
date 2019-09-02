@@ -263,6 +263,10 @@ $globalSvgIconImgPath : "../../img/global/svg";
         }
         @include ReSassResponsive(576){
           max-width: 182px;
+          left: 0 !important;
+        }
+        @include ReSassResponsive(480){
+          left: 1px !important;
         }
         @include ReSassResponsive(400){
           max-width: 240px;
