@@ -6,6 +6,7 @@
   @include ReSassResponsive(992){
     display: none;
     background-color: $global-sitebg-darkblue01;
+    @include gradient($global-sitebg-darkblue02, $global-sitebg-darkblue01);
     width: 36px;
     height: 36px;
     position: fixed;
@@ -106,4 +107,17 @@
       }
     }
   }
+}
+
+body.tradepage{
+
+  .bottomtotopbutton{
+    @include ReSassResponsive(992){
+      bottom: 67px !important;
+    }
+    @include ReSassResponsive(400){
+      bottom: 56px !important;
+    }
+  }
+
 }
