@@ -50,7 +50,8 @@
               background-color: darken($global-clr-light-gray, 0%) !important;
 
               &.mobiletd ~ .sitebggraylight{
-                background-color: darken($global-clr-light-gray, 0%) !important;
+                //background-color: darken($global-clr-light-gray, 0%) !important;
+                background-color: $global-clr-white !important;
                 border-bottom: none !important;
                 padding-top: 5px !important;
                 padding-bottom: 5px !important;
@@ -63,10 +64,11 @@
             }
 
             &-02{
-              background-color: darken($global-clr-light-gray, 5%) !important;
+              background-color: darken($global-clr-light-gray, 0%) !important;
 
               &.mobiletd ~ .sitebggraylight{
-                background-color: darken($global-clr-light-gray, 5%) !important;
+                //background-color: darken($global-clr-light-gray, 5%) !important;
+                background-color: $global-clr-white !important;
                 border-bottom: none !important;
                 padding-top: 5px !important;
                 padding-bottom: 5px !important;
@@ -79,10 +81,11 @@
             }
 
             &-03{
-              background-color: darken($global-clr-light-gray, 10%) !important;
+              background-color: darken($global-clr-light-gray, 0%) !important;
 
               &.mobiletd ~ .sitebggraylight{
-                background-color: darken($global-clr-light-gray, 10%) !important;
+                //background-color: darken($global-clr-light-gray, 10%) !important;
+                background-color: $global-clr-white !important;
                 border-bottom: none !important;
                 padding-top: 5px !important;
                 padding-bottom: 5px !important;
@@ -115,6 +118,12 @@
           td{
             border-bottom-width: 1px;
             border-bottom-style: solid;
+          }
+        }
+
+        tr{
+          @include ReSassResponsive(768){
+            border-bottom: 1px solid transparentize($global-clr-soft-gray, 0.7) !important;
           }
         }
       }

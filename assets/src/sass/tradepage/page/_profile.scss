@@ -45,6 +45,11 @@
       color: $global-clr-dark-blue;
       padding-bottom: 6px;
       margin-bottom: 0;
+
+      @include ReSassResponsive(768){
+        font-size: 20px;
+        text-align: center;
+      }
     }
   }
 
