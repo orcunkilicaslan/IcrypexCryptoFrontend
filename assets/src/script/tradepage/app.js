@@ -14,6 +14,10 @@ $('#headertitleareapricelite').owlCarousel({
     responsiveClass:true,
     responsive:{
         0:{
+            items:3,
+            autoWidth:false
+        },
+        480:{
             items:1,
             autoWidth:false
         },
