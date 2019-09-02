@@ -89,7 +89,6 @@ $globalSvgIconImgPath : "../../img/global/svg";
         flex: 0 0 100%;
         max-width: 100%;
         padding: 0 !important;
-        margin-top: 10px;
       }
       @include ReSassResponsive(400){
         flex-direction: column;
