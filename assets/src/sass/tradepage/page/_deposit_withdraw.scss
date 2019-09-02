@@ -5,22 +5,28 @@
   &-flex{
     background-color: $global-clr-white;
     display: flex;
+
     &-width{width: 100%;}
+
     &-center{
       display: flex;
       flex-direction: column;
       height: 100%;
     }
+
     &-wrapper{
       display: flex;
       flex-direction: column;
       height: 100%;
+
       &-column{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         height: 100%;
+
         &-top{}
+
         &-middle{
           display: flex;
           flex-direction: column;
@@ -28,8 +34,19 @@
           height: 100%;
           padding-top: 40px;
           padding-bottom: 40px;
+
+          @include ReSassResponsive(576){
+            padding-left: 15px !important;
+            padding-right: 15px !important;
+          }
         }
-        &-bottom{}
+
+        &-bottom{
+          @include ReSassResponsive(576){
+            padding-left: 15px !important;
+            padding-right: 15px !important;
+          }
+        }
       }
     }
   }
@@ -37,24 +54,50 @@
   &-tablist{
     background-color: $global-clr-light-gray;
     padding: 25px 0;
+
+    @include ReSassResponsive(992){
+      padding: 15px 0;
+    }
+
+    > .container{
+      padding-left: 0;
+      padding-right: 0;
+    }
   }
 
   &-tabcont{
     background-color: $global-clr-white;
     padding: 40px 0;
 
+    @include ReSassResponsive(992){
+      padding: 25px 0;
+    }
+
     .columntitle{
       color: $global-clr-dark-blue;
       font-weight: normal;
+
+      @include ReSassResponsive(576){
+        font-size: 23px;
+      }
+      @include ReSassResponsive(480){
+        font-size: 20px;
+      }
+
       &::before{
         max-width: inherit;
       }
+
     }
   }
 
   &-latesttransactions{
     background-color: $global-clr-light-gray;
     padding: 30px 0;
+
+    @include ReSassResponsive(576){
+      padding: 15px 0;
+    }
   }
 
   &-modallg{

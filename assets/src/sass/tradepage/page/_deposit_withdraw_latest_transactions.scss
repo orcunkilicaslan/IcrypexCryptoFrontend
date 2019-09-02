@@ -6,6 +6,17 @@ $globalSvgIconImgPath : "../../img/global/svg";
     width: 100%;
     border: 1px solid transparentize($global-clr-soft-gray, 0.70);
     padding: 10px 15px;
+
+    @include ReSassResponsive(576){
+      padding: 10px;
+    }
+
+    *[class*="boxtitle"]{
+      @include ReSassResponsive(480){
+        font-size: 17px;
+      }
+    }
+
   }
 
   &-area{}
@@ -54,9 +65,19 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
     tbody td{
       border: none;
-      padding-top: 8px;
-      padding-bottom: 8px;
-      line-height: 0.6;
+
+      @include ReSassResponsive(992){
+        width: auto !important;
+      }
+      @include ReSassResponsive(768){
+        width: 100% !important;
+      }
+
+      &::before{
+        @include ReSassResponsive(768){
+          color: $global-clr-dark-blue;
+        }
+      }
     }
 
     &-status{
@@ -80,11 +101,32 @@ $globalSvgIconImgPath : "../../img/global/svg";
     &-amount{
       width: 10%;
     }
-    &-draw{
+    &-iban-address{
       width: 23%;
     }
     &-code{
       width: 15%;
+    }
+  }
+
+  .latesttransactions-iban-address{
+    display: block;
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+
+    @include ReSassResponsive(992){
+      width: 190px;
+      margin-right: 10px;
+    }
+    @include ReSassResponsive(576){
+      width: 200px;
+    }
+
+    &::before{
+      @include ReSassResponsive(992){
+        content: "";
+      }
     }
   }
 
