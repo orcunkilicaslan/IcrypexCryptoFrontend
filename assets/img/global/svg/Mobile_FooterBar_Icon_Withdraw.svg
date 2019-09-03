@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27">
+  <g id="Mob_Icn_Withdraw" transform="translate(-599 -185)">
+    <path id="Ellipse_Bg" d="M13.5,0A13.5,13.5,0,1,1,0,13.5,13.5,13.5,0,0,1,13.5,0Z" transform="translate(599 185)" fill="#004378" opacity="0"/>
+    <path id="Path" d="M-11040-11855h-2v-4h18v4h-2" transform="translate(11645.5 12052.5)" fill="none" stroke="#fff" stroke-linecap="square" stroke-linejoin="round" stroke-width="1"/>
+    <path id="Path-2" data-name="Path" d="M.808-.192h14" transform="translate(604.692 195.692)" fill="none" stroke="#fff" stroke-linecap="square" stroke-width="1"/>
+    <path id="Path-3" data-name="Path" d="M-13913.5-11805.5v11h10v-11" transform="translate(14521 12001)" fill="none" stroke="#fff" stroke-width="1"/>
+    <path id="Arrow" d="M3.308-.308l-2,2-2-2" transform="translate(611.192 201.808)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1"/>
+    <path id="Arrow-2" data-name="Arrow" d="M3.308-.308l-2,2-2-2" transform="translate(611.192 198.808)" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="1"/>
+  </g>
+</svg>
