@@ -105,28 +105,6 @@
       &-table{
         margin-top: -5px;
         border-bottom: 1px solid transparentize($global-clr-soft-gray, 0.7);
-
-        .btn{
-          padding: 2px 5px;
-        }
-
-        td, th{
-          font-size: 17px;
-          padding-top: 3px;
-          padding-bottom: 3px;
-        }
-
-        thead th{
-          &:last-child{
-            width: 110px;
-          }
-        }
-
-        tbody td{
-          &:last-child{
-            width: 110px;
-          }
-        }
       }
     }
 
