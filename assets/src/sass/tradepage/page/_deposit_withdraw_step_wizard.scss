@@ -40,7 +40,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
         &:last-child{
           margin-right: 0;
-          &::before{display:none;}
+          &::before{display:none !important;}
         }
 
         &-circle{
@@ -159,6 +159,13 @@ $globalSvgIconImgPath : "../../img/global/svg";
               border-bottom:2px solid $global-clr-white;
               border-left:2px solid $global-clr-white;
               @include rotate(-50);
+
+              @include ReSassResponsive(576){
+                width: 20px;
+                height: 10px;
+                top: 10px;
+                left: 7px;
+              }
             }
           }
 
@@ -171,7 +178,12 @@ $globalSvgIconImgPath : "../../img/global/svg";
               background-color:$global-clr-soft-blue;
             }
           }
-          &::after{width: 124px;}
+          &::after{
+            width: 124px;
+            @include ReSassResponsive(576){
+              width: 102px;
+            }
+          }
           &::before{opacity:0;}
         }
 
@@ -221,8 +233,11 @@ $globalSvgIconImgPath : "../../img/global/svg";
       justify-content:space-around;
       margin: 40px 0 20px;
 
+      @include ReSassResponsive(992){
+        margin: 40px 0 0;
+      }
       @include ReSassResponsive(768){
-        margin: 25px 0 10px;
+        margin: 25px 0 -10px;
       }
 
       &-list{
@@ -330,6 +345,10 @@ $globalSvgIconImgPath : "../../img/global/svg";
           @include ReSassResponsive(576){
             font-size: 15px;
             white-space: nowrap;
+
+            span{
+              display: none;
+            }
           }
           @include ReSassResponsive(400){
             font-size: 17px;
@@ -389,10 +408,45 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
         .form-row{
           justify-content: center;
+
+          @include ReSassResponsive(768){
+            flex-direction: row;
+            justify-content: flex-start;
+          }
+
+          > div[class*="col-"]{
+            @include ReSassResponsive(768){
+              width: auto !important;
+              flex: 0 0 calc(100% / 2) !important;
+              max-width: calc(100% / 2) !important;
+              margin: 15px 0;
+
+              &:nth-child(1),
+              &:nth-child(2){
+                margin-top: 0;
+              }
+            }
+          }
         }
       }
       &-tags900{
         max-width: 100%;
+
+        .form-row{
+
+          @include ReSassResponsive(992){
+            flex-direction: row;
+          }
+
+          > div[class*="col-"]{
+            @include ReSassResponsive(992){
+              width: auto;
+              flex-basis: 0;
+              flex-grow: 1;
+              max-width: 100%;
+            }
+          }
+        }
       }
       &-tags700{
         max-width: 700px;
@@ -428,8 +482,8 @@ $globalSvgIconImgPath : "../../img/global/svg";
         padding: 30px 0 0;
         margin-top: 0;
 
-        @include ReSassResponsive(992){
-          padding: 15px 0 0;
+        @include ReSassResponsive(768){
+          padding: 40px 0 0;
         }
       }
 
@@ -596,22 +650,41 @@ $globalSvgIconImgPath : "../../img/global/svg";
         margin: 15px 0;
         margin-bottom: 30px;
         text-align: left;
+        justify-content: center;
+
+        @include ReSassResponsive(576){
+          justify-content: flex-start;
+        }
 
         &-code{
           margin-right: 15px;
           margin-bottom: 0 !important;
+
+          @include ReSassResponsive(576){
+            margin-right: 10px;
+          }
 
           &-svg{
             width: 152px;
             height: 152px;
             padding: 3px;
             border: 1px solid transparentize($global-clr-soft-gray, 0.7);
+
+            @include ReSassResponsive(576){
+              width: 130px;
+              height: 145px;
+              padding: 10px 3px;
+            }
           }
         }
 
         &-form{
           .form-group{
             margin-bottom: 12px !important;
+
+            @include ReSassResponsive(576){
+              width: 100%;
+            }
 
             &:last-child{
               margin-bottom: 0 !important;
@@ -672,6 +745,11 @@ $globalSvgIconImgPath : "../../img/global/svg";
       animation-duration:1s;
       animation-fill-mode:both;
 
+      @include ReSassResponsive(576){
+        width: 70px;
+        height: 70px;
+      }
+
       &.success{
         border-color: $global-clr-green;
       }
@@ -700,6 +778,13 @@ $globalSvgIconImgPath : "../../img/global/svg";
           border-bottom:2px solid $global-clr-green;
           border-left:2px solid $global-clr-green;
           @include rotate(-50);
+
+          @include ReSassResponsive(576){
+            width: 32px;
+            height: 18px;
+            top: 12px;
+            left: 10px;
+          }
         }
 
       }

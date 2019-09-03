@@ -16,6 +16,9 @@
       &dark{
         background-color: $global-clr-dark-blue !important;
       }
+      &btn{
+        background-color: $global-clr-btn-blue !important;
+      }
     }
     &red{
       background-color: $global-clr-red !important;
@@ -43,6 +46,9 @@
       color: $global-clr-soft-blue !important;
       &dark{
         color: $global-clr-dark-blue !important;
+      }
+      &btn{
+        color: $global-clr-btn-blue !important;
       }
     }
     &red{

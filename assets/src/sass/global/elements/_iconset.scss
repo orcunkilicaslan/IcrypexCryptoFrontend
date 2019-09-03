@@ -246,6 +246,9 @@ $globalSvgIconImgPath : "../../img/global/svg";
     &-currencyiconxrp{
       background-image: url(#{$globalSvgIconImgPath}/Currency_Icon_Xrp.svg);
     }
+    &-mobilefooterbarwithdraw{
+      background-image: url(#{$globalSvgIconImgPath}/Mobile_FooterBar_Icon_Withdraw.svg);
+    }
   }
 }
 
