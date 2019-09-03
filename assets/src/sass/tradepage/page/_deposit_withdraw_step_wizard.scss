@@ -330,6 +330,10 @@ $globalSvgIconImgPath : "../../img/global/svg";
           @include ReSassResponsive(576){
             font-size: 15px;
             white-space: nowrap;
+
+            span{
+              display: none;
+            }
           }
           @include ReSassResponsive(400){
             font-size: 17px;
