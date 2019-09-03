@@ -100,6 +100,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
               position:relative;
               padding-left:48% !important;
               white-space:inherit !important;
+              font-weight: 500;
 
               &::before{
                 content: attr(data-title);
@@ -112,6 +113,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
                 height:100%;
                 white-space:nowrap;
                 overflow: hidden;
+                font-weight: normal;
               }
 
               &.resp-td-p-0{
