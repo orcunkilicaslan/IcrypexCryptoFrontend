@@ -244,6 +244,10 @@
       margin-top: 1px;
       @include transition(color, 0.3s, ease-in-out);
 
+      @include ReSassResponsive(576){
+        font-size: 15px;
+      }
+
       &:hover{
         color: transparentize($global-clr-soft-blue, 0.3);
       }
