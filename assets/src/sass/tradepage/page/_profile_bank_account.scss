@@ -48,16 +48,26 @@
 
       tbody{
 
-        td{
-          padding-top: 2px;
-          padding-bottom: 2px;
-          text-transform: uppercase;
-        }
+        tr{
 
-        tr:last-child{
+          &:last-child{
+            td{
+              border-bottom-width: 1px;
+              border-bottom-style: solid;
+            }
+          }
+
           td{
-            border-bottom-width: 1px;
-            border-bottom-style: solid;
+            padding-top: 2px;
+            padding-bottom: 2px;
+            text-transform: uppercase;
+
+            @include ReSassResponsive(768){
+              padding-left: 42% !important;
+            }
+            @include ReSassResponsive(576){
+              padding-left: 105px !important;
+            }
           }
         }
       }

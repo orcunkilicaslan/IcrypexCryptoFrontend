@@ -69,6 +69,48 @@
           padding-top: 10px !important;
           padding-bottom: 10px !important;
 
+          &.notificationcheckbox{
+            @include ReSassResponsive(768){
+              background-color: $global-clr-light-gray;
+              padding-left: 35px !important;
+              width: 35% !important;
+
+              &::before{
+                @include ReSassResponsive(480){
+                  padding: 10px !important;
+                }
+              }
+            }
+          }
+
+          &.notificationdate{
+            @include ReSassResponsive(768){
+              background-color: $global-clr-light-gray;
+              width: 65% !important;
+              padding-left: 0 !important;
+              overflow: hidden;
+
+              &:before{
+                width: 100% !important;
+                text-align: right;
+
+                @include ReSassResponsive(480){
+                  padding: 10px !important;
+                }
+              }
+
+              span{
+                text-indent: -9999px;
+              }
+            }
+          }
+
+          &.notificationhour{
+            @include ReSassResponsive(768){
+              display: none;
+            }
+          }
+
           &.notificationtd{
             @include ReSassResponsive(768){
               padding-left: 10px !important;
@@ -97,14 +139,14 @@
           @include ReSassResponsive(768){
             .custom-control{
               &.width20px{
-                min-height: 20px;
+                min-height: 18px;
                 top: 0 !important;
 
                 .custom-control-label{
                   &::before,
                   &::after{
-                    width: 20px;
-                    height: 20px;
+                    width: 18px;
+                    height: 18px;
                   }
                 }
 
