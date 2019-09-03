@@ -7,7 +7,7 @@
       padding: 25px 0 50px;
     }
     @include ReSassResponsive(992){
-      padding: 20px 0 40px;
+      padding: 20px 0 20px;
     }
     @include ReSassResponsive(576){
       padding-left: 15px !important;
@@ -227,6 +227,10 @@
         left: -1px;
         top: calc(50% - 2px);
       }
+    }
+
+    &-bottombtnform{
+      margin-bottom: 20px;
     }
   }
 
