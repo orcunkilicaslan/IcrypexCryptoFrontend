@@ -246,8 +246,20 @@ $globalSvgIconImgPath : "../../img/global/svg";
     &-currencyiconxrp{
       background-image: url(#{$globalSvgIconImgPath}/Currency_Icon_Xrp.svg);
     }
+    &-mobilefooterbartrader{
+      background-image: url(#{$globalSvgIconImgPath}/Mobile_FooterBar_Icon_Trader.svg);
+    }
+    &-mobilefooterbareasybuy{
+      background-image: url(#{$globalSvgIconImgPath}/Mobile_FooterBar_Icon_Easy_Buy.svg);
+    }
+    &-mobilefooterbardeposit{
+      background-image: url(#{$globalSvgIconImgPath}/Mobile_FooterBar_Icon_Deposit.svg);
+    }
     &-mobilefooterbarwithdraw{
       background-image: url(#{$globalSvgIconImgPath}/Mobile_FooterBar_Icon_Withdraw.svg);
+    }
+    &-mobilefooterbaraccount{
+      background-image: url(#{$globalSvgIconImgPath}/Mobile_FooterBar_Icon_Account.svg);
     }
   }
 }

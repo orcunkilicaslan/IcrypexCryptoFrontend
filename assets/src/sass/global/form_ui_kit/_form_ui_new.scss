@@ -244,7 +244,7 @@
       margin-top: 1px;
       @include transition(color, 0.3s, ease-in-out);
 
-      @include ReSassResponsive(576){
+      @include ReSassResponsive(992){
         font-size: 15px;
       }
 

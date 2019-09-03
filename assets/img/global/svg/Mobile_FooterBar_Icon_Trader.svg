@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27">
+  <g id="Mob_Icn_Trader" transform="translate(-599 -185)">
+    <path id="Ellipse_Bg" d="M13.5,0A13.5,13.5,0,1,1,0,13.5,13.5,13.5,0,0,1,13.5,0Z" transform="translate(599 185)" fill="#758ca3" opacity="0"/>
+    <g id="Path" transform="translate(604 195)" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="1">
+      <rect width="5" height="9" stroke="none"/>
+      <rect x="0.5" y="0.5" width="4" height="8" fill="none"/>
+    </g>
+    <g id="Path-2" data-name="Path" transform="translate(616 194)" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="1">
+      <rect width="5" height="7" stroke="none"/>
+      <rect x="0.5" y="0.5" width="4" height="6" fill="none"/>
+    </g>
+    <g id="Path-3" data-name="Path" transform="translate(610 193)" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="1">
+      <rect width="5" height="10" stroke="none"/>
+      <rect x="0.5" y="0.5" width="4" height="9" fill="none"/>
+    </g>
+    <line id="Line" y1="4" transform="translate(618.5 200.5)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="1"/>
+    <line id="Line-2" data-name="Line" y1="3" transform="translate(618.5 191.5)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="1"/>
+    <line id="Line-3" data-name="Line" y1="4" transform="translate(612.5 202.5)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="1"/>
+    <line id="Line-4" data-name="Line" y1="4" transform="translate(612.5 189.5)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="1"/>
+    <line id="Line-5" data-name="Line" y1="2" transform="translate(606.5 203.5)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="1"/>
+    <line id="Line-6" data-name="Line" y1="3" transform="translate(606.5 192.5)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="1"/>
+  </g>
+</svg>

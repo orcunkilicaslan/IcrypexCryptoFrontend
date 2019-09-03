@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27">
+  <g id="Mob_Icn_Easy_Buy" transform="translate(-599 -185)">
+    <path id="Ellipse_Bg" d="M13.5,0A13.5,13.5,0,1,1,0,13.5,13.5,13.5,0,0,1,13.5,0Z" transform="translate(599 185)" fill="#758ca3" opacity="0"/>
+    <path id="Path" d="M605.5,195.5h6v-3l6,5-6,4v-3h-6" transform="translate(1 -1)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+    <path id="Path-2" data-name="Path" d="M1201.409,2835.909l-3,2,6,4v-3h6" transform="translate(-590.909 -2636.409)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+    <path id="Path-3" data-name="Path" d="M1210.409,2834.909h-2" transform="translate(-590.909 -2635.409)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+  </g>
+</svg>
