@@ -183,6 +183,9 @@ $globalSvgIconImgPath : "../../img/global/svg";
             @include ReSassResponsive(576){
               width: 102px;
             }
+            @include ReSassResponsive(480){
+              width: 74px;
+            }
           }
           &::before{opacity:0;}
         }
@@ -209,7 +212,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
             top: 35px;
           }
           @include ReSassResponsive(480){
-            width: 75px;
+            width: 74px;
           }
           @include ReSassResponsive(400){
             width: 35px;
@@ -238,6 +241,9 @@ $globalSvgIconImgPath : "../../img/global/svg";
       }
       @include ReSassResponsive(768){
         margin: 25px 0 -10px;
+      }
+      @include ReSassResponsive(480){
+        margin: 15px 0 -20px;
       }
 
       &-list{
@@ -280,11 +286,13 @@ $globalSvgIconImgPath : "../../img/global/svg";
             margin: 0 5px;
             min-height: 170px;
           }
+          @include ReSassResponsive(480){
+            min-height: 167px;
+          }
           @include ReSassResponsive(400){
             flex: 0 0 calc(100% / 1);
             max-width: calc(100% / 1);
             margin: 5px 0;
-            min-height: 170px;
           }
 
           &:first-child{
@@ -380,6 +388,10 @@ $globalSvgIconImgPath : "../../img/global/svg";
             padding-top: 3px!important;
             padding-bottom: 3px!important;
           }
+          @include ReSassResponsive(480){
+            height: 33px!important;
+            font-size: 16px;
+          }
         }
       }
     }
@@ -392,6 +404,10 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
       &-wrapper{
         margin: 35px 0;
+
+        @include ReSassResponsive(480){
+          margin: 25px 0;
+        }
       }
 
       &-tags700,
@@ -564,6 +580,11 @@ $globalSvgIconImgPath : "../../img/global/svg";
         margin-bottom: 30px;
         font-size: 20px;
         font-weight: normal;
+
+        @include ReSassResponsive(576){
+          font-size: 18px;
+          margin-bottom: 20px;
+        }
       }
     }
 
@@ -624,17 +645,34 @@ $globalSvgIconImgPath : "../../img/global/svg";
         li{
           position: relative;
           padding-left: 15px;
+          line-height: 1.2;
+          margin-bottom: 5px;
+
+          @include ReSassResponsive(480){
+            padding-left: 13px;
+            line-height: 1.1;
+          }
+
+          &:last-child{
+            margin-bottom: 0;
+          }
 
           &::before{
             content:"";
             position:absolute;
             width: 9px;
             height: 9px;
-            top: 9px;
+            top: 7px;
             left: 0;
             border-top:2px solid $global-clr-soft-blue;
             border-right:2px solid $global-clr-soft-blue;
             @include rotate(45);
+
+            @include ReSassResponsive(480){
+              width: 8px;
+              height: 8px;
+              top: 5px;
+            }
           }
         }
 
@@ -663,6 +701,9 @@ $globalSvgIconImgPath : "../../img/global/svg";
         @include ReSassResponsive(576){
           justify-content: flex-start;
         }
+        @include ReSassResponsive(480){
+          flex-direction: column;
+        }
 
         &-code{
           margin-right: 15px;
@@ -670,6 +711,10 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
           @include ReSassResponsive(576){
             margin-right: 10px;
+          }
+          @include ReSassResponsive(480){
+            margin-right: 0;
+            margin-bottom: 10px !important;
           }
 
           &-svg{
@@ -682,6 +727,11 @@ $globalSvgIconImgPath : "../../img/global/svg";
               width: 130px;
               height: 145px;
               padding: 10px 3px;
+            }
+            @include ReSassResponsive(480){
+              width: 144px;
+              height: 144px;
+              padding: 3px;
             }
           }
         }

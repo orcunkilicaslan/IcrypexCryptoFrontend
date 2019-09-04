@@ -72,6 +72,9 @@
     @include ReSassResponsive(992){
       padding: 25px 0;
     }
+    @include ReSassResponsive(480){
+      padding: 20px 0;
+    }
 
     .columntitle{
       color: $global-clr-dark-blue;
