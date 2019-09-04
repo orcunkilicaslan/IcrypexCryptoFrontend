@@ -29,6 +29,45 @@ jQuery(function($) {
 });
 /* Responsive Tradepage Profile Menu Dropdown */
 
+/* Responsive Tradepage Deposit-Withdraw Latest Transactions Owl Carousel */
+$(window).on("load resize",function(e){
+    if($(window).width() <= 767){
+        $(document).ready(function() {
+            $('#latesttransactionsowl > tbody > tr').addClass("item");
+            $('#latesttransactionsowl > tbody').addClass("owl-carousel owl-theme");
+            $('#latesttransactionsowl > tbody').owlCarousel({
+                loop:false,
+                nav:false,
+                dots:false,
+                autoplay:false,
+                autoplayTimeout:3000,
+                autoplayHoverPause:true,
+                items:5,
+                margin:10,
+                //stagePadding: 20,
+                autoWidth:false,
+                animateIn: 'slideInRight',
+                animateOut: 'slideOutLeft',
+                responsiveClass:true,
+                responsive:{
+                    0:{
+                        items:1,
+                        loop:false,
+                        autoplay:false,
+                        nav:true
+                    }
+                }
+            });
+        });
+    }else{
+        $(document).ready(function() {
+            $('#latesttransactionsowl > tbody').removeClass("owl-carousel owl-theme owl-loaded owl-drag");
+            $('#latesttransactionsowl > tbody > tr').removeClass("item");
+        });
+    }
+});
+/* Responsive Tradepage Deposit-Withdraw Latest Transactions Owl Carousel */
+
 /* Loading Info */
 // console.log("Tradepage App Responsive Javascript Loading Successful");
 /* Loading Info */
