@@ -12,7 +12,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
     }
 
     *[class*="boxtitle"]{
-      @include ReSassResponsive(480){
+      @include ReSassResponsive(768){
         font-size: 17px;
       }
     }
@@ -45,37 +45,46 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
   &-table{
 
-    thead th{
-      &:last-child{
-        width: 20%;
+    thead{
+      tr{
+        th{
+          &:last-child{
+            width: 20%;
+          }
+        }
       }
     }
 
-    tbody tr{
-      @include transition(all, 0.2s, ease-in-out);
-    }
+    tbody{
+      tr{
+        @include transition(all, 0.2s, ease-in-out);
 
-    tbody tr:hover{
-      background-color: darken($global-clr-light-gray, 5%);
-    }
+        &:hover{
+          background-color: darken($global-clr-light-gray, 5%);
+        }
 
-    tbody tr:first-child td{
-      padding-top: 17px;
-    }
+        &:first-child{
+          td{
+            padding-top: 17px;
+          }
+        }
 
-    tbody td{
-      border: none;
+        td{
+          border: none;
 
-      @include ReSassResponsive(992){
-        width: auto !important;
-      }
-      @include ReSassResponsive(768){
-        width: 100% !important;
-      }
+          @include ReSassResponsive(992){
+            width: auto !important;
+          }
+          @include ReSassResponsive(768){
+            width: 100% !important;
+            font-size: 15px!important;
+          }
 
-      &::before{
-        @include ReSassResponsive(768){
-          color: $global-clr-dark-blue;
+          &::before{
+            @include ReSassResponsive(768){
+              color: $global-clr-dark-blue;
+            }
+          }
         }
       }
     }
