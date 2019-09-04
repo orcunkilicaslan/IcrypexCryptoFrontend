@@ -4,6 +4,10 @@
   line-height: 1.2;
   $alertclassname: &;
 
+  @include ReSassResponsive(400){
+    margin-bottom: 10px;
+  }
+
   &:last-child{
     //margin-bottom: 0;
   }
@@ -115,6 +119,10 @@
 
   p{
     font-size: 17px;
+
+    @include ReSassResponsive(400){
+      font-size: 15px;
+    }
   }
 
   &-heading{

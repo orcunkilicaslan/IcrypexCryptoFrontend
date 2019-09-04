@@ -91,6 +91,10 @@
         padding: 15px;
         padding-bottom: 0;
 
+        @include ReSassResponsive(480){
+          padding: 10px;
+        }
+
         .boxcolumn-boxtitle{
           margin-bottom: 15px;
         }
@@ -100,6 +104,11 @@
         background-color: $global-clr-light-gray;
         padding: 15px;
         margin: 15px 3px 3px;
+
+        @include ReSassResponsive(480){
+          padding: 5px;
+          margin-top: 5px;
+        }
       }
 
       &-table{
