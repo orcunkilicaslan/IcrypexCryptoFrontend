@@ -19,11 +19,19 @@
       flex-direction: column;
       height: 100%;
 
+      @include ReSassResponsive(992){
+        display: block !important;
+      }
+
       &-column{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         height: 100%;
+
+        @include ReSassResponsive(992){
+          display: block !important;
+        }
 
         &-top{}
 
@@ -34,6 +42,10 @@
           height: 100%;
           padding-top: 40px;
           padding-bottom: 40px;
+
+          @include ReSassResponsive(992){
+            display: block !important;
+          }
 
           @include ReSassResponsive(576){
             padding-left: 15px !important;
