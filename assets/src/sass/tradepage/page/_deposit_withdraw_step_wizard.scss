@@ -246,7 +246,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
         margin: 25px 0 -10px;
       }
       @include ReSassResponsive(480){
-        margin: 15px 0 -20px;
+        margin: 15px 0 -10px;
       }
       @include ReSassResponsive(400){
         margin: 15px 0 0;
@@ -522,6 +522,9 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
         @include ReSassResponsive(768){
           padding: 40px 0 0;
+        }
+        @include ReSassResponsive(480){
+          padding: 30px 0 0;
         }
         @include ReSassResponsive(400){
           padding: 20px 0 0;

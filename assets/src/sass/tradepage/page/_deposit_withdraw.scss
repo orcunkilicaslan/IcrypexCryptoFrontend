@@ -122,6 +122,10 @@
         padding-top: 20px;
         align-items: flex-start !important;
       }
+      @include ReSassResponsive(480){
+        max-width: calc(100% - 20px);
+        padding-top: 10px;
+      }
     }
 
     .form-row{

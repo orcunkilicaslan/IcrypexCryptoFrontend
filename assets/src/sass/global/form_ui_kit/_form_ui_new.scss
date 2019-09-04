@@ -254,6 +254,7 @@
 
       @include ReSassResponsive(992){
         font-size: 15px;
+        white-space: nowrap;
       }
 
       &:hover{
