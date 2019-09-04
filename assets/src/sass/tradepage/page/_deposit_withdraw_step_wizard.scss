@@ -412,7 +412,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
         margin: 35px 0;
 
         @include ReSassResponsive(480){
-          margin: 25px 0;
+          margin: 15px 0 25px;
         }
         @include ReSassResponsive(400){
           margin: 15px 0;
@@ -629,10 +629,14 @@ $globalSvgIconImgPath : "../../img/global/svg";
       text-align: center;
       margin-top: 15px;
 
+      @include ReSassResponsive(992){
+        display: block !important;
+      }
+
       &-icon{
         display: block;
-        margin: 0 auto;
-        margin-bottom: 10px;
+        width: 40px;
+        margin: 0 auto 10px;
 
         i[class*="wizardiconinformation"]{
           width: 40px;
