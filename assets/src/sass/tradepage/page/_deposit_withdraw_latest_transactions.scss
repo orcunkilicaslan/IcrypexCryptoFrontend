@@ -56,8 +56,18 @@ $globalSvgIconImgPath : "../../img/global/svg";
     }
 
     tbody{
+
+      @include ReSassResponsive(768){
+        margin: 0;
+      }
+
       tr{
         @include transition(all, 0.2s, ease-in-out);
+
+        @include ReSassResponsive(768){
+          width: calc(100% - 0) !important;
+          margin: 5px 0 !important;
+        }
 
         &:hover{
           background-color: darken($global-clr-light-gray, 5%);
