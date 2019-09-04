@@ -179,9 +179,17 @@
         .form-control,
         .input-group-text{
           font-size: 20px;
+
+          @include ReSassResponsive(576){
+            font-size: 17px;
+          }
         }
         div.form-control{
           padding: 4px 10px;
+
+          @include ReSassResponsive(576){
+            padding: 7px 10px;
+          }
         }
       }
     }

@@ -78,9 +78,6 @@
       font-weight: normal;
 
       @include ReSassResponsive(576){
-        font-size: 23px;
-      }
-      @include ReSassResponsive(480){
         font-size: 20px;
       }
 
@@ -102,9 +99,26 @@
 
   &-modallg{
 
+    .modal{
+      &.show{
+        @include ReSassResponsive(768){
+          align-items: flex-start !important;
+        }
+      }
+    }
+
+
     .modal-dialog{
       width: 800px;
       max-width: 800px;
+
+      @include ReSassResponsive(768){
+        width: 100%;
+        max-width: calc(100% - 40px);
+        min-height: auto;
+        padding-top: 20px;
+        align-items: flex-start !important;
+      }
     }
 
     .form-row{

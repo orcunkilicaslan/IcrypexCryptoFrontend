@@ -590,13 +590,17 @@ $globalSvgIconImgPath : "../../img/global/svg";
         margin-bottom: 10px;
         font-size: 20px;
         font-weight: normal;
+
+        @include ReSassResponsive(576){
+          font-size: 18px;
+        }
       }
       &-desc{
         color: $global-clr-dark-blue;
         font-size: 17px;
         line-height: 1.18;
 
-        @include ReSassResponsive(480){
+        @include ReSassResponsive(576){
           font-size: 15px;
         }
 
@@ -612,6 +616,10 @@ $globalSvgIconImgPath : "../../img/global/svg";
         line-height: 1.5;
         text-align: left;
         margin: auto;
+
+        @include ReSassResponsive(576){
+          font-size: 15px;
+        }
 
         li{
           position: relative;
