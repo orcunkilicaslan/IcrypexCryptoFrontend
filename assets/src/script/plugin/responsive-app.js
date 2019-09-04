@@ -8,7 +8,7 @@ jQuery(function($) {
         jQuery(document).ready(function() {
             var duration = 300;
             jQuery(window).scroll(function() {
-                if (jQuery(this).scrollTop() > 400) {
+                if (jQuery(this).scrollTop() > 250) {
                     jQuery('.bottomtotopbutton').fadeIn(duration);
                 } else {
                     jQuery('.bottomtotopbutton').fadeOut(duration);
