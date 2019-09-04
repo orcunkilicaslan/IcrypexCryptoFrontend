@@ -186,6 +186,9 @@ $globalSvgIconImgPath : "../../img/global/svg";
             @include ReSassResponsive(480){
               width: 74px;
             }
+            @include ReSassResponsive(400){
+              width: 35px;
+            }
           }
           &::before{opacity:0;}
         }
@@ -244,6 +247,9 @@ $globalSvgIconImgPath : "../../img/global/svg";
       }
       @include ReSassResponsive(480){
         margin: 15px 0 -20px;
+      }
+      @include ReSassResponsive(400){
+        margin: 15px 0 0;
       }
 
       &-list{
@@ -408,6 +414,9 @@ $globalSvgIconImgPath : "../../img/global/svg";
         @include ReSassResponsive(480){
           margin: 25px 0;
         }
+        @include ReSassResponsive(400){
+          margin: 15px 0;
+        }
       }
 
       &-tags700,
@@ -442,6 +451,16 @@ $globalSvgIconImgPath : "../../img/global/svg";
                 margin-top: 0;
               }
             }
+            @include ReSassResponsive(400){
+              width: auto !important;
+              flex: 0 0 calc(100% / 1) !important;
+              max-width: calc(100% / 1) !important;
+              margin: 15px 0 !important;
+
+              &:nth-child(1){
+                margin-top: 0 !important;
+              }
+            }
           }
         }
       }
@@ -452,6 +471,9 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
           @include ReSassResponsive(992){
             flex-direction: row;
+          }
+          @include ReSassResponsive(400){
+            flex-direction: column;
           }
 
           > div[class*="col-"]{
@@ -500,6 +522,15 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
         @include ReSassResponsive(768){
           padding: 40px 0 0;
+        }
+        @include ReSassResponsive(400){
+          padding: 20px 0 0;
+        }
+
+        &.pt-4{
+          @include ReSassResponsive(400){
+            padding-top: 15px !important;
+          }
         }
       }
 
@@ -693,8 +724,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
       }
 
       &-qrcode{
-        margin: 15px 0;
-        margin-bottom: 30px;
+        margin: 15px 0 30px;
         text-align: left;
         justify-content: center;
 
@@ -703,6 +733,9 @@ $globalSvgIconImgPath : "../../img/global/svg";
         }
         @include ReSassResponsive(480){
           flex-direction: column;
+        }
+        @include ReSassResponsive(400){
+          margin: 5px 0 10px;
         }
 
         &-code{
@@ -807,6 +840,10 @@ $globalSvgIconImgPath : "../../img/global/svg";
         width: 70px;
         height: 70px;
       }
+      @include ReSassResponsive(400){
+        width: 50px;
+        height: 50px;
+      }
 
       &.success{
         border-color: $global-clr-green;
@@ -843,6 +880,12 @@ $globalSvgIconImgPath : "../../img/global/svg";
             top: 12px;
             left: 10px;
           }
+          @include ReSassResponsive(400){
+            width: 22px;
+            height: 11px;
+            top: 18px;
+            left: 15px;
+          }
         }
 
       }
@@ -860,6 +903,11 @@ $globalSvgIconImgPath : "../../img/global/svg";
           top: 0;
           left: 50%;
           background-color: $global-clr-red;
+
+          @include ReSassResponsive(400){
+            height: 30px;
+            top: 10px;
+          }
         }
 
         &:before{
