@@ -416,11 +416,25 @@ $globalSvgIconImgPath : "../../img/global/svg";
       &-wrapper{
         margin: 35px 0;
 
+        @include ReSassResponsive(768){
+          margin: 30px 0 35px;
+        }
         @include ReSassResponsive(480){
           margin: 15px 0 25px;
         }
         @include ReSassResponsive(400){
-          margin: 15px 0;
+          margin: 13px 0;
+        }
+
+        > div[class*="text-center"]{
+          h3{
+            @include ReSassResponsive(480){
+              padding-top: 5px !important;
+            }
+            @include ReSassResponsive(400){
+              padding-top: 0 !important;
+            }
+          }
         }
       }
 
@@ -466,6 +480,19 @@ $globalSvgIconImgPath : "../../img/global/svg";
                 margin-top: 0 !important;
               }
             }
+
+            &.mobile768width100100{
+              @include ReSassResponsive(768){
+                flex: 0 0 calc(100% / 1) !important;
+                max-width: calc(100% / 1) !important;
+              }
+            }
+
+            &.mobile768mt15{
+              @include ReSassResponsive(768){
+                margin-top: 15px !important;
+              }
+            }
           }
         }
       }
@@ -495,28 +522,57 @@ $globalSvgIconImgPath : "../../img/global/svg";
         max-width: 700px;
       }
 
-      div.rightarrows{
-        width: 44px;
-        height: 40px;
+      &-deposit-form-to{
         display: flex;
-        justify-content: center;
         align-items: center;
-        margin: 0 !important;
+        justify-content: center;
 
-        i.rightarrows{
-          position: relative;
-          width: 8px;
+        @include ReSassResponsive(768){
+          display: block;
+        }
 
-          &::before{
-            content:"";
-            position:absolute;
-            width: 9px;
-            height: 9px;
-            top: -4px;
-            left: -3px;
-            border-top:2px solid $global-clr-soft-blue;
-            border-right:2px solid $global-clr-soft-blue;
-            @include rotate(45);
+        div.rightarrows{
+          width: 44px;
+          height: 40px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: 0 !important;
+
+          @include ReSassResponsive(768){
+            background-color: $global-clr-light-gray;
+            width: 30px;
+            height: 30px;
+            margin: 3px auto !important;
+            @include border-radius(50%);
+            @include rotate(90);
+          }
+
+          i.rightarrows{
+            position: relative;
+            width: 8px;
+
+            @include ReSassResponsive(768){
+              width: 5px;
+              @include scale(0.6);
+            }
+
+            &::before{
+              content:"";
+              position:absolute;
+              width: 9px;
+              height: 9px;
+              top: -4px;
+              left: -3px;
+              border-top:2px solid $global-clr-soft-blue;
+              border-right:2px solid $global-clr-soft-blue;
+              @include rotate(45);
+
+              @include ReSassResponsive(768){
+                left: -5px;
+                top: -5px;
+              }
+            }
           }
         }
       }
@@ -624,6 +680,11 @@ $globalSvgIconImgPath : "../../img/global/svg";
           font-size: 18px;
           margin-bottom: 20px;
         }
+        @include ReSassResponsive(480){
+          br.d-none{
+            display: block !important;
+          }
+        }
       }
     }
 
@@ -657,6 +718,11 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
         @include ReSassResponsive(576){
           font-size: 18px;
+        }
+        @include ReSassResponsive(480){
+          br.d-none{
+            display: block !important;
+          }
         }
       }
       &-desc{
@@ -758,8 +824,9 @@ $globalSvgIconImgPath : "../../img/global/svg";
             margin-right: 10px;
           }
           @include ReSassResponsive(480){
-            margin-right: 0;
-            margin-bottom: 10px !important;
+            width: 144px;
+            margin: 0 auto 10px !important;
+            text-align: center;
           }
 
           &-svg{
@@ -851,11 +918,14 @@ $globalSvgIconImgPath : "../../img/global/svg";
       @include ReSassResponsive(576){
         width: 70px;
         height: 70px;
-        margin-bottom: -5px;
+      }
+      @include ReSassResponsive(480){
+        margin-bottom: -10px;
       }
       @include ReSassResponsive(400){
         width: 50px;
         height: 50px;
+        margin-bottom: -6px;
       }
 
       &.success{
