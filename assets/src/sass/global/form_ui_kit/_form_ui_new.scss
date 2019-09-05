@@ -33,6 +33,10 @@
   .form-group{
     margin-bottom: 10px;
 
+    @include ReSassResponsive(768){
+      line-height: 1;
+    }
+
     label{}
 
     &.widthpercent50pr8{
@@ -238,6 +242,10 @@
       font-size: 15px;
       margin-top: 1px;
 
+      @include ReSassResponsive(992){
+        margin-top: 3px;
+      }
+
       &.infotextdarkblue{
         color: $global-clr-dark-blue;
       }
@@ -254,6 +262,7 @@
 
       @include ReSassResponsive(992){
         font-size: 15px;
+        margin-top: 3px;
         white-space: nowrap;
       }
 
@@ -588,9 +597,12 @@
       z-index: 0;
       @include transition(all, 0.3s, ease-in-out);
 
+      @include ReSassResponsive(992){
+        top: 2px;
+      }
+
       @include ReSassResponsive(480){
         font-size: 15px;
-        top: 4px;
       }
 
       &.errormsgtopcenter{
@@ -758,8 +770,11 @@
   .maxwidth100100{width: 100%;}
   .labelwidth100100{width: 100%;}
 
+  @include ReSassResponsive(768){
+    .mobile768width100100{width: 100% !important; max-width: 100% !important; flex-basis: 0 !important; flex-grow: 1 !important;}
+  }
   @include ReSassResponsive(480){
-    .mobile480width100100{max-width: 100%; flex-basis: 0; flex-grow: 1;}
+    .mobile480width100100{width: 100% !important; max-width: 100% !important; flex-basis: 0 !important; flex-grow: 1 !important;}
   }
 }
 /* Form UI New */

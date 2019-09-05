@@ -46,8 +46,8 @@ $(window).on("load resize",function(e){
                 margin:10,
                 //stagePadding: 20,
                 autoWidth:false,
-                animateIn: 'slideInRight',
-                animateOut: 'slideOutLeft',
+                animateIn: 'fadeInDown',
+                animateOut: 'fadeOutDown',
                 responsiveClass:true,
                 responsive:{
                     0:{
