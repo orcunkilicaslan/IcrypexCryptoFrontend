@@ -33,14 +33,14 @@ jQuery(function($) {
 $(window).on("load resize",function(e){
     if($(window).width() <= 767){
         $(document).ready(function() {
-            $('#latesttransactionsowl > tbody > tr').addClass("item");
-            $('#latesttransactionsowl > tbody').addClass("owl-carousel owl-theme");
-            $('#latesttransactionsowl > tbody').owlCarousel({
+            $('#latesttransactionsowltable > tbody > tr').addClass("item");
+            $('#latesttransactionsowltable > tbody').addClass("latesttransactions-owl owl-carousel owl-theme");
+            $('#latesttransactionsowltable > tbody').owlCarousel({
                 loop:false,
                 nav:false,
                 dots:false,
                 autoplay:false,
-                autoplayTimeout:3000,
+                autoplayTimeout:5000,
                 autoplayHoverPause:true,
                 items:5,
                 margin:10,
@@ -54,15 +54,18 @@ $(window).on("load resize",function(e){
                         items:1,
                         loop:false,
                         autoplay:false,
-                        nav:true
+                        nav:true,
+                        dots:true,
                     }
                 }
             });
         });
     }else{
         $(document).ready(function() {
-            $('#latesttransactionsowl > tbody').removeClass("owl-carousel owl-theme owl-loaded owl-drag");
-            $('#latesttransactionsowl > tbody > tr').removeClass("item");
+            $('#latesttransactionsowltable > tbody').removeClass("latesttransactions-owl owl-carousel owl-theme owl-loaded owl-drag");
+            $('#latesttransactionsowltable .owl-stage-outer').remove();
+            $('#latesttransactionsowltable .owl-nav').remove();
+            $('#latesttransactionsowltable .owl-dots').remove();
         });
     }
 });
