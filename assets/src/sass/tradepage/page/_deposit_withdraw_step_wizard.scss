@@ -339,6 +339,11 @@ $globalSvgIconImgPath : "../../img/global/svg";
           i[class*="papara"]{
             width: 100px;
             height: 26px;
+
+            @include ReSassResponsive(576){
+              position: relative;
+              top: 9px;
+            }
           }
           i[class*="wallet"]{
             width: 52px;
@@ -846,6 +851,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
       @include ReSassResponsive(576){
         width: 70px;
         height: 70px;
+        margin-bottom: -5px;
       }
       @include ReSassResponsive(400){
         width: 50px;
