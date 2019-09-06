@@ -770,6 +770,9 @@
   .maxwidth100100{width: 100%;}
   .labelwidth100100{width: 100%;}
 
+  @include ReSassResponsive(1200){
+    .mobile1200width100100{width: 100% !important; max-width: 100% !important; flex: 0 0 100%;}
+  }
   @include ReSassResponsive(768){
     .mobile768width100100{width: 100% !important; max-width: 100% !important; flex-basis: 0 !important; flex-grow: 1 !important;}
   }

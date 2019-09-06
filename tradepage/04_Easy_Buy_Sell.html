@@ -423,13 +423,35 @@
 
     <!-- Order -->
     <div class="easybuysell-wrapper maincont-right col-10">
-    <div class="easybuysell-orders">
+
+    <!-- Mobile Tabs -->
+    <div class="easybuysell-mobiletabs sitetabs">
+        <a class="easybuysell-mobiletabs-btn responsive-dropdown-btn btn" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" data-value="BTC">
+            <i class="icon-svg icon-svg-titleiconbtc"></i>
+            <span class="selecttext"><span class="selectcointext">BITCOIN</span> [<span class="selectcoinicon">BTC</span>]</span>
+        </a>
+        <ul class="easybuysell-mobiletabs-menu dropdown-menu nav responsive-dropdown-menu">
+            <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#ordertabbtc" data-value="BTC"><i class="icon-svg icon-svg-titleiconbtc"></i> <span class="selecttext"><span class="selectcointext">BITCOIN</span> [<span class="selectcoinicon">BTC</span>]</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#ordertabeth" data-value="ETH"><i class="icon-svg icon-svg-titleiconeth"></i> <span class="selecttext"><span class="selectcointext">ETHEREUM</span> [<span class="selectcoinicon">ETH</span>]</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#ordertabxrp" data-value="XRP"><i class="icon-svg icon-svg-titleiconxrp"></i> <span class="selecttext"><span class="selectcointext">RIPPLE</span> [<span class="selectcoinicon">XRP</span>]</span></a>
+            </li>
+        </ul>
+    </div>
+    <!-- Mobile Tabs -->
+
+    <!-- Tab panes -->
+    <div class="easybuysell-orders easybuysell-mobiletabs-content tab-content">
 
         <!-- BTC -->
-        <div class="order-orders-list">
+        <div class="order-orders-list tab-pane fade in active show" id="ordertabbtc">
             <div class="boxcolumn-headtitle">
                 <h3 class="boxcolumn-headtitle-title"><i class="icon-svg icon-svg-titleiconbtc"></i> BITCOIN [BTC]</h3>
-                <span class="boxcolumn-headtitle-wallet">GÜNCEL 21.750,00 TRY</span>
+                <span class="boxcolumn-headtitle-wallet">GÜNCEL 21.751,00 TRY</span>
             </div>
             <div class="order-orders-box">
                 <!-- Alert -->
@@ -501,7 +523,7 @@
                         </div>
                         <form class="order-orders-form row formuinew" autocomplete="off" novalidate>
                             <div class="form-row">
-                                <div class="form-group fontsize20px colorsetdisabled col">
+                                <div class="form-group fontsize20px colorsetdisabled col mobile1200width100100">
                                     <label>PRICE</label>
                                     <div class="input-group">
                                         <input type="text" class="form-control" placeholder="" value="22,430.000" readonly>
@@ -533,7 +555,7 @@
                                 </div>
                             </div>
                             <div class="form-group button maxwidth100100">
-                                <button class="button-buy btn btn-success btnwidth100100" type="button">ALIŞ YAP - <span>10 BTC</span> <span>224,300.000 TRY</span></button>
+                                <button class="button-buy btn btn-success btnwidth100100" type="button">ALIŞ YAP <span id="sd-4">0.00000000BTC  0.00  TRY </span></button>
                             </div>
                         </form>
                     </div>
@@ -544,7 +566,7 @@
                         </div>
                         <form class="order-orders-form formuinew row" autocomplete="off" novalidate>
                             <div class="form-row">
-                                <div class="form-group fontsize20px colorsetdisabled col">
+                                <div class="form-group fontsize20px colorsetdisabled col mobile1200width100100">
                                     <label>PRICE</label>
                                     <div class="input-group">
                                         <input type="text" class="form-control" placeholder="" value="22,430.000" readonly>
@@ -576,7 +598,7 @@
                                 </div>
                             </div>
                             <div class="form-group button maxwidth100100">
-                                <button class="button-sell btn btn btn-danger btnwidth100100" type="button">SATIŞ YAP - <span>10 BTC</span> <span>224,300.000 TRY</span></button>
+                                <button class="button-sell btn btn btn-danger btnwidth100100" type="button">SATIŞ YAP <span id="ss-4">0.00000000BTC  0.00  TRY </span></button>
                             </div>
                         </form>
                     </div>
@@ -595,11 +617,11 @@
             </div>
         </div>
         <!-- BTC -->
-        <!-- ETC -->
-        <div class="order-orders-list">
+        <!-- ETH -->
+        <div class="order-orders-list tab-pane fade in" id="ordertabeth">
             <div class="boxcolumn-headtitle">
                 <h3 class="boxcolumn-headtitle-title"><i class="icon-svg icon-svg-titleiconeth"></i> ETHEREUM [ETH]</h3>
-                <span class="boxcolumn-headtitle-wallet">GÜNCEL 21.750,00 TRY</span>
+                <span class="boxcolumn-headtitle-wallet">GÜNCEL 21.752,00 TRY</span>
             </div>
             <div class="order-orders-box">
                 <!-- Alert -->
@@ -671,7 +693,7 @@
                         </div>
                         <form class="order-orders-form row formuinew" autocomplete="off" novalidate>
                             <div class="form-row">
-                                <div class="form-group fontsize20px colorsetdisabled col">
+                                <div class="form-group fontsize20px colorsetdisabled col mobile1200width100100">
                                     <label>PRICE</label>
                                     <div class="input-group">
                                         <input type="text" class="form-control" placeholder="" value="22,430.000" readonly>
@@ -703,7 +725,7 @@
                                 </div>
                             </div>
                             <div class="form-group button maxwidth100100">
-                                <button class="button-buy btn btn-success btnwidth100100" type="button">ALIŞ YAP - <span>10 BTC</span> <span>224,300.000 TRY</span></button>
+                                <button class="button-buy btn btn-success btnwidth100100" type="button">ALIŞ YAP  <span id="sd-1">0.00000000ETH  0.00  TRY </span></button>
                             </div>
                         </form>
                     </div>
@@ -714,7 +736,7 @@
                         </div>
                         <form class="order-orders-form formuinew row" autocomplete="off" novalidate>
                             <div class="form-row">
-                                <div class="form-group fontsize20px colorsetdisabled col">
+                                <div class="form-group fontsize20px colorsetdisabled col mobile1200width100100">
                                     <label>PRICE</label>
                                     <div class="input-group">
                                         <input type="text" class="form-control" placeholder="" value="22,430.000" readonly>
@@ -746,7 +768,7 @@
                                 </div>
                             </div>
                             <div class="form-group button maxwidth100100">
-                                <button class="button-sell btn btn btn-danger btnwidth100100" type="button">SATIŞ YAP - <span>10 BTC</span> <span>224,300.000 TRY</span></button>
+                                <button class="button-sell btn btn btn-danger btnwidth100100" type="button">SATIŞ YAP  <span id="ss-1">0.00000000ETH  0.00  TRY </span></button>
                             </div>
                         </form>
                     </div>
@@ -754,12 +776,12 @@
                 <div class="order-orders-info"><strong>VIP ÜCRET</strong> TAKER 0.750% - MAKER 0.750% <i class="icon-svg icon-svg-orderinformation"></i></div>
             </div>
         </div>
-        <!-- ETC -->
+        <!-- ETH -->
         <!-- XRP -->
-        <div class="order-orders-list">
+        <div class="order-orders-list tab-pane fade in" id="ordertabxrp">
             <div class="boxcolumn-headtitle">
                 <h3 class="boxcolumn-headtitle-title"><i class="icon-svg icon-svg-titleiconxrp"></i> RIPPLE [XRP]</h3>
-                <span class="boxcolumn-headtitle-wallet">GÜNCEL 21.750,00 TRY</span>
+                <span class="boxcolumn-headtitle-wallet">GÜNCEL 21.753,00 TRY</span>
             </div>
             <div class="order-orders-box">
                 <!-- Alert -->
@@ -831,7 +853,7 @@
                         </div>
                         <form class="order-orders-form row formuinew" autocomplete="off" novalidate>
                             <div class="form-row">
-                                <div class="form-group fontsize20px colorsetdisabled col">
+                                <div class="form-group fontsize20px colorsetdisabled col mobile1200width100100">
                                     <label>PRICE</label>
                                     <div class="input-group">
                                         <input type="text" class="form-control" placeholder="" value="22,430.000" readonly>
@@ -863,7 +885,7 @@
                                 </div>
                             </div>
                             <div class="form-group button maxwidth100100">
-                                <button class="button-buy btn btn-success btnwidth100100" type="button">ALIŞ YAP - <span>10 BTC</span> <span>224,300.000 TRY</span></button>
+                                <button class="button-buy btn btn-success btnwidth100100" type="button">ALIŞ YAP <span id="sd-2">0.00000000XRP  0.00  TRY </span></button>
                             </div>
                         </form>
                     </div>
@@ -874,7 +896,7 @@
                         </div>
                         <form class="order-orders-form formuinew row" autocomplete="off" novalidate>
                             <div class="form-row">
-                                <div class="form-group fontsize20px colorsetdisabled col">
+                                <div class="form-group fontsize20px colorsetdisabled col mobile1200width100100">
                                     <label>PRICE</label>
                                     <div class="input-group">
                                         <input type="text" class="form-control" placeholder="" value="22,430.000" readonly>
@@ -906,7 +928,7 @@
                                 </div>
                             </div>
                             <div class="form-group button maxwidth100100">
-                                <button class="button-sell btn btn btn-danger btnwidth100100" type="button">SATIŞ YAP - <span>10 BTC</span> <span>224,300.000 TRY</span></button>
+                                <button class="button-sell btn btn btn-danger btnwidth100100" type="button">SATIŞ YAP <span id="ss-2">0.00000000XRP  0.00  TRY </span></button>
                             </div>
                         </form>
                     </div>
@@ -917,7 +939,7 @@
         <!-- XRP -->
 
         <!-- Pagination -->
-        <div class="pagenavigation">
+        <div class="pagenavigation d-none">
             <ul class="pagination justify-content-center">
                 <li class="page-item disabled">
                     <a class="page-link prev" href="#" tabindex="-1"><i class="icon-svg icon-svg-paginationarrow prev"></i></a>
