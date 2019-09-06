@@ -41,8 +41,42 @@ $globalSvgIconImgPath : "../../img/global/svg";
       padding-top: 0;
       position: relative;
 
-      div[class*="col-"]{
+      @include ReSassResponsive(576){
+        flex-direction: column;
+        display: block !important;
+      }
+
+      > div[class*="col-"]{
         padding: 0;
+
+        @include ReSassResponsive(576){
+          display: block;
+          width: 100%;
+          flex: 0 0 100%;
+          max-width: 100%;
+          padding: 0 !important;
+          margin-top: 15px;
+          padding-top: 15px !important;
+
+          &::before{
+            content: "";
+            background-color: transparentize($global-clr-soft-gray, 0.7);
+            height: 1px;
+            width: calc(100% + 32px);
+            left: -16px;
+            top: 0;
+            position: absolute;
+          }
+
+          &:first-child{
+            margin-top: 0;
+            padding-top: 0 !important;
+
+            &::before{
+              display: none;
+            }
+          }
+        }
       }
 
       &::before{
@@ -53,6 +87,10 @@ $globalSvgIconImgPath : "../../img/global/svg";
         background-color: transparentize($global-clr-soft-gray, 0.7);
         top: 16px;
         left: 50%;
+
+        @include ReSassResponsive(576){
+          display: none;
+        }
       }
     }
 
@@ -85,10 +123,16 @@ $globalSvgIconImgPath : "../../img/global/svg";
     &-info{
       font-size: 17px;
       text-align: center;
-      margin-bottom: 15px;
+      padding-bottom: 15px;
       line-height: 1;
       display: flex;
       justify-content: center;
+
+      @include ReSassResponsive(576){
+        padding: 10px 0;
+        border-top: 1px solid transparentize($global-clr-soft-gray, 0.7);
+        background-color: $global-clr-light-gray;
+      }
 
       strong{
         display: inline-block;
