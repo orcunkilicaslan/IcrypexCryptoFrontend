@@ -29,6 +29,25 @@ jQuery(function($) {
 });
 /* Responsive Tradepage Profile Menu Dropdown */
 
+/* Responsive Tradepage Easy Buy Sell Menu Dropdown */
+$(window).on("load resize",function(e){
+    if($(window).width() <= 767){
+
+        $(".easybuysell-mobiletabs-menu a.nav-link").click(function(){
+
+            var currencyText    = $(this);
+            var selCoinText     = $(currencyText).find('.selecttext .selectcointext').text();
+            var selCoinIcon     = $(currencyText).find('.selecttext .selectcoinicon').text();
+            var selDataValue    = $(currencyText).data("value");
+
+            $(this).parents('.easybuysell-mobiletabs').find('.easybuysell-mobiletabs-btn').html('<i class="icon-svg icon-svg icon-svg-titleicon' + selCoinIcon.toLocaleLowerCase() + '"></i> <span class="selecttext"><span class="selectcointext">' + selCoinText.toUpperCase() + '</span> [<span class="selectcoinicon">' + selCoinIcon.toUpperCase() + '</span>]</span>');
+            $(this).parents('.easybuysell-mobiletabs').find('.easybuysell-mobiletabs-btn').attr('data-value', selDataValue);
+
+        });
+    }
+});
+/* Responsive Tradepage Easy Buy Sell Menu Dropdown */
+
 /* Responsive Tradepage Deposit-Withdraw Latest Transactions Owl Carousel */
 $(window).on("load resize",function(e){
     if($(window).width() <= 767){

@@ -147,7 +147,7 @@ $(document).ready(function(){
 /* Input Mask */
 
 /* Footer Fresh Chat */
-$(window).on("load resize scroll",function(e){
+$(window).on("load resize",function(e){
     if($(window).width() >= 768){
 
         if(!$('.cookies-notification').hasClass('show')){
