@@ -33,6 +33,16 @@ $globalSvgIconImgPath : "../../img/global/svg";
     &-alert{
       margin: 0;
       padding: 18px 16px 0;
+
+      @include ReSassResponsive(480){
+        padding: 13px 10px 0;
+      }
+
+      .alert{
+        @include ReSassResponsive(480){
+          margin-bottom: 10px;
+        }
+      }
     }
 
     &-column{
@@ -44,6 +54,10 @@ $globalSvgIconImgPath : "../../img/global/svg";
       @include ReSassResponsive(576){
         flex-direction: column;
         display: block !important;
+      }
+      @include ReSassResponsive(480){
+        padding: 10px;
+        padding-top: 2px;
       }
 
       > div[class*="col-"]{
@@ -75,6 +89,12 @@ $globalSvgIconImgPath : "../../img/global/svg";
             &::before{
               display: none;
             }
+          }
+        }
+        @include ReSassResponsive(480){
+          &::before{
+            width: calc(100% + 22px);
+            left: -11px;
           }
         }
       }
