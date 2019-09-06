@@ -6,6 +6,13 @@ $globalSvgIconImgPath : "../../img/global/svg";
     background-color: $global-clr-white;
     padding: 30px 0;
 
+    @include ReSassResponsive(768){
+      padding: 20px 0;
+    }
+    @include ReSassResponsive(576){
+      padding: 15px 0 20px;
+    }
+
     div[class*="tabcontent"]{
       border-top: 4px solid $global-clr-soft-blue;
     }
@@ -70,7 +77,6 @@ $globalSvgIconImgPath : "../../img/global/svg";
     }
 
     span.selectcointext{
-      margin-right: 3px;
       display: inline-block;
     }
 
@@ -79,6 +85,11 @@ $globalSvgIconImgPath : "../../img/global/svg";
       height: 30px;
       margin-right: 4px;
       display: inline-block;
+
+      @include ReSassResponsive(480){
+        width: 26px;
+        height: 26px;
+      }
     }
 
     .responsive-dropdown{
@@ -142,6 +153,10 @@ $globalSvgIconImgPath : "../../img/global/svg";
             position: absolute;
             top: 11px;
             right: 15px;
+          }
+          @include ReSassResponsive(480){
+            font-size: 17px;
+            top: 12px;
           }
         }
       }
