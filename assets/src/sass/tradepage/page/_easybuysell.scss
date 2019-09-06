@@ -44,9 +44,18 @@ $globalSvgIconImgPath : "../../img/global/svg";
     }
 
     .order-orders-form{
-      .input-group-append select.form-control{
+      .input-group-append{
         @include ReSassResponsive(1200){
-          min-width: 80px !important;
+          &::before{
+            width: 10px !important;
+            left: -9px !important;
+          }
+        }
+
+        select.form-control{
+          @include ReSassResponsive(1200){
+            min-width: 80px !important;
+          }
         }
       }
     }
