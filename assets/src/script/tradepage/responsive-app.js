@@ -44,6 +44,9 @@ $(window).on("load resize",function(e){
             $(this).parents('.easybuysell-mobiletabs').find('.easybuysell-mobiletabs-btn').attr('data-value', selDataValue);
 
         });
+
+        $('.easybuysell-mobiletabs-content > .order-orders-list:first-child').addClass("active show");
+
     }
 });
 /* Responsive Tradepage Easy Buy Sell Menu Dropdown */
