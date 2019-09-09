@@ -29,7 +29,7 @@
       min-height:44px;
       margin: 0;
 
-      @include ReSassResponsive(992){
+      @include ReSassWidthResponsive(992){
         flex-direction: column;
         margin: 0 10px;
       }
@@ -58,12 +58,12 @@
             //@include transition(transform, 250ms, ease-in-out);
             @include transition(all, 250ms, ease-in-out);
 
-            @include ReSassResponsive(992){
+            @include ReSassWidthResponsive(992){
               height: 2px;
             }
           }
 
-          @include ReSassResponsive(992){
+          @include ReSassWidthResponsive(992){
             margin: 0;
             padding: 10px 0;
 
@@ -84,7 +84,7 @@
 
         > a[aria-expanded^="false"]{
           &::after {
-            @include ReSassResponsive(992){
+            @include ReSassWidthResponsive(992){
               @include scaleX(0);
             }
           }
@@ -142,7 +142,7 @@
         background-color: #FFFFFF;
         left: 0;
         bottom: 0;
-        @include ReSassResponsive(992){
+        @include ReSassWidthResponsive(992){
           height: 2px;
         }
       }

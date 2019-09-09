@@ -5,11 +5,11 @@
     background-color: $global-clr-white;
     padding: 15px 0 40px;
 
-    @include ReSassResponsive(576){
+    @include ReSassWidthResponsive(576){
       padding: 5px 0 25px;
     }
 
-    @include ReSassResponsive(576){
+    @include ReSassWidthResponsive(576){
       padding-left: 15px !important;
       padding-right: 15px !important;
     }
@@ -18,7 +18,7 @@
       padding-left: 15px;
       padding-right: 15px;
 
-      @include ReSassResponsive(992){
+      @include ReSassWidthResponsive(992){
         padding-left: 0;
         padding-right: 0;
       }
@@ -38,7 +38,7 @@
     padding-bottom: 30px;
     margin-bottom: 30px;
 
-    @include ReSassResponsive(576){
+    @include ReSassWidthResponsive(576){
       padding-bottom: 15px;
       margin-bottom: 15px;
     }
@@ -60,7 +60,7 @@
         font-size: 20px;
         padding-top: 3px;
 
-        @include ReSassResponsive(576){
+        @include ReSassWidthResponsive(576){
           font-size: 17px;
         }
 
@@ -103,13 +103,13 @@
   &-wrapper{
     width: 100%;
 
-    @include ReSassResponsive(992){
+    @include ReSassWidthResponsive(992){
       flex-direction: column;
     }
 
     &-column{
 
-      @include ReSassResponsive(992){
+      @include ReSassWidthResponsive(992){
         margin-top: 30px;
 
         &:first-child{
@@ -117,7 +117,7 @@
         }
       }
 
-      @include ReSassResponsive(576){
+      @include ReSassWidthResponsive(576){
         margin-top: 15px;
 
         &:first-child{
@@ -132,14 +132,14 @@
         padding: 10px 15px 15px;
         margin-top: 30px;
 
-        @include ReSassResponsive(576){
+        @include ReSassWidthResponsive(576){
           margin-top: 15px;
 
           &:first-child{
             margin-top: 0;
           }
         }
-        @include ReSassResponsive(400){
+        @include ReSassWidthResponsive(400){
           padding: 7px 10px 10px;
         }
 

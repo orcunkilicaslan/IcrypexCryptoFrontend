@@ -70,13 +70,13 @@
           padding-bottom: 10px !important;
 
           &.notificationcheckbox{
-            @include ReSassResponsive(768){
+            @include ReSassWidthResponsive(768){
               background-color: $global-clr-light-gray;
               padding-left: 35px !important;
               width: 35% !important;
 
               &::before{
-                @include ReSassResponsive(480){
+                @include ReSassWidthResponsive(480){
                   padding: 10px !important;
                 }
               }
@@ -84,7 +84,7 @@
           }
 
           &.notificationdate{
-            @include ReSassResponsive(768){
+            @include ReSassWidthResponsive(768){
               background-color: $global-clr-light-gray;
               width: 65% !important;
               padding-left: 0 !important;
@@ -94,7 +94,7 @@
                 width: 100% !important;
                 text-align: right;
 
-                @include ReSassResponsive(480){
+                @include ReSassWidthResponsive(480){
                   padding: 10px !important;
                 }
               }
@@ -106,13 +106,13 @@
           }
 
           &.notificationhour{
-            @include ReSassResponsive(768){
+            @include ReSassWidthResponsive(768){
               display: none;
             }
           }
 
           &.notificationtd{
-            @include ReSassResponsive(768){
+            @include ReSassWidthResponsive(768){
               padding-left: 10px !important;
               padding-right: 10px !important;
               font-size: 15px !important;
@@ -126,17 +126,17 @@
                 height: auto !important;
                 padding: 0 0 5px 0 !important;
 
-                @include ReSassResponsive(480){
+                @include ReSassWidthResponsive(480){
                   font-size: 15px !important;
                 }
               }
             }
-            @include ReSassResponsive(576){
+            @include ReSassWidthResponsive(576){
               max-height: none;
             }
           }
 
-          @include ReSassResponsive(768){
+          @include ReSassWidthResponsive(768){
             .custom-control{
               &.width20px{
                 min-height: 18px;
@@ -189,7 +189,7 @@
       }
 
       &-btn{
-        @include ReSassResponsive(768){
+        @include ReSassWidthResponsive(768){
           background-color: $global-clr-light-gray;
 
           &::before{
@@ -201,7 +201,7 @@
           padding: 1px 5px;
           height: 30px;
 
-          @include ReSassResponsive(768){
+          @include ReSassWidthResponsive(768){
             width: 100% !important;
           }
         }

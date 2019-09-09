@@ -12,19 +12,19 @@
       .widthpercent30{
         width: 33%;
 
-        @include ReSassResponsive(768){
+        @include ReSassWidthResponsive(768){
           width: auto;
         }
 
         &-responsive{
-          @include ReSassResponsive(768){
+          @include ReSassWidthResponsive(768){
             width: 35%;
           }
         }
       }
 
       .widthpercentspace{
-        @include ReSassResponsive(768){
+        @include ReSassWidthResponsive(768){
           width: 1px;
         }
       }

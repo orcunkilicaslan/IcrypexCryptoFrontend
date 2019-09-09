@@ -85,14 +85,14 @@
           padding-top: 5px;
           padding-bottom: 5px;
 
-          @include ReSassResponsive(768){
+          @include ReSassWidthResponsive(768){
             //background-color: $global-clr-light-gray;
           }
 
           &:last-child{
             background-color: $global-clr-light-gray;
 
-            @include ReSassResponsive(768){
+            @include ReSassWidthResponsive(768){
               &::before{
                 display: none;
               }
@@ -100,13 +100,13 @@
           }
 
           > div[class*="colorset"]{
-            @include ReSassResponsive(768){
+            @include ReSassWidthResponsive(768){
               width: 100%;
             }
           }
 
           > div[class*="btn"]{
-            @include ReSassResponsive(768){
+            @include ReSassWidthResponsive(768){
               width: 100%;
               margin: 0 auto;
             }

@@ -3,19 +3,19 @@
   &-section{
     padding: 35px 0 60px;
 
-    @include ReSassResponsive(1400){
+    @include ReSassWidthResponsive(1400){
       padding: 25px 0 50px;
     }
-    @include ReSassResponsive(992){
+    @include ReSassWidthResponsive(992){
       padding: 20px 0 20px;
     }
-    @include ReSassResponsive(576){
+    @include ReSassWidthResponsive(576){
       padding-left: 15px !important;
       padding-right: 15px !important;
     }
 
     > .container > .row{
-      @include ReSassResponsive(992){
+      @include ReSassWidthResponsive(992){
         flex-direction: column;
         display: block !important;
       }
@@ -25,18 +25,18 @@
   &-wrapper{
 
     &.maincont-right{
-      @include ReSassResponsive(1200){
+      @include ReSassWidthResponsive(1200){
         flex: 0 0 80%;
         max-width: 80%;
       }
-      @include ReSassResponsive(992){
+      @include ReSassWidthResponsive(992){
         flex: 0 0 100%;
         max-width: 100%;
         display: block !important;
         padding: 0 !important;
         margin-top: 20px;
       }
-      @include ReSassResponsive(576){
+      @include ReSassWidthResponsive(576){
         margin-top: 15px;
       }
     }
@@ -46,7 +46,7 @@
       padding-bottom: 6px;
       margin-bottom: 0;
 
-      @include ReSassResponsive(768){
+      @include ReSassWidthResponsive(768){
         font-size: 20px;
         text-align: center;
       }
@@ -86,10 +86,10 @@
       margin: auto 15px;
       border-bottom: 1px solid transparentize($global-clr-soft-gray, 0.7);
 
-      @include ReSassResponsive(576){
+      @include ReSassWidthResponsive(576){
         padding: 15px 0 10px;
       }
-      @include ReSassResponsive(400){
+      @include ReSassWidthResponsive(400){
         padding: 9px 0 6px;
         margin: auto 10px;
       }
@@ -116,36 +116,36 @@
         padding-bottom: 7px;
 
         > *{
-          @include ReSassResponsive(576){
+          @include ReSassWidthResponsive(576){
             display: block !important;
           }
         }
 
-        @include ReSassResponsive(768){
+        @include ReSassWidthResponsive(768){
           flex-direction: column;
           align-items: center;
           //display: block !important;
           text-align: center;
         }
-        @include ReSassResponsive(400){
+        @include ReSassWidthResponsive(400){
           margin-bottom: 5px;
           margin-top: 10px;
         }
 
         span[class*="boxtitle-info"]{
-          @include ReSassResponsive(768){
+          @include ReSassWidthResponsive(768){
             display: block !important;
             text-align: center;
             margin-top: 5px;
             line-height: 1;
           }
           > *{
-            @include ReSassResponsive(768){
+            @include ReSassWidthResponsive(768){
               margin: 0;
             }
           }
           > i{
-            @include ReSassResponsive(768){
+            @include ReSassWidthResponsive(768){
               position: relative;
               top: 3px;
             }
@@ -164,7 +164,7 @@
       span[class*="wallet"]{
         font-size: 17px;
 
-        @include ReSassResponsive(768){
+        @include ReSassWidthResponsive(768){
           margin-top: 5px;
         }
       }
@@ -182,7 +182,7 @@
           font-size: 17px;
           line-height: 1.2;
 
-          @include ReSassResponsive(768){
+          @include ReSassWidthResponsive(768){
             font-size: 15px;
           }
 
@@ -198,7 +198,7 @@
             left: 0;
             top: 2px;
 
-            @include ReSassResponsive(768){
+            @include ReSassWidthResponsive(768){
               top: 0;
             }
           }
@@ -314,7 +314,7 @@
       &-tablebox{
         padding: 15px;
 
-        @include ReSassResponsive(480){
+        @include ReSassWidthResponsive(480){
           padding: 10px;
         }
       }
@@ -324,7 +324,7 @@
         padding: 15px;
 
         .btn{
-          @include ReSassResponsive(768){
+          @include ReSassWidthResponsive(768){
             width: 100% !important;
           }
         }

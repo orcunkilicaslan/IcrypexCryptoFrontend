@@ -6,19 +6,19 @@ $tradepageFooterImgPath : "../../img/tradepage/footer";
   @include gradient($global-grdint-darkblue01, $global-grdint-darkblue02);
   min-height: 120px;
 
-  @include ReSassResponsive(992){
+  @include ReSassWidthResponsive(992){
     padding-top: 30px;
   }
 
   .container > .row{
-    @include ReSassResponsive(992){
+    @include ReSassWidthResponsive(992){
       flex-direction: column;
     }
   }
 
 
   .maincont-left{
-    @include ReSassResponsive(992){
+    @include ReSassWidthResponsive(992){
       order: 2;
       flex: 0 0 100%;
       max-width: 100%;
@@ -30,7 +30,7 @@ $tradepageFooterImgPath : "../../img/tradepage/footer";
   .maincont-right{
     padding-left: 30px;
 
-    @include ReSassResponsive(992){
+    @include ReSassWidthResponsive(992){
       order: 1;
       flex: 0 0 100%;
       max-width: 700px;
@@ -70,7 +70,7 @@ $tradepageFooterImgPath : "../../img/tradepage/footer";
       line-height: 1;
     }
 
-    @include ReSassResponsive(992){
+    @include ReSassWidthResponsive(992){
       display: none;
     }
   }
@@ -80,7 +80,7 @@ $tradepageFooterImgPath : "../../img/tradepage/footer";
     font-size: 15px;
     position: relative;
 
-    @include ReSassResponsive(992){
+    @include ReSassWidthResponsive(992){
       display: flex;
       flex-direction: column;
       text-align: center;
@@ -91,7 +91,7 @@ $tradepageFooterImgPath : "../../img/tradepage/footer";
       margin: 0;
       margin-top: 20px;
 
-      @include ReSassResponsive(992){
+      @include ReSassWidthResponsive(992){
         &:nth-child(2){
           order: 2;
         }
@@ -129,7 +129,7 @@ $tradepageFooterImgPath : "../../img/tradepage/footer";
       width: 1px;
       height: 100%;
 
-      @include ReSassResponsive(992){
+      @include ReSassWidthResponsive(992){
         display: none;
       }
     }
@@ -138,12 +138,12 @@ $tradepageFooterImgPath : "../../img/tradepage/footer";
   &-nav{
     padding-left: 10px;
 
-    @include ReSassResponsive(992){
+    @include ReSassWidthResponsive(992){
       padding-left: 0;
     }
 
     > .col{
-      @include ReSassResponsive(992){
+      @include ReSassWidthResponsive(992){
         flex: 0 0 calc(100% / 4);
         max-width: calc(100% / 4);
 
@@ -156,7 +156,7 @@ $tradepageFooterImgPath : "../../img/tradepage/footer";
           }
         }
       }
-      @include ReSassResponsive(576){
+      @include ReSassWidthResponsive(576){
         flex: 0 0 calc(100% / 3);
         max-width: calc(100% / 3);
 
@@ -165,7 +165,7 @@ $tradepageFooterImgPath : "../../img/tradepage/footer";
           max-width: calc(100% / 1);
         }
       }
-      @include ReSassResponsive(480){
+      @include ReSassWidthResponsive(480){
         flex: 0 0 calc(100% / 2);
         max-width: calc(100% / 2);
 
@@ -186,13 +186,13 @@ $tradepageFooterImgPath : "../../img/tradepage/footer";
     margin-left: 10px;
     margin-bottom: 20px;
 
-    @include ReSassResponsive(992){
+    @include ReSassWidthResponsive(992){
       margin-left: 0;
     }
-    @include ReSassResponsive(768){
+    @include ReSassWidthResponsive(768){
       flex-direction: column;
     }
-    @include ReSassResponsive(576){
+    @include ReSassWidthResponsive(576){
       flex-direction: row;
       flex-wrap: wrap;
     }
@@ -201,11 +201,11 @@ $tradepageFooterImgPath : "../../img/tradepage/footer";
       display: flex;
       font-size: 17px;
 
-      @include ReSassResponsive(768){
+      @include ReSassWidthResponsive(768){
         padding-top: 4px;
         padding-bottom: 6px;
       }
-      @include ReSassResponsive(576){
+      @include ReSassWidthResponsive(576){
         flex-direction: column;
         flex: 0 0 50%;
         max-width: 50%;
@@ -215,11 +215,11 @@ $tradepageFooterImgPath : "../../img/tradepage/footer";
 
       &.linkgray{
 
-        @include ReSassResponsive(768){
+        @include ReSassWidthResponsive(768){
           padding-top: 7px;
           border-top: 1px solid transparentize($global-clr-soft-gray, 0.7);
         }
-        @include ReSassResponsive(576){
+        @include ReSassWidthResponsive(576){
           border-top: none;
         }
 
@@ -237,7 +237,7 @@ $tradepageFooterImgPath : "../../img/tradepage/footer";
         padding: 0 12px;
         color: $global-clr-white;
 
-        @include ReSassResponsive(576){
+        @include ReSassWidthResponsive(576){
           padding: 0;
         }
 
@@ -259,7 +259,7 @@ $tradepageFooterImgPath : "../../img/tradepage/footer";
           right: 0;
           background-color: transparentize($global-clr-soft-gray, 0.7);
 
-          @include ReSassResponsive(576){
+          @include ReSassWidthResponsive(576){
             display: none;
           }
         }
@@ -281,14 +281,14 @@ $tradepageFooterImgPath : "../../img/tradepage/footer";
     &-list{
       text-align: left;
 
-      @include ReSassResponsive(992){
+      @include ReSassWidthResponsive(992){
         text-align: center;
         padding: 25px 0;
       }
-      @include ReSassResponsive(480){
+      @include ReSassWidthResponsive(480){
         padding-bottom: 10px;
       }
-      @include ReSassResponsive(400){
+      @include ReSassWidthResponsive(400){
         padding-top: 10px;
       }
     }
@@ -299,13 +299,13 @@ $tradepageFooterImgPath : "../../img/tradepage/footer";
     padding: 10px 15px;
     margin-top: 50px;
 
-    @include ReSassResponsive(768){
+    @include ReSassWidthResponsive(768){
       margin-top: 40px;
     }
-    @include ReSassResponsive(576){
+    @include ReSassWidthResponsive(576){
       margin-top: 30px;
     }
-    @include ReSassResponsive(480){
+    @include ReSassWidthResponsive(480){
       margin-top: 20px;
     }
 
@@ -313,10 +313,10 @@ $tradepageFooterImgPath : "../../img/tradepage/footer";
       margin: 0;
       text-align: center;
 
-      @include ReSassResponsive(480){
+      @include ReSassWidthResponsive(480){
         @include scale(0.8);
       }
-      @include ReSassResponsive(400){
+      @include ReSassWidthResponsive(400){
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -327,10 +327,10 @@ $tradepageFooterImgPath : "../../img/tradepage/footer";
         padding: 0 12px;
         display: inline-block;
 
-        @include ReSassResponsive(480){
+        @include ReSassWidthResponsive(480){
           padding: 0 10px;
         }
-        @include ReSassResponsive(400){
+        @include ReSassWidthResponsive(400){
           flex: 0 0 calc(100% / 2);
           max-width: calc(100% / 2);
           padding: 0;
@@ -345,7 +345,7 @@ $tradepageFooterImgPath : "../../img/tradepage/footer";
           right: -3px;
           background-color: transparentize($global-clr-soft-gray, 0.7);
 
-          @include ReSassResponsive(480){
+          @include ReSassWidthResponsive(480){
             display: none;
           }
         }
@@ -367,7 +367,7 @@ $tradepageFooterImgPath : "../../img/tradepage/footer";
         }
         .papara{
           top: 3px;
-          @include ReSassResponsive(576){
+          @include ReSassWidthResponsive(576){
             top: 1px;
           }
         }

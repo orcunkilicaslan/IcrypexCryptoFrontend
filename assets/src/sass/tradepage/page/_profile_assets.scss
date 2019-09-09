@@ -5,16 +5,16 @@
     background-color: $global-clr-light-gray;
     padding: 20px 0 15px;
 
-    @include ReSassResponsive(992){
+    @include ReSassWidthResponsive(992){
       padding: 20px 10px 15px;
     }
-    @include ReSassResponsive(768){
+    @include ReSassWidthResponsive(768){
       padding: 15px 10px;
     }
 
     &-list {
 
-      @include ReSassResponsive(768){
+      @include ReSassWidthResponsive(768){
         display: block !important;
       }
 
@@ -22,7 +22,7 @@
         position: relative;
         text-align: center;
 
-        @include ReSassResponsive(768){
+        @include ReSassWidthResponsive(768){
           margin-bottom: 15px;
           padding-bottom: 15px;
           border-bottom: 1px solid transparentize($global-clr-soft-gray, 0.7);
@@ -45,7 +45,7 @@
           right: 0;
           background-color: transparentize($global-clr-soft-gray, 0.7);
 
-          @include ReSassResponsive(768){
+          @include ReSassWidthResponsive(768){
             display: none;
           }
         }
@@ -81,7 +81,7 @@
     padding-top: 10px;
     padding-bottom: 5px;
 
-    @include ReSassResponsive(768){
+    @include ReSassWidthResponsive(768){
       padding-bottom: 0;
     }
 
@@ -96,7 +96,7 @@
         padding-right: 15px;
       }
 
-      @include ReSassResponsive(768){
+      @include ReSassWidthResponsive(768){
         padding-left: 15px !important;
         padding-right: 15px !important;
       }
@@ -108,7 +108,7 @@
         height: 140px;
         position: relative;
 
-        @include ReSassResponsive(768){
+        @include ReSassWidthResponsive(768){
           margin: 0 auto 15px;
         }
       }
@@ -137,13 +137,13 @@
           width: 20%;
           margin: 10px 0;
 
-          @include ReSassResponsive(1200){
+          @include ReSassWidthResponsive(1200){
             width: 25%;
           }
-          @include ReSassResponsive(768){
+          @include ReSassWidthResponsive(768){
             width: calc(100% / 3);
           }
-          @include ReSassResponsive(480){
+          @include ReSassWidthResponsive(480){
             width: calc(100% / 2);
           }
         }
@@ -171,7 +171,7 @@
         border-top-width: 1px;
         &.btnwidth200{
 
-          @include ReSassResponsive(1200){
+          @include ReSassWidthResponsive(1200){
             width: 150px !important;
           }
         }
@@ -184,7 +184,7 @@
           padding-bottom: 2px;
 
           span.coinaddress{
-            @include ReSassResponsive(768){
+            @include ReSassWidthResponsive(768){
               overflow: hidden;
               margin-right: 15px;
               position: relative;
@@ -211,7 +211,7 @@
 
       &-btn{
 
-        @include ReSassResponsive(768){
+        @include ReSassWidthResponsive(768){
           background-color: $global-clr-light-gray;
 
           &::before{

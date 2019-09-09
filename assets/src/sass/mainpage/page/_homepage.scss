@@ -4,7 +4,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
 .homepage{
 
   section{
-    @include ReSassResponsive(576){
+    @include ReSassWidthResponsive(576){
       padding-left: 15px !important;
       padding-right: 15px !important;
     }
@@ -14,13 +14,13 @@ $globalSvgIconImgPath : "../../img/global/svg";
     padding-top: 30px;
     min-height: 630px;
 
-    @include ReSassResponsive(1200){
+    @include ReSassWidthResponsive(1200){
       min-height: auto;
     }
-    @include ReSassResponsive(992){
+    @include ReSassWidthResponsive(992){
       padding-top: 20px;
     }
-    @include ReSassResponsive(480){
+    @include ReSassWidthResponsive(480){
       padding-top: 10px;
     }
 
@@ -29,11 +29,11 @@ $globalSvgIconImgPath : "../../img/global/svg";
       padding-left: 0;
       padding-right: 40px;
 
-      @include ReSassResponsive(1200){
+      @include ReSassWidthResponsive(1200){
         max-width: 690px;
         padding-right: 30px;
       }
-      @include ReSassResponsive(992){
+      @include ReSassWidthResponsive(992){
         order: 1;
         max-width: 100%;
         padding-right: 0;
@@ -45,10 +45,10 @@ $globalSvgIconImgPath : "../../img/global/svg";
       padding-left: 0;
       padding-right: 0;
 
-      @include ReSassResponsive(1200){
+      @include ReSassWidthResponsive(1200){
         max-width: 270px;
       }
-      @include ReSassResponsive(992){
+      @include ReSassWidthResponsive(992){
         order: 2;
         max-width: 100%;
       }
@@ -65,13 +65,13 @@ $globalSvgIconImgPath : "../../img/global/svg";
   &-slider{
     min-height: 227px;
 
-    @include ReSassResponsive(1200){
+    @include ReSassWidthResponsive(1200){
       min-height: 220px;
     }
-    @include ReSassResponsive(992){
+    @include ReSassWidthResponsive(992){
       min-height: inherit;
     }
-    @include ReSassResponsive(576){
+    @include ReSassWidthResponsive(576){
       margin-bottom: 15px;
     }
 
@@ -84,7 +84,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
         color: $global-clr-white;
         padding: 20px 0;
 
-        @include ReSassResponsive(768){
+        @include ReSassWidthResponsive(768){
           padding: 10px 0;
         }
       }
@@ -140,10 +140,10 @@ $globalSvgIconImgPath : "../../img/global/svg";
           height: 207px;
           overflow: hidden;
 
-          @include ReSassResponsive(1200){
+          @include ReSassWidthResponsive(1200){
             height: 200px;
           }
-          @include ReSassResponsive(992){
+          @include ReSassWidthResponsive(992){
             height: auto;
           }
         }
@@ -157,14 +157,14 @@ $globalSvgIconImgPath : "../../img/global/svg";
       line-height: 1.07;
       text-transform: uppercase;
 
-      @include ReSassResponsive(1400){
+      @include ReSassWidthResponsive(1400){
         font-size: 40px;
       }
-      @include ReSassResponsive(768){
+      @include ReSassWidthResponsive(768){
         font-size: 32px;
         margin-bottom: 10px;
       }
-      @include ReSassResponsive(480){
+      @include ReSassWidthResponsive(480){
         font-size: 26px;
       }
     }
@@ -177,13 +177,13 @@ $globalSvgIconImgPath : "../../img/global/svg";
       margin-bottom: 10px;
       text-transform: uppercase;
 
-      @include ReSassResponsive(1400){
+      @include ReSassWidthResponsive(1400){
         font-size: 24px;
       }
-      @include ReSassResponsive(768){
+      @include ReSassWidthResponsive(768){
         font-size: 22px;
       }
-      @include ReSassResponsive(480){
+      @include ReSassWidthResponsive(480){
         font-size: 18px;
       }
 
@@ -197,15 +197,15 @@ $globalSvgIconImgPath : "../../img/global/svg";
     color: $global-clr-white;
     margin-bottom: 60px;
 
-    @include ReSassResponsive(992){
+    @include ReSassWidthResponsive(992){
       margin-bottom: 40px;
     }
-    @include ReSassResponsive(768){
+    @include ReSassWidthResponsive(768){
       margin-bottom: 30px;
     }
 
     &-owl{
-      @include ReSassResponsive(992){
+      @include ReSassWidthResponsive(992){
         margin: 0 !important;
         .item{
           padding: 0 !important;
@@ -229,7 +229,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
           padding: 0;
           line-height: 1;
 
-          @include ReSassResponsive(480){
+          @include ReSassWidthResponsive(480){
             font-size: 18px;
           }
         }
@@ -245,7 +245,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
         }
 
         img.chartdemograph{
-          @include ReSassResponsive(768){
+          @include ReSassWidthResponsive(768){
             width: auto !important;
             text-align: center;
             margin: auto;
@@ -263,7 +263,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
       justify-content: space-between;
       margin-bottom: 0;
 
-      @include ReSassResponsive(992){
+      @include ReSassWidthResponsive(992){
         width: calc(100% - 40px);
         margin: 0 auto;
       }
@@ -298,7 +298,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
           &::before{display: none;}
         }
 
-        @include ReSassResponsive(1200){
+        @include ReSassWidthResponsive(1200){
           font-size: 24px;
           padding: 0 12px;
           &::before{
@@ -306,17 +306,17 @@ $globalSvgIconImgPath : "../../img/global/svg";
             top: calc(50% - 17px);
           }
         }
-        @include ReSassResponsive(992){
+        @include ReSassWidthResponsive(992){
           font-size: 26px;
           padding: 0 10px;
           &::before{
             right: -5px;
           }
         }
-        @include ReSassResponsive(480){
+        @include ReSassWidthResponsive(480){
           font-size: 22px;
         }
-        @include ReSassResponsive(400){
+        @include ReSassWidthResponsive(400){
           font-size: 26px;
         }
       }
@@ -329,19 +329,19 @@ $globalSvgIconImgPath : "../../img/global/svg";
       letter-spacing: -0.2px;
       margin: 0;
 
-      @include ReSassResponsive(1400){
+      @include ReSassWidthResponsive(1400){
         font-size: 17px;
       }
-      @include ReSassResponsive(1200){
+      @include ReSassWidthResponsive(1200){
         font-size: 15px;
       }
-      @include ReSassResponsive(992){
+      @include ReSassWidthResponsive(992){
         font-size: 17px;
       }
-      @include ReSassResponsive(480){
+      @include ReSassWidthResponsive(480){
         font-size: 15px;
       }
-      @include ReSassResponsive(400){
+      @include ReSassWidthResponsive(400){
         font-size: 17px;
       }
     }
@@ -357,18 +357,18 @@ $globalSvgIconImgPath : "../../img/global/svg";
         position: relative;
         top: -12px;
 
-        @include ReSassResponsive(1400){
+        @include ReSassWidthResponsive(1400){
           font-size: 11px;
           top: -11px;
         }
-        @include ReSassResponsive(1200){
+        @include ReSassWidthResponsive(1200){
           top: -8px;
         }
       }
     }
 
     &-owl{
-      @include ReSassResponsive(992){
+      @include ReSassWidthResponsive(992){
         .owl{
 
           &-stage-outer{}
@@ -447,7 +447,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
           }
         }
       }
-      @include ReSassResponsive(400){
+      @include ReSassWidthResponsive(400){
         .owl{
           &-item{
             &::before{
@@ -465,17 +465,17 @@ $globalSvgIconImgPath : "../../img/global/svg";
     height: 100%;
     margin-top: 0;
 
-    @include ReSassResponsive(992){
+    @include ReSassWidthResponsive(992){
       background-color: transparentize($global-clr-soft-gray, 0.9);
       border: 1px solid transparentize($global-clr-soft-gray, 0.7);
       padding: 30px;
       margin: 20px 0 5px;
       height: auto;
     }
-    @include ReSassResponsive(576){
+    @include ReSassWidthResponsive(576){
       padding: 20px;
     }
-    @include ReSassResponsive(400){
+    @include ReSassWidthResponsive(400){
       padding: 25px 10px 10px;
       margin: 10px 0 0;
     }
@@ -504,10 +504,10 @@ $globalSvgIconImgPath : "../../img/global/svg";
         }
       }
 
-      @include ReSassResponsive(992){
+      @include ReSassWidthResponsive(992){
         font-size: 26px;
       }
-      @include ReSassResponsive(480){
+      @include ReSassWidthResponsive(480){
         font-size: 22px;
       }
     }
@@ -535,10 +535,10 @@ $globalSvgIconImgPath : "../../img/global/svg";
       .form-group{
         margin-bottom: 14px;
 
-        @include ReSassResponsive(1200){
+        @include ReSassWidthResponsive(1200){
           margin-bottom: 10px;
         }
-        @include ReSassResponsive(992){
+        @include ReSassWidthResponsive(992){
           margin-bottom: 15px;
         }
       }
@@ -557,13 +557,13 @@ $globalSvgIconImgPath : "../../img/global/svg";
           @include box-shadow(0,0,0,transparent);
         }
 
-        @include ReSassResponsive(992){
+        @include ReSassWidthResponsive(992){
           border-left-color: transparent !important;
         }
       }
 
       .formuilabel{
-        @include ReSassResponsive(992){
+        @include ReSassWidthResponsive(992){
           display: flex;
           flex-wrap: wrap;
           margin-left: -8px;
@@ -571,13 +571,13 @@ $globalSvgIconImgPath : "../../img/global/svg";
         }
 
         .form-group{
-          @include ReSassResponsive(992){
+          @include ReSassWidthResponsive(992){
             max-width: 50%;
             flex: 0 0 50%;
             padding-left: 8px;
             padding-right: 8px;
           }
-          @include ReSassResponsive(576){
+          @include ReSassWidthResponsive(576){
             max-width: 100%;
             flex: 0 0 100%;
           }
@@ -590,7 +590,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
         label{
           top: 10px;
 
-          @include ReSassResponsive(992){
+          @include ReSassWidthResponsive(992){
             left: 0;
           }
         }
@@ -598,7 +598,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
         .form-control{
           padding: 10px 10px 5px !important;
 
-          @include ReSassResponsive(992){
+          @include ReSassWidthResponsive(992){
             padding: 10px 0 5px!important;
           }
 
@@ -618,7 +618,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
             left: 10px;
             color: $global-clr-soft-gray;
 
-            @include ReSassResponsive(992){
+            @include ReSassWidthResponsive(992){
               left: 0;
             }
           }
@@ -653,7 +653,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
             color: $global-clr-green;
           }
 
-          @include ReSassResponsive(992){
+          @include ReSassWidthResponsive(992){
             &:focus{
               border-left-color: transparent !important;
             }
@@ -679,10 +679,10 @@ $globalSvgIconImgPath : "../../img/global/svg";
         width: 300px;
         overflow: hidden;
         @include border-radius(6px);
-        @include ReSassResponsive(1200){
+        @include ReSassWidthResponsive(1200){
           margin-bottom: 10px;
         }
-        @include ReSassResponsive(992){
+        @include ReSassWidthResponsive(992){
           margin: 0 0 15px;
         }
       }
@@ -696,10 +696,10 @@ $globalSvgIconImgPath : "../../img/global/svg";
         border-bottom: 1px solid transparentize($global-clr-soft-gray, 0.7);
         margin-bottom: 13px;
         overflow: hidden;
-        @include ReSassResponsive(1200){
+        @include ReSassWidthResponsive(1200){
           margin-bottom: 10px;
         }
-        @include ReSassResponsive(992){
+        @include ReSassWidthResponsive(992){
           width: 100%;
           height: 20px;
           margin: 10px 0 15px;
@@ -716,7 +716,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
           z-index: 1;
           @include border-radius(6px);
 
-          @include ReSassResponsive(992){
+          @include ReSassWidthResponsive(992){
             width: 20px;
             height: 20px;
             top: 0;
@@ -733,7 +733,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
             left: 118px;
             width: 0;
 
-            @include ReSassResponsive(992){
+            @include ReSassWidthResponsive(992){
               transform: scale(.74);
               top: -26px;
               left: 102px;
@@ -751,7 +751,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
           display: flex;
           align-items: center;
 
-          @include ReSassResponsive(992){
+          @include ReSassWidthResponsive(992){
             width: 100%;
             font-size: 15px;
             right: auto;
@@ -764,7 +764,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
       }
 
       .custom-control-form-check{
-        @include ReSassResponsive(992){
+        @include ReSassWidthResponsive(992){
           display: flex;
           flex-direction: column;
           //align-items: center;
@@ -775,10 +775,10 @@ $globalSvgIconImgPath : "../../img/global/svg";
       .form-check{
         margin-bottom: 13px;
 
-        @include ReSassResponsive(1200){
+        @include ReSassWidthResponsive(1200){
           margin-bottom: 10px;
         }
-        @include ReSassResponsive(480){
+        @include ReSassWidthResponsive(480){
           margin-bottom: 3px;
         }
 
@@ -815,11 +815,11 @@ $globalSvgIconImgPath : "../../img/global/svg";
       }
 
       .form-button{
-        @include ReSassResponsive(992){
+        @include ReSassWidthResponsive(992){
           width: 300px;
           margin: 0 auto;
         }
-        @include ReSassResponsive(576){
+        @include ReSassWidthResponsive(576){
           width: 100%;
         }
 
@@ -834,7 +834,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
           @include transition(all, 0.3s, ease-in-out);
           @include gradient(#0a93ea, #00387c);
 
-          @include ReSassResponsive(1200){
+          @include ReSassWidthResponsive(1200){
             font-size: 17px;
             padding: 8px 6px;
           }
@@ -854,7 +854,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
       &-btn{
         display: none;
 
-        @include ReSassResponsive(992){
+        @include ReSassWidthResponsive(992){
           //display: block;
           width: 300px;
           margin: 13px auto 0;
@@ -871,7 +871,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
           @include transition(all, 0.3s, ease-in-out);
           @include gradient(#0a93ea, #00387c);
 
-          @include ReSassResponsive(1200){
+          @include ReSassWidthResponsive(1200){
             font-size: 17px;
             padding: 8px 6px;
           }
@@ -979,17 +979,17 @@ $globalSvgIconImgPath : "../../img/global/svg";
   &-loggedin{
     margin-top: 0;
 
-    @include ReSassResponsive(992){
+    @include ReSassWidthResponsive(992){
       background-color: transparentize($global-clr-soft-gray, 0.9);
       border: 1px solid transparentize($global-clr-soft-gray, 0.7);
       padding: 30px;
       margin: 20px 0 5px;
       height: auto;
     }
-    @include ReSassResponsive(576){
+    @include ReSassWidthResponsive(576){
       padding: 20px;
     }
-    @include ReSassResponsive(400){
+    @include ReSassWidthResponsive(400){
       padding: 25px 10px 10px;
       margin: 10px 0 0;
     }
@@ -1012,7 +1012,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
           height: 2px;
           left: 0;
 
-          @include ReSassResponsive(992){
+          @include ReSassWidthResponsive(992){
             max-width: inherit;
           }
         }
@@ -1024,7 +1024,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
       color: $global-clr-soft-gray;
       border-bottom: 2px solid darken($global-clr-soft-gray, 25%);
 
-      @include ReSassResponsive(992){
+      @include ReSassWidthResponsive(992){
         padding-bottom: 5px;
         border-bottom: none;
       }
@@ -1039,7 +1039,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
         font-weight: normal;
         margin: 0;
 
-        @include ReSassResponsive(992){
+        @include ReSassWidthResponsive(992){
           font-size: 17px;
         }
       }
@@ -1047,7 +1047,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
         color: $global-clr-white;
         font-size: 23px;
 
-        @include ReSassResponsive(992){
+        @include ReSassWidthResponsive(992){
           font-size: 21px;
         }
       }
@@ -1057,18 +1057,18 @@ $globalSvgIconImgPath : "../../img/global/svg";
       max-width: 200px;
       margin: 13px auto 0;
 
-      @include ReSassResponsive(992){
+      @include ReSassWidthResponsive(992){
         max-width: 70%;
         display: flex;
         flex-wrap: wrap;
       }
-      @include ReSassResponsive(576){
+      @include ReSassWidthResponsive(576){
         max-width: 80%;
       }
-      @include ReSassResponsive(480){
+      @include ReSassWidthResponsive(480){
         max-width: 90%;
       }
-      @include ReSassResponsive(400){
+      @include ReSassWidthResponsive(400){
         max-width: 100%;
       }
 
@@ -1078,7 +1078,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
         padding: 5px 0 10px;
         border-bottom: 1px solid darken($global-clr-soft-gray, 25%);
 
-        @include ReSassResponsive(992){
+        @include ReSassWidthResponsive(992){
           width: 100%;
           margin-top: -1px;
           border-top: 1px solid darken($global-clr-soft-gray, 25%);
@@ -1136,22 +1136,22 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
     &-progress{
 
-      @include ReSassResponsive(992){
+      @include ReSassWidthResponsive(992){
         display: flex;
         justify-content: space-between;
       }
-      @include ReSassResponsive(480){
+      @include ReSassWidthResponsive(480){
         flex-wrap: wrap;
       }
 
       &-bar{
         padding-top: 16px;
 
-        @include ReSassResponsive(992){
+        @include ReSassWidthResponsive(992){
           width: 50%;
           margin: 0 10px;
         }
-        @include ReSassResponsive(480){
+        @include ReSassWidthResponsive(480){
           width: 100%;
           margin: 0;
         }
@@ -1189,10 +1189,10 @@ $globalSvgIconImgPath : "../../img/global/svg";
     padding-top: 50px;
     overflow: hidden;
 
-    @include ReSassResponsive(1200){
+    @include ReSassWidthResponsive(1200){
       padding-top: 50px;
     }
-    @include ReSassResponsive(992){
+    @include ReSassWidthResponsive(992){
       padding-top: 0;
     }
 
@@ -1200,7 +1200,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
       position: relative;
       padding-bottom: 15px;
 
-      @include ReSassResponsive(992){
+      @include ReSassWidthResponsive(992){
         padding-bottom: 5px;
       }
 
@@ -1215,21 +1215,21 @@ $globalSvgIconImgPath : "../../img/global/svg";
         top: 50%;
         z-index: 1;
 
-        @include ReSassResponsive(576){
+        @include ReSassWidthResponsive(576){
           display: none;
         }
       }
       &::before{
         left: calc(100% + 20px);
 
-        @include ReSassResponsive(992){
+        @include ReSassWidthResponsive(992){
           left: calc(100% + 15px);
         }
       }
       &::after{
         right: calc(100% + 20px);
 
-        @include ReSassResponsive(992){
+        @include ReSassWidthResponsive(992){
           right: calc(100% + 15px);
         }
       }
@@ -1247,21 +1247,21 @@ $globalSvgIconImgPath : "../../img/global/svg";
         z-index: 1;
         @include rotate(45);
 
-        @include ReSassResponsive(576){
+        @include ReSassWidthResponsive(576){
           display: none;
         }
       }
       &::before{
         left: -22px;
 
-        @include ReSassResponsive(992){
+        @include ReSassWidthResponsive(992){
           left: -17px;
         }
       }
       &::after{
         right: -22px;
 
-        @include ReSassResponsive(992){
+        @include ReSassWidthResponsive(992){
           right: -17px;
         }
       }
@@ -1274,12 +1274,12 @@ $globalSvgIconImgPath : "../../img/global/svg";
       margin-bottom: 2px;
       padding-bottom: 2px;
 
-      @include ReSassResponsive(992){
+      @include ReSassWidthResponsive(992){
         max-width: 100%;
         flex: 0 0 100%;
       }
 
-      @include ReSassResponsive(768){
+      @include ReSassWidthResponsive(768){
         padding-bottom: 0;
       }
 
@@ -1290,7 +1290,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
         font-size: 20px;
         min-height: 26px;
 
-        @include ReSassResponsive(768){
+        @include ReSassWidthResponsive(768){
           font-size: 17px;
         }
       }
@@ -1299,7 +1299,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
         background-color: transparent;
         font-size: 20px;
 
-        @include ReSassResponsive(768){
+        @include ReSassWidthResponsive(768){
           font-size: 17px;
         }
       }
@@ -1309,13 +1309,13 @@ $globalSvgIconImgPath : "../../img/global/svg";
   &-depth{
     padding: 0;
 
-    @include ReSassResponsive(992){
+    @include ReSassWidthResponsive(992){
       order: 2;
       padding: 0;
     }
 
     &-scrollbar{
-      @include ReSassResponsive(768){
+      @include ReSassWidthResponsive(768){
         width: 540px;
         height: 235px;
         overflow-y: auto;
@@ -1370,7 +1370,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
           }
         }
       }
-      @include ReSassResponsive(576){
+      @include ReSassWidthResponsive(576){
         width: 100%;
       }
     }
@@ -1378,10 +1378,10 @@ $globalSvgIconImgPath : "../../img/global/svg";
     .tablecolumn{
       margin: 0;
 
-      @include ReSassResponsive(768){
+      @include ReSassWidthResponsive(768){
         width: calc(540px * 2);
       }
-      @include ReSassResponsive(576){
+      @include ReSassWidthResponsive(576){
         width: 200%;
       }
 
@@ -1392,7 +1392,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
           padding-right: 1px;
           padding-left: 0;
 
-          @include ReSassResponsive(768){
+          @include ReSassWidthResponsive(768){
             padding: 0;
           }
 
@@ -1406,7 +1406,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
           padding-left: 1px;
           padding-right: 0;
 
-          @include ReSassResponsive(768){
+          @include ReSassWidthResponsive(768){
             padding: 0;
           }
 
@@ -1423,21 +1423,21 @@ $globalSvgIconImgPath : "../../img/global/svg";
   &-converter{
     padding-right: 0;
 
-    @include ReSassResponsive(992){
+    @include ReSassWidthResponsive(992){
       order: 3;
       display: flex;
       flex-wrap: wrap;
       margin: 15px 0 5px;
       padding: 0;
     }
-    @include ReSassResponsive(768){
+    @include ReSassWidthResponsive(768){
       margin: 10px 0 15px;
     }
 
     &-column{
       margin-top: 12px;
 
-      @include ReSassResponsive(992){
+      @include ReSassWidthResponsive(992){
         max-width: calc(100% / 2);
         flex: 0 0 calc(100% / 2);
         padding-left: 8px;
@@ -1448,7 +1448,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
         &.columnright{padding-right: 0;}
       }
 
-      @include ReSassResponsive(576){
+      @include ReSassWidthResponsive(576){
         max-width: calc(100% / 1);
         flex: 0 0 calc(100% / 1);
         padding: 0;
@@ -1464,13 +1464,13 @@ $globalSvgIconImgPath : "../../img/global/svg";
     background-color: $global-clr-white;
     padding: 70px 0 110px;
 
-    @include ReSassResponsive(1400){
+    @include ReSassWidthResponsive(1400){
       padding: 50px 0 70px;
     }
-    @include ReSassResponsive(992){
+    @include ReSassWidthResponsive(992){
       padding: 40px 0 50px;
     }
-    @include ReSassResponsive(480){
+    @include ReSassWidthResponsive(480){
       padding: 20px 0 40px;
     }
 
@@ -1482,7 +1482,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
         height: 2px;
       }
 
-      @include ReSassResponsive(1400){
+      @include ReSassWidthResponsive(1400){
         margin-bottom: 25px;
       }
     }
@@ -1503,7 +1503,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
         padding-left: 0;
         padding-right: 35px;
 
-        @include ReSassResponsive(768){
+        @include ReSassWidthResponsive(768){
           padding-right: 0;
         }
       }
@@ -1523,13 +1523,13 @@ $globalSvgIconImgPath : "../../img/global/svg";
           }
         }
 
-        @include ReSassResponsive(1400){
+        @include ReSassWidthResponsive(1400){
           min-height: 200px;
         }
-        @include ReSassResponsive(768){
+        @include ReSassWidthResponsive(768){
           min-height: auto;
         }
-        @include ReSassResponsive(576){
+        @include ReSassWidthResponsive(576){
           padding-top: 15px;
           padding-bottom: 15px
         }
@@ -1552,7 +1552,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
           flex: 0 0 calc(100% - 85px);
           color: $global-clr-dark-blue;
 
-          @include ReSassResponsive(768){
+          @include ReSassWidthResponsive(768){
             padding-bottom: 15px;
           }
 
@@ -1560,7 +1560,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
             &::before{
               height: 2px;
 
-              @include ReSassResponsive(1200){
+              @include ReSassWidthResponsive(1200){
                 width: 100% !important;
                 max-width: inherit !important;
               }
@@ -1583,13 +1583,12 @@ $globalSvgIconImgPath : "../../img/global/svg";
             margin: 0;
             margin-top: 10px;
 
-            @include ReSassResponsive(1400){
+            @include ReSassWidthResponsive(1400){
               font-size: 16px;
             }
           }
         }
       }
-
     }
   }
 
@@ -1597,7 +1596,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
     background-color: $global-sitebg-darkblue01;
 
     > .container{
-      @include ReSassResponsive(992){
+      @include ReSassWidthResponsive(992){
         max-width: 100%;
       }
     }
@@ -1605,17 +1604,17 @@ $globalSvgIconImgPath : "../../img/global/svg";
     &-content{
       padding: 100px 30px 140px 0;
 
-      @include ReSassResponsive(1400){
+      @include ReSassWidthResponsive(1400){
         padding: 50px 20px 80px 0;
       }
-      @include ReSassResponsive(992){
+      @include ReSassWidthResponsive(992){
         order: 2;
         max-width: 720px;
         margin: 0 auto;
         padding: 30px 0 50px 0;
         text-align: center;
       }
-      @include ReSassResponsive(480){
+      @include ReSassWidthResponsive(480){
         padding: 20px 0 30px;
       }
 
@@ -1627,7 +1626,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
           height: 2px;
         }
 
-        @include ReSassResponsive(992){
+        @include ReSassWidthResponsive(992){
           text-align: center !important;
 
           &::before{
@@ -1656,13 +1655,13 @@ $globalSvgIconImgPath : "../../img/global/svg";
         margin-top: 25px;
         line-height: 1.18;
 
-        @include ReSassResponsive(1400){
+        @include ReSassWidthResponsive(1400){
           margin-top: 20px;
         }
-        @include ReSassResponsive(1200){
+        @include ReSassWidthResponsive(1200){
           margin-top: 10px;
         }
-        @include ReSassResponsive(992){
+        @include ReSassWidthResponsive(992){
           margin-top: 20px;
         }
       }
@@ -1673,25 +1672,25 @@ $globalSvgIconImgPath : "../../img/global/svg";
         margin-top: 15px;
         line-height: 1.29;
 
-        @include ReSassResponsive(1200){
+        @include ReSassWidthResponsive(1200){
           margin-top: 10px;
         }
-        @include ReSassResponsive(992){
+        @include ReSassWidthResponsive(992){
           margin-top: 20px;
         }
 
         li{
-          @include ReSassResponsive(1400){
+          @include ReSassWidthResponsive(1400){
             display: inline-block;
             margin-right: 10px;
             width: 45%;
           }
-          @include ReSassResponsive(992){
+          @include ReSassWidthResponsive(992){
             width: auto;
             text-align: left;
             margin-bottom: 5px;
           }
-          @include ReSassResponsive(480){
+          @include ReSassWidthResponsive(480){
             //width: 100%;
           }
         }
@@ -1707,7 +1706,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
         letter-spacing: -0.2px;
         padding: 10px 20px;
 
-        @include ReSassResponsive(1200){
+        @include ReSassWidthResponsive(1200){
           margin-top: 25px;
         }
       }
@@ -1716,7 +1715,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
     &-image{
       text-align: right;
 
-      @include ReSassResponsive(992){
+      @include ReSassWidthResponsive(992){
         order: 1;
         text-align: center;
       }
@@ -1727,24 +1726,24 @@ $globalSvgIconImgPath : "../../img/global/svg";
         margin-top: -37px;
         margin-left: -20px;
 
-        @include ReSassResponsive(1400){
+        @include ReSassWidthResponsive(1400){
           max-width: 100%;
         }
-        @include ReSassResponsive(1200){
+        @include ReSassWidthResponsive(1200){
           max-width: 120%;
           margin-top: -25px;
         }
-        @include ReSassResponsive(1140){
+        @include ReSassWidthResponsive(1140){
           max-width: 110%;
         }
-        @include ReSassResponsive(992){
+        @include ReSassWidthResponsive(992){
           max-width: 50%;
           margin: -25px auto 0;
         }
-        @include ReSassResponsive(576){
+        @include ReSassWidthResponsive(576){
           max-width: 70%;
         }
-        @include ReSassResponsive(480){
+        @include ReSassWidthResponsive(480){
           max-width: 100%;
         }
       }
@@ -1755,7 +1754,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
     background-color: $global-clr-white;
 
     > .container{
-      @include ReSassResponsive(992){
+      @include ReSassWidthResponsive(992){
         max-width: 100%;
       }
     }
@@ -1763,20 +1762,20 @@ $globalSvgIconImgPath : "../../img/global/svg";
     &-content{
       padding: 110px 30px 40px 28px;
 
-      @include ReSassResponsive(1400){
+      @include ReSassWidthResponsive(1400){
         padding: 50px 100px 40px 0;
       }
-      @include ReSassResponsive(1200){
+      @include ReSassWidthResponsive(1200){
         padding: 50px 40px 40px 0;
       }
-      @include ReSassResponsive(992){
+      @include ReSassWidthResponsive(992){
         order: 1;
         padding: 40px 0;
         text-align: center;
         max-width: 720px;
         margin: 0 auto;
       }
-      @include ReSassResponsive(400){
+      @include ReSassWidthResponsive(400){
         padding: 30px 0 20px;
       }
 
@@ -1788,7 +1787,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
           height: 2px;
         }
 
-        @include ReSassResponsive(992){
+        @include ReSassWidthResponsive(992){
           text-align: center !important;
           max-width: 550px;
           margin: auto;
@@ -1819,7 +1818,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
         margin-top: 25px;
         line-height: 1.18;
 
-        @include ReSassResponsive(1400){
+        @include ReSassWidthResponsive(1400){
           margin-top: 20px;
         }
       }
@@ -1831,12 +1830,12 @@ $globalSvgIconImgPath : "../../img/global/svg";
         line-height: 1.29;
 
         li{
-          @include ReSassResponsive(1400){
+          @include ReSassWidthResponsive(1400){
             display: inline-block;
             margin-right: 10px;
             width: 45%;
           }
-          @include ReSassResponsive(992){
+          @include ReSassWidthResponsive(992){
             width: auto;
             text-align: left;
             margin-bottom: 5px;
@@ -1846,7 +1845,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
       &-btn{
         margin-top: 35px;
 
-        @include ReSassResponsive(400){
+        @include ReSassWidthResponsive(400){
           margin-top: 10px;
         }
 
@@ -1860,10 +1859,10 @@ $globalSvgIconImgPath : "../../img/global/svg";
             margin-right: 0;
           }
 
-          @include ReSassResponsive(576){
+          @include ReSassWidthResponsive(576){
             margin-right: 15px;
           }
-          @include ReSassResponsive(400){
+          @include ReSassWidthResponsive(400){
             margin: 20px auto !important;
             display: block;
           }
@@ -1900,15 +1899,15 @@ $globalSvgIconImgPath : "../../img/global/svg";
       padding-left: 0;
       overflow: hidden;
 
-      @include ReSassResponsive(1400){
+      @include ReSassWidthResponsive(1400){
         max-width: calc(100% /3);
         flex: 0 0 calc(100% /3);
       }
-      @include ReSassResponsive(1200){
+      @include ReSassWidthResponsive(1200){
         max-width: calc(100% /2.5);
         flex: 0 0 calc(100% /2.5);
       }
-      @include ReSassResponsive(992){
+      @include ReSassWidthResponsive(992){
         order: 2;
         margin-top: 0;
         padding: 0;
@@ -1920,7 +1919,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
         margin-bottom: 0;
         position: relative;
 
-        @include ReSassResponsive(992){
+        @include ReSassWidthResponsive(992){
           width: 280px;
           margin: 0 auto;
         }
@@ -1930,17 +1929,17 @@ $globalSvgIconImgPath : "../../img/global/svg";
           position: absolute;
           height: 646px;
 
-          @include ReSassResponsive(1400){
+          @include ReSassWidthResponsive(1400){
             height: 445px;
           }
-          @include ReSassResponsive(992){
+          @include ReSassWidthResponsive(992){
             height: 370px;
           }
 
           img{
             max-width: none;
 
-            @include ReSassResponsive(1400){
+            @include ReSassWidthResponsive(1400){
               max-width: 100%;
             }
           }
@@ -1949,10 +1948,10 @@ $globalSvgIconImgPath : "../../img/global/svg";
             width: 350px;
             left: 0;
 
-            @include ReSassResponsive(1400){
+            @include ReSassWidthResponsive(1400){
               width: 250px;
             }
-            @include ReSassResponsive(992){
+            @include ReSassWidthResponsive(992){
               width: 200px;
             }
           }
@@ -1961,11 +1960,11 @@ $globalSvgIconImgPath : "../../img/global/svg";
             left: 110px;
             position: relative;
 
-            @include ReSassResponsive(1400){
+            @include ReSassWidthResponsive(1400){
               width: 255px;
               left: 80px;
             }
-            @include ReSassResponsive(992){
+            @include ReSassWidthResponsive(992){
               width: 205px;
               left: 70px;
             }

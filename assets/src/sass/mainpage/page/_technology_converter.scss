@@ -24,7 +24,7 @@
       margin: 7px;
       padding-bottom: 7px;
 
-      @include ReSassResponsive(480){
+      @include ReSassWidthResponsive(480){
         margin-top: 2px;
       }
 
@@ -41,7 +41,7 @@
         top: calc(50% - 8px);
         left: calc(50% - 8px);
 
-        @include ReSassResponsive(480){
+        @include ReSassWidthResponsive(480){
           background-color: $global-clr-light-gray;
           padding: 20px;
           background-repeat: no-repeat;
@@ -53,7 +53,7 @@
       }
 
       &::after{
-        @include ReSassResponsive(480){
+        @include ReSassWidthResponsive(480){
           background-color: $global-clr-light-gray;
           width: 100%;
           height: 1px;
@@ -64,14 +64,14 @@
 
       &-form{
 
-        @include ReSassResponsive(480){
+        @include ReSassWidthResponsive(480){
           width: 100%;
         }
 
         &-wrapper{
           display: flex;
 
-          @include ReSassResponsive(480){
+          @include ReSassWidthResponsive(480){
             flex-direction: column;
           }
 
@@ -79,14 +79,14 @@
             padding-left: 23px;
             padding-right: 23px;
 
-            @include ReSassResponsive(480){
+            @include ReSassWidthResponsive(480){
               padding: 15px 0;
             }
 
             &:first-child{
               padding-left: 5px;
 
-              @include ReSassResponsive(480){
+              @include ReSassWidthResponsive(480){
                 padding-top: 0;
                 padding-left: 0;
               }
@@ -94,7 +94,7 @@
             &:last-child{
               padding-right: 5px;
 
-              @include ReSassResponsive(480){
+              @include ReSassWidthResponsive(480){
                 padding-bottom: 0;
                 padding-right: 0;
               }
@@ -105,7 +105,7 @@
         &-column{
           width: calc(190px + 23px);
 
-          @include ReSassResponsive(480){
+          @include ReSassWidthResponsive(480){
             width: 100%;
           }
         }
@@ -150,13 +150,13 @@
           margin: 7px;
           padding: 10px;
 
-          @include ReSassResponsive(992){
+          @include ReSassWidthResponsive(992){
             width: calc(33% - 12px);
           }
-          @include ReSassResponsive(768){
+          @include ReSassWidthResponsive(768){
             width: calc(49% - 10px);
           }
-          @include ReSassResponsive(480){
+          @include ReSassWidthResponsive(480){
             width: 100%;
           }
 

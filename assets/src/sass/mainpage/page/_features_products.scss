@@ -10,7 +10,7 @@
       display: flex;
       flex-direction: row;
 
-      @include ReSassResponsive(576){
+      @include ReSassWidthResponsive(576){
         padding: 24px 0 30px;
 
         &:last-child{
@@ -25,7 +25,7 @@
       &-wrapper{
         display: flex;
 
-        @include ReSassResponsive(992){
+        @include ReSassWidthResponsive(992){
           flex-direction: column;
         }
 
@@ -53,10 +53,10 @@
         position: relative;
         flex: 1;
 
-        @include ReSassResponsive(768){
+        @include ReSassWidthResponsive(768){
           max-width: 85px;
         }
-        @include ReSassResponsive(480){
+        @include ReSassWidthResponsive(480){
           display: none;
         }
 
@@ -77,7 +77,7 @@
       }
 
       &-mobiletitle{
-        @include ReSassResponsive(992){
+        @include ReSassWidthResponsive(992){
           order: 1;
         }
 
@@ -85,7 +85,7 @@
           display: flex;
           align-items: center;
 
-          @include ReSassResponsive(992){
+          @include ReSassWidthResponsive(992){
             font-size: 20px;
           }
         }
@@ -93,7 +93,7 @@
         i[class*="icon-svg"]{
           display: none;
 
-          @include ReSassResponsive(480){
+          @include ReSassWidthResponsive(480){
             display: block;
             width: 28px;
             height: 28px;
@@ -105,13 +105,13 @@
       &-currencyinfo{
         padding-right: 0;
 
-        @include ReSassResponsive(992){
+        @include ReSassWidthResponsive(992){
           order: 3;
           padding-right: 15px;
         }
 
         .columntitle{
-          @include ReSassResponsive(992){
+          @include ReSassWidthResponsive(992){
             display: none;
           }
         }
@@ -123,11 +123,11 @@
           margin-bottom: 10px;
           min-height: 108px;
 
-          @include ReSassResponsive(992){
+          @include ReSassWidthResponsive(992){
             margin-bottom: 15px;
             min-height: auto;
           }
-          @include ReSassResponsive(768){
+          @include ReSassWidthResponsive(768){
             text-align: justify;
           }
         }
@@ -138,14 +138,14 @@
         padding-top: 12px;
         overflow: hidden;
 
-        @include ReSassResponsive(992){
+        @include ReSassWidthResponsive(992){
           width: auto;
           order: 2;
           border-bottom: 1px solid lighten($global-clr-soft-gray, 30%);
           margin: 5px 15px 13px;
           padding: 0;
         }
-        @include ReSassResponsive(768){
+        @include ReSassWidthResponsive(768){
           flex-direction: column;
           margin: 0;
           padding: 5px 15px 0;
@@ -155,7 +155,7 @@
         &-box{
           position: relative;
 
-          @include ReSassResponsive(768){
+          @include ReSassWidthResponsive(768){
             padding-right: 0 !important;
             padding-left: 0 !important;
           }
@@ -171,7 +171,7 @@
           }
 
           &.chartstats{
-            @include ReSassResponsive(768){
+            @include ReSassWidthResponsive(768){
               order: 2;
               //border-bottom: 1px solid lighten($global-clr-soft-gray, 30%);
 
@@ -183,7 +183,7 @@
 
           &.chartgraph{
 
-            @include ReSassResponsive(992){
+            @include ReSassWidthResponsive(992){
               &::after{
                 content: "";
                 background-color: lighten($global-clr-soft-gray, 30%);
@@ -195,7 +195,7 @@
               }
             }
 
-            @include ReSassResponsive(768){
+            @include ReSassWidthResponsive(768){
               order: 1;
               border-bottom: 1px solid lighten($global-clr-soft-gray, 30%);
               margin-bottom: 15px;
@@ -207,7 +207,7 @@
           height: 100%;
           padding-left: 15px;
 
-          @include ReSassResponsive(768){
+          @include ReSassWidthResponsive(768){
             border-left: none;
             padding-left: 0;
             margin-top: -5px;
@@ -224,7 +224,7 @@
           border-bottom: 1px solid red;
           padding-bottom: 5px;
 
-          @include ReSassResponsive(768){
+          @include ReSassWidthResponsive(768){
             border-bottom: none;
             padding-bottom: 0;
           }
@@ -236,7 +236,7 @@
           align-items: flex-end;
 
           &:first-child{
-            @include ReSassResponsive(768){
+            @include ReSassWidthResponsive(768){
               padding-top: 0;
             }
           }
@@ -244,7 +244,7 @@
           &:last-child{
             border-bottom: none;
 
-            @include ReSassResponsive(992){
+            @include ReSassWidthResponsive(992){
               padding-bottom: 15px;
             }
           }
@@ -368,11 +368,11 @@
           padding: 7px 0;
           align-items: flex-end;
 
-          @include ReSassResponsive(992){
+          @include ReSassWidthResponsive(992){
             padding-right: 10px;
             padding-bottom: 5px;
           }
-          @include ReSassResponsive(768){
+          @include ReSassWidthResponsive(768){
             width: 100%;
             padding: 0;
             display: flex;
@@ -403,7 +403,7 @@
 
     &-ultwocolumn{
 
-      @include ReSassResponsive(768){
+      @include ReSassWidthResponsive(768){
         display: flex;
         flex-wrap: wrap;
         //border: 1px solid transparentize($global-clr-soft-gray, 0.85);
@@ -412,7 +412,7 @@
       &.bordertop{
         border-top: 1px solid transparentize($global-clr-soft-gray, 0.85);
 
-        @include ReSassResponsive(768){
+        @include ReSassWidthResponsive(768){
           border: none;
         }
       }
@@ -422,7 +422,7 @@
         padding: 5px 0;
         font-size: 15px;
 
-        @include ReSassResponsive(768){
+        @include ReSassWidthResponsive(768){
           width: calc(50% - 5px);
           padding: 5px 10px;
           border: 1px solid transparentize($global-clr-soft-gray, 0.85);
@@ -432,7 +432,7 @@
             margin-right: 10px;
           }
         }
-        @include ReSassResponsive(576){
+        @include ReSassWidthResponsive(576){
           width: 100%;
           padding: 5px 0;
           border: none;
@@ -447,10 +447,10 @@
         &:last-child{
           border-bottom: none;
 
-          @include ReSassResponsive(768){
+          @include ReSassWidthResponsive(768){
             border-bottom: 1px solid transparentize($global-clr-soft-gray, 0.85);
           }
-          @include ReSassResponsive(576){
+          @include ReSassWidthResponsive(576){
             border-bottom: none;
           }
         }

@@ -1,13 +1,16 @@
 /**
  * Kullanım:
- *	@include ReSassResponsive(240){}
+ *	@include ReSassHeightResponsive(240){}
  *  ...
  *  ...
  *  ...
- *  @include ReSassResponsive(1500){}
+ *  @include ReSassWidthResponsive(1500){}
  *
  */
-@mixin ReSassResponsive( $point ) {
+
+// Max Width Responsive
+@mixin ReSassWidthResponsive( $point ) {
+
 	@if $point==240 {
 		@media ( max-width: 239px ) {
 			@content;
@@ -73,4 +76,36 @@
 			@content;
 		}
 	}
+
+}
+
+// Max Height Responsive
+@mixin ReSassHeightResponsive( $point ) {
+
+	@if $point==550 {
+		@media ( max-height: 549px ) {
+			@content;
+		}
+	}
+	@if $point==700 {
+		@media ( max-height: 699px ) {
+			@content;
+		}
+	}
+	@if $point==800 {
+		@media ( max-height: 799px ) {
+			@content;
+		}
+	}
+	@if $point==1100 {
+		@media ( max-height: 1099px ) {
+			@content;
+		}
+	}
+	@if $point==1400 {
+		@media ( max-height: 1399px ) {
+			@content;
+		}
+	}
+
 }

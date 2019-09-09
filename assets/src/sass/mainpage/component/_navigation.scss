@@ -11,7 +11,7 @@
     color: $global-clr-white;
     font-size: 17px;
 
-    @include ReSassResponsive(992){
+    @include ReSassWidthResponsive(992){
       background-color: $global-sitebg-darkblue01;
     }
 
@@ -31,10 +31,10 @@
       &.show{
         left: 20px !important;
 
-        @include ReSassResponsive(1400){
+        @include ReSassWidthResponsive(1400){
           left: 10px !important;
         }
-        @include ReSassResponsive(992){
+        @include ReSassWidthResponsive(992){
           left: 0 !important;
         }
       }
@@ -56,7 +56,7 @@
       ul.dropdownsubmenu{
         background-color: transparentize($global-clr-btn-blue, 0.50);
 
-        @include ReSassResponsive(992){
+        @include ReSassWidthResponsive(992){
           background-color: transparent;
         }
 
@@ -83,13 +83,13 @@
     &-list{
       min-height: 36px;
 
-      @include ReSassResponsive(992){
+      @include ReSassWidthResponsive(992){
         min-height: auto;
       }
 
       > li{
 
-        @include ReSassResponsive(992){
+        @include ReSassWidthResponsive(992){
           border-bottom: 1px solid transparentize($global-clr-soft-gray, 0.7);
 
           &::before{
@@ -117,11 +117,11 @@
           padding: 5px 0 13px;
           margin: auto 20px;
 
-          @include ReSassResponsive(1400){
+          @include ReSassWidthResponsive(1400){
             font-size: 16px;
             margin: auto 10px;
           }
-          @include ReSassResponsive(992){
+          @include ReSassWidthResponsive(992){
             color: $global-clr-white;
             margin: 0;
             padding: 10px 0;
@@ -155,7 +155,7 @@
 
     &-header{
 
-      @include ReSassResponsive(992){
+      @include ReSassWidthResponsive(992){
         display: flex !important;
         justify-content: center;
         align-items: center;
@@ -183,7 +183,7 @@
     }
 
     &-btn{
-      @include ReSassResponsive(992){
+      @include ReSassWidthResponsive(992){
 
         .btntext{
           small{
@@ -441,7 +441,7 @@
   &.navscroll{
 
     .dfn-mobilemenu-header{
-      @include ReSassResponsive(992){
+      @include ReSassWidthResponsive(992){
         &::before{
           @include scaleX(0);
         }

@@ -17,10 +17,10 @@
         .sitebggraylight{
           width: 140px;
 
-          @include ReSassResponsive(992){
+          @include ReSassWidthResponsive(992){
             width: 130px;
           }
-          @include ReSassResponsive(768){
+          @include ReSassWidthResponsive(768){
             width: 100%;
           }
         }
@@ -77,14 +77,14 @@
               font-weight: 500;
 
               &::before{
-                @include ReSassResponsive(768){
+                @include ReSassWidthResponsive(768){
                   display: none;
                 }
               }
             }
 
             &.mobiletd{
-              @include ReSassResponsive(768){
+              @include ReSassWidthResponsive(768){
                 display: none;
               }
             }

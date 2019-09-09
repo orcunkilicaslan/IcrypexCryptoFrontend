@@ -11,18 +11,18 @@ $globalSvgIconImgPath : "../../img/global/svg";
     opacity: 1;
     @include transition(all, 0.3s, ease-in-out);
 
-    @include ReSassResponsive(992){
+    @include ReSassWidthResponsive(992){
       padding: 10px 0;
       height: 60px;
       border-top: none;
     }
 
-    @include ReSassResponsive(576){
+    @include ReSassWidthResponsive(576){
       height: 50px;
     }
 
     .col-12{
-      @include ReSassResponsive(576){
+      @include ReSassWidthResponsive(576){
         padding-left: 0;
         padding-right: 0;
       }
@@ -33,11 +33,11 @@ $globalSvgIconImgPath : "../../img/global/svg";
       font-weight: normal;
       min-height: 40px;
 
-      @include ReSassResponsive(992){
+      @include ReSassWidthResponsive(992){
         min-height: 35px;
       }
 
-      @include ReSassResponsive(576){
+      @include ReSassWidthResponsive(576){
         font-size: 17px;
         min-height: 28px;
         padding-bottom: 8px;

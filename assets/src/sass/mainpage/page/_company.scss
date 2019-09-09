@@ -5,15 +5,15 @@
     background-color: $global-clr-white;
     padding: 0 0 40px;
 
-    @include ReSassResponsive(576){
+    @include ReSassWidthResponsive(576){
       padding-left: 15px !important;
       padding-right: 15px !important;
     }
 
-    @include ReSassResponsive(992){
+    @include ReSassWidthResponsive(992){
       padding: 0 0 20px;
     }
-    @include ReSassResponsive(576){
+    @include ReSassWidthResponsive(576){
       padding: 0 0 15px;
     }
 
@@ -39,10 +39,10 @@
     width: 100%;
     padding-top: 30px;
 
-    @include ReSassResponsive(992){
+    @include ReSassWidthResponsive(992){
       padding-top: 20px;
     }
-    @include ReSassResponsive(768){
+    @include ReSassWidthResponsive(768){
       padding-top: 15px;
     }
 
@@ -93,7 +93,7 @@
           display: inline-block;
           width: 200px;
 
-          @include ReSassResponsive(768){
+          @include ReSassWidthResponsive(768){
             display: block;
             width: auto;
             position: relative;
@@ -114,7 +114,7 @@
         span.dottedright{
           float: right;
 
-          @include ReSassResponsive(768){
+          @include ReSassWidthResponsive(768){
             display: none;
           }
         }
@@ -181,7 +181,7 @@
       margin-left: 43px;
       margin-top: 0;
 
-      @include ReSassResponsive(480){
+      @include ReSassWidthResponsive(480){
         margin-left: 0;
       }
 

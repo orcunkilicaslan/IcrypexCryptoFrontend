@@ -5,10 +5,10 @@
     background-color: $global-clr-white;
     padding: 5px 0 40px;
 
-    @include ReSassResponsive(768){
+    @include ReSassWidthResponsive(768){
       padding: 5px 0 25px;
     }
-    @include ReSassResponsive(576){
+    @include ReSassWidthResponsive(576){
       padding-left: 15px !important;
       padding-right: 15px !important;
     }
@@ -17,7 +17,7 @@
       padding-left: 1px;
       padding-right: 1px;
 
-      @include ReSassResponsive(480){
+      @include ReSassWidthResponsive(480){
         padding-left: 0;
         padding-right: 0;
       }
@@ -56,7 +56,7 @@
     &-stage{
       margin-top: 15px;
 
-      @include ReSassResponsive(480){
+      @include ReSassWidthResponsive(480){
         flex-direction: column;
       }
 
@@ -67,7 +67,7 @@
       .col-md-auto{
         width: 111px;
 
-        @include ReSassResponsive(480){
+        @include ReSassWidthResponsive(480){
           width: 100%;
         }
       }
@@ -81,11 +81,11 @@
       font-size: 17px;
       @include border-radii(3px,0,0,3px);
 
-      @include ReSassResponsive(480){
+      @include ReSassWidthResponsive(480){
         width: 100%;
         @include border-radii(3px,3px,0,0);
       }
-      @include ReSassResponsive(400){
+      @include ReSassWidthResponsive(400){
         font-size:15px;
         min-height: 32px;
       }
@@ -140,7 +140,7 @@
         padding: 8px 35px 9px 15px;
         @include transition(all, 0.2s, linear);
 
-        @include ReSassResponsive(400){
+        @include ReSassWidthResponsive(400){
           font-size:15px;
           padding: 6px 35px 6px 8px;
         }
@@ -216,7 +216,7 @@
         padding: 15px;
         display: none;
 
-        @include ReSassResponsive(400){
+        @include ReSassWidthResponsive(400){
           padding: 10px;
         }
 
@@ -283,7 +283,7 @@
       font-size: 17px;
       margin-bottom: 15px;
 
-      @include ReSassResponsive(400){
+      @include ReSassWidthResponsive(400){
         font-size: 15px;
       }
 

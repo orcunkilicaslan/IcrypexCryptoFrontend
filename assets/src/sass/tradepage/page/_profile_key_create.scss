@@ -50,17 +50,17 @@
     &-tags500{
       max-width: 500px;
 
-      @include ReSassResponsive(576){
+      @include ReSassWidthResponsive(576){
         max-width: none;
       }
 
       .form-row{
-        @include ReSassResponsive(480){
+        @include ReSassWidthResponsive(480){
           flex-direction: column;
         }
 
         label[style]{
-          @include ReSassResponsive(480){
+          @include ReSassWidthResponsive(480){
             display: none;
           }
         }

@@ -7,7 +7,7 @@
         ul.dropdownsubmenu{
           background-color: transparentize($global-clr-btn-blue, 0.9) !important;
 
-          @include ReSassResponsive(992){
+          @include ReSassWidthResponsive(992){
             background-color: transparent !important;
           }
         }

@@ -4,7 +4,7 @@
   &-activity-history{
     max-width: 600px;
 
-    @include ReSassResponsive(992){
+    @include ReSassWidthResponsive(992){
       max-width: none;
     }
 
@@ -38,7 +38,7 @@
 
       &-btn{
 
-        @include ReSassResponsive(768){
+        @include ReSassWidthResponsive(768){
           background-color: $global-clr-light-gray;
 
           &::before{
@@ -50,13 +50,11 @@
           display: block;
           padding: 1px 5px;
 
-          @include ReSassResponsive(768){
+          @include ReSassWidthResponsive(768){
             width: 100% !important;
           }
         }
       }
     }
-
   }
-
 }

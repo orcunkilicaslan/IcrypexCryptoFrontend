@@ -7,7 +7,7 @@
 
       &-wrapper{
 
-        @include ReSassResponsive(992){
+        @include ReSassWidthResponsive(992){
           flex-direction: column;
         }
 
@@ -17,7 +17,7 @@
 
         &.layoutleft{
 
-          @include ReSassResponsive(992){
+          @include ReSassWidthResponsive(992){
             > div[class*="col"]{
               &:first-child{
                 order: 2;
@@ -31,7 +31,7 @@
           div[class*="layout02-box"]{
             padding-left: 0 !important;
 
-            @include ReSassResponsive(992){
+            @include ReSassWidthResponsive(992){
               padding-right: 0 !important;
             }
           }
@@ -39,7 +39,7 @@
             padding-left: 0 !important;
             border-left: 0;
 
-            @include ReSassResponsive(992){
+            @include ReSassWidthResponsive(992){
               padding-top: 0;
             }
 
@@ -60,7 +60,7 @@
             img{
               height: 100%;
 
-              @include ReSassResponsive(992){
+              @include ReSassWidthResponsive(992){
                 width: 100%;
               }
             }
@@ -68,7 +68,7 @@
         }
         &.layoutright{
 
-          @include ReSassResponsive(992){
+          @include ReSassWidthResponsive(992){
             > div[class*="col"]{
               &:first-child{
                 order: 1;
@@ -82,7 +82,7 @@
           div[class*="layout02-box"]{
             padding-right: 0 !important;
 
-            @include ReSassResponsive(992){
+            @include ReSassWidthResponsive(992){
               padding-left: 0 !important;
             }
           }
@@ -107,7 +107,7 @@
             img{
               height: 100%;
 
-              @include ReSassResponsive(992){
+              @include ReSassWidthResponsive(992){
                 width: 100%;
               }
             }

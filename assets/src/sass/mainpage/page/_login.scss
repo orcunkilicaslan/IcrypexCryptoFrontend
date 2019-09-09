@@ -5,7 +5,7 @@
     background-color: $global-clr-white;
     display: flex;
 
-    @include ReSassResponsive(576){
+    @include ReSassWidthResponsive(576){
       padding: 25px 0;
     }
 
@@ -13,7 +13,7 @@
       display: flex;
       flex-direction: column;
 
-      @include ReSassResponsive(992){
+      @include ReSassWidthResponsive(992){
         display: block;
       }
     }
@@ -24,7 +24,7 @@
       flex-direction: column;
       height: 100%;
 
-      @include ReSassResponsive(992){
+      @include ReSassWidthResponsive(992){
         display: block;
       }
     }
@@ -35,7 +35,7 @@
       letter-spacing: normal;
       font-size: 25px;
 
-      @include ReSassResponsive(576){
+      @include ReSassWidthResponsive(576){
         font-size: 20px;
       }
 
@@ -61,7 +61,7 @@
     position: relative;
     @include border-radius(50%);
 
-    @include ReSassResponsive(576){
+    @include ReSassWidthResponsive(576){
       width: 70px;
       height: 70px;
     }
@@ -83,7 +83,7 @@
     flex-direction: column;
     height: 100%;
 
-    @include ReSassResponsive(992){
+    @include ReSassWidthResponsive(992){
       display: block;
     }
 
@@ -103,7 +103,7 @@
         color: $global-clr-dark-blue;
         font-size: 17px;
 
-        @include ReSassResponsive(768){
+        @include ReSassWidthResponsive(768){
           line-height: 1.1;
         }
       }
@@ -159,12 +159,12 @@
       width: 530px;
       margin: 0 auto;
 
-      @include ReSassResponsive(576){
+      @include ReSassWidthResponsive(576){
         width: auto;
       }
 
       .form-row{
-        @include ReSassResponsive(576){
+        @include ReSassWidthResponsive(576){
           flex-direction: column;
         }
       }
@@ -200,10 +200,10 @@
     &-btn{
       margin-top: 40px;
 
-      @include ReSassResponsive(576){
+      @include ReSassWidthResponsive(576){
         margin-top: 20px;
       }
-      @include ReSassResponsive(480){
+      @include ReSassWidthResponsive(480){
         margin-top: 0;
       }
     }
@@ -215,13 +215,13 @@
       margin: auto;
       margin-top: 20px;
 
-      @include ReSassResponsive(576){
+      @include ReSassWidthResponsive(576){
         padding-left: 30px;
         margin-bottom: 40px;
       }
 
       .form-row{
-        @include ReSassResponsive(768){
+        @include ReSassWidthResponsive(768){
           flex-direction: column;
         }
 
@@ -229,10 +229,10 @@
           &:first-child{
             margin-top: 0;
           }
-          @include ReSassResponsive(768){
+          @include ReSassWidthResponsive(768){
             margin-top: 15px;
           }
-          @include ReSassResponsive(480){
+          @include ReSassWidthResponsive(480){
             margin-top: 25px;
           }
         }

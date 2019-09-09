@@ -4,23 +4,23 @@
   &-bank-account{
     max-width: 750px;
 
-    @include ReSassResponsive(992){
+    @include ReSassWidthResponsive(992){
       max-width: none;
     }
 
     .form-row{
-      @include ReSassResponsive(768){
+      @include ReSassWidthResponsive(768){
         flex-direction: column;
       }
 
       div[class*="maxwidth"]{
 
-        @include ReSassResponsive(768){
+        @include ReSassWidthResponsive(768){
           margin-top: 10px;
         }
 
         label{
-          @include ReSassResponsive(768){
+          @include ReSassWidthResponsive(768){
             display: none;
           }
         }
@@ -29,7 +29,7 @@
 
     &-tablebox{
       > div[class*="boxtitle"]{
-        @include ReSassResponsive(768){
+        @include ReSassWidthResponsive(768){
           border-bottom: none;
           padding-bottom: 0;
         }
@@ -62,10 +62,10 @@
             padding-bottom: 2px;
             text-transform: uppercase;
 
-            @include ReSassResponsive(768){
+            @include ReSassWidthResponsive(768){
               padding-left: 42% !important;
             }
-            @include ReSassResponsive(576){
+            @include ReSassWidthResponsive(576){
               padding-left: 105px !important;
             }
           }
@@ -74,7 +74,7 @@
 
       &-btn{
 
-        @include ReSassResponsive(768){
+        @include ReSassWidthResponsive(768){
           background-color: $global-clr-light-gray;
         }
 
@@ -82,7 +82,7 @@
           display: block;
           padding: 1px 5px;
 
-          @include ReSassResponsive(768){
+          @include ReSassWidthResponsive(768){
             width: 100%;
           }
         }

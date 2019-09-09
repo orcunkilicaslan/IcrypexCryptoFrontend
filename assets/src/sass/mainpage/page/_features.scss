@@ -5,7 +5,7 @@
     background-color: $global-clr-white;
     padding: 0 0 10px;
 
-    @include ReSassResponsive(576){
+    @include ReSassWidthResponsive(576){
       padding-left: 15px;
       padding-right: 15px;
     }
@@ -33,17 +33,17 @@
     &-wrapper{
       padding: 30px 0;
 
-      @include ReSassResponsive(992){
+      @include ReSassWidthResponsive(992){
         flex-direction: column;
       }
-      @include ReSassResponsive(768){
+      @include ReSassWidthResponsive(768){
         padding: 15px 0 0;
       }
     }
 
     &-graphics{
 
-      @include ReSassResponsive(992){
+      @include ReSassWidthResponsive(992){
         padding: 0 !important;
         margin-bottom: 20px;
       }
@@ -75,7 +75,7 @@
 
     &-content{
 
-      @include ReSassResponsive(992){
+      @include ReSassWidthResponsive(992){
         padding: 0 !important;
       }
 
@@ -84,7 +84,7 @@
         font-size: 17px;
         line-height: 1.2;
 
-        @include ReSassResponsive(992){
+        @include ReSassWidthResponsive(992){
           padding: 0;
         }
 
