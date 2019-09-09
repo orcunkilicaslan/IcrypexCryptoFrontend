@@ -3,7 +3,7 @@
 .bottomtotopbutton {
   display: none;
 
-  @include ReSassResponsive(992){
+  @include ReSassWidthResponsive(992){
     display: none;
     background-color: $global-sitebg-darkblue01;
     @include gradient($global-sitebg-darkblue02, $global-sitebg-darkblue01);
@@ -67,13 +67,13 @@
     }
   }
 
-  @include ReSassResponsive(576){
+  @include ReSassWidthResponsive(576){
     bottom: 50px;
   }
-  @include ReSassResponsive(480){
+  @include ReSassWidthResponsive(480){
     bottom: 30px;
   }
-  @include ReSassResponsive(400){
+  @include ReSassWidthResponsive(400){
     width: 30px;
     height: 30px;
     bottom: 15px;
@@ -112,10 +112,10 @@
 body.tradepage{
 
   .bottomtotopbutton{
-    @include ReSassResponsive(992){
+    @include ReSassWidthResponsive(992){
       bottom: 68px !important;
     }
-    @include ReSassResponsive(400){
+    @include ReSassWidthResponsive(400){
       bottom: 56px !important;
     }
   }

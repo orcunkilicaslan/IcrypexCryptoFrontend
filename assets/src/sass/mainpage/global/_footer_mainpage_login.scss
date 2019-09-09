@@ -13,13 +13,13 @@
     }
 
     &-topline{
-      @include ReSassResponsive(768){
+      @include ReSassWidthResponsive(768){
         display: none;
       }
     }
 
     &-nav{
-      @include ReSassResponsive(768){
+      @include ReSassWidthResponsive(768){
         padding-top: 0;
       }
     }

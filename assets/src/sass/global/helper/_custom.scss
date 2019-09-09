@@ -81,7 +81,7 @@ input, select, textarea{
   min-height: 100vh;
   flex-direction: column;
 
-  @include ReSassResponsive(576){
+  @include ReSassWidthResponsive(576){
     display: block;
   }
 
@@ -89,7 +89,7 @@ input, select, textarea{
   section{
     flex: 1;
 
-    @include ReSassResponsive(992){
+    @include ReSassWidthResponsive(992){
       flex: inherit;
       display: block;
     }
@@ -114,13 +114,13 @@ input, select, textarea{
 img.imgsize{
   &-1080p{
     display: none;
-    @include ReSassResponsive(1400){
+    @include ReSassWidthResponsive(1400){
       display: block;
     }
   }
   &-2K{
     display: block;
-    @include ReSassResponsive(1400){
+    @include ReSassWidthResponsive(1400){
       display: none;
     }
   }

@@ -18,7 +18,7 @@
     z-index: 2;
     @include border-radius(0);
 
-    @include ReSassResponsive(992){
+    @include ReSassWidthResponsive(992){
       background-color: $global-sitebg-darkblue01 !important;
       min-height: auto;
     }
@@ -39,10 +39,10 @@
     align-items: center;
     padding: 15px;
 
-    @include ReSassResponsive(992){
+    @include ReSassWidthResponsive(992){
       padding-top: 25px;
     }
-    @include ReSassResponsive(400){
+    @include ReSassWidthResponsive(400){
       padding: 10px;
       padding-top: 20px;
     }
@@ -50,13 +50,13 @@
     &-desc{
 
       p{
-        @include ReSassResponsive(1400){
+        @include ReSassWidthResponsive(1400){
           font-size: 15px;
         }
-        @include ReSassResponsive(992){
+        @include ReSassWidthResponsive(992){
           text-align: center;
         }
-        @include ReSassResponsive(400){
+        @include ReSassWidthResponsive(400){
           font-size: 13px;
         }
       }
@@ -100,7 +100,7 @@
           @include rotate(90);
         }
 
-        @include ReSassResponsive(1400){
+        @include ReSassWidthResponsive(1400){
           width: 20px;
           height: 20px;
           top: calc(50% - 10px);
@@ -110,7 +110,7 @@
             width: 20px;
           }
         }
-        @include ReSassResponsive(992){
+        @include ReSassWidthResponsive(992){
           background-color: $global-sitebg-darkblue01;
           width: 36px;
           height: 36px;

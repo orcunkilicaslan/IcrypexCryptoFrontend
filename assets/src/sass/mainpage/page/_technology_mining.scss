@@ -6,7 +6,7 @@
     &-wrapper{
       padding-top: 30px;
 
-      @include ReSassResponsive(992){
+      @include ReSassWidthResponsive(992){
         flex-direction: column;
       }
     }
@@ -15,7 +15,7 @@
 
     &-graphics{
 
-      @include ReSassResponsive(992){
+      @include ReSassWidthResponsive(992){
         padding: 0 !important;
         margin-bottom: 20px;
       }
@@ -28,7 +28,7 @@
         padding: 10px 15px 15px;
         margin-top: 15px;
 
-        @include ReSassResponsive(480){
+        @include ReSassWidthResponsive(480){
           padding: 10px;
         }
 
@@ -43,7 +43,7 @@
           margin: 0;
           padding: 0;
 
-          @include ReSassResponsive(400){
+          @include ReSassWidthResponsive(400){
             font-size: 17px;
           }
 
@@ -51,7 +51,7 @@
             border-bottom: 1px solid transparentize($global-clr-soft-gray, 0.7);
             padding-bottom: 5px;
 
-            @include ReSassResponsive(576){
+            @include ReSassWidthResponsive(576){
               flex-direction: column;
               text-align: center;
             }
@@ -62,7 +62,7 @@
             font-size: 20px;
             font-weight: 500;
 
-            @include ReSassResponsive(400){
+            @include ReSassWidthResponsive(400){
               font-size: 17px;
             }
           }
@@ -72,16 +72,16 @@
           padding: 10px 0 5px;
 
           .form-row{
-            @include ReSassResponsive(400){
+            @include ReSassWidthResponsive(400){
               flex-direction: column;
             }
 
             div[class*="col"]{
-              @include ReSassResponsive(576){
+              @include ReSassWidthResponsive(576){
                 flex: 0 0 50%;
                 max-width: 50%;
               }
-              @include ReSassResponsive(400){
+              @include ReSassWidthResponsive(400){
                 flex: 0 0 100%;
                 max-width: 100%;
               }
@@ -141,7 +141,7 @@
             margin-top: 10px;
             padding: 2px 0;
 
-            @include ReSassResponsive(576){
+            @include ReSassWidthResponsive(576){
               flex-wrap: wrap;
               text-align: center;
               padding: 0;
@@ -159,12 +159,12 @@
               line-height: 1;
               position: relative;
 
-              @include ReSassResponsive(576){
+              @include ReSassWidthResponsive(576){
                 flex: 0 0 calc(100% / 3);
                 max-width: calc(100% / 3);
                 padding: 15px 10px !important;
               }
-              @include ReSassResponsive(400){
+              @include ReSassWidthResponsive(400){
                 flex: 0 0 calc(100% / 1);
                 max-width: calc(100% / 1);
                 padding: 10px !important;
@@ -176,7 +176,7 @@
                 @include border-radii(3px,0,0,3px);
                 padding-left: 5px !important;
 
-                @include ReSassResponsive(576){
+                @include ReSassWidthResponsive(576){
                   flex: 0 0 calc(100% / 1);
                   max-width: calc(100% / 1);
                   padding: 8px 10px!important;
@@ -185,12 +185,12 @@
               }
 
               &:nth-child(2){
-                @include ReSassResponsive(576){
+                @include ReSassWidthResponsive(576){
                   border-left: 1px solid transparentize($global-clr-soft-gray, 0.7);
                 }
               }
               &:nth-child(4){
-                @include ReSassResponsive(576){
+                @include ReSassWidthResponsive(576){
                   border-right: 1px solid transparentize($global-clr-soft-gray, 0.7);
                 }
               }
@@ -213,20 +213,20 @@
               span{
                 font-size: 15px;
 
-                @include ReSassResponsive(480){
+                @include ReSassWidthResponsive(480){
                   font-size: 13px;
                 }
-                @include ReSassResponsive(400){
+                @include ReSassWidthResponsive(400){
                   font-size: 15px;
                 }
               }
               strong{
                 font-size: 20px;
 
-                @include ReSassResponsive(480){
+                @include ReSassWidthResponsive(480){
                   font-size: 17px;
                 }
-                @include ReSassResponsive(400){
+                @include ReSassWidthResponsive(400){
                   font-size: 20px;
                 }
               }
@@ -242,10 +242,10 @@
                 position: relative;
                 top: -5px;
 
-                @include ReSassResponsive(480){
+                @include ReSassWidthResponsive(480){
                   font-size: 10px;
                 }
-                @include ReSassResponsive(400){
+                @include ReSassWidthResponsive(400){
                   font-size: 12px;
                 }
               }
@@ -259,10 +259,10 @@
                 left: -5px;
                 top: calc(50% - 14px);
 
-                @include ReSassResponsive(576){
+                @include ReSassWidthResponsive(576){
                   left: 0;
                 }
-                @include ReSassResponsive(400){
+                @include ReSassWidthResponsive(400){
                   width: calc(100% - 20px);
                   height: 1px;
                   top: 0;

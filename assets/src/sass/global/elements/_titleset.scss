@@ -7,7 +7,7 @@
   padding: 0;
   padding-bottom: 12px;
 
-  @include ReSassResponsive(1400){
+  @include ReSassWidthResponsive(1400){
     padding-bottom: 10px;
   }
 
@@ -83,7 +83,7 @@
     font-size: 17px;
     font-weight: normal;
 
-    @include ReSassResponsive(1400){
+    @include ReSassWidthResponsive(1400){
       font-size: 16px;
     }
 
@@ -91,7 +91,7 @@
       &::before{
         max-width: 150px;
 
-        @include ReSassResponsive(768){
+        @include ReSassWidthResponsive(768){
           max-width: none;
         }
       }
@@ -109,7 +109,7 @@
   &-sm{
     font-size: 20px;
 
-    @include ReSassResponsive(1400){
+    @include ReSassWidthResponsive(1400){
       font-size: 18px;
     }
 
@@ -131,7 +131,7 @@
   &-md{
     font-size: 23px;
 
-    @include ReSassResponsive(1400){
+    @include ReSassWidthResponsive(1400){
       font-size: 21px;
     }
 
@@ -178,7 +178,7 @@
     font-size: 35px;
     line-height: 1.17;
 
-    @include ReSassResponsive(1400){
+    @include ReSassWidthResponsive(1400){
       font-size: 32px;
     }
 
@@ -294,7 +294,7 @@
       padding: 0;
       line-height: 1;
 
-      @include ReSassResponsive(400){
+      @include ReSassWidthResponsive(400){
         font-size: 17px;
       }
     }
@@ -311,7 +311,7 @@
   &480{
     display: none;
 
-    @include ReSassResponsive(480){
+    @include ReSassWidthResponsive(480){
       display: block;
     }
   }
@@ -319,7 +319,7 @@
   &768{
     display: none;
 
-    @include ReSassResponsive(768){
+    @include ReSassWidthResponsive(768){
       display: block;
     }
   }

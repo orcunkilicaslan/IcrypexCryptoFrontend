@@ -5,10 +5,10 @@
     background-color: $global-clr-white;
     padding: 0 0 40px;
 
-    @include ReSassResponsive(992){
+    @include ReSassWidthResponsive(992){
       padding: 0 0 25px;
     }
-    @include ReSassResponsive(576){
+    @include ReSassWidthResponsive(576){
       padding-left: 15px;
       padding-right: 15px;
     }
@@ -107,26 +107,26 @@
   &-sitetabs{
 
     > div[class*="-wrapper-01"]{
-      @include ReSassResponsive(768){
+      @include ReSassWidthResponsive(768){
         order: 1;
       }
     }
 
     > article[class*="-content"]{
-      @include ReSassResponsive(768){
+      @include ReSassWidthResponsive(768){
         order: 2;
       }
     }
 
     > div[class*="-wrapper-02"]{
-      @include ReSassResponsive(768){
+      @include ReSassWidthResponsive(768){
         order: 4;
         margin-bottom: 15px;
       }
     }
 
     > div[class*="-wrapper-blockchain-01"]{
-      @include ReSassResponsive(768){
+      @include ReSassWidthResponsive(768){
         order: 3;
       }
     }
@@ -138,7 +138,7 @@
       width: 100%;
       padding: 10px 0 0;
 
-      @include ReSassResponsive(992){
+      @include ReSassWidthResponsive(992){
         flex-direction: column;
       }
 
@@ -149,7 +149,7 @@
 
     &-graphics{
 
-      @include ReSassResponsive(992){
+      @include ReSassWidthResponsive(992){
         padding: 0 !important;
         margin-bottom: 20px;
       }
@@ -162,7 +162,7 @@
         padding: 10px 15px 15px;
         margin-top: 15px;
 
-        @include ReSassResponsive(992){
+        @include ReSassWidthResponsive(992){
           text-align: center;
         }
 
@@ -201,7 +201,7 @@
 
     &-content{
 
-      @include ReSassResponsive(992){
+      @include ReSassWidthResponsive(992){
         padding: 0 !important;
       }
 
@@ -210,7 +210,7 @@
         font-size: 17px;
         line-height: 1.2;
 
-        @include ReSassResponsive(992){
+        @include ReSassWidthResponsive(992){
           padding: 0;
         }
 
@@ -258,7 +258,7 @@
       &-icons{
         margin-top: 10px;
 
-        @include ReSassResponsive(992){
+        @include ReSassWidthResponsive(992){
           margin-bottom: -7px;
         }
 
@@ -311,7 +311,7 @@
     border-top: none;
     width: 100%;
 
-    @include ReSassResponsive(768){
+    @include ReSassWidthResponsive(768){
       border: 1px solid transparentize($global-clr-soft-gray, 0.7);
     }
 
@@ -405,7 +405,7 @@
             @include border-radius(0);
             @include transition(all, 0.1s, linear);
 
-            @include ReSassResponsive(400){
+            @include ReSassWidthResponsive(400){
               min-width: auto;
 
               .page-link-date{
@@ -472,7 +472,7 @@
               background-color: $global-clr-soft-gray;
               border-color: $global-clr-soft-gray;
 
-              @include ReSassResponsive(400){
+              @include ReSassWidthResponsive(400){
                 min-width: 100px;
               }
 
@@ -489,10 +489,10 @@
     &-sidebar{
       width: 270px;
 
-      @include ReSassResponsive(1200){
+      @include ReSassWidthResponsive(1200){
         width: 250px;
       }
-      @include ReSassResponsive(992){
+      @include ReSassWidthResponsive(992){
         width: 100%;
         padding: 0 !important;
         margin-bottom: 20px;
@@ -522,13 +522,13 @@
         &-p15{
           padding: 10px 15px 5px;
 
-          @include ReSassResponsive(992){
+          @include ReSassWidthResponsive(992){
             padding: 10px 15px 15px;
           }
-          @include ReSassResponsive(576){
+          @include ReSassWidthResponsive(576){
             padding: 10px 15px 8px;
           }
-          @include ReSassResponsive(480){
+          @include ReSassWidthResponsive(480){
             padding: 7px 10px 4px;
           }
         }

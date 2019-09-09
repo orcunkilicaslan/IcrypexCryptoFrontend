@@ -4,10 +4,10 @@
   padding: 25px 0 15px;
   flex: inherit !important;
 
-  @include ReSassResponsive(1400){
+  @include ReSassWidthResponsive(1400){
     padding: 20px 0 15px;
   }
-  @include ReSassResponsive(576){
+  @include ReSassWidthResponsive(576){
     padding: 10px 15px 15px;
   }
 
@@ -38,7 +38,7 @@
   div[class*="-left"]{
     padding-right: 0;
     padding-left: 0;
-    @include ReSassResponsive(768){
+    @include ReSassWidthResponsive(768){
       padding: 0;
       flex: 0 0 100%;
       max-width: 100%;
@@ -47,7 +47,7 @@
   div[class*="-right"]{
     padding-right: 0;
     padding-left: 0;
-    @include ReSassResponsive(768){
+    @include ReSassWidthResponsive(768){
       display: none;
     }
   }
@@ -99,10 +99,10 @@
     font-size: 25px;
     font-weight: normal;
 
-    @include ReSassResponsive(1400){
+    @include ReSassWidthResponsive(1400){
       font-size: 23px;
     }
-    @include ReSassResponsive(480){
+    @include ReSassWidthResponsive(480){
       font-size: 20px;
     }
 
@@ -123,10 +123,10 @@
     font-size: 17px;
     font-weight: normal;
 
-    @include ReSassResponsive(1400){
+    @include ReSassWidthResponsive(1400){
       font-size: 16px;
     }
-    @include ReSassResponsive(768){
+    @include ReSassWidthResponsive(768){
       justify-content: flex-start;
     }
   }

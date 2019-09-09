@@ -4,14 +4,14 @@
   &-contact{
     width: 100%;
 
-    @include ReSassResponsive(992){
+    @include ReSassWidthResponsive(992){
       flex-direction: column;
     }
 
     &-form{
       padding-right: 10px !important;
 
-      @include ReSassResponsive(992){
+      @include ReSassWidthResponsive(992){
         padding-right: 0 !important;
       }
 
@@ -19,7 +19,7 @@
         margin-top: 0;
 
         .form-row{
-          @include ReSassResponsive(400){
+          @include ReSassWidthResponsive(400){
             flex-direction: column;
           }
         }
@@ -40,7 +40,7 @@
 
     &-maps{
 
-      @include ReSassResponsive(992){
+      @include ReSassWidthResponsive(992){
         margin-top: 30px;
         padding-left: 0 !important;
       }
@@ -62,7 +62,7 @@
           //height: 465px;
           min-height: 465px;
 
-          @include ReSassResponsive(576){
+          @include ReSassWidthResponsive(576){
             min-height: 400px;
           }
         }
@@ -75,7 +75,7 @@
           margin-top: 0;
           padding: 10px 15px;
 
-          @include ReSassResponsive(480){
+          @include ReSassWidthResponsive(480){
             flex-direction: column;
           }
 
@@ -91,7 +91,7 @@
             &adress{
               font-size: 15px;
 
-              @include ReSassResponsive(480){
+              @include ReSassWidthResponsive(480){
                 text-align: center;
               }
 
@@ -106,7 +106,7 @@
               padding-bottom: 5px !important;
               text-align: center;
 
-              @include ReSassResponsive(480){
+              @include ReSassWidthResponsive(480){
                 width: 100%;
                 margin-top: 3px !important;
               }

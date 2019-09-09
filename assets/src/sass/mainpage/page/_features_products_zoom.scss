@@ -7,11 +7,11 @@
       padding-top: 20px;
       padding-bottom: 30px;
 
-      @include ReSassResponsive(768){
+      @include ReSassWidthResponsive(768){
         flex-direction: column;
         display: block !important;
       }
-      @include ReSassResponsive(576){
+      @include ReSassWidthResponsive(576){
         padding-bottom: 15px;
       }
 
@@ -19,7 +19,7 @@
         width: 270px;
         margin-top: 1px;
 
-        @include ReSassResponsive(768){
+        @include ReSassWidthResponsive(768){
           width: 100%;
           padding: 0 !important;
           margin-bottom: 30px;
@@ -141,10 +141,10 @@
                 width: 50%;
                 margin: 5px 0;
 
-                @include ReSassResponsive(768){
+                @include ReSassWidthResponsive(768){
                   width: 25%;
                 }
-                @include ReSassResponsive(480){
+                @include ReSassWidthResponsive(480){
                   width: 50%;
                 }
 
@@ -169,7 +169,7 @@
         &-price{
           padding: 5px 15px;
 
-          @include ReSassResponsive(768){
+          @include ReSassWidthResponsive(768){
             padding: 5px 15px 15px;
           }
 
@@ -177,7 +177,7 @@
             padding: 10px 0;
             align-items: flex-end;
 
-            @include ReSassResponsive(576){
+            @include ReSassWidthResponsive(576){
               border-bottom: 1px solid transparentize($global-clr-soft-gray, 0.85);
             }
 
@@ -205,7 +205,7 @@
 
       &-price{
         .features-products-zoom-sidebar{
-          @include ReSassResponsive(768){
+          @include ReSassWidthResponsive(768){
             order: 2;
             margin-bottom: 0;
             margin-top: 30px;
@@ -216,7 +216,7 @@
       &-price,
       &-overview{
         .features-products-zoom-sidebar{
-          @include ReSassResponsive(768){
+          @include ReSassWidthResponsive(768){
             display: block;
           }
         }
@@ -225,7 +225,7 @@
       &-detail,
       &-feed{
         .features-products-zoom-sidebar{
-          @include ReSassResponsive(768){
+          @include ReSassWidthResponsive(768){
             display: none;
           }
         }
@@ -233,7 +233,7 @@
 
       &-wrapper{
 
-        @include ReSassResponsive(768){
+        @include ReSassWidthResponsive(768){
           width: 100%;
           padding: 0 !important;
         }
@@ -359,13 +359,13 @@
         .contentwidth500{
           max-width: 500px;
 
-          @include ReSassResponsive(576){
+          @include ReSassWidthResponsive(576){
             max-width: 480px;
           }
-          @include ReSassResponsive(480){
+          @include ReSassWidthResponsive(480){
             max-width: 400px;
           }
-          @include ReSassResponsive(400){
+          @include ReSassWidthResponsive(400){
             max-width: 360px;
           }
         }
@@ -395,7 +395,7 @@
               }
             }
 
-            @include ReSassResponsive(768){
+            @include ReSassWidthResponsive(768){
               td{
                 &:last-child{
                   white-space: nowrap;
@@ -409,7 +409,7 @@
       &-socialfeed{
         margin-top: -67px;
 
-        @include ReSassResponsive(480){
+        @include ReSassWidthResponsive(480){
           margin-top: -55px;
         }
       }

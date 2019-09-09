@@ -8,7 +8,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
   background-position: top center;
   background-attachment: fixed;
 
-  @include ReSassResponsive(768){
+  @include ReSassWidthResponsive(768){
     background-image: none;
   }
 

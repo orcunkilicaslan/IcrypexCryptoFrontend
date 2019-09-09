@@ -79,18 +79,18 @@ $globalSvgIconImgPath : "../../img/global/svg";
   /* Tradepage Profile Sidebar Start */
   &-tradepage{
     &.maincont-left{
-      @include ReSassResponsive(1200){
+      @include ReSassWidthResponsive(1200){
         flex: 0 0 20%;
         max-width: 20%;
       }
-      @include ReSassResponsive(992){
+      @include ReSassWidthResponsive(992){
         display: flex;
         flex-direction: row;
         flex: 0 0 100%;
         max-width: 100%;
         padding: 0 !important;
       }
-      @include ReSassResponsive(400){
+      @include ReSassWidthResponsive(400){
         flex-direction: column;
         margin-top: 0;
       }
@@ -99,14 +99,14 @@ $globalSvgIconImgPath : "../../img/global/svg";
     > *[class*="sidebar-"]{
       margin-top: 15px;
 
-      @include ReSassResponsive(992){
+      @include ReSassWidthResponsive(992){
         flex: 0 0 calc((100% / 2) - 3px);
         max-width: calc((100% / 2) - 3px);
         margin-top: 0;
         margin-left: 3px;
         margin-right: 3px;
 
-        @include ReSassResponsive(400){
+        @include ReSassWidthResponsive(400){
           margin: 0;
         }
 
@@ -117,7 +117,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
           margin-right: 0;
         }
       }
-      @include ReSassResponsive(400){
+      @include ReSassWidthResponsive(400){
         flex: 0 0 calc(100% / 1);
         max-width: calc(100% / 1);
         margin-top: 4px;
@@ -132,16 +132,16 @@ $globalSvgIconImgPath : "../../img/global/svg";
   &-navigasyon{
 
     &-account{
-      @include ReSassResponsive(992){
+      @include ReSassWidthResponsive(992){
         border-bottom: 4px solid $global-clr-soft-blue;
       }
     }
 
     &-security{
-      @include ReSassResponsive(992){
+      @include ReSassWidthResponsive(992){
         border-bottom: 4px solid $global-clr-orange;
       }
-      @include ReSassResponsive(400){
+      @include ReSassWidthResponsive(400){
         border-top: 4px solid $global-clr-orange;
         border-bottom: none;
       }
@@ -152,7 +152,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
       padding-bottom: 10px;
       margin-bottom: 10px;
 
-      @include ReSassResponsive(992){
+      @include ReSassWidthResponsive(992){
         display: none;
       }
     }
@@ -217,13 +217,13 @@ $globalSvgIconImgPath : "../../img/global/svg";
         position: relative;
         @include border-radius(0);
 
-        @include ReSassResponsive(768){
+        @include ReSassWidthResponsive(768){
           max-width: 220px;
         }
-        @include ReSassResponsive(576){
+        @include ReSassWidthResponsive(576){
           max-width: 182px;
         }
-        @include ReSassResponsive(400){
+        @include ReSassWidthResponsive(400){
           max-width: 240px;
         }
 
@@ -258,17 +258,17 @@ $globalSvgIconImgPath : "../../img/global/svg";
         border: none;
         @include border-radius(0);
 
-        @include ReSassResponsive(768){
+        @include ReSassWidthResponsive(768){
           max-width: 220px;
         }
-        @include ReSassResponsive(576){
+        @include ReSassWidthResponsive(576){
           max-width: 182px;
           left: 0 !important;
         }
-        @include ReSassResponsive(480){
+        @include ReSassWidthResponsive(480){
           left: 1px !important;
         }
-        @include ReSassResponsive(400){
+        @include ReSassWidthResponsive(400){
           max-width: 240px;
         }
 
@@ -288,7 +288,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
           border-bottom: 1px solid transparentize($global-clr-white , 0.8);
           @include border-radius(0);
 
-          @include ReSassResponsive(576){
+          @include ReSassWidthResponsive(576){
             font-size: 17px;
           }
         }
@@ -300,7 +300,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
           padding: 7px 5px 5px;
           margin-right: 0;
 
-          @include ReSassResponsive(400){
+          @include ReSassWidthResponsive(400){
             margin: 0 auto;
           }
         }
@@ -315,7 +315,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
           padding: 7px 5px 5px;
           margin-left: 0;
 
-          @include ReSassResponsive(400){
+          @include ReSassWidthResponsive(400){
             padding: 4px 5px 8px;
             margin: 0 auto;
           }
@@ -324,7 +324,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
           background-color: lighten($global-clr-btn-blue, 3%);
           margin: 4px auto;
 
-          @include ReSassResponsive(400){
+          @include ReSassWidthResponsive(400){
             margin: 0 auto;
           }
         }

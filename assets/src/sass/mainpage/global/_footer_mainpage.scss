@@ -11,14 +11,14 @@ $mainpageFooterImgPath : "../../img/mainpage/footer";
     padding-top: 75px;
     padding-bottom: 35px;
 
-    @include ReSassResponsive(1400){
+    @include ReSassWidthResponsive(1400){
       padding-top: 25px;
       padding-bottom: 25px;
     }
-    @include ReSassResponsive(768){
+    @include ReSassWidthResponsive(768){
       background-image: none;
     }
-    @include ReSassResponsive(480){
+    @include ReSassWidthResponsive(480){
       padding-bottom: 0;
     }
   }
@@ -57,18 +57,18 @@ $mainpageFooterImgPath : "../../img/mainpage/footer";
     padding-bottom: 15px;
     padding-left: 60px;
 
-    @include ReSassResponsive(1400){
+    @include ReSassWidthResponsive(1400){
       padding-top: 35px;
     }
-    @include ReSassResponsive(992){
+    @include ReSassWidthResponsive(992){
       padding-left: 0;
       max-width: 700px;
       margin: 0 auto;
     }
-    @include ReSassResponsive(480){
+    @include ReSassWidthResponsive(480){
       padding-top: 25px;
     }
-    @include ReSassResponsive(400){
+    @include ReSassWidthResponsive(400){
       padding-top: 20px;
     }
   }
@@ -76,10 +76,10 @@ $mainpageFooterImgPath : "../../img/mainpage/footer";
   &-social{
     padding: 30px 0;
 
-    @include ReSassResponsive(1400){
+    @include ReSassWidthResponsive(1400){
       padding: 20px 0;
     }
-    @include ReSassResponsive(480){
+    @include ReSassWidthResponsive(480){
       padding: 10px 0 0;
     }
 
@@ -92,7 +92,7 @@ $mainpageFooterImgPath : "../../img/mainpage/footer";
     text-align: center;
     padding: 15px 0;
 
-    @include ReSassResponsive(480){
+    @include ReSassWidthResponsive(480){
       padding: 20px 0;
     }
 
@@ -121,7 +121,7 @@ $mainpageFooterImgPath : "../../img/mainpage/footer";
     position: relative;
     overflow: hidden;
 
-    @include ReSassResponsive(480){
+    @include ReSassWidthResponsive(480){
       background-color: transparentize($global-sitebg-darkblue01, 0.7);
       margin-top: 0;
       padding: 10px 0;
@@ -141,7 +141,7 @@ $mainpageFooterImgPath : "../../img/mainpage/footer";
       top: 50%;
       z-index: 1;
 
-      @include ReSassResponsive(480){
+      @include ReSassWidthResponsive(480){
         display: none;
       }
     }
@@ -156,12 +156,12 @@ $mainpageFooterImgPath : "../../img/mainpage/footer";
       margin: 0;
       text-align: center;
 
-      @include ReSassResponsive(480){
+      @include ReSassWidthResponsive(480){
         display: flex;
         justify-content: center;
         @include scale(0.8);
       }
-      @include ReSassResponsive(400){
+      @include ReSassWidthResponsive(400){
         flex-wrap: wrap;
         justify-content: space-between;
       }
@@ -170,10 +170,10 @@ $mainpageFooterImgPath : "../../img/mainpage/footer";
         position: relative;
         padding: 0 12px;
         display: inline-block;
-        @include ReSassResponsive(480){
+        @include ReSassWidthResponsive(480){
           padding: 0 10px;
         }
-        @include ReSassResponsive(400){
+        @include ReSassWidthResponsive(400){
           max-width: calc(100% /2);
           flex: 0 0 calc(100% /2);
           padding: 0;
@@ -188,7 +188,7 @@ $mainpageFooterImgPath : "../../img/mainpage/footer";
           right: -3px;
           background-color: transparentize($global-clr-soft-gray, 0.7);
 
-          @include ReSassResponsive(480){
+          @include ReSassWidthResponsive(480){
             display: none;
           }
         }
@@ -210,7 +210,7 @@ $mainpageFooterImgPath : "../../img/mainpage/footer";
         }
         .papara{
           top: 3px;
-          @include ReSassResponsive(576){
+          @include ReSassWidthResponsive(576){
             top: 1px;
           }
         }

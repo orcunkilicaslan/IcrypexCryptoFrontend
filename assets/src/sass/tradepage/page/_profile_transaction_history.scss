@@ -6,12 +6,12 @@
     div[class*=boxtitle] {
       margin-bottom: 0;
 
-      @include ReSassResponsive(768){
+      @include ReSassWidthResponsive(768){
         border-bottom: none;
       }
 
       > span[class*="boxtitle-date"]{
-        @include ReSassResponsive(768){
+        @include ReSassWidthResponsive(768){
           margin-top: 5px;
         }
       }
@@ -81,7 +81,7 @@
         }
 
         &-btn{
-          @include ReSassResponsive(768){
+          @include ReSassWidthResponsive(768){
             background-color: $global-clr-light-gray;
 
             &::before{
@@ -92,7 +92,7 @@
             display: block;
             padding: 1px 5px;
 
-            @include ReSassResponsive(768){
+            @include ReSassWidthResponsive(768){
               width: 100% !important;
               justify-content: center;
             }
