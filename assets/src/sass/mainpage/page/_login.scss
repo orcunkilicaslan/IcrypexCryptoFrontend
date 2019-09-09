@@ -16,6 +16,9 @@
       @include ReSassWidthResponsive(992){
         display: block;
       }
+      @include ReSassHeightResponsive(800){
+        display: block;
+      }
     }
 
     .body-center{
@@ -25,6 +28,9 @@
       height: 100%;
 
       @include ReSassWidthResponsive(992){
+        display: block;
+      }
+      @include ReSassHeightResponsive(1100){
         display: block;
       }
     }
@@ -84,6 +90,9 @@
     height: 100%;
 
     @include ReSassWidthResponsive(992){
+      display: block;
+    }
+    @include ReSassHeightResponsive(1100){
       display: block;
     }
 

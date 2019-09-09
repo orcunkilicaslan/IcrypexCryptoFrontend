@@ -84,6 +84,9 @@ input, select, textarea{
   @include ReSassWidthResponsive(576){
     display: block;
   }
+  @include ReSassHeightResponsive(1100){
+    display: block;
+  }
 
   main,
   section{
@@ -91,6 +94,9 @@ input, select, textarea{
 
     @include ReSassWidthResponsive(992){
       flex: inherit;
+      display: block;
+    }
+    @include ReSassHeightResponsive(1100){
       display: block;
     }
   }
