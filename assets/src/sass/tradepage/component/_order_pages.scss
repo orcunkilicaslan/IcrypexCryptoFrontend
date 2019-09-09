@@ -27,6 +27,10 @@ $globalSvgIconImgPath : "../../img/global/svg";
         width: calc(100% + 2px);
         left: -1px;
         position: absolute;
+
+        @include ReSassResponsive(576){
+          background-color: $global-clr-green;
+        }
       }
     }
 
@@ -68,34 +72,8 @@ $globalSvgIconImgPath : "../../img/global/svg";
           width: 100%;
           flex: 0 0 100%;
           max-width: 100%;
-          padding: 0 !important;
-          margin-top: 15px;
-          padding-top: 15px !important;
-
-          &::before{
-            content: "";
-            background-color: transparentize($global-clr-soft-gray, 0.7);
-            height: 1px;
-            width: calc(100% + 32px);
-            left: -16px;
-            top: 0;
-            position: absolute;
-          }
-
-          &:first-child{
-            margin-top: 0;
-            padding-top: 0 !important;
-
-            &::before{
-              display: none;
-            }
-          }
-        }
-        @include ReSassResponsive(480){
-          &::before{
-            width: calc(100% + 22px);
-            left: -11px;
-          }
+          padding-left: 0!important;
+          padding-right: 0!important;
         }
       }
 
@@ -116,9 +94,61 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
     &-buy{
       padding-right: 16px !important;
+
+      @include ReSassResponsive(576){
+        &::before{
+          content: "";
+          background-color: transparentize($global-clr-soft-gray, 0.7);
+          height: 1px;
+          width: calc(100% + 32px);
+          left: -16px;
+          bottom: -15px;
+          position: absolute;
+        }
+      }
+      @include ReSassResponsive(480){
+        &::before{
+          width: calc(100% + 22px);
+          left: -11px;
+        }
+      }
     }
     &-sell{
       padding-left: 16px !important;
+
+      @include ReSassResponsive(576){
+        margin-top: 20px;
+        padding-top: 25px !important;
+
+        &::before{
+          content: "";
+          background-color: $global-clr-white;
+          height: 20px;
+          width: calc(100% + 34px);
+          left: -17px;
+          top: -5px;
+          position: absolute;
+        }
+        &::after{
+          content: "";
+          background-color: $global-clr-red;
+          height: 4px;
+          width: calc(100% + 34px);
+          left: -17px;
+          top: 10px;
+          position: absolute;
+        }
+      }
+      @include ReSassResponsive(480){
+        &::before{
+          width: calc(100% + 22px);
+          left: -11px;
+        }
+        &::after{
+          width: calc(100% + 22px);
+          left: -11px;
+        }
+      }
     }
 
     &-form{
@@ -135,9 +165,14 @@ $globalSvgIconImgPath : "../../img/global/svg";
         .btn{
           font-size: 20px;
           padding: 3px 10px 6px;
+
+          @include ReSassResponsive(400){
+            font-size: 17px;
+            padding: 4px 5px 5px;
+            height: auto;
+          }
         }
       }
-
     }
 
     &-info{
