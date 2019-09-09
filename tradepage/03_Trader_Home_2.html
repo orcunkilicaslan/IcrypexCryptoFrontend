@@ -234,7 +234,7 @@
         <!-- Crypto Stats Start -->
         <div class="header-statscyrpto d-flex justify-content-between align-items-center">
             <div class="container">
-                <div class="header-statscyrpto-price-big row align-items-center">
+                <div class="header-statscyrpto-price-big row">
                     <!-- Select -->
                     <div class="maincont-left col-3">
                         <form class="formuinew">
@@ -306,7 +306,7 @@
                     <!-- Select -->
                     <!-- Big Price -->
                     <div class="maincont-right col-9">
-                        <ul class="header-statscyrpto-price-big-list">
+                        <ul id="headertitleareapricebig" class="header-statscyrpto-price-big-list owl-carousel owl-theme">
                             <li class="header-statscyrpto-price-big-list-item">
                                 <h4 class="header-statscyrpto-price-big-title">GÜNCEL</h4>
                                 <span class="header-statscyrpto-price-big-volume sitecolorred" id="hc"> 68542.50  TRY</span>
@@ -456,7 +456,7 @@
     <!-- Market Data End -->
 
     <!-- Chart Start -->
-    <div class="maincont-right col-10">
+    <div class="trader-bigchart-wrapper maincont-right col-10">
     <div class="bigchart-chart">
         <img src="../assets/img/tradepage/elements/Trading_View.svg" alt="Trading_View" width="936" height="491" />
     </div>
@@ -595,6 +595,16 @@
                     </div>
                 </div>
                 <!-- Alert -->
+                <!-- Alert Sweet Small -->
+                <script>
+                    $(document).ready(function(){
+                        $(".alert-sweet-small").fadeTo(5000, 500).slideUp(500, function() {
+                            $(".alert-sweet-small").slideUp(500);
+                        });
+                    });
+                </script>
+                <!-- Alert Sweet Small -->
+
                 <div class="tab-pane fade show active" id="MARKET" role="tabpanel" aria-labelledby="tab-MARKET">
                     <!-- Buy/Sell Start -->
                     <div class="order-orders-column row">

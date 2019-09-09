@@ -11,13 +11,37 @@ $tradepageHomepageImgPath : "../../img/tradepage";
       border-bottom: 1px solid transparentize($global-clr-soft-gray, 0.7);
       padding-bottom: 15px;
     }
+
+    &-wrapper{
+      @include ReSassWidthResponsive(1200){
+        flex: 0 0 80%;
+        max-width: 80%;
+      }
+      @include ReSassWidthResponsive(992){
+        display: block;
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding-right: 15px;
+      }
+    }
   }
 
   &-order{
     background-color: $global-clr-white;
     padding: 15px 0 40px;
     
-    &-wrapper{}
+    &-wrapper{
+      @include ReSassWidthResponsive(1200){
+        flex: 0 0 80%;
+        max-width: 80%;
+      }
+      @include ReSassWidthResponsive(992){
+        display: block;
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding-right: 15px;
+      }
+    }
 
     &-orders{
 

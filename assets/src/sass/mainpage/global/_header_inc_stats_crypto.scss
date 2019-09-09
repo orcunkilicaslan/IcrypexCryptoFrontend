@@ -105,6 +105,10 @@ $globalSvgIconImgPath : "../../img/global/svg";
     position: relative;
     @include transition(all, 0.1s, ease-out);
 
+    @include ReSassWidthResponsive(1400){
+      height: 54px;
+    }
+
     &::before,
     &::after{
       background-color: lighten($global-clr-soft-gray, 30%);
@@ -127,6 +131,21 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
       &-big{
         color: $global-clr-dark-blue;
+        align-items: center;
+
+        > .maincont-left{
+          @include ReSassWidthResponsive(1200){
+            flex: 0 0 20% !important;
+            max-width: 20% !important;
+          }
+        }
+
+        > .maincont-right{
+          @include ReSassWidthResponsive(1200){
+            flex: 0 0 80% !important;
+            max-width: 80% !important;
+          }
+        }
 
         .coinareaselect{
 
@@ -180,6 +199,10 @@ $globalSvgIconImgPath : "../../img/global/svg";
             height: 60px;
             cursor: pointer;
 
+            @include ReSassWidthResponsive(1400){
+              height: 54px;
+            }
+
             &::after{
               display: none;
             }
@@ -196,6 +219,14 @@ $globalSvgIconImgPath : "../../img/global/svg";
               font-weight: 300;
               letter-spacing: -0.9px;
               min-width: 130px;
+
+              @include ReSassWidthResponsive(1400){
+                font-size: 40px;
+              }
+              @include ReSassWidthResponsive(1200){
+                font-size: 36px;
+                min-width: 115px;
+              }
             }
 
             &-arrow{
@@ -217,6 +248,12 @@ $globalSvgIconImgPath : "../../img/global/svg";
                 left: calc(50% - 7px);
                 @include rotate(135);
                 @include transition(border, 0.1s, ease-in-out);
+
+                @include ReSassWidthResponsive(1200){
+                  width: 12px;
+                  height: 12px;
+                  top: calc(50% - 7px);
+                }
               }
             }
           }
@@ -253,6 +290,10 @@ $globalSvgIconImgPath : "../../img/global/svg";
                 height: 480px;
                 opacity: 1;
                 @include transition(all, 0.25s, ease-out);
+
+                @include ReSassWidthResponsive(1200){
+                  height: 415px;
+                }
               }
             }
 
@@ -269,17 +310,29 @@ $globalSvgIconImgPath : "../../img/global/svg";
               position: relative;
               @include transition(all, 0.3s, ease-in-out);
 
+              @include ReSassWidthResponsive(1200){
+                padding: 5px 10px;
+              }
+
               &:hover{
                 background-color: lighten($global-clr-soft-gray, 10%);
               }
 
               &:first-child{
                 padding-top: 12px;
+
+                @include ReSassWidthResponsive(1200){
+                  padding-top: 7px;
+                }
               }
 
               &:last-child{
                 padding-bottom: 12px;
                 border-bottom: none;
+
+                @include ReSassWidthResponsive(1200){
+                  padding-bottom: 7px;
+                }
               }
             }
 
@@ -311,28 +364,44 @@ $globalSvgIconImgPath : "../../img/global/svg";
             line-height: 0.95;
             letter-spacing: -0.3px;
             position: relative;
-            padding-right: 15px;
-            padding-left: 15px;
+          }
 
-            &::before{
-              content: "";
-              position: absolute;
-              width: 1px;
-              height: 34px;
-              top: calc(50% - 16px);
-              right: 0;
-              background-color: transparentize($global-clr-soft-gray, 0.7);
+          .owl{
+            &-stage{
+              width: auto !important;
+              float: right;
             }
 
-            &:first-child{
-              padding-left: 0;
-            }
-            &:last-child{
-              padding-right: 0;
+            &-item{
+              padding-right: 15px;
+              padding-left: 15px;
 
-              &::before{display: none;}
+              @include ReSassWidthResponsive(1200){
+                padding-right: 10px;
+                padding-left: 10px;
+              }
+
+              &::before{
+                content: "";
+                position: absolute;
+                width: 1px;
+                height: 34px;
+                top: calc(50% - 16px);
+                right: 0;
+                background-color: transparentize($global-clr-soft-gray, 0.7);
+              }
+
+              &:first-child{
+                padding-left: 0;
+              }
+              &:last-child{
+                padding-right: 0;
+
+                &::before{display: none;}
+              }
             }
           }
+
         }
 
         &-title{
