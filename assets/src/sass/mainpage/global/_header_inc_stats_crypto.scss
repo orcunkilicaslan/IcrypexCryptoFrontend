@@ -138,12 +138,20 @@ $globalSvgIconImgPath : "../../img/global/svg";
             flex: 0 0 20% !important;
             max-width: 20% !important;
           }
+          @include ReSassWidthResponsive(992){
+            flex: 0 0 30% !important;
+            max-width: 30% !important;
+          }
         }
 
         > .maincont-right{
           @include ReSassWidthResponsive(1200){
             flex: 0 0 80% !important;
             max-width: 80% !important;
+          }
+          @include ReSassWidthResponsive(992){
+            flex: 0 0 70% !important;
+            max-width: 70% !important;
           }
         }
 

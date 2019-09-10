@@ -33,8 +33,6 @@ $('#headertitleareapricelite').owlCarousel({
 /* Header Bottom Lite Price */
 
 /* Header Bottom Big Price */
-
-
 $('#headertitleareapricebig').owlCarousel({
     loop:false,
     nav:false,
@@ -52,9 +50,10 @@ $('#headertitleareapricebig').owlCarousel({
             items:3,
             autoWidth:false
         },
-        480:{
-            items:1,
+        768:{
+            loop:true,
             autoWidth:false,
+            items:3,
             nav:true,
         },
         992:{
