@@ -211,6 +211,11 @@ $globalSvgIconImgPath : "../../img/global/svg";
               i[class*="icon-svg"]{
                 width: 35px;
                 height: 35px;
+
+                @include ReSassWidthResponsive(1200){
+                  width: 30px;
+                  height: 30px;
+                }
               }
             }
 
@@ -224,8 +229,8 @@ $globalSvgIconImgPath : "../../img/global/svg";
                 font-size: 40px;
               }
               @include ReSassWidthResponsive(1200){
-                font-size: 36px;
-                min-width: 115px;
+                font-size: 33px;
+                min-width: 105px;
               }
             }
 
@@ -235,6 +240,11 @@ $globalSvgIconImgPath : "../../img/global/svg";
               width: 24px;
               height: 24px;
               position: relative;
+
+              @include ReSassWidthResponsive(1200){
+                width: 18px;
+                height: 18px;
+              }
 
               &::before{
                 content: "";
@@ -356,6 +366,11 @@ $globalSvgIconImgPath : "../../img/global/svg";
           justify-content: flex-end;
           margin-bottom: 0;
 
+          @include ReSassWidthResponsive(1200){
+            width: calc(100% - 40px) !important;
+            margin: 0 auto;
+          }
+
           &-item{
             color: $global-clr-dark-blue;
             text-align: left;
@@ -367,9 +382,19 @@ $globalSvgIconImgPath : "../../img/global/svg";
           }
 
           .owl{
+
             &-stage{
-              width: auto !important;
-              float: right;
+              @include ReSassMinWidthResponsive(1200){
+                width: 100% !important;
+                display: flex;
+                justify-content: flex-end;
+              }
+            }
+
+            &-stage-outer{
+              @include ReSassWidthResponsive(1200){
+                z-index: 1;
+              }
             }
 
             &-item{
@@ -377,8 +402,8 @@ $globalSvgIconImgPath : "../../img/global/svg";
               padding-left: 15px;
 
               @include ReSassWidthResponsive(1200){
-                padding-right: 10px;
-                padding-left: 10px;
+                //padding-right: 10px;
+                //padding-left: 10px;
               }
 
               &::before{
@@ -390,18 +415,88 @@ $globalSvgIconImgPath : "../../img/global/svg";
                 right: 0;
                 background-color: transparentize($global-clr-soft-gray, 0.7);
               }
-
-              &:first-child{
-                padding-left: 0;
-              }
               &:last-child{
-                padding-right: 0;
-
                 &::before{display: none;}
               }
             }
-          }
 
+            &-nav{
+              @include ReSassWidthResponsive(1200){
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                margin: 0;
+              }
+
+              button[class*="owl-"]{
+                @include ReSassWidthResponsive(1200){
+                  background-color: transparentize($global-clr-soft-gray, 0.9);
+                  border: 1px solid transparentize($global-clr-soft-gray, 0.5);
+                  @include border-radius(0);
+                  width: 20px;
+                  height: calc(100% + 2px);
+                  margin: 0;
+                  top: -1px;
+
+                  &:hover{
+                    background-color: transparentize($global-clr-soft-gray, 0.5);
+                  }
+                }
+                @include ReSassWidthResponsive(480){
+                  height: calc(100% + 0);
+                  top: 0;
+                }
+              }
+              button[class*="owl-prev"]{
+                @include ReSassWidthResponsive(1200){
+                  left: -19px;
+                }
+              }
+              button[class*="owl-next"]{
+                @include ReSassWidthResponsive(1200){
+                  right: -19px;
+                }
+              }
+            }
+
+            &-prev,
+            &-next{
+              position: absolute;
+
+              &::before{
+                content: "";
+                position: absolute;
+                width: 12px;
+                height: 12px;
+                left: calc(50% - 6px);
+                top: calc(50% - 6px);
+                background-image: url(#{$globalSvgIconImgPath}/Arrow_Down_Dropdown.svg);
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size: contain;
+              }
+
+              span{
+                display: none;
+              }
+            }
+
+            &-prev{
+              left: 0;
+              &::before{
+                @include rotate(90);
+              }
+            }
+            &-next{
+              right: 0;
+              &::before{
+                @include rotate(270);
+              }
+            }
+          }
         }
 
         &-title{

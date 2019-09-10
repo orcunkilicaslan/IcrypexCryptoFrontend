@@ -33,6 +33,8 @@ $('#headertitleareapricelite').owlCarousel({
 /* Header Bottom Lite Price */
 
 /* Header Bottom Big Price */
+
+
 $('#headertitleareapricebig').owlCarousel({
     loop:false,
     nav:false,
@@ -40,7 +42,7 @@ $('#headertitleareapricebig').owlCarousel({
     autoplay:false,
     autoplayTimeout:3000,
     autoplayHoverPause:true,
-    //items:3,
+    items:7,
     margin:0,
     autoWidth:true,
     animateOut: 'fadeOut',
@@ -52,12 +54,18 @@ $('#headertitleareapricebig').owlCarousel({
         },
         480:{
             items:1,
-            autoWidth:true,
+            autoWidth:false,
             nav:true,
         },
         992:{
-            //autoWidth:true,
-
+            loop:true,
+            autoWidth:false,
+            items:5,
+            nav:true,
+        },
+        1200:{
+            items:7,
+            autoWidth:true,
         }
     }
 });
