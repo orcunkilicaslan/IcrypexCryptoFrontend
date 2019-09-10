@@ -338,6 +338,10 @@ $globalSvgIconImgPath : "../../img/global/svg";
         padding-bottom: 10px;
       }
 
+      &-scrollbar{
+        width: 100%;
+      }
+
       &-chartbox{
         display: flex;
         width: 100%;
@@ -353,7 +357,6 @@ $globalSvgIconImgPath : "../../img/global/svg";
           left: 50%;
         }
       }
-
     }
 
     &-buy{
