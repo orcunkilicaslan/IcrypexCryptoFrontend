@@ -1,5 +1,23 @@
 .bigchart{
 
-  &-chart{}
+  &-chart{
 
+    > div{
+      width: calc(100% - 1px)!important;
+      height: 450px !important;
+
+      @include ReSassWidthResponsive(992){
+        height: 400px !important;
+      }
+
+      > div{
+        width: 100% !important;
+        height: 450px !important;
+
+        @include ReSassWidthResponsive(992){
+          height: 400px !important;
+        }
+      }
+    }
+  }
 }

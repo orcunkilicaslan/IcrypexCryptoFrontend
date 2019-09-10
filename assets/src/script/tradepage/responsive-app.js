@@ -93,6 +93,50 @@ $(window).on("load resize",function(e){
 });
 /* Responsive Tradepage Deposit-Withdraw Latest Transactions Owl Carousel */
 
+/* Responsive Tradepage Trader Home Market Data Owl Carousel */
+$(window).on("load resize",function(e){
+    if($(window).width() <= 991){
+        $(document).ready(function() {
+            $('#sidebarmarketdataowltable > tbody > tr').addClass("item");
+            $('#sidebarmarketdataowltable > tbody').addClass("sidebarmarketdata-owl owl-carousel owl-theme");
+            $('#sidebarmarketdataowltable > tbody').owlCarousel({
+                loop:false,
+                nav:false,
+                dots:false,
+                autoplay:false,
+                autoplayTimeout:3000,
+                autoplayHoverPause:true,
+                items:5,
+                margin:10,
+                //stagePadding: 20,
+                autoWidth:false,
+                responsiveClass:true,
+                responsive:{
+                    0:{
+                        items:1,
+                        loop:true,
+                        autoplay:true,
+                    },
+                    768:{
+                        items:2,
+                        loop:true,
+                        autoplay:true,
+                        autoWidth:false,
+                    }
+                }
+            });
+        });
+    }else{
+        $(document).ready(function() {
+            $('#sidebarmarketdataowltable > tbody').removeClass("sidebarmarketdata-owl owl-carousel owl-theme owl-loaded owl-drag");
+            $('#sidebarmarketdataowltable .owl-stage-outer').remove();
+            $('#sidebarmarketdataowltable .owl-nav').remove();
+            $('#sidebarmarketdataowltable .owl-dots').remove();
+        });
+    }
+});
+/* Responsive Tradepage Trader Home Market Data Owl Carousel */
+
 /* Loading Info */
 // console.log("Tradepage App Responsive Javascript Loading Successful");
 /* Loading Info */

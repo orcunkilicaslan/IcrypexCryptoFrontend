@@ -7,9 +7,134 @@ $tradepageHomepageImgPath : "../../img/tradepage";
     flex: inherit !important;
     padding: 20px 0 0;
 
+    @include ReSassWidthResponsive(992){
+      padding: 15px 0 0;
+      border-bottom: 1px solid transparentize($global-clr-soft-gray, 0.7);
+    }
+
     > .container{
       border-bottom: 1px solid transparentize($global-clr-soft-gray, 0.7);
-      padding-bottom: 15px;
+      padding-bottom: 17px;
+
+      @include ReSassWidthResponsive(992){
+        border-bottom: none;
+        padding-bottom: 15px;
+        //max-width: 100%;
+      }
+    }
+
+    .sidebar{
+      @include ReSassWidthResponsive(992){
+        order: 2;
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+        margin-top: 8px;
+
+        div[class*="sidebar-"] {
+          flex: 0 0 100%;
+          max-width: 100%;
+          display: flex;
+          justify-content: space-between;
+          align-content: center;
+          overflow: hidden;
+          border:1px solid transparentize($global-clr-soft-gray, 0.7) !important;
+          background-color: $global-clr-light-gray;
+
+          h2.boxtitle {
+            background-color: #d1d9e0;
+            line-height: 1;
+            padding: 5px 15px 5px 10px;
+            margin: 0 15px 0 0;
+            //display: none;
+            flex: 0 0 85px;
+            max-width: 85px;
+          }
+
+          table.sitetable {
+            display:block;
+            text-align:left !important;
+            flex: 0 0 calc(100% - 85px);
+            max-width: calc(100% - 85px);
+
+            thead, tbody, thead tr, tbody tr, thead th, tbody td{
+              display:flex;
+              flex-wrap: wrap;
+              text-align:left !important;
+              font-size: 17px !important;
+            }
+
+            thead tr{
+              position:absolute;
+              top:-9999px;
+              left:-9999px;
+            }
+
+            thead tr th, tbody tr td{
+              padding-left: 15px;
+              padding-right: 15px;
+            }
+
+            tbody{
+
+              tr{
+                width: 100%;
+                padding-left: 30px;
+
+                td{
+                  width: auto;
+                  border:none;
+                  //border-bottom:1px solid transparentize($global-clr-soft-gray, 0.7) !important;
+                  position:relative;
+                  white-space:inherit !important;
+                  font-weight: 500;
+                  padding-left: 0 !important;
+
+                  &::before{
+                    content: attr(data-title) ": ";
+                    white-space:nowrap;
+                    overflow: hidden;
+                    font-weight: normal;
+                    margin-right: 5px;
+                  }
+
+                  &:first-child{
+                    width: calc(100% / 1);
+                    padding-bottom: 0;
+
+                    &::before{
+                      display: none;
+                    }
+                  }
+
+                  i.arrow{
+                    left: -28px;
+                    top: calc(50% + 11px);
+                  }
+                  i.arrowdown,
+                  i.arrowup{
+                    border-left-width: 8px;
+                    border-right-width: 8px;
+                  }
+                  i.arrowdown{
+                    border-top-width: 8px;
+                  }
+                  i.arrowup{
+                    border-bottom-width: 8px;
+                  }
+                }
+              }
+            }
+          }
+
+          .sidebarmarketdata-owl{
+            .owl{
+              &-item{
+                border-right: 1px solid transparentize($global-clr-soft-gray, 0.7);
+              }
+            }
+          }
+        }
+      }
     }
 
     &-wrapper{
@@ -18,6 +143,7 @@ $tradepageHomepageImgPath : "../../img/tradepage";
         max-width: 80%;
       }
       @include ReSassWidthResponsive(992){
+        order: 1;
         display: block;
         flex: 0 0 100%;
         max-width: 100%;
@@ -29,6 +155,12 @@ $tradepageHomepageImgPath : "../../img/tradepage";
   &-order{
     background-color: $global-clr-white;
     padding: 15px 0 40px;
+
+    .sidebar{
+      @include ReSassWidthResponsive(992){
+        display: none;
+      }
+    }
     
     &-wrapper{
       @include ReSassWidthResponsive(1200){
