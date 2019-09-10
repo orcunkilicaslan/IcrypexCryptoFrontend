@@ -79,6 +79,22 @@
 
 }
 
+// Min Width Responsive
+@mixin ReSassMinWidthResponsive( $point ) {
+
+	@if $point==1200 {
+		@media ( min-width: 1200px ) {
+			@content;
+		}
+	}
+	@if $point==1400 {
+		@media ( min-width: 1400px ) {
+			@content;
+		}
+	}
+
+}
+
 // Max Height Responsive
 @mixin ReSassHeightResponsive( $point ) {
 

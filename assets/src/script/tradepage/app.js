@@ -32,6 +32,45 @@ $('#headertitleareapricelite').owlCarousel({
 });
 /* Header Bottom Lite Price */
 
+/* Header Bottom Big Price */
+
+
+$('#headertitleareapricebig').owlCarousel({
+    loop:false,
+    nav:false,
+    dots:false,
+    autoplay:false,
+    autoplayTimeout:3000,
+    autoplayHoverPause:true,
+    items:7,
+    margin:0,
+    autoWidth:true,
+    animateOut: 'fadeOut',
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:3,
+            autoWidth:false
+        },
+        480:{
+            items:1,
+            autoWidth:false,
+            nav:true,
+        },
+        992:{
+            loop:true,
+            autoWidth:false,
+            items:5,
+            nav:true,
+        },
+        1200:{
+            items:7,
+            autoWidth:true,
+        }
+    }
+});
+/* Header Bottom Big Price */
+
 /* Profile Login Settings Range Slider */
 var rangeSlider = function(){
     var slider = $('.profile-login-settings-range-slider'),
