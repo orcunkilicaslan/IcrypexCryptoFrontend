@@ -34,37 +34,35 @@ $('#headertitleareapricelite').owlCarousel({
 
 /* Header Bottom Big Price */
 $('#headertitleareapricebig').owlCarousel({
-    loop:false,
-    nav:false,
+    loop:true,
+    nav:true,
     dots:false,
     autoplay:false,
     autoplayTimeout:3000,
     autoplayHoverPause:true,
     items:7,
     margin:0,
-    autoWidth:true,
+    autoWidth:false,
     animateOut: 'fadeOut',
     responsiveClass:true,
     responsive:{
         0:{
-            items:3,
-            autoWidth:false
+            items:1,
+        },
+        576:{
+            items:2,
         },
         768:{
-            loop:true,
-            autoWidth:false,
             items:3,
-            nav:true,
         },
         992:{
-            loop:true,
-            autoWidth:false,
             items:5,
-            nav:true,
         },
         1200:{
             items:7,
             autoWidth:true,
+            loop:false,
+            nav:false,
         }
     }
 });

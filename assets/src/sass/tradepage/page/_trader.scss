@@ -33,6 +33,7 @@ $tradepageHomepageImgPath : "../../img/tradepage";
         div[class*="sidebar-"] {
           flex: 0 0 100%;
           max-width: 100%;
+          height: 52px;
           display: flex;
           justify-content: space-between;
           align-content: center;
@@ -172,6 +173,15 @@ $tradepageHomepageImgPath : "../../img/tradepage";
         flex: 0 0 100%;
         max-width: 100%;
         padding-right: 15px;
+      }
+
+      div[class*="boxtitle"]{
+        h3[class*="boxtitle-"],
+        span[class*="boxtitle-"]{
+          @include ReSassWidthResponsive(768){
+            font-size: 17px;
+          }
+        }
       }
     }
 

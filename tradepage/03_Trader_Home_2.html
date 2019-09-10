@@ -532,7 +532,7 @@
     <div class="trader-order-wrapper maincont-right col-10">
 
         <!-- Order Tab -->
-        <div class="trader-order-orders">
+        <div class="trader-order-orders nav-tabs-responsive nav-tabs-responsive-light">
             <ul class="trader-order-orders-tabnav nav nav-tabs" role="tablist">
                 <li class="nav-item"><a class="nav-link active" id="tab-MARKET" data-toggle="tab" href="#MARKET" role="tab" aria-controls="MARKET" aria-selected="true"><span>MARKET</span></a></li>
                 <li class="nav-item"><a class="nav-link" id="tab-LIMIT" data-toggle="tab" href="#LIMIT" role="tab" aria-controls="LIMIT" aria-selected="false"><span>LİMİT</span></a></li>
@@ -809,11 +809,21 @@
         <div class="order-book-contentbox">
         <div class="row">
 
-            <div class="order-book-buy col-6">
+            <div class="order-book-buy order-book-buy-headtitle col-6">
                 <div class="boxcolumn-boxtitle">
                     <h3 class="boxcolumn-boxtitle-title">ALIŞ EMİRLERİ</h3>
                     <span class="boxcolumn-boxtitle-wallet d-flex align-items-center">TOPLAM <span class="sitecolorgreen">250.49474389 BTC</span></span>
                 </div>
+            </div>
+            <div class="order-book-sell order-book-sell-headtitle col-6">
+                <div class="boxcolumn-boxtitle">
+                    <h3 class="boxcolumn-boxtitle-title">SATIŞ EMİRLERİ</h3>
+                    <span class="boxcolumn-boxtitle-wallet d-flex align-items-center">TOPLAM <span class="sitecolorred">763,300.000 TRY</span></span>
+                </div>
+            </div>
+
+            <div class="order-book-contentbox-chartbox">
+            <div class="order-book-buy order-book-buy-chart col-6">
                 <div class="order-book-box">
                     <div class="order-book-box-rectangle rectangle">
                         <div class="order-book-box-chart order-book-box-chart-green"><img src="../assets/img/tradepage/elements/Depth_Bar_Green.svg" alt="Rectangle" width="421" height="401" /></div>
@@ -954,11 +964,7 @@
                     </div>
                 </div>
             </div>
-            <div class="order-book-sell col-6">
-                <div class="boxcolumn-boxtitle">
-                    <h3 class="boxcolumn-boxtitle-title">SATIŞ EMİRLERİ</h3>
-                    <span class="boxcolumn-boxtitle-wallet d-flex align-items-center">TOPLAM <span class="sitecolorred">763,300.000 TRY</span></span>
-                </div>
+            <div class="order-book-sell order-book-sell-chart col-6">
                 <div class="order-book-box">
                     <div class="order-book-box-rectangle rectangle">
                         <div class="order-book-box-chart order-book-box-chart-red"><img src="../assets/img/tradepage/elements/Depth_Bar_Red.svg" alt="Rectangle" width="421" height="401" /></div>
@@ -1099,6 +1105,7 @@
                     </div>
                 </div>
             </div>
+            </div>
 
         </div>
         </div>
@@ -1113,152 +1120,97 @@
                 <span class="boxcolumn-boxtitle-wallet d-flex align-items-center">TOPLAM <span>250.49474389 BTC - 763,300.000 TRY</span></span>
             </div>
             <div class="order-open-box">
-                <table class="order-open-box-table sitetable table">
+                <table class="order-open-box-table sitetable sitetableresponsive table">
                     <thead>
                     <tr>
-                        <th class="order-open-box-table-type">TYPE <span class="tableicon"><i class="tableicon-arrowup"></i><i class="tableicon-arrowdown"></i></span></th>
-                        <th class="order-open-box-table-price">PRICE (TRY) <span class="tableicon"><i class="tableicon-arrowup"></i><i class="tableicon-arrowdown"></i></span></th>
-                        <th class="order-open-box-table-amount">AMOUNT (BTC) <span class="tableicon"><i class="tableicon-arrowup"></i><i class="tableicon-arrowdown"></i></span></th>
-                        <th class="order-open-box-table-total">TOTAL (TRY) <span class="tableicon"><i class="tableicon-arrowup"></i><i class="tableicon-arrowdown"></i></span></th>
-                        <th class="order-open-box-table-ratestop">RATE/STOP <span class="tableicon"><i class="tableicon-arrowup"></i><i class="tableicon-arrowdown"></i></span></th>
-                        <th class="order-open-box-table-action">ACTION <span class="tableicon"><i class="tableicon-arrowup"></i><i class="tableicon-arrowdown"></i></span></th>
-                        <th class="order-open-box-table-date">DATE <span class="tableicon"><i class="tableicon-arrowup"></i><i class="tableicon-arrowdown"></i></span></th>
-                        <th class="order-open-box-table-edit">EDIT</th>
-                        <th class="order-open-box-table-delete">DELETE</th>
+                        <th class="order-open-table-type">İŞLEM TİPİ <span class="tableicon"><i class="tableicon-arrowup"></i><i class="tableicon-arrowdown"></i></span></th>
+                        <th class="order-open-table-date">TARİH <span class="tableicon"><i class="tableicon-arrowup"></i><i class="tableicon-arrowdown"></i></span></th>
+                        <th class="order-open-table-product">ÜRÜN <span class="tableicon"><i class="tableicon-arrowup"></i><i class="tableicon-arrowdown"></i></span></th>
+                        <th class="order-open-table-type">İŞLEM TİPİ <span class="tableicon"><i class="tableicon-arrowup"></i><i class="tableicon-arrowdown"></i></span></th>
+                        <th class="order-open-table-purchase-price">ALIŞ FİYATI <span class="tableicon"><i class="tableicon-arrowup"></i><i class="tableicon-arrowdown"></i></span></th>
+                        <th class="order-open-table-amount">MİKTAR <span class="tableicon"><i class="tableicon-arrowup"></i><i class="tableicon-arrowdown"></i></span></th>
+                        <th class="order-open-table-commission">KOMİSYON <span class="tableicon"><i class="tableicon-arrowup"></i><i class="tableicon-arrowdown"></i></span></th>
+                        <th class="order-open-table-edit">DÜZENLE / SİL</th>
                     </tr>
                     </thead>
                     <tbody>
                     <tr>
-                        <td class="order-open-box-table-type">BUY/STOP</td>
-                        <td class="order-open-box-table-price">22,430.124</td>
-                        <td class="order-open-box-table-amount">0.03997500</td>
-                        <td class="order-open-box-table-total">22,430.124</td>
-                        <td class="order-open-box-table-ratestop">0.03997500</td>
-                        <td class="order-open-box-table-date">25.03.2019</td>
-                        <td class="order-open-box-table-action"><span class="sitecolorgreen">ALIŞ</span></td>
-                        <td class="order-open-box-table-edit"><a href="#" class="buttonedit d-flex align-items-center" title="" data-toggle="modal" data-target="#editOrder"><i class="icon-svg icon-svg-profileedit"></i> EMRİ DÜZENLE</a></td>
-                        <td class="order-open-box-table-delete"><button type="button" class="buttondelete d-flex align-items-center"><i class="icon-svg siteiconsclose darkred"></i> EMRİ SİL</button></td>
+                        <td data-title="İŞLEM TİPİ" class="order-open-table-type">BUY/STOP</td>
+                        <td data-title="TARİH" class="order-open-table-date">25.03.2019</td>
+                        <td data-title="ÜRÜN" class="order-open-table-product">BTC</td>
+                        <td data-title="İŞLEM TİPİ" class="order-open-table-type"><span class="sitecolorgreen">ALIŞ</span></td>
+                        <td data-title="ALIŞ FİYATI" class="order-open-table-purchase-price">22,430.124</td>
+                        <td data-title="MİKTAR" class="order-open-table-amount">0.03997500</td>
+                        <td data-title="KOMİSYON" class="order-open-table-commission">0.03997500</td>
+                        <td data-title="" class="order-open-table-edit resp-td-p-10">
+                            <a href="#" class="buttonedit d-inline-flex align-items-center" title="" data-toggle="modal" data-target="#editOrder"><i class="icon-svg icon-svg-profileedit"></i> EMRİ DÜZENLE</a>
+                            <button type="button" class="buttondelete d-inline-flex align-items-center"><i class="icon-svg siteiconsclose darkred"></i> EMRİ SİL</button>
+                        </td>
                     </tr>
                     <tr>
-                        <td class="order-open-box-table-type">BUY/STOP</td>
-                        <td class="order-open-box-table-price">22,430.124</td>
-                        <td class="order-open-box-table-amount">0.03997500</td>
-                        <td class="order-open-box-table-total">22,430.124</td>
-                        <td class="order-open-box-table-ratestop">0.03997500</td>
-                        <td class="order-open-box-table-date">25.03.2019</td>
-                        <td class="order-open-box-table-action"><span class="sitecolorgreen">ALIŞ</span></td>
-                        <td class="order-open-box-table-edit"><a href="#" class="buttonedit d-flex align-items-center" title="" data-toggle="modal" data-target="#editOrder"><i class="icon-svg icon-svg-profileedit"></i> EMRİ DÜZENLE</a></td>
-                        <td class="order-open-box-table-delete"><button type="button" class="buttondelete d-flex align-items-center"><i class="icon-svg siteiconsclose darkred"></i> EMRİ SİL</button></td>
+                        <td data-title="İŞLEM TİPİ" class="order-open-table-type">BUY/STOP</td>
+                        <td data-title="TARİH" class="order-open-table-date">25.03.2019</td>
+                        <td data-title="ÜRÜN" class="order-open-table-product">BTC</td>
+                        <td data-title="İŞLEM TİPİ" class="order-open-table-type"><span class="sitecolorred">SATIŞ</span></td>
+                        <td data-title="ALIŞ FİYATI" class="order-open-table-purchase-price">22,430.124</td>
+                        <td data-title="MİKTAR" class="order-open-table-amount">0.03997500</td>
+                        <td data-title="KOMİSYON" class="order-open-table-commission">0.03997500</td>
+                        <td data-title="" class="order-open-table-edit resp-td-p-10">
+                            <a href="#" class="buttonedit d-inline-flex align-items-center" title="" data-toggle="modal" data-target="#editOrder"><i class="icon-svg icon-svg-profileedit"></i> EMRİ DÜZENLE</a>
+                            <button type="button" class="buttondelete d-inline-flex align-items-center"><i class="icon-svg siteiconsclose darkred"></i> EMRİ SİL</button>
+                        </td>
                     </tr>
                     <tr>
-                        <td class="order-open-box-table-type">BUY/STOP</td>
-                        <td class="order-open-box-table-price">22,430.124</td>
-                        <td class="order-open-box-table-amount">0.03997500</td>
-                        <td class="order-open-box-table-total">22,430.124</td>
-                        <td class="order-open-box-table-ratestop">0.03997500</td>
-                        <td class="order-open-box-table-date">25.03.2019</td>
-                        <td class="order-open-box-table-action"><span class="sitecolorgreen">ALIŞ</span></td>
-                        <td class="order-open-box-table-edit"><a href="#" class="buttonedit d-flex align-items-center" title="" data-toggle="modal" data-target="#editOrder"><i class="icon-svg icon-svg-profileedit"></i> EMRİ DÜZENLE</a></td>
-                        <td class="order-open-box-table-delete"><button type="button" class="buttondelete d-flex align-items-center"><i class="icon-svg siteiconsclose darkred"></i> EMRİ SİL</button></td>
+                        <td data-title="İŞLEM TİPİ" class="order-open-table-type">BUY/STOP</td>
+                        <td data-title="TARİH" class="order-open-table-date">25.03.2019</td>
+                        <td data-title="ÜRÜN" class="order-open-table-product">BTC</td>
+                        <td data-title="İŞLEM TİPİ" class="order-open-table-type"><span class="sitecolorgreen">ALIŞ</span></td>
+                        <td data-title="ALIŞ FİYATI" class="order-open-table-purchase-price">22,430.124</td>
+                        <td data-title="MİKTAR" class="order-open-table-amount">0.03997500</td>
+                        <td data-title="KOMİSYON" class="order-open-table-commission">0.03997500</td>
+                        <td data-title="" class="order-open-table-edit resp-td-p-10">
+                            <a href="#" class="buttonedit d-inline-flex align-items-center" title="" data-toggle="modal" data-target="#editOrder"><i class="icon-svg icon-svg-profileedit"></i> EMRİ DÜZENLE</a>
+                            <button type="button" class="buttondelete d-inline-flex align-items-center"><i class="icon-svg siteiconsclose darkred"></i> EMRİ SİL</button>
+                        </td>
                     </tr>
                     <tr>
-                        <td class="order-open-box-table-type">BUY/STOP</td>
-                        <td class="order-open-box-table-price">22,430.124</td>
-                        <td class="order-open-box-table-amount">0.03997500</td>
-                        <td class="order-open-box-table-total">22,430.124</td>
-                        <td class="order-open-box-table-ratestop">0.03997500</td>
-                        <td class="order-open-box-table-date">25.03.2019</td>
-                        <td class="order-open-box-table-action"><span class="sitecolorgreen">ALIŞ</span></td>
-                        <td class="order-open-box-table-edit"><a href="#" class="buttonedit d-flex align-items-center" title="" data-toggle="modal" data-target="#editOrder"><i class="icon-svg icon-svg-profileedit"></i> EMRİ DÜZENLE</a></td>
-                        <td class="order-open-box-table-delete"><button type="button" class="buttondelete d-flex align-items-center"><i class="icon-svg siteiconsclose darkred"></i> EMRİ SİL</button></td>
+                        <td data-title="İŞLEM TİPİ" class="order-open-table-type">BUY/STOP</td>
+                        <td data-title="TARİH" class="order-open-table-date">25.03.2019</td>
+                        <td data-title="ÜRÜN" class="order-open-table-product">BTC</td>
+                        <td data-title="İŞLEM TİPİ" class="order-open-table-type"><span class="sitecolorred">SATIŞ</span></td>
+                        <td data-title="ALIŞ FİYATI" class="order-open-table-purchase-price">22,430.124</td>
+                        <td data-title="MİKTAR" class="order-open-table-amount">0.03997500</td>
+                        <td data-title="KOMİSYON" class="order-open-table-commission">0.03997500</td>
+                        <td data-title="" class="order-open-table-edit resp-td-p-10">
+                            <a href="#" class="buttonedit d-inline-flex align-items-center" title="" data-toggle="modal" data-target="#editOrder"><i class="icon-svg icon-svg-profileedit"></i> EMRİ DÜZENLE</a>
+                            <button type="button" class="buttondelete d-inline-flex align-items-center"><i class="icon-svg siteiconsclose darkred"></i> EMRİ SİL</button>
+                        </td>
                     </tr>
                     <tr>
-                        <td class="order-open-box-table-type">BUY/STOP</td>
-                        <td class="order-open-box-table-price">22,430.124</td>
-                        <td class="order-open-box-table-amount">0.03997500</td>
-                        <td class="order-open-box-table-total">22,430.124</td>
-                        <td class="order-open-box-table-ratestop">0.03997500</td>
-                        <td class="order-open-box-table-date">25.03.2019</td>
-                        <td class="order-open-box-table-action"><span class="sitecolorgreen">ALIŞ</span></td>
-                        <td class="order-open-box-table-edit"><a href="#" class="buttonedit d-flex align-items-center" title="" data-toggle="modal" data-target="#editOrder"><i class="icon-svg icon-svg-profileedit"></i> EMRİ DÜZENLE</a></td>
-                        <td class="order-open-box-table-delete"><button type="button" class="buttondelete d-flex align-items-center"><i class="icon-svg siteiconsclose darkred"></i> EMRİ SİL</button></td>
+                        <td data-title="İŞLEM TİPİ" class="order-open-table-type">BUY/STOP</td>
+                        <td data-title="TARİH" class="order-open-table-date">25.03.2019</td>
+                        <td data-title="ÜRÜN" class="order-open-table-product">BTC</td>
+                        <td data-title="İŞLEM TİPİ" class="order-open-table-type"><span class="sitecolorgreen">ALIŞ</span></td>
+                        <td data-title="ALIŞ FİYATI" class="order-open-table-purchase-price">22,430.124</td>
+                        <td data-title="MİKTAR" class="order-open-table-amount">0.03997500</td>
+                        <td data-title="KOMİSYON" class="order-open-table-commission">0.03997500</td>
+                        <td data-title="" class="order-open-table-edit resp-td-p-10">
+                            <a href="#" class="buttonedit d-inline-flex align-items-center" title="" data-toggle="modal" data-target="#editOrder"><i class="icon-svg icon-svg-profileedit"></i> EMRİ DÜZENLE</a>
+                            <button type="button" class="buttondelete d-inline-flex align-items-center"><i class="icon-svg siteiconsclose darkred"></i> EMRİ SİL</button>
+                        </td>
                     </tr>
                     <tr>
-                        <td class="order-open-box-table-type">BUY/STOP</td>
-                        <td class="order-open-box-table-price">22,430.124</td>
-                        <td class="order-open-box-table-amount">0.03997500</td>
-                        <td class="order-open-box-table-total">22,430.124</td>
-                        <td class="order-open-box-table-ratestop">0.03997500</td>
-                        <td class="order-open-box-table-date">25.03.2019</td>
-                        <td class="order-open-box-table-action"><span class="sitecolorgreen">ALIŞ</span></td>
-                        <td class="order-open-box-table-edit"><a href="#" class="buttonedit d-flex align-items-center" title="" data-toggle="modal" data-target="#editOrder"><i class="icon-svg icon-svg-profileedit"></i> EMRİ DÜZENLE</a></td>
-                        <td class="order-open-box-table-delete"><button type="button" class="buttondelete d-flex align-items-center"><i class="icon-svg siteiconsclose darkred"></i> EMRİ SİL</button></td>
-                    </tr>
-                    <tr>
-                        <td class="order-open-box-table-type">BUY/STOP</td>
-                        <td class="order-open-box-table-price">22,430.124</td>
-                        <td class="order-open-box-table-amount">0.03997500</td>
-                        <td class="order-open-box-table-total">22,430.124</td>
-                        <td class="order-open-box-table-ratestop">0.03997500</td>
-                        <td class="order-open-box-table-date">25.03.2019</td>
-                        <td class="order-open-box-table-action"><span class="sitecolorgreen">ALIŞ</span></td>
-                        <td class="order-open-box-table-edit"><a href="#" class="buttonedit d-flex align-items-center" title="" data-toggle="modal" data-target="#editOrder"><i class="icon-svg icon-svg-profileedit"></i> EMRİ DÜZENLE</a></td>
-                        <td class="order-open-box-table-delete"><button type="button" class="buttondelete d-flex align-items-center"><i class="icon-svg siteiconsclose darkred"></i> EMRİ SİL</button></td>
-                    </tr>
-                    <tr>
-                        <td class="order-open-box-table-type">BUY/STOP</td>
-                        <td class="order-open-box-table-price">22,430.124</td>
-                        <td class="order-open-box-table-amount">0.03997500</td>
-                        <td class="order-open-box-table-total">22,430.124</td>
-                        <td class="order-open-box-table-ratestop">0.03997500</td>
-                        <td class="order-open-box-table-date">25.03.2019</td>
-                        <td class="order-open-box-table-action"><span class="sitecolorgreen">ALIŞ</span></td>
-                        <td class="order-open-box-table-edit"><a href="#" class="buttonedit d-flex align-items-center" title="" data-toggle="modal" data-target="#editOrder"><i class="icon-svg icon-svg-profileedit"></i> EMRİ DÜZENLE</a></td>
-                        <td class="order-open-box-table-delete"><button type="button" class="buttondelete d-flex align-items-center"><i class="icon-svg siteiconsclose darkred"></i> EMRİ SİL</button></td>
-                    </tr>
-                    <tr>
-                        <td class="order-open-box-table-type">BUY/STOP</td>
-                        <td class="order-open-box-table-price">22,430.124</td>
-                        <td class="order-open-box-table-amount">0.03997500</td>
-                        <td class="order-open-box-table-total">22,430.124</td>
-                        <td class="order-open-box-table-ratestop">0.03997500</td>
-                        <td class="order-open-box-table-date">25.03.2019</td>
-                        <td class="order-open-box-table-action"><span class="sitecolorgreen">ALIŞ</span></td>
-                        <td class="order-open-box-table-edit"><a href="#" class="buttonedit d-flex align-items-center" title="" data-toggle="modal" data-target="#editOrder"><i class="icon-svg icon-svg-profileedit"></i> EMRİ DÜZENLE</a></td>
-                        <td class="order-open-box-table-delete"><button type="button" class="buttondelete d-flex align-items-center"><i class="icon-svg siteiconsclose darkred"></i> EMRİ SİL</button></td>
-                    </tr>
-                    <tr>
-                        <td class="order-open-box-table-type">BUY/STOP</td>
-                        <td class="order-open-box-table-price">22,430.124</td>
-                        <td class="order-open-box-table-amount">0.03997500</td>
-                        <td class="order-open-box-table-total">22,430.124</td>
-                        <td class="order-open-box-table-ratestop">0.03997500</td>
-                        <td class="order-open-box-table-date">25.03.2019</td>
-                        <td class="order-open-box-table-action"><span class="sitecolorgreen">ALIŞ</span></td>
-                        <td class="order-open-box-table-edit"><a href="#" class="buttonedit d-flex align-items-center" title="" data-toggle="modal" data-target="#editOrder"><i class="icon-svg icon-svg-profileedit"></i> EMRİ DÜZENLE</a></td>
-                        <td class="order-open-box-table-delete"><button type="button" class="buttondelete d-flex align-items-center"><i class="icon-svg siteiconsclose darkred"></i> EMRİ SİL</button></td>
-                    </tr>
-                    <tr>
-                        <td class="order-open-box-table-type">BUY/STOP</td>
-                        <td class="order-open-box-table-price">22,430.124</td>
-                        <td class="order-open-box-table-amount">0.03997500</td>
-                        <td class="order-open-box-table-total">22,430.124</td>
-                        <td class="order-open-box-table-ratestop">0.03997500</td>
-                        <td class="order-open-box-table-date">25.03.2019</td>
-                        <td class="order-open-box-table-action"><span class="sitecolorgreen">ALIŞ</span></td>
-                        <td class="order-open-box-table-edit"><a href="#" class="buttonedit d-flex align-items-center" title="" data-toggle="modal" data-target="#editOrder"><i class="icon-svg icon-svg-profileedit"></i> EMRİ DÜZENLE</a></td>
-                        <td class="order-open-box-table-delete"><button type="button" class="buttondelete d-flex align-items-center"><i class="icon-svg siteiconsclose darkred"></i> EMRİ SİL</button></td>
-                    </tr>
-                    <tr>
-                        <td class="order-open-box-table-type">BUY/STOP</td>
-                        <td class="order-open-box-table-price">22,430.124</td>
-                        <td class="order-open-box-table-amount">0.03997500</td>
-                        <td class="order-open-box-table-total">22,430.124</td>
-                        <td class="order-open-box-table-ratestop">0.03997500</td>
-                        <td class="order-open-box-table-date">25.03.2019</td>
-                        <td class="order-open-box-table-action"><span class="sitecolorgreen">ALIŞ</span></td>
-                        <td class="order-open-box-table-edit"><a href="#" class="buttonedit d-flex align-items-center" title="" data-toggle="modal" data-target="#editOrder"><i class="icon-svg icon-svg-profileedit"></i> EMRİ DÜZENLE</a></td>
-                        <td class="order-open-box-table-delete"><button type="button" class="buttondelete d-flex align-items-center"><i class="icon-svg siteiconsclose darkred"></i> EMRİ SİL</button></td>
+                        <td data-title="İŞLEM TİPİ" class="order-open-table-type">BUY/STOP</td>
+                        <td data-title="TARİH" class="order-open-table-date">25.03.2019</td>
+                        <td data-title="ÜRÜN" class="order-open-table-product">BTC</td>
+                        <td data-title="İŞLEM TİPİ" class="order-open-table-type"><span class="sitecolorred">SATIŞ</span></td>
+                        <td data-title="ALIŞ FİYATI" class="order-open-table-purchase-price">22,430.124</td>
+                        <td data-title="MİKTAR" class="order-open-table-amount">0.03997500</td>
+                        <td data-title="KOMİSYON" class="order-open-table-commission">0.03997500</td>
+                        <td data-title="" class="order-open-table-edit resp-td-p-10">
+                            <a href="#" class="buttonedit d-inline-flex align-items-center" title="" data-toggle="modal" data-target="#editOrder"><i class="icon-svg icon-svg-profileedit"></i> EMRİ DÜZENLE</a>
+                            <button type="button" class="buttondelete d-inline-flex align-items-center"><i class="icon-svg siteiconsclose darkred"></i> EMRİ SİL</button>
+                        </td>
                     </tr>
                     </tbody>
                 </table>
