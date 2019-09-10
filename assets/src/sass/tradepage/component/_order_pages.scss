@@ -333,9 +333,14 @@ $globalSvgIconImgPath : "../../img/global/svg";
       padding: 16px;
       border: 1px solid transparentize($global-clr-soft-gray, 0.7);
 
-      div[class*="boxtitle"]{margin-bottom: 0; padding-bottom: 10px;}
+      div[class*="boxtitle"]{
+        margin-bottom: 0;
+        padding-bottom: 10px;
+      }
 
-      > .row{
+      &-chartbox{
+        display: flex;
+        width: 100%;
         position: relative;
 
         &::before{
@@ -348,6 +353,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
           left: 50%;
         }
       }
+
     }
 
     &-buy{
@@ -356,7 +362,6 @@ $globalSvgIconImgPath : "../../img/global/svg";
     &-sell{
       padding-left: 16px !important;
     }
-
 
     &-box{
       min-height: 440px;
@@ -433,6 +438,8 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
           button, a{
             background-color: transparent !important;
+            margin: 0 3px;
+            font-weight: normal;
             @include transition(color, 0.3s, ease-in-out);
           }
 
@@ -448,6 +455,15 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
             &:hover{
               color: lighten($global-clr-red, 10%) !important;
+            }
+          }
+
+          &.order-open-table-edit{
+            width: 180px;
+
+            @include ReSassWidthResponsive(768){
+              width: 100%;
+              background-color: $global-clr-light-gray;
             }
           }
         }
