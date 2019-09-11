@@ -618,6 +618,7 @@
         white-space: nowrap;
         word-wrap: normal;
         position: relative;
+        min-width: auto !important;
 
         &::before,
         &::after{

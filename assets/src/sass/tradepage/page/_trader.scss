@@ -11,6 +11,9 @@ $tradepageHomepageImgPath : "../../img/tradepage";
       padding: 15px 0 0;
       border-bottom: 1px solid transparentize($global-clr-soft-gray, 0.7);
     }
+    @include ReSassWidthResponsive(576){
+      padding: 15px 15px 0;
+    }
 
     > .container{
       border-bottom: 1px solid transparentize($global-clr-soft-gray, 0.7);
@@ -158,6 +161,9 @@ $tradepageHomepageImgPath : "../../img/tradepage";
     @include ReSassWidthResponsive(992){
       padding: 15px 0 20px;
     }
+    @include ReSassWidthResponsive(576){
+      padding: 15px 15px 20px;
+    }
 
     .sidebar{
       @include ReSassWidthResponsive(992){
@@ -175,15 +181,6 @@ $tradepageHomepageImgPath : "../../img/tradepage";
         flex: 0 0 100%;
         max-width: 100%;
         padding: 0;
-      }
-
-      div[class*="boxtitle"]{
-        h3[class*="boxtitle-"],
-        span[class*="boxtitle-"]{
-          @include ReSassWidthResponsive(768){
-            font-size: 17px;
-          }
-        }
       }
     }
 

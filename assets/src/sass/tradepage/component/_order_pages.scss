@@ -332,16 +332,37 @@ $globalSvgIconImgPath : "../../img/global/svg";
       padding: 16px;
       border: 1px solid transparentize($global-clr-soft-gray, 0.7);
 
+      @include ReSassWidthResponsive(480){
+        padding: 10px;
+      }
+
       div[class*="boxtitle"]{
         flex-direction: column;
         margin-bottom: 0;
         padding-bottom: 10px;
         border-bottom: none;
 
+        @include ReSassWidthResponsive(576){
+          padding-bottom: 5px;
+        }
+
         span[class*="boxtitle-wallet"]{
           @include ReSassWidthResponsive(992){
             font-size: 18px;
             margin-top: 2px;
+          }
+          @include ReSassWidthResponsive(480){
+            font-size: 17px !important;
+          }
+        }
+
+        h3[class*="boxtitle-"],
+        span[class*="boxtitle-"]{
+          @include ReSassWidthResponsive(768){
+            font-size: 17px;
+          }
+          @include ReSassWidthResponsive(576){
+            font-size: 20px;
           }
         }
       }
@@ -373,7 +394,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
         position: relative;
 
         @include ReSassWidthResponsive(768){
-          width: 720px;
+          width: 650px;
         }
 
         &::before{
@@ -465,6 +486,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
       @include ReSassWidthResponsive(576){
         order: 3;
         width: 100%;
+        padding: 0 14px 6px!important;
       }
 
       &-wrapper{
@@ -474,8 +496,8 @@ $globalSvgIconImgPath : "../../img/global/svg";
         height: 100%;
 
         @include ReSassWidthResponsive(576){
-          border-top: 1px solid transparentize($global-clr-soft-gray, 0.7);
-          padding-top: 10px;
+          background-color: $global-clr-light-gray;
+          border: 1px solid transparentize($global-clr-soft-gray, 0.7);
         }
 
         > div[class*="col"]{
@@ -491,6 +513,9 @@ $globalSvgIconImgPath : "../../img/global/svg";
         @include ReSassWidthResponsive(768){
           display: flex;
           flex-direction: column;
+        }
+        @include ReSassWidthResponsive(576){
+          display: block;
         }
       }
 
@@ -530,6 +555,9 @@ $globalSvgIconImgPath : "../../img/global/svg";
           height: 38px;
           font-size: 23px;
           margin: 0 5px;
+        }
+        @include ReSassWidthResponsive(576){
+          background-color: #d1d9e0;
         }
 
         &-value{
@@ -609,7 +637,26 @@ $globalSvgIconImgPath : "../../img/global/svg";
       padding: 16px;
       border: 1px solid transparentize($global-clr-soft-gray, 0.7);
 
-      div[class*="boxtitle"]{margin-bottom: 0; padding-bottom: 10px;}
+      @include ReSassWidthResponsive(480){
+        padding: 10px;
+      }
+
+      div[class*="boxtitle"]{
+        margin-bottom: 0;
+        padding-bottom: 10px;
+
+        @include ReSassWidthResponsive(480){
+          display: block;
+          padding-bottom: 0;
+        }
+
+        span[class*="boxtitle-wallet"]{
+          @include ReSassWidthResponsive(576){
+            font-size: 18px;
+            margin-top: 2px;
+          }
+        }
+      }
     }
 
     &-box{
@@ -635,6 +682,11 @@ $globalSvgIconImgPath : "../../img/global/svg";
             margin: 0 3px;
             font-weight: normal;
             @include transition(color, 0.3s, ease-in-out);
+
+            @include ReSassWidthResponsive(576){
+              width: calc(48% - 3px);
+              margin: 0;
+            }
           }
 
           .buttonedit{
