@@ -122,6 +122,7 @@ $(window).on("load resize",function(e){
                         items:2,
                         loop:true,
                         autoplay:true,
+                        autoWidth:false,
                     },
                     768:{
                         items:3,

@@ -9,6 +9,12 @@
       @include ReSassWidthResponsive(992){
         height: 435px !important;
       }
+      @include ReSassWidthResponsive(480){
+        height: 400px !important;
+      }
+      @include ReSassWidthResponsive(400){
+        height: 250px !important;
+      }
 
       > div{
         width: 100% !important;
@@ -16,6 +22,12 @@
 
         @include ReSassWidthResponsive(992){
           height: 435px !important;
+        }
+        @include ReSassWidthResponsive(480){
+          height: 400px !important;
+        }
+        @include ReSassWidthResponsive(400){
+          height: 250px !important;
         }
       }
     }

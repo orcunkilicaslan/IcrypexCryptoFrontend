@@ -119,11 +119,19 @@ $globalSvgIconImgPath : "../../img/global/svg";
               &.resp-td-p-0{
                 padding-left: 0 !important;
                 padding-right: 0 !important;
+
+                &::before{
+                  display: none;
+                }
               }
 
               &.resp-td-p-10{
                 padding-left: 10px !important;
                 padding-right: 10px !important;
+
+                &::before{
+                  display: none;
+                }
               }
             }
           }
