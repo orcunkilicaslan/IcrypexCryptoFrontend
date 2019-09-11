@@ -116,9 +116,15 @@ $(window).on("load resize",function(e){
                         items:1,
                         loop:true,
                         autoplay:true,
+                        margin:0,
+                    },
+                    576:{
+                        items:2,
+                        loop:true,
+                        autoplay:true,
                     },
                     768:{
-                        items:2,
+                        items:3,
                         loop:true,
                         autoplay:true,
                         autoWidth:false,
