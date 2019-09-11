@@ -132,6 +132,9 @@ img.imgsize{
   }
 }
 
+.ps>.ps__scrollbar-x-rail{
+  opacity: 1 !important;
+}
 .ps:hover>.ps__scrollbar-x-rail:hover{
   background-color: transparent !important;
 }

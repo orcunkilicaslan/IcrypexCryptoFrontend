@@ -807,304 +807,341 @@
         <!-- Order Book -->
         <div class="trader-order-book">
         <div class="order-book-contentbox">
-        <div class="row">
-
-            <div class="order-book-buy order-book-buy-headtitle col-6">
-                <div class="boxcolumn-boxtitle">
+        <div class="order-book-contentbox-rowhead row">
+            <div class="order-book-buy order-book-buy-headtitle col">
+                <div class="boxcolumn-boxtitle text-left">
                     <h3 class="boxcolumn-boxtitle-title">ALIŞ EMİRLERİ</h3>
-                    <span class="boxcolumn-boxtitle-wallet d-flex align-items-center">TOPLAM <span class="sitecolorgreen">250.49474389 BTC</span></span>
+                    <span class="boxcolumn-boxtitle-wallet">TOPLAM <span class="sitecolorgreen">250.49474389 BTC</span></span>
                 </div>
             </div>
-            <div class="order-book-sell order-book-sell-headtitle col-6">
-                <div class="boxcolumn-boxtitle">
+            <div class="order-book-spread col-md-auto">
+                <div class="order-book-spread-wrapper">
+                    <div class="order-book-spread-low col">
+                        <span class="order-book-spread-low-text">LOW</span>
+                        <span class="order-book-spread-low-value sitecolorred">59742.30</span>
+                    </div>
+                    <div class="order-book-spread-percent col-md-auto">
+                        <span class="order-book-spread-percent-value">2.3</span>
+                    </div>
+                    <div class="order-book-spread-high col">
+                        <span class="order-book-spread-high-value sitecolorgreen">59650.33</span>
+                        <span class="order-book-spread-high-text">HIGH</span>
+                    </div>
+                </div>
+            </div>
+            <div class="order-book-sell order-book-sell-headtitle col">
+                <div class="boxcolumn-boxtitle text-right">
                     <h3 class="boxcolumn-boxtitle-title">SATIŞ EMİRLERİ</h3>
-                    <span class="boxcolumn-boxtitle-wallet d-flex align-items-center">TOPLAM <span class="sitecolorred">763,300.000 TRY</span></span>
+                    <span class="boxcolumn-boxtitle-wallet">TOPLAM <span class="sitecolorred">763,300.000 TRY</span></span>
                 </div>
             </div>
+        </div>
+        <div class="order-book-contentbox-rowchart row">
+            <link id="css-perfect-scrollbar" rel="stylesheet" href="../assets/cdn/perfect-scrollbar.min.css">
+            <script id="script-perfect-scrollbar-jquery" src="../assets/cdn/perfect-scrollbar.jquery.min.js"></script>
+            <script id="script-perfect-scrollbar" src="../assets/cdn/perfect-scrollbar.min.js"></script>
+            <script>
+                if($(window).width() <= 767){
 
-            <div class="order-book-contentbox-chartbox">
-            <div class="order-book-buy order-book-buy-chart col-6">
-                <div class="order-book-box">
-                    <div class="order-book-box-rectangle rectangle">
-                        <div class="order-book-box-chart order-book-box-chart-green"><img src="../assets/img/tradepage/elements/Depth_Bar_Green.svg" alt="Rectangle" width="421" height="401" /></div>
+                    // Centered Depth Charts
+                    $(window).resize(function() {
+                        var scrollbarOut    = $('.order-book-contentbox-scrollbar');
+                        var scrollbarIn     = $('.order-book-contentbox-scrollbar > .order-book-contentbox-chartbox');
+                        scrollbarOut.scrollLeft((scrollbarIn.width() - scrollbarOut.width()) / 2);
+                    });
+
+                    // Perfect Scrollbar
+                    $(document).ready(function($){
+                        $('#depthscrollbar').perfectScrollbar();
+                    });
+
+                } else {}
+            </script>
+            <div id="depthscrollbar" class="order-book-contentbox-scrollbar">
+                <div class="order-book-contentbox-chartbox">
+                    <div class="order-book-buy order-book-buy-chart col">
+                        <div class="order-book-box">
+                            <div class="order-book-box-rectangle rectangle">
+                                <div class="order-book-box-chart order-book-box-chart-green"><img src="../assets/img/tradepage/elements/Depth_Bar_Green.svg" alt="Rectangle" width="421" height="401" /></div>
+                            </div>
+                            <div class="order-book-box-container">
+                                <table class="order-book-box-table sitetable table">
+                                    <thead>
+                                    <tr>
+                                        <th class="depthtable-total">TOPLAM</th>
+                                        <!-- <th class="depthtable-type">TRY</th> -->
+                                        <th class="depthtable-amount">MİKTAR</th>
+                                        <th class="depthtable-price">FİYAT</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody id="buytable">
+                                    <tr>
+                                        <td class="depthtable-total">19500.06TRY</td>
+                                        <!-- <td class="depthtable-type">19500.06 TRY</td> -->
+                                        <td class="depthtable-amount">0.32690623 BTC</td>
+                                        <td class="depthtable-price">59650.33</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="depthtable-total">31645.60TRY</td>
+                                        <!-- <td class="depthtable-type">31645.60 TRY</td> -->
+                                        <td class="depthtable-amount">0.53069823 BTC</td>
+                                        <td class="depthtable-price">59630.12</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="depthtable-total">50014.16TRY</td>
+                                        <!-- <td class="depthtable-type">50014.16 TRY</td> -->
+                                        <td class="depthtable-amount">0.84027588 BTC</td>
+                                        <td class="depthtable-price">59521.12</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="depthtable-total">76103.75TRY</td>
+                                        <!-- <td class="depthtable-type">76103.75 TRY</td> -->
+                                        <td class="depthtable-amount">1.28162105 BTC</td>
+                                        <td class="depthtable-price">59380.85</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="depthtable-total">43256.06TRY</td>
+                                        <!-- <td class="depthtable-type">43256.06 TRY</td> -->
+                                        <td class="depthtable-amount">0.73029277 BTC</td>
+                                        <td class="depthtable-price">59231.12</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="depthtable-total">28774.92TRY</td>
+                                        <!-- <td class="depthtable-type">28774.92 TRY</td> -->
+                                        <td class="depthtable-amount">0.48614690 BTC</td>
+                                        <td class="depthtable-price">59189.76</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="depthtable-total">54895.69TRY</td>
+                                        <!-- <td class="depthtable-type">54895.69 TRY</td> -->
+                                        <td class="depthtable-amount">0.92976883 BTC</td>
+                                        <td class="depthtable-price">59042.30</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="depthtable-total">6231.34TRY</td>
+                                        <!-- <td class="depthtable-type">6231.34 TRY</td> -->
+                                        <td class="depthtable-amount">0.10557927 BTC</td>
+                                        <td class="depthtable-price">59020.46</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="depthtable-total">10047.80TRY</td>
+                                        <!-- <td class="depthtable-type">10047.80 TRY</td> -->
+                                        <td class="depthtable-amount">0.17029662 BTC</td>
+                                        <td class="depthtable-price">59001.76</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="depthtable-total">48054.90TRY</td>
+                                        <!-- <td class="depthtable-type">48054.90 TRY</td> -->
+                                        <td class="depthtable-amount">0.82004199 BTC</td>
+                                        <td class="depthtable-price">58600.54</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="depthtable-total">1000.00TRY</td>
+                                        <!-- <td class="depthtable-type">1000.00 TRY</td> -->
+                                        <td class="depthtable-amount">0.01724127 BTC</td>
+                                        <td class="depthtable-price">58000.38</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="depthtable-total">250.00TRY</td>
+                                        <!-- <td class="depthtable-type">250.00 TRY</td> -->
+                                        <td class="depthtable-amount">0.00434783 BTC</td>
+                                        <td class="depthtable-price">57500.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="depthtable-total">73581.20TRY</td>
+                                        <!-- <td class="depthtable-type">73581.20 TRY</td> -->
+                                        <td class="depthtable-amount">1.37005427 BTC</td>
+                                        <td class="depthtable-price">53706.78</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="depthtable-total">52341.34TRY</td>
+                                        <!-- <td class="depthtable-type">52341.34 TRY</td> -->
+                                        <td class="depthtable-amount">1.01930564 BTC</td>
+                                        <td class="depthtable-price">51350.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="depthtable-total">7346.16TRY</td>
+                                        <!-- <td class="depthtable-type">7346.16 TRY</td> -->
+                                        <td class="depthtable-amount">0.14328150 BTC</td>
+                                        <td class="depthtable-price">51270.85</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="depthtable-total">51121.58TRY</td>
+                                        <!-- <td class="depthtable-type">51121.58 TRY</td> -->
+                                        <td class="depthtable-amount">1.00773032 BTC</td>
+                                        <td class="depthtable-price">50729.43</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="depthtable-total">52569.99TRY</td>
+                                        <!-- <td class="depthtable-type">52569.99 TRY</td> -->
+                                        <td class="depthtable-amount">1.04925245 BTC</td>
+                                        <td class="depthtable-price">50102.33</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="depthtable-total">10303.38TRY</td>
+                                        <!-- <td class="depthtable-type">10303.38 TRY</td> -->
+                                        <td class="depthtable-amount">0.20602536 BTC</td>
+                                        <td class="depthtable-price">50010.25</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="depthtable-total">101318.05TRY</td>
+                                        <!-- <td class="depthtable-type">101318.05 TRY</td> -->
+                                        <td class="depthtable-amount">3.07856072 BTC</td>
+                                        <td class="depthtable-price">32910.85</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="depthtable-total">67686.48TRY</td>
+                                        <!-- <td class="depthtable-type">67686.48 TRY</td> -->
+                                        <td class="depthtable-amount">2.18973200 BTC</td>
+                                        <td class="depthtable-price">30910.85</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
                     </div>
-                    <div class="order-book-box-container">
-                        <table class="order-book-box-table sitetable table">
-                            <thead>
-                            <tr>
-                                <th class="order-book-box-table-price">TOPLAM</th>
-                                <!-- <th class="order-book-box-table-btc">TRY</th> -->
-                                <th class="order-book-box-table-try">MİKTAR</th>
-                                <th class="order-book-box-table-sum text-right">FİYAT</th>
-                            </tr>
-                            </thead>
-                            <tbody id="buytable">
-                            <tr>
-                                <td class="order-book-box-table-price">19500.06TRY</td>
-                                <!-- <td class="order-book-box-table-btc">19500.06 TRY</td> -->
-                                <td class="order-book-box-table-try">0.32690623 BTC</td>
-                                <td class="order-book-box-table-sum text-right">59650.33</td>
-                            </tr>
-                            <tr>
-                                <td class="order-book-box-table-price">31645.60TRY</td>
-                                <!-- <td class="order-book-box-table-btc">31645.60 TRY</td> -->
-                                <td class="order-book-box-table-try">0.53069823 BTC</td>
-                                <td class="order-book-box-table-sum text-right">59630.12</td>
-                            </tr>
-                            <tr>
-                                <td class="order-book-box-table-price">50014.16TRY</td>
-                                <!-- <td class="order-book-box-table-btc">50014.16 TRY</td> -->
-                                <td class="order-book-box-table-try">0.84027588 BTC</td>
-                                <td class="order-book-box-table-sum text-right">59521.12</td>
-                            </tr>
-                            <tr>
-                                <td class="order-book-box-table-price">76103.75TRY</td>
-                                <!-- <td class="order-book-box-table-btc">76103.75 TRY</td> -->
-                                <td class="order-book-box-table-try">1.28162105 BTC</td>
-                                <td class="order-book-box-table-sum text-right">59380.85</td>
-                            </tr>
-                            <tr>
-                                <td class="order-book-box-table-price">43256.06TRY</td>
-                                <!-- <td class="order-book-box-table-btc">43256.06 TRY</td> -->
-                                <td class="order-book-box-table-try">0.73029277 BTC</td>
-                                <td class="order-book-box-table-sum text-right">59231.12</td>
-                            </tr>
-                            <tr>
-                                <td class="order-book-box-table-price">28774.92TRY</td>
-                                <!-- <td class="order-book-box-table-btc">28774.92 TRY</td> -->
-                                <td class="order-book-box-table-try">0.48614690 BTC</td>
-                                <td class="order-book-box-table-sum text-right">59189.76</td>
-                            </tr>
-                            <tr>
-                                <td class="order-book-box-table-price">54895.69TRY</td>
-                                <!-- <td class="order-book-box-table-btc">54895.69 TRY</td> -->
-                                <td class="order-book-box-table-try">0.92976883 BTC</td>
-                                <td class="order-book-box-table-sum text-right">59042.30</td>
-                            </tr>
-                            <tr>
-                                <td class="order-book-box-table-price">6231.34TRY</td>
-                                <!-- <td class="order-book-box-table-btc">6231.34 TRY</td> -->
-                                <td class="order-book-box-table-try">0.10557927 BTC</td>
-                                <td class="order-book-box-table-sum text-right">59020.46</td>
-                            </tr>
-                            <tr>
-                                <td class="order-book-box-table-price">10047.80TRY</td>
-                                <!-- <td class="order-book-box-table-btc">10047.80 TRY</td> -->
-                                <td class="order-book-box-table-try">0.17029662 BTC</td>
-                                <td class="order-book-box-table-sum text-right">59001.76</td>
-                            </tr>
-                            <tr>
-                                <td class="order-book-box-table-price">48054.90TRY</td>
-                                <!-- <td class="order-book-box-table-btc">48054.90 TRY</td> -->
-                                <td class="order-book-box-table-try">0.82004199 BTC</td>
-                                <td class="order-book-box-table-sum text-right">58600.54</td>
-                            </tr>
-                            <tr>
-                                <td class="order-book-box-table-price">1000.00TRY</td>
-                                <!-- <td class="order-book-box-table-btc">1000.00 TRY</td> -->
-                                <td class="order-book-box-table-try">0.01724127 BTC</td>
-                                <td class="order-book-box-table-sum text-right">58000.38</td>
-                            </tr>
-                            <tr>
-                                <td class="order-book-box-table-price">250.00TRY</td>
-                                <!-- <td class="order-book-box-table-btc">250.00 TRY</td> -->
-                                <td class="order-book-box-table-try">0.00434783 BTC</td>
-                                <td class="order-book-box-table-sum text-right">57500.00</td>
-                            </tr>
-                            <tr>
-                                <td class="order-book-box-table-price">73581.20TRY</td>
-                                <!-- <td class="order-book-box-table-btc">73581.20 TRY</td> -->
-                                <td class="order-book-box-table-try">1.37005427 BTC</td>
-                                <td class="order-book-box-table-sum text-right">53706.78</td>
-                            </tr>
-                            <tr>
-                                <td class="order-book-box-table-price">52341.34TRY</td>
-                                <!-- <td class="order-book-box-table-btc">52341.34 TRY</td> -->
-                                <td class="order-book-box-table-try">1.01930564 BTC</td>
-                                <td class="order-book-box-table-sum text-right">51350.00</td>
-                            </tr>
-                            <tr>
-                                <td class="order-book-box-table-price">7346.16TRY</td>
-                                <!-- <td class="order-book-box-table-btc">7346.16 TRY</td> -->
-                                <td class="order-book-box-table-try">0.14328150 BTC</td>
-                                <td class="order-book-box-table-sum text-right">51270.85</td>
-                            </tr>
-                            <tr>
-                                <td class="order-book-box-table-price">51121.58TRY</td>
-                                <!-- <td class="order-book-box-table-btc">51121.58 TRY</td> -->
-                                <td class="order-book-box-table-try">1.00773032 BTC</td>
-                                <td class="order-book-box-table-sum text-right">50729.43</td>
-                            </tr>
-                            <tr>
-                                <td class="order-book-box-table-price">52569.99TRY</td>
-                                <!-- <td class="order-book-box-table-btc">52569.99 TRY</td> -->
-                                <td class="order-book-box-table-try">1.04925245 BTC</td>
-                                <td class="order-book-box-table-sum text-right">50102.33</td>
-                            </tr>
-                            <tr>
-                                <td class="order-book-box-table-price">10303.38TRY</td>
-                                <!-- <td class="order-book-box-table-btc">10303.38 TRY</td> -->
-                                <td class="order-book-box-table-try">0.20602536 BTC</td>
-                                <td class="order-book-box-table-sum text-right">50010.25</td>
-                            </tr>
-                            <tr>
-                                <td class="order-book-box-table-price">101318.05TRY</td>
-                                <!-- <td class="order-book-box-table-btc">101318.05 TRY</td> -->
-                                <td class="order-book-box-table-try">3.07856072 BTC</td>
-                                <td class="order-book-box-table-sum text-right">32910.85</td>
-                            </tr>
-                            <tr>
-                                <td class="order-book-box-table-price">67686.48TRY</td>
-                                <!-- <td class="order-book-box-table-btc">67686.48 TRY</td> -->
-                                <td class="order-book-box-table-try">2.18973200 BTC</td>
-                                <td class="order-book-box-table-sum text-right">30910.85</td>
-                            </tr>
-                            </tbody>
-                        </table>
+                    <div class="order-book-sell order-book-sell-chart col">
+                        <div class="order-book-box">
+                            <div class="order-book-box-rectangle rectangle">
+                                <div class="order-book-box-chart order-book-box-chart-red"><img src="../assets/img/tradepage/elements/Depth_Bar_Red.svg" alt="Rectangle" width="421" height="401" /></div>
+                            </div>
+                            <div class="order-book-box-container">
+                                <table class="order-book-box-table sitetable table">
+                                    <thead>
+                                    <tr>
+                                        <th class="depthtable-price">FİYAT</th>
+                                        <th class="depthtable-amount">MİKTAR</th>
+                                        <!-- <th class="depthtable-type">TRY</th> -->
+                                        <th class="depthtable-total">TOPLAM</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody id="selltable">
+                                    <tr>
+                                        <td class="depthtable-price">59742.30</td>
+                                        <td class="depthtable-amount">0.60457700 BTC</td>
+                                        <!-- <td class="depthtable-type">36118.82 TRY</td> -->
+                                        <td class="depthtable-total">36118.82 TRY</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="depthtable-price">59852.54</td>
+                                        <td class="depthtable-amount">0.95195000 BTC</td>
+                                        <!-- <td class="depthtable-type">56976.63 TRY</td> -->
+                                        <td class="depthtable-total">56976.63 TRY</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="depthtable-price">59910.54</td>
+                                        <td class="depthtable-amount">0.13190209 BTC</td>
+                                        <!-- <td class="depthtable-type">7902.33 TRY</td> -->
+                                        <td class="depthtable-total">7902.33 TRY</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="depthtable-price">59918.21</td>
+                                        <td class="depthtable-amount">1.02281035 BTC</td>
+                                        <!-- <td class="depthtable-type">61284.97 TRY</td> -->
+                                        <td class="depthtable-total">61284.97 TRY</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="depthtable-price">60002.56</td>
+                                        <td class="depthtable-amount">1.08421855 BTC</td>
+                                        <!-- <td class="depthtable-type">65055.89 TRY</td> -->
+                                        <td class="depthtable-total">65055.89 TRY</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="depthtable-price">60132.54</td>
+                                        <td class="depthtable-amount">3.89055268 BTC</td>
+                                        <!-- <td class="depthtable-type">233948.81 TRY</td> -->
+                                        <td class="depthtable-total">233948.81 TRY</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="depthtable-price">60182.38</td>
+                                        <td class="depthtable-amount">1.72981908 BTC</td>
+                                        <!-- <td class="depthtable-type">104104.63 TRY</td> -->
+                                        <td class="depthtable-total">104104.63 TRY</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="depthtable-price">60459.12</td>
+                                        <td class="depthtable-amount">0.73259130 BTC</td>
+                                        <!-- <td class="depthtable-type">44291.83 TRY</td> -->
+                                        <td class="depthtable-total">44291.83 TRY</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="depthtable-price">60592.32</td>
+                                        <td class="depthtable-amount">0.32675673 BTC</td>
+                                        <!-- <td class="depthtable-type">19798.95 TRY</td> -->
+                                        <td class="depthtable-total">19798.95 TRY</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="depthtable-price">60650.33</td>
+                                        <td class="depthtable-amount">2.64162482 BTC</td>
+                                        <!-- <td class="depthtable-type">160215.42 TRY</td> -->
+                                        <td class="depthtable-total">160215.42 TRY</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="depthtable-price">60951.51</td>
+                                        <td class="depthtable-amount">0.88396197 BTC</td>
+                                        <!-- <td class="depthtable-type">53878.82 TRY</td> -->
+                                        <td class="depthtable-total">53878.82 TRY</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="depthtable-price">62124.33</td>
+                                        <td class="depthtable-amount">0.91062337 BTC</td>
+                                        <!-- <td class="depthtable-type">56571.87 TRY</td> -->
+                                        <td class="depthtable-total">56571.87 TRY</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="depthtable-price">63242.54</td>
+                                        <td class="depthtable-amount">0.60860507 BTC</td>
+                                        <!-- <td class="depthtable-type">38489.73 TRY</td> -->
+                                        <td class="depthtable-total">38489.73 TRY</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="depthtable-price">65000.00</td>
+                                        <td class="depthtable-amount">0.00020812 BTC</td>
+                                        <!-- <td class="depthtable-type">13.53 TRY</td> -->
+                                        <td class="depthtable-total">13.53 TRY</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="depthtable-price">68650.33</td>
+                                        <td class="depthtable-amount">0.79753718 BTC</td>
+                                        <!-- <td class="depthtable-type">54751.19 TRY</td> -->
+                                        <td class="depthtable-total">54751.19 TRY</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="depthtable-price">69900.48</td>
+                                        <td class="depthtable-amount">1.04516962 BTC</td>
+                                        <!-- <td class="depthtable-type">73057.86 TRY</td> -->
+                                        <td class="depthtable-total">73057.85 TRY</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="depthtable-price">70800.75</td>
+                                        <td class="depthtable-amount">0.69796610 BTC</td>
+                                        <!-- <td class="depthtable-type">49416.52 TRY</td> -->
+                                        <td class="depthtable-total">49416.52 TRY</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="depthtable-price">71300.00</td>
+                                        <td class="depthtable-amount">1.00000000 BTC</td>
+                                        <!-- <td class="depthtable-type">71300.00 TRY</td> -->
+                                        <td class="depthtable-total">71300.00 TRY</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="depthtable-price">76892.30</td>
+                                        <td class="depthtable-amount">0.48952000 BTC</td>
+                                        <!-- <td class="depthtable-type">37640.32 TRY</td> -->
+                                        <td class="depthtable-total">37640.32 TRY</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="depthtable-price">97651.54</td>
+                                        <td class="depthtable-amount">8.98919000 BTC</td>
+                                        <!-- <td class="depthtable-type">877808.25 TRY</td> -->
+                                        <td class="depthtable-total">877808.25 TRY</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="order-book-sell order-book-sell-chart col-6">
-                <div class="order-book-box">
-                    <div class="order-book-box-rectangle rectangle">
-                        <div class="order-book-box-chart order-book-box-chart-red"><img src="../assets/img/tradepage/elements/Depth_Bar_Red.svg" alt="Rectangle" width="421" height="401" /></div>
-                    </div>
-                    <div class="order-book-box-container">
-                        <table class="order-book-box-table sitetable table">
-                            <thead>
-                            <tr>
-                                <th class="order-book-box-table-price">FİYAT</th>
-                                <th class="order-book-box-table-btc">MİKTAR</th>
-                                <!-- <th class="order-book-box-table-try">TRY</th> -->
-                                <th class="order-book-box-table-sum text-right">TOPLAM</th>
-                            </tr>
-                            </thead>
-                            <tbody id="selltable">
-                            <tr>
-                                <td class="order-book-box-table-price">59742.30</td>
-                                <td class="order-book-box-table-btc">0.60457700 BTC</td>
-                                <!-- <td class="order-book-box-table-try">36118.82 TRY</td> -->
-                                <td class="order-book-box-table-sum text-right">36118.82 TRY</td>
-                            </tr>
-                            <tr>
-                                <td class="order-book-box-table-price">59852.54</td>
-                                <td class="order-book-box-table-btc">0.95195000 BTC</td>
-                                <!-- <td class="order-book-box-table-try">56976.63 TRY</td> -->
-                                <td class="order-book-box-table-sum text-right">56976.63 TRY</td>
-                            </tr>
-                            <tr>
-                                <td class="order-book-box-table-price">59910.54</td>
-                                <td class="order-book-box-table-btc">0.13190209 BTC</td>
-                                <!-- <td class="order-book-box-table-try">7902.33 TRY</td> -->
-                                <td class="order-book-box-table-sum text-right">7902.33 TRY</td>
-                            </tr>
-                            <tr>
-                                <td class="order-book-box-table-price">59918.21</td>
-                                <td class="order-book-box-table-btc">1.02281035 BTC</td>
-                                <!-- <td class="order-book-box-table-try">61284.97 TRY</td> -->
-                                <td class="order-book-box-table-sum text-right">61284.97 TRY</td>
-                            </tr>
-                            <tr>
-                                <td class="order-book-box-table-price">60002.56</td>
-                                <td class="order-book-box-table-btc">1.08421855 BTC</td>
-                                <!-- <td class="order-book-box-table-try">65055.89 TRY</td> -->
-                                <td class="order-book-box-table-sum text-right">65055.89 TRY</td>
-                            </tr>
-                            <tr>
-                                <td class="order-book-box-table-price">60132.54</td>
-                                <td class="order-book-box-table-btc">3.89055268 BTC</td>
-                                <!-- <td class="order-book-box-table-try">233948.81 TRY</td> -->
-                                <td class="order-book-box-table-sum text-right">233948.81 TRY</td>
-                            </tr>
-                            <tr>
-                                <td class="order-book-box-table-price">60182.38</td>
-                                <td class="order-book-box-table-btc">1.72981908 BTC</td>
-                                <!-- <td class="order-book-box-table-try">104104.63 TRY</td> -->
-                                <td class="order-book-box-table-sum text-right">104104.63 TRY</td>
-                            </tr>
-                            <tr>
-                                <td class="order-book-box-table-price">60459.12</td>
-                                <td class="order-book-box-table-btc">0.73259130 BTC</td>
-                                <!-- <td class="order-book-box-table-try">44291.83 TRY</td> -->
-                                <td class="order-book-box-table-sum text-right">44291.83 TRY</td>
-                            </tr>
-                            <tr>
-                                <td class="order-book-box-table-price">60592.32</td>
-                                <td class="order-book-box-table-btc">0.32675673 BTC</td>
-                                <!-- <td class="order-book-box-table-try">19798.95 TRY</td> -->
-                                <td class="order-book-box-table-sum text-right">19798.95 TRY</td>
-                            </tr>
-                            <tr>
-                                <td class="order-book-box-table-price">60650.33</td>
-                                <td class="order-book-box-table-btc">2.64162482 BTC</td>
-                                <!-- <td class="order-book-box-table-try">160215.42 TRY</td> -->
-                                <td class="order-book-box-table-sum text-right">160215.42 TRY</td>
-                            </tr>
-                            <tr>
-                                <td class="order-book-box-table-price">60951.51</td>
-                                <td class="order-book-box-table-btc">0.88396197 BTC</td>
-                                <!-- <td class="order-book-box-table-try">53878.82 TRY</td> -->
-                                <td class="order-book-box-table-sum text-right">53878.82 TRY</td>
-                            </tr>
-                            <tr>
-                                <td class="order-book-box-table-price">62124.33</td>
-                                <td class="order-book-box-table-btc">0.91062337 BTC</td>
-                                <!-- <td class="order-book-box-table-try">56571.87 TRY</td> -->
-                                <td class="order-book-box-table-sum text-right">56571.87 TRY</td>
-                            </tr>
-                            <tr>
-                                <td class="order-book-box-table-price">63242.54</td>
-                                <td class="order-book-box-table-btc">0.60860507 BTC</td>
-                                <!-- <td class="order-book-box-table-try">38489.73 TRY</td> -->
-                                <td class="order-book-box-table-sum text-right">38489.73 TRY</td>
-                            </tr>
-                            <tr>
-                                <td class="order-book-box-table-price">65000.00</td>
-                                <td class="order-book-box-table-btc">0.00020812 BTC</td>
-                                <!-- <td class="order-book-box-table-try">13.53 TRY</td> -->
-                                <td class="order-book-box-table-sum text-right">13.53 TRY</td>
-                            </tr>
-                            <tr>
-                                <td class="order-book-box-table-price">68650.33</td>
-                                <td class="order-book-box-table-btc">0.79753718 BTC</td>
-                                <!-- <td class="order-book-box-table-try">54751.19 TRY</td> -->
-                                <td class="order-book-box-table-sum text-right">54751.19 TRY</td>
-                            </tr>
-                            <tr>
-                                <td class="order-book-box-table-price">69900.48</td>
-                                <td class="order-book-box-table-btc">1.04516962 BTC</td>
-                                <!-- <td class="order-book-box-table-try">73057.86 TRY</td> -->
-                                <td class="order-book-box-table-sum text-right">73057.85 TRY</td>
-                            </tr>
-                            <tr>
-                                <td class="order-book-box-table-price">70800.75</td>
-                                <td class="order-book-box-table-btc">0.69796610 BTC</td>
-                                <!-- <td class="order-book-box-table-try">49416.52 TRY</td> -->
-                                <td class="order-book-box-table-sum text-right">49416.52 TRY</td>
-                            </tr>
-                            <tr>
-                                <td class="order-book-box-table-price">71300.00</td>
-                                <td class="order-book-box-table-btc">1.00000000 BTC</td>
-                                <!-- <td class="order-book-box-table-try">71300.00 TRY</td> -->
-                                <td class="order-book-box-table-sum text-right">71300.00 TRY</td>
-                            </tr>
-                            <tr>
-                                <td class="order-book-box-table-price">76892.30</td>
-                                <td class="order-book-box-table-btc">0.48952000 BTC</td>
-                                <!-- <td class="order-book-box-table-try">37640.32 TRY</td> -->
-                                <td class="order-book-box-table-sum text-right">37640.32 TRY</td>
-                            </tr>
-                            <tr>
-                                <td class="order-book-box-table-price">97651.54</td>
-                                <td class="order-book-box-table-btc">8.98919000 BTC</td>
-                                <!-- <td class="order-book-box-table-try">877808.25 TRY</td> -->
-                                <td class="order-book-box-table-sum text-right">877808.25 TRY</td>
-                            </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
             </div>
 
         </div>
