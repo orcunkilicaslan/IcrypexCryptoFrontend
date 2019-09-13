@@ -688,6 +688,18 @@
           &.active{
             color: $global-clr-white !important;
             background-color: $global-clr-soft-blue !important;
+            position: relative;
+
+            &::after{
+              display: block !important;
+              content: "";
+              position: absolute;
+              background-color: $global-clr-soft-blue;
+              width: 100%;
+              height: 10px;
+              left: 0;
+              bottom: -5px;
+            }
           }
         }
       }
