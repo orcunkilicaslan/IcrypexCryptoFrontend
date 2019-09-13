@@ -161,6 +161,10 @@ $globalSvgIconImgPath : "../../img/global/svg";
           @include ReSassWidthResponsive(480){
             flex: 0 0 50% !important;
             max-width: 50% !important;
+            left: 5px;
+          }
+          @include ReSassWidthResponsive(400){
+            left: 0;
           }
         }
 
@@ -185,7 +189,6 @@ $globalSvgIconImgPath : "../../img/global/svg";
           @include ReSassWidthResponsive(480){
             flex: 0 0 50% !important;
             max-width: 50% !important;
-            left: 5px;
           }
         }
 
@@ -514,6 +517,10 @@ $globalSvgIconImgPath : "../../img/global/svg";
               @include ReSassWidthResponsive(768){
                 padding-right: 10px;
                 padding-left: 10px;
+              }
+              @include ReSassWidthResponsive(400){
+                padding-right: 3px;
+                padding-left: 3px;
               }
 
               &::before{
