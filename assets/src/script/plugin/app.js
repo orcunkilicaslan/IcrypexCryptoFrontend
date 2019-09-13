@@ -137,6 +137,7 @@ $(document).ready(function(){
     $('.inputonlytextmask').inputmask('AAA', {'placeholder': ""});
     $('.inputibanmask').inputmask('TR99 9999 9999 9999 9999 9999 99', {'placeholder': ""});
     $('.inputdatemask').inputmask('99/99/9999', {'placeholder': "MM/DD/YYYY"});
+    $('.inputidentitymask').inputmask('99999999999', {'placeholder': ""});
     $('.inputphonemask').inputmask({
         mask: '0599 999 99 99',
         placeholder: '',

@@ -155,6 +155,10 @@ $globalSvgIconImgPath : "../../img/global/svg";
             max-width: 35% !important;
           }
           @include ReSassWidthResponsive(576){
+            flex: 0 0 45% !important;
+            max-width: 45% !important;
+          }
+          @include ReSassWidthResponsive(480){
             flex: 0 0 50% !important;
             max-width: 50% !important;
           }
@@ -174,6 +178,11 @@ $globalSvgIconImgPath : "../../img/global/svg";
             max-width: 65% !important;
           }
           @include ReSassWidthResponsive(576){
+            flex: 0 0 55% !important;
+            max-width: 55% !important;
+            padding-left: 5px !important;
+          }
+          @include ReSassWidthResponsive(480){
             flex: 0 0 50% !important;
             max-width: 50% !important;
           }
@@ -439,10 +448,11 @@ $globalSvgIconImgPath : "../../img/global/svg";
           display: flex;
           justify-content: flex-end;
           margin-bottom: 0;
+          overflow: hidden;
 
           @include ReSassWidthResponsive(1200){
-            width: calc(100% - 40px) !important;
-            margin: 0 auto;
+            //width: calc(100% - 40px) !important;
+            //margin: 0 auto;
           }
 
           &-item{
@@ -453,6 +463,11 @@ $globalSvgIconImgPath : "../../img/global/svg";
             line-height: 0.95;
             letter-spacing: -0.3px;
             position: relative;
+            white-space: nowrap;
+
+            @include ReSassWidthResponsive(1200){
+              text-align: center;
+            }
           }
 
           .owl{
@@ -471,6 +486,10 @@ $globalSvgIconImgPath : "../../img/global/svg";
             &-stage-outer{
               @include ReSassWidthResponsive(1200){
                 z-index: 1;
+                width: calc(100% - 4px);
+                right: -2px;
+                left: -2px;
+                overflow: hidden;
               }
             }
 
@@ -478,7 +497,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
               padding-right: 15px;
               padding-left: 15px;
 
-              @include ReSassWidthResponsive(480){
+              @include ReSassWidthResponsive(768){
                 padding-right: 10px;
                 padding-left: 10px;
               }
@@ -487,10 +506,14 @@ $globalSvgIconImgPath : "../../img/global/svg";
                 content: "";
                 position: absolute;
                 width: 1px;
-                height: 34px;
-                top: calc(50% - 16px);
+                height: 100%;
+                top: 0;
                 right: 0;
                 background-color: transparentize($global-clr-soft-gray, 0.7);
+
+                @include ReSassWidthResponsive(480){
+                  display: none !important;
+                }
               }
               &:last-child{
                 &::before{display: none;}
@@ -581,6 +604,11 @@ $globalSvgIconImgPath : "../../img/global/svg";
           font-weight: normal;
           letter-spacing: -0.2px;
           margin: 0;
+          white-space: nowrap;
+
+          @include ReSassWidthResponsive(576){
+            font-size: 13px;
+          }
         }
 
         &-volume{
