@@ -38,7 +38,7 @@ $('#headertitleareapricebig').owlCarousel({
     nav:false,
     dots:false,
     autoplay:true,
-    autoplayTimeout:1000,
+    autoplayTimeout:1500,
     autoplayHoverPause:true,
     items:7,
     margin:0,
