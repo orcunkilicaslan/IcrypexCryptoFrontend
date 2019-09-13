@@ -100,35 +100,30 @@ $(window).on("load resize",function(e){
             $('#sidebarmarketdataowltable > tbody > tr').addClass("item");
             $('#sidebarmarketdataowltable > tbody').addClass("sidebarmarketdata-owl owl-carousel owl-theme");
             $('#sidebarmarketdataowltable > tbody').owlCarousel({
-                loop:false,
+                loop:true,
                 nav:false,
                 dots:false,
-                autoplay:false,
-                autoplayTimeout:3000,
+                autoplay:true,
+                autoplayTimeout:1000,
                 autoplayHoverPause:true,
                 items:5,
-                margin:10,
+                margin:0,
                 //stagePadding: 20,
                 autoWidth:false,
                 responsiveClass:true,
                 responsive:{
                     0:{
                         items:1,
-                        loop:true,
-                        autoplay:true,
                         margin:0,
                     },
-                    576:{
+                    400:{
                         items:2,
-                        loop:true,
-                        autoplay:true,
-                        autoWidth:false,
+                    },
+                    576:{
+                        items:3,
                     },
                     768:{
-                        items:3,
-                        loop:true,
-                        autoplay:true,
-                        autoWidth:false,
+                        items:4,
                     }
                 }
             });
@@ -143,6 +138,48 @@ $(window).on("load resize",function(e){
     }
 });
 /* Responsive Tradepage Trader Home Market Data Owl Carousel */
+
+/* Responsive Tradepage Trader Home Order Open Owl Carousel */
+$(window).on("load resize",function(e){
+    if($(window).width() <= 767){
+        $(document).ready(function() {
+            $('#traderorderopensowltable > tbody > tr').addClass("item");
+            $('#traderorderopensowltable > tbody').addClass("traderorderopen-owl owl-carousel owl-theme");
+            $('#traderorderopensowltable > tbody').owlCarousel({
+                loop:false,
+                nav:false,
+                dots:false,
+                autoplay:false,
+                autoplayTimeout:5000,
+                autoplayHoverPause:true,
+                items:5,
+                margin:10,
+                //stagePadding: 20,
+                autoWidth:false,
+                //animateIn: 'fadeInDown',
+                //animateOut: 'fadeOutDown',
+                responsiveClass:true,
+                responsive:{
+                    0:{
+                        items:1,
+                        loop:false,
+                        autoplay:false,
+                        nav:true,
+                        dots:true,
+                    }
+                }
+            });
+        });
+    }else{
+        $(document).ready(function() {
+            $('#traderorderopensowltable > tbody').removeClass("traderorderopen-owl owl-carousel owl-theme owl-loaded owl-drag");
+            $('#traderorderopensowltable .owl-stage-outer').remove();
+            $('#traderorderopensowltable .owl-nav').remove();
+            $('#traderorderopensowltable .owl-dots').remove();
+        });
+    }
+});
+/* Responsive Tradepage Trader Home Order Open Owl Carousel */
 
 /* Loading Info */
 // console.log("Tradepage App Responsive Javascript Loading Successful");

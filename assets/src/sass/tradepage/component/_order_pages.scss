@@ -670,46 +670,199 @@ $globalSvgIconImgPath : "../../img/global/svg";
           margin-right: 3px;
         }
 
-        tbody tr:first-child td{
-          padding-top: 15px;
-        }
+        tbody{
 
-        tbody td{
-          border: none;
-
-          button, a{
-            background-color: transparent !important;
-            margin: 0 3px;
-            font-weight: normal;
-            @include transition(color, 0.3s, ease-in-out);
-
-            @include ReSassWidthResponsive(576){
-              width: calc(48% - 3px);
-              margin: 0;
-            }
+          @include ReSassWidthResponsive(768){
+            margin: 0;
           }
 
-          .buttonedit{
-            color: $global-clr-soft-blue;
-
-            &:hover{
-              color: lighten($global-clr-soft-blue, 10%) !important;
-            }
-          }
-          .buttondelete{
-            color: $global-clr-red;
-
-            &:hover{
-              color: lighten($global-clr-red, 10%) !important;
-            }
-          }
-
-          &.order-open-table-edit{
-            width: 180px;
+          tr{
 
             @include ReSassWidthResponsive(768){
+              width: calc(100% - 0) !important;
+              margin: 5px 0 !important;
+            }
+
+            &:first-child{
+              td{
+                padding-top: 15px;
+              }
+            }
+
+            td{
+              border: none;
+
+              button, a{
+                background-color: transparent !important;
+                margin: 0 3px;
+                font-weight: normal;
+                @include transition(color, 0.3s, ease-in-out);
+
+                @include ReSassWidthResponsive(768){
+                  width: calc(48% - 3px);
+                  margin: 0;
+                }
+              }
+
+              .buttonedit{
+                color: $global-clr-soft-blue;
+
+                &:hover{
+                  color: lighten($global-clr-soft-blue, 10%) !important;
+                }
+              }
+              .buttondelete{
+                color: $global-clr-red;
+
+                &:hover{
+                  color: lighten($global-clr-red, 10%) !important;
+                }
+              }
+
+              &.order-open-table-edit{
+                width: 180px;
+
+                @include ReSassWidthResponsive(768){
+                  width: 100%;
+                  background-color: $global-clr-light-gray;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .traderorderopen-owl{
+        position: relative;
+
+        .owl{
+
+          &-stage-outer{
+            @include ReSassWidthResponsive(768){
+              margin-bottom: 5px;
+            }
+          }
+
+          &-item{
+            @include ReSassWidthResponsive(768){
+              background-color: $global-clr-white !important;
+            }
+          }
+
+          &-nav{
+            @include ReSassWidthResponsive(768){
               width: 100%;
-              background-color: $global-clr-light-gray;
+              height: 36px;
+              margin-top: 0;
+              position: relative;
+            }
+            @include ReSassWidthResponsive(400){
+              height: 30px;
+            }
+          }
+
+          &-next,
+          &-prev{
+            @include ReSassWidthResponsive(768){
+              background-color: $global-clr-soft-gray !important;
+              margin: 0 !important;
+              width: 36px;
+              height: 36px;
+              position: absolute;
+              z-index: 1;
+              @include border-radius(50% !important);
+
+              &::before{
+                content: "";
+                position: absolute;
+                width: 11px;
+                height: 11px;
+                border-top: 2px solid $global-clr-white;
+                border-right: 2px solid $global-clr-white;
+                top: calc(50% - 5px);
+                left: 50%;
+              }
+
+              span{
+                display: none;
+              }
+            }
+            @include ReSassWidthResponsive(400){
+              width: 30px;
+              height: 30px;
+            }
+          }
+
+          &-next{
+            @include ReSassWidthResponsive(768){
+              right: 0;
+              &::before{
+                left: calc(50% - 7px);
+                @include rotate(45);
+              }
+            }
+          }
+
+          &-prev{
+            @include ReSassWidthResponsive(768){
+              left: 0;
+              &::before{
+                left: calc(50% - 3px);
+                @include rotate(-135);
+              }
+            }
+          }
+
+          &-dots{
+            @include ReSassWidthResponsive(768){
+              display: flex;
+              justify-content: space-between;
+              width: 100%;
+              height: 36px;
+              padding: 0 calc(36px + 10px);
+              position: absolute;
+              bottom: 0;
+              z-index: 0;
+            }
+            @include ReSassWidthResponsive(400){
+              height: 30px;
+              padding: 0 calc(30px + 10px);
+            }
+          }
+
+          &-dot{
+            @include ReSassWidthResponsive(768){
+              max-width: 100%;
+              flex-basis: 0;
+              flex-grow: 1;
+
+              span{
+                background-color: transparentize($global-clr-soft-gray, 0.7) !important;
+                width: 100% !important;
+                height: 4px !important;
+                margin: 0 !important;
+                @include border-radius(0 !important);
+              }
+
+              &.active{
+                span{
+                  background-color: $global-clr-soft-gray !important;
+                }
+              }
+
+              &:first-child{
+                span{
+                  border-top-left-radius: 3px !important;
+                  border-bottom-left-radius: 3px !important;
+                }
+              }
+
+              &:last-child{
+                span{
+                  border-top-right-radius: 3px !important;
+                  border-bottom-right-radius: 3px !important;
+                }
+              }
             }
           }
         }

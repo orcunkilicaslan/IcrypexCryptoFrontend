@@ -41,7 +41,7 @@ $tradepageHomepageImgPath : "../../img/tradepage";
           justify-content: space-between;
           align-content: center;
           overflow: hidden;
-          border:1px solid transparentize($global-clr-soft-gray, 0.7) !important;
+          //border:1px solid transparentize($global-clr-soft-gray, 0.7) !important;
           background-color: $global-clr-light-gray;
 
           h2.boxtitle {
@@ -49,16 +49,18 @@ $tradepageHomepageImgPath : "../../img/tradepage";
             line-height: 1;
             padding: 5px 15px 5px 10px;
             margin: 0 1px 0 0;
-            //display: none;
-            flex: 0 0 85px;
-            max-width: 85px;
+            //flex: 0 0 85px;
+            //max-width: 85px;
+            display: none !important;
           }
 
           table.sitetable {
             display:block;
             text-align:left !important;
-            flex: 0 0 calc(100% - 85px);
-            max-width: calc(100% - 85px);
+            //flex: 0 0 calc(100% - 85px);
+            //max-width: calc(100% - 85px);
+            flex: 0 0 100%;
+            max-width: 100%;
 
             thead, tbody, thead tr, tbody tr, thead th, tbody td{
               display:flex;
@@ -77,7 +79,7 @@ $tradepageHomepageImgPath : "../../img/tradepage";
 
               tr{
                 width: 100%;
-                padding: 7px 0 8px 24px;
+                padding: 10px 0 10px 20px;
 
                 td{
                   width: auto;
@@ -85,6 +87,7 @@ $tradepageHomepageImgPath : "../../img/tradepage";
                   //border-bottom:1px solid transparentize($global-clr-soft-gray, 0.7) !important;
                   position:relative;
                   white-space:inherit !important;
+                  font-size: 15px !important;
                   font-weight: 500;
                   padding: 0 5px 0 0 !important;
 
@@ -99,7 +102,7 @@ $tradepageHomepageImgPath : "../../img/tradepage";
 
                   &:first-child{
                     width: calc(100% / 1);
-                    font-size: 18px !important;
+                    font-size: 17px !important;
 
                     &::before{
                       display: none;
@@ -107,19 +110,19 @@ $tradepageHomepageImgPath : "../../img/tradepage";
                   }
 
                   i.arrow{
-                    left: -25px;
-                    top: calc(50% + 5px);
+                    left: -20px;
+                    top: calc(50% + 4px);
                   }
                   i.arrowdown,
                   i.arrowup{
-                    border-left-width: 8px;
-                    border-right-width: 8px;
+                    border-left-width: 6px;
+                    border-right-width: 6px;
                   }
                   i.arrowdown{
-                    border-top-width: 8px;
+                    border-top-width: 10px;
                   }
                   i.arrowup{
-                    border-bottom-width: 8px;
+                    border-bottom-width: 10px;
                   }
                 }
               }
@@ -131,7 +134,7 @@ $tradepageHomepageImgPath : "../../img/tradepage";
 
             .owl{
               &-item{
-                border-right: 1px solid transparentize($global-clr-soft-gray, 0.7);
+                //border-right: 1px solid transparentize($global-clr-soft-gray, 0.7);
               }
             }
           }
@@ -259,6 +262,21 @@ $tradepageHomepageImgPath : "../../img/tradepage";
         }
       }
       &-box{
+
+        @include ReSassWidthResponsive(576){
+          margin-top: 15px;
+
+          &::after{
+            content: "";
+            background-color: $global-clr-green;
+            position: absolute;
+            width: calc(100% + 2px);
+            height: 4px;
+            left: -1px;
+            top: 0;
+          }
+        }
+
         &::before{
           display: none;
         }
