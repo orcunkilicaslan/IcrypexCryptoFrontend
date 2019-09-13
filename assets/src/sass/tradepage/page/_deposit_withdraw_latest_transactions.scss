@@ -14,6 +14,8 @@ $globalSvgIconImgPath : "../../img/global/svg";
     *[class*="boxtitle"]{
       @include ReSassWidthResponsive(768){
         font-size: 17px;
+        padding-bottom: 0;
+        border-bottom: none;
       }
     }
 

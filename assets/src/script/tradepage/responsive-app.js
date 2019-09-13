@@ -104,7 +104,7 @@ $(window).on("load resize",function(e){
                 nav:false,
                 dots:false,
                 autoplay:true,
-                autoplayTimeout:1000,
+                autoplayTimeout:1500,
                 autoplayHoverPause:true,
                 items:5,
                 margin:0,

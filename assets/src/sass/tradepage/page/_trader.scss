@@ -14,6 +14,9 @@ $tradepageHomepageImgPath : "../../img/tradepage";
     @include ReSassWidthResponsive(576){
       padding: 15px 15px 0;
     }
+    @include ReSassWidthResponsive(400){
+      padding: 10px 10px 0;
+    }
 
     > .container{
       border-bottom: 1px solid transparentize($global-clr-soft-gray, 0.7);
@@ -166,6 +169,9 @@ $tradepageHomepageImgPath : "../../img/tradepage";
     }
     @include ReSassWidthResponsive(576){
       padding: 15px 15px 20px;
+    }
+    @include ReSassWidthResponsive(400){
+      padding: 15px 10px 20px;
     }
 
     .sidebar{
