@@ -5,17 +5,69 @@ $globalSvgIconImgPath : "../../img/global/svg";
   $headerclassname: &;
 
   &-stats{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 18px 0;
     height: 80px;
     border-top: 1px solid transparentize($global-clr-soft-gray, 0.7);
     opacity: 1;
     @include transition(all, 0.3s, ease-in-out);
 
+    @include ReSassWidthResponsive(1400){
+      padding: 10px 0;
+      height: 65px;
+    }
+    @include ReSassWidthResponsive(992){
+      padding: 4px 0;
+      height: 56px;
+      border-top: none;
+    }
+
     &-price{
       color: $global-clr-white;
 
       &-big{
+        align-items: center;
         color: $global-clr-white;
+
+        .maincont-left{
+          @include ReSassWidthResponsive(1200){
+            flex: 0 0 15%;
+            max-width: 15%;
+          }
+          @include ReSassWidthResponsive(992){
+            flex: 0 0 20%;
+            max-width: 20%;
+          }
+          @include ReSassWidthResponsive(768){
+            flex: 0 0 25%;
+            max-width: 25%;
+          }
+          @include ReSassWidthResponsive(576){
+            flex: 0 0 130px;
+            max-width: 130px;
+          }
+        }
+
+        .maincont-right{
+          @include ReSassWidthResponsive(1200){
+            flex: 0 0 85%;
+            max-width: 85%;
+          }
+          @include ReSassWidthResponsive(992){
+            flex: 0 0 80%;
+            max-width: 80%;
+          }
+          @include ReSassWidthResponsive(768){
+            flex: 0 0 75%;
+            max-width: 75%;
+          }
+          @include ReSassWidthResponsive(576){
+            flex: 0 0 calc(100% - 130px);
+            max-width: calc(100% - 130px);
+          }
+        }
 
         &-select{
           color: $global-clr-white;
@@ -24,6 +76,12 @@ $globalSvgIconImgPath : "../../img/global/svg";
           font-weight: normal !important;
           border-color: transparentize($global-clr-soft-gray, 0.7);
           margin-right: 4px;
+
+          @include ReSassWidthResponsive(1200){
+            font-size: 17px !important;
+            padding: 5px 10px 4px !important;
+          }
+
           option{
             background-color: $global-clr-dark-blue;
           }
@@ -34,8 +92,17 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
         &-list{
           display: flex;
-          justify-content: space-between;
+          justify-content: flex-end;
           margin-bottom: 0;
+          overflow: hidden;
+
+          @include ReSassWidthResponsive(1200){
+            //width: calc(100% - 40px) !important;
+            //margin: 0 auto;
+          }
+          @include ReSassWidthResponsive(400){
+            right: -5px;
+          }
 
           &-item{
             color: $global-clr-white;
@@ -45,26 +112,160 @@ $globalSvgIconImgPath : "../../img/global/svg";
             line-height: 0.95;
             letter-spacing: -0.3px;
             position: relative;
-            padding-right: 15px;
-            padding-left: 15px;
+            white-space: nowrap;
 
-            &::before{
-              content: "";
+            @include ReSassWidthResponsive(1200){
+              text-align: center;
+              font-size: 17px;
+            }
+            @include ReSassWidthResponsive(480){
+              text-align: right;
+              font-size: 20px;
+            }
+          }
+
+          .owl{
+
+            &-stage{
+              height: 40px;
+              overflow: hidden;
+
+              @include ReSassMinWidthResponsive(1200){
+                width: 100% !important;
+                display: flex;
+                justify-content: flex-end;
+              }
+              @include ReSassWidthResponsive(480){
+                overflow: unset;
+              }
+            }
+
+            &-stage-outer{
+              @include ReSassWidthResponsive(1200){
+                z-index: 1;
+                width: calc(100% - 4px);
+                right: -2px;
+                left: -2px;
+                overflow: hidden;
+              }
+              @include ReSassWidthResponsive(480){
+                width: 100%;
+                right: 0;
+                left: 0;
+                top: -1px;
+              }
+            }
+
+            &-item{
+              padding-right: 20px;
+              padding-left: 20px;
+
+              @include ReSassWidthResponsive(1400){
+                padding-right: 15px;
+                padding-left: 15px;
+              }
+              @include ReSassWidthResponsive(1200){
+                padding-right: 2px;
+                padding-left: 2px;
+              }
+              @include ReSassWidthResponsive(400){
+                padding-right: 3px;
+                padding-left: 3px;
+              }
+
+              &::before{
+                content: "";
+                position: absolute;
+                width: 1px;
+                height: 100%;
+                top: 0;
+                right: 0;
+                background-color: transparentize($global-clr-soft-gray, 0.7);
+
+                @include ReSassWidthResponsive(480){
+                  display: none !important;
+                }
+              }
+              &:last-child{
+                &::before{display: none;}
+              }
+            }
+
+            &-nav{
+              @include ReSassWidthResponsive(1200){
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                margin: 0;
+              }
+
+              button[class*="owl-"]{
+                @include ReSassWidthResponsive(1200){
+                  background-color: transparentize($global-clr-soft-gray, 0.9);
+                  border: 1px solid transparentize($global-clr-soft-gray, 0.5);
+                  @include border-radius(0);
+                  width: 20px;
+                  height: calc(100% + 2px);
+                  margin: 0;
+                  top: -1px;
+
+                  &:hover{
+                    background-color: transparentize($global-clr-soft-gray, 0.5);
+                  }
+                }
+                @include ReSassWidthResponsive(480){
+                  height: calc(100% + 0);
+                  top: 0;
+                }
+              }
+              button[class*="owl-prev"]{
+                @include ReSassWidthResponsive(1200){
+                  left: -19px;
+                }
+              }
+              button[class*="owl-next"]{
+                @include ReSassWidthResponsive(1200){
+                  right: -19px;
+                }
+              }
+            }
+
+            &-prev,
+            &-next{
               position: absolute;
-              width: 1px;
-              height: 34px;
-              top: calc(50% - 16px);
-              right: -10px;
-              background-color: transparentize($global-clr-soft-gray, 0.7);
+
+              &::before{
+                content: "";
+                position: absolute;
+                width: 12px;
+                height: 12px;
+                left: calc(50% - 6px);
+                top: calc(50% - 6px);
+                background-image: url(#{$globalSvgIconImgPath}/Arrow_Down_Dropdown.svg);
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size: contain;
+              }
+
+              span{
+                display: none;
+              }
             }
 
-            &:first-child{
-              padding-left: 0;
+            &-prev{
+              left: 0;
+              &::before{
+                @include rotate(90);
+              }
             }
-            &:last-child{
-              padding-right: 0;
-
-              &::before{display: none;}
+            &-next{
+              right: 0;
+              &::before{
+                @include rotate(270);
+              }
             }
           }
         }

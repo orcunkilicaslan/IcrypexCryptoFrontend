@@ -58,6 +58,13 @@ $globalSvgIconImgPath : "../../img/global/svg";
     }
   }
 
+  &-web{
+    @include ReSassWidthResponsive(400){
+      //padding-left: 10px !important;
+      //padding-right: 10px !important;
+    }
+  }
+
   //*{@include transition(all, 0.3s, ease-out);}
 
   &-alert{

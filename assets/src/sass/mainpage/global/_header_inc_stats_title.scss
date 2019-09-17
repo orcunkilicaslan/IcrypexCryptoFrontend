@@ -194,6 +194,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
           .owl{
             &-item{
               position: relative;
+              min-height: 37px;
 
               &::before{
                 content: "";

@@ -509,11 +509,9 @@ $globalSvgIconImgPath : "../../img/global/svg";
       &-low,
       &-high{
         font-size: 17px;
+        display: flex;
+        flex-direction: column;
 
-        @include ReSassWidthResponsive(768){
-          display: flex;
-          flex-direction: column;
-        }
         @include ReSassWidthResponsive(576){
           display: block;
         }
@@ -523,14 +521,10 @@ $globalSvgIconImgPath : "../../img/global/svg";
         text-align: right;
 
         &-text{
-          @include ReSassWidthResponsive(768){
-            order: 2;
-          }
+          order: 2;
         }
         &-value{
-          @include ReSassWidthResponsive(768){
-            order: 1;
-          }
+          order: 1;
         }
       }
       &-high{
@@ -544,28 +538,35 @@ $globalSvgIconImgPath : "../../img/global/svg";
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 60px;
+        //width: 60px;
+        width: auto;
+        max-width: 100px;
         height: 40px;
         font-size: 27px;
         text-align: center;
         margin: 0 10px;
 
         @include ReSassWidthResponsive(768){
-          width: 42px;
+          //width: 42px;
+          max-width: 70px;
           height: 38px;
           font-size: 23px;
           margin: 0 5px;
         }
         @include ReSassWidthResponsive(576){
           background-color: #d1d9e0;
+          max-width: 120px;
         }
 
         &-value{
           position: relative;
           top: -2px;
+          padding: 0 10px;
+          display: block;
 
           @include ReSassWidthResponsive(768){
             top: -1px;
+            padding: 0 5px;
           }
         }
       }
