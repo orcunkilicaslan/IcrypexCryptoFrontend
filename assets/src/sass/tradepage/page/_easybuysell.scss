@@ -40,7 +40,15 @@ $globalSvgIconImgPath : "../../img/global/svg";
       display: block;
       flex: 0 0 100%;
       max-width: 100%;
+      padding: 0;
+    }
+    @include ReSassWidthResponsive(576){
+      padding-left: 15px;
       padding-right: 15px;
+    }
+    @include ReSassWidthResponsive(400){
+      padding-left: 10px;
+      padding-right: 10px;
     }
 
     .order-orders-form{

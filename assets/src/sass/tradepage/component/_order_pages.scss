@@ -582,6 +582,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
         top: 0;
         width: 100%;
         height: 100%;
+        overflow: hidden;
 
         &.rectangle{
           opacity: 0.8;
@@ -591,8 +592,12 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
       &-chart{
         padding-top: 35px;
-        &-green{text-align: left;}
-        &-red{text-align: right;}
+        &-green{
+          text-align: left;
+        }
+        &-red{
+          text-align: right;
+        }
       }
 
       &-table{
