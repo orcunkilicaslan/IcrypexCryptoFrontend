@@ -3,9 +3,8 @@
   $navheadclassname: &;
 
   &-megamenu{
-    left: 0;
     position: relative;
-    @include transition(all, 0.3s, ease-in-out);
+    @include transition(transform, 0.3s, ease-in-out);
   }
 
   &-mobilemenu{
@@ -43,7 +42,7 @@
           padding:10px 15px;
           position:relative;
           height: 100%;
-          @include transition(all, 0.3s, ease-in-out);
+          @include transition(color, 0.3s, ease-in-out);
 
           &::after {
             content: '';
@@ -55,8 +54,7 @@
             bottom: 0;
             left: 0;
             @include scaleX(0);
-            //@include transition(transform, 250ms, ease-in-out);
-            @include transition(all, 250ms, ease-in-out);
+            @include transition-multiple(transform 250ms ease-in-out, width 250ms ease-in-out);
 
             @include ReSassWidthResponsive(992){
               height: 2px;
@@ -203,7 +201,7 @@
             position: absolute;
             bottom: 0;
             left: 0;
-            @include transition(all, 0.5s, ease-in-out);
+            @include transition(width, 0.5s, ease-in-out);
           }
 
           &:hover{
@@ -224,14 +222,15 @@
       background-color:#333333;
       width:260px;
       height:100%;
-      left:-260px;
       top:0;
+      left: 0;
       margin:0;
       border:none;
       overflow-y:auto;
       z-index:103;
+      @include translateX(-260px);
       @include border-radius(0);
-      @include transition(all, 0.3s, ease-in-out);
+      @include transition(transform, 0.3s, ease-in-out);
 
       &-list{
         > li{
@@ -302,8 +301,7 @@
         top:0;
         right:0;
         left:0;
-        transform: translate(0);
-        @include transition(all, 0.3s, ease-in-out);
+        //@include transition(all, 0.3s, ease-in-out);
 
         &::before{
           content: "";
@@ -338,7 +336,7 @@
         margin: 0 12px;
         cursor:pointer;
         z-index:102;
-        @include transition(all, 0.3s, ease-in-out);
+        //@include transition(all, 0.3s, ease-in-out);
 
         .btntext{
           float: left;
@@ -369,11 +367,6 @@
           span::after{
             bottom:-7px;
           }
-          span,
-          span::before,
-          span::after{
-            @include transition(all, 0.3s, ease-in-out);
-          }
           &.active span::after{top:7px;}
         }
       }
@@ -381,24 +374,18 @@
 
     &-canvaskapat{
       overflow: hidden !important;
-      left: 260px;
       position: fixed;
+      @include translateX(260px);
 
       #{$navheadclassname}-menu{
-        left:0;
-        @include transition(all, 0.3s, ease-in-out);
+        @include translateX(-260px);
+        @include transition(transform, 0.3s, ease-in-out);
       }
       #{$navheadclassname}-mobilemenu-mask{
         display:block !important;
       }
 
-      #{$navheadclassname}-mobilemenu-header{
-        transform: translate(260px);
-      }
-
       #{$navheadclassname}-mobilemenu-btn{
-        //left:260px;
-        left: 0;
 
         .btntext{
           opacity: 0;
