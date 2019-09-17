@@ -299,9 +299,30 @@
 
         &-box{
           padding: 12px 10px!important;
+          position: relative;
+
+          &::before{
+            content: "";
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            border-bottom: 2px solid $global-clr-soft-blue;
+            border-left: 2px solid $global-clr-soft-blue;
+            right: 20px;
+            top: calc(50% - 7px);
+            @include rotate(-45);
+            @include transition(all, 0.3s, ease-in-out);
+          }
+
+          &.showmenu{
+            &::before{
+              @include rotate(-225);
+              top: calc(50% - 3px);
+            }
+          }
 
           &-avatar{
-            width: 44px !important;
+            width: 64px !important;
             height: 44px !important;
             margin-bottom: 0 !important;
             margin-right: 10px;
@@ -313,12 +334,21 @@
           }
 
           &-textarea{
+            width: 100%;
             text-align: left !important;
+            overflow: hidden;
+
+            &-username{
+              white-space: nowrap;
+              overflow: hidden;
+            }
           }
         }
 
         &-userbg{
           flex-direction: row !important;
+          padding-right: 35px;
+          overflow: hidden;
         }
 
         &-menulist{
