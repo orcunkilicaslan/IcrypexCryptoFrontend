@@ -48,6 +48,15 @@
   -khtml-transition: $property $duration $easing;
 }
 
+@mixin transition-multiple($transitionmultiple...) {
+  transition: $transitionmultiple;
+  -o-transition: $transitionmultiple;
+  -ms-transition: $transitionmultiple;
+  -moz-transition: $transitionmultiple;
+  -webkit-transition: $transitionmultiple;
+  -khtml-transition: $transitionmultiple;
+}
+
 @mixin transition-property($property...) {
   transition-property: $property;
   -o-transition-property: $property;
@@ -109,6 +118,14 @@
 
 @mixin translate ($x, $y) {
   @include transform(translate($x, $y));
+}
+
+@mixin translateX ($x) {
+  @include transform(translateX($x));
+}
+
+@mixin translateY ($y) {
+  @include transform(translateY($y));
 }
 
 @mixin skew ($x, $y) {
