@@ -13,11 +13,18 @@
         flex-direction: column;
       }
 
-      div[class*="maxwidth"]{
+      .form-group{
 
         @include ReSassWidthResponsive(768){
           margin-top: 10px;
+
+          &:first-child{
+            margin-top: 0;
+          }
         }
+      }
+
+      div[class*="maxwidth"]{
 
         label{
           @include ReSassWidthResponsive(768){

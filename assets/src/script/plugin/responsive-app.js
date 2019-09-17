@@ -30,6 +30,7 @@ jQuery(function($) {
 /* Responsive Header User Dropdown Menu List */
 jQuery(function($) {
     if($(window).width() < 991){
+
         jQuery(function($) {
             if($('body').hasClass('mainpage')){
                 $(document).ready(function() {
@@ -42,9 +43,13 @@ jQuery(function($) {
                         if (userMenuList.height() == 0) {
                             userMenuList.animate({height: dropdownMobileTradepageMenu.height()+15});
                             dropdownMobileTradepageMenu.addClass("activeuserdropdownmenu");
+
+                            $("#MobileMenuUserDropdownMenu").find('.headusermenu-box').addClass('showmenu');
                         }
                         else if (userMenuList.height() == dropdownMobileTradepageMenu.height()+15) {
                             userMenuList.animate({height: "0px"});
+
+                            $("#MobileMenuUserDropdownMenu").find('.headusermenu-box').removeClass('showmenu');
                         }
                     });
 
@@ -60,9 +65,13 @@ jQuery(function($) {
                         if (userMenuList.height() == 0) {
                             userMenuList.animate({height: dropdownMobileMainpageMenu.height()+15});
                             dropdownMobileMainpageMenu.addClass("activeuserdropdownmenu");
+
+                            $("#MobileMenuUserDropdownMenu").find('.headusermenu-box').addClass('showmenu');
                         }
                         else if (userMenuList.height() == dropdownMobileMainpageMenu.height()+15) {
                             userMenuList.animate({height: "0px"});
+
+                            $("#MobileMenuUserDropdownMenu").find('.headusermenu-box').removeClass('showmenu');
                         }
                     });
 
