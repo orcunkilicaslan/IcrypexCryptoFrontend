@@ -48,6 +48,9 @@
       &.dropdown-menu.show[aria-labelledby="CompanyDropdownMenu"]{
         height: 132px !important;
       }
+      &.dropdown-menu.show[aria-labelledby="AccountDropdownMenu"]{
+        height: 460px !important;
+      }
       &.dropdown-menu[aria-labelledby="CompanyDropdownMenu"],
       &.dropdown-menu[aria-labelledby="TechnologyDropdownMenu"]{
         //margin-left: 19px;
