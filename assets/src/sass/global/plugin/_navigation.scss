@@ -29,8 +29,10 @@
       margin: 0;
 
       @include ReSassWidthResponsive(992){
+        width: 100%;
+        display: block !important;
         flex-direction: column;
-        margin: 0 10px;
+        padding: 0 10px;
       }
 
       li{position: relative;}
