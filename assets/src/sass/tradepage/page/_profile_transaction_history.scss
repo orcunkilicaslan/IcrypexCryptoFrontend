@@ -34,13 +34,15 @@
           }
 
           .filterbutton{
-            flex: 0 0 100% !important;
-            max-width: 100% !important;
-            width: auto;
-            margin-top: 5px;
+            @include ReSassWidthResponsive(768){
+              flex: 0 0 100% !important;
+              max-width: 100% !important;
+              width: auto;
+              margin-top: 5px;
 
-            .btn{
-              width: 100%;
+              .btn{
+                width: 100%;
+              }
             }
           }
         }
