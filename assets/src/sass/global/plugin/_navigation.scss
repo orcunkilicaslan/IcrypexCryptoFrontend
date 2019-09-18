@@ -30,9 +30,13 @@
 
       @include ReSassWidthResponsive(992){
         width: 100%;
-        display: block !important;
         flex-direction: column;
         padding: 0 10px;
+        padding-bottom: 40px;
+
+        &:last-child{
+          padding-bottom: 0 !important;
+        }
       }
 
       li{position: relative;}
