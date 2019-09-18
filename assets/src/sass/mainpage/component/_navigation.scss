@@ -6,17 +6,15 @@
   }
   &-menu{
     display: flex;
-    display: -webkit-flex;
     flex-direction: column;
     justify-content: space-between;
-    flex-wrap: wrap;
-    -webkit-flex-wrap: wrap;
     overflow-x: hidden;
     color: $global-clr-white;
     font-size: 17px;
 
     @include ReSassWidthResponsive(992){
       background-color: $global-sitebg-darkblue01;
+      display: block !important;
     }
 
     &-megadropdown{
