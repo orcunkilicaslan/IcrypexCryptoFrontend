@@ -322,7 +322,38 @@
                     <a class="d-inline-flex align-items-center" href="#" title="" rel="bookmark"><i class="icon-svg icon-svg-profiledownloadgreen"></i> EXCEL İNDİR</a>
                     <a class="d-inline-flex align-items-center" href="#" title="" rel="bookmark"><i class="icon-svg icon-svg-profiledownloadred"></i> PDF İNDİR</a>
                 </span>
-                <span class="boxcolumn-boxtitle-date d-flex align-items-center"><span>02.04.2019</span> - <span>13.07.2019</span></span>
+                <div class="table-filter">
+                    <link id="css-jsdatapicker" rel="stylesheet" href="../assets/vendor/js-datepicker/dist/datepicker.min.css">
+                    <script id="script-jsdatapicker" src="../assets/vendor/js-datepicker/dist/datepicker.min.js"></script>
+                    <form class="formuinew filter-horizontal" autocomplete="off" novalidate>
+                        <div class="form-row">
+                            <div class="form-group colorsetdarkblue col-auto maxwidth110">
+                                <select class="form-control custom-select">
+                                    <option selected>İŞLEM TİPİ</option>
+                                    <option value="1">ALIŞ</option>
+                                    <option value="2">SATIŞ</option>
+                                </select>
+                            </div>
+                            <div class="form-group colorsetdarkblue col-auto maxwidth110">
+                                <select class="form-control custom-select">
+                                    <option selected>DURUM</option>
+                                    <option value="1">ALIŞ</option>
+                                    <option value="2">SATIŞ</option>
+                                </select>
+                            </div>
+                            <div class="form-group colorsetdarkblue col-auto maxwidth110">
+                                <input id="filterdatestart" type="text" class="form-control datepickerjs" name="filterdatestart" placeholder="BAŞLANGIÇ TARİHİ" value="">
+                            </div>
+                            <div class="form-group colorsetdarkblue col-auto maxwidth110">
+                                <input id="filterdatefinish" type="text" class="form-control datepickerjs" name="filterdatefinish" placeholder="BİTİŞ TARİHİ" value="">
+                            </div>
+
+                            <div class="form-group colorsetdarkblue col-auto filterbutton">
+                                <button type="submit" class="btn btn-primary">FİLTRELE</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
             <div class="profile-transaction-history">
             <table class="profile-transaction-history-table sitetable sitetableresponsive table">
