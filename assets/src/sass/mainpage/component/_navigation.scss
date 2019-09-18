@@ -6,8 +6,11 @@
   }
   &-menu{
     display: flex;
+    display: -webkit-flex;
     flex-direction: column;
+    -webkit-flex-direction: column;
     justify-content: space-between;
+    -webkit-justify-content: space-between;
     color: $global-clr-white;
     font-size: 17px;
 
