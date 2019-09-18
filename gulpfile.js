@@ -98,7 +98,8 @@ gulp.task('script-plugin', () => {
     return gulp.src([
         folder_src_main + 'script/plugin/**/app.js',
         folder_src_main + 'script/plugin/**/responsive-app.js',
-        folder_src_main + 'script/plugin/**/responsive-tabs.js'
+        folder_src_main + 'script/plugin/**/responsive-tabs.js',
+        folder_src_main + 'script/plugin/**/plugin-es6.js'
     ])
         .pipe(plumber())
         .pipe(webpack({
