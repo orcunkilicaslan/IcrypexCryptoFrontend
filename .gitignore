@@ -61,3 +61,12 @@ assets/vendor/bootstrap-pincode-input/example.jpg
 assets/vendor/bootstrap-pincode-input/index.html
 assets/vendor/bootstrap-pincode-input/package.json
 assets/vendor/bootstrap-pincode-input/README.md
+
+assets/vendor/js-datepicker/__mocks__/
+assets/vendor/js-datepicker/__tests__/
+assets/vendor/js-datepicker/sandbox/
+assets/vendor/js-datepicker/src/
+assets/vendor/js-datepicker/package.json
+assets/vendor/js-datepicker/postcss.config.js
+assets/vendor/js-datepicker/README.md
+assets/vendor/js-datepicker/webpack.config.js
