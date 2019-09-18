@@ -754,6 +754,55 @@
     }
   }
 
+  &.filter{
+    &-horizontal{
+
+      .form-row{
+        margin-right: -3px !important;
+        margin-left: -3px !important;
+
+        >[class*=col-] {
+          padding-right: 3px !important;
+          padding-left: 3px !important;
+        }
+      }
+
+      .borderrightgray{
+        border-right: 1px solid transparentize($global-clr-soft-gray, 0.7);
+      }
+
+      .form-control{
+        font-size: 15px !important;
+        font-weight: normal !important;
+        height: 32px !important;
+        padding: 4px 6px !important;
+      }
+
+      .custom-select{
+        font-size: 15px !important;
+        height: 32px !important;
+        padding: 2px 7px 2px !important;
+      }
+
+      .btn{
+        height: 32px !important;
+        padding-top: 3px !important;
+        padding-bottom: 3px !important;
+        font-size: 15px !important;
+        @include border-radius(2px !important);
+      }
+
+      .datepickerjs{
+        text-align: center !important;
+
+        @include placeholder{
+          color: $global-clr-dark-blue !important;
+          opacity: 1;
+        }
+      }
+    }
+  }
+
   .g-recaptcha{
     display: flex;
     justify-content: center;
@@ -761,6 +810,7 @@
 
   .maxwidth90{width: 90px;}
   .maxwidth110{width: 110px;}
+  .maxwidth120{width: 120px;}
   .maxwidth160{width: 175px;}
   .maxwidth190{width: 205px;}
   .maxwidth220{width: 220px;}
