@@ -14,17 +14,23 @@ $(function(){
 /* Head Blur Tab Page Title */
 
 /* Header Nav Fixed */
-$(window).scroll(function () {
+$(window).on("load scroll",function(e){
 
     //var bodyWidth = window.innerWidth;
     //var bodyHeight = window.innerHeight;
     //var sliderHeight = $( ".scrollbannerheight" ).innerHeight();
     var scroll = $(window).scrollTop();
+    var headerHeight = $("header.header");
 
-    if (scroll > 10) {
-        $(".header").addClass("navscroll");
+
+    if (scroll > headerHeight.height()) {
+        headerHeight.css("top", 0);
+        headerHeight.addClass("navscroll");
+        $(".header-spacebottom").show();
     } else {
-        $(".header").removeClass("navscroll");
+        headerHeight.css("top", "-" + headerHeight.height() + "px");
+        headerHeight.removeClass("navscroll");
+        $(".header-spacebottom").hide();
     }
 
 });

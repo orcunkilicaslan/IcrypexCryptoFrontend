@@ -3,21 +3,26 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
 .header{
   color: $global-clr-white;
-  @include gradient($global-grdint-darkblue01, $global-grdint-darkblue02);
-  position: fixed;
   width: 100%;
-  top: 0;
-  z-index: 10;
-  @include transition(all, 0.2s, ease-out);
+  @include gradient($global-grdint-darkblue01, $global-grdint-darkblue02);
+  @include transition(top, 0.7s, ease-out);
   $headerclassname: &;
 
   &.navscroll{
     background-color: transparentize($global-sitebg-darkblue01, 0.02);
     background-image: none;
+    position: fixed;
+    top: 0 !important;
+    z-index: 10;
+
+    #{$headerclassname}-spacebottom{
+      display: block !important;
+    }
 
     #{$headerclassname}-top,
     #{$headerclassname}-titlearea,
     #{$headerclassname}-onlytitle{
+      display: none !important;
       overflow: hidden;
       opacity: 0;
       height: 0;
@@ -68,7 +73,29 @@ $globalSvgIconImgPath : "../../img/global/svg";
   //*{@include transition(all, 0.3s, ease-out);}
 
   &-alert{
+    color: $global-clr-white !important;
+    background-color: $global-sitebg-darkblue01;
     height: auto;
+    margin: 0 !important;
+    text-align: center;
+    @include border-radius(0);
+
+    &-info{
+      background-color: $global-clr-soft-blue;
+    }
+
+    &-primary{
+      background-color: $global-clr-dark-blue;
+    }
+
+    &.alert-dismissible{
+      .close{
+        &::before,
+        &::after{
+          background-color: $global-clr-white !important;
+        }
+      }
+    }
 
     @include transition(all, 1s, ease-out);
   }
@@ -528,6 +555,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
   }
 
   &-spacebottom{
+    display: none;
     background-color: $global-clr-white;
     height: 95px;
   }
