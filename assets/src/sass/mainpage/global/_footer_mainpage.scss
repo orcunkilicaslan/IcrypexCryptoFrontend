@@ -9,11 +9,11 @@ $mainpageFooterImgPath : "../../img/mainpage/footer";
     background-position: top center;
     background-repeat: no-repeat;
     padding-top: 75px;
-    padding-bottom: 35px;
+    padding-bottom: 25px;
 
     @include ReSassWidthResponsive(1400){
       padding-top: 25px;
-      padding-bottom: 25px;
+      padding-bottom: 15px;
     }
     @include ReSassWidthResponsive(768){
       background-image: none;
@@ -117,7 +117,7 @@ $mainpageFooterImgPath : "../../img/mainpage/footer";
   }
 
   &-bottom{
-    margin-top: 30px;
+    margin-top: 20px;
     position: relative;
     overflow: hidden;
 
@@ -146,10 +146,10 @@ $mainpageFooterImgPath : "../../img/mainpage/footer";
       }
     }
     &::before{
-      left: calc(50% + 210px);
+      left: calc(50% + 270px);
     }
     &::after{
-      right: calc(50% + 210px);
+      right: calc(50% + 270px);
     }
 
     &-list{
@@ -159,19 +159,20 @@ $mainpageFooterImgPath : "../../img/mainpage/footer";
       @include ReSassWidthResponsive(480){
         display: flex;
         justify-content: center;
-        @include scale(0.8);
+        @include scale(0.9);
       }
       @include ReSassWidthResponsive(400){
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: center;
       }
 
       &-item{
         position: relative;
-        padding: 0 12px;
+        padding: 10px 12px;
         display: inline-block;
-        @include ReSassWidthResponsive(480){
-          padding: 0 10px;
+        @include ReSassWidthResponsive(576){
+          padding-left: 5px;
+          padding-right: 5px;
         }
         @include ReSassWidthResponsive(400){
           max-width: calc(100% /2);
@@ -188,7 +189,7 @@ $mainpageFooterImgPath : "../../img/mainpage/footer";
           right: -3px;
           background-color: transparentize($global-clr-soft-gray, 0.7);
 
-          @include ReSassWidthResponsive(480){
+          @include ReSassWidthResponsive(576){
             display: none;
           }
         }
@@ -207,6 +208,12 @@ $mainpageFooterImgPath : "../../img/mainpage/footer";
         }
         .odeabank{
           top: -2px;
+        }
+        .vakifbank{
+          top: -6px;
+          @include ReSassWidthResponsive(576){
+            top: -7px;
+          }
         }
         .papara{
           top: 3px;
