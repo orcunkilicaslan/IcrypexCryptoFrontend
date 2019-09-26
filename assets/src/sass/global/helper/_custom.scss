@@ -168,3 +168,13 @@ img.imgsize{
   }
 }
 /* Custom */
+
+/* Cross Browser Start */
+html.IExplorer{
+
+  .fullpages{
+    display: block !important;
+    overflow-x: hidden !important;
+  }
+}
+/* Cross Browser End */
