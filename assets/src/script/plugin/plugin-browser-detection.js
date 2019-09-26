@@ -57,12 +57,16 @@ $(window).on("load",function(e){
     // Browser Detect HTML Add Class
     if (BrowserDetect.browser === "Chrome") {
         $("html").addClass(BrowserDetect.OS + " " + "Chrome" + " " + "Chrome" + BrowserDetect.version);
-    } else if (BrowserDetect.browser === "MS Edge") {
-        $("html").addClass(BrowserDetect.OS + " " + "Edge" + " " + "Edge" + BrowserDetect.version);
-    } else if (BrowserDetect.browser === "Explorer") {
-        $("html").addClass(BrowserDetect.OS + " " + "IExplorer" + " " + "IExplorer" + BrowserDetect.version);
     } else if (BrowserDetect.browser === "Firefox") {
         $("html").addClass(BrowserDetect.OS + " " + "Firefox" + " " + "Firefox" + BrowserDetect.version);
+    } else if (BrowserDetect.browser === "MS Edge") {
+        $("html").addClass(BrowserDetect.OS + " " + "Edge" + " " + "Edge" + BrowserDetect.version);
+        $("meta[name=viewport]").remove();
+        $("head").append("<meta name=\"viewport\" content=\"width=1440\">");
+    } else if (BrowserDetect.browser === "Explorer") {
+        $("html").addClass(BrowserDetect.OS + " " + "IExplorer" + " " + "IExplorer" + BrowserDetect.version);
+        $("meta[name=viewport]").remove();
+        $("head").append("<meta name=\"viewport\" content=\"width=1440\">");
     }
 
 });
