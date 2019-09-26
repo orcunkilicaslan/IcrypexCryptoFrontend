@@ -357,6 +357,10 @@
         box-shadow: none;
       }
     }
+
+    &.bootstrap-datepicker{
+      text-align: center;
+    }
   }
 
   div.form-control{
@@ -786,8 +790,7 @@
 
       .btn{
         height: 32px !important;
-        padding-top: 3px !important;
-        padding-bottom: 3px !important;
+        padding: 3px 8px !important;
         font-size: 15px !important;
         @include border-radius(2px !important);
       }
@@ -800,8 +803,11 @@
   }
 
   .maxwidth90{width: 90px;}
+  .maxwidth100{width: 100px;}
   .maxwidth110{width: 110px;}
   .maxwidth120{width: 120px;}
+  .maxwidth140{width: 140px;}
+  .maxwidth150{width: 150px;}
   .maxwidth160{width: 175px;}
   .maxwidth190{width: 205px;}
   .maxwidth220{width: 220px;}
