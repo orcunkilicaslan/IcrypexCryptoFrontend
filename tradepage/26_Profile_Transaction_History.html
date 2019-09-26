@@ -323,31 +323,63 @@
                     <a class="d-inline-flex align-items-center" href="#" title="" rel="bookmark"><i class="icon-svg icon-svg-profiledownloadred"></i> PDF İNDİR</a>
                 </span>
                 <div class="table-filter">
-                    <link id="css-jsdatapicker" rel="stylesheet" href="../assets/vendor/js-datepicker/dist/datepicker.min.css">
-                    <script id="script-jsdatapicker" src="../assets/vendor/js-datepicker/dist/datepicker.min.js"></script>
+                    <link id="css-bootstrap-datepicker" rel="stylesheet" href="../assets/vendor/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
+                    <script id="script-bootstrap-datepicker" src="../assets/vendor/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+                    <script id="script-bootstrap-datepicker-lang" src="../assets/vendor/bootstrap-datepicker/dist/locales/bootstrap-datepicker.tr.min.js"></script>
+                    <script>
+                        $(window).on("load",function(){
+                            $('.bootstrap-datepicker').datepicker({
+                                format: "dd.mm.yyyy",
+                                weekStart: 1,
+                                language: "tr",
+                                orientation: "bottom left",
+                                multidate: 2,
+                                multidateSeparator: " - ",
+                                forceParse: false,
+                                todayHighlight: true,
+                                toggleActive: true
+                            }).on("changeDate",function(event){
+                                var dates = event.dates, elem=$('.bootstrap-datepicker');
+                                if(elem.data("selecteddates")==dates.join(",")) return;
+                                if(dates.length>2) dates=dates.splice(dates.length-1);
+                                dates.sort(function(a,b){return new Date(a).getTime()-new Date(b).getTime()});
+                                elem.data("selecteddates",dates.join(",")).datepicker('setDates',dates);
+                            });
+                        });
+                    </script>
                     <form class="formuinew filter-horizontal" autocomplete="off" novalidate>
                         <div class="form-row">
-                            <div class="form-group colorsetdarkblue col-auto maxwidth110">
+                            <div class="form-group colorsetdarkblue col-auto maxwidth100">
+                                <select class="form-control custom-select">
+                                    <option selected>SEÇENEK</option>
+                                    <option value="1">ALIŞ</option>
+                                    <option value="2">SATIŞ</option>
+                                </select>
+                            </div>
+                            <div class="form-group colorsetdarkblue col-auto maxwidth100">
+                                <select class="form-control custom-select">
+                                    <option selected>SEÇENEK</option>
+                                    <option value="1">ALIŞ</option>
+                                    <option value="2">SATIŞ</option>
+                                </select>
+                            </div>
+                            <div class="form-group colorsetdarkblue col-auto maxwidth100">
                                 <select class="form-control custom-select">
                                     <option selected>İŞLEM TİPİ</option>
                                     <option value="1">ALIŞ</option>
                                     <option value="2">SATIŞ</option>
                                 </select>
                             </div>
-                            <div class="form-group colorsetdarkblue col-auto maxwidth110">
+                            <div class="form-group colorsetdarkblue col-auto maxwidth100">
                                 <select class="form-control custom-select">
                                     <option selected>DURUM</option>
                                     <option value="1">ALIŞ</option>
                                     <option value="2">SATIŞ</option>
                                 </select>
                             </div>
-                            <div class="form-group colorsetdarkblue col-auto maxwidth110">
-                                <input id="filterdatestart" type="text" class="form-control datepickerjs" placeholder="BAŞLANGIÇ TARİHİ" value="">
+                            <div class="form-group colorsetdarkblue col-auto maxwidth150">
+                                <input type="text" class="form-control bootstrap-datepicker" placeholder="BAŞLANGIÇ - BİTİŞ TARİHİ">
                             </div>
-                            <div class="form-group colorsetdarkblue col-auto maxwidth110">
-                                <input id="filterdatefinish" type="text" class="form-control datepickerjs" placeholder="BİTİŞ TARİHİ" value="">
-                            </div>
-
                             <div class="form-group colorsetdarkblue col-auto filterbutton">
                                 <button type="submit" class="btn btn-primary">FİLTRELE</button>
                             </div>
@@ -356,111 +388,228 @@
                 </div>
             </div>
             <div class="profile-transaction-history">
-            <table class="profile-transaction-history-table sitetable sitetableresponsive table">
-                <thead>
-                <tr>
-                    <th>İŞLEM NO</th>
-                    <th>TARİH <span class="tableicon"><i class="tableicon-arrowup"></i><i class="tableicon-arrowdown"></i></span></th>
-                    <th>ÜRÜN <span class="tableicon"><i class="tableicon-arrowup"></i><i class="tableicon-arrowdown"></i></span></th>
-                    <th>İŞLEM TİPİ <span class="tableicon"><i class="tableicon-arrowup"></i><i class="tableicon-arrowdown"></i></span></th>
-                    <th>FİYAT <span class="tableicon"><i class="tableicon-arrowup"></i><i class="tableicon-arrowdown"></i></span></th>
-                    <th>MİKTAR <span class="tableicon"><i class="tableicon-arrowup"></i><i class="tableicon-arrowdown"></i></span></th>
-                    <th>TOPLAM TUTAR <span class="tableicon"><i class="tableicon-arrowup"></i><i class="tableicon-arrowdown"></i></span></th>
-                    <th>KOMİSYON <span class="tableicon"><i class="tableicon-arrowup"></i><i class="tableicon-arrowdown"></i></span></th>
-                    <th>FATURA</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <td data-title="İŞLEM NO">1</td>
-                    <td data-title="TARİH">25.03.2019</td>
-                    <td data-title="ÜRÜN">BTC/TRY</td>
-                    <td data-title="İŞLEM TİPİ" class="sitecolorgreen">ALIŞ</td>
-                    <td data-title="FİYAT">22,430.124</td>
-                    <td data-title="MİKTAR">22,430.124</td>
-                    <td data-title="TOPLAM TUTAR">22,430.124</td>
-                    <td data-title="KOMİSYON">10.50 TRY</td>
-                    <td data-title="" class="profile-transaction-history-table-btn resp-td-p-10"><a class="d-flex align-items-center" href="#" title="" rel="bookmark"><i class="icon-svg icon-svg-profiledownloadblue"></i> Faturayı İndir</a></td>
-                </tr>
-                <tr>
-                    <td data-title="İŞLEM NO">1</td>
-                    <td data-title="TARİH">25.03.2019</td>
-                    <td data-title="ÜRÜN">BTC/TRY</td>
-                    <td data-title="İŞLEM TİPİ" class="sitecolorgreen">ALIŞ</td>
-                    <td data-title="FİYAT">22,430.124</td>
-                    <td data-title="MİKTAR">22,430.124</td>
-                    <td data-title="TOPLAM TUTAR">22,430.124</td>
-                    <td data-title="KOMİSYON">10.50 TRY</td>
-                    <td data-title="" class="profile-transaction-history-table-btn resp-td-p-10"><a class="d-flex align-items-center" href="#" title="" rel="bookmark"><i class="icon-svg icon-svg-profiledownloadblue"></i> Faturayı İndir</a></td>
-                </tr>
-                <tr>
-                    <td data-title="İŞLEM NO">1</td>
-                    <td data-title="TARİH">25.03.2019</td>
-                    <td data-title="ÜRÜN">BTC/TRY</td>
-                    <td data-title="İŞLEM TİPİ" class="sitecolorgreen">ALIŞ</td>
-                    <td data-title="FİYAT">22,430.124</td>
-                    <td data-title="MİKTAR">22,430.124</td>
-                    <td data-title="TOPLAM TUTAR">22,430.124</td>
-                    <td data-title="KOMİSYON">10.50 TRY</td>
-                    <td data-title="" class="profile-transaction-history-table-btn resp-td-p-10"><a class="d-flex align-items-center" href="#" title="" rel="bookmark"><i class="icon-svg icon-svg-profiledownloadblue"></i> Faturayı İndir</a></td>
-                </tr>
-                <tr>
-                    <td data-title="İŞLEM NO">1</td>
-                    <td data-title="TARİH">25.03.2019</td>
-                    <td data-title="ÜRÜN">BTC/TRY</td>
-                    <td data-title="İŞLEM TİPİ" class="sitecolorgreen">ALIŞ</td>
-                    <td data-title="FİYAT">22,430.124</td>
-                    <td data-title="MİKTAR">22,430.124</td>
-                    <td data-title="TOPLAM TUTAR">22,430.124</td>
-                    <td data-title="KOMİSYON">10.50 TRY</td>
-                    <td data-title="" class="profile-transaction-history-table-btn resp-td-p-10"><a class="d-flex align-items-center" href="#" title="" rel="bookmark"><i class="icon-svg icon-svg-profiledownloadblue"></i> Faturayı İndir</a></td>
-                </tr>
-                <tr>
-                    <td data-title="İŞLEM NO">1</td>
-                    <td data-title="TARİH">25.03.2019</td>
-                    <td data-title="ÜRÜN">BTC/TRY</td>
-                    <td data-title="İŞLEM TİPİ" class="sitecolorgreen">ALIŞ</td>
-                    <td data-title="FİYAT">22,430.124</td>
-                    <td data-title="MİKTAR">22,430.124</td>
-                    <td data-title="TOPLAM TUTAR">22,430.124</td>
-                    <td data-title="KOMİSYON">10.50 TRY</td>
-                    <td data-title="" class="profile-transaction-history-table-btn resp-td-p-10"><a class="d-flex align-items-center" href="#" title="" rel="bookmark"><i class="icon-svg icon-svg-profiledownloadblue"></i> Faturayı İndir</a></td>
-                </tr>
-                <tr>
-                    <td data-title="İŞLEM NO">1</td>
-                    <td data-title="TARİH">25.03.2019</td>
-                    <td data-title="ÜRÜN">BTC/TRY</td>
-                    <td data-title="İŞLEM TİPİ" class="sitecolorgreen">ALIŞ</td>
-                    <td data-title="FİYAT">22,430.124</td>
-                    <td data-title="MİKTAR">22,430.124</td>
-                    <td data-title="TOPLAM TUTAR">22,430.124</td>
-                    <td data-title="KOMİSYON">10.50 TRY</td>
-                    <td data-title="" class="profile-transaction-history-table-btn resp-td-p-10"><a class="d-flex align-items-center" href="#" title="" rel="bookmark"><i class="icon-svg icon-svg-profiledownloadblue"></i> Faturayı İndir</a></td>
-                </tr>
-                <tr>
-                    <td data-title="İŞLEM NO">1</td>
-                    <td data-title="TARİH">25.03.2019</td>
-                    <td data-title="ÜRÜN">BTC/TRY</td>
-                    <td data-title="İŞLEM TİPİ" class="sitecolorgreen">ALIŞ</td>
-                    <td data-title="FİYAT">22,430.124</td>
-                    <td data-title="MİKTAR">22,430.124</td>
-                    <td data-title="TOPLAM TUTAR">22,430.124</td>
-                    <td data-title="KOMİSYON">10.50 TRY</td>
-                    <td data-title="" class="profile-transaction-history-table-btn resp-td-p-10"><a class="d-flex align-items-center" href="#" title="" rel="bookmark"><i class="icon-svg icon-svg-profiledownloadblue"></i> Faturayı İndir</a></td>
-                </tr>
-                <tr>
-                    <td data-title="İŞLEM NO">1</td>
-                    <td data-title="TARİH">25.03.2019</td>
-                    <td data-title="ÜRÜN">BTC/TRY</td>
-                    <td data-title="İŞLEM TİPİ" class="sitecolorgreen">ALIŞ</td>
-                    <td data-title="FİYAT">22,430.124</td>
-                    <td data-title="MİKTAR">22,430.124</td>
-                    <td data-title="TOPLAM TUTAR">22,430.124</td>
-                    <td data-title="KOMİSYON">10.50 TRY</td>
-                    <td data-title="" class="profile-transaction-history-table-btn resp-td-p-10"><a class="d-flex align-items-center" href="#" title="" rel="bookmark"><i class="icon-svg icon-svg-profiledownloadblue"></i> Faturayı İndir</a></td>
-                </tr>
-                </tbody>
-            </table>
+                <table class="profile-transaction-history-table sitetable sitetableresponsive table">
+                    <thead>
+                    <tr>
+                        <th>İŞLEM NO</th>
+                        <th>TARİH <span class="tableicon"><i class="tableicon-arrowup"></i><i class="tableicon-arrowdown"></i></span></th>
+                        <th>ÜRÜN <span class="tableicon"><i class="tableicon-arrowup"></i><i class="tableicon-arrowdown"></i></span></th>
+                        <th>İŞLEM TİPİ <span class="tableicon"><i class="tableicon-arrowup"></i><i class="tableicon-arrowdown"></i></span></th>
+                        <th>FİYAT <span class="tableicon"><i class="tableicon-arrowup"></i><i class="tableicon-arrowdown"></i></span></th>
+                        <th>MİKTAR <span class="tableicon"><i class="tableicon-arrowup"></i><i class="tableicon-arrowdown"></i></span></th>
+                        <th>TOPLAM TUTAR <span class="tableicon"><i class="tableicon-arrowup"></i><i class="tableicon-arrowdown"></i></span></th>
+                        <th>KOMİSYON <span class="tableicon"><i class="tableicon-arrowup"></i><i class="tableicon-arrowdown"></i></span></th>
+                        <th>DURUM</th>
+                        <!-- <th>FATURA</th> -->
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td data-title="İŞLEM NO">IX-115634</td>
+                        <td data-title="TARİH">11/09/2019 01:35:42</td>
+                        <td data-title="ÜRÜN">BTC/TRY</td>
+                        <td data-title="İŞLEM TİPİ" class="sitecolorred">SATIŞ</td>
+                        <td data-title="FİYAT">77000.00 TRY</td>
+                        <td data-title="MİKTAR">0.22295000 BTC</td>
+                        <td data-title="TOPLAM TUTAR">17167.15 TRY</td>
+                        <td data-title="KOMİSYON">25.75 TRY</td>
+                        <td class="sitecolorred">İPTAL EDİLDİ</td>
+                        <!-- <td data-title="" class="profile-transaction-history-table-btn resp-td-p-10"><a class="d-flex align-items-center" href="#" title="" rel="bookmark"><i class="icon-svg icon-svg-profiledownloadblue"></i> Faturayı İndir</a></td> -->
+                    </tr>
+                    <tr>
+                        <td data-title="İŞLEM NO">IX-115631</td>
+                        <td data-title="TARİH">11/09/2019 01:28:12</td>
+                        <td data-title="ÜRÜN">BTC/TRY</td>
+                        <td data-title="İŞLEM TİPİ" class="sitecolorgreen">ALIŞ</td>
+                        <td data-title="FİYAT">72000.00 TRY</td>
+                        <td data-title="MİKTAR">409.78 TRY</td>
+                        <td data-title="TOPLAM TUTAR">0.00569141 BTC</td>
+                        <td data-title="KOMİSYON">0.00000854 BTC</td>
+                        <td class="sitecolorred">İPTAL EDİLDİ</td>
+                        <!-- <td data-title="" class="profile-transaction-history-table-btn resp-td-p-10"><a class="d-flex align-items-center" href="#" title="" rel="bookmark"><i class="icon-svg icon-svg-profiledownloadblue"></i> Faturayı İndir</a></td> -->
+                    </tr>
+                    <tr>
+                        <td data-title="İŞLEM NO">IX-115630</td>
+                        <td data-title="TARİH">11/09/2019 01:26:58</td>
+                        <td data-title="ÜRÜN">BTC/TRY</td>
+                        <td data-title="İŞLEM TİPİ" class="sitecolorred">SATIŞ</td>
+                        <td data-title="FİYAT">100000.00 TRY</td>
+                        <td data-title="MİKTAR">0.21495000 BTC</td>
+                        <td data-title="TOPLAM TUTAR">21495 TRY</td>
+                        <td data-title="KOMİSYON">32.24 TRY</td>
+                        <td class="sitecolorred">İPTAL EDİLDİ</td>
+                        <!-- <td data-title="" class="profile-transaction-history-table-btn resp-td-p-10"><a class="d-flex align-items-center" href="#" title="" rel="bookmark"><i class="icon-svg icon-svg-profiledownloadblue"></i> Faturayı İndir</a></td> -->
+                    </tr>
+                    <tr>
+                        <td data-title="İŞLEM NO">IX-115629</td>
+                        <td data-title="TARİH">11/09/2019 01:25:40</td>
+                        <td data-title="ÜRÜN">BTC/TRY</td>
+                        <td data-title="İŞLEM TİPİ" class="sitecolorgreen">ALIŞ</td>
+                        <td data-title="FİYAT">12000.00 TRY</td>
+                        <td data-title="MİKTAR">360.00 TRY</td>
+                        <td data-title="TOPLAM TUTAR">0.03 BTC</td>
+                        <td data-title="KOMİSYON">0.00004500 BTC</td>
+                        <td class="sitecolorred">İPTAL EDİLDİ</td>
+                        <!-- <td data-title="" class="profile-transaction-history-table-btn resp-td-p-10"><a class="d-flex align-items-center" href="#" title="" rel="bookmark"><i class="icon-svg icon-svg-profiledownloadblue"></i> Faturayı İndir</a></td> -->
+                    </tr>
+                    <tr>
+                        <td data-title="İŞLEM NO">IX-115628</td>
+                        <td data-title="TARİH">11/09/2019 01:22:47</td>
+                        <td data-title="ÜRÜN">BTC/TRY</td>
+                        <td data-title="İŞLEM TİPİ" class="sitecolorgreen">ALIŞ</td>
+                        <td data-title="FİYAT">5000.00 TRY</td>
+                        <td data-title="MİKTAR">411.19 TRY</td>
+                        <td data-title="TOPLAM TUTAR">0.082239 BTC</td>
+                        <td data-title="KOMİSYON">0.00012336 BTC</td>
+                        <td class="sitecolorred">İPTAL EDİLDİ</td>
+                        <!-- <td data-title="" class="profile-transaction-history-table-btn resp-td-p-10"><a class="d-flex align-items-center" href="#" title="" rel="bookmark"><i class="icon-svg icon-svg-profiledownloadblue"></i> Faturayı İndir</a></td> -->
+                    </tr>
+                    <tr>
+                        <td data-title="İŞLEM NO">IX-115620</td>
+                        <td data-title="TARİH">10/09/2019 23:07:31</td>
+                        <td data-title="ÜRÜN">BTC/TRY</td>
+                        <td data-title="İŞLEM TİPİ" class="sitecolorred">SATIŞ</td>
+                        <td data-title="FİYAT">50000.00 TRY</td>
+                        <td data-title="MİKTAR">0.20000000 BTC</td>
+                        <td data-title="TOPLAM TUTAR">10000 TRY</td>
+                        <td data-title="KOMİSYON">15.00 TRY</td>
+                        <td class="sitecolorred">İPTAL EDİLDİ</td>
+                        <!-- <td data-title="" class="profile-transaction-history-table-btn resp-td-p-10"><a class="d-flex align-items-center" href="#" title="" rel="bookmark"><i class="icon-svg icon-svg-profiledownloadblue"></i> Faturayı İndir</a></td> -->
+                    </tr>
+                    <tr>
+                        <td data-title="İŞLEM NO">IX-115619</td>
+                        <td data-title="TARİH">10/09/2019 23:04:43</td>
+                        <td data-title="ÜRÜN">BTC/TRY</td>
+                        <td data-title="İŞLEM TİPİ" class="sitecolorgreen">ALIŞ</td>
+                        <td data-title="FİYAT">60000.00 TRY</td>
+                        <td data-title="MİKTAR">1200.00 TRY</td>
+                        <td data-title="TOPLAM TUTAR">0.02 BTC</td>
+                        <td data-title="KOMİSYON">0.00003000 BTC</td>
+                        <td class="sitecolorred">İPTAL EDİLDİ</td>
+                        <!-- <td data-title="" class="profile-transaction-history-table-btn resp-td-p-10"><a class="d-flex align-items-center" href="#" title="" rel="bookmark"><i class="icon-svg icon-svg-profiledownloadblue"></i> Faturayı İndir</a></td> -->
+                    </tr>
+                    <tr>
+                        <td data-title="İŞLEM NO">IX-115616</td>
+                        <td data-title="TARİH">10/09/2019 23:00:42</td>
+                        <td data-title="ÜRÜN">BTC/TRY</td>
+                        <td data-title="İŞLEM TİPİ" class="sitecolorred">SATIŞ</td>
+                        <td data-title="FİYAT">100000.00 TRY</td>
+                        <td data-title="MİKTAR">0.02000000 BTC</td>
+                        <td data-title="TOPLAM TUTAR">2000 TRY</td>
+                        <td data-title="KOMİSYON">3.00 TRY</td>
+                        <td class="sitecolorred">İPTAL EDİLDİ</td>
+                        <!-- <td data-title="" class="profile-transaction-history-table-btn resp-td-p-10"><a class="d-flex align-items-center" href="#" title="" rel="bookmark"><i class="icon-svg icon-svg-profiledownloadblue"></i> Faturayı İndir</a></td> -->
+                    </tr>
+                    <tr>
+                        <td data-title="İŞLEM NO">IX-115611</td>
+                        <td data-title="TARİH">10/09/2019 22:56:20</td>
+                        <td data-title="ÜRÜN">BTC/TRY</td>
+                        <td data-title="İŞLEM TİPİ" class="sitecolorgreen">ALIŞ</td>
+                        <td data-title="FİYAT">55000.00 TRY</td>
+                        <td data-title="MİKTAR">550.00 TRY</td>
+                        <td data-title="TOPLAM TUTAR">0.01 BTC</td>
+                        <td data-title="KOMİSYON">0.00001500 BTC</td>
+                        <td class="sitecolorred">İPTAL EDİLDİ</td>
+                        <!-- <td data-title="" class="profile-transaction-history-table-btn resp-td-p-10"><a class="d-flex align-items-center" href="#" title="" rel="bookmark"><i class="icon-svg icon-svg-profiledownloadblue"></i> Faturayı İndir</a></td> -->
+                    </tr>
+                    <tr>
+                        <td data-title="İŞLEM NO">IX-115595</td>
+                        <td data-title="TARİH">10/09/2019 22:33:46</td>
+                        <td data-title="ÜRÜN">BTC/TRY</td>
+                        <td data-title="İŞLEM TİPİ" class="sitecolorgreen">ALIŞ</td>
+                        <td data-title="FİYAT">5000.00 TRY</td>
+                        <td data-title="MİKTAR">5.00 TRY</td>
+                        <td data-title="TOPLAM TUTAR">0.001 BTC</td>
+                        <td data-title="KOMİSYON">0.00000150 BTC</td>
+                        <td class="sitecolorred">İPTAL EDİLDİ</td>
+                        <!-- <td data-title="" class="profile-transaction-history-table-btn resp-td-p-10"><a class="d-flex align-items-center" href="#" title="" rel="bookmark"><i class="icon-svg icon-svg-profiledownloadblue"></i> Faturayı İndir</a></td> -->
+                    </tr>
+                    <tr>
+                        <td data-title="İŞLEM NO">IX-115497</td>
+                        <td data-title="TARİH">09/09/2019 14:14:05</td>
+                        <td data-title="ÜRÜN">BTC/TRY</td>
+                        <td data-title="İŞLEM TİPİ" class="sitecolorred">SATIŞ</td>
+                        <td data-title="FİYAT">100000.00 TRY</td>
+                        <td data-title="MİKTAR">0.02495000 BTC</td>
+                        <td data-title="TOPLAM TUTAR">0.02495 TRY</td>
+                        <td data-title="KOMİSYON">0.00 TRY</td>
+                        <td class="sitecolorred">İPTAL EDİLDİ</td>
+                        <!-- <td data-title="" class="profile-transaction-history-table-btn resp-td-p-10"><a class="d-flex align-items-center" href="#" title="" rel="bookmark"><i class="icon-svg icon-svg-profiledownloadblue"></i> Faturayı İndir</a></td> -->
+                    </tr>
+                    <tr>
+                        <td data-title="İŞLEM NO">IX-115496</td>
+                        <td data-title="TARİH">09/09/2019 14:13:32</td>
+                        <td data-title="ÜRÜN">BTC/TRY</td>
+                        <td data-title="İŞLEM TİPİ" class="sitecolorgreen">ALIŞ</td>
+                        <td data-title="FİYAT">21000.00 TRY</td>
+                        <td data-title="MİKTAR">70.88 TRY</td>
+                        <td data-title="TOPLAM TUTAR">0.00337536 BTC</td>
+                        <td data-title="KOMİSYON">0.11000000 BTC</td>
+                        <td class="sitecolorred">İPTAL EDİLDİ</td>
+                        <!-- <td data-title="" class="profile-transaction-history-table-btn resp-td-p-10"><a class="d-flex align-items-center" href="#" title="" rel="bookmark"><i class="icon-svg icon-svg-profiledownloadblue"></i> Faturayı İndir</a></td> -->
+                    </tr>
+                    <tr>
+                        <td data-title="İŞLEM NO">IX-114920</td>
+                        <td data-title="TARİH">29/08/2019 11:32:29</td>
+                        <td data-title="ÜRÜN">BTC/USD</td>
+                        <td data-title="İŞLEM TİPİ" class="sitecolorred">SATIŞ</td>
+                        <td data-title="FİYAT">50000.00 USD</td>
+                        <td data-title="MİKTAR">0.10000000 BTC</td>
+                        <td data-title="TOPLAM TUTAR">5000 USD</td>
+                        <td data-title="KOMİSYON">5.00 USD</td>
+                        <td class="sitecolorred">İPTAL EDİLDİ</td>
+                        <!-- <td data-title="" class="profile-transaction-history-table-btn resp-td-p-10"><a class="d-flex align-items-center" href="#" title="" rel="bookmark"><i class="icon-svg icon-svg-profiledownloadblue"></i> Faturayı İndir</a></td> -->
+                    </tr>
+                    <tr>
+                        <td data-title="İŞLEM NO">IX-114919</td>
+                        <td data-title="TARİH">29/08/2019 11:31:48</td>
+                        <td data-title="ÜRÜN">BTC/TRY</td>
+                        <td data-title="İŞLEM TİPİ" class="sitecolorred">SATIŞ</td>
+                        <td data-title="FİYAT">250000.00 TRY</td>
+                        <td data-title="MİKTAR">0.10000000 BTC</td>
+                        <td data-title="TOPLAM TUTAR">25000 TRY</td>
+                        <td data-title="KOMİSYON">25.00 TRY</td>
+                        <td class="sitecolorred">İPTAL EDİLDİ</td>
+                        <!-- <td data-title="" class="profile-transaction-history-table-btn resp-td-p-10"><a class="d-flex align-items-center" href="#" title="" rel="bookmark"><i class="icon-svg icon-svg-profiledownloadblue"></i> Faturayı İndir</a></td> -->
+                    </tr>
+                    <tr>
+                        <td data-title="İŞLEM NO">IX-114873</td>
+                        <td data-title="TARİH">28/08/2019 14:07:37</td>
+                        <td data-title="ÜRÜN">BTC/USD</td>
+                        <td data-title="İŞLEM TİPİ" class="sitecolorgreen">ALIŞ</td>
+                        <td data-title="FİYAT">100.00 USD</td>
+                        <td data-title="MİKTAR">92.50 USD</td>
+                        <td data-title="TOPLAM TUTAR">0.925 BTC</td>
+                        <td data-title="KOMİSYON">0.00092500 BTC</td>
+                        <td class="sitecolorred">İPTAL EDİLDİ</td>
+                        <!-- <td data-title="" class="profile-transaction-history-table-btn resp-td-p-10"><a class="d-flex align-items-center" href="#" title="" rel="bookmark"><i class="icon-svg icon-svg-profiledownloadblue"></i> Faturayı İndir</a></td> -->
+                    </tr>
+                    <tr>
+                        <td data-title="İŞLEM NO">IX-113122</td>
+                        <td data-title="TARİH">07/08/2019 14:46:38</td>
+                        <td data-title="ÜRÜN">BTC/TRY</td>
+                        <td data-title="İŞLEM TİPİ" class="sitecolorgreen">ALIŞ</td>
+                        <td data-title="FİYAT">101.00 TRY</td>
+                        <td data-title="MİKTAR">202.00 TRY</td>
+                        <td data-title="TOPLAM TUTAR">2 BTC</td>
+                        <td data-title="KOMİSYON">0.00200000 BTC</td>
+                        <td class="sitecolorred">İPTAL EDİLDİ</td>
+                        <!-- <td data-title="" class="profile-transaction-history-table-btn resp-td-p-10"><a class="d-flex align-items-center" href="#" title="" rel="bookmark"><i class="icon-svg icon-svg-profiledownloadblue"></i> Faturayı İndir</a></td> -->
+                    </tr>
+                    <tr>
+                        <td data-title="İŞLEM NO">IX-112988</td>
+                        <td data-title="TARİH">05/08/2019 12:29:09</td>
+                        <td data-title="ÜRÜN">XRP/USD</td>
+                        <td data-title="İŞLEM TİPİ" class="sitecolorgreen">ALIŞ</td>
+                        <td data-title="FİYAT">0.34 USD</td>
+                        <td data-title="MİKTAR">7.50 USD</td>
+                        <td data-title="TOPLAM TUTAR">21.9941349 XRP</td>
+                        <td data-title="KOMİSYON">0.02199413 XRP</td>
+                        <td class="sitecolorgreen">BAŞARILI</td>
+                        <!-- <td data-title="" class="profile-transaction-history-table-btn resp-td-p-10"><a class="d-flex align-items-center" href="#" title="" rel="bookmark"><i class="icon-svg icon-svg-profiledownloadblue"></i> Faturayı İndir</a></td> -->
+                    </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
         <!-- Content -->
@@ -639,6 +788,8 @@
 <script id="script-plugin-custom-pagemain" src="../assets/cdn/plugin-custom-pagemain.js"></script>
 <script id="script-plugin-custom-pagetrade" src="../assets/cdn/plugin-custom-pagetrade.js"></script>
 <!-- Plugins End -->
+
+
 
 </body>
 </html>
