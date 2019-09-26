@@ -791,15 +791,6 @@
         font-size: 15px !important;
         @include border-radius(2px !important);
       }
-
-      .datepickerjs{
-        text-align: center !important;
-
-        @include placeholder{
-          color: $global-clr-dark-blue !important;
-          opacity: 1;
-        }
-      }
     }
   }
 

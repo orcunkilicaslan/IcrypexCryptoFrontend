@@ -49,8 +49,7 @@
     "owl.carousel": "^2.3.4",
     "inputmask": "^4.0.8",
     "bootstrap-pincode-input": "^1.7.0",
-    "dropzone": "^5.5.1",
-    "js-datepicker": "^5.0.2"
+    "dropzone": "^5.5.1"
   },
   "browserslist": [
     "last 3 versions",
