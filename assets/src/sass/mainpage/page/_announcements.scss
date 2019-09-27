@@ -294,3 +294,17 @@
   }
 
 }
+
+/* Cross Browser Start */
+html.IExplorer{
+
+  .announcements{
+    &-accordion{
+      &-date{
+        padding-top: 8px !important;
+      }
+    }
+  }
+
+}
+/* Cross Browser End */
