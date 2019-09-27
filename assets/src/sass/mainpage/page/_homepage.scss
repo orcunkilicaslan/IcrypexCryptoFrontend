@@ -1549,6 +1549,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
         }
         &-text{
+          width: calc(100% - 85px);
           flex: 0 0 calc(100% - 85px);
           color: $global-clr-dark-blue;
 
