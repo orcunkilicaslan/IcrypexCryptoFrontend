@@ -828,3 +828,16 @@
   }
 }
 /* Form UI New */
+
+/* Cross Browser Start */
+html.IExplorer{
+
+  .formuinew{
+
+    &.custom-select{
+      background-image: none !important;
+    }
+  }
+
+}
+/* Cross Browser End */

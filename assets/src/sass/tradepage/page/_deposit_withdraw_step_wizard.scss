@@ -1006,3 +1006,13 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
   }
 }
+
+
+/* Cross Browser Start */
+html.IExplorer{
+
+  .stepwizard-tablist-list{width: 534px !important;}
+  .stepwizard-tabcont-boxarea-list{width: 720px !important;}
+
+}
+/* Cross Browser End */

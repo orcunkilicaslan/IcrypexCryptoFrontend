@@ -857,3 +857,23 @@ $globalSvgIconImgPath : "../../img/global/svg";
   }
 
 }
+
+
+/* Cross Browser Start */
+html.IExplorer{
+
+  .header{
+    &-stats{
+      &-price{
+        &-big{
+          &-select{
+            background: transparent !important;
+            background-image: none !important;
+          }
+        }
+      }
+    }
+  }
+
+}
+/* Cross Browser End */
