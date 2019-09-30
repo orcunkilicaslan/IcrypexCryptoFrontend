@@ -1,0 +1,55 @@
+$mainpageHeaderImgPath : "../../img/mainpage";
+$globalSvgIconImgPath : "../../img/global/svg";
+
+.header{
+  $headerclassname: &;
+
+  &-alert{
+    color: $global-clr-white !important;
+    background-color: $global-sitebg-darkblue01;
+    margin: 0 !important;
+    text-align: center;
+    //visibility: hidden;
+    opacity: 0;
+    padding: 0;
+    height: 0;
+    @include border-radius(0);
+    @include transition-multiple(height 0.3s ease-in-out, opacity 0.3s ease-in-out);
+
+    &-info{
+      background-color: $global-clr-soft-blue;
+    }
+    &-primary{
+      background-color: $global-clr-dark-blue;
+    }
+    &-warning{
+      background-color: $global-clr-orange;
+    }
+    &-success{
+      background-color: $global-clr-green;
+    }
+    &-danger{
+      background-color: $global-clr-red;
+    }
+
+    &.alert-dismissible{
+      .close{
+        &::before,
+        &::after{
+          background-color: $global-clr-white !important;
+        }
+      }
+    }
+
+    &.show{
+      //visibility: visible;
+      opacity: 1;
+      height: auto;
+    }
+
+    &-content{
+      padding: 10px 15px;
+    }
+  }
+
+}
