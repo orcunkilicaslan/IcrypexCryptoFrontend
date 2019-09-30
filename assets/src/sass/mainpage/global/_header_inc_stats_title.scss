@@ -113,6 +113,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
       &-lite{
         color: $global-clr-white;
+        height: 38px;
 
         @include ReSassWidthResponsive(480){
           order: 1;
@@ -301,3 +302,12 @@ $globalSvgIconImgPath : "../../img/global/svg";
     }
   }
 }
+
+
+/* Cross Browser Start */
+html.IExplorer{
+
+  .header-titlearea-price-lite-list .owl-nav button[class*=owl-]{height: 39px !important;}
+
+}
+/* Cross Browser End */
