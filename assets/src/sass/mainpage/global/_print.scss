@@ -3,6 +3,19 @@ $globalSvgIconImgPath : "../../img/global/svg";
 // Header and Footer Print
 @media print{
 
+  @page{
+    size: 1140px !important;
+  }
+
+  html,
+  body,
+  .container,
+  .container-fluid{
+    min-width: 1140px !important;
+    margin: 2px !important;
+    padding: 2px !important;
+  }
+
   .header,
   .footer{
     display: none !important;
@@ -24,7 +37,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
       display: block !important;
       height: 50px !important;
       position: relative !important;
-      margin-bottom: 20px !important;
+      margin-bottom: 10px !important;
 
       &::before{
         display: none !important;
