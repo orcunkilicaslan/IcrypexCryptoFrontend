@@ -4,7 +4,8 @@ $globalSvgIconImgPath : "../../img/global/svg";
 @media print{
 
   @page{
-    size: 1140px !important;
+    margin: 5px !important;
+    padding: 5px !important;
   }
 
   html,
@@ -12,8 +13,8 @@ $globalSvgIconImgPath : "../../img/global/svg";
   .container,
   .container-fluid{
     min-width: 1140px !important;
-    margin: 2px !important;
-    padding: 2px !important;
+    margin: 5px !important;
+    padding: 5px !important;
   }
 
   .header,
