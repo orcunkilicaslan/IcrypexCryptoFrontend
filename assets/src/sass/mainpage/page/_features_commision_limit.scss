@@ -10,7 +10,7 @@
     &-table{
 
       .widthpercent30{
-        width: 33%;
+        width: 34%;
 
         @include ReSassWidthResponsive(768){
           width: auto;
