@@ -1,0 +1,58 @@
+
+// Tradepage Print
+@media print{
+
+  .sidebar{
+    display: none !important;
+  }
+
+  .profile-wrapper{
+    border: 1px solid $global-clr-soft-gray !important;
+
+    > h3.columntitle{
+      font-size: 20pt !important;
+      text-align: right !important;
+      position: fixed !important;
+      width: calc(100% - 200px) !important;
+      right: 0 !important;
+      top: 13px !important;
+    }
+  }
+
+  .profile-box{
+    border: 0 !important;
+
+    &::before{
+      display: none !important;
+    }
+  }
+
+  .profile-box-content{
+    //padding: 0 !important;
+    //margin: 0 !important;
+    border: 0 !important;
+
+    .alert{
+      display: none !important;
+    }
+  }
+
+  .profile-transaction{
+    > .boxcolumn-boxtitle{
+      visibility: hidden !important;
+      overflow: hidden !important;
+      height: 0 !important;
+      padding: 0 !important;
+      margin: 0 !important;
+    }
+
+    .sitetable{
+      border: 0 !important;
+
+      td, th{
+        border-color: $global-clr-soft-gray !important;
+      }
+    }
+  }
+
+}
