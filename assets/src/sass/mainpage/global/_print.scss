@@ -1,0 +1,62 @@
+$globalSvgIconImgPath : "../../img/global/svg";
+
+// Header and Footer Print
+@media print{
+
+  .header,
+  .footer{
+    display: none !important;
+  }
+
+  .header{
+    display: block !important;
+    background: none !important;
+
+    .header-alert{
+      display: none !important;
+    }
+
+    .dfn-mobilemenu-mask{
+      display: none !important;
+    }
+
+    .dfn-mobilemenu-header{
+      display: block !important;
+      height: 50px !important;
+      position: relative !important;
+      margin-bottom: 20px !important;
+
+      &::before{
+        display: none !important;
+      }
+
+      .header-navigation-logo{
+        content:url(#{$globalSvgIconImgPath}/Print_Icrypex_Logo_Header_Dark.svg) !important;
+        display: block !important;
+        width: 150px !important;
+        margin: 0 !important;
+        position: relative !important;
+
+        .header-navigation-logo-symbol,
+        .header-navigation-logo-icrypex,
+        .header-navigation-logo-cryptoexchange{
+          display: none !important;
+        }
+      }
+
+      .dfn-mobilemenu-btn,
+      .dfn-mobilemenu-livechat{
+        display: none !important;
+      }
+    }
+
+    .header-web{
+      display: none !important;
+    }
+
+    .header-spacebottom{
+      display: none !important;
+    }
+  }
+
+}
