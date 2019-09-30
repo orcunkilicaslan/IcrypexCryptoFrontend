@@ -1,0 +1,64 @@
+$mainpageHeaderImgPath : "../../img/mainpage";
+$globalSvgIconImgPath : "../../img/global/svg";
+
+.header{
+  $headerclassname: &;
+
+  &-alert{
+    background-color: $global-sitebg-darkblue01;
+
+    @include ReSassWidthResponsive(992){
+      width: 100%;
+      position: fixed;
+      bottom: 63px;
+      z-index: 1;
+
+      @include ReSassWidthResponsive(400){
+        bottom: 46px;
+      }
+    }
+
+    &-info{
+      background-color: $global-clr-soft-blue;
+    }
+    &-primary{
+      background-color: $global-clr-dark-blue;
+    }
+    &-warning{
+      background-color: $global-clr-orange;
+    }
+    &-success{
+      background-color: $global-clr-green;
+    }
+    &-danger{
+      background-color: $global-clr-red;
+    }
+
+    .alert{
+      color: $global-clr-white !important;
+      margin: 0 !important;
+      padding: 0;
+      line-height: 1.1;
+      @include border-radius(0);
+
+      &-dismissible{
+        .close{
+          &::before,
+          &::after{
+            background-color: $global-clr-white !important;
+          }
+        }
+      }
+    }
+
+    &-content{
+      text-align: center;
+      padding: 15px 60px;
+
+      @include ReSassWidthResponsive(576){
+        padding: 10px 40px;
+      }
+    }
+  }
+
+}
