@@ -5,16 +5,18 @@ $globalSvgIconImgPath : "../../img/global/svg";
   $headerclassname: &;
 
   &-alert{
-    color: $global-clr-white !important;
     background-color: $global-sitebg-darkblue01;
-    margin: 0 !important;
-    text-align: center;
-    //visibility: hidden;
-    opacity: 0;
-    padding: 0;
-    height: 0;
-    @include border-radius(0);
-    @include transition-multiple(height 0.3s ease-in-out, opacity 0.3s ease-in-out);
+
+    @include ReSassWidthResponsive(992){
+      width: 100%;
+      position: fixed;
+      bottom: 63px;
+      z-index: 1;
+
+      @include ReSassWidthResponsive(400){
+        bottom: 46px;
+      }
+    }
 
     &-info{
       background-color: $global-clr-soft-blue;
@@ -32,23 +34,30 @@ $globalSvgIconImgPath : "../../img/global/svg";
       background-color: $global-clr-red;
     }
 
-    &.alert-dismissible{
-      .close{
-        &::before,
-        &::after{
-          background-color: $global-clr-white !important;
+    .alert{
+      color: $global-clr-white !important;
+      margin: 0 !important;
+      padding: 0;
+      line-height: 1.1;
+      @include border-radius(0);
+
+      &-dismissible{
+        .close{
+          &::before,
+          &::after{
+            background-color: $global-clr-white !important;
+          }
         }
       }
     }
 
-    &.show{
-      //visibility: visible;
-      opacity: 1;
-      height: auto;
-    }
-
     &-content{
-      padding: 10px 15px;
+      text-align: center;
+      padding: 15px 60px;
+
+      @include ReSassWidthResponsive(576){
+        padding: 10px 40px;
+      }
     }
   }
 
