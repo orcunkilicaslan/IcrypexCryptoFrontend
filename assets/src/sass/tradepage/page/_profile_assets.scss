@@ -167,44 +167,40 @@
   &-tabswallet{
 
     &-table{
-      thead th{
-        border-top-width: 1px;
-        &.btnwidth200{
 
-          @include ReSassWidthResponsive(1200){
-            width: 150px !important;
+      thead{
+        tr{
+          th{
+            border-top-width: 1px;
+
+            &.btnwidth200{
+              @include ReSassWidthResponsive(1200){
+                width: 150px !important;
+              }
+            }
           }
         }
       }
 
       tbody{
+        tr{
 
-        td{
-          padding-top: 2px;
-          padding-bottom: 2px;
+          @include ReSassWidthResponsive(768){
+            width: 100% !important;
+          }
 
-          span.coinaddress{
-            @include ReSassWidthResponsive(768){
-              overflow: hidden;
-              margin-right: 15px;
-              position: relative;
-
-              &::after{
-                content: "...";
-                background-color: $global-clr-white;
-                width: 14px;
-                position: absolute;
-                top: 2px;
-                right: 0;
-              }
+          &:last-child{
+            td{
+              border-bottom-width: 1px;
+              border-bottom-style: solid;
             }
           }
-        }
 
-        tr:last-child{
           td{
-            border-bottom-width: 1px;
-            border-bottom-style: solid;
+            padding-top: 2px;
+            padding-bottom: 2px;
+
+            span.coinaddress{}
           }
         }
       }
