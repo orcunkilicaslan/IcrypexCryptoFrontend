@@ -91,6 +91,15 @@
             width: 2px;
           }
         }
+        .disabledautofillinput{
+          &.disabled,
+          &:disabled,
+          &[readonly] {
+            color: $global-clr-soft-gray !important;
+            background-color: $global-clr-light-gray !important;
+            border-color: $global-clr-light-gray !important;
+          }
+        }
         @include placeholder{
           color: transparentize($global-clr-soft-gray, 0.50);
           opacity: 1;
@@ -105,6 +114,15 @@
         .input-group-append.selectbox{
           &::before{
             background-color: transparentize($global-clr-soft-gray, 0.7);
+          }
+        }
+        .disabledautofillinput{
+          &.disabled,
+          &:disabled,
+          &[readonly] {
+            color: $global-clr-dark-blue !important;
+            background-color: $global-clr-white !important;
+            border-color: transparentize($global-clr-soft-gray, 0.7) !important;
           }
         }
         @include placeholder{
@@ -123,6 +141,15 @@
             background-color: transparentize($global-clr-soft-gray, 0.7);
           }
         }
+        .disabledautofillinput{
+          &.disabled,
+          &:disabled,
+          &[readonly] {
+            color: $global-clr-green !important;
+            background-color: $global-clr-white !important;
+            border-color: transparentize($global-clr-soft-gray, 0.7) !important;
+          }
+        }
         @include placeholder{
           color: transparentize($global-clr-green, 0.50);
           opacity: 1;
@@ -139,6 +166,15 @@
             background-color: transparentize($global-clr-soft-gray, 0.7);
           }
         }
+        .disabledautofillinput{
+          &.disabled,
+          &:disabled,
+          &[readonly] {
+            color: $global-clr-red !important;
+            background-color: $global-clr-white !important;
+            border-color: transparentize($global-clr-soft-gray, 0.7) !important;
+          }
+        }
         @include placeholder{
           color: transparentize($global-clr-red, 0.50);
           opacity: 1;
@@ -153,6 +189,15 @@
         .input-group-append.selectbox{
           &::before{
             background-color: transparentize($global-clr-soft-gray, 0.7);
+          }
+        }
+        .disabledautofillinput{
+          &.disabled,
+          &:disabled,
+          &[readonly] {
+            color: $global-clr-orange !important;
+            background-color: $global-clr-white !important;
+            border-color: transparentize($global-clr-soft-gray, 0.7) !important;
           }
         }
         @include placeholder{
@@ -362,6 +407,32 @@
       text-align: center;
     }
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   div.form-control{
     padding: 7px 10px;
