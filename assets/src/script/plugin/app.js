@@ -140,12 +140,38 @@ $(function(){
 
 /* Input Mask */
 $(document).ready(function(){
-    $('.inputonlytextmask').inputmask('AAA', {'placeholder': ""});
-    $('.inputibanmask').inputmask('TR99 9999 9999 9999 9999 9999 99', {'placeholder': ""});
-    $('.inputdatemask').inputmask('99/99/9999', {'placeholder': "MM/DD/YYYY"});
-    $('.inputidentitymask').inputmask('99999999999', {'placeholder': ""});
     $('.inputphonemask').inputmask({
         mask: '0599 999 99 99',
+        placeholder: '',
+        showMaskOnFocus: true,
+        showMaskOnHover: false
+    });
+    $('.inputibanmask').inputmask({
+        mask: 'TR99 9999 9999 9999 9999 9999 99',
+        placeholder: '',
+        showMaskOnFocus: true,
+        showMaskOnHover: false
+    });
+    $('.inputidentitymask').inputmask({
+        mask: '99999999999',
+        placeholder: '',
+        showMaskOnFocus: true,
+        showMaskOnHover: false
+    });
+    $('.inputdatemask').inputmask({
+        mask: '99/99/9999',
+        placeholder: 'MM/DD/YYYY',
+        showMaskOnFocus: true,
+        showMaskOnHover: false
+    });
+    $('.inputdatedottedmask').inputmask({
+        mask: '99.99.9999',
+        placeholder: 'MM.DD.YYYY',
+        showMaskOnFocus: true,
+        showMaskOnHover: false
+    });
+    $('.inputonlytextmask').inputmask({
+        mask: 'AAA',
         placeholder: '',
         showMaskOnFocus: true,
         showMaskOnHover: false
