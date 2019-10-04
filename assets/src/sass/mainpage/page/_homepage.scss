@@ -542,7 +542,8 @@ $globalSvgIconImgPath : "../../img/global/svg";
           margin-bottom: 15px;
         }
       }
-      .form-control{
+      .form-control,
+      .disabledautofillinput{
         color: $global-clr-white;
         background-color: transparent;
         border-left-color: transparentize($global-clr-soft-gray, 0.7);
