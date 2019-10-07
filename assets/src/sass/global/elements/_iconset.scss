@@ -102,6 +102,15 @@ $globalSvgIconImgPath : "../../img/global/svg";
     &-technologyapproximatelydarkblue{
       background-image: url(#{$globalSvgIconImgPath}/Icon_Approximately_Dark_Blue.svg);
     }
+    &-analysisdirenc{
+      background-image: url(#{$globalSvgIconImgPath}/Icn_Direnc.svg);
+    }
+    &-analysisdestek{
+      background-image: url(#{$globalSvgIconImgPath}/Icn_Destek.svg);
+    }
+    &-analysiszoom{
+      background-image: url(#{$globalSvgIconImgPath}/Icon_Zoom.svg);
+    }
     &-loginlock{
       background-image: url(#{$globalSvgIconImgPath}/Icon_Login.svg);
     }
