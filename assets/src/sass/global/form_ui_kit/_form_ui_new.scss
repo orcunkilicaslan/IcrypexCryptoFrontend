@@ -250,6 +250,10 @@
             border-color: transparentize($global-clr-soft-gray, 0.7) !important;
             border-top-color: transparent !important;
             border-right-color: transparent !important;
+
+            @include ReSassWidthResponsive(992){
+              border-left-color: transparent !important;
+            }
           }
         }
         @include placeholder{
@@ -488,6 +492,7 @@
     .input-group-append{
       border: 1px solid transparentize($global-clr-soft-gray, 0.70);
       border-left: none;
+      background-clip: padding-box;
 
       &.selectbox{
         position: relative;
@@ -518,6 +523,7 @@
       padding: 2px 10px 2px;
       background-color: $global-clr-white;
       border: none;
+      background-clip: padding-box;
       @include border-radius(0);
     }
   }
