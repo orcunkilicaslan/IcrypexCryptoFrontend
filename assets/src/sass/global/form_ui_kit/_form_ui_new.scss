@@ -413,6 +413,7 @@
     font-weight: 500;
     height: 40px;
     padding: 4px 10px;
+    background-clip: inherit !important;
     @include box-shadow(0,0,0,transparent);
     @include border-radius(0);
 
@@ -492,7 +493,6 @@
     .input-group-append{
       border: 1px solid transparentize($global-clr-soft-gray, 0.70);
       border-left: none;
-      background-clip: padding-box;
 
       &.selectbox{
         position: relative;
@@ -523,7 +523,6 @@
       padding: 2px 10px 2px;
       background-color: $global-clr-white;
       border: none;
-      background-clip: padding-box;
       @include border-radius(0);
     }
   }
