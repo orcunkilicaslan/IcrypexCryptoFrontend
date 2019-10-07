@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+  <g id="Icn_Destek" transform="translate(-389 -1267)">
+    <g id="Circle_Bg" transform="translate(389 1267)" fill="none" stroke="#cfd7df" stroke-width="1.5">
+      <circle cx="15" cy="15" r="15" stroke="none"/>
+      <circle cx="15" cy="15" r="14.25" fill="none"/>
+    </g>
+    <g id="Icn_Destek-2" data-name="Icn_Destek">
+      <path id="Path" d="M17621.7-10726l9,10,8-8,4,4" transform="translate(-17227.201 12001.5)" fill="none" stroke="#06518c" stroke-width="1.5"/>
+      <line id="Path-2" data-name="Path" x2="13" transform="translate(397 1288)" fill="none" stroke="#70a800" stroke-linecap="round" stroke-width="1.5"/>
+    </g>
+  </g>
+</svg>
