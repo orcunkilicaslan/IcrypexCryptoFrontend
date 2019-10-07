@@ -68,3 +68,16 @@ assets/vendor/bootstrap-datepicker/less/
 assets/vendor/bootstrap-datepicker/CHANGELOG.md
 assets/vendor/bootstrap-datepicker/package.json
 assets/vendor/bootstrap-datepicker/README.md
+
+assets/vendor/numeral/locales
+assets/vendor/numeral/src
+assets/vendor/numeral/templates
+assets/vendor/numeral/tests
+assets/vendor/numeral/bower.json
+assets/vendor/numeral/component.json
+assets/vendor/numeral/Gruntfile.js
+assets/vendor/numeral/karma-ci.conf.js
+assets/vendor/numeral/locales.js
+assets/vendor/numeral/numeral.js
+assets/vendor/numeral/package.json
+assets/vendor/numeral/README.md

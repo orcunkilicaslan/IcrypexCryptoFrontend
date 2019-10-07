@@ -127,6 +127,15 @@
         @include ReSassWidthResponsive(992){
           flex-direction: column;
         }
+        @include ReSassWidthResponsive(480){
+          margin-left: 0;
+          margin-right: 0;
+
+          > div{
+            padding-left: 0;
+            padding-right: 0;
+          }
+        }
 
         .columntitle{
           color: $global-clr-dark-blue;
@@ -151,6 +160,37 @@
             &-perc,
             &-vol{
               font-size: 14px;
+            }
+          }
+
+          &.linebtc{
+            &::after {
+              background-color: $global-clr-currency-btc;
+            }
+          }
+          &.lineeth{
+            &::after {
+              background-color: $global-clr-currency-eth;
+            }
+          }
+          &.lineltc{
+            &::after {
+              background-color: $global-clr-currency-ltc;
+            }
+          }
+          &.linexrp{
+            &::after {
+              background-color: $global-clr-currency-xrp;
+            }
+          }
+          &.linempay{
+            &::after {
+              background-color: $global-clr-currency-mpay;
+            }
+          }
+          &.linedefault{
+            &::after {
+              background-color: transparentize($global-clr-soft-gray, 0.7);
             }
           }
         }
@@ -198,6 +238,13 @@
           @include ReSassWidthResponsive(992){
             font-size: 20px;
           }
+          @include ReSassWidthResponsive(400){
+            display: block;
+
+            > span{
+              display: block;
+            }
+          }
         }
 
         i[class*="icon-svg"]{
@@ -229,6 +276,10 @@
         &-desc{
           min-height: 275px;
 
+          @include ReSassWidthResponsive(992){
+            min-height: auto;
+          }
+
           p{
             color: $global-clr-dark-blue;
             font-size: 17px;
@@ -249,12 +300,24 @@
           border-bottom: 1px solid lighten($global-clr-soft-gray, 30%);
           padding: 10px 0;
 
+          @include ReSassWidthResponsive(480){
+            justify-content: space-between;
+          }
+          @include ReSassWidthResponsive(400){
+            display: block !important;
+            padding: 0;
+          }
+
           *{
             color: $global-clr-dark-blue;
           }
 
           &-box{
             line-height: 1;
+
+            @include ReSassWidthResponsive(400){
+              margin: 10px 0;
+            }
 
             > div{
               &:first-child{
@@ -291,27 +354,30 @@
         overflow: hidden;
         position: relative;
 
+        @include ReSassWidthResponsive(1200){
+          width: 500px;
+        }
         @include ReSassWidthResponsive(992){
           width: auto;
           order: 2;
-          border-bottom: 1px solid lighten($global-clr-soft-gray, 30%);
           margin: 5px 15px 13px;
           padding: 0;
         }
         @include ReSassWidthResponsive(768){
           flex-direction: column;
           margin: 0;
+          margin-bottom: 15px;
           padding: 5px 15px 0;
           border-bottom: none;
         }
 
         &-img{
-          width: 550px;
-          height: 370px;
+          height: 100%;
           overflow: hidden;
           border: 1px solid lighten($global-clr-soft-gray, 30%);
           position: relative;
         }
+
         &-zoombtn{
           position: absolute;
           bottom: 10px;
@@ -328,6 +394,119 @@
               width: 18px;
               height: 18px;
               margin-right: 4px;
+            }
+          }
+        }
+      }
+    }
+
+    &-pagination{
+      background-color: $global-clr-light-gray;
+      padding: 15px;
+      margin-top: -1px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+
+      .pagination{
+
+        .page{
+
+          &-item{
+            margin: 0 5px;
+          }
+
+          &-link{
+            color: $global-clr-soft-gray;
+            background-color: transparent;
+            font-size: 15px;
+            line-height: 1;
+            min-width: 100px;
+            height: 100%;
+            padding: 0;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-color: lighten($global-clr-soft-gray, 30%);
+            @include border-radius(0);
+            @include transition(all, 0.1s, linear);
+
+            @include ReSassWidthResponsive(400){
+              min-width: auto;
+
+              .page-link-date{
+                display: none;
+              }
+            }
+
+            i{
+              width: 28px;
+              height: 28px;
+              display: inline-block;
+            }
+
+            &-prev,
+            &-next{
+              background-color: lighten($global-clr-soft-gray, 30%);
+              position: relative;
+              @include transition(all, 0.2s, linear);
+
+              &::before{
+                content: "";
+                position:absolute;
+                width: 9px;
+                height: 9px;
+                top: calc(50% - 5px);
+                padding: 0;
+                border-top: 2px solid $global-clr-soft-gray;
+                border-right: 2px solid $global-clr-soft-gray;
+              }
+            }
+
+            &-prev{
+              &::before{
+                @include rotate(225);
+                left: calc(50% - 3px);
+              }
+            }
+
+            &-next{
+              &::before{
+                @include rotate(45);
+                left: calc(50% - 5px);
+              }
+            }
+
+            &-date{
+              width: 70px;
+              min-height: 28px;
+              padding: 7px 0 6px;
+            }
+
+            &:hover{
+              background-color: transparent;
+              border-color: lighten($global-clr-soft-gray, 20%);
+
+              .page-link-prev,
+              .page-link-next{
+                background-color: lighten($global-clr-soft-gray, 20%);
+              }
+
+            }
+            &.active{
+              color: $global-clr-white;
+              background-color: $global-clr-soft-gray;
+              border-color: $global-clr-soft-gray;
+
+              @include ReSassWidthResponsive(400){
+                min-width: 100px;
+              }
+
+              .page-link-date{
+                width: 100%;
+                display: block;
+              }
             }
           }
         }
