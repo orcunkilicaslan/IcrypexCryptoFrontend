@@ -3,15 +3,18 @@
   font-size: 17px;
   font-weight: normal;
   @include border-radius(3px);
-  @include transition(background, 0.3s, ease-in-out);
+  @include transition-multiple(background 0.3s ease-in-out, opacity 0.3s ease-in-out);
 
   &.disabled,
   &:disabled{
     opacity: 1;
+    background-color: $global-clr-soft-gray !important;
+    border-color: $global-clr-soft-gray !important;
 
     &:hover{
       background-color: $global-clr-soft-gray !important;
       border-color: $global-clr-soft-gray !important;
+      opacity: 1;
     }
   }
 
