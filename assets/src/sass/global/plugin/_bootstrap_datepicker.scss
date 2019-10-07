@@ -23,6 +23,12 @@
             position: relative;
             top: 5px;
           }
+
+          &.cw{
+            background-color: transparentize($global-clr-light-gray, 0.7) !important;
+            color: $global-clr-dark-blue !important;
+            font-weight: 500 !important;
+          }
         }
       }
     }
@@ -128,3 +134,53 @@
     }
   }
 }
+
+
+/* Custom */
+.bootstrap-datepicker-container,
+.bootstrap-weekpicker-container{
+  position: relative;
+}
+
+
+.bootstrap-weekpicker-container{
+  .datepicker-days{
+    table{
+
+      thead{
+        tr{
+          th{}
+        }
+      }
+
+      tbody{
+        tr{
+
+          &:hover{
+            background-color: $global-clr-soft-blue !important;
+
+            td{
+              color: $global-clr-white !important;
+              border-color: $global-clr-soft-blue !important;
+              @include transition-multiple(none !important);
+            }
+          }
+
+          &.weekactive{
+            background-color: $global-clr-green !important;
+
+            td{
+              color: $global-clr-white !important;
+              border-color: $global-clr-green !important;
+              @include transition-multiple(none !important);
+            }
+          }
+
+          td{}
+        }
+      }
+
+    }
+  }
+}
+/* Custom */
