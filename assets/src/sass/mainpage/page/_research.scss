@@ -95,6 +95,13 @@
       font-size: 17px;
       font-weight: 500;
       margin: 20px 0 0 0;
+
+      .contentdate{
+        font-size: 14px;
+        font-weight: 500;
+        margin-top: 3px;
+        margin-bottom: 5px;
+      }
     }
   }
 
@@ -479,9 +486,9 @@
             }
 
             &-date{
-              width: 70px;
+              min-width: 70px;
               min-height: 28px;
-              padding: 7px 0 6px;
+              padding: 7px 10px 6px;
             }
 
             &:hover{

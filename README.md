@@ -39,6 +39,7 @@
  - [28_What_How](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mainpage/28_What_How.html)
  - [29_Announcements](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mainpage/29_Announcements.html)
  - [30_Research_Daily](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mainpage/30_Research_Daily.html)
+ - [31_Research_Weekly](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mainpage/31_Research_Weekly.html)
 
 
 #### Web Client Area Frontend List
