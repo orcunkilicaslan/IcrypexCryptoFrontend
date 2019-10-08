@@ -262,23 +262,41 @@
           @include ReSassWidthResponsive(992){
             font-size: 18px;
           }
-          @include ReSassWidthResponsive(400){
-            display: block;
 
-            > span{
+          i[class*="icon-svg"]{
+            display: none;
+
+            @include ReSassWidthResponsive(480){
               display: block;
+              width: 28px;
+              height: 28px;
+              margin-right: 5px;
             }
           }
-        }
 
-        i[class*="icon-svg"]{
-          display: none;
+          .cointitle{
+            display: flex;
+            align-items: center;
+          }
 
-          @include ReSassWidthResponsive(480){
-            display: block;
-            width: 28px;
-            height: 28px;
-            margin-right: 5px;
+          .currencytexttitle{
+            text-align: right;
+
+            @include ReSassWidthResponsive(400){
+              line-height: 1.2;
+            }
+
+            .currencytext-curr{
+              @include ReSassWidthResponsive(400){
+                display: block;
+              }
+            }
+
+            .currencytext-vol{
+              @include ReSassWidthResponsive(400){
+                display: block;
+              }
+            }
           }
         }
       }
