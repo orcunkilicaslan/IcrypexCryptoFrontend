@@ -291,6 +291,34 @@ $tradepageFooterImgPath : "../../img/tradepage/footer";
       @include ReSassWidthResponsive(400){
         padding-top: 10px;
       }
+
+      > li{
+        margin: 0;
+
+        @include ReSassWidthResponsive(992){
+          margin: 0 2px;
+        }
+
+        > a{
+          width: 28px;
+          height: 28px;
+
+          @include ReSassWidthResponsive(992){
+            width: 30px;
+            height: 30px;
+          }
+
+          > i{
+            width: 12px;
+            height: 12px;
+
+            @include ReSassWidthResponsive(992){
+              width: 14px;
+              height: 14px;
+            }
+          }
+        }
+      }
     }
   }
 
