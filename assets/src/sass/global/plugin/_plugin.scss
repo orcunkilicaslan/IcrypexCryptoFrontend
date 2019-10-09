@@ -16,7 +16,11 @@
 // Fresh Chat
 @import "fresh_chat";
 
-// Bootstrap Datepicker
-@import "bootstrap_datepicker";
-@import "bootstrap_datepicker_days";
-@import "bootstrap_datepicker_week";
+// Bootstrap Datepicker Custom
+@import "bootstrap_datepicker_custom";
+@import "bootstrap_datepicker_custom_days";
+@import "bootstrap_datepicker_custom_week";
+
+// Bootstrap Datepicker Color
+@import "bootstrap_datepicker_color_light";
+@import "bootstrap_datepicker_color_dark";

@@ -1,0 +1,111 @@
+
+.bootstrap-weekpicker-custom{
+
+  .datepicker{
+    &-days{
+      table{
+
+        thead{
+          tr{
+            &:nth-child(3){
+              th{
+                display: none !important;
+              }
+            }
+          }
+        }
+
+        tbody, tbody tr{
+          display:flex;
+          position: relative;
+        }
+
+        tbody{
+          width: 100% !important;
+          flex-wrap: wrap;
+          text-align:left !important;
+          margin-top: 8px;
+          border-top: 1px solid lighten($global-clr-soft-gray, 10%);
+          border-bottom: 1px solid lighten($global-clr-soft-gray, 10%);
+
+          tr{
+            width: calc(100% / 3) !important;
+            padding: 4px 10px 9px 10px!important;
+            @include transition(background, 0.2s, ease-in-out);
+
+            &:hover{
+              background-color: $global-clr-soft-gray !important;
+            }
+
+            td{
+              color: $global-clr-white !important;
+              width: 100% !important;
+              border: none !important;
+              font-size: 17px;
+              position:relative;
+              text-indent: -9999px;
+
+              &:hover{
+                background-color: transparent !important;
+              }
+
+              &.cw{
+                position: relative;
+                width: 0 !important;
+                padding-left: 0 !important;
+                padding-right: 0 !important;
+                text-indent: 0 !important;
+                white-space: nowrap !important;
+
+                &::after{
+                  content: ". HAFTA";
+                  position:relative;
+                  width: 100%;
+                  height: 100%;
+                }
+              }
+
+              &.cw,
+              &.active{
+                background-color: transparent !important;
+              }
+
+            }
+          }
+        }
+
+        tbody{
+          tr{
+
+            &:hover{
+              background-color: $global-clr-soft-blue !important;
+
+              td{
+                @include transition-multiple(none !important);
+              }
+            }
+
+            &.weekactive{
+              background-color: $global-clr-green !important;
+            }
+
+            td{}
+          }
+        }
+
+        thead{
+          tr{
+            th{}
+          }
+        }
+
+        tbody{
+          tr{
+            td{}
+          }
+        }
+      }
+    }
+  }
+
+}
