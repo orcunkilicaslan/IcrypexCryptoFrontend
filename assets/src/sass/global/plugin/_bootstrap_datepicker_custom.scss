@@ -137,32 +137,6 @@
       border-color: transparent !important;
     }
 
-    &-days{
-
-      table{
-
-        tbody{
-          border-width: 1px;
-          border-style: solid;
-          border-color: #f2f2f2;
-          padding: 5px;
-          margin-top: 5px;
-
-          tr{
-            td{
-              border: none !important;
-            }
-          }
-        }
-
-        tfoot{
-          tr{
-            th{}
-          }
-        }
-      }
-    }
-
     span.month,
     span.year,
     span.decade,
