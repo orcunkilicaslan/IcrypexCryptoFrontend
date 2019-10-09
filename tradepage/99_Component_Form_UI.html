@@ -976,7 +976,7 @@
                                     calendarWeeks: true,
                                     language: "tr",
                                     orientation: "bottom auto",
-                                    autoclose: true,
+                                    autoclose: false,
                                     forceParse: false,
                                     toggleActive: true
                                 }).on("changeDate", function(e) {
@@ -989,6 +989,8 @@
                                     $('.bootstrap-weekpicker').datepicker('update', bootstrapWeekStartDate);
                                     $('.bootstrap-weekpicker').val(bootstrapWeekStartDate.getDate() + '.' + (bootstrapWeekStartDate.getMonth() + 1) + '.' + bootstrapWeekStartDate.getFullYear() + ' - ' + bootstrapWeekEndDate.getDate() + '.' + (bootstrapWeekEndDate.getMonth() + 1) + '.' +  bootstrapWeekEndDate.getFullYear());
 
+                                    $('.bootstrap-weekpicker-container').find('.datepicker').find('.datepicker-days').find('table tbody tr td.active').parent().addClass('weekactive');
+
                                 }).on("click", function(e) {
 
                                     if ($('.bootstrap-weekpicker').val().length === 0){
@@ -997,9 +999,7 @@
                                         $('.bootstrap-week-controls > .btn').attr("disabled", false);
                                     }
 
-                                    $('.bootstrap-weekpicker-container').find('.datepicker').find('.datepicker-days').find('thead tr:nth-child(3)').remove();
-
-                                    $('.bootstrap-weekpicker-container').find('.datepicker').find('.datepicker-days').find('tbody tr td.active').parent().addClass('weekactive');
+                                    $('.bootstrap-weekpicker-container').find('.datepicker').find('.datepicker-days').find('table tbody tr td.active').parent().addClass('weekactive');
                                 });
 
 
@@ -1026,6 +1026,9 @@
                                 });
                             });
                         </script>
+
+
+
                     </div>
                 </form>
             </div>
