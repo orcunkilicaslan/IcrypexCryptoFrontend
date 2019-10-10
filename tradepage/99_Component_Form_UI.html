@@ -925,110 +925,120 @@
                     <h3 class="boxcolumn-boxtitle-title">Datapicker</h3>
                 </div>
                 <form autocomplete="off" novalidate>
-                    <div class="form-group colorsetdarkblue bootstrap-datepicker-custom bootstrap-datepicker-dark bootstrap-datepicker-container">
-                        <label>Tarih Aralığı Seçimi</label>
-                        <input type="text" class="form-control bootstrap-multi-datepicker" placeholder="BAŞLANGIÇ - BİTİŞ TARİHİ">
-                        <script>
-                            $(window).on("load",function(){
-                                $('.bootstrap-multi-datepicker').datepicker({
-                                    container: '.bootstrap-datepicker-container',
-                                    format: "dd.mm.yyyy",
-                                    weekStart: 1,
-                                    language: "tr",
-                                    orientation: "bottom left",
-                                    multidate: 2,
-                                    multidateSeparator: " - ",
-                                    forceParse: false,
-                                    todayHighlight: true,
-                                    toggleActive: true
-                                }).on("changeDate",function(event){
-                                    var dates = event.dates, elem=$('.bootstrap-multi-datepicker');
-                                    if(elem.data("selecteddates")==dates.join(",")) return;
-                                    if(dates.length>2) dates=dates.splice(dates.length-1);
-                                    dates.sort(function(a,b){return new Date(a).getTime()-new Date(b).getTime()});
-                                    elem.data("selecteddates",dates.join(",")).datepicker('setDates',dates);
+                    <div class="form-row">
+                        <div class="form-group col-md-6 colorsetdarkblue datepickercontainerlight bootstrap-datepicker-custom datepickerlight">
+                            <label>TARİH SEÇİN</label>
+                            <input type="text" class="form-control bootstrapdatepickerinputlight" placeholder="TARİH SEÇİN">
+                            <script>
+                                $(window).on("load",function(){
+                                    $('.bootstrapdatepickerinputlight').datepicker({
+                                        container: '.datepickercontainerlight',
+                                        format: "dd.mm.yyyy",
+                                        weekStart: 1,
+                                        language: "tr",
+                                        orientation: "bottom left",
+                                        autoclose: true,
+                                        forceParse: false,
+                                        todayHighlight: true,
+                                        toggleActive: true
+                                    }).on("changeDate",function(event){  });
                                 });
-                            });
-                        </script>
-                    </div>
-                    <div class="form-group colorsetdarkblue bootstrap-datepicker-custom bootstrap-weekpicker-custom bootstrap-datepicker-dark bootstrap-weekpicker-container">
-                        <label>Hafta Seçimi</label>
-                        <input type="text" class="form-control bootstrap-weekpicker" placeholder="HAFTA SEÇİN">
-                        <div class="bootstrap-week-controls mt-1">
-                            <button id="prevWeek" class="btn btn-primary">ÖNCEKİ HAFTA</button>
-                            <button id="nextWeek" class="btn btn-primary">SONRAKİ HAFTA</button>
+                            </script>
                         </div>
-                        <script>
-                            $(window).on("load",function(){
-
-                                if ($('.bootstrap-weekpicker').val().length === 0){
-                                    $('.bootstrap-week-controls > .btn').attr("disabled", true);
-                                } else {
-                                    $('.bootstrap-week-controls > .btn').attr("disabled", false);
-                                }
-
-                                var bootstrapWeekStartDate, bootstrapWeekEndDate;
-
-                                $('.bootstrap-weekpicker').datepicker({
-                                    container: '.bootstrap-weekpicker-container',
-                                    format: "dd.mm.yyyy",
-                                    weekStart: 0,
-                                    calendarWeeks: true,
-                                    language: "tr",
-                                    orientation: "bottom auto",
-                                    autoclose: false,
-                                    forceParse: false,
-                                    toggleActive: true
-                                }).on("changeDate", function(e) {
-
-                                    //console.log(e.date);
-                                    var date = e.date;
-                                    bootstrapWeekStartDate = new Date(date.getFullYear(), date.getMonth(), date.getDate() - date.getDay());
-                                    bootstrapWeekEndDate = new Date(date.getFullYear(), date.getMonth(), date.getDate() - date.getDay()+6);
-                                    //$('.bootstrap-weekpicker').datepicker("setDate", bootstrapWeekStartDate);
-                                    $('.bootstrap-weekpicker').datepicker('update', bootstrapWeekStartDate);
-                                    $('.bootstrap-weekpicker').val(bootstrapWeekStartDate.getDate() + '.' + (bootstrapWeekStartDate.getMonth() + 1) + '.' + bootstrapWeekStartDate.getFullYear() + ' - ' + bootstrapWeekEndDate.getDate() + '.' + (bootstrapWeekEndDate.getMonth() + 1) + '.' +  bootstrapWeekEndDate.getFullYear());
-
-                                    $('.bootstrap-weekpicker-container').find('.datepicker').find('.datepicker-days').find('table tbody tr td.active').parent().addClass('weekactive');
-
-                                }).on("click", function(e) {
-
-                                    if ($('.bootstrap-weekpicker').val().length === 0){
-                                        $('.bootstrap-week-controls > .btn').attr("disabled", true);
-                                    } else {
-                                        $('.bootstrap-week-controls > .btn').attr("disabled", false);
-                                    }
-
-                                    $('.bootstrap-weekpicker-container').find('.datepicker').find('.datepicker-days').find('table tbody tr td.active').parent().addClass('weekactive');
+                        <div class="form-group col-md-6 colorsetdarkblue datepickercontainerdark bootstrap-datepicker-custom datepickerdark">
+                            <label>TARİH ARALIĞI</label>
+                            <input type="text" class="form-control bootstrapdatepickerinputdark" placeholder="BAŞLANGIÇ - BİTİŞ TARİHİ">
+                            <script>
+                                $(window).on("load",function(){
+                                    $('.bootstrapdatepickerinputdark').datepicker({
+                                        container: '.datepickercontainerdark',
+                                        format: "dd.mm.yyyy",
+                                        weekStart: 1,
+                                        language: "tr",
+                                        orientation: "bottom left",
+                                        multidate: 2,
+                                        multidateSeparator: " - ",
+                                        forceParse: false,
+                                        todayHighlight: true,
+                                        toggleActive: true
+                                    }).on("changeDate",function(event){
+                                        var dates = event.dates, elem=$('.bootstrap-multi-datepicker');
+                                        if(elem.data("selecteddates")==dates.join(",")) return;
+                                        if(dates.length>2) dates=dates.splice(dates.length-1);
+                                        dates.sort(function(a,b){return new Date(a).getTime()-new Date(b).getTime()});
+                                        elem.data("selecteddates",dates.join(",")).datepicker('setDates',dates);
+                                    });
                                 });
+                            </script>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6 colorsetdarkblue weekpickercontainerlight bootstrap-datepicker-custom datepickerlight bootstrap-weekpicker-custom weekpickerlight">
+                            <label>Hafta Seçimi</label>
+                            <input type="text" class="form-control bootstrapweekpickerinputlight" placeholder="HAFTA SEÇİN">
+                            <script>
+                                $(window).on("load",function(){
 
+                                    var bootstrapWeekStartDate, bootstrapWeekEndDate;
 
-                                //new
-                                $('#prevWeek').click(function(e){
-                                    var date = $('.bootstrap-weekpicker').datepicker('getDate');
-                                    //dateFormat = "mm/dd/yy"; //$.datepicker._defaults.dateFormat;
-                                    bootstrapWeekStartDate = new Date(date.getFullYear(), date.getMonth(), date.getDate() - date.getDay()- 7);
-                                    bootstrapWeekEndDate = new Date(date.getFullYear(), date.getMonth(), date.getDate() - date.getDay() - 1);
-                                    $('.bootstrap-weekpicker').datepicker("setDate", new Date(bootstrapWeekStartDate));
-                                    $('.bootstrap-weekpicker').val(bootstrapWeekStartDate.getDate() + '.' + (bootstrapWeekStartDate.getMonth() + 1) + '.' + bootstrapWeekStartDate.getFullYear() + ' - ' + bootstrapWeekEndDate.getDate() + '.' + (bootstrapWeekEndDate.getMonth() + 1) + '.' +  bootstrapWeekEndDate.getFullYear());
+                                    $('.bootstrapweekpickerinputlight').datepicker({
+                                        container: '.weekpickercontainerlight',
+                                        format: "dd.mm.yyyy",
+                                        weekStart: 0,
+                                        calendarWeeks: true,
+                                        language: "tr",
+                                        orientation: "bottom left",
+                                        autoclose: true,
+                                        forceParse: false,
+                                        toggleActive: true
+                                    }).on("changeDate", function(e) {
+                                        var date = e.date;
+                                        bootstrapWeekStartDate = new Date(date.getFullYear(), date.getMonth(), date.getDate() - date.getDay());
+                                        bootstrapWeekEndDate = new Date(date.getFullYear(), date.getMonth(), date.getDate() - date.getDay()+6);
+                                        //$('.bootstrapweekpicker').datepicker("setDate", bootstrapWeekStartDate);
+                                        $(this).datepicker('update', bootstrapWeekStartDate);
+                                        $(this).val(bootstrapWeekStartDate.getDate() + '.' + (bootstrapWeekStartDate.getMonth() + 1) + '.' + bootstrapWeekStartDate.getFullYear() + ' - ' + bootstrapWeekEndDate.getDate() + '.' + (bootstrapWeekEndDate.getMonth() + 1) + '.' +  bootstrapWeekEndDate.getFullYear());
+                                        $('.datepicker').find('.datepicker-days').addClass('datepicker-week').find('table tbody tr td.active').parent().addClass('selectedweek');
+                                    }).on("click", function(e) {
+                                        $('.datepicker').find('.datepicker-days').addClass('datepicker-week').find('table tbody tr td.active').parent().addClass('selectedweek');
+                                    });
 
-                                    return false;
                                 });
-                                $('#nextWeek').click(function(){
-                                    var date = $('.bootstrap-weekpicker').datepicker('getDate');
-                                    //dateFormat = "mm/dd/yy"; // $.datepicker._defaults.dateFormat;
-                                    bootstrapWeekStartDate = new Date(date.getFullYear(), date.getMonth(), date.getDate() - date.getDay()+ 7);
-                                    bootstrapWeekEndDate = new Date(date.getFullYear(), date.getMonth(), date.getDate() - date.getDay() + 13);
-                                    $('.bootstrap-weekpicker').datepicker("setDate", new Date(bootstrapWeekStartDate));
-                                    $('.bootstrap-weekpicker').val(bootstrapWeekStartDate.getDate() + '.' + (bootstrapWeekStartDate.getMonth() + 1) + '.' + bootstrapWeekStartDate.getFullYear() + ' - ' + bootstrapWeekEndDate.getDate() + '.' + (bootstrapWeekEndDate.getMonth() + 1) + '.' +  bootstrapWeekEndDate.getFullYear());
+                            </script>
+                        </div>
+                        <div class="form-group col-md-6 colorsetdarkblue weekpickercontainerdark bootstrap-datepicker-custom datepickerdark bootstrap-weekpicker-custom weekpickerdark">
+                            <label>Hafta Seçimi</label>
+                            <input type="text" class="form-control bootstrapweekpickerinputdark" placeholder="HAFTA SEÇİN">
+                            <script>
+                                $(window).on("load",function(){
 
-                                    return false;
+                                    var bootstrapWeekStartDate, bootstrapWeekEndDate;
+
+                                    $('.bootstrapweekpickerinputdark').datepicker({
+                                        container: '.weekpickercontainerdark',
+                                        format: "dd.mm.yyyy",
+                                        weekStart: 0,
+                                        calendarWeeks: true,
+                                        language: "tr",
+                                        orientation: "bottom left",
+                                        autoclose: true,
+                                        forceParse: false,
+                                        toggleActive: true
+                                    }).on("changeDate", function(e) {
+                                        var date = e.date;
+                                        bootstrapWeekStartDate = new Date(date.getFullYear(), date.getMonth(), date.getDate() - date.getDay());
+                                        bootstrapWeekEndDate = new Date(date.getFullYear(), date.getMonth(), date.getDate() - date.getDay()+6);
+                                        //$('.bootstrapweekpicker').datepicker("setDate", bootstrapWeekStartDate);
+                                        $(this).datepicker('update', bootstrapWeekStartDate);
+                                        $(this).val(bootstrapWeekStartDate.getDate() + '.' + (bootstrapWeekStartDate.getMonth() + 1) + '.' + bootstrapWeekStartDate.getFullYear() + ' - ' + bootstrapWeekEndDate.getDate() + '.' + (bootstrapWeekEndDate.getMonth() + 1) + '.' +  bootstrapWeekEndDate.getFullYear());
+                                        $('.datepicker').find('.datepicker-days').addClass('datepicker-week').find('table tbody tr td.active').parent().addClass('selectedweek');
+                                    }).on("click", function(e) {
+                                        $('.datepicker').find('.datepicker-days').addClass('datepicker-week').find('table tbody tr td.active').parent().addClass('selectedweek');
+                                    });
+
                                 });
-                            });
-                        </script>
-
-
-
+                            </script>
+                        </div>
                     </div>
                 </form>
             </div>
