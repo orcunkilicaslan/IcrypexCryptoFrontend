@@ -329,18 +329,19 @@
                     <script id="script-bootstrap-datepicker-lang" src="../assets/vendor/bootstrap-datepicker/dist/locales/bootstrap-datepicker.tr.min.js"></script>
                     <script>
                         $(window).on("load",function(){
-                            $('.bootstrap-datepicker').datepicker({
+                            $('.filterinputdatepicker').datepicker({
+                                container: '.filterinputdatepickercontainer',
                                 format: "dd.mm.yyyy",
                                 weekStart: 1,
                                 language: "tr",
-                                orientation: "bottom left",
+                                orientation: "bottom right",
                                 multidate: 2,
                                 multidateSeparator: " - ",
                                 forceParse: false,
                                 todayHighlight: true,
                                 toggleActive: true
                             }).on("changeDate",function(event){
-                                var dates = event.dates, elem=$('.bootstrap-datepicker');
+                                var dates = event.dates, elem=$('.filterinputdatepicker');
                                 if(elem.data("selecteddates")==dates.join(",")) return;
                                 if(dates.length>2) dates=dates.splice(dates.length-1);
                                 dates.sort(function(a,b){return new Date(a).getTime()-new Date(b).getTime()});
@@ -378,8 +379,8 @@
                                     <option value="2">SATIŞ</option>
                                 </select>
                             </div>
-                            <div class="form-group colorsetdarkblue col-auto maxwidth150">
-                                <input type="text" class="form-control bootstrap-datepicker" placeholder="BAŞLANGIÇ - BİTİŞ TARİHİ">
+                            <div class="form-group colorsetdarkblue col-auto maxwidth150 filterinputdatepickercontainer bootstrap-datepicker-custom datepickerdark">
+                                <input type="text" class="form-control filterinputdatepicker" placeholder="BAŞLANGIÇ - BİTİŞ TARİHİ">
                             </div>
                             <div class="form-group colorsetdarkblue col-auto filterbutton">
                                 <button type="submit" class="btn btn-primary">FİLTRELE</button>

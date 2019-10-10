@@ -962,7 +962,7 @@
                                         todayHighlight: true,
                                         toggleActive: true
                                     }).on("changeDate",function(event){
-                                        var dates = event.dates, elem=$('.bootstrap-multi-datepicker');
+                                        var dates = event.dates, elem=$('.bootstrapdatepickerinputdark');
                                         if(elem.data("selecteddates")==dates.join(",")) return;
                                         if(dates.length>2) dates=dates.splice(dates.length-1);
                                         dates.sort(function(a,b){return new Date(a).getTime()-new Date(b).getTime()});
