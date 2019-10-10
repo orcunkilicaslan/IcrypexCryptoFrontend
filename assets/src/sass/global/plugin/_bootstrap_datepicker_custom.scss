@@ -5,6 +5,17 @@
     text-align: center !important;
   }
 
+  .input-group{
+    .input-group-append{
+      > *[class*="datepicker"]{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto 5px;
+      }
+    }
+  }
+
   .datepicker{
     padding: 7px 10px 10px !important;
     @include border-radius(0 !important);
@@ -70,16 +81,7 @@
     }
 
     &-orient-right{}
-
-    &-orient-left{
-      &::before{
-        left: calc(50% - 12px) !important;
-      }
-
-      &::after{
-        left: calc(50% - 11px) !important;
-      }
-    }
+    &-orient-left{}
 
     table{
       width: 100% !important;

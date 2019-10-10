@@ -922,7 +922,7 @@
             <script id="script-bootstrap-datepicker-lang" src="../assets/vendor/bootstrap-datepicker/dist/locales/bootstrap-datepicker.tr.min.js"></script>
             <div class="profile-profile formuinew" style="max-width: 100%;">
                 <div class="boxcolumn-boxtitle">
-                    <h3 class="boxcolumn-boxtitle-title">Datapicker</h3>
+                    <h3 class="boxcolumn-boxtitle-title">Datapicker and Weekpicker Input and Div</h3>
                 </div>
                 <form autocomplete="off" novalidate>
                     <div class="form-row">
@@ -1036,6 +1036,40 @@
                                         $('.datepicker').find('.datepicker-days').addClass('datepicker-week').find('table tbody tr td.active').parent().addClass('selectedweek');
                                     });
 
+                                });
+                            </script>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6 colorsetdarkblue datepickercontainerdivlight bootstrap-datepicker-custom datepickerlight">
+                            <label>TARİH SEÇİN (DIV)</label>
+                            <div class="input-group">
+                                <div class="form-control bootstrapdatepickerdivdate">AAAAA</div>
+                                <div class="input-group-append">
+                                    <a href="javascript:;" class="bootstrapdatepickerdivlight"><i class="siteiconsdropdown downdirection d-block"></i></a>
+                                </div>
+                            </div>
+                            <script>
+                                $(window).on("load",function(){
+                                    $('.bootstrapdatepickerdivlight').datepicker({
+                                        container: '.datepickercontainerdivlight',
+                                        format: "dd.mm.yyyy",
+                                        weekStart: 1,
+                                        language: "tr",
+                                        orientation: "bottom right",
+                                        autoclose: true,
+                                        forceParse: false,
+                                        todayHighlight: true,
+                                        toggleActive: true
+                                    }).on("click",function(event){
+
+                                    }).on("changeDate",function(event){
+
+                                        $('.bootstrapdatepickerdivdate').text(
+                                            $('.bootstrapdatepickerdivlight').datepicker('getFormattedDate')
+                                        );
+
+                                    });
                                 });
                             </script>
                         </div>
