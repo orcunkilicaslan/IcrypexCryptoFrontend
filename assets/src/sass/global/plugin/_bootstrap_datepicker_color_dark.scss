@@ -1,5 +1,5 @@
 
-.bootstrap-datepicker-dark{
+.datepickerdark{
 
   .datepicker{
 
@@ -14,19 +14,6 @@
 
       &::after{
         border-bottom-color: $global-clr-soft-gray !important;
-      }
-    }
-
-    table{
-      tbody{
-        tr{
-          td{
-            &.cw{
-              background-color: darken($global-clr-soft-gray, 10%) !important;
-              color: $global-clr-dark-blue !important;
-            }
-          }
-        }
       }
     }
 

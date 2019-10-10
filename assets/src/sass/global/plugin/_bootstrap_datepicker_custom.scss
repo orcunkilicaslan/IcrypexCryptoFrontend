@@ -1,15 +1,20 @@
 .bootstrap-datepicker-custom{
   position: relative;
 
+  .form-control{
+    text-align: center !important;
+  }
+
   .datepicker{
     padding: 7px 10px 10px !important;
+    left: 5px !important;
+    right: 5px !important;
     @include border-radius(0 !important);
 
     &-dropdown{
-      width: 100% !important;
-      max-width: 260px !important;
-      min-width: auto !important;
-      margin: -1px 0 0 !important;
+      //width: 100% !important;
+      min-width: 260px !important;
+      margin: 5px 0 0!important;
       background-clip: inherit !important;
 
       &::before{
@@ -81,8 +86,9 @@
       width: calc(100% - 60px) !important;
       background-color: transparent !important;
       text-transform: uppercase;
-      height: 30px !important;
       font-size: 17px !important;
+      padding-top: 4px;
+      height: 30px !important;
 
       &:hover{
         background-color: transparent !important;
