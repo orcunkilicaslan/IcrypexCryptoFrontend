@@ -405,6 +405,12 @@ $tradepageFooterImgPath : "../../img/tradepage/footer";
             top: -7px;
           }
         }
+        .fibabank{
+          top: 0;
+          @include ReSassWidthResponsive(576){
+            top: 0;
+          }
+        }
         .papara{
           top: 3px;
           @include ReSassWidthResponsive(576){

@@ -146,10 +146,10 @@ $mainpageFooterImgPath : "../../img/mainpage/footer";
       }
     }
     &::before{
-      left: calc(50% + 270px);
+      left: calc(50% + 330px);
     }
     &::after{
-      right: calc(50% + 270px);
+      right: calc(50% + 330px);
     }
 
     &-list{
@@ -213,6 +213,12 @@ $mainpageFooterImgPath : "../../img/mainpage/footer";
           top: -6px;
           @include ReSassWidthResponsive(576){
             top: -7px;
+          }
+        }
+        .fibabank{
+          top: 0;
+          @include ReSassWidthResponsive(576){
+            top: 0;
           }
         }
         .papara{
