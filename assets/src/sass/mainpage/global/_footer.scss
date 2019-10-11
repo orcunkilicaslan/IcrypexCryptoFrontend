@@ -167,6 +167,11 @@ $globalSvgIconImgPath : "../../img/global/svg";
       &.instagram{background-image: url(#{$globalSvgIconImgPath}/Footer_Instagram_Logo.svg);}
       &.linkedin{background-image: url(#{$globalSvgIconImgPath}/Footer_Linkedin_Logo.svg);}
       &.youtube{background-image: url(#{$globalSvgIconImgPath}/Footer_Youtube_Logo.svg);}
+      &.youtube{
+        width: 16px;
+        height: 16px;
+        margin: 7px auto;
+      }
     }
   }
 }
