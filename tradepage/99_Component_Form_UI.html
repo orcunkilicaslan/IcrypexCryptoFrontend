@@ -922,12 +922,12 @@
             <script id="script-bootstrap-datepicker-lang" src="../assets/vendor/bootstrap-datepicker/dist/locales/bootstrap-datepicker.tr.min.js"></script>
             <div class="profile-profile formuinew" style="max-width: 100%;">
                 <div class="boxcolumn-boxtitle">
-                    <h3 class="boxcolumn-boxtitle-title">Datapicker</h3>
+                    <h3 class="boxcolumn-boxtitle-title">Datapicker and Weekpicker Input and Div</h3>
                 </div>
                 <form autocomplete="off" novalidate>
                     <div class="form-row">
                         <div class="form-group col-md-6 colorsetdarkblue datepickercontainerlight bootstrap-datepicker-custom datepickerlight">
-                            <label>TARİH SEÇİN</label>
+                            <label>TARİH SEÇİN (INPUT)</label>
                             <input type="text" class="form-control bootstrapdatepickerinputlight" placeholder="TARİH SEÇİN">
                             <script>
                                 $(window).on("load",function(){
@@ -946,7 +946,7 @@
                             </script>
                         </div>
                         <div class="form-group col-md-6 colorsetdarkblue datepickercontainerdark bootstrap-datepicker-custom datepickerdark">
-                            <label>TARİH ARALIĞI</label>
+                            <label>TARİH ARALIĞI (INPUT)</label>
                             <input type="text" class="form-control bootstrapdatepickerinputdark" placeholder="BAŞLANGIÇ - BİTİŞ TARİHİ">
                             <script>
                                 $(window).on("load",function(){
@@ -974,12 +974,12 @@
                     </div>
                     <div class="form-row">
                         <div class="form-group col-md-6 colorsetdarkblue weekpickercontainerlight bootstrap-datepicker-custom datepickerlight bootstrap-weekpicker-custom weekpickerlight">
-                            <label>Hafta Seçimi</label>
+                            <label>HAFTA SEÇİN (INPUT)</label>
                             <input type="text" class="form-control bootstrapweekpickerinputlight" placeholder="HAFTA SEÇİN">
                             <script>
                                 $(window).on("load",function(){
 
-                                    var bootstrapWeekStartDate, bootstrapWeekEndDate;
+                                    var bootstrapWeekStartDate, bootstrapWeekEndDate, bootstrapWeekStartAndEndValue;
 
                                     $('.bootstrapweekpickerinputlight').datepicker({
                                         container: '.weekpickercontainerlight',
@@ -995,10 +995,9 @@
                                         var date = e.date;
                                         bootstrapWeekStartDate = new Date(date.getFullYear(), date.getMonth(), date.getDate() - date.getDay());
                                         bootstrapWeekEndDate = new Date(date.getFullYear(), date.getMonth(), date.getDate() - date.getDay()+6);
-                                        //$('.bootstrapweekpicker').datepicker("setDate", bootstrapWeekStartDate);
+                                        bootstrapWeekStartAndEndValue = bootstrapWeekStartDate.getDate() + '.' + (bootstrapWeekStartDate.getMonth() + 1) + '.' + bootstrapWeekStartDate.getFullYear() + ' - ' + bootstrapWeekEndDate.getDate() + '.' + (bootstrapWeekEndDate.getMonth() + 1) + '.' +  bootstrapWeekEndDate.getFullYear();
                                         $(this).datepicker('update', bootstrapWeekStartDate);
-                                        $(this).val(bootstrapWeekStartDate.getDate() + '.' + (bootstrapWeekStartDate.getMonth() + 1) + '.' + bootstrapWeekStartDate.getFullYear() + ' - ' + bootstrapWeekEndDate.getDate() + '.' + (bootstrapWeekEndDate.getMonth() + 1) + '.' +  bootstrapWeekEndDate.getFullYear());
-                                        $('.datepicker').find('.datepicker-days').addClass('datepicker-week').find('table tbody tr td.active').parent().addClass('selectedweek');
+                                        $(this).val(bootstrapWeekStartAndEndValue);
                                     }).on("click", function(e) {
                                         $('.datepicker').find('.datepicker-days').addClass('datepicker-week').find('table tbody tr td.active').parent().addClass('selectedweek');
                                     });
@@ -1007,12 +1006,12 @@
                             </script>
                         </div>
                         <div class="form-group col-md-6 colorsetdarkblue weekpickercontainerdark bootstrap-datepicker-custom datepickerdark bootstrap-weekpicker-custom weekpickerdark">
-                            <label>Hafta Seçimi</label>
+                            <label>HAFTA SEÇİN (INPUT)</label>
                             <input type="text" class="form-control bootstrapweekpickerinputdark" placeholder="HAFTA SEÇİN">
                             <script>
                                 $(window).on("load",function(){
 
-                                    var bootstrapWeekStartDate, bootstrapWeekEndDate;
+                                    var bootstrapWeekStartDate, bootstrapWeekEndDate, bootstrapWeekStartAndEndValue;
 
                                     $('.bootstrapweekpickerinputdark').datepicker({
                                         container: '.weekpickercontainerdark',
@@ -1028,13 +1027,91 @@
                                         var date = e.date;
                                         bootstrapWeekStartDate = new Date(date.getFullYear(), date.getMonth(), date.getDate() - date.getDay());
                                         bootstrapWeekEndDate = new Date(date.getFullYear(), date.getMonth(), date.getDate() - date.getDay()+6);
-                                        //$('.bootstrapweekpicker').datepicker("setDate", bootstrapWeekStartDate);
+                                        bootstrapWeekStartAndEndValue = bootstrapWeekStartDate.getDate() + '.' + (bootstrapWeekStartDate.getMonth() + 1) + '.' + bootstrapWeekStartDate.getFullYear() + ' - ' + bootstrapWeekEndDate.getDate() + '.' + (bootstrapWeekEndDate.getMonth() + 1) + '.' +  bootstrapWeekEndDate.getFullYear();
                                         $(this).datepicker('update', bootstrapWeekStartDate);
-                                        $(this).val(bootstrapWeekStartDate.getDate() + '.' + (bootstrapWeekStartDate.getMonth() + 1) + '.' + bootstrapWeekStartDate.getFullYear() + ' - ' + bootstrapWeekEndDate.getDate() + '.' + (bootstrapWeekEndDate.getMonth() + 1) + '.' +  bootstrapWeekEndDate.getFullYear());
-                                        $('.datepicker').find('.datepicker-days').addClass('datepicker-week').find('table tbody tr td.active').parent().addClass('selectedweek');
+                                        $(this).val(bootstrapWeekStartAndEndValue);
                                     }).on("click", function(e) {
                                         $('.datepicker').find('.datepicker-days').addClass('datepicker-week').find('table tbody tr td.active').parent().addClass('selectedweek');
                                     });
+
+                                });
+                            </script>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6 colorsetdarkblue datepickercontainerdivlight bootstrap-datepicker-custom datepickerlight">
+                            <label>TARİH SEÇİN (DIV)</label>
+                            <div class="input-group">
+                                <div class="form-control bootstrapdatepickerdivdate"></div>
+                                <div class="input-group-append">
+                                    <a href="javascript:;" class="bootstrapdatepickerdivlight"><i class="siteiconsdropdown downdirection d-block"></i></a>
+                                </div>
+                            </div>
+                            <script>
+                                $(window).on("load",function(){
+
+                                    var date = new Date();
+                                    var today = new Date(date.getFullYear(), date.getMonth(), date.getDate());
+
+                                    $('.bootstrapdatepickerdivlight').datepicker({
+                                        container: '.datepickercontainerdivlight',
+                                        format: "dd MM yyyy",
+                                        setDate: today,
+                                        weekStart: 1,
+                                        language: "tr",
+                                        orientation: "bottom right",
+                                        autoclose: true,
+                                        forceParse: false,
+                                        todayHighlight: true,
+                                        toggleActive: true
+                                    }).on("click",function(event){
+
+                                    }).on("changeDate",function(event){
+                                        $('.bootstrapdatepickerdivdate').text(
+                                            $('.bootstrapdatepickerdivlight').datepicker('getFormattedDate')
+                                        );
+                                    }).datepicker('setDate', today);
+
+                                });
+                            </script>
+                        </div>
+                        <div class="form-group col-md-6 colorsetdarkblue weekpickercontainerdivlight bootstrap-datepicker-custom datepickerlight bootstrap-weekpicker-custom weekpickerlight">
+                            <label>HAFTA SEÇİN (DIV)</label>
+                            <div class="input-group">
+                                <div class="form-control bootstrapweekpickerdivdate"></div>
+                                <div class="input-group-append">
+                                    <a href="javascript:;" class="bootstrapweekpickerdivlight"><i class="siteiconsdropdown downdirection d-block"></i></a>
+                                </div>
+                            </div>
+                            <script>
+                                $(window).on("load",function(){
+
+                                    var date = new Date();
+                                    var today = new Date(date.getFullYear(), date.getMonth(), date.getDate());
+                                    var bootstrapWeekStartDate, bootstrapWeekEndDate, bootstrapWeekStartAndEndValue;
+
+                                    $('.bootstrapweekpickerdivlight').datepicker({
+                                        container: '.weekpickercontainerdivlight',
+                                        format: "dd.mm.yyyy",
+                                        setDate: today,
+                                        weekStart: 0,
+                                        calendarWeeks: true,
+                                        language: "tr",
+                                        orientation: "bottom left",
+                                        autoclose: true,
+                                        forceParse: false,
+                                        toggleActive: true
+                                    }).on("changeDate", function(e) {
+                                        var date = e.date;
+                                        bootstrapWeekStartDate = new Date(date.getFullYear(), date.getMonth(), date.getDate() - date.getDay());
+                                        bootstrapWeekEndDate = new Date(date.getFullYear(), date.getMonth(), date.getDate() - date.getDay()+6);
+                                        bootstrapWeekStartAndEndValue = bootstrapWeekStartDate.getDate() + '.' + (bootstrapWeekStartDate.getMonth() + 1) + '.' + bootstrapWeekStartDate.getFullYear() + ' - ' + bootstrapWeekEndDate.getDate() + '.' + (bootstrapWeekEndDate.getMonth() + 1) + '.' +  bootstrapWeekEndDate.getFullYear();
+                                        $(this).datepicker('update', bootstrapWeekStartDate);
+                                        $(this).val(bootstrapWeekStartAndEndValue);
+                                        $('.bootstrapweekpickerdivdate').text(bootstrapWeekStartAndEndValue);
+                                    }).on("click", function(e) {
+                                        $('.datepicker').find('.datepicker-days').addClass('datepicker-week').find('table tbody tr td.active').parent().addClass('selectedweek');
+                                    }).datepicker('setDate', today);
 
                                 });
                             </script>

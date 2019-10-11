@@ -3,6 +3,16 @@
 
   .form-control{
     text-align: center !important;
+    text-transform: uppercase !important;
+  }
+
+  .input-group{
+    .input-group-append{
+      i[class*="siteiconsdropdown"]{
+        display: block;
+        margin: 7px;
+      }
+    }
   }
 
   .datepicker{
@@ -70,16 +80,7 @@
     }
 
     &-orient-right{}
-
-    &-orient-left{
-      &::before{
-        left: calc(50% - 12px) !important;
-      }
-
-      &::after{
-        left: calc(50% - 11px) !important;
-      }
-    }
+    &-orient-left{}
 
     table{
       width: 100% !important;
