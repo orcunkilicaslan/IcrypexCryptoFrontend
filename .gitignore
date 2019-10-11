@@ -81,3 +81,14 @@ assets/vendor/numeral/locales.js
 assets/vendor/numeral/numeral.js
 assets/vendor/numeral/package.json
 assets/vendor/numeral/README.md
+
+assets/vendor/moment/locale/
+assets/vendor/moment/src/
+assets/vendor/moment/CHANGELOG.md
+assets/vendor/moment/ender.js
+assets/vendor/moment/LICENSE
+assets/vendor/moment/moment.d.ts
+assets/vendor/moment/moment.js
+assets/vendor/moment/package.js
+assets/vendor/moment/package.json
+assets/vendor/moment/README.md
