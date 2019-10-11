@@ -337,7 +337,40 @@
     <!-- Tabs -->
     <!-- Datepicker -->
     <div class="research-datepicker">
-        <div><strong>04 AĞUSTOS 2019 CUMA</strong></div>
+        <link id="css-bootstrap-datepicker" rel="stylesheet" href="../assets/vendor/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
+        <script id="script-bootstrap-datepicker" src="../assets/vendor/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+        <script id="script-bootstrap-datepicker-lang" src="../assets/vendor/bootstrap-datepicker/dist/locales/bootstrap-datepicker.tr.min.js"></script>
+        <div class="research-datepicker-weekpicker researchdailypickercontainer bootstrap-datepicker-custom datepickerdark">
+            <span class="researchdailyselecteddate"></span>
+            <a href="javascript:;" class="researchdailypicker"><i class="siteiconsdropdown downdirection d-block"></i></a>
+            <script>
+                $(window).on("load",function(){
+
+                    var date = new Date();
+                    var today = new Date(date.getFullYear(), date.getMonth(), date.getDate());
+
+                    $('.researchdailypicker').datepicker({
+                        container: '.researchdailypickercontainer',
+                        format: "dd MM yyyy",
+                        setDate: today,
+                        weekStart: 1,
+                        language: "tr",
+                        orientation: "bottom right",
+                        autoclose: true,
+                        forceParse: false,
+                        todayHighlight: true,
+                        toggleActive: true
+                    }).on("click",function(event){
+
+                    }).on("changeDate",function(event){
+                        $('.researchdailyselecteddate').text(
+                            $('.researchdailypicker').datepicker('getFormattedDate')
+                        );
+                    }).datepicker('setDate', today);
+
+                });
+            </script>
+        </div>
     </div>
     <!-- Datepicker -->
 
