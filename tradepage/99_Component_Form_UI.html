@@ -920,6 +920,8 @@
             <link id="css-bootstrap-datepicker" rel="stylesheet" href="../assets/vendor/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
             <script id="script-bootstrap-datepicker" src="../assets/vendor/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
             <script id="script-bootstrap-datepicker-lang" src="../assets/vendor/bootstrap-datepicker/dist/locales/bootstrap-datepicker.tr.min.js"></script>
+            <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+            <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/tr.js"></script>
             <div class="profile-profile formuinew" style="max-width: 100%;">
                 <div class="boxcolumn-boxtitle">
                     <h3 class="boxcolumn-boxtitle-title">Datapicker and Weekpicker Input and Div</h3>
@@ -1083,6 +1085,13 @@
                                     <a href="javascript:;" class="bootstrapweekpickerdivlight"><i class="siteiconsdropdown downdirection d-block"></i></a>
                                 </div>
                             </div>
+                            <div style="text-transform: uppercase">
+                                <div id="output"></div>
+                                <div id="output2"></div>
+                                <div id="output3"></div>
+                                <div id="output4"></div>
+                                <div id="output5"></div>
+                            </div>
                             <script>
                                 $(window).on("load",function(){
 
@@ -1109,6 +1118,24 @@
                                         $(this).datepicker('update', bootstrapWeekStartDate);
                                         $(this).val(bootstrapWeekStartAndEndValue);
                                         $('.bootstrapweekpickerdivdate').text(bootstrapWeekStartAndEndValue);
+                                    }).on("changeDate", function(e) {
+                                        var kk = $(".bootstrapweekpickerdivlight").val();
+                                        $("#output").html(
+                                            "HAFTA NUMARASI: " + moment(kk, "DD.MM.YYYY").week()
+                                        );
+                                        $("#output2").html(
+                                            "YILIN HANGİ GÜNÜ: " + moment(kk, "DD.MM.YYYY").dayOfYear()
+                                        );
+                                        $("#output3").html(
+                                            "HAFTANIN HANGİ GÜNÜ: " + moment(kk, "DD.MM.YYYY").day() + " of 6 (" +
+                                            moment(kk, "dd.mm.yyyy").format("dddd") + ")"
+                                        );
+                                        $("#output4").html(
+                                            "HAFTANIN BAŞLANGICI: " + moment(kk, "DD.MM.YYYY").day(0).format("LL")
+                                        );
+                                        $("#output5").html(
+                                            "HAFTANIN BİTİŞİ: " + moment(kk, "DD.MM.YYYY").day(6).format("LL")
+                                        );
                                     }).on("click", function(e) {
                                         $('.datepicker').find('.datepicker-days').addClass('datepicker-week').find('table tbody tr td.active').parent().addClass('selectedweek');
                                     }).datepicker('setDate', today);
