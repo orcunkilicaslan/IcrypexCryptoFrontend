@@ -337,31 +337,44 @@
     <!-- Tabs -->
     <!-- Datepicker -->
     <div class="research-datepicker">
-        <div class="research-datepicker-dropdown dropdown">
-            <a href="javascript:;" class="btn btn-link research-datepicker-dropdown-btn" data-toggle="dropdown">
-                <span>
-                    <span>AĞUSTOS</span>
-                    <span>2019</span>
-                    <span>2. HAFTA</span>
-                </span>
-                <i class="siteiconsdropdown downdirection"></i>
-            </a>
-            <div class="dropdown-menu research-datepicker-dropdown-menu">
-                <div class="research-datepicker-dropdown-menu-select">
-                    <a class="research-datepicker-dropdown-menu-select-monthlink monthprev" href="#"><i class="siteiconsdropdown leftdirection"></i></a>
-                    <span class="research-datepicker-dropdown-menu-select-monthtext">
-                        <span>AĞUSTOS</span>
-                        <span>2019</span>
-                    </span>
-                    <a class="research-datepicker-dropdown-menu-select-monthlink monthnext" href="#"><i class="siteiconsdropdown rightdirection"></i></a>
-                </div>
-                <ul class="research-datepicker-dropdown-menu-list">
-                    <li><a class="research-datepicker-dropdown-menu-item active" href="#">1. HAFTA</a></li>
-                    <li><a class="research-datepicker-dropdown-menu-item" href="#">2. HAFTA</a></li>
-                    <li><a class="research-datepicker-dropdown-menu-item" href="#">3. HAFTA</a></li>
-                    <li><a class="research-datepicker-dropdown-menu-item" href="#">4. HAFTA</a></li>
-                </ul>
-            </div>
+        <link id="css-bootstrap-datepicker" rel="stylesheet" href="../assets/vendor/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
+        <script id="script-bootstrap-datepicker" src="../assets/vendor/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+        <script id="script-bootstrap-datepicker-lang" src="../assets/vendor/bootstrap-datepicker/dist/locales/bootstrap-datepicker.tr.min.js"></script>
+        <div class="research-datepicker-weekpicker researchweeklypickercontainer bootstrap-datepicker-custom datepickerdark bootstrap-weekpicker-custom weekpickerdark">
+            <span class="researchweeklyselecteddate"></span>
+            <a href="javascript:;" class="researchweeklypicker"><i class="siteiconsdropdown downdirection d-block"></i></a>
+            <script>
+                $(window).on("load",function(){
+
+                    var date = new Date();
+                    var today = new Date(date.getFullYear(), date.getMonth(), date.getDate());
+                    var bootstrapWeekStartDate, bootstrapWeekEndDate, bootstrapWeekStartAndEndValue;
+
+                    $('.researchweeklypicker').datepicker({
+                        container: '.researchweeklypickercontainer',
+                        format: "dd.mm.yyyy",
+                        setDate: today,
+                        weekStart: 0,
+                        calendarWeeks: true,
+                        language: "tr",
+                        orientation: "bottom right",
+                        autoclose: true,
+                        forceParse: false,
+                        toggleActive: true
+                    }).on("changeDate", function(e) {
+                        var date = e.date;
+                        bootstrapWeekStartDate = new Date(date.getFullYear(), date.getMonth(), date.getDate() - date.getDay());
+                        bootstrapWeekEndDate = new Date(date.getFullYear(), date.getMonth(), date.getDate() - date.getDay()+6);
+                        bootstrapWeekStartAndEndValue = bootstrapWeekStartDate.getDate() + '.' + (bootstrapWeekStartDate.getMonth() + 1) + '.' + bootstrapWeekStartDate.getFullYear() + ' - ' + bootstrapWeekEndDate.getDate() + '.' + (bootstrapWeekEndDate.getMonth() + 1) + '.' +  bootstrapWeekEndDate.getFullYear();
+                        $(this).datepicker('update', bootstrapWeekStartDate);
+                        $(this).val(bootstrapWeekStartAndEndValue);
+                        $('.researchweeklyselecteddate').text(bootstrapWeekStartAndEndValue);
+                    }).on("click", function(e) {
+                        $('.datepicker').find('.datepicker-days').addClass('datepicker-week').find('table tbody tr td.active').parent().addClass('selectedweek');
+                    }).datepicker('setDate', today);
+
+                });
+            </script>
         </div>
     </div>
     <!-- Datepicker -->

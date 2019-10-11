@@ -46,86 +46,37 @@
       margin-top: -2px;
     }
 
-    &-dropdown{
+    &-weekpicker{
+      width: 100%;
+      max-width: 260px;
+      height: 45px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
 
-      &-btn{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: $global-clr-dark-blue !important;
-        font-size: 17px !important;
-        font-weight: 500 !important;
-        min-width: 260px !important;
-        height: 45px !important;
-        margin: 0 auto !important;
-        text-decoration: none !important;
-
-        .siteiconsdropdown{
-          display: inline-block;
-          margin-left: 5px;
-
-          &::before{
-            border-top-color: $global-clr-dark-blue !important;
-            border-right-color: $global-clr-dark-blue !important;
-          }
-        }
+      > span{
+        width: 100%;
+        display: block;
+        text-align: center;
+        text-transform: uppercase !important;
       }
 
-      &-menu{
-        color: $global-clr-white !important;
-        background-color: $global-clr-soft-gray !important;
-        width: 100% !important;
-        min-width: auto !important;
-        font-size: 17px !important;
-        font-weight: normal !important;
-        margin: 0 !important;
-        padding: 10px !important;
-        border: none !important;
-        @include border-radii(0,0,4px,4px);
+      > a{
+        position: absolute;
+        right: 0;
+      }
 
-        &-select{
-          display: flex;
-          justify-content: space-between;
+      .datepicker{
+        margin: 10px 0 0!important;
 
-          .siteiconsdropdown{
-            display: inline-block;
-            border-color: lighten($global-clr-soft-gray, 10%) !important;
-
-            &::before{
-              border-top-color: $global-clr-white !important;
-              border-right-color: $global-clr-white !important;
-            }
-          }
-
-          &-monthlink{}
-
-          &-monthtext{}
+        &::before{
+          left: calc(50% - 12px) !important;
+          right: auto !important;
         }
-
-        &-list{
-          display: flex;
-          justify-content: space-between;
-          border-top: 1px solid lighten($global-clr-soft-gray, 10%) !important;
-          border-bottom: 1px solid lighten($global-clr-soft-gray, 10%) !important;
-
-          > li{
-            margin: 3px;
-
-            &:first-child{
-              margin-left: 0 !important;
-            }
-            &:last-child{
-              margin-right: 0 !important;
-            }
-          }
-        }
-
-        &-item{
-          color: $global-clr-white !important;
-
-          &.active{
-            background-color: lighten($global-clr-soft-gray, 10%) !important;
-          }
+        &::after{
+          left: calc(50% - 11px) !important;
+          right: auto !important;
         }
       }
     }
