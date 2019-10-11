@@ -3,15 +3,14 @@
 
   .form-control{
     text-align: center !important;
+    text-transform: uppercase !important;
   }
 
   .input-group{
     .input-group-append{
-      > *[class*="datepicker"]{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: auto 5px;
+      i[class*="siteiconsdropdown"]{
+        display: block;
+        margin: 7px;
       }
     }
   }
