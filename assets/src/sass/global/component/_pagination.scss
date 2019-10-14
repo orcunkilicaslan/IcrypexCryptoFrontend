@@ -1,4 +1,5 @@
 .pagenavigation{
+  width: 100%;
   background-color: $global-clr-light-gray;
   margin-top: 15px;
 
@@ -44,11 +45,7 @@
           background-color: $global-clr-soft-gray;
           border-color: $global-clr-soft-gray;
         }
-
       }
-
     }
-
   }
-
 }
