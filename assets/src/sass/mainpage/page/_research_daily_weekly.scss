@@ -36,6 +36,7 @@
 
       .datepicker{
         margin: 10px 0 0!important;
+        left: calc(50% - 130px) !important;
 
         &::before{
           left: calc(50% - 12px) !important;
