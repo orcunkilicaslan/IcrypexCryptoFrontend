@@ -340,8 +340,13 @@
         <link id="css-bootstrap-datepicker" rel="stylesheet" href="../assets/vendor/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
         <script id="script-bootstrap-datepicker" src="../assets/vendor/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
         <script id="script-bootstrap-datepicker-lang" src="../assets/vendor/bootstrap-datepicker/dist/locales/bootstrap-datepicker.tr.min.js"></script>
+        <script id="script-momentjs" src="../assets/vendor/moment/min/moment.min.js"></script>
+        <script id="script-momentjs-locale" src="../assets/vendor/moment/min/locales.min.js"></script>
+
+        <input class="researchdailyselecteddate" type="hidden">
+
         <div class="research-datepicker-weekpicker researchdailypickercontainer bootstrap-datepicker-custom datepickerdark">
-            <span class="researchdailyselecteddate"></span>
+            <span class="researchdaillyoutputdate"></span>
             <a href="javascript:;" class="researchdailypicker"><i class="siteiconsdropdown downdirection d-block"></i></a>
             <script>
                 $(window).on("load",function(){
@@ -351,7 +356,7 @@
 
                     $('.researchdailypicker').datepicker({
                         container: '.researchdailypickercontainer',
-                        format: "dd MM yyyy",
+                        format: "dd.mm.yyyy",
                         setDate: today,
                         weekStart: 1,
                         language: "tr",
@@ -360,11 +365,14 @@
                         forceParse: false,
                         todayHighlight: true,
                         toggleActive: true
-                    }).on("click",function(event){
-
                     }).on("changeDate",function(event){
-                        $('.researchdailyselecteddate').text(
+                        $('.researchdailyselecteddate').val(
                             $('.researchdailypicker').datepicker('getFormattedDate')
+                        );
+                    }).on("changeDate", function(e) {
+                        var outputmoment = $(".researchdailyselecteddate").val();
+                        $(".researchdaillyoutputdate").html(
+                            moment(outputmoment, "DD.MM.YYYY").locale('tr').format("LL")
                         );
                     }).datepicker('setDate', today);
 
