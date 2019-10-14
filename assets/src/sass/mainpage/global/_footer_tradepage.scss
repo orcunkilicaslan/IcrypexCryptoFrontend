@@ -342,15 +342,13 @@ $tradepageFooterImgPath : "../../img/tradepage/footer";
       margin: 0;
       text-align: center;
 
-      @include ReSassWidthResponsive(480){
-        width: calc(100% + 30px);
-        margin-left: -15px;
-        @include scale(0.9);
-      }
-      @include ReSassWidthResponsive(400){
+      @include ReSassWidthResponsive(576){
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        width: calc(100% + 30px);
+        margin-left: -15px;
+        @include scale(0.9);
       }
 
       &-item{
@@ -358,16 +356,17 @@ $tradepageFooterImgPath : "../../img/tradepage/footer";
         padding: 0 12px;
         display: inline-block;
 
-        @include ReSassWidthResponsive(576){
+        @include ReSassWidthResponsive(768){
           padding: 0 5px;
         }
-        @include ReSassWidthResponsive(480){
-          padding: 0 2px;
+        @include ReSassWidthResponsive(576){
+          max-width: calc(100% /3);
+          flex: 0 0 calc(100% /3);
+          padding: 5px 0;
         }
         @include ReSassWidthResponsive(400){
-          flex: 0 0 calc(100% / 2);
-          max-width: calc(100% / 2);
-          padding: 3px 0;
+          max-width: calc(100% /2);
+          flex: 0 0 calc(100% /2);
         }
 
         &::before{
