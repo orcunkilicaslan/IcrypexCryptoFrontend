@@ -340,15 +340,21 @@
         <link id="css-bootstrap-datepicker" rel="stylesheet" href="../assets/vendor/bootstrap-datepicker/dist/css/bootstrap-datepicker.min.css">
         <script id="script-bootstrap-datepicker" src="../assets/vendor/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
         <script id="script-bootstrap-datepicker-lang" src="../assets/vendor/bootstrap-datepicker/dist/locales/bootstrap-datepicker.tr.min.js"></script>
+        <script id="script-momentjs" src="../assets/vendor/moment/min/moment.min.js"></script>
+        <script id="script-momentjs-locale" src="../assets/vendor/moment/min/locales.min.js"></script>
+
+        <input class="researchweeklyselectedstartdate" type="hidden">
+        <input class="researchweeklyselectedenddate" type="hidden">
+
         <div class="research-datepicker-weekpicker researchweeklypickercontainer bootstrap-datepicker-custom datepickerdark bootstrap-weekpicker-custom weekpickerdark">
-            <span class="researchweeklyselecteddate"></span>
+            <span class="researchweeklyoutputdate"></span>
             <a href="javascript:;" class="researchweeklypicker"><i class="siteiconsdropdown downdirection d-block"></i></a>
             <script>
                 $(window).on("load",function(){
 
                     var date = new Date();
                     var today = new Date(date.getFullYear(), date.getMonth(), date.getDate());
-                    var bootstrapWeekStartDate, bootstrapWeekEndDate, bootstrapWeekStartAndEndValue;
+                    var WeekStartDate, WeekEndDate, StartWeekDateValue, EndWeekDateValue;
 
                     $('.researchweeklypicker').datepicker({
                         container: '.researchweeklypickercontainer',
@@ -363,12 +369,21 @@
                         toggleActive: true
                     }).on("changeDate", function(e) {
                         var date = e.date;
-                        bootstrapWeekStartDate = new Date(date.getFullYear(), date.getMonth(), date.getDate() - date.getDay());
-                        bootstrapWeekEndDate = new Date(date.getFullYear(), date.getMonth(), date.getDate() - date.getDay()+6);
-                        bootstrapWeekStartAndEndValue = bootstrapWeekStartDate.getDate() + '.' + (bootstrapWeekStartDate.getMonth() + 1) + '.' + bootstrapWeekStartDate.getFullYear() + ' - ' + bootstrapWeekEndDate.getDate() + '.' + (bootstrapWeekEndDate.getMonth() + 1) + '.' +  bootstrapWeekEndDate.getFullYear();
-                        $(this).datepicker('update', bootstrapWeekStartDate);
-                        $(this).val(bootstrapWeekStartAndEndValue);
-                        $('.researchweeklyselecteddate').text(bootstrapWeekStartAndEndValue);
+                        WeekStartDate       = new Date(date.getFullYear(), date.getMonth(), date.getDate() - date.getDay());
+                        WeekEndDate         = new Date(date.getFullYear(), date.getMonth(), date.getDate() - date.getDay()+6);
+                        StartWeekDateValue  = WeekStartDate.getDate() + '.' + (WeekStartDate.getMonth() + 1) + '.' + WeekStartDate.getFullYear();
+                        EndWeekDateValue    = WeekEndDate.getDate() + '.' + (WeekEndDate.getMonth() + 1) + '.' +  WeekEndDate.getFullYear();
+                        $(this).datepicker('update', WeekStartDate);
+                        $(this).val(StartWeekDateValue + ' - ' + EndWeekDateValue);
+
+                        $('input.researchweeklyselectedstartdate').val(StartWeekDateValue);
+                        $('input.researchweeklyselectedenddate').val(EndWeekDateValue);
+
+                    }).on("changeDate", function(e) {
+                        var outputmoment = $(".researchweeklypicker").val();
+                        $(".researchweeklyoutputdate").html(
+                            moment(outputmoment, "DD.MM.YYYY").day(0).locale('tr').format("LL") + ' - ' + moment(outputmoment, "DD.MM.YYYY").day(6).locale('tr').format("LL") + ' (' + moment(outputmoment, "DD.MM.YYYY").week() + ". HAFTA)"
+                        );
                     }).on("click", function(e) {
                         $('.datepicker').find('.datepicker-days').addClass('datepicker-week').find('table tbody tr td.active').parent().addClass('selectedweek');
                     }).datepicker('setDate', today);
