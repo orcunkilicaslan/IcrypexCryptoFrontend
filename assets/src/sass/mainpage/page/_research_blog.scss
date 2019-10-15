@@ -1,3 +1,4 @@
+$globalSvgIconImgPath : "../../img/global/svg";
 
 .research{
 
@@ -288,7 +289,7 @@
 
             &.facebook{background-image: url(#{$globalSvgIconImgPath}/Footer_Facebook_Logo.svg);}
             &.twitter{background-image: url(#{$globalSvgIconImgPath}/Footer_Twitter_Logo.svg);}
-            &.instagram{background-image: url(#{$globalSvgIconImgPath}/Footer_Instagram_Logo.svg);}
+            &.linkedin{background-image: url(#{$globalSvgIconImgPath}/Footer_Linkedin_Logo.svg);}
           }
         }
 
@@ -304,7 +305,7 @@
         &-notloginuser{
           font-size: 17px;
           text-align: center;
-          padding: 30px 20px;
+          padding: 30px 15px;
           margin-top: 20px;
 
           h4, p{
@@ -314,9 +315,94 @@
           }
         }
 
+        &-loginuser{
+          font-size: 17px;
+          padding: 15px;
+          margin-top: 20px;
+        }
+
         .commentswriteareabuttons{
           max-width: 400px;
           margin: 15px auto 0;
+        }
+      }
+
+      &-list{
+        &-item{
+          background-color: $global-clr-light-gray;
+          font-size: 17px;
+          padding: 15px;
+          margin-top: 20px;
+
+          ul{
+            margin-bottom: 5px;
+
+            li{
+              border-top: 1px solid transparentize($global-clr-soft-gray, 0.7);
+              padding-top: 20px;
+              padding-left: 35px;
+              margin-top: 20px;
+              position: relative;
+
+              &:before{
+                content: "";
+                background-image: url(#{$globalSvgIconImgPath}/Blog_Icon_Comments_Answer.svg);
+                background-position: left top;
+                background-repeat: no-repeat;
+                width: 20px;
+                height: 20px;
+                position: absolute;
+                left: 10px;
+                top: 22px;
+              }
+            }
+          }
+        }
+      }
+
+      .blogcommentsuser{
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+
+        &-avatar{
+          width:40px;
+          height:40px;
+          margin-right: 7px;
+
+          img{
+            width:40px;
+            height:40px;
+            border-radius:50%;
+          }
+        }
+
+        &-textarea{
+          line-height: 1.1;
+          text-align: left;
+          position: relative;
+          top: -1px;
+
+          h5{
+            color: $global-clr-dark-blue;
+            font-size: 17px;
+            margin: 0;
+            text-transform: uppercase;
+          }
+          small{
+            color: $global-clr-soft-gray;
+            font-size: 17px;
+          }
+        }
+      }
+
+      .formuinew{
+        .btn{
+          font-size: 15px;
+          height: 30px;
+          padding-top: 3px;
+          padding-bottom: 3px;
+          margin-top: 5px;
         }
       }
     }

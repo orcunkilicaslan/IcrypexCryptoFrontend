@@ -42,6 +42,7 @@
  - [31_Research_Weekly](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mainpage/31_Research_Weekly.html)
  - [32_Research_Blog](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mainpage/32_Research_Blog.html)
  - [33_Research_Blog_Detail_Logout](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mainpage/33_Research_Blog_Detail_Logout.html)
+ - [34_Research_Blog_Detail_Login](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mainpage/34_Research_Blog_Detail_Login.html)
 
 
 #### Web Client Area Frontend List
