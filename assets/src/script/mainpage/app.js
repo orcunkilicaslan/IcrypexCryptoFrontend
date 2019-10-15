@@ -43,6 +43,36 @@ $(document).ready(function() {
 });
 /* Homepage Chart Area Owl Carousel */
 
+/* Research Blog Others Entries */
+$('#researchothersentries').owlCarousel({
+    loop:false,
+    nav:false,
+    dots:false,
+    autoplay:true,
+    autoplayTimeout:3000,
+    autoplayHoverPause:true,
+    //items:3,
+    margin:15,
+    autoWidth:false,
+    animateOut: 'fadeOut',
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        480:{
+            items:1
+        },
+        992:{
+            items:2
+        },
+        1200:{
+            items:4
+        }
+    }
+});
+/* Research Blog Others Entries */
+
 /* Accordion */
 $(document).ready(function () {
     $('.accordion-item .heading').on('click', function (e) {
