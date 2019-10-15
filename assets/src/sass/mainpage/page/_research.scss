@@ -55,7 +55,11 @@
   }
 
   &-sidebar{
-    padding-top: 15px;
+    margin-top: 15px;
+
+    @include ReSassWidthResponsive(992){
+      margin-top: 25px;
+    }
 
     &-subscription{
       .form-group{
@@ -92,6 +96,11 @@
               display: flex;
               justify-content: space-between;
 
+              @include ReSassWidthResponsive(1200){
+                display: block !important;
+                line-height: 1;
+              }
+
               li{
                 color: $global-clr-soft-gray;
                 font-size: 14px;
@@ -100,6 +109,11 @@
                 position: relative;
                 padding-left: 5px;
                 padding-right: 5px;
+
+                @include ReSassWidthResponsive(1200){
+                  padding-left: 0 !important;
+                  padding-right: 0 !important;
+                }
 
                 &:first-child{
                   padding-left: 0 !important;
