@@ -29,6 +29,10 @@
         padding-right: 0;
       }
     }
+
+    &.blog-other-section{
+      margin-top: -40px;
+    }
   }
 
   &-wrapper{
@@ -38,6 +42,21 @@
   &-content{
 
     *{color: $global-clr-dark-blue;}
+
+    *[class*="columntitle"]{
+      padding-bottom: 10px;
+      margin-bottom: 10px;
+
+      &::before{
+        width: 100%;
+        max-width: inherit;
+        height: 1px;
+      }
+      &::after{
+        width: 60px;
+        height: 4px;
+      }
+    }
 
     *[class*="columntitle"] + p{
       margin-top: 20px;
@@ -55,7 +74,8 @@
   }
 
   &-sidebar{
-    margin-top: 25px;
+    margin-top: 30px;
+    padding-right: 0 !important;
 
     &-subscription{
       .form-group{

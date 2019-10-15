@@ -2,18 +2,15 @@
 .research{
 
   &-blog{
-    margin-top: 34px;
+    margin-top: 30px;
+    padding-left: 0 !important;
     border-right: 1px solid transparentize($global-clr-soft-gray, 0.7);
-
-    @include ReSassWidthResponsive(992){
-      margin-top: 35px;
-    }
 
     &-content{
       .blogheadtitlearea{
         *[class*="boxtitle "]{
           color: $global-clr-dark-blue;
-          padding-bottom: 5px;
+          padding-bottom: 7px;
         }
 
         .blogdateandtagsbar{
@@ -74,6 +71,7 @@
     }
 
     &-list{
+      margin-top: 5px;
 
       &-item{
         padding-top: 20px;
@@ -295,6 +293,33 @@
         }
 
       }
+    }
+
+    &-comments{
+      margin-top: 20px;
+
+      &-writearea{
+        background-color: $global-clr-light-gray;
+
+        &-notloginuser{
+          font-size: 17px;
+          text-align: center;
+          padding: 30px 20px;
+          margin-top: 20px;
+
+          h4, p{
+            font-size: 17px;
+            margin: 0;
+            padding: 0;
+          }
+        }
+
+        .commentswriteareabuttons{
+          max-width: 400px;
+          margin: 15px auto 0;
+        }
+      }
+
     }
   }
 }
