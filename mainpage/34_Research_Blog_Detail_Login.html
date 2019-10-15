@@ -1,0 +1,839 @@
+<!doctype html>
+<html lang="tr">
+<head>
+    <title>Icrypex</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link id="css-bootstrap" rel="stylesheet" href="../assets/dist/css/bootstrap.css">
+    <link id="css-plugin" rel="stylesheet" href="../assets/dist/css/plugin.css">
+    <link id="css-mainpage-app" rel="stylesheet" href="../assets/dist/css/mainpage-app.css">
+    <script id="script-jquery" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script id="script-popper" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script id="script-bootstrap" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body class="dfn-megamenu fullpages mainpage">
+
+<!-- Header Start -->
+<header class="header">
+
+    <!-- Mobile Header -->
+    <div class="dfn-mobilemenu-mask"></div>
+    <div class="dfn-mobilemenu-header">
+        <a class="header-navigation-logo" href="00_Home_Page.html" title="ICRYPEX Crypto Exchange" rel="bookmark">
+            <i class="header-navigation-logo-symbol icon-svg icon-svg-icrypexsymbol"></i>
+            <h1 class="header-navigation-logo-icrypex">ICRYPEX</h1>
+            <h2 class="header-navigation-logo-cryptoexchange">CRYPTO EXCHANGE</h2>
+        </a>
+        <a id="dfn-navtggle" class="dfn-mobilemenu-btn">
+            <div class="btnicon"><span></span></div>
+            <div class="btntext"><small>MENÜ</small></div>
+        </a>
+        <a class="dfn-mobilemenu-livechat">
+            <small>LIVECHAT</small>
+            <i class="icon-svg icon-svg-headerchatmobile"></i>
+        </a>
+    </div>
+    <!-- Mobile Header -->
+
+    <!-- Web Header -->
+    <div class="container-fluid container-1890 header-web">
+
+        <!-- Top Header Start -->
+        <div class="header-top">
+            <div class="col-3 d-flex justify-content-start">
+                <ul class="header-top-language">
+                    <li class="header-top-language-item"><a class="header-top-language-selection" href="#" title="ENGLISH" rel="bookmark">ENGLISH</a></li>
+                    <li class="header-top-language-item"><a class="header-top-language-selection active" href="#" title="TÜRKÇE" rel="bookmark">TÜRKÇE</a></li>
+                </ul>
+            </div>
+            <div class="col-6 d-flex justify-content-center">
+                <ul class="header-top-city">
+                    <li class="header-top-city-item"><span class="header-top-city-name">İSTANBUL</span><span id="clock-istanbul" class="header-top-city-clock">12:56:03</span></li>
+                    <li class="header-top-city-item"><span class="header-top-city-name">NEW YORK</span><span id="clock-newyork" class="header-top-city-clock">7:48:06</span></li>
+                    <li class="header-top-city-item"><span class="header-top-city-name">LONDON</span><span id="clock-london" class="header-top-city-clock">12:47:17</span></li>
+                    <li class="header-top-city-item"><span class="header-top-city-name">MOSKOW</span><span id="clock-tokyo" class="header-top-city-clock">15:47:33</span></li>
+                    <li class="header-top-city-item"><span class="header-top-city-name">TOKYO</span><span id="clock-moscow" class="header-top-city-clock">21:47:45</span></li>
+                </ul>
+                <script id="script-plugin-worldclock-app" src="../assets/cdn/plugin-worldclock.js"></script>
+                <script type="text/javascript">
+                    window.onload=worldClockZone;
+                    function worldClockZone(){
+
+                        document.getElementById("clock-istanbul").innerHTML = worldClock(2, "Europe")
+                        document.getElementById("clock-newyork").innerHTML = worldClock(-5, "NAmerica")
+                        document.getElementById("clock-london").innerHTML = worldClock(0, "Europe")
+                        document.getElementById("clock-tokyo").innerHTML = worldClock(9, "Tokyo")
+                        document.getElementById("clock-moscow").innerHTML = worldClock(3, "Europe")
+
+                        setTimeout("worldClockZone()", 1000)
+                    }
+                </script>
+            </div>
+            <div class="col-3 d-flex justify-content-end">
+                <div class="header-top-signin">
+                    <ul class="header-signin">
+                        <li class="header-signin-item"><a class="header-signin-register" href="01_Sign_Up.html" title="YENİ ÜYELİK" rel="bookmark">YENİ ÜYELİK</a></li>
+                        <li class="header-signin-item"><a class="header-signin-login" href="../tradepage/01_Login_Step_1.html" title="ÜYE GİRİŞİ" rel="bookmark">ÜYE GİRİŞİ</a></li>
+                    </ul>
+                </div>
+                <div class="header-top-userarea d-flex align-items-center" style="display: none !important;">
+                    <ul class="header-userarea-iconset d-flex align-items-center">
+                        <li class="header-userarea-iconset-search header-userarea-iconset-item">
+                            <i class="icon-svg icon-svg-headersearch"></i>
+                        </li>
+                        <li class="header-userarea-iconset-chat header-userarea-iconset-item">
+                            <a class="header-userarea-iconset-link" href="#">
+                                <i class="icon-svg icon-svg-headerchat"></i>
+                            </a>
+                        </li>
+                        <li class="header-userarea-iconset-theme header-userarea-iconset-item">
+                            <a class="header-userarea-iconset-link" href="#">
+                                <i class="icon-svg icon-svg-headertheme"></i>
+                            </a>
+                        </li>
+                        <li class="header-userarea-iconset-bell header-userarea-iconset-item">
+                            <a class="header-userarea-iconset-link" href="../tradepage/25_Profile_Notification.html" data-toggle="tooltip" data-placement="bottom" title="1 Yeni Bildiriminiz Var">
+                                <i class="icon-svg icon-svg-headerbell"></i>
+                                <span class="header-userarea-iconset-badge"></span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="header-userarea-user btn-group d-flex align-items-center">
+                        <a class="header-userarea-user-title d-flex align-items-center" href="../tradepage/27_Profile_Profile.html" title="" rel="bookmark">
+                            <img class="header-userarea-user-image" src="../assets/img/global/svg/Unknown_Profile_Avatar_Icon.svg" width="30" height="30" alt="UserPic" />
+                            <span class="header-userarea-user-name">İSİM İSİM SOYİSİM</span>
+                        </a>
+                        <button class="header-userarea-user-dropdown dropdown-toggle dropdown-toggle-split" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <div class="header-userarea-user-droplist">
+                                <div class="headusermenu">
+                                    <div class="headusermenu-box">
+                                        <div class="headusermenu-userbg">
+                                            <div class="headusermenu-box-avatar"><img src="../assets/img/global/svg/Unknown_Profile_Avatar_Icon.svg" width="200" height="200" alt="UserPic"></div>
+                                            <div class="headusermenu-box-textarea">
+                                                <h5 class="headusermenu-box-textarea-username">ORCUN KILICASLAN</h5>
+                                                <small class="sitecolorblue">1 Yeni Mesajınız Var</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="headusermenu-menulist">
+                                        <ul id="MainpageDropdownMenu" class="usermenulist">
+                                            <li class="userlink"><a href="02_Features_Products.html" title="ÖZELLİKLER" rel="category">ÖZELLİKLER</a></li>
+                                            <li class="userlink"><a href="10_Technology_Chain_Summary.html" title="TEKNOLOJİ" rel="category">TEKNOLOJİ</a></li>
+                                            <li class="userlink"><a href="30_Research_Daily.html" title="ARAŞTIRMA" rel="category">ARAŞTIRMA</a></li>
+                                            <li class="userlink"><a href="21_Company_About.html" title="ŞİRKET" rel="category">ŞİRKET</a></li>
+                                            <li class="userlink"><a href="28_What_How.html" title="NEDİR? NASIL ÇALIŞIR?" rel="category">NEDİR? NASIL ÇALIŞIR?</a></li>
+                                            <li class="userlink"><a href="29_Announcements.html" title="DUYURULAR" rel="category">DUYURULAR</a></li>
+                                            <li class="userlink"><a href="#" title="DESTEK" rel="category" target="_blank">DESTEK</a></li>
+                                        </ul>
+                                        <ul id="TradepageDropdownMenu" class="usermenulist">
+                                            <li class="userlink"><a href="../tradepage/04_Easy_Buy_Sell.html" title="KOLAY AL-SAT" rel="category">KOLAY AL-SAT</a></li>
+                                            <li class="userlink"><a href="../tradepage/03_Trader_Home_2.html" title="PRO GÖRÜNÜM" rel="category">PRO GÖRÜNÜM</a></li>
+                                            <li class="userlink"><a href="../tradepage/05_Deposit_Step_1_Home.html" title="PARA YATIRMA" rel="category">PARA YATIRMA</a></li>
+                                            <li class="userlink"><a href="../tradepage/12_Withdraw_Step_1_Home.html" title="PARA ÇEKME" rel="category">PARA ÇEKME</a></li>
+                                            <li class="userlink"><a href="../tradepage/27_Profile_Profile.html" title="HESAP & GÜVENLİK AYARLARI" rel="category">HESAP & GÜVENLİK AYARLARI</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="btnarea"><a class="logout" href="#" title="ÇIKIŞ YAPIN" rel="external nofollow">ÇIKIŞ YAPIN</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Top Header End -->
+        <!-- Navigation Start -->
+        <div class="header-navigation">
+            <!-- Logo -->
+            <div class="header-navigation-resp col-3 d-flex justify-content-start">
+                <a class="header-navigation-logo" href="00_Home_Page.html" title="ICRYPEX Crypto Exchange" rel="bookmark">
+                    <i class="header-navigation-logo-symbol icon-svg icon-svg-icrypexsymbol"></i>
+                    <h1 class="header-navigation-logo-icrypex">ICRYPEX</h1>
+                    <h2 class="header-navigation-logo-cryptoexchange">CRYPTO EXCHANGE</h2>
+                </a>
+            </div>
+            <!-- Logo -->
+            <!-- Navigasyon -->
+            <div class="col-6 d-flex justify-content-center">
+                <div class="header-navigation-navbar dfn-nav">
+                    <nav class="dfn-menu">
+                        <ul class="dfn-mobil-alt dfn-menu-list">
+                            <li class="dfn-onlymobile-menu d-lg-none">
+                                <ul class="header-signin">
+                                    <li class="header-signin-item"><a class="header-signin-register" href="01_Sign_Up.html" title="YENİ ÜYELİK" rel="bookmark">YENİ ÜYELİK</a></li>
+                                    <li class="header-signin-item"><a class="header-signin-login" href="../tradepage/01_Login_Step_1.html" title="ÜYE GİRİŞİ" rel="bookmark">ÜYE GİRİŞİ</a></li>
+                                </ul>
+                            </li>
+                            <li class="dfn-onlymobile-userarea d-lg-none" style="display: none !important;">
+                                <div class="header-userarea-user-droplist">
+                                    <div class="headusermenu" id="MobileMenuUserDropdownMenu">
+                                        <div class="headusermenu-box">
+                                            <div class="headusermenu-userbg">
+                                                <div class="headusermenu-box-avatar"><img src="../assets/img/global/svg/Unknown_Profile_Avatar_Icon.svg" width="200" height="200" alt="UserPic"></div>
+                                                <div class="headusermenu-box-textarea">
+                                                    <h5 class="headusermenu-box-textarea-username">ORCUN KILICASLAN</h5>
+                                                    <small><a href="../tradepage/25_Profile_Notification.html" title="" rel="bookmark">1 Yeni Mesajınız Var</a></small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="headusermenu-menulist">
+                                            <ul id="MobileMenuMainpageDropdownMenu" class="usermenulist">
+                                                <li class="userlink"><a href="02_Features_Products.html" title="ÖZELLİKLER" rel="category">ÖZELLİKLER</a></li>
+                                                <li class="userlink"><a href="10_Technology_Chain_Summary.html" title="TEKNOLOJİ" rel="category">TEKNOLOJİ</a></li>
+                                                <li class="userlink"><a href="30_Research_Daily.html" title="ARAŞTIRMA" rel="category">ARAŞTIRMA</a></li>
+                                                <li class="userlink"><a href="21_Company_About.html" title="ŞİRKET" rel="category">ŞİRKET</a></li>
+                                                <li class="userlink"><a href="28_What_How.html" title="NEDİR? NASIL ÇALIŞIR?" rel="category">NEDİR? NASIL ÇALIŞIR?</a></li>
+                                                <li class="userlink"><a href="29_Announcements.html" title="DUYURULAR" rel="category">DUYURULAR</a></li>
+                                                <li class="userlink"><a href="#" title="DESTEK" rel="category" target="_blank">DESTEK</a></li>
+                                            </ul>
+                                            <ul id="MobileMenuTradepageDropdownMenu" class="usermenulist">
+                                                <li class="userlink"><a href="../tradepage/04_Easy_Buy_Sell.html" title="KOLAY AL-SAT" rel="category">KOLAY AL-SAT</a></li>
+                                                <li class="userlink"><a href="../tradepage/03_Trader_Home_2.html" title="PRO GÖRÜNÜM" rel="category">PRO GÖRÜNÜM</a></li>
+                                                <li class="userlink"><a href="../tradepage/05_Deposit_Step_1_Home.html" title="PARA YATIRMA" rel="category">PARA YATIRMA</a></li>
+                                                <li class="userlink"><a href="../tradepage/12_Withdraw_Step_1_Home.html" title="PARA ÇEKME" rel="category">PARA ÇEKME</a></li>
+                                                <li class="userlink"><a href="../tradepage/27_Profile_Profile.html" title="HESAP & GÜVENLİK AYARLARI" rel="category">HESAP & GÜVENLİK AYARLARI</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="d-lg-none"><a href="00_Home_Page.html" title="ANASAYFA" rel="category">ANASAYFA</a></li>
+                            <li>
+                                <a href="#" title="ÖZELLİKLER" rel="category" id="FeaturesDropdownMenu" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ÖZELLİKLER</a>
+                                <div class="dfn-menu-dropdownmenu dropdown-menu" aria-labelledby="FeaturesDropdownMenu">
+                                    <ul class="dropdownsubmenu">
+                                        <li class="submainmenu"><a href="02_Features_Products.html" title="ÜRÜNLER" rel="category">ÜRÜNLER</a></li>
+                                        <li class="submainmenu"><a href="07_Features_Commision.html" title="KOMİSYONLAR" rel="category">KOMİSYONLAR</a></li>
+                                        <li class="submainmenu"><a href="08_Features_Limit.html" title="LİMİTLER" rel="category">LİMİTLER</a></li>
+                                        <li class="submainmenu"><a href="09_Features_Security.html" title="GÜVENLİK" rel="category">GÜVENLİK</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#" title="TEKNOLOJİ" rel="category" id="TechnologyDropdownMenu" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">TEKNOLOJİ</a>
+                                <div class="dfn-menu-dropdownmenu dropdown-menu animate slideIn" aria-labelledby="TechnologyDropdownMenu">
+                                    <ul class="dropdownsubmenu">
+                                        <li class="submainmenu"><a href="10_Technology_Chain_Summary.html" title="ZİNCİR VERİ TABANI" rel="category">ZİNCİR VERİ TABANI</a></li>
+                                        <li class="submainmenu"><a href="16_Technology_Api.html" title="API" rel="category">API</a></li>
+                                        <li class="submainmenu"><a href="17_Technology_Converter.html" title="KRİPTO PARA ÇEVİRİCİ" rel="category">KRİPTO PARA ÇEVİRİCİ</a></li>
+                                        <li class="submainmenu"><a href="18_Technology_Mining.html" title="MADENCİLİK" rel="category">MADENCİLİK</a></li>
+                                        <li class="submainmenu"><a href="19_Technology_Multiple.html" title="ÇOKLU GÖNDERİM" rel="category">ÇOKLU GÖNDERİM</a></li>
+                                        <li class="submainmenu"><a href="20_Technology_Segwit.html" title="SEGWIT" rel="category">SEGWIT</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a href="30_Research_Daily.html" title="ARAŞTIRMA" rel="category">ARAŞTIRMA</a></li>
+                            <li>
+                                <a href="#" title="ŞİRKET" rel="category" id="CompanyDropdownMenu" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ŞİRKET</a>
+                                <div class="dfn-menu-dropdownmenu dropdown-menu animate slideIn" aria-labelledby="CompanyDropdownMenu">
+                                    <ul class="dropdownsubmenu">
+                                        <li class="submainmenu"><a href="21_Company_About.html" title="HAKKIMIZDA" rel="category">HAKKIMIZDA</a></li>
+                                        <li class="submainmenu"><a href="22_Company_Legal_Terms_01.html" title="YASAL" rel="category">YASAL</a></li>
+                                        <li class="submainmenu"><a href="27_Company_Contact.html" title="BİZE ULAŞIN" rel="category">BİZE ULAŞIN</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a href="28_What_How.html" title="NEDİR? NASIL ÇALIŞIR?" rel="category">NEDİR? NASIL ÇALIŞIR?</a></li>
+                            <li><a href="29_Announcements.html" title="DUYURULAR" rel="category">DUYURULAR</a></li>
+                            <li><a href="#" title="DESTEK" rel="category">DESTEK</a></li>
+                        </ul>
+                        <ul class="dfn-mobil-alt dfn-onlymobile-bottom d-lg-none">
+                            <li class="sitelang dropup">
+                                <a href="#" class="btn sitelang-btn dropdown-toggle" data-toggle="dropdown" data-value="">
+                                    <i class="icon-svg icon-svg-headersitelang"></i>
+                                    <span class="sitelang-lang-text">TÜRKÇE</span>
+                                </a>
+                                <div class="sitelang-dropdown dropdown-menu">
+                                    <a class="dropdown-item" href="#" data-value="TR">
+                                        <i class="icon-svg icon-svg-headersitelang"></i>
+                                        <span class="sitelang-lang-text">TÜRKÇE</span>
+                                    </a>
+                                    <a class="dropdown-item" href="#" data-value="EN">
+                                        <i class="icon-svg icon-svg-headersitelang"></i>
+                                        <span class="sitelang-lang-text">ENGLISH</span>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="btnarea" style="display: none !important;">
+                                <a class="logout" href="00_Home_Page.html" title="ÇIKIŞ YAPIN" rel="external nofollow">ÇIKIŞ YAPIN</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <!-- Navigasyon -->
+            <!-- User Area -->
+            <div class="header-navigation-resp col-3 d-flex justify-content-end">
+                <div class="header-navigation-signin" style="display: none !important;">
+                    <ul class="header-signin">
+                        <li class="header-signin-item"><a class="header-signin-register" href="01_Sign_Up.html" title="YENİ ÜYELİK" rel="bookmark">YENİ ÜYELİK</a></li>
+                        <li class="header-signin-item"><a class="header-signin-login" href="../tradepage/01_Login_Step_1.html" title="ÜYE GİRİŞİ" rel="bookmark">ÜYE GİRİŞİ</a></li>
+                    </ul>
+                </div>
+                <div class="header-navigation-search">
+                    <form class="header-search" autocomplete="off" novalidate>
+                        <input class="header-search-input" type="search" name="headersearch" placeholder="ARA" />
+                        <button class="header-search-button" type="submit"></button>
+                    </form>
+                </div>
+            </div>
+            <!-- User Area -->
+        </div>
+        <!-- Navigation End -->
+    </div>
+    <!-- Web Header -->
+
+</header>
+<div class="header-spacebottom"></div>
+<!-- Header End -->
+
+<!-- Page Title and Breadcrumb Start -->
+<section class="headbreadcrumb">
+    <div class="container">
+        <div class="row align-items-center">
+
+            <!-- Title -->
+            <div class="maincont-left col-6">
+                <nav aria-label="breadcrumb">
+                    <ol class="headbreadcrumb-title breadcrumb">
+                        <li class="breadcrumb-item">ARAŞTIRMA</li>
+                        <li class="breadcrumb-item">BLOG</li>
+                    </ol>
+                </nav>
+            </div>
+            <!-- Title -->
+            <!-- Breadcrumb -->
+            <div class="maincont-right col-6">
+                <nav aria-label="breadcrumb">
+                    <ol class="headbreadcrumb-breadcrumb breadcrumb">
+                        <li class="breadcrumb-item"><a href="#" title="" rel="category">Ana Sayfa</a></li>
+                        <li class="breadcrumb-item"><a href="#" title="" rel="category">Araştırma</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Blog</li>
+                    </ol>
+                </nav>
+            </div>
+            <!-- Breadcrumb -->
+
+        </div>
+    </div>
+</section>
+<!-- Page Title and Breadcrumb End -->
+
+<!-- Blog Detail Start -->
+<section class="research-section">
+<div class="container">
+<div class="row">
+
+    <!-- Tabs -->
+    <div class="sitetabs">
+        <div class="sitetabs-wrapper sitetabs-wrapper-01">
+            <ul class="sitetabslight nav nav-tabs">
+                <li class="nav-item"><a href="30_Research_Daily.html" class="nav-link"><span>GÜNLÜK BÜLTEN</span></a></li>
+                <li class="nav-item"><a href="31_Research_Weekly.html" class="nav-link"><span>HAFTALIK BÜLTEN</span></a></li>
+                <li class="nav-item"><a href="32_Research_Blog.html" class="nav-link active"><span>BLOG</span></a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- Tabs -->
+
+    <!-- Blog Detail Content Start -->
+    <div class="research-blog col-md-8 col-lg-9">
+
+        <!-- Blog Content -->
+        <div class="research-blog-detail research-content research-blog-content">
+            <div class="research-blog-detail-content">
+                <div class="blogheadtitlearea">
+                    <h2 class="boxtitle boxtitle-sm"><a href="#" title="" rel="bookmark">LINE, BLOCKCHAIN VE KRİPTO PARA DÖNÜŞÜMÜNE HAZIRLANIYOR</a></h2>
+                    <div class="blogdateandtagsbar">
+                        <ul class="blogdateandtagsbar-date">
+                            <li>04 AĞUSTOS 2019 PAZARTESİ</li>
+                            <li>13 YORUM, 95 OKUNMA</li>
+                        </ul>
+                        <ul class="blogdateandtagsbar-tags">
+                            <li><a class="urllink" href="#" title="ICO" rel="tag">#ICO</a></li>
+                            <li><a class="urllink" href="#" title="BITCOIN" rel="tag">#BITCOIN</a></li>
+                            <li><a class="urllink" href="#" title="YASAL" rel="tag">#YASAL</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="research-blog-detail-content">
+                    <div class="blogdetailimage">
+                        <img src="../assets/img/mainpage/elements/Blog_Content_Img_01_Detail.jpg" width="840" height="450" />
+                    </div>
+                    <div class="blogdetailcontent">
+                        <p>Kendi kripto para birimini yaratmaya çalışan Facebook, JPMorgan ve Wells Fargo'nun Blockchain atılımına Japon mesajlaşma uygulaması Line da eklendi. Blockchain ve kripto para alanında lider olmak için çalışma başlatan şirket, kendi kripto para birimiyle tescilli bir Blockchain ağını halka açacak. Line, hızlı bir şekilde hareket ediyor; ancak bunların tümü, hem kripto para birimini hem de Blockchain teknolojisini içerecek olan bir sonraki fintech dalgası için iyi oluşturulmuş planlarının bir parçası olacak.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac tincidunt justo. Aliquam sit amet posuere nisl, at blandit tellus. Nullam eget metus pharetra, mattis ligula quis, suscipit arcu. Praesent congue quam eu odio pulvinar ultrices. Pellentesque vel dui lacus. In dictum ornare mauris, in viverra purus vestibulum non. Donec enim ex, commodo vitae dignissim ut, lobortis non augue. Etiam sit amet tellus convallis, rhoncus orci at, euismod eros. Aenean eros ipsum, fermentum at ligula faucibus, sollicitudin hendrerit tellus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean placerat libero lacus, a dapibus diam fringilla ac. Fusce pulvinar mauris est, nec scelerisque arcu aliquam id. Morbi erat justo, consequat vitae nibh vel, imperdiet euismod nulla.</p>
+                        <p>Vestibulum leo quam, faucibus a elit ac, ornare tempus velit. Aliquam venenatis nunc aliquam sem tempor tincidunt. Aliquam erat volutpat. Integer ac velit quis nulla finibus mollis feugiat sed nibh. In id mollis ligula. Aliquam ullamcorper luctus enim nec placerat. Praesent molestie dui neque, non dignissim leo vestibulum quis. Nam et leo lacinia tortor iaculis tempus nec in lectus. Duis pharetra fermentum rhoncus. Nulla placerat tellus nec metus maximus, vitae facilisis enim dignissim. Suspendisse blandit leo aliquam ex aliquet consectetur. Suspendisse et lorem vitae est auctor tempus. Duis pellentesque ante at arcu viverra, ac ornare nisi commodo. Vestibulum efficitur nibh nec nunc consequat.</p>
+                    </div>
+                </div>
+                <div class="research-blog-detail-sharenavigation">
+                    <a href="#" class="navigationbackbutton"><i class="iconcircleback"></i> <span>Blog Ana Sayfası</span></a>
+                    <ul class="blogsharesocial-list">
+                        <li class="blogsharesocial-list-text"><span>Paylaş</span></li>
+                        <li class="blogsharesocial-list-item" data-toggle="tooltip" data-placement="top" title="Facebook'ta Paylaş"><a href="#" title="" rel="external nofollow"><i class="blogsharesocial-icon facebook"></i></a></li>
+                        <li class="blogsharesocial-list-item" data-toggle="tooltip" data-placement="top" title="Twitter'da Paylaş"><a href="#" title="" rel="external nofollow"><i class="blogsharesocial-icon twitter"></i></a></li>
+                        <li class="blogsharesocial-list-item" data-toggle="tooltip" data-placement="top" title="Linkedin'de Paylaş"><a href="#" title="" rel="external nofollow"><i class="blogsharesocial-icon linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Blog Content -->
+
+        <!-- Blog Comments -->
+        <div class="research-blog-comments research-content research-blog-content">
+            <h3 class="columntitle columntitle-sm titleleft bottomborder">YORUMLAR [32]</h3>
+
+            <!-- Write Area -->
+            <div class="research-blog-comments-writearea">
+                <div class="research-blog-comments-writearea-loginuser">
+                    <div class="blogcommentsuser">
+                        <div class="blogcommentsuser-avatar"><img src="../assets/img/global/svg/Unknown_Profile_Avatar_Icon.svg" width="200" height="200" alt="UserPic"></div>
+                        <div class="blogcommentsuser-textarea">
+                            <h5>ORCUN KILICASLAN</h5>
+                            <small>Yorum Yaz</small>
+                        </div>
+                    </div>
+                    <form class="formuinew" autocomplete="off" novalidate>
+                        <div class="form-group colorsetdarkblue">
+                            <textarea class="form-control" placeholder="Yorumunuz..." rows="" required></textarea>
+                        </div>
+                        <div class="form-group mb-0">
+                            <button type="button" class="btn btn-success maxwidth120">YORUMU GÖNDER</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- Write Area -->
+
+            <!-- Comments List -->
+            <ul class="research-blog-comments-list">
+                <li class="research-blog-comments-list-item">
+                    <div class="blogcommentsuser">
+                        <div class="blogcommentsuser-avatar"><img src="../assets/img/global/svg/Unknown_Profile_Avatar_Icon.svg" width="200" height="200" alt="UserPic"></div>
+                        <div class="blogcommentsuser-textarea">
+                            <h5>TEZCAN TURASAN</h5>
+                            <small>11 Aralık 2019 Pazartesi</small>
+                        </div>
+                    </div>
+                    <div class="formuinew">
+                        <div class="form-group">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pretium dui mauris, vel vehicula nulla mattis in. Nullam eu metus pellentesque, suscipit nisi non, laoreet tellus. Sed facilisis molestie turpis, ut convallis purus accumsan tincidunt. Nulla in sodales nunc vel consectetur nunc. Aliquam pharetra enim non ornare ultrices. Fusce ut quam nec purus mattis ultrices ac id nisl.</p>
+                        </div>
+                        <div class="form-group mb-0">
+                            <button type="button" class="btn btn-info maxwidth120">CEVAP YAZ</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="research-blog-comments-list-item">
+                    <div class="blogcommentsuser">
+                        <div class="blogcommentsuser-avatar"><img src="../assets/img/global/svg/Unknown_Profile_Avatar_Icon.svg" width="200" height="200" alt="UserPic"></div>
+                        <div class="blogcommentsuser-textarea">
+                            <h5>CEM ARI</h5>
+                            <small>11 Aralık 2019 Pazartesi</small>
+                        </div>
+                    </div>
+                    <div class="formuinew">
+                        <div class="form-group">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pretium dui mauris, vel vehicula nulla mattis in. Nullam eu metus pellentesque, suscipit nisi non, laoreet tellus. Sed facilisis molestie turpis, ut convallis purus accumsan tincidunt. Nulla in sodales nunc vel consectetur nunc. Aliquam pharetra enim non ornare ultrices. Fusce ut quam nec purus mattis ultrices ac id nisl.</p>
+                        </div>
+                        <div class="form-group colorsetdarkblue">
+                            <textarea class="form-control" placeholder="Cevabınız..." rows="" required></textarea>
+                        </div>
+                        <div class="form-group mb-0">
+                            <button type="button" class="btn btn-success maxwidth120">CEVABI GÖNDER</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="research-blog-comments-list-item">
+                    <div class="blogcommentsuser">
+                        <div class="blogcommentsuser-avatar"><img src="../assets/img/global/svg/Unknown_Profile_Avatar_Icon.svg" width="200" height="200" alt="UserPic"></div>
+                        <div class="blogcommentsuser-textarea">
+                            <h5>TUNGA ÇİT</h5>
+                            <small>11 Aralık 2019 Pazartesi</small>
+                        </div>
+                    </div>
+                    <div class="formuinew">
+                        <div class="form-group">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pretium dui mauris, vel vehicula nulla mattis in. Nullam eu metus pellentesque, suscipit nisi non, laoreet tellus. Sed facilisis molestie turpis, ut convallis purus accumsan tincidunt. Nulla in sodales nunc vel consectetur nunc. Aliquam pharetra enim non ornare ultrices. Fusce ut quam nec purus mattis ultrices ac id nisl.</p>
+                        </div>
+                        <div class="form-group mb-0">
+                            <button type="button" class="btn btn-info maxwidth120">CEVAP YAZ</button>
+                        </div>
+                    </div>
+                    <ul>
+                        <li>
+                            <div class="blogcommentsuser">
+                                <div class="blogcommentsuser-avatar"><img src="../assets/img/global/svg/Unknown_Profile_Avatar_Icon.svg" width="200" height="200" alt="UserPic"></div>
+                                <div class="blogcommentsuser-textarea">
+                                    <h5>ERKAN ULGEY</h5>
+                                    <small>11 Aralık 2019 Pazartesi</small>
+                                </div>
+                            </div>
+                            <div class="formuinew">
+                                <div class="form-group">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pretium dui mauris, vel vehicula nulla mattis in. Nullam eu metus pellentesque, suscipit nisi non, laoreet tellus. Sed facilisis molestie turpis, ut convallis purus accumsan tincidunt. Nulla in sodales nunc vel consectetur nunc. Aliquam pharetra enim non ornare ultrices. Fusce ut quam nec purus mattis ultrices ac id nisl.</p>
+                                </div>
+                                <div class="form-group mb-0">
+                                    <button type="button" class="btn btn-info maxwidth120">CEVAP YAZ</button>
+                                </div>
+                            </div>
+                            <ul>
+                                <li>
+                                    <div class="blogcommentsuser">
+                                        <div class="blogcommentsuser-avatar"><img src="../assets/img/global/svg/Unknown_Profile_Avatar_Icon.svg" width="200" height="200" alt="UserPic"></div>
+                                        <div class="blogcommentsuser-textarea">
+                                            <h5>ERKAN ULGEY</h5>
+                                            <small>11 Aralık 2019 Pazartesi</small>
+                                        </div>
+                                    </div>
+                                    <div class="formuinew">
+                                        <div class="form-group">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pretium dui mauris, vel vehicula nulla mattis in. Nullam eu metus pellentesque, suscipit nisi non, laoreet tellus. Sed facilisis molestie turpis, ut convallis purus accumsan tincidunt. Nulla in sodales nunc vel consectetur nunc. Aliquam pharetra enim non ornare ultrices. Fusce ut quam nec purus mattis ultrices ac id nisl.</p>
+                                        </div>
+                                        <div class="form-group mb-0">
+                                            <button type="button" class="btn btn-info maxwidth120">CEVAP YAZ</button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div class="blogcommentsuser">
+                                <div class="blogcommentsuser-avatar"><img src="../assets/img/global/svg/Unknown_Profile_Avatar_Icon.svg" width="200" height="200" alt="UserPic"></div>
+                                <div class="blogcommentsuser-textarea">
+                                    <h5>ERKAN ULGEY</h5>
+                                    <small>11 Aralık 2019 Pazartesi</small>
+                                </div>
+                            </div>
+                            <div class="formuinew">
+                                <div class="form-group">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pretium dui mauris, vel vehicula nulla mattis in. Nullam eu metus pellentesque, suscipit nisi non, laoreet tellus. Sed facilisis molestie turpis, ut convallis purus accumsan tincidunt. Nulla in sodales nunc vel consectetur nunc. Aliquam pharetra enim non ornare ultrices. Fusce ut quam nec purus mattis ultrices ac id nisl.</p>
+                                </div>
+                                <div class="form-group mb-0">
+                                    <button type="button" class="btn btn-info maxwidth120">CEVAP YAZ</button>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- Comments List -->
+
+        </div>
+        <!-- Blog Comments -->
+
+    </div>
+    <!-- Blog Detail Content End -->
+
+    <!-- Blog Slidebar Start -->
+    <div class="research-sidebar sidebar sidebar-mainpage col-md-4 col-lg-3">
+
+        <!-- Email Subscription -->
+        <form class="research-sidebar-subscription formuinew" autocomplete="off" novalidate>
+            <h3 class="columntitle columntitle-sm titleleft bottomborder">GELİŞMELERİ KAÇIRMA</h3>
+            <div class="form-group colorsetdarkblue colorsetbggray">
+                <input type="text" class="form-control" placeholder="E-POSTA ADRESİ" value="">
+            </div>
+            <div class="form-group fontsize20px">
+                <button type="button" class="btn btn-success maxwidth100100">ÜCRETSİZ ABONE OL</button>
+            </div>
+        </form>
+        <!-- Email Subscription -->
+        <!-- Blog Categories -->
+        <nav class="research-sidebar-navigasyon sidebar-navigasyon">
+            <h3 class="columntitle columntitle-sm titleleft bottomborder">KATEGORİLER</h3>
+            <ul class="sidebar-navigasyon-list nav flex-column nav-pills">
+                <li class="sidebar-navigasyon-list-item"><a class="nav-link" href="#" title="ICO" rel="category">ICO <span class="badge badge-secondary">128</span></a></li>
+                <li class="sidebar-navigasyon-list-item"><a class="nav-link" href="#" title="ALTCOIN" rel="category">ALTCOIN <span class="badge badge-secondary">92</span></a></li>
+                <li class="sidebar-navigasyon-list-item"><a class="nav-link active" href="#" title="BITCOIN" rel="category">BITCOIN <span class="badge badge-secondary">113</span></a></li>
+                <li class="sidebar-navigasyon-list-item"><a class="nav-link" href="#" title="ETHER" rel="category">ETHER <span class="badge badge-secondary">92</span></a></li>
+                <li class="sidebar-navigasyon-list-item"><a class="nav-link" href="#" title="YASAL" rel="category">YASAL <span class="badge badge-secondary">92</span></a></li>
+            </ul>
+        </nav>
+        <!-- Blog Categories -->
+        <!-- Most Readed Articles -->
+        <div class="research-sidebar-mostreaded">
+            <h3 class="columntitle columntitle-sm titleleft bottomborder">ÇOK OKUNAN YAZILAR</h3>
+            <ul class="research-sidebar-mostreaded-list">
+                <li class="research-sidebar-mostreaded-list-item">
+                    <h4 class="boxtitle boxtitle-xs"><a href="#" title="" rel="bookmark">Bitwise Yöneticilerinden Matt Hougan, SEC Kararıyla İlgili Açıklamalarda Bulundu</a></h4>
+                    <div class="blogdateandtagsbar">
+                        <ul class="blogdateandtagsbar-date">
+                            <li>04 Ağustos 2019 Pazartesi</li>
+                            <li>13 Yorum, 95 Okunma</li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="research-sidebar-mostreaded-list-item">
+                    <h4 class="boxtitle boxtitle-xs"><a href="#" title="" rel="bookmark">Güney Kore, Blockchain Destekli Sürücü Belgelerini Gündeme Alıyor</a></h4>
+                    <div class="blogdateandtagsbar">
+                        <ul class="blogdateandtagsbar-date">
+                            <li>04 Ağustos 2019 Pazartesi</li>
+                            <li>13 Yorum, 95 Okunma</li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="research-sidebar-mostreaded-list-item">
+                    <h4 class="boxtitle boxtitle-xs"><a href="#" title="" rel="bookmark">Venezula Merkez Bankası Bitcoin ve Ethereum'u elinde Tutacak</a></h4>
+                    <div class="blogdateandtagsbar">
+                        <ul class="blogdateandtagsbar-date">
+                            <li>04 Ağustos 2019 Pazartesi</li>
+                            <li>13 Yorum, 95 Okunma</li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="research-sidebar-mostreaded-list-item">
+                    <h4 class="boxtitle boxtitle-xs"><a href="#" title="" rel="bookmark">Bitwise Yöneticilerinden Matt Hougan, SEC Kararıyla İlgili Açıklamalarda Bulundu</a></h4>
+                    <div class="blogdateandtagsbar">
+                        <ul class="blogdateandtagsbar-date">
+                            <li>04 Ağustos 2019 Pazartesi</li>
+                            <li>13 Yorum, 95 Okunma</li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="research-sidebar-mostreaded-list-item">
+                    <h4 class="boxtitle boxtitle-xs"><a href="#" title="" rel="bookmark">Güney Kore, Blockchain Destekli Sürücü Belgelerini Gündeme Alıyor</a></h4>
+                    <div class="blogdateandtagsbar">
+                        <ul class="blogdateandtagsbar-date">
+                            <li>04 Ağustos 2019 Pazartesi</li>
+                            <li>13 Yorum, 95 Okunma</li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="research-sidebar-mostreaded-list-item">
+                    <h4 class="boxtitle boxtitle-xs"><a href="#" title="" rel="bookmark">Venezula Merkez Bankası Bitcoin ve Ethereum'u elinde Tutacak</a></h4>
+                    <div class="blogdateandtagsbar">
+                        <ul class="blogdateandtagsbar-date">
+                            <li>04 Ağustos 2019 Pazartesi</li>
+                            <li>13 Yorum, 95 Okunma</li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!-- Most Readed Articles -->
+
+    </div>
+    <!-- Blog Slidebar End -->
+
+</div>
+</div>
+</section>
+<!-- Blog Detail End -->
+
+<!-- Blog Other Entries Start -->
+<section class="research-section blog-other-section">
+<div class="container">
+<div class="row">
+
+    <!-- Blog Others Entries -->
+    <div class="research-blog-others research-content research-blog-content col-md-8 col-lg-9">
+        <h3 class="columntitle columntitle-sm titleleft bottomborder">İLGİNİZİ ÇEKEBİLİR</h3>
+
+        <!-- Blog Others List -->
+        <ul id="researchothersentries" class="research-blog-others-list owl-carousel owl-theme">
+
+            <li class="research-blog-others-list-item">
+                <a class="research-blog-others-list-image" href="33_Research_Blog_Detail_Logout.html" title="" rel="bookmark">
+                    <img src="../assets/img/mainpage/elements/Blog_Content_Img_01.jpg" width="205" height="154" alt="Image" />
+                </a>
+                <a href="33_Research_Blog_Detail_Logout.html" title="" rel="bookmark">
+                    <h3 class="research-blog-others-list-title">BITWISE YÖNETİCİLERİNDEN MATT HOUGAN, SEC KARARIYLA İLGİLİ AÇIKLAMA YAPTI</h3>
+                </a>
+                <div class="blogdateandmorebtn">
+                    <ul class="blogdateandmorebtn-date">
+                        <li>04 AĞUSTOS 2019 PAZARTESİ</li>
+                        <li>13 YORUM, 95 OKUNMA</li>
+                    </ul>
+                    <a class="blogdateandmorebtn-btn" href="33_Research_Blog_Detail_Logout.html" title="" rel="bookmark">
+                        <i class="iconcircleback"></i>
+                    </a>
+                </div>
+            </li>
+            <li class="research-blog-others-list-item">
+                <a class="research-blog-others-list-image" href="33_Research_Blog_Detail_Logout.html" title="" rel="bookmark">
+                    <img src="../assets/img/mainpage/elements/Blog_Content_Img_02.jpg" width="205" height="154" alt="Image" />
+                </a>
+                <a href="33_Research_Blog_Detail_Logout.html" title="" rel="bookmark">
+                    <h3 class="research-blog-others-list-title">VENEZULA MERKEZ BANKASI BITCOIN VE ETHEREUM'U ELİNDE TUTACAK</h3>
+                </a>
+                <div class="blogdateandmorebtn">
+                    <ul class="blogdateandmorebtn-date">
+                        <li>04 AĞUSTOS 2019 PAZARTESİ</li>
+                        <li>13 YORUM, 95 OKUNMA</li>
+                    </ul>
+                    <a class="blogdateandmorebtn-btn" href="33_Research_Blog_Detail_Logout.html" title="" rel="bookmark">
+                        <i class="iconcircleback"></i>
+                    </a>
+                </div>
+            </li>
+            <li class="research-blog-others-list-item">
+                <a class="research-blog-others-list-image" href="33_Research_Blog_Detail_Logout.html" title="" rel="bookmark">
+                    <img src="../assets/img/mainpage/elements/Blog_Content_Img_03.jpg" width="205" height="154" alt="Image" />
+                </a>
+                <a href="33_Research_Blog_Detail_Logout.html" title="" rel="bookmark">
+                    <h3 class="research-blog-others-list-title">GÜNEY KORE, BLOCKCHAIN DESTEKLİ SÜRÜCÜ BELGELERİNİ GÜNDEME ALIYOR</h3>
+                </a>
+                <div class="blogdateandmorebtn">
+                    <ul class="blogdateandmorebtn-date">
+                        <li>04 AĞUSTOS 2019 PAZARTESİ</li>
+                        <li>13 YORUM, 95 OKUNMA</li>
+                    </ul>
+                    <a class="blogdateandmorebtn-btn" href="33_Research_Blog_Detail_Logout.html" title="" rel="bookmark">
+                        <i class="iconcircleback"></i>
+                    </a>
+                </div>
+            </li>
+            <li class="research-blog-others-list-item">
+                <a class="research-blog-others-list-image" href="33_Research_Blog_Detail_Logout.html" title="" rel="bookmark">
+                    <img src="../assets/img/mainpage/elements/Blog_Content_Img_02.jpg" width="205" height="154" alt="Image" />
+                </a>
+                <a href="33_Research_Blog_Detail_Logout.html" title="" rel="bookmark">
+                    <h3 class="research-blog-others-list-title">BITWISE YÖNETİCİLERİNDEN MATT HOUGAN, SEC KARARIYLA İLGİLİ AÇIKLAMA YAPTI</h3>
+                </a>
+                <div class="blogdateandmorebtn">
+                    <ul class="blogdateandmorebtn-date">
+                        <li>04 AĞUSTOS 2019 PAZARTESİ</li>
+                        <li>13 YORUM, 95 OKUNMA</li>
+                    </ul>
+                    <a class="blogdateandmorebtn-btn" href="33_Research_Blog_Detail_Logout.html" title="" rel="bookmark">
+                        <i class="iconcircleback"></i>
+                    </a>
+                </div>
+            </li>
+
+        </ul>
+        <!-- Blog Others List -->
+
+    </div>
+    <!-- Blog Others Entries -->
+
+</div>
+</div>
+</section>
+<!-- Blog Other Entries End -->
+
+<!-- Footer Start -->
+<footer class="footer footer-tradepage">
+    <!-- Footer Top -->
+    <div class="container">
+        <div class="row">
+
+            <!-- Address -->
+            <div class="maincont-left col-2">
+                <div class="footer-tradepage-address">
+                    <a class="footer-tradepage-logo" href="#" title="ICRYPEX Crypto Exchange" rel="bookmark">
+                        <i class="footer-tradepage-logo-symbol icon-svg icon-svg-icrypexsymbol"></i>
+                        <h1 class="footer-tradepage-logo-icrypex">ICRYPEX</h1>
+                        <h2 class="footer-tradepage-logo-cryptoexchange">CRYPTO EXCHANGE</h2>
+                    </a>
+                    <p class="footer-tradepage-address-desc mt-0">Tüm Hakları Saklıdır © 2018-2019 <br class="d-none d-lg-block" />Icrypex Crypto Exchange</p>
+                    <p class="footer-tradepage-address-desc">Icrypex Bilişim A.Ş. <br class="d-none d-lg-block" />Maslak Mah. Maslak Meydan Sok. <br class="d-none d-lg-block" />Spring Giz Plaza N:5/57 <br class="d-none d-lg-block" />34398 Sarıyer/İstanbul</p>
+                    <p class="footer-tradepage-address-desc"><span>Müşteri Hizmetleri: </span><a href="tel:08502551079" title="Müşteri Hizmetleri" rel="external nofollow">0850 255 1079</a></p>
+                </div>
+            </div>
+            <!-- Address -->
+            <!-- Navigation -->
+            <div class="maincont-right col-10">
+                <div class="footer-tradepage-loginnav" style="display: none !important;">
+                    <ul class="footer-tradepage-loginnav-list">
+                        <li class="footer-tradepage-loginnav-list-item"><a href="../tradepage/04_Easy_Buy_Sell.html" title="" rel="category">KOLAY AL-SAT</a></li>
+                        <li class="footer-tradepage-loginnav-list-item"><a href="../tradepage/03_Trader_Home_2.html" title="" rel="category">PRO GÖRÜNÜM</a></li>
+                        <li class="footer-tradepage-loginnav-list-item"><a href="../tradepage/05_Deposit_Step_1_Home.html" title="" rel="category">YATIRMA</a></li>
+                        <li class="footer-tradepage-loginnav-list-item"><a href="../tradepage/12_Withdraw_Step_1_Home.html" title="" rel="category">ÇEKME</a></li>
+                        <li class="footer-tradepage-loginnav-list-item"><a href="../tradepage/27_Profile_Profile.html" title="" rel="category">HESABIM</a></li>
+                        <li class="footer-tradepage-loginnav-list-item"><a href="#" title="" rel="category">DESTEK</a></li>
+                    </ul>
+                    <ul class="footer-tradepage-loginnav-list linkgray">
+                        <li class="footer-tradepage-loginnav-list-item d-none"><a href="#" title="" rel="category">CANLI YARDIM</a></li>
+                        <li class="footer-tradepage-loginnav-list-item d-none"><a href="#" title="" rel="category">RENK</a></li>
+                        <li class="footer-tradepage-loginnav-list-item pl-0"><a href="../tradepage/25_Profile_Notification.html" title="" rel="category">BİLDİRİMLER</a></li>
+                        <li class="footer-tradepage-loginnav-list-item"><a href="../tradepage/27_Profile_Profile.html" title="" rel="category">AYARLAR</a></li>
+                    </ul>
+                </div>
+                <div class="footer-tradepage-nav row justify-content-md-center">
+                    <div class="footer-menu col">
+                        <div class="footer-underlinehover">
+                            <h6 class="footer-menu-title columntitle columntitle-xs bottomborder titleleft">ÖZELLİKLER</h6>
+                            <ul class="footer-menu-list">
+                                <li class="footer-menu-list-item"><a href="02_Features_Products.html" title="" rel="category">ÜRÜNLER</a></li>
+                                <li class="footer-menu-list-item"><a href="07_Features_Commision.html" title="" rel="category">KOMİSYONLAR</a></li>
+                                <li class="footer-menu-list-item"><a href="08_Features_Limit.html" title="" rel="category">LİMİTLER</a></li>
+                                <li class="footer-menu-list-item"><a href="09_Features_Security.html" title="" rel="category">GÜVENLİK</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-menu col">
+                        <div class="footer-underlinehover">
+                            <h6 class="footer-menu-title columntitle columntitle-xs bottomborder titleleft">TEKNOLOJİ</h6>
+                            <ul class="footer-menu-list">
+                                <li class="footer-menu-list-item"><a href="10_Technology_Chain_Summary.html" title="" rel="category">ZİNCİR VERİ TABANI</a></li>
+                                <li class="footer-menu-list-item"><a href="16_Technology_Api.html" title="" rel="category">API</a></li>
+                                <li class="footer-menu-list-item"><a href="17_Technology_Converter.html" title="" rel="category">KRİPTO PARA ÇEVİRİCİ</a></li>
+                                <li class="footer-menu-list-item"><a href="18_Technology_Mining.html" title="" rel="category">MADENCİLİK</a></li>
+                                <li class="footer-menu-list-item"><a href="19_Technology_Multiple.html" title="" rel="category">ÇOKLU GÖNDERİM</a></li>
+                                <li class="footer-menu-list-item"><a href="20_Technology_Segwit.html" title="" rel="category">SEGWIT</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-menu col">
+                        <div class="footer-underlinehover">
+                            <h6 class="footer-menu-title columntitle columntitle-xs bottomborder titleleft">ŞİRKET</h6>
+                            <ul class="footer-menu-list">
+                                <li class="footer-menu-list-item"><a href="21_Company_About.html" title="" rel="category">HAKKIMIZDA</a></li>
+                                <li class="footer-menu-list-item"><a href="22_Company_Legal_Terms_01.html" title="" rel="category">YASAL</a></li>
+                                <li class="footer-menu-list-item"><a href="27_Company_Contact.html" title="" rel="category">BİZE ULAŞIN</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-menu col">
+                        <div class="footer-underlinehover">
+                            <h6 class="footer-menu-title columntitle columntitle-xs bottomborder titleleft"><a href="28_What_How.html" title="" rel="category">NEDİR? NASIL ÇALIŞIR?</a></h6>
+                        </div>
+                        <div class="footer-underlinehover">
+                            <h6 class="footer-menu-title columntitle columntitle-xs bottomborder titleleft"><a href="29_Announcements.html" title="" rel="category">DUYURULAR</a></h6>
+                        </div>
+                        <div class="footer-underlinehover">
+                            <h6 class="footer-menu-title columntitle columntitle-xs bottomborder titleleft"><a href="#" title="" rel="category">DESTEK</a></h6>
+                        </div>
+                    </div>
+                    <div class="footer-menu col">
+                        <h6 class="footer-menu-title columntitle columntitle-xs bottomborder titleleft">BİZİ TAKİP EDİN</h6>
+                        <ul class="footer-social-list footer-tradepage-social-list">
+                            <li class="footer-social-list-item" data-toggle="tooltip" data-placement="top" title="Facebook'ta Takip Edin"><a href="#" title="" rel="external nofollow"><i class="footer-social-icon facebook"></i></a></li>
+                            <li class="footer-social-list-item" data-toggle="tooltip" data-placement="top" title="Twitter'da Takip Edin"><a href="#" title="" rel="external nofollow"><i class="footer-social-icon twitter"></i></a></li>
+                            <li class="footer-social-list-item" data-toggle="tooltip" data-placement="top" title="Instagram'da Takip Edin"><a href="#" title="" rel="external nofollow"><i class="footer-social-icon instagram"></i></a></li>
+                            <li class="footer-social-list-item" data-toggle="tooltip" data-placement="top" title="Linkedin'de Takip Edin"><a href="#" title="" rel="external nofollow"><i class="footer-social-icon linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Navigation -->
+
+        </div>
+    </div>
+    <!-- Footer Top -->
+    <!-- Bottom -->
+    <div class="footer-tradepage-bottom">
+        <ul class="footer-tradepage-bottom-list">
+            <li class="footer-tradepage-bottom-list-item"><img class="akbank" src="../assets/img/tradepage/footer/Akbank_Logo.svg" alt="Akbank" width="76" height="10" /></li>
+            <li class="footer-tradepage-bottom-list-item"><img class="ziraat" src="../assets/img/tradepage/footer/Ziraat_Logo.svg" alt="Ziraat Bankası" width="99" height="20" /></li>
+            <li class="footer-tradepage-bottom-list-item"><img class="odeabank" src="../assets/img/tradepage/footer/Odeabank_Logo.svg" alt="Odeabank" width="75" height="14" /></li>
+            <li class="footer-tradepage-bottom-list-item"><img class="papara" src="../assets/img/tradepage/footer/Papara_Logo.svg" alt="Papara" width="54" height="14" /></li>
+        </ul>
+    </div>
+    <!-- Bottom -->
+</footer>
+<!-- Footer End -->
+
+<!-- Plugins Start -->
+<script id="script-owl-carousel" src="../assets/vendor/owl.carousel/dist/owl.carousel.min.js"></script>
+<script id="script-inputmask" src="../assets/vendor/inputmask/dist/min/jquery.inputmask.bundle.min.js"></script>
+<script id="script-plugin-app" src="../assets/dist/js/plugin-app.js"></script>
+<script id="script-mainpage-app" src="../assets/dist/js/mainpage-app.js"></script>
+<script id="script-plugin-custom" src="../assets/cdn/plugin-custom-pagemain.js"></script>
+<!-- Plugins End -->
+
+</body>
+</html>
