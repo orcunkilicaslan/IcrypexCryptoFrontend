@@ -324,6 +324,13 @@ $globalSvgIconImgPath : "../../img/global/svg";
         .commentswriteareabuttons{
           max-width: 400px;
           margin: 15px auto 0;
+
+          .btn{
+            font-size: 20px !important;
+            padding-top: 4px !important;
+            padding-bottom: 4px !important;
+            height: 40px !important;
+          }
         }
       }
 
