@@ -55,11 +55,7 @@
   }
 
   &-sidebar{
-    margin-top: 15px;
-
-    @include ReSassWidthResponsive(992){
-      margin-top: 25px;
-    }
+    margin-top: 25px;
 
     &-subscription{
       .form-group{
