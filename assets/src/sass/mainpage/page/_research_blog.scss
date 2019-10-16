@@ -9,9 +9,18 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
     &-content{
       .blogheadtitlearea{
-        *[class*="boxtitle "]{
+        *[class*="boxtitle"]{
           color: $global-clr-dark-blue;
           padding-bottom: 7px;
+        }
+
+        *[class*="boxtitle"] > a{
+          color: $global-clr-dark-blue;
+          @include transition(color, 0.3s, ease-in-out);
+
+          &:hover{
+            color: $global-clr-soft-blue;
+          }
         }
 
         .blogdateandtagsbar{
@@ -196,6 +205,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
           align-items: center;
           font-size: 17px;
           padding-right: 10px;
+          text-decoration: none !important;
           position: relative;
           top: -3px;
           z-index: 1;
@@ -432,6 +442,15 @@ $globalSvgIconImgPath : "../../img/global/svg";
         &-title{
           font-size: 17px;
           margin-bottom: 7px;
+
+          > a{
+            color: $global-clr-dark-blue;
+            @include transition(color, 0.3s, ease-in-out);
+
+            &:hover{
+              color: $global-clr-soft-blue;
+            }
+          }
         }
 
         .blogdateandmorebtn{

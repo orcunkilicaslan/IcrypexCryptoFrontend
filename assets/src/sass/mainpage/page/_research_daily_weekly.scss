@@ -26,12 +26,18 @@
       justify-content: center;
 
       > span{
-        //width: 100%;
         display: block;
         text-align: center;
         text-transform: uppercase !important;
         white-space: nowrap;
         margin-right: 5px;
+      }
+
+      i[class*="siteiconsdropdown"]{
+        @include transition(background, 0.1s, ease-in-out);
+        &:hover{
+          background-color: darken($global-clr-light-gray, 5%);
+        }
       }
 
       .datepicker{
