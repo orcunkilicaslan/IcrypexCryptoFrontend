@@ -85,7 +85,11 @@
       }
     }
 
-    &-navigasyon{}
+    &-navigasyon{
+      ul[class*="navigasyon-list"]{
+        margin-bottom: 20px;
+      }
+    }
 
     &-mostreaded{
       &-list{
@@ -100,8 +104,14 @@
 
           .boxtitle{
             margin-bottom: 10px;
+
             > a{
               color: $global-clr-dark-blue;
+              @include transition(color, 0.3s, ease-in-out);
+
+              &:hover{
+                color: $global-clr-soft-blue;
+              }
             }
           }
 
