@@ -31,10 +31,13 @@ $globalSvgIconImgPath : "../../img/global/svg";
         align-items: center;
         color: $global-clr-white;
 
-        .maincont-left{
+        > .maincont-left{
+          flex: 0 0 20%;
+          max-width: 20%;
+
           @include ReSassWidthResponsive(1200){
-            flex: 0 0 15%;
-            max-width: 15%;
+            flex: 0 0 18%;
+            max-width: 18%;
           }
           @include ReSassWidthResponsive(992){
             flex: 0 0 20%;
@@ -50,10 +53,13 @@ $globalSvgIconImgPath : "../../img/global/svg";
           }
         }
 
-        .maincont-right{
+        > .maincont-right{
+          flex: 0 0 80%;
+          max-width: 80%;
+
           @include ReSassWidthResponsive(1200){
-            flex: 0 0 85%;
-            max-width: 85%;
+            flex: 0 0 82%;
+            max-width: 82%;
           }
           @include ReSassWidthResponsive(992){
             flex: 0 0 80%;
@@ -66,6 +72,96 @@ $globalSvgIconImgPath : "../../img/global/svg";
           @include ReSassWidthResponsive(576){
             flex: 0 0 calc(100% - 130px);
             max-width: calc(100% - 130px);
+          }
+        }
+
+        &-selectweb{
+          display: inline-flex;
+          align-items: center;
+          height: 60px;
+          cursor: pointer;
+
+          @include ReSassWidthResponsive(1400){
+            height: 54px;
+          }
+          @include ReSassWidthResponsive(992){
+            display: none !important;
+          }
+
+          .coinicons{
+            display: flex;
+            align-items: center;
+            margin-right: 5px;
+
+            i[class*="icon-svg"]{
+              background-color: $global-clr-btn-blue;
+              display: block;
+              position: relative;
+              width: 35px;
+              height: 35px;
+              @include border-radius(50%);
+
+              @include ReSassWidthResponsive(1200){
+                width: 30px;
+                height: 30px;
+              }
+              @include ReSassWidthResponsive(400){
+                width: 24px;
+                height: 24px;
+              }
+
+              &:first-child{
+                z-index: 1;
+              }
+              &:last-child{
+                z-index: 0;
+                margin-left: -5px;
+              }
+            }
+
+            i[class*="btc"]{
+              background-color: transparentize($global-clr-currency-btc, 0.15);
+            }
+            i[class*="ltc"]{
+              background-color: transparentize($global-clr-currency-ltc, 0.15);
+            }
+            i[class*="eth"]{
+              background-color: transparentize($global-clr-currency-eth, 0.15);
+            }
+            i[class*="xrp"]{
+              background-color: transparentize($global-clr-currency-xrp, 0.15);
+            }
+            i[class*="mpay"]{
+              background-color: transparentize($global-clr-currency-mpay, 0.15);
+            }
+          }
+
+          .currencytext{
+            font-size: 45px;
+            font-weight: 300;
+            letter-spacing: -0.9px;
+            min-width: 130px;
+
+            @include ReSassWidthResponsive(1400){
+              font-size: 40px;
+            }
+            @include ReSassWidthResponsive(1200){
+              font-size: 33px;
+              min-width: 105px;
+            }
+            @include ReSassWidthResponsive(400){
+              font-size: 25px;
+              min-width: 80px;
+            }
+          }
+        }
+
+        &-selectmobile{
+          margin-bottom: 0 !important;
+          display: none !important;
+
+          @include ReSassWidthResponsive(992){
+            display: flex !important;
           }
         }
 
@@ -157,8 +253,8 @@ $globalSvgIconImgPath : "../../img/global/svg";
             }
 
             &-item{
-              padding-right: 20px;
-              padding-left: 20px;
+              padding-right: 17px;
+              padding-left: 17px;
 
               @include ReSassWidthResponsive(1400){
                 padding-right: 15px;
