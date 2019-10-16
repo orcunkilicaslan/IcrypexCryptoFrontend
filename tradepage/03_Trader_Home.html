@@ -220,7 +220,15 @@
                     <!-- Select -->
                     <div class="maincont-left col-2">
                         <form class="formuinew">
-                            <div class="form-group colorsetwhite fontsize20px d-flex mb-0">
+
+                            <!-- Coin/Currency Web -->
+                            <div class="header-stats-price-big-selectweb">
+                                <span class="coinicons"><i class="icon-svg icon-svg-currencyiconmpay"></i><i class="icon-svg icon-svg-currencyiconusd"></i></span>
+                                <span class="currencytext"><span class="selectcoin">MPAY</span>/<span class="selectcurrency">USD</span></span>
+                            </div>
+                            <!-- Coin/Currency Web -->
+                            <!-- Coin/Currency Select Mobile -->
+                            <div class="header-stats-price-big-selectmobile form-group colorsetwhite fontsize20px d-flex mb-0">
                                 <select class="header-stats-price-big-select selectcoin col form-control custom-select">
                                     <option value="0">BTC</option>
                                     <option value="1">ETH</option>
@@ -233,6 +241,8 @@
                                     <option value="2">TRY</option>
                                 </select>
                             </div>
+                            <!-- Coin/Currency Select Mobile -->
+
                         </form>
                     </div>
                     <!-- Select -->
@@ -292,7 +302,7 @@
             <div class="sidebar sidebar-tradepage maincont-left col-2">
                 <div class="sidebar-marketdata">
                     <h2 class="boxtitle boxtitle-sm">MARKET VERİLERİ</h2>
-                    <table id="sidebarmarketdataowltable" class="sidebar-marketdata-table sitetable table">
+                    <table id="sidebarmarketdataowltable" class="sidebar-marketdata-table sitetable table sitetableweburllink">
                         <thead>
                         <tr>
                             <th class="sidebar-marketdata-table-symbol">SYMBOL</th>
@@ -301,83 +311,94 @@
                         </tr>
                         </thead>
                         <tbody>
-                        <tr>
+                        <tr data-href="#">
                             <td data-title="SYMBOL" class="sidebar-marketdata-table-symbol"><i id="ar-BTCUSD" class="arrow arrowdown"></i> BTCUSD </td>
                             <td data-title="BID" class="sidebar-marketdata-table-bid sitecolorred" id="b-BTCUSD">10243.4</td>
                             <td data-title="ASK" class="sidebar-marketdata-table-ask sitecolorred" id="a-BTCUSD">10281.4</td>
                         </tr>
-                        <tr>
+                        <tr data-href="#">
                             <td data-title="SYMBOL" class="sidebar-marketdata-table-symbol"><i id="ar-BTCEUR" class="arrow arrowdown"></i> BTCEUR </td>
                             <td data-title="BID" class="sidebar-marketdata-table-bid sitecolorred" id="b-BTCEUR">9273.79</td>
                             <td data-title="ASK" class="sidebar-marketdata-table-ask sitecolorred" id="a-BTCEUR">9308.2</td>
                         </tr>
-                        <tr>
+                        <tr data-href="#">
                             <td data-title="SYMBOL" class="sidebar-marketdata-table-symbol"><i id="ar-BTCTRY" class="arrow arrowup"></i> BTCTRY </td>
                             <td data-title="BID" class="sidebar-marketdata-table-bid sitecolorred" id="b-BTCTRY">59075.8</td>
                             <td data-title="ASK" class="sidebar-marketdata-table-ask sitecolorgreen" id="a-BTCTRY">59294.9</td>
                         </tr>
-                        <tr>
+                        <tr data-href="#">
                             <td data-title="SYMBOL" class="sidebar-marketdata-table-symbol"><i id="ar-ETHUSD" class="arrow arrowup"></i> ETHUSD </td>
                             <td data-title="BID" class="sidebar-marketdata-table-bid sitecolorgreen" id="b-ETHUSD">180.17</td>
                             <td data-title="ASK" class="sidebar-marketdata-table-ask sitecolorgreen" id="a-ETHUSD">182.45</td>
                         </tr>
-                        <tr>
+                        <tr data-href="#">
                             <td data-title="SYMBOL" class="sidebar-marketdata-table-symbol"><i id="ar-ETHEUR" class="arrow arrowup"></i> ETHEUR </td>
                             <td data-title="BID" class="sidebar-marketdata-table-bid sitecolorgreen" id="b-ETHEUR">163.116</td>
                             <td data-title="ASK" class="sidebar-marketdata-table-ask sitecolorgreen" id="a-ETHEUR">165.18</td>
                         </tr>
-                        <tr>
+                        <tr data-href="#">
                             <td data-title="SYMBOL" class="sidebar-marketdata-table-symbol"><i id="ar-ETHTRY" class="arrow arrowup"></i> ETHTRY </td>
                             <td data-title="BID" class="sidebar-marketdata-table-bid sitecolorgreen" id="b-ETHTRY">1039.08</td>
                             <td data-title="ASK" class="sidebar-marketdata-table-ask sitecolorgreen" id="a-ETHTRY">1052.23</td>
                         </tr>
-                        <tr>
+                        <tr data-href="#">
                             <td data-title="SYMBOL" class="sidebar-marketdata-table-symbol"><i id="ar-LTCUSD" class="arrow arrowup"></i> LTCUSD </td>
                             <td data-title="BID" class="sidebar-marketdata-table-bid sitecolorred" id="b-LTCUSD">70.51</td>
                             <td data-title="ASK" class="sidebar-marketdata-table-ask sitecolorgreen" id="a-LTCUSD">71.15</td>
                         </tr>
-                        <tr>
+                        <tr data-href="#">
                             <td data-title="SYMBOL" class="sidebar-marketdata-table-symbol"><i id="ar-LTCEUR" class="arrow arrowdown"></i> LTCEUR </td>
                             <td data-title="BID" class="sidebar-marketdata-table-bid sitecolorred" id="b-LTCEUR">63.836</td>
                             <td data-title="ASK" class="sidebar-marketdata-table-ask sitecolorred" id="a-LTCEUR">64.4154</td>
                         </tr>
-                        <tr>
+                        <tr data-href="#">
                             <td data-title="SYMBOL" class="sidebar-marketdata-table-symbol"><i id="ar-LTCTRY" class="arrow arrowup"></i> LTCTRY </td>
                             <td data-title="BID" class="sidebar-marketdata-table-bid sitecolorred" id="b-LTCTRY">406.647</td>
                             <td data-title="ASK" class="sidebar-marketdata-table-ask sitecolorgreen" id="a-LTCTRY">410.338</td>
                         </tr>
-                        <tr>
+                        <tr data-href="#">
                             <td data-title="SYMBOL" class="sidebar-marketdata-table-symbol"><i id="ar-XRPUSD" class="arrow arrowdown"></i> XRPUSD </td>
                             <td data-title="BID" class="sidebar-marketdata-table-bid sitecolorred" id="b-XRPUSD">0.25697</td>
                             <td data-title="ASK" class="sidebar-marketdata-table-ask sitecolorred" id="a-XRPUSD">0.26216</td>
                         </tr>
-                        <tr>
+                        <tr data-href="#">
                             <td data-title="SYMBOL" class="sidebar-marketdata-table-symbol"><i id="ar-XRPEUR" class="arrow arrowdown"></i> XRPEUR </td>
                             <td data-title="BID" class="sidebar-marketdata-table-bid sitecolorred" id="b-XRPEUR">0.232647</td>
                             <td data-title="ASK" class="sidebar-marketdata-table-ask sitecolorred" id="a-XRPEUR">0.237346</td>
                         </tr>
-                        <tr>
+                        <tr data-href="#">
                             <td data-title="SYMBOL" class="sidebar-marketdata-table-symbol"><i id="ar-XRPTRY" class="arrow arrowup"></i> XRPTRY </td>
                             <td data-title="BID" class="sidebar-marketdata-table-bid sitecolorgreen" id="b-XRPTRY">1.482</td>
                             <td data-title="ASK" class="sidebar-marketdata-table-ask sitecolorgreen" id="a-XRPTRY">1.51193</td>
                         </tr>
-                        <tr>
+                        <tr data-href="#">
                             <td data-title="SYMBOL" class="sidebar-marketdata-table-symbol"><i id="ar-USDTRY" class="arrow arrowup"></i> USDTRY </td>
                             <td data-title="BID" class="sidebar-marketdata-table-bid sitecolorgreen" id="b-USDTRY">5.76722</td>
                             <td data-title="ASK" class="sidebar-marketdata-table-ask sitecolorgreen" id="a-USDTRY">5.76722</td>
                         </tr>
-                        <tr>
+                        <tr data-href="#">
                             <td data-title="SYMBOL" class="sidebar-marketdata-table-symbol"><i id="ar-EURTRY" class="arrow arrowup"></i> EURTRY </td>
                             <td data-title="BID" class="sidebar-marketdata-table-bid sitecolorgreen" id="b-EURTRY">6.37183</td>
                             <td data-title="ASK" class="sidebar-marketdata-table-ask sitecolorgreen" id="a-EURTRY">6.37318</td>
                         </tr>
-                        <tr>
+                        <tr data-href="#">
                             <td data-title="SYMBOL" class="sidebar-marketdata-table-symbol"><i id="ar-MPAYUSD" class="arrow arrowup"></i> MPAYUSD </td>
                             <td data-title="BID" class="sidebar-marketdata-table-bid sitecolorgreen" id="b-MPAYUSD">-</td>
                             <td data-title="ASK" class="sidebar-marketdata-table-ask sitecolorgreen" id="a-MPAYUSD">-</td>
                         </tr>
                         </tbody>
                     </table>
+                    <script>
+                        $(window).on("load resize",function(e){
+                            if($(window).width() >= 992){
+                                $(document).ready(function() {
+                                    $('.sitetableweburllink tr[data-href]').on("click", function() {
+                                        document.location = $(this).data('href');
+                                    });
+                                });
+                            }
+                        });
+                    </script>
                 </div>
             </div>
             <!-- Market Data End -->
