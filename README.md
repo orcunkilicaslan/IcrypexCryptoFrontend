@@ -106,6 +106,7 @@
  - [11_Eml_Contact_Mail](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/email-system/11_Eml_Contact_Mail.html)
  - [12_Eml_Welcome_LP](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/email-system/12_Eml_Welcome_LP.html)
  - [13_Eml_Call_Center_Fails_to_Reach_Information](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/email-system/13_Eml_Call_Center_Fails_to_Reach_Information.html)
+ - [99_Eml_Table_Cell_Icon_v1](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/email-system/99_Eml_Table_Cell_Icon_v1.html)
  
  
  #### Marketing E-Mail Template List
