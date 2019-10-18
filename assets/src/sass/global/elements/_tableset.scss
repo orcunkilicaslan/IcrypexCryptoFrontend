@@ -208,10 +208,26 @@ $globalSvgIconImgPath : "../../img/global/svg";
                 }
               }
             }
+
+            &.selectcell{
+              background-color: $global-clr-soft-blue;
+
+              td{
+                color: $global-clr-white !important;
+                border-color: $global-clr-soft-blue;
+
+                i.arrowup{
+                  border-bottom-color: $global-clr-white !important;
+                }
+                i.arrowdown{
+                  border-top-color: $global-clr-white !important;
+                }
+              }
+            }
           }
         }
       }
-      
+
     }
   }
 }

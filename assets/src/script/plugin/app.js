@@ -140,7 +140,7 @@ $(function(){
 
 /* Form UI Tooltip */
 $(document).ready(function(){
-    $('.formuitooltipgrayautowidth').tooltip({container: ".formuinew-tooltipgrayautowidth", html: true, placement: "bottom" });
+    $('.formuitooltipgrayautowidth').tooltip({container: ".formuinew-tooltipgrayautowidth"});
 });
 /* Form UI Tooltip */
 
