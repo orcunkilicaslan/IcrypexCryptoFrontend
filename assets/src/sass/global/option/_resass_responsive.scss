@@ -82,6 +82,12 @@
 // Min Width Responsive
 @mixin ReSassMinWidthResponsive( $point ) {
 
+	@if $point==992 {
+		@media ( min-width: 992px ) {
+			@content;
+		}
+	}
+
 	@if $point==1200 {
 		@media ( min-width: 1200px ) {
 			@content;

@@ -138,6 +138,12 @@ $(function(){
 });
 /* Tooltip */
 
+/* Form UI Tooltip */
+$(document).ready(function(){
+    $('.formuitooltipgrayautowidth').tooltip({container: ".formuinew-tooltipgrayautowidth", html: true, placement: "bottom" });
+});
+/* Form UI Tooltip */
+
 /* Input Mask */
 $(document).ready(function(){
     $('.inputphonemask').inputmask({
