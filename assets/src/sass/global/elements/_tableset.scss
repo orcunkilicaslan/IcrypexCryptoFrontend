@@ -186,23 +186,32 @@ $globalSvgIconImgPath : "../../img/global/svg";
     }
 
     &weburllink{
-      tbody{
-        tr{
-          cursor: pointer;
-          @include transition(background, 0.1s, ease-in-out);
 
-          &:hover{
-            background-color: $global-clr-light-gray;
-          }
+      @include ReSassMinWidthResponsive(992){
+        tbody{
+          tr{
+            cursor: pointer;
+            @include transition(background, 0.1s, ease-in-out);
 
-          @include ReSassWidthResponsive(992){
-            cursor: auto;
             &:hover{
-              background-color: inherit;
+              background-color: $global-clr-soft-blue;
+
+              td{
+                color: $global-clr-white !important;
+                border-color: $global-clr-soft-blue;
+
+                i.arrowup{
+                  border-bottom-color: $global-clr-white !important;
+                }
+                i.arrowdown{
+                  border-top-color: $global-clr-white !important;
+                }
+              }
             }
           }
         }
       }
+      
     }
   }
 }
