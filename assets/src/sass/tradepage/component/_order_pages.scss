@@ -677,6 +677,10 @@ $globalSvgIconImgPath : "../../img/global/svg";
           margin-right: 3px;
         }
 
+        td, th{
+          white-space: nowrap;
+        }
+
         tbody{
 
           @include ReSassWidthResponsive(768){
@@ -728,6 +732,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
               &.order-open-table-edit{
                 width: 180px;
+                display: flex;
 
                 @include ReSassWidthResponsive(768){
                   width: 100%;
