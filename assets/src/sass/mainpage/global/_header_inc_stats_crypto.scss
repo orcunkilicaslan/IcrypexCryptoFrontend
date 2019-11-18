@@ -32,8 +32,8 @@ $globalSvgIconImgPath : "../../img/global/svg";
         color: $global-clr-white;
 
         > .maincont-left{
-          flex: 0 0 20%;
-          max-width: 20%;
+          flex: 0 0 18%;
+          max-width: 18%;
 
           @include ReSassWidthResponsive(1200){
             flex: 0 0 18%;
@@ -54,8 +54,8 @@ $globalSvgIconImgPath : "../../img/global/svg";
         }
 
         > .maincont-right{
-          flex: 0 0 80%;
-          max-width: 80%;
+          flex: 0 0 82%;
+          max-width: 82%;
 
           @include ReSassWidthResponsive(1200){
             flex: 0 0 82%;
