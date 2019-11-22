@@ -255,10 +255,13 @@ $globalSvgIconImgPath : "../../img/global/svg";
       &-list{
         margin: auto;
 
-        @include ReSassWidthResponsive(992){
+        @include ReSassWidthResponsive(1200){
           display: flex;
           flex-direction: row;
           margin: 0;
+        }
+        @include ReSassWidthResponsive(992){
+          flex-wrap: wrap;
         }
         @include ReSassWidthResponsive(400){
           flex-direction: column;
@@ -273,24 +276,18 @@ $globalSvgIconImgPath : "../../img/global/svg";
           margin: 0 15px;
           border: 1px solid transparentize($global-clr-soft-gray, 0.70);
 
-          @include ReSassWidthResponsive(992){
+          @include ReSassWidthResponsive(1200){
             width: 100%;
-            flex: 0 0 calc((100% / 3) - 20px);
-            max-width: calc((100% / 3) - 20px);
+            flex: 0 0 calc((100% / 4) - 23px);
+            max-width: calc((100% / 4) - 23px);
             min-height: 200px;
           }
-          @include ReSassWidthResponsive(768){
-            flex: 0 0 calc((100% / 3) - 13px);
-            max-width: calc((100% / 3) - 13px);
-            padding: 10px;
-            margin: 0 10px;
-            min-height: 175px;
-          }
-          @include ReSassWidthResponsive(576){
-            flex: 0 0 calc((100% / 3) - 7px);
-            max-width: calc((100% / 3) - 7px);
-            margin: 0 5px;
-            min-height: 170px;
+
+          @include ReSassWidthResponsive(992){
+            width: 100%;
+            flex: 0 0 calc((100% / 2) - 20px);
+            max-width: calc((100% / 2) - 20px);
+            margin: 10px;
           }
           @include ReSassWidthResponsive(480){
             min-height: 167px;
@@ -298,11 +295,15 @@ $globalSvgIconImgPath : "../../img/global/svg";
           @include ReSassWidthResponsive(400){
             flex: 0 0 calc(100% / 1);
             max-width: calc(100% / 1);
-            margin: 5px 0;
+            margin: 5px 0 !important;
           }
 
           &:first-child{
             margin-left: 0;
+
+            @include ReSassWidthResponsive(992){
+              margin-left: 10px;
+            }
 
             @include ReSassWidthResponsive(400){
               margin-top: 0;
@@ -310,6 +311,10 @@ $globalSvgIconImgPath : "../../img/global/svg";
           }
           &:last-child{
             margin-right: 0;
+
+            @include ReSassWidthResponsive(992){
+              margin-right: 10px;
+            }
 
             @include ReSassWidthResponsive(400){
               margin-bottom: 0;
@@ -344,6 +349,10 @@ $globalSvgIconImgPath : "../../img/global/svg";
               position: relative;
               top: 9px;
             }
+          }
+          i[class*="cmt"]{
+            width: 70px;
+            height: 65px;
           }
           i[class*="wallet"]{
             width: 52px;
