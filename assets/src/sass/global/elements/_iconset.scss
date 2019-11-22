@@ -189,6 +189,9 @@ $globalSvgIconImgPath : "../../img/global/svg";
     &-wizardiconpapara{
       background-image: url(#{$globalSvgIconImgPath}/Wizard_Papara_Logo.svg);
     }
+    &-wizardiconcmt{
+      background-image: url(#{$globalSvgIconImgPath}/Wizard_Cmt_Logo.svg);
+    }
     &-wizardicondigitalwallet{
       background-image: url(#{$globalSvgIconImgPath}/Wizard_Icon_Digital_Wallet.svg);
     }
