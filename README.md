@@ -21,6 +21,7 @@
  - [11_Technology_Chain_All_Blocks](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mainpage/11_Technology_Chain_All_Blocks.html)
  - [12_Technology_Chain_Block](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mainpage/12_Technology_Chain_Block.html)
  - [13_Technology_Chain_Address](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mainpage/13_Technology_Chain_Address.html)
+ - [13_Technology_Chain_Address_Error](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mainpage/13_Technology_Chain_Address_Error.html)
  - [14_Technology_Chain_Transaction](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mainpage/14_Technology_Chain_Transaction.html)
  - [15_Technology_Chain_Status](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mainpage/15_Technology_Chain_Status.html)
  - [16_Technology_Api](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mainpage/16_Technology_Api.html)
