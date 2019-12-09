@@ -88,9 +88,11 @@
  - [31_Profile_2FA_Activation](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/tradepage/31_Profile_2FA_Activation.html)
  - [32_Profile_Key_Create](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/tradepage/32_Profile_Key_Create.html)
  - [33_Profile_Activity_History](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/tradepage/33_Profile_Activity_History.html)
+ - [34_Profile_API_Create](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/tradepage/34_Profile_API_Create.html)
  - [99_Component_Form_UI](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/tradepage/99_Component_Form_UI.html)
  - [99_Component_Alerts](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/tradepage/99_Component_Alerts.html)
  - [99_Component_Modals](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/tradepage/99_Component_Modals.html)
+ 
  
 #### Xtras
   - [01_Xtras_Construction_Page](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/xtras/01_Xtras_Construction_Page.html)
