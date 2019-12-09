@@ -45,9 +45,6 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
     #{$headerclassname}-userarea-user-droplist{
       background-color: transparentize($global-sitebg-darkblue01, 0.02);
-      visibility: hidden;
-      transition: none !important;
-      *, * &::before, * &::after{transition:none !important;}
     }
 
     #{$headerclassname}-search{
