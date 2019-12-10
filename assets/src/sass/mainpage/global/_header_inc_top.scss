@@ -12,7 +12,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
     height: 40px;
     border-bottom: 1px solid transparentize($global-clr-soft-gray, 0.7);
     opacity: 1;
-    @include transition(all, 0.2s, ease-in-out);
+    //@include transition(all, 0.2s, ease-in-out);
 
     @include ReSassWidthResponsive(1400){
       height: 36px;

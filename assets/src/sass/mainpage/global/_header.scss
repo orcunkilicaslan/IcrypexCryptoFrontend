@@ -19,7 +19,33 @@ $globalSvgIconImgPath : "../../img/global/svg";
       display: block !important;
     }
 
-    #{$headerclassname}-top,
+    #{$headerclassname}-top{
+      height: 0;
+      padding: 0;
+
+      > div[class*="col-"]{
+        opacity: 0;
+        height: 0;
+        padding: 0;
+
+        &:last-child{
+          opacity: 1;
+          margin-top: 10px;
+
+          #{$headerclassname}-top-signin{
+            #{$headerclassname}-signin-item>a{
+              padding-top: 13px;
+              padding-bottom: 16px;
+            }
+          }
+
+          #{$headerclassname}-top-userarea{
+            margin-top: 23px;
+          }
+        }
+      }
+    }
+
     #{$headerclassname}-titlearea,
     #{$headerclassname}-onlytitle{
       display: none !important;
