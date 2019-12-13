@@ -279,10 +279,9 @@ $tradepageFooterImgPath : "../../img/tradepage/footer";
 
   &-social{
     &-list{
-      text-align: left;
 
       @include ReSassWidthResponsive(992){
-        text-align: center;
+        justify-content: center;
         padding: 25px 0;
       }
       @include ReSassWidthResponsive(480){
@@ -293,11 +292,6 @@ $tradepageFooterImgPath : "../../img/tradepage/footer";
       }
 
       > li{
-        margin: 0;
-
-        @include ReSassWidthResponsive(992){
-          margin: 0 2px;
-        }
 
         > a{
           width: 28px;

@@ -125,18 +125,16 @@ $globalSvgIconImgPath : "../../img/global/svg";
   &-social{
 
     &-list{
-      margin: 0;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin: 0 -3px;
 
       &-item{
-        display: inline-block;
-        margin: 0 2px;
-
-        &:first-child{
-          margin-left: 0 !important;
-        }
-        &:last-child{
-          margin-right: 0 !important;
-        }
+        flex: 0 0 auto;
+        width: auto;
+        max-width: 100%;
+        padding: 1px 3px;
 
         a{
           background-color: transparentize($global-clr-btn-blue, 0.6);
@@ -166,6 +164,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
       &.twitter{background-image: url(#{$globalSvgIconImgPath}/Footer_Twitter_Logo.svg);}
       &.instagram{background-image: url(#{$globalSvgIconImgPath}/Footer_Instagram_Logo.svg);}
       &.linkedin{background-image: url(#{$globalSvgIconImgPath}/Footer_Linkedin_Logo.svg);}
+      &.medium{background-image: url(#{$globalSvgIconImgPath}/Footer_Medium_Logo.svg);}
       &.youtube{background-image: url(#{$globalSvgIconImgPath}/Footer_Youtube_Logo.svg);}
       &.youtube{
         width: 16px;
