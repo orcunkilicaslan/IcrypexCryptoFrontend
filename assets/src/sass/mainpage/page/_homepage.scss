@@ -833,7 +833,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
           padding: 11px 10px;
           border:none;
           @include transition(all, 0.3s, ease-in-out);
-          @include gradient(#0a93ea, #00387c);
+          @include background-gradient(#0a93ea, #00387c);
 
           @include ReSassWidthResponsive(1200){
             font-size: 17px;
@@ -870,7 +870,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
           padding: 11px 10px;
           border:none;
           @include transition(all, 0.3s, ease-in-out);
-          @include gradient(#0a93ea, #00387c);
+          @include background-gradient(#0a93ea, #00387c);
 
           @include ReSassWidthResponsive(1200){
             font-size: 17px;
@@ -1122,7 +1122,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
         border: none;
         height: 40px;
         @include border-radius(0);
-        @include gradient(#0a93ea, #00387c);
+        @include background-gradient(#0a93ea, #00387c);
 
         &:first-child{
           margin-left: 0;

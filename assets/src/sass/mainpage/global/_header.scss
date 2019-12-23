@@ -4,7 +4,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
 .header{
   color: $global-clr-white;
   width: 100%;
-  @include gradient($global-grdint-darkblue01, $global-grdint-darkblue02);
+  @include background-gradient($global-grdint-darkblue01, $global-grdint-darkblue02);
   @include transition(top, 0.7s, ease-out);
   $headerclassname: &;
 
