@@ -3,7 +3,7 @@ $tradepageFooterImgPath : "../../img/tradepage/footer";
 .footer-tradepage{
   color: $global-clr-white;
   padding-top: 50px;
-  @include gradient($global-grdint-darkblue01, $global-grdint-darkblue02);
+  @include background-gradient($global-grdint-darkblue01, $global-grdint-darkblue02);
   min-height: 120px;
 
   @include ReSassWidthResponsive(992){

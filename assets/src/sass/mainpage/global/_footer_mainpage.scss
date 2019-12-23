@@ -2,7 +2,7 @@ $mainpageFooterImgPath : "../../img/mainpage/footer";
 
 .footer-mainpage{
   color: $global-clr-white;
-  @include gradient($global-sitebg-darkblue01, $global-sitebg-darkblue02);
+  @include background-gradient($global-sitebg-darkblue01, $global-sitebg-darkblue02);
 
   &-bg{
     background-image: url(#{$mainpageFooterImgPath}/Point_Earth_Image.png);
