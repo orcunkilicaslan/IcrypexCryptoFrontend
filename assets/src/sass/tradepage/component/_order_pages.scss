@@ -624,16 +624,18 @@ $globalSvgIconImgPath : "../../img/global/svg";
               border: none;
               line-height: 0.6;
               white-space: nowrap;
+              position: relative;
 
               &[class*="total"]{
-                &::before{
+                &::before,
+                &::after{
                   content: "";
                   background-color: $global-clr-red;
                   width: 6px;
                   height: 6px;
                   display: inline-block;
                   position: absolute;
-                  top: calc(50% + 2px);
+                  top: calc(50% - 3px);
                   left: -10px;
                   right: -10px;
                   @include border-radius(50%);
@@ -641,7 +643,27 @@ $globalSvgIconImgPath : "../../img/global/svg";
                   @include transition-multiple(transform 0.15s ease-in-out);
 
                   @include ReSassWidthResponsive(768){
-                    top: calc(50% - 1px);
+                    display: none;
+                  }
+                }
+              }
+
+              &[class*="price"]{
+                &::before,
+                &::after{
+                  @include ReSassWidthResponsive(768){
+                    content: "";
+                    background-color: $global-clr-red;
+                    width: 6px;
+                    height: 6px;
+                    display: inline-block;
+                    position: absolute;
+                    top: calc(50% - 3px);
+                    left: -10px;
+                    right: -10px;
+                    @include border-radius(50%);
+                    @include transform-multiple(scale(0) translateY(-50%));
+                    @include transition-multiple(transform 0.15s ease-in-out);
                   }
                 }
               }
@@ -653,14 +675,18 @@ $globalSvgIconImgPath : "../../img/global/svg";
               &.orderactive{
                 td{
                   &[class*="total"]{
-                    &::before{
+                    &::after{
                       left: -10px;
                       right: auto;
                       @include transform-multiple(scale(1));
-
+                    }
+                  }
+                  &[class*="price"]{
+                    &::after{
                       @include ReSassWidthResponsive(768){
                         right: -10px;
                         left: auto;
+                        @include transform-multiple(scale(1));
                       }
                     }
                   }
@@ -678,10 +704,14 @@ $globalSvgIconImgPath : "../../img/global/svg";
                       right: -10px;
                       left: auto;
                       @include transform-multiple(scale(1));
-
+                    }
+                  }
+                  &[class*="price"]{
+                    &::before{
                       @include ReSassWidthResponsive(768){
-                        right: auto;
                         left: -10px;
+                        right: auto;
+                        @include transform-multiple(scale(1));
                       }
                     }
                   }
