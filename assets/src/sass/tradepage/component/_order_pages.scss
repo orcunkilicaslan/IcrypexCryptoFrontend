@@ -620,6 +620,29 @@ $globalSvgIconImgPath : "../../img/global/svg";
               padding-top: 17px;
             }
 
+            &.orderactive.buy{
+              td{
+                &[class*="total"],
+                &[class*="price"]{
+                  &::before,
+                  &::after{
+                    background-color: $global-clr-green;
+                  }
+                }
+              }
+            }
+            &.orderactive.sell{
+              td{
+                &[class*="total"],
+                &[class*="price"]{
+                  &::before,
+                  &::after{
+                    background-color: $global-clr-red;
+                  }
+                }
+              }
+            }
+
             td{
               border: none;
               line-height: 0.6;
@@ -630,7 +653,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
                 &::before,
                 &::after{
                   content: "";
-                  background-color: $global-clr-red;
+                  //background-color: $global-clr-red;
                   width: 6px;
                   height: 6px;
                   display: inline-block;
@@ -653,7 +676,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
                 &::after{
                   @include ReSassWidthResponsive(768){
                     content: "";
-                    background-color: $global-clr-red;
+                    //background-color: $global-clr-red;
                     width: 6px;
                     height: 6px;
                     display: inline-block;
