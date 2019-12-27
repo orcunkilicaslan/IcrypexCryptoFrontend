@@ -94,6 +94,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
             td{
               width: 100%;
+              min-height: 34px;
               padding:8px 0 !important;
               border:none;
               border-bottom:1px solid transparentize($global-clr-soft-gray, 0.7) !important;

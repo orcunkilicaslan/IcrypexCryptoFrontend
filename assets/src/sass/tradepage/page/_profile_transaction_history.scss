@@ -17,6 +17,11 @@
         .form-row{
 
           > div[class*="maxwidth"]{
+            @include ReSassWidthResponsive(992){
+              flex: 0 0 25% !important;
+              max-width: 25% !important;
+              margin: 6px 0;
+            }
             @include ReSassWidthResponsive(768){
               flex: 0 0 50% !important;
               max-width: 50% !important;
@@ -28,23 +33,15 @@
             }
           }
 
-          > div[class*="maxwidth150"]{
-            @include ReSassWidthResponsive(768){
-              flex: 0 0 100% !important;
-              max-width: 100% !important;
-            }
-          }
 
           .filterbutton{
-            @include ReSassWidthResponsive(768){
+
+            @include ReSassWidthResponsive(992){
               flex: 0 0 100% !important;
               max-width: 100% !important;
               width: auto;
               margin-top: 5px;
-
-              .btn{
-                width: 100%;
-              }
+              padding: 0 3px;
             }
           }
         }
@@ -111,6 +108,7 @@
         thead{
           th{
             font-size: 17px;
+            white-space: nowrap;
           }
         }
 
@@ -123,8 +121,28 @@
           }
 
           td{
+
+            &:first-child{
+              text-align: left;
+              padding-left: 3px;
+            }
+
             &::before{
               color: $global-clr-dark-blue;
+            }
+
+            span{
+              display:block;
+              white-space: nowrap;
+              text-overflow: ellipsis;
+              overflow: hidden;
+            }
+            span.refcode{width: 120px;}
+            span.bankname{width: 80px;}
+
+            @include ReSassWidthResponsive(768){
+              span.refcode,
+              span.bankname{width: auto;}
             }
           }
         }
