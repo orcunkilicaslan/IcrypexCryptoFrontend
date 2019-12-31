@@ -131,6 +131,9 @@ $globalSvgIconImgPath : "../../img/global/svg";
             i[class*="xrp"]{
               background-color: transparentize($global-clr-currency-xrp, 0.15);
             }
+            i[class*="bat"]{
+              background-color: transparentize($global-clr-currency-bat, 0.15);
+            }
             i[class*="mpay"]{
               background-color: transparentize($global-clr-currency-mpay, 0.15);
             }
@@ -529,6 +532,9 @@ $globalSvgIconImgPath : "../../img/global/svg";
             }
             i[class*="xrp"]{
               background-color: transparentize($global-clr-currency-xrp, 0.15);
+            }
+            i[class*="bat"]{
+              background-color: transparentize($global-clr-currency-bat, 0.15);
             }
             i[class*="mpay"]{
               background-color: transparentize($global-clr-currency-mpay, 0.15);
