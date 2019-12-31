@@ -63,6 +63,9 @@ $globalSvgIconImgPath : "../../img/global/svg";
     &-productslistxlm{
       background-image: url(#{$globalSvgIconImgPath}/Icon_Xlm.svg);
     }
+    &-productslistbat{
+      background-image: url(#{$globalSvgIconImgPath}/Icon_Bat.svg);
+    }
     &-productslisttrx{
       background-image: url(#{$globalSvgIconImgPath}/Icon_Tron.svg);
     }
@@ -179,6 +182,9 @@ $globalSvgIconImgPath : "../../img/global/svg";
     }
     &-titleiconxlm{
       background-image: url(#{$globalSvgIconImgPath}/Icon_Title_Xlm.svg);
+    }
+    &-titleiconbat{
+      background-image: url(#{$globalSvgIconImgPath}/Icon_Title_Bat.svg);
     }
     &-titleicontrx{
       background-image: url(#{$globalSvgIconImgPath}/Icon_Title_Tron.svg);
