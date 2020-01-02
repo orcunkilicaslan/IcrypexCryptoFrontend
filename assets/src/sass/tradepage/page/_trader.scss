@@ -175,9 +175,10 @@ $tradepageHomepageImgPath : "../../img/tradepage";
     }
 
     .sidebar{
-      @include ReSassWidthResponsive(992){
-        display: none;
-      }
+
+
+
+
     }
     
     &-wrapper{

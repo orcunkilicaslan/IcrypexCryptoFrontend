@@ -40,6 +40,40 @@ $globalSvgIconImgPath : "../../img/global/svg";
   /* Balance */
   &-balance{
 
+    @include ReSassWidthResponsive(992){
+      table[class*="balance-table"]{
+        tbody{
+          tr{
+            &:last-child{
+              td{
+                border-bottom: none;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    @include ReSassWidthResponsive(480){
+      display: block !important;
+      max-width: initial !important;
+    }
+
+    @include ReSassWidthResponsive(480){
+      table[class*="balance-table"]{
+        thead{
+          tr{
+            th{
+              &:first-child{
+                width: 30%;
+                min-width: 100px;
+              }
+            }
+          }
+        }
+      }
+    }
+
     .boxtitle{
       margin-bottom: 5px;
       margin-top: 7px;
@@ -86,7 +120,6 @@ $globalSvgIconImgPath : "../../img/global/svg";
         flex-direction: row;
         flex: 0 0 100%;
         max-width: 100%;
-        padding: 0 !important;
       }
       @include ReSassWidthResponsive(400){
         flex-direction: column;

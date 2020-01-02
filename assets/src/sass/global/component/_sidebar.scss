@@ -189,8 +189,6 @@ $globalSvgIconImgPath : "../../img/global/svg";
     }
   }
 
-
-
   &-mainpage{
     > *[class*="sidebar-"]{
       margin-top: 15px;
@@ -202,6 +200,15 @@ $globalSvgIconImgPath : "../../img/global/svg";
   }
 
   &-tradepage{
+
+    @include ReSassWidthResponsive(992){
+      margin-bottom: 25px;
+    }
+
+    @include ReSassWidthResponsive(480){
+      display: block !important;
+    }
+
     > *[class*="sidebar-"]{
       margin-top: 15px;
 
@@ -211,6 +218,11 @@ $globalSvgIconImgPath : "../../img/global/svg";
         margin-top: 0;
         margin-left: 3px;
         margin-right: 3px;
+
+        @include ReSassWidthResponsive(480){
+          display: block !important;
+          max-width: initial !important;
+        }
 
         @include ReSassWidthResponsive(400){
           margin: 0;
