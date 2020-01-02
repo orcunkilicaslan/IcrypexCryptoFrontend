@@ -18,8 +18,16 @@ $globalSvgIconImgPath : "../../img/global/svg";
     }
 
     .sidebar{
-      @include ReSassWidthResponsive(992){
-        display: none;
+
+      @include ReSassWidthResponsive(576){
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+
+      &-marketdata{
+        @include ReSassWidthResponsive(992){
+          display: none !important;
+        }
       }
     }
 
