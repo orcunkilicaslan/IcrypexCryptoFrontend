@@ -207,9 +207,10 @@
                 <div class="login-bigicon">
                     <i class="icon-svg icon-svg-loginf2a"></i>
                 </div>
-                <div class="form-group colorsetdarkblue">
+                <div class="form-group formpincode colorsetdarkblue">
                     <label>2FA KODU</label>
-                    <input id="sixdigit-pincode" type="text" class="form-control text-center inputfilter-integer" maxlength="6" style="letter-spacing: 10px; padding-left: 20px;" />
+                    <input id="sixdigit-sms-pincode" type="text" class="form-control" />
+                    <span id="pincode-callback" class="pincode-input-callback"></span>
                 </div>
                 <div class="login-column-navigation d-flex justify-content-center">
                     <a href="#" class="login-column-navigation-buttons"><i class="iconcircleback"></i> GERİ DÖNÜN</a>
@@ -225,13 +226,26 @@
             <!-- Next Page Button -->
         </form>
     </div>
+    <link id="css-bootstrap-pincode-input" rel="stylesheet" href="../assets/vendor/bootstrap-pincode-input/css/bootstrap-pincode-input.css">
+    <script id="script-bootstrap-pincode-input" src="../assets/vendor/bootstrap-pincode-input/js/bootstrap-pincode-input.js"></script>
     <script>
         $(document).ready(function() {
 
-            // Input Focus and Keypress
-            $("#sixdigit-pincode").focus().keyup(function(event){
+            // Input SixDigit
+            $('#sixdigit-sms-pincode').pincodeInput({hidedigits:false,inputs:6,complete:function(value, e, errorElement){
+                    //$("#pincode-callback").html(value);
+                    //$(errorElement).html("HATALI KOD");
+            }});
+
+            // Input Focus
+            $('.first').addClass('form-control-inputfocus');
+            $(".form-control-inputfocus").focus();
+
+            // Input Keypress
+            $('.last').addClass('form-control-inputkeypress');
+            $('.form-control-inputkeypress').keyup(function(event){
                 var keycode = (event.keyCode ? event.keyCode : event.which);
-                if($("#sixdigit-pincode").val().trim().length === 6 || keycode == '13'){
+                if($('.form-control-inputkeypress').val().trim().length === 1 && keycode == '13'){
                     $("form.login-form").submit();
                 }
                 event.stopPropagation();

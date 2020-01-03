@@ -92,6 +92,7 @@
  - [99_Component_Form_UI](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/tradepage/99_Component_Form_UI.html)
  - [99_Component_Alerts](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/tradepage/99_Component_Alerts.html)
  - [99_Component_Modals](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/tradepage/99_Component_Modals.html)
+ - [99_Component_Notiflix](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/tradepage/99_Component_Notiflix.html)
  
  
 #### Xtras

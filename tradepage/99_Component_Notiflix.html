@@ -271,9 +271,9 @@
             <h3 class="columntitle columntitle-sm bottomborder titleleft titlebold">COMPONENT</h3>
             <ul class="sidebar-navigasyon-list nav flex-column nav-pills">
                 <li class="sidebar-navigasyon-list-item"><a class="nav-link" href="99_Component_Form_UI.html" title="FORM UI" rel="category">FORM UI</a></li>
-                <li class="sidebar-navigasyon-list-item"><a class="nav-link active" href="99_Component_Alerts.html" title="ALERTS" rel="category">ALERTS</a></li>
+                <li class="sidebar-navigasyon-list-item"><a class="nav-link" href="99_Component_Alerts.html" title="ALERTS" rel="category">ALERTS</a></li>
                 <li class="sidebar-navigasyon-list-item"><a class="nav-link" href="99_Component_Modals.html" title="MODALS" rel="category">MODALS</a></li>
-                <li class="sidebar-navigasyon-list-item"><a class="nav-link" href="99_Component_Notiflix.html" title="NOTIFLIX NOTIFY" rel="category">NOTIFLIX NOTIFY</a></li>
+                <li class="sidebar-navigasyon-list-item"><a class="nav-link active" href="99_Component_Notiflix.html" title="NOTIFLIX NOTIFY" rel="category">NOTIFLIX NOTIFY</a></li>
             </ul>
         </nav>
     </div>
@@ -281,277 +281,85 @@
 
     <!-- Component -->
     <div class="profile-wrapper maincont-right col-10">
-    <h3 class="columntitle columntitle-sm titleleft titlebold">ALERTS</h3>
+    <h3 class="columntitle columntitle-sm titleleft titlebold">NOTIFLIX NOTIFY</h3>
     <div class="profile-box">
 
-        <!-- Alerts -->
-        <div class="profile-box-content">
-            <div class="profile-profile formuinew" style="max-width: 100%;">
+        <link id="css-notiflix" rel="stylesheet" href="../assets/cdn/notiflix-1.9.1.css">
+        <script id="script-notiflix" src="../assets/cdn/notiflix-1.9.1.js"></script>
+        <script id="script-notiflix-settings" src="../assets/cdn/notiflix-settings.js"></script>
+
+
+        <!-- Notiflix -->
+        <div class="profile-box-content formuinew notiflix-component">
+            <div class="profile-profile" style="max-width: 100%;">
                 <div class="boxcolumn-boxtitle">
-                    <h3 class="boxcolumn-boxtitle-title">Sweet Alerts (Big)</h3>
+                    <h3 class="boxcolumn-boxtitle-title">Notiflix Notify</h3>
                 </div>
-                <div>
-                    <div class="alert alert-big alert-sweet alert-success alert-dismissible fade show" role="alert">
-                        <div class="alert-flex">
-                            <div class="alert-icon">
-                                <div class="alert-icon-success">
-                                    <div class="alert-icon-success-tip"></div>
-                                    <div class="alert-icon-success-long"></div>
-                                    <div class="alert-icon-success-placeholder"></div>
-                                    <div class="alert-icon-success-fix"></div>
-                                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="notiflix-component-wrapper">
+                            <div class="highlightcode">
+                            <pre class="javascript">
+                                <code>
+                                    <span class="code-cmmnt">// You can type your text in String format.</span>
+                                    <span class="js-line">Notiflix.Notify.Success(<span class="js-str">'Icrypex Bilişim A.Ş. - Maslak Mah. Maslak Meydan Sok. Spring Giz Plaza N:5/57 34398 Sarıyer/İstanbul'</span>);</span>
+                                </code>
+                            </pre>
                             </div>
-                            <div class="alert-big-desc">
-                                <h4 class="alert-heading">Well done!</h4>
-                                <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
+                            <div class="highlightbtn">
+                                <button class="btn btn-success maxwidth100100" onclick="Notiflix.Notify.Success('Icrypex Bilişim A.Ş. - Maslak Mah. Maslak Meydan Sok. Spring Giz Plaza N:5/57 34398 Sarıyer/İstanbul');">ONAY</button>
                             </div>
                         </div>
-                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
                     </div>
-                    <div class="alert alert-big alert-sweet alert-warning alert-dismissible fade show" role="alert">
-                        <div class="alert-flex">
-                            <div class="alert-icon">
-                                <div class="alert-icon-warning">
-                                    <div class="alert-icon-warning-body"></div>
-                                    <div class="alert-icon-warning-dot"></div>
-                                </div>
+                    <div class="col-md-6">
+                        <div class="notiflix-component-wrapper">
+                            <div class="highlightcode">
+                            <pre class="javascript">
+                                <code>
+                                    <span class="code-cmmnt">// You can type your text in String format.</span>
+                                    <span class="js-line">Notiflix.Notify.Failure(<span class="js-str">'Qui timide rogat docet negare'</span>);</span>
+                                </code>
+                            </pre>
                             </div>
-                            <div class="alert-big-desc">
-                                <h4 class="alert-heading">Warning!</h4>
-                                <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
+                            <div class="highlightbtn">
+                                <button class="btn btn-danger maxwidth100100" onclick="Notiflix.Notify.Failure('Qui timide rogat docet negare');">HATA</button>
                             </div>
                         </div>
-                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
                     </div>
-                    <div class="alert alert-big alert-sweet alert-danger alert-dismissible fade show" role="alert">
-                        <div class="alert-flex">
-                            <div class="alert-icon">
-                                <div class="alert-icon-error">
-                                    <div class="alert-icon-error-x">
-                                        <div class="alert-icon-error-left"></div>
-                                        <div class="alert-icon-error-right"></div>
-                                    </div>
-                                    <div class="alert-icon-error-placeholder"></div>
-                                    <div class="alert-icon-error-fix"></div>
-                                </div>
+                    <div class="col-md-6">
+                        <div class="notiflix-component-wrapper">
+                            <div class="highlightcode">
+                            <pre class="javascript">
+                                <code>
+                                    <span class="code-cmmnt">// You can type your text in String format.</span>
+                                    <span class="js-line">Notiflix.Notify.Warning(<span class="js-str">'Memento te hominem esse'</span>);</span>
+                                </code>
+                            </pre>
                             </div>
-                            <div class="alert-big-desc">
-                                <h4 class="alert-heading">Oops...</h4>
-                                <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
+                            <div class="highlightbtn">
+                                <button class="btn btn-warning maxwidth100100" onclick="Notiflix.Notify.Warning('Memento te hominem esse');">UYARI</button>
                             </div>
                         </div>
-                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="notiflix-component-wrapper">
+                            <div class="highlightcode">
+                            <pre class="javascript">
+                                <code>
+                                    <span class="code-cmmnt">// You can type your text in String format.</span>
+                                    <span class="js-line">Notiflix.Notify.Info(<span class="js-str">'Cogito ergo sum'</span>);</span>
+                                </code>
+                            </pre>
+                            </div>
+                            <div class="highlightbtn">
+                                <button class="btn btn-info maxwidth100100" onclick="Notiflix.Notify.Info('Cogito ergo sum');">BİLGİ</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Alerts -->
-        <!-- Alerts -->
-        <div class="profile-box-content">
-            <div class="profile-profile formuinew" style="max-width: 100%;">
-                <div class="boxcolumn-boxtitle">
-                    <h3 class="boxcolumn-boxtitle-title">Sweet Alerts (Small)</h3>
-                </div>
-                <div>
-                    <div class="alert alert-big alert-sweet alert-sweet-small alert-success alert-dismissible fade show" role="alert">
-                        <div class="alert-flex">
-                            <div class="alert-icon">
-                                <div class="alert-icon-success">
-                                    <div class="alert-icon-success-tip"></div>
-                                    <div class="alert-icon-success-long"></div>
-                                    <div class="alert-icon-success-placeholder"></div>
-                                    <div class="alert-icon-success-fix"></div>
-                                </div>
-                            </div>
-                            <div class="alert-big-desc">
-                                <h4 class="alert-heading">Well done!</h4>
-                                <p>Aww yeah, you successfully read this important alert message.</p>
-                            </div>
-                        </div>
-                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="alert alert-big alert-sweet alert-sweet-small alert-warning alert-dismissible fade show" role="alert">
-                        <div class="alert-flex">
-                            <div class="alert-icon">
-                                <div class="alert-icon-warning">
-                                    <div class="alert-icon-warning-body"></div>
-                                    <div class="alert-icon-warning-dot"></div>
-                                </div>
-                            </div>
-                            <div class="alert-big-desc">
-                                <h4 class="alert-heading">Warning!</h4>
-                                <p>Aww yeah, you successfully read this important alert message.</p>
-                            </div>
-                        </div>
-                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="alert alert-big alert-sweet alert-sweet-small alert-danger alert-dismissible fade show" role="alert">
-                        <div class="alert-flex">
-                            <div class="alert-icon">
-                                <div class="alert-icon-error">
-                                    <div class="alert-icon-error-x">
-                                        <div class="alert-icon-error-left"></div>
-                                        <div class="alert-icon-error-right"></div>
-                                    </div>
-                                    <div class="alert-icon-error-placeholder"></div>
-                                    <div class="alert-icon-error-fix"></div>
-                                </div>
-                            </div>
-                            <div class="alert-big-desc">
-                                <h4 class="alert-heading">Oops...</h4>
-                                <p>Aww yeah, you successfully read this important alert message.</p>
-                            </div>
-                        </div>
-                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Alerts -->
-        <!-- Alerts -->
-        <div class="profile-box-content">
-            <div class="profile-profile formuinew" style="max-width: 100%;">
-                <div class="boxcolumn-boxtitle">
-                    <h3 class="boxcolumn-boxtitle-title">Close Buttons</h3>
-                </div>
-                <div>
-                    <div class="alert alert-primary alert-dismissible fade show" role="alert">
-                        <strong>Holy guacamole!</strong> You should check in on some of those fields below.
-                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="alert alert-secondary alert-dismissible fade show" role="alert">
-                        <strong>Holy guacamole!</strong> You should check in on some of those fields below.
-                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="alert alert-success alert-dismissible fade show" role="alert">
-                        <strong>Holy guacamole!</strong> You should check in on some of those fields below.
-                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="alert alert-danger alert-dismissible fade show" role="alert">
-                        <strong>Holy guacamole!</strong> You should check in on some of those fields below.
-                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="alert alert-warning alert-dismissible fade show" role="alert">
-                        <strong>Holy guacamole!</strong> You should check in on some of those fields below.
-                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="alert alert-info alert-dismissible fade show" role="alert">
-                        <strong>Holy guacamole!</strong> You should check in on some of those fields below.
-                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="alert alert-light alert-dismissible fade show" role="alert">
-                        <strong>Holy guacamole!</strong> You should check in on some of those fields below.
-                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="alert alert-dark alert-dismissible fade show" role="alert">
-                        <strong>Holy guacamole!</strong> You should check in on some of those fields below.
-                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Alerts -->
-        <!-- Alerts -->
-        <div class="profile-box-content">
-            <div class="profile-profile formuinew" style="max-width: 100%;">
-            <div class="boxcolumn-boxtitle">
-                <h3 class="boxcolumn-boxtitle-title">Examples</h3>
-            </div>
-            <div>
-                <div class="alert alert-primary" role="alert">
-                    This is a primary alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
-                </div>
-                <div class="alert alert-secondary" role="alert">
-                    This is a secondary alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
-                </div>
-                <div class="alert alert-success" role="alert">
-                    This is a success alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
-                </div>
-                <div class="alert alert-danger" role="alert">
-                    This is a danger alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
-                </div>
-                <div class="alert alert-warning" role="alert">
-                    This is a warning alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
-                </div>
-                <div class="alert alert-info" role="alert">
-                    This is a info alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
-                </div>
-                <div class="alert alert-light" role="alert">
-                    This is a light alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
-                </div>
-                <div class="alert alert-dark" role="alert">
-                    This is a dark alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
-                </div>
-            </div>
-            </div>
-        </div>
-        <!-- Alerts -->
-        <!-- Alerts -->
-        <div class="profile-box-content">
-            <div class="profile-profile formuinew" style="max-width: 100%;">
-                <div class="boxcolumn-boxtitle">
-                    <h3 class="boxcolumn-boxtitle-title">Additional content</h3>
-                </div>
-                <div>
-                    <div class="alert alert-big alert-success alert-dismissible fade show" role="alert">
-                        <div class="alert-big-desc">
-                            <h4 class="alert-heading">Well done!</h4>
-                            <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
-                        </div>
-                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="alert alert-big alert-warning alert-dismissible fade show" role="alert">
-                        <div class="alert-big-desc">
-                            <h4 class="alert-heading">Warning!</h4>
-                            <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
-                        </div>
-                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="alert alert-big alert-danger alert-dismissible fade show" role="alert">
-                        <div class="alert-big-desc">
-                            <h4 class="alert-heading">Oops...</h4>
-                            <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
-                        </div>
-                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Alerts -->
+        <!-- Notiflix -->
 
     </div>
     </div>
@@ -685,6 +493,9 @@
 <script id="script-plugin-custom-pagemain" src="../assets/cdn/plugin-custom-pagemain.js"></script>
 <script id="script-plugin-custom-pagetrade" src="../assets/cdn/plugin-custom-pagetrade.js"></script>
 <!-- Plugins End -->
+
+
+
 
 </body>
 </html>
