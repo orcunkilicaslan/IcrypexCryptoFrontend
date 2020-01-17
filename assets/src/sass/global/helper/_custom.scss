@@ -149,7 +149,8 @@ img.imgsize{
 
 .content{
   &-list{
-    &-item{
+
+    li{
       position: relative;
       padding-left: 10px;
       &::before{
