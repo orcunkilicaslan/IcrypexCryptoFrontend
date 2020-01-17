@@ -183,9 +183,14 @@
               background-color: $global-clr-currency-xrp;
             }
           }
-          &.linexrp{
+          &.linebat{
             &::after {
               background-color: $global-clr-currency-bat;
+            }
+          }
+          &.linexlm{
+            &::after {
+              background-color: $global-clr-currency-xlm;
             }
           }
           &.linempay{

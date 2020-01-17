@@ -104,6 +104,11 @@
               background-color: $global-clr-currency-bat;
             }
           }
+          &.linexlm{
+            &::before {
+              background-color: $global-clr-currency-xlm;
+            }
+          }
           &.linempay{
             &::before {
               background-color: $global-clr-currency-mpay;
