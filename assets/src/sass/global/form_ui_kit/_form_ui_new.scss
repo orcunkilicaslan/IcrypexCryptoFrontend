@@ -977,6 +977,8 @@
   .maxwidth100100{width: 100%;}
   .labelwidth100100{width: 100%;}
 
+  .minwidth400{min-width: 400px;}
+
   @include ReSassWidthResponsive(1200){
     .mobile1200width100100{width: 100% !important; max-width: 100% !important; flex: 0 0 100%;}
   }

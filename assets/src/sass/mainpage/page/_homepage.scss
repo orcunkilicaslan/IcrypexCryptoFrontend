@@ -1106,6 +1106,63 @@ $globalSvgIconImgPath : "../../img/global/svg";
       }
     }
 
+    &-boxlist{
+      min-width: 100%;
+      min-height: 205px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      //align-content: flex-start;
+      align-items: center;
+      margin-top: 12px;
+      margin-left: -2px;
+      margin-right: -2px;
+
+      @include ReSassWidthResponsive(992){
+        min-height: auto;
+      }
+
+      li{
+        width: 100%;
+        flex: 0 0 calc(100% / 3);
+        max-width: calc(100% / 3);
+        padding: 2px;
+
+        @include ReSassWidthResponsive(480){
+          flex: 0 0 calc(100% / 2);
+          max-width: calc(100% / 2);
+        }
+      }
+
+      .walletbox{
+        background-color: transparentize($global-clr-soft-gray, 0.85);
+        color: $global-clr-soft-gray;
+        height: 50px;
+        text-align: center;
+        font-size: 16px;
+        line-height: 1;
+        padding: 6px 0 8px;
+        border-bottom: 2px solid transparent;
+        overflow: hidden;
+        @include border-radii(4px,4px,0,0);
+
+        &.line{border-bottom-color: transparentize($global-clr-soft-gray, 0.7);}
+        &.linetry{border-bottom-color: $global-clr-red;}
+        &.lineusd{border-bottom-color: $global-clr-green;}
+        &.linebtc{border-bottom-color: $global-clr-currency-btc;}
+        &.lineeth{border-bottom-color: $global-clr-currency-eth;}
+        &.lineltc{border-bottom-color: $global-clr-currency-ltc;}
+        &.linexrp{border-bottom-color: $global-clr-currency-xrp;}
+        &.linebat{border-bottom-color: $global-clr-currency-bat;}
+        &.linexlm{border-bottom-color: $global-clr-currency-xlm;}
+        &.linempay{border-bottom-color: $global-clr-currency-mpay;}
+
+        small, span{display: block; font-size: 100%;}
+        span{color: $global-clr-white;}
+      }
+
+    }
+
     &-btngroup{
       display: flex;
       justify-content: space-between;
