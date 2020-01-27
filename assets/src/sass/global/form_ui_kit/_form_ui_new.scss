@@ -957,6 +957,36 @@
     }
   }
 
+  .recaptcha{
+
+    &-area{
+      display: flex;
+      align-items: center;
+    }
+
+    &-check{
+      position:relative;
+      width: 1.4rem;
+      height: 1.4rem;
+      overflow: hidden;
+      margin-right: 8px;
+      border: 1px solid transparentize($global-clr-soft-gray, 0.7);
+      @include border-radius(2px);
+
+      .g-recaptcha{
+        position:absolute;
+        top: -26px;
+        left: -36px;
+        @include scale(0.85);
+      }
+    }
+
+    label{
+      &::before,
+      &::after{display: none;}
+    }
+  }
+
   .g-recaptcha{
     display: flex;
     justify-content: center;
