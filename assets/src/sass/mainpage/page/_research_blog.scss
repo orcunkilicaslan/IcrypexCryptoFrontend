@@ -7,6 +7,12 @@ $globalSvgIconImgPath : "../../img/global/svg";
     padding-left: 0 !important;
     border-right: 1px solid transparentize($global-clr-soft-gray, 0.7);
 
+    @include ReSassWidthResponsive(768){
+      margin-top: 10px;
+      border-right: none;
+      padding-right: 0 !important;
+    }
+
     &-content{
       .blogheadtitlearea{
         *[class*="boxtitle"]{
@@ -33,6 +39,10 @@ $globalSvgIconImgPath : "../../img/global/svg";
           padding-bottom: 5px;
           margin-bottom: 5px;
           line-height: 1;
+
+          @include ReSassWidthResponsive(480){
+            display: block !important;
+          }
 
           ul{
             li{
@@ -76,6 +86,13 @@ $globalSvgIconImgPath : "../../img/global/svg";
               }
             }
           }
+
+          &-tags{
+            @include ReSassWidthResponsive(480){
+              margin-top: 5px;
+            }
+          }
+
         }
       }
     }
@@ -340,6 +357,11 @@ $globalSvgIconImgPath : "../../img/global/svg";
             padding-top: 4px !important;
             padding-bottom: 4px !important;
             height: 40px !important;
+
+            @include ReSassWidthResponsive(480){
+              font-size: 17px !important;
+              height: 35px !important;
+            }
           }
         }
       }

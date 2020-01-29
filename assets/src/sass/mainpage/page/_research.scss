@@ -77,6 +77,12 @@
     margin-top: 30px;
     padding-right: 0 !important;
 
+    @include ReSassWidthResponsive(768){
+      padding-left: 0 !important;
+    }
+
+    .columntitle{display: block;}
+
     &-subscription{
       .form-group{
         &:last-child{

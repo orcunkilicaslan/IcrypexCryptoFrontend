@@ -50,6 +50,9 @@
       &.dropdown-menu.show[aria-labelledby="CompanyDropdownMenu"]{
         height: 132px !important;
       }
+      &.dropdown-menu.show[aria-labelledby="ResearchDropdownMenu"]{
+        height: 132px !important;
+      }
       &.dropdown-menu.show[aria-labelledby="AccountDropdownMenu"]{
         height: 460px !important;
       }
