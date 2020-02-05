@@ -1,0 +1,721 @@
+<!doctype html>
+<html lang="tr">
+<head>
+    <title>Icrypex</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link id="css-bootstrap" rel="stylesheet" href="../assets/dist/css/bootstrap.css">
+    <link id="css-plugin" rel="stylesheet" href="../assets/dist/css/plugin.css">
+    <link id="css-mainpage-app" rel="stylesheet" href="../assets/dist/css/mainpage-app.css">
+    <script id="script-jquery" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script id="script-popper" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script id="script-bootstrap" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body class="dfn-megamenu fullpages mainpage">
+
+<!-- Header Start -->
+<header class="header">
+
+    <!-- Mobile Header -->
+    <div class="dfn-mobilemenu-mask"></div>
+    <div class="dfn-mobilemenu-header">
+        <a class="header-navigation-logo" href="00_Home_Page.html" title="ICRYPEX Crypto Exchange" rel="bookmark">
+            <i class="header-navigation-logo-symbol icon-svg icon-svg-icrypexsymbol"></i>
+            <h1 class="header-navigation-logo-icrypex">ICRYPEX</h1>
+            <h2 class="header-navigation-logo-cryptoexchange">CRYPTO EXCHANGE</h2>
+        </a>
+        <a id="dfn-navtggle" class="dfn-mobilemenu-btn">
+            <div class="btnicon"><span></span></div>
+            <div class="btntext"><small>MENÜ</small></div>
+        </a>
+        <a class="dfn-mobilemenu-livechat">
+            <small>LIVECHAT</small>
+            <i class="icon-svg icon-svg-headerchatmobile"></i>
+        </a>
+    </div>
+    <!-- Mobile Header -->
+
+    <!-- Web Header -->
+    <div class="container-fluid container-1890 header-web">
+
+        <!-- Top Header Start -->
+        <div class="header-top">
+            <div class="col-3 d-flex justify-content-start">
+                <ul class="header-top-language">
+                    <li class="header-top-language-item"><a class="header-top-language-selection" href="#" title="ENGLISH" rel="bookmark">ENGLISH</a></li>
+                    <li class="header-top-language-item"><a class="header-top-language-selection active" href="#" title="TÜRKÇE" rel="bookmark">TÜRKÇE</a></li>
+                </ul>
+            </div>
+            <div class="col-6 d-flex justify-content-center">
+                <ul class="header-top-city">
+                    <li class="header-top-city-item"><span class="header-top-city-name">İSTANBUL</span><span id="clock-istanbul" class="header-top-city-clock">12:56:03</span></li>
+                    <li class="header-top-city-item"><span class="header-top-city-name">NEW YORK</span><span id="clock-newyork" class="header-top-city-clock">7:48:06</span></li>
+                    <li class="header-top-city-item"><span class="header-top-city-name">LONDON</span><span id="clock-london" class="header-top-city-clock">12:47:17</span></li>
+                    <li class="header-top-city-item"><span class="header-top-city-name">MOSKOW</span><span id="clock-tokyo" class="header-top-city-clock">15:47:33</span></li>
+                    <li class="header-top-city-item"><span class="header-top-city-name">TOKYO</span><span id="clock-moscow" class="header-top-city-clock">21:47:45</span></li>
+                </ul>
+                <script id="script-plugin-worldclock-app" src="../assets/cdn/plugin-worldclock.js"></script>
+                <script type="text/javascript">
+                    window.onload=worldClockZone;
+                    function worldClockZone(){
+
+                        document.getElementById("clock-istanbul").innerHTML = worldClock(2, "Europe")
+                        document.getElementById("clock-newyork").innerHTML = worldClock(-5, "NAmerica")
+                        document.getElementById("clock-london").innerHTML = worldClock(0, "Europe")
+                        document.getElementById("clock-tokyo").innerHTML = worldClock(9, "Tokyo")
+                        document.getElementById("clock-moscow").innerHTML = worldClock(3, "Europe")
+
+                        setTimeout("worldClockZone()", 1000)
+                    }
+                </script>
+            </div>
+            <div class="col-3 d-flex justify-content-end">
+                <div class="header-top-signin">
+                    <ul class="header-signin">
+                        <li class="header-signin-item"><a class="header-signin-register" href="01_Sign_Up.html" title="YENİ ÜYELİK" rel="bookmark">YENİ ÜYELİK</a></li>
+                        <li class="header-signin-item"><a class="header-signin-login" href="../tradepage/01_Login_Step_1.html" title="ÜYE GİRİŞİ" rel="bookmark">ÜYE GİRİŞİ</a></li>
+                    </ul>
+                </div>
+                <div class="header-top-userarea d-flex align-items-center" style="display: none !important;">
+                    <ul class="header-userarea-iconset d-flex align-items-center">
+                        <li class="header-userarea-iconset-search header-userarea-iconset-item">
+                            <i class="icon-svg icon-svg-headersearch"></i>
+                        </li>
+                        <li class="header-userarea-iconset-chat header-userarea-iconset-item">
+                            <a class="header-userarea-iconset-link" href="#">
+                                <i class="icon-svg icon-svg-headerchat"></i>
+                            </a>
+                        </li>
+                        <li class="header-userarea-iconset-theme header-userarea-iconset-item">
+                            <a class="header-userarea-iconset-link" href="#">
+                                <i class="icon-svg icon-svg-headertheme"></i>
+                            </a>
+                        </li>
+                        <li class="header-userarea-iconset-bell header-userarea-iconset-item">
+                            <a class="header-userarea-iconset-link" href="../tradepage/25_Profile_Notification.html" data-toggle="tooltip" data-placement="bottom" title="1 Yeni Bildiriminiz Var">
+                                <i class="icon-svg icon-svg-headerbell"></i>
+                                <span class="header-userarea-iconset-badge"></span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="header-userarea-user btn-group d-flex align-items-center">
+                        <a class="header-userarea-user-title d-flex align-items-center" href="../tradepage/27_Profile_Profile.html" title="" rel="bookmark">
+                            <img class="header-userarea-user-image" src="../assets/img/global/svg/Unknown_Profile_Avatar_Icon.svg" width="30" height="30" alt="UserPic" />
+                            <span class="header-userarea-user-name">İSİM İSİM SOYİSİM</span>
+                        </a>
+                        <button class="header-userarea-user-dropdown dropdown-toggle dropdown-toggle-split" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <div class="header-userarea-user-droplist">
+                                <div class="headusermenu">
+                                    <div class="headusermenu-box">
+                                        <div class="headusermenu-userbg">
+                                            <div class="headusermenu-box-avatar"><img src="../assets/img/global/svg/Unknown_Profile_Avatar_Icon.svg" width="200" height="200" alt="UserPic"></div>
+                                            <div class="headusermenu-box-textarea">
+                                                <h5 class="headusermenu-box-textarea-username">ORCUN KILICASLAN</h5>
+                                                <small class="sitecolorblue">1 Yeni Mesajınız Var</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="headusermenu-menulist">
+                                        <ul id="MainpageDropdownMenu" class="usermenulist">
+                                            <li class="userlink"><a href="02_Features_Products.html" title="ÖZELLİKLER" rel="category">ÖZELLİKLER</a></li>
+                                            <li class="userlink"><a href="10_Technology_Chain_Summary.html" title="TEKNOLOJİ" rel="category">TEKNOLOJİ</a></li>
+                                            <li class="userlink"><a href="30_Research_Daily.html" title="ARAŞTIRMA" rel="category">ARAŞTIRMA</a></li>
+                                            <li class="userlink"><a href="21_Company_About.html" title="ŞİRKET" rel="category">ŞİRKET</a></li>
+                                            <li class="userlink"><a href="28_What_How.html" title="NEDİR? NASIL ÇALIŞIR?" rel="category">NEDİR? NASIL ÇALIŞIR?</a></li>
+                                            <li class="userlink"><a href="29_Announcements.html" title="DUYURULAR" rel="category">DUYURULAR</a></li>
+                                            <li class="userlink"><a href="#" title="DESTEK" rel="category" target="_blank">DESTEK</a></li>
+                                        </ul>
+                                        <ul id="TradepageDropdownMenu" class="usermenulist">
+                                            <li class="userlink"><a href="../tradepage/04_Easy_Buy_Sell.html" title="KOLAY AL-SAT" rel="category">KOLAY AL-SAT</a></li>
+                                            <li class="userlink"><a href="../tradepage/03_Trader_Home_2.html" title="PRO GÖRÜNÜM" rel="category">PRO GÖRÜNÜM</a></li>
+                                            <li class="userlink"><a href="../tradepage/05_Deposit_Step_1_Home.html" title="PARA YATIRMA" rel="category">PARA YATIRMA</a></li>
+                                            <li class="userlink"><a href="../tradepage/12_Withdraw_Step_1_Home.html" title="PARA ÇEKME" rel="category">PARA ÇEKME</a></li>
+                                            <li class="userlink"><a href="../tradepage/27_Profile_Profile.html" title="HESAP & GÜVENLİK AYARLARI" rel="category">HESAP & GÜVENLİK AYARLARI</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="btnarea"><a class="logout" href="#" title="ÇIKIŞ YAPIN" rel="external nofollow">ÇIKIŞ YAPIN</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Top Header End -->
+        <!-- Navigation Start -->
+        <div class="header-navigation">
+            <!-- Logo -->
+            <div class="header-navigation-resp col-3 d-flex justify-content-start">
+                <a class="header-navigation-logo" href="00_Home_Page.html" title="ICRYPEX Crypto Exchange" rel="bookmark">
+                    <i class="header-navigation-logo-symbol icon-svg icon-svg-icrypexsymbol"></i>
+                    <h1 class="header-navigation-logo-icrypex">ICRYPEX</h1>
+                    <h2 class="header-navigation-logo-cryptoexchange">CRYPTO EXCHANGE</h2>
+                </a>
+            </div>
+            <!-- Logo -->
+            <!-- Navigasyon -->
+            <div class="col-6 d-flex justify-content-center">
+                <div class="header-navigation-navbar dfn-nav">
+                    <nav class="dfn-menu">
+                        <ul class="dfn-mobil-alt dfn-menu-list">
+                            <li class="dfn-onlymobile-menu d-lg-none">
+                                <ul class="header-signin">
+                                    <li class="header-signin-item"><a class="header-signin-register" href="01_Sign_Up.html" title="YENİ ÜYELİK" rel="bookmark">YENİ ÜYELİK</a></li>
+                                    <li class="header-signin-item"><a class="header-signin-login" href="../tradepage/01_Login_Step_1.html" title="ÜYE GİRİŞİ" rel="bookmark">ÜYE GİRİŞİ</a></li>
+                                </ul>
+                            </li>
+                            <li class="dfn-onlymobile-userarea d-lg-none" style="display: none !important;">
+                                <div class="header-userarea-user-droplist">
+                                    <div class="headusermenu" id="MobileMenuUserDropdownMenu">
+                                        <div class="headusermenu-box">
+                                            <div class="headusermenu-userbg">
+                                                <div class="headusermenu-box-avatar"><img src="../assets/img/global/svg/Unknown_Profile_Avatar_Icon.svg" width="200" height="200" alt="UserPic"></div>
+                                                <div class="headusermenu-box-textarea">
+                                                    <h5 class="headusermenu-box-textarea-username">ORCUN KILICASLAN</h5>
+                                                    <small><a href="../tradepage/25_Profile_Notification.html" title="" rel="bookmark">1 Yeni Mesajınız Var</a></small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="headusermenu-menulist">
+                                            <ul id="MobileMenuMainpageDropdownMenu" class="usermenulist">
+                                                <li class="userlink"><a href="02_Features_Products.html" title="ÖZELLİKLER" rel="category">ÖZELLİKLER</a></li>
+                                                <li class="userlink"><a href="10_Technology_Chain_Summary.html" title="TEKNOLOJİ" rel="category">TEKNOLOJİ</a></li>
+                                                <li class="userlink"><a href="30_Research_Daily.html" title="ARAŞTIRMA" rel="category">ARAŞTIRMA</a></li>
+                                                <li class="userlink"><a href="21_Company_About.html" title="ŞİRKET" rel="category">ŞİRKET</a></li>
+                                                <li class="userlink"><a href="28_What_How.html" title="NEDİR? NASIL ÇALIŞIR?" rel="category">NEDİR? NASIL ÇALIŞIR?</a></li>
+                                                <li class="userlink"><a href="29_Announcements.html" title="DUYURULAR" rel="category">DUYURULAR</a></li>
+                                                <li class="userlink"><a href="#" title="DESTEK" rel="category" target="_blank">DESTEK</a></li>
+                                            </ul>
+                                            <ul id="MobileMenuTradepageDropdownMenu" class="usermenulist">
+                                                <li class="userlink"><a href="../tradepage/04_Easy_Buy_Sell.html" title="KOLAY AL-SAT" rel="category">KOLAY AL-SAT</a></li>
+                                                <li class="userlink"><a href="../tradepage/03_Trader_Home_2.html" title="PRO GÖRÜNÜM" rel="category">PRO GÖRÜNÜM</a></li>
+                                                <li class="userlink"><a href="../tradepage/05_Deposit_Step_1_Home.html" title="PARA YATIRMA" rel="category">PARA YATIRMA</a></li>
+                                                <li class="userlink"><a href="../tradepage/12_Withdraw_Step_1_Home.html" title="PARA ÇEKME" rel="category">PARA ÇEKME</a></li>
+                                                <li class="userlink"><a href="../tradepage/27_Profile_Profile.html" title="HESAP & GÜVENLİK AYARLARI" rel="category">HESAP & GÜVENLİK AYARLARI</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="d-lg-none"><a href="00_Home_Page.html" title="ANASAYFA" rel="category">ANASAYFA</a></li>
+                            <li>
+                                <a href="#" title="ÖZELLİKLER" rel="category" id="FeaturesDropdownMenu" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ÖZELLİKLER</a>
+                                <div class="dfn-menu-dropdownmenu dropdown-menu" aria-labelledby="FeaturesDropdownMenu">
+                                    <ul class="dropdownsubmenu">
+                                        <li class="submainmenu"><a href="02_Features_Products.html" title="ÜRÜNLER" rel="category">ÜRÜNLER</a></li>
+                                        <li class="submainmenu"><a href="07_Features_Commision.html" title="KOMİSYONLAR" rel="category">KOMİSYONLAR</a></li>
+                                        <li class="submainmenu"><a href="08_Features_Limit.html" title="LİMİTLER" rel="category">LİMİTLER</a></li>
+                                        <li class="submainmenu"><a href="09_Features_Security.html" title="GÜVENLİK" rel="category">GÜVENLİK</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#" title="TEKNOLOJİ" rel="category" id="TechnologyDropdownMenu" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">TEKNOLOJİ</a>
+                                <div class="dfn-menu-dropdownmenu dropdown-menu animate slideIn" aria-labelledby="TechnologyDropdownMenu">
+                                    <ul class="dropdownsubmenu">
+                                        <li class="submainmenu"><a href="10_Technology_Chain_Summary.html" title="ZİNCİR VERİ TABANI" rel="category">ZİNCİR VERİ TABANI</a></li>
+                                        <li class="submainmenu"><a href="16_Technology_Api.html" title="API" rel="category">API</a></li>
+                                        <li class="submainmenu"><a href="17_Technology_Converter.html" title="KRİPTO PARA ÇEVİRİCİ" rel="category">KRİPTO PARA ÇEVİRİCİ</a></li>
+                                        <li class="submainmenu"><a href="18_Technology_Mining.html" title="MADENCİLİK" rel="category">MADENCİLİK</a></li>
+                                        <li class="submainmenu"><a href="19_Technology_Multiple.html" title="ÇOKLU GÖNDERİM" rel="category">ÇOKLU GÖNDERİM</a></li>
+                                        <li class="submainmenu"><a href="20_Technology_Segwit.html" title="SEGWIT" rel="category">SEGWIT</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a href="30_Research_Daily.html" title="ARAŞTIRMA" rel="category">ARAŞTIRMA</a></li>
+                            <li>
+                                <a href="#" title="ŞİRKET" rel="category" id="CompanyDropdownMenu" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ŞİRKET</a>
+                                <div class="dfn-menu-dropdownmenu dropdown-menu animate slideIn" aria-labelledby="CompanyDropdownMenu">
+                                    <ul class="dropdownsubmenu">
+                                        <li class="submainmenu"><a href="21_Company_About.html" title="HAKKIMIZDA" rel="category">HAKKIMIZDA</a></li>
+                                        <li class="submainmenu"><a href="22_Company_Legal_Terms_01.html" title="YASAL" rel="category">YASAL</a></li>
+                                        <li class="submainmenu"><a href="27_Company_Contact.html" title="BİZE ULAŞIN" rel="category">BİZE ULAŞIN</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a href="28_What_How.html" title="NEDİR? NASIL ÇALIŞIR?" rel="category">NEDİR? NASIL ÇALIŞIR?</a></li>
+                            <li><a href="29_Announcements.html" title="DUYURULAR" rel="category">DUYURULAR</a></li>
+                            <li><a href="#" title="DESTEK" rel="category">DESTEK</a></li>
+                        </ul>
+                        <ul class="dfn-mobil-alt dfn-onlymobile-bottom d-lg-none">
+                            <li class="sitelang dropup">
+                                <a href="#" class="btn sitelang-btn dropdown-toggle" data-toggle="dropdown" data-value="">
+                                    <i class="icon-svg icon-svg-headersitelang"></i>
+                                    <span class="sitelang-lang-text">TÜRKÇE</span>
+                                </a>
+                                <div class="sitelang-dropdown dropdown-menu">
+                                    <a class="dropdown-item" href="#" data-value="TR">
+                                        <i class="icon-svg icon-svg-headersitelang"></i>
+                                        <span class="sitelang-lang-text">TÜRKÇE</span>
+                                    </a>
+                                    <a class="dropdown-item" href="#" data-value="EN">
+                                        <i class="icon-svg icon-svg-headersitelang"></i>
+                                        <span class="sitelang-lang-text">ENGLISH</span>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="btnarea" style="display: none !important;">
+                                <a class="logout" href="00_Home_Page.html" title="ÇIKIŞ YAPIN" rel="external nofollow">ÇIKIŞ YAPIN</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <!-- Navigasyon -->
+            <!-- User Area -->
+            <div class="header-navigation-resp col-3 d-flex justify-content-end">
+                <div class="header-navigation-signin" style="display: none !important;">
+                    <ul class="header-signin">
+                        <li class="header-signin-item"><a class="header-signin-register" href="01_Sign_Up.html" title="YENİ ÜYELİK" rel="bookmark">YENİ ÜYELİK</a></li>
+                        <li class="header-signin-item"><a class="header-signin-login" href="../tradepage/01_Login_Step_1.html" title="ÜYE GİRİŞİ" rel="bookmark">ÜYE GİRİŞİ</a></li>
+                    </ul>
+                </div>
+                <div class="header-navigation-search">
+                    <form class="header-search" autocomplete="off" novalidate>
+                        <input class="header-search-input" type="search" name="headersearch" placeholder="ARA" />
+                        <button class="header-search-button" type="submit"></button>
+                    </form>
+                </div>
+            </div>
+            <!-- User Area -->
+        </div>
+        <!-- Navigation End -->
+    </div>
+    <!-- Web Header -->
+
+</header>
+<div class="header-spacebottom"></div>
+<!-- Header End -->
+
+<!-- Page Title and Breadcrumb Start -->
+<section class="headbreadcrumb">
+<div class="container">
+<div class="row align-items-center">
+
+    <!-- Title -->
+    <div class="maincont-left col-6">
+        <nav aria-label="breadcrumb">
+        <ol class="headbreadcrumb-title breadcrumb">
+            <li class="breadcrumb-item">ŞİRKET</li>
+            <li class="breadcrumb-item">YASAL</li>
+        </ol>
+        </nav>
+    </div>
+    <!-- Title -->
+    <!-- Breadcrumb -->
+    <div class="maincont-right col-6">
+        <nav aria-label="breadcrumb">
+            <ol class="headbreadcrumb-breadcrumb breadcrumb">
+                <li class="breadcrumb-item"><a href="#" title="" rel="category">Ana Sayfa</a></li>
+                <li class="breadcrumb-item"><a href="#" title="" rel="category">Şirket</a></li>
+                <li class="breadcrumb-item"><a href="#" title="" rel="category">Yasal</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Kullanıcı Sözleşmesi</li>
+            </ol>
+        </nav>
+    </div>
+    <!-- Breadcrumb -->
+
+</div>
+</div>
+</section>
+<!-- Page Title and Breadcrumb End -->
+
+<!-- Company Start -->
+<section class="company-section">
+<div class="container">
+<div class="row">
+
+    <!-- Tabs -->
+    <div class="sitetabs">
+        <div class="sitetabs-wrapper sitetabs-wrapper-01">
+            <ul class="sitetabslight nav nav-tabs">
+                <li class="nav-item"><a href="21_Company_About.html" class="nav-link"><span>HAKKIMIZDA</span></a></li>
+                <li class="nav-item"><a href="22_Company_Legal_Terms_01.html" class="nav-link active"><span>YASAL</span></a></li>
+                <li class="nav-item"><a href="27_Company_Contact.html" class="nav-link"><span>BİZE  ULAŞIN</span></a></li>
+            </ul>
+        </div>
+        <div class="sitetabs-wrapper sitetabs-wrapper-02">
+            <ul class="sitealttabsdark nav">
+                <li class="nav-item"><a href="22_Company_Legal_Terms_01.html" class="nav-link"><span>ÖN BİLGİLENDİRME METNİ</span></a></li>
+                <li class="nav-item"><a href="22_Company_Legal_Terms_02.html" class="nav-link active"><span>KULLANICI SÖZLEŞMESİ</span></a></li>
+                <li class="nav-item"><a href="23_Company_Legal_Privacy.html" class="nav-link"><span>GİZLİLİK POLİTİKASI</span></a></li>
+                <li class="nav-item"><a href="24_Company_Legal_Aml.html" class="nav-link"><span>AML POLİTİKASI</span></a></li>
+                <li class="nav-item"><a href="25_Company_Legal_Cookie.html" class="nav-link"><span>ÇEREZ POLİTİKASI</span></a></li>
+                <li class="nav-item"><a href="26_Company_Legal_Kvkk.html" class="nav-link"><span>KVKK</span></a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- Tabs -->
+
+    <!-- Content -->
+    <div class="company-content">
+        <h3 class="columntitle columntitle-sm titleleft bottomborder">ICRYPEX USE AGREEMENT</h3>
+        <ol class="company-content-listterm listterm">
+            <li class="maddeterm" data-title="ARTICLE">
+                <h4 class="company-content-subtitle">Parties and Subject of the Agreement</h4>
+                <ol class="listterm">
+                    <li>This User Agreement is made to determine the rights and obligations of PARTIES to the services described in the Agreement, between ICRYPEX Bilişim A.Ş. (hereinafter referred to as ICRYPEX) and the USER who become a member of the website <a class="urllink" href="http://www.icrypex.com">www.icrypex.com</a> (hereinafter referred to as the Site).</li>
+                    <li>The Use Agreement is signed between ………………………………… (hereinafter referred to as USER) located in ………………………………………………………………… and ICRYPEX Bilişim A.Ş. (hereinafter referred to as ICRYPEX) located in Maslak Mh. Maslak Meydan Sk. Spring Giz Plaza No:5/57 Sarıyer / ISTANBUL.</li>
+                    <li>ICRYPEX and USER shall hereinafter collectively be referred to as the PARTIES.</li>
+                </ol>
+            </li>
+            <li class="maddeterm" data-title="ARTICLE">
+                <h4 class="company-content-subtitle">Purpose of the Use Agreement</h4>
+                <ol class="listterm">
+                    <li>This Agreement begins when the USER becomes an online member of the Site. The USER undertakes to read and accept all the provisions of this agreement while becoming a member of the Site. The terms, rules and conditions in this Use Agreement presented to the USER by ICRYPEX are also an integral part of the Agreement and constitute all rights and obligations of the parties together with the rights and obligations contained therein.</li>
+                    <li>This Agreement is concluded for the purpose of determining the terms and conditions regarding the use of the platform that enables the USER to buy and sell crypto currencies, primarily Bitcoin, Etherium, Litecoin and Ripple as buyer and seller, and the rights and obligations of the PARTIES.</li>
+                </ol>
+            </li>
+            <li class="maddeterm" data-title="ARTICLE">
+                <h4 class="company-content-subtitle">Definitions</h4>
+                <ol class="listterm">
+                    <li><strong>Site:</strong> refers to website consisting of the domain name icrypex.com or its subdomains affiliated to this domain.</li>
+                    <li><strong>USER(s):</strong> refers to the real person or persons who are members of icrypex.com website and benefit from the services offered on the site.</li>
+                    <li><strong>PARTIES:</strong> refers to ICRYPEX and website User(s).</li>
+                    <li><strong>Crypto Currency:</strong> It is a digital asset that does not have physical money feature, designed as a means of exchange in the purchase of goods and services, and has cryptographic encryption. Crypto currency can only be transferred between digital purses.</li>
+                    <li><strong>Digital Purse:</strong> It is a computer file that holds crypto currency addresses that can be traded on the site and their passwords.</li>
+                    <li><strong>Bank:</strong> Banks that is organized and existing under the laws of Turkey.</li>
+                </ol>
+            </li>
+            <li class="maddeterm" data-title="ARTICLE">
+                <h4 class="company-content-subtitle">General Principles</h4>
+                <ol class="listterm">
+                    <li>The USER accepts and declares that he/she knows that investing in crypto currencies involves certain risks. The USER agrees, declares and undertakes that he/she understands the risks of investment in crypto currencies by signing this Agreement, he/she is responsible for the profits and losses arising from price changes, and ICRYPEX has no responsibility in case of any damage or loss due to this investment, he/she shall not claim and request any claim from ICRYPEX.</li>
+                    <li>The website <a class="urllink" href="http://www.icrypex.com">www.icrypex.com</a> owned by ICRYPEX Bilişim A.Ş. is an online crypto currency trading platform. Users trade with each other on the site. The site only provides the infrastructure that allows this trading transaction. ICRYPEX does not in any way guarantee the completion of the transactions or the execution of orders entered on the Site. Prices are completely determined according to the supply-demand relationship for the relevant crypto currency of the parties that make the transaction. ICRYPEX does not determine the prices on the site. ICRYPEX shall not be held responsible for any damage or loss of users and damages incurred or to be incurred due to changes in prices or no transactions. </li>
+                    <li>Users buy or sell crypto currencies between each other via the auction on the site. ICRYPEX has no responsibility for the price changes determined according to the supply-demand relationship. ICRYPEX shall not be held responsible for any price differences that may occur between the moment of USER's transaction request and the moment of the transaction. The USER is responsible for damages and losses arising from the reasons explained herein.</li>
+                    <li>There is no guarantee fund application or compensation system in crypto asset trading. The relevant users are responsible for the liabilities regarding crypto assets subject to sale in the sale transaction and the cash to be paid due to the purchase in the purchase transaction. In case of failure by any party of the transaction to fulfill its obligations for any reason or delay in the fulfillment or default, ICRYPEX is not a party to the fulfillment of the mutual obligations related to the transaction and it does not accept any responsibility.</li>
+                    <li>The USER should ensure the security of their accounts. The security measures reported by ICRYPEX are advisory. Security recommendations can be found in "Help Centre" menu on the Site. ICRYPEX shall in no way be held responsible for any damages incurred or to be incurred by the USER, although such safety measures have been taken. PARTIES are obliged to take utmost care of their part the security of USER accounts. In this context, the USER is obliged to take all measures to keep his account secure. ICRYPEX, on the other hand, take utmost care for the crypto currencies in accounts held on behalf of the USER. ICRYPEX shall not be held responsible for any theft/fraud incidents that may occur in spite of all efforts of ICRYPEX.</li>
+                    <li>ICRYPEX is the holder of all services connected to the service offered on the site, domain names, software codes, interfaces, contents, product reviews, videos, algorithms, drawings, designs, models and all other intellectual and industrial property rights (excluding content and applications from third parties). ICRYPEX has all rights of services offered on the Site, software, design and copyright. ICRYPEX does not allow these services and the associated pages to be copied, reproduced and shared, reverse engineered. The user accepts to take all legal and criminal liability if he/she is in violation of these provisions this is unilateral, just and summary termination of the agreement.</li>
+                    <li>Any content presented on the site consists of data collected from third parties and/or public sources. All data, reports, analysis, statistics are processed by a software that information is processed automatically without any editing or directing and presented objectively. Reports submitted by ICRYPEX are for information purposes only and its accuracy is not guaranteed by ICRYPEX. Data may be conflicting or inconsistent with each other. ICRYPEX is not responsible for any damages that may arise in this regard.</li>
+                    <li>ICRYPEX is not a representative of any organization and is a company independent of similar trading platforms. ICRYPEX is in no way responsible for profits or losses that may arise from trading transactions made by the user in a platform other than ICRYPEX or it is not liable for payment.</li>
+                    <li>The USER accepts, declares and undertakes that he/she is over the age of 18 in order to become a member and use the Site. The USER is responsible for all damages arising from giving this information incorrectly. If ICRYPEX detects that the USER has provided inaccurate and/or incorrect information, it may terminate the agreement unilaterally and it has the right to cancel, stop or suspend the account of the user without any notification. ICRYPEX shall not be responsible for any damage that may arise for these reasons. USER's crypto assets are not affected by this situation and USER's crypto assets, if any, is returned to the USER immediately upon request provided that there is no legal restriction.</li>
+                </ol>
+            </li>
+            <li class="maddeterm" data-title="ARTICLE">
+                <h4 class="company-content-subtitle">Rights and Obligations of the Parties</h4>
+                <ol class="listterm">
+                    <li>The USER accepts, declares and undertakes that the information provided is accurate, precise, current and complete and he/she is not unlawfully impersonated by any other person or organization or he/she has not provide false information about his/her relations with any person or organization he/she does not use fake letterheads or he/she does not hide their identity for any purpose, he/she should update his/her information in case of change by notifying them in writing, otherwise he/she shall predicate the information in the transactions before the change. </li>
+                    <li>ICRYPEX shall not be held responsible for any defects that shall not be attributed to it in cases where the USER’s identity is false or it has been tampered, he/she signs other than his signature, uses forged signature,  imitates someone else's signature with a fake ID, cheats, provides wrong information, or not reside at the address confirmed. The USER accepts that any material and moral responsibilities and damages that may arise regarding these issues belong to him.</li>
+                    <li>If the USER is a real person, he/she is rational, legal age and has a legal capacity.</li>
+                    <li>If the USER is not a real person;
+                        <ol class="listterm nomatter">
+                            <li class="nomatter"><strong>a)</strong> The USER is an organized and existing company under the laws to which he/she is subjected;</li>
+                            <li class="nomatter"><strong>b)</strong> Within the scope of this Agreement, each person representing the legal entity in every respect has been duly authorized by the USER.</li>
+                            <li class="nomatter"><strong>c)</strong> Legal entity USER agrees and undertakes to submit articles of association of legal entity, the newest notarized circular of signature and the original identity cards of the authorized representatives who shall sign this Agreement on behalf of legal entity and any other documents ICRYPEX deems appropriate during the signing of this Agreement. The USER accepts and undertakes to notify immediately in writing the changes that may occur in the documents submitted during the signing of the Agreement.</li>
+                            <li class="nomatter"><strong>d)</strong> In the event that representatives and/or degrees of representation are withdrawn and/or changed, the legal entity USER shall immediately notify to ICRYPEX in writing. Unless ICRYPEX is notified in writing that the powers of these persons have been withdrawn or changed, power of appointment shall remain in force. Any announcements to be made about withdrawal or change of the authority in the Turkey Trade Registry Gazette or any further media shall not be binding unless the legal entity USER notifies to ICRYPEX in writing. The legal entity USER is responsible exclusively for any damages that may arise from no notification or delay in notifications. </li>
+                        </ol>
+                    </li>
+                    <li>The USER, regardless of the subsequent determinations, undertakes that he is eligible for trading crypto currencies and he has the necessary knowledge and experience, he knows that he might lose as a result of the transactions he has made and he runs the risks of these losses and he has the financial power to afford these losses.</li>
+                    <li>Except for joint accounts, no other person has or shall a share in the USER accounts other than the USER. The USER has the right to benefit fully from all his assets and ICRYPEX shall not grant any person a security interest on its assets without the consent prior of transaction. It shall not be legally valid to have a security interest in this direction.</li>
+                    <li>The USER shall not take any action on his account unless he understands this Agreement and the USER declares and undertakes that any transaction by the USER shall be deemed that he has read and understood this Agreement in force at the date of transaction. In the event that the USER or third parties are incapacitated, this shall be notified to ICRYPEX immediately in writing; otherwise the damages of ICRYPEX shall be covered by the USER.</li>
+                    <li>The USER undertakes not to use his accounts at ICRYPEX for any illegal transaction. The USER declares and undertakes that all obligations undertaken by this agreement and the transactions to be made shall not violate any law, regulation, decree,</li>
+                    <li>The USER agrees that he shall always comply with all applicable laws and regulations, rules, communiqué, policy decision with the signing and delivery of this agreement.</li>
+                    <li>The USER shall obtain the legally required authorization, capacity, approval, license and authorizations to carry out this Agreement and all related transactions and act in accordance with them.</li>
+                    <li>The USER immediately notify to ICRYPEX when (i) he recognizes that financial position and the information provided by him or others for himself regarding other matters are not correct and they  are incomplete or misleading at the time of their receipt or (ii) this information later becomes incorrect, incomplete or misleading. This Agreement, the transactions made under this Agreement and all obligations arising under or in connection with this Agreement (including amount, party, guarantors, trustees, legal representatives, its successors and assignees) are valid, enforceable and binding for the USER and do not constitute a violation of the regulation, instruction, payment or the agreement to which the USER or any of its assets are subjected. The USER declares and undertakes that the money he deposited is not caused by drug trafficking, kidnapping or any other crime or illegal activity. </li>
+                    <li>During the signing of the Agreement, the USER agrees to submit the original identity card and the confirmation document confirming the address he has declared and any other documents that ICRYPEX deems appropriate. The USER declares, accepts and undertakes that the identity information in the identity card submitted to ICRYPEX or other documents that shall replace the identity card with this Agreement signed and the residence information he declares with the address confirmation document are correct and belongs to him.</li>
+                    <li>The USER accepts and undertakes that he shall notify ICRYPEX the legal address change with legal documents within 5 (five) days, ICRYPEX is entitled to terminate this Agreement immediately and unilaterally, to close the accounts and stop the use of all services benefited without the USER notification if it determines the address of the USER has changed and the USER shall not therefore make any objection.</li>
+                    <li>The USER declares and undertakes that he shall only make transactions on his own account and behalf in accounts opened and to be opened before ICRYPEX, he shall not make transactions on behalf of others or his account as a representative, he shall not charge a commission under any name, he has no place, technical equipment, personnel and similar organizations in order to provide services provided by ICRYPEX or in similar nature, he does not receive or deliver assets that are cash or can be represented by cash, he has all criminal and legal responsibility if any of these transactions are detected to have been made by the USER and he shall cover this damages if ICRYPEX  is damaged in any way due to the reasons mentioned. </li>
+                </ol>
+            </li>
+            <li class="maddeterm" data-title="ARTICLE">
+                <h4 class="company-content-subtitle">Account Transactions and Non-Transferability of Accounts</h4>
+                <ol class="listterm">
+                    <li>The USER may have only one account and multiple crypto currency addresses and use the site only to benefit from the services described in this Agreement. If the USER detects that ICRYPEX has more than one account belonging to the same user, he accepts, declares and undertakes that he has the right to cancel, stop or suspend all accounts belonging to the USER without notification and ICRYPEX has no responsibility in this regard. The USER is responsible for all legal and criminal liability arising from matters specified in this article. The USER’s crypto assets are not affected by account cancellation, stop or suspension and if the USER has any crypto assets, they are returned to the USER immediately upon request, provided that there is no legal restriction.</li>
+                    <li>The USER shall not transfer, sell, donate or make available to third parties irrespective of the name which is, its account and rights after becoming a member of the Site. In the event that it has been detected that the USER's actions are against this ban, ICRYPEX has the right to cancel, stop or suspend the USER's account without any prior notice. The USER accepts and undertakes that he has submitted to ICRYPEX irrevocably due to ICRYPEX's exercise of these rights. The USER is responsible for all damages arising under this article and all penal sanctions belong to the USER. In the event that the USER account is cancelled, stopped or suspended due to actions contrary to this article, the USER's crypto currency assets are not affected by this situation and USER's crypto assets, if any, is returned to the USER immediately upon request provided that there is no legal restriction.</li>
+                    <li>The USER's account shall become operable after SMS confirmation to be sent to him. ICRYPEX shall not be held responsible for loss and damage arising from delays due to GSM operator during sending SMS or the errors of the USER.</li>
+                    <li>The USER, who wants to make transactions on the Site by becoming a member of the Site, should activate its account by documenting their identity information and address confirmation document. The USER, who does not activate his account, shall not operate on the Site. Daily and monthly transaction limits for the account are announced on <a class="urllink" href="http://www.icrypex.com">www.icrypex.com</a>.</li>
+                    <li>The USER shall not use his account at ICRYPEX as his own digital purse and shall make crypto currency withdrawals at the address of his own purse. Otherwise, the USER is responsible for any damage that may arise for this reason. The USER is obliged to return the excess payments made to him by mistake within 2 (two) business days. Otherwise, ICRYPEX has the right to withdraw the crypto currency payment made without a cause ex-officio, without any reason.</li>
+                </ol>
+            </li>
+            <li class="maddeterm" data-title="ARTICLE">
+                <h4 class="company-content-subtitle">Deposit / Withdrawal Transactions</h4>
+                <ol class="listterm">
+                    <li>ICRYPEX is in no way responsible for the delay in USER's money transfers.</li>
+                    <li>Deposits should be made from the bank account registered in the name of the USER.</li>
+                    <li>Deposit and withdrawal rules are the whole of alerts and rules available in Help Centre on the Site and on other pages. ICRYPEX unilaterally reserves the right to change deposit and withdrawal rules. If any transaction is made other than the time announced by ICRYPEX regarding deposit and withdrawal transactions, ICRYPEX is not responsible for any losses and damages incurred. </li>
+                    <li>If money transfers are made with cardless banking transactions on ATMs, reference code, name or title of the account to be matched or person should be specified. If the transfer/payment transactions made without these elements are detected, ICRYPEX has the right to return such transfers or not to accept orders to be transmitted with such amounts.</li>
+                    <li>If the transactions are deemed suspicious, ICRYPEX has the right not to accept money transfers made by the USER and to return any kind of money transfers including crypto currency.</li>
+                    <li>ICRYPEX has the right to request from the USER the identification and the bank account information of the person who made the transfer for the return of the transfers that he refused and did not make. The money transfer transactions that the USER requested to the bank account opened to a name other than its own name shall not be made. </li>
+                </ol>
+            </li>
+            <li class="maddeterm" data-title="ARTICLE">
+                <h4 class="company-content-subtitle">Order Transmission and Use of Password</h4>
+                <ol class="listterm">
+                    <li>The USER  should have sufficient equipment and a device compatible with order  transmission with a connection line in order to give purchase and sale order on  the internet via remote access channels or by telephone and to watch the  information and news broadcasts to be presented on the internet by ICRYPEX. The  damages and losses that will arise in the event that these are not complete and  not ready or insufficient and the responsibility of not being able to benefit  from this service belong completely to the USER.</li>
+                    <li>After  signing this Agreement, ICRYPEX shall provide the USER with a  &quot;password&quot; that shall be used only by him/her to log in to the Site,  to trade on the Site and to benefit from the data broadcasts that will take  place on the Site. It is solely the USER's responsibility to replace the  password provided with a new password set by the USER in the first use. The  USER is fully responsible for the security of the password.</li>
+                    <li>The USER  is responsible for keeping the member number and password received from ICRYPEX  to operate with electronic communication systems (Internet, etc.)  confidential.  All transactions made  using the USER member number and password are deemed to have been made by the  USER even if the relevant member number and/or password have been used by  others with or without permission and all results belong to the USER. If the  USER informs ICRYPEX that the password has been learned, stolen or used by  third parties, ICRYPEX takes measures to prevent orders and instructions to be  given using that password as soon as possible.</li>
+                    <li>In the  event that the password is forgotten and/or learned by others, the USER shall  request ICRYPEX to give him a new password by cancelling the old password  orally, by registered telephone and then in writing as soon as possible and  he/she shall notify ICRYPEX of this situation in writing. Upon this  application, ICRYPEX shall immediately cancel the old password and give the  USER a new password. The customer shall be responsible for all damages and  losses that may occur as a result of the transactions to be made within the  period until the cancellation of the old password. The USER accepts and  declares that the password cancellation processes can only be done at ICRYPEX  during working hours and therefore ICRYPEX is not responsible for the  noncancellation of the password outside the working hours. </li>
+                    <li>ICRYPEX  may block access to the account with the password in order to ensure that the  password is re-created by the USER for security purposes and suspicious  circumstances. In this case, the USER is informed by means of the most serial  communication. This behaviour of ICRYPEX shall not be claimed as behaviour  contrary to goodwill. The USER has irrevocably accepted and declared that  he/she has already knew that such a blockage may be done for the security of  his/her account, and the consequences of any losses that may arise due to the  failure to transmit orders related to his/her account if such a case occurs.</li>
+                    <li>ICRYPEX  reserves the right to change the internet infrastructure, website, content and  form of transactions and applications offered to the USER at any time. The USER  accepts all changes in advance.</li>
+                    <li>The USER  account should have a sufficient amount of money or a sufficient amount of the  crypto currency sold in order to fulfill the purchase and sale orders. Whether  or not to grant services such as providing credit facilities, sale of crypto  currency not in the account or lending crypto currencies is at ICRYPEX&rsquo;s sole  discretion. In the case of providing these services, the relevant terms of use  and the procedures and principles regarding the transactions are determined by  ICRYPEX and announced via the Site.</li>
+                    <li>ICRYPEX  and USER has agreed that all transactions transmitted by the USER using the  account number assigned to him/her and the information such as the password that  has been changed by himself/herself and he/she can change at any time shall be  made without signature by the system and the orders to be given in this way  shall be deemed as the written instruction as they have been made only with the  password known to the USER.</li>
+                    <li>ICRYPEX  reserves the right to request confirmation and authentication from the USER  before proceeding whenever it deems necessary. ICRYPEX shall in no way be  liable to the USER for any damages that may arise from the failure to perform  orders or transactions as it has not received confirmation or authentication or  delays due to the process of confirmation or authentication.</li>
+                    <li>ICRYPEX has the right to close the USER&rsquo;s account  to the order transmission and to block his/her password even though the transactions  continue in cases where there is no transaction in the USER's account for a  long period of time, the USER does not comply with this Agreement and  commitments in other framework agreements, violates the relevant legislation  and the provisions of this Agreement in the orders sent from remote access  channels, the USER is not reached from contact information registered. The USER  agrees and declares in advance that he/she knows this right of ICRYPEX and  he/she shall not hold ICRYPEX responsible for possible damages that he/she  shall suffer.</li>
+                    <li>The USER agrees and declares that he/she shall  follow the announcement section in the encrypted login area on the website of  ICRYPEX, all applications such as announcements, information, fees, changes,  campaigns and tariffs on the pages that can be accessed without password and  ICRYPEX shall not responsible for any damages that may arise due to the fact  that he/she does not know them. </li>
+                    <li>The USER accepts and declares that he/she has  sufficient information to use remote access channels and that ICRYPEX shall not  be responsible for damage or loss due to improper operation as a result of  misuse and incomplete information or technological reasons.</li>
+                    <li>The USER accepts, declares and undertakes that  ICRYPEX shall not be responsible for the failure to perform orders and  instructions from the electronic environment for an unpredictable reason;  because of technical and similar faults that may occur on telecommunication  networks, satellite connections, on the internet or remote access channels, in  the system, on the phone, on the modem line, on computer or computer equipment,  and for the incomplete or incorrect execution, and ICRYPEX is not obliged to  conduct research in this regard. </li>
+                    <li>It is possible for persons under the age of 18 or  under guardianship to benefit from the services and products offered by ICRYPEX  through the Internet and/or electronic media, with the approval of their legal  representatives. It is the responsibility of legal representatives to protect  them from any material or moral damage and loss during the use of these  products and services by these persons and ICRYPEX shall not be held  responsible for such damages or losses.</li>
+                    <li>In case of a malfunction in one of the electronic  communication systems (Internet, etc.), ICRYPEX shall not be held responsible  for any damages caused by the USER's failure to transmit orders.</li>
+                    <li>The USER accepts and undertakes irrevocably that  he/she is liable to ICRYPEX for misuse of the platform, which he/she shall make  a transaction with the password received, for any reason by himself/herself or  third parties that may be associated with himself/herself; he/she waives all  the objections and pleas in this direction, therefore he/she shall compensate  the damage and loss that ICRYPEX will suffer. ICRYPEX also reserves the right  to apply to the USER for any damage it will suffer. </li>
+                    <li>The USER shall exercise the right to make  transactions over the internet only himself/herself. The USER shall not have  others make transactions on the ICRYPEX internet line and shall not provide  direct or indirect financial benefits such as commission, fee, etc. for this  reason. In the event of such transactions, ICRYPEX shall not be liable for any  disputes that may arise before legal authorities or between third parties and  the USER, except for faults attributable to it. </li>
+                    <li>The USER accepts that ICRYPEX is authorized to  stop the services related to internet transactions if it is detected that the  passwords given to him/her have been used by third parties or upon the request  of regulatory institutions, official authorities or ICRYPEX authorized bodies,  or if there is a suspicious situation in the transactions of the USER.</li>
+                </ol>
+            </li>
+            <li class="maddeterm" data-title="ARTICLE">
+                <h4 class="company-content-subtitle">Right of Retention</h4>
+                <ol class="listterm">
+                    <li>ICRYPEX has the right of retention under Articles 950 and subsequent articles of Civil Code until the debt is paid or the loss is covered in cash for the receivables arising out of or in connection with this Agreement and the assets of the USER on ICRYPEX account from the date of the debt or loss as a guarantee of any losses incurred or to be incurred</li>
+                </ol>
+            </li>
+            <li class="maddeterm" data-title="ARTICLE">
+                <h4 class="company-content-subtitle">Legal and Criminal Liability</h4>
+                <ol class="listterm">
+                    <li>ICRYPEX partners, directors, members of the board  of directors, managers and employees and those who prepare the information on  this Site have no legal and criminal liability due to any damages and/or losses  arising from the USER error,</li>
+                    <li>Legal and criminal liability that may arise due to  transactions and actions performed with the USER number and password on the  site belongs to the USER. ICRYPEX has no legal or criminal liability for such  transactions. The USER may only make transaction on the Site for lawful  purposes. In the event that the USER is found to have committed illegal action,  ICRYPEX has the right to take all necessary legal and administrative measures  such as taking legal action and suspending, cancelling the account or  terminating the agreement.</li>
+                    <li>The USER is personally responsible for the legal  responsibilities and tax liabilities related to the use of crypto currencies.  ICRYPEX is not responsible for tax liabilities from USER's earnings and losses.</li>
+                    <li>It is technically not possible to follow how  crypto currencies purchased through ICRYPEX are used, where and for what  purpose they are transferred, whether they are used in a crime. Any  responsibility arising from the use of crypto currencies for such or similar  purposes belongs to the USER and ICRYPEX shall not be held responsible for the  damages and losses of the USER or third parties and their negative or positive  damages.</li>
+                    <li>ICRYPEX is obliged to take maximum care as a  prudent trader for the security of crypto currencies found in accounts held on  behalf of the USER. Crypto currencies owned by the USER are kept with cold  storage method in environments without internet connection against any  cyber-attack. ICRYPEX is not responsible for any fraud / theft that may occur,  except for the defect that may be imposed on it within the framework of  objective criteria.</li>
+                    <li>ICRYPEX shall in no way be held responsible for  any damages to the USER that may result from technical faults and errors beyond  its control, and it shall not be claimed. In these cases, ICRYPEX may cancel or  withdraw the transactions to correct the system and ensure its correct  operation; suspend USER accounts during cancellation and withdrawal; if any  unfair payment has been made, it may request a refund of this payment; if it is  not returned, and it can apply to any legal remedy.</li>
+                    <li>ICRYPEX has the right to suspend, close the USER  account and take legal action against disrespectful and insulting behaviour of  USER in the verbal and written communication with ICRYPEX.</li>
+                </ol>
+            </li>
+            <li class="maddeterm" data-title="ARTICLE">
+                <h4 class="company-content-subtitle">Support Service Delivery</h4>
+                <ol class="listterm">
+                    <li>ICRYPEX may provide support services only through <a class="urllink" href="mailto:destek@icrypex.com">destek@icrypex.com</a> e-mail address. ICRYPEX shall not provide support service to its users with any method other than this e-mail address. it does not ask for a password in support correspondence and does not provide a purse address for users to send crypto currency. This issue is a notification and ICRYPEX shall not be held responsible for any damages and losses suffered or to be suffered by users due to a notification sent from an address other than the e-mail address mentioned.</li>
+                </ol>
+            </li>
+            <li class="maddeterm" data-title="ARTICLE">
+                <h4 class="company-content-subtitle">Fees and Commissions</h4>
+                <ol class="listterm">
+                    <li>The USER shall pay a commission on the methods and rates determined by  ICRYPEX for each purchase and sale transaction on the Site. ICRYPEX announces  the fees for its services under the heading &quot;Commission Rates&quot; and in  the &quot;Help Centre&quot; on the Site. ICRYPEX reserves the right to change  the fees related to the services unilaterally at all times. Fees shall be valid  from the moment they are announced on the Site.</li>
+                    <li>ICRYPEX has the right to charge a transaction fee to the users  determined by itself for each Turkish Lira withdrawal.</li>
+                    <li>The crypto currency transfers made on the site and the commission and  transaction fees charged by ICRYPEX are not refundable.</li>
+                    <li>By accepting this Agreement, the USER is deemed to have accepted the  transaction and commission fees announced on the Site.</li>
+                </ol>
+            </li>
+            <li class="maddeterm" data-title="ARTICLE">
+                <h4 class="company-content-subtitle">Privacy Policy</h4>
+                <ol class="listterm">
+                    <li>ICRYPEX accepts and undertakes that it shall not  process the personal data belonging to the USER in accordance with the  agreement against the purpose of processing the personal data and the law, it  shall not share such data with third parties without the consent of the USER  except for legal exceptions, it shall take the necessary administrative and  technical measures to prevent the unlawful processing of personal data and  access to these data, and it shall keep these data in a safe environment in the  country.</li>
+                    <li>ICRYPEX may cooperate with third parties and  institutions/organizations in different ways in order to provide its services  to be used more effectively, it may be involved in allowed communication and/or  marketing (advertising, sponsorship, allowed marketing, data sharing, legal  commercial methods, etc.) for this purpose within the framework of the law.  ICRYPEX declares and undertakes not to communicate without the USER's request,  to provide tools that shall enable the USER to exit from the system freely and  easily.</li>
+                    <li>ICRYPEX detects and records USER IP addresses,  models of devices by which they access to the Site, communication systems and  browser information within the scope of cookie policies. ICRYPEX uses these  records to describe users in a general way and to collect comprehensive  demographic information, to ensure system and USER account security, to combat  counterfeiting and to comply with legal obligations.</li>
+                    <li>ICRYPEX may provide links to other sites within  the Site. It may publish advertisements and/or the application forms for  various services of contracted third parties. The USER may be redirected to  sites of contracted third parties or third parties giving advertisement through  these forms and advertisements. ICRYPEX bears no responsibility regarding the  privacy policies or content of other sites accessed through this link.</li>
+                </ol>
+            </li>
+            <li class="maddeterm" data-title="ARTICLE">
+                <h4 class="company-content-subtitle">Notifications</h4>
+                <ol class="listterm">
+                    <li>Notices, notifications and other declarations not subject to any other  article of this Agreement shall be made any of the addresses of PARTIES  specified in this Agreement by registered mail or hand delivery by a courier or  sending an e-mail to ICRYPEX's e-mail address notified by the USER.</li>
+                    <li>PARTIES accept and undertake that the addresses specified in this  Agreement and its annexes are legal notification addresses and the specified  phone and/or fax numbers and e-mail addresses are valid and current numbers and  addresses that are still used; they shall notify the other party in writing of  a change in such addresses or numbers; unless such change is notified to the  other party in writing, the notifications to be made to the address, telephone/fax  numbers or e-mail addresses specified herein shall bear all the terms and  consequences of a legally valid notification.</li>
+                    <li>ICRYPEX is not responsible for damages caused by third parties such as  mail, internet service provider, courier, insurance company with the necessary  care in its selection</li>
+                </ol>
+            </li>
+            <li class="maddeterm" data-title="ARTICLE">
+                <h4 class="company-content-subtitle">Intellectual Property and Confidentiality</h4>
+                <ol class="listterm">
+                    <li>The USER does not have the right to use ICRYPEX's  products and services for purposes other than those stated in this Agreement.  The USER declares that the Site and other products and services offered by  ICRYPEX are trade secrets and he/she knows that they have been developed by  spending professional effort, time and money. The USER shall not publish,  distribute trade secrets of ICRYPEX or provide such information to third  parties. The USER shall in no way copy, separate the Site and other products  and services or work on these purposes. </li>
+                    <li>PARTIES, unless it is enforced by legal provisions  or except where the obligation to make a statement is prescribed by legislation  and/or administrative authorities or judicial authorities request; shall keep  confidential any information and documents that they shall learn about the  works, customers, internal operation and any other activities of the other  party for the transactions to be carried out within the scope of this Use  Agreement or that the other party or its officials shall provide, and they  shall not disclose  to anyone other than  legally official and authorized personnel regarding such information and  documents, they shall ensure the officers who are employed in their own  workplace to comply with this obligation absolutely. Otherwise, they shall be  liable to compensate the direct or indirect damages that the other party or  PARTIES will suffer for this reason.</li>
+                    <li>The provision of this article shall remain in  force even after the Use Agreement is terminated in any way. For the damages  and losses or material and moral damages that may arise due to the violation of  this provision, the PARTY, who is in violation, is responsible.</li>
+                </ol>
+            </li>
+            <li class="maddeterm" data-title="ARTICLE">
+                <h4 class="company-content-subtitle">Amendment of the Agreement</h4>
+                <ol class="listterm">
+                    <li>The provisions of the agreement may be changed unilaterally by ICRYPEX;  provided that the changes are entered into force 2 business days after the  notification to the USER and the USER reserves the right to terminate the  Agreement for this reason. If no objection is made in writing within 2 working  days from the date of notification to the USER; the change takes effect in  transactions between the PARTIES. The USER accepts that the changes to be made  in the agreement may be notified electronically and they may be entered into  force by acceptance or silence via electronic media.</li>
+                    <li>The USER, in case of a mandatory change in domestic and foreign  legislation, in the agreements with counter-institutions and organizations made  by related regulatory institutions, in trading platforms used, etc.; declares  and accepts that such changes may be immediately applied to himself/herself  without any need to make any notification and without waiting for the 2 working  days mentioned above.</li>
+                    <li>If the USER objects to the changes made by ICRYPEX or he/she does not  want to continue the agreement with the changes required by the legislation,  this Agreement is terminated. In this case, if the USER has an unfulfilled  order at ICRYPEX when he/she terminates the Agreement, the provisions of this  Agreement continue to be applied until all risks arising from these orders are  ended and all contractual debts are paid.</li>
+                </ol>
+            </li>
+            <li class="maddeterm" data-title="ARTICLE">
+                <h4 class="company-content-subtitle">Termination of the Agreement</h4>
+                <ol class="listterm">
+                    <li>This Agreement has been concluded indefinitely and shall remain in  effect until terminated by the PARTIES.</li>
+                    <li>Each of the PARTIES is authorized to terminate this Agreement  unilaterally by giving 3 (three) days&rsquo; notice (via notary or registered mail).</li>
+                    <li>In the event of termination of the Agreement, if the USER has an  unfulfilled order on the Site, the provisions of this Agreement continue to be  applied until all risks arising from these orders are ended and all contractual  debts are paid.</li>
+                    <li>In the event that the Agreement is terminated by any of the PARTIES, any  claims of ICRYPEX arising out of and in connection with this Agreement shall be  paid by the USER under the provisions of this Agreement. Reserving other  provisions of the Agreement; the remaining balance USER&rsquo;s assets after the said  payment shall be transferred to the bank account or purse account to be  notified by the USER</li>
+                    <li>ICRYPEX is entitled to unilaterally terminate the agreement if:
+                        <ol class="listterm nomatter">
+                            <li class="nomatter"><strong>a)</strong> Default status in payment: The USER's default to pay any of the debts that he/she is obliged to pay for any transaction within the framework of the Agreement and the fact that this default status is not resolved within the period specified in the payment notice sent to him/her.</li>
+                            <li class="nomatter"><strong>b)</strong> Non-conformance to the Agreement: without prejudice to the conditions specified and specially regulated in this Agreement, if the USER violates the obligations undertaken by the Agreement and the commitments he/she declares, the fact that the non-conformance is not resolved when he/she is notified and  within 2 (two) working days from the receipt of the notice. </li>
+                            <li class="nomatter"><strong>c)</strong> Misrepresentation: In the event that any of the information and statements made by the USER within the framework of the Agreement is found to be violating and this violation does not allow the continuation of the Agreement (ICRYPEX's other legal claim rights are reserved due to this violation).</li>
+                            <li class="nomatter"><strong>d)</strong> Bankruptcy or insolvency: situations causing USER's insolvency such as the application of bankruptcy against the USER, being under control of a trustee, concordat declaration, making a decision of bankruptcy and further serious signs and sensations about USER's insolvency or future insolvency.</li>
+                        </ol>
+                    </li>
+                </ol>
+            </li>
+            <li class="maddeterm" data-title="ARTICLE">
+                <h4 class="company-content-subtitle">Evidential Value of ICRYPEX Records</h4>
+                <ol class="listterm">
+                    <li>The book, record, document and electronic media records of ICRYPEX have evidential value in case of disputes and conflicts arising from this Agreement and the transactions made under the Agreement.</li>
+                    <li>The USER accepts and declares that all telephone conversations with ICRYPEX officials and personnel may be recorded and that these records shall be of exclusive evidential value.</li>
+                </ol>
+            </li>
+            <li class="maddeterm" data-title="ARTICLE">
+                <h4 class="company-content-subtitle">Force Majeure</h4>
+                <ol class="listterm">
+                    <li>The USER accepts that he/she may not fulfill his/her contractual obligations due to the reasons such as economic, social or political riot that may occur in Turkey and/or in countries in which the transactions are made, regional and/or global wars that may significantly affect ICRYPEX’s activities, national, regional or global economic crises and fluctuations, the crypto-currency or foreign exchange regime of Turkey or other countries, restrictions that may be imposed to  commodities and precious metals market, natural disasters and extraordinary market conditions or the legal arrangements that may be made in Turkey and other countries, the savings of the public authorities or other events or reasons that shall not be overcome by predictions and due diligence except for them (“Force Majeure”), and ICRYPEX shall not be responsible to the USER for these reasons. </li>
+                    <li>If ICRYPEX detects the existence of the above conditions; based on its own initiative, it may take one or more of the following measures at any time without notice:
+                        <ol class="listterm nomatter">
+                            <li class="nomatter"><strong>a)</strong> Cancellation of USER's unfulfilled orders at the closing level that ICRYPEX deems reasonable.</li>
+                            <li class="nomatter"><strong>b)</strong> If the resulting situation makes ICRYPEX impossible to fulfill all or some of the terms of this Agreement; suspension or amendment of the application of such terms or conditions.</li>
+                            <li class="nomatter"><strong>c)</strong> Change of the trading time and/or trading rules for the crypto currency it deems necessary.</li>
+                        </ol>
+                    </li>
+                    <p>In the event that the above measures are taken, ICRYPEX shall not be liable to the USER for any damage, loss, costs and expenses arising directly or indirectly from these measures.</p>
+                </ol>
+            </li>
+            <li class="maddeterm" data-title="ARTICLE">
+                <h4 class="company-content-subtitle">Severability</h4>
+                <ol class="listterm">
+                    <li>If any provision, article or condition of this Agreement is or deems to be invalid, illegal, or non-enforceable partly or wholly at any time and for any reason, this shall not affect or disrupt the validity and enforceability of other provisions, articles or conditions and other provisions, articles or conditions shall remain in effect. In this case, PARTIES shall negotiate in good faith to replace invalid, illegal, or non-enforceable in whole or in part with new, valid and enforceable provisions with the same economic and legal effects on the PARTIES.</li>
+                </ol>
+            </li>
+            <li class="maddeterm" data-title="ARTICLE">
+                <h4 class="company-content-subtitle">Applicable Law and Settlement of Disputes Resolution</h4>
+                <ol class="listterm">
+                    <li>This Use Agreement shall be governed by the laws of the Republic of  Turkey.</li>
+                    <li>Istanbul Çağlayan General Courts and Enforcement Offices shall be  competent in the settlement of disputes arising from the application or  interpretation of this Use Agreement.</li>
+                    <li>In cases where there is no provision in this Use Agreement, general  provisions are applied.</li>
+                </ol>
+            </li>
+            <li class="maddeterm" data-title="ARTICLE">
+                <h4 class="company-content-subtitle">Validity and Acceptance</h4>
+                <ol class="listterm">
+                    <li>The USER declares and accepts that he/she approves ICRYPEX to send  him/her a &ldquo;Commercial Electronic Message&rdquo; for the purpose of promotion and  marketing for the activities and services offered by ICRYPEX.</li>
+                    <li>The USER shall withdraw the approval for ICRYPEX to send him/her a  commercial electronic message under Article 23.1 above via ……… Customer  Service telephone number or link at <a class="urllink" href="http://www.icrypex.com/profile/notification/settings" target="_blank">www.icrypex.com/profile/notification/settings</a></li>
+                    <li>In the event that the approval for sending a commercial message is withdrawn,  the sending of commercial messages to the USER shall be stopped within 3  working days at the latest.</li>
+                </ol>
+            </li>
+        </ol>    </div>
+    <!-- Content -->
+
+</div>
+</div>
+</section>
+<!-- Company End -->
+
+<!-- Footer Start -->
+<footer class="footer footer-tradepage">
+    <!-- Footer Top -->
+    <div class="container">
+        <div class="row">
+
+            <!-- Address -->
+            <div class="maincont-left col-2">
+                <div class="footer-tradepage-address">
+                    <a class="footer-tradepage-logo" href="#" title="ICRYPEX Crypto Exchange" rel="bookmark">
+                        <i class="footer-tradepage-logo-symbol icon-svg icon-svg-icrypexsymbol"></i>
+                        <h1 class="footer-tradepage-logo-icrypex">ICRYPEX</h1>
+                        <h2 class="footer-tradepage-logo-cryptoexchange">CRYPTO EXCHANGE</h2>
+                    </a>
+                    <p class="footer-tradepage-address-desc mt-0">Tüm Hakları Saklıdır © 2018-2019 <br class="d-none d-lg-block" />Icrypex Crypto Exchange</p>
+                    <p class="footer-tradepage-address-desc">Icrypex Bilişim A.Ş. <br class="d-none d-lg-block" />Maslak Mah. Maslak Meydan Sok. <br class="d-none d-lg-block" />Spring Giz Plaza N:5/57 <br class="d-none d-lg-block" />34398 Sarıyer/İstanbul</p>
+                    <p class="footer-tradepage-address-desc"><span>Müşteri Hizmetleri: </span><a href="tel:08502551079" title="Müşteri Hizmetleri" rel="external nofollow">0850 255 1079</a></p>
+                </div>
+            </div>
+            <!-- Address -->
+            <!-- Navigation -->
+            <div class="maincont-right col-10">
+                <div class="footer-tradepage-loginnav" style="display: none !important;">
+                    <ul class="footer-tradepage-loginnav-list">
+                        <li class="footer-tradepage-loginnav-list-item"><a href="../tradepage/04_Easy_Buy_Sell.html" title="" rel="category">KOLAY AL-SAT</a></li>
+                        <li class="footer-tradepage-loginnav-list-item"><a href="../tradepage/03_Trader_Home_2.html" title="" rel="category">PRO GÖRÜNÜM</a></li>
+                        <li class="footer-tradepage-loginnav-list-item"><a href="../tradepage/05_Deposit_Step_1_Home.html" title="" rel="category">YATIRMA</a></li>
+                        <li class="footer-tradepage-loginnav-list-item"><a href="../tradepage/12_Withdraw_Step_1_Home.html" title="" rel="category">ÇEKME</a></li>
+                        <li class="footer-tradepage-loginnav-list-item"><a href="../tradepage/27_Profile_Profile.html" title="" rel="category">HESABIM</a></li>
+                        <li class="footer-tradepage-loginnav-list-item"><a href="#" title="" rel="category">DESTEK</a></li>
+                    </ul>
+                    <ul class="footer-tradepage-loginnav-list linkgray">
+                        <li class="footer-tradepage-loginnav-list-item d-none"><a href="#" title="" rel="category">CANLI YARDIM</a></li>
+                        <li class="footer-tradepage-loginnav-list-item d-none"><a href="#" title="" rel="category">RENK</a></li>
+                        <li class="footer-tradepage-loginnav-list-item pl-0"><a href="../tradepage/25_Profile_Notification.html" title="" rel="category">BİLDİRİMLER</a></li>
+                        <li class="footer-tradepage-loginnav-list-item"><a href="../tradepage/27_Profile_Profile.html" title="" rel="category">AYARLAR</a></li>
+                    </ul>
+                </div>
+                <div class="footer-tradepage-nav row justify-content-md-center">
+                    <div class="footer-menu col">
+                        <div class="footer-underlinehover">
+                            <h6 class="footer-menu-title columntitle columntitle-xs bottomborder titleleft">ÖZELLİKLER</h6>
+                            <ul class="footer-menu-list">
+                                <li class="footer-menu-list-item"><a href="02_Features_Products.html" title="" rel="category">ÜRÜNLER</a></li>
+                                <li class="footer-menu-list-item"><a href="07_Features_Commision.html" title="" rel="category">KOMİSYONLAR</a></li>
+                                <li class="footer-menu-list-item"><a href="08_Features_Limit.html" title="" rel="category">LİMİTLER</a></li>
+                                <li class="footer-menu-list-item"><a href="09_Features_Security.html" title="" rel="category">GÜVENLİK</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-menu col">
+                        <div class="footer-underlinehover">
+                            <h6 class="footer-menu-title columntitle columntitle-xs bottomborder titleleft">TEKNOLOJİ</h6>
+                            <ul class="footer-menu-list">
+                                <li class="footer-menu-list-item"><a href="10_Technology_Chain_Summary.html" title="" rel="category">ZİNCİR VERİ TABANI</a></li>
+                                <li class="footer-menu-list-item"><a href="16_Technology_Api.html" title="" rel="category">API</a></li>
+                                <li class="footer-menu-list-item"><a href="17_Technology_Converter.html" title="" rel="category">KRİPTO PARA ÇEVİRİCİ</a></li>
+                                <li class="footer-menu-list-item"><a href="18_Technology_Mining.html" title="" rel="category">MADENCİLİK</a></li>
+                                <li class="footer-menu-list-item"><a href="19_Technology_Multiple.html" title="" rel="category">ÇOKLU GÖNDERİM</a></li>
+                                <li class="footer-menu-list-item"><a href="20_Technology_Segwit.html" title="" rel="category">SEGWIT</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-menu col">
+                        <div class="footer-underlinehover">
+                            <h6 class="footer-menu-title columntitle columntitle-xs bottomborder titleleft">ŞİRKET</h6>
+                            <ul class="footer-menu-list">
+                                <li class="footer-menu-list-item"><a href="21_Company_About.html" title="" rel="category">HAKKIMIZDA</a></li>
+                                <li class="footer-menu-list-item"><a href="22_Company_Legal_Terms_01.html" title="" rel="category">YASAL</a></li>
+                                <li class="footer-menu-list-item"><a href="27_Company_Contact.html" title="" rel="category">BİZE ULAŞIN</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-menu col">
+                        <div class="footer-underlinehover">
+                            <h6 class="footer-menu-title columntitle columntitle-xs bottomborder titleleft"><a href="28_What_How.html" title="" rel="category">NEDİR? NASIL ÇALIŞIR?</a></h6>
+                        </div>
+                        <div class="footer-underlinehover">
+                            <h6 class="footer-menu-title columntitle columntitle-xs bottomborder titleleft"><a href="29_Announcements.html" title="" rel="category">DUYURULAR</a></h6>
+                        </div>
+                        <div class="footer-underlinehover">
+                            <h6 class="footer-menu-title columntitle columntitle-xs bottomborder titleleft"><a href="#" title="" rel="category">DESTEK</a></h6>
+                        </div>
+                    </div>
+                    <div class="footer-menu col">
+                        <h6 class="footer-menu-title columntitle columntitle-xs bottomborder titleleft">BİZİ TAKİP EDİN</h6>
+                        <ul class="footer-social-list footer-tradepage-social-list">
+                            <li class="footer-social-list-item" data-toggle="tooltip" data-placement="top" title="Facebook'ta Takip Edin"><a href="#" title="" rel="external nofollow"><i class="footer-social-icon facebook"></i></a></li>
+                            <li class="footer-social-list-item" data-toggle="tooltip" data-placement="top" title="Twitter'da Takip Edin"><a href="#" title="" rel="external nofollow"><i class="footer-social-icon twitter"></i></a></li>
+                            <li class="footer-social-list-item" data-toggle="tooltip" data-placement="top" title="Instagram'da Takip Edin"><a href="#" title="" rel="external nofollow"><i class="footer-social-icon instagram"></i></a></li>
+                            <li class="footer-social-list-item" data-toggle="tooltip" data-placement="top" title="Linkedin'de Takip Edin"><a href="#" title="" rel="external nofollow"><i class="footer-social-icon linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Navigation -->
+
+        </div>
+    </div>
+    <!-- Footer Top -->
+    <!-- Bottom -->
+    <div class="footer-tradepage-bottom">
+        <ul class="footer-tradepage-bottom-list">
+            <li class="footer-tradepage-bottom-list-item"><img class="akbank" src="../assets/img/tradepage/footer/Akbank_Logo.svg" alt="Akbank" width="76" height="10" /></li>
+            <li class="footer-tradepage-bottom-list-item"><img class="ziraat" src="../assets/img/tradepage/footer/Ziraat_Logo.svg" alt="Ziraat Bankası" width="99" height="20" /></li>
+            <li class="footer-tradepage-bottom-list-item"><img class="odeabank" src="../assets/img/tradepage/footer/Odeabank_Logo.svg" alt="Odeabank" width="75" height="14" /></li>
+            <li class="footer-tradepage-bottom-list-item"><img class="papara" src="../assets/img/tradepage/footer/Papara_Logo.svg" alt="Papara" width="54" height="14" /></li>
+        </ul>
+    </div>
+    <!-- Bottom -->
+</footer>
+<!-- Footer End -->
+
+<!-- Plugins Start -->
+<script id="script-owl-carousel" src="../assets/vendor/owl.carousel/dist/owl.carousel.min.js"></script>
+<script id="script-inputmask" src="../assets/vendor/inputmask/dist/min/jquery.inputmask.bundle.min.js"></script>
+<script id="script-plugin-app" src="../assets/dist/js/plugin-app.js"></script>
+<script id="script-mainpage-app" src="../assets/dist/js/mainpage-app.js"></script>
+<script id="script-plugin-custom" src="../assets/cdn/plugin-custom-pagemain.js"></script>
+<!-- Plugins End -->
+
+</body>
+</html>

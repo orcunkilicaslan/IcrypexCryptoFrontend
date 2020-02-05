@@ -201,7 +201,7 @@
 
       li.maddeterm{
         &::before {
-          content: "MADDE " counters(item, ".") ": ";
+          content: attr(data-title) " " counters(item, ".") ": ";
           display: inline;
           position: relative;
         }
