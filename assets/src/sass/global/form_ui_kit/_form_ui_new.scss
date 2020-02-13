@@ -649,6 +649,10 @@
     opacity: 1;
   }
 
+  input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+
   .btn{
     height: 40px;
     padding-top: 6px;
