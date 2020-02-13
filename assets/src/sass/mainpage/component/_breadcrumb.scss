@@ -61,6 +61,8 @@
     &-item {
       position: relative;
       text-transform: capitalize;
+      display: flex;
+      align-items: center;
 
       a{
         color: $global-clr-dark-blue;
@@ -104,6 +106,20 @@
     }
     @include ReSassWidthResponsive(480){
       font-size: 20px;
+    }
+
+    h1,h2,h3,h4,h5,h6{
+      font-size: 25px;
+      font-weight: normal;
+      margin: 0;
+      padding: 0;
+
+      @include ReSassWidthResponsive(1400){
+        font-size: 23px;
+      }
+      @include ReSassWidthResponsive(480){
+        font-size: 20px;
+      }
     }
 
     .breadcrumb-item{
