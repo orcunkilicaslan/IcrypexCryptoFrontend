@@ -205,7 +205,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
       margin-bottom: 25px;
     }
 
-    @include ReSassWidthResponsive(480){
+    @include ReSassWidthResponsive(400){
       display: block !important;
     }
 
