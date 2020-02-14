@@ -1,5 +1,5 @@
 /* Head Blur Tab Page Title */
-$(function(){
+/*$(function(){
     var $pageHeadTagTitle       = $('title');
     var $pageHeadTagTitleText   = $pageHeadTagTitle.text();
 
@@ -10,7 +10,7 @@ $(function(){
     $(window).blur(function(){
         $pageHeadTagTitle.text('ICRYPEX')
     });
-});
+});*/
 /* Head Blur Tab Page Title */
 
 /* Header Nav Fixed */
