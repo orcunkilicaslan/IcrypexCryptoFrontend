@@ -1,0 +1,1415 @@
+<!doctype html>
+<html lang="tr">
+<head>
+    <title>Icrypex</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link id="css-bootstrap" rel="stylesheet" href="../assets/dist/css/bootstrap.css">
+    <link id="css-plugin" rel="stylesheet" href="../assets/dist/css/plugin.css">
+    <link id="css-mainpage-app" rel="stylesheet" href="../assets/dist/css/mainpage-app.css">
+    <script id="script-jquery" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script id="script-popper" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script id="script-bootstrap" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body class="dfn-megamenu fullpages mainpage homepage">
+
+<!-- Header Start -->
+<header class="header">
+
+    <!-- Mobile Header -->
+    <div class="dfn-mobilemenu-mask"></div>
+    <div class="dfn-mobilemenu-header">
+        <a class="header-navigation-logo" href="00_Home_Page.html" title="ICRYPEX Crypto Exchange" rel="bookmark">
+            <i class="header-navigation-logo-symbol icon-svg icon-svg-icrypexsymbol"></i>
+            <span class="header-navigation-logo-icrypex">ICRYPEX</span>
+            <span class="header-navigation-logo-cryptoexchange">CRYPTO EXCHANGE</span>
+        </a>
+        <a id="dfn-navtggle" class="dfn-mobilemenu-btn">
+            <div class="btnicon"><span></span></div>
+            <div class="btntext"><small>MENÜ</small></div>
+        </a>
+        <a class="dfn-mobilemenu-livechat">
+            <small>LIVECHAT</small>
+            <i class="icon-svg icon-svg-headerchatmobile"></i>
+        </a>
+    </div>
+    <!-- Mobile Header -->
+
+    <!-- Web Header -->
+    <div class="container-fluid container-1890 header-web">
+
+        <!-- Top Header Start -->
+        <div class="header-top">
+            <div class="col-3 d-flex justify-content-start">
+                <ul class="header-top-language">
+                    <li class="header-top-language-item"><a class="header-top-language-selection" href="#" title="ENGLISH" rel="bookmark">ENGLISH</a></li>
+                    <li class="header-top-language-item"><a class="header-top-language-selection active" href="#" title="TÜRKÇE" rel="bookmark">TÜRKÇE</a></li>
+                </ul>
+            </div>
+            <div class="col-6 d-flex justify-content-center">
+                <ul class="header-top-city">
+                    <li class="header-top-city-item"><span class="header-top-city-name">İSTANBUL</span><span id="clock-istanbul" class="header-top-city-clock">12:56:03</span></li>
+                    <li class="header-top-city-item"><span class="header-top-city-name">NEW YORK</span><span id="clock-newyork" class="header-top-city-clock">7:48:06</span></li>
+                    <li class="header-top-city-item"><span class="header-top-city-name">LONDON</span><span id="clock-london" class="header-top-city-clock">12:47:17</span></li>
+                    <li class="header-top-city-item"><span class="header-top-city-name">MOSKOW</span><span id="clock-tokyo" class="header-top-city-clock">15:47:33</span></li>
+                    <li class="header-top-city-item"><span class="header-top-city-name">TOKYO</span><span id="clock-moscow" class="header-top-city-clock">21:47:45</span></li>
+                </ul>
+                <script id="script-plugin-worldclock-app" src="../assets/cdn/plugin-worldclock.js"></script>
+                <script type="text/javascript">
+                    window.onload=worldClockZone;
+                    function worldClockZone(){
+
+                        document.getElementById("clock-istanbul").innerHTML = worldClock(2, "Europe")
+                        document.getElementById("clock-newyork").innerHTML = worldClock(-5, "NAmerica")
+                        document.getElementById("clock-london").innerHTML = worldClock(0, "Europe")
+                        document.getElementById("clock-tokyo").innerHTML = worldClock(9, "Tokyo")
+                        document.getElementById("clock-moscow").innerHTML = worldClock(3, "Europe")
+
+                        setTimeout("worldClockZone()", 1000)
+                    }
+                </script>
+            </div>
+            <div class="col-3 d-flex justify-content-end">
+                <div class="header-top-signin">
+                    <ul class="header-signin">
+                        <li class="header-signin-item"><a class="header-signin-register" href="01_Sign_Up.html" title="YENİ ÜYELİK" rel="bookmark">YENİ ÜYELİK</a></li>
+                        <li class="header-signin-item"><a class="header-signin-login" href="../tradepage/01_Login_Step_1.html" title="ÜYE GİRİŞİ" rel="bookmark">ÜYE GİRİŞİ</a></li>
+                    </ul>
+                </div>
+                <div class="header-top-userarea d-flex align-items-center" style="display: none !important;">
+                    <ul class="header-userarea-iconset d-flex align-items-center">
+                        <li class="header-userarea-iconset-search header-userarea-iconset-item">
+                            <i class="icon-svg icon-svg-headersearch"></i>
+                        </li>
+                        <li class="header-userarea-iconset-chat header-userarea-iconset-item">
+                            <a class="header-userarea-iconset-link" href="#">
+                                <i class="icon-svg icon-svg-headerchat"></i>
+                            </a>
+                        </li>
+                        <li class="header-userarea-iconset-theme header-userarea-iconset-item">
+                            <a class="header-userarea-iconset-link" href="#">
+                                <i class="icon-svg icon-svg-headertheme"></i>
+                            </a>
+                        </li>
+                        <li class="header-userarea-iconset-bell header-userarea-iconset-item">
+                            <a class="header-userarea-iconset-link" href="../tradepage/25_Profile_Notification.html" data-toggle="tooltip" data-placement="bottom" title="1 Yeni Bildiriminiz Var">
+                                <i class="icon-svg icon-svg-headerbell"></i>
+                                <span class="header-userarea-iconset-badge"></span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="header-userarea-user btn-group d-flex align-items-center">
+                        <a class="header-userarea-user-title d-flex align-items-center" href="../tradepage/27_Profile_Profile.html" title="" rel="bookmark">
+                            <img class="header-userarea-user-image" src="../assets/img/global/svg/Unknown_Profile_Avatar_Icon.svg" width="30" height="30" alt="UserPic" />
+                            <span class="header-userarea-user-name">İSİM İSİM SOYİSİM</span>
+                        </a>
+                        <button class="header-userarea-user-dropdown dropdown-toggle dropdown-toggle-split" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <div class="header-userarea-user-droplist">
+                                <div class="headusermenu">
+                                    <div class="headusermenu-box">
+                                        <div class="headusermenu-userbg">
+                                            <div class="headusermenu-box-avatar"><img src="../assets/img/global/svg/Unknown_Profile_Avatar_Icon.svg" width="200" height="200" alt="UserPic"></div>
+                                            <div class="headusermenu-box-textarea">
+                                                <h5 class="headusermenu-box-textarea-username">ORCUN KILICASLAN</h5>
+                                                <small class="sitecolorblue">1 Yeni Mesajınız Var</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="headusermenu-menulist">
+                                        <ul id="MainpageDropdownMenu" class="usermenulist">
+                                            <li class="userlink"><a href="02_Features_Products.html" title="ÖZELLİKLER" rel="category">ÖZELLİKLER</a></li>
+                                            <li class="userlink"><a href="10_Technology_Chain_Summary.html" title="TEKNOLOJİ" rel="category">TEKNOLOJİ</a></li>
+                                            <li class="userlink"><a href="30_Research_Daily.html" title="ARAŞTIRMA" rel="category">ARAŞTIRMA</a></li>
+                                            <li class="userlink"><a href="21_Company_About.html" title="ŞİRKET" rel="category">ŞİRKET</a></li>
+                                            <li class="userlink"><a href="28_What_How.html" title="NEDİR? NASIL ÇALIŞIR?" rel="category">NEDİR? NASIL ÇALIŞIR?</a></li>
+                                            <li class="userlink"><a href="29_Announcements.html" title="DUYURULAR" rel="category">DUYURULAR</a></li>
+                                            <li class="userlink"><a href="#" title="DESTEK" rel="category" target="_blank">DESTEK</a></li>
+                                        </ul>
+                                        <ul id="TradepageDropdownMenu" class="usermenulist">
+                                            <li class="userlink"><a href="../tradepage/04_Easy_Buy_Sell.html" title="KOLAY AL-SAT" rel="category">KOLAY AL-SAT</a></li>
+                                            <li class="userlink"><a href="../tradepage/03_Trader_Home_2.html" title="PRO GÖRÜNÜM" rel="category">PRO GÖRÜNÜM</a></li>
+                                            <li class="userlink"><a href="../tradepage/05_Deposit_Step_1_Home.html" title="PARA YATIRMA" rel="category">PARA YATIRMA</a></li>
+                                            <li class="userlink"><a href="../tradepage/12_Withdraw_Step_1_Home.html" title="PARA ÇEKME" rel="category">PARA ÇEKME</a></li>
+                                            <li class="userlink"><a href="../tradepage/27_Profile_Profile.html" title="HESAP & GÜVENLİK AYARLARI" rel="category">HESAP & GÜVENLİK AYARLARI</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="btnarea"><a class="logout" href="#" title="ÇIKIŞ YAPIN" rel="external nofollow">ÇIKIŞ YAPIN</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Top Header End -->
+        <!-- Navigation Start -->
+        <div class="header-navigation">
+            <!-- Logo -->
+            <div class="header-navigation-resp col-3 d-flex justify-content-start">
+                <a class="header-navigation-logo" href="00_Home_Page.html" title="ICRYPEX Crypto Exchange" rel="bookmark">
+                    <i class="header-navigation-logo-symbol icon-svg icon-svg-icrypexsymbol"></i>
+                    <span class="header-navigation-logo-icrypex">ICRYPEX</span>
+                    <span class="header-navigation-logo-cryptoexchange">CRYPTO EXCHANGE</span>
+                </a>
+            </div>
+            <!-- Logo -->
+            <!-- Navigasyon -->
+            <div class="col-6 d-flex justify-content-center">
+                <div class="header-navigation-navbar dfn-nav">
+                    <nav class="dfn-menu">
+                        <ul class="dfn-mobil-alt dfn-menu-list">
+                            <li class="dfn-onlymobile-menu d-lg-none">
+                                <ul class="header-signin">
+                                    <li class="header-signin-item"><a class="header-signin-register" href="01_Sign_Up.html" title="YENİ ÜYELİK" rel="bookmark">YENİ ÜYELİK</a></li>
+                                    <li class="header-signin-item"><a class="header-signin-login" href="../tradepage/01_Login_Step_1.html" title="ÜYE GİRİŞİ" rel="bookmark">ÜYE GİRİŞİ</a></li>
+                                </ul>
+                            </li>
+                            <li class="dfn-onlymobile-userarea d-lg-none" style="display: none !important;">
+                                <div class="header-userarea-user-droplist">
+                                    <div class="headusermenu" id="MobileMenuUserDropdownMenu">
+                                        <div class="headusermenu-box">
+                                            <div class="headusermenu-userbg">
+                                                <div class="headusermenu-box-avatar"><img src="../assets/img/global/svg/Unknown_Profile_Avatar_Icon.svg" width="200" height="200" alt="UserPic"></div>
+                                                <div class="headusermenu-box-textarea">
+                                                    <h5 class="headusermenu-box-textarea-username">ORCUN KILICASLAN</h5>
+                                                    <small><a href="../tradepage/25_Profile_Notification.html" title="" rel="bookmark">1 Yeni Mesajınız Var</a></small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="headusermenu-menulist">
+                                            <ul id="MobileMenuMainpageDropdownMenu" class="usermenulist">
+                                                <li class="userlink"><a href="02_Features_Products.html" title="ÖZELLİKLER" rel="category">ÖZELLİKLER</a></li>
+                                                <li class="userlink"><a href="10_Technology_Chain_Summary.html" title="TEKNOLOJİ" rel="category">TEKNOLOJİ</a></li>
+                                                <li class="userlink"><a href="30_Research_Daily.html" title="ARAŞTIRMA" rel="category">ARAŞTIRMA</a></li>
+                                                <li class="userlink"><a href="21_Company_About.html" title="ŞİRKET" rel="category">ŞİRKET</a></li>
+                                                <li class="userlink"><a href="28_What_How.html" title="NEDİR? NASIL ÇALIŞIR?" rel="category">NEDİR? NASIL ÇALIŞIR?</a></li>
+                                                <li class="userlink"><a href="29_Announcements.html" title="DUYURULAR" rel="category">DUYURULAR</a></li>
+                                                <li class="userlink"><a href="#" title="DESTEK" rel="category" target="_blank">DESTEK</a></li>
+                                            </ul>
+                                            <ul id="MobileMenuTradepageDropdownMenu" class="usermenulist">
+                                                <li class="userlink"><a href="../tradepage/04_Easy_Buy_Sell.html" title="KOLAY AL-SAT" rel="category">KOLAY AL-SAT</a></li>
+                                                <li class="userlink"><a href="../tradepage/03_Trader_Home_2.html" title="PRO GÖRÜNÜM" rel="category">PRO GÖRÜNÜM</a></li>
+                                                <li class="userlink"><a href="../tradepage/05_Deposit_Step_1_Home.html" title="PARA YATIRMA" rel="category">PARA YATIRMA</a></li>
+                                                <li class="userlink"><a href="../tradepage/12_Withdraw_Step_1_Home.html" title="PARA ÇEKME" rel="category">PARA ÇEKME</a></li>
+                                                <li class="userlink"><a href="../tradepage/27_Profile_Profile.html" title="HESAP & GÜVENLİK AYARLARI" rel="category">HESAP & GÜVENLİK AYARLARI</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="d-lg-none"><a href="00_Home_Page.html" title="ANASAYFA" rel="category">ANASAYFA</a></li>
+                            <li>
+                                <a href="#" title="ÖZELLİKLER" rel="category" id="FeaturesDropdownMenu" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ÖZELLİKLER</a>
+                                <div class="dfn-menu-dropdownmenu dropdown-menu" aria-labelledby="FeaturesDropdownMenu">
+                                    <ul class="dropdownsubmenu">
+                                        <li class="submainmenu"><a href="02_Features_Products.html" title="ÜRÜNLER" rel="category">ÜRÜNLER</a></li>
+                                        <li class="submainmenu"><a href="07_Features_Commision.html" title="KOMİSYONLAR" rel="category">KOMİSYONLAR</a></li>
+                                        <li class="submainmenu"><a href="08_Features_Limit.html" title="LİMİTLER" rel="category">LİMİTLER</a></li>
+                                        <li class="submainmenu"><a href="09_Features_Security.html" title="GÜVENLİK" rel="category">GÜVENLİK</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#" title="TEKNOLOJİ" rel="category" id="TechnologyDropdownMenu" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">TEKNOLOJİ</a>
+                                <div class="dfn-menu-dropdownmenu dropdown-menu animate slideIn" aria-labelledby="TechnologyDropdownMenu">
+                                    <ul class="dropdownsubmenu">
+                                        <li class="submainmenu"><a href="10_Technology_Chain_Summary.html" title="ZİNCİR VERİ TABANI" rel="category">ZİNCİR VERİ TABANI</a></li>
+                                        <li class="submainmenu"><a href="16_Technology_Api.html" title="API" rel="category">API</a></li>
+                                        <li class="submainmenu"><a href="17_Technology_Converter.html" title="KRİPTO PARA ÇEVİRİCİ" rel="category">KRİPTO PARA ÇEVİRİCİ</a></li>
+                                        <li class="submainmenu"><a href="18_Technology_Mining.html" title="MADENCİLİK" rel="category">MADENCİLİK</a></li>
+                                        <li class="submainmenu"><a href="19_Technology_Multiple.html" title="ÇOKLU GÖNDERİM" rel="category">ÇOKLU GÖNDERİM</a></li>
+                                        <li class="submainmenu"><a href="20_Technology_Segwit.html" title="SEGWIT" rel="category">SEGWIT</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a href="30_Research_Daily.html" title="ARAŞTIRMA" rel="category">ARAŞTIRMA</a></li>
+                            <li>
+                                <a href="#" title="ŞİRKET" rel="category" id="CompanyDropdownMenu" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ŞİRKET</a>
+                                <div class="dfn-menu-dropdownmenu dropdown-menu animate slideIn" aria-labelledby="CompanyDropdownMenu">
+                                    <ul class="dropdownsubmenu">
+                                        <li class="submainmenu"><a href="21_Company_About.html" title="HAKKIMIZDA" rel="category">HAKKIMIZDA</a></li>
+                                        <li class="submainmenu"><a href="22_Company_Legal_Terms_01.html" title="YASAL" rel="category">YASAL</a></li>
+                                        <li class="submainmenu"><a href="27_Company_Contact.html" title="BİZE ULAŞIN" rel="category">BİZE ULAŞIN</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a href="28_What_How.html" title="NEDİR? NASIL ÇALIŞIR?" rel="category">NEDİR? NASIL ÇALIŞIR?</a></li>
+                            <li><a href="29_Announcements.html" title="DUYURULAR" rel="category">DUYURULAR</a></li>
+                            <li><a href="#" title="DESTEK" rel="category">DESTEK</a></li>
+                        </ul>
+                        <ul class="dfn-mobil-alt dfn-onlymobile-bottom d-lg-none">
+                            <li class="sitelang dropup">
+                                <a href="#" class="btn sitelang-btn dropdown-toggle" data-toggle="dropdown" data-value="">
+                                    <i class="icon-svg icon-svg-headersitelang"></i>
+                                    <span class="sitelang-lang-text">TÜRKÇE</span>
+                                </a>
+                                <div class="sitelang-dropdown dropdown-menu">
+                                    <a class="dropdown-item" href="#" data-value="TR">
+                                        <i class="icon-svg icon-svg-headersitelang"></i>
+                                        <span class="sitelang-lang-text">TÜRKÇE</span>
+                                    </a>
+                                    <a class="dropdown-item" href="#" data-value="EN">
+                                        <i class="icon-svg icon-svg-headersitelang"></i>
+                                        <span class="sitelang-lang-text">ENGLISH</span>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="btnarea" style="display: none !important;">
+                                <a class="logout" href="00_Home_Page.html" title="ÇIKIŞ YAPIN" rel="external nofollow">ÇIKIŞ YAPIN</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <!-- Navigasyon -->
+            <!-- User Area -->
+            <div class="header-navigation-resp col-3 d-flex justify-content-end">
+                <div class="header-navigation-signin" style="display: none !important;">
+                    <ul class="header-signin">
+                        <li class="header-signin-item"><a class="header-signin-register" href="01_Sign_Up.html" title="YENİ ÜYELİK" rel="bookmark">YENİ ÜYELİK</a></li>
+                        <li class="header-signin-item"><a class="header-signin-login" href="../tradepage/01_Login_Step_1.html" title="ÜYE GİRİŞİ" rel="bookmark">ÜYE GİRİŞİ</a></li>
+                    </ul>
+                </div>
+                <div class="header-navigation-search">
+                    <form class="header-search" autocomplete="off" novalidate>
+                        <input class="header-search-input" type="search" name="headersearch" placeholder="ARA" />
+                        <button class="header-search-button" type="submit"></button>
+                    </form>
+                </div>
+            </div>
+            <!-- User Area -->
+        </div>
+        <!-- Navigation End -->
+    </div>
+    <!-- Web Header -->
+
+</header>
+<div class="header-spacebottom"></div>
+<!-- Header End -->
+
+<!-- Header Top Start -->
+<section class="homepage-top">
+<div class="container">
+<div class="row">
+
+    <!-- Header Top Left -->
+    <div class="homepage-top-left col-xl-9">
+        <!-- Slider -->
+        <div class="homepage-slider">
+        <ul id="homepageslider" class="homepage-slider-wapper owl-carousel owl-theme">
+            <!--
+            <li class="homepage-slider-wapper-item">
+                <h2 class="homepage-slider-title">7 GÜN 24 SAAT CANLI ERİŞİLEBİLEN TEK BORSA!</h2>
+                <p class="homepage-slider-desc">BITCOIN, ETHEREUM, LITECOIN, BITCOIN CASH, RIPPLE VE DAHA FAZLASI...</p>
+                <p class="homepage-slider-desc">ICRYPEX CRYPTO EXCHANGE, 20'DEN FAZLA PARA BİRİMİ İLE İŞLEM <br />YAPABİLECEĞİNİZ ADİL, ETİK HIZLI VE GÜVENİLİR BİR KRİPTO PARA BORSASIDIR.</p>
+            </li>
+            <li class="homepage-slider-wapper-item">
+                <h2 class="homepage-slider-title">BITCOIN, ETHEREUM, LITECOIN, BITCOIN CASH!</h2>
+                <p class="homepage-slider-desc">BITCOIN, ETHEREUM, LITECOIN, BITCOIN CASH, RIPPLE VE DAHA FAZLASI...</p>
+                <p class="homepage-slider-desc">ICRYPEX CRYPTO EXCHANGE, 20'DEN FAZLA PARA BİRİMİ İLE İŞLEM YAPABİLECEĞİNİZ ADİL, ETİK HIZLI VE GÜVENİLİR BİR KRİPTO PARA BORSASIDIR.</p>
+            </li>
+            <li class="homepage-slider-wapper-item">
+                <h2 class="homepage-slider-title">20'DEN FAZLA PARA BİRİMİ İLE İŞLEM YAPABİLECEĞİNİZ!</h2>
+                <p class="homepage-slider-desc">BITCOIN, ETHEREUM, LITECOIN, BITCOIN CASH, RIPPLE VE DAHA FAZLASI...</p>
+                <p class="homepage-slider-desc">ICRYPEX CRYPTO EXCHANGE, 20'DEN FAZLA PARA BİRİMİ İLE İŞLEM YAPABİLECEĞİNİZ ADİL, ETİK HIZLI VE GÜVENİLİR BİR KRİPTO PARA BORSASIDIR.</p>
+            </li>
+            -->
+            <li class="homepage-slider-wapper-item">
+                <a class="colorsetwhite" href="https://www.icrypex.com/lp/analiz-egitimi" title="DETAYLAR İÇİN TIKLAYIN" target="_blank">
+                    <h2 class="homepage-slider-title" lang="tr">KRİPTO PARA ANALİZ EĞİTİMİNE DAVETLİSİNİZ!</h2>
+                    <p class="homepage-slider-desc" lang="tr">KRİPTO PARALARDA TEKNİK VE KANTİTATİF ANALİZ EĞİTİMİNE KAYDOLMAK İÇİN HEMEN TIKLAYIN!</p>
+                </a>
+            </li>
+            <li class="homepage-slider-wapper-item">
+                <a class="colorsetwhite" href="https://www.icrypex.com/announcement" title="DETAYLAR İÇİN TIKLAYIN">
+                    <h2 class="homepage-slider-title" lang="tr">Kripto Para Transferleri Artık ÜCRETSİZ!</h2>
+                    <p class="homepage-slider-desc" lang="tr">Transferlerinizin gerçekleşmesi için ödenecek blokzincir ücreti sizler için artık Icrypex tarafından karşılanacak. Detaylar için tıklayın.</p>
+                </a>
+            </li>
+            <li class="homepage-slider-wapper-item">
+                <h2 class="homepage-slider-title" lang="tr">KRİPTO GÖNDERİMLERİ ÜCRETSİZ!</h2>
+                <p class="homepage-slider-desc" lang="tr">KRİPTO PARA TRANSFERLERİNDE HERHANBİ BİR KOMİSYON ALMIYOR, BLOKZİNCİRİ KOMİSYONUNU SİZİN YERİNİZE BİZ ÖDÜYORUZ.</p>
+            </li>
+            <li class="homepage-slider-wapper-item">
+                <a class="colorsetwhite" href="https://www.icrypex.com/announcement" title="YARIŞMA DETAYLARI İÇİN TIKLAYIN">
+                <h2 class="homepage-slider-title" lang="tr">1 BİTCOİN VE 50.000 RİPPLE ÖDÜLLÜ YARIŞMA BAŞLADI</h2>
+                <p class="homepage-slider-desc" lang="tr">SPONSORU OLDUĞUMUZ ONEDİO'NUN CANLI BİLGİ YARIŞMASI OYNA KAZAN KRİPTO FEST 5-6 AĞUSTOS'TA START VERİYOR. YARIŞMA DETAYLARI İÇİN TIKLAYIN.</p>
+                </a>
+            </li>
+            <li class="homepage-slider-wapper-item">
+                <h2 class="homepage-slider-title" lang="tr">GERÇEK BITCOIN! GERÇEK CÜZDAN!</h2>
+                <p class="homepage-slider-desc" lang="tr">Icrypex ile gerçek çekirdekte işlem yaparsınız. Icrypex, kendi borsasını, çekirdeğini ve cüzdanlarını kendi teknolojisi ile oluşturur. </p>
+            </li>
+            <li class="homepage-slider-wapper-item">
+                <h2 class="homepage-slider-title" lang="tr">HIZLI VE UCUZ!</h2>
+                <p class="homepage-slider-desc" lang="tr">BITCOIN ve diğer altcoinlerde milisaniyeler içerisinde işlem yapabilir, piyasanın en ucuz komisyon oranlarını tecrübe edebilirsiniz.</p>
+            </li>
+            <li class="homepage-slider-wapper-item">
+                <h2 class="homepage-slider-title" lang="tr">SİZİN İÇİN, SİZİN GİBİ...</h2>
+                <p class="homepage-slider-desc" lang="tr">Icrypex sizin için, sizin gibi kripto para ve finans tutkunları tarafından yaratıldı. Hemen hesap açın, kripto para almaya başlayın!</p>
+            </li>
+        </ul>
+        </div>
+        <!-- Slider -->
+        <!-- Chart -->
+        <div class="homepage-chartarea">
+        <div id="homepagechartarea" class="homepage-chartarea-owl owl-carousel owl-theme">
+            <div class="homepage-chartarea-column item">
+                <div class="homepage-chartarea-column-headtitle">
+                    <h3 class="homepage-chartarea-column-headtitle-title">CRYPTO MARKET</h3>
+                    <span class="homepage-chartarea-column-headtitle-volume">VOLUME <span>2,274,273,489</span></span>
+                </div>
+                <div class="homepage-chartarea-column-chartbox">
+                    <img class="chartdemograph" src="../assets/img/mainpage/elements/Homepage-Top-Volume_Chart-01.png" alt="chart" width="380" height="220" />
+                </div>
+            </div>
+            <div class="homepage-chartarea-column item">
+                <div class="homepage-chartarea-column-headtitle">
+                    <h3 class="homepage-chartarea-column-headtitle-title">ICRYPEX</h3>
+                    <span class="homepage-chartarea-column-headtitle-volume">VOLUME <span>2,274,273,489</span></span>
+                </div>
+                <div class="homepage-chartarea-column-chartbox">
+                    <img class="chartdemograph" src="../assets/img/mainpage/elements/Homepage-Top-Volume_Chart-02.png" alt="chart" width="380" height="220" />
+                </div>
+            </div>
+        </div>
+        </div>
+        <!-- Chart -->
+        <!-- Big Price -->
+        <div class="homepage-bigprice">
+            <ul id="homepagebigpricearea" class="homepage-bigprice-list">
+                <li class="homepage-bigprice-list-item">
+                    <h4 class="homepage-bigprice-title">BTC GÜNCEL</h4>
+                    <span class="homepage-bigprice-volume"><span id="a-BTCUSD">12643.9</span> USD</span>
+                </li>
+                <li class="homepage-bigprice-list-item">
+                    <h4 class="homepage-bigprice-title">BTC 24S ORTALAMA</h4>
+                    <span class="homepage-bigprice-volume">11475.24 USD</span>
+                </li>
+                <li class="homepage-bigprice-list-item">
+                    <h4 class="homepage-bigprice-title">BTC 24S DEĞİŞİM</h4>
+                    <span class="homepage-bigprice-volume">128.46  USD <span class="sitecolorred">-1.57<sup>%</sup></span></span>
+                </li>
+                <li class="homepage-bigprice-list-item">
+                    <h4 class="homepage-bigprice-title">BTC HACİM</h4>
+                    <span class="homepage-bigprice-volume">8,125,760,000 USD</span>
+                </li>
+                <li class="homepage-bigprice-list-item">
+                    <h4 class="homepage-bigprice-title">KAZILACAK BTC</h4>
+                    <span class="homepage-bigprice-volume">3221500 BTC</span>
+                </li>
+            </ul>
+        </div>
+        <!-- Big Price -->
+    </div>
+    <!-- Header Top Left -->
+
+    <!-- Header Top Right -->
+    <div class="homepage-top-right col-xl-3">
+        <!-- Register -->
+        <div class="homepage-register formuinew">
+            <div class="homepage-register-title"><h2 class="columntitle columntitle-md bottomborder titlecenter titlelight">ÜCRETSİZ ÜYELİK OLUŞTURUN</h2></div>
+            <div class="homepage-register-collapse collapse show" id="collapseRegisterForm">
+            <form id="homepageregisterform" class="homepage-register-formarea" style="display: block;" action="" autocomplete="off" novalidate>
+                <div class="formuilabel">
+                    <div class="form-group colorsethomepageregister">
+                        <div class="labelanimation">
+                            <input type="text" class="form-control disabledautofillinput" name="firstname" id="inputFirstNameId" required oninput="homepageregisterform.verifyContent('inputFirstNameProcess','inputFirstNameId','msgFirstNameId','iconFirstNameId')" onfocusout="homepageregisterform.verifyContentErrorDelete('inputFirstNameProcess','inputFirstNameId','msgFirstNameId','iconFirstNameId')" >
+                            <i class="inputcheckicon inputcheckicon-check" id="iconFirstNameId"></i>
+                            <span class="inputerrormessage" id="msgFirstNameId"></span>
+                            <span class="inputbottombar"></span>
+                            <label>İSİM</label>
+                        </div>
+                    </div>
+                    <div class="form-group colorsethomepageregister">
+                        <div class="labelanimation">
+                            <input type="text" class="form-control disabledautofillinput" name="lastname" id="inputLastNameId" required oninput="homepageregisterform.verifyContent('inputLastNameProcess','inputLastNameId','msgLastNameId','iconLastNameId')" onfocusout="homepageregisterform.verifyContentErrorDelete('inputLastNameProcess','inputLastNameId','msgLastNameId','iconLastNameId')" >
+                            <i class="inputcheckicon inputcheckicon-check" id="iconLastNameId"></i>
+                            <span class="inputerrormessage" id="msgLastNameId"></span>
+                            <span class="inputbottombar"></span>
+                            <label>SOYİSİM</label>
+                        </div>
+                    </div>
+                    <div class="form-group colorsethomepageregister">
+                        <div class="labelanimation">
+                            <input type="text" class="form-control disabledautofillinput" name="phone" id="inputPhoneId" required oninput="homepageregisterform.verifyContent('inputPhoneProcess','inputPhoneId','msgPhoneId','iconPhoneId')" onfocusout="homepageregisterform.verifyContentErrorDelete('inputPhoneProcess','inputPhoneId','msgPhoneId','iconPhoneId')" >
+                            <i class="inputcheckicon inputcheckicon-check" id="iconPhoneId"></i>
+                            <span class="inputerrormessage" id="msgPhoneId"></span>
+                            <span class="inputbottombar"></span>
+                            <label>TELEFON</label>
+                        </div>
+                    </div>
+                    <div class="form-group colorsethomepageregister">
+                        <div class="labelanimation">
+                            <input type="text" class="form-control disabledautofillinput" name="email" id="inputEmailId" required oninput="homepageregisterform.verifyContent('inputEmailProcess','inputEmailId','msgEmailId','iconEmailId')" onfocusout="homepageregisterform.verifyContentErrorDelete('inputEmailProcess','inputEmailId','msgEmailId','iconEmailId')" >
+                            <i class="inputcheckicon inputcheckicon-check" id="iconEmailId"></i>
+                            <span class="inputerrormessage" id="msgEmailId"></span>
+                            <span class="inputbottombar"></span>
+                            <label>E-POSTA</label>
+                        </div>
+                    </div>
+                    <div class="form-group colorsethomepageregister">
+                        <div class="labelanimation">
+                            <input type="password" class="form-control disabledautofillinput" name="password" id="inputPasswordId" autocomplete="off" required oninput="homepageregisterform.verifyContent('inputPasswordProcess','inputPasswordId','msgPasswordId','iconPasswordId')" onfocusout="homepageregisterform.verifyContentErrorDelete('inputPasswordProcess','inputPasswordId','msgPasswordId','iconPasswordId')" >
+                            <i class="inputcheckicon inputcheckicon-check" id="iconPasswordId"></i>
+                            <span class="inputerrormessage" id="msgPasswordId"></span>
+                            <span class="inputbottombar"></span>
+                            <label>ŞİFRE</label>
+                        </div>
+                    </div>
+                    <div class="form-group colorsethomepageregister">
+                        <div class="labelanimation">
+                            <input type="password" class="form-control disabledautofillinput" name="confirm" id="inputRePasswordId" autocomplete="off" required oninput="homepageregisterform.verifyContent('inputRePasswordProcess','inputRePasswordId','msgRePasswordId','iconRePasswordId')" onfocusout="homepageregisterform.verifyContentErrorDelete('inputRePasswordProcess','inputRePasswordId','msgRePasswordId','iconRePasswordId')" >
+                            <i class="inputcheckicon inputcheckicon-check" id="iconRePasswordId"></i>
+                            <span class="inputerrormessage" id="msgRePasswordId"></span>
+                            <span class="inputbottombar"></span>
+                            <label>ŞİFRE DOĞRULAMA</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="recaptcha d-none">
+                    <img src="../assets/img/mainpage/elements/Homepage-Top-Recaptcha.png" alt="" width="300" height="76" />
+                </div>
+                <div class="recaptchav2">
+                    <div class="recaptchav2-captcha">
+                        <div class="g-recaptcha" data-theme="dark" data-sitekey="6LewOKAUAAAAAMDO2yohWeyDcjFAHfcuEqK2mIp4"><div style="width: 304px; height: 78px;"><div><iframe src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LewOKAUAAAAAMDO2yohWeyDcjFAHfcuEqK2mIp4&amp;co=aHR0cHM6Ly93d3cuaWNyeXBleC5jb206NDQz&amp;hl=tr&amp;v=v1563777128698&amp;theme=dark&amp;size=normal&amp;cb=z8rh0tg2xv7w" width="304" height="78" role="presentation" name="a-2mjs4ns0yygf" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox"></iframe></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div></div>
+                    </div>
+                    <div class="recaptchav2-text">Ben robot değilim</div>
+                </div>
+                <div class="custom-control-form-check">
+                    <div class="custom-control custom-checkbox form-check">
+                        <input class="form-check-input custom-control-input" type="checkbox" name="termsofuse" value="" id="termsOfUseCheck">
+                        <label class="form-check-label custom-control-label" id="labeltermsOfUseCheck" for="termsOfUseCheck"><a class="urllink" href="22_Company_Legal_Terms_01.html" target="_blank">Ön Bilgilendirme Metni</a> ve <a class="urllink" href="22_Company_Legal_Terms_02.html" target="_blank">Kullanım Sözleşmesini</a> okudum ve onaylıyorum.</label>
+                        <span class="inputerrormessage" id="msgtermsOfUseCheckId"></span>
+                    </div>
+                    <div class="custom-control custom-checkbox form-check">
+                        <input class="form-check-input custom-control-input" type="checkbox" value="" id="announcementsCheck">
+                        <label class="form-check-label custom-control-label" for="announcementsCheck">Ticari reklam ve duyurulardan haber almak istiyorum.</label>
+                    </div>
+                </div>
+                <div class="form-button">
+                    <button type="button" class="btn btn-primary btnunderlinescale softblue" onclick="homepageregisterform.sendHomepageRegisterForm()">ÜYELİK OLUŞTUR</button>
+                </div>
+            </form>
+            </div>
+            <div class="homepage-register-collapse-btn">
+                <button class="btn btn-primary btnunderlinescale softblue" type="button" data-toggle="collapse" data-target="#collapseRegisterForm" aria-expanded="false" aria-controls="collapseRegisterForm">ŞİMDİ ÜYELİK OLUŞTUR</button>
+            </div>
+            <div id="homepageregisterinfo" class="homepage-register-forminfo" style="display: none">
+                <div class="homepage-register-forminfo-wrapper">
+                    <div class="homepage-register-forminfo-bigicon">
+                        <i class="icon-svg check"></i>
+                    </div>
+                    <h2 class="columntitle columntitle-sm titlecenter">KAYIT İŞLEMİNİZ TAMAMLANDI</h2>
+                    <div class="homepage-register-forminfo-infoarea">
+                        <p class="homepage-register-forminfo-infoarea-desc">Şimdi hemen üye girişinizi yapabilirsiniz. <br />Giriş yaptıktan sonra sizden istenen belgeleri yükleyerek, limitlerinizi yükseltebilirsiniz. <br />2FA doğrulamanızı hızlıca aktive etmenizi öneririz.</p>
+                        <p class="homepage-register-forminfo-infoarea-desc">İşlemlerinizde başarılar!</p>
+                    </div>
+                    <div class="homepage-register-forminfo-button">
+                        <a class="btn btn-success btnwidth160 btnunderlinescale green" href="../tradepage/01_Login_Step_1.html" title="ÜYE GİRİŞİ">ÜYE GİRİŞİ</a>
+                    </div>
+                    <div class="homepage-register-forminfo-callcenter">
+                        <h5 class="homepage-register-forminfo-callcenter-title">Müşteri Hizmetleri</h5>
+                        <p class="homepage-register-forminfo-callcenter-number">0850 250 1079</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Register -->
+        <!-- Logged In User -->
+        <div class="homepage-loggedin" style="display: none">
+            <div class="homepage-loggedin-title"><h2 class="columntitle columntitle-md bottomborder titlecenter" lang="tr">İSİM İSİM SOYİSİM</h2></div>
+            <div class="homepage-loggedin-wrapper">
+                <div class="homepage-loggedin-totalassets">
+                    <h4 class="homepage-loggedin-totalassets-title">TOPLAM VARLIK YAKLAŞIK OLARAK</h4>
+                    <span class="homepage-loggedin-totalassets-total">1.350.750,00 TRY / 44.815,00 BTC</span>
+                </div>
+                <div class="homepage-loggedin-detail">
+                    <div class="homepage-loggedin-detail-row">
+                        <div class="homepage-loggedin-detail-cell">
+                            <h5 class="homepage-loggedin-detail-cell-title">TRY</h5>
+                            <span class="homepage-loggedin-detail-cell-asset">3.46597510</span>
+                        </div>
+                        <div class="homepage-loggedin-detail-cell">
+                            <h5 class="homepage-loggedin-detail-cell-title">USD</h5>
+                            <span class="homepage-loggedin-detail-cell-asset">1.32567545</span>
+                        </div>
+                    </div>
+                    <div class="homepage-loggedin-detail-row">
+                        <div class="homepage-loggedin-detail-cell">
+                            <h5 class="homepage-loggedin-detail-cell-title">BTC</h5>
+                            <span class="homepage-loggedin-detail-cell-asset">2.12981375</span>
+                        </div>
+                        <div class="homepage-loggedin-detail-cell">
+                            <h5 class="homepage-loggedin-detail-cell-title">LTC</h5>
+                            <span class="homepage-loggedin-detail-cell-asset">0.39781294</span>
+                        </div>
+                    </div>
+                    <div class="homepage-loggedin-detail-row">
+                        <div class="homepage-loggedin-detail-cell">
+                            <h5 class="homepage-loggedin-detail-cell-title">ETH</h5>
+                            <span class="homepage-loggedin-detail-cell-asset">7.98158291</span>
+                        </div>
+                        <div class="homepage-loggedin-detail-cell">
+                            <h5 class="homepage-loggedin-detail-cell-title">XRP</h5>
+                            <span class="homepage-loggedin-detail-cell-asset">0.34578984</span>
+                        </div>
+                    </div>
+                    <div class="homepage-loggedin-detail-row">
+                        <div class="homepage-loggedin-detail-cell">
+                            <h5 class="homepage-loggedin-detail-cell-title">MPAY</h5>
+                            <span class="homepage-loggedin-detail-cell-asset">3.46597510</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="homepage-loggedin-btngroup">
+                    <a class="btn btn-primary" href="../tradepage/03_Trader_Home_2.html" title="PRO GÖRÜNÜM" rel="bookmark">PRO GÖRÜNÜM</a>
+                    <a class="btn btn-primary" href="../tradepage/04_Easy_Buy_Sell.html" title="KOLAY AL-SAT" rel="bookmark">KOLAY AL-SAT</a>
+                </div>
+                <div class="homepage-loggedin-progress">
+                    <div class="homepage-loggedin-progress-bar">
+                        <h5 class="homepage-loggedin-progress-desc"><strong>150.000,00 TRY</strong> günlük limitiniz kalmıştır</h5>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="homepage-loggedin-progress-bar">
+                        <h5 class="homepage-loggedin-progress-desc"><strong>1.850.000,00 TRY</strong> aylık limitiniz kalmıştır</h5>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="homepage-loggedin-notification">
+                    <p><strong class="sitecolorred">İkinci Seviye</strong> hesaba sahipsiniz. Daha fazla limit kullanmak istiyorsanız lütfen <a class="urllink" href="../tradepage/20_Profile_Account_Confirmation_1.html" rel="bookmark">Hesap Onayı & Limit</a> bölümünden bilgilerinizi tamamlayınız.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Logged In User -->
+    </div>
+    <!-- Header Top Right -->
+
+</div>
+</div>
+</section>
+<!-- Header Top End -->
+
+<!-- Summary Table Start -->
+<section class="homepage-summarytable">
+<div class="container">
+<div class="row">
+    <!-- Table Start -->
+    <div class="summarytable nav-tabs-responsive nav-tabs-responsive-dark">
+        <ul class="summarytable-tabnav nav nav-tabs" role="tablist">
+            <li class="nav-item"><a class="nav-link active" id="tab-USD" data-toggle="tab" href="#USD" role="tab" aria-controls="USD" aria-selected="true"><span>USD</span></a></li>
+            <li class="nav-item"><a class="nav-link" id="tab-EUR" data-toggle="tab" href="#EUR" role="tab" aria-controls="EUR" aria-selected="false"><span>EUR</span></a></li>
+            <li class="nav-item"><a class="nav-link" id="tab-GBP" data-toggle="tab" href="#GBP" role="tab" aria-controls="profile" aria-selected="false"><span>GBP</span></a></li>
+            <li class="nav-item"><a class="nav-link" id="tab-JPY" data-toggle="tab" href="#JPY" role="tab" aria-controls="JPY" aria-selected="false"><span>JPY</span></a></li>
+            <li class="nav-item"><a class="nav-link" id="tab-BTC" data-toggle="tab" href="#BTC" role="tab" aria-controls="BTC" aria-selected="false"><span>BTC</span></a></li>
+            <li class="nav-item"><a class="nav-link" id="tab-ETH" data-toggle="tab" href="#ETH" role="tab" aria-controls="ETH" aria-selected="false"><span>ETH</span></a></li>
+            <li class="nav-item"><a class="nav-link" id="tab-EOS" data-toggle="tab" href="#EOS" role="tab" aria-controls="EOS" aria-selected="false"><span>EOS</span></a></li>
+            <li class="nav-item"><a class="nav-link" id="tab-XLM" data-toggle="tab" href="#XLM" role="tab" aria-controls="XLM" aria-selected="false"><span>XLM</span></a></li>
+            <li class="nav-item"><a class="nav-link" id="tab-DAI" data-toggle="tab" href="#DAI" role="tab" aria-controls="DAI" aria-selected="false"><span>DAI</span></a></li>
+            <li class="nav-item"><a class="nav-link" id="tab-UST" data-toggle="tab" href="#UST" role="tab" aria-controls="UST" aria-selected="false"><span>UST</span></a></li>
+            <li class="nav-search">
+                <form class="nav-search-form">
+                    <input class="nav-search-input" type="search" name="summarytablesearch" placeholder="ARA" />
+                    <button class="nav-search-button" type="submit"></button>
+                </form>
+            </li>
+        </ul>
+        <div class="summarytable-tabcontent tab-content">
+            <div class="tab-pane fade show active" id="USD" role="tabpanel" aria-labelledby="tab-USD">
+                <div class="summarytable-tablearea">
+                    <table class="summarytable-table sitetable sitetableresponsive sitetableresponsivedataprice table">
+                        <thead>
+                        <tr>
+                            <th class="summarytable-table-symbol">ÜRÜN <span class="tableicon"><i class="tableicon-arrowup"></i><i class="tableicon-arrowdown"></i></span></th>
+                            <th class="summarytable-table-price">SON FİYAT <span class="tableicon"><i class="tableicon-arrowup"></i><i class="tableicon-arrowdown"></i></span></th>
+                            <th class="summarytable-table-change">24S DEĞİŞİM <span class="tableicon"><i class="tableicon-arrowup"></i><i class="tableicon-arrowdown"></i></span></th>
+                            <th class="summarytable-table-high">24S YÜKSEK <span class="tableicon"><i class="tableicon-arrowup"></i><i class="tableicon-arrowdown"></i></span></th>
+                            <th class="summarytable-table-low">24S DÜŞÜK <span class="tableicon"><i class="tableicon-arrowup"></i><i class="tableicon-arrowdown"></i></span></th>
+                            <th class="summarytable-table-weekly">HAFTALIK <span class="tableicon"><i class="tableicon-arrowup"></i><i class="tableicon-arrowdown"></i></span></th>
+                            <th class="summarytable-table-monthly">AYLIK <span class="tableicon"><i class="tableicon-arrowup"></i><i class="tableicon-arrowdown"></i></span></th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td class="summarytable-table-symbol" data-title="ÜRÜN">BTCUSD</td>
+                            <td class="summarytable-table-price b-BTCUSD sitecolorred" data-title="SON FİYAT">10033.90</td>
+                            <td class="summarytable-table-change sitecolorgreen" data-title="24S DEĞİŞİM">-2.24 %</td>
+                            <td class="summarytable-table-high" data-title="24S DÜŞÜK">12017.20 USD</td>
+                            <td class="summarytable-table-low" data-title="24S DÜŞÜK">11687.30 USD</td>
+                            <td class="summarytable-table-weekly minichart" data-title="HAFTALIK"><img src="../assets/img/mainpage/elements/Mini_Chart.svg" alt="MiniChart" width="52" height="22" /></td>
+                            <td class="summarytable-table-monthly minichart" data-title="AYLIK"><img src="../assets/img/mainpage/elements/Mini_Chart.svg" alt="MiniChart" width="52" height="22" /></td>
+                        </tr>
+                        <tr>
+                            <td class="summarytable-table-symbol" data-title="ÜRÜN">BTCEUR</td>
+                            <td class="summarytable-table-price b-BTCEUR sitecolorgreen" data-title="SON FİYAT">8967.15</td>
+                            <td class="summarytable-table-change sitecolorgreen" data-title="24S DEĞİŞİM">-0.80 %</td>
+                            <td class="summarytable-table-high" data-title="24S YÜKSEK">11275.90 EUR</td>
+                            <td class="summarytable-table-low" data-title="24S DÜŞÜK">9150.38 EUR</td>
+                            <td class="summarytable-table-weekly minichart" data-title="HAFTALIK"><img src="../assets/img/mainpage/elements/Mini_Chart.svg" alt="MiniChart" width="52" height="22" /></td>
+                            <td class="summarytable-table-monthly minichart" data-title="AYLIK"><img src="../assets/img/mainpage/elements/Mini_Chart.svg" alt="MiniChart" width="52" height="22" /></td>
+                        </tr>
+                        <tr>
+                            <td class="summarytable-table-symbol" data-title="ÜRÜN">BTCJPY</td>
+                            <td class="summarytable-table-price b-BTCJPY sitecolorred" data-title="SON FİYAT">1084960.00</td>
+                            <td class="summarytable-table-change sitecolorgreen" data-title="24S DEĞİŞİM">-1.94 %</td>
+                            <td class="summarytable-table-high" data-title="24S YÜKSEK">1293780.00 JPY</td>
+                            <td class="summarytable-table-low" data-title="24S DÜŞÜK">10488.00 JPY</td>
+                            <td class="summarytable-table-weekly minichart" data-title="HAFTALIK"><img src="../assets/img/mainpage/elements/Mini_Chart.svg" alt="MiniChart" width="52" height="22" /></td>
+                            <td class="summarytable-table-monthly minichart" data-title="AYLIK"><img src="../assets/img/mainpage/elements/Mini_Chart.svg" alt="MiniChart" width="52" height="22" /></td>
+                        </tr>
+                        <tr>
+                            <td class="summarytable-table-symbol" data-title="ÜRÜN">BTCGBP</td>
+                            <td class="summarytable-table-price b-BTCGBP sitecolorgreen" data-title="SON FİYAT">8069.45</td>
+                            <td class="summarytable-table-change sitecolorgreen" data-title="24S DEĞİŞİM">-0.43 %</td>
+                            <td class="summarytable-table-high" data-title="24S YÜKSEK">9482.53 GBP</td>
+                            <td class="summarytable-table-low" data-title="24S DÜŞÜK">8211.00 GBP</td>
+                            <td class="summarytable-table-weekly minichart" data-title="HAFTALIK"><img src="../assets/img/mainpage/elements/Mini_Chart.svg" alt="MiniChart" width="52" height="22" /></td>
+                            <td class="summarytable-table-monthly minichart" data-title="AYLIK"><img src="../assets/img/mainpage/elements/Mini_Chart.svg" alt="MiniChart" width="52" height="22" /></td>
+                        </tr>
+                        <tr>
+                            <td class="summarytable-table-symbol" data-title="ÜRÜN">BTCTRY</td>
+                            <td class="summarytable-table-price b-BTCTRY sitecolorred" data-title="SON FİYAT">57056.50</td>
+                            <td class="summarytable-table-change sitecolorgreen" data-title="24S DEĞİŞİM">-3.78 %</td>
+                            <td class="summarytable-table-high" data-title="24S YÜKSEK">71200.00 TRY</td>
+                            <td class="summarytable-table-low" data-title="24S DÜŞÜK">60052.00 TRY</td>
+                            <td class="summarytable-table-weekly minichart" data-title="HAFTALIK"><img src="../assets/img/mainpage/elements/Mini_Chart.svg" alt="MiniChart" width="52" height="22" /></td>
+                            <td class="summarytable-table-monthly minichart" data-title="AYLIK"><img src="../assets/img/mainpage/elements/Mini_Chart.svg" alt="MiniChart" width="52" height="22" /></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="EUR" role="tabpanel" aria-labelledby="tab-EUR">
+                <div class="summarytable-tablearea">
+                    <table class="summarytable-table sitetable sitetableresponsive sitetableresponsivedataprice table">
+                        <thead>
+                        <tr>
+                            <th class="summarytable-table-symbol">ÜRÜN <span class="tableicon"><i class="tableicon-arrowup"></i><i class="tableicon-arrowdown"></i></span></th>
+                            <th class="summarytable-table-price">SON FİYAT <span class="tableicon"><i class="tableicon-arrowup"></i><i class="tableicon-arrowdown"></i></span></th>
+                            <th class="summarytable-table-change">24S DEĞİŞİM <span class="tableicon"><i class="tableicon-arrowup"></i><i class="tableicon-arrowdown"></i></span></th>
+                            <th class="summarytable-table-high">24S YÜKSEK <span class="tableicon"><i class="tableicon-arrowup"></i><i class="tableicon-arrowdown"></i></span></th>
+                            <th class="summarytable-table-low">24S DÜŞÜK <span class="tableicon"><i class="tableicon-arrowup"></i><i class="tableicon-arrowdown"></i></span></th>
+                            <th class="summarytable-table-weekly">HAFTALIK <span class="tableicon"><i class="tableicon-arrowup"></i><i class="tableicon-arrowdown"></i></span></th>
+                            <th class="summarytable-table-monthly">AYLIK <span class="tableicon"><i class="tableicon-arrowup"></i><i class="tableicon-arrowdown"></i></span></th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td class="summarytable-table-symbol" data-title="ÜRÜN">BTCUSD</td>
+                            <td class="summarytable-table-price b-BTCUSD sitecolorred" data-title="SON FİYAT">10033.90</td>
+                            <td class="summarytable-table-change sitecolorgreen" data-title="24S DEĞİŞİM">-2.24 %</td>
+                            <td class="summarytable-table-high" data-title="24S DÜŞÜK">12017.20 USD</td>
+                            <td class="summarytable-table-low" data-title="24S DÜŞÜK">11687.30 USD</td>
+                            <td class="summarytable-table-weekly minichart" data-title="HAFTALIK"><img src="../assets/img/mainpage/elements/Mini_Chart.svg" alt="MiniChart" width="52" height="22" /></td>
+                            <td class="summarytable-table-monthly minichart" data-title="AYLIK"><img src="../assets/img/mainpage/elements/Mini_Chart.svg" alt="MiniChart" width="52" height="22" /></td>
+                        </tr>
+                        <tr>
+                            <td class="summarytable-table-symbol" data-title="ÜRÜN">BTCEUR</td>
+                            <td class="summarytable-table-price b-BTCEUR sitecolorgreen" data-title="SON FİYAT">8967.15</td>
+                            <td class="summarytable-table-change sitecolorgreen" data-title="24S DEĞİŞİM">-0.80 %</td>
+                            <td class="summarytable-table-high" data-title="24S YÜKSEK">11275.90 EUR</td>
+                            <td class="summarytable-table-low" data-title="24S DÜŞÜK">9150.38 EUR</td>
+                            <td class="summarytable-table-weekly minichart" data-title="HAFTALIK"><img src="../assets/img/mainpage/elements/Mini_Chart.svg" alt="MiniChart" width="52" height="22" /></td>
+                            <td class="summarytable-table-monthly minichart" data-title="AYLIK"><img src="../assets/img/mainpage/elements/Mini_Chart.svg" alt="MiniChart" width="52" height="22" /></td>
+                        </tr>
+                        <tr>
+                            <td class="summarytable-table-symbol" data-title="ÜRÜN">BTCJPY</td>
+                            <td class="summarytable-table-price b-BTCJPY sitecolorred" data-title="SON FİYAT">1084960.00</td>
+                            <td class="summarytable-table-change sitecolorgreen" data-title="24S DEĞİŞİM">-1.94 %</td>
+                            <td class="summarytable-table-high" data-title="24S YÜKSEK">1293780.00 JPY</td>
+                            <td class="summarytable-table-low" data-title="24S DÜŞÜK">10488.00 JPY</td>
+                            <td class="summarytable-table-weekly minichart" data-title="HAFTALIK"><img src="../assets/img/mainpage/elements/Mini_Chart.svg" alt="MiniChart" width="52" height="22" /></td>
+                            <td class="summarytable-table-monthly minichart" data-title="AYLIK"><img src="../assets/img/mainpage/elements/Mini_Chart.svg" alt="MiniChart" width="52" height="22" /></td>
+                        </tr>
+                        <tr>
+                            <td class="summarytable-table-symbol" data-title="ÜRÜN">BTCGBP</td>
+                            <td class="summarytable-table-price b-BTCGBP sitecolorgreen" data-title="SON FİYAT">8069.45</td>
+                            <td class="summarytable-table-change sitecolorgreen" data-title="24S DEĞİŞİM">-0.43 %</td>
+                            <td class="summarytable-table-high" data-title="24S YÜKSEK">9482.53 GBP</td>
+                            <td class="summarytable-table-low" data-title="24S DÜŞÜK">8211.00 GBP</td>
+                            <td class="summarytable-table-weekly minichart" data-title="HAFTALIK"><img src="../assets/img/mainpage/elements/Mini_Chart.svg" alt="MiniChart" width="52" height="22" /></td>
+                            <td class="summarytable-table-monthly minichart" data-title="AYLIK"><img src="../assets/img/mainpage/elements/Mini_Chart.svg" alt="MiniChart" width="52" height="22" /></td>
+                        </tr>
+                        <tr>
+                            <td class="summarytable-table-symbol" data-title="ÜRÜN">BTCTRY</td>
+                            <td class="summarytable-table-price b-BTCTRY sitecolorred" data-title="SON FİYAT">57056.50</td>
+                            <td class="summarytable-table-change sitecolorgreen" data-title="24S DEĞİŞİM">-3.78 %</td>
+                            <td class="summarytable-table-high" data-title="24S YÜKSEK">71200.00 TRY</td>
+                            <td class="summarytable-table-low" data-title="24S DÜŞÜK">60052.00 TRY</td>
+                            <td class="summarytable-table-weekly minichart" data-title="HAFTALIK"><img src="../assets/img/mainpage/elements/Mini_Chart.svg" alt="MiniChart" width="52" height="22" /></td>
+                            <td class="summarytable-table-monthly minichart" data-title="AYLIK"><img src="../assets/img/mainpage/elements/Mini_Chart.svg" alt="MiniChart" width="52" height="22" /></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="GBP" role="tabpanel" aria-labelledby="tab-GBP">
+                <div class="summarytable-tablearea">
+                    <table class="summarytable-table sitetable sitetableresponsive sitetableresponsivedataprice table">
+                        <thead>
+                        <tr>
+                            <th class="summarytable-table-symbol">ÜRÜN <span class="tableicon"><i class="tableicon-arrowup"></i><i class="tableicon-arrowdown"></i></span></th>
+                            <th class="summarytable-table-price">SON FİYAT <span class="tableicon"><i class="tableicon-arrowup"></i><i class="tableicon-arrowdown"></i></span></th>
+                            <th class="summarytable-table-change">24S DEĞİŞİM <span class="tableicon"><i class="tableicon-arrowup"></i><i class="tableicon-arrowdown"></i></span></th>
+                            <th class="summarytable-table-high">24S YÜKSEK <span class="tableicon"><i class="tableicon-arrowup"></i><i class="tableicon-arrowdown"></i></span></th>
+                            <th class="summarytable-table-low">24S DÜŞÜK <span class="tableicon"><i class="tableicon-arrowup"></i><i class="tableicon-arrowdown"></i></span></th>
+                            <th class="summarytable-table-weekly">HAFTALIK <span class="tableicon"><i class="tableicon-arrowup"></i><i class="tableicon-arrowdown"></i></span></th>
+                            <th class="summarytable-table-monthly">AYLIK <span class="tableicon"><i class="tableicon-arrowup"></i><i class="tableicon-arrowdown"></i></span></th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td class="summarytable-table-symbol" data-title="ÜRÜN">BTCUSD</td>
+                            <td class="summarytable-table-price b-BTCUSD sitecolorred" data-title="SON FİYAT">10033.90</td>
+                            <td class="summarytable-table-change sitecolorgreen" data-title="24S DEĞİŞİM">-2.24 %</td>
+                            <td class="summarytable-table-high" data-title="24S DÜŞÜK">12017.20 USD</td>
+                            <td class="summarytable-table-low" data-title="24S DÜŞÜK">11687.30 USD</td>
+                            <td class="summarytable-table-weekly minichart" data-title="HAFTALIK"><img src="../assets/img/mainpage/elements/Mini_Chart.svg" alt="MiniChart" width="52" height="22" /></td>
+                            <td class="summarytable-table-monthly minichart" data-title="AYLIK"><img src="../assets/img/mainpage/elements/Mini_Chart.svg" alt="MiniChart" width="52" height="22" /></td>
+                        </tr>
+                        <tr>
+                            <td class="summarytable-table-symbol" data-title="ÜRÜN">BTCEUR</td>
+                            <td class="summarytable-table-price b-BTCEUR sitecolorgreen" data-title="SON FİYAT">8967.15</td>
+                            <td class="summarytable-table-change sitecolorgreen" data-title="24S DEĞİŞİM">-0.80 %</td>
+                            <td class="summarytable-table-high" data-title="24S YÜKSEK">11275.90 EUR</td>
+                            <td class="summarytable-table-low" data-title="24S DÜŞÜK">9150.38 EUR</td>
+                            <td class="summarytable-table-weekly minichart" data-title="HAFTALIK"><img src="../assets/img/mainpage/elements/Mini_Chart.svg" alt="MiniChart" width="52" height="22" /></td>
+                            <td class="summarytable-table-monthly minichart" data-title="AYLIK"><img src="../assets/img/mainpage/elements/Mini_Chart.svg" alt="MiniChart" width="52" height="22" /></td>
+                        </tr>
+                        <tr>
+                            <td class="summarytable-table-symbol" data-title="ÜRÜN">BTCJPY</td>
+                            <td class="summarytable-table-price b-BTCJPY sitecolorred" data-title="SON FİYAT">1084960.00</td>
+                            <td class="summarytable-table-change sitecolorgreen" data-title="24S DEĞİŞİM">-1.94 %</td>
+                            <td class="summarytable-table-high" data-title="24S YÜKSEK">1293780.00 JPY</td>
+                            <td class="summarytable-table-low" data-title="24S DÜŞÜK">10488.00 JPY</td>
+                            <td class="summarytable-table-weekly minichart" data-title="HAFTALIK"><img src="../assets/img/mainpage/elements/Mini_Chart.svg" alt="MiniChart" width="52" height="22" /></td>
+                            <td class="summarytable-table-monthly minichart" data-title="AYLIK"><img src="../assets/img/mainpage/elements/Mini_Chart.svg" alt="MiniChart" width="52" height="22" /></td>
+                        </tr>
+                        <tr>
+                            <td class="summarytable-table-symbol" data-title="ÜRÜN">BTCGBP</td>
+                            <td class="summarytable-table-price b-BTCGBP sitecolorgreen" data-title="SON FİYAT">8069.45</td>
+                            <td class="summarytable-table-change sitecolorgreen" data-title="24S DEĞİŞİM">-0.43 %</td>
+                            <td class="summarytable-table-high" data-title="24S YÜKSEK">9482.53 GBP</td>
+                            <td class="summarytable-table-low" data-title="24S DÜŞÜK">8211.00 GBP</td>
+                            <td class="summarytable-table-weekly minichart" data-title="HAFTALIK"><img src="../assets/img/mainpage/elements/Mini_Chart.svg" alt="MiniChart" width="52" height="22" /></td>
+                            <td class="summarytable-table-monthly minichart" data-title="AYLIK"><img src="../assets/img/mainpage/elements/Mini_Chart.svg" alt="MiniChart" width="52" height="22" /></td>
+                        </tr>
+                        <tr>
+                            <td class="summarytable-table-symbol" data-title="ÜRÜN">BTCTRY</td>
+                            <td class="summarytable-table-price b-BTCTRY sitecolorred" data-title="SON FİYAT">57056.50</td>
+                            <td class="summarytable-table-change sitecolorgreen" data-title="24S DEĞİŞİM">-3.78 %</td>
+                            <td class="summarytable-table-high" data-title="24S YÜKSEK">71200.00 TRY</td>
+                            <td class="summarytable-table-low" data-title="24S DÜŞÜK">60052.00 TRY</td>
+                            <td class="summarytable-table-weekly minichart" data-title="HAFTALIK"><img src="../assets/img/mainpage/elements/Mini_Chart.svg" alt="MiniChart" width="52" height="22" /></td>
+                            <td class="summarytable-table-monthly minichart" data-title="AYLIK"><img src="../assets/img/mainpage/elements/Mini_Chart.svg" alt="MiniChart" width="52" height="22" /></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="JPY" role="tabpanel" aria-labelledby="tab-GBP">JPY</div>
+            <div class="tab-pane fade" id="BTC" role="tabpanel" aria-labelledby="tab-BTC">BTC</div>
+            <div class="tab-pane fade" id="ETH" role="tabpanel" aria-labelledby="tab-ETH">ETH</div>
+            <div class="tab-pane fade" id="EOS" role="tabpanel" aria-labelledby="tab-EOS">EOS</div>
+            <div class="tab-pane fade" id="XLM" role="tabpanel" aria-labelledby="tab-XLM">XLM</div>
+            <div class="tab-pane fade" id="DAI" role="tabpanel" aria-labelledby="tab-DAI">DAI</div>
+            <div class="tab-pane fade" id="UST" role="tabpanel" aria-labelledby="tab-UST">UST</div>
+        </div>
+
+    </div>
+    <!-- Table End -->
+    <!-- Depth Start -->
+    <div class="homepage-depth col-lg-9">
+        <div class="homepage-summarytable-columntitle">
+            <h4 class="homepage-summarytable-columntitle-title">DERİNLİK</h4>
+            <span class="homepage-summarytable-columntitle-select">BITCOIN</span>
+        </div>
+        <link id="css-perfect-scrollbar" rel="stylesheet" href="../assets/cdn/perfect-scrollbar.min.css">
+        <script id="script-perfect-scrollbar-jquery" src="../assets/cdn/perfect-scrollbar.jquery.min.js"></script>
+        <script id="script-perfect-scrollbar" src="../assets/cdn/perfect-scrollbar.min.js"></script>
+        <script>
+            if($(window).width() <= 767){
+
+                // Centered Depth Charts
+                $(window).resize(function() {
+                    var scrollbarOut    = $('.homepage-depth-scrollbar');
+                    var scrollbarIn     = $('.homepage-depth-scrollbar > .depthtable');
+                    scrollbarOut.scrollLeft((scrollbarIn.width() - scrollbarOut.width()) / 2);
+                });
+
+                // Perfect Scrollbar
+                $(document).ready(function($){
+                    $('#depthscrollbar').perfectScrollbar();
+                });
+
+                // Swipe Mask Add
+                $(document).ready(function($){
+                    $('.homepage-depth-scrollbar').append($('<div class="depthswipemask"></div>'));
+
+                    $('.homepage-depth-scrollbar > .depthswipemask').on('click', function(){
+                        $('.depthswipemask').remove();
+                    });
+                });
+
+            } else {
+                // Swipe Mask Remove
+                $(document).ready(function($){
+                    $('.homepage-depth-scrollbar > .depthswipemask').remove();
+                });
+            }
+        </script>
+        <div id="depthscrollbar" class="homepage-depth-scrollbar">
+            <div class="depthtable tablecolumn row">
+                <div class="tablecolumn-grid tablecolumn-grid-01 col-6">
+                    <div class="depthtable-rectangle rectangle rectangle-left">
+                        <div class="depthtable-chart depthtable-chart-green"><img src="../assets/img/mainpage/elements/Green_Rectangle.png" alt="Rectangle" width="404" height="182" /></div>
+                    </div>
+                    <div class="depthtable-container">
+                        <table class="depthtable-table table">
+                            <thead>
+                            <tr>
+                                <th class="depthtable-table-count">TOPLAM</th>
+                                <th class="depthtable-table-amount">MİKTAR</th>
+                                <th class="depthtable-table-total">TRY</th>
+                                <th class="depthtable-table-price">FİYAT</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td class="depthtable-table-count">1596.64 TRY</td>
+                                <td class="depthtable-table-amount">0.02825900 BTC</td>
+                                <td class="depthtable-table-total">1596.64 TRY</td>
+                                <td class="depthtable-table-price">56500.25</td>
+                            </tr>
+                            <tr>
+                                <td class="depthtable-table-count">2676.52 TRY</td>
+                                <td class="depthtable-table-amount">0.04753960 BTC</td>
+                                <td class="depthtable-table-total">2676.52 TRY</td>
+                                <td class="depthtable-table-price">56300.80</td>
+                            </tr>
+                            <tr>
+                                <td class="depthtable-table-count">4075.58 TRY</td>
+                                <td class="depthtable-table-amount">0.07264840 BTC</td>
+                                <td class="depthtable-table-total">4075.58 TRY</td>
+                                <td class="depthtable-table-price">56100.10</td>
+                            </tr>
+                            <tr>
+                                <td class="depthtable-table-count">2183.18 TRY</td>
+                                <td class="depthtable-table-amount">0.03898500 BTC</td>
+                                <td class="depthtable-table-total">2183.18 TRY</td>
+                                <td class="depthtable-table-price">56000.60</td>
+                            </tr>
+                            <tr>
+                                <td class="depthtable-table-count">4198.26 TRY</td>
+                                <td class="depthtable-table-amount">0.07496830 BTC</td>
+                                <td class="depthtable-table-total">4198.26 TRY</td>
+                                <td class="depthtable-table-price">56000.50</td>
+                            </tr>
+                            <tr>
+                                <td class="depthtable-table-count">5301.92 TRY</td>
+                                <td class="depthtable-table-amount">0.09467658 BTC</td>
+                                <td class="depthtable-table-total">5301.92 TRY</td>
+                                <td class="depthtable-table-price">56000.30</td>
+                            </tr>
+                            <tr>
+                                <td class="depthtable-table-count">718.73 TRY</td>
+                                <td class="depthtable-table-amount">0.01283450 BTC</td>
+                                <td class="depthtable-table-total">718.73 TRY</td>
+                                <td class="depthtable-table-price">56000.10</td>
+                            </tr>
+                            <tr>
+                                <td class="depthtable-table-count">1945.87 TRY</td>
+                                <td class="depthtable-table-amount">0.03480972 BTC</td>
+                                <td class="depthtable-table-total">1945.87 TRY</td>
+                                <td class="depthtable-table-price">55900.10</td>
+                            </tr>
+                            <tr>
+                                <td class="depthtable-table-count">4059.17 TRY</td>
+                                <td class="depthtable-table-amount">0.07287539 BTC</td>
+                                <td class="depthtable-table-total">4059.17 TRY</td>
+                                <td class="depthtable-table-price">55700.20</td>
+                            </tr>
+                            <tr>
+                                <td class="depthtable-table-count">11080.00 TRY</td>
+                                <td class="depthtable-table-amount">0.20000000 BTC</td>
+                                <td class="depthtable-table-total">11080.00 TRY</td>
+                                <td class="depthtable-table-price">55400.00</td>
+                            </tr>
+                            <tr>
+                                <td class="depthtable-table-count">5530.00 TRY</td>
+                                <td class="depthtable-table-amount">0.10000000 BTC</td>
+                                <td class="depthtable-table-total">5530.00 TRY</td>
+                                <td class="depthtable-table-price">55300.00</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="tablecolumn-grid tablecolumn-grid-02 col-6">
+                    <div class="depthtable-rectangle rectangle rectangle-right">
+                        <div class="depthtable-chart depthtable-chart-green"><img src="../assets/img/mainpage/elements/Red_Rectangle.png" alt="Rectangle" width="404" height="182" /></div>
+                    </div>
+                    <div class="depthtable-container">
+                        <table class="depthtable-table table">
+                            <thead>
+                            <tr>
+                                <th class="depthtable-table-price">FİYAT</th>
+                                <th class="depthtable-table-total">MİKTAR</th>
+                                <th class="depthtable-table-amount">TRY</th>
+                                <th class="depthtable-table-count" style="width: 57px;">TOPLAM</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td class="depthtable-table-price">59000.00</td>
+                                <td class="depthtable-table-total">0.70000000 BTC</td>
+                                <td class="depthtable-table-amount">41300.00 TRY</td>
+                                <td class="depthtable-table-count">41300.00 TRY</td>
+                            </tr>
+                            <tr>
+                                <td class="depthtable-table-price">60000.10</td>
+                                <td class="depthtable-table-total">0.04839600 BTC</td>
+                                <td class="depthtable-table-amount">2903.76 TRY</td>
+                                <td class="depthtable-table-count">2903.76 TRY</td>
+                            </tr>
+                            <tr>
+                                <td class="depthtable-table-price">60000.60</td>
+                                <td class="depthtable-table-total">0.18237429 BTC</td>
+                                <td class="depthtable-table-amount">10942.57 TRY</td>
+                                <td class="depthtable-table-count">10942.57 TRY</td>
+                            </tr>
+                            <tr>
+                                <td class="depthtable-table-price">60100.00</td>
+                                <td class="depthtable-table-total">0.20000000 BTC</td>
+                                <td class="depthtable-table-amount">12020.00 TRY</td>
+                                <td class="depthtable-table-count">12020.00 TRY</td>
+                            </tr>
+                            <tr>
+                                <td class="depthtable-table-price">61500.10</td>
+                                <td class="depthtable-table-total">0.04093206 BTC</td>
+                                <td class="depthtable-table-amount">2517.33 TRY</td>
+                                <td class="depthtable-table-count">2517.33 TRY</td>
+                            </tr>
+                            <tr>
+                                <td class="depthtable-table-price">61500.30</td>
+                                <td class="depthtable-table-total">0.07287955 BTC</td>
+                                <td class="depthtable-table-amount">4482.11 TRY</td>
+                                <td class="depthtable-table-count">4482.11 TRY</td>
+                            </tr>
+                            <tr>
+                                <td class="depthtable-table-price">61600.60</td>
+                                <td class="depthtable-table-total">0.01950360 BTC</td>
+                                <td class="depthtable-table-amount">1201.43 TRY</td>
+                                <td class="depthtable-table-count">1201.43 TRY</td>
+                            </tr>
+                            <tr>
+                                <td class="depthtable-table-price">62000.10</td>
+                                <td class="depthtable-table-total">0.11723786 BTC</td>
+                                <td class="depthtable-table-amount">7268.76 TRY</td>
+                                <td class="depthtable-table-count">7268.76 TRY</td>
+                            </tr>
+                            <tr>
+                                <td class="depthtable-table-price">63000.00</td>
+                                <td class="depthtable-table-total">0.37848585 BTC</td>
+                                <td class="depthtable-table-amount">23844.61 TRY</td>
+                                <td class="depthtable-table-count">23844.61 TRY</td>
+                            </tr>
+                            <tr>
+                                <td class="depthtable-table-price">63120.00</td>
+                                <td class="depthtable-table-total">0.42214515 BTC</td>
+                                <td class="depthtable-table-amount">26645.80 TRY</td>
+                                <td class="depthtable-table-count">26645.80 TRY</td>
+                            </tr>
+                            <tr>
+                                <td class="depthtable-table-price">63500.55</td>
+                                <td class="depthtable-table-total">0.00527445 BTC</td>
+                                <td class="depthtable-table-amount">334.93 TRY</td>
+                                <td class="depthtable-table-count">334.93 TRY</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Depth End -->
+    <!-- Crypto Converter Start -->
+    <div class="homepage-converter cyrptoconverter col-lg-3">
+        <div class="homepage-summarytable-columntitle">
+            <h4 class="homepage-summarytable-columntitle-title">CRYPTO CONVERTER</h4>
+        </div>
+        <div class="homepage-converter-column columnleft">
+            <div class="cyrptoconverter-label-title formuinew">
+                <h5 class="cyrptoconverter-label-title-h5">BITCOIN</h5>
+                <div class="cyrptoconverter-label-title-select form-group selectheightsize-80-24 colorsetwhite">
+                    <select class="form-control inputnoborder custom-select">
+                        <option value="BTC">&nbsp;&nbsp;BTC</option>
+                        <option value="ETH">&nbsp;&nbsp;ETH</option>
+                        <option value="LTC">&nbsp;&nbsp;LTC</option>
+                        <option value="XRP">&nbsp;&nbsp;XRP</option>
+                    </select>
+                </div>
+            </div>
+            <form class="cyrptoconverter-form">
+                <input class="cyrptoconverter-form-input form-control" type="text" name="cyrptoconverter" placeholder="" value="100 BTC" />
+                <p class="cyrptoconverter-form-info">1 BTC = 4134,1 USD</p>
+            </form>
+        </div>
+        <div class="homepage-converter-column columnright">
+            <div class="cyrptoconverter-label-title formuinew">
+                <h5 class="cyrptoconverter-label-title-h5">AMERİKAN DOLARI</h5>
+                <div class="cyrptoconverter-label-title-select form-group selectheightsize-80-24 colorsetwhite">
+                    <select class="form-control inputnoborder custom-select">
+                        <option value="0">USD</option>
+                        <option value="1">EUR</option>
+                        <option value="2">TRY</option>
+                    </select>
+                </div>
+            </div>
+            <form class="cyrptoconverter-form">
+                <input class="cyrptoconverter-form-input sitecolorgreen form-control" type="text" name="cyrptoconverter" placeholder="" value="412.640 USD" />
+                <p class="cyrptoconverter-form-info">1 USD = 0,000242 BTC</p>
+            </form>
+        </div>
+    </div>
+    <!-- Crypto Converter End -->
+</div>
+</div>
+</section>
+<!-- Summary Table End -->
+
+<!-- Why Icrypex Crypto Exchange Start -->
+<section class="homepage-whyicrypex">
+<div class="container">
+
+    <!-- Title -->
+    <h2 class="columntitle columntitle-xl bottomborder titlecenter titlelight">NEDEN ICRYPEX CRYPTO EXCHANGE?</h2>
+    <!-- Title -->
+    <!-- List Start -->
+    <div class="homepage-whyicrypex-list">
+    <div class="row">
+
+        <!-- 2FA -->
+        <div class="col-xl-4 col-md-6">
+            <div class="homepage-whyicrypex-list-item">
+            <div class="homepage-whyicrypex-list-item-icon"><i class="icon-svg icon-svg-why-2fa"></i></div>
+            <div class="homepage-whyicrypex-list-item-text">
+                <h3 class="columntitle columntitle-sm bottomborder titleleft">2FA DOĞRULAMA</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis nulla etium tincidunt quam vitae, lobortis ante onec efficitur, turpis id sollicitudin ucibusodio leo luctus magna, in dignissim eros tortor et dolor vestibulum non commodo.</p>
+            </div>
+            </div>
+        </div>
+        <!-- 2FA -->
+        <!-- HIZLI PLATFORM -->
+        <div class="col-xl-4 col-md-6">
+            <div class="homepage-whyicrypex-list-item">
+                <div class="homepage-whyicrypex-list-item-icon"><i class="icon-svg icon-svg-why-speed"></i></div>
+                <div class="homepage-whyicrypex-list-item-text">
+                    <h3 class="columntitle columntitle-sm bottomborder titleleft">HIZLI PLATFORM</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis nulla etium tincidunt quam vitae, lobortis ante onec efficitur, turpis id sollicitudin ucibusodio leo luctus magna, in dignissim eros tortor et dolor vestibulum non commodo.</p>
+                </div>
+            </div>
+        </div>
+        <!-- HIZLI PLATFORM -->
+        <!-- API DESTEGI -->
+        <div class="col-xl-4 col-md-6">
+            <div class="homepage-whyicrypex-list-item">
+                <div class="homepage-whyicrypex-list-item-icon"><i class="icon-svg icon-svg-why-api"></i></div>
+                <div class="homepage-whyicrypex-list-item-text">
+                    <h3 class="columntitle columntitle-sm bottomborder titleleft">API DESTEĞİ</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis nulla etium tincidunt quam vitae, lobortis ante onec efficitur, turpis id sollicitudin ucibusodio leo luctus magna, in dignissim eros tortor et dolor vestibulum non commodo.</p>
+                </div>
+            </div>
+        </div>
+        <!-- API DESTEGI -->
+        <!-- SEGWIT -->
+        <div class="col-xl-4 col-md-6">
+            <div class="homepage-whyicrypex-list-item">
+                <div class="homepage-whyicrypex-list-item-icon"><i class="icon-svg icon-svg-why-segwit"></i></div>
+                <div class="homepage-whyicrypex-list-item-text">
+                    <h3 class="columntitle columntitle-sm bottomborder titleleft">SEGWIT</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis nulla etium tincidunt quam vitae, lobortis ante onec efficitur, turpis id sollicitudin ucibusodio leo luctus magna, in dignissim eros tortor et dolor vestibulum non commodo.</p>
+                </div>
+            </div>
+        </div>
+        <!-- SEGWIT -->
+        <!-- SOGUK DEPOLOMA -->
+        <div class="col-xl-4 col-md-6">
+            <div class="homepage-whyicrypex-list-item">
+                <div class="homepage-whyicrypex-list-item-icon"><i class="icon-svg icon-svg-why-freeze"></i></div>
+                <div class="homepage-whyicrypex-list-item-text">
+                    <h3 class="columntitle columntitle-sm bottomborder titleleft">SOĞUK DEPOLOMA</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis nulla etium tincidunt quam vitae, lobortis ante onec efficitur, turpis id sollicitudin ucibusodio leo luctus magna, in dignissim eros tortor et dolor vestibulum non commodo.</p>
+                </div>
+            </div>
+        </div>
+        <!-- SOGUK DEPOLOMA -->
+        <!-- YUKSEK DERINLIK -->
+        <div class="col-xl-4 col-md-6">
+            <div class="homepage-whyicrypex-list-item">
+                <div class="homepage-whyicrypex-list-item-icon"><i class="icon-svg icon-svg-why-deep"></i></div>
+                <div class="homepage-whyicrypex-list-item-text">
+                    <h3 class="columntitle columntitle-sm bottomborder titleleft">YÜKSEK DERİNLİK</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer quis nulla etium tincidunt quam vitae, lobortis ante onec efficitur, turpis id sollicitudin ucibusodio leo luctus magna, in dignissim eros tortor et dolor vestibulum non commodo.</p>
+                </div>
+            </div>
+        </div>
+        <!-- YUKSEK DERINLIK -->
+    </div>
+    </div>
+    <!-- List End -->
+
+</div>
+</section>
+<!-- Why Icrypex Crypto Exchange End -->
+
+<!-- Icrypex Web Trader Platform Start -->
+<section class="homepage-webtrader">
+<div class="container">
+<div class="row">
+
+    <!-- Content -->
+    <div class="homepage-webtrader-content col-xl-5 col-lg-6">
+        <h2 class="columntitle columntitle-xl bottomborder titleleft titlelight">ICRYPEX İLE IŞIK HIZINDA KRİPTO PARA İŞLEMLERİ</h2>
+        <p class="homepage-webtrader-content-desc">Icrypex ile milisaniyeler içerisinde işlem açıp kapatabilir, likit ve derin emir defterinin keyfini sürebilirsiniz. Icrypex'te, emirlerinizin gerçekten blokzincirinde gerçekleştiğinden emin olurken yüksek derinliğin ve güvenliğin keyfini çıkarırsınız. </p>
+        <ul class="homepage-webtrader-content-list content-list">
+            <li class="content-list-item">Yüksek Güvenlik</li>
+            <li class="content-list-item">Işık Hızında İşlemler</li>
+            <li class="content-list-item">Kolay Kullanım</li>
+            <li class="content-list-item">Derin Emir Defteri</li>
+            <li class="content-list-item">Gerçek Blok Zinciri Tecrübesi</li>
+        </ul>
+        <a class="homepage-webtrader-content-btn btn btn-lg btn-primary btnunderlinescale softblue btnwidth160" href="01_Sign_Up.html" title="" rel="bookmark">ÜYELİK OLUŞTUR</a>
+    </div>
+    <!-- Content -->
+    <!-- Image -->
+    <div class="homepage-webtrader-image col-xl-7 col-lg-6">
+        <img class="homepage-webtrader-image-img imgsize-2K" src="../assets/img/mainpage/homepage/Desktop_Pc_Image_2K.png" alt="" width="790" height="656" />
+        <img class="homepage-webtrader-image-img imgsize-1080p" src="../assets/img/mainpage/homepage/Desktop_Pc_Image_1080p.png" alt="" width="600" height="499" />
+    </div>
+    <!-- Image -->
+
+</div>
+</div>
+</section>
+<!-- Icrypex Web Trader Platform End -->
+
+<!-- Icrypex Mobile Trader Platform Start -->
+<section class="homepage-mobiletrader">
+ <div class="container">
+ <div class="row">
+
+     <!-- Image -->
+     <div class="homepage-mobiletrader-image col-xl-5 col-lg-6">
+         <ul class="homepage-mobiletrader-image-list">
+             <li class="homepage-mobiletrader-image-list-item apple">
+                 <img class="imgsize-2K" src="../assets/img/mainpage/homepage/Apple_Mobile_Dashboard_Image_2K.png" alt="Apple" width="350" height="702" />
+                 <img class="imgsize-1080p" src="../assets/img/mainpage/homepage/Apple_Mobile_Dashboard_Image_1080p.png" alt="Apple" width="250" height="502" />
+             </li>
+             <li class="homepage-mobiletrader-image-list-item android">
+                 <img class="imgsize-2K" src="../assets/img/mainpage/homepage/Android_Mobile_Dashboard_Image_2K.png" alt="Android" width="354" height="737" />
+                 <img class="imgsize-1080p" src="../assets/img/mainpage/homepage/Android_Mobile_Dashboard_Image_1080p.png" alt="Android" width="255" height="530" />
+             </li>
+         </ul>
+     </div>
+     <!-- Image -->
+     <!-- Content -->
+     <div class="homepage-mobiletrader-content col-xl-6 col-lg-6">
+         <h2 class="columntitle columntitle-xl bottomborder titleleft titlelight">ICRYPEX TRADER MOBILE İLE DİLEDEĞİNİZ YERDE HIZLI VE GÜVENLİ 7/24 İŞLEM</h2>
+         <p class="homepage-mobiletrader-content-desc">Icrypex ile internetin olduğu heryerde tüm kripto para portföyünüzü yönetebilir, işlem açıp kapatabilir, para transferleri yapabilir ve analizlerinizi gerçekleştirebilirsiniz.</p>
+         <ul class="homepage-mobiletrader-content-list content-list">
+             <li class="content-list-item">Milisaniyeler İçerisinde İşlem</li>
+             <li class="content-list-item">Profesyonel Tasarım</li>
+             <li class="content-list-item">Kolay Kullanım</li>
+             <li class="content-list-item">Hızlı Para Yatırma ve Çekme</li>
+             <li class="content-list-item">Hesaplama Araçları</li>
+             <li class="content-list-item">Gerçek Blok Zinciri Tecrübesi</li>
+         </ul>
+         <div class="homepage-mobiletrader-content-btn">
+             <a class="homepage-mobiletrader-content-btn-item apple" href="#" title="App Store" rel="external nofollow"></a>
+             <a class="homepage-mobiletrader-content-btn-item android" href="#" title="Google Play" rel="external nofollow"></a>
+         </div>
+     </div>
+     <!-- Content -->
+
+ </div>
+ </div>
+</section>
+<!-- Icrypex Mobile Trader Platform End -->
+
+<!-- Crypt Money Investment Start -->
+<section class="cryptinvestment">
+<div class="container">
+
+    <!-- Title -->
+    <h2 class="columntitle columntitle-xl bottomborder titlecenter titlelight">SADECE 3 ADIMDA KRİPTO PARA YATIRIMINA BAŞLAYIN!</h2>
+    <!-- Title -->
+    <!-- ThreeBox -->
+    <div class="cryptinvestment-threebox row justify-content-md-center text-center">
+        <div class="cryptinvestment-threebox-item col col-xl-2">
+            <i class="cryptinvestment-threebox-item-bluebg">01</i>
+            <h3 class="cryptinvestment-threebox-item-title">KAYIT FORMUNU DOLDURUN</h3>
+        </div>
+        <div class="cryptinvestment-threebox-item col col-xl-2 offset-md-1">
+            <i class="cryptinvestment-threebox-item-bluebg">02</i>
+            <h3 class="cryptinvestment-threebox-item-title">ONAY İŞLEMİNİ TAMAMLAYIN</h3>
+        </div>
+        <div class="cryptinvestment-threebox-item col col-xl-2 offset-md-1">
+            <i class="cryptinvestment-threebox-item-bluebg">03</i>
+            <h3 class="cryptinvestment-threebox-item-title">KRİPTO PARA ALIN, SATIN</h3>
+        </div>
+    </div>
+    <!-- ThreeBox -->
+    <!-- Content -->
+    <div class="cryptinvestment-content">
+        <h6 class="cryptinvestment-content-title">7/24 CANLI DESTEK İLE DAİMA YANINIZDA OLAN KRİPTO PARA BORSASI!</h6>
+        <p class="cryptinvestment-content-desc">Sorularınız için sizi Info@ ya da destek@ eposta adreslerine yönlendirmiyoruz.<br />Telefonun diğer hattında, daima size yardım etmeye hazır bir kripto para uzmanı sizi bekliyor.<br />Analiz, işlem ve piyasa bilgisiyle ilgili anında destek alın!</p>
+        <a class="cryptinvestment-content-btn btn btn-lg btn-primary btnunderlinescale softblue" href="01_Sign_Up.html" title="" rel="bookmark">ÜCRETSİZ ÜYELİK OLUŞTUR</a>
+    </div>
+    <!-- Content -->
+
+</div>
+</section>
+<!-- Crypt Money Investment End -->
+
+<!-- Footer Start -->
+<footer class="footer footer-mainpage">
+    <div class="footer-mainpage-bg">
+        <div class="container-fluid container-1890">
+
+            <!-- Topline -->
+            <div class="footer-mainpage-topline"><i class="footer-mainpage-topline-symbol icon-svg icon-svg-icrypexsymbol"></i></div>
+            <!-- Topline -->
+
+            <!-- Bottom Menu -->
+            <div class="footer-mainpage-nav container">
+                <div class="row justify-content-md-center">
+                    <div class="footer-menu col">
+                        <div class="footer-underlinehover">
+                            <h6 class="footer-menu-title columntitle columntitle-xs bottomborder titleleft">ÖZELLİKLER</h6>
+                            <ul class="footer-menu-list">
+                                <li class="footer-menu-list-item"><a href="02_Features_Products.html" title="" rel="category">ÜRÜNLER</a></li>
+                                <li class="footer-menu-list-item"><a href="07_Features_Commision.html" title="" rel="category">KOMİSYONLAR</a></li>
+                                <li class="footer-menu-list-item"><a href="08_Features_Limit.html" title="" rel="category">LİMİTLER</a></li>
+                                <li class="footer-menu-list-item"><a href="09_Features_Security.html" title="" rel="category">GÜVENLİK</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-menu col">
+                        <div class="footer-underlinehover">
+                            <h6 class="footer-menu-title columntitle columntitle-xs bottomborder titleleft">TEKNOLOJİ</h6>
+                            <ul class="footer-menu-list">
+                                <li class="footer-menu-list-item"><a href="10_Technology_Chain_Summary.html" title="" rel="category">ZİNCİR VERİ TABANI</a></li>
+                                <li class="footer-menu-list-item"><a href="16_Technology_Api.html" title="" rel="category">API</a></li>
+                                <li class="footer-menu-list-item"><a href="17_Technology_Converter.html" title="" rel="category">KRİPTO PARA ÇEVİRİCİ</a></li>
+                                <li class="footer-menu-list-item"><a href="18_Technology_Mining.html" title="" rel="category">MADENCİLİK</a></li>
+                                <li class="footer-menu-list-item"><a href="19_Technology_Multiple.html" title="" rel="category">ÇOKLU GÖNDERİM</a></li>
+                                <li class="footer-menu-list-item"><a href="20_Technology_Segwit.html" title="" rel="category">SEGWIT</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-menu col">
+                        <div class="footer-underlinehover">
+                            <h6 class="footer-menu-title columntitle columntitle-xs bottomborder titleleft">ŞİRKET</h6>
+                            <ul class="footer-menu-list">
+                                <li class="footer-menu-list-item"><a href="21_Company_About.html" title="" rel="category">HAKKIMIZDA</a></li>
+                                <li class="footer-menu-list-item"><a href="22_Company_Legal_Terms_01.html" title="" rel="category">YASAL</a></li>
+                                <li class="footer-menu-list-item"><a href="27_Company_Contact.html" title="" rel="category">BİZE ULAŞIN</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-menu col">
+                        <div class="footer-underlinehover">
+                            <h6 class="footer-menu-title columntitle columntitle-xs bottomborder titleleft"><a href="28_What_How.html" title="" rel="category">NEDİR? NASIL ÇALIŞIR?</a></h6>
+                        </div>
+                        <div class="footer-underlinehover">
+                            <h6 class="footer-menu-title columntitle columntitle-xs bottomborder titleleft"><a href="29_Announcements.html" title="" rel="category">DUYURULAR</a></h6>
+                        </div>
+                        <div class="footer-underlinehover">
+                            <h6 class="footer-menu-title columntitle columntitle-xs bottomborder titleleft"><a href="#" title="" rel="category">DESTEK</a></h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Bottom Menu -->
+            <!-- Social Media -->
+            <div class="footer-social footer-mainpage-social">
+                <ul class="footer-social-list footer-mainpage-social-list">
+                    <li class="footer-social-list-item" data-toggle="tooltip" data-placement="top" title="Facebook'ta Takip Edin"><a href="#" title="" rel="external nofollow"><i class="footer-social-icon facebook"></i></a></li>
+                    <li class="footer-social-list-item" data-toggle="tooltip" data-placement="top" title="Twitter'da Takip Edin"><a href="#" title="" rel="external nofollow"><i class="footer-social-icon twitter"></i></a></li>
+                    <li class="footer-social-list-item" data-toggle="tooltip" data-placement="top" title="Instagram'da Takip Edin"><a href="#" title="" rel="external nofollow"><i class="footer-social-icon instagram"></i></a></li>
+                    <li class="footer-social-list-item" data-toggle="tooltip" data-placement="top" title="Medium'da Takip Edin"><a href="#" title="" rel="external nofollow"><i class="footer-social-icon medium"></i></a></li>
+                    <li class="footer-social-list-item" data-toggle="tooltip" data-placement="top" title="Youtube Kanalına Abone Olun"><a href="#" title="" rel="external nofollow"><i class="footer-social-icon youtube"></i></a></li>
+                    <li class="footer-social-list-item" data-toggle="tooltip" data-placement="top" title="Linkedin'de Takip Edin"><a href="#" title="" rel="external nofollow"><i class="footer-social-icon linkedin"></i></a></li>
+                    <li class="footer-social-list-item" data-toggle="tooltip" data-placement="top" title="Telegram Grubumuza Katılın"><a href="#" title="" rel="external nofollow"><i class="footer-social-icon telegram"></i></a></li>
+                </ul>
+            </div>
+            <!-- Social Media -->
+            <!-- Copyright -->
+            <div class="footer-mainpage-copyright">
+                <p class="footer-mainpage-copyright-phone"><a href="tel:08502551079" title="Müşteri Hizmetleri" rel="external nofollow">0850 255 1079</a></p>
+                <p class="footer-mainpage-copyright-desc">Tüm Hakları Saklıdır © 2018-2019 Icrypex Crypto Exchange <br />Icrypex Bilişim A.Ş. Maslak Mah. Maslak Meydan Sok. Spring Giz Plaza N:5/57 34398 Sarıyer/İstanbul</p>
+            </div>
+            <!-- Copyright -->
+            <!-- Bottom -->
+            <div class="footer-mainpage-bottom">
+                <ul class="footer-mainpage-bottom-list">
+                    <li class="footer-mainpage-bottom-list-item"><img class="akbank" src="../assets/img/mainpage/footer/Akbank_Logo.svg" alt="Akbank" width="76" height="10" /></li>
+                    <li class="footer-mainpage-bottom-list-item"><img class="ziraat" src="../assets/img/mainpage/footer/Ziraat_Logo.svg" alt="Ziraat Bankası" width="99" height="20" /></li>
+                    <li class="footer-mainpage-bottom-list-item"><img class="odeabank" src="../assets/img/mainpage/footer/Odeabank_Logo.svg" alt="Odeabank" width="75" height="14" /></li>
+                    <li class="footer-mainpage-bottom-list-item"><img class="vakifbank" src="../assets/img/mainpage/footer/Vakifbank_Logo.svg" alt="Vakıfbank" width="78" height="24" /></li>
+                    <li class="footer-mainpage-bottom-list-item"><img class="papara" src="../assets/img/mainpage/footer/Papara_Logo.svg" alt="Papara" width="54" height="14" /></li>
+                </ul>
+            </div>
+            <!-- Bottom -->
+        </div>
+    </div>
+</footer>
+<!-- Footer End -->
+
+<!-- Cookies Notification Messages -->
+<div class="cookies-notification alert alert-warning alert-dismissible fade show" role="alert">
+    <div class="cookies-notification-body">
+        <div class="cookies-notification-body-desc">
+            <p>Çerez politikamızda belirttiğimiz amaçlarla sınırlı ve mevzuata uygun olarak sitemizde çerez kullanmaktayız. Sitede gezerek çerezlere izin vermiş sayılırsınız. Detaylar için <a class="urllink" href="/company/legal/cookie" rel="noopener noreferrer nofollow" target="_blank">Çerez (Cookie) Politikasını</a> inceleyebilirsiniz.</p>
+        </div>
+        <div class="cookies-notification-body-btn">
+            <a class="notificationclose" href="#" title="Bildirimi Kapatın" data-dismiss="alert" aria-label="Close">KAPAT</a>
+        </div>
+    </div>
+</div>
+<!-- Cookies Notification Messages -->
+
+<!-- Plugins Start -->
+<script id="script-owl-carousel" src="../assets/vendor/owl.carousel/dist/owl.carousel.min.js"></script>
+<script id="script-inputmask" src="../assets/vendor/inputmask/dist/min/jquery.inputmask.bundle.min.js"></script>
+<script id="script-plugin-app" src="../assets/dist/js/plugin-app.js"></script>
+<script id="script-mainpage-app" src="../assets/dist/js/mainpage-app.js"></script>
+<script id="script-plugin-custom" src="../assets/cdn/plugin-custom-pagemain.js"></script>
+<!-- Plugins End -->
+
+<!-- BEGIN ProvideSupport.com Graphics Chat Button Code -->
+<div id="ci924I" style="z-index:100;position:fixed"></div>
+<div id="sc924I" style="display:inline"></div>
+<div id="sd924I" style="display:none"></div>
+<script type="text/javascript">var se924I=document.createElement("script");se924I.type="text/javascript";var se924Is=(location.protocol.indexOf("https")==0?"https":"http")+"://image.providesupport.com/js/1db5zxajd589z065q2bzm777bx/safe-standard.js?ps_h=924I&ps_t="+new Date().getTime();setTimeout("se924I.src=se924Is;document.getElementById('sd924I').appendChild(se924I)",1)</script>
+<noscript><div style="display:inline"><a href="http://www.providesupport.com?messenger=1db5zxajd589z065q2bzm777bx">Live Chat</a></div></noscript>
+<style>
+    .psmw_924I{z-index:1 !important;}
+    .psmtc_924I > a{width:46px !important;height:46px !important;}
+    @media (max-width:991px){.psmtc_924I{display:none !important;}}
+    .ps_messenger__wrap{width:400px!important;height:610px!important;top:auto !important;left:auto !important;}
+    .ps_messenger__wrap.ps_rvm__mobile-full:not(.ps_rvm__hidden){width:400px!important;height:610px!important;top:auto !important;left:auto !important;right:30px !important;bottom:30px !important;z-index:3 !important;}
+    @media (max-width:992px){.ps_messenger__wrap.ps_rvm__mobile-full:not(.ps_rvm__hidden){height:85%!important;}}
+    @media (max-width:575px){.ps_messenger__wrap.ps_rvm__mobile-full:not(.ps_rvm__hidden){width:96%!important;height:96%!important;top:50% !important;left:50% !important;right:auto !important;bottom:auto !important;transform:translate(-50%, -50%) !important;}}
+</style>
+<!-- END ProvideSupport.com Graphics Chat Button Code -->
+
+</body>
+</html>
