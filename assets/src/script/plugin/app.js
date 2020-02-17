@@ -138,6 +138,12 @@ $(function(){
 });
 /* Tooltip */
 
+/* Popovers */
+$(function () {
+    $('[data-toggle="popover"]').popover()
+});
+/* Popovers */
+
 /* Form UI Tooltip */
 $(document).ready(function(){
     $('.formuitooltipgrayautowidth').tooltip({container: ".formuinew-tooltipgrayautowidth"});
