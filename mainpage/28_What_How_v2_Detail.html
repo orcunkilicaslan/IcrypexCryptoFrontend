@@ -1,0 +1,625 @@
+<!doctype html>
+<html lang="tr">
+<head>
+    <title>Icrypex</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link id="css-bootstrap" rel="stylesheet" href="../assets/dist/css/bootstrap.css">
+    <link id="css-plugin" rel="stylesheet" href="../assets/dist/css/plugin.css">
+    <link id="css-mainpage-app" rel="stylesheet" href="../assets/dist/css/mainpage-app.css">
+    <script id="script-jquery" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script id="script-popper" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script id="script-bootstrap" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body class="dfn-megamenu fullpages mainpage">
+
+<!-- Header Start -->
+<header class="header">
+
+    <!-- Mobile Header -->
+    <div class="dfn-mobilemenu-mask"></div>
+    <div class="dfn-mobilemenu-header">
+        <a class="header-navigation-logo" href="00_Home_Page.html" title="ICRYPEX Crypto Exchange" rel="bookmark">
+            <i class="header-navigation-logo-symbol icon-svg icon-svg-icrypexsymbol"></i>
+            <h1 class="header-navigation-logo-icrypex">ICRYPEX</h1>
+            <h2 class="header-navigation-logo-cryptoexchange">CRYPTO EXCHANGE</h2>
+        </a>
+        <a id="dfn-navtggle" class="dfn-mobilemenu-btn">
+            <div class="btnicon"><span></span></div>
+            <div class="btntext"><small>MENÜ</small></div>
+        </a>
+        <a class="dfn-mobilemenu-livechat">
+            <small>LIVECHAT</small>
+            <i class="icon-svg icon-svg-headerchatmobile"></i>
+        </a>
+    </div>
+    <!-- Mobile Header -->
+
+    <!-- Web Header -->
+    <div class="container-fluid container-1890 header-web">
+
+        <!-- Top Header Start -->
+        <div class="header-top">
+            <div class="col-3 d-flex justify-content-start">
+                <ul class="header-top-language">
+                    <li class="header-top-language-item"><a class="header-top-language-selection" href="#" title="ENGLISH" rel="bookmark">ENGLISH</a></li>
+                    <li class="header-top-language-item"><a class="header-top-language-selection active" href="#" title="TÜRKÇE" rel="bookmark">TÜRKÇE</a></li>
+                </ul>
+            </div>
+            <div class="col-6 d-flex justify-content-center">
+                <ul class="header-top-city">
+                    <li class="header-top-city-item"><span class="header-top-city-name">İSTANBUL</span><span id="clock-istanbul" class="header-top-city-clock">12:56:03</span></li>
+                    <li class="header-top-city-item"><span class="header-top-city-name">NEW YORK</span><span id="clock-newyork" class="header-top-city-clock">7:48:06</span></li>
+                    <li class="header-top-city-item"><span class="header-top-city-name">LONDON</span><span id="clock-london" class="header-top-city-clock">12:47:17</span></li>
+                    <li class="header-top-city-item"><span class="header-top-city-name">MOSKOW</span><span id="clock-tokyo" class="header-top-city-clock">15:47:33</span></li>
+                    <li class="header-top-city-item"><span class="header-top-city-name">TOKYO</span><span id="clock-moscow" class="header-top-city-clock">21:47:45</span></li>
+                </ul>
+                <script id="script-plugin-worldclock-app" src="../assets/cdn/plugin-worldclock.js"></script>
+                <script type="text/javascript">
+                    window.onload=worldClockZone;
+                    function worldClockZone(){
+
+                        document.getElementById("clock-istanbul").innerHTML = worldClock(2, "Europe")
+                        document.getElementById("clock-newyork").innerHTML = worldClock(-5, "NAmerica")
+                        document.getElementById("clock-london").innerHTML = worldClock(0, "Europe")
+                        document.getElementById("clock-tokyo").innerHTML = worldClock(9, "Tokyo")
+                        document.getElementById("clock-moscow").innerHTML = worldClock(3, "Europe")
+
+                        setTimeout("worldClockZone()", 1000)
+                    }
+                </script>
+            </div>
+            <div class="col-3 d-flex justify-content-end">
+                <div class="header-top-signin">
+                    <ul class="header-signin">
+                        <li class="header-signin-item"><a class="header-signin-register" href="01_Sign_Up.html" title="YENİ ÜYELİK" rel="bookmark">YENİ ÜYELİK</a></li>
+                        <li class="header-signin-item"><a class="header-signin-login" href="../tradepage/01_Login_Step_1.html" title="ÜYE GİRİŞİ" rel="bookmark">ÜYE GİRİŞİ</a></li>
+                    </ul>
+                </div>
+                <div class="header-top-userarea d-flex align-items-center" style="display: none !important;">
+                    <ul class="header-userarea-iconset d-flex align-items-center">
+                        <li class="header-userarea-iconset-search header-userarea-iconset-item">
+                            <i class="icon-svg icon-svg-headersearch"></i>
+                        </li>
+                        <li class="header-userarea-iconset-chat header-userarea-iconset-item">
+                            <a class="header-userarea-iconset-link" href="#">
+                                <i class="icon-svg icon-svg-headerchat"></i>
+                            </a>
+                        </li>
+                        <li class="header-userarea-iconset-theme header-userarea-iconset-item">
+                            <a class="header-userarea-iconset-link" href="#">
+                                <i class="icon-svg icon-svg-headertheme"></i>
+                            </a>
+                        </li>
+                        <li class="header-userarea-iconset-bell header-userarea-iconset-item">
+                            <a class="header-userarea-iconset-link" href="../tradepage/25_Profile_Notification.html" data-toggle="tooltip" data-placement="bottom" title="1 Yeni Bildiriminiz Var">
+                                <i class="icon-svg icon-svg-headerbell"></i>
+                                <span class="header-userarea-iconset-badge"></span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="header-userarea-user btn-group d-flex align-items-center">
+                        <a class="header-userarea-user-title d-flex align-items-center" href="../tradepage/27_Profile_Profile.html" title="" rel="bookmark">
+                            <img class="header-userarea-user-image" src="../assets/img/global/svg/Unknown_Profile_Avatar_Icon.svg" width="30" height="30" alt="UserPic" />
+                            <span class="header-userarea-user-name">İSİM İSİM SOYİSİM</span>
+                        </a>
+                        <button class="header-userarea-user-dropdown dropdown-toggle dropdown-toggle-split" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <div class="header-userarea-user-droplist">
+                                <div class="headusermenu">
+                                    <div class="headusermenu-box">
+                                        <div class="headusermenu-userbg">
+                                            <div class="headusermenu-box-avatar"><img src="../assets/img/global/svg/Unknown_Profile_Avatar_Icon.svg" width="200" height="200" alt="UserPic"></div>
+                                            <div class="headusermenu-box-textarea">
+                                                <h5 class="headusermenu-box-textarea-username">ORCUN KILICASLAN</h5>
+                                                <small class="sitecolorblue">1 Yeni Mesajınız Var</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="headusermenu-menulist">
+                                        <ul id="MainpageDropdownMenu" class="usermenulist">
+                                            <li class="userlink"><a href="02_Features_Products.html" title="ÖZELLİKLER" rel="category">ÖZELLİKLER</a></li>
+                                            <li class="userlink"><a href="10_Technology_Chain_Summary.html" title="TEKNOLOJİ" rel="category">TEKNOLOJİ</a></li>
+                                            <li class="userlink"><a href="30_Research_Daily.html" title="ARAŞTIRMA" rel="category">ARAŞTIRMA</a></li>
+                                            <li class="userlink"><a href="21_Company_About.html" title="ŞİRKET" rel="category">ŞİRKET</a></li>
+                                            <li class="userlink"><a href="28_What_How.html" title="NEDİR? NASIL ÇALIŞIR?" rel="category">NEDİR? NASIL ÇALIŞIR?</a></li>
+                                            <li class="userlink"><a href="29_Announcements.html" title="DUYURULAR" rel="category">DUYURULAR</a></li>
+                                            <li class="userlink"><a href="#" title="DESTEK" rel="category" target="_blank">DESTEK</a></li>
+                                        </ul>
+                                        <ul id="TradepageDropdownMenu" class="usermenulist">
+                                            <li class="userlink"><a href="../tradepage/04_Easy_Buy_Sell.html" title="KOLAY AL-SAT" rel="category">KOLAY AL-SAT</a></li>
+                                            <li class="userlink"><a href="../tradepage/03_Trader_Home_2.html" title="PRO GÖRÜNÜM" rel="category">PRO GÖRÜNÜM</a></li>
+                                            <li class="userlink"><a href="../tradepage/05_Deposit_Step_1_Home.html" title="PARA YATIRMA" rel="category">PARA YATIRMA</a></li>
+                                            <li class="userlink"><a href="../tradepage/12_Withdraw_Step_1_Home.html" title="PARA ÇEKME" rel="category">PARA ÇEKME</a></li>
+                                            <li class="userlink"><a href="../tradepage/27_Profile_Profile.html" title="HESAP & GÜVENLİK AYARLARI" rel="category">HESAP & GÜVENLİK AYARLARI</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="btnarea"><a class="logout" href="#" title="ÇIKIŞ YAPIN" rel="external nofollow">ÇIKIŞ YAPIN</a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Top Header End -->
+        <!-- Navigation Start -->
+        <div class="header-navigation">
+            <!-- Logo -->
+            <div class="header-navigation-resp col-3 d-flex justify-content-start">
+                <a class="header-navigation-logo" href="00_Home_Page.html" title="ICRYPEX Crypto Exchange" rel="bookmark">
+                    <i class="header-navigation-logo-symbol icon-svg icon-svg-icrypexsymbol"></i>
+                    <h1 class="header-navigation-logo-icrypex">ICRYPEX</h1>
+                    <h2 class="header-navigation-logo-cryptoexchange">CRYPTO EXCHANGE</h2>
+                </a>
+            </div>
+            <!-- Logo -->
+            <!-- Navigasyon -->
+            <div class="col-6 d-flex justify-content-center">
+                <div class="header-navigation-navbar dfn-nav">
+                    <nav class="dfn-menu">
+                        <ul class="dfn-mobil-alt dfn-menu-list">
+                            <li class="dfn-onlymobile-menu d-lg-none">
+                                <ul class="header-signin">
+                                    <li class="header-signin-item"><a class="header-signin-register" href="01_Sign_Up.html" title="YENİ ÜYELİK" rel="bookmark">YENİ ÜYELİK</a></li>
+                                    <li class="header-signin-item"><a class="header-signin-login" href="../tradepage/01_Login_Step_1.html" title="ÜYE GİRİŞİ" rel="bookmark">ÜYE GİRİŞİ</a></li>
+                                </ul>
+                            </li>
+                            <li class="dfn-onlymobile-userarea d-lg-none" style="display: none !important;">
+                                <div class="header-userarea-user-droplist">
+                                    <div class="headusermenu" id="MobileMenuUserDropdownMenu">
+                                        <div class="headusermenu-box">
+                                            <div class="headusermenu-userbg">
+                                                <div class="headusermenu-box-avatar"><img src="../assets/img/global/svg/Unknown_Profile_Avatar_Icon.svg" width="200" height="200" alt="UserPic"></div>
+                                                <div class="headusermenu-box-textarea">
+                                                    <h5 class="headusermenu-box-textarea-username">ORCUN KILICASLAN</h5>
+                                                    <small><a href="../tradepage/25_Profile_Notification.html" title="" rel="bookmark">1 Yeni Mesajınız Var</a></small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="headusermenu-menulist">
+                                            <ul id="MobileMenuMainpageDropdownMenu" class="usermenulist">
+                                                <li class="userlink"><a href="02_Features_Products.html" title="ÖZELLİKLER" rel="category">ÖZELLİKLER</a></li>
+                                                <li class="userlink"><a href="10_Technology_Chain_Summary.html" title="TEKNOLOJİ" rel="category">TEKNOLOJİ</a></li>
+                                                <li class="userlink"><a href="30_Research_Daily.html" title="ARAŞTIRMA" rel="category">ARAŞTIRMA</a></li>
+                                                <li class="userlink"><a href="21_Company_About.html" title="ŞİRKET" rel="category">ŞİRKET</a></li>
+                                                <li class="userlink"><a href="28_What_How.html" title="NEDİR? NASIL ÇALIŞIR?" rel="category">NEDİR? NASIL ÇALIŞIR?</a></li>
+                                                <li class="userlink"><a href="29_Announcements.html" title="DUYURULAR" rel="category">DUYURULAR</a></li>
+                                                <li class="userlink"><a href="#" title="DESTEK" rel="category" target="_blank">DESTEK</a></li>
+                                            </ul>
+                                            <ul id="MobileMenuTradepageDropdownMenu" class="usermenulist">
+                                                <li class="userlink"><a href="../tradepage/04_Easy_Buy_Sell.html" title="KOLAY AL-SAT" rel="category">KOLAY AL-SAT</a></li>
+                                                <li class="userlink"><a href="../tradepage/03_Trader_Home_2.html" title="PRO GÖRÜNÜM" rel="category">PRO GÖRÜNÜM</a></li>
+                                                <li class="userlink"><a href="../tradepage/05_Deposit_Step_1_Home.html" title="PARA YATIRMA" rel="category">PARA YATIRMA</a></li>
+                                                <li class="userlink"><a href="../tradepage/12_Withdraw_Step_1_Home.html" title="PARA ÇEKME" rel="category">PARA ÇEKME</a></li>
+                                                <li class="userlink"><a href="../tradepage/27_Profile_Profile.html" title="HESAP & GÜVENLİK AYARLARI" rel="category">HESAP & GÜVENLİK AYARLARI</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="d-lg-none"><a href="00_Home_Page.html" title="ANASAYFA" rel="category">ANASAYFA</a></li>
+                            <li>
+                                <a href="#" title="ÖZELLİKLER" rel="category" id="FeaturesDropdownMenu" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ÖZELLİKLER</a>
+                                <div class="dfn-menu-dropdownmenu dropdown-menu" aria-labelledby="FeaturesDropdownMenu">
+                                    <ul class="dropdownsubmenu">
+                                        <li class="submainmenu"><a href="02_Features_Products.html" title="ÜRÜNLER" rel="category">ÜRÜNLER</a></li>
+                                        <li class="submainmenu"><a href="07_Features_Commision.html" title="KOMİSYONLAR" rel="category">KOMİSYONLAR</a></li>
+                                        <li class="submainmenu"><a href="08_Features_Limit.html" title="LİMİTLER" rel="category">LİMİTLER</a></li>
+                                        <li class="submainmenu"><a href="09_Features_Security.html" title="GÜVENLİK" rel="category">GÜVENLİK</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="#" title="TEKNOLOJİ" rel="category" id="TechnologyDropdownMenu" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">TEKNOLOJİ</a>
+                                <div class="dfn-menu-dropdownmenu dropdown-menu animate slideIn" aria-labelledby="TechnologyDropdownMenu">
+                                    <ul class="dropdownsubmenu">
+                                        <li class="submainmenu"><a href="10_Technology_Chain_Summary.html" title="ZİNCİR VERİ TABANI" rel="category">ZİNCİR VERİ TABANI</a></li>
+                                        <li class="submainmenu"><a href="16_Technology_Api.html" title="API" rel="category">API</a></li>
+                                        <li class="submainmenu"><a href="17_Technology_Converter.html" title="KRİPTO PARA ÇEVİRİCİ" rel="category">KRİPTO PARA ÇEVİRİCİ</a></li>
+                                        <li class="submainmenu"><a href="18_Technology_Mining.html" title="MADENCİLİK" rel="category">MADENCİLİK</a></li>
+                                        <li class="submainmenu"><a href="19_Technology_Multiple.html" title="ÇOKLU GÖNDERİM" rel="category">ÇOKLU GÖNDERİM</a></li>
+                                        <li class="submainmenu"><a href="20_Technology_Segwit.html" title="SEGWIT" rel="category">SEGWIT</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a href="30_Research_Daily.html" title="ARAŞTIRMA" rel="category">ARAŞTIRMA</a></li>
+                            <li>
+                                <a href="#" title="ŞİRKET" rel="category" id="CompanyDropdownMenu" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ŞİRKET</a>
+                                <div class="dfn-menu-dropdownmenu dropdown-menu animate slideIn" aria-labelledby="CompanyDropdownMenu">
+                                    <ul class="dropdownsubmenu">
+                                        <li class="submainmenu"><a href="21_Company_About.html" title="HAKKIMIZDA" rel="category">HAKKIMIZDA</a></li>
+                                        <li class="submainmenu"><a href="22_Company_Legal_Terms_01.html" title="YASAL" rel="category">YASAL</a></li>
+                                        <li class="submainmenu"><a href="27_Company_Contact.html" title="BİZE ULAŞIN" rel="category">BİZE ULAŞIN</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a href="28_What_How.html" title="NEDİR? NASIL ÇALIŞIR?" rel="category">NEDİR? NASIL ÇALIŞIR?</a></li>
+                            <li><a href="29_Announcements.html" title="DUYURULAR" rel="category">DUYURULAR</a></li>
+                            <li><a href="#" title="DESTEK" rel="category">DESTEK</a></li>
+                        </ul>
+                        <ul class="dfn-mobil-alt dfn-onlymobile-bottom d-lg-none">
+                            <li class="sitelang dropup">
+                                <a href="#" class="btn sitelang-btn dropdown-toggle" data-toggle="dropdown" data-value="">
+                                    <i class="icon-svg icon-svg-headersitelang"></i>
+                                    <span class="sitelang-lang-text">TÜRKÇE</span>
+                                </a>
+                                <div class="sitelang-dropdown dropdown-menu">
+                                    <a class="dropdown-item" href="#" data-value="TR">
+                                        <i class="icon-svg icon-svg-headersitelang"></i>
+                                        <span class="sitelang-lang-text">TÜRKÇE</span>
+                                    </a>
+                                    <a class="dropdown-item" href="#" data-value="EN">
+                                        <i class="icon-svg icon-svg-headersitelang"></i>
+                                        <span class="sitelang-lang-text">ENGLISH</span>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="btnarea" style="display: none !important;">
+                                <a class="logout" href="00_Home_Page.html" title="ÇIKIŞ YAPIN" rel="external nofollow">ÇIKIŞ YAPIN</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <!-- Navigasyon -->
+            <!-- User Area -->
+            <div class="header-navigation-resp col-3 d-flex justify-content-end">
+                <div class="header-navigation-signin" style="display: none !important;">
+                    <ul class="header-signin">
+                        <li class="header-signin-item"><a class="header-signin-register" href="01_Sign_Up.html" title="YENİ ÜYELİK" rel="bookmark">YENİ ÜYELİK</a></li>
+                        <li class="header-signin-item"><a class="header-signin-login" href="../tradepage/01_Login_Step_1.html" title="ÜYE GİRİŞİ" rel="bookmark">ÜYE GİRİŞİ</a></li>
+                    </ul>
+                </div>
+                <div class="header-navigation-search">
+                    <form class="header-search" autocomplete="off" novalidate>
+                        <input class="header-search-input" type="search" name="headersearch" placeholder="ARA" />
+                        <button class="header-search-button" type="submit"></button>
+                    </form>
+                </div>
+            </div>
+            <!-- User Area -->
+        </div>
+        <!-- Navigation End -->
+    </div>
+    <!-- Web Header -->
+
+</header>
+<div class="header-spacebottom"></div>
+<!-- Header End -->
+
+<!-- Page Title and Breadcrumb Start -->
+<section class="headbreadcrumb">
+<div class="container">
+<div class="row align-items-center">
+
+    <!-- Title -->
+    <div class="maincont-left col-6">
+        <nav aria-label="breadcrumb">
+        <ol class="headbreadcrumb-title breadcrumb">
+            <li class="breadcrumb-item"><h1>NEDİR? NASIL ÇALIŞIR?</h1></li>
+        </ol>
+        </nav>
+    </div>
+    <!-- Title -->
+    <!-- Breadcrumb -->
+    <div class="maincont-right col-6">
+        <nav aria-label="breadcrumb">
+            <ol class="headbreadcrumb-breadcrumb breadcrumb">
+                <li class="breadcrumb-item"><a href="#" title="" rel="category">Ana Sayfa</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Nedir? Nasıl Çalışır?</li>
+            </ol>
+        </nav>
+    </div>
+    <!-- Breadcrumb -->
+
+</div>
+</div>
+</section>
+<!-- Page Title and Breadcrumb End -->
+
+<!-- What How Start -->
+<section class="whathow-section">
+<div class="container">
+<div class="row">
+
+    <!-- Search -->
+    <div class="whathow-top d-flex justify-content-center">
+        <div class="whathow-top-search">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Nasıl Kripto para (Bitcoin, Ethereum ve diğerleri) yatırabilirim?">
+                <div class="input-group-append">
+                    <button class="btn btn-outline-secondary" type="button">ARA</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Search -->
+
+    <!-- What How -->
+    <div class="whathow-content whathow-wrapper">
+
+        <div class="whathow-wrapper-column-box">
+            <div class="boxcolumn-boxtitle">
+                <h3 class="boxcolumn-boxtitle-title">Blokzinciri Ne Demektir?</h3>
+            </div>
+            <div class="whathow-accordion-stage">
+                <div class="whathow-accordion-item">
+                    <div class="content d-block">
+                        <p>Onay süreci mail aktivasyonunuzu gerçekleştirmeniz ile başlar. Onay, hesap açılış belgelerini sisteme Yükelemeniz sonrası belgelerin geçerli olması durumunda gerçekleşir. <br /><strong>Hesap açılış belgeleri:</strong></p>
+                        <h4 class="content-subtitle">TIER-1</h4>
+                        <p>Günlük 0-100.000 TL hareket<br />
+                            Aylık 0-250.000 TL hareket<br>
+                            Aylık 0-500.000 TL hacim için</p>
+                        <ul class="content-contlist">
+                            <li>Hesap sahibinin son 10 yılda alınmış olması kaydıyla resimlik kimlik belgesi</li>
+                            <li>Son üç aya ait adres teyidi sağlar belge</li>
+                        </ul>
+                        <h4 class="content-subtitle">TIER-2</h4>
+                        <p>Günlük 100.001 – 250.000 TL hareket<br />
+                            Aylık 250.001 – 999.999 TL hareket<br />
+                            Aylık 500.001 – 2.500.000 TL hacim için</p>
+                        <ul class="content-contlist">
+                            <li>TIER-1 ve banka ekstresi</li>
+                        </ul>
+                        <h4 class="content-subtitle">TIER-3</h4>
+                        <p>Günlük 100.001 – 250.000 TL hareket<br />
+                            Aylık 250.001 – 999.999 TL hareket<br />
+                            Aylık 500.001 – 2.500.000 TL hacim için</p>
+                        <ul class="content-contlist">
+                            <li>TIER-2 ve banka referans mektubu</li>
+                        </ul>
+                        <div class="content-commision">
+                            <table class="features-commision_limit-table sitetable table">
+                                <thead>
+                                <tr>
+                                    <th class="widthpercent30">TRY HACİM <br class="d-sm-none">/ 30 GÜN</th>
+                                    <th class="widthpercent30 widthpercent30-responsive sitebggraylight">PİYASA YAPICI <br class="d-sm-none">[MAKER]</th>
+                                    <th class="widthpercentspace"></th>
+                                    <th class="widthpercent30 widthpercent30-responsive sitebggraylight">PİYASA ALICI <br class="d-sm-none">[TAKER]</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>0-100.000</td>
+                                    <td class="sitebggraylight">0.0015</td>
+                                    <td></td>
+                                    <td class="sitebggraylight">0.0035</td>
+                                </tr>
+                                <tr>
+                                    <td>100.000-500.000</td>
+                                    <td class="sitebggraylight">0.0010</td>
+                                    <td></td>
+                                    <td class="sitebggraylight">0.0030</td>
+                                </tr>
+                                <tr>
+                                    <td>500.000-1.000.000</td>
+                                    <td class="sitebggraylight">0.0005</td>
+                                    <td></td>
+                                    <td class="sitebggraylight">0.0025</td>
+                                </tr>
+                                <tr>
+                                    <td>1.000.000+</td>
+                                    <td class="sitebggraylight">Sorunuz</td>
+                                    <td></td>
+                                    <td class="sitebggraylight">Sorunuz</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <table class="content-commision-table sitetable table d-none">
+                                <thead>
+                                <tr>
+                                    <th>TRY HACİM / 30 GÜN</th>
+                                    <th colspan="2" class="sitebggraylight">0-100.000</th>
+                                    <th></th>
+                                    <th colspan="2" class="sitebggraylight">100.000-500.000</th>
+                                    <th></th>
+                                    <th colspan="2" class="sitebggraylight">500.000-1.000.000</th>
+                                </tr>
+                                <tr>
+                                    <th>PARA BİRİMİ</th>
+                                    <th class="sitebggraylight">MAKER</th>
+                                    <th class="sitebggraylight">TAKER</th>
+                                    <th></th>
+                                    <th class="sitebggraylight">MAKER</th>
+                                    <th class="sitebggraylight">TAKER</th>
+                                    <th></th>
+                                    <th class="sitebggraylight">MAKER</th>
+                                    <th class="sitebggraylight">TAKER</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>Bitcoin [BTC]</td>
+                                    <td class="sitebggraylight">0.075</td>
+                                    <td class="sitebggraylight">0.075</td>
+                                    <td></td>
+                                    <td class="sitebggraylight">0.050</td>
+                                    <td class="sitebggraylight">0.050</td>
+                                    <td></td>
+                                    <td class="sitebggraylight">0.025</td>
+                                    <td class="sitebggraylight">0.025</td>
+                                </tr>
+                                <tr>
+                                    <td>Litecoin [LTC]</td>
+                                    <td class="sitebggraylight">0.075</td>
+                                    <td class="sitebggraylight">0.075</td>
+                                    <td></td>
+                                    <td class="sitebggraylight">0.050</td>
+                                    <td class="sitebggraylight">0.050</td>
+                                    <td></td>
+                                    <td class="sitebggraylight">0</td>
+                                    <td class="sitebggraylight">0</td>
+                                </tr>
+                                <tr>
+                                    <td>Ethereum [ETH]</td>
+                                    <td class="sitebggraylight">0</td>
+                                    <td class="sitebggraylight">0</td>
+                                    <td></td>
+                                    <td class="sitebggraylight">0</td>
+                                    <td class="sitebggraylight">0</td>
+                                    <td></td>
+                                    <td class="sitebggraylight">0</td>
+                                    <td class="sitebggraylight">0</td>
+                                </tr>
+                                <tr>
+                                    <td>Ripple [XRP]</td>
+                                    <td class="sitebggraylight">0</td>
+                                    <td class="sitebggraylight">0</td>
+                                    <td></td>
+                                    <td class="sitebggraylight">0</td>
+                                    <td class="sitebggraylight">0</td>
+                                    <td></td>
+                                    <td class="sitebggraylight">0</td>
+                                    <td class="sitebggraylight">0</td>
+                                </tr>
+                                <tr>
+                                    <td>MenaPay [MPAY]</td>
+                                    <td class="sitebggraylight">0</td>
+                                    <td class="sitebggraylight">0</td>
+                                    <td></td>
+                                    <td class="sitebggraylight">0</td>
+                                    <td class="sitebggraylight">0</td>
+                                    <td></td>
+                                    <td class="sitebggraylight">0</td>
+                                    <td class="sitebggraylight">0</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- What How -->
+
+</div>
+</div>
+</section>
+<!-- What How End -->
+
+<!-- Footer Start -->
+<footer class="footer footer-tradepage">
+    <!-- Footer Top -->
+    <div class="container">
+        <div class="row">
+
+            <!-- Address -->
+            <div class="maincont-left col-2">
+                <div class="footer-tradepage-address">
+                    <a class="footer-tradepage-logo" href="#" title="ICRYPEX Crypto Exchange" rel="bookmark">
+                        <i class="footer-tradepage-logo-symbol icon-svg icon-svg-icrypexsymbol"></i>
+                        <h1 class="footer-tradepage-logo-icrypex">ICRYPEX</h1>
+                        <h2 class="footer-tradepage-logo-cryptoexchange">CRYPTO EXCHANGE</h2>
+                    </a>
+                    <p class="footer-tradepage-address-desc mt-0">Tüm Hakları Saklıdır © 2018-2019 <br class="d-none d-lg-block" />Icrypex Crypto Exchange</p>
+                    <p class="footer-tradepage-address-desc">Icrypex Bilişim A.Ş. <br class="d-none d-lg-block" />Maslak Mah. Maslak Meydan Sok. <br class="d-none d-lg-block" />Spring Giz Plaza N:5/57 <br class="d-none d-lg-block" />34398 Sarıyer/İstanbul</p>
+                    <p class="footer-tradepage-address-desc"><span>Müşteri Hizmetleri: </span><a href="tel:08502551079" title="Müşteri Hizmetleri" rel="external nofollow">0850 255 1079</a></p>
+                </div>
+            </div>
+            <!-- Address -->
+            <!-- Navigation -->
+            <div class="maincont-right col-10">
+                <div class="footer-tradepage-loginnav" style="display: none !important;">
+                    <ul class="footer-tradepage-loginnav-list">
+                        <li class="footer-tradepage-loginnav-list-item"><a href="../tradepage/04_Easy_Buy_Sell.html" title="" rel="category">KOLAY AL-SAT</a></li>
+                        <li class="footer-tradepage-loginnav-list-item"><a href="../tradepage/03_Trader_Home_2.html" title="" rel="category">PRO GÖRÜNÜM</a></li>
+                        <li class="footer-tradepage-loginnav-list-item"><a href="../tradepage/05_Deposit_Step_1_Home.html" title="" rel="category">YATIRMA</a></li>
+                        <li class="footer-tradepage-loginnav-list-item"><a href="../tradepage/12_Withdraw_Step_1_Home.html" title="" rel="category">ÇEKME</a></li>
+                        <li class="footer-tradepage-loginnav-list-item"><a href="../tradepage/27_Profile_Profile.html" title="" rel="category">HESABIM</a></li>
+                        <li class="footer-tradepage-loginnav-list-item"><a href="#" title="" rel="category">DESTEK</a></li>
+                    </ul>
+                    <ul class="footer-tradepage-loginnav-list linkgray">
+                        <li class="footer-tradepage-loginnav-list-item d-none"><a href="#" title="" rel="category">CANLI YARDIM</a></li>
+                        <li class="footer-tradepage-loginnav-list-item d-none"><a href="#" title="" rel="category">RENK</a></li>
+                        <li class="footer-tradepage-loginnav-list-item pl-0"><a href="../tradepage/25_Profile_Notification.html" title="" rel="category">BİLDİRİMLER</a></li>
+                        <li class="footer-tradepage-loginnav-list-item"><a href="../tradepage/27_Profile_Profile.html" title="" rel="category">AYARLAR</a></li>
+                    </ul>
+                </div>
+                <div class="footer-tradepage-nav row justify-content-md-center">
+                    <div class="footer-menu col">
+                        <div class="footer-underlinehover">
+                            <h6 class="footer-menu-title columntitle columntitle-xs bottomborder titleleft">ÖZELLİKLER</h6>
+                            <ul class="footer-menu-list">
+                                <li class="footer-menu-list-item"><a href="02_Features_Products.html" title="" rel="category">ÜRÜNLER</a></li>
+                                <li class="footer-menu-list-item"><a href="07_Features_Commision.html" title="" rel="category">KOMİSYONLAR</a></li>
+                                <li class="footer-menu-list-item"><a href="08_Features_Limit.html" title="" rel="category">LİMİTLER</a></li>
+                                <li class="footer-menu-list-item"><a href="09_Features_Security.html" title="" rel="category">GÜVENLİK</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-menu col">
+                        <div class="footer-underlinehover">
+                            <h6 class="footer-menu-title columntitle columntitle-xs bottomborder titleleft">TEKNOLOJİ</h6>
+                            <ul class="footer-menu-list">
+                                <li class="footer-menu-list-item"><a href="10_Technology_Chain_Summary.html" title="" rel="category">ZİNCİR VERİ TABANI</a></li>
+                                <li class="footer-menu-list-item"><a href="16_Technology_Api.html" title="" rel="category">API</a></li>
+                                <li class="footer-menu-list-item"><a href="17_Technology_Converter.html" title="" rel="category">KRİPTO PARA ÇEVİRİCİ</a></li>
+                                <li class="footer-menu-list-item"><a href="18_Technology_Mining.html" title="" rel="category">MADENCİLİK</a></li>
+                                <li class="footer-menu-list-item"><a href="19_Technology_Multiple.html" title="" rel="category">ÇOKLU GÖNDERİM</a></li>
+                                <li class="footer-menu-list-item"><a href="20_Technology_Segwit.html" title="" rel="category">SEGWIT</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-menu col">
+                        <div class="footer-underlinehover">
+                            <h6 class="footer-menu-title columntitle columntitle-xs bottomborder titleleft">ŞİRKET</h6>
+                            <ul class="footer-menu-list">
+                                <li class="footer-menu-list-item"><a href="21_Company_About.html" title="" rel="category">HAKKIMIZDA</a></li>
+                                <li class="footer-menu-list-item"><a href="22_Company_Legal_Terms_01.html" title="" rel="category">YASAL</a></li>
+                                <li class="footer-menu-list-item"><a href="27_Company_Contact.html" title="" rel="category">BİZE ULAŞIN</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-menu col">
+                        <div class="footer-underlinehover">
+                            <h6 class="footer-menu-title columntitle columntitle-xs bottomborder titleleft"><a href="28_What_How.html" title="" rel="category">NEDİR? NASIL ÇALIŞIR?</a></h6>
+                        </div>
+                        <div class="footer-underlinehover">
+                            <h6 class="footer-menu-title columntitle columntitle-xs bottomborder titleleft"><a href="29_Announcements.html" title="" rel="category">DUYURULAR</a></h6>
+                        </div>
+                        <div class="footer-underlinehover">
+                            <h6 class="footer-menu-title columntitle columntitle-xs bottomborder titleleft"><a href="#" title="" rel="category">DESTEK</a></h6>
+                        </div>
+                    </div>
+                    <div class="footer-menu col">
+                        <h6 class="footer-menu-title columntitle columntitle-xs bottomborder titleleft">BİZİ TAKİP EDİN</h6>
+                        <ul class="footer-social-list footer-tradepage-social-list">
+                            <li class="footer-social-list-item" data-toggle="tooltip" data-placement="top" title="Facebook'ta Takip Edin"><a href="#" title="" rel="external nofollow"><i class="footer-social-icon facebook"></i></a></li>
+                            <li class="footer-social-list-item" data-toggle="tooltip" data-placement="top" title="Twitter'da Takip Edin"><a href="#" title="" rel="external nofollow"><i class="footer-social-icon twitter"></i></a></li>
+                            <li class="footer-social-list-item" data-toggle="tooltip" data-placement="top" title="Instagram'da Takip Edin"><a href="#" title="" rel="external nofollow"><i class="footer-social-icon instagram"></i></a></li>
+                            <li class="footer-social-list-item" data-toggle="tooltip" data-placement="top" title="Linkedin'de Takip Edin"><a href="#" title="" rel="external nofollow"><i class="footer-social-icon linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Navigation -->
+
+        </div>
+    </div>
+    <!-- Footer Top -->
+    <!-- Bottom -->
+    <div class="footer-tradepage-bottom">
+        <ul class="footer-tradepage-bottom-list">
+            <li class="footer-tradepage-bottom-list-item"><img class="akbank" src="../assets/img/tradepage/footer/Akbank_Logo.svg" alt="Akbank" width="76" height="10" /></li>
+            <li class="footer-tradepage-bottom-list-item"><img class="ziraat" src="../assets/img/tradepage/footer/Ziraat_Logo.svg" alt="Ziraat Bankası" width="99" height="20" /></li>
+            <li class="footer-tradepage-bottom-list-item"><img class="odeabank" src="../assets/img/tradepage/footer/Odeabank_Logo.svg" alt="Odeabank" width="75" height="14" /></li>
+            <li class="footer-tradepage-bottom-list-item"><img class="papara" src="../assets/img/tradepage/footer/Papara_Logo.svg" alt="Papara" width="54" height="14" /></li>
+        </ul>
+    </div>
+    <!-- Bottom -->
+</footer>
+<!-- Footer End -->
+
+<!-- Plugins Start -->
+<script id="script-owl-carousel" src="../assets/vendor/owl.carousel/dist/owl.carousel.min.js"></script>
+<script id="script-inputmask" src="../assets/vendor/inputmask/dist/min/jquery.inputmask.bundle.min.js"></script>
+<script id="script-plugin-app" src="../assets/dist/js/plugin-app.js"></script>
+<script id="script-mainpage-app" src="../assets/dist/js/mainpage-app.js"></script>
+<script id="script-plugin-custom" src="../assets/cdn/plugin-custom-pagemain.js"></script>
+<!-- Plugins End -->
+
+</body>
+</html>
