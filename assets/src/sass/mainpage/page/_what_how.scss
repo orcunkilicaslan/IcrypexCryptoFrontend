@@ -363,6 +363,15 @@
           }
         }
       }
+
+      &.accordion-item-link{
+        .icon {
+          &::before{
+            top: calc(50% - 5px);
+            @include rotate(45);
+          }
+        }
+      }
     }
   }
 
