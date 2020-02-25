@@ -46,6 +46,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
   }
 
   &-table{
+    table-layout: fixed;
 
     thead{
       tr{
@@ -77,7 +78,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
         &:first-child{
           td{
-            padding-top: 17px;
+            //padding-top: 17px;
           }
         }
 
@@ -138,6 +139,19 @@ $globalSvgIconImgPath : "../../img/global/svg";
     }
     &-code{
       width: 15%;
+    }
+    &-cancel{
+      width: 60px !important;
+      .btn{
+        width: 100%;
+        font-size: 15px;
+        padding: 0 5px;
+        white-space: nowrap;
+
+        @include ReSassWidthResponsive(768){
+          padding: 5px;
+        }
+      }
     }
   }
 

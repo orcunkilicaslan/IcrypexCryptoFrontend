@@ -573,7 +573,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
     }
 
     &-box{
-      min-height: 440px;
+      min-height: 460px;
       position: relative;
 
       &-container,
@@ -644,8 +644,9 @@ $globalSvgIconImgPath : "../../img/global/svg";
             }
 
             td{
+              font-size: 17px;
               border: none;
-              line-height: 0.6;
+              line-height: 0.7;
               white-space: nowrap;
               position: relative;
 

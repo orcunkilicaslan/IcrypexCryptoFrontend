@@ -241,6 +241,36 @@ $globalSvgIconImgPath : "../../img/global/svg";
         }
       }
 
+      &.hovercellbgred{
+        tbody{
+          tr{
+            &:hover{
+              background-color: $global-clr-red;
+
+              td{
+                color: $global-clr-white !important;
+                border-color: $global-clr-red;
+              }
+            }
+          }
+        }
+      }
+
+      &.hovercellbggreen{
+        tbody{
+          tr{
+            &:hover{
+              background-color: $global-clr-green;
+
+              td{
+                color: $global-clr-white !important;
+                border-color: $global-clr-green;
+              }
+            }
+          }
+        }
+      }
+
     }
   }
 }
