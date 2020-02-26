@@ -1,0 +1,43 @@
+$mainpageHomepageImgPath : "../../img/mainpage";
+$globalSvgIconImgPath : "../../img/global/svg";
+
+// Mainpage Language
+html[lang="en"]{
+  .homepage-loggedin-progress-desc{
+    display: flex;
+    justify-content: center;
+
+    strong{
+      margin-left: 3px;
+      order: 2;
+    }
+  }
+
+  .homepage-loggedin-notification{
+    .firsttext{
+      display: inline-flex;
+
+      strong{
+        margin-left: 3px;
+        order: 2;
+        position: relative;
+
+        &::after{
+          content: ".";
+          position: relative;
+        }
+      }
+    }
+    .secondtext{}
+  }
+
+  .homepage-mobiletrader-content-btn-item{
+    &.apple{
+      background-image: url(#{$globalSvgIconImgPath}/Sprite_App_Store_Button_EN.svg);
+    }
+    &.android{
+      background-image: url(#{$globalSvgIconImgPath}/Sprite_Google_Play_Button_EN.svg);
+    }
+  }
+
+}
