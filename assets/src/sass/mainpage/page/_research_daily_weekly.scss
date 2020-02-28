@@ -80,12 +80,19 @@
           font-size: 17px;
           font-weight: 500;
           margin: 15px 0 0 0;
+        }
 
-          .contentdate{
-            font-size: 14px;
-            font-weight: 500;
-            margin-top: 3px;
-            margin-bottom: 5px;
+        .contentdate{
+          font-size: 14px;
+          font-weight: 500;
+        }
+
+        .contentblock{}
+
+        p{
+          br{
+            &:first-child,
+            &:last-child{display: none;}
           }
         }
       }

@@ -62,14 +62,23 @@
       margin-top: 20px;
     }
 
-    p{
+    p, ul, li{
       font-size: 17px;
-      margin-bottom: 10px;
       line-height: 1.2;
 
+      br{
+        &:first-child,
+        &:last-child{display: none;}
+      }
+    }
+    p{
+      margin-bottom: 10px;
       &:last-child{
         margin-bottom: 0;
       }
+    }
+    ul{
+
     }
   }
 
