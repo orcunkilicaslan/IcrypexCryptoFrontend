@@ -645,6 +645,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
           tr{
             position: relative;
+            transition: none !important;
 
             &:first-child{
               padding-top: 17px;
