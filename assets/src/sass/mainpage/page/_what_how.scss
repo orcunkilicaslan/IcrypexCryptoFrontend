@@ -319,15 +319,6 @@
           margin-bottom: 15px;
         }
 
-        p{
-          font-size: 15px;
-          margin-bottom: 15px;
-
-          &:last-child{
-            margin-bottom: 0;
-          }
-        }
-
         &-subtitle{
           font-size: 17px;
           font-weight: 500;
@@ -336,6 +327,7 @@
 
         &-contlist{
           color: $global-clr-dark-blue;
+          font-size: 17px;
           text-align: left;
           margin: auto;
           margin-bottom: 15px;
@@ -414,6 +406,7 @@
 
     *{
       color: $global-clr-dark-blue;
+      line-height: 1.1;
     }
 
     *[class*="columntitle"]{
