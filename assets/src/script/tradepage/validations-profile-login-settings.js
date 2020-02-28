@@ -188,11 +188,11 @@ jQuery(function($) {
     if($('.profile-box').hasClass('changepasswordandsecurity')){
         window.onload = function(e){
             if($('#inputOldPasswordId').val().trim() === "" && $('#inputNewPasswordId').val().trim() === "" && $('#inputNewRePasswordId').val().trim() === ""){
-                $('#ProfileNewPasswordTooltip').tooltip({container: '.profile-login-settings-tooltiparea', title: 'Bilgileri Eksiksiz Giriniz', placement: 'right'});
+                $('#ProfileNewPasswordTooltip').tooltip({container: '.profile-login-settings-tooltiparea', placement: 'right'});
                 $('#ProfileNewPasswordButton').addClass('btn-secondary').removeClass('btn-success').attr("disabled", true);
             }
             if($('#inputOldSecurityId').val().trim() === "" && $('#inputNewSecurityId').val().trim() === "" && $('#inputNewReSecurityId').val().trim() === ""){
-                $('#ProfileNewSecurityTooltip').tooltip({container: '.profile-login-settings-tooltiparea', title: 'Bilgileri Eksiksiz Giriniz', placement: 'right'});
+                $('#ProfileNewSecurityTooltip').tooltip({container: '.profile-login-settings-tooltiparea', placement: 'right'});
                 $('#ProfileNewSecurityButton').addClass('btn-secondary').removeClass('btn-success').attr("disabled", true);
             }
         }
@@ -203,7 +203,7 @@ jQuery(function($) {
             $('#ProfileNewPasswordTooltip').tooltip('disable');
             $('#ProfileNewPasswordButton').addClass('btn-success').removeClass('btn-secondary').attr("disabled", false);
         }else{
-            $('#ProfileNewPasswordTooltip').tooltip({container: '.profile-login-settings-tooltiparea', title: 'Bilgileri Eksiksiz Giriniz', placement: 'right'});
+            $('#ProfileNewPasswordTooltip').tooltip({container: '.profile-login-settings-tooltiparea', placement: 'right'});
             $('#ProfileNewPasswordButton').addClass('btn-secondary').removeClass('btn-success').attr("disabled", true);
         }
     });
@@ -213,7 +213,7 @@ jQuery(function($) {
             $('#ProfileNewSecurityTooltip').tooltip('disable');
             $('#ProfileNewSecurityButton').addClass('btn-success').removeClass('btn-secondary').attr("disabled", false);
         }else{
-            $('#ProfileNewSecurityTooltip').tooltip({container: '.profile-login-settings-tooltiparea', title: 'Bilgileri Eksiksiz Giriniz', placement: 'right'});
+            $('#ProfileNewSecurityTooltip').tooltip({container: '.profile-login-settings-tooltiparea', placement: 'right'});
             $('#ProfileNewSecurityButton').addClass('btn-secondary').removeClass('btn-success').attr("disabled", true);
         }
     });

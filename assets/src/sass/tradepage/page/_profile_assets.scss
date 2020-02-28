@@ -3,7 +3,7 @@
 
   &-limitprogress{
     background-color: $global-clr-light-gray;
-    padding: 20px 0 15px;
+    padding: 20px 10px 15px;
 
     @include ReSassWidthResponsive(992){
       padding: 20px 10px 15px;

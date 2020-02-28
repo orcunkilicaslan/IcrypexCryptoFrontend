@@ -1,0 +1,24 @@
+$tradepageHomepageImgPath : "../../img/tradepage";
+$globalSvgIconImgPath : "../../img/global/svg";
+
+// Tradepage Language
+html[lang="en"]{
+
+  .profile-box-info-list-item{
+    .firsttext{
+      display: inline-flex;
+
+      strong{
+        margin-left: 3px;
+        order: 2;
+        position: relative;
+
+        &::after{
+          content: ".";
+          position: relative;
+        }
+      }
+    }
+    .secondtext{}
+  }
+}
