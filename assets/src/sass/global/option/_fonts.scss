@@ -17,6 +17,7 @@ $globalFontsPath : "../../fonts";
   url('#{$globalFontsPath}/barlow-condensed/barlow-condensed-v4-latin_latin-ext-regular.woff') format('woff'), /* Modern Browsers */
   url('#{$globalFontsPath}/barlow-condensed/barlow-condensed-v4-latin_latin-ext-regular.ttf') format('truetype'), /* Safari, Android, iOS */
   url('#{$globalFontsPath}/barlow-condensed/barlow-condensed-v4-latin_latin-ext-regular.svg#BarlowCondensed') format('svg'); /* Legacy iOS */
+  font-display: swap;
 }
 
 /* barlow-condensed-300 - latin_latin-ext */
@@ -31,6 +32,7 @@ $globalFontsPath : "../../fonts";
   url('#{$globalFontsPath}/barlow-condensed/barlow-condensed-v4-latin_latin-ext-300.woff') format('woff'), /* Modern Browsers */
   url('#{$globalFontsPath}/barlow-condensed/barlow-condensed-v4-latin_latin-ext-300.ttf') format('truetype'), /* Safari, Android, iOS */
   url('#{$globalFontsPath}/barlow-condensed/barlow-condensed-v4-latin_latin-ext-300.svg#BarlowCondensed') format('svg'); /* Legacy iOS */
+  font-display: swap;
 }
 
 /* barlow-condensed-500 - latin_latin-ext */
@@ -45,4 +47,5 @@ $globalFontsPath : "../../fonts";
   url('#{$globalFontsPath}/barlow-condensed/barlow-condensed-v4-latin_latin-ext-500.woff') format('woff'), /* Modern Browsers */
   url('#{$globalFontsPath}/barlow-condensed/barlow-condensed-v4-latin_latin-ext-500.ttf') format('truetype'), /* Safari, Android, iOS */
   url('#{$globalFontsPath}/barlow-condensed/barlow-condensed-v4-latin_latin-ext-500.svg#BarlowCondensed') format('svg'); /* Legacy iOS */
+  font-display: swap;
 }

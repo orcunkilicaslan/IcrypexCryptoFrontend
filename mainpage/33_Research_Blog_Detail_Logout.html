@@ -376,6 +376,7 @@
                         <p>Vestibulum leo quam, faucibus a elit ac, ornare tempus velit. Aliquam venenatis nunc aliquam sem tempor tincidunt. Aliquam erat volutpat. Integer ac velit quis nulla finibus mollis feugiat sed nibh. In id mollis ligula. Aliquam ullamcorper luctus enim nec placerat. Praesent molestie dui neque, non dignissim leo vestibulum quis. Nam et leo lacinia tortor iaculis tempus nec in lectus. Duis pharetra fermentum rhoncus. Nulla placerat tellus nec metus maximus, vitae facilisis enim dignissim. Suspendisse blandit leo aliquam ex aliquet consectetur. Suspendisse et lorem vitae est auctor tempus. Duis pellentesque ante at arcu viverra, ac ornare nisi commodo. Vestibulum efficitur nibh nec nunc consequat.</p>
                         <a href="../assets/img/mainpage/elements/Research-Analysis_Img_Chart.jpg" target="_blank"><img src="../assets/img/mainpage/elements/Research-Analysis_Img_Chart.jpg" /></a>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac tincidunt justo. Aliquam sit amet posuere nisl, at blandit tellus. Nullam eget metus pharetra, mattis ligula quis, suscipit arcu. Praesent congue quam eu odio pulvinar ultrices. Pellentesque vel dui lacus. In dictum ornare mauris, in viverra purus vestibulum non. Donec enim ex, commodo vitae dignissim ut, lobortis non augue. Etiam sit amet tellus convallis, rhoncus orci at, euismod eros. Aenean eros ipsum, fermentum at ligula faucibus, sollicitudin hendrerit tellus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aenean placerat libero lacus, a dapibus diam fringilla ac. Fusce pulvinar mauris est, nec scelerisque arcu aliquam id. Morbi erat justo, consequat vitae nibh vel, imperdiet euismod nulla.</p>
+                        <a href="../assets/img/mainpage/elements/About_Image_01.jpg" target="_blank"><img src="../assets/img/mainpage/elements/About_Image_01.jpg" /></a>
                         <script>
                             $(window).on("load resize",function(e){
                                 if($(window).width() >= 992){
@@ -383,7 +384,7 @@
                                         if($(this).attr('href').indexOf('.png') !== -1 ||  $(this).attr('href').indexOf('.jpg') !== -1 ||  $(this).attr('href').indexOf('.jpeg') !== -1){
                                             var chartImg = new Image();
                                             chartImg.src = $(this).attr('href');
-                                            window.open($(this).attr('href'), 'Chart', 'height='+((chartImg.height)+100)+',width='+((chartImg.width)+100)+'resizable=no');
+                                            window.open($(this).attr('href'), 'Chart', 'top='+(((window.innerHeight)/4)-150)+',left='+(((window.innerWidth)/4)-150)+',height='+(((window.innerHeight)/2)+300)+',width='+(((window.innerWidth)/2)+300)+'resizable=no');
                                             return false;
                                         }
                                     });
