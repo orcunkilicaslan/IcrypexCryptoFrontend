@@ -195,9 +195,26 @@ $globalSvgIconImgPath : "../../img/global/svg";
           margin-top: 20px;
           line-height: 1;
 
-          img{
+          > a{
             display: block;
-            margin: 30px auto;
+            text-align: center;
+            margin: 20px auto;
+            border: 5px solid transparentize($global-clr-soft-gray, 0.7);
+            position: relative;
+            cursor: inherit;
+
+            &::after{
+              content: "DAHA BÜYÜK";
+              color: $global-clr-white;
+              background-color: $global-clr-soft-gray;
+              font-size: 17px;
+              padding: 8px 15px;
+              position: absolute;
+              right: 10px;
+              bottom: 10px;
+              cursor: pointer;
+              @include border-radius(4px);
+            }
           }
 
           ul{
