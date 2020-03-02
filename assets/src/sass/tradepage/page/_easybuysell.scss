@@ -219,6 +219,10 @@ $globalSvgIconImgPath : "../../img/global/svg";
             line-height: 0.9;
             top: 6px;
 
+            span.currentid{
+              background-color: $global-clr-white;
+            }
+
             > span{
               display: block;
               margin: 0;
