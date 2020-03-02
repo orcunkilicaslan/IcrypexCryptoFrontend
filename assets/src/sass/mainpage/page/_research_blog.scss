@@ -195,9 +195,19 @@ $globalSvgIconImgPath : "../../img/global/svg";
           margin-top: 20px;
           line-height: 1;
 
+          > img{
+            display: block;
+            text-align: center;
+            max-width: 600px;
+            margin: 20px auto;
+            border: 5px solid transparentize($global-clr-soft-gray, 0.7);
+            position: relative;
+          }
+
           > a{
             display: block;
             text-align: center;
+            max-width: 600px;
             margin: 20px auto;
             border: 5px solid transparentize($global-clr-soft-gray, 0.7);
             position: relative;
