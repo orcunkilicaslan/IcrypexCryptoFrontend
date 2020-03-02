@@ -195,6 +195,11 @@ $globalSvgIconImgPath : "../../img/global/svg";
           margin-top: 20px;
           line-height: 1;
 
+          img{
+            display: block;
+            margin: 30px auto;
+          }
+
           ul{
             margin-bottom: 10px;
 
