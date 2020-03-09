@@ -1154,7 +1154,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
         &.lineltc{border-bottom-color: $global-clr-currency-ltc;}
         &.linexrp{border-bottom-color: $global-clr-currency-xrp;}
         &.linebat{border-bottom-color: $global-clr-currency-bat;}
-        &.linexlm{border-bottom-color: $global-clr-currency-xlm;}
+        &.linexlm{border-bottom-color: $global-clr-currency-xlm; border-bottom-color: $global-clr-white;}
         &.linempay{border-bottom-color: $global-clr-currency-mpay;}
 
         small, span{display: block; font-size: 100%;}
