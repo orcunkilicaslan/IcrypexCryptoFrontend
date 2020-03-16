@@ -45,6 +45,111 @@ gulp.task('sass-bootstrap', () => {
 });
 /* BOOTSTRAP END */
 
+/* MAINBUNDLE START */
+gulp.task('sass-custom', () => {
+    return gulp.src([
+        folder_src_main + 'sass/bootstrap/**/*.scss',
+        folder_src_main + 'sass/bootstrap/**/*.sass',
+        folder_src_main + 'sass/global/**/*.scss',
+        folder_src_main + 'sass/global/**/*.sass',
+        folder_src_main + 'sass/mainpage/**/*.scss',
+        folder_src_main + 'sass/mainpage/**/*.sass'
+    ])
+        .pipe(sourcemaps.init())
+        .pipe(plumber())
+        .pipe(sass())
+        .pipe(autoprefixer({
+            flexbox: 'no-2009'
+        }))
+        .pipe(cssnano({
+            reduceIdents: false,
+            discardComments: {
+                removeAll: true
+            }
+        }))
+        .pipe(concat('custom.css'))
+        .pipe(sourcemaps.write('.'))
+        .pipe(gulp.dest(folder_dist_main + 'css'))
+        .pipe(browserSync.stream());
+});
+
+gulp.task('script-custom', () => {
+    return gulp.src([
+        folder_src_main + 'script/mainpage/**/app.js',
+        folder_src_main + 'script/mainpage/**/validations-homepage-register.js',
+        folder_src_main + 'script/mainpage/**/validations-signup.js',
+        folder_src_main + 'script/mainpage/**/validations-login.js',
+        folder_src_main + 'script/mainpage/**/validations-contact.js',
+        folder_src_main + 'script/mainpage/**/responsive-app.js',
+        folder_src_main + 'script/plugin/**/app.js',
+        folder_src_main + 'script/plugin/**/responsive-app.js',
+        folder_src_main + 'script/plugin/**/responsive-tabs.js',
+        folder_src_main + 'script/plugin/**/plugin-es6.js',
+        folder_src_main + 'script/plugin/**/plugin-browser-detection.js',
+    ])
+        .pipe(plumber())
+        .pipe(webpack({
+            mode: 'production'
+        }))
+        .pipe(sourcemaps.init())
+        .pipe(babel({
+            presets: [ '@babel/env' ]
+        }))
+        .pipe(concat('custom-app.js'))
+        .pipe(uglify('custom-app.min.js'))
+        .pipe(sourcemaps.write('.'))
+        .pipe(gulp.dest(folder_dist_main + 'js'))
+        .pipe(browserSync.stream());
+});
+/* MAINBUNDLE END */
+
+/* TRADEBUNDLE START */
+gulp.task('sass-client', () => {
+    return gulp.src([
+        folder_src_main + 'sass/tradepage/**/*.scss',
+        folder_src_main + 'sass/tradepage/**/*.sass'
+    ])
+        .pipe(sourcemaps.init())
+        .pipe(plumber())
+        .pipe(sass())
+        .pipe(autoprefixer({
+            flexbox: 'no-2009'
+        }))
+        .pipe(cssnano({
+            reduceIdents: false,
+            discardComments: {
+                removeAll: true
+            }
+        }))
+        .pipe(concat('client.css'))
+        .pipe(sourcemaps.write('.'))
+        .pipe(gulp.dest(folder_dist_main + 'css'))
+        .pipe(browserSync.stream());
+});
+
+gulp.task('script-client', () => {
+    return gulp.src([
+        folder_src_main + 'script/tradepage/**/app.js',
+        folder_src_main + 'script/tradepage/**/deposit-withdraw.js',
+        folder_src_main + 'script/tradepage/**/validations-profile-login-settings.js',
+        folder_src_main + 'script/tradepage/**/responsive-app.js'
+    ])
+        .pipe(plumber())
+        .pipe(webpack({
+            mode: 'production'
+        }))
+        .pipe(sourcemaps.init())
+        .pipe(babel({
+            presets: [ '@babel/env' ]
+        }))
+        .pipe(concat('client-app.js'))
+        .pipe(uglify('client-app.min.js'))
+        .pipe(sourcemaps.write('.'))
+        .pipe(gulp.dest(folder_dist_main + 'js'))
+        .pipe(browserSync.stream());
+});
+/* TRADEBUNDLE END */
+
 /* XTRAS START */
 gulp.task('sass-xtras', () => {
     return gulp.src([
@@ -290,10 +395,12 @@ gulp.task('bootstrap', gulp.series('sass-bootstrap'));
 gulp.task('plugin', gulp.series('sass-plugin', 'script-plugin'));
 gulp.task('mainpage', gulp.series('sass-mainpage', 'script-mainpage'));
 gulp.task('tradepage', gulp.series('sass-tradepage', 'script-tradepage'));
+gulp.task('custom', gulp.series('sass-custom', 'script-custom'));
+gulp.task('client', gulp.series('sass-client', 'script-client'));
 gulp.task('xtras', gulp.series('sass-xtras'));
 
-gulp.task('build', gulp.series('clear', 'vendor', 'bootstrap', 'plugin', 'mainpage', 'tradepage', 'xtras'));
-gulp.task('devel', gulp.series('bootstrap', 'plugin', 'mainpage', 'tradepage', 'xtras', gulp.parallel('watch')));
+gulp.task('build', gulp.series('clear', 'vendor', 'bootstrap', 'plugin', 'mainpage', 'tradepage', 'custom', 'client', 'xtras'));
+gulp.task('devel', gulp.series('bootstrap', 'plugin', 'mainpage', 'tradepage', 'custom', 'client', 'xtras', gulp.parallel('watch')));
 
 gulp.task('start', gulp.series('build', gulp.parallel('serve', 'watch')));
 gulp.task('default', gulp.series('build', 'devel'));
