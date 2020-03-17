@@ -69,6 +69,9 @@ $globalSvgIconImgPath : "../../img/global/svg";
     &-productslisttrx{
       background-image: url(#{$globalSvgIconImgPath}/Icon_Tron.svg);
     }
+    &-productslisttryb{
+      background-image: url(#{$globalSvgIconImgPath}/Icon_Tryb.svg);
+    }
     &-productsfullwidth{
       background-image: url(#{$globalSvgIconImgPath}/Full_Width_Icon.svg);
     }
@@ -188,6 +191,9 @@ $globalSvgIconImgPath : "../../img/global/svg";
     }
     &-titleicontrx{
       background-image: url(#{$globalSvgIconImgPath}/Icon_Title_Tron.svg);
+    }
+    &-titleicontryb{
+      background-image: url(#{$globalSvgIconImgPath}/Icon_Title_Tryb.svg);
     }
     &-wizardiconbank{
       background-image: url(#{$globalSvgIconImgPath}/Wizard_Icon_Bank.svg);
