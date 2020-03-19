@@ -202,6 +202,77 @@
 
             <!-- Form -->
             <div class="login-column">
+                <script id="script-pwstrength" src="../assets/vendor/pwstrength-bootstrap/dist/pwstrength-bootstrap.min.js"></script>
+                <script type="text/javascript">
+                    jQuery(document).ready(function () {
+                        "use strict";
+                        function translateThisThing(key) {
+                            var translation = {
+                                "wordMinLength": "Girdiğiniz şifre çok Kısa",
+                                "wordMaxLength": "Parolanız çok uzun",
+                                "wordInvalidChar": "Şifreniz geçersiz bir karakter içeriyor",
+                                "wordNotEmail": "E-mail adresinizi şifreniz içerisinde kullanmayınız",
+                                "wordSimilarToUsername": "Kullanıcı Adınızı şifreniz içerisinde kullanmayınız",
+                                "wordTwoCharacterClasses": "Başka karakter sınıfı kullanınız",
+                                "wordRepetitions": "Çok fazla tekrar var",
+                                "wordSequences": "Şifreniz Dizi içermektedir",
+                                "errorList": "HATALAR",
+                                "veryWeak": "ZAYIF ŞİFRE",
+                                "weak": "ZAYIF ŞİFRE",
+                                "normal": "ORTALAMA ŞİFRE",
+                                "medium": "ORTALAMA ŞİFRE",
+                                "strong": "GÜÇLÜ ŞİFRE",
+                                "veryStrong": "GÜÇLÜ ŞİFRE"
+                            };
+                            return translation[key] || key;
+                        }
+                        var options = {
+                            i18n: {
+                                t: function(key) {
+                                    'use strict';
+                                    var result = translateThisThing(key); // Do your magic here
+                                    return result === key ? '' : result; // This assumes you return the
+                                    // key if no translation was found, adapt as necessary
+                                }
+                            },
+                            ui: {
+                                container: ".contpassstrength",
+                                raisePower: 1.1,
+                                scores: [5, 25, 45, 60, 80],
+                                showVerdicts: true,
+                                showVerdictsInsideProgressBar: true,
+                                showStatus: true,
+                                showErrors: false,
+                                showPopover: true,
+                                popoverPlacement: "right",
+                                viewports:{
+                                    progress: "",
+                                    verdict: ""
+                                },
+                                colorClasses: ["danger", "danger", "warning", "warning", "success", "success"],
+                                useVerdictCssClass: true,
+                                spanError: function (options, key) {
+                                    var text = options.i18n.t(key);
+                                    if (!text) { return ''; }
+                                    return '<span>' + text + '</span>';
+                                },
+                            },
+                            common: {
+                                debug: false,
+                                minChar: 8,
+                                maxChar: 30,
+                            },
+                            rules: {
+                                activated: {
+                                    wordMaxLength: true,
+                                    wordInvalidChar: true
+                                }
+                            },
+                        };
+
+                        $(".inputpassstrength").pwstrength(options);
+                    });
+                </script>
                 <form id="signupform" class="login-form formuinew formlabelvalidation" style="display: block" action="" autocomplete="off" novalidate>
                     <div>
                         <h2 class="columntitle columntitle-lg bottomborder titlecenter titlenormal">ÜCRETSİZ ÜYELİK OLUŞTURUN</h2>
@@ -301,10 +372,10 @@
                                     <span class="inputerrormessage" id="msgEmailId"></span>
                                 </div>
                             </div>
-                            <div class="form-row">
-                                <div class="form-group colorsetdarkblue col">
+                            <div class="form-row contpassstrength">
+                                <div class="form-group colorsetdarkblue inputpassstrength col">
                                     <label>ŞİFRE</label>
-                                    <input id="inputPasswordId" name="password" class="form-control disabledautofillinput" type="password" readonly="readonly" onfocus="javascript:this.removeAttribute('readonly')" required oninput="signupform.verifyContent('inputPasswordProcess','inputPasswordId','msgPasswordId','iconPasswordId')" onfocusout="signupform.verifyContentErrorDelete('inputPasswordProcess','inputPasswordId','msgPasswordId','iconPasswordId')">
+                                    <input id="inputPasswordId" name="password" class="form-control inputpassstrength disabledautofillinput" type="password" readonly="readonly" onfocus="javascript:this.removeAttribute('readonly')" required oninput="signupform.verifyContent('inputPasswordProcess','inputPasswordId','msgPasswordId','iconPasswordId')" onfocusout="signupform.verifyContentErrorDelete('inputPasswordProcess','inputPasswordId','msgPasswordId','iconPasswordId')">
                                     <i class="inputcheckicon inputcheckicon-check" id="iconPasswordId"></i>
                                     <span class="inputerrormessage" id="msgPasswordId"></span>
                                 </div>
