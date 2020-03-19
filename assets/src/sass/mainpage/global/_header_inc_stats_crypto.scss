@@ -137,6 +137,9 @@ $globalSvgIconImgPath : "../../img/global/svg";
             i[class*="mpay"]{
               background-color: transparentize($global-clr-currency-mpay, 0.15);
             }
+            i[class*="tryb"]{
+              background-color: transparentize($global-clr-currency-tryb, 0.15);
+            }
           }
 
           .currencytext{
@@ -538,6 +541,9 @@ $globalSvgIconImgPath : "../../img/global/svg";
             }
             i[class*="mpay"]{
               background-color: transparentize($global-clr-currency-mpay, 0.15);
+            }
+            i[class*="tryb"]{
+              background-color: transparentize($global-clr-currency-tryb, 0.15);
             }
           }
 

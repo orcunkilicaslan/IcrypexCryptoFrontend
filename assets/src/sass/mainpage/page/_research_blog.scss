@@ -227,6 +227,17 @@ $globalSvgIconImgPath : "../../img/global/svg";
             }
           }
 
+          a{
+            color: $global-clr-soft-blue !important;
+            text-decoration: underline !important;
+            @include transition(all, 0.3s, ease-in-out);
+
+            &:hover{
+              color: transparentize($global-clr-soft-blue, 0.3) !important;
+              text-decoration: underline !important;
+            }
+          }
+
           ul{
             margin-bottom: 10px;
 

@@ -85,6 +85,7 @@
           font-size: 14px;
           font-weight: 500;
           margin-top: 1px;
+          margin-bottom: 2px;
         }
 
         .contentblock{}
@@ -203,6 +204,11 @@
           &.linempay{
             &::after {
               background-color: $global-clr-currency-mpay;
+            }
+          }
+          &.linetryb{
+            &::after {
+              background-color: $global-clr-currency-tryb;
             }
           }
           &.linedefault{
@@ -545,6 +551,7 @@
             }
 
             &.disabled{
+              opacity: 0.5;
 
               &:hover{
                 background-color: transparent;
