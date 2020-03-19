@@ -12,12 +12,16 @@
     }
   }
 
-  .inputcheckicon{
-    top: 36px !important;
-  }
+  .inputpassstrength{
 
-  .inputerrormessage{
-    display: none !important;
+    .inputcheckicon{
+      top: 36px !important;
+    }
+
+    .inputerrormessage{
+      display: none !important;
+    }
+
   }
 
   .password-verdict{
