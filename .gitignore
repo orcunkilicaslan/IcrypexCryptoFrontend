@@ -97,6 +97,7 @@ assets/vendor/pwstrength-bootstrap/.vscode
 assets/vendor/pwstrength-bootstrap/examples
 assets/vendor/pwstrength-bootstrap/locales
 assets/vendor/pwstrength-bootstrap/spec
+assets/vendor/pwstrength-bootstrap/src
 assets/vendor/pwstrength-bootstrap/.editorconfig
 assets/vendor/pwstrength-bootstrap/.eslintrc.json
 assets/vendor/pwstrength-bootstrap/.travis.yml
