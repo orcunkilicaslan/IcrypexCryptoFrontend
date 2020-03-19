@@ -1,0 +1,63 @@
+.contpassstrength{
+
+  .form-control{
+    border-color: transparentize($global-clr-soft-gray, 0.70) !important;
+
+    &:focus{
+      border-color:transparentize($global-clr-soft-gray, 0.40) !important;
+    }
+
+    &:focus ~ .progress{
+      background-color: lighten($global-clr-soft-gray, 20%);
+    }
+  }
+
+  .inputcheckicon{
+    top: 36px !important;
+  }
+
+  .inputerrormessage{
+    display: none !important;
+  }
+
+  .password-verdict{
+    position: absolute;
+    top: 2px;
+    right: 0;
+    font-size: 17px;
+    line-height: 1;
+    text-transform: uppercase;
+    z-index: 0;
+    @include transition(all, 0.3s, ease-in-out);
+
+    &.danger{color: $global-clr-red;}
+    &.warning{color: $global-clr-orange;}
+    &.success{color: $global-clr-green;}
+
+    @include ReSassWidthResponsive(992){
+      top: 2px;
+    }
+
+    @include ReSassWidthResponsive(480){
+      font-size: 15px;
+    }
+  }
+
+  &.form-row{
+    .password-verdict{
+      right: 8px;
+    }
+  }
+
+  .progress{
+    background-color: lighten($global-clr-soft-gray, 30%);
+    height: 4px;
+    margin-top: -4px;
+    @include border-radius(0);
+
+    &-bar{
+      @include border-radius(0);
+    }
+  }
+
+}
