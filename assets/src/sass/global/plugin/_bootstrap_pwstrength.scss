@@ -60,6 +60,7 @@
     @include border-radius(0);
 
     &-bar{
+      min-width: inherit !important;
       @include border-radius(0);
     }
   }
