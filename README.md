@@ -100,6 +100,7 @@
 #### Xtras
   - [01_Xtras_Construction_Page](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/xtras/01_Xtras_Construction_Page.html)
   - [02_Xtras_Error_Page](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/xtras/02_Xtras_Error_Page.html)
+  - [03_Xtras_Maintenance_Page](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/xtras/03_Xtras_Maintenance_Page.html)
  
 
 #### System E-Mail Template List
