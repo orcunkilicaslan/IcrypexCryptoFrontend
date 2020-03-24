@@ -46,17 +46,17 @@ $globalSvgIconImgPath : "../../img/global/svg";
     &-logo{
       color: $global-clr-white;
       font-family: $global-font-family-barlow;
-      width: 150px;
+      width: 140px;
       line-height: 0.9;
       margin-top: 0;
       margin-bottom: 7px;
       &:hover{color: $global-clr-white;}
 
       @include ReSassWidthResponsive(1400){
-        width: 145px;
+        width: 135px;
       }
       @include ReSassWidthResponsive(992){
-        width: 120px;
+        width: 110px;
         top: -1px;
         position: relative;
       }
