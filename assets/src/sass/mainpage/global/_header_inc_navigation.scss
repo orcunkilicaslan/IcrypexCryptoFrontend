@@ -76,11 +76,12 @@ $globalSvgIconImgPath : "../../img/global/svg";
       }
       &-icrypex{
         display: block;
-        font-size: 30px;
+        font-size: 28px;
         font-weight: 300;
-        letter-spacing: 0.5px;
+        letter-spacing: -1px;
         margin: 0;
         line-height: 0.9;
+        margin-top: 1px;
 
         @include ReSassWidthResponsive(1400){
           font-size: 27px;
@@ -88,8 +89,9 @@ $globalSvgIconImgPath : "../../img/global/svg";
       }
       &-cryptoexchange{
         display: block;
-        font-size: 13px;
+        font-size: 12px;
         font-weight: 500;
+        letter-spacing: -0.5px;
         margin: 0;
         line-height: 1;
         padding-left: 47px;

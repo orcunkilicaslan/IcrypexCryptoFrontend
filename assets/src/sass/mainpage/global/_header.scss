@@ -163,6 +163,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
       display: inline-block;
       color: $global-clr-soft-gray;
       font-size: $global-font-size;
+      letter-spacing: -0.5px;
 
       @include ReSassWidthResponsive(1400){
         font-size: 13px;
@@ -190,7 +191,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
       > a{
         color: $global-clr-soft-gray;
         display: block;
-        padding:8px 0;
+        padding: 10px 0;
         position:relative;
         height: 100%;
         @include transition(all, 0.3s, ease-in-out);

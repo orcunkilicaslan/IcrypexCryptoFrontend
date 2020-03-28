@@ -48,7 +48,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
       &-item{
         position: relative;
         margin-bottom: 0;
-        font-size: 20px;
+        font-size: 18px;
         overflow: hidden;
 
         @include ReSassWidthResponsive(1400){
@@ -230,7 +230,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
       border-top: 0;
       border-bottom:1px solid transparentize($global-clr-soft-gray, 0.7);
       vertical-align: middle;
-      font-size: 17px;
+      font-size: 15px;
       font-weight: normal;
       padding-top: 6px !important;
       padding-bottom: 6px !important;
@@ -355,13 +355,13 @@ $globalSvgIconImgPath : "../../img/global/svg";
         margin: 0;
         padding: 0;
         font-weight: 300;
-        font-size: 17px;
+        font-size: 15px;
       }
       &-select{
         color: $global-clr-soft-gray;
         background-color: transparent;
         border: none;
-        font-size: 17px;
+        font-size: 15px;
         margin-bottom: 0 !important;
 
         select{
@@ -380,7 +380,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
     &-input{
       color: $global-clr-white;
       background-color: rgba(0,0,0,0.2);
-      font-size: 20px;
+      font-size: 18px;
       font-weight: 100;
       padding: 5px 9px;
       height: auto;
@@ -408,7 +408,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
     }
     &-info{
       color: $global-clr-soft-gray;
-      font-size: 17px;
+      font-size: 15px;
       margin: 0;
       margin-top: 5px;
     }

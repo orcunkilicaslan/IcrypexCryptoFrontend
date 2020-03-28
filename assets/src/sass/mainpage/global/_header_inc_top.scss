@@ -49,6 +49,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
         display: inline-block;
         color: $global-clr-soft-gray;
         font-size: $global-font-size;
+        letter-spacing: -0.5px;
 
         @include ReSassWidthResponsive(1400){
           font-size: 13px;
@@ -75,7 +76,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
         > a{
           color: $global-clr-soft-gray;
           display: block;
-          padding:8px 0;
+          padding: 10px 0;
           position:relative;
           height: 100%;
           @include transition(all, 0.3s, ease-in-out);
@@ -123,6 +124,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
         display: inline-flex;
         color: $global-clr-soft-gray;
         font-size: $global-font-size;
+        letter-spacing: -0.5px;
 
         @include ReSassWidthResponsive(1400){
           font-size: 13px;
@@ -134,7 +136,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
           width: 3px;
           height: 3px;
           top: calc(50% - 1px);
-          right: 0;
+          right: -3px;
           background-color: transparentize($global-clr-soft-gray, 0.7);
           @include border-radius(50%)
         }
@@ -152,8 +154,8 @@ $globalSvgIconImgPath : "../../img/global/svg";
         margin: 0 2px;
       }
       &-clock{
-        min-width: 45px;
-        text-align: left;
+        min-width: 38px;
+        text-align: right;
 
         @include ReSassWidthResponsive(1400){
           min-width: 36px;

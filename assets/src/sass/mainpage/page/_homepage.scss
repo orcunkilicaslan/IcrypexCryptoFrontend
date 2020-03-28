@@ -152,9 +152,10 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
     &-title{
       color: $global-clr-white;
-      font-size: 42px;
+      font-size: 40px;
       font-weight: 300;
       line-height: 1.07;
+      letter-spacing: -2px;
       text-transform: uppercase;
 
       @include ReSassWidthResponsive(1400){
@@ -171,7 +172,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
     &-desc{
       color: $global-clr-white;
-      font-size: 26px;
+      font-size: 24px;
       font-weight: 300;
       line-height: 1.07;
       margin-bottom: 10px;
@@ -223,7 +224,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
         &-title,
         &-volume{
-          font-size: 20px;
+          font-size: 18px;
           font-weight: normal;
           margin: 0;
           padding: 0;
@@ -271,10 +272,10 @@ $globalSvgIconImgPath : "../../img/global/svg";
       &-item{
         color: $global-clr-white;
         text-align: center;
-        font-size: 28px;
+        font-size: 26px;
         font-weight: 300;
         line-height: 0.9;
-        letter-spacing: -0.3px;
+        letter-spacing: -1.4px;
         position: relative;
         padding: 0 18px;
         white-space: nowrap;
@@ -324,9 +325,9 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
     &-title{
       color: $global-clr-soft-gray;
-      font-size: 18px;
+      font-size: 16px;
       font-weight: 300;
-      letter-spacing: -0.2px;
+      letter-spacing: -0.6px;
       margin: 0;
 
       @include ReSassWidthResponsive(1400){
@@ -551,7 +552,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
         border-right-color: transparent !important;
         border-top-color: transparent !important;
         height: 40px;
-        font-size: 17px;
+        font-size: 15px;
         @include border-radius(0px);
 
         &:focus{
@@ -589,7 +590,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
         margin-top: 0;
 
         label{
-          top: 10px;
+          top: 12px;
 
           @include ReSassWidthResponsive(992){
             left: 0;
@@ -744,7 +745,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
         &-text{
           color: $global-clr-soft-gray;
-          font-size: 17px;
+          font-size: 15px;
           position: absolute;
           width: 255px;
           height: 100%;
@@ -827,9 +828,9 @@ $globalSvgIconImgPath : "../../img/global/svg";
         .btn{
           width: 100%;
           height: auto;
-          font-size: 19px;
+          font-size: 17px;
           font-weight: 300;
-          letter-spacing: -0.2px;
+          letter-spacing: -0.6px;
           padding: 11px 10px;
           border:none;
           @include transition(all, 0.3s, ease-in-out);
@@ -1346,7 +1347,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
         margin: 0;
         padding: 0;
         font-weight: 300;
-        font-size: 20px;
+        font-size: 18px;
         min-height: 26px;
 
         @include ReSassWidthResponsive(768){
@@ -1356,7 +1357,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
       &-select{
         color: $global-clr-soft-gray;
         background-color: transparent;
-        font-size: 20px;
+        font-size: 18px;
 
         @include ReSassWidthResponsive(768){
           font-size: 17px;
@@ -1480,6 +1481,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
   }
 
   &-converter{
+    padding-top: 1px;
     padding-right: 0;
 
     @include ReSassWidthResponsive(992){
