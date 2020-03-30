@@ -82,6 +82,10 @@
     i[class*="loginlock"]{
       top: calc(50% - 20px);
     }
+    i[class*="loginsms"]{
+      height: 56px;
+      top: calc(50% - 28px);
+    }
   }
 
   &-column{

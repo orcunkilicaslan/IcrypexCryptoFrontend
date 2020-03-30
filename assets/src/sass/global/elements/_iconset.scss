@@ -120,6 +120,9 @@ $globalSvgIconImgPath : "../../img/global/svg";
     &-loginlock{
       background-image: url(#{$globalSvgIconImgPath}/Icon_Login.svg);
     }
+    &-loginsms{
+      background-image: url(#{$globalSvgIconImgPath}/Icon_SmsPass.svg);
+    }
     &-loginf2a{
       background-image: url(#{$globalSvgIconImgPath}/Icon_2FA.svg);
     }
