@@ -365,16 +365,86 @@
                 <div class="boxcolumn-boxtitle">
                     <h3 class="boxcolumn-boxtitle-title">ŞİFRE DEĞİŞTİR</h3>
                 </div>
+                <script id="script-pwstrength" src="../assets/vendor/pwstrength-bootstrap/dist/pwstrength-bootstrap.min.js"></script>
+                <script type="text/javascript">
+                    jQuery(document).ready(function () {
+                        "use strict";
+                        function translateThisThing(key) {
+                            var translation = {
+                                "wordMinLength": "Girdiğiniz şifre çok Kısa",
+                                "wordMaxLength": "Parolanız çok uzun",
+                                "wordInvalidChar": "Şifreniz geçersiz bir karakter içeriyor",
+                                "wordNotEmail": "E-mail adresinizi şifreniz içerisinde kullanmayınız",
+                                "wordSimilarToUsername": "Kullanıcı Adınızı şifreniz içerisinde kullanmayınız",
+                                "wordTwoCharacterClasses": "Başka karakter sınıfı kullanınız",
+                                "wordRepetitions": "Çok fazla tekrar var",
+                                "wordSequences": "Şifreniz Dizi içermektedir",
+                                "errorList": "HATALAR",
+                                "veryWeak": "ZAYIF ŞİFRE",
+                                "weak": "ZAYIF ŞİFRE",
+                                "normal": "ORTALAMA ŞİFRE",
+                                "medium": "ORTALAMA ŞİFRE",
+                                "strong": "GÜÇLÜ ŞİFRE",
+                                "veryStrong": "GÜÇLÜ ŞİFRE"
+                            };
+                            return translation[key] || key;
+                        }
+                        var options = {
+                            i18n: {
+                                t: function(key) {
+                                    'use strict';
+                                    var result = translateThisThing(key); // Do your magic here
+                                    return result === key ? '' : result; // This assumes you return the
+                                    // key if no translation was found, adapt as necessary
+                                }
+                            },
+                            ui: {
+                                container: ".contpassstrength",
+                                raisePower: 1.1,
+                                scores: [5, 25, 45, 60, 80],
+                                showVerdicts: true,
+                                showVerdictsInsideProgressBar: true,
+                                showStatus: true,
+                                showErrors: false,
+                                showPopover: true,
+                                popoverPlacement: "right",
+                                viewports:{
+                                    progress: "",
+                                    verdict: ""
+                                },
+                                colorClasses: ["danger", "danger", "warning", "warning", "success", "success"],
+                                useVerdictCssClass: true,
+                                spanError: function (options, key) {
+                                    var text = options.i18n.t(key);
+                                    if (!text) { return ''; }
+                                    return '<span>' + text + '</span>';
+                                },
+                            },
+                            common: {
+                                debug: false,
+                                minChar: 8,
+                                maxChar: 30,
+                            },
+                            rules: {
+                                activated: {
+                                    wordMaxLength: true,
+                                    wordInvalidChar: true
+                                }
+                            },
+                        };
+                        $(".inputpassstrength").pwstrength(options);
+                    });
+                </script>
                 <form class="formuinew formlabelvalidation changepassword" autocomplete="off" novalidate>
                     <div class="form-group widthpercent50pr8 colorsetdarkblue">
                         <label>ESKİ ŞİFRE</label>
                         <input id="inputOldPasswordId" type="password" class="form-control" placeholder="" value="" name="oldpassword" autocomplete="off" required oninput="profilesettingsform.verifyContent('inputOldPasswordProcess','inputOldPasswordId','msgOldPasswordId')" onfocusout="profilesettingsform.verifyContentErrorDelete('inputOldPasswordProcess','inputOldPasswordId','msgOldPasswordId')">
                         <span class="inputerrormessage" id="msgOldPasswordId"></span>
                     </div>
-                    <div class="form-row">
-                        <div class="form-group colorsetdarkblue col">
+                    <div class="form-row contpassstrength">
+                        <div class="form-group colorsetdarkblue inputpassstrength col">
                             <label>YENİ ŞİFRE</label>
-                            <input id="inputNewPasswordId" type="password" class="form-control" placeholder="" value="" name="password" autocomplete="off" required oninput="profilesettingsform.verifyContent('inputNewPasswordProcess','inputNewPasswordId','msgNewPasswordId')" onfocusout="profilesettingsform.verifyContentErrorDelete('inputNewPasswordProcess','inputNewPasswordId','msgNewPasswordId')">
+                            <input id="inputNewPasswordId" type="password" class="form-control inputpassstrength" placeholder="" value="" name="password" autocomplete="off" required oninput="profilesettingsform.verifyContent('inputNewPasswordProcess','inputNewPasswordId','msgNewPasswordId')" onfocusout="profilesettingsform.verifyContentErrorDelete('inputNewPasswordProcess','inputNewPasswordId','msgNewPasswordId')">
                             <span class="inputerrormessage" id="msgNewPasswordId"></span>
                         </div>
                         <div class="form-group colorsetdarkblue col">
