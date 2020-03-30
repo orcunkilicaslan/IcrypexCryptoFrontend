@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="33" height="56" viewBox="0 0 33 56">
+  <g id="Icn_Big_Sms_Code" transform="translate(-85 -57)">
+    <g id="Path" transform="translate(85 57)" fill="none" stroke="#098cdf" stroke-width="2">
+      <rect width="33" height="56" rx="3" stroke="none"/>
+      <rect x="1" y="1" width="31" height="54" rx="2" fill="none"/>
+    </g>
+    <line id="Path-2" data-name="Path" x2="30" transform="translate(86 105)" fill="none" stroke="#098cdf" stroke-linecap="square" stroke-width="2"/>
+    <line id="Path-3" data-name="Path" x2="30" transform="translate(86 64)" fill="none" stroke="#098cdf" stroke-linecap="square" stroke-width="2"/>
+    <line id="Path-4" data-name="Path" x2="5" transform="translate(99 61)" fill="none" stroke="#098cdf" stroke-linecap="round" stroke-width="2"/>
+    <circle id="Circle" cx="1.5" cy="1.5" r="1.5" transform="translate(100 107)" fill="#098cdf"/>
+    <path id="Shape" d="M2.566,2.516l-2,2,2-2h0l-2-2,2,2v0l2-2-2,2h0l2,2-2-2v0ZM2.566,2.516ZM2.566,2.516ZM2.566,2.516Z" transform="translate(98.934 81.984)" fill="none" stroke="#098cdf" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+    <path id="Shape-2" data-name="Shape" d="M3.062,2.516l-2,2,2-2h0l-2-2,2,2v0l2-2-2,2h0l2,2-2-2v0ZM3.062,2.516ZM3.062,2.516ZM3.062,2.516Z" transform="translate(106.438 81.984)" fill="none" stroke="#098cdf" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+    <path id="Shape-3" data-name="Shape" d="M3.069,2.516l-2,2,2-2h0l-2-2,2,2v0h0l2-2-2,2h0l2,2-2-2h0v0Zm0,0h0ZM3.069,2.516Zm0,0h0Z" transform="translate(90.431 81.984)" fill="none" stroke="#098cdf" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+  </g>
+</svg>
