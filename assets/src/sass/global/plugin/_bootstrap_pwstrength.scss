@@ -12,7 +12,24 @@
     }
   }
 
+  .progress{
+    display: none;
+  }
+
   .inputpassstrength{
+
+    .progress{
+      display: flex !important;
+      background-color: lighten($global-clr-soft-gray, 30%);
+      height: 4px;
+      margin-top: -4px;
+      @include border-radius(0);
+    }
+
+    .progress-bar{
+      min-width: inherit !important;
+      @include border-radius(0);
+    }
 
     .inputcheckicon{
       top: 36px !important;
@@ -50,18 +67,6 @@
   &.form-row{
     .password-verdict{
       right: 8px;
-    }
-  }
-
-  .progress{
-    background-color: lighten($global-clr-soft-gray, 30%);
-    height: 4px;
-    margin-top: -4px;
-    @include border-radius(0);
-
-    &-bar{
-      min-width: inherit !important;
-      @include border-radius(0);
     }
   }
 
