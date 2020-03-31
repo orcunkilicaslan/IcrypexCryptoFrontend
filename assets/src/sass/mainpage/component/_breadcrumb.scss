@@ -82,7 +82,7 @@
           width: 9px;
           height: 9px;
           top: calc(50% - 3px);
-          left: 4px;
+          left: 6px;
           padding: 0;
           border-top: 2px solid $global-clr-soft-blue;
           border-right: 2px solid $global-clr-soft-blue;
@@ -100,6 +100,7 @@
     justify-content: flex-start;
     font-size: 25px;
     font-weight: normal;
+    letter-spacing: -1px;
 
     @include ReSassWidthResponsive(1400){
       font-size: 23px;
