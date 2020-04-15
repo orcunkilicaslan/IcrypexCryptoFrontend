@@ -404,12 +404,12 @@
         &-link{
           color: transparentize($global-clr-white, 0.5);
           font-size: 17px;
-          padding: 7px 20px 8px;
+          padding: 7px 15px 8px;
           position: relative;
 
           @include ReSassWidthResponsive(1200){
-            padding-left: 15px;
-            padding-right: 15px;
+            padding-left: 10px;
+            padding-right: 10px;
           }
           @include ReSassWidthResponsive(992){
             padding-left: 10px;
