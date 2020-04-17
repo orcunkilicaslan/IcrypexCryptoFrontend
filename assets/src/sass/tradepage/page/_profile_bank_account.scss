@@ -13,17 +13,6 @@
         flex-direction: column;
       }
 
-      .form-group{
-
-        @include ReSassWidthResponsive(768){
-          margin-top: 10px;
-
-          &:first-child{
-            margin-top: 0;
-          }
-        }
-      }
-
       div[class*="maxwidth"]{
 
         label{
