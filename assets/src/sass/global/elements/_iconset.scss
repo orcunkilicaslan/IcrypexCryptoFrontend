@@ -72,6 +72,9 @@ $globalSvgIconImgPath : "../../img/global/svg";
     &-productslisttryb{
       background-image: url(#{$globalSvgIconImgPath}/Icon_Tryb.svg);
     }
+    &-productslistusdt{
+      background-image: url(#{$globalSvgIconImgPath}/Icon_Usdt.svg);
+    }
     &-productsfullwidth{
       background-image: url(#{$globalSvgIconImgPath}/Full_Width_Icon.svg);
     }
@@ -197,6 +200,9 @@ $globalSvgIconImgPath : "../../img/global/svg";
     }
     &-titleicontryb{
       background-image: url(#{$globalSvgIconImgPath}/Icon_Title_Tryb.svg);
+    }
+    &-titleiconusdt{
+      background-image: url(#{$globalSvgIconImgPath}/Icon_Title_Usdt.svg);
     }
     &-wizardiconbank{
       background-image: url(#{$globalSvgIconImgPath}/Wizard_Icon_Bank.svg);
