@@ -211,6 +211,11 @@
               background-color: $global-clr-currency-tryb;
             }
           }
+          &.lineusdt{
+            &::after {
+              background-color: $global-clr-currency-usdt;
+            }
+          }
           &.linedefault{
             &::after {
               background-color: transparentize($global-clr-soft-gray, 0.7);

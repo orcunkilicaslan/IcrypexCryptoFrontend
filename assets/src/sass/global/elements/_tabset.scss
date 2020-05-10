@@ -407,9 +407,9 @@
           padding: 7px 15px 8px;
           position: relative;
 
-          @include ReSassWidthResponsive(1200){
-            padding-left: 10px;
-            padding-right: 10px;
+          @include ReSassWidthResponsive(1400){
+            padding-left: 5px;
+            padding-right: 5px;
           }
           @include ReSassWidthResponsive(992){
             padding-left: 10px;

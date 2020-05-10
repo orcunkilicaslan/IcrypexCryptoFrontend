@@ -140,6 +140,9 @@ $globalSvgIconImgPath : "../../img/global/svg";
             i[class*="tryb"]{
               background-color: transparentize($global-clr-currency-tryb, 0.15);
             }
+            i[class*="usdt"]{
+              background-color: transparentize($global-clr-currency-usdt, 0.15);
+            }
           }
 
           .currencytext{
@@ -544,6 +547,9 @@ $globalSvgIconImgPath : "../../img/global/svg";
             }
             i[class*="tryb"]{
               background-color: transparentize($global-clr-currency-tryb, 0.15);
+            }
+            i[class*="usdt"]{
+              background-color: transparentize($global-clr-currency-usdt, 0.15);
             }
           }
 
