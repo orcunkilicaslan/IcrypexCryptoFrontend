@@ -1,0 +1,257 @@
+$tradepageFooterImgPath : "../../img/tradepage/footer";
+
+$bottomcall2actionwhitebarpx: 30px;
+
+.bottomcall2action{
+  display: flex !important;
+  background-color: $global-clr-light-gray;
+  position: relative;
+  margin-top: 30px;
+
+  @include ReSassWidthResponsive(992){
+    margin-top: 0;
+  }
+
+  &::before{
+    content: "";
+    width: 100%;
+    height: $bottomcall2actionwhitebarpx;
+    background-color: $global-clr-white;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    @include ReSassWidthResponsive(992){
+      display: none;
+    }
+  }
+
+  &-row{
+    height: 100%;
+
+    @include ReSassWidthResponsive(992){
+      flex-direction: column;
+    }
+
+    > div[class*="col"]{
+      height: 100%;
+      padding-left: 0;
+      padding-right: 0;
+
+      @include ReSassWidthResponsive(576){
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+    }
+    > .col{
+      display: flex;
+      align-items: center;
+      padding-top: $bottomcall2actionwhitebarpx;
+
+      @include ReSassWidthResponsive(992){
+        padding-top: 0;
+        order: 1;
+      }
+    }
+    >.col-auto{
+      @include ReSassWidthResponsive(992){
+        flex-basis: 0;
+        order: 2;
+      }
+    }
+  }
+
+  &-cyrptoimg{
+    width: 565px;
+    height: 100%;
+    min-height: 360px;
+    background-image: url(#{$tradepageFooterImgPath}/call2action_cryptos.png);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: 564px;
+
+    @include ReSassWidthResponsive(1400){
+      width: 435px;
+      background-size: 450px;
+    }
+    @include ReSassWidthResponsive(1200){
+      width: 380px;
+      background-size: 380px;
+    }
+    @include ReSassWidthResponsive(992){
+      margin: auto;
+      min-height: 245px;
+    }
+    @include ReSassWidthResponsive(576){
+      width: 320px;
+      background-size: 320px;
+      min-height: 210px;
+    }
+    @include ReSassWidthResponsive(400){
+      width: 260px;
+      background-size: 260px;
+      min-height: 170px;
+    }
+  }
+
+  &-formarea{
+    width: 100%;
+    padding: 45px 0;
+
+    @include ReSassWidthResponsive(576){
+      padding: 25px 0;
+    }
+
+    .columntitle{
+      color: $global-clr-dark-blue;
+      padding-bottom: 10px;
+      margin-bottom: 15px;
+      font-weight: normal;
+
+      &::before{
+        width: 100%;
+        max-width: 180px;
+        height: 1px;
+      }
+      &::after{
+        width: 60px;
+        height: 4px;
+      }
+    }
+
+    .formuinew{
+      position: relative;
+      z-index: 1;
+
+      .row{
+        @include ReSassWidthResponsive(768){
+          flex-direction: column;
+        }
+      }
+
+      .labelanimation{
+        margin-top: 5px;
+
+        label{
+          color: $global-clr-soft-gray;
+          left: 0;
+        }
+
+        &.input-group{
+
+          .input-group-append{
+            background-color: transparent;
+            height: calc(100% - 2px);
+            border: none;
+            position: absolute;
+            right: 0;
+            z-index: 3;
+          }
+
+          .input-group-text{
+            background-color: transparent;
+            padding: 2px 0 2px 2px;
+          }
+
+          .spriteformvalidiconset{
+            background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI3MiIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDcyIDI0Ij4NCiAgPGcgaWQ9InNwcml0ZWZvcm12YWxpZGljb25zZXQiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAgLTI0KSI+DQogICAgPGcgaWQ9Imljb25fUGVuIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNTc0IC0zMjApIj4NCiAgICAgIDxyZWN0IGlkPSJSZWN0YW5nbGVfMSIgZGF0YS1uYW1lPSJSZWN0YW5nbGUgMSIgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg1NzQgMzQ0KSIgZmlsbD0iI2Q0ZDRkNCIgb3BhY2l0eT0iMCIvPg0KICAgICAgPGcgaWQ9Ikljbl9QZW4iIHRyYW5zZm9ybT0idHJhbnNsYXRlKDU3OCAzNDgpIj4NCiAgICAgICAgPHBhdGggaWQ9IkxpbmUiIGQ9Ik05NjguNDI0LDUzNC45NDQsOTU2Ljg2OSw1NDYuNUg5NTIuNXYtNC40NDRMOTY0LjA1Niw1MzAuNVoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC05NTIuNSAtNTMwLjUpIiBmaWxsPSJub25lIiBzdHJva2U9IiMwNjUxOGMiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIxLjUiLz4NCiAgICAgICAgPGxpbmUgaWQ9IkxpbmUtMiIgZGF0YS1uYW1lPSJMaW5lIiB4Mj0iNC4zNjkiIHkyPSI0LjQ0NCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoOCAzLjU1NikiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzA2NTE4YyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2Utd2lkdGg9IjEuNSIvPg0KICAgICAgPC9nPg0KICAgIDwvZz4NCiAgICA8ZyBpZD0iaWNvbl9DaGVjayIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTU1MCAtMzIwKSI+DQogICAgICA8cmVjdCBpZD0iUmVjdGFuZ2xlXzEtMiIgZGF0YS1uYW1lPSJSZWN0YW5nbGUgMSIgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg1NzQgMzQ0KSIgZmlsbD0iI2Q0ZDRkNCIgb3BhY2l0eT0iMCIvPg0KICAgICAgPGcgaWQ9Ikljbl9DaGVjayIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNTc5LjExMSAzNTIuMjg2KSI+DQogICAgICAgIDxsaW5lIGlkPSJMaW5lLTMiIGRhdGEtbmFtZT0iTGluZSIgeDE9IjkuNDI4IiB5Mj0iOS40MjgiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDQuMzUxKSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjNjU5ZjAwIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS13aWR0aD0iMiIvPg0KICAgICAgICA8bGluZSBpZD0iTGluZS00IiBkYXRhLW5hbWU9IkxpbmUiIHgyPSI0LjM1MSIgeTI9IjQuMzUxIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwIDUuMDc2KSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjNjU5ZjAwIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS13aWR0aD0iMiIvPg0KICAgICAgPC9nPg0KICAgIDwvZz4NCiAgICA8ZyBpZD0iaWNvbl9FcnJvciIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTUyNiAtMzIwKSI+DQogICAgICA8cmVjdCBpZD0iUmVjdGFuZ2xlXzEtMyIgZGF0YS1uYW1lPSJSZWN0YW5nbGUgMSIgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg1NzQgMzQ0KSIgZmlsbD0iI2Q0ZDRkNCIgb3BhY2l0eT0iMCIvPg0KICAgICAgPGcgaWQ9Ikljbl9FcnJvciIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNTgxLjY2NyAzNTEuNjY3KSI+DQogICAgICAgIDxsaW5lIGlkPSJMaW5lLTUiIGRhdGEtbmFtZT0iTGluZSIgeDE9IjkiIHkyPSI5IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwLjMzMyAwLjMzMykiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2JlMDAwMCIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBzdHJva2Utd2lkdGg9IjIiLz4NCiAgICAgICAgPGxpbmUgaWQ9IkxpbmUtNiIgZGF0YS1uYW1lPSJMaW5lIiB4Mj0iOSIgeTI9IjkiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAuMzMzIDAuMzMzKSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjYmUwMDAwIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS13aWR0aD0iMiIvPg0KICAgICAgPC9nPg0KICAgIDwvZz4NCiAgPC9nPg0KPC9zdmc+DQo=");
+            background-repeat: no-repeat;
+            background-position: 0 0;
+            width: 24px;
+            height: 24px;
+            display: inline-block;
+            @include transition(background, 0.15s, ease-in-out);
+
+            &.icons-edit{
+              background-position: 0 0;
+            }
+            &.icons-check{
+              background-position: -24px 0;
+            }
+            &.icons-error{
+              background-position: -48px 0;
+            }
+          }
+
+          i.icons-check,
+          i.icons-error{
+            display: none;
+          }
+
+          .error,
+          .check{
+            i.icons-edit{
+              display: none;
+            }
+          }
+
+          .error{
+            i.icons-error{
+              display: block !important;
+            }
+          }
+
+          .check{
+            i.icons-check{
+              display: block !important;
+            }
+          }
+        }
+      }
+
+      .inputerrormessage{
+        right: 0;
+        display: none !important;
+      }
+
+      .form-control{
+        border-left: none;
+        padding-left: 0;
+        padding-right: 0;
+
+        &:focus ~ label,
+        &:valid ~ label,
+        &:focus ~ .inputerrormessage,
+        &:valid ~ .inputerrormessage{
+          top: -5px;
+        }
+
+        &.disabled,
+        &:disabled,
+        &[readonly] {
+          color: $global-clr-soft-gray !important;
+          background-color: transparent !important;
+          border-color: #CCD5DD !important;
+        }
+      }
+
+      .form-button{
+        margin-top: 20px;
+
+        @include ReSassWidthResponsive(992){
+          text-align: center;
+        }
+
+        .btn{
+          width: 100%;
+          max-width: 180px;
+          height: auto;
+          font-size: 19px;
+          font-weight: 300;
+          letter-spacing: -0.2px;
+          padding: 11px 10px;
+          border:none;
+          @include transition(all, 0.3s, ease-in-out);
+          @include background-gradient(#0a93ea, #00387c);
+
+          @include ReSassWidthResponsive(992){
+            font-size: 17px;
+            padding: 8px 6px;
+          }
+        }
+      }
+    }
+
+  }
+
+}
