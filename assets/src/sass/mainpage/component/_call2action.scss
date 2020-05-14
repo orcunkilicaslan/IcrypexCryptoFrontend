@@ -3,10 +3,10 @@ $tradepageFooterImgPath : "../../img/tradepage/footer";
 $bottomcall2actionwhitebarpx: 30px;
 
 .bottomcall2action{
-  display: flex !important;
   background-color: $global-clr-light-gray;
   position: relative;
   margin-top: 30px;
+  flex: inherit !important;
 
   @include ReSassWidthResponsive(1400){
     margin-top: 0;
@@ -33,27 +33,21 @@ $bottomcall2actionwhitebarpx: 30px;
   }
 
   &-row{
-    height: 100%;
 
     @include ReSassWidthResponsive(992){
-      flex-direction: column;
+      display: block !important;
     }
 
     > div[class*="col"]{
-      height: 100%;
       padding-left: 0;
       padding-right: 0;
     }
     > .col{
-      display: flex;
-      align-items: center;
       padding-top: $bottomcall2actionwhitebarpx;
+      order: 2;
 
       @include ReSassWidthResponsive(1400){
         padding-top: 0;
-      }
-      @include ReSassWidthResponsive(992){
-        order: 1;
       }
       @include ReSassWidthResponsive(576){
         padding-left: 20px !important;
@@ -61,16 +55,12 @@ $bottomcall2actionwhitebarpx: 30px;
       }
     }
     >.col-auto{
-      @include ReSassWidthResponsive(992){
-        flex-basis: 0;
-        order: 2;
-      }
+      order: 1;
     }
   }
 
   &-cyrptoimg{
     width: 565px;
-    height: 100%;
     min-height: 360px;
     background-image: url(#{$tradepageFooterImgPath}/call2action_cryptos.png);
     background-repeat: no-repeat;
@@ -80,29 +70,19 @@ $bottomcall2actionwhitebarpx: 30px;
     @include ReSassWidthResponsive(1400){
       width: 420px;
       background-size: 420px;
-      min-height: inherit;
-    }
-    @include ReSassWidthResponsive(1200){
-      width: 380px;
-      background-size: 380px;
+      min-height: 295px;
     }
     @include ReSassWidthResponsive(992){
-      margin: auto;
+      margin: 10px auto 0;
       width: 100%;
-      min-height: 200px;
+      min-height: 180px;
       background-position: center top;
-      background-size: auto;
-    }
-    @include ReSassWidthResponsive(576){
-      min-height: 170px;
-    }
-    @include ReSassWidthResponsive(400){
+      background-size: 420px;
     }
   }
 
   &-laptopimg{
     width: 535px;
-    height: 100%;
     min-height: 360px;
     background-image: url(#{$tradepageFooterImgPath}/call2action_laptop.png);
     background-repeat: no-repeat;
@@ -110,21 +90,26 @@ $bottomcall2actionwhitebarpx: 30px;
     background-size: 562px;
 
     @include ReSassWidthResponsive(1400){
-      width: 435px;
-      background-size: 435px;
-      background-position: center 20px;
-      min-height: inherit;
+      width: 420px;
+      min-height: 295px;
+      background-size: 440px;
+      background-position-y: 15px;
     }
     @include ReSassWidthResponsive(992){
       margin: auto;
       width: 100%;
-      min-height: 370px;
-      background-size: contain;
+      min-height: 260px;
+      background-position: center top;
+      background-size: 500px;
     }
     @include ReSassWidthResponsive(576){
-      min-height: 230px;
+      min-height: 240px;
+      background-size: 390px;
     }
     @include ReSassWidthResponsive(400){
+      min-height: 210px;
+      background-position: top left 20px;
+      background-size: 350px;
     }
   }
 
@@ -133,7 +118,10 @@ $bottomcall2actionwhitebarpx: 30px;
     padding: 45px 0;
 
     @include ReSassWidthResponsive(1400){
-      padding: 25px 0;
+      padding: 30px 0;
+    }
+    @include ReSassWidthResponsive(992){
+      padding-bottom: 15px;
     }
 
     .columntitle{
