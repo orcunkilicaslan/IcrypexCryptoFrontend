@@ -247,4 +247,105 @@ $globalSvgIconImgPath : "../../img/global/svg";
     }
   }
 
+  &-assetdata{
+    width: 290px;
+    margin-top: 15px;
+
+    .sideassets{
+
+      &-box{
+        border: 1px solid darken($global-clr-light-gray, 10%);
+        border-top: none;
+        min-height: 200px;
+        padding-top: 4px;
+        position: relative;
+
+        &::before{
+          content: "";
+          background-color: $global-clr-soft-blue;
+          width: calc(100% + 2px);
+          height: 4px;
+          position: absolute;
+          left: -1px;
+          top: 0;
+        }
+      }
+
+      &-list{
+        margin: 15px;
+
+        li{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          color: $global-clr-dark-blue;
+          background-color: $global-clr-light-gray;
+          font-size: 17px;
+          padding: 5px 10px;
+          margin: 5px 0;
+          border-left: 2px solid darken($global-clr-light-gray, 20%);
+
+          &:first-child{
+            margin-top: 0;
+          }
+
+          &:last-child{
+            margin-bottom: 0;
+          }
+
+          span, strong{
+            display: block;
+          }
+
+        }
+
+        .leftlinetry{border-left-color: $global-clr-red;}
+        .leftlineusd{border-left-color: $global-clr-green;}
+        .leftlinebtc{border-left-color: $global-clr-currency-btc;}
+        .leftlineeth{border-left-color: $global-clr-currency-eth;}
+        .leftlineltc{border-left-color: $global-clr-currency-ltc;}
+        .leftlinexrp{border-left-color: $global-clr-currency-xrp;}
+        .leftlinebat{border-left-color: $global-clr-currency-bat;}
+        .leftlinexlm{border-left-color: $global-clr-currency-xlm;}
+        .leftlinempay{border-left-color: $global-clr-currency-mpay;}
+        .leftlinetryb{border-left-color: $global-clr-currency-tryb;}
+        .leftlineusdt{border-left-color: $global-clr-currency-usdt;}
+
+      }
+
+      &-total{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: $global-clr-soft-gray;
+        background-color: $global-clr-light-gray;
+        font-size: 17px;
+        padding: 10px 15px;
+
+        strong{
+          display: block;
+        }
+
+        .ttilde{
+          padding-left: 12px;
+          position: relative;
+
+          &::before{
+            content: "";
+            background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4IiBoZWlnaHQ9IjYuMTE2IiB2aWV3Qm94PSIwIDAgOCA2LjExNiI+DQogIDxwYXRoIGlkPSJUaWxkZSIgZD0iTTQuODU2LDUuOTQyYTkuMTUyLDkuMTUyLDAsMCwxLTEtLjUycS0uNDctLjI2Ni0uNzY1LS40YTEuNjI0LDEuNjI0LDAsMCwwLS42NjQtLjEzMiwxLjY1NCwxLjY1NCwwLDAsMC0xLjQ3LjgzN0EuMTc0LjE3NCwwLDAsMSwuNjcsNS44MUwuMTE5LDUuNDgyYS4yMjIuMjIyLDAsMCwxLS4xLS4yODVBMi44NjksMi44NjksMCwwLDEsLjk0Niw0LjA0MywyLjI0OCwyLjI0OCwwLDAsMSwyLjMsMy42YTIuNDQ0LDIuNDQ0LDAsMCwxLC44NjguMTQzLDQuMTI3LDQuMTI3LDAsMCwxLC43ODYuNDA5LDYuODI3LDYuODI3LDAsMCwwLC45MzkuNTEsMi4yMzcsMi4yMzcsMCwwLDAsLjg3OC4xNjMsMS4xMTcsMS4xMTcsMCwwLDAsLjY4NC0uMiwyLjY1OCwyLjY1OCwwLDAsMCwuNTYyLS42MTMuMTkzLjE5MywwLDAsMSwuMjg1LS4wNjFsLjU5Mi4zODhhLjE3LjE3LDAsMCwxLC4wNjIuMjY1QTIuNTQyLDIuNTQyLDAsMCwxLDUuODM3LDYuMTE2LDIuNSwyLjUsMCwwLDEsNC44NTYsNS45NDJabTAtMy42YTkuMTg4LDkuMTg4LDAsMCwxLTEtLjUyMXEtLjQ3LS4yNjQtLjc2NS0uNGExLjYwNywxLjYwNywwLDAsMC0uNjY0LS4xMzMsMS42NTMsMS42NTMsMCwwLDAtMS40Ny44MzguMTczLjE3MywwLDAsMS0uMjg2LjA4MUwuMTE5LDEuODc5YS4yMjIuMjIyLDAsMCwxLS4xLS4yODVBMi44OCwyLjg4LDAsMCwxLC45NDYuNDM5LDIuMjU1LDIuMjU1LDAsMCwxLDIuMywwYTIuNDQ0LDIuNDQ0LDAsMCwxLC44NjguMTQzLDQuMjU1LDQuMjU1LDAsMCwxLC43ODYuNDA5LDYuNzEyLDYuNzEyLDAsMCwwLC45MzkuNTEsMi4yMzcsMi4yMzcsMCwwLDAsLjg3OC4xNjQsMS4xMTcsMS4xMTcsMCwwLDAsLjY4NC0uMkEyLjY1OCwyLjY1OCwwLDAsMCw3LjAyMi40MDkuMTkyLjE5MiwwLDAsMSw3LjMwNy4zNDdMNy45LjczNUEuMTcxLjE3MSwwLDAsMSw3Ljk2MSwxLDIuNTQyLDIuNTQyLDAsMCwxLDUuODM3LDIuNTEyLDIuNSwyLjUsMCwwLDEsNC44NTYsMi4zMzhaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwKSIgZmlsbD0iIzc1OGNhMyIvPg0KPC9zdmc+DQo=");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            width: 8px;
+            height: 100%;
+            position: absolute;
+            left: 0;
+          }
+        }
+
+      }
+
+    }
+  }
+
 }

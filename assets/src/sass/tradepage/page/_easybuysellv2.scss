@@ -1,0 +1,160 @@
+$globalSvgIconImgPath : "../../img/global/svg";
+
+.easybuysellv2{
+
+  &-order{
+    background-color: $global-clr-white;
+    padding: 40px 0;
+  }
+
+  &-wrapper{
+
+    @include ReSassWidthResponsive(992){
+      display: block;
+      flex: 0 0 100%;
+      max-width: 100%;
+      padding: 0;
+    }
+    @include ReSassWidthResponsive(576){
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    @include ReSassWidthResponsive(400){
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+
+    .easybuyselltabs{
+      border-bottom: 4px solid transparent;
+      position: relative;
+      justify-content: center!important;
+
+      &.buytabs{
+        border-bottom-color: $global-clr-green;
+      }
+
+      &.selltabs{
+        border-bottom-color: $global-clr-red;
+      }
+
+      &::after{
+        content: "";
+        position: absolute;
+        width: 100%;
+      }
+      &::after{
+        background-color: $global-clr-white;
+        height: 2px;
+        bottom: 0;
+      }
+
+      .nav{
+        &-item{
+          position: relative;
+          margin-bottom: 0;
+          font-size: 20px;
+          font-weight: 500;
+          overflow: hidden;
+          background-color: $global-clr-soft-gray;
+
+          &:first-child{
+            border-top-left-radius: 4px;
+          }
+
+          &:last-child{
+            border-top-right-radius: 4px;
+
+            .nav-link{
+              border-right-width: 0;
+
+              &::before{
+                width: 100%;
+              }
+            }
+          }
+
+        }
+        &-link{
+          color: transparentize($global-clr-white, 0.5);
+          border-color: $global-clr-white;
+          border-style: solid;
+          border-right-width: 2px;
+          border-left-width: 0;
+          border-top: none;
+          border-bottom-width: 0;
+          padding: 3px 10px 4px;
+          min-width: 160px;
+          text-align: center;
+          @include border-radius(0);
+          @include transition(color, 0.2s, linear);
+
+          span{
+            position: relative;
+            z-index: 1;
+            display: block;
+            margin: 2px 0;
+          }
+
+          &::before{
+            content: "";
+            position: absolute;
+            width: calc(100% - 2px);
+            height: 0;
+            left: 0;
+            bottom: 0;
+            background-color: transparent;
+            @include transition(height, 0.2s, linear);
+          }
+
+          &.active,
+          &.show,
+          &:hover{
+            color: $global-clr-white;
+            background-color: transparent;
+            border-color: $global-clr-white;
+            &::before{
+              height: 100%;
+              background-color: $global-clr-soft-blue;
+              z-index: 1;
+            }
+          }
+          &:hover{
+            &::before{
+              bottom: 2px;
+            }
+          }
+          &.active{
+            &::before{
+              bottom: 0 !important;
+            }
+          }
+
+          &.linkbuy{
+            &.active,
+            &.show,
+            &:hover{
+              &::before{
+                background-color: $global-clr-green;
+              }
+            }
+          }
+
+          &.linksell{
+            &.active,
+            &.show,
+            &:hover{
+              &::before{
+                background-color: $global-clr-red;
+              }
+            }
+          }
+
+        }
+
+      }
+    }
+
+  }
+
+}
