@@ -59,6 +59,10 @@
       border: 2px solid $global-clr-soft-gray;
       background: $global-clr-soft-gray;
     }
+    [type="checkbox"]:checked + label::before {
+      background-color: $global-clr-green;
+      border-color: $global-clr-green;
+    }
   }
 
 }
