@@ -233,7 +233,8 @@ $globalSvgIconImgPath : "../../img/global/svg";
     }
     &-profilehelp{
       background-image: url(#{$globalSvgIconImgPath}/Icon_Help.svg);
-      &[class*="profilelabelhelp"]:hover{
+      &[class*="profilelabelhelp"]:hover,
+      &[class*="easybuysellpaymentlhelp"]:hover{
         background-image: url(#{$globalSvgIconImgPath}/Icon_Help_Active.svg);
       }
     }
