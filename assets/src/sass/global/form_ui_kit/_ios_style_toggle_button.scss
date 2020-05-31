@@ -53,4 +53,12 @@
     border-color: $global-clr-green;
   }
 
+  &.graytoggle{
+    [type="checkbox"]:not(:checked) + label::before,
+    [type="checkbox"]:checked + label::before {
+      border: 2px solid $global-clr-soft-gray;
+      background: $global-clr-soft-gray;
+    }
+  }
+
 }

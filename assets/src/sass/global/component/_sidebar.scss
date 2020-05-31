@@ -251,6 +251,22 @@ $globalSvgIconImgPath : "../../img/global/svg";
     width: 290px;
     margin-top: 15px;
 
+    .boxcolumn-headtitle{
+      .iosstyletogglebutton{
+        .ioscheckbox{
+          display: flex;
+          align-items: center;
+
+          span{
+            color: $global-clr-soft-gray;
+            font-size: 17px;
+            display: inline-block;
+            margin-left: 5px;
+          }
+        }
+      }
+    }
+
     .sideassets{
 
       &-box{
