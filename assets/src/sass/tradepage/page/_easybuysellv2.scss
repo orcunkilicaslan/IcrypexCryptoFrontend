@@ -195,7 +195,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
           margin-top: 15px;
           overflow: hidden;
           border: 1px solid transparentize($global-clr-soft-gray, 0.7);
-          @include border-radius(4px);
+          @include border-radius(3px);
 
           &:first-child{
             margin-top: 0;
@@ -420,5 +420,92 @@ $globalSvgIconImgPath : "../../img/global/svg";
         }
       }
     }
+
+    .easybuysellsummary{
+      padding: 20px;
+      border-left: 1px solid darken($global-clr-light-gray, 10%);
+      border-right: 1px solid darken($global-clr-light-gray, 10%);
+
+      .boxcolumn-boxtitle{
+        margin-bottom: 15px;
+
+        .boxcolumn-boxtitle-title{
+          font-size: 17px;
+        }
+
+        .sitecolorgray{
+          font-size: 17px;
+          line-height: 1;
+        }
+      }
+
+      &-row{
+
+        .paymentsummaryinfo{
+          border: 1px solid transparentize($global-clr-soft-gray, 0.7);
+          @include border-radius(3px);
+
+          &-head{
+            color: $global-clr-dark-blue;
+            background-color: $global-clr-light-gray;
+            font-size: 17px;
+            font-weight: 500;
+            padding: 10px 15px;
+            margin: 0;
+          }
+          &-list{
+            margin: 15px;
+
+            li{
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              justify-content: space-between;
+              color: $global-clr-dark-blue;
+              font-size: 17px;
+              padding: 5px 0;
+              border-bottom: 1px solid transparentize($global-clr-soft-gray, 0.7);
+
+              &:first-child{
+                padding-top: 0;
+              }
+
+              &:last-child{
+                padding-bottom: 0;
+                border-bottom: none;
+              }
+            }
+          }
+        }
+
+        .paymentsummaryterm{
+          p, label{
+            color: $global-clr-dark-blue;
+            font-size: 17px;
+            line-height: 1.25;
+          }
+
+          .form-check{
+            margin-top: 15px;
+          }
+        }
+      }
+    }
+
+    .summaryformbtn{
+      background-color: $global-clr-light-gray;
+      padding: 15px;
+      border: 1px solid darken($global-clr-light-gray, 10%);
+      border-top: none;
+      @include border-radii(0,0,3px,3px);
+
+      .btn{
+        width: 320px;
+        font-size: 20px;
+        display: block;
+        margin: auto;
+      }
+    }
+
   }
 }

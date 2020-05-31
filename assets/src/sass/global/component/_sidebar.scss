@@ -249,7 +249,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
   &-assetdata{
     width: 290px;
-    margin-top: 15px;
+    margin-top: 11px;
 
     .boxcolumn-headtitle{
       .iosstyletogglebutton{
@@ -275,6 +275,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
         min-height: 200px;
         padding-top: 4px;
         position: relative;
+        @include border-radius(3px);
 
         &::before{
           content: "";
