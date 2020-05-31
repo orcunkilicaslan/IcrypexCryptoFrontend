@@ -108,6 +108,9 @@ $(document).ready(function(){
 $(document).ready(function(){
     $('.orderinformationhelp').tooltip({container: ".order-orders-tooltiparea", html: true, placement: "bottom" });
 });
+$(document).ready(function(){
+    $('.easybuysellpaymentlhelp').tooltip({container: ".easybuysellpayment-popoverarea", html: true, placement: "bottom" });
+});
 /* Easy Buy Sell Tooltip */
 
 /* Loading Info */
