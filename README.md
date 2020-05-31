@@ -64,6 +64,7 @@
  - [04_Easy_Buy_Main](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/tradepage/04_Easy_Buy_Main.html)
  - [04_Easy_Buy_Simplex](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/tradepage/04_Easy_Buy_Simplex.html)
  - [04_Easy_Sell_Main](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/tradepage/04_Easy_Sell_Main.html)
+ - [04_Easy_Buy_Sell_Success](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/tradepage/04_Easy_Buy_Sell_Success.html)
  - [05_Deposit_Step_1_Home](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/tradepage/05_Deposit_Step_1_Home.html)
  - [06_Deposit_Step_2_Bank_1](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/tradepage/06_Deposit_Step_2_Bank_1.html)
  - [06_Deposit_Step_2_Bank_1_Alert_01](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/tradepage/06_Deposit_Step_2_Bank_1_Alert_01.html)

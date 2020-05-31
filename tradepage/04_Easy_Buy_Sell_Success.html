@@ -12,7 +12,7 @@
     <script id="script-popper" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script id="script-bootstrap" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </head>
-<body class="dfn-megamenu fullpages tradepage">
+<body class="dfn-megamenu fullpages tradepage modal-open">
 
 <!-- Header Start -->
 <header class="header">
@@ -214,12 +214,12 @@
         </div>
         <!-- Navigation End -->
         <!-- TitleArea Start -->
-        <div class="header-titlearea d-flex">
+        <div class="header-titlearea d-flex justify-content-between align-items-center">
             <div class="container">
                 <div class="row align-items-center">
                     <!-- Title -->
                     <div class="maincont-left header-titlearea-title-icon col-8">
-                        <h1 class="columntitle columntitle-md bottomborder titleleft">COMPONENT</h1>
+                        <h1 class="columntitle columntitle-md bottomborder titleleft">KOLAY AL-SAT</h1>
                         <span class="header-titlearea-title-icon-span"><i class="icon-svg icon-svg-headtitleiconwallet"></i></span>
                     </div>
                     <!-- Title -->
@@ -260,443 +260,267 @@
 <div class="header-spacebottom"></div>
 <!-- Header End -->
 
-<!-- Component Start -->
-<section class="profile-section">
+<!-- Easy Buy Sell Order Start -->
+<section class="easybuysellv2-order">
 <div class="container">
 <div class="row">
 
-    <!-- Sidebar -->
-    <div class="sidebar maincont-left col-2">
-        <nav class="sidebar-navigasyon">
-            <h3 class="columntitle columntitle-sm bottomborder titleleft titlebold">COMPONENT</h3>
-            <ul class="sidebar-navigasyon-list nav flex-column nav-pills">
-                <li class="sidebar-navigasyon-list-item"><a class="nav-link" href="99_Component_Form_UI.html" title="FORM UI" rel="category">FORM UI</a></li>
-                <li class="sidebar-navigasyon-list-item"><a class="nav-link" href="99_Component_Alerts.html" title="ALERTS" rel="category">ALERTS</a></li>
-                <li class="sidebar-navigasyon-list-item"><a class="nav-link active" href="99_Component_Modals.html" title="MODALS" rel="category">MODALS</a></li>
-                <li class="sidebar-navigasyon-list-item"><a class="nav-link" href="99_Component_Notiflix.html" title="NOTIFLIX NOTIFY" rel="category">NOTIFLIX NOTIFY</a></li>
+    <!-- Assets Data Start -->
+    <div class="sidebar sidebar-assetdata maincont-left col-auto">
+        <div class="boxcolumn-headtitle">
+            <h2 class="boxcolumn-headtitle-title">VARLIKLAR</h2>
+            <div class="iosstyletogglebutton graytoggle">
+                <div class="ioscheckbox"><input type="checkbox" id="assetscheckbox" /><label for="assetscheckbox"></label><span>Kullanılabilir</span></div>
+            </div>
+        </div>
+        <div class="sideassets-box">
+            <ul class="sideassets-list">
+                <li class="leftlinetry">
+                    <span>TRY</span>
+                    <strong>999,999.99</strong>
+                </li>
+                <li class="leftlineusd">
+                    <span>USD</span>
+                    <strong>999,999.99</strong>
+                </li>
+                <li class="leftlinebtc">
+                    <span>BTC</span>
+                    <strong>1.41811575125646</strong>
+                </li>
+                <li class="leftlineeth">
+                    <span>ETH</span>
+                    <strong>2.3111525646</strong>
+                </li>
+                <li class="leftlinexrp">
+                    <span>XRP</span>
+                    <strong>0.6871575125646</strong>
+                </li>
+                <li class="leftlineltc">
+                    <span>LTC</span>
+                    <strong>4.73815125646</strong>
+                </li>
+                <li class="leftlinexlm">
+                    <span>XLM</span>
+                    <strong>0.4185646</strong>
+                </li>
+                <li class="leftlinebat">
+                    <span>BAT</span>
+                    <strong>1.2461575125646</strong>
+                </li>
+                <li class="leftlinetryb">
+                    <span>TRYB</span>
+                    <strong>100.41811646</strong>
+                </li>
+                <li class="leftlinempay">
+                    <span>MPAY</span>
+                    <strong>6.47125646</strong>
+                </li>
             </ul>
-        </nav>
+            <div class="sideassets-total">
+                <strong>Toplam</strong>
+                <strong class="ttilde">999,999.99 TRY</strong>
+            </div>
+        </div>
     </div>
-    <!-- Sidebar -->
+    <!-- Assets Data End -->
 
-    <!-- Component -->
-    <div class="profile-wrapper maincont-right col-10">
-    <h3 class="columntitle columntitle-sm titleleft titlebold">MODALS</h3>
-    <div class="profile-box">
+    <!-- Order -->
+    <div class="easybuysellv2-wrapper maincont-right col">
 
-        <!-- Modals -->
-        <div class="profile-box-content">
-            <div class="profile-profile" style="max-width: 100%;">
+        <!-- Tabs -->
+        <ul class="easybuyselltabs buytabs nav nav-tabs" role="tablist">
+            <li class="nav-item"><a href="#" class="nav-link linkbuy active"><span>KOLAY AL</span></a></li>
+            <li class="nav-item"><a href="#" class="nav-link linksell"><span>KOLAY SAT</span></a></li>
+        </ul>
+        <!-- Tabs -->
+
+        <!-- Form -->
+        <div class="easybuysellform">
+            <form class="formuinew" autocomplete="off" novalidate>
+                <div class="form-row">
+                    <div class="form-group fontsize20px colorsetdarkblue col">
+                        <label>NE ALMAK İSTİYORSUNUZ?</label>
+                        <select class="form-control custom-select">
+                            <option value="01">BITCOIN [BTC]</option>
+                            <option value="02">ETHERIUM [ETH]</option>
+                        </select>
+                        <div class="form-group-inputinfotext">
+                            <span>Fiyat</span>
+                            <strong class="infototal">66,238.89 TRY</strong>
+                        </div>
+                    </div>
+                    <div class="form-group fontsize20px colorsetdarkblue col">
+                        <label>NE KADARLIK ALMAK İSTİYORSUNUZ?</label>
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="" value="22,430.000">
+                            <div class="input-group-append selectbox">
+                                <select class="form-control custom-select sitecolorbluedark">
+                                    <option selected>TRY</option>
+                                    <option value="1">USD</option>
+                                    <option value="2">EUR</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group-inputinfotext">
+                            <span>Miktar</span>
+                            <strong class="infototal">1.41811575 BTC</strong>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <!-- Form -->
+
+        <!-- Payment -->
+        <div class="easybuysellpayment">
             <div class="boxcolumn-boxtitle">
-                <h3 class="boxcolumn-boxtitle-title">Bootstrap Modals</h3>
+                <h3 class="boxcolumn-boxtitle-title">HANGİ ÖDEME YÖNTEMİNİ KULLANACAKSINIZ?</h3>
             </div>
-            <div>
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Standard Modal</button>
-                <button type="button" class="btn btn-info" data-toggle="modal" data-target="#bs-example-modal-lg">Large modal</button>
-                <button type="button" class="btn btn-success" data-toggle="modal" data-target="#bs-example-modal-sm">Small modal</button>
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#full-width-modal">Full width modal</button>
-                <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#scrollable-modal">Scrollable modal</button>
-            </div>
-            <div class="sitemodal">
-                <!-- Modal 01 -->
-                <div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h4 class="modal-title" id="myModalLabel">Modal Heading</h4>
-                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <ul class="easybuysellpayment-list">
+                <li class="easybuysellpayment-list-item">
+                    <div class="paymentselect">
+                        <div class="boxcolumn-boxtitle">
+                            <h3 class="boxcolumn-boxtitle-title sitecolorgray">Icrypex Cüzdan</h3>
+                            <i class="icon-svg icon-svg-profilehelp easybuysellpaymentlhelp" data-toggle="popover" data-trigger="focus" tabindex="0" data-container=".easybuysellpayment-popoverarea" data-html="true" data-placement="bottom" data-content="<div class='tooltip-html'><div class='boxcolumn-boxtitle'><span class='boxcolumn-boxtitle-title'>SIMPLEX NEDİR?</span><span class='boxcolumn-boxtitle-info'>DESTEK 0850 255 1079</span></div><div class='tooltip-html-cont'><p class='desc'>Simplex, <strong>Visa</strong> ya da <strong>MasterCard</strong> kartınızı kullanarak güvenli bir şekilde işlem yapabileceğiniz bir ödeme sistemidir.</p><p class='desc'><strong>Bilmeniz Gerekenler:</strong></p><ul class='list'><li>Kripto paranın cüzdanınıza ulaşması ortalama 10 ila 30 dakika sürer.</li><li>Eğer kur +/-%2,5'ten fazla değişirse Simplex'ten gelen bir maille sizden tekrar işlem onayı istenir.</li><li>Ödeme tamamlandığında, Simplex'ten ödeme durmunuzu ve Icrypex'ten işlem geçmişinizi kontrol edebilirsiniz.</li><li>Sorularınız için lütfen <u>Simplex müşteri hizmetleriyle</u> iletişime geçin.</li></ul></div></div>"></i>
+                        </div>
+                        <div class="paymentmethod">
+                            <div class="paymentmethod-text">
+                                <i class="iconselectpayment iconselectpayment-try"></i> Türk Lirası
                             </div>
-                            <div class="modal-body">
-                                <div class="modal-content">
-                                    <h6>Text in a modal</h6>
-                                    <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
-                                    <hr>
-                                    <h6>Overflowing text to show scroll behavior</h6>
-                                    <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-                                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
-                                    <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
-                                </div>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">Save changes</button>
+                            <div class="paymentmethod-info">
+                                Kullanılabilir: <strong>999,999,99 TRY</strong>
                             </div>
                         </div>
                     </div>
-                </div>
-                <!-- Modal 01 -->
-                <!-- Modal 02 -->
-                <div class="modal fade" id="bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-lg">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h4 class="modal-title" id="myLargeModalLabel">Large modal</h4>
-                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <div class="paymentbutton">
+                        <a href="" class="btn btn btn-success">1.43825375 BTC AL</a>
+                    </div>
+                </li>
+                <li class="easybuysellpayment-list-item">
+                    <div class="paymentselect">
+                        <div class="boxcolumn-boxtitle">
+                            <h3 class="boxcolumn-boxtitle-title sitecolorgray">Kredi Kartı</h3>
+                            <i class="icon-svg icon-svg-profilehelp easybuysellpaymentlhelp" data-toggle="popover" data-trigger="focus" tabindex="0" data-container=".easybuysellpayment-popoverarea" data-html="true" data-placement="bottom" data-content="<div class='tooltip-html'><div class='boxcolumn-boxtitle'><span class='boxcolumn-boxtitle-title'>SIMPLEX NEDİR?</span><span class='boxcolumn-boxtitle-info'>DESTEK 0850 255 1079</span></div><div class='tooltip-html-cont'><p class='desc'>Simplex, <strong>Visa</strong> ya da <strong>MasterCard</strong> kartınızı kullanarak güvenli bir şekilde işlem yapabileceğiniz bir ödeme sistemidir.</p><p class='desc'><strong>Bilmeniz Gerekenler:</strong></p><ul class='list'><li>Kripto paranın cüzdanınıza ulaşması ortalama 10 ila 30 dakika sürer.</li><li>Eğer kur +/-%2,5'ten fazla değişirse Simplex'ten gelen bir maille sizden tekrar işlem onayı istenir.</li><li>Ödeme tamamlandığında, Simplex'ten ödeme durmunuzu ve Icrypex'ten işlem geçmişinizi kontrol edebilirsiniz.</li><li>Sorularınız için lütfen <u>Simplex müşteri hizmetleriyle</u> iletişime geçin.</li></ul></div></div>"></i>
+                        </div>
+                        <div class="paymentmethod">
+                            <div class="paymentmethod-text">
+                                <i class="iconselectpayment iconselectpayment-simplex"></i> Simplex
                             </div>
-                            <div class="modal-body">
-                                <div class="modal-content">
-                                    TEST
-                                </div>
+                            <div class="paymentmethod-info">
+                                <i class="iconinfopayment iconinfopayment-visa"></i>
+                                <i class="iconinfopayment iconinfopayment-master"></i>
                             </div>
                         </div>
                     </div>
-                </div>
-                <!-- Modal 02 -->
-                <!-- Modal 03 -->
-                <div class="modal fade" id="bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-sm">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h4 class="modal-title" id="mySmallModalLabel">Small modal</h4>
-                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <div class="paymentbutton">
+                        <a href="" class="btn btn btn-success">1.43825375 BTC AL</a>
+                    </div>
+                </li>
+                <li class="easybuysellpayment-list-item">
+                    <div class="paymentselect">
+                        <div class="boxcolumn-boxtitle">
+                            <h3 class="boxcolumn-boxtitle-title sitecolorgray">Kredi Kartı</h3>
+                            <i class="icon-svg icon-svg-profilehelp easybuysellpaymentlhelp" data-toggle="popover" data-trigger="focus" tabindex="0" data-container=".easybuysellpayment-popoverarea" data-html="true" data-placement="bottom" data-content="<div class='tooltip-html'><div class='boxcolumn-boxtitle'><span class='boxcolumn-boxtitle-title'>SIMPLEX NEDİR?</span><span class='boxcolumn-boxtitle-info'>DESTEK 0850 255 1079</span></div><div class='tooltip-html-cont'><p class='desc'>Simplex, <strong>Visa</strong> ya da <strong>MasterCard</strong> kartınızı kullanarak güvenli bir şekilde işlem yapabileceğiniz bir ödeme sistemidir.</p><p class='desc'><strong>Bilmeniz Gerekenler:</strong></p><ul class='list'><li>Kripto paranın cüzdanınıza ulaşması ortalama 10 ila 30 dakika sürer.</li><li>Eğer kur +/-%2,5'ten fazla değişirse Simplex'ten gelen bir maille sizden tekrar işlem onayı istenir.</li><li>Ödeme tamamlandığında, Simplex'ten ödeme durmunuzu ve Icrypex'ten işlem geçmişinizi kontrol edebilirsiniz.</li><li>Sorularınız için lütfen <u>Simplex müşteri hizmetleriyle</u> iletişime geçin.</li></ul></div></div>"></i>
+                        </div>
+                        <div class="paymentmethod">
+                            <div class="paymentmethod-text">
+                                <i class="iconselectpayment iconselectpayment-koinal"></i> Koinal
                             </div>
-                            <div class="modal-body">
-                                <div class="modal-content">
-                                    TEST
-                                </div>
+                            <div class="paymentmethod-info">
+                                <i class="iconinfopayment iconinfopayment-visa"></i>
+                                <i class="iconinfopayment iconinfopayment-master"></i>
+                                <i class="iconinfopayment iconinfopayment-unionpay"></i>
                             </div>
                         </div>
                     </div>
-                </div>
-                <!-- Modal 03 -->
-                <!-- Modal 04 -->
-                <div id="full-width-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="fullWidthModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-full-width">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h4 class="modal-title" id="fullWidthModalLabel">Modal Heading</h4>
-                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                            </div>
-                            <div class="modal-body">
-                                <div class="modal-content">
-                                    <h6>Text in a modal</h6>
-                                    <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
-                                    <hr>
-                                    <h6>Overflowing text to show scroll behavior</h6>
-                                    <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-                                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
-                                    <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
-                                </div>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">Save changes</button>
-                            </div>
-                        </div>
+                    <div class="paymentbutton">
+                        <a href="" class="btn btn btn-success">1.43825375 BTC AL</a>
                     </div>
-                </div>
-                <!-- Modal 04 -->
-                <!-- Modal 05 -->
-                <div class="modal fade" id="scrollable-modal" tabindex="-1" role="dialog"
-                     aria-labelledby="scrollableModalTitle" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-scrollable" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="scrollableModalTitle">Modal title</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="modal-body">
-                                <div class="modal-content">
-                                    <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-                                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
-                                    <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
-                                    <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-                                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
-                                    <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
-                                    <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-                                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
-                                    <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
-                                    <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-                                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
-                                    <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
-                                    <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-                                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
-                                    <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
-                                    <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-                                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
-                                    <p>Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metus auctor fringilla.</p>
-                                </div>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">Save changes</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Modal 05 -->
-            </div>
-            </div>
+                </li>
+            </ul>
+            <div class="easybuysellpayment-popoverarea"></div>
         </div>
-        <!-- Modals -->
-        <!-- Modals -->
-        <div class="profile-box-content">
-            <div class="profile-profile" style="max-width: 100%;">
-                <div class="boxcolumn-boxtitle">
-                    <h3 class="boxcolumn-boxtitle-title">Modal based Alerts</h3>
-                </div>
-                <div>
-                    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#success-alert-modal">Success Alert</button>
-                    <button type="button" class="btn btn-info" data-toggle="modal" data-target="#info-alert-modal">Info Alert</button>
-                    <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#warning-alert-modal">Warning Alert</button>
-                    <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#danger-alert-modal">Danger Alert</button>
-                </div>
-                <div class="sitemodalalerts">
-                    <!-- Success Alert Modal -->
-                    <div id="success-alert-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
-                        <div class="modal-dialog modal-sm">
-                            <div class="modal-content bg-success">
-                                <div class="modal-body p-4">
-                                    <div class="text-center">
-                                        <h4 class="mt-2">Well Done!</h4>
-                                        <p class="mt-3">Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
-                                        <button type="button" class="btn btn-light my-2" data-dismiss="modal">Continue</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Success Alert Modal -->
-                    <!-- Info Alert Modal -->
-                    <div id="info-alert-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
-                        <div class="modal-dialog modal-sm">
-                            <div class="modal-content">
-                                <div class="modal-body p-4">
-                                    <div class="text-center">
-                                        <h4 class="mt-2">Heads up!</h4>
-                                        <p class="mt-3">Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
-                                        <button type="button" class="btn btn-info my-2" data-dismiss="modal">Continue</button>
-                                    </div>
-                                </div>
-                            </div><!-- /.modal-content -->
-                        </div>
-                    </div>
-                    <!-- Info Alert Modal -->
-                    <!-- Warning Alert Modal -->
-                    <div id="warning-alert-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
-                        <div class="modal-dialog modal-sm">
-                            <div class="modal-content">
-                                <div class="modal-body p-4">
-                                    <div class="text-center">
-                                        <h4 class="mt-2">Incorrect Information</h4>
-                                        <p class="mt-3">Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
-                                        <button type="button" class="btn btn-warning my-2" data-dismiss="modal">Continue</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Warning Alert Modal -->
-                    <!-- Danger Alert Modal -->
-                    <div id="danger-alert-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
-                        <div class="modal-dialog modal-sm">
-                            <div class="modal-content modal-filled bg-danger">
-                                <div class="modal-body p-4">
-                                    <div class="text-center">
-                                        <h4 class="mt-2">Oh snap!</h4>
-                                        <p class="mt-3">Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam.</p>
-                                        <button type="button" class="btn btn-light my-2" data-dismiss="modal">Continue</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Danger Alert Modal -->
-                </div>
-            </div>
-        </div>
-        <!-- Modals -->
-        <!-- Modals -->
-        <div class="profile-box-content">
-            <div class="profile-profile" style="max-width: 100%;">
-                <div class="boxcolumn-boxtitle">
-                    <h3 class="boxcolumn-boxtitle-title">Filled Modals</h3>
-                </div>
-                <div>
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#fill-primary-modal">Primary Filled</button>
-                    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#fill-success-modal">Success Filled</button>
-                    <button type="button" class="btn btn-info" data-toggle="modal" data-target="#fill-info-modal">Info Filled</button>
-                    <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#fill-warning-modal">Warning Filled</button>
-                    <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#fill-danger-modal">Danger Filled</button>
-                    <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#fill-dark-modal">Dark Filled</button>
-                </div>
-                <div class="sitemodalfilled">
-                    <!-- Primary Filled Modal -->
-                    <div id="fill-primary-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="fill-primary-modalLabel" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content modal-filled bg-primary">
-                                <div class="modal-header">
-                                    <h4 class="modal-title" id="fill-primary-modalLabel">Primary Filled Modal</h4>
-                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                                </div>
-                                <div class="modal-body">
-                                    <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-                                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-outline-light" data-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-outline-light">Save changes</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Primary Filled Modal -->
-                    <!-- Success Filled Modal -->
-                    <div id="fill-success-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="fill-success-modalLabel" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content modal-filled bg-success">
-                                <div class="modal-header">
-                                    <h4 class="modal-title" id="fill-success-modalLabel">Success Filled Modal</h4>
-                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                                </div>
-                                <div class="modal-body">
-                                    <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-                                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-outline-light" data-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-outline-light">Save changes</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Success Filled Modal -->
-                    <!-- Info Filled Modal -->
-                    <div id="fill-info-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="fill-info-modalLabel" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content modal-filled bg-info">
-                                <div class="modal-header">
-                                    <h4 class="modal-title" id="fill-info-modalLabel">Info Filled Modal</h4>
-                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                                </div>
-                                <div class="modal-body">
-                                    <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-                                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-outline-light" data-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-outline-light">Save changes</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Info Filled Modal -->
-                    <!-- Warning Filled Modal -->
-                    <div id="fill-warning-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="fill-warning-modalLabel" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content modal-filled bg-warning">
-                                <div class="modal-header">
-                                    <h4 class="modal-title" id="fill-warning-modalLabel">Warning Filled Modal</h4>
-                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                                </div>
-                                <div class="modal-body">
-                                    <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-                                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-outline-light" data-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-outline-light">Save changes</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Warning Filled Modal -->
-                    <!-- Danger Filled Modal -->
-                    <div id="fill-danger-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="fill-danger-modalLabel" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content modal-filled bg-danger">
-                                <div class="modal-header">
-                                    <h4 class="modal-title" id="fill-danger-modalLabel">Danger Filled Modal</h4>
-                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                                </div>
-                                <div class="modal-body">
-                                    <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-                                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-outline-light" data-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-outline-light">Save changes</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Danger Filled Modal -->
-                    <!-- Dark Filled Modal -->
-                    <div id="fill-dark-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="fill-dark-modalLabel" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content modal-filled bg-dark">
-                                <div class="modal-header">
-                                    <h4 class="modal-title" id="fill-dark-modalLabel">Dark Filled Modal</h4>
-                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                                </div>
-                                <div class="modal-body">
-                                    <p>Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
-                                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.</p>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-outline-light" data-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-outline-light">Save changes</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Dark Filled Modal -->
-                </div>
-            </div>
-        </div>
-        <!-- Modals -->
-        <!-- Modals -->
-        <div class="profile-box-content">
-            <div class="profile-profile" style="max-width: 100%;">
-                <div class="boxcolumn-boxtitle">
-                    <h3 class="boxcolumn-boxtitle-title">Bootstrap Sweet Alert Modals</h3>
-                </div>
-                <div>
-                    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#sweetAlertModalSuccess">Success Modal</button>
-                </div>
-                <div class="sitemodal sitemodalsweet">
-                    <!-- Modal 01 -->
-                    <div id="sweetAlertModalSuccess" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="sweetAlertModalSuccessLabel" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-body success">
-                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-                                    <div class="contentarea">
-                                        <div class="alert-icon">
-                                            <div class="alert-icon-success">
-                                                <div class="alert-icon-success-tip"></div>
-                                                <div class="alert-icon-success-long"></div>
-                                                <div class="alert-icon-success-placeholder"></div>
-                                                <div class="alert-icon-success-fix"></div>
-                                            </div>
-                                        </div>
-                                        <p>Bitcoin alış işleminiz başarıyla tamamlanmıştır.</p>
-                                        <p><a class="urllink" href="#" target="_blank">İşlem Geçmişi</a> ya da <a class="urllink" href="#" target="_blank">Varlıklar</a> bölümünden kontrol edebilirsiniz.</p>
-                                        <div class="modalcallcenter">
-                                            <h5 class="modalcallcenter-title">Müşteri Hizmetleri</h5>
-                                            <p class="modalcallcenter-number">0850 255 1079</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Modal 01 -->
-                </div>
-            </div>
-        </div>
-        <!-- Modals -->
+        <!-- Payment -->
 
     </div>
+    <!-- Order -->
+
+    <!-- Modal Success -->
+    <div class="sitemodal sitemodalsweet">
+        <div id="sweetAlertModalSuccess" class="modal fade show" tabindex="-1" role="dialog" aria-labelledby="sweetAlertModalSuccessLabel" style="padding-right: 17px; display: block;">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body success">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                        <div class="contentarea">
+                            <div class="alert-icon">
+                                <div class="alert-icon-success">
+                                    <div class="alert-icon-success-tip"></div>
+                                    <div class="alert-icon-success-long"></div>
+                                    <div class="alert-icon-success-placeholder"></div>
+                                    <div class="alert-icon-success-fix"></div>
+                                </div>
+                            </div>
+                            <p>Bitcoin alış işleminiz başarıyla tamamlanmıştır.</p>
+                            <p><a class="urllink" href="#" target="_blank">İşlem Geçmişi</a> ya da <a class="urllink" href="#" target="_blank">Varlıklar</a> bölümünden kontrol edebilirsiniz.</p>
+                            <div class="modalcallcenter">
+                                <h5 class="modalcallcenter-title">Müşteri Hizmetleri</h5>
+                                <p class="modalcallcenter-number">0850 255 1079</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <!-- Component -->
+    <!-- Modal Success -->
 
 </div>
 </div>
 </section>
-<!-- Component End -->
+<!-- Easy Buy Sell Order End -->
+
+<!-- Footer Mobile Bottom Bar Start -->
+<footer class="footer footer-mobilebar footer-mobilebar-tradepage">
+    <div class="container">
+        <nav class="footer-mobilebar-navbar navbar navbar-dark">
+            <ul class="navbar-nav">
+                <li class="nav-item col">
+                    <a class="nav-link" href="04_Easy_Buy_Sell.html">
+                        <i class="icon-svg icon-svg-mobilefooterbareasybuy"></i>
+                        <span>KOLAY AL-SAT</span>
+                    </a>
+                </li>
+                <li class="nav-item col">
+                    <a class="nav-link" href="03_Trader_Home.html">
+                        <i class="icon-svg icon-svg-mobilefooterbartrader"></i>
+                        <span>PRO GÖRÜNÜM</span>
+                    </a>
+                </li>
+                <li class="nav-item col">
+                    <a class="nav-link" href="05_Deposit_Step_1_Home.html">
+                        <i class="icon-svg icon-svg-mobilefooterbardeposit"></i>
+                        <span>PARA YATIRMA</span>
+                    </a>
+                </li>
+                <li class="nav-item col">
+                    <a class="nav-link" href="12_Withdraw_Step_1_Home.html">
+                        <i class="icon-svg icon-svg-mobilefooterbarwithdraw"></i>
+                        <span>PARA ÇEKME</span>
+                    </a>
+                </li>
+                <li class="nav-item col">
+                    <a class="nav-link" href="27_Profile_Profile.html">
+                        <i class="icon-svg icon-svg-mobilefooterbaraccount"></i>
+                        <span>HESABIM</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</footer>
+<div class="footer-mobilebar-spacebottom"></div>
+<!-- Footer Mobile Bottom Bar End -->
 
 <!-- Footer Start -->
 <footer class="footer footer-tradepage">
@@ -822,5 +646,6 @@
 <script id="script-plugin-custom-pagetrade" src="../assets/cdn/plugin-custom-pagetrade.js"></script>
 <!-- Plugins End -->
 
+<div class="modal-backdrop fade show"></div>
 </body>
 </html>

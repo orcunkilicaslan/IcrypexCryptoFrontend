@@ -140,6 +140,86 @@
       }
     }
 
+    &sweet{
+
+      .modal-content{
+        padding: 12px 10px;
+        @include border-radius(3px);
+      }
+
+      .modal-body{
+        position: relative;
+
+        &.success{
+          border-color: $global-clr-green !important;
+
+          button.close::before,
+          button.close::after{
+            background-color: darken($global-clr-green, 15%) !important;
+          }
+        }
+
+        button.close{
+          width: 18px;
+          height: 18px;
+          position: absolute;
+          right: 10px;
+          top: 10px;
+          z-index: 1;
+          text-indent: -9999px;
+
+          &::before,
+          &::after{
+            content:"";
+            position:absolute;
+            background-color: $global-clr-dark-blue;
+            width: 12px;
+            height: 2px;
+            top: calc(50% - 1px);
+            left: calc(50% - 5px);
+          }
+          &::before{
+            @include rotate(45);
+          }
+          &::after{
+            @include rotate(135);
+          }
+        }
+      }
+
+      .contentarea{
+        color: $global-clr-dark-blue;
+        font-size: 17px;
+        line-height: 1.18;
+        padding: 30px;
+        text-align: center;
+
+        .alert-icon{
+          margin: auto;
+          height: 60px;
+          position: relative;
+          top: -30px;
+          @include scale(0.5);
+        }
+
+        .modalcallcenter{
+          margin-top: 15px;
+          color: $global-clr-dark-blue;
+
+          &-title{
+            margin: 0;
+            font-size: 17px;
+            font-weight: normal;
+          }
+          &-number{
+            color: $global-clr-dark-blue;
+            font-size: 17px;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+
     &alerts{
       div[class*="bg-"]{
         h1,h2,h3,h4,h5,h6,p,i{
