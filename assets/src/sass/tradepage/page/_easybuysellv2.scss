@@ -169,6 +169,53 @@ $globalSvgIconImgPath : "../../img/global/svg";
         .form-group{
           margin-bottom: 0 !important;
         }
+
+        .form-group-inputinfotext{
+          font-size: 17px;
+        }
+
+        .infototal{
+          padding-left: 12px;
+          position: relative;
+
+          &::before{
+            content: "";
+            background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4IiBoZWlnaHQ9IjYuMTE2IiB2aWV3Qm94PSIwIDAgOCA2LjExNiI+DQogIDxwYXRoIGlkPSJUaWxkZSIgZD0iTTQuODU2LDUuOTQyYTkuMTUyLDkuMTUyLDAsMCwxLTEtLjUycS0uNDctLjI2Ni0uNzY1LS40YTEuNjI0LDEuNjI0LDAsMCwwLS42NjQtLjEzMiwxLjY1NCwxLjY1NCwwLDAsMC0xLjQ3LjgzN0EuMTc0LjE3NCwwLDAsMSwuNjcsNS44MUwuMTE5LDUuNDgyYS4yMjIuMjIyLDAsMCwxLS4xLS4yODVBMi44NjksMi44NjksMCwwLDEsLjk0Niw0LjA0MywyLjI0OCwyLjI0OCwwLDAsMSwyLjMsMy42YTIuNDQ0LDIuNDQ0LDAsMCwxLC44NjguMTQzLDQuMTI3LDQuMTI3LDAsMCwxLC43ODYuNDA5LDYuODI3LDYuODI3LDAsMCwwLC45MzkuNTEsMi4yMzcsMi4yMzcsMCwwLDAsLjg3OC4xNjMsMS4xMTcsMS4xMTcsMCwwLDAsLjY4NC0uMiwyLjY1OCwyLjY1OCwwLDAsMCwuNTYyLS42MTMuMTkzLjE5MywwLDAsMSwuMjg1LS4wNjFsLjU5Mi4zODhhLjE3LjE3LDAsMCwxLC4wNjIuMjY1QTIuNTQyLDIuNTQyLDAsMCwxLDUuODM3LDYuMTE2LDIuNSwyLjUsMCwwLDEsNC44NTYsNS45NDJabTAtMy42YTkuMTg4LDkuMTg4LDAsMCwxLTEtLjUyMXEtLjQ3LS4yNjQtLjc2NS0uNGExLjYwNywxLjYwNywwLDAsMC0uNjY0LS4xMzMsMS42NTMsMS42NTMsMCwwLDAtMS40Ny44MzguMTczLjE3MywwLDAsMS0uMjg2LjA4MUwuMTE5LDEuODc5YS4yMjIuMjIyLDAsMCwxLS4xLS4yODVBMi44OCwyLjg4LDAsMCwxLC45NDYuNDM5LDIuMjU1LDIuMjU1LDAsMCwxLDIuMywwYTIuNDQ0LDIuNDQ0LDAsMCwxLC44NjguMTQzLDQuMjU1LDQuMjU1LDAsMCwxLC43ODYuNDA5LDYuNzEyLDYuNzEyLDAsMCwwLC45MzkuNTEsMi4yMzcsMi4yMzcsMCwwLDAsLjg3OC4xNjQsMS4xMTcsMS4xMTcsMCwwLDAsLjY4NC0uMkEyLjY1OCwyLjY1OCwwLDAsMCw3LjAyMi40MDkuMTkyLjE5MiwwLDAsMSw3LjMwNy4zNDdMNy45LjczNUEuMTcxLjE3MSwwLDAsMSw3Ljk2MSwxLDIuNTQyLDIuNTQyLDAsMCwxLDUuODM3LDIuNTEyLDIuNSwyLjUsMCwwLDEsNC44NTYsMi4zMzhaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwKSIgZmlsbD0iIzc1OGNhMyIvPg0KPC9zdmc+DQo=");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            width: 8px;
+            height: 8px;
+            position: absolute;
+            left: 0;
+            top: 7px;
+          }
+        }
+
+        i.iconplusgray{
+          width: 18px;
+          height: 18px;
+          position:relative;
+          top: 3px;
+          display: inline-block;
+          background-color: $global-clr-soft-gray;
+          @include border-radius(100%);
+
+          &::before,
+          &::after{
+            content:"";
+            position:absolute;
+            background-color: $global-clr-white;
+            width: 10px;
+            height: 2px;
+            top: calc(50% - 1px);
+            left: calc(50% - 5px);
+            @include rotate(0);
+          }
+          &::after{
+            @include rotate(90);
+          }
+        }
       }
     }
 
@@ -494,7 +541,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
     .summaryformbtn{
       background-color: $global-clr-light-gray;
-      padding: 15px;
+      padding: 20px;
       border: 1px solid darken($global-clr-light-gray, 10%);
       border-top: none;
       @include border-radii(0,0,3px,3px);
