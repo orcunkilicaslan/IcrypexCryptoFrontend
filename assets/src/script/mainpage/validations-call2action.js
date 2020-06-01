@@ -34,7 +34,67 @@ class Call2ActionForm {
 
     constructor(){}
 
-    sendCall2ActionForm(){}
+    sendCall2ActionForm(){
+        let FirstName = document.getElementById("inputC2AFirstNameId").value;
+        let LastName = document.getElementById("inputC2ALastNameId").value;
+        let Phone = document.getElementById("inputC2APhoneId").value;
+        let Email = document.getElementById("inputC2AEmailId").value;
+
+        let emailPattern = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/g;
+
+        let validStatus = false;
+
+        if(!validStatus) {
+
+            if(FirstName.trim().length < 2){
+                this.setCall2ActionFormErrorMessages("msgC2AFirstNameId", Translation.translate('tr','Call2ActionFirstNameNameAlert'));
+                this.setCall2ActionFormErrorIcon("iconC2AFirstNameId","error", "check");
+                //console.log("Error inputFirstNameId");
+                validStatus = true;
+            }
+            if(LastName.trim().length < 2){
+                this.setCall2ActionFormErrorMessages("msgC2ALastNameId", Translation.translate('tr','Call2ActionLastNameNameAlert'));
+                this.setCall2ActionFormErrorIcon("iconC2ALastNameId","error", "check");
+                //console.log("Error inputLastNameId");
+                validStatus = true;
+            }
+            if(Phone.trim().replace(/\s/g, "").length < 11){
+                this.setCall2ActionFormErrorMessages("msgC2APhoneId", Translation.translate('tr','Call2ActionPhoneAlert'));
+                this.setCall2ActionFormErrorIcon("iconC2APhoneId","error", "check");
+                //console.log("Error inputPhoneId");
+                validStatus = true;
+            }
+            if(!emailPattern.test(Email)){
+                this.setCall2ActionFormErrorMessages("msgC2AEmailId", Translation.translate('tr','Call2ActionEmailAlert'));
+                this.setCall2ActionFormErrorIcon("iconC2AEmailId","error", "check");
+                //console.log("Error inputEmailId");
+                validStatus = true;
+            }
+            return true;
+
+        }else{
+            return false;
+
+            document.getElementById('inputC2AFirstNameId').value = "";
+            document.getElementById('inputC2ALastNameId').value = "";
+            document.getElementById('inputC2APhoneId').value = "";
+            document.getElementById('inputC2AEmailId').value = "";
+
+            document.getElementById('msgC2AFirstNameId').innerHTML = " ";
+            document.getElementById('msgC2ALastNameId').innerHTML = " ";
+            document.getElementById('msgC2APhoneId').innerHTML = " ";
+            document.getElementById('msgC2AEmailId').innerHTML = " ";
+
+            document.getElementById('iconC2AFirstNameId').classList.remove("check");
+            document.getElementById('iconC2AFirstNameId').classList.add("error");
+            document.getElementById('iconC2ALastNameId').classList.remove("check");
+            document.getElementById('iconC2ALastNameId').classList.add("error");
+            document.getElementById('iconC2APhoneId').classList.remove("check");
+            document.getElementById('iconC2APhoneId').classList.add("error");
+            document.getElementById('iconC2AEmailId').classList.remove("check");
+            document.getElementById('iconC2AEmailId').classList.add("error");
+        }
+    }
 
     setCall2ActionFormErrorMessages(inputIdSelector, inputErrorMessage, inputAddErrorMessageClass, inputRemoveErrorMessageClass){
         let ErrorMessageText = document.getElementById(inputIdSelector);

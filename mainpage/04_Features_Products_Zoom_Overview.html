@@ -454,7 +454,7 @@
                 <div class="bottomcall2action-formarea">
                     <h4 class="columntitle columntitle-lg bottomborder titleleft">ÜCRETSİZ ÜYE OLUN AVANTAJLARIMIZLA TANIŞIN!</h4>
                     <div class="formuinew formuilabel">
-                        <form action="" autocomplete="off" novalidate>
+                        <form action="" autocomplete="off" onsubmit="return submitC2AValidForm()" method="post" novalidate>
                             <div class="row">
                                 <div class="form-group col">
                                     <div class="labelanimation input-group">
@@ -520,7 +520,7 @@
                                 </div>
                             </div>
                             <div class="form-button">
-                                <button type="submit" class="btn btn-primary btnunderlinescale softblue">ÜYELİK OLUŞTUR</button>
+                                <button type="submit" class="btn btn-primary btnunderlinescale softblue" onclick="call2actionform.sendCall2ActionForm()">ÜYELİK OLUŞTUR</button>
                             </div>
                         </form>
                         <script type="text/javascript">
