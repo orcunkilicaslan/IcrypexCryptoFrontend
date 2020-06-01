@@ -825,7 +825,7 @@
                 <div class="bottomcall2action-formarea">
                     <h4 class="columntitle columntitle-lg bottomborder titleleft">ÜCRETSİZ ÜYE OLUN AVANTAJLARIMIZLA TANIŞIN!</h4>
                     <div class="formuinew formuilabel">
-                        <form action="" autocomplete="off" novalidate>
+                        <form action="" autocomplete="off" onsubmit="return submitC2AValidForm()" method="post" novalidate>
                             <div class="row">
                                 <div class="form-group col">
                                     <div class="labelanimation input-group">
@@ -891,9 +891,98 @@
                                 </div>
                             </div>
                             <div class="form-button">
-                                <button type="button" class="btn btn-primary btnunderlinescale softblue">ÜYELİK OLUŞTUR</button>
+                                <button type="submit" class="btn btn-primary btnunderlinescale softblue" onclick="call2actionform.sendCall2ActionForm()">ÜYELİK OLUŞTUR</button>
                             </div>
                         </form>
+                        <script type="text/javascript">
+
+                            function verifyC2AFirstName() {
+                                if(document.getElementById('inputC2AFirstNameId').value.length < 2){
+                                    document.getElementById('iconC2AFirstNameId').classList.add("error");
+                                    document.getElementById('iconC2AFirstNameId').classList.remove("check");
+                                    document.getElementById('msgC2AFirstNameId').innerText = "EN AZ 2 KARAKTER";
+                                    document.getElementById('msgC2AFirstNameId').classList.add("error");
+                                    document.getElementById('msgC2AFirstNameId').classList.remove("check");
+                                    return false;
+                                } else {
+                                    document.getElementById('inputC2AFirstNameId').classList.add("check");
+                                    document.getElementById('iconC2AFirstNameId').classList.remove("error");
+                                    document.getElementById('msgC2AFirstNameId').innerText = "";
+                                    document.getElementById('msgC2AFirstNameId').classList.add("check");
+                                    document.getElementById('msgC2AFirstNameId').classList.remove("error");
+                                    return true;
+                                }
+                                return true;
+                            }
+
+                            function verifyC2ALastName() {
+                                if(document.getElementById('inputC2ALastNameId').value.length < 2){
+                                    document.getElementById('iconC2ALastNameId').classList.add("error");
+                                    document.getElementById('iconC2ALastNameId').classList.remove("check");
+                                    document.getElementById('msgC2ALastNameId').innerText = "EN AZ 2 KARAKTER";
+                                    document.getElementById('msgC2ALastNameId').classList.add("error");
+                                    document.getElementById('msgC2ALastNameId').classList.remove("check");
+                                    return false;
+                                } else {
+                                    document.getElementById('inputC2ALastNameId').classList.add("check");
+                                    document.getElementById('iconC2ALastNameId').classList.remove("error");
+                                    document.getElementById('msgC2ALastNameId').innerText = "";
+                                    document.getElementById('msgC2ALastNameId').classList.add("check");
+                                    document.getElementById('msgC2ALastNameId').classList.remove("error");
+                                    return true;
+                                }
+                                return true;
+                            }
+
+                            function verifyC2AValidEmail() {
+                                var emailPattern	= /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+
+                                if(!document.getElementById('inputC2AEmailId').value.match(emailPattern)){
+                                    document.getElementById('iconC2AEmailId').classList.add("error");
+                                    document.getElementById('iconC2AEmailId').classList.remove("check");
+                                    document.getElementById('msgC2AEmailId').innerText = "WRONG EMAIL";
+                                    document.getElementById('msgC2AEmailId').classList.add("error");
+                                    document.getElementById('msgC2AEmailId').classList.remove("check");
+                                    return false;
+                                } else {
+                                    document.getElementById('iconC2AEmailId').classList.add("check");
+                                    document.getElementById('iconC2AEmailId').classList.remove("error");
+                                    document.getElementById('msgC2AEmailId').innerText = "";
+                                    document.getElementById('msgC2AEmailId').classList.add("check");
+                                    document.getElementById('msgC2AEmailId').classList.remove("error");
+                                    return true;
+                                }
+                                return true;
+                            }
+
+                            function verifyC2AValidPhone() {
+                                if(document.getElementById('inputC2APhoneId').value.replace(/\s/g, "").length < 11){
+                                    document.getElementById('iconC2APhoneId').classList.add("error");
+                                    document.getElementById('iconC2APhoneId').classList.remove("check");
+                                    document.getElementById('msgC2APhoneId').innerText = "WRONG PHONE";
+                                    document.getElementById('msgC2APhoneId').classList.add("error");
+                                    document.getElementById('msgC2APhoneId').classList.remove("check");
+                                    return false;
+                                } else {
+                                    document.getElementById('iconC2APhoneId').classList.add("check");
+                                    document.getElementById('iconC2APhoneId').classList.remove("error");
+                                    document.getElementById('msgC2APhoneId').innerText = "";
+                                    document.getElementById('msgC2APhoneId').classList.add("check");
+                                    document.getElementById('msgC2APhoneId').classList.remove("error");
+                                    return true;
+                                }
+                                return true;
+                            }
+
+                            function submitC2AValidForm() {
+                                if (!verifyC2AFirstName() || !verifyC2ALastName() ||  !verifyC2AValidPhone() || !verifyC2AValidEmail()){
+                                    console.log("HATA");
+                                    return false;
+                                } else {
+                                    console.log("DOGRU");
+                                }
+                            }
+                        </script>
                     </div>
                 </div>
             </div>
