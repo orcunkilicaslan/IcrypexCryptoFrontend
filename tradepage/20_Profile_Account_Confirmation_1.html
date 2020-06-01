@@ -4,13 +4,9 @@
     <title>Icrypex</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link id="css-bootstrap" rel="stylesheet" href="../assets/dist/css/bootstrap.css">
-    <link id="css-plugin" rel="stylesheet" href="../assets/dist/css/plugin.css">
-    <link id="css-mainpage-app" rel="stylesheet" href="../assets/dist/css/mainpage-app.css">
-    <link id="css-tradepage-app" rel="stylesheet" href="../assets/dist/css/tradepage-app.css">
-    <script id="script-jquery" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script id="script-popper" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script id="script-bootstrap" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link id="css-custom" rel="stylesheet" href="../assets/dist/css/custom.css">
+    <link id="css-client" rel="stylesheet" href="../assets/dist/css/client.css">
+    <script id="script-globalbundle" src="../assets/bundle/global-bundle-app.js"></script>
 </head>
 <body class="dfn-megamenu fullpages tradepage">
 
@@ -537,6 +533,83 @@ ligula orci, blandit vitae mattis et, iaculis vitae elit integer sed nibh semper
 </section>
 <!-- Profile End -->
 
+<script id="script-dropzone" src="../assets/vendor/dropzone/dist/dropzone.js"></script>
+<script type="text/javascript">
+
+    var profileAdresTeyidi = new Dropzone("form#profileAdresTeyidi", {
+        url: "upload",
+        method: "post",
+        createImageThumbnails: true ,
+        maxFiles:1,
+        acceptedFiles : "image/*",
+        autoProcessQueue: false,
+        init: function() {
+            this.on("maxfilesexceeded", function(file) {
+                this.removeAllFiles();
+                this.addFile(file);
+            });
+            this.on("success", function(file, responseText) {
+                $.ajax({
+                    type: "POST",
+                    url: "approvetiertwo",
+                    data: "",
+                    cache: false,
+                    success: function(data){
+                        // console.log(data);
+                        if (data.status == 1) {
+                            // $("#tierthreeform").hide();
+                            // $("#tierfourform").show();
+                            // $(".profile-progress-list").children("li").eq(2).addClass("check");
+                            // $(".profile-progress-list").children("li").eq(3).addClass("active");
+                            location.reload();
+                        }
+                    }
+                });
+            });
+        }
+    });
+
+    profileAdresTeyidi.on("drop", function(){
+        console.log('dropzone file dropped');
+        $("#upload4").text("TEKRAR YÜKLE");
+    });
+
+    profileAdresTeyidi.on("addedfile", function(file) {
+        console.log('dropzone file added ');
+        $("#upload4").text("TEKRAR YÜKLE");
+    });
+
+
+    $("#upload4").click(function (e) {
+        e.preventDefault();
+        profileAdresTeyidi.hiddenFileInput.click();
+    });
+
+    /////////////////////////////////////////////////////// 5 //////////////////////////////////////////////////////////
+
+
+    $("#submitupload").on("click", function() {
+
+        var error = false;
+
+
+
+        if (!profileAdresTeyidi.files || !profileAdresTeyidi.files.length) {
+            error = true;
+        }
+
+        if (!error) {
+
+            profileAdresTeyidi.processQueue();
+
+        }
+        else {
+            alert("Tüm Inputlara Dosya Yüklemeniz Gerekmektedir");
+        }
+
+    });
+</script>
+
 <!-- Footer Mobile Bottom Bar Start -->
 <footer class="footer footer-mobilebar footer-mobilebar-tradepage">
     <div class="container">
@@ -693,12 +766,8 @@ ligula orci, blandit vitae mattis et, iaculis vitae elit integer sed nibh semper
 <!-- Footer End -->
 
 <!-- Plugins Start -->
-<script id="script-owl-carousel" src="../assets/vendor/owl.carousel/dist/owl.carousel.min.js"></script>
-<script id="script-inputmask" src="../assets/vendor/inputmask/dist/min/jquery.inputmask.bundle.min.js"></script>
-<script id="script-dropzone" src="../assets/vendor/dropzone/dist/dropzone.js"></script>
-<script id="script-plugin-app" src="../assets/dist/js/plugin-app.js"></script>
-<script id="script-mainpage-app" src="../assets/dist/js/mainpage-app.js"></script>
-<script id="script-tradepage-app" src="../assets/dist/js/tradepage-app.js"></script>
+<script id="script-plugin-app" src="../assets/dist/js/custom-app.js"></script>
+<script id="script-client-app" src="../assets/dist/js/client-app.js"></script>
 <script id="script-plugin-custom-pagemain" src="../assets/cdn/plugin-custom-pagemain.js"></script>
 <script id="script-plugin-custom-pagetrade" src="../assets/cdn/plugin-custom-pagetrade.js"></script>
 <!-- Plugins End -->

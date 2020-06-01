@@ -401,8 +401,11 @@ gulp.task('custom', gulp.series('sass-custom', 'script-custom'));
 gulp.task('client', gulp.series('sass-client', 'script-client'));
 gulp.task('xtras', gulp.series('sass-xtras'));
 
-gulp.task('build', gulp.series('clear', 'vendor', 'bootstrap', 'plugin', 'mainpage', 'tradepage', 'custom', 'client', 'xtras'));
-gulp.task('devel', gulp.series('bootstrap', 'plugin', 'mainpage', 'tradepage', 'custom', 'client', 'xtras', gulp.parallel('watch')));
+// gulp.task('build', gulp.series('clear', 'vendor', 'bootstrap', 'plugin', 'mainpage', 'tradepage', 'custom', 'client', 'xtras'));
+// gulp.task('devel', gulp.series('bootstrap', 'plugin', 'mainpage', 'tradepage', 'custom', 'client', 'xtras', gulp.parallel('watch')));
+
+gulp.task('build', gulp.series('clear', 'vendor', 'custom', 'client', 'xtras'));
+gulp.task('devel', gulp.series('custom', 'client', 'xtras', gulp.parallel('watch')));
 
 gulp.task('start', gulp.series('build', gulp.parallel('serve', 'watch')));
 gulp.task('default', gulp.series('build', 'devel'));
