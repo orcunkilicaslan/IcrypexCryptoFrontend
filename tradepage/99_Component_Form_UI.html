@@ -4,9 +4,16 @@
     <title>Icrypex</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link id="css-bootstrap-select" rel="stylesheet" href="../assets/vendor/bootstrap-select/dist/css/bootstrap-select.min.css">
     <link id="css-custom" rel="stylesheet" href="../assets/dist/css/custom.css">
     <link id="css-client" rel="stylesheet" href="../assets/dist/css/client.css">
     <script id="script-globalbundle" src="../assets/bundle/global-bundle-app.js"></script>
+    <script id="script-bootstrap-select" src="../assets/vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+    <script>
+        $(function () {
+            $('.selectpickerclass').selectpicker();
+        });
+    </script>
 </head>
 <body class="dfn-megamenu fullpages tradepage">
 
@@ -722,6 +729,33 @@
                             <option value="1">One</option>
                             <option value="2">Two</option>
                             <option value="3">Three</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- Form -->
+        <!-- Form -->
+        <div class="profile-box-content">
+            <div class="profile-profile formuinew" style="max-width: 100%;">
+                <div class="boxcolumn-boxtitle">
+                    <h3 class="boxcolumn-boxtitle-title">Bootstrap Select Menu (https://developer.snapappointments.com/bootstrap-select/examples/)</h3>
+                </div>
+                <form autocomplete="off" novalidate>
+                    <div class="form-group">
+                        <select class="selectpickerclass">
+                            <option selected>Open this select menu</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <select class="selectpickerclass">
+                            <option selected>Open this select menu</option>
+                            <option data-icon="icon-svg icon-svg-titleiconbtc" value="1">BITCOIN</option>
+                            <option data-icon="icon-svg icon-svg-titleiconeth" value="2">ETHERIUM</option>
+                            <option data-icon="icon-svg icon-svg-titleiconxrp" value="3">STELLAR</option>
                         </select>
                     </div>
                 </form>
