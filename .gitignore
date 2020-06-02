@@ -112,6 +112,7 @@ assets/vendor/pwstrength-bootstrap/package.json
 assets/vendor/pwstrength-bootstrap/README.md
 
 assets/vendor/bootstrap-select/docs
+assets/vendor/bootstrap-select/js
 assets/vendor/bootstrap-select/less
 assets/vendor/bootstrap-select/nuget
 assets/vendor/bootstrap-select/sass
