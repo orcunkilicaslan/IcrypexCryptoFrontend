@@ -132,6 +132,12 @@ jQuery(function($) {
 });
 // Header User Dropdown Menu List
 
+/* Bootstrap Select */
+$(function () {
+    $('.selectpickerclass').selectpicker();
+});
+/* Bootstrap Select */
+
 /* Tooltip */
 $(function(){
     $('[data-toggle="tooltip"]').tooltip()
@@ -208,7 +214,6 @@ $(document).ready(function(){
         });
     };
 }(jQuery));
-
 
 // Install Input Filter
 $(".inputfilter-integer").inputFilter(function(value) {

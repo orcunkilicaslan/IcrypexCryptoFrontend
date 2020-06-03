@@ -101,7 +101,7 @@
 
         &:focus{
           color: $global-clr-dark-blue;
-          @include box-shadow(0,0,0,0);
+          @include box-shadow(0 0 0 0);
         }
       }
 
@@ -118,7 +118,7 @@
         &:not(:disabled):not(.disabled):active:focus,
         &:active,
         &:focus{
-          @include box-shadow(0,0,0,0);
+          @include box-shadow(0 0 0 0);
           background-color: transparent;
         }
 
