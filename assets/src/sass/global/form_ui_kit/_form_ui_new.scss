@@ -569,8 +569,6 @@
 
     &.inputradius03{
       > *{
-        overflow: hidden;
-
         &:first-child{
           @include border-radii(3px,0,0,3px);
         }
