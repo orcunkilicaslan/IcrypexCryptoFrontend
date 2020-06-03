@@ -325,8 +325,8 @@
 
                 <!-- Tabs -->
                 <ul class="easybuyselltabs selltabs nav nav-tabs" role="tablist">
-                    <li class="nav-item"><a href="#" class="nav-link linkbuy"><span>KOLAY AL</span></a></li>
-                    <li class="nav-item"><a href="#" class="nav-link linksell active"><span>KOLAY SAT</span></a></li>
+                    <li class="nav-item"><a href="04_Easy_Buy_Main.html" class="nav-link linkbuy"><span>KOLAY AL</span></a></li>
+                    <li class="nav-item"><a href="04_Easy_Sell_Main.html" class="nav-link linksell active"><span>KOLAY SAT</span></a></li>
                 </ul>
                 <!-- Tabs -->
 
@@ -336,9 +336,10 @@
                         <div class="form-row">
                             <div class="form-group fontsize20px colorsetdarkblue col">
                                 <label>NE SATMAK İSTİYORSUNUZ?</label>
-                                <select class="form-control custom-select">
-                                    <option value="01">BITCOIN [BTC]</option>
-                                    <option value="02">ETHERIUM [ETH]</option>
+                                <select class="selectpickerclass input-lg inputradius03">
+                                    <option data-icon="icon-svg icon-svg-titleiconbtc" value="1">BITCOIN [BTC]</option>
+                                    <option data-icon="icon-svg icon-svg-titleiconeth" value="2">ETHERIUM [ETH]</option>
+                                    <option data-icon="icon-svg icon-svg-titleiconxrp" value="3">STELLAR [XRP]</option>
                                 </select>
                                 <div class="form-group-inputinfotext">
                                     <span>Fiyat</span>
@@ -347,14 +348,10 @@
                             </div>
                             <div class="form-group fontsize20px colorsetdarkblue col">
                                 <label>KAÇ BITCOIN SATMAK İSTİYORSUNUZ?</label>
-                                <div class="input-group">
-                                    <input type="text" class="form-control" placeholder="" value="1.41811575">
-                                    <div class="input-group-append selectbox">
-                                        <select class="form-control custom-select sitecolorbluedark">
-                                            <option selected>BTC</option>
-                                            <option value="1">ETH</option>
-                                            <option value="2">LTC</option>
-                                        </select>
+                                <div class="input-group input-group-lg inputradius03">
+                                    <input type="text" class="form-control input-lg inputfilter-cyrpto" placeholder="" value="1.41811575">
+                                    <div class="input-group-append">
+                                        <span class="input-group-text">BTC</span>
                                     </div>
                                 </div>
                                 <div class="form-group-inputinfotext">
@@ -362,12 +359,14 @@
                                     <strong>1.418051211575 BTC</strong>
                                 </div>
                             </div>
-                            <div class="form-group fontsize20px colorsetdarkblue col-auto maxwidth150">
+                            <div class="col-auto formiconconvert">
+                                <div class="iconconvert"><i class="iconconvert"></i></div>
+                            </div>
+                            <div class="form-group fontsize20px colorsetdarkblue col-auto formselectconvert maxwidth150">
                                 <label>&nbsp;</label>
-                                <select class="form-control custom-select">
-                                    <option value="01">TRY</option>
-                                    <option value="02">USD</option>
-                                    <option value="03">EUR</option>
+                                <select class="selectpickerclass input-lg inputradius03">
+                                    <option data-icon="icon-svg icon-svg-formselecticontry" value="1">TRY</option>
+                                    <option data-icon="icon-svg icon-svg-formselecticonusd" value="2">USD</option>
                                 </select>
                                 <div class="form-group-inputinfotext">
                                     <strong class="infototal">999,999.99 TRY</strong>
@@ -377,7 +376,7 @@
                     </form>
                 </div>
                 <div class="summaryformbtn sitebgwhite">
-                    <a href="#" class="btn btn btn-danger">1.41811575125646 BTC SAT</a>
+                    <a href="04_Easy_Buy_Sell_Success.html" class="btn btn btn-danger">1.41811575125646 BTC SAT</a>
                 </div>
                 <!-- Form -->
 

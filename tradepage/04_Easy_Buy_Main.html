@@ -325,8 +325,8 @@
 
         <!-- Tabs -->
         <ul class="easybuyselltabs buytabs nav nav-tabs" role="tablist">
-            <li class="nav-item"><a href="#" class="nav-link linkbuy active"><span>KOLAY AL</span></a></li>
-            <li class="nav-item"><a href="#" class="nav-link linksell"><span>KOLAY SAT</span></a></li>
+            <li class="nav-item"><a href="04_Easy_Buy_Main.html" class="nav-link linkbuy active"><span>KOLAY AL</span></a></li>
+            <li class="nav-item"><a href="04_Easy_Sell_Main.html" class="nav-link linksell"><span>KOLAY SAT</span></a></li>
         </ul>
         <!-- Tabs -->
 
@@ -336,9 +336,10 @@
                 <div class="form-row">
                     <div class="form-group fontsize20px colorsetdarkblue col">
                         <label>NE ALMAK İSTİYORSUNUZ?</label>
-                        <select class="form-control custom-select">
-                            <option value="01">BITCOIN [BTC]</option>
-                            <option value="02">ETHERIUM [ETH]</option>
+                        <select class="selectpickerclass input-lg inputradius03">
+                            <option data-icon="icon-svg icon-svg-titleiconbtc" value="1">BITCOIN [BTC]</option>
+                            <option data-icon="icon-svg icon-svg-titleiconeth" value="2">ETHERIUM [ETH]</option>
+                            <option data-icon="icon-svg icon-svg-titleiconxrp" value="3">STELLAR [XRP]</option>
                         </select>
                         <div class="form-group-inputinfotext">
                             <span>Fiyat</span>
@@ -347,13 +348,12 @@
                     </div>
                     <div class="form-group fontsize20px colorsetdarkblue col">
                         <label>NE KADARLIK ALMAK İSTİYORSUNUZ?</label>
-                        <div class="input-group">
-                            <input type="text" class="form-control" placeholder="" value="22,430.000">
-                            <div class="input-group-append selectbox">
-                                <select class="form-control custom-select sitecolorbluedark">
-                                    <option selected>TRY</option>
-                                    <option value="1">USD</option>
-                                    <option value="2">EUR</option>
+                        <div class="input-group input-group-lg inputradius03">
+                            <input type="text" class="form-control inputfilter-currency" placeholder="" value="22430.00">
+                            <div class="input-group-append halfborderleft">
+                                <select class="selectpickerclass input-lg inputradius03">
+                                    <option data-icon="icon-svg icon-svg-formselecticontry" value="1">TRY</option>
+                                    <option data-icon="icon-svg icon-svg-formselecticonusd" value="2">USD</option>
                                 </select>
                             </div>
                         </div>
@@ -381,7 +381,7 @@
                         </div>
                         <div class="paymentmethod">
                             <div class="paymentmethod-text">
-                                <i class="iconselectpayment iconselectpayment-try"></i> Türk Lirası
+                                <i class="icon-svg icon-svg-formselecticontry iconselectpayment"></i> Türk Lirası
                             </div>
                             <div class="paymentmethod-info">
                                 Kullanılabilir: <strong>999,999,99 TRY</strong>
@@ -389,7 +389,7 @@
                         </div>
                     </div>
                     <div class="paymentbutton">
-                        <a href="" class="btn btn btn-success">1.43825375 BTC AL</a>
+                        <a href="04_Easy_Buy_Simplex.html" class="btn btn btn-success">1.43825375 BTC AL</a>
                     </div>
                 </li>
                 <li class="easybuysellpayment-list-item">
@@ -400,7 +400,7 @@
                         </div>
                         <div class="paymentmethod">
                             <div class="paymentmethod-text">
-                                <i class="iconselectpayment iconselectpayment-simplex"></i> Simplex
+                                <i class="icon-svg icon-svg-formselecticonsimplex iconselectpayment"></i> Simplex
                             </div>
                             <div class="paymentmethod-info">
                                 <i class="iconinfopayment iconinfopayment-visa"></i>
@@ -409,7 +409,7 @@
                         </div>
                     </div>
                     <div class="paymentbutton">
-                        <a href="" class="btn btn btn-success">1.43825375 BTC AL</a>
+                        <a href="04_Easy_Buy_Simplex.html" class="btn btn btn-success">1.43825375 BTC AL</a>
                     </div>
                 </li>
                 <li class="easybuysellpayment-list-item">
@@ -420,7 +420,7 @@
                         </div>
                         <div class="paymentmethod">
                             <div class="paymentmethod-text">
-                                <i class="iconselectpayment iconselectpayment-koinal"></i> Koinal
+                                <i class="icon-svg icon-svg-formselecticonkoinal iconselectpayment"></i>  Koinal
                             </div>
                             <div class="paymentmethod-info">
                                 <i class="iconinfopayment iconinfopayment-visa"></i>
@@ -430,7 +430,7 @@
                         </div>
                     </div>
                     <div class="paymentbutton">
-                        <a href="" class="btn btn btn-success">1.43825375 BTC AL</a>
+                        <a href="04_Easy_Buy_Simplex.html" class="btn btn btn-success">1.43825375 BTC AL</a>
                     </div>
                 </li>
             </ul>
