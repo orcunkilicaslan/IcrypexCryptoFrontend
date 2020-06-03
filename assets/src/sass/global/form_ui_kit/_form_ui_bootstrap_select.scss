@@ -1,21 +1,46 @@
+// Bootstrap Select
+@import "../../global/option/variables";
+@import '../../../../../node_modules/bootstrap-select/sass/variables';
+@import '../../../../../node_modules/bootstrap-select/sass/bootstrap-select';
+
+
+/* Variables */
+$color-red-error:               $global-clr-red !global;
+$color-green-success:           $global-clr-green;
+$color-grey-arrow:              rgba(204, 204, 204, 0.2) !global;
+$width-default:                 100% !global; // 3 960px-grid columns
+$zindex-select-dropdown:        1060 !global; // must be higher than a modal background (1050)
+$input-color-placeholder:       #999 !global;
+$input-alt-color-placeholder:   rgba(255, 255, 255, 0.5) !global;
+$input-padding-y-sm:            .25rem !global;
+$input-padding-x-sm:            .5rem !global;
+$input-padding-y-lg:            0.5rem !global;
+$input-padding-x-lg:            1rem !global;
+/* Variables */
+
+
 /* Form UI Bootstrap Select */
 .bootstrap-select{
+  width: 100%;
 
   &:not([class*=col-]):not([class*=form-control]):not(.input-group-btn){
     width: 100%;
   }
 
   .btn{
-    color: $global-clr-dark-blue !important;
-    background-color: $global-clr-white !important;
     background-clip: inherit !important;
     font-size: 17px;
     font-weight: 500;
     height: 40px;
     padding-left: 10px !important;
     border-color: transparentize($global-clr-soft-gray, 0.7) !important;
-    @include box-shadow(0,0,0,transparent);
+    @include box-shadow(0 0 0 transparent);
     @include border-radius(0);
+
+    &-light{
+      color: $global-clr-dark-blue !important;
+      background-color: $global-clr-white !important;
+    }
 
     .filter-option-inner-inner{
       display: flex;
@@ -32,7 +57,6 @@
   }
 
   .dropdown-toggle{
-
     &:focus,
     select.mobile-device:focus + .dropdown-toggle{
       outline: none !important;
@@ -50,7 +74,17 @@
     }
   }
 
+  div.dropdown-menu{
+    border: none !important;
+    margin: 0;
+    padding: 0;
+    @include border-radius(0);
+    top: -1px !important;
+  }
+
   ul.dropdown-menu{
+    border: 1px solid transparentize($global-clr-soft-gray, 0.7) !important;
+
     a.dropdown-item{
       display: flex;
       align-items: center;
