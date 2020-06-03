@@ -522,6 +522,22 @@
         }
       }
 
+      &.halfborderleft{
+        position: relative;
+
+        &::before{
+          content: "";
+          width: 1px;
+          height: 60%;
+          background-color: transparentize($global-clr-soft-gray, 0.70);
+          position: absolute;
+          left: 0;
+          top: 50%;
+          z-index: 3;
+          @include translateY(-50%);
+        }
+      }
+
       select.form-control{
         border: none;
         height: 38px;
@@ -539,6 +555,29 @@
       background-color: $global-clr-white;
       border: none;
       @include border-radius(0);
+    }
+
+    &-lg{
+      .form-control{
+        height: 50px;
+      }
+
+      .input-group-append select.form-control{
+        height: 48px;
+      }
+    }
+
+    &.inputradius03{
+      > *{
+        overflow: hidden;
+
+        &:first-child{
+          @include border-radii(3px,0,0,3px);
+        }
+        &:last-child{
+          @include border-radii(0,4px,4px,0);
+        }
+      }
     }
   }
 

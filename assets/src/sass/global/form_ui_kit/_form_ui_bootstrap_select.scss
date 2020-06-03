@@ -45,14 +45,14 @@ $input-padding-x-lg:            1rem !global;
     .filter-option-inner-inner{
       display: flex;
       align-items: center;
+    }
 
-      .icon-svg{
-        display: block;
-        width: 20px;
-        height: 20px;
-        position: relative;
-        top: 1px;
-      }
+    .icon-svg{
+      display: block;
+      width: 20px;
+      height: 20px;
+      position: relative;
+      top: 1px;
     }
   }
 
@@ -88,9 +88,10 @@ $input-padding-x-lg:            1rem !global;
     a.dropdown-item{
       display: flex;
       align-items: center;
-      padding: 5px 10px;
       color: $global-clr-dark-blue !important;
       font-size: 17px !important;
+      font-weight: 500;
+      padding: 5px 10px;
 
       &.active, &:active{
         background-color: $global-clr-light-gray !important;
@@ -104,5 +105,77 @@ $input-padding-x-lg:            1rem !global;
     }
   }
 
+  // Radius
+  &.inputradius03{
+    .btn{
+      @include border-radius(3px);
+    }
+  }
+
+  // Sizes
+  &.input-lg{
+
+    .btn{
+      height: 50px !important;
+      padding-top: 8px !important;
+      padding-bottom: 8px !important;
+
+      .icon-svg{
+        width: 28px;
+        height: 28px;
+      }
+    }
+
+    .dropdown-toggle{
+      &::after{
+        width: 15px;
+      }
+    }
+
+    ul.dropdown-menu{
+      a.dropdown-item{
+        .icon-svg{
+          width: 28px;
+          height: 28px;
+        }
+      }
+    }
+  }
+}
+
+.formuinew{
+  .fontsize20px{
+    .bootstrap-select{
+      ul.dropdown-menu{
+        a.dropdown-item{
+          font-size: 20px !important;
+        }
+      }
+    }
+  }
+
+
+
+  .input-group{
+    .input-group-append{
+      .bootstrap-select{
+        .btn{
+          height: 38px !important;
+          border: none !important;
+        }
+
+        &.input-lg{
+          .btn{
+            height: 48px !important;
+          }
+        }
+
+        div.dropdown-menu{
+          top: 0 !important;
+          right: -1px !important;
+        }
+      }
+    }
+  }
 }
 /* Form UI Bootstrap Select */

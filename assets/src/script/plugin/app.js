@@ -225,8 +225,11 @@ $(".inputfilter-limitinteger").inputFilter(function(value) {
 $(".inputfilter-floatinteger").inputFilter(function(value) {
     return /^-?\d*[.,]?\d*$/.test(value);
 });
+$(".inputfilter-cyrpto").inputFilter(function(value) {
+    return /^-?\d*[.]?\d*$/.test(value);
+});
 $(".inputfilter-currency").inputFilter(function(value) {
-    return /^-?\d*[.,]?\d{0,2}$/.test(value);
+    return /^-?\d*[.]?\d{0,2}$/.test(value);
 });
 $(".inputfilter-latinonly").inputFilter(function(value) {
     return /^[a-z]*$/i.test(value);
