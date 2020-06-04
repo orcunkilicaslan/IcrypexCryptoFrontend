@@ -531,7 +531,7 @@
           height: 60%;
           background-color: transparentize($global-clr-soft-gray, 0.70);
           position: absolute;
-          left: 0;
+          left: -1px;
           top: 50%;
           z-index: 3;
           @include translateY(-50%);
@@ -575,6 +575,10 @@
         &:last-child{
           @include border-radii(0,4px,4px,0);
         }
+      }
+
+      .input-group-text{
+        @include border-radius(3px);
       }
     }
   }

@@ -276,16 +276,16 @@ $globalSvgIconImgPath : "../../img/global/svg";
             padding: 15px;
 
             .boxcolumn-boxtitle{
-              padding-bottom: 3px;
+              padding-bottom: 7px;
               margin-bottom: 10px;
 
               > i{
                 cursor: pointer;
-                width: 18px;
-                height: 18px;
+                width: 19px;
+                height: 19px;
                 margin: 0;
                 padding: 0;
-                background-size: 18px;
+                background-size: 19px;
               }
             }
           }
@@ -341,7 +341,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
             width: auto;
             max-width: 100%;
             background-color: $global-clr-light-gray;
-            padding: 28px;
+            padding: 30px;
 
             .btn{
               width: 220px;
