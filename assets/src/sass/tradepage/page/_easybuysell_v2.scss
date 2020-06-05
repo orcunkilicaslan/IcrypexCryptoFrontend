@@ -5,6 +5,13 @@ $globalSvgIconImgPath : "../../img/global/svg";
   &-order{
     background-color: $global-clr-white;
     padding: 40px 0;
+
+    @include ReSassWidthResponsive(768){
+      padding: 20px 0;
+    }
+    @include ReSassWidthResponsive(576){
+      padding: 15px 0 20px;
+    }
   }
 
   &-wrapper{
@@ -57,6 +64,10 @@ $globalSvgIconImgPath : "../../img/global/svg";
           font-weight: 500;
           overflow: hidden;
           background-color: $global-clr-soft-gray;
+
+          @include ReSassWidthResponsive(480){
+            width: 50%;
+          }
 
           &:first-child{
             border-top-left-radius: 4px;
@@ -159,6 +170,10 @@ $globalSvgIconImgPath : "../../img/global/svg";
       border-left: 1px solid darken($global-clr-light-gray, 10%);
       border-right: 1px solid darken($global-clr-light-gray, 10%);
 
+      @include ReSassWidthResponsive(480){
+        padding: 15px;
+      }
+
       .formuinew{
         flex-direction: column;
 
@@ -166,13 +181,27 @@ $globalSvgIconImgPath : "../../img/global/svg";
           font-weight: 500;
         }
 
+        > .form-row{
+          @include ReSassWidthResponsive(768){
+            flex-direction: column;
+          }
+        }
+
         .form-group{
-          margin-bottom: 0 !important;
+          margin-bottom: 20px;
+
+          @include ReSassMinWidthResponsive(768){
+            margin-bottom: 0 !important;
+          }
         }
 
         .form-group-inputinfotext{
           font-size: 17px;
           margin-top: 2px;
+
+          @include ReSassWidthResponsive(480){
+            font-size: 15px;
+          }
         }
 
         .infototal{
@@ -218,11 +247,30 @@ $globalSvgIconImgPath : "../../img/global/svg";
           }
         }
 
+        .sellcyrptoinputgroup{
+          @include ReSassMinWidthResponsive(992){
+            width: 60%;
+          }
+        }
+
+        .formselectconvert{
+          @include ReSassWidthResponsive(1400){
+            width: 130px;
+          }
+          @include ReSassWidthResponsive(768){
+            width: 110px;
+          }
+        }
+
         .formiconconvert{
+
+          @include ReSassWidthResponsive(480){
+            padding: 0;
+          }
 
           div.iconconvert{
             display: flex;
-            height: 100%;
+            height: 50px;
           }
 
           i.iconconvert{
@@ -234,6 +282,11 @@ $globalSvgIconImgPath : "../../img/global/svg";
             background-position: center;
             display: block;
             margin: auto;
+
+            @include ReSassWidthResponsive(480){
+              width: 14px;
+              height: 14px;
+            }
           }
         }
       }
@@ -263,6 +316,10 @@ $globalSvgIconImgPath : "../../img/global/svg";
           overflow: hidden;
           border: 1px solid transparentize($global-clr-soft-gray, 0.7);
           @include border-radius(3px);
+
+          @include ReSassWidthResponsive(768){
+            display: block !important;
+          }
 
           &:first-child{
             margin-top: 0;
@@ -298,6 +355,10 @@ $globalSvgIconImgPath : "../../img/global/svg";
             justify-content: space-between;
             align-items: center;
 
+            @include ReSassWidthResponsive(400){
+              display: block !important;
+            }
+
             &-text{
               display: flex;
               flex-direction: row;
@@ -305,13 +366,23 @@ $globalSvgIconImgPath : "../../img/global/svg";
               font-weight: 500;
             }
 
-            &-info{}
+            &-info{
+              @include ReSassWidthResponsive(400){
+                margin-top: 10px;
+              }
+            }
 
             .iconselectpayment{
               width: 35px;
               height: 35px;
               display: inline-block;
               margin-right: 8px;
+
+              @include ReSassWidthResponsive(400){
+                width: 28px;
+                height: 28px;
+                margin-right: 5px;
+              }
             }
 
             .iconinfopayment{
@@ -320,6 +391,10 @@ $globalSvgIconImgPath : "../../img/global/svg";
               background-position: center;
               background-repeat: no-repeat;
               background-size: contain;
+
+              @include ReSassWidthResponsive(400){
+                height: 20px;
+              }
 
               &-visa{
                 width: 54px;
@@ -343,9 +418,17 @@ $globalSvgIconImgPath : "../../img/global/svg";
             background-color: $global-clr-light-gray;
             padding: 30px;
 
+            @include ReSassWidthResponsive(768){
+              padding: 15px;
+            }
+
             .btn{
               width: 220px;
               font-size: 20px;
+
+              @include ReSassWidthResponsive(768){
+                width: 100%;
+              }
             }
           }
         }
@@ -495,6 +578,10 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
       &-row{
 
+        @include ReSassWidthResponsive(768){
+          display: block !important;
+        }
+
         .paymentsummaryinfo{
           border: 1px solid transparentize($global-clr-soft-gray, 0.7);
           @include border-radius(3px);
@@ -533,6 +620,11 @@ $globalSvgIconImgPath : "../../img/global/svg";
         }
 
         .paymentsummaryterm{
+
+          @include ReSassWidthResponsive(768){
+            margin-top: 15px;
+          }
+
           p, label{
             color: $global-clr-dark-blue;
             font-size: 17px;
@@ -558,6 +650,10 @@ $globalSvgIconImgPath : "../../img/global/svg";
         font-size: 20px;
         display: block;
         margin: auto;
+
+        @include ReSassWidthResponsive(768){
+          width: 100%;
+        }
       }
     }
 

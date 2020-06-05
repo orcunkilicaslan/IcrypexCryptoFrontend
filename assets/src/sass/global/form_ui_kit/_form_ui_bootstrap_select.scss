@@ -48,9 +48,14 @@ $input-padding-x-lg:            1rem !global;
       }
     }
 
+    .filter-option-inner{
+      height: 100%;
+    }
+
     .filter-option-inner-inner{
       display: flex;
       align-items: center;
+      height: 100%;
     }
 
     .icon-svg{
@@ -129,6 +134,11 @@ $input-padding-x-lg:            1rem !global;
       .icon-svg{
         width: 28px;
         height: 28px;
+
+        @include ReSassWidthResponsive(576){
+          width: 26px;
+          height: 26px;
+        }
       }
     }
 
@@ -143,6 +153,11 @@ $input-padding-x-lg:            1rem !global;
         .icon-svg{
           width: 28px;
           height: 28px;
+
+          @include ReSassWidthResponsive(480){
+            width: 26px;
+            height: 26px;
+          }
         }
       }
     }
@@ -152,9 +167,20 @@ $input-padding-x-lg:            1rem !global;
 .formuinew{
   .fontsize20px{
     .bootstrap-select{
+
+      .btn{
+        @include ReSassWidthResponsive(576){
+          font-size: 17px !important;
+        }
+      }
+
       ul.dropdown-menu{
         a.dropdown-item{
           font-size: 20px !important;
+
+          @include ReSassWidthResponsive(576){
+            font-size: 17px !important;
+          }
         }
       }
     }

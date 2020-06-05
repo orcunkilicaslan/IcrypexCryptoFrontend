@@ -145,6 +145,10 @@
       .modal-content{
         padding: 12px 10px;
         @include border-radius(3px);
+
+        @include ReSassWidthResponsive(480){
+          margin: 10px;
+        }
       }
 
       .modal-body{
