@@ -76,6 +76,11 @@
 			@content;
 		}
 	}
+	@if $point==1600 {
+		@media ( max-width: 1599px ) {
+			@content;
+		}
+	}
 
 }
 
