@@ -68,7 +68,9 @@
 
       br{
         &:first-child,
-        &:last-child{display: none;}
+        &:last-child{
+          //display: none;
+        }
       }
     }
     p{
