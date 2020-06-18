@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="229.068" height="229.068" viewBox="0 0 229.068 229.068">
+  <g id="Group_1" data-name="Group 1" transform="translate(-261.427 -161.643)">
+    <circle id="Circle" cx="70" cy="70" r="70" transform="translate(305.961 206.178)" fill="#e1e6eb"/>
+    <g id="Fill" transform="matrix(0.719, -0.695, 0.695, 0.719, 269.911, 274.326)" fill="none" stroke="#0080be" stroke-linecap="square" stroke-width="6" stroke-dasharray="53 1000">
+      <circle cx="75" cy="75" r="75" stroke="none"/>
+      <circle cx="75" cy="75" r="78" fill="none"/>
+    </g>
+    <g id="Fill-2" data-name="Fill" transform="translate(326.166 369.828) rotate(-107)" fill="none" stroke="#85bb65" stroke-linecap="square" stroke-width="6" stroke-dasharray="78 1000">
+      <circle cx="75" cy="75" r="75" stroke="none"/>
+      <circle cx="75" cy="75" r="78" fill="none"/>
+    </g>
+    <g id="Fill-3" data-name="Fill" transform="matrix(-0.883, 0.469, -0.469, -0.883, 477.394, 307.189)" fill="none" stroke="#e30a17" stroke-linecap="square" stroke-width="6" stroke-dasharray="127 1000">
+      <circle cx="75" cy="75" r="75" stroke="none"/>
+      <circle cx="75" cy="75" r="78" fill="none"/>
+    </g>
+    <g id="Fill-4" data-name="Fill" transform="translate(300.961 201.178)" fill="none" stroke="#f7931a" stroke-linecap="square" stroke-width="6" stroke-dasharray="194 1000">
+      <circle cx="75" cy="75" r="75" stroke="none"/>
+      <circle cx="75" cy="75" r="78" fill="none"/>
+    </g>
+  </g>
+</svg>

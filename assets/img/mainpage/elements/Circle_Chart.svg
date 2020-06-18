@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="37.5" height="37.5" viewBox="0 0 37.5 37.5">
+  <g id="Try_Icon" transform="translate(3.75 3.75)">
+    <circle id="Circle" cx="15" cy="15" r="15" fill="#e1e6eb"/>
+    <g id="Percent">
+      <circle id="Percent_Track" cx="18" cy="18" r="18" transform="translate(-3 -3)" fill="none" stroke="#ced4da" stroke-width="1.5"/>
+      <circle id="Percent_Fill" cx="18" cy="18" r="18" stroke-dasharray="67 1000" transform="translate(-3 -3)" stroke="#e30a17" stroke-linecap="round" stroke-width="1.5" fill="none"/>
+    </g>
+  </g>
+</svg>
