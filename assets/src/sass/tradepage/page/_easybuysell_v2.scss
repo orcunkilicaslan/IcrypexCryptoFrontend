@@ -12,6 +12,39 @@ $globalSvgIconImgPath : "../../img/global/svg";
     @include ReSassWidthResponsive(576){
       padding: 15px 0 20px;
     }
+
+    &.simplexpage{
+
+      .sidebar-assetdata{
+        margin-top: 0;
+      }
+
+      .easybuysellv2-wrapper{
+        margin-top: 30px;
+
+        @include ReSassWidthResponsive(992){
+          margin-top: 0;
+        }
+
+
+        .easybuysellform{
+          //border-top: 1px solid darken($global-clr-light-gray, 10%);
+          padding-top: 20px;
+          position: relative;
+
+          &::before{
+            content: "";
+            background-color: $global-clr-soft-blue;
+            width: calc(100% + 2px);
+            height: 4px;
+            position: absolute;
+            left: -1px;
+            top: 0;
+          }
+        }
+      }
+
+    }
   }
 
   &-wrapper{
@@ -425,6 +458,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
             .btn{
               width: 220px;
               font-size: 20px;
+              padding-top: 3px;
 
               @include ReSassWidthResponsive(768){
                 width: 100%;
@@ -650,6 +684,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
         font-size: 20px;
         display: block;
         margin: auto;
+        padding-top: 3px;
 
         @include ReSassWidthResponsive(768){
           width: 100%;

@@ -2,7 +2,7 @@
 .profile{
 
   &-profile{
-    max-width: 500px;
+    max-width: 600px;
 
     @include ReSassWidthResponsive(992){
       max-width: none;

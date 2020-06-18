@@ -170,7 +170,7 @@
       flex: 0 0 calc(100% / 5);
       max-width: calc(100% / 5);
 
-      @include ReSassWidthResponsive(1200){
+      @include ReSassWidthResponsive(1400){
         flex: 0 0 calc(100% / 4);
         max-width: calc(100% / 4);
       }

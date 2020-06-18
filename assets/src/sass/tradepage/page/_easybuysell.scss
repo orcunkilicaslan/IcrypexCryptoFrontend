@@ -40,7 +40,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
   &-wrapper{
 
-    @include ReSassWidthResponsive(1200){
+    @include ReSassWidthResponsive(1400){
       flex: 0 0 80%;
       max-width: 80%;
     }

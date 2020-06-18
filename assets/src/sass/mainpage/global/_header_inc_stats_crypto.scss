@@ -32,12 +32,10 @@ $globalSvgIconImgPath : "../../img/global/svg";
         color: $global-clr-white;
 
         > .maincont-left{
-          flex: 0 0 18%;
-          max-width: 18%;
 
-          @include ReSassWidthResponsive(1200){
-            flex: 0 0 18%;
-            max-width: 18%;
+          @include ReSassWidthResponsive(1400){
+            flex: 0 0 20%;
+            max-width: 20%;
           }
           @include ReSassWidthResponsive(992){
             flex: 0 0 20%;
@@ -54,12 +52,10 @@ $globalSvgIconImgPath : "../../img/global/svg";
         }
 
         > .maincont-right{
-          flex: 0 0 82%;
-          max-width: 82%;
 
-          @include ReSassWidthResponsive(1200){
-            flex: 0 0 82%;
-            max-width: 82%;
+          @include ReSassWidthResponsive(1400){
+            flex: 0 0 80%;
+            max-width: 80%;
           }
           @include ReSassWidthResponsive(992){
             flex: 0 0 80%;
@@ -238,7 +234,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
               @include ReSassMinWidthResponsive(1200){
                 width: 100% !important;
                 display: flex;
-                justify-content: flex-end;
+                justify-content: space-between;
               }
               @include ReSassWidthResponsive(480){
                 overflow: unset;
@@ -266,8 +262,8 @@ $globalSvgIconImgPath : "../../img/global/svg";
               padding-left: 17px;
 
               @include ReSassWidthResponsive(1400){
-                padding-right: 15px;
-                padding-left: 15px;
+                padding-right: 8px;
+                padding-left: 8px;
               }
               @include ReSassWidthResponsive(1200){
                 padding-right: 2px;
@@ -287,6 +283,12 @@ $globalSvgIconImgPath : "../../img/global/svg";
                 right: 0;
                 background-color: transparentize($global-clr-soft-gray, 0.7);
 
+                @include ReSassMinWidthResponsive(1600){
+                  right: -10px;
+                }
+                @include ReSassMinWidthResponsive(1400){
+                  right: -5px;
+                }
                 @include ReSassWidthResponsive(480){
                   display: none !important;
                 }
