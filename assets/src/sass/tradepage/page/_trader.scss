@@ -35,14 +35,16 @@ $tradepageHomepageImgPath : "../../img/tradepage";
         padding-left: 0 !important;
         padding-right: 0 !important;
         margin-top: 8px;
+        margin-bottom: 0;
 
         div[class*="sidebar-"] {
           flex: 0 0 100%;
           max-width: 100%;
-          height: 52px;
+          height: 90px;
           display: flex;
           justify-content: space-between;
           align-content: center;
+          flex-direction: column;
           overflow: hidden;
           //border:1px solid transparentize($global-clr-soft-gray, 0.7) !important;
           background-color: $global-clr-light-gray;
