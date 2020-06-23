@@ -6,6 +6,16 @@ $globalSvgIconImgPath : "../../img/global/svg";
     background-color: $global-clr-white;
     padding: 70px 0;
 
+    @include ReSassWidthResponsive(1400){
+      padding: 40px 0;
+    }
+    @include ReSassWidthResponsive(768){
+      padding: 20px 0;
+    }
+    @include ReSassWidthResponsive(576){
+      padding: 15px 0 20px;
+    }
+
     > .container{
       max-width: 900px;
     }
@@ -25,15 +35,19 @@ $globalSvgIconImgPath : "../../img/global/svg";
         align-items: center;
         justify-content: space-between;
 
+        @include ReSassWidthResponsive(768){
+          margin-bottom: 6px;
+        }
+
         > *{
           margin: 0 !important;
           padding: 0 !important;
         }
       }
 
-      > .form-row{
+      div[class*="row"]{
         @include ReSassWidthResponsive(768){
-          flex-direction: column;
+          display: block !important;
         }
       }
 
@@ -43,6 +57,39 @@ $globalSvgIconImgPath : "../../img/global/svg";
         @include ReSassMinWidthResponsive(768){
           margin-bottom: 0 !important;
         }
+      }
+
+      .form-group.fontsize20px div.form-control{
+        padding-top: 9px;
+        padding-bottom: 9px;
+      }
+
+      .autoreadonly{
+        &.disabled,
+        &:disabled,
+        &[readonly] {
+          color: $global-clr-dark-blue !important;
+          background-color: $global-clr-white !important;
+          border-color: #ced4da !important;
+        }
+      }
+
+      .autoreadonlyload{
+        position: absolute;
+        display: block;
+        right: 110px;
+        width: 24px;
+        height: 24px;
+        opacity: 0;
+        top: 50%;
+        @include transform-multiple(translateY(-50%) scale(0));
+        @include transition-multiple(opacity 0.1s ease-in-out, transform 0.1s ease-in-out);
+      }
+
+      .autoreadonly[readonly] + .autoreadonlyload{
+        opacity: 1;
+        @include transform-multiple(translateY(-50%) scale(1));
+        z-index: 3;
       }
 
       .form-group-inputinfotext{
@@ -76,12 +123,26 @@ $globalSvgIconImgPath : "../../img/global/svg";
         position: relative;
         width: 40px;
 
+        @include ReSassWidthResponsive(768){
+          width: 100%;
+          height: 30px;
+          margin-bottom: 10px;
+        }
+
         div.iconconvert{
           display: flex;
           width: 30px;
           height: 50px;
           position: absolute;
           bottom: 0;
+
+          @include ReSassWidthResponsive(768){
+            width: 30px;
+            height: 30px;
+            margin: auto;
+            position: static;
+            display: block;
+          }
         }
 
         i.iconconvert{
@@ -93,6 +154,10 @@ $globalSvgIconImgPath : "../../img/global/svg";
           background-position: center;
           display: block;
           margin: auto;
+
+          @include ReSassWidthResponsive(768){
+            @include rotate(90);
+          }
 
           @include ReSassWidthResponsive(480){
             width: 20px;
@@ -325,10 +390,6 @@ $globalSvgIconImgPath : "../../img/global/svg";
       &-row{
         margin-bottom: 20px;
 
-        @include ReSassWidthResponsive(768){
-          display: block !important;
-        }
-
         .paymentsummaryinfo{
           border: 1px solid transparentize($global-clr-soft-gray, 0.7);
           @include border-radius(3px);
@@ -414,6 +475,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
         &-pie{
           width: 230px;
           height: 230px;
+          padding: 40px 0;
           position: relative;
 
           @include ReSassWidthResponsive(768){
