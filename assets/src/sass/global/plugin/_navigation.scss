@@ -72,6 +72,15 @@
               bottom: -1px;
             }
           }
+
+          .badge{
+            font-size: 10px;
+            font-weight: 400;
+            padding: 2px 4px 3px 3px;
+            @include border-radius(2px);
+            position: relative;
+            top: -10px;
+          }
         }
 
         &:hover,
