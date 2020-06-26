@@ -20,15 +20,19 @@
         display: block !important;
       }
     }
-  }
 
-  &-wrapper{
+    .maincont-left{
 
-    &.maincont-right{
-      @include ReSassWidthResponsive(1400){
-        flex: 0 0 80%;
-        max-width: 80%;
+      @include ReSassWidthResponsive(992){
+        display: flex;
+        flex: 0 0 100%;
+        max-width: 100%;
+        padding: 0 !important;
+        margin-top: 0;
       }
+    }
+
+    .maincont-right{
       @include ReSassWidthResponsive(992){
         flex: 0 0 100%;
         max-width: 100%;
@@ -40,6 +44,9 @@
         margin-top: 15px;
       }
     }
+  }
+
+  &-wrapper{
 
     > .columntitle{
       color: $global-clr-dark-blue;

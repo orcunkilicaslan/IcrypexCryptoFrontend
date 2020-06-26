@@ -117,6 +117,25 @@ input, select, textarea{
   }
 }
 
+
+.sidesectioncont{
+  &-left{
+    flex: 0 0 240px;
+    max-width: 240px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  &-right{
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    max-width: 100%;
+    padding-right: 0;
+  }
+}
+
 img.imgsize{
   &-1080p{
     display: none;

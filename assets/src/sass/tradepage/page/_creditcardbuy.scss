@@ -427,6 +427,13 @@ $globalSvgIconImgPath : "../../img/global/svg";
           }
         }
 
+        .smallinfotext{
+          display: block;
+          color: $global-clr-soft-gray;
+          font-size: 14px;
+          margin-top: 4px;
+        }
+
         .paymentsummaryterm{
 
           @include ReSassWidthResponsive(768){

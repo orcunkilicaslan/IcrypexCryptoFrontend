@@ -295,109 +295,311 @@
         <div class="row">
 
             <!-- Market Data Start -->
-            <div class="sidebar sidebar-tradepage maincont-left col-2">
+            <div class="sidebar sidebar-tradepage sidesectioncont-left col-2">
                 <div class="sidebar-marketdata">
                     <h2 class="boxtitle boxtitle-sm">MARKET VERİLERİ</h2>
-                    <ul class="marketdatatabs nav nav-pills" role="tablist">
-                        <li class="nav-item"><a class="nav-link active" data-toggle="pill" href="#marketdatatabfav" role="tab" aria-selected="true"><svg xmlns="http://www.w3.org/2000/svg" class="marketfavicon" width="20" height="19" viewBox="0 0 20 19"><path id="marketfav" d="M10.473.765l2.544,6,6.513.557a.511.511,0,0,1,.293.9l-4.94,4.264,1.48,6.343a.512.512,0,0,1-.765.553L10,16.014,4.4,19.377a.513.513,0,0,1-.765-.553l1.48-6.343L.178,8.216a.511.511,0,0,1,.293-.9l6.513-.557,2.544-6a.514.514,0,0,1,.946,0Z" transform="translate(0 -0.452)"/></svg></a></li>
-                        <li class="nav-item"><a class="nav-link" data-toggle="pill" href="#marketdatatab01" role="tab" aria-selected="false">BTC</a></li>
-                        <li class="nav-item"><a class="nav-link" data-toggle="pill" href="#marketdatatab02" role="tab" aria-selected="false">USDT</a></li>
-                        <li class="nav-item"><a class="nav-link" data-toggle="pill" href="#marketdatatab03" role="tab" aria-selected="false">TAB3</a></li>
-                        <li class="nav-item"><a class="nav-link" data-toggle="pill" href="#marketdatatab04" role="tab" aria-selected="false">TAB4</a></li>
-                    </ul>
-                    <div class="marketdatacontent tab-content">
-                        <div class="tab-pane fade show active" id="marketdatatabfav" role="tabpanel">
-                            <table id="sidebarmarketdataowltable" class="sidebar-marketdata-table sitetable table sitetableweburllink">
-                                <thead>
-                                <tr>
-                                    <th class="sidebar-marketdata-table-symbol">SYMBOL</th>
-                                    <th class="sidebar-marketdata-table-bid">BID</th>
-                                    <th class="sidebar-marketdata-table-ask">ASK</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr data-href="#">
-                                    <td data-title="SYMBOL" class="sidebar-marketdata-table-symbol"><i id="ar-BTCUSD" class="arrow arrowdown"></i> BTCUSD </td>
-                                    <td data-title="BID" class="sidebar-marketdata-table-bid sitecolorred" id="b-BTCUSD">10243.4</td>
-                                    <td data-title="ASK" class="sidebar-marketdata-table-ask sitecolorred" id="a-BTCUSD">10281.4</td>
-                                </tr>
-                                <tr data-href="#">
-                                    <td data-title="SYMBOL" class="sidebar-marketdata-table-symbol"><i id="ar-BTCEUR" class="arrow arrowdown"></i> BTCEUR </td>
-                                    <td data-title="BID" class="sidebar-marketdata-table-bid sitecolorred" id="b-BTCEUR">9273.79</td>
-                                    <td data-title="ASK" class="sidebar-marketdata-table-ask sitecolorred" id="a-BTCEUR">9308.2</td>
-                                </tr>
-                                <tr data-href="#" class="selectcell">
-                                    <td data-title="SYMBOL" class="sidebar-marketdata-table-symbol"><i id="ar-BTCTRY" class="arrow arrowup"></i> BTCTRY </td>
-                                    <td data-title="BID" class="sidebar-marketdata-table-bid sitecolorred" id="b-BTCTRY">59075.8</td>
-                                    <td data-title="ASK" class="sidebar-marketdata-table-ask sitecolorgreen" id="a-BTCTRY">59294.9</td>
-                                </tr>
-                                <tr data-href="#">
-                                    <td data-title="SYMBOL" class="sidebar-marketdata-table-symbol"><i id="ar-ETHUSD" class="arrow arrowup"></i> ETHUSD </td>
-                                    <td data-title="BID" class="sidebar-marketdata-table-bid sitecolorgreen" id="b-ETHUSD">180.17</td>
-                                    <td data-title="ASK" class="sidebar-marketdata-table-ask sitecolorgreen" id="a-ETHUSD">182.45</td>
-                                </tr>
-                                <tr data-href="#">
-                                    <td data-title="SYMBOL" class="sidebar-marketdata-table-symbol"><i id="ar-ETHEUR" class="arrow arrowup"></i> ETHEUR </td>
-                                    <td data-title="BID" class="sidebar-marketdata-table-bid sitecolorgreen" id="b-ETHEUR">163.116</td>
-                                    <td data-title="ASK" class="sidebar-marketdata-table-ask sitecolorgreen" id="a-ETHEUR">165.18</td>
-                                </tr>
-                                <tr data-href="#">
-                                    <td data-title="SYMBOL" class="sidebar-marketdata-table-symbol"><i id="ar-ETHTRY" class="arrow arrowup"></i> ETHTRY </td>
-                                    <td data-title="BID" class="sidebar-marketdata-table-bid sitecolorgreen" id="b-ETHTRY">1039.08</td>
-                                    <td data-title="ASK" class="sidebar-marketdata-table-ask sitecolorgreen" id="a-ETHTRY">1052.23</td>
-                                </tr>
-                                <tr data-href="#">
-                                    <td data-title="SYMBOL" class="sidebar-marketdata-table-symbol"><i id="ar-LTCUSD" class="arrow arrowup"></i> LTCUSD </td>
-                                    <td data-title="BID" class="sidebar-marketdata-table-bid sitecolorred" id="b-LTCUSD">70.51</td>
-                                    <td data-title="ASK" class="sidebar-marketdata-table-ask sitecolorgreen" id="a-LTCUSD">71.15</td>
-                                </tr>
-                                <tr data-href="#">
-                                    <td data-title="SYMBOL" class="sidebar-marketdata-table-symbol"><i id="ar-LTCEUR" class="arrow arrowdown"></i> LTCEUR </td>
-                                    <td data-title="BID" class="sidebar-marketdata-table-bid sitecolorred" id="b-LTCEUR">63.836</td>
-                                    <td data-title="ASK" class="sidebar-marketdata-table-ask sitecolorred" id="a-LTCEUR">64.4154</td>
-                                </tr>
-                                <tr data-href="#">
-                                    <td data-title="SYMBOL" class="sidebar-marketdata-table-symbol"><i id="ar-LTCTRY" class="arrow arrowup"></i> LTCTRY </td>
-                                    <td data-title="BID" class="sidebar-marketdata-table-bid sitecolorred" id="b-LTCTRY">406.647</td>
-                                    <td data-title="ASK" class="sidebar-marketdata-table-ask sitecolorgreen" id="a-LTCTRY">410.338</td>
-                                </tr>
-                                <tr data-href="#">
-                                    <td data-title="SYMBOL" class="sidebar-marketdata-table-symbol"><i id="ar-XRPUSD" class="arrow arrowdown"></i> XRPUSD </td>
-                                    <td data-title="BID" class="sidebar-marketdata-table-bid sitecolorred" id="b-XRPUSD">0.25697</td>
-                                    <td data-title="ASK" class="sidebar-marketdata-table-ask sitecolorred" id="a-XRPUSD">0.26216</td>
-                                </tr>
-                                <tr data-href="#">
-                                    <td data-title="SYMBOL" class="sidebar-marketdata-table-symbol"><i id="ar-XRPEUR" class="arrow arrowdown"></i> XRPEUR </td>
-                                    <td data-title="BID" class="sidebar-marketdata-table-bid sitecolorred" id="b-XRPEUR">0.232647</td>
-                                    <td data-title="ASK" class="sidebar-marketdata-table-ask sitecolorred" id="a-XRPEUR">0.237346</td>
-                                </tr>
-                                <tr data-href="#">
-                                    <td data-title="SYMBOL" class="sidebar-marketdata-table-symbol"><i id="ar-XRPTRY" class="arrow arrowup"></i> XRPTRY </td>
-                                    <td data-title="BID" class="sidebar-marketdata-table-bid sitecolorgreen" id="b-XRPTRY">1.482</td>
-                                    <td data-title="ASK" class="sidebar-marketdata-table-ask sitecolorgreen" id="a-XRPTRY">1.51193</td>
-                                </tr>
-                                <tr data-href="#">
-                                    <td data-title="SYMBOL" class="sidebar-marketdata-table-symbol"><i id="ar-USDTRY" class="arrow arrowup"></i> USDTRY </td>
-                                    <td data-title="BID" class="sidebar-marketdata-table-bid sitecolorgreen" id="b-USDTRY">5.76722</td>
-                                    <td data-title="ASK" class="sidebar-marketdata-table-ask sitecolorgreen" id="a-USDTRY">5.76722</td>
-                                </tr>
-                                <tr data-href="#">
-                                    <td data-title="SYMBOL" class="sidebar-marketdata-table-symbol"><i id="ar-EURTRY" class="arrow arrowup"></i> EURTRY </td>
-                                    <td data-title="BID" class="sidebar-marketdata-table-bid sitecolorgreen" id="b-EURTRY">6.37183</td>
-                                    <td data-title="ASK" class="sidebar-marketdata-table-ask sitecolorgreen" id="a-EURTRY">6.37318</td>
-                                </tr>
-                                <tr data-href="#">
-                                    <td data-title="SYMBOL" class="sidebar-marketdata-table-symbol"><i id="ar-MPAYUSD" class="arrow arrowup"></i> MPAYUSD </td>
-                                    <td data-title="BID" class="sidebar-marketdata-table-bid sitecolorgreen" id="b-MPAYUSD">-</td>
-                                    <td data-title="ASK" class="sidebar-marketdata-table-ask sitecolorgreen" id="a-MPAYUSD">-</td>
-                                </tr>
-                                </tbody>
-                            </table>
+                    <div class="sidebar-marketdata-filter">
+                        <ul class="marketdatatabs nav nav-pills">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link active">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="marketfavicon" width="20" height="19" viewBox="0 0 20 19"><path id="marketfav" d="M10.473.765l2.544,6,6.513.557a.511.511,0,0,1,.293.9l-4.94,4.264,1.48,6.343a.512.512,0,0,1-.765.553L10,16.014,4.4,19.377a.513.513,0,0,1-.765-.553l1.48-6.343L.178,8.216a.511.511,0,0,1,.293-.9l6.513-.557,2.544-6a.514.514,0,0,1,.946,0Z" transform="translate(0 -0.452)"/></svg>
+                                </a>
+                            </li>
+                            <li class="nav-item"><a href="#" class="nav-link">BTC</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">USDT</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">TAB3</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">TAB4</a></li>
+                        </ul>
+                        <div class="datatablesearch">
+                            <form autocomplete="off" novalidate>
+                                <input class="datatablesearch-input" type="search" name="marketdatasearch" placeholder="ARA" />
+                                <button class="datatablesearch-button" type="submit"></button>
+                            </form>
                         </div>
-                        <div class="tab-pane fade" id="marketdatatab01" role="tabpanel">BTC</div>
-                        <div class="tab-pane fade" id="marketdatatab02" role="tabpanel">USDT</div>
-                        <div class="tab-pane fade" id="marketdatatab03" role="tabpanel">TAB3</div>
-                        <div class="tab-pane fade" id="marketdatatab04" role="tabpanel">TAB4</div>
+                    </div>
+                    <div class="marketdatacontent tab-content">
+                        <table id="sidebarmarketdataowltable" class="sidebar-marketdata-table sitetable table sitetableweburllink">
+                            <thead>
+                            <tr>
+                                <th class="sidebar-marketdata-table-fav"></th>
+                                <th class="sidebar-marketdata-table-symbol">SYMBOL</th>
+                                <th class="sidebar-marketdata-table-bid">BID</th>
+                                <th class="sidebar-marketdata-table-ask">ASK</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr data-href="#">
+                                <td class="sidebar-marketdata-table-fav">
+                                    <a class="tablefavicon" href="#">
+                                        <svg class="starbgcolor" xmlns="http://www.w3.org/2000/svg" width="18" height="17.171" viewBox="0 0 18 17.171">
+                                            <g transform="translate(0 -11.796)">
+                                                <g id="Group_1" data-name="Group 1" transform="translate(0 11.796)">
+                                                    <g id="Path_1" data-name="Path 1" transform="translate(0 -11.796)">
+                                                        <path d="M 3.763789653778076 28.46659469604492 C 3.759699583053589 28.46659469604492 3.753579616546631 28.46568489074707 3.747609615325928 28.46135520935059 C 3.739219665527344 28.45525550842285 3.735029697418213 28.44500541687012 3.736789703369141 28.43470573425293 L 4.68982982635498 22.87705612182617 L 4.734249591827393 22.61798477172852 L 4.546029567718506 22.43450546264648 L 0.5084196925163269 18.49863624572754 C 0.50087970495224 18.49128532409668 0.4982396960258484 18.48057556152344 0.5014696717262268 18.47062492370605 C 0.5046597123146057 18.46078491210938 0.5132896900177002 18.45350646972656 0.5234596729278564 18.4520263671875 L 6.103499889373779 17.64113616943359 L 6.363629817962646 17.60333633422852 L 6.479959487915039 17.36763572692871 L 8.975619316101074 12.31124591827393 C 8.980259895324707 12.30184555053711 8.989659309387207 12.29600524902344 9.000149726867676 12.29600524902344 C 9.010459899902344 12.29600524902344 9.020059585571289 12.30196571350098 9.024609565734863 12.31117534637451 L 11.52017974853516 17.36762619018555 L 11.63651943206787 17.60333633422852 L 11.89664936065674 17.64113616943359 L 17.47673034667969 18.4520149230957 C 17.48710060119629 18.45352554321289 17.4955005645752 18.46063613891602 17.49872970581055 18.47058486938477 C 17.50194931030273 18.4804859161377 17.49923896789551 18.49139595031738 17.49188995361328 18.49856567382813 L 13.45378971099854 22.43449592590332 L 13.26554012298584 22.61798477172852 L 13.30998992919922 22.8770751953125 L 14.26330947875977 28.43458557128906 C 14.26504993438721 28.44474601745605 14.2607593536377 28.45526504516602 14.25236988067627 28.46136474609375 C 14.24761009216309 28.46481513977051 14.24221992492676 28.46656608581543 14.23633003234863 28.46656608581543 C 14.23184013366699 28.46656608581543 14.22754001617432 28.46549606323242 14.22352981567383 28.4633960723877 L 9.232789993286133 25.83947563171387 L 9.000109672546387 25.7171459197998 L 8.767439842224121 25.83947563171387 L 3.776439666748047 28.46345520019531 C 3.772389650344849 28.465576171875 3.768279790878296 28.46659469604492 3.763789653778076 28.46659469604492 Z" stroke="none"/>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </a>
+                                </td>
+                                <td data-title="SYMBOL" class="sidebar-marketdata-table-symbol"><i id="ar-BTCUSD" class="arrow arrowdown"></i> BTCUSD </td>
+                                <td data-title="BID" class="sidebar-marketdata-table-bid sitecolorred" id="b-BTCUSD">10243.4</td>
+                                <td data-title="ASK" class="sidebar-marketdata-table-ask sitecolorred" id="a-BTCUSD">10281.4</td>
+                            </tr>
+                            <tr data-href="#">
+                                <td class="sidebar-marketdata-table-fav">
+                                    <a class="tablefavicon" href="#">
+                                        <svg class="starbgcolor" xmlns="http://www.w3.org/2000/svg" width="18" height="17.171" viewBox="0 0 18 17.171">
+                                            <g transform="translate(0 -11.796)">
+                                                <g id="Group_1" data-name="Group 1" transform="translate(0 11.796)">
+                                                    <g id="Path_1" data-name="Path 1" transform="translate(0 -11.796)">
+                                                        <path d="M 3.763789653778076 28.46659469604492 C 3.759699583053589 28.46659469604492 3.753579616546631 28.46568489074707 3.747609615325928 28.46135520935059 C 3.739219665527344 28.45525550842285 3.735029697418213 28.44500541687012 3.736789703369141 28.43470573425293 L 4.68982982635498 22.87705612182617 L 4.734249591827393 22.61798477172852 L 4.546029567718506 22.43450546264648 L 0.5084196925163269 18.49863624572754 C 0.50087970495224 18.49128532409668 0.4982396960258484 18.48057556152344 0.5014696717262268 18.47062492370605 C 0.5046597123146057 18.46078491210938 0.5132896900177002 18.45350646972656 0.5234596729278564 18.4520263671875 L 6.103499889373779 17.64113616943359 L 6.363629817962646 17.60333633422852 L 6.479959487915039 17.36763572692871 L 8.975619316101074 12.31124591827393 C 8.980259895324707 12.30184555053711 8.989659309387207 12.29600524902344 9.000149726867676 12.29600524902344 C 9.010459899902344 12.29600524902344 9.020059585571289 12.30196571350098 9.024609565734863 12.31117534637451 L 11.52017974853516 17.36762619018555 L 11.63651943206787 17.60333633422852 L 11.89664936065674 17.64113616943359 L 17.47673034667969 18.4520149230957 C 17.48710060119629 18.45352554321289 17.4955005645752 18.46063613891602 17.49872970581055 18.47058486938477 C 17.50194931030273 18.4804859161377 17.49923896789551 18.49139595031738 17.49188995361328 18.49856567382813 L 13.45378971099854 22.43449592590332 L 13.26554012298584 22.61798477172852 L 13.30998992919922 22.8770751953125 L 14.26330947875977 28.43458557128906 C 14.26504993438721 28.44474601745605 14.2607593536377 28.45526504516602 14.25236988067627 28.46136474609375 C 14.24761009216309 28.46481513977051 14.24221992492676 28.46656608581543 14.23633003234863 28.46656608581543 C 14.23184013366699 28.46656608581543 14.22754001617432 28.46549606323242 14.22352981567383 28.4633960723877 L 9.232789993286133 25.83947563171387 L 9.000109672546387 25.7171459197998 L 8.767439842224121 25.83947563171387 L 3.776439666748047 28.46345520019531 C 3.772389650344849 28.465576171875 3.768279790878296 28.46659469604492 3.763789653778076 28.46659469604492 Z" stroke="none"/>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </a>
+                                </td>
+                                <td data-title="SYMBOL" class="sidebar-marketdata-table-symbol"><i id="ar-BTCEUR" class="arrow arrowdown"></i> BTCEUR </td>
+                                <td data-title="BID" class="sidebar-marketdata-table-bid sitecolorred" id="b-BTCEUR">9273.79</td>
+                                <td data-title="ASK" class="sidebar-marketdata-table-ask sitecolorred" id="a-BTCEUR">9308.2</td>
+                            </tr>
+                            <tr data-href="#" class="selectcell">
+                                <td class="sidebar-marketdata-table-fav">
+                                    <a class="tablefavicon active" href="#">
+                                        <svg class="starbgcolor" xmlns="http://www.w3.org/2000/svg" width="18" height="17.171" viewBox="0 0 18 17.171">
+                                            <g transform="translate(0 -11.796)">
+                                                <g id="Group_1" data-name="Group 1" transform="translate(0 11.796)">
+                                                    <g id="Path_1" data-name="Path 1" transform="translate(0 -11.796)">
+                                                        <path d="M 3.763789653778076 28.46659469604492 C 3.759699583053589 28.46659469604492 3.753579616546631 28.46568489074707 3.747609615325928 28.46135520935059 C 3.739219665527344 28.45525550842285 3.735029697418213 28.44500541687012 3.736789703369141 28.43470573425293 L 4.68982982635498 22.87705612182617 L 4.734249591827393 22.61798477172852 L 4.546029567718506 22.43450546264648 L 0.5084196925163269 18.49863624572754 C 0.50087970495224 18.49128532409668 0.4982396960258484 18.48057556152344 0.5014696717262268 18.47062492370605 C 0.5046597123146057 18.46078491210938 0.5132896900177002 18.45350646972656 0.5234596729278564 18.4520263671875 L 6.103499889373779 17.64113616943359 L 6.363629817962646 17.60333633422852 L 6.479959487915039 17.36763572692871 L 8.975619316101074 12.31124591827393 C 8.980259895324707 12.30184555053711 8.989659309387207 12.29600524902344 9.000149726867676 12.29600524902344 C 9.010459899902344 12.29600524902344 9.020059585571289 12.30196571350098 9.024609565734863 12.31117534637451 L 11.52017974853516 17.36762619018555 L 11.63651943206787 17.60333633422852 L 11.89664936065674 17.64113616943359 L 17.47673034667969 18.4520149230957 C 17.48710060119629 18.45352554321289 17.4955005645752 18.46063613891602 17.49872970581055 18.47058486938477 C 17.50194931030273 18.4804859161377 17.49923896789551 18.49139595031738 17.49188995361328 18.49856567382813 L 13.45378971099854 22.43449592590332 L 13.26554012298584 22.61798477172852 L 13.30998992919922 22.8770751953125 L 14.26330947875977 28.43458557128906 C 14.26504993438721 28.44474601745605 14.2607593536377 28.45526504516602 14.25236988067627 28.46136474609375 C 14.24761009216309 28.46481513977051 14.24221992492676 28.46656608581543 14.23633003234863 28.46656608581543 C 14.23184013366699 28.46656608581543 14.22754001617432 28.46549606323242 14.22352981567383 28.4633960723877 L 9.232789993286133 25.83947563171387 L 9.000109672546387 25.7171459197998 L 8.767439842224121 25.83947563171387 L 3.776439666748047 28.46345520019531 C 3.772389650344849 28.465576171875 3.768279790878296 28.46659469604492 3.763789653778076 28.46659469604492 Z" stroke="none"/>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </a>
+                                </td>
+                                <td data-title="SYMBOL" class="sidebar-marketdata-table-symbol"><i id="ar-BTCTRY" class="arrow arrowup"></i> BTCTRY </td>
+                                <td data-title="BID" class="sidebar-marketdata-table-bid sitecolorred" id="b-BTCTRY">59075.8</td>
+                                <td data-title="ASK" class="sidebar-marketdata-table-ask sitecolorgreen" id="a-BTCTRY">59294.9</td>
+                            </tr>
+                            <tr data-href="#">
+                                <td class="sidebar-marketdata-table-fav">
+                                    <a class="tablefavicon" href="#">
+                                        <svg class="starbgcolor" xmlns="http://www.w3.org/2000/svg" width="18" height="17.171" viewBox="0 0 18 17.171">
+                                            <g transform="translate(0 -11.796)">
+                                                <g id="Group_1" data-name="Group 1" transform="translate(0 11.796)">
+                                                    <g id="Path_1" data-name="Path 1" transform="translate(0 -11.796)">
+                                                        <path d="M 3.763789653778076 28.46659469604492 C 3.759699583053589 28.46659469604492 3.753579616546631 28.46568489074707 3.747609615325928 28.46135520935059 C 3.739219665527344 28.45525550842285 3.735029697418213 28.44500541687012 3.736789703369141 28.43470573425293 L 4.68982982635498 22.87705612182617 L 4.734249591827393 22.61798477172852 L 4.546029567718506 22.43450546264648 L 0.5084196925163269 18.49863624572754 C 0.50087970495224 18.49128532409668 0.4982396960258484 18.48057556152344 0.5014696717262268 18.47062492370605 C 0.5046597123146057 18.46078491210938 0.5132896900177002 18.45350646972656 0.5234596729278564 18.4520263671875 L 6.103499889373779 17.64113616943359 L 6.363629817962646 17.60333633422852 L 6.479959487915039 17.36763572692871 L 8.975619316101074 12.31124591827393 C 8.980259895324707 12.30184555053711 8.989659309387207 12.29600524902344 9.000149726867676 12.29600524902344 C 9.010459899902344 12.29600524902344 9.020059585571289 12.30196571350098 9.024609565734863 12.31117534637451 L 11.52017974853516 17.36762619018555 L 11.63651943206787 17.60333633422852 L 11.89664936065674 17.64113616943359 L 17.47673034667969 18.4520149230957 C 17.48710060119629 18.45352554321289 17.4955005645752 18.46063613891602 17.49872970581055 18.47058486938477 C 17.50194931030273 18.4804859161377 17.49923896789551 18.49139595031738 17.49188995361328 18.49856567382813 L 13.45378971099854 22.43449592590332 L 13.26554012298584 22.61798477172852 L 13.30998992919922 22.8770751953125 L 14.26330947875977 28.43458557128906 C 14.26504993438721 28.44474601745605 14.2607593536377 28.45526504516602 14.25236988067627 28.46136474609375 C 14.24761009216309 28.46481513977051 14.24221992492676 28.46656608581543 14.23633003234863 28.46656608581543 C 14.23184013366699 28.46656608581543 14.22754001617432 28.46549606323242 14.22352981567383 28.4633960723877 L 9.232789993286133 25.83947563171387 L 9.000109672546387 25.7171459197998 L 8.767439842224121 25.83947563171387 L 3.776439666748047 28.46345520019531 C 3.772389650344849 28.465576171875 3.768279790878296 28.46659469604492 3.763789653778076 28.46659469604492 Z" stroke="none"/>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </a>
+                                </td>
+                                <td data-title="SYMBOL" class="sidebar-marketdata-table-symbol"><i id="ar-ETHUSD" class="arrow arrowup"></i> ETHUSD </td>
+                                <td data-title="BID" class="sidebar-marketdata-table-bid sitecolorgreen" id="b-ETHUSD">180.17</td>
+                                <td data-title="ASK" class="sidebar-marketdata-table-ask sitecolorgreen" id="a-ETHUSD">182.45</td>
+                            </tr>
+                            <tr data-href="#">
+                                <td class="sidebar-marketdata-table-fav">
+                                    <a class="tablefavicon" href="#">
+                                        <svg class="starbgcolor" xmlns="http://www.w3.org/2000/svg" width="18" height="17.171" viewBox="0 0 18 17.171">
+                                            <g transform="translate(0 -11.796)">
+                                                <g id="Group_1" data-name="Group 1" transform="translate(0 11.796)">
+                                                    <g id="Path_1" data-name="Path 1" transform="translate(0 -11.796)">
+                                                        <path d="M 3.763789653778076 28.46659469604492 C 3.759699583053589 28.46659469604492 3.753579616546631 28.46568489074707 3.747609615325928 28.46135520935059 C 3.739219665527344 28.45525550842285 3.735029697418213 28.44500541687012 3.736789703369141 28.43470573425293 L 4.68982982635498 22.87705612182617 L 4.734249591827393 22.61798477172852 L 4.546029567718506 22.43450546264648 L 0.5084196925163269 18.49863624572754 C 0.50087970495224 18.49128532409668 0.4982396960258484 18.48057556152344 0.5014696717262268 18.47062492370605 C 0.5046597123146057 18.46078491210938 0.5132896900177002 18.45350646972656 0.5234596729278564 18.4520263671875 L 6.103499889373779 17.64113616943359 L 6.363629817962646 17.60333633422852 L 6.479959487915039 17.36763572692871 L 8.975619316101074 12.31124591827393 C 8.980259895324707 12.30184555053711 8.989659309387207 12.29600524902344 9.000149726867676 12.29600524902344 C 9.010459899902344 12.29600524902344 9.020059585571289 12.30196571350098 9.024609565734863 12.31117534637451 L 11.52017974853516 17.36762619018555 L 11.63651943206787 17.60333633422852 L 11.89664936065674 17.64113616943359 L 17.47673034667969 18.4520149230957 C 17.48710060119629 18.45352554321289 17.4955005645752 18.46063613891602 17.49872970581055 18.47058486938477 C 17.50194931030273 18.4804859161377 17.49923896789551 18.49139595031738 17.49188995361328 18.49856567382813 L 13.45378971099854 22.43449592590332 L 13.26554012298584 22.61798477172852 L 13.30998992919922 22.8770751953125 L 14.26330947875977 28.43458557128906 C 14.26504993438721 28.44474601745605 14.2607593536377 28.45526504516602 14.25236988067627 28.46136474609375 C 14.24761009216309 28.46481513977051 14.24221992492676 28.46656608581543 14.23633003234863 28.46656608581543 C 14.23184013366699 28.46656608581543 14.22754001617432 28.46549606323242 14.22352981567383 28.4633960723877 L 9.232789993286133 25.83947563171387 L 9.000109672546387 25.7171459197998 L 8.767439842224121 25.83947563171387 L 3.776439666748047 28.46345520019531 C 3.772389650344849 28.465576171875 3.768279790878296 28.46659469604492 3.763789653778076 28.46659469604492 Z" stroke="none"/>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </a>
+                                </td>
+                                <td data-title="SYMBOL" class="sidebar-marketdata-table-symbol"><i id="ar-ETHEUR" class="arrow arrowup"></i> ETHEUR </td>
+                                <td data-title="BID" class="sidebar-marketdata-table-bid sitecolorgreen" id="b-ETHEUR">163.116</td>
+                                <td data-title="ASK" class="sidebar-marketdata-table-ask sitecolorgreen" id="a-ETHEUR">165.18</td>
+                            </tr>
+                            <tr data-href="#">
+                                <td class="sidebar-marketdata-table-fav">
+                                    <a class="tablefavicon" href="#">
+                                        <svg class="starbgcolor" xmlns="http://www.w3.org/2000/svg" width="18" height="17.171" viewBox="0 0 18 17.171">
+                                            <g transform="translate(0 -11.796)">
+                                                <g id="Group_1" data-name="Group 1" transform="translate(0 11.796)">
+                                                    <g id="Path_1" data-name="Path 1" transform="translate(0 -11.796)">
+                                                        <path d="M 3.763789653778076 28.46659469604492 C 3.759699583053589 28.46659469604492 3.753579616546631 28.46568489074707 3.747609615325928 28.46135520935059 C 3.739219665527344 28.45525550842285 3.735029697418213 28.44500541687012 3.736789703369141 28.43470573425293 L 4.68982982635498 22.87705612182617 L 4.734249591827393 22.61798477172852 L 4.546029567718506 22.43450546264648 L 0.5084196925163269 18.49863624572754 C 0.50087970495224 18.49128532409668 0.4982396960258484 18.48057556152344 0.5014696717262268 18.47062492370605 C 0.5046597123146057 18.46078491210938 0.5132896900177002 18.45350646972656 0.5234596729278564 18.4520263671875 L 6.103499889373779 17.64113616943359 L 6.363629817962646 17.60333633422852 L 6.479959487915039 17.36763572692871 L 8.975619316101074 12.31124591827393 C 8.980259895324707 12.30184555053711 8.989659309387207 12.29600524902344 9.000149726867676 12.29600524902344 C 9.010459899902344 12.29600524902344 9.020059585571289 12.30196571350098 9.024609565734863 12.31117534637451 L 11.52017974853516 17.36762619018555 L 11.63651943206787 17.60333633422852 L 11.89664936065674 17.64113616943359 L 17.47673034667969 18.4520149230957 C 17.48710060119629 18.45352554321289 17.4955005645752 18.46063613891602 17.49872970581055 18.47058486938477 C 17.50194931030273 18.4804859161377 17.49923896789551 18.49139595031738 17.49188995361328 18.49856567382813 L 13.45378971099854 22.43449592590332 L 13.26554012298584 22.61798477172852 L 13.30998992919922 22.8770751953125 L 14.26330947875977 28.43458557128906 C 14.26504993438721 28.44474601745605 14.2607593536377 28.45526504516602 14.25236988067627 28.46136474609375 C 14.24761009216309 28.46481513977051 14.24221992492676 28.46656608581543 14.23633003234863 28.46656608581543 C 14.23184013366699 28.46656608581543 14.22754001617432 28.46549606323242 14.22352981567383 28.4633960723877 L 9.232789993286133 25.83947563171387 L 9.000109672546387 25.7171459197998 L 8.767439842224121 25.83947563171387 L 3.776439666748047 28.46345520019531 C 3.772389650344849 28.465576171875 3.768279790878296 28.46659469604492 3.763789653778076 28.46659469604492 Z" stroke="none"/>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </a>
+                                </td>
+                                <td data-title="SYMBOL" class="sidebar-marketdata-table-symbol"><i id="ar-ETHTRY" class="arrow arrowup"></i> ETHTRY </td>
+                                <td data-title="BID" class="sidebar-marketdata-table-bid sitecolorgreen" id="b-ETHTRY">1039.08</td>
+                                <td data-title="ASK" class="sidebar-marketdata-table-ask sitecolorgreen" id="a-ETHTRY">1052.23</td>
+                            </tr>
+                            <tr data-href="#">
+                                <td class="sidebar-marketdata-table-fav">
+                                    <a class="tablefavicon" href="#">
+                                        <svg class="starbgcolor" xmlns="http://www.w3.org/2000/svg" width="18" height="17.171" viewBox="0 0 18 17.171">
+                                            <g transform="translate(0 -11.796)">
+                                                <g id="Group_1" data-name="Group 1" transform="translate(0 11.796)">
+                                                    <g id="Path_1" data-name="Path 1" transform="translate(0 -11.796)">
+                                                        <path d="M 3.763789653778076 28.46659469604492 C 3.759699583053589 28.46659469604492 3.753579616546631 28.46568489074707 3.747609615325928 28.46135520935059 C 3.739219665527344 28.45525550842285 3.735029697418213 28.44500541687012 3.736789703369141 28.43470573425293 L 4.68982982635498 22.87705612182617 L 4.734249591827393 22.61798477172852 L 4.546029567718506 22.43450546264648 L 0.5084196925163269 18.49863624572754 C 0.50087970495224 18.49128532409668 0.4982396960258484 18.48057556152344 0.5014696717262268 18.47062492370605 C 0.5046597123146057 18.46078491210938 0.5132896900177002 18.45350646972656 0.5234596729278564 18.4520263671875 L 6.103499889373779 17.64113616943359 L 6.363629817962646 17.60333633422852 L 6.479959487915039 17.36763572692871 L 8.975619316101074 12.31124591827393 C 8.980259895324707 12.30184555053711 8.989659309387207 12.29600524902344 9.000149726867676 12.29600524902344 C 9.010459899902344 12.29600524902344 9.020059585571289 12.30196571350098 9.024609565734863 12.31117534637451 L 11.52017974853516 17.36762619018555 L 11.63651943206787 17.60333633422852 L 11.89664936065674 17.64113616943359 L 17.47673034667969 18.4520149230957 C 17.48710060119629 18.45352554321289 17.4955005645752 18.46063613891602 17.49872970581055 18.47058486938477 C 17.50194931030273 18.4804859161377 17.49923896789551 18.49139595031738 17.49188995361328 18.49856567382813 L 13.45378971099854 22.43449592590332 L 13.26554012298584 22.61798477172852 L 13.30998992919922 22.8770751953125 L 14.26330947875977 28.43458557128906 C 14.26504993438721 28.44474601745605 14.2607593536377 28.45526504516602 14.25236988067627 28.46136474609375 C 14.24761009216309 28.46481513977051 14.24221992492676 28.46656608581543 14.23633003234863 28.46656608581543 C 14.23184013366699 28.46656608581543 14.22754001617432 28.46549606323242 14.22352981567383 28.4633960723877 L 9.232789993286133 25.83947563171387 L 9.000109672546387 25.7171459197998 L 8.767439842224121 25.83947563171387 L 3.776439666748047 28.46345520019531 C 3.772389650344849 28.465576171875 3.768279790878296 28.46659469604492 3.763789653778076 28.46659469604492 Z" stroke="none"/>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </a>
+                                </td>
+                                <td data-title="SYMBOL" class="sidebar-marketdata-table-symbol"><i id="ar-LTCUSD" class="arrow arrowup"></i> LTCUSD </td>
+                                <td data-title="BID" class="sidebar-marketdata-table-bid sitecolorred" id="b-LTCUSD">70.51</td>
+                                <td data-title="ASK" class="sidebar-marketdata-table-ask sitecolorgreen" id="a-LTCUSD">71.15</td>
+                            </tr>
+                            <tr data-href="#">
+                                <td class="sidebar-marketdata-table-fav">
+                                    <a class="tablefavicon" href="#">
+                                        <svg class="starbgcolor" xmlns="http://www.w3.org/2000/svg" width="18" height="17.171" viewBox="0 0 18 17.171">
+                                            <g transform="translate(0 -11.796)">
+                                                <g id="Group_1" data-name="Group 1" transform="translate(0 11.796)">
+                                                    <g id="Path_1" data-name="Path 1" transform="translate(0 -11.796)">
+                                                        <path d="M 3.763789653778076 28.46659469604492 C 3.759699583053589 28.46659469604492 3.753579616546631 28.46568489074707 3.747609615325928 28.46135520935059 C 3.739219665527344 28.45525550842285 3.735029697418213 28.44500541687012 3.736789703369141 28.43470573425293 L 4.68982982635498 22.87705612182617 L 4.734249591827393 22.61798477172852 L 4.546029567718506 22.43450546264648 L 0.5084196925163269 18.49863624572754 C 0.50087970495224 18.49128532409668 0.4982396960258484 18.48057556152344 0.5014696717262268 18.47062492370605 C 0.5046597123146057 18.46078491210938 0.5132896900177002 18.45350646972656 0.5234596729278564 18.4520263671875 L 6.103499889373779 17.64113616943359 L 6.363629817962646 17.60333633422852 L 6.479959487915039 17.36763572692871 L 8.975619316101074 12.31124591827393 C 8.980259895324707 12.30184555053711 8.989659309387207 12.29600524902344 9.000149726867676 12.29600524902344 C 9.010459899902344 12.29600524902344 9.020059585571289 12.30196571350098 9.024609565734863 12.31117534637451 L 11.52017974853516 17.36762619018555 L 11.63651943206787 17.60333633422852 L 11.89664936065674 17.64113616943359 L 17.47673034667969 18.4520149230957 C 17.48710060119629 18.45352554321289 17.4955005645752 18.46063613891602 17.49872970581055 18.47058486938477 C 17.50194931030273 18.4804859161377 17.49923896789551 18.49139595031738 17.49188995361328 18.49856567382813 L 13.45378971099854 22.43449592590332 L 13.26554012298584 22.61798477172852 L 13.30998992919922 22.8770751953125 L 14.26330947875977 28.43458557128906 C 14.26504993438721 28.44474601745605 14.2607593536377 28.45526504516602 14.25236988067627 28.46136474609375 C 14.24761009216309 28.46481513977051 14.24221992492676 28.46656608581543 14.23633003234863 28.46656608581543 C 14.23184013366699 28.46656608581543 14.22754001617432 28.46549606323242 14.22352981567383 28.4633960723877 L 9.232789993286133 25.83947563171387 L 9.000109672546387 25.7171459197998 L 8.767439842224121 25.83947563171387 L 3.776439666748047 28.46345520019531 C 3.772389650344849 28.465576171875 3.768279790878296 28.46659469604492 3.763789653778076 28.46659469604492 Z" stroke="none"/>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </a>
+                                </td>
+                                <td data-title="SYMBOL" class="sidebar-marketdata-table-symbol"><i id="ar-LTCEUR" class="arrow arrowdown"></i> LTCEUR </td>
+                                <td data-title="BID" class="sidebar-marketdata-table-bid sitecolorred" id="b-LTCEUR">63.836</td>
+                                <td data-title="ASK" class="sidebar-marketdata-table-ask sitecolorred" id="a-LTCEUR">64.4154</td>
+                            </tr>
+                            <tr data-href="#">
+                                <td class="sidebar-marketdata-table-fav">
+                                    <a class="tablefavicon active" href="#">
+                                        <svg class="starbgcolor" xmlns="http://www.w3.org/2000/svg" width="18" height="17.171" viewBox="0 0 18 17.171">
+                                            <g transform="translate(0 -11.796)">
+                                                <g id="Group_1" data-name="Group 1" transform="translate(0 11.796)">
+                                                    <g id="Path_1" data-name="Path 1" transform="translate(0 -11.796)">
+                                                        <path d="M 3.763789653778076 28.46659469604492 C 3.759699583053589 28.46659469604492 3.753579616546631 28.46568489074707 3.747609615325928 28.46135520935059 C 3.739219665527344 28.45525550842285 3.735029697418213 28.44500541687012 3.736789703369141 28.43470573425293 L 4.68982982635498 22.87705612182617 L 4.734249591827393 22.61798477172852 L 4.546029567718506 22.43450546264648 L 0.5084196925163269 18.49863624572754 C 0.50087970495224 18.49128532409668 0.4982396960258484 18.48057556152344 0.5014696717262268 18.47062492370605 C 0.5046597123146057 18.46078491210938 0.5132896900177002 18.45350646972656 0.5234596729278564 18.4520263671875 L 6.103499889373779 17.64113616943359 L 6.363629817962646 17.60333633422852 L 6.479959487915039 17.36763572692871 L 8.975619316101074 12.31124591827393 C 8.980259895324707 12.30184555053711 8.989659309387207 12.29600524902344 9.000149726867676 12.29600524902344 C 9.010459899902344 12.29600524902344 9.020059585571289 12.30196571350098 9.024609565734863 12.31117534637451 L 11.52017974853516 17.36762619018555 L 11.63651943206787 17.60333633422852 L 11.89664936065674 17.64113616943359 L 17.47673034667969 18.4520149230957 C 17.48710060119629 18.45352554321289 17.4955005645752 18.46063613891602 17.49872970581055 18.47058486938477 C 17.50194931030273 18.4804859161377 17.49923896789551 18.49139595031738 17.49188995361328 18.49856567382813 L 13.45378971099854 22.43449592590332 L 13.26554012298584 22.61798477172852 L 13.30998992919922 22.8770751953125 L 14.26330947875977 28.43458557128906 C 14.26504993438721 28.44474601745605 14.2607593536377 28.45526504516602 14.25236988067627 28.46136474609375 C 14.24761009216309 28.46481513977051 14.24221992492676 28.46656608581543 14.23633003234863 28.46656608581543 C 14.23184013366699 28.46656608581543 14.22754001617432 28.46549606323242 14.22352981567383 28.4633960723877 L 9.232789993286133 25.83947563171387 L 9.000109672546387 25.7171459197998 L 8.767439842224121 25.83947563171387 L 3.776439666748047 28.46345520019531 C 3.772389650344849 28.465576171875 3.768279790878296 28.46659469604492 3.763789653778076 28.46659469604492 Z" stroke="none"/>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </a>
+                                </td>
+                                <td data-title="SYMBOL" class="sidebar-marketdata-table-symbol"><i id="ar-LTCTRY" class="arrow arrowup"></i> LTCTRY </td>
+                                <td data-title="BID" class="sidebar-marketdata-table-bid sitecolorred" id="b-LTCTRY">406.647</td>
+                                <td data-title="ASK" class="sidebar-marketdata-table-ask sitecolorgreen" id="a-LTCTRY">410.338</td>
+                            </tr>
+                            <tr data-href="#">
+                                <td class="sidebar-marketdata-table-fav">
+                                    <a class="tablefavicon" href="#">
+                                        <svg class="starbgcolor" xmlns="http://www.w3.org/2000/svg" width="18" height="17.171" viewBox="0 0 18 17.171">
+                                            <g transform="translate(0 -11.796)">
+                                                <g id="Group_1" data-name="Group 1" transform="translate(0 11.796)">
+                                                    <g id="Path_1" data-name="Path 1" transform="translate(0 -11.796)">
+                                                        <path d="M 3.763789653778076 28.46659469604492 C 3.759699583053589 28.46659469604492 3.753579616546631 28.46568489074707 3.747609615325928 28.46135520935059 C 3.739219665527344 28.45525550842285 3.735029697418213 28.44500541687012 3.736789703369141 28.43470573425293 L 4.68982982635498 22.87705612182617 L 4.734249591827393 22.61798477172852 L 4.546029567718506 22.43450546264648 L 0.5084196925163269 18.49863624572754 C 0.50087970495224 18.49128532409668 0.4982396960258484 18.48057556152344 0.5014696717262268 18.47062492370605 C 0.5046597123146057 18.46078491210938 0.5132896900177002 18.45350646972656 0.5234596729278564 18.4520263671875 L 6.103499889373779 17.64113616943359 L 6.363629817962646 17.60333633422852 L 6.479959487915039 17.36763572692871 L 8.975619316101074 12.31124591827393 C 8.980259895324707 12.30184555053711 8.989659309387207 12.29600524902344 9.000149726867676 12.29600524902344 C 9.010459899902344 12.29600524902344 9.020059585571289 12.30196571350098 9.024609565734863 12.31117534637451 L 11.52017974853516 17.36762619018555 L 11.63651943206787 17.60333633422852 L 11.89664936065674 17.64113616943359 L 17.47673034667969 18.4520149230957 C 17.48710060119629 18.45352554321289 17.4955005645752 18.46063613891602 17.49872970581055 18.47058486938477 C 17.50194931030273 18.4804859161377 17.49923896789551 18.49139595031738 17.49188995361328 18.49856567382813 L 13.45378971099854 22.43449592590332 L 13.26554012298584 22.61798477172852 L 13.30998992919922 22.8770751953125 L 14.26330947875977 28.43458557128906 C 14.26504993438721 28.44474601745605 14.2607593536377 28.45526504516602 14.25236988067627 28.46136474609375 C 14.24761009216309 28.46481513977051 14.24221992492676 28.46656608581543 14.23633003234863 28.46656608581543 C 14.23184013366699 28.46656608581543 14.22754001617432 28.46549606323242 14.22352981567383 28.4633960723877 L 9.232789993286133 25.83947563171387 L 9.000109672546387 25.7171459197998 L 8.767439842224121 25.83947563171387 L 3.776439666748047 28.46345520019531 C 3.772389650344849 28.465576171875 3.768279790878296 28.46659469604492 3.763789653778076 28.46659469604492 Z" stroke="none"/>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </a>
+                                </td>
+                                <td data-title="SYMBOL" class="sidebar-marketdata-table-symbol"><i id="ar-XRPUSD" class="arrow arrowdown"></i> XRPUSD </td>
+                                <td data-title="BID" class="sidebar-marketdata-table-bid sitecolorred" id="b-XRPUSD">0.25697</td>
+                                <td data-title="ASK" class="sidebar-marketdata-table-ask sitecolorred" id="a-XRPUSD">0.26216</td>
+                            </tr>
+                            <tr data-href="#">
+                                <td class="sidebar-marketdata-table-fav">
+                                    <a class="tablefavicon active" href="#">
+                                        <svg class="starbgcolor" xmlns="http://www.w3.org/2000/svg" width="18" height="17.171" viewBox="0 0 18 17.171">
+                                            <g transform="translate(0 -11.796)">
+                                                <g id="Group_1" data-name="Group 1" transform="translate(0 11.796)">
+                                                    <g id="Path_1" data-name="Path 1" transform="translate(0 -11.796)">
+                                                        <path d="M 3.763789653778076 28.46659469604492 C 3.759699583053589 28.46659469604492 3.753579616546631 28.46568489074707 3.747609615325928 28.46135520935059 C 3.739219665527344 28.45525550842285 3.735029697418213 28.44500541687012 3.736789703369141 28.43470573425293 L 4.68982982635498 22.87705612182617 L 4.734249591827393 22.61798477172852 L 4.546029567718506 22.43450546264648 L 0.5084196925163269 18.49863624572754 C 0.50087970495224 18.49128532409668 0.4982396960258484 18.48057556152344 0.5014696717262268 18.47062492370605 C 0.5046597123146057 18.46078491210938 0.5132896900177002 18.45350646972656 0.5234596729278564 18.4520263671875 L 6.103499889373779 17.64113616943359 L 6.363629817962646 17.60333633422852 L 6.479959487915039 17.36763572692871 L 8.975619316101074 12.31124591827393 C 8.980259895324707 12.30184555053711 8.989659309387207 12.29600524902344 9.000149726867676 12.29600524902344 C 9.010459899902344 12.29600524902344 9.020059585571289 12.30196571350098 9.024609565734863 12.31117534637451 L 11.52017974853516 17.36762619018555 L 11.63651943206787 17.60333633422852 L 11.89664936065674 17.64113616943359 L 17.47673034667969 18.4520149230957 C 17.48710060119629 18.45352554321289 17.4955005645752 18.46063613891602 17.49872970581055 18.47058486938477 C 17.50194931030273 18.4804859161377 17.49923896789551 18.49139595031738 17.49188995361328 18.49856567382813 L 13.45378971099854 22.43449592590332 L 13.26554012298584 22.61798477172852 L 13.30998992919922 22.8770751953125 L 14.26330947875977 28.43458557128906 C 14.26504993438721 28.44474601745605 14.2607593536377 28.45526504516602 14.25236988067627 28.46136474609375 C 14.24761009216309 28.46481513977051 14.24221992492676 28.46656608581543 14.23633003234863 28.46656608581543 C 14.23184013366699 28.46656608581543 14.22754001617432 28.46549606323242 14.22352981567383 28.4633960723877 L 9.232789993286133 25.83947563171387 L 9.000109672546387 25.7171459197998 L 8.767439842224121 25.83947563171387 L 3.776439666748047 28.46345520019531 C 3.772389650344849 28.465576171875 3.768279790878296 28.46659469604492 3.763789653778076 28.46659469604492 Z" stroke="none"/>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </a>
+                                </td>
+                                <td data-title="SYMBOL" class="sidebar-marketdata-table-symbol"><i id="ar-XRPEUR" class="arrow arrowdown"></i> XRPEUR </td>
+                                <td data-title="BID" class="sidebar-marketdata-table-bid sitecolorred" id="b-XRPEUR">0.232647</td>
+                                <td data-title="ASK" class="sidebar-marketdata-table-ask sitecolorred" id="a-XRPEUR">0.237346</td>
+                            </tr>
+                            <tr data-href="#">
+                                <td class="sidebar-marketdata-table-fav">
+                                    <a class="tablefavicon" href="#">
+                                        <svg class="starbgcolor" xmlns="http://www.w3.org/2000/svg" width="18" height="17.171" viewBox="0 0 18 17.171">
+                                            <g transform="translate(0 -11.796)">
+                                                <g id="Group_1" data-name="Group 1" transform="translate(0 11.796)">
+                                                    <g id="Path_1" data-name="Path 1" transform="translate(0 -11.796)">
+                                                        <path d="M 3.763789653778076 28.46659469604492 C 3.759699583053589 28.46659469604492 3.753579616546631 28.46568489074707 3.747609615325928 28.46135520935059 C 3.739219665527344 28.45525550842285 3.735029697418213 28.44500541687012 3.736789703369141 28.43470573425293 L 4.68982982635498 22.87705612182617 L 4.734249591827393 22.61798477172852 L 4.546029567718506 22.43450546264648 L 0.5084196925163269 18.49863624572754 C 0.50087970495224 18.49128532409668 0.4982396960258484 18.48057556152344 0.5014696717262268 18.47062492370605 C 0.5046597123146057 18.46078491210938 0.5132896900177002 18.45350646972656 0.5234596729278564 18.4520263671875 L 6.103499889373779 17.64113616943359 L 6.363629817962646 17.60333633422852 L 6.479959487915039 17.36763572692871 L 8.975619316101074 12.31124591827393 C 8.980259895324707 12.30184555053711 8.989659309387207 12.29600524902344 9.000149726867676 12.29600524902344 C 9.010459899902344 12.29600524902344 9.020059585571289 12.30196571350098 9.024609565734863 12.31117534637451 L 11.52017974853516 17.36762619018555 L 11.63651943206787 17.60333633422852 L 11.89664936065674 17.64113616943359 L 17.47673034667969 18.4520149230957 C 17.48710060119629 18.45352554321289 17.4955005645752 18.46063613891602 17.49872970581055 18.47058486938477 C 17.50194931030273 18.4804859161377 17.49923896789551 18.49139595031738 17.49188995361328 18.49856567382813 L 13.45378971099854 22.43449592590332 L 13.26554012298584 22.61798477172852 L 13.30998992919922 22.8770751953125 L 14.26330947875977 28.43458557128906 C 14.26504993438721 28.44474601745605 14.2607593536377 28.45526504516602 14.25236988067627 28.46136474609375 C 14.24761009216309 28.46481513977051 14.24221992492676 28.46656608581543 14.23633003234863 28.46656608581543 C 14.23184013366699 28.46656608581543 14.22754001617432 28.46549606323242 14.22352981567383 28.4633960723877 L 9.232789993286133 25.83947563171387 L 9.000109672546387 25.7171459197998 L 8.767439842224121 25.83947563171387 L 3.776439666748047 28.46345520019531 C 3.772389650344849 28.465576171875 3.768279790878296 28.46659469604492 3.763789653778076 28.46659469604492 Z" stroke="none"/>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </a>
+                                </td>
+                                <td data-title="SYMBOL" class="sidebar-marketdata-table-symbol"><i id="ar-XRPTRY" class="arrow arrowup"></i> XRPTRY </td>
+                                <td data-title="BID" class="sidebar-marketdata-table-bid sitecolorgreen" id="b-XRPTRY">1.482</td>
+                                <td data-title="ASK" class="sidebar-marketdata-table-ask sitecolorgreen" id="a-XRPTRY">1.51193</td>
+                            </tr>
+                            <tr data-href="#">
+                                <td class="sidebar-marketdata-table-fav">
+                                    <a class="tablefavicon" href="#">
+                                        <svg class="starbgcolor" xmlns="http://www.w3.org/2000/svg" width="18" height="17.171" viewBox="0 0 18 17.171">
+                                            <g transform="translate(0 -11.796)">
+                                                <g id="Group_1" data-name="Group 1" transform="translate(0 11.796)">
+                                                    <g id="Path_1" data-name="Path 1" transform="translate(0 -11.796)">
+                                                        <path d="M 3.763789653778076 28.46659469604492 C 3.759699583053589 28.46659469604492 3.753579616546631 28.46568489074707 3.747609615325928 28.46135520935059 C 3.739219665527344 28.45525550842285 3.735029697418213 28.44500541687012 3.736789703369141 28.43470573425293 L 4.68982982635498 22.87705612182617 L 4.734249591827393 22.61798477172852 L 4.546029567718506 22.43450546264648 L 0.5084196925163269 18.49863624572754 C 0.50087970495224 18.49128532409668 0.4982396960258484 18.48057556152344 0.5014696717262268 18.47062492370605 C 0.5046597123146057 18.46078491210938 0.5132896900177002 18.45350646972656 0.5234596729278564 18.4520263671875 L 6.103499889373779 17.64113616943359 L 6.363629817962646 17.60333633422852 L 6.479959487915039 17.36763572692871 L 8.975619316101074 12.31124591827393 C 8.980259895324707 12.30184555053711 8.989659309387207 12.29600524902344 9.000149726867676 12.29600524902344 C 9.010459899902344 12.29600524902344 9.020059585571289 12.30196571350098 9.024609565734863 12.31117534637451 L 11.52017974853516 17.36762619018555 L 11.63651943206787 17.60333633422852 L 11.89664936065674 17.64113616943359 L 17.47673034667969 18.4520149230957 C 17.48710060119629 18.45352554321289 17.4955005645752 18.46063613891602 17.49872970581055 18.47058486938477 C 17.50194931030273 18.4804859161377 17.49923896789551 18.49139595031738 17.49188995361328 18.49856567382813 L 13.45378971099854 22.43449592590332 L 13.26554012298584 22.61798477172852 L 13.30998992919922 22.8770751953125 L 14.26330947875977 28.43458557128906 C 14.26504993438721 28.44474601745605 14.2607593536377 28.45526504516602 14.25236988067627 28.46136474609375 C 14.24761009216309 28.46481513977051 14.24221992492676 28.46656608581543 14.23633003234863 28.46656608581543 C 14.23184013366699 28.46656608581543 14.22754001617432 28.46549606323242 14.22352981567383 28.4633960723877 L 9.232789993286133 25.83947563171387 L 9.000109672546387 25.7171459197998 L 8.767439842224121 25.83947563171387 L 3.776439666748047 28.46345520019531 C 3.772389650344849 28.465576171875 3.768279790878296 28.46659469604492 3.763789653778076 28.46659469604492 Z" stroke="none"/>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </a>
+                                </td>
+                                <td data-title="SYMBOL" class="sidebar-marketdata-table-symbol"><i id="ar-USDTRY" class="arrow arrowup"></i> USDTRY </td>
+                                <td data-title="BID" class="sidebar-marketdata-table-bid sitecolorgreen" id="b-USDTRY">5.76722</td>
+                                <td data-title="ASK" class="sidebar-marketdata-table-ask sitecolorgreen" id="a-USDTRY">5.76722</td>
+                            </tr>
+                            <tr data-href="#">
+                                <td class="sidebar-marketdata-table-fav">
+                                    <a class="tablefavicon" href="#">
+                                        <svg class="starbgcolor" xmlns="http://www.w3.org/2000/svg" width="18" height="17.171" viewBox="0 0 18 17.171">
+                                            <g transform="translate(0 -11.796)">
+                                                <g id="Group_1" data-name="Group 1" transform="translate(0 11.796)">
+                                                    <g id="Path_1" data-name="Path 1" transform="translate(0 -11.796)">
+                                                        <path d="M 3.763789653778076 28.46659469604492 C 3.759699583053589 28.46659469604492 3.753579616546631 28.46568489074707 3.747609615325928 28.46135520935059 C 3.739219665527344 28.45525550842285 3.735029697418213 28.44500541687012 3.736789703369141 28.43470573425293 L 4.68982982635498 22.87705612182617 L 4.734249591827393 22.61798477172852 L 4.546029567718506 22.43450546264648 L 0.5084196925163269 18.49863624572754 C 0.50087970495224 18.49128532409668 0.4982396960258484 18.48057556152344 0.5014696717262268 18.47062492370605 C 0.5046597123146057 18.46078491210938 0.5132896900177002 18.45350646972656 0.5234596729278564 18.4520263671875 L 6.103499889373779 17.64113616943359 L 6.363629817962646 17.60333633422852 L 6.479959487915039 17.36763572692871 L 8.975619316101074 12.31124591827393 C 8.980259895324707 12.30184555053711 8.989659309387207 12.29600524902344 9.000149726867676 12.29600524902344 C 9.010459899902344 12.29600524902344 9.020059585571289 12.30196571350098 9.024609565734863 12.31117534637451 L 11.52017974853516 17.36762619018555 L 11.63651943206787 17.60333633422852 L 11.89664936065674 17.64113616943359 L 17.47673034667969 18.4520149230957 C 17.48710060119629 18.45352554321289 17.4955005645752 18.46063613891602 17.49872970581055 18.47058486938477 C 17.50194931030273 18.4804859161377 17.49923896789551 18.49139595031738 17.49188995361328 18.49856567382813 L 13.45378971099854 22.43449592590332 L 13.26554012298584 22.61798477172852 L 13.30998992919922 22.8770751953125 L 14.26330947875977 28.43458557128906 C 14.26504993438721 28.44474601745605 14.2607593536377 28.45526504516602 14.25236988067627 28.46136474609375 C 14.24761009216309 28.46481513977051 14.24221992492676 28.46656608581543 14.23633003234863 28.46656608581543 C 14.23184013366699 28.46656608581543 14.22754001617432 28.46549606323242 14.22352981567383 28.4633960723877 L 9.232789993286133 25.83947563171387 L 9.000109672546387 25.7171459197998 L 8.767439842224121 25.83947563171387 L 3.776439666748047 28.46345520019531 C 3.772389650344849 28.465576171875 3.768279790878296 28.46659469604492 3.763789653778076 28.46659469604492 Z" stroke="none"/>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </a>
+                                </td>
+                                <td data-title="SYMBOL" class="sidebar-marketdata-table-symbol"><i id="ar-EURTRY" class="arrow arrowup"></i> EURTRY </td>
+                                <td data-title="BID" class="sidebar-marketdata-table-bid sitecolorgreen" id="b-EURTRY">6.37183</td>
+                                <td data-title="ASK" class="sidebar-marketdata-table-ask sitecolorgreen" id="a-EURTRY">6.37318</td>
+                            </tr>
+                            <tr data-href="#">
+                                <td class="sidebar-marketdata-table-fav">
+                                    <a class="tablefavicon" href="#">
+                                        <svg class="starbgcolor" xmlns="http://www.w3.org/2000/svg" width="18" height="17.171" viewBox="0 0 18 17.171">
+                                            <g transform="translate(0 -11.796)">
+                                                <g id="Group_1" data-name="Group 1" transform="translate(0 11.796)">
+                                                    <g id="Path_1" data-name="Path 1" transform="translate(0 -11.796)">
+                                                        <path d="M 3.763789653778076 28.46659469604492 C 3.759699583053589 28.46659469604492 3.753579616546631 28.46568489074707 3.747609615325928 28.46135520935059 C 3.739219665527344 28.45525550842285 3.735029697418213 28.44500541687012 3.736789703369141 28.43470573425293 L 4.68982982635498 22.87705612182617 L 4.734249591827393 22.61798477172852 L 4.546029567718506 22.43450546264648 L 0.5084196925163269 18.49863624572754 C 0.50087970495224 18.49128532409668 0.4982396960258484 18.48057556152344 0.5014696717262268 18.47062492370605 C 0.5046597123146057 18.46078491210938 0.5132896900177002 18.45350646972656 0.5234596729278564 18.4520263671875 L 6.103499889373779 17.64113616943359 L 6.363629817962646 17.60333633422852 L 6.479959487915039 17.36763572692871 L 8.975619316101074 12.31124591827393 C 8.980259895324707 12.30184555053711 8.989659309387207 12.29600524902344 9.000149726867676 12.29600524902344 C 9.010459899902344 12.29600524902344 9.020059585571289 12.30196571350098 9.024609565734863 12.31117534637451 L 11.52017974853516 17.36762619018555 L 11.63651943206787 17.60333633422852 L 11.89664936065674 17.64113616943359 L 17.47673034667969 18.4520149230957 C 17.48710060119629 18.45352554321289 17.4955005645752 18.46063613891602 17.49872970581055 18.47058486938477 C 17.50194931030273 18.4804859161377 17.49923896789551 18.49139595031738 17.49188995361328 18.49856567382813 L 13.45378971099854 22.43449592590332 L 13.26554012298584 22.61798477172852 L 13.30998992919922 22.8770751953125 L 14.26330947875977 28.43458557128906 C 14.26504993438721 28.44474601745605 14.2607593536377 28.45526504516602 14.25236988067627 28.46136474609375 C 14.24761009216309 28.46481513977051 14.24221992492676 28.46656608581543 14.23633003234863 28.46656608581543 C 14.23184013366699 28.46656608581543 14.22754001617432 28.46549606323242 14.22352981567383 28.4633960723877 L 9.232789993286133 25.83947563171387 L 9.000109672546387 25.7171459197998 L 8.767439842224121 25.83947563171387 L 3.776439666748047 28.46345520019531 C 3.772389650344849 28.465576171875 3.768279790878296 28.46659469604492 3.763789653778076 28.46659469604492 Z" stroke="none"/>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </svg>
+                                    </a>
+                                </td>
+                                <td data-title="SYMBOL" class="sidebar-marketdata-table-symbol"><i id="ar-MPAYUSD" class="arrow arrowup"></i> MPAYUSD </td>
+                                <td data-title="BID" class="sidebar-marketdata-table-bid sitecolorgreen" id="b-MPAYUSD">-</td>
+                                <td data-title="ASK" class="sidebar-marketdata-table-ask sitecolorgreen" id="a-MPAYUSD">-</td>
+                            </tr>
+                            </tbody>
+                        </table>
                     </div>
                     <script>
                         $(window).on("load resize",function(e){
@@ -415,7 +617,7 @@
             <!-- Market Data End -->
 
             <!-- Chart Start -->
-            <div class="trader-bigchart-wrapper maincont-right col-10">
+            <div class="trader-bigchart-wrapper sidesectioncont-right col-10">
                 <div class="bigchart-chart d-none">
                     <img src="../assets/img/tradepage/elements/Trading_View.svg" alt="Trading_View" width="936" height="491" />
                 </div>
@@ -431,10 +633,10 @@
 <!-- Order Start -->
 <section class="trader-order">
     <div class="container">
-        <div class="row">
+        <div class="row trader-order-row">
 
             <!-- Balance -->
-            <div class="sidebar sidebar-tradepage maincont-left col-2">
+            <div class="sidebar sidebar-tradepage sidesectioncont-left col-2">
                 <div class="sidebar-balance">
                     <h2 class="boxtitle boxtitle-sm">NAKİT BAKİYENİZ</h2>
                     <table class="sidebar-balance-table sitetable table">
@@ -493,7 +695,7 @@
             <!-- Balance -->
 
             <!-- Order -->
-            <div class="trader-order-wrapper maincont-right col-10">
+            <div class="trader-order-wrapper sidesectioncont-right col-10">
 
                 <!-- Order Tab -->
                 <div class="trader-order-orders nav-tabs-responsive nav-tabs-responsive-light">

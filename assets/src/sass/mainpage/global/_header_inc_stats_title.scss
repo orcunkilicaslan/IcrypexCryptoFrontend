@@ -129,17 +129,17 @@ $globalSvgIconImgPath : "../../img/global/svg";
           @include ReSassWidthResponsive(480){
             display: flex;
             align-items: center;
-            justify-content: flex-end;
+            justify-content: center;
             flex: 0 0 10%;
             max-width: 10%;
             position: relative;
-            min-height: 34px;
+            min-height: 28px;
             margin-right: 10px;
             border-bottom: 1px solid transparentize($global-clr-soft-gray, 0.7);
 
             &-span{
               width: 36px;
-              height: 34px;
+              height: 28px;
               border: 1px solid transparentize($global-clr-soft-gray, 0.7);
               border-left: none;
               border-bottom: none;
@@ -205,6 +205,13 @@ $globalSvgIconImgPath : "../../img/global/svg";
                 top: calc(50% - 16px);
                 right: 0;
                 background-color: transparentize($global-clr-soft-gray, 0.7);
+
+
+                @include ReSassWidthResponsive(480){
+                  height: 28px;
+                  top: calc(50% - 13px);
+                }
+
               }
 
               &:last-child{

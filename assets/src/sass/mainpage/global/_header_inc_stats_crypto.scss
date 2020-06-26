@@ -432,6 +432,10 @@ $globalSvgIconImgPath : "../../img/global/svg";
       width: 15px;
       height: 100%;
       position: absolute;
+
+      @include ReSassWidthResponsive(480){
+        width: 10px;
+      }
     }
 
     &::before{
