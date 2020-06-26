@@ -213,6 +213,12 @@ $globalSvgIconImgPath : "../../img/global/svg";
                 color: $global-clr-white !important;
                 border-color: $global-clr-soft-blue;
 
+                a.tablefavicon{
+                  svg{
+                    fill: $global-clr-white !important;
+                  }
+                }
+
                 i.arrowup{
                   border-bottom-color: $global-clr-white !important;
                 }
@@ -228,6 +234,12 @@ $globalSvgIconImgPath : "../../img/global/svg";
               td{
                 color: $global-clr-white !important;
                 border-color: $global-clr-soft-blue;
+
+                a.tablefavicon{
+                  svg{
+                    fill: $global-clr-white !important;
+                  }
+                }
 
                 i.arrowup{
                   border-bottom-color: $global-clr-white !important;
