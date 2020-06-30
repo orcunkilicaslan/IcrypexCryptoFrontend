@@ -446,6 +446,12 @@ $globalSvgIconImgPath : "../../img/global/svg";
             line-height: 1.25;
           }
 
+          p{
+            margin-top: 10px;
+
+            &:first-child{margin-top: 0;}
+          }
+
           .form-check{
             margin-top: 15px;
           }
