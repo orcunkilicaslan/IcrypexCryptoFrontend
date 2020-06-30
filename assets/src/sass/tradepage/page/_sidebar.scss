@@ -209,10 +209,10 @@ $globalSvgIconImgPath : "../../img/global/svg";
           overflow-y: hidden;
           overflow-x: auto;
           position: relative;
-          padding-right: 12px;
+          padding-right: 10px;
 
           .table{
-            margin-bottom: 2px;
+            margin-top: -1px;
           }
 
           .ps__scrollbar-y-rail{
@@ -281,7 +281,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
         }
 
         &[class*="-symbol"]{
-          padding-left: 18px;
+          padding-left: 20px;
         }
       }
 
@@ -292,7 +292,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
       .tablefavicon{
         width: 29px;
-        height: 24px;
+        height: 29px;
         display: block;
         text-align: center;
         position: absolute;
@@ -304,11 +304,22 @@ $globalSvgIconImgPath : "../../img/global/svg";
           display: none;
         }
 
+        &::before{
+          content: "";
+          width: 1px;
+          height: calc(100% / 2);
+          background-color: transparentize($global-clr-soft-gray, 0.7);
+          position: absolute;
+          right: 0;
+          top: 50%;
+          @include translateY(-50%);
+        }
+
         svg{
           width: 14px;
           fill: $global-clr-soft-gray;
           position: relative;
-          top: 2px;
+          top: 5px;
           left: 0;
         }
 
