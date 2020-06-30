@@ -74,7 +74,6 @@ $globalSvgIconImgPath : "../../img/global/svg";
         &-selectweb{
           display: inline-flex;
           align-items: center;
-          height: 60px;
           cursor: pointer;
 
           @include ReSassWidthResponsive(1400){
@@ -88,20 +87,18 @@ $globalSvgIconImgPath : "../../img/global/svg";
             display: flex;
             align-items: center;
             margin-right: 5px;
+            position: relative;
+            top: 1px;
 
             i[class*="icon-svg"]{
               background-color: $global-clr-btn-blue;
               display: block;
               position: relative;
-              width: 35px;
-              height: 35px;
+              width: 32px;
+              height: 32px;
               @include border-radius(50%);
 
-              @include ReSassWidthResponsive(1200){
-                width: 30px;
-                height: 30px;
-              }
-              @include ReSassWidthResponsive(400){
+              @include ReSassWidthResponsive(992){
                 width: 24px;
                 height: 24px;
               }
@@ -142,21 +139,18 @@ $globalSvgIconImgPath : "../../img/global/svg";
           }
 
           .currencytext{
-            font-size: 45px;
+            font-size: 36px;
             font-weight: 300;
-            letter-spacing: -0.9px;
-            min-width: 130px;
+            line-height: 1.2;
+            letter-spacing: -0.6px;
+            min-width: 150px;
 
             @include ReSassWidthResponsive(1400){
               font-size: 40px;
             }
-            @include ReSassWidthResponsive(1200){
-              font-size: 33px;
+            @include ReSassWidthResponsive(992){
+              font-size: 26px;
               min-width: 105px;
-            }
-            @include ReSassWidthResponsive(400){
-              font-size: 25px;
-              min-width: 80px;
             }
           }
         }

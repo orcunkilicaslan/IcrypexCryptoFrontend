@@ -218,13 +218,13 @@
                         <form class="formuinew">
 
                             <!-- Coin/Currency Web -->
-                            <div class="header-stats-price-big-selectweb">
+                            <div class="header-stats-price-big-selectweb" style="display: inline-flex !important;">
                                 <span class="coinicons"><i class="icon-svg icon-svg-currencyiconmpay"></i><i class="icon-svg icon-svg-currencyiconusd"></i></span>
                                 <span class="currencytext"><span class="selectcoin">MPAY</span>/<span class="selectcurrency">USD</span></span>
                             </div>
                             <!-- Coin/Currency Web -->
                             <!-- Coin/Currency Select Mobile -->
-                            <div class="header-stats-price-big-selectmobile form-group colorsetwhite fontsize20px d-flex mb-0">
+                            <div class="header-stats-price-big-selectmobile form-group colorsetwhite fontsize20px d-flex mb-0" style="display: none !important;">
                                 <select class="header-stats-price-big-select selectcoin col form-control custom-select">
                                     <option value="0">BTC</option>
                                     <option value="1">ETH</option>
@@ -320,7 +320,7 @@
                         </div>
                     </div>
                     <div class="marketdatacontent tab-content">
-                        <table class="sidebar-marketdata-table sitetable table">
+                        <table class="sidebar-marketdata-table webtablethead sitetable table">
                             <thead>
                             <tr>
                                 <th class="sidebar-marketdata-table-fav"></th>
@@ -331,7 +331,15 @@
                             </thead>
                         </table>
                         <div id="marketdatacontentscrollbar" class="marketdatacontent-scrollbar">
-                            <table id="sidebarmarketdataowltable" class="sidebar-marketdata-table sitetable table sitetableweburllink">
+                            <table id="sidebarmarketdataowltablexxx" class="sidebar-marketdata-table mobiletablethead sitetable table sitetableweburllink">
+                                <thead>
+                                <tr>
+                                    <th class="sidebar-marketdata-table-fav"></th>
+                                    <th class="sidebar-marketdata-table-symbol">SYMBOL</th>
+                                    <th class="sidebar-marketdata-table-bid">BID</th>
+                                    <th class="sidebar-marketdata-table-ask">ASK</th>
+                                </tr>
+                                </thead>
                                 <tbody>
                                 <tr data-href="#">
                                     <td class="sidebar-marketdata-table-fav">
@@ -609,13 +617,11 @@
                     </div>
                     <script>
                         $(window).on("load resize",function(e){
-                            if($(window).width() >= 992){
-                                $(document).ready(function() {
-                                    $('.sitetableweburllink tr[data-href]').on("click", function() {
-                                        document.location = $(this).data('href');
-                                    });
+                            $(document).ready(function() {
+                                $('.sitetableweburllink tr[data-href]').on("click", function() {
+                                    document.location = $(this).data('href');
                                 });
-                            }
+                            });
                         });
                     </script>
                     <script>

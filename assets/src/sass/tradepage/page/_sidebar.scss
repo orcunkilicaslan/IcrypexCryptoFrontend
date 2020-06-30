@@ -8,10 +8,6 @@ $globalSvgIconImgPath : "../../img/global/svg";
     &-filter{
       background-color: $global-clr-white;
 
-      @include ReSassWidthResponsive(992){
-        display: flex;
-      }
-
       .marketdatatabs{
         background-color: transparentize($global-clr-soft-gray, 0.85);
         padding: 2px;
@@ -44,7 +40,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
             padding-right: 2px;
 
             @include ReSassWidthResponsive(992){
-              font-size: 17px;
+              font-size: 20px;
             }
 
             &:first-child{
@@ -53,7 +49,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
               max-width: 100%;
 
               @include ReSassWidthResponsive(992){
-                width: 36px;
+                width: 40px;
               }
             }
           }
@@ -67,7 +63,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
             @include ReSassWidthResponsive(992){
               height: 30px;
-              padding: 1px 4px;
+              padding: 4px 4px;
               border-color: transparentize($global-clr-soft-gray, 0.7);
             }
 
@@ -116,14 +112,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
         margin: 5px 0;
 
         @include ReSassWidthResponsive(992){
-          flex: 0 0 150px;
-          max-width: 150px;
-          padding-left: 15px;
-        }
-        @include ReSassWidthResponsive(400){
-          flex: 0 0 100px;
-          max-width: 100px;
-          padding-left: 10px;
+          margin: 10px 0;
         }
 
         &-input{
@@ -237,6 +226,19 @@ $globalSvgIconImgPath : "../../img/global/svg";
     }
 
     &-table{
+
+      &.webtablethead{
+        @include ReSassWidthResponsive(992){
+          display: none;
+        }
+      }
+
+      &.mobiletablethead thead{
+        @include ReSassMinWidthResponsive(992){
+          display: none;
+        }
+      }
+
       td, th{
         padding: 1px 5px;
         line-height: 1.4;
@@ -251,12 +253,20 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
         &[class*="-fav"]{
           width: 30px;
+
+          @include ReSassWidthResponsive(992){
+            width: 40px;
+          }
         }
         &[class*="-symbol"]{
-          width: 77px;
+          @include ReSassMinWidthResponsive(992){
+            width: 77px;
+          }
         }
         &[class*="-bid"]{
-          width: 62px;
+          @include ReSassMinWidthResponsive(992){
+            width: 62px;
+          }
         }
       }
 
@@ -270,18 +280,26 @@ $globalSvgIconImgPath : "../../img/global/svg";
         padding-top: 7px;
         padding-bottom: 7px;
 
+        @include ReSassWidthResponsive(992){
+          padding-top: 10px;
+          padding-bottom: 10px;
+        }
+
         &[class*="-fav"]{
           width: 30px;
           padding: 0;
-          //border-right: 1px solid transparentize($global-clr-soft-gray, 0.7);
 
           @include ReSassWidthResponsive(992){
-            display: none;
+            width: 40px;
           }
         }
 
         &[class*="-symbol"]{
           padding-left: 20px;
+
+          @include ReSassWidthResponsive(992){
+            padding-left: 30px;
+          }
         }
       }
 
@@ -292,7 +310,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
       .tablefavicon{
         width: 29px;
-        height: 29px;
+        height: 100%;
         display: block;
         text-align: center;
         position: absolute;
@@ -301,7 +319,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
         z-index: 1;
 
         @include ReSassWidthResponsive(992){
-          display: none;
+          width: 40px;
         }
 
         &::before{
@@ -319,16 +337,13 @@ $globalSvgIconImgPath : "../../img/global/svg";
           width: 14px;
           fill: $global-clr-soft-gray;
           position: relative;
-          top: 5px;
           left: 0;
+          top: 50%;
+          @include translateY(-50%);
         }
 
         &.active svg{
           fill: $global-clr-orange;
-        }
-
-        @include ReSassWidthResponsive(992){
-          width: 14px;
         }
       }
 
