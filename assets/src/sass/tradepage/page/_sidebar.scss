@@ -205,7 +205,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
         padding-right: 10px;
 
         @include ReSassWidthResponsive(992){
-          height: calc(100vh - 180px);
+          height: calc(100vh - 200px);
         }
 
         .table{
