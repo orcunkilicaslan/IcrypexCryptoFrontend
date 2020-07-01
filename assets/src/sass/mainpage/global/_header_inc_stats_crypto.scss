@@ -150,16 +150,15 @@ $globalSvgIconImgPath : "../../img/global/svg";
           }
 
           .currencytext{
-            font-size: 36px;
+            font-size: 30px;
             font-weight: 300;
             line-height: 1.2;
             letter-spacing: -0.6px;
+            position: relative;
+            top: 1px;
 
-            @include ReSassWidthResponsive(1400){
-              font-size: 30px;
-            }
             @include ReSassWidthResponsive(992){
-              font-size: 26px;
+              font-size: 24px;
             }
           }
 
@@ -167,8 +166,6 @@ $globalSvgIconImgPath : "../../img/global/svg";
             @include ReSassMinWidthResponsive(992){
               display: none;
             }
-
-            background-color: $global-clr-soft-blue;
             padding: 0;
             width: 14px;
             height: 14px;
@@ -177,16 +174,20 @@ $globalSvgIconImgPath : "../../img/global/svg";
             top: 2px;
             @include border-radius(50%);
 
+            @include ReSassWidthResponsive(992){
+              top: 1px;
+            }
+
             &::before{
               content: "";
               position:absolute;
-              width: 6px;
-              height: 6px;
+              width: 10px;
+              height: 10px;
               padding: 0;
-              border-top: 1px solid $global-clr-white;
-              border-right: 1px solid $global-clr-white;
-              top: calc(50% - 4px);
-              left: calc(50% - 3px);
+              border-top: 2px solid $global-clr-white;
+              border-right: 2px solid $global-clr-white;
+              top: calc(50% - 6px);
+              left: calc(50% - 5px);
               @include rotate(135);
               @include transition(border, 0.1s, ease-in-out);
             }
