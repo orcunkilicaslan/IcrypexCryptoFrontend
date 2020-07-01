@@ -192,36 +192,36 @@
       }
 
       .contentarea{
-        color: $global-clr-dark-blue;
-        font-size: 17px;
-        line-height: 1.18;
-        padding: 30px;
-        text-align: center;
+         color: $global-clr-dark-blue;
+         font-size: 17px;
+         line-height: 1.18;
+         padding: 30px;
+         text-align: center;
 
-        .alert-icon{
-          margin: auto;
-          height: 60px;
-          position: relative;
-          top: -30px;
-          @include scale(0.5);
-        }
+         .alert-icon{
+           margin: auto;
+           height: 60px;
+           position: relative;
+           top: -30px;
+           @include scale(0.5);
+         }
 
-        .modalcallcenter{
-          margin-top: 15px;
-          color: $global-clr-dark-blue;
+         .modalcallcenter{
+           margin-top: 15px;
+           color: $global-clr-dark-blue;
 
-          &-title{
-            margin: 0;
-            font-size: 17px;
-            font-weight: normal;
-          }
-          &-number{
-            color: $global-clr-dark-blue;
-            font-size: 17px;
-            font-weight: 500;
-          }
-        }
-      }
+           &-title{
+             margin: 0;
+             font-size: 17px;
+             font-weight: normal;
+           }
+           &-number{
+             color: $global-clr-dark-blue;
+             font-size: 17px;
+             font-weight: 500;
+           }
+         }
+       }
     }
 
     &alerts{

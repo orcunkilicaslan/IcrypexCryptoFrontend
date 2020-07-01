@@ -38,16 +38,16 @@ $globalSvgIconImgPath : "../../img/global/svg";
             max-width: 20%;
           }
           @include ReSassWidthResponsive(992){
-            flex: 0 0 20%;
-            max-width: 20%;
+            flex: 0 0 23%;
+            max-width: 23%;
           }
           @include ReSassWidthResponsive(768){
-            flex: 0 0 25%;
-            max-width: 25%;
+            flex: 0 0 30%;
+            max-width: 30%;
           }
           @include ReSassWidthResponsive(576){
-            flex: 0 0 130px;
-            max-width: 130px;
+            flex: 0 0 160px;
+            max-width: 160px;
           }
         }
 
@@ -58,24 +58,34 @@ $globalSvgIconImgPath : "../../img/global/svg";
             max-width: 80%;
           }
           @include ReSassWidthResponsive(992){
-            flex: 0 0 80%;
-            max-width: 80%;
+            flex: 0 0 77%;
+            max-width: 77%;
           }
           @include ReSassWidthResponsive(768){
-            flex: 0 0 75%;
-            max-width: 75%;
+            flex: 0 0 70%;
+            max-width: 70%;
           }
           @include ReSassWidthResponsive(576){
-            flex: 0 0 calc(100% - 130px);
-            max-width: calc(100% - 130px);
+            flex: 0 0 calc(100% - 160px);
+            max-width: calc(100% - 160px);
           }
         }
 
         &-selectweb{
           display: inline-flex;
           align-items: center;
-          height: 60px;
-          cursor: pointer;
+
+          a[data-toggle="modal"]{
+            color: $global-clr-white;
+            display: inline-flex;
+            align-items: center;
+            cursor: pointer;
+
+            @include ReSassMinWidthResponsive(992){
+              pointer-events: none !important;
+              cursor: default !important;
+            }
+          }
 
           @include ReSassWidthResponsive(1400){
             height: 54px;
@@ -88,20 +98,18 @@ $globalSvgIconImgPath : "../../img/global/svg";
             display: flex;
             align-items: center;
             margin-right: 5px;
+            position: relative;
+            top: 1px;
 
             i[class*="icon-svg"]{
               background-color: $global-clr-btn-blue;
               display: block;
               position: relative;
-              width: 35px;
-              height: 35px;
+              width: 32px;
+              height: 32px;
               @include border-radius(50%);
 
-              @include ReSassWidthResponsive(1200){
-                width: 30px;
-                height: 30px;
-              }
-              @include ReSassWidthResponsive(400){
+              @include ReSassWidthResponsive(992){
                 width: 24px;
                 height: 24px;
               }
@@ -142,23 +150,49 @@ $globalSvgIconImgPath : "../../img/global/svg";
           }
 
           .currencytext{
-            font-size: 45px;
+            font-size: 36px;
             font-weight: 300;
-            letter-spacing: -0.9px;
-            min-width: 130px;
+            line-height: 1.2;
+            letter-spacing: -0.6px;
 
             @include ReSassWidthResponsive(1400){
-              font-size: 40px;
+              font-size: 30px;
             }
-            @include ReSassWidthResponsive(1200){
-              font-size: 33px;
-              min-width: 105px;
-            }
-            @include ReSassWidthResponsive(400){
-              font-size: 25px;
-              min-width: 80px;
+            @include ReSassWidthResponsive(992){
+              font-size: 26px;
             }
           }
+
+          .currencyarrow{
+            @include ReSassMinWidthResponsive(992){
+              display: none;
+            }
+
+            background-color: $global-clr-soft-blue;
+            padding: 0;
+            width: 14px;
+            height: 14px;
+            margin-left: 5px;
+            position: relative;
+            top: 2px;
+            @include border-radius(50%);
+
+            &::before{
+              content: "";
+              position:absolute;
+              width: 6px;
+              height: 6px;
+              padding: 0;
+              border-top: 1px solid $global-clr-white;
+              border-right: 1px solid $global-clr-white;
+              top: calc(50% - 4px);
+              left: calc(50% - 3px);
+              @include rotate(135);
+              @include transition(border, 0.1s, ease-in-out);
+            }
+          }
+
+
         }
 
         &-selectmobile{

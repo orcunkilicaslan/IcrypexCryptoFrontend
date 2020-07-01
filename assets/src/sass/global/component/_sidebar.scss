@@ -206,7 +206,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
     }
 
     @include ReSassWidthResponsive(400){
-      display: block !important;
+      display: block;
     }
 
     > *[class*="sidebar-"]{

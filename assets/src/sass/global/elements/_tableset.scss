@@ -59,6 +59,11 @@ $globalSvgIconImgPath : "../../img/global/svg";
       position: absolute;
       left: 8px;
       top: calc(50% - 2px);
+
+      @include ReSassWidthResponsive(992){
+        left: 15px;
+      }
+
       &up{
         border-left: 4px solid transparent;
         border-right: 4px solid transparent;
