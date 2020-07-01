@@ -30,6 +30,97 @@ $tradepageHomepageImgPath : "../../img/tradepage";
     }
 
     .sidebar{
+      &.modal{
+        display: none;
+        margin: 0;
+
+        .modal-dialog{
+          margin: 30px;
+
+          @include ReSassWidthResponsive(400){
+            margin: 15px;
+          }
+        }
+
+        .modal-content{
+          padding: 20px;
+          border: none;
+          border-radius: 0;
+          height: calc(100vh - 60px);
+
+          @include ReSassWidthResponsive(576){
+            padding: 15px;
+          }
+          @include ReSassWidthResponsive(400){
+            padding: 10px;
+            height: calc(100vh - 30px);
+          }
+
+          button.close{
+            display: block;
+            background-color: transparentize($global-clr-red, 0.1);
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            top: -12px;
+            right: -12px;
+            text-indent: -9999px;
+            opacity: 1;
+            z-index: 1;
+            @include border-radius(50%);
+
+            &::before,
+            &::after{
+              content: "";
+              position: absolute;
+              background-color: $global-clr-white;
+              width: 14px;
+              height: 2px;
+              left: 8px;
+              top: calc(50% - 1px);
+              @include transition(all, 0.1s, ease-in-out);
+            }
+
+            &::before{
+              @include rotate(45);
+            }
+            &::after{
+              @include rotate(135);
+            }
+
+            &:hover{
+              &::before,
+              &::after{
+                background-color: $global-clr-red;
+              }
+            }
+          }
+        }
+
+        @include ReSassMinWidthResponsive(992){
+          position: static;
+          display: block;
+          opacity: 1;
+
+          .modal-dialog{
+            margin: 0;
+            max-width: none;
+            overflow: inherit;
+            @include transform-multiple(none);
+          }
+
+          .modal-content{
+            height: auto;
+            padding: 0;
+
+            button.close{
+              display: none;
+            }
+          }
+
+        }
+      }
+
       @include ReSassWidthResponsive(992){
         order: 2;
         padding-left: 0 !important;

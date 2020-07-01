@@ -38,16 +38,16 @@ $globalSvgIconImgPath : "../../img/global/svg";
             max-width: 20%;
           }
           @include ReSassWidthResponsive(992){
-            flex: 0 0 20%;
-            max-width: 20%;
+            flex: 0 0 23%;
+            max-width: 23%;
           }
           @include ReSassWidthResponsive(768){
-            flex: 0 0 25%;
-            max-width: 25%;
+            flex: 0 0 30%;
+            max-width: 30%;
           }
           @include ReSassWidthResponsive(576){
-            flex: 0 0 130px;
-            max-width: 130px;
+            flex: 0 0 160px;
+            max-width: 160px;
           }
         }
 
@@ -58,23 +58,34 @@ $globalSvgIconImgPath : "../../img/global/svg";
             max-width: 80%;
           }
           @include ReSassWidthResponsive(992){
-            flex: 0 0 80%;
-            max-width: 80%;
+            flex: 0 0 77%;
+            max-width: 77%;
           }
           @include ReSassWidthResponsive(768){
-            flex: 0 0 75%;
-            max-width: 75%;
+            flex: 0 0 70%;
+            max-width: 70%;
           }
           @include ReSassWidthResponsive(576){
-            flex: 0 0 calc(100% - 130px);
-            max-width: calc(100% - 130px);
+            flex: 0 0 calc(100% - 160px);
+            max-width: calc(100% - 160px);
           }
         }
 
         &-selectweb{
           display: inline-flex;
           align-items: center;
-          cursor: pointer;
+
+          a[data-toggle="modal"]{
+            color: $global-clr-white;
+            display: inline-flex;
+            align-items: center;
+            cursor: pointer;
+
+            @include ReSassMinWidthResponsive(992){
+              pointer-events: none !important;
+              cursor: default !important;
+            }
+          }
 
           @include ReSassWidthResponsive(1400){
             height: 54px;
@@ -143,16 +154,45 @@ $globalSvgIconImgPath : "../../img/global/svg";
             font-weight: 300;
             line-height: 1.2;
             letter-spacing: -0.6px;
-            min-width: 150px;
 
             @include ReSassWidthResponsive(1400){
-              font-size: 40px;
+              font-size: 30px;
             }
             @include ReSassWidthResponsive(992){
               font-size: 26px;
-              min-width: 105px;
             }
           }
+
+          .currencyarrow{
+            @include ReSassMinWidthResponsive(992){
+              display: none;
+            }
+
+            background-color: $global-clr-soft-blue;
+            padding: 0;
+            width: 14px;
+            height: 14px;
+            margin-left: 5px;
+            position: relative;
+            top: 2px;
+            @include border-radius(50%);
+
+            &::before{
+              content: "";
+              position:absolute;
+              width: 6px;
+              height: 6px;
+              padding: 0;
+              border-top: 1px solid $global-clr-white;
+              border-right: 1px solid $global-clr-white;
+              top: calc(50% - 4px);
+              left: calc(50% - 3px);
+              @include rotate(135);
+              @include transition(border, 0.1s, ease-in-out);
+            }
+          }
+
+
         }
 
         &-selectmobile{
