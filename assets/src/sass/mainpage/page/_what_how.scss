@@ -208,27 +208,10 @@
             color: $global-clr-white;
           }
         }
-        .icon {
-          background: transparent;
+
+        .icon{
           &::before {
-            background: transparent;
-            top: calc(50% - -1px);
-            left: calc(50% - 4px);
-            @include rotate(315);
             border-color: $global-clr-white;
-          }
-          &::after {
-            content: "";
-            position:absolute;
-            background-color: transparent;
-            width: 9px;
-            height: 9px;
-            padding: 0;
-            border-top: 2px solid $global-clr-white;
-            border-right: 2px solid $global-clr-white;
-            top: calc(50% - 9px);
-            left: calc(50% - 4px);
-            @include rotate(135);
           }
         }
       }
@@ -273,26 +256,6 @@
         border-radius: 4px;
         @include translate(0,-50%);
         @include transition(all, 0.3s, ease-in-out);
-
-        /*
-        &::before,
-        &::after {
-          content: '';
-          width: 8px;
-          height: 2px;
-          background: #666666;
-          position: absolute;
-          border-radius: 3px;
-          left: 50%;
-          top: 50%;
-          @include transition(all, 0.3s, ease-in-out);
-          @include translate(-50%,-50%);
-        }
-        &::after {
-          transform: translate(-50%, -50%) rotate(90deg);
-          z-index: -1;
-        }
-        */
 
         &::before{
           content: "";
