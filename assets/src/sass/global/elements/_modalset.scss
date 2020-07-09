@@ -94,6 +94,7 @@
       }
 
       &-body{
+        color: $global-clr-dark-blue;
         border: 1px solid transparentize($global-clr-soft-gray, 0.70);
         margin-top: -2px;
         padding: 0;
@@ -137,6 +138,44 @@
       &-table{
         margin-top: -5px;
         border-bottom: 1px solid transparentize($global-clr-soft-gray, 0.7);
+      }
+
+      &-noclose{
+        padding-right: 0 !important;
+
+        &-dialog{
+          width: 100%;
+          max-width: inherit;
+        }
+
+        &-content{
+          background-color: transparent;
+          height: 100%;
+        }
+
+        &-wrapper{
+          background-color: $global-clr-white;
+          max-width: 540px;
+          padding: 5px;
+          position: relative;
+          left: 50%;
+          top: 50%;
+          @include translate(-50%, -50%);
+
+          @include ReSassWidthResponsive(768){
+            top: 0;
+            left: 50%;
+            @include translateX(-50%);
+          }
+
+        }
+
+        &.modal.show{
+          @include ReSassWidthResponsive(768){
+            height: calc(100% - 5px);
+          }
+        }
+
       }
     }
 
