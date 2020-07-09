@@ -95,9 +95,16 @@
 
       &-body{
         color: $global-clr-dark-blue;
+        font-size: 17px;
         border: 1px solid transparentize($global-clr-soft-gray, 0.70);
         margin-top: -2px;
         padding: 0;
+
+        p{
+          margin-bottom: 10px;
+
+          &:last-child{margin-bottom: 0}
+        }
       }
 
       &-form{
@@ -155,7 +162,7 @@
 
         &-wrapper{
           background-color: $global-clr-white;
-          max-width: 540px;
+          max-width: 640px;
           padding: 5px;
           position: relative;
           left: 50%;
