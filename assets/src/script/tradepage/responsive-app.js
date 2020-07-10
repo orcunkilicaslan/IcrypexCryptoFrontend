@@ -97,9 +97,9 @@ $(window).on("load resize",function(e){
 $(window).on("load resize",function(e){
     if($(window).width() <= 991){
         $(document).ready(function() {
-            $('#sidebarmarketdataowltable > tbody > tr').addClass("item");
-            $('#sidebarmarketdataowltable > tbody').addClass("sidebarmarketdata-owl owl-carousel owl-theme");
-            $('#sidebarmarketdataowltable > tbody').owlCarousel({
+            $('#sidebarmarketdataowltable_old > tbody > tr').addClass("item");
+            $('#sidebarmarketdataowltable_old > tbody').addClass("sidebarmarketdata-owl owl-carousel owl-theme");
+            $('#sidebarmarketdataowltable_old > tbody').owlCarousel({
                 loop:true,
                 nav:false,
                 dots:false,
@@ -130,10 +130,10 @@ $(window).on("load resize",function(e){
         });
     }else{
         $(document).ready(function() {
-            $('#sidebarmarketdataowltable > tbody').removeClass("sidebarmarketdata-owl owl-carousel owl-theme owl-loaded owl-drag");
-            $('#sidebarmarketdataowltable .owl-stage-outer').remove();
-            $('#sidebarmarketdataowltable .owl-nav').remove();
-            $('#sidebarmarketdataowltable .owl-dots').remove();
+            $('#sidebarmarketdataowltable_old > tbody').removeClass("sidebarmarketdata-owl owl-carousel owl-theme owl-loaded owl-drag");
+            $('#sidebarmarketdataowltable_old .owl-stage-outer').remove();
+            $('#sidebarmarketdataowltable_old .owl-nav').remove();
+            $('#sidebarmarketdataowltable_old .owl-dots').remove();
         });
     }
 });
