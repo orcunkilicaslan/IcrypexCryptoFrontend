@@ -426,17 +426,25 @@
       }
 
       img{
+        background-color: $global-clr-white;
         width: auto !important;
         max-width: 700px !important;
         height: auto !important;
+        border: 1px solid transparentize($global-clr-soft-gray, 0.7);
+        padding: 10px;
+        @include border-radius(3px);
       }
     }
 
     iframe[src*="youtube"]{
+      background-color: $global-clr-white;
       width: 100% !important;
       max-width: 700px !important;
       height: 100vh !important;
       max-height: 390px !important;
+      border: 1px solid transparentize($global-clr-soft-gray, 0.7);
+      padding: 10px;
+      @include border-radius(3px);
     }
   }
 
