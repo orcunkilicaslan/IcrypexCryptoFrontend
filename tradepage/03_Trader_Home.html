@@ -713,12 +713,26 @@
             <div class="trader-order-wrapper sidesectioncont-right col-10">
 
                 <!-- Order Tab -->
-                <div class="trader-order-orders nav-tabs-responsive nav-tabs-responsive-light">
+                <div class="trader-order-orders">
+
+                    <!--
                     <ul class="trader-order-orders-tabnav nav nav-tabs" role="tablist">
                         <li class="nav-item"><a class="nav-link active" id="tab-MARKET" data-toggle="tab" href="#MARKET" role="tab" aria-controls="MARKET" aria-selected="true"><span>MARKET</span></a></li>
                         <li class="nav-item"><a class="nav-link" id="tab-LIMIT" data-toggle="tab" href="#LIMIT" role="tab" aria-controls="LIMIT" aria-selected="false"><span>LİMİT</span></a></li>
                         <li class="nav-item"><a class="nav-link" id="tab-STOPLIMIT" data-toggle="tab" href="#STOPLIMIT" role="tab" aria-controls="STOPLIMIT" aria-selected="false"><span>STOP-LİMİT</span></a></li>
                     </ul>
+                    -->
+
+                    <div class="sitetabs-mobile sitetabs-mobile-01">
+                        <a class="responsive-dropdown-btn responsive-dropdown-top-btn btn" href="#" data-toggle="dropdown" aria-expanded="false"><span class="selecttabsmenuname">MARKET</span></a>
+                        <ul class="nav nav-tabs sitetabslight dropdown-menu responsive-dropdown-menu responsive-dropdown-top-menu" role="tablist">
+                            <li class="nav-item"><a class="nav-link active" id="tab-MARKET" data-toggle="tab" href="#MARKET" role="tab" aria-controls="MARKET" aria-selected="true"><span class="selecttabsmenuname">MARKET</span></a></li>
+                            <li class="nav-item"><a class="nav-link" id="tab-LIMIT" data-toggle="tab" href="#LIMIT" role="tab" aria-controls="LIMIT" aria-selected="false"><span class="selecttabsmenuname">LİMİT</span></a></li>
+                            <li class="nav-item"><a class="nav-link" id="tab-STOPLIMIT" data-toggle="tab" href="#STOPLIMIT" role="tab" aria-controls="STOPLIMIT" aria-selected="false"><span class="selecttabsmenuname">STOP-LİMİT</span></a></li>
+                        </ul>
+                    </div>
+
+
                     <div class="trader-order-orders-box order-orders-box tab-content">
                         <!-- Alert -->
                         <div class="order-orders-alert">
@@ -784,7 +798,7 @@
                         <!-- Alert Sweet Small -->
                         <script>
                             $(document).ready(function(){
-                                $(".alert-sweet-small").fadeTo(5000, 500).slideUp(500, function() {
+                                $(".alert-sweet-small").fadeTo(750, 500).slideUp(500, function() {
                                     $(".alert-sweet-small").slideUp(500);
                                 });
                             });
