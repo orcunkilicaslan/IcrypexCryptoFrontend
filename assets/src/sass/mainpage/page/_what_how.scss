@@ -424,6 +424,19 @@
       &:last-child{
         margin-bottom: 0;
       }
+
+      img{
+        width: auto !important;
+        max-width: 700px !important;
+        height: auto !important;
+      }
+    }
+
+    iframe[src*="youtube"]{
+      width: 100% !important;
+      max-width: 700px !important;
+      height: 100vh !important;
+      max-height: 390px !important;
     }
   }
 
