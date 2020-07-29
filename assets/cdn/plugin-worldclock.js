@@ -1,5 +1,3 @@
-// https://jscompress.com/
-
 /*  World Clock Zone Start */
 function worldClock(zone, region){
     var dst = 0

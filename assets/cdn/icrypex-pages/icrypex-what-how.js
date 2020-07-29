@@ -1,29 +1,34 @@
-document.addEventListener("DOMContentLoaded", function(event) {
+$(document).on("input","#suggest", function(event) {
 
-    $('#suggest').on("input", function() {
+    event.preventDefault();
 
-        if ($(this).val().length > 2) {
-
-            $.ajax({
-                type: "POST",
-                url: "https://www.icrypex.com/autosuggest",
-                data: {keyword: $(this).val()},
-                cache: false,
-                success: function(result){
-                    console.log(result);
-                    $(".accordion-item").removeClass("active");
-                    for (i=0;i<result.length;i++) {
-                        $("#"+result[i].category_id+"-"+result[i].id).addClass('active');
-                    }
+    if ($(this).val().length > 2) {
+        $.ajax({
+            type: "POST",
+            url: "../autosuggest",
+            data: {keyword: $(this).val()},
+            cache: false,
+            success: function(result){
+                removeActiveClass();
+                for (i=0;i<result.length;i++) {
+                    $("#"+result[i].category_id+"-"+result[i].id).addClass('active');
                 }
-            });
-        } else {
-            $(".accordion-item").removeClass("active");
-        }
-    });
-
-    $('#suggest').on("focusout", function() {
-        $(".accordion-item").removeClass("active");
-    });
+            },
+            complete: function() {
+                console.log("completed");
+            }
+        });
+    } else {
+        removeActiveClass();
+    }
 
 });
+
+function removeActiveClass()
+{
+    var divs = $('.whathow-accordion-stage>div');
+    
+	for (i=0;i<divs.length;i++) {
+		$("#"+divs[i].id).removeClass('active');
+	}
+}
