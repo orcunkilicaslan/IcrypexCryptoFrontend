@@ -1,6 +1,31 @@
 
 .profile{
 
+  &-box{
+
+    .phoneeditmodal{
+
+      &-step01{}
+      &-step02{}
+
+      .modal-content{
+        width: 400px;
+
+        @include ReSassWidthResponsive(400){
+          width: 100%;
+        }
+
+        .inputcountdown{
+          display: block;
+          position: absolute;
+          top: 34px;
+          right: 10px;
+        }
+      }
+    }
+
+  }
+
   &-profile{
     max-width: 600px;
 

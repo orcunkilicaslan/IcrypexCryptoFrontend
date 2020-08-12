@@ -377,8 +377,9 @@
                     </div>
                     <div class="form-group colorsetdarkblue col">
                         <label class="labelwidth100100" style="visibility: hidden">BUTTON</label>
-                        <button type="button" class="btn btn-info btnwidth110">DÜZENLE</button>
+                        <button type="button" class="btn btn-info btnwidth110" data-toggle="modal" data-target="#ProfilePhoneEditModal">DÜZENLE</button>
                     </div>
+
                 </div>
                 <div class="form-row">
                     <div class="form-group colorsetdarkblue col">
@@ -394,6 +395,91 @@
             </div>
         </div>
         <!-- Content -->
+        <!-- Phone Edit Modal -->
+        <div class="sitemodal phoneeditmodal">
+            <div class="modal fade" id="ProfilePhoneEditModal" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title">TELEFON NUMARASINI DEĞİŞTİR</h4>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="modal-form">
+                                <!-- Alert -->
+                                <div>
+                                    <div class="alert alert-sweet alert-sweet-small alert-success alert-dismissible fade show" role="alert">
+                                        <div class="alert-flex">
+                                            <div class="alert-icon">
+                                                <div class="alert-icon-success">
+                                                    <div class="alert-icon-success-tip"></div>
+                                                    <div class="alert-icon-success-long"></div>
+                                                    <div class="alert-icon-success-placeholder"></div>
+                                                    <div class="alert-icon-success-fix"></div>
+                                                </div>
+                                            </div>
+                                            <div class="alert-big-desc">
+                                                <h4 class="alert-heading">Well done!</h4>
+                                                <p>Aww yeah, you successfully read this important alert message.</p>
+                                            </div>
+                                        </div>
+                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="alert alert-big alert-sweet alert-sweet-small alert-danger alert-dismissible fade show" role="alert">
+                                        <div class="alert-flex">
+                                            <div class="alert-icon">
+                                                <div class="alert-icon-error">
+                                                    <div class="alert-icon-error-x">
+                                                        <div class="alert-icon-error-left"></div>
+                                                        <div class="alert-icon-error-right"></div>
+                                                    </div>
+                                                    <div class="alert-icon-error-placeholder"></div>
+                                                    <div class="alert-icon-error-fix"></div>
+                                                </div>
+                                            </div>
+                                            <div class="alert-big-desc">
+                                                <h4 class="alert-heading">Oops...</h4>
+                                                <p>Aww yeah, you successfully read this important alert message.</p>
+                                            </div>
+                                        </div>
+                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <!-- Alert -->
+                                <!-- Form -->
+                                <form class="formuinew" autocomplete="off" novalidate>
+                                    <div class="phoneeditmodal-step01">
+                                        <div class="form-group fontsize20px colorsetdarkblue">
+                                            <label>YENİ TELEFON NUMARASI</label>
+                                            <input type="text" class="form-control inputphonemask" placeholder="05__ ___ __ __" value="" />
+                                        </div>
+                                        <div class="form-group fontsize20px colorsetdarkblue">
+                                            <button type="button" class="btn btn-success btnwidth100100">EKLE</button>
+                                        </div>
+                                    </div>
+                                    <div class="phoneeditmodal-step02">
+                                        <div class="form-group fontsize20px colorsetdarkblue position-relative">
+                                            <label>SMS DOĞRULAMA</label>
+                                            <input type="number" class="form-control text-center inputfilter-integer" style="letter-spacing: 10px; padding-left: 20px;" maxlength="6" pattern="\d*" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" />
+                                            <span class="inputcountdown sitecolorred">00:00</span>
+                                        </div>
+                                        <div class="form-group fontsize20px colorsetdarkblue">
+                                            <button type="button" class="btn btn-success btnwidth100100">KAYDET</button>
+                                        </div>
+                                    </div>
+                                </form>
+                                <!-- Form -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Phone Edit Modal -->
         <!-- Content -->
         <div class="profile-box-content pt-4">
             <div class="profile-profile">
