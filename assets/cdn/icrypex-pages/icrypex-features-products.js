@@ -92,3 +92,37 @@ new TradingView.MediumWidget(
         "chartOnly": true
     }
 );
+new TradingView.MediumWidget(
+    {
+        "container_id": "bat-widget",
+        "symbols": [
+            "KRAKEN:BATUSD|12m"
+        ],
+        "greyText": "Fiyatları sağlayan",
+        "gridLineColor": "#e9e9ea",
+        "fontColor": "#83888D",
+        "underLineColor": "#dbeffb",
+        "trendLineColor": "#4bafe9",
+        "width": "270px",
+        "height": "141px",
+        "locale": "tr",
+        "chartOnly": true
+    }
+);
+new TradingView.MediumWidget(
+    {
+        "container_id": "xlm-widget",
+        "symbols": [
+            "XLMUSD|12m"
+        ],
+        "greyText": "Fiyatları sağlayan",
+        "gridLineColor": "#e9e9ea",
+        "fontColor": "#83888D",
+        "underLineColor": "#dbeffb",
+        "trendLineColor": "#4bafe9",
+        "width": "270px",
+        "height": "141px",
+        "locale": "tr",
+        "chartOnly": true
+    }
+);

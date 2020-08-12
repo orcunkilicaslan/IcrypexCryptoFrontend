@@ -257,9 +257,18 @@
 <!-- Header End -->
 
 <!-- Modal -->
-<button type="button" class="btn btn-primary m-3" data-toggle="modal" data-target="#myModal">MODAL</button>
+<script type="text/javascript">
+    $(function() {
+        $('#notifyModal').modal({
+            show: true,
+            keyboard: false,
+            backdrop: 'static'
+        });
+    });
+</script>
+<button type="button" class="btn btn-primary m-3" data-toggle="modal" data-target="#notifyModal">MODAL</button>
 <div class="sitemodal">
-    <div id="myModal" class="modal modal-noclose fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div id="notifyModal" class="modal modal-noclose fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-noclose-dialog">
             <div class="modal-content modal-noclose-content">
                 <div class="modal-noclose-wrapper">

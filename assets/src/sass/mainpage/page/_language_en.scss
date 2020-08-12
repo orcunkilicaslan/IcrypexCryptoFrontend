@@ -40,4 +40,12 @@ html[lang="en"]{
     }
   }
 
+  .homepage-bigprice-list-item{
+    &.itemexcavating h4 span{
+
+      &:first-child{order: 2;}
+      &:last-child{order: 1;}
+    }
+  }
+
 }

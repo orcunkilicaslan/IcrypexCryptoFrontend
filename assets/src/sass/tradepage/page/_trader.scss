@@ -76,6 +76,7 @@ $tradepageHomepageImgPath : "../../img/tradepage";
           position: static;
           display: block;
           opacity: 1;
+          z-index: 0;
 
           .modal-dialog{
             margin: 0;

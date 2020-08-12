@@ -97,6 +97,17 @@ jQuery(function($) {
 });
 /* Responsive DFN Menu Navigation Language List */
 
+/* Responsive Mobile Dropdown Menu Navigation List */
+jQuery(function($) {
+    $(".sitetabs-mobile a.nav-link").click(function(){
+        var activeMobDropMenuLink      = $(this);
+        var selectMobDropMenuLink      = $(activeMobDropMenuLink).find('.selecttabsmenuname').text();
+
+        $(this).parents('.sitetabs-mobile').find('.responsive-dropdown-btn .selecttabsmenuname').html(selectMobDropMenuLink);
+    });
+});
+/* Responsive Mobile Dropdown Menu Navigation List */
+
 /* Loading Info */
 // console.log("Plugin App Mobile Responsive Javascript Loading Successful");
 /* Loading Info */

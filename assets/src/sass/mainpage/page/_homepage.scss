@@ -292,6 +292,14 @@ $globalSvgIconImgPath : "../../img/global/svg";
         padding: 0 18px;
         white-space: nowrap;
 
+        h4{
+          display: inline-flex;
+
+          span{
+            margin: 0 2px;
+          }
+        }
+
         &::before{
           content: "";
           position: absolute;
@@ -345,6 +353,11 @@ $globalSvgIconImgPath : "../../img/global/svg";
         @include ReSassWidthResponsive(400){
           font-size: 26px;
         }
+
+        &.itemexcavating{
+
+        }
+
       }
     }
 

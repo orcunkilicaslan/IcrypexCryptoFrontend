@@ -1,5 +1,3 @@
-// https://jscompress.com/
-
 /*  Copy Text to Clipboard Start */
 function copyToClipboard(target) {
     var element = document.getElementById(target);
