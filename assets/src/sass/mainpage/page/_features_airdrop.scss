@@ -1,0 +1,96 @@
+
+.features{
+
+  &-airdrop{
+
+    &-wrapper{}
+
+    &-table{
+
+      .thairdropcurrency{}
+      .thairdropratio{}
+      .thairdropchart{
+        width: 210px;
+
+        @include ReSassWidthResponsive(768){
+          width: auto;
+        }
+      }
+
+
+      td, th{
+        font-size: 17px;
+        text-align: center;
+        padding-left: 9px;
+        padding-right: 9px;
+
+        @include ReSassWidthResponsive(768){
+          font-size: 15px;
+          padding-left: 5px;
+          padding-right: 5px;
+        }
+
+        &:first-child{
+          text-align: left;
+          padding-left: 9px;
+        }
+      }
+
+      thead{
+        th{
+          padding-top: 8px;
+          padding-bottom: 8px;
+          border-top-width: 0;
+          border-bottom-width: 0;
+        }
+      }
+
+      tbody{
+        tr:first-child{
+          td{
+            border-top-width: 0;
+          }
+        }
+
+        td{
+          padding-top: 12px;
+          padding-bottom: 12px;
+          border-top-style: dashed;
+
+          @include ReSassWidthResponsive(992){
+            padding-top: 8px;
+            padding-bottom: 8px;
+          }
+
+          .tdcurrencyname{
+            display: flex;
+            align-items: center;
+
+            .icon-svg{
+              width: 34px;
+              height: 34px;
+              margin-right: 7px;
+
+              @include ReSassWidthResponsive(768){
+                width: 28px;
+                height: 28px;
+                margin-right: 4px;
+              }
+            }
+          }
+
+          .tdchartgrap{
+            svg{
+              width: 100%;
+            }
+          }
+
+          &:last-child{
+            text-align: right;
+            padding-right: 0;
+          }
+        }
+      }
+    }
+  }
+}
