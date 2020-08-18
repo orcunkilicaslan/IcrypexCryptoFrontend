@@ -72,6 +72,20 @@
           margin-top: 5px;
         }
       }
+
+      &-info{
+        color: $global-clr-dark-blue;
+        font-size: 17px;
+        line-height: 1.2;
+        margin-top: 10px;
+
+        @include ReSassWidthResponsive(992){
+          margin-top: 0;
+          padding: 10px;
+          border: 1px solid transparentize($global-clr-soft-gray, 0.7);
+          border-top-width: 0;
+        }
+      }
     }
 
     &-content{
