@@ -60,6 +60,14 @@
         font-size: 20px;
         text-align: center;
       }
+
+      .profile-box{}
+    }
+
+    .profile-box + .profile-box,
+    .profile-box + .columntitle,
+    .profile-boxinfo + .columntitle{
+      margin-top: 25px;
     }
   }
 
@@ -244,6 +252,13 @@
     &-bottombtnform{
       margin-bottom: 20px;
     }
+  }
+
+  &-boxinfo{
+    color: $global-clr-dark-blue;
+    font-size: 17px;
+    line-height: 1.2;
+    padding-top: 15px;
   }
 
   &-tabs{

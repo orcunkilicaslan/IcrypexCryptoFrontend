@@ -1,21 +1,15 @@
 
-.features{
+.profile{
 
   &-airdrop{
+    padding: 0;
+    margin: 0;
 
-    &-wrapper{}
+    @include ReSassWidthResponsive(768){
+      padding: 10px;
+    }
 
     &-table{
-
-      .thairdropcurrency{}
-      .thairdropratio{}
-      .thairdropchart{
-        width: 210px;
-
-        @include ReSassWidthResponsive(768){
-          width: auto;
-        }
-      }
 
       .tdcurrencyname{
         display: flex;
@@ -124,5 +118,6 @@
       }
 
     }
+
   }
 }
