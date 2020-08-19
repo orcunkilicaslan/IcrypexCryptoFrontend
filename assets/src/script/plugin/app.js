@@ -244,13 +244,13 @@ $(window).on("load resize",function(e){
     if($(window).width() >= 768){
 
         if(!$('.cookies-notification').hasClass('show')){
-            $("#sc924I > .psmw_924I").css("bottom", ("5")+"px");
+            $("#sc924I > div[style*='fixed']").css("bottom", ("5")+"px");
         } else {
-            $("#sc924I > .psmw_924I").css("bottom", ("71")+"px");
+            $("#sc924I > div[style*='fixed']").css("bottom", ("71")+"px");
         }
 
         $(".cookies-notification a.notificationclose").click(function() {
-            $("#sc924I > .psmw_924I").css("bottom", ("5")+"px");
+            $("#sc924I > div[style*='fixed']").css("bottom", ("5")+"px");
         });
     }
 });
