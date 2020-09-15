@@ -501,13 +501,13 @@
     }
 
     .form-control{
-      border-right: none;
+      border-right-width: 0;
       padding-right: 0;
     }
 
     .input-group-append{
       border: 1px solid transparentize($global-clr-soft-gray, 0.70);
-      border-left: none;
+      border-left-width: 0;
 
       &.selectbox{
         position: relative;
@@ -1047,6 +1047,7 @@
   .maxwidth160{width: 175px;}
   .maxwidth190{width: 205px;}
   .maxwidth220{width: 220px;}
+  .maxwidth250{width: 250px;}
   .maxwidth300{width: 300px;}
   .maxwidth350{width: 350px;}
   .maxwidth400{width: 400px;}

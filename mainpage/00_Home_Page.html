@@ -1,11 +1,26 @@
 <!doctype html>
 <html lang="tr">
 <head>
-    <title>Icrypex</title>
+    <title>Bitcoin Al - BTC Al - Kripto Para Borsası - Icrypex</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link id="css-custom" rel="stylesheet" href="../assets/dist/css/custom.css">
     <script id="script-globalbundle" src="../assets/bundle/global-bundle-app.js"></script>
+    <script>
+        $(document).ready(function(){
+            var $pageHeadTagTitle       = $('title');
+            var $pageHeadTagTitleText   = $pageHeadTagTitle.text();
+
+            $(window).focus(function(){
+                $pageHeadTagTitle.text($pageHeadTagTitleText)
+            });
+
+            $(window).blur(function(){
+                var $price = $('div.summarytable div#USD table.summarytable-table td.summarytable-table-price.b-BTCTRY').text();
+                $pageHeadTagTitle.text('(' + $price + ' USD) ' + $pageHeadTagTitleText)
+            });
+        });
+    </script>
 </head>
 <body class="dfn-megamenu fullpages mainpage homepage">
 
