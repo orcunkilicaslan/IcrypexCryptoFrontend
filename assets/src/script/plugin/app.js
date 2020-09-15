@@ -164,6 +164,12 @@ $(document).ready(function(){
         showMaskOnFocus: true,
         showMaskOnHover: false
     });
+    $('.inputphonemaskonlytr').inputmask({
+        mask: '999 99 99',
+        placeholder: '',
+        showMaskOnFocus: true,
+        showMaskOnHover: false
+    });
     $('.inputibanmask').inputmask({
         mask: 'TR99 9999 9999 9999 9999 9999 99',
         placeholder: '',
@@ -171,7 +177,7 @@ $(document).ready(function(){
         showMaskOnHover: false
     });
     $('.inputidentitymask').inputmask({
-        mask: '99999999999',
+        mask: '999999999999999',
         placeholder: '',
         showMaskOnFocus: true,
         showMaskOnHover: false

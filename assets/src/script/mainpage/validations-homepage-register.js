@@ -185,7 +185,7 @@ class HomepageRegisterForm {
                 break;
 
             case "inputPhoneProcess":
-                if(val.replace(/\s/g, "").length < 11){
+                if(val.replace(/\s/g, "").length < 7){
                     this.setHomepageRegisterFormErrorMessages(messageSpanSelector, Translation.translate('tr','HomepageRegisterPhoneAlert'), "");
                     this.setHomepageRegisterFormErrorMessages(messageIconSelector,"", "none");
                     this.setHomepageRegisterFormErrorInput(inputIdSelector,"#b82c0d");
@@ -299,7 +299,7 @@ window.homepageregisterform = new HomepageRegisterForm();
 
 /* Masked Input Plugin for jQuery */
 $(document).ready(function(){
-    $("#inputPhoneId").inputmask({
+    $("#inputPhoneId_Old").inputmask({
         mask: '0599 999 99 99',
         placeholder: '',
         greedy: false,

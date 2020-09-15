@@ -501,13 +501,13 @@
     }
 
     .form-control{
-      border-right: none;
+      border-right-width: 0;
       padding-right: 0;
     }
 
     .input-group-append{
       border: 1px solid transparentize($global-clr-soft-gray, 0.70);
-      border-left: none;
+      border-left-width: 0;
 
       &.selectbox{
         position: relative;

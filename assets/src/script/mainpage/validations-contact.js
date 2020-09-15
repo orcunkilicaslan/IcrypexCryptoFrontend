@@ -152,7 +152,7 @@ class ContactUsForm {
                 break;
 
             case "inputPhoneProcess":
-                if(val.replace(/\s/g, "").length < 11){
+                if(val.replace(/\s/g, "").length < 7){
                     this.setContactUsFormErrorMessages(messageSpanSelector, Translation.translate('tr','ContactUsPhoneAlert'), "");
                     this.setContactUsFormErrorMessages(messageIconSelector,"", "none");
                     this.setContactUsFormErrorInput(inputIdSelector,"#b82c0d");
@@ -275,7 +275,7 @@ window.contactform = new ContactUsForm();
 
 /* Masked Input Plugin for jQuery */
 $(document).ready(function(){
-    $("#inputPhoneId").inputmask({
+    $("#inputPhoneId_Old").inputmask({
         mask: '0599 999 99 99',
         placeholder: '',
         showMaskOnFocus: true,

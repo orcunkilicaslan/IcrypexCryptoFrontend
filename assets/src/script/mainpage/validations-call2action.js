@@ -151,7 +151,7 @@ class Call2ActionForm {
                 break;
 
             case "inputPhoneProcess":
-                if(val.replace(/\s/g, "").length < 11){
+                if(val.replace(/\s/g, "").length < 7){
                     this.setCall2ActionFormErrorMessages(messageSpanSelector, Translation.translate('tr','Call2ActionPhoneAlert'), "error", "check");
                     this.setCall2ActionFormErrorIcon(messageIconSelector,"error", "check");
                     this.setCall2ActionFormErrorInput(inputIdSelector);
