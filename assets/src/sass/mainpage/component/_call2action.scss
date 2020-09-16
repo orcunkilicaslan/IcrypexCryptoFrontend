@@ -176,12 +176,15 @@ $bottomcall2actionwhitebarpx: 30px;
         &.input-group{
 
           .input-group-append{
-            background-color: transparent;
-            height: calc(100% - 2px);
-            border: none;
-            position: absolute;
-            right: 0;
-            z-index: 3;
+
+            &.iconsarea{
+              background-color: transparent;
+              height: calc(100% - 2px);
+              border: none;
+              position: absolute;
+              right: 0;
+              z-index: 3;
+            }
           }
 
           .input-group-text{
@@ -235,9 +238,48 @@ $bottomcall2actionwhitebarpx: 30px;
         }
       }
 
+      .phonegroup{
+
+        .labelanimation{
+          label{
+            left: 80px;
+          }
+
+          .form-control{
+            padding-left: 10px;
+
+            &:focus ~ label,
+            &:valid ~ label{
+              left: 0;
+
+              @include ReSassWidthResponsive(992){
+                left: 0;
+              }
+            }
+          }
+        }
+
+        .input-group{
+
+          > .form-control{
+            border-right-width: 0;
+          }
+
+          &-append{
+            border-left-width: 0;
+            border-right-width: 0;
+            border-top-width: 0;
+
+            select.form-control{
+              padding-bottom: 1px !important;
+            }
+          }
+        }
+      }
+
       .inputerrormessage{
         right: 0;
-        display: none !important;
+        display: none;
       }
 
       .form-control{
