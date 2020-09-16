@@ -179,7 +179,6 @@ $(document).ready(function(){
             }
         }
     });
-
     $('.inputphonemaskonlyint').inputmask({
         mask: '999 9999999999999',
         placeholder: '',
@@ -218,6 +217,60 @@ $(document).ready(function(){
     });
 });
 /* Input Mask */
+
+/* Country Code Select */
+$(document).ready(function(){
+
+    $('.inputphonemaskdatamask').inputmask({
+        mask: '999 999 9999',
+        greedy: false,
+        placeholder: '',
+        showMaskOnFocus: true,
+        showMaskOnHover: false,
+        onBeforeWrite: function (e) {
+            if (e.which == 48 && $('.inputphonemaskonlytr').val() == 0){
+                $(".inputerrormessage.phoneerror").show();
+                return false;
+            } else {
+                $(".inputerrormessage.phoneerror").hide();
+            }
+        }
+    });
+
+    $('.jsCountryCode').change(function() {
+        var choice = $(this).val();
+        switch(choice){
+            case '90':
+                $('.inputphonemaskdatamask').inputmask({
+                    mask: '999 999 9999',
+                    greedy: false,
+                    placeholder: '',
+                    showMaskOnFocus: true,
+                    showMaskOnHover: false,
+                    onBeforeWrite: function (e) {
+                        if (e.which == 48 && $('.inputphonemaskdatamask').val() == 0){
+                            $(".inputerrormessage.phoneerror").show();
+                            return false;
+                        } else {
+                            $(".inputerrormessage.phoneerror").hide();
+                        }
+                    }
+                });
+                break;
+
+            default:
+                $('.inputphonemaskdatamask').inputmask({
+                    mask: '999 9999999999',
+                    greedy: false,
+                    placeholder: '',
+                    showMaskOnFocus: true,
+                    showMaskOnHover: false
+                });
+                break;
+        }
+    });
+});
+/* Country Code Select */
 
 /* Input Filter (https://jsfiddle.net/emkey08/tvx5e7q3) */
 (function($) {

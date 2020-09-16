@@ -58,7 +58,7 @@ class Call2ActionForm {
                 //console.log("Error inputLastNameId");
                 validStatus = true;
             }
-            if(Phone.trim().replace(/\s/g, "").length < 11){
+            if(Phone.trim().replace(/\s/g, "").length < 10){
                 this.setCall2ActionFormErrorMessages("msgC2APhoneId", Translation.translate('tr','Call2ActionPhoneAlert'));
                 this.setCall2ActionFormErrorIcon("iconC2APhoneId","error", "check");
                 //console.log("Error inputPhoneId");
@@ -127,7 +127,7 @@ class Call2ActionForm {
         switch (inputProcessName) {
 
             case "inputFirstNameProcess":
-                if(val.length < 5){
+                if(val.length < 2){
                     this.setCall2ActionFormErrorMessages(messageSpanSelector, Translation.translate('tr','Call2ActionFirstNameNameAlert'), "error", "check");
                     this.setCall2ActionFormErrorIcon(messageIconSelector,"error", "check");
                     this.setCall2ActionFormErrorInput(inputIdSelector);
@@ -139,7 +139,7 @@ class Call2ActionForm {
                 break;
 
             case "inputLastNameProcess":
-                if(val.length < 5){
+                if(val.length < 2){
                     this.setCall2ActionFormErrorMessages(messageSpanSelector, Translation.translate('tr','Call2ActionLastNameNameAlert'), "error", "check");
                     this.setCall2ActionFormErrorIcon(messageIconSelector,"error", "check");
                     this.setCall2ActionFormErrorInput(inputIdSelector);
@@ -150,8 +150,8 @@ class Call2ActionForm {
                 }
                 break;
 
-            case "inputPhoneProcess":
-                if(val.replace(/\s/g, "").length < 7){
+            case "inputPhoneTurProcess":
+                if(val.replace(/\s/g, "").length < 10){
                     this.setCall2ActionFormErrorMessages(messageSpanSelector, Translation.translate('tr','Call2ActionPhoneAlert'), "error", "check");
                     this.setCall2ActionFormErrorIcon(messageIconSelector,"error", "check");
                     this.setCall2ActionFormErrorInput(inputIdSelector);
@@ -202,7 +202,7 @@ class Call2ActionForm {
                 }
                 break;
 
-            case "inputPhoneProcess":
+            case "inputPhoneTurProcess":
                 if(val.length===0){
                     this.setCall2ActionFormErrorMessages(messageSpanSelector, Translation.translate('tr','Call2ActionPhoneAlert'), "error", "check");
                     this.setCall2ActionFormErrorIcon(messageIconSelector,"error","check");
