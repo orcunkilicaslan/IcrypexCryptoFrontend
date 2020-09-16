@@ -165,7 +165,23 @@ $(document).ready(function(){
         showMaskOnHover: false
     });
     $('.inputphonemaskonlytr').inputmask({
-        mask: '999 99 99',
+        mask: '999 999 9999',
+        greedy: false,
+        placeholder: '',
+        showMaskOnFocus: true,
+        showMaskOnHover: false,
+        onBeforeWrite: function (e) {
+            if (e.which == 48 && $('.inputphonemaskonlytr').val() == 0){
+                $(".inputerrormessage.phoneerror").show();
+                return false;
+            } else {
+                $(".inputerrormessage.phoneerror").hide();
+            }
+        }
+    });
+
+    $('.inputphonemaskonlyint').inputmask({
+        mask: '999 9999999999999',
         placeholder: '',
         showMaskOnFocus: true,
         showMaskOnHover: false

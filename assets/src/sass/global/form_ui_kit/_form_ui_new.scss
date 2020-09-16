@@ -583,6 +583,54 @@
     }
   }
 
+  .phonegroup{
+
+    .input-group{
+
+      > .form-control{
+        border-right-width: 1px;
+        border-left-width: 1px;
+        padding-right: 40px;
+      }
+
+      &-append{
+        border-left-width: 1px;
+        border-right-width: 0;
+
+        select.form-control{
+          border-right: 1px solid transparentize($global-clr-soft-gray, 0.70);
+
+          &:last-child{
+            border-right-width: 0;
+          }
+        }
+      }
+    }
+
+    .labelanimation{
+
+      .input-group{
+
+        input.form-control{
+          border-left-width: 0;
+        }
+
+        label{
+          left: 80px;
+        }
+
+        &-append{
+          border-top-width: 0;
+
+          select.form-control{
+            border-right-width: 0;
+          }
+        }
+      }
+    }
+
+  }
+
   .custom-control{
     padding-left: 26px;
     min-height: 20px;
@@ -802,6 +850,22 @@
       }
 
       &-check{
+        &:before{
+          content: "";
+          position: absolute;
+          width: 14px;
+          height: 7px;
+          top: 2px;
+          left: 1px;
+          border-bottom: 2px solid $global-clr-green;
+          border-left: 2px solid $global-clr-green;
+          @include rotate(-50);
+        }
+      }
+
+      &.check{
+        display: block;
+
         &:before{
           content: "";
           position: absolute;

@@ -4,7 +4,7 @@ const translateObject = {
     'tr': {
         'SignUpFirstNameAlert':'EN AZ 2 KARAKTER',
         'SignUpLastNameAlert':'EN AZ 2 KARAKTER',
-        'SignUpPhoneAlert':'HATALI TELEFON',
+        'SignUpPhoneAlert':'',
         'SignUpEmailAlert':'HATALI E-POSTA',
         'SignUpPasswordAlert':'EN AZ 8 KARAKTER',
         'SignUpRePasswordAlert':'ŞİFRELER UYUŞMUYOR'
@@ -12,7 +12,7 @@ const translateObject = {
     'en':{
         'SignUpFirstNameAlert':'EN AZ 2 KARAKTER',
         'SignUpLastNameAlert':'EN AZ 2 KARAKTER',
-        'SignUpPhoneAlert':'HATALI TELEFON',
+        'SignUpPhoneAlert':'',
         'SignUpEmailAlert':'HATALI E-POSTA',
         'SignUpPasswordAlert':'EN AZ 8 KARAKTER',
         'SignUpRePasswordAlert':'ŞİFRELER UYUŞMUYOR'
