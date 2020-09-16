@@ -88,7 +88,8 @@
     position: absolute;
     top: 9px;
     right: 10px;
-    color: #b82c0d;
+    text-transform: uppercase;
+    color: $global-clr-red;
     font-size: 14px;
     z-index: -1;
     @include transition(all, 0.3s, ease-in-out);
