@@ -193,8 +193,8 @@
 
 <!-- Login Start -->
 <main class="login-page">
-<div class="container">
-<div class="body-center">
+    <div class="container">
+        <div class="body-center">
 
             <!-- Form -->
             <div class="login-column">
@@ -342,14 +342,14 @@
                             <div class="form-row">
                                 <div class="form-group colorsetdarkblue col">
                                     <label>İSİM</label>
-                                    <input id="inputFirstNameId" name="firstname" class="form-control disabledautofillinput" type="text" readonly="readonly" onfocus="javascript:this.removeAttribute('readonly')" required oninput="signupform.verifyContent('inputFirstNameProcess','inputFirstNameId','msgFirstNameId','iconFirstNameId')" onfocusout="signupform.verifyContentErrorDelete('inputFirstNameProcess','inputFirstNameId','msgFirstNameId','iconFirstNameId')">
-                                    <i class="inputcheckicon inputcheckicon-check" id="iconFirstNameId"></i>
+                                    <input id="inputFirstNameId" name="firstname" class="form-control disabledautofillinput" type="text" readonly="readonly" onfocus="javascript:this.removeAttribute('readonly')" required oninput="generalvalidform.verifyContent('inputNameProcess','inputFirstNameId','msgFirstNameId','iconFirstNameId')" onfocusout="generalvalidform.verifyContentErrorDelete('inputNameProcess','inputFirstNameId','msgFirstNameId','iconFirstNameId')">
+                                    <i class="inputcheckicon" id="iconFirstNameId"></i>
                                     <span class="inputerrormessage" id="msgFirstNameId"></span>
                                 </div>
                                 <div class="form-group colorsetdarkblue col">
                                     <label>SOYİSİM</label>
-                                    <input id="inputLastNameId" name="lastname" class="form-control disabledautofillinput" type="text" readonly="readonly" onfocus="javascript:this.removeAttribute('readonly')" required oninput="signupform.verifyContent('inputLastNameProcess','inputLastNameId','msgLastNameId','iconLastNameId')" onfocusout="signupform.verifyContentErrorDelete('inputLastNameProcess','inputLastNameId','msgLastNameId','iconLastNameId')">
-                                    <i class="inputcheckicon inputcheckicon-check" id="iconLastNameId"></i>
+                                    <input id="inputLastNameId" name="lastname" class="form-control disabledautofillinput" type="text" readonly="readonly" onfocus="javascript:this.removeAttribute('readonly')" required oninput="generalvalidform.verifyContent('inputSurnameProcess','inputLastNameId','msgLastNameId','iconLastNameId')" onfocusout="generalvalidform.verifyContentErrorDelete('inputSurnameProcess','inputLastNameId','msgLastNameId','iconLastNameId')">
+                                    <i class="inputcheckicon" id="iconLastNameId"></i>
                                     <span class="inputerrormessage" id="msgLastNameId"></span>
                                 </div>
                             </div>
@@ -602,68 +602,31 @@
                                                 <option value="996">996</option>
                                                 <option value="998">998</option>
                                             </select>
-                                            <select class="form-control custom-select">
-                                                <option value="501">501</option>
-                                                <option value="505">505</option>
-                                                <option value="506">506</option>
-                                                <option value="507">507</option>
-                                                <option value="510">510</option>
-                                                <option value="516">516</option>
-                                                <option value="530">530</option>
-                                                <option value="531">531</option>
-                                                <option value="532">532</option>
-                                                <option value="533">533</option>
-                                                <option value="534">534</option>
-                                                <option value="535">535</option>
-                                                <option value="536">536</option>
-                                                <option value="537">537</option>
-                                                <option value="538">538</option>
-                                                <option value="539">539</option>
-                                                <option value="540">540</option>
-                                                <option value="541">541</option>
-                                                <option value="542">542</option>
-                                                <option value="543">543</option>
-                                                <option value="544">544</option>
-                                                <option value="545">545</option>
-                                                <option value="546">546</option>
-                                                <option value="547">547</option>
-                                                <option value="548">548</option>
-                                                <option value="549">549</option>
-                                                <option value="551">551</option>
-                                                <option value="552">552</option>
-                                                <option value="553">553</option>
-                                                <option value="554">554</option>
-                                                <option value="555">555</option>
-                                                <option value="556">556</option>
-                                                <option value="557">557</option>
-                                                <option value="558">558</option>
-                                                <option value="559">559</option>
-                                                <option value="561">561</option>
-                                            </select>
                                         </div>
-                                        <input id="inputPhoneId" name="phone" class="form-control disabledautofillinput inputphonemaskonlytr" type="text" readonly="readonly" onfocus="javascript:this.removeAttribute('readonly')" required oninput="signupform.verifyContent('inputPhoneProcess','inputPhoneId','msgPhoneId','iconPhoneId')" onfocusout="signupform.verifyContentErrorDelete('inputPhoneProcess','inputPhoneId','msgPhoneId','iconPhoneId')">
+                                        <input id="inputPhoneId" name="phone" class="form-control disabledautofillinput inputphonemaskonlytr" type="text" readonly="readonly" onfocus="javascript:this.removeAttribute('readonly')" required oninput="generalvalidform.verifyContent('inputPhoneTurProcess','inputPhoneId','msgPhoneId','iconPhoneId')" onfocusout="generalvalidform.verifyContentErrorDelete('inputPhoneTurProcess','inputPhoneId','msgPhoneId','iconPhoneId')">
                                     </div>
-                                    <i class="inputcheckicon inputcheckicon-check" id="iconPhoneId"></i>
+                                    <i class="inputcheckicon" id="iconPhoneId"></i>
                                     <span class="inputerrormessage" id="msgPhoneId"></span>
+                                    <span class="inputerrormessage phoneerror" style="display: none">"0" İle Başlayamaz</span>
                                 </div>
                                 <div class="form-group colorsetdarkblue col">
                                     <label>E-POSTA</label>
-                                    <input id="inputEmailId" name="email" class="form-control disabledautofillinput" type="text" readonly="readonly" onfocus="javascript:this.removeAttribute('readonly')" required oninput="signupform.verifyContent('inputEmailProcess','inputEmailId','msgEmailId','iconEmailId')" onfocusout="signupform.verifyContentErrorDelete('inputEmailProcess','inputEmailId','msgEmailId','iconEmailId')">
-                                    <i class="inputcheckicon inputcheckicon-check" id="iconEmailId"></i>
+                                    <input id="inputEmailId" name="email" class="form-control disabledautofillinput" type="text" readonly="readonly" onfocus="javascript:this.removeAttribute('readonly')" required oninput="generalvalidform.verifyContent('inputEmailProcess','inputEmailId','msgEmailId','iconEmailId')" onfocusout="generalvalidform.verifyContentErrorDelete('inputEmailProcess','inputEmailId','msgEmailId','iconEmailId')">
+                                    <i class="inputcheckicon" id="iconEmailId"></i>
                                     <span class="inputerrormessage" id="msgEmailId"></span>
                                 </div>
                             </div>
                             <div class="form-row contpassstrength">
                                 <div class="form-group colorsetdarkblue inputpassstrength col">
                                     <label>ŞİFRE</label>
-                                    <input id="inputPasswordId" name="password" class="form-control inputpassstrength disabledautofillinput" type="password" readonly="readonly" onfocus="javascript:this.removeAttribute('readonly')" required oninput="signupform.verifyContent('inputPasswordProcess','inputPasswordId','msgPasswordId','iconPasswordId')" onfocusout="signupform.verifyContentErrorDelete('inputPasswordProcess','inputPasswordId','msgPasswordId','iconPasswordId')">
-                                    <i class="inputcheckicon inputcheckicon-check" id="iconPasswordId"></i>
+                                    <input id="inputPasswordId" name="password" class="form-control inputpassstrength disabledautofillinput" type="password" readonly="readonly" onfocus="javascript:this.removeAttribute('readonly')" required oninput="generalvalidform.verifyContent('inputPasswordProcess','inputPasswordId','msgPasswordId','iconPasswordId')" onfocusout="generalvalidform.verifyContentErrorDelete('inputPasswordProcess','inputPasswordId','msgPasswordId','iconPasswordId')">
+                                    <i class="inputcheckicon" id="iconPasswordId"></i>
                                     <span class="inputerrormessage" id="msgPasswordId"></span>
                                 </div>
                                 <div class="form-group colorsetdarkblue col">
                                     <label>ŞİFRE DOĞRULAMA</label>
-                                    <input id="inputRePasswordId" name="confirm" class="form-control disabledautofillinput" type="password" readonly="readonly" onfocus="javascript:this.removeAttribute('readonly')" required oninput="signupform.verifyContent('inputRePasswordProcess','inputRePasswordId','msgRePasswordId','iconRePasswordId')" onfocusout="signupform.verifyContentErrorDelete('inputRePasswordProcess','inputRePasswordId','msgRePasswordId','iconRePasswordId')">
-                                    <i class="inputcheckicon inputcheckicon-check" id="iconRePasswordId"></i>
+                                    <input id="inputRePasswordId" name="confirm" class="form-control disabledautofillinput" type="password" readonly="readonly" onfocus="javascript:this.removeAttribute('readonly')" required oninput="generalvalidform.verifyContent('inputRePasswordProcess','inputRePasswordId','msgRePasswordId','iconRePasswordId')" onfocusout="generalvalidform.verifyContentErrorDelete('inputRePasswordProcess','inputRePasswordId','msgRePasswordId','iconRePasswordId')">
+                                    <i class="inputcheckicon" id="iconRePasswordId"></i>
                                     <span class="inputerrormessage" id="msgRePasswordId"></span>
                                 </div>
                             </div>
@@ -685,7 +648,7 @@
                         </div>
                     </div>
                     <div class="login-form-btn site-button-formbottom-btn success">
-                        <button type="button" class="btn btn-success" onclick="signupform.sendSignUpForm()">ÜYELİK OLUŞTUR</button>
+                        <button type="button" class="btn btn-success" onclick="generalvalidform.sendSignUpForm()">ÜYELİK OLUŞTUR</button>
                     </div>
                 </form>
                 <div id="signupinfo" class="login-forminfo" style="display: none">
@@ -710,8 +673,8 @@
             </div>
             <!-- Form -->
 
-</div>
-</div>
+        </div>
+    </div>
 </main>
 <!-- Login End -->
 

@@ -75,18 +75,19 @@ gulp.task('sass-custom', () => {
 
 gulp.task('script-custom', () => {
     return gulp.src([
-        folder_src_main + 'script/mainpage/**/app.js',
-        folder_src_main + 'script/mainpage/**/validations-homepage-register.js',
-        folder_src_main + 'script/mainpage/**/validations-signup.js',
-        folder_src_main + 'script/mainpage/**/validations-login.js',
-        folder_src_main + 'script/mainpage/**/validations-contact.js',
-        folder_src_main + 'script/mainpage/**/validations-call2action.js',
-        folder_src_main + 'script/mainpage/**/responsive-app.js',
         folder_src_main + 'script/plugin/**/app.js',
         folder_src_main + 'script/plugin/**/responsive-app.js',
         folder_src_main + 'script/plugin/**/responsive-tabs.js',
+        folder_src_main + 'script/plugin/**/validations-general.js',
         folder_src_main + 'script/plugin/**/plugin-es6.js',
         folder_src_main + 'script/plugin/**/plugin-browser-detection.js',
+        folder_src_main + 'script/mainpage/**/app.js',
+        //folder_src_main + 'script/mainpage/**/validations-homepage-register.js',
+        //folder_src_main + 'script/mainpage/**/validations-signup.js',
+        //folder_src_main + 'script/mainpage/**/validations-login.js',
+        //folder_src_main + 'script/mainpage/**/validations-contact.js',
+        folder_src_main + 'script/mainpage/**/validations-call2action.js',
+        folder_src_main + 'script/mainpage/**/responsive-app.js'
     ])
         .pipe(plumber())
         .pipe(webpack({

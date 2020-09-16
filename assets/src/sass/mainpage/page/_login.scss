@@ -256,33 +256,6 @@
       -webkit-box-shadow: 0 0 0 30px #FFFFFF inset !important;
       -webkit-text-fill-color: $global-clr-dark-blue !important;
     }
-
-    .phonegroup{
-
-      .input-group{
-
-        > .form-control{
-          border-right-width: 1px;
-          border-left-width: 1px;
-          padding-right: 40px;
-        }
-
-        &-append{
-          border-left-width: 1px;
-          border-right-width: 0;
-
-          select.form-control{
-            border-right: 1px solid transparentize($global-clr-soft-gray, 0.70);
-
-            &:last-child{
-              border-right-width: 0;
-            }
-          }
-        }
-
-      }
-
-    }
   }
 
   &-forminfo{
