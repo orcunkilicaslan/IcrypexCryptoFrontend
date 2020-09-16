@@ -228,7 +228,7 @@ $(document).ready(function(){
         showMaskOnFocus: true,
         showMaskOnHover: false,
         onBeforeWrite: function (e) {
-            if (e.which == 48 && $('.inputphonemaskonlytr').val() == 0){
+            if (e.which == 48 && $('.inputphonemaskdatamask').val() == 0){
                 $(".inputerrormessage.phoneerror").show();
                 return false;
             } else {
