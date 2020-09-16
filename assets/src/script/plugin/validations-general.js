@@ -75,7 +75,7 @@ class GeneralValidForm {
                 this.setGeneralValidFormErrorMessages("msgLastNameId", Translation.translate('tr','SurnameAlert'));
                 validStatus = true;
             }
-            if(Phone.trim().replace(/\s/g, "").length < 11){
+            if(Phone.trim().replace(/\s/g, "").length < 10){
                 this.setGeneralValidFormErrorMessages("msgPhoneId", Translation.translate('tr','PhoneAlert'));
                 validStatus = true;
             }
@@ -148,7 +148,7 @@ class GeneralValidForm {
             this.setGeneralValidFormErrorMessages("msgFirstNameId", Translation.translate('tr','NameAlert'));
         }if(LastName.trim().length < 2){
             this.setGeneralValidFormErrorMessages("msgLastNameId", Translation.translate('tr','SurnameAlert'));
-        }if(Phone.trim().length < 11){
+        }if(Phone.trim().length < 10){
             this.setGeneralValidFormErrorMessages("msgPhoneId", Translation.translate('tr','PhoneAlert'));
         }if(!emailPattern.test(Email)){
             this.setGeneralValidFormErrorMessages("msgEmailId", Translation.translate('tr','EmailAlert'));
@@ -225,7 +225,7 @@ class GeneralValidForm {
             this.setGeneralValidFormErrorMessages("msgFirstNameId", Translation.translate('tr','NameAlert'));
         }if(LastName.trim().length < 2){
             this.setGeneralValidFormErrorMessages("msgLastNameId", Translation.translate('tr','SurnameAlert'));
-        }if(Phone.trim().length < 14){
+        }if(Phone.trim().length < 10){
             this.setGeneralValidFormErrorMessages("msgPhoneId", Translation.translate('tr','PhoneAlert'));
         }if(!emailPattern.test(Email)){
             this.setGeneralValidFormErrorMessages("msgEmailId", Translation.translate('tr','EmailAlert'));
