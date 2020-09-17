@@ -227,9 +227,18 @@ $(document).ready(function(){
         placeholder: '',
         showMaskOnFocus: true,
         showMaskOnHover: false,
+        onincomplete:  function (e) {
+            var phoneZeroVal = $('.inputphonemaskdatamask').val().substring(0, 1);
+            if (phoneZeroVal == "0"){
+                $(".inputerrormessage.phoneerror").show();
+                return false;
+            } else {
+                $(".inputerrormessage.phoneerror").hide();
+            }
+        },
         onBeforeWrite: function (e) {
-
-            if (e.which == 48 && $('.inputphonemaskdatamask').val() == 0){
+            var phoneZeroVal = $('.inputphonemaskdatamask').val().substring(0, 1);
+            if (phoneZeroVal == "0"){
                 $(".inputerrormessage.phoneerror").show();
                 return false;
             } else {
@@ -250,8 +259,18 @@ $(document).ready(function(){
                     placeholder: '',
                     showMaskOnFocus: true,
                     showMaskOnHover: false,
+                    onincomplete:  function (e) {
+                        var phoneZeroVal = $('.inputphonemaskdatamask').val().substring(0, 1);
+                        if (phoneZeroVal == "0"){
+                            $(".inputerrormessage.phoneerror").show();
+                            return false;
+                        } else {
+                            $(".inputerrormessage.phoneerror").hide();
+                        }
+                    },
                     onBeforeWrite: function (e) {
-                        if (e.which == 48 && $('.inputphonemaskdatamask').val() == 0){
+                        var phoneZeroVal = $('.inputphonemaskdatamask').val().substring(0, 1);
+                        if (phoneZeroVal == "0"){
                             $(".inputerrormessage.phoneerror").show();
                             return false;
                         } else {
