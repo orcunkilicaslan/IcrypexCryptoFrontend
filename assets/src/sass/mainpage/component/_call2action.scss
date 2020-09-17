@@ -280,6 +280,11 @@ $bottomcall2actionwhitebarpx: 30px;
       .inputerrormessage{
         right: 0;
         display: none;
+
+        &.phoneerror{
+          top: 7px !important;
+          right: 35px !important;
+        }
       }
 
       .form-control{

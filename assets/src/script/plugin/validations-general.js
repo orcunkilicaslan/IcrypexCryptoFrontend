@@ -4,7 +4,7 @@ const translateObject = {
     'tr': {
         'NameAlert':'En Az 2 Karakter',
         'SurnameAlert':'En Az 2 Karakter',
-        'PhoneAlert':'',
+        'PhoneAlert':'Hatalı Format',
         'EmailAlert':'Hatalı Format',
         'Min10Character':'En Az 10 Karakter',
         'PleaseChoose':'Lütfen Seçiniz',
@@ -157,7 +157,7 @@ class GeneralValidForm {
         }if(RePassword.trim().length < 8 || (Password !== RePassword)){
             this.setGeneralValidFormErrorMessages("msgRePasswordId", Translation.translate('tr','RePasswordAlert'));
         }if(!atouLabel){
-            document.getElementById('atou').classList.add("checkederror");
+            document.getElementById('atoulabel').classList.add("checkederror");
         }else{
             document.getElementById('inputFirstNameId').value = "";
             document.getElementById('inputLastNameId').value = "";
