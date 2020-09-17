@@ -221,14 +221,16 @@ $(document).ready(function(){
 /* Country Code Select */
 $(document).ready(function(){
 
-    $('.inputphonemaskdatamask').inputmask({
+    var inputPhoneMask = $('.inputphonemaskdatamask');
+
+    inputPhoneMask.inputmask({
         mask: '999 999 9999',
         greedy: false,
         placeholder: '',
         showMaskOnFocus: true,
         showMaskOnHover: false,
         onincomplete:  function (e) {
-            var phoneZeroVal = $('.inputphonemaskdatamask').val().substring(0, 1);
+            var phoneZeroVal = inputPhoneMask.val().substring(0, 1);
             if (phoneZeroVal == "0"){
                 $(".inputerrormessage.phoneerror").show();
                 return false;
@@ -237,7 +239,7 @@ $(document).ready(function(){
             }
         },
         onBeforeWrite: function (e) {
-            var phoneZeroVal = $('.inputphonemaskdatamask').val().substring(0, 1);
+            var phoneZeroVal = inputPhoneMask.val().substring(0, 1);
             if (phoneZeroVal == "0"){
                 $(".inputerrormessage.phoneerror").show();
                 return false;
@@ -253,14 +255,15 @@ $(document).ready(function(){
 
         switch(choiceCountryCode){
             case '90':
-                $('.inputphonemaskdatamask').inputmask({
+                inputPhoneMask.val("");
+                inputPhoneMask.inputmask({
                     mask: '999 999 9999',
                     greedy: false,
                     placeholder: '',
                     showMaskOnFocus: true,
                     showMaskOnHover: false,
                     onincomplete:  function (e) {
-                        var phoneZeroVal = $('.inputphonemaskdatamask').val().substring(0, 1);
+                        var phoneZeroVal = inputPhoneMask.val().substring(0, 1);
                         if (phoneZeroVal == "0"){
                             $(".inputerrormessage.phoneerror").show();
                             return false;
@@ -269,7 +272,7 @@ $(document).ready(function(){
                         }
                     },
                     onBeforeWrite: function (e) {
-                        var phoneZeroVal = $('.inputphonemaskdatamask').val().substring(0, 1);
+                        var phoneZeroVal = inputPhoneMask.val().substring(0, 1);
                         if (phoneZeroVal == "0"){
                             $(".inputerrormessage.phoneerror").show();
                             return false;
@@ -281,8 +284,9 @@ $(document).ready(function(){
                 break;
 
             default:
-                $('.inputphonemaskdatamask').inputmask({
-                    mask: '9999999999999',
+                inputPhoneMask.val("");
+                inputPhoneMask.inputmask({
+                    mask: '999999999999999999',
                     greedy: false,
                     placeholder: '',
                     showMaskOnFocus: true,
