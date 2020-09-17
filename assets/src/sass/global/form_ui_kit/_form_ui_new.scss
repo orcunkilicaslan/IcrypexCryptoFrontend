@@ -824,6 +824,12 @@
         text-align: left;
         line-height: inherit;
       }
+      &.phoneerror{
+        top: auto;
+        bottom: 12px;
+        right: 10px;
+        z-index: 3;
+      }
     }
 
     .form-row{

@@ -228,6 +228,7 @@ $(document).ready(function(){
         showMaskOnFocus: true,
         showMaskOnHover: false,
         onBeforeWrite: function (e) {
+
             if (e.which == 48 && $('.inputphonemaskdatamask').val() == 0){
                 $(".inputerrormessage.phoneerror").show();
                 return false;
@@ -238,8 +239,10 @@ $(document).ready(function(){
     });
 
     $('.jsCountryCode').change(function() {
-        var choice = $(this).val();
-        switch(choice){
+
+        var choiceCountryCode = $(this).val();
+
+        switch(choiceCountryCode){
             case '90':
                 $('.inputphonemaskdatamask').inputmask({
                     mask: '999 999 9999',
@@ -260,7 +263,7 @@ $(document).ready(function(){
 
             default:
                 $('.inputphonemaskdatamask').inputmask({
-                    mask: '999 9999999999',
+                    mask: '9999999999999',
                     greedy: false,
                     placeholder: '',
                     showMaskOnFocus: true,
