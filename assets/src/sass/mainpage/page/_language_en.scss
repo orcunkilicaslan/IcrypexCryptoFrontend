@@ -48,4 +48,13 @@ html[lang="en"]{
     }
   }
 
+  .footer-blockchainlogo{
+    .footblockchain{
+
+      &-logo{order: 2;}
+      &-text{order: 1;}
+
+    }
+  }
+
 }
