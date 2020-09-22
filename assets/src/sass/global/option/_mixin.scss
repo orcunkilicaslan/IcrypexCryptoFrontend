@@ -166,6 +166,16 @@
   background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from($color1), to($color2));
 }
 
+@mixin background-linear($color1, $color2, $deg: 90, $start: 0%, $finish: 100%,) {
+  background-color: $color1;
+  background-image: linear-gradient(#{$deg}deg, $color1 $start, $color2 $finish);
+  background-image: -o-linear-gradient(#{$deg}deg,  $color1 $start, $color2 $finish); /* Opera 11.10+ */
+  background-image: -ms-linear-gradient(#{$deg}deg,  $color1 $start, $color2 $finish); /* IE10+ */
+  background-image: -moz-linear-gradient(#{$deg}deg,  $color1 $start, $color2 $finish); /* FF3.6+ */
+  background-image: -webkit-linear-gradient(#{$deg}deg,  $color1 $start, $color2 $finish); /* Chrome10+,Safari5.1+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#{$color1}, endColorstr=#{$color2});
+}
+
 @mixin background-size($background-size) {
   background-size: $background-size;
   -o-background-size: $background-size;
