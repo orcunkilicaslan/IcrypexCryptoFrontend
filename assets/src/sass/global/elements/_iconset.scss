@@ -60,6 +60,9 @@ $globalSvgIconImgPath : "../../img/global/svg";
     &-productslistmpay{
       background-image: url(#{$globalSvgIconImgPath}/Icon_Mpay.svg);
     }
+    &-productslistlink{
+      background-image: url(#{$globalSvgIconImgPath}/Icon_Link.svg);
+    }
     &-productslistxlm{
       background-image: url(#{$globalSvgIconImgPath}/Icon_Xlm.svg);
     }
@@ -188,6 +191,9 @@ $globalSvgIconImgPath : "../../img/global/svg";
     }
     &-titleiconmpay{
       background-image: url(#{$globalSvgIconImgPath}/Icon_Title_Mpay.svg);
+    }
+    &-titleiconlink{
+      background-image: url(#{$globalSvgIconImgPath}/Icon_Title_Link.svg);
     }
     &-titleiconxlm{
       background-image: url(#{$globalSvgIconImgPath}/Icon_Title_Xlm.svg);
