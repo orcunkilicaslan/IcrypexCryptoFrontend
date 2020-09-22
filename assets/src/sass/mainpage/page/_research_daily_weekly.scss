@@ -206,6 +206,11 @@
               background-color: $global-clr-currency-mpay;
             }
           }
+          &.linelink{
+            &::after {
+              background-color: $global-clr-currency-link;
+            }
+          }
           &.linetryb{
             &::after {
               background-color: $global-clr-currency-tryb;
