@@ -76,9 +76,13 @@
         }
 
         &-title{
-          font-size: 17px;
+          font-size: 19px;
           font-weight: 500;
           margin: 15px 0 0 0;
+        }
+
+        p,ul,li{
+          font-size: 19px;
         }
 
         .contentdate{
@@ -333,7 +337,7 @@
 
           p{
             color: $global-clr-dark-blue;
-            font-size: 17px;
+            font-size: 19px;
             line-height: 1.1;
             margin-bottom: 15px;
 

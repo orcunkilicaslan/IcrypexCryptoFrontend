@@ -152,6 +152,8 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
           .blogdescription{
 
+            p{font-size: 18px;}
+
             &-morelink{
               color: $global-clr-soft-blue;
               text-decoration: none !important;
@@ -198,6 +200,10 @@ $globalSvgIconImgPath : "../../img/global/svg";
           h2,h3{
             font-size: 20px;
             margin-bottom: 0;
+          }
+
+          p,ul,li{
+            font-size: 19px;
           }
 
           > img{
