@@ -342,13 +342,13 @@
                             <div class="form-row">
                                 <div class="form-group colorsetdarkblue col">
                                     <label>İSİM</label>
-                                    <input id="inputFirstNameId" name="firstname" class="form-control disabledautofillinput" type="text" readonly="readonly" onfocus="javascript:this.removeAttribute('readonly')" required oninput="generalvalidform.verifyContent('inputNameProcess','inputFirstNameId','msgFirstNameId','iconFirstNameId')" onfocusout="generalvalidform.verifyContentErrorDelete('inputNameProcess','inputFirstNameId','msgFirstNameId','iconFirstNameId')">
+                                    <input id="inputFirstNameId" name="firstname" class="form-control disabledautofillinput" type="text" required oninput="generalvalidform.verifyContent('inputNameProcess','inputFirstNameId','msgFirstNameId','iconFirstNameId')" onfocusout="generalvalidform.verifyContentErrorDelete('inputNameProcess','inputFirstNameId','msgFirstNameId','iconFirstNameId')">
                                     <i class="inputcheckicon" id="iconFirstNameId"></i>
                                     <span class="inputerrormessage" id="msgFirstNameId"></span>
                                 </div>
                                 <div class="form-group colorsetdarkblue col">
                                     <label>SOYİSİM</label>
-                                    <input id="inputLastNameId" name="lastname" class="form-control disabledautofillinput" type="text" readonly="readonly" onfocus="javascript:this.removeAttribute('readonly')" required oninput="generalvalidform.verifyContent('inputSurnameProcess','inputLastNameId','msgLastNameId','iconLastNameId')" onfocusout="generalvalidform.verifyContentErrorDelete('inputSurnameProcess','inputLastNameId','msgLastNameId','iconLastNameId')">
+                                    <input id="inputLastNameId" name="lastname" class="form-control disabledautofillinput" type="text" required oninput="generalvalidform.verifyContent('inputSurnameProcess','inputLastNameId','msgLastNameId','iconLastNameId')" onfocusout="generalvalidform.verifyContentErrorDelete('inputSurnameProcess','inputLastNameId','msgLastNameId','iconLastNameId')">
                                     <i class="inputcheckicon" id="iconLastNameId"></i>
                                     <span class="inputerrormessage" id="msgLastNameId"></span>
                                 </div>
@@ -358,7 +358,7 @@
                                     <label>TELEFON</label>
                                     <div class="input-group">
                                         <div class="input-group-append">
-                                            <select class="form-control custom-select jsCountryCode">
+                                            <select name="country_code" class="form-control custom-select jsCountryCode">
                                                 <option value="90" selected="">90</option>
                                                 <option value="357">357</option>
                                                 <option value="1">1</option>
@@ -603,7 +603,7 @@
                                                 <option value="998">998</option>
                                             </select>
                                         </div>
-                                        <input id="inputPhoneId" name="phone" class="form-control disabledautofillinput inputphonemaskdatamask" type="text" readonly="readonly" onfocus="javascript:this.removeAttribute('readonly')" required oninput="generalvalidform.verifyContent('inputPhoneTurProcess','inputPhoneId','msgPhoneId','iconPhoneId')" onfocusout="generalvalidform.verifyContentErrorDelete('inputPhoneTurProcess','inputPhoneId','msgPhoneId','iconPhoneId')">
+                                        <input id="inputPhoneId" name="phone" class="form-control disabledautofillinput inputphonemaskdatamask" type="text" required oninput="generalvalidform.verifyContent('inputPhoneTurProcess','inputPhoneId','msgPhoneId','iconPhoneId')" onfocusout="generalvalidform.verifyContentErrorDelete('inputPhoneTurProcess','inputPhoneId','msgPhoneId','iconPhoneId')">
                                     </div>
                                     <i class="inputcheckicon" id="iconPhoneId"></i>
                                     <span class="inputerrormessage" id="msgPhoneId"></span>
@@ -611,7 +611,7 @@
                                 </div>
                                 <div class="form-group colorsetdarkblue col">
                                     <label>E-POSTA</label>
-                                    <input id="inputEmailId" name="email" class="form-control disabledautofillinput" type="text" readonly="readonly" onfocus="javascript:this.removeAttribute('readonly')" required oninput="generalvalidform.verifyContent('inputEmailProcess','inputEmailId','msgEmailId','iconEmailId')" onfocusout="generalvalidform.verifyContentErrorDelete('inputEmailProcess','inputEmailId','msgEmailId','iconEmailId')">
+                                    <input id="inputEmailId" name="email" class="form-control disabledautofillinput" type="text" required oninput="generalvalidform.verifyContent('inputEmailProcess','inputEmailId','msgEmailId','iconEmailId')" onfocusout="generalvalidform.verifyContentErrorDelete('inputEmailProcess','inputEmailId','msgEmailId','iconEmailId')">
                                     <i class="inputcheckicon" id="iconEmailId"></i>
                                     <span class="inputerrormessage" id="msgEmailId"></span>
                                 </div>
@@ -619,13 +619,13 @@
                             <div class="form-row contpassstrength">
                                 <div class="form-group colorsetdarkblue inputpassstrength col">
                                     <label>ŞİFRE</label>
-                                    <input id="inputPasswordId" name="password" class="form-control inputpassstrength disabledautofillinput" type="password" readonly="readonly" onfocus="javascript:this.removeAttribute('readonly')" required oninput="generalvalidform.verifyContent('inputPasswordProcess','inputPasswordId','msgPasswordId','iconPasswordId')" onfocusout="generalvalidform.verifyContentErrorDelete('inputPasswordProcess','inputPasswordId','msgPasswordId','iconPasswordId')">
+                                    <input id="inputPasswordId" name="password" class="form-control inputpassstrength disabledautofillinput" type="password" required oninput="generalvalidform.verifyContent('inputPasswordProcess','inputPasswordId','msgPasswordId','iconPasswordId')" onfocusout="generalvalidform.verifyContentErrorDelete('inputPasswordProcess','inputPasswordId','msgPasswordId','iconPasswordId')">
                                     <i class="inputcheckicon" id="iconPasswordId"></i>
                                     <span class="inputerrormessage" id="msgPasswordId"></span>
                                 </div>
                                 <div class="form-group colorsetdarkblue col">
                                     <label>ŞİFRE DOĞRULAMA</label>
-                                    <input id="inputRePasswordId" name="confirm" class="form-control disabledautofillinput" type="password" readonly="readonly" onfocus="javascript:this.removeAttribute('readonly')" required oninput="generalvalidform.verifyContent('inputRePasswordProcess','inputRePasswordId','msgRePasswordId','iconRePasswordId')" onfocusout="generalvalidform.verifyContentErrorDelete('inputRePasswordProcess','inputRePasswordId','msgRePasswordId','iconRePasswordId')">
+                                    <input id="inputRePasswordId" name="confirm" class="form-control disabledautofillinput" type="password" required oninput="generalvalidform.verifyContent('inputRePasswordProcess','inputRePasswordId','msgRePasswordId','iconRePasswordId')" onfocusout="generalvalidform.verifyContentErrorDelete('inputRePasswordProcess','inputRePasswordId','msgRePasswordId','iconRePasswordId')">
                                     <i class="inputcheckicon" id="iconRePasswordId"></i>
                                     <span class="inputerrormessage" id="msgRePasswordId"></span>
                                 </div>

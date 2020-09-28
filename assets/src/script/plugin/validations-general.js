@@ -322,7 +322,10 @@ class GeneralValidForm {
                 break;
 
             case "inputPhoneTurProcess":
-                if(val.replace(/\s/g, "").length < 10){
+
+                var selectCountryCodeVal =  document.getElementsByClassName('jsCountryCode')[0].value == "90" ? 10 : 6;
+
+                if(val.replace(/\s/g, "").length < selectCountryCodeVal){
                     this.setGeneralValidFormErrorMessages(messageSpanSelector, Translation.translate('tr','PhoneAlert'), "error", "check");
                     this.setGeneralValidFormErrorIcon(messageIconSelector,"error", "check");
                     this.setGeneralValidFormErrorInput(inputIdSelector);
