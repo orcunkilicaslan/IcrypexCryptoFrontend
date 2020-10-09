@@ -215,6 +215,11 @@
               background-color: $global-clr-currency-link;
             }
           }
+          &.lineavax{
+            &::after {
+              background-color: $global-clr-currency-avax;
+            }
+          }
           &.linetryb{
             &::after {
               background-color: $global-clr-currency-tryb;
