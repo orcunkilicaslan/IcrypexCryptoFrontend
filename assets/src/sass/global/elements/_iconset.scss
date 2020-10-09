@@ -63,6 +63,9 @@ $globalSvgIconImgPath : "../../img/global/svg";
     &-productslistlink{
       background-image: url(#{$globalSvgIconImgPath}/Icon_Link.svg);
     }
+    &-productslistavax{
+      background-image: url(#{$globalSvgIconImgPath}/Icon_Avax.svg);
+    }
     &-productslistxlm{
       background-image: url(#{$globalSvgIconImgPath}/Icon_Xlm.svg);
     }
@@ -194,6 +197,9 @@ $globalSvgIconImgPath : "../../img/global/svg";
     }
     &-titleiconlink{
       background-image: url(#{$globalSvgIconImgPath}/Icon_Title_Link.svg);
+    }
+    &-titleiconavax{
+      background-image: url(#{$globalSvgIconImgPath}/Icon_Title_Avax.svg);
     }
     &-titleiconxlm{
       background-image: url(#{$globalSvgIconImgPath}/Icon_Title_Xlm.svg);
