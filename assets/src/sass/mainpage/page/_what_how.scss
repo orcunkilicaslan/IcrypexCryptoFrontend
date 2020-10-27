@@ -221,10 +221,17 @@
         background-color: $global-clr-light-gray;
         display: block;
         text-decoration: none;
-        font-size:17px;
+        font-size:19px;
         position: relative;
         padding: 8px 35px 9px 15px;
         @include transition(all, 0.2s, linear);
+
+        @include ReSassWidthResponsive(1400){
+          font-size: 18px;
+        }
+        @include ReSassWidthResponsive(992){
+          font-size: 17px;
+        }
 
         &:hover {
           background-color: transparentize($global-clr-soft-gray, 0.2);
