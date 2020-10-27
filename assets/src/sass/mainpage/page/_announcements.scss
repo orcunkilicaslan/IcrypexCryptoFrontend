@@ -228,6 +228,7 @@
 
       .content {
         padding: 15px;
+        line-height: 1.2;
         display: none;
 
         @include ReSassWidthResponsive(400){
@@ -264,9 +265,16 @@
     }
 
     &-subtitle{
-      font-size: 17px;
+      font-size: 19px;
       font-weight: 500;
       margin: 0;
+
+      @include ReSassWidthResponsive(1400){
+        font-size: 18px;
+      }
+      @include ReSassWidthResponsive(992){
+        font-size: 17px;
+      }
     }
 
     &-contlist{
@@ -294,9 +302,15 @@
     }
 
     p{
-      font-size: 17px;
+      font-size: 19px;
       margin-bottom: 15px;
 
+      @include ReSassWidthResponsive(1400){
+        font-size: 18px;
+      }
+      @include ReSassWidthResponsive(992){
+        font-size: 17px;
+      }
       @include ReSassWidthResponsive(400){
         font-size: 15px;
       }
