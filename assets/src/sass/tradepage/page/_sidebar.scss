@@ -364,7 +364,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
         }
 
         &.active svg{
-          fill: $global-clr-orange;
+          fill: $global-clr-orange !important;
         }
       }
 
