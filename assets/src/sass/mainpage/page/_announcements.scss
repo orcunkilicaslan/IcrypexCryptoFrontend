@@ -77,10 +77,18 @@
       color: $global-clr-white !important;
       width: 110px;
       //height: 100%;
-      min-height: 42px;
-      font-size: 17px;
+      min-height: 45px;
+      font-size: 19px;
       @include border-radii(3px,0,0,3px);
 
+      @include ReSassWidthResponsive(1400){
+        font-size: 18px;
+        min-height: 44px;
+      }
+      @include ReSassWidthResponsive(992){
+        font-size: 17px;
+        min-height: 42px;
+      }
       @include ReSassWidthResponsive(480){
         width: 100%;
         @include border-radii(3px,3px,0,0);
@@ -134,12 +142,18 @@
         background-color: $global-clr-light-gray;
         display: block;
         text-decoration: none;
-        font-size:17px;
+        font-size:19px;
         font-weight: normal;
         position: relative;
         padding: 8px 35px 9px 15px;
         @include transition(all, 0.2s, linear);
 
+        @include ReSassWidthResponsive(1400){
+          font-size: 18px;
+        }
+        @include ReSassWidthResponsive(992){
+          font-size: 17px;
+        }
         @include ReSassWidthResponsive(400){
           font-size:15px;
           padding: 6px 35px 6px 8px;
@@ -214,6 +228,7 @@
 
       .content {
         padding: 15px;
+        line-height: 1.2;
         display: none;
 
         @include ReSassWidthResponsive(400){
@@ -250,9 +265,16 @@
     }
 
     &-subtitle{
-      font-size: 17px;
+      font-size: 19px;
       font-weight: 500;
       margin: 0;
+
+      @include ReSassWidthResponsive(1400){
+        font-size: 18px;
+      }
+      @include ReSassWidthResponsive(992){
+        font-size: 17px;
+      }
     }
 
     &-contlist{
@@ -280,9 +302,15 @@
     }
 
     p{
-      font-size: 17px;
+      font-size: 19px;
       margin-bottom: 15px;
 
+      @include ReSassWidthResponsive(1400){
+        font-size: 18px;
+      }
+      @include ReSassWidthResponsive(992){
+        font-size: 17px;
+      }
       @include ReSassWidthResponsive(400){
         font-size: 15px;
       }

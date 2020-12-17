@@ -199,8 +199,8 @@ $(document).ready(function(){
     });
     $('.inputdatemask').inputmask({
         mask: '99/99/9999',
-        placeholder: 'MM/DD/YYYY',
-        showMaskOnFocus: true,
+        placeholder: '__/__/____',
+        showMaskOnFocus: false,
         showMaskOnHover: false
     });
     $('.inputdatedottedmask').inputmask({

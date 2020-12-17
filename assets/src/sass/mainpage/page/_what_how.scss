@@ -221,10 +221,17 @@
         background-color: $global-clr-light-gray;
         display: block;
         text-decoration: none;
-        font-size:17px;
+        font-size:19px;
         position: relative;
         padding: 8px 35px 9px 15px;
         @include transition(all, 0.2s, linear);
+
+        @include ReSassWidthResponsive(1400){
+          font-size: 18px;
+        }
+        @include ReSassWidthResponsive(992){
+          font-size: 17px;
+        }
 
         &:hover {
           background-color: transparentize($global-clr-soft-gray, 0.2);
@@ -283,17 +290,32 @@
         }
 
         &-subtitle{
-          font-size: 17px;
+          font-size: 19px;
           font-weight: 500;
+          line-height: 1.2;
           margin: 0;
+
+          @include ReSassWidthResponsive(1400){
+            font-size: 18px;
+          }
+          @include ReSassWidthResponsive(992){
+            font-size: 17px;
+          }
         }
 
         &-contlist{
           color: $global-clr-dark-blue;
-          font-size: 17px;
+          font-size: 19px;
           text-align: left;
           margin: auto;
           margin-bottom: 15px;
+
+          @include ReSassWidthResponsive(1400){
+            font-size: 18px;
+          }
+          @include ReSassWidthResponsive(992){
+            font-size: 17px;
+          }
 
           li{
             position: relative;
@@ -388,9 +410,16 @@
     }
 
     &-subtitle{
-      font-size: 17px;
+      font-size: 19px;
       font-weight: 500;
       margin: 0;
+
+      @include ReSassWidthResponsive(1400){
+        font-size: 18px;
+      }
+      @include ReSassWidthResponsive(992){
+        font-size: 17px;
+      }
     }
 
     &-contlist{
@@ -418,8 +447,16 @@
     }
 
     p{
-      font-size: 17px;
+      font-size: 19px;
+      line-height: 1.2;
       margin-bottom: 15px;
+
+      @include ReSassWidthResponsive(1400){
+        font-size: 18px;
+      }
+      @include ReSassWidthResponsive(992){
+        font-size: 17px;
+      }
 
       &:last-child{
         margin-bottom: 0;
@@ -443,10 +480,17 @@
         br{display: none;}
       }
       li{
-        font-size: 17px;
+        font-size: 19px;
         position: relative;
         padding-left: 17px;
         margin-bottom: 10px;
+
+        @include ReSassWidthResponsive(1400){
+          font-size: 18px;
+        }
+        @include ReSassWidthResponsive(992){
+          font-size: 17px;
+        }
 
         &:last-child{
           margin-bottom: 0;

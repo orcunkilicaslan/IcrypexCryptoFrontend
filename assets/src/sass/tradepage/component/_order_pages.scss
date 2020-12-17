@@ -883,7 +883,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
               }
 
               &.order-open-table-edit{
-                width: 180px;
+                //width: 180px;
                 display: flex;
 
                 @include ReSassWidthResponsive(768){

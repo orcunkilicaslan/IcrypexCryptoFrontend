@@ -205,9 +205,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
     &weburllink{
 
-      @include ReSassMinWidthResponsive(992){
-
-      }
+      @include ReSassMinWidthResponsive(992){}
 
       tbody{
         tr{
@@ -242,12 +240,6 @@ $globalSvgIconImgPath : "../../img/global/svg";
             td{
               color: $global-clr-white !important;
               border-color: $global-clr-soft-blue;
-
-              a.tablefavicon{
-                svg{
-                  fill: $global-clr-white !important;
-                }
-              }
 
               i.arrowup{
                 border-bottom-color: $global-clr-white !important;
@@ -290,6 +282,61 @@ $globalSvgIconImgPath : "../../img/global/svg";
         }
       }
 
+    }
+
+    &weburlcell{
+
+      tbody{
+        tr{
+          @include transition(background, 0.1s, ease-in-out);
+
+          td[data-href]{cursor: pointer;}
+
+          &:hover{
+            background-color: $global-clr-soft-blue;
+
+            td{
+              color: $global-clr-white !important;
+              border-color: $global-clr-soft-blue;
+
+              a.tablefavicon{
+                svg{
+                  fill: $global-clr-white;
+                }
+              }
+
+              i.arrowup{
+                border-bottom-color: $global-clr-white !important;
+              }
+              i.arrowdown{
+                border-top-color: $global-clr-white !important;
+              }
+            }
+          }
+
+          &.selectcell{
+            background-color: $global-clr-soft-blue;
+
+            td{
+              color: $global-clr-white !important;
+              border-color: $global-clr-soft-blue;
+
+              a.tablefavicon{
+                svg{
+                  fill: $global-clr-white;
+                }
+              }
+
+              i.arrowup{
+                border-bottom-color: $global-clr-white !important;
+              }
+              i.arrowdown{
+                border-top-color: $global-clr-white !important;
+              }
+            }
+          }
+        }
+      }
     }
   }
 }

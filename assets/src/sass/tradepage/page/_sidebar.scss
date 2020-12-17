@@ -129,6 +129,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
           padding: 0 20px 5px 0;
           border-bottom: 1px solid transparentize($global-clr-soft-gray, 0.7);
           @include transition(width, 0.3s, ease-out);
+          text-transform: uppercase;
           position: relative;
           z-index: 1;
 
@@ -144,6 +145,28 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
           &:focus ~ button{
             background-image: url(#{$globalSvgIconImgPath}/Search_Icon_Soft_Blue.svg);
+          }
+          &:valid ~ button{
+            background-image: none;
+
+            &::before,
+            &::after{
+              content: "";
+              position: absolute;
+              background-color: $global-clr-red;
+              width: 16px;
+              height: 2px;
+              left: 0;
+              top: calc(50% - 1px);
+              @include transition(all, 0.1s, ease-in-out);
+            }
+
+            &::before{
+              @include rotate(45);
+            }
+            &::after{
+              @include rotate(135);
+            }
           }
         }
 
@@ -163,6 +186,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
           @include transition(background, 50ms);
           z-index: 0;
         }
+
         @include placeholder {
           color: $global-clr-soft-gray;
           opacity: 0.75;
@@ -364,7 +388,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
         }
 
         &.active svg{
-          fill: $global-clr-orange;
+          fill: $global-clr-orange !important;
         }
       }
 
