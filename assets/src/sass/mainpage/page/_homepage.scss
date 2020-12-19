@@ -1097,7 +1097,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
     }
 
     &-wrapper{
-      padding: 7px 0 20px;
+      padding: 7px 0 15px;
       color: $global-clr-soft-gray;
       border-bottom: 2px solid darken($global-clr-soft-gray, 25%);
 
@@ -1190,7 +1190,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
       flex-wrap: wrap;
       //align-content: flex-start;
       align-items: center;
-      margin-top: 12px;
+      margin-top: 10px;
       margin-left: -2px;
       margin-right: -2px;
 
@@ -1213,11 +1213,11 @@ $globalSvgIconImgPath : "../../img/global/svg";
       .walletbox{
         background-color: transparentize($global-clr-soft-gray, 0.85);
         color: $global-clr-soft-gray;
-        height: 50px;
+        height: 46px;
         text-align: center;
         font-size: 16px;
         line-height: 1;
-        padding: 6px 0 8px;
+        padding: 5px 0 7px;
         border-bottom: 2px solid transparent;
         overflow: hidden;
         @include border-radii(4px,4px,0,0);
@@ -1246,7 +1246,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
     &-btngroup{
       display: flex;
       justify-content: space-between;
-      padding: 18px 0;
+      padding: 15px 0;
       border-bottom: 1px solid darken($global-clr-soft-gray, 25%);
 
       .btn{
@@ -1283,7 +1283,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
       }
 
       &-bar{
-        padding-top: 16px;
+        padding-top: 10px;
 
         @include ReSassWidthResponsive(992){
           width: 50%;
@@ -1296,7 +1296,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
         .progress{
           background-color: transparentize($global-clr-soft-gray, 0.65);
-          margin-top: 7px;
+          margin-top: 5px;
         }
 
         .progress,
