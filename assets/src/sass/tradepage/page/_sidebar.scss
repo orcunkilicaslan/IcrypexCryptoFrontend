@@ -148,6 +148,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
           }
           &:valid ~ button{
             background-image: none;
+            z-index: 1;
 
             &::before,
             &::after{

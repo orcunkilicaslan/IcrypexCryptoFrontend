@@ -391,7 +391,7 @@
                     <div class="datatablesearch">
                         <form autocomplete="off" novalidate>
                             <input class="datatablesearch-input" type="search" name="marketdatasearch" placeholder="ARA" pattern=".{0}|.{1,}" required />
-                            <button class="datatablesearch-button" type="submit"></button>
+                            <button class="datatablesearch-button" type="button" onclick="document.querySelector('.datatablesearch-input').value=''"></button>
                         </form>
                     </div>
                 </div>
