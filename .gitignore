@@ -2,15 +2,11 @@
 node_modules/
 package-lock.json
 
-assets/dist/css/bootstrap.css.map
-assets/dist/css/mainpage-app.css.map
-assets/dist/css/plugin.css.map
-assets/dist/css/tradepage-app.css.map
+assets/dist/css/client.css.map
+assets/dist/css/custom.css.map
 assets/dist/css/xtras.css.map
-
-assets/dist/js/mainpage-app.js.map
-assets/dist/js/plugin-app.js.map
-assets/dist/js/tradepage-app.js.map
+assets/dist/js/client-app.js.map
+assets/dist/js/custom-app.js.map
 
 assets/vendor/owl.carousel/dist/README.md
 assets/vendor/owl.carousel/dist/assets/
