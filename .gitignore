@@ -1,15 +1,12 @@
 .idea/
 node_modules/
+package-lock.json
 
-assets/dist/css/bootstrap.css.map
-assets/dist/css/mainpage-app.css.map
-assets/dist/css/plugin.css.map
-assets/dist/css/tradepage-app.css.map
+assets/dist/css/client.css.map
+assets/dist/css/custom.css.map
 assets/dist/css/xtras.css.map
-
-assets/dist/js/mainpage-app.js.map
-assets/dist/js/plugin-app.js.map
-assets/dist/js/tradepage-app.js.map
+assets/dist/js/client-app.js.map
+assets/dist/js/custom-app.js.map
 
 assets/vendor/owl.carousel/dist/README.md
 assets/vendor/owl.carousel/dist/assets/
@@ -32,6 +29,7 @@ assets/vendor/dropzone/dist/dropzone-amd-module.js
 assets/vendor/dropzone/dist/min/
 assets/vendor/dropzone/dist/readme.md
 assets/vendor/dropzone/bower.json
+assets/vendor/dropzone/CHANGELOG.md
 assets/vendor/dropzone/component.json
 assets/vendor/dropzone/composer.json
 assets/vendor/dropzone/CONTRIBUTING.md
@@ -70,6 +68,7 @@ assets/vendor/bootstrap-datepicker/package.json
 assets/vendor/bootstrap-datepicker/README.md
 
 assets/vendor/numeral/locales
+assets/vendor/numeral/min/locales/
 assets/vendor/numeral/src
 assets/vendor/numeral/templates
 assets/vendor/numeral/tests
@@ -82,8 +81,10 @@ assets/vendor/numeral/numeral.js
 assets/vendor/numeral/package.json
 assets/vendor/numeral/README.md
 
+assets/vendor/moment/dist/
 assets/vendor/moment/locale/
 assets/vendor/moment/src/
+assets/vendor/moment/ts3.1-typings/
 assets/vendor/moment/CHANGELOG.md
 assets/vendor/moment/ender.js
 assets/vendor/moment/LICENSE

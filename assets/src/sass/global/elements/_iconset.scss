@@ -280,6 +280,15 @@ $globalSvgIconImgPath : "../../img/global/svg";
     &-currencyiconltc{
       background-image: url(#{$globalSvgIconImgPath}/Currency_Icon_Ltc.svg);
     }
+    &-currencyiconbat{
+      background-image: url(#{$globalSvgIconImgPath}/Currency_Icon_Bat.svg);
+    }
+    &-currencyiconlink{
+      background-image: url(#{$globalSvgIconImgPath}/Currency_Icon_Link.svg);
+    }
+    &-currencyiconavax{
+      background-image: url(#{$globalSvgIconImgPath}/Currency_Icon_Avax.svg);
+    }
     &-currencyiconmpay{
       background-image: url(#{$globalSvgIconImgPath}/Currency_Icon_Mpay.svg);
     }
@@ -291,6 +300,15 @@ $globalSvgIconImgPath : "../../img/global/svg";
     }
     &-currencyiconxrp{
       background-image: url(#{$globalSvgIconImgPath}/Currency_Icon_Xrp.svg);
+    }
+    &-currencyiconxlm{
+      background-image: url(#{$globalSvgIconImgPath}/Currency_Icon_Xlm.svg);
+    }
+    &-currencyicontryb{
+      background-image: url(#{$globalSvgIconImgPath}/Currency_Icon_Tryb.svg);
+    }
+    &-currencyiconusdt{
+      background-image: url(#{$globalSvgIconImgPath}/Currency_Icon_Usdt.svg);
     }
     &-formselecticontry{
       background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzNSIgaGVpZ2h0PSIzNSIgdmlld0JveD0iMCAwIDM1IDM1Ij4NCiAgPGcgaWQ9IlRyeV9JY29uIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwLjA0NSAtMC4xODIpIj4NCiAgICA8Y2lyY2xlIGlkPSJFbGxpcHNlIiBjeD0iMTcuNSIgY3k9IjE3LjUiIHI9IjE3LjUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0wLjA0NSAwLjE4MikiIGZpbGw9IiNlMzBhMTciLz4NCiAgICA8cGF0aCBpZD0iSWNuX1RyeSIgZD0iTTE5MS4zMjUsNDU3LjI3OWEuOTUzLjk1MywwLDAsMC0xLC45MDYsOC45NzYsOC45NzYsMCwwLDEtMS44ODgsNS43MTEsNS44NzUsNS44NzUsMCwwLDEtMy45MSwxLjc5M3YtOC4wNjVsNC45MTgtMS4xNzRhLjk1MS45NTEsMCwxLDAtLjQ0MS0xLjg1bC00LjQ3NywxLjA2OXYtMi4yNDFsNC45MTgtMS4xNzRhLjk1MS45NTEsMCwxLDAtLjQ0MS0xLjg1MWwtNC40NzcsMS4wNjl2LTIuNzQ1YS45NTYuOTU2LDAsMCwwLTEuOTEyLDB2My4ybC00LjY1NCwxLjExMWEuOTUxLjk1MSwwLDEsMCwuNDQsMS44NWw0LjIxNC0xLjAwNnYyLjI0MWwtNC42NTQsMS4xMTFhLjk1MS45NTEsMCwxLDAsLjQ0LDEuODVsNC4yMTQtMS4wMDZ2OC42MTJhLjk1NS45NTUsMCwwLDAsLjk1Ni45NTVjLjAzNCwwLC4wNjgsMCwuMS0uMDA1YTguMSw4LjEsMCwwLDAsNi4xNzYtMi40NjIsMTAuNzcyLDEwLjc3MiwwLDAsMCwyLjM4LTYuOUEuOTUzLjk1MywwLDAsMCwxOTEuMzI1LDQ1Ny4yNzlaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMTY2Ljc3NyAtNDQwLjA5MikiIGZpbGw9IiNmZmYiIGZpbGwtcnVsZT0iZXZlbm9kZCIvPg0KICA8L2c+DQo8L3N2Zz4NCg==");
