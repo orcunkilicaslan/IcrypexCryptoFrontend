@@ -74,12 +74,12 @@ gulp.task('script-custom', () => {
         .pipe(webpack({
             mode: 'production'
         }))
-        .pipe(sourcemaps.init())
+        .pipe(gulppif(cfgprod.sourceMaps, sourcemaps.init()))
         .pipe(babel({
             presets: [ '@babel/env' ]
         }))
         .pipe(concat('custom-app.js'))
-        .pipe(uglify('custom-app.min.js'))
+        .pipe(uglify())
         .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest(folder_dist_main + 'js'))
         .pipe(browserSync.stream());
@@ -123,12 +123,12 @@ gulp.task('script-client', () => {
         .pipe(webpack({
             mode: 'production'
         }))
-        .pipe(sourcemaps.init())
+        .pipe(gulppif(cfgprod.sourceMaps, sourcemaps.init()))
         .pipe(babel({
             presets: [ '@babel/env' ]
         }))
         .pipe(concat('client-app.js'))
-        .pipe(uglify('client-app.min.js'))
+        .pipe(uglify())
         .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest(folder_dist_main + 'js'))
         .pipe(browserSync.stream());
