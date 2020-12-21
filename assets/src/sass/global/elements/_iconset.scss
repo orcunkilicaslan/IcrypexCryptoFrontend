@@ -280,6 +280,15 @@ $globalSvgIconImgPath : "../../img/global/svg";
     &-currencyiconltc{
       background-image: url(#{$globalSvgIconImgPath}/Currency_Icon_Ltc.svg);
     }
+    &-currencyiconbat{
+      background-image: url(#{$globalSvgIconImgPath}/Currency_Icon_Bat.svg);
+    }
+    &-currencyiconlink{
+      background-image: url(#{$globalSvgIconImgPath}/Currency_Icon_Link.svg);
+    }
+    &-currencyiconavax{
+      background-image: url(#{$globalSvgIconImgPath}/Currency_Icon_Avax.svg);
+    }
     &-currencyiconmpay{
       background-image: url(#{$globalSvgIconImgPath}/Currency_Icon_Mpay.svg);
     }
