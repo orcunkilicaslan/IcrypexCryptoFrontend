@@ -842,7 +842,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
           tr{
 
             @include ReSassWidthResponsive(768){
-              width: calc(100% - 0) !important;
+              width: calc(100% - 0px) !important;
               margin: 5px 0 !important;
             }
 
@@ -883,8 +883,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
               }
 
               &.order-open-table-edit{
-                //width: 180px;
-                display: flex;
+                width: 80px;
 
                 @include ReSassWidthResponsive(768){
                   width: 100%;
