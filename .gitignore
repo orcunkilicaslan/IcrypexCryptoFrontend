@@ -83,8 +83,10 @@ assets/vendor/numeral/numeral.js
 assets/vendor/numeral/package.json
 assets/vendor/numeral/README.md
 
+assets/vendor/moment/dist/
 assets/vendor/moment/locale/
 assets/vendor/moment/src/
+assets/vendor/moment/ts3.1-typings/
 assets/vendor/moment/CHANGELOG.md
 assets/vendor/moment/ender.js
 assets/vendor/moment/LICENSE
