@@ -135,6 +135,9 @@ $globalSvgIconImgPath : "../../img/global/svg";
             i[class*="xrp"]{
               background-color: transparentize($global-clr-currency-xrp, 0.15);
             }
+            i[class*="xlm"]{
+              background-color: transparentize($global-clr-currency-xlm, 0.15);
+            }
             i[class*="bat"]{
               background-color: transparentize($global-clr-currency-bat, 0.15);
             }
