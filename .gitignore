@@ -33,6 +33,7 @@ assets/vendor/dropzone/dist/dropzone-amd-module.js
 assets/vendor/dropzone/dist/min/
 assets/vendor/dropzone/dist/readme.md
 assets/vendor/dropzone/bower.json
+assets/vendor/dropzone/CHANGELOG.md
 assets/vendor/dropzone/component.json
 assets/vendor/dropzone/composer.json
 assets/vendor/dropzone/CONTRIBUTING.md
@@ -71,6 +72,7 @@ assets/vendor/bootstrap-datepicker/package.json
 assets/vendor/bootstrap-datepicker/README.md
 
 assets/vendor/numeral/locales
+assets/vendor/numeral/min/locales/
 assets/vendor/numeral/src
 assets/vendor/numeral/templates
 assets/vendor/numeral/tests
