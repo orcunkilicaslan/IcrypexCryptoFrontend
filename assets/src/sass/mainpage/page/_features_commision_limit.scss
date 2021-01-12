@@ -23,6 +23,20 @@
         }
       }
 
+      .widthpercent50{
+        width: 50%;
+
+        @include ReSassWidthResponsive(768){
+          width: auto;
+        }
+
+        &-responsive{
+          @include ReSassWidthResponsive(768){
+            width: 50%;
+          }
+        }
+      }
+
       .widthpercentspace{
         @include ReSassWidthResponsive(768){
           width: 1px;
@@ -77,5 +91,6 @@
         }
       }
     }
+
   }
 }
