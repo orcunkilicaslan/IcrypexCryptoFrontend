@@ -83,6 +83,11 @@
 
         p,ul,li{
           font-size: 19px;
+
+          a{
+            color: lighten($global-clr-red, 10%);
+            text-decoration: underline;
+          }
         }
 
         .contentdate{
@@ -351,6 +356,11 @@
             }
             @include ReSassWidthResponsive(768){
               text-align: justify;
+            }
+
+            a{
+              color: lighten($global-clr-red, 10%);
+              text-decoration: underline;
             }
           }
         }
