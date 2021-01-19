@@ -96,6 +96,7 @@
  - [18_Withdraw_Step_2_Kripto_1](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/tradepage/18_Withdraw_Step_2_Kripto_1.html)
  - [19_Withdraw_Step_2_Kripto_2](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/tradepage/19_Withdraw_Step_2_Kripto_2.html)
  - [20_Profile_Account_Confirmation_1](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/tradepage/20_Profile_Account_Confirmation_1.html)
+ - [20_Profile_Account_Confirmation_2](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/tradepage/20_Profile_Account_Confirmation_2.html)
  - [22_Profile_Account_Confirmation_Help_Box](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/tradepage/22_Profile_Account_Confirmation_Help_Box.html)
  - [23_Profile_Assets](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/tradepage/23_Profile_Assets.html)
  - [24_Profile_Commision](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/tradepage/24_Profile_Commision.html)

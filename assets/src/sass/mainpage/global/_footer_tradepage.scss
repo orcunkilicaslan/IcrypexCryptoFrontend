@@ -355,11 +355,11 @@ $tradepageFooterImgPath : "../../img/tradepage/footer";
         display: inline-block;
 
         @include ReSassWidthResponsive(768){
-          padding: 0 5px;
+          //padding: 0 5px;
         }
         @include ReSassWidthResponsive(576){
-          max-width: calc(100% /3);
-          flex: 0 0 calc(100% /3);
+          max-width: calc(100% /4);
+          flex: 0 0 calc(100% /4);
           padding: 5px 0;
         }
         @include ReSassWidthResponsive(400){

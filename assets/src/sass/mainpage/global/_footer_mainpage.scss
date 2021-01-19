@@ -178,10 +178,10 @@ $mainpageFooterImgPath : "../../img/mainpage/footer";
       }
     }
     &::before{
-      left: calc(50% + 270px);
+      left: calc(50% + 220px);
     }
     &::after{
-      right: calc(50% + 270px);
+      right: calc(50% + 220px);
     }
 
     &-list{
@@ -200,12 +200,12 @@ $mainpageFooterImgPath : "../../img/mainpage/footer";
         padding: 10px 12px;
         display: inline-block;
         @include ReSassWidthResponsive(768){
-          padding-left: 5px;
-          padding-right: 5px;
+          //padding-left: 5px;
+          //padding-right: 5px;
         }
         @include ReSassWidthResponsive(576){
-          max-width: calc(100% /3);
-          flex: 0 0 calc(100% /3);
+          max-width: calc(100% /4);
+          flex: 0 0 calc(100% /4);
           padding: 5px 0;
         }
         @include ReSassWidthResponsive(400){
