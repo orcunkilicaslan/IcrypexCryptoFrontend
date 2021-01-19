@@ -251,6 +251,10 @@
 
     &-bottombtnform{
       margin-bottom: 20px;
+
+      + div[class*="confirm"]{
+        margin-top: 40px;
+      }
     }
   }
 
