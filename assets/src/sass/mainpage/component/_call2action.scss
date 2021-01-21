@@ -321,14 +321,13 @@ $bottomcall2actionwhitebarpx: 30px;
           height: auto;
           font-size: 19px;
           font-weight: 300;
-          letter-spacing: -0.2px;
           padding: 11px 10px;
           border:none;
           @include transition(all, 0.3s, ease-in-out);
           @include background-gradient(#0a93ea, #00387c);
 
           @include ReSassWidthResponsive(992){
-            font-size: 17px;
+            font-size: 14px;
             padding: 8px 6px;
           }
         }

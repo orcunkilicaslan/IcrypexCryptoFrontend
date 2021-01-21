@@ -45,7 +45,7 @@
     position: absolute;
     top: 2px;
     right: 0;
-    font-size: 17px;
+    font-size: 14px;
     line-height: 1;
     text-transform: uppercase;
     z-index: 0;
@@ -60,7 +60,7 @@
     }
 
     @include ReSassWidthResponsive(480){
-      font-size: 15px;
+      font-size: 12px;
     }
   }
 

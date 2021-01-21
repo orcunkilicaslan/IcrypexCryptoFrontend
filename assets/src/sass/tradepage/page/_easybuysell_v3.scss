@@ -50,7 +50,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
       &-item{
         position: relative;
         margin-bottom: 0;
-        font-size: 20px;
+        font-size: 16px;
         font-weight: 500;
         overflow: hidden;
         background-color: $global-clr-soft-gray;
@@ -209,11 +209,11 @@ $globalSvgIconImgPath : "../../img/global/svg";
       }
 
       .form-group-inputinfotext{
-        font-size: 17px;
+        font-size: 14px;
         margin-top: 2px;
 
         @include ReSassWidthResponsive(480){
-          font-size: 15px;
+          font-size: 12px;
         }
       }
 
@@ -365,7 +365,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
         .paymentmethod{
           color: $global-clr-dark-blue;
-          font-size: 17px;
+          font-size: 14px;
           display: flex;
           align-items: center;
           justify-content: space-between;
@@ -474,7 +474,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
     .buysellsummary{
       color: $global-clr-dark-blue;
-      font-size: 17px;
+      font-size: 14px;
       line-height: 1.18;
       border: 1px solid darken($global-clr-light-gray, 10%);
       @include border-radius(3px);
@@ -504,7 +504,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
       .contentarea{
         color: $global-clr-dark-blue;
-        font-size: 17px;
+        font-size: 14px;
         line-height: 1.18;
         padding: 45px 20px 25px;
         text-align: center;
@@ -528,12 +528,12 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
           &-title{
             margin: 0;
-            font-size: 17px;
+            font-size: 14px;
             font-weight: normal;
           }
           &-number{
             color: $global-clr-dark-blue;
-            font-size: 17px;
+            font-size: 14px;
             font-weight: 500;
           }
         }
@@ -543,7 +543,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
     .formbottombtn{
       .btn{
         width: 100%;
-        font-size: 20px;
+        font-size: 16px;
         display: block;
         margin: auto;
         padding-top: 3px;

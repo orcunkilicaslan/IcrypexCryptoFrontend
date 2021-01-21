@@ -118,10 +118,10 @@
   }
 
   p{
-    font-size: 17px;
+    font-size: 14px;
 
     @include ReSassWidthResponsive(400){
-      font-size: 15px;
+      font-size: 12px;
     }
   }
 
@@ -221,7 +221,7 @@
       }
 
       #{$alertclassname}-heading{
-        font-size: 17px;
+        font-size: 14px;
         margin: 0;
         margin-right: 3px;
       }

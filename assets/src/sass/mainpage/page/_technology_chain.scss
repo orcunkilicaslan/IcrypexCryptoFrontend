@@ -96,7 +96,7 @@
 
       &-title{
         color: $global-clr-dark-blue;
-        font-size: 20px;
+        font-size: 16px;
         font-weight: 500;
         margin-bottom: 5px;
 
@@ -106,12 +106,12 @@
 
         &-date{
           color: $global-clr-dark-blue;
-          font-size: 17px;
+          font-size: 14px;
         }
 
         &-hash{
           color: $global-clr-dark-blue;
-          font-size: 17px;
+          font-size: 14px;
           font-weight: 500;
 
           @include ReSassWidthResponsive(768){
@@ -145,7 +145,7 @@
 
         &-address{
           color: $global-clr-dark-blue;
-          font-size: 17px;
+          font-size: 14px;
           font-weight: 500;
 
           @include ReSassWidthResponsive(768){
@@ -363,7 +363,7 @@
 
       .btn{
         padding: 7px 5px;
-        font-size: 15px;
+        font-size: 12px;
         line-height: 1;
         min-width: 80px;
 
@@ -445,7 +445,7 @@
           li{
             border-bottom: 1px solid transparentize($global-clr-soft-gray, 0.85);
             padding: 5px 0;
-            font-size: 15px;
+            font-size: 12px;
 
             @include ReSassWidthResponsive(992){
               width: calc(50% - 5px);
@@ -523,7 +523,7 @@
               &-link{
                 color: $global-clr-soft-gray;
                 background-color: transparent;
-                font-size: 15px;
+                font-size: 12px;
                 line-height: 1;
                 min-width: 77px;
                 height: 100%;
@@ -639,7 +639,7 @@
         }
 
         *[class*="boxtitle"]{
-          font-size: 20px;
+          font-size: 16px;
           font-weight: 500;
           padding-bottom: 7px;
           margin-bottom: 12px;
@@ -689,7 +689,7 @@
           li{
             border-bottom: 1px solid transparentize($global-clr-soft-gray, 0.85);
             padding: 5px 0;
-            font-size: 15px;
+            font-size: 12px;
 
             @include ReSassWidthResponsive(480){
               flex-direction: column;

@@ -82,11 +82,11 @@
       @include border-radii(3px,0,0,3px);
 
       @include ReSassWidthResponsive(1400){
-        font-size: 18px;
+        font-size: 14px;
         min-height: 44px;
       }
       @include ReSassWidthResponsive(992){
-        font-size: 17px;
+        font-size: 14px;
         min-height: 42px;
       }
       @include ReSassWidthResponsive(480){
@@ -94,7 +94,7 @@
         @include border-radii(3px,3px,0,0);
       }
       @include ReSassWidthResponsive(400){
-        font-size:15px;
+        font-size: 12px;
         min-height: 32px;
       }
     }
@@ -149,13 +149,13 @@
         @include transition(all, 0.2s, linear);
 
         @include ReSassWidthResponsive(1400){
-          font-size: 18px;
+          font-size: 14px;
         }
         @include ReSassWidthResponsive(992){
-          font-size: 17px;
+          font-size: 14px;
         }
         @include ReSassWidthResponsive(400){
-          font-size:15px;
+          font-size: 12px;
           padding: 6px 35px 6px 8px;
         }
 
@@ -270,10 +270,10 @@
       margin: 0;
 
       @include ReSassWidthResponsive(1400){
-        font-size: 18px;
+        font-size: 14px;
       }
       @include ReSassWidthResponsive(992){
-        font-size: 17px;
+        font-size: 14px;
       }
     }
 
@@ -306,13 +306,13 @@
       margin-bottom: 15px;
 
       @include ReSassWidthResponsive(1400){
-        font-size: 18px;
+        font-size: 14px;
       }
       @include ReSassWidthResponsive(992){
-        font-size: 17px;
+        font-size: 14px;
       }
       @include ReSassWidthResponsive(400){
-        font-size: 15px;
+        font-size: 12px;
       }
 
       &:last-child{

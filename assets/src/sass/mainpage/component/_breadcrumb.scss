@@ -102,10 +102,10 @@
     font-weight: normal;
 
     @include ReSassWidthResponsive(1400){
-      font-size: 23px;
+      font-size: 18px;
     }
     @include ReSassWidthResponsive(480){
-      font-size: 20px;
+      font-size: 16px;
     }
 
     h1,h2,h3,h4,h5,h6{
@@ -116,10 +116,10 @@
       line-height: inherit;
 
       @include ReSassWidthResponsive(1400){
-        font-size: 23px;
+        font-size: 18px;
       }
       @include ReSassWidthResponsive(480){
-        font-size: 20px;
+        font-size: 16px;
       }
     }
 
@@ -137,7 +137,7 @@
 
   &-breadcrumb{
     justify-content: flex-end;
-    font-size: 17px;
+    font-size: 14px;
     font-weight: normal;
 
     @include ReSassWidthResponsive(1400){

@@ -67,7 +67,7 @@
 
 
       &-title{
-        font-size: 17px;
+        font-size: 14px;
         margin-bottom: 5px;
 
         @include ReSassWidthResponsive(768){
@@ -157,11 +157,11 @@
         &-info{
           color: $global-clr-dark-blue;
           line-height: 1.2;
-          font-size: 17px;
+          font-size: 14px;
           min-height: 75px;
 
           @include ReSassWidthResponsive(576){
-            font-size: 15px;
+            font-size: 12px;
             min-height: 79px;
           }
           @include ReSassWidthResponsive(480){

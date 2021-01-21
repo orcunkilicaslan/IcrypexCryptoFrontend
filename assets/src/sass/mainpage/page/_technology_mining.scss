@@ -25,7 +25,7 @@
         color: $global-clr-dark-blue;
         border: 1px solid transparentize($global-clr-soft-gray, 0.7);
         position: relative;
-        font-size: 17px;
+        font-size: 14px;
         padding: 10px 15px 15px;
         margin-top: 15px;
 
@@ -39,13 +39,13 @@
 
         &-title{
           color: $global-clr-dark-blue;
-          font-size: 20px;
+          font-size: 16px;
           font-weight: 500;
           margin: 0;
           padding: 0;
 
           @include ReSassWidthResponsive(400){
-            font-size: 17px;
+            font-size: 14px;
           }
 
           &-box{
@@ -60,11 +60,11 @@
 
           &-converter{
             color: $global-clr-dark-blue;
-            font-size: 20px;
+            font-size: 16px;
             font-weight: 500;
 
             @include ReSassWidthResponsive(400){
-              font-size: 17px;
+              font-size: 14px;
             }
           }
         }
@@ -94,7 +94,7 @@
           }
 
           .form-control{
-            font-size: 17px;
+            font-size: 14px;
             font-weight: 500;
           }
 
@@ -212,23 +212,23 @@
                 white-space: nowrap;
               }
               span{
-                font-size: 15px;
+                font-size: 12px;
 
                 @include ReSassWidthResponsive(480){
                   font-size: 13px;
                 }
                 @include ReSassWidthResponsive(400){
-                  font-size: 15px;
+                  font-size: 12px;
                 }
               }
               strong{
-                font-size: 20px;
+                font-size: 16px;
 
                 @include ReSassWidthResponsive(480){
-                  font-size: 17px;
+                  font-size: 14px;
                 }
                 @include ReSassWidthResponsive(400){
-                  font-size: 20px;
+                  font-size: 16px;
                 }
               }
               small{

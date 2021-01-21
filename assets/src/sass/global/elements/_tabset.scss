@@ -14,8 +14,7 @@
         align-items: center;
         max-width: 260px;
         margin: 0 auto;
-        font-size: 20px;
-        letter-spacing: -.02em;
+        font-size: 16px;
         border: none;
         position: relative;
         @include border-radius(0);
@@ -64,7 +63,7 @@
         }
 
         > li > a{
-          font-size: 20px;
+          font-size: 16px;
           text-align: center;
           padding: 7px 2px;
           border: none;
@@ -125,8 +124,7 @@
         &-item{
           position: relative;
           margin-bottom: 0;
-          font-size: 18px;
-          letter-spacing: -0.02em;
+          font-size: 14px;
           overflow: hidden;
           color: transparentize($global-clr-white, 0.5);
           background-color: $global-clr-soft-gray;
@@ -259,7 +257,7 @@
         &-01{
           justify-content: space-between;
           color: $global-clr-dark-blue;
-          font-size: 17px;
+          font-size: 14px;
           margin-top: -40px;
           padding-bottom: 10px;
 
@@ -272,7 +270,7 @@
           }
 
           &-dropdown{
-            font-size: 20px;
+            font-size: 16px;
             font-weight: 500;
             display: flex;
             align-items: center;
@@ -320,7 +318,7 @@
               > li > a{
                 color: $global-clr-white;
                 font-weight: normal;
-                font-size: 17px;
+                font-size: 14px;
                 text-align: left;
                 padding: 7px 12px;
                 border: none;
@@ -330,7 +328,7 @@
           }
 
           &-info{
-            font-size: 17px;
+            font-size: 14px;
             display: flex;
             align-items: center;
 
@@ -358,7 +356,7 @@
       color: $global-clr-dark-blue;
       padding: 20px 0;
       text-align: center;
-      font-size: 17px;
+      font-size: 14px;
       line-height: 1.2;
 
       p{
@@ -402,8 +400,7 @@
           align-items: center;
           max-width: 260px;
           margin: 0 auto;
-          font-size: 20px;
-          letter-spacing: -.02em;
+          font-size: 16px;
           border: none;
           position: relative;
           @include border-radius(0);
@@ -452,7 +449,7 @@
           }
 
           > li > a{
-            font-size: 20px;
+            font-size: 16px;
             text-align: center;
             padding: 7px 2px;
             border: none;
@@ -518,7 +515,7 @@
         }
         &-link{
           color: transparentize($global-clr-white, 0.5);
-          font-size: 17px;
+          font-size: 14px;
           padding: 7px 15px 8px;
           position: relative;
 
@@ -584,7 +581,7 @@
         }
         &-link{
           color: transparentize($global-clr-dark-blue, 0.5);
-          font-size: 17px;
+          font-size: 14px;
           padding: 7px 3px 8px;
           position: relative;
 

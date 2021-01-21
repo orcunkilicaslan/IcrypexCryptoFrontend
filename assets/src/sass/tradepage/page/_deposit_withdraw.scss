@@ -93,7 +93,7 @@
       font-weight: normal;
 
       @include ReSassWidthResponsive(576){
-        font-size: 20px;
+        font-size: 16px;
       }
 
       &::before{
@@ -171,7 +171,7 @@
     .modal-bank-account-table{
 
       td, th{
-        font-size: 17px;
+        font-size: 14px;
         padding-top: 3px;
         padding-bottom: 3px;
       }

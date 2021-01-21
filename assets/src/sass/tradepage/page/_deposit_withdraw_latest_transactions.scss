@@ -13,7 +13,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
     *[class*="boxtitle"]{
       @include ReSassWidthResponsive(768){
-        font-size: 17px;
+        font-size: 14px;
         padding-bottom: 0;
         border-bottom: none;
       }
@@ -144,7 +144,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
       width: 60px !important;
       .btn{
         width: 100%;
-        font-size: 15px;
+        font-size: 12px;
         padding: 0 5px;
         white-space: nowrap;
 

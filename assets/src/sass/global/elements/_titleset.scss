@@ -2,7 +2,6 @@
 /* Title Border Bottom */
 .columntitle{
   width: 100%;
-  letter-spacing: -0.2px;
   margin: 0;
   padding: 0;
   padding-bottom: 12px;
@@ -80,7 +79,7 @@
   }
 
   &-xs{
-    font-size: 17px;
+    font-size: 14px;
     font-weight: normal;
 
     @include ReSassWidthResponsive(1400){
@@ -107,10 +106,10 @@
   }
 
   &-sm{
-    font-size: 20px;
+    font-size: 16px;
 
     @include ReSassWidthResponsive(1400){
-      font-size: 18px;
+      font-size: 14px;
     }
 
     &.bottomborder{
@@ -129,7 +128,7 @@
   }
 
   &-md{
-    font-size: 23px;
+    font-size: 18px;
 
     @include ReSassWidthResponsive(1400){
       font-size: 21px;
@@ -175,7 +174,7 @@
   }
 
   &-xl{
-    font-size: 35px;
+    font-size: 32px;
     line-height: 1.17;
 
     @include ReSassWidthResponsive(1400){
@@ -210,9 +209,9 @@
   margin: 0;
   padding: 0;
 
-  &-xs{font-size: 17px;}
-  &-sm{font-size: 20px;}
-  &-lg{font-size: 26px;}
+  &-xs{font-size: 14px;}
+  &-sm{font-size: 16px;}
+  &-lg{font-size: 18px;}
   &-xl{}
 }
 /* Title Box */
@@ -238,7 +237,7 @@
       display: flex;
       align-items: center;
       color: $global-clr-dark-blue;
-      font-size: 20px;
+      font-size: 16px;
       margin: 0;
       padding: 0;
       line-height: 1;
@@ -289,18 +288,18 @@
     &-title,
     &-wallet,
     &-date{
-      font-size: 20px;
+      font-size: 16px;
       margin: 0;
       padding: 0;
       line-height: 1;
 
       @include ReSassWidthResponsive(400){
-        font-size: 17px;
+        font-size: 14px;
       }
     }
     &-title{font-weight: 500;}
     &-wallet{font-weight: normal;}
-    &-date{font-size:17px; font-weight: normal;}
+    &-date{font-size: 14px; font-weight: normal;}
 
     &-daterow{
 

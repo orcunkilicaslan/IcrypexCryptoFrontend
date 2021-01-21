@@ -33,7 +33,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
           &::before{
             content: "";
-            background-color: transparentize($global-clr-soft-gray, 0.7);
+            background-color: transparentize($global-clr-soft-gray, 0.85);
             position: absolute;
             width: 1px;
             height: calc(100% - 40px);
@@ -62,7 +62,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
           }
 
           i[class*="icon-svg"]{
-            background-color: transparentize($global-clr-soft-gray, 0.7);
+            background-color: transparentize($global-clr-soft-gray, 0.85);
             display: block;
             width: 27px;
             height: 27px;

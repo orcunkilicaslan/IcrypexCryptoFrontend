@@ -5,9 +5,9 @@ $mainpageFooterImgPath : "../../img/mainpage/footer";
   @include background-gradient($global-sitebg-darkblue01, $global-sitebg-darkblue02);
 
   &-bg{
-    background-image: url(#{$mainpageFooterImgPath}/Point_Earth_Image.png);
-    background-position: top center;
-    background-repeat: no-repeat;
+    //background-image: url(#{$mainpageFooterImgPath}/Point_Earth_Image.png);
+    //background-position: top center;
+    //background-repeat: no-repeat;
     padding-top: 75px;
     padding-bottom: 25px;
 
@@ -30,7 +30,7 @@ $mainpageFooterImgPath : "../../img/mainpage/footer";
     &::before,
     &::after{
       content: "";
-      background-color: transparentize($global-clr-soft-gray, 0.7);
+      background-color: transparentize($global-clr-soft-gray, 0.85);
       position: absolute;
       width: 1000%;
       height: 1px;
@@ -135,7 +135,7 @@ $mainpageFooterImgPath : "../../img/mainpage/footer";
 
     &-phone{
       color: $global-clr-white;
-      font-size: 20px;
+      font-size: 16px;
       line-height: 0.85;
       margin-bottom: 10px;
 
@@ -147,7 +147,7 @@ $mainpageFooterImgPath : "../../img/mainpage/footer";
     &-desc{
       color: $global-clr-soft-gray;
       opacity: 0.9;
-      font-size: 15px;
+      font-size: 12px;
       line-height: 1.13;
       margin: 0;
     }
@@ -171,7 +171,7 @@ $mainpageFooterImgPath : "../../img/mainpage/footer";
     &::before,
     &::after{
       content: "";
-      background-color: transparentize($global-clr-soft-gray, 0.7);
+      background-color: transparentize($global-clr-soft-gray, 0.85);
       position: absolute;
       width: 1000%;
       height: 1px;
@@ -225,7 +225,7 @@ $mainpageFooterImgPath : "../../img/mainpage/footer";
           height: 14px;
           top: calc(50% - 4px);
           right: -3px;
-          background-color: transparentize($global-clr-soft-gray, 0.7);
+          background-color: transparentize($global-clr-soft-gray, 0.85);
 
           @include ReSassWidthResponsive(576){
             display: none;

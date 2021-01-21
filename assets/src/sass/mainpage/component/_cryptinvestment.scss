@@ -55,7 +55,7 @@
         background-color: transparentize($global-clr-btn-blue, 0.5);
         width: 70px;
         height: 150px;
-        font-size: 50px;
+        font-size: 40px;
         font-weight: 100;
         line-height: 0.64;
         font-style: normal;
@@ -84,7 +84,7 @@
       }
       &-title{
         color: $global-clr-white;
-        font-size: 20px;
+        font-size: 16px;
         font-weight: 300;
         text-align: center;
         margin: 0;
@@ -92,7 +92,7 @@
         @include transition(all, 0.3s, ease-in-out);
 
         @include ReSassWidthResponsive(1400){
-          font-size: 18px;
+          font-size: 14px;
         }
       }
 
@@ -117,19 +117,18 @@
 
     &-title{
       color: $global-clr-soft-gray;
-      font-size: 22px;
+      font-size: 18px;
       font-weight: normal;
       line-height: 1.45;
       margin-bottom: 10px;
 
       @include ReSassWidthResponsive(1400){
-        font-size: 20px;
+        font-size: 16px;
       }
     }
     &-desc{
       color: $global-clr-soft-gray;
-      font-size: 17px;
-      line-height: 1.12;
+      font-size: 14px;
       margin: 0;
 
       @include ReSassWidthResponsive(1400){
@@ -140,10 +139,9 @@
       margin: 0;
       margin-top: 50px;
       border: none;
-      font-size: 20px;
+      font-size: 16px;
       font-weight: 300;
       line-height: 1.6;
-      letter-spacing: -0.2px;
       padding: 10px 30px;
 
       @include ReSassWidthResponsive(1400){

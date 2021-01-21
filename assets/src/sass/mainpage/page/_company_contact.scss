@@ -49,7 +49,7 @@
         color: $global-clr-dark-blue;
         border: 1px solid transparentize($global-clr-soft-gray, 0.7);
         position: relative;
-        font-size: 17px;
+        font-size: 14px;
         margin-top: 15px;
 
         &:first-child{
@@ -89,14 +89,14 @@
 
           .contact{
             &adress{
-              font-size: 15px;
+              font-size: 12px;
 
               @include ReSassWidthResponsive(480){
                 text-align: center;
               }
 
               h6, p{
-                font-size: 15px;
+                font-size: 12px;
               }
             }
             &callcenter{
@@ -116,7 +116,7 @@
                 text-transform: uppercase;
               }
               p{
-                font-size: 20px;
+                font-size: 16px;
                 line-height: 0.9;
               }
               &::before,

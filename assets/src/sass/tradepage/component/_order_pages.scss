@@ -163,11 +163,11 @@ $globalSvgIconImgPath : "../../img/global/svg";
         margin-bottom: 0 !important;
 
         .btn{
-          font-size: 20px;
+          font-size: 16px;
           padding: 3px 10px 6px;
 
           @include ReSassWidthResponsive(400){
-            font-size: 17px;
+            font-size: 14px;
             padding: 4px 5px 5px;
             height: auto;
           }
@@ -176,7 +176,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
     }
 
     &-info{
-      font-size: 17px;
+      font-size: 14px;
       text-align: center;
       padding-bottom: 15px;
       line-height: 1;
@@ -232,7 +232,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
               > span[class*="-title"],
               > span[class*="-info"]{
-                font-size: 17px;
+                font-size: 14px;
                 font-weight: normal;
                 display: block;
                 line-height: 1;
@@ -299,7 +299,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
                 thead{
                   th{
-                    font-size: 15px;
+                    font-size: 12px;
                   }
                 }
 
@@ -378,7 +378,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
         span[class*="boxtitle-wallet"]{
           @include ReSassWidthResponsive(992){
-            font-size: 18px;
+            font-size: 14px;
             margin-top: 2px;
           }
           @include ReSassWidthResponsive(480){
@@ -389,10 +389,10 @@ $globalSvgIconImgPath : "../../img/global/svg";
         h3[class*="boxtitle-"],
         span[class*="boxtitle-"]{
           @include ReSassWidthResponsive(768){
-            font-size: 17px;
+            font-size: 14px;
           }
           @include ReSassWidthResponsive(576){
-            font-size: 20px;
+            font-size: 16px;
           }
         }
       }
@@ -538,7 +538,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
       &-low,
       &-high{
-        font-size: 17px;
+        font-size: 14px;
         display: flex;
         flex-direction: column;
 
@@ -580,7 +580,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
           //width: 42px;
           max-width: 70px;
           height: 38px;
-          font-size: 23px;
+          font-size: 18px;
           margin: 0 5px;
         }
         @include ReSassWidthResponsive(576){
@@ -675,7 +675,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
             }
 
             td{
-              font-size: 17px;
+              font-size: 14px;
               border: none;
               line-height: 0.7;
               white-space: nowrap;
@@ -811,7 +811,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
         span[class*="boxtitle-wallet"]{
           @include ReSassWidthResponsive(576){
-            font-size: 18px;
+            font-size: 14px;
             margin-top: 2px;
           }
         }

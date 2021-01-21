@@ -3,10 +3,10 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
 .homepage{
   background-color: $global-sitebg-darkblue01;
-  background-image: url(#{$mainpageHeaderImgPath}/background/Dark_Blue_Bg_Image.jpg);
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-attachment: fixed;
+  //background-image: url(#{$mainpageHeaderImgPath}/background/Dark_Blue_Bg_Image.jpg);
+  //background-repeat: no-repeat;
+  //background-position: top center;
+  //background-attachment: fixed;
 
   @include ReSassWidthResponsive(768){
     background-image: none;
@@ -18,7 +18,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
     padding-bottom: 6px;
 
     &.navscroll{
-      background-color: transparentize($global-sitebg-darkblue01, 0.02);
+      background-color: lighten($global-sitebg-darkblue01, 2%);
       padding-bottom: 0 !important;
     }
 

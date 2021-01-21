@@ -11,7 +11,7 @@
 
       &-title{
         color: $global-clr-dark-blue;
-        font-size: 20px;
+        font-size: 16px;
         font-weight: 500;
         margin-bottom: 5px;
       }
@@ -22,7 +22,7 @@
       &.formuinew{
 
         .form-control{
-          font-size: 15px;
+          font-size: 12px;
           font-weight: 500;
           display: flex;
           align-items: center;
@@ -30,7 +30,7 @@
 
         .btn-group{
           .btn{
-            font-size: 15px;
+            font-size: 12px;
             height: 30px;
             border-left: 1px solid $global-clr-white !important;
             border-right: 1px solid $global-clr-white !important;
@@ -116,7 +116,7 @@
 
       .btn{
         padding: 7px 5px;
-        font-size: 15px;
+        font-size: 12px;
         line-height: 1;
         min-width: 80px;
       }

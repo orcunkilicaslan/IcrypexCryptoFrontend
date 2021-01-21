@@ -32,7 +32,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
             flex-basis: 0;
             flex-grow: 1;
             max-width: 100%;
-            font-size: 15px;
+            font-size: 12px;
             font-weight: 500;
             line-height: 1;
             text-align: center;
@@ -40,10 +40,10 @@ $globalSvgIconImgPath : "../../img/global/svg";
             padding-right: 2px;
 
             @include ReSassWidthResponsive(992){
-              font-size: 20px;
+              font-size: 16px;
             }
             @include ReSassWidthResponsive(576){
-              font-size: 18px;
+              font-size: 14px;
             }
 
             &:first-child{
@@ -446,7 +446,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
       td, th{
         border-top: 0;
         border-bottom:1px solid transparentize($global-clr-soft-gray, 0.7);
-        font-size: 15px;
+        font-size: 12px;
         padding: 1px 5px;
         line-height: 1.4;
 
@@ -574,7 +574,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
           span{
             color: $global-clr-soft-gray;
-            font-size: 17px;
+            font-size: 14px;
             display: inline-block;
             margin-left: 5px;
           }
@@ -651,7 +651,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
             align-items: center;
             color: $global-clr-dark-blue;
             background-color: $global-clr-light-gray;
-            font-size: 17px;
+            font-size: 14px;
             padding: 5px 10px;
             border-left: 2px solid darken($global-clr-light-gray, 20%);
 
@@ -661,7 +661,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
               line-height: 1.3;
             }
             @include ReSassWidthResponsive(480){
-              font-size: 15px;
+              font-size: 12px;
               line-height: 1.1;
               padding: 5px 8px;
             }
@@ -694,7 +694,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
         align-items: center;
         color: $global-clr-soft-gray;
         background-color: $global-clr-light-gray;
-        font-size: 17px;
+        font-size: 14px;
         padding: 10px 15px;
 
         strong{

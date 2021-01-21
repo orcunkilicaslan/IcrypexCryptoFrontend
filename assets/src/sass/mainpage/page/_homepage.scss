@@ -110,7 +110,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
           height: 25px;
 
           span{
-            background-color: transparentize($global-clr-soft-gray, 0.7) !important;
+            background-color: transparentize($global-clr-soft-gray, 0.85) !important;
             width: 40px !important;
             height: 3px !important;
             margin: 0 !important;
@@ -162,9 +162,8 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
     &-title{
       color: $global-clr-white;
-      font-size: 42px;
+      font-size: 36px;
       font-weight: 300;
-      line-height: 1.07;
       text-transform: uppercase;
 
       @include ReSassWidthResponsive(1400){
@@ -175,15 +174,14 @@ $globalSvgIconImgPath : "../../img/global/svg";
         margin-bottom: 10px;
       }
       @include ReSassWidthResponsive(480){
-        font-size: 26px;
+        font-size: 18px;
       }
     }
 
     &-desc{
       color: $global-clr-white;
-      font-size: 26px;
+      font-size: 18px;
       font-weight: 300;
-      line-height: 1.07;
       margin-bottom: 10px;
       text-transform: uppercase;
 
@@ -191,10 +189,10 @@ $globalSvgIconImgPath : "../../img/global/svg";
         font-size: 24px;
       }
       @include ReSassWidthResponsive(768){
-        font-size: 22px;
+        font-size: 18px;
       }
       @include ReSassWidthResponsive(480){
-        font-size: 18px;
+        font-size: 14px;
       }
 
       &:last-child{
@@ -231,19 +229,19 @@ $globalSvgIconImgPath : "../../img/global/svg";
       &-headtitle{
         display: flex;
         justify-content: space-between;
-        border-bottom: 1px solid transparentize($global-clr-soft-gray, 0.7);
+        border-bottom: 1px solid transparentize($global-clr-soft-gray, 0.85);
         padding-bottom: 5px;
 
         &-title,
         &-volume{
-          font-size: 20px;
+          font-size: 16px;
           font-weight: normal;
           margin: 0;
           padding: 0;
           line-height: 1;
 
           @include ReSassWidthResponsive(480){
-            font-size: 18px;
+            font-size: 14px;
           }
         }
 
@@ -284,10 +282,9 @@ $globalSvgIconImgPath : "../../img/global/svg";
       &-item{
         color: $global-clr-white;
         text-align: center;
-        font-size: 28px;
+        font-size: 20px;
         font-weight: 300;
         line-height: 0.9;
-        letter-spacing: -0.3px;
         position: relative;
         padding: 0 18px;
         white-space: nowrap;
@@ -307,7 +304,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
           height: 44px;
           top: calc(50% - 20px);
           right: -10px;
-          background-color: transparentize($global-clr-soft-gray, 0.7);
+          background-color: transparentize($global-clr-soft-gray, 0.85);
         }
 
         &:first-child{
@@ -341,17 +338,17 @@ $globalSvgIconImgPath : "../../img/global/svg";
           }
         }
         @include ReSassWidthResponsive(992){
-          font-size: 26px;
+          font-size: 18px;
           padding: 0 10px;
           &::before{
             right: -5px;
           }
         }
         @include ReSassWidthResponsive(480){
-          font-size: 22px;
+          font-size: 18px;
         }
         @include ReSassWidthResponsive(400){
-          font-size: 26px;
+          font-size: 18px;
         }
 
         &.itemexcavating{
@@ -363,25 +360,24 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
     &-title{
       color: $global-clr-soft-gray;
-      font-size: 18px;
+      font-size: 14px;
       font-weight: 300;
-      letter-spacing: -0.2px;
-      margin: 0;
+      margin: 0 0 5px;
 
       @include ReSassWidthResponsive(1400){
-        font-size: 17px;
+        font-size: 14px;
       }
       @include ReSassWidthResponsive(1200){
-        font-size: 15px;
+        font-size: 12px;
       }
       @include ReSassWidthResponsive(992){
-        font-size: 17px;
+        font-size: 14px;
       }
       @include ReSassWidthResponsive(480){
-        font-size: 15px;
+        font-size: 12px;
       }
       @include ReSassWidthResponsive(400){
-        font-size: 17px;
+        font-size: 14px;
       }
     }
 
@@ -391,7 +387,6 @@ $globalSvgIconImgPath : "../../img/global/svg";
       sup{
         font-size: 12px;
         font-weight: 900;
-        letter-spacing: normal;
         text-align: center;
         position: relative;
         top: -12px;
@@ -423,7 +418,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
               height: 100%;
               top: 0;
               right: -10px;
-              background-color: transparentize($global-clr-soft-gray, 0.7);
+              background-color: transparentize($global-clr-soft-gray, 0.85);
             }
 
             &:last-child{
@@ -435,7 +430,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
             margin: 0;
             button[class*="owl-"]{
               background-color: transparentize($global-clr-soft-gray, 0.9);
-              border: 1px solid transparentize($global-clr-soft-gray, 0.7);
+              border: 1px solid transparentize($global-clr-soft-gray, 0.85);
               @include border-radius(0);
               width: 20px;
               height: calc(100% + 2px);
@@ -506,7 +501,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
     @include ReSassWidthResponsive(992){
       background-color: transparentize($global-clr-soft-gray, 0.9);
-      border: 1px solid transparentize($global-clr-soft-gray, 0.7);
+      border: 1px solid transparentize($global-clr-soft-gray, 0.85);
       padding: 30px;
       margin: 20px 0 5px;
       height: auto;
@@ -535,7 +530,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
       &.bottomborder{
         display: initial;
         &::before{
-          background-color: transparentize($global-clr-soft-gray, 0.7);
+          background-color: transparentize($global-clr-soft-gray, 0.85);
           opacity: 1;
           width: 100%;
           height: 2px;
@@ -544,10 +539,10 @@ $globalSvgIconImgPath : "../../img/global/svg";
       }
 
       @include ReSassWidthResponsive(992){
-        font-size: 26px;
+        font-size: 18px;
       }
       @include ReSassWidthResponsive(480){
-        font-size: 22px;
+        font-size: 18px;
       }
     }
 
@@ -567,7 +562,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
       label{
         color: $global-clr-soft-gray;
-        //font-size: 17px;
+        //font-size: 14px;
         line-height: 1;
       }
 
@@ -585,12 +580,12 @@ $globalSvgIconImgPath : "../../img/global/svg";
       .disabledautofillinput{
         color: $global-clr-white;
         background-color: transparent;
-        border-left-color: transparentize($global-clr-soft-gray, 0.7);
-        border-bottom-color: transparentize($global-clr-soft-gray, 0.7);
+        border-left-color: transparentize($global-clr-soft-gray, 0.85);
+        border-bottom-color: transparentize($global-clr-soft-gray, 0.85);
         border-right-color: transparent !important;
         border-top-color: transparent !important;
         height: 40px;
-        font-size: 17px;
+        font-size: 14px;
         @include border-radius(0px);
 
         &:focus{
@@ -769,8 +764,8 @@ $globalSvgIconImgPath : "../../img/global/svg";
         height: 64px;
         position: relative;
         background: transparent;
-        border-top: 1px solid transparentize($global-clr-soft-gray, 0.7);
-        border-bottom: 1px solid transparentize($global-clr-soft-gray, 0.7);
+        border-top: 1px solid transparentize($global-clr-soft-gray, 0.85);
+        border-bottom: 1px solid transparentize($global-clr-soft-gray, 0.85);
         margin-bottom: 13px;
         overflow: hidden;
         @include ReSassWidthResponsive(1400){
@@ -797,7 +792,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
             width: 20px;
             height: 20px;
             top: 0;
-            border: 1px solid transparentize($global-clr-soft-gray, 0.7);
+            border: 1px solid transparentize($global-clr-soft-gray, 0.85);
             @include border-radius(0);
           }
 
@@ -820,7 +815,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
         &-text{
           color: $global-clr-soft-gray;
-          font-size: 17px;
+          font-size: 14px;
           position: absolute;
           width: auto;
           height: 100%;
@@ -830,7 +825,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
           @include ReSassWidthResponsive(992){
             width: 100%;
-            font-size: 15px;
+            font-size: 12px;
             right: auto;
             left: 0;
             padding-left: 26px;
@@ -905,14 +900,13 @@ $globalSvgIconImgPath : "../../img/global/svg";
           height: auto;
           font-size: 19px;
           font-weight: 300;
-          letter-spacing: -0.2px;
           padding: 11px 10px;
           border:none;
           @include transition(all, 0.3s, ease-in-out);
           @include background-gradient(#0a93ea, #00387c);
 
           @include ReSassWidthResponsive(1400){
-            font-size: 17px;
+            font-size: 14px;
             padding: 8px 6px;
           }
         }
@@ -942,14 +936,13 @@ $globalSvgIconImgPath : "../../img/global/svg";
           height: auto;
           font-size: 19px;
           font-weight: 300;
-          letter-spacing: -0.2px;
           padding: 11px 10px;
           border:none;
           @include transition(all, 0.3s, ease-in-out);
           @include background-gradient(#0a93ea, #00387c);
 
           @include ReSassWidthResponsive(1400){
-            font-size: 17px;
+            font-size: 14px;
             padding: 8px 6px;
           }
         }
@@ -962,7 +955,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
       text-align: center;
       height: 100%;
       max-height: 540px;
-      border-bottom: 2px solid transparentize($global-clr-soft-gray, 0.7);
+      border-bottom: 2px solid transparentize($global-clr-soft-gray, 0.85);
 
       &-wrapper{
         display: flex;
@@ -1019,8 +1012,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
         &-desc{
           color: $global-clr-soft-gray;
-          font-size: 17px;
-          line-height: 1.18;
+          font-size: 14px;
           margin-bottom: 5px;
 
           &:last-child{
@@ -1035,11 +1027,11 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
         &-title{
           margin: 0;
-          font-size: 17px;
+          font-size: 14px;
           font-weight: normal;
         }
         &-number{
-          font-size: 17px;
+          font-size: 14px;
           font-weight: 500;
         }
       }
@@ -1058,7 +1050,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
     @include ReSassWidthResponsive(992){
       background-color: transparentize($global-clr-soft-gray, 0.9);
-      border: 1px solid transparentize($global-clr-soft-gray, 0.7);
+      border: 1px solid transparentize($global-clr-soft-gray, 0.85);
       padding: 30px;
       margin: 20px 0 5px;
       height: auto;
@@ -1112,17 +1104,17 @@ $globalSvgIconImgPath : "../../img/global/svg";
       line-height: 1;
 
       &-title{
-        font-size: 18px;
+        font-size: 14px;
         font-weight: normal;
         margin: 0;
 
         @include ReSassWidthResponsive(992){
-          font-size: 17px;
+          font-size: 14px;
         }
       }
       &-total{
         color: $global-clr-white;
-        font-size: 23px;
+        font-size: 18px;
 
         @include ReSassWidthResponsive(992){
           font-size: 21px;
@@ -1171,13 +1163,13 @@ $globalSvgIconImgPath : "../../img/global/svg";
         line-height: 0.8;
 
         &-title{
-          font-size: 17px;
+          font-size: 14px;
           font-weight: normal;
           margin: 0;
         }
         &-asset{
           color: $global-clr-white;
-          font-size: 20px;
+          font-size: 16px;
         }
       }
     }
@@ -1222,7 +1214,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
         overflow: hidden;
         @include border-radii(4px,4px,0,0);
 
-        &.line{border-bottom-color: transparentize($global-clr-soft-gray, 0.7);}
+        &.line{border-bottom-color: transparentize($global-clr-soft-gray, 0.85);}
         &.linetry{border-bottom-color: $global-clr-red;}
         &.lineusd{border-bottom-color: $global-clr-green;}
         &.linebtc{border-bottom-color: $global-clr-currency-btc;}
@@ -1251,9 +1243,8 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
       .btn{
         width: 100%;
-        font-size: 17px;
+        font-size: 14px;
         font-weight: normal;
-        letter-spacing: -0.2px;
         padding: 6px;
         margin: 0 2px;
         border: none;
@@ -1306,7 +1297,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
       }
 
       &-desc{
-        font-size: 17px;
+        font-size: 14px;
         font-weight: normal;
         margin: 0;
         text-align: center;
@@ -1315,7 +1306,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
     &-notification{
       padding-top: 17px;
-      font-size: 15px;
+      font-size: 12px;
       line-height: 1.1;
       text-align: center;
     }
@@ -1408,7 +1399,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
     &-columntitle{
       display: flex;
       justify-content: space-between;
-      border-bottom: 1px solid transparentize($global-clr-soft-gray, 0.7);
+      border-bottom: 1px solid transparentize($global-clr-soft-gray, 0.85);
       margin-bottom: 2px;
       padding-bottom: 2px;
 
@@ -1425,20 +1416,20 @@ $globalSvgIconImgPath : "../../img/global/svg";
         margin: 0;
         padding: 0;
         font-weight: 300;
-        font-size: 20px;
+        font-size: 16px;
         min-height: 26px;
 
         @include ReSassWidthResponsive(768){
-          font-size: 17px;
+          font-size: 14px;
         }
       }
       &-select{
         color: $global-clr-soft-gray;
         background-color: transparent;
-        font-size: 20px;
+        font-size: 16px;
 
         @include ReSassWidthResponsive(768){
-          font-size: 17px;
+          font-size: 14px;
         }
       }
     }
@@ -1717,8 +1708,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
           p{
             color: $global-clr-dark-blue;
-            font-size: 17px;
-            line-height: 1.12;
+            font-size: 14px;
             margin: 0;
             margin-top: 10px;
 
@@ -1789,10 +1779,9 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
       &-desc{
         color: $global-clr-soft-gray;
-        font-size: 17px;
+        font-size: 14px;
         margin: 0;
         margin-top: 25px;
-        line-height: 1.18;
 
         @include ReSassWidthResponsive(1400){
           margin-top: 20px;
@@ -1806,7 +1795,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
       }
       &-list{
         color: $global-clr-soft-gray;
-        font-size: 17px;
+        font-size: 14px;
         margin: 0;
         margin-top: 15px;
         line-height: 1.29;
@@ -1839,10 +1828,9 @@ $globalSvgIconImgPath : "../../img/global/svg";
         margin-top: 35px;
         background-color: $global-clr-btn-blue;
         border: none;
-        font-size: 20px;
+        font-size: 16px;
         font-weight: 300;
         line-height: 1.6;
-        letter-spacing: -0.2px;
         padding: 10px 20px;
 
         @include ReSassWidthResponsive(1200){
@@ -1952,10 +1940,9 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
       &-desc{
         color: $global-clr-dark-blue;
-        font-size: 17px;
+        font-size: 14px;
         margin: 0;
         margin-top: 25px;
-        line-height: 1.18;
 
         @include ReSassWidthResponsive(1400){
           margin-top: 20px;
@@ -1963,7 +1950,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
       }
       &-list{
         color: $global-clr-dark-blue;
-        font-size: 17px;
+        font-size: 14px;
         margin: 0;
         margin-top: 15px;
         line-height: 1.29;

@@ -113,7 +113,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
       font-size: $global-font-size;
       width: 140px;
       padding: 2px 20px 2px 0;
-      border-bottom: 1px solid transparentize($global-clr-soft-gray, 0.7);
+      border-bottom: 1px solid transparentize($global-clr-soft-gray, 0.85);
       @include transition(width, 0.3s, ease-out);
 
       &:focus{
@@ -159,14 +159,14 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
     &-item{
       position: relative;
-      padding: 0 10px;
+      padding: 0 5px;
       display: inline-block;
       color: $global-clr-soft-gray;
       font-size: $global-font-size;
 
       @include ReSassWidthResponsive(1400){
         font-size: 13px;
-        padding: 0 6px;
+        padding: 0 4px;
       }
 
       &::before{
@@ -176,7 +176,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
         height: 10px;
         top: calc(50% - 5px);
         right: -1px;
-        background-color: transparentize($global-clr-soft-gray, 0.7);
+        background-color: transparentize($global-clr-soft-gray, 0.85);
         @include border-radius(50%)
       }
       &:first-child{
@@ -200,7 +200,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
           position: absolute;
           background-color: $global-clr-soft-blue;
           width: 100%;
-          height: 4px;
+          height: 2px;
           display: block;
           bottom: 0;
           left: 0;
@@ -362,7 +362,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
       }
       &-name{
         margin-right: 10px;
-        font-size: 17px;
+        font-size: 14px;
         font-weight: normal;
         white-space: nowrap;
         text-transform: uppercase;
@@ -438,7 +438,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
               &-username{
                 color: $global-clr-white;
-                font-size: 17px;
+                font-size: 14px;
                 margin: 0;
                 text-transform: uppercase;
               }
@@ -507,7 +507,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
             a{
               color: $global-clr-soft-gray;
-              font-size: 15px;
+              font-size: 12px;
               padding:3px 0;
               display: block;
               position: relative;

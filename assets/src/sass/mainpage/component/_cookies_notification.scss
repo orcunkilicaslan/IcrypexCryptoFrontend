@@ -5,10 +5,10 @@
   &.alert{
     background-color: transparentize($global-sitebg-darkblue01, 0.10) !important;
     color: $global-clr-white !important;
-    font-size: 17px;
+    font-size: 14px;
     position: fixed;
     width: 100%;
-    min-height: 66px;
+    min-height: 44px;
     padding: 0;
     margin-bottom: 0;
     border: none;
@@ -37,7 +37,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px;
+    padding: 20px 15px;
 
     @include ReSassWidthResponsive(992){
       padding-top: 25px;
@@ -50,8 +50,10 @@
     &-desc{
 
       p{
+        font-size: 12px;
+
         @include ReSassWidthResponsive(1400){
-          font-size: 15px;
+          font-size: 12px;
         }
         @include ReSassWidthResponsive(992){
           text-align: center;

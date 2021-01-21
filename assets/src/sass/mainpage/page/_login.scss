@@ -38,11 +38,10 @@
     .columntitle{
       color: $global-clr-dark-blue;
       padding-bottom: 8px;
-      letter-spacing: normal;
       font-size: 25px;
 
       @include ReSassWidthResponsive(576){
-        font-size: 20px;
+        font-size: 16px;
       }
 
       &::before{
@@ -107,18 +106,14 @@
       margin-bottom: 20px;
 
       &-title{
-        font-size: 17px;
+        font-size: 14px;
         font-weight: 500;
         margin: 0;
         margin-bottom: 2px;
       }
       &-desc{
         color: $global-clr-dark-blue;
-        font-size: 17px;
-
-        @include ReSassWidthResponsive(768){
-          line-height: 1.1;
-        }
+        font-size: 14px;
       }
     }
 
@@ -129,7 +124,7 @@
         color: $global-clr-soft-gray;
         position: relative;
         display: flex;
-        font-size: 17px;
+        font-size: 14px;
         align-items: center;
 
         i.iconcircleback{
@@ -203,7 +198,6 @@
         font-size: 12px;
         font-weight: 500;
         font-style: normal;
-        line-height: 1.4;
         text-align: center;
         border: 1px solid transparentize($global-clr-soft-gray, 0.70);
         @include border-radius(50%);
@@ -315,8 +309,7 @@
 
       &-desc{
         color: $global-clr-dark-blue;
-        font-size: 17px;
-        line-height: 1.18;
+        font-size: 14px;
         margin-bottom: 5px;
 
         &:last-child{
@@ -331,12 +324,12 @@
 
       &-title{
         margin: 0;
-        font-size: 17px;
+        font-size: 14px;
         font-weight: normal;
       }
       &-number{
         color: $global-clr-dark-blue;
-        font-size: 17px;
+        font-size: 14px;
         font-weight: 500;
       }
     }

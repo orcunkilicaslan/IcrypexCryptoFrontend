@@ -93,11 +93,11 @@ $globalSvgIconImgPath : "../../img/global/svg";
       }
 
       .form-group-inputinfotext{
-        font-size: 17px;
+        font-size: 14px;
         margin-top: 2px;
 
         @include ReSassWidthResponsive(480){
-          font-size: 15px;
+          font-size: 12px;
         }
       }
 
@@ -248,7 +248,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
         .paymentmethod{
           color: $global-clr-dark-blue;
-          font-size: 17px;
+          font-size: 14px;
           display: flex;
           align-items: center;
           justify-content: space-between;
@@ -357,7 +357,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
       .formbottombtn{
         .btn{
           width: 100%;
-          font-size: 20px;
+          font-size: 16px;
           display: block;
           margin: auto;
           padding-top: 3px;
@@ -378,11 +378,11 @@ $globalSvgIconImgPath : "../../img/global/svg";
         margin-bottom: 15px;
 
         .boxcolumn-boxtitle-title{
-          font-size: 17px;
+          font-size: 14px;
         }
 
         .sitecolorgray{
-          font-size: 17px;
+          font-size: 14px;
           line-height: 1;
         }
       }
@@ -397,7 +397,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
           &-head{
             color: $global-clr-dark-blue;
             background-color: $global-clr-light-gray;
-            font-size: 17px;
+            font-size: 14px;
             font-weight: 500;
             padding: 10px 15px;
             margin: 0;
@@ -411,7 +411,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
               align-items: center;
               justify-content: space-between;
               color: $global-clr-dark-blue;
-              font-size: 17px;
+              font-size: 14px;
               padding: 5px 0;
               border-bottom: 1px solid transparentize($global-clr-soft-gray, 0.7);
 
@@ -442,7 +442,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
           p, label{
             color: $global-clr-dark-blue;
-            font-size: 17px;
+            font-size: 14px;
             line-height: 1.25;
           }
 
@@ -506,7 +506,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
           width: 100%;
           height: 100%;
           top: 0;
-          font-size: 17px;
+          font-size: 14px;
           line-height: 1.1;
 
           strong, span{
@@ -516,7 +516,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
           strong{
             color: $global-clr-dark-blue;
-            font-size: 20px;
+            font-size: 16px;
           }
 
           span{
@@ -538,7 +538,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
               span{
                 color: $global-clr-soft-gray;
-                font-size: 17px;
+                font-size: 14px;
                 display: inline-block;
                 margin-left: 5px;
                 top: -2px;
@@ -575,7 +575,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
         &-text{
           color: $global-clr-dark-blue;
-          font-size: 17px;
+          font-size: 14px;
           line-height: 0.9;
 
           *{display: block;}

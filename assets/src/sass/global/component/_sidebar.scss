@@ -33,7 +33,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
     &-list{
       &-item{
         margin-top: 5px;
-        font-size: 17px;
+        font-size: 14px;
 
         &:first-child{
           margin-top: 0;
@@ -50,7 +50,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
           span.badge{
             float: right;
-            font-size: 17px;
+            font-size: 14px;
             font-weight: normal;
             width: 30px;
             height: 30px;
@@ -104,8 +104,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
         max-width: 260px;
         min-height: 42px;
         margin: 0 auto;
-        font-size: 20px;
-        letter-spacing: -.02em;
+        font-size: 16px;
         border: none;
         position: relative;
         @include border-radius(0);
@@ -174,7 +173,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
         }
 
         > li > a{
-          font-size: 20px;
+          font-size: 16px;
           text-align: center;
           padding: 7px 2px;
           border: none;
@@ -182,7 +181,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
           @include border-radius(0);
 
           @include ReSassWidthResponsive(576){
-            font-size: 17px;
+            font-size: 14px;
           }
         }
       }

@@ -9,7 +9,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
     align-items: center;
     padding: 18px 0;
     height: 80px;
-    border-top: 1px solid transparentize($global-clr-soft-gray, 0.7);
+    border-top: 1px solid transparentize($global-clr-soft-gray, 0.85);
     opacity: 1;
     @include transition(all, 0.3s, ease-in-out);
 
@@ -35,10 +35,10 @@ $globalSvgIconImgPath : "../../img/global/svg";
       padding-bottom: 8px;
 
       @include ReSassWidthResponsive(1400){
-        font-size: 23px;
+        font-size: 18px;
       }
       @include ReSassWidthResponsive(992){
-        font-size: 20px;
+        font-size: 16px;
         padding-bottom: 10px;
       }
       @include ReSassWidthResponsive(480){
@@ -78,7 +78,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
           &::before{
             content: "";
-            background-color: transparentize($global-clr-soft-gray, 0.7);
+            background-color: transparentize($global-clr-soft-gray, 0.85);
             position: absolute;
             width: calc(100% + 30px);
             height: 1px;
@@ -90,7 +90,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
         &-span{
           width: 40px;
           height: 39px;
-          border: 1px solid transparentize($global-clr-soft-gray, 0.7);
+          border: 1px solid transparentize($global-clr-soft-gray, 0.85);
           border-left: none;
           display: flex;
           align-items: center;
@@ -135,12 +135,12 @@ $globalSvgIconImgPath : "../../img/global/svg";
             position: relative;
             min-height: 28px;
             margin-right: 10px;
-            border-bottom: 1px solid transparentize($global-clr-soft-gray, 0.7);
+            border-bottom: 1px solid transparentize($global-clr-soft-gray, 0.85);
 
             &-span{
               width: 36px;
               height: 28px;
-              border: 1px solid transparentize($global-clr-soft-gray, 0.7);
+              border: 1px solid transparentize($global-clr-soft-gray, 0.85);
               border-left: none;
               border-bottom: none;
               display: flex;
@@ -177,10 +177,9 @@ $globalSvgIconImgPath : "../../img/global/svg";
           &-item{
             color: $global-clr-white;
             text-align: left;
-            font-size: 20px;
+            font-size: 16px;
             font-weight: 300;
             line-height: 0.95;
-            letter-spacing: -0.3px;
             position: relative;
             padding: 0 20px;
 
@@ -188,7 +187,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
               padding: 0 10px;
             }
             @include ReSassWidthResponsive(480){
-              font-size: 17px;
+              font-size: 14px;
             }
           }
 
@@ -204,7 +203,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
                 height: 34px;
                 top: calc(50% - 16px);
                 right: 0;
-                background-color: transparentize($global-clr-soft-gray, 0.7);
+                background-color: transparentize($global-clr-soft-gray, 0.85);
 
 
                 @include ReSassWidthResponsive(480){
@@ -222,7 +221,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
             &-nav{
               button[class*="owl-"]{
                 background-color: transparentize($global-grdint-darkblue02, 0.4);
-                border: 1px solid transparentize($global-clr-soft-gray, 0.7);
+                border: 1px solid transparentize($global-clr-soft-gray, 0.85);
                 @include border-radius(0);
                 width: 20px;
                 height: calc(100% + 2px);
@@ -285,9 +284,8 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
         &-title{
           color: $global-clr-soft-gray;
-          font-size: 15px;
+          font-size: 12px;
           font-weight: 300;
-          letter-spacing: -0.2px;
           margin: 0;
           white-space: nowrap;
         }
@@ -299,7 +297,6 @@ $globalSvgIconImgPath : "../../img/global/svg";
           sup{
             font-size: 12px;
             font-weight: 900;
-            letter-spacing: normal;
             text-align: center;
             position: relative;
             top: -6px;

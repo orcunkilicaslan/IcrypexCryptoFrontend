@@ -93,7 +93,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
         &-item{
           position: relative;
           margin-bottom: 0;
-          font-size: 20px;
+          font-size: 16px;
           font-weight: 500;
           overflow: hidden;
           background-color: $global-clr-soft-gray;
@@ -229,11 +229,11 @@ $globalSvgIconImgPath : "../../img/global/svg";
         }
 
         .form-group-inputinfotext{
-          font-size: 17px;
+          font-size: 14px;
           margin-top: 2px;
 
           @include ReSassWidthResponsive(480){
-            font-size: 15px;
+            font-size: 12px;
           }
         }
 
@@ -334,7 +334,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
         margin-bottom: 15px;
 
         .boxcolumn-boxtitle-title{
-          font-size: 17px;
+          font-size: 14px;
         }
       }
 
@@ -382,7 +382,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
           .paymentmethod{
             color: $global-clr-dark-blue;
-            font-size: 17px;
+            font-size: 14px;
             display: flex;
             flex-direction: row;
             justify-content: space-between;
@@ -457,7 +457,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
             .btn{
               width: 220px;
-              font-size: 20px;
+              font-size: 16px;
               padding-top: 3px;
 
               @include ReSassWidthResponsive(768){
@@ -498,7 +498,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
                 > span[class*="-title"],
                 > span[class*="-info"]{
-                  font-size: 17px;
+                  font-size: 14px;
                   font-weight: normal;
                   display: block;
                   line-height: 1;
@@ -519,7 +519,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
               p.desc{
                 margin-top: 10px;
                 line-height: 1.2;
-                font-size: 17px;
+                font-size: 14px;
                 text-align: left;
 
                 &:first-child{
@@ -528,7 +528,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
               }
 
               ul.list{
-                font-size: 17px;
+                font-size: 14px;
                 line-height: 1.3;
                 text-align: left;
                 margin-top: 10px;
@@ -601,11 +601,11 @@ $globalSvgIconImgPath : "../../img/global/svg";
         margin-bottom: 15px;
 
         .boxcolumn-boxtitle-title{
-          font-size: 17px;
+          font-size: 14px;
         }
 
         .sitecolorgray{
-          font-size: 17px;
+          font-size: 14px;
           line-height: 1;
         }
       }
@@ -623,7 +623,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
           &-head{
             color: $global-clr-dark-blue;
             background-color: $global-clr-light-gray;
-            font-size: 17px;
+            font-size: 14px;
             font-weight: 500;
             padding: 10px 15px;
             margin: 0;
@@ -637,7 +637,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
               align-items: center;
               justify-content: space-between;
               color: $global-clr-dark-blue;
-              font-size: 17px;
+              font-size: 14px;
               padding: 5px 0;
               border-bottom: 1px solid transparentize($global-clr-soft-gray, 0.7);
 
@@ -661,7 +661,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
           p, label{
             color: $global-clr-dark-blue;
-            font-size: 17px;
+            font-size: 14px;
             line-height: 1.25;
           }
 
@@ -681,7 +681,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
       .btn{
         width: 320px;
-        font-size: 20px;
+        font-size: 16px;
         display: block;
         margin: auto;
         padding-top: 3px;

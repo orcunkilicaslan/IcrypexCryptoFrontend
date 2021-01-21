@@ -98,7 +98,7 @@
           align-items: center;
 
           @include ReSassWidthResponsive(992){
-            font-size: 20px;
+            font-size: 16px;
           }
         }
 
@@ -130,7 +130,7 @@
 
         &-desc{
           color: $global-clr-dark-blue;
-          font-size: 17px;
+          font-size: 14px;
           line-height: 1.1;
           margin-bottom: 10px;
           min-height: 108px;
@@ -228,7 +228,7 @@
 
         &-title{
           color: $global-clr-dark-blue;
-          font-size: 15px;
+          font-size: 12px;
           font-weight: 500;
           line-height: 1;
           margin: 0;
@@ -274,7 +274,7 @@
             top: 2px;
           }
           span.bigperc{
-            font-size: 20px;
+            font-size: 16px;
             font-weight: 500;
           }
           span.textup{
@@ -282,7 +282,7 @@
             font-weight: 300;
           }
           span.textdown{
-            font-size: 15px;
+            font-size: 12px;
             font-weight: 500;
           }
           span.dotchart{
@@ -325,7 +325,7 @@
 
           &-link{
             color: $global-clr-dark-blue;
-            font-size: 15px;
+            font-size: 12px;
             margin: 0;
             padding: 0;
             padding-bottom: 5px;
@@ -432,7 +432,7 @@
       li{
         border-bottom: 1px solid transparentize($global-clr-soft-gray, 0.85);
         padding: 5px 0;
-        font-size: 15px;
+        font-size: 12px;
 
         @include ReSassWidthResponsive(768){
           width: calc(50% - 5px);
@@ -477,7 +477,7 @@
       }
 
       &-subtitle{
-        font-size: 17px;
+        font-size: 14px;
         font-weight: 500;
         margin: 0;
       }
@@ -507,7 +507,7 @@
       }
 
       p{
-        font-size: 17px;
+        font-size: 14px;
         margin-bottom: 15px;
 
         &:last-child{

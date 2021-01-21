@@ -39,7 +39,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
       height: 100%;
     }
     &::after{
-      background-color: rgba(0,0,0,0.9);
+      background-color: $global-sitebg-darkblue01;
       height: 4px;
       bottom: 0;
     }
@@ -48,16 +48,16 @@ $globalSvgIconImgPath : "../../img/global/svg";
       &-item{
         position: relative;
         margin-bottom: 0;
-        font-size: 20px;
+        font-size: 16px;
         overflow: hidden;
 
         @include ReSassWidthResponsive(1400){
-          font-size: 18px;
+          font-size: 14px;
         }
       }
       &-link{
         color: transparentize($global-clr-soft-gray, 0.50);
-        border-color: rgba(0,0,0,0.9);
+        border-color: $global-sitebg-darkblue01;
         border-style: solid;
         border-right-width: 4px;
         border-left-width: 0;
@@ -135,7 +135,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
           position: absolute;
           right: 0;
           padding: 3px 20px 3px 0;
-          border-bottom: 1px solid transparentize($global-clr-soft-gray, 0.7);
+          border-bottom: 1px solid transparentize($global-clr-soft-gray, 0.85);
           text-align: left;
           @include transition(all, 0.3s, ease-in-out);
 
@@ -197,7 +197,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
     thead th{
       border-top-width: 0;
       border-bottom-width: 1px;
-      border-color: transparentize($global-clr-soft-gray, 0.7);
+      border-color: transparentize($global-clr-soft-gray, 0.85);
     }
 
     tbody tr{
@@ -228,9 +228,9 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
     td, th{
       border-top: 0;
-      border-bottom:1px solid transparentize($global-clr-soft-gray, 0.7);
+      border-bottom:1px solid transparentize($global-clr-soft-gray, 0.85);
       vertical-align: middle;
-      font-size: 17px;
+      font-size: 14px;
       font-weight: normal;
       padding-top: 6px !important;
       padding-bottom: 6px !important;
@@ -238,7 +238,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
       padding-right: 5px;
 
       @include ReSassWidthResponsive(1400){
-        font-size: 15px;
+        font-size: 12px;
         padding-top: 5px !important;
         padding-bottom: 5px !important;
       }
@@ -294,7 +294,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
     margin: 0;
 
     td, th{
-      border-color: transparentize($global-clr-soft-gray, 0.7);
+      border-color: transparentize($global-clr-soft-gray, 0.85);
       vertical-align: middle;
       font-size: 12px;
       font-weight: normal;
@@ -309,10 +309,10 @@ $globalSvgIconImgPath : "../../img/global/svg";
     }
 
     thead th{
-      font-size: 15px;
+      font-size: 12px;
       border-top-width: 0;
       border-bottom-width: 1px;
-      border-color: transparentize($global-clr-soft-gray, 0.7);
+      border-color: transparentize($global-clr-soft-gray, 0.85);
       padding-top: 3px;
       padding-bottom: 3px;
     }
@@ -355,13 +355,13 @@ $globalSvgIconImgPath : "../../img/global/svg";
         margin: 0;
         padding: 0;
         font-weight: 300;
-        font-size: 17px;
+        font-size: 14px;
       }
       &-select{
         color: $global-clr-soft-gray;
         background-color: transparent;
         border: none;
-        font-size: 17px;
+        font-size: 14px;
         margin-bottom: 0 !important;
 
         select{
@@ -379,14 +379,14 @@ $globalSvgIconImgPath : "../../img/global/svg";
 
     &-input{
       color: $global-clr-white;
-      background-color: rgba(0,0,0,0.2);
-      font-size: 20px;
+      background-color: rgba(0,0,0,0.1);
+      font-size: 16px;
       font-weight: 100;
       padding: 5px 9px;
       height: auto;
       border-width: 1px;
       border-style: solid;
-      border-color: transparentize($global-clr-soft-gray, 0.7);
+      border-color: transparentize($global-clr-soft-gray, 0.85);
       @include border-radius(0);
       @include transition(background, 0.3s, ease-in-out);
 
@@ -397,7 +397,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
       &:focus{
         color: $global-clr-white;
         background-color: rgba(0,0,0,0.2);
-        border-color: transparentize($global-clr-soft-gray, 0.7);
+        border-color: transparentize($global-clr-soft-gray, 0.85);
         @include box-shadow(0 0 0 transparent);
         @include border-radius(0);
 
@@ -408,7 +408,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
     }
     &-info{
       color: $global-clr-soft-gray;
-      font-size: 17px;
+      font-size: 14px;
       margin: 0;
       margin-top: 5px;
     }

@@ -82,8 +82,7 @@
 
     &-desc{
       color: $global-clr-dark-blue;
-      font-size: 17px;
-      line-height: 1.18;
+      font-size: 14px;
       margin-bottom: 5px;
 
       &:last-child{
@@ -98,12 +97,12 @@
 
     &-title{
       margin: 0;
-      font-size: 17px;
+      font-size: 14px;
       font-weight: normal;
     }
     &-number{
       color: $global-clr-dark-blue;
-      font-size: 17px;
+      font-size: 14px;
       font-weight: 500;
     }
   }
