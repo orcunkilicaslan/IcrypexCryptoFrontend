@@ -49,6 +49,11 @@ $mainpageFooterImgPath : "../../img/mainpage/footer";
       height: 50px;
       display: block;
       margin: 0 auto;
+
+      &[class*="icrypexsymbolv2"]{
+        width: 64px;
+        height: 64px;
+      }
     }
   }
 
