@@ -1,0 +1,164 @@
+$tradepageFooterImgPath : "../../img/tradepage/footer";
+
+$bottomcall2actionwhitebarpx: 30px;
+
+.bjkbasketballsponsor{
+  color: $global-clr-white;
+  background-color: $global-sitebg-darkblue01;
+  flex: inherit !important;
+  height: 320px;
+  position: relative;
+
+  @include ReSassWidthResponsive(1600){
+    height: 300px;
+  }
+  @include ReSassWidthResponsive(1400){
+    height: 240px;
+  }
+  @include ReSassWidthResponsive(992){
+    height: 180px;
+  }
+  @include ReSassWidthResponsive(768){
+    height: 360px;
+  }
+  @include ReSassWidthResponsive(576){
+    height: 320px;
+  }
+  @include ReSassWidthResponsive(480){
+    height: 300px;
+  }
+  @include ReSassWidthResponsive(400){
+    height: 280px;
+  }
+
+  .container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 100%;
+    padding: 50px 100px;
+    position: relative;
+    z-index: 1;
+
+    @include ReSassWidthResponsive(1400){
+      padding: 30px 60px;
+    }
+    @include ReSassWidthResponsive(768){
+      flex-direction: column;
+      flex-wrap: nowrap;
+      align-items: inherit;
+      padding: 30px;
+    }
+  }
+
+  &-bg{
+    background-image: url(#{$tradepageFooterImgPath}/bjkbasketballsponsor_bg.png);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+
+    @include ReSassMinWidthResponsive(1920){
+      background-size: contain;
+    }
+    @include ReSassWidthResponsive(768){
+      height: 280px;
+      background-position: bottom 0px right -320px;
+    }
+    @include ReSassWidthResponsive(576){
+      height: 240px;
+    }
+    @include ReSassWidthResponsive(480){
+      background-position: bottom 0px right -300px;
+      height: 220px;
+    }
+    @include ReSassWidthResponsive(400){
+      height: 200px;
+    }
+  }
+
+  .bjksponsorlogo{
+    flex: 0 0 auto;
+    width: 120px;
+    max-width: 100%;
+
+    @include ReSassWidthResponsive(1400){
+      width: 100px;
+    }
+    @include ReSassWidthResponsive(992){
+      width: 80px;
+    }
+    @include ReSassWidthResponsive(768){
+      order: 2;
+      width: 100px;
+      position: relative;
+      bottom: 30px;
+      left: 15%;
+      transform: translateX(-50%) !important;
+    }
+    @include ReSassWidthResponsive(576){
+      bottom: 10px;
+      left: 20%;
+    }
+    @include ReSassWidthResponsive(480){
+      width: 90px;
+      left: 17%;
+      bottom: 0;
+    }
+    @include ReSassWidthResponsive(400){
+      width: 75px;
+      left: 15%;
+    }
+  }
+
+  .bjksponsortext{
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 280px;
+    margin-left: 40px;
+    padding: 10px 0 10px 40px;
+    border-left: 1px solid transparentize($global-clr-soft-gray, 0.7);
+
+    @include ReSassWidthResponsive(1400){
+      max-width: 240px;
+      margin-left: 30px;
+      padding: 5px 0 5px 30px;
+    }
+    @include ReSassWidthResponsive(992){
+      max-width: 200px;
+    }
+    @include ReSassWidthResponsive(768){
+      order: 1;
+      max-width: 320px;
+      border: none;
+      padding: 0;
+      margin: 0 auto;
+      text-align: center;
+    }
+    @include ReSassWidthResponsive(576){
+      max-width: 260px;
+    }
+
+    h6{
+      font-size: 32px;
+      margin: 0;
+
+      @include ReSassWidthResponsive(1400){
+        font-size: 26px;
+      }
+      @include ReSassWidthResponsive(992){
+        font-size: 22px;
+      }
+      @include ReSassWidthResponsive(768){
+        font-size: 30px;
+      }
+      @include ReSassWidthResponsive(576){
+        font-size: 24px;
+      }
+    }
+  }
+
+}
