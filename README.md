@@ -13,6 +13,8 @@
  - [04_Features_Products_Zoom_Overview_MenaPay](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mainpage/04_Features_Products_Zoom_Overview_MenaPay.html)
  - [04_Features_Products_Zoom_Overview_Chainlink](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mainpage/04_Features_Products_Zoom_Overview_Chainlink.html)
  - [04_Features_Products_Zoom_Overview_Avalanche](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mainpage/04_Features_Products_Zoom_Overview_Avalanche.html)
+ - [04_Features_Products_Zoom_Overview_Polkadot](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mainpage/04_Features_Products_Zoom_Overview_Polkadot.html)
+ - [04_Features_Products_Zoom_Overview_Algorand](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mainpage/04_Features_Products_Zoom_Overview_Algorand.html)
  - [04_Features_Products_Zoom_Overview_Ripple](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mainpage/04_Features_Products_Zoom_Overview_Ripple.html)
  - [04_Features_Products_Zoom_Overview_Stellar](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mainpage/04_Features_Products_Zoom_Overview_Stellar.html)
  - [04_Features_Products_Zoom_Overview_Basic_Attention_Token](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mainpage/04_Features_Products_Zoom_Overview_Basic_Attention_Token.html)
