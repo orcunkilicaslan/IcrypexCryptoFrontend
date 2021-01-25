@@ -4,6 +4,16 @@ $globalSvgIconImgPath : "../../img/global/svg";
 .header{
   $headerclassname: &;
 
+  &.navscroll{
+    #{$headerclassname}-navigation-logov2{
+      margin-bottom: 17px;
+
+      @include ReSassWidthResponsive(1400){
+        margin-bottom: 15px;
+      }
+    }
+  }
+
   &-navigation{
     display: flex;
     justify-content: space-between;
@@ -100,6 +110,41 @@ $globalSvgIconImgPath : "../../img/global/svg";
         }
         @include ReSassWidthResponsive(992){
           padding-left: 35px;
+        }
+      }
+    }
+    &-logov2{
+      color: $global-clr-white;
+      width: 120px;
+      margin-top: 0;
+      margin-bottom: 15px;
+      position: relative;
+
+      @include ReSassWidthResponsive(1400){
+        margin-bottom: 14px;
+      }
+      @include ReSassWidthResponsive(1200){
+        width: 100px;
+        margin-bottom: 15px;
+      }
+      @include ReSassWidthResponsive(992){
+        width: 120px;
+        margin-bottom: 0 !important;
+      }
+
+      svg{
+        width: 100%;
+
+        rect{
+          fill: transparent;
+          opacity: 0;
+        }
+
+        path.colorx{
+          fill: $global-clr-soft-blue;
+        }
+        path.colortype{
+          fill: $global-clr-white;
         }
       }
     }

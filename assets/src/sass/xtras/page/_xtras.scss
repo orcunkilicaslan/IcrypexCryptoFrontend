@@ -39,6 +39,31 @@
     }
   }
 
+  .icrypexlogov2{
+    width: 140px;
+    margin:0 auto 7px;
+    @include scale(1.4);
+
+
+    svg{
+      width: 100%;
+
+      rect{
+        fill: transparent;
+        opacity: 0;
+      }
+
+      path.colorx{
+        fill: $global-clr-soft-blue;
+      }
+      path.colortype{
+        fill: $global-sitebg-darkblue02;
+      }
+    }
+  }
+
+
+
   &-infoarea{
     display: flex;
     flex-flow: column nowrap;

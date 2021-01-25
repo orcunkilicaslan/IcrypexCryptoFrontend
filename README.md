@@ -151,10 +151,11 @@
  - [99_20190730_Investing_Mass_Mail](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/email-marketing/99_20190730_Investing_Mass_Mail.html)
  
  
-  #### E-Mail Signature List
-  - [01_Email_Signature_v1](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/email-signature/01_Email_Signature_v1.html)
-  - [02_Email_Signature_v2](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/email-signature/02_Email_Signature_v2.html)
-  - [Microsoft Outlook'da İmza Tanımlama Video](https://www.youtube.com/watch?v=SGfgyjHgzYs) 
+ #### E-Mail Signature List
+ - [01_Email_Signature_v1](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/email-signature/01_Email_Signature_v1.html)
+ - [02_Email_Signature_v2](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/email-signature/02_Email_Signature_v2.html)
+ - [03_Email_Signature_v3](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/email-signature/03_Email_Signature_v3.html)
+ - [Microsoft Outlook'da İmza Tanımlama Video](https://www.youtube.com/watch?v=SGfgyjHgzYs) 
   
    
 
