@@ -18,6 +18,9 @@ $globalSvgIconImgPath : "../../img/global/svg";
     &-icrypexsymbol{
       background-image: url(#{$globalSvgIconImgPath}/Icrypex_Symbol.svg);
     }
+    &-icrypexsymbolv2{
+      background-image: url(#{$globalSvgIconImgPath}/Icrypex_Symbolv2.svg);
+    }
     &-search{
       background-image: url(#{$globalSvgIconImgPath}/Search_Icon.svg);
     }

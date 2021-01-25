@@ -16,7 +16,6 @@ $tradepageFooterImgPath : "../../img/tradepage/footer";
     }
   }
 
-
   .maincont-left{
     @include ReSassWidthResponsive(992){
       order: 2;
@@ -68,6 +67,33 @@ $tradepageFooterImgPath : "../../img/tradepage/footer";
       font-weight: 500;
       margin: 0;
       line-height: 1;
+    }
+
+    @include ReSassWidthResponsive(992){
+      display: none;
+    }
+  }
+
+  &-logov2{
+    color: $global-clr-white;
+    width: 120px;
+    margin-bottom: 17px;
+
+    svg{
+      width: 100%;
+
+      rect{
+        fill: transparent;
+        opacity: 0;
+      }
+
+      path.colorx{
+        fill: $global-clr-soft-blue;
+      }
+      path.colortype,
+      path.colortag{
+        fill: $global-clr-white;
+      }
     }
 
     @include ReSassWidthResponsive(992){
