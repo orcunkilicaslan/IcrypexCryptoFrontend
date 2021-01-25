@@ -72,6 +72,12 @@ $globalSvgIconImgPath : "../../img/global/svg";
     &-productslistxlm{
       background-image: url(#{$globalSvgIconImgPath}/Icon_Xlm.svg);
     }
+    &-productslistdot{
+      background-image: url(#{$globalSvgIconImgPath}/Icon_Dot.svg);
+    }
+    &-productslistalgo{
+      background-image: url(#{$globalSvgIconImgPath}/Icon_Algo.svg);
+    }
     &-productslistbat{
       background-image: url(#{$globalSvgIconImgPath}/Icon_Bat.svg);
     }
@@ -207,6 +213,12 @@ $globalSvgIconImgPath : "../../img/global/svg";
     &-titleiconxlm{
       background-image: url(#{$globalSvgIconImgPath}/Icon_Title_Xlm.svg);
     }
+    &-titleicondot{
+      background-image: url(#{$globalSvgIconImgPath}/Icon_Title_Dot.svg);
+    }
+    &-titleiconalgo{
+      background-image: url(#{$globalSvgIconImgPath}/Icon_Title_Algo.svg);
+    }
     &-titleiconbat{
       background-image: url(#{$globalSvgIconImgPath}/Icon_Title_Bat.svg);
     }
@@ -306,6 +318,12 @@ $globalSvgIconImgPath : "../../img/global/svg";
     }
     &-currencyiconxlm{
       background-image: url(#{$globalSvgIconImgPath}/Currency_Icon_Xlm.svg);
+    }
+    &-currencyicondot{
+      background-image: url(#{$globalSvgIconImgPath}/Currency_Icon_Dot.svg);
+    }
+    &-currencyiconalgo{
+      background-image: url(#{$globalSvgIconImgPath}/Currency_Icon_Algo.svg);
     }
     &-currencyicontryb{
       background-image: url(#{$globalSvgIconImgPath}/Currency_Icon_Tryb.svg);

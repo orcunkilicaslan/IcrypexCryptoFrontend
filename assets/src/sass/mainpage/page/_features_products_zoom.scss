@@ -124,6 +124,16 @@
               background-color: $global-clr-currency-avax;
             }
           }
+          &.linedot{
+            &::before {
+              background-color: $global-clr-currency-dot;
+            }
+          }
+          &.linealgo{
+            &::before {
+              background-color: $global-clr-currency-algo;
+            }
+          }
           &.linetryb{
             &::before {
               background-color: $global-clr-currency-tryb;
