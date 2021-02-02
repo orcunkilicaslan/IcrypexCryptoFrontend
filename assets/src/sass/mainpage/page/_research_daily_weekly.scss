@@ -85,7 +85,7 @@
           font-size: 19px;
 
           a{
-            color: lighten($global-clr-red, 10%);
+            color: $global-clr-soft-blue;
             text-decoration: underline;
           }
         }
@@ -369,7 +369,7 @@
             }
 
             a{
-              color: lighten($global-clr-red, 10%);
+              color: $global-clr-soft-blue;
               text-decoration: underline;
             }
           }
