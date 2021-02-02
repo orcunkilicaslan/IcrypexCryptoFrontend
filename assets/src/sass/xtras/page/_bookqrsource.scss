@@ -1,0 +1,34 @@
+.bookqrsource{
+  width: 100%;
+  max-width: 90%;
+  margin: 20px auto;
+
+  &-content{
+    color: $global-clr-dark-blue;
+
+    h1,h2,h3,h4,h5,h6{
+      color: $global-clr-dark-blue;
+      margin: 0;
+      margin-bottom: 20px;
+      font-size: 26px;
+      font-weight: normal;
+    }
+
+    ul{
+      color: $global-clr-dark-blue;
+      font-size: 17px;
+      line-height: 1.18;
+      list-style: disc;
+
+      > li{
+        margin: 5px 0;
+      }
+
+      a{
+        color: $global-clr-soft-blue;
+        text-decoration: underline;
+      }
+    }
+  }
+
+}
