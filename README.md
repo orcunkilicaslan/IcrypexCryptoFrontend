@@ -66,6 +66,7 @@
 - [02_Login_Step_3_Forgot_Password](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/tradepage/02_Login_Step_3_Forgot_Password.html)
 - [02_Login_Step_4_Thank_You](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/tradepage/02_Login_Step_4_Thank_You.html)
 - [03_Trader_Home](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/tradepage/03_Trader_Home.html)
+- [03_Trader_Home_OnlyMobile](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/tradepage/03_Trader_Home_OnlyMobile.html)
 - [03_Trader_Home_2](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/tradepage/03_Trader_Home_2.html)
 - [04_Easy_Buy_Sell](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/tradepage/04_Easy_Buy_Sell.html)
 - [04_Easy_Buy_Main](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/tradepage/04_Easy_Buy_Main.html)

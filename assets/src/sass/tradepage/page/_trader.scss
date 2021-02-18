@@ -225,6 +225,26 @@ $tradepageHomepageImgPath : "../../img/tradepage";
         padding: 0;
       }
     }
+
+    &.onlymobile{
+
+      .collapse:not(.show){display: block}
+
+      @include ReSassWidthResponsive(992){
+        padding: 0;
+        border-bottom: none;
+
+        > .container{
+          padding-bottom: 0;
+        }
+
+        .collapse:not(.show){display: none}
+
+        .bigchart-chart{
+          padding-top: 15px;
+        }
+      }
+    }
   }
 
   &-order{
@@ -391,6 +411,170 @@ $tradepageHomepageImgPath : "../../img/tradepage";
 
         }
       }
+
+      &-tabmobilenav{
+        margin: 0 auto 10px;
+
+        .nav-item{
+          padding: 0 5px;
+
+          &:first-child{padding-left: 0;}
+          &:last-child{padding-right: 0;}
+        }
+
+        .nav-link{
+          color: $global-clr-soft-gray;
+          background-color: transparentize($global-clr-soft-gray, 0.7);
+          padding-top: 0.25rem;
+          padding-bottom: 0.25rem;
+        }
+      }
+
+      &-tabmobilecont{
+        margin-bottom: 30px;
+
+        .mobileinsidetabnav{
+          position: relative;
+          justify-content: center!important;
+          border-bottom: none;
+
+          &::after{
+            content: "";
+            background-color: $global-clr-white;
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            bottom: 0;
+          }
+
+          .nav{
+            &-item{
+              position: relative;
+              margin-bottom: 0;
+              font-size: 18px;
+              overflow: hidden;
+              background-color: $global-clr-soft-gray;
+            }
+            &-link{
+              color: $global-clr-white;
+              border-color: $global-clr-white;
+              border-style: solid;
+              border-right-width: 2px;
+              border-left-width: 0;
+              border-top: none;
+              border-bottom-width: 0;
+              padding: 3px 10px 4px;
+              min-width: 120px;
+              text-align: center;
+              @include border-radius(0);
+              @include transition(color, 0.2s, linear);
+
+              span{
+                position: relative;
+                z-index: 1;
+                display: block;
+                margin-bottom: 1px;
+              }
+
+              &::before{
+                content: "";
+                position: absolute;
+                width: calc(100% - 2px);
+                height: 0;
+                left: 0;
+                bottom: 0;
+                background-color: transparent;
+                @include transition(height, 0.2s, linear);
+              }
+
+              &.active,
+              &.show,
+              &:hover{
+                color: $global-clr-white;
+                background-color: transparent;
+                border-color: $global-clr-white;
+                &::before{
+                  height: 100%;
+                  background-color: $global-clr-soft-blue;
+                  z-index: 1;
+                }
+
+                &.nav-buy::before{
+                  background-color: $global-clr-green;
+                }
+                &.nav-sell::before{
+                  background-color: $global-clr-red;
+                }
+              }
+            }
+          }
+        }
+
+        .mobileinsidetabcont{
+          width: calc(100% - 2px);
+
+          .tab-pane{
+            padding-top: 10px;
+            border-top: 5px solid transparent;
+
+            &.cont-buy{border-top-color: $global-clr-green;}
+            &.cont-sell{border-top-color: $global-clr-red;}
+          }
+
+          .boxcolumn-boxtitle{
+            margin-bottom: 10px;
+          }
+
+          &-form{
+
+            .form-group{
+              margin-bottom: 15px !important;
+            }
+
+            .percbtns{
+              display: flex;
+              justify-content: space-between;
+
+              .btn{
+                color: $global-clr-soft-gray !important;
+                background-color: transparentize($global-clr-soft-gray, 0.7) !important;
+                border-color: transparent;
+                width: 100%;
+                height: 30px;
+                padding-top: 2px;
+                padding-bottom: 2px;
+                margin: 0 5px;
+
+                &.active{
+                  color: $global-clr-white !important;
+                  background-color: $global-clr-soft-blue !important;
+                  border-color: transparent;
+                }
+
+                &:first-child{margin-left: 0;}
+                &:last-child{margin-right: 0;}
+              }
+            }
+
+            .button{
+              margin-bottom: 0 !important;
+
+              .btn{
+                font-size: 20px;
+                padding: 3px 10px 6px;
+
+                @include ReSassWidthResponsive(400){
+                  font-size: 17px;
+                  padding: 4px 5px 5px;
+                  height: auto;
+                }
+              }
+            }
+          }
+        }
+
+      }
+
       &-box{
 
         @include ReSassWidthResponsive(576){
@@ -415,6 +599,34 @@ $tradepageHomepageImgPath : "../../img/tradepage";
 
     &-book{
       margin-top: 15px;
+
+      &.onlymobile{
+        @include ReSassWidthResponsive(992){
+          .order-book-contentbox-chartbox{
+            width: 100% !important;
+
+            &::before{
+              height: 100%;
+            }
+
+            .order-book-buy{
+              padding-left: 15px !important;
+            }
+
+            .order-book-sell{
+              padding-right: 15px !important;
+            }
+
+            .order-book-box-table{
+              th,td{
+                &:first-child{text-align: left;}
+                &:last-child{text-align: right;}
+              }
+            }
+
+          }
+        }
+      }
     }
 
     &-open{

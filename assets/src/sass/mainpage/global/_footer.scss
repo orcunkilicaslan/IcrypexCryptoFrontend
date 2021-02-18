@@ -128,13 +128,84 @@ $globalSvgIconImgPath : "../../img/global/svg";
     }
   }
 
-  &-blockchainlogo{
+  &-partnerlogos{
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 15px;
 
+    @include ReSassWidthResponsive(992){
+      @include scale(0.8);
+    }
+    @include ReSassWidthResponsive(400){
+      flex-direction: column;
+    }
+
+    > *{
+      position: relative;
+      padding: 0 15px;
+
+      @include ReSassWidthResponsive(400){
+        padding: 10px 15px;
+      }
+
+      &::before{
+        content: "";
+        background-color: $global-clr-white;
+        width: 6px;
+        height: 6px;
+        position: absolute;
+        left: -3px;
+        top: 50%;
+        @include translateY(-50%);
+        @include border-radius(50%);
+
+        @include ReSassWidthResponsive(400){
+          display: none;
+        }
+      }
+
+      &:first-child::before{display: none;}
+    }
+
     .footblockchain{
+      color: $global-clr-white;
+      display: flex;
+      align-items: center;
+
+      > *{
+        margin: 0 5px;
+      }
+
+      &-logo{}
+
+      &-text{
+        font-size: 17px;
+        letter-spacing: 2px;
+        padding: 2px 4px;
+        position: relative;
+
+        &::before,
+        &::after{
+          content: "";
+          @include background-linear(#2EB7C9, #125EAA, 0);
+          width: 100%;
+          height: 2px;
+          position: absolute;
+          left: 0;
+        }
+
+        &::before{
+          top: 0;
+        }
+
+        &::after{
+          bottom: 0;
+        }
+      }
+    }
+
+    .footkalder{
       color: $global-clr-white;
       display: flex;
       align-items: center;

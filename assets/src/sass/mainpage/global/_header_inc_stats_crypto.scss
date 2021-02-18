@@ -71,6 +71,39 @@ $globalSvgIconImgPath : "../../img/global/svg";
           }
         }
 
+        .collapsebtn{
+
+          @include ReSassWidthResponsive(992){
+            .header-stats-price-big-list{
+              padding-right: 35px;
+            }
+          }
+
+          .bigchartbtn{
+            background-color: transparent;
+            background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMiIgaGVpZ2h0PSIzMCIgdmlld0JveD0iMCAwIDIyIDMwIj4NCiAgPGcgaWQ9ImNoYXJ0X2ljb24iIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xLjQyIDIuNzQyKSI+DQogICAgPHJlY3QgaWQ9IlJlY3RhbmdsZV85MjAiIGRhdGEtbmFtZT0iUmVjdGFuZ2xlIDkyMCIgd2lkdGg9IjIyIiBoZWlnaHQ9IjMwIiByeD0iNSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMS40MiAtMi43NDIpIiBmaWxsPSJub25lIi8+DQogICAgPHBhdGggaWQ9IlVuaW9uXzEiIGRhdGEtbmFtZT0iVW5pb24gMSIgZD0iTTIyMDkxLjM1MiwxODcwNS42NjZ2LTIuNDloLS43ODNhLjY2OC42NjgsMCwwLDEtLjcwOS0uNzA5di05LjY1OGEuNjcuNjcsMCwwLDEsLjcwOS0uNzExaC43ODN2LTIuNTU3YS43MS43MSwwLDAsMSwuNzA5LS43MDkuNzYyLjc2MiwwLDAsMSwuNzA5LjcwOXYyLjU1N2guNzgzYS43MTEuNzExLDAsMCwxLC43MDkuNzExdjkuNjU4YS43MS43MSwwLDAsMS0uNzA5LjcwOWgtLjc4M3YyLjQ5YS43MTQuNzE0LDAsMCwxLS43MDkuNzExQS42NzIuNjcyLDAsMCwxLDIyMDkxLjM1MiwxODcwNS42NjZabS0xMi40MzcsMHYtMi40OWgtLjc4M2EuNjY4LjY2OCwwLDAsMS0uNzA5LS43MDl2LTkuNjU4YS42Ny42NywwLDAsMSwuNzA5LS43MTFoLjc4M3YtMi41NTdhLjcxMS43MTEsMCwwLDEsLjcwOS0uNzA5Ljc2NC43NjQsMCwwLDEsLjcxMS43MDl2Mi41NTdoLjc4MWEuNzExLjcxMSwwLDAsMSwuNzA5LjcxMXY5LjY1OGEuNzEuNzEsMCwwLDEtLjcwOS43MDloLS43ODF2Mi40OWEuNzE2LjcxNiwwLDAsMS0uNzExLjcxMUEuNjczLjY3MywwLDAsMSwyMjA3OC45MTQsMTg3MDUuNjY2Wm02LjIxNS00Ljgzdi0yLjQ4OGgtLjc4MWEuNzEuNzEsMCwwLDEtLjcwOS0uNzExdi05LjczYS43MS43MSwwLDAsMSwuNzA5LS43MTFoLjc4MXYtMi40ODJhLjY3LjY3LDAsMCwxLC43MTEtLjcxMS43MTEuNzExLDAsMCwxLC43MDkuNzExdjIuNDgyaC43ODFhLjc2NS43NjUsMCwwLDEsLjcxMS43MTF2OS43M2EuNzY1Ljc2NSwwLDAsMS0uNzExLjcxMWgtLjc4MXYyLjQ4OGEuNzE1LjcxNSwwLDAsMS0uNzA5LjcxMUEuNjc0LjY3NCwwLDAsMSwyMjA4NS4xMjksMTg3MDAuODM2WiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTIyMDczLjQyIC0xODY4Mi43NDIpIiBmaWxsPSIjZmZmIi8+DQogIDwvZz4NCjwvc3ZnPg0K");
+            background-repeat: no-repeat;
+            background-position: center right;
+            background-size: auto;
+            width: 30px;
+            height: 100%;
+            min-height: 30px;
+            border: none;
+            border-left: 1px solid transparentize($global-clr-soft-gray, 0.7);
+            text-indent: -9999px;
+            position: absolute;
+            right: 0;
+            top: 0;
+            z-index: 1;
+            display: none;
+
+            @include ReSassWidthResponsive(992){
+              display: block;
+            }
+          }
+
+        }
+
         &-selectweb{
           display: inline-flex;
           align-items: center;

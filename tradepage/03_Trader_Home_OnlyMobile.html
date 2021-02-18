@@ -258,7 +258,7 @@
                     </div>
                     <!-- Select -->
                     <!-- Big Price -->
-                    <div class="maincont-right col-10">
+                    <div class="maincont-right collapsebtn col-10">
                         <ul id="headertitleareapricebig" class="header-stats-price-big-list owl-carousel owl-theme">
                             <li class="header-stats-price-big-list-item">
                                 <h4 class="header-stats-price-big-title">GÜNCEL</h4>
@@ -290,6 +290,7 @@
                                 <span class="header-stats-price-big-volume">9561.14 TRY <span class="sitecolorgreen">0.27<sup>%</sup></span></span>
                             </li>
                         </ul>
+                        <button class="bigchartbtn" type="button" data-toggle="collapse" data-target="#bigchartcollapse" aria-expanded="false"></button>
                     </div>
                     <!-- Big Price -->
                 </div>
@@ -305,7 +306,7 @@
 <!-- Header End -->
 
 <!-- Big Chart Start -->
-<section class="trader-bigchart sitebgwhite">
+<section class="trader-bigchart onlymobile sitebgwhite">
     <div class="container">
         <div class="row">
 
@@ -601,10 +602,9 @@
 
             <!-- Chart Start -->
             <div class="trader-bigchart-wrapper sidesectioncont-right col-10">
-                <div class="bigchart-chart d-none">
-                    <img src="../assets/img/tradepage/elements/Trading_View.svg" alt="Trading_View" width="936" height="491" />
+                <div class="collapse" id="bigchartcollapse">
+                    <div class="bigchart-chart" id="tradingview"><div id="tradingview_150a9-wrapper" style="position: relative;box-sizing: content-box;width: 936px;height: 442px;margin: 0 auto !important;padding: 0 !important;font-family:Arial,sans-serif;overflow: hidden;border-radius: 3px;"><div style="width: 936px;height: 442px;background: transparent;padding: 0 !important;"><iframe id="tradingview_150a9" src="https://s.tradingview.com/widgetembed/?frameElementId=tradingview_150a9&amp;symbol=BTCTRY&amp;interval=30&amp;hidelegend=1&amp;hidesidetoolbar=0&amp;symboledit=1&amp;saveimage=1&amp;toolbarbg=f1f3f6&amp;studies=%5B%5D&amp;theme=Light&amp;style=8&amp;timezone=Etc%2FUTC&amp;withdateranges=1&amp;studies_overrides=%7B%7D&amp;overrides=%7B%7D&amp;enabled_features=%5B%5D&amp;disabled_features=%5B%5D&amp;locale=tr&amp;utm_source=www.icrypex.com&amp;utm_medium=widget&amp;utm_campaign=chart&amp;utm_term=BTCTRY" style="width: 100%; height: 100%; margin: 0 !important; padding: 0 !important;" frameborder="0" allowtransparency="true" scrolling="no" allowfullscreen=""></iframe></div></div></div>
                 </div>
-                <div class="bigchart-chart" id="tradingview"><div id="tradingview_150a9-wrapper" style="position: relative;box-sizing: content-box;width: 936px;height: 442px;margin: 0 auto !important;padding: 0 !important;font-family:Arial,sans-serif;overflow: hidden;border-radius: 3px;"><div style="width: 936px;height: 442px;background: transparent;padding: 0 !important;"><iframe id="tradingview_150a9" src="https://s.tradingview.com/widgetembed/?frameElementId=tradingview_150a9&amp;symbol=BTCTRY&amp;interval=30&amp;hidelegend=1&amp;hidesidetoolbar=0&amp;symboledit=1&amp;saveimage=1&amp;toolbarbg=f1f3f6&amp;studies=%5B%5D&amp;theme=Light&amp;style=8&amp;timezone=Etc%2FUTC&amp;withdateranges=1&amp;studies_overrides=%7B%7D&amp;overrides=%7B%7D&amp;enabled_features=%5B%5D&amp;disabled_features=%5B%5D&amp;locale=tr&amp;utm_source=www.icrypex.com&amp;utm_medium=widget&amp;utm_campaign=chart&amp;utm_term=BTCTRY" style="width: 100%; height: 100%; margin: 0 !important; padding: 0 !important;" frameborder="0" allowtransparency="true" scrolling="no" allowfullscreen=""></iframe></div></div></div>
             </div>
             <!-- Chart End -->
 
@@ -618,368 +618,346 @@
     <div class="container">
         <div class="row trader-order-row">
 
-            <!-- Balance -->
-            <div class="sidebar sidebar-tradepage sidesectioncont-left col-2">
-                <div class="sidebar-balance">
-                    <h2 class="boxtitle boxtitle-sm">NAKİT BAKİYENİZ</h2>
-                    <table class="sidebar-balance-table sitetable table">
-                        <thead>
-                        <tr>
-                            <th class="sidebar-balance-table-currency">PARA BİRİMİ</th>
-                            <th class="sidebar-balance-table-amount">TUTAR</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <td class="sidebar-balance-table-currency">TRY</td>
-                            <td class="sidebar-balance-table-amount"> 0.00 </td>
-                        </tr>
-                        <tr>
-                            <td class="sidebar-balance-table-currency">USD</td>
-                            <td class="sidebar-balance-table-amount"> 0.00 </td>
-                        </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="sidebar-balance">
-                    <h2 class="boxtitle boxtitle-sm">CRYPTO BAKİYENİZ</h2>
-                    <table class="sidebar-balance-table sitetable table">
-                        <thead>
-                        <tr>
-                            <th class="sidebar-balance-table-currency">PARA BİRİMİ</th>
-                            <th class="sidebar-balance-table-amount">TUTAR</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <td class="sidebar-balance-table-currency">BTC</td>
-                            <td class="sidebar-balance-table-amount"> 0.00000000 </td>
-                        </tr>
-                        <tr>
-                            <td class="sidebar-balance-table-currency">LTC</td>
-                            <td class="sidebar-balance-table-amount"> 0.00000000 </td>
-                        </tr>
-                        <tr>
-                            <td class="sidebar-balance-table-currency">ETH</td>
-                            <td class="sidebar-balance-table-amount"> 0.00000000 </td>
-                        </tr>
-                        <tr>
-                            <td class="sidebar-balance-table-currency">XRP</td>
-                            <td class="sidebar-balance-table-amount"> 0.00000000 </td>
-                        </tr>
-                        <tr>
-                            <td class="sidebar-balance-table-currency">MPAY</td>
-                            <td class="sidebar-balance-table-amount"> 0.00000000 </td>
-                        </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-            <!-- Balance -->
-
             <!-- Order -->
             <div class="trader-order-wrapper sidesectioncont-right col-10">
 
                 <!-- Order Tab -->
                 <div class="trader-order-orders">
 
-                    <!--
-                    <ul class="trader-order-orders-tabnav nav nav-tabs" role="tablist">
-                        <li class="nav-item"><a class="nav-link active" id="tab-MARKET" data-toggle="tab" href="#MARKET" role="tab" aria-controls="MARKET" aria-selected="true"><span>MARKET</span></a></li>
-                        <li class="nav-item"><a class="nav-link" id="tab-LIMIT" data-toggle="tab" href="#LIMIT" role="tab" aria-controls="LIMIT" aria-selected="false"><span>LİMİT</span></a></li>
-                        <li class="nav-item"><a class="nav-link" id="tab-STOPLIMIT" data-toggle="tab" href="#STOPLIMIT" role="tab" aria-controls="STOPLIMIT" aria-selected="false"><span>STOP-LİMİT</span></a></li>
+                    <!-- Mobile Tab Nav -->
+                    <ul class="trader-order-orders-tabmobilenav nav nav-pills nav-justified" role="tablist">
+                        <li class="nav-item"><a class="nav-link active" href="#mobmarket" data-toggle="tab" role="tab" aria-selected="true"><span>MARKET</span></a></li>
+                        <li class="nav-item"><a class="nav-link" href="#moblimit" data-toggle="tab" role="tab" aria-selected="false"><span>LİMİT</span></a></li>
+                        <li class="nav-item"><a class="nav-link" href="#mobstoplimit" data-toggle="tab" role="tab" aria-selected="false"><span>STOP-LİMİT</span></a></li>
                     </ul>
-                    -->
+                    <!-- Mobile Tab Nav -->
 
-                    <div class="sitetabs-mobile sitetabs-mobile-01">
-                        <a class="responsive-dropdown-btn responsive-dropdown-top-btn btn" href="#" data-toggle="dropdown" aria-expanded="false"><span class="selecttabsmenuname">MARKET</span></a>
-                        <ul class="nav nav-tabs sitetabslight dropdown-menu responsive-dropdown-menu responsive-dropdown-top-menu" role="tablist">
-                            <li class="nav-item"><a class="nav-link active" id="tab-MARKET" data-toggle="tab" href="#MARKET" role="tab" aria-controls="MARKET" aria-selected="true"><span class="selecttabsmenuname">MARKET</span></a></li>
-                            <li class="nav-item"><a class="nav-link" id="tab-LIMIT" data-toggle="tab" href="#LIMIT" role="tab" aria-controls="LIMIT" aria-selected="false"><span class="selecttabsmenuname">LİMİT</span></a></li>
-                            <li class="nav-item"><a class="nav-link" id="tab-STOPLIMIT" data-toggle="tab" href="#STOPLIMIT" role="tab" aria-controls="STOPLIMIT" aria-selected="false"><span class="selecttabsmenuname">STOP-LİMİT</span></a></li>
-                        </ul>
+                    <!-- Mobile Tab Content -->
+                    <div class="trader-order-orders-tabmobilecont tab-content">
+
+                        <!-- Tab Market -->
+                        <div class="tab-pane fade show active" id="mobmarket" role="tabpanel">
+                            <ul class="mobileinsidetabnav nav nav-tabs nav-justified" role="tablist">
+                                <li class="nav-item"><a class="nav-link nav-buy active" href="#mobmarketbuy"data-toggle="tab" role="tab" aria-selected="true"><span>ALIŞ</span></a></li>
+                                <li class="nav-item"><a class="nav-link nav-sell" href="#mobmarketsell" data-toggle="tab" role="tab" aria-selected="false"><span>SATIŞ</span></a></li>
+                            </ul>
+                            <div class="mobileinsidetabcont tab-content">
+                                <div class="cont-buy tab-pane show active" id="mobmarketbuy" role="tabpanel">
+                                    <div class="boxcolumn-boxtitle">
+                                        <h3 class="boxcolumn-boxtitle-title">Kullanılabilir Bakiye</h3>
+                                        <span class="boxcolumn-boxtitle-wallet">763,300.000 TRY</span>
+                                    </div>
+                                    <form class="mobileinsidetabcont-form formuinew" autocomplete="off" novalidate>
+                                        <div class="form-group colorsetdarkblue">
+                                            <label>PRICE</label>
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" placeholder="" value="22,430.000">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text">TRY</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group colorsetdarkblue">
+                                            <label>AMOUNT</label>
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" placeholder="" value="0,003.000">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text">BTC</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group colorsetdarkblue">
+                                            <label>TOTAL</label>
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" placeholder="" value="22,500.000">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text">BTC</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>PORTFOY</label>
+                                            <div class="percbtns">
+                                                <button class="btn btn-sm" type="button">25%</button>
+                                                <button class="btn btn-sm" type="button">50%</button>
+                                                <button class="btn btn-sm active" type="button">75%</button>
+                                                <button class="btn btn-sm" type="button">100%</button>
+                                            </div>
+                                        </div>
+                                        <div class="form-group button maxwidth100100">
+                                            <button class="button-buy btn btn-success btnwidth100100" type="button">ALIŞ İŞLEMİNİ ONAYLA</button>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="cont-sell tab-pane" id="mobmarketsell" role="tabpanel">
+                                    <div class="boxcolumn-boxtitle">
+                                        <h3 class="boxcolumn-boxtitle-title">Kullanılabilir Bakiye</h3>
+                                        <span class="boxcolumn-boxtitle-wallet">0.123456789 BTC</span>
+                                    </div>
+                                    <form class="mobileinsidetabcont-form formuinew" autocomplete="off" novalidate>
+                                        <div class="form-group colorsetdarkblue">
+                                            <label>PRICE</label>
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" placeholder="" value="22,430.000">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text">TRY</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group colorsetdarkblue">
+                                            <label>AMOUNT</label>
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" placeholder="" value="0,003.000">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text">BTC</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group colorsetdarkblue">
+                                            <label>TOTAL</label>
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" placeholder="" value="22,500.000">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text">BTC</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>PORTFOY</label>
+                                            <div class="percbtns">
+                                                <button class="btn btn-sm" type="button">25%</button>
+                                                <button class="btn btn-sm" type="button">50%</button>
+                                                <button class="btn btn-sm active" type="button">75%</button>
+                                                <button class="btn btn-sm" type="button">100%</button>
+                                            </div>
+                                        </div>
+                                        <div class="form-group button maxwidth100100">
+                                            <button class="button-buy btn btn-danger btnwidth100100" type="button">SATIŞ İŞLEMİNİ ONAYLA</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Tab Market -->
+                        <!-- Tab Limit -->
+                        <div class="tab-pane fade" id="moblimit" role="tabpanel">
+                            <ul class="mobileinsidetabnav nav nav-tabs nav-justified" role="tablist">
+                                <li class="nav-item"><a class="nav-link nav-buy active" href="#moblimitbuy"data-toggle="tab" role="tab" aria-selected="true"><span>ALIŞ</span></a></li>
+                                <li class="nav-item"><a class="nav-link nav-sell" href="#moblimitsell" data-toggle="tab" role="tab" aria-selected="false"><span>SATIŞ</span></a></li>
+                            </ul>
+                            <div class="mobileinsidetabcont tab-content">
+                                <div class="cont-buy tab-pane show active" id="moblimitbuy" role="tabpanel">
+                                    <div class="boxcolumn-boxtitle">
+                                        <h3 class="boxcolumn-boxtitle-title">Kullanılabilir Bakiye</h3>
+                                        <span class="boxcolumn-boxtitle-wallet">763,300.000 TRY</span>
+                                    </div>
+                                    <form class="mobileinsidetabcont-form formuinew" autocomplete="off" novalidate>
+                                        <div class="form-group colorsetdarkblue">
+                                            <label>PRICE</label>
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" placeholder="" value="22,430.000">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text">TRY</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group colorsetdarkblue">
+                                            <label>AMOUNT</label>
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" placeholder="" value="0,003.000">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text">BTC</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group colorsetdarkblue">
+                                            <label>TOTAL</label>
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" placeholder="" value="22,500.000">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text">BTC</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>PORTFOY</label>
+                                            <div class="percbtns">
+                                                <button class="btn btn-sm" type="button">25%</button>
+                                                <button class="btn btn-sm" type="button">50%</button>
+                                                <button class="btn btn-sm active" type="button">75%</button>
+                                                <button class="btn btn-sm" type="button">100%</button>
+                                            </div>
+                                        </div>
+                                        <div class="form-group button maxwidth100100">
+                                            <button class="button-buy btn btn-success btnwidth100100" type="button">ALIŞ İŞLEMİNİ ONAYLA</button>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="cont-sell tab-pane" id="moblimitsell" role="tabpanel">
+                                    <div class="boxcolumn-boxtitle">
+                                        <h3 class="boxcolumn-boxtitle-title">Kullanılabilir Bakiye</h3>
+                                        <span class="boxcolumn-boxtitle-wallet">0.123456789 BTC</span>
+                                    </div>
+                                    <form class="mobileinsidetabcont-form formuinew" autocomplete="off" novalidate>
+                                        <div class="form-group colorsetdarkblue">
+                                            <label>PRICE</label>
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" placeholder="" value="22,430.000">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text">TRY</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group colorsetdarkblue">
+                                            <label>AMOUNT</label>
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" placeholder="" value="0,003.000">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text">BTC</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group colorsetdarkblue">
+                                            <label>TOTAL</label>
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" placeholder="" value="22,500.000">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text">BTC</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>PORTFOY</label>
+                                            <div class="percbtns">
+                                                <button class="btn btn-sm" type="button">25%</button>
+                                                <button class="btn btn-sm" type="button">50%</button>
+                                                <button class="btn btn-sm active" type="button">75%</button>
+                                                <button class="btn btn-sm" type="button">100%</button>
+                                            </div>
+                                        </div>
+                                        <div class="form-group button maxwidth100100">
+                                            <button class="button-buy btn btn-danger btnwidth100100" type="button">SATIŞ İŞLEMİNİ ONAYLA</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Tab Limit -->
+                        <!-- Tab Stop-Limit -->
+                        <div class="tab-pane fade" id="mobstoplimit" role="tabpanel">
+                            <ul class="mobileinsidetabnav nav nav-tabs nav-justified" role="tablist">
+                                <li class="nav-item"><a class="nav-link nav-buy active" href="#mobstoplimitbuy"data-toggle="tab" role="tab" aria-selected="true"><span>ALIŞ</span></a></li>
+                                <li class="nav-item"><a class="nav-link nav-sell" href="#mobstoplimitsell" data-toggle="tab" role="tab" aria-selected="false"><span>SATIŞ</span></a></li>
+                            </ul>
+                            <div class="mobileinsidetabcont tab-content">
+                                <div class="cont-buy tab-pane show active" id="mobstoplimitbuy" role="tabpanel">
+                                    <div class="boxcolumn-boxtitle">
+                                        <h3 class="boxcolumn-boxtitle-title">Kullanılabilir Bakiye</h3>
+                                        <span class="boxcolumn-boxtitle-wallet">763,300.000 TRY</span>
+                                    </div>
+                                    <form class="mobileinsidetabcont-form formuinew" autocomplete="off" novalidate>
+                                        <div class="form-group fontsize20px colorsetdarkblue">
+                                            <label class="d-flex align-items-center">STOP FİYATI <i class="icon-svg icon-svg-profileinformationyellow formuitooltipgrayautowidth" data-placement="top" data-original-title="Tetikleme Fiyatı"></i></label>
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" value="" data-type="currency">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text">TRY</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group fontsize20px colorsetdarkblue">
+                                            <label>LİMİT FİYATI</label>
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" placeholder="" value="10">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text">TRY</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group colorsetdarkblue">
+                                            <label>TOTAL</label>
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" placeholder="" value="22,500.000">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text">BTC</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>PORTFOY</label>
+                                            <div class="percbtns">
+                                                <button class="btn btn-sm" type="button">25%</button>
+                                                <button class="btn btn-sm" type="button">50%</button>
+                                                <button class="btn btn-sm active" type="button">75%</button>
+                                                <button class="btn btn-sm" type="button">100%</button>
+                                            </div>
+                                        </div>
+                                        <div class="form-group button maxwidth100100">
+                                            <button class="button-buy btn btn-success btnwidth100100" type="button">ALIŞ İŞLEMİNİ ONAYLA</button>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="cont-sell tab-pane" id="mobstoplimitsell" role="tabpanel">
+                                    <div class="boxcolumn-boxtitle">
+                                        <h3 class="boxcolumn-boxtitle-title">Kullanılabilir Bakiye</h3>
+                                        <span class="boxcolumn-boxtitle-wallet">0.123456789 BTC</span>
+                                    </div>
+                                    <form class="mobileinsidetabcont-form formuinew" autocomplete="off" novalidate>
+                                        <div class="form-group fontsize20px colorsetdarkblue">
+                                            <label class="d-flex align-items-center">STOP FİYATI <i class="icon-svg icon-svg-profileinformationyellow formuitooltipgrayautowidth" data-placement="top" data-original-title="Tetikleme Fiyatı"></i></label>
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" value="" data-type="currency">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text">TRY</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group fontsize20px colorsetdarkblue">
+                                            <label>LİMİT FİYATI</label>
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" placeholder="" value="10">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text">TRY</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group colorsetdarkblue">
+                                            <label>TOTAL</label>
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" placeholder="" value="22,500.000">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text">BTC</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>PORTFOY</label>
+                                            <div class="percbtns">
+                                                <button class="btn btn-sm" type="button">25%</button>
+                                                <button class="btn btn-sm" type="button">50%</button>
+                                                <button class="btn btn-sm active" type="button">75%</button>
+                                                <button class="btn btn-sm" type="button">100%</button>
+                                            </div>
+                                        </div>
+                                        <div class="form-group button maxwidth100100">
+                                            <button class="button-buy btn btn-danger btnwidth100100" type="button">SATIŞ İŞLEMİNİ ONAYLA</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Tab Stop-Limit -->
+
                     </div>
+                    <!-- Mobile Tab Content -->
 
-
-                    <div class="trader-order-orders-box order-orders-box tab-content">
-                        <!-- Alert -->
-                        <div class="order-orders-alert">
-                            <div class="alert alert-big alert-sweet alert-sweet-small alert-success alert-dismissible fade show" role="alert">
-                                <div class="alert-flex">
-                                    <div class="alert-icon">
-                                        <div class="alert-icon-success">
-                                            <div class="alert-icon-success-tip"></div>
-                                            <div class="alert-icon-success-long"></div>
-                                            <div class="alert-icon-success-placeholder"></div>
-                                            <div class="alert-icon-success-fix"></div>
-                                        </div>
-                                    </div>
-                                    <div class="alert-big-desc">
-                                        <h4 class="alert-heading">Well done!</h4>
-                                        <p>Aww yeah, you successfully read this important alert message.</p>
-                                    </div>
-                                </div>
-                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="alert alert-big alert-sweet alert-sweet-small alert-warning alert-dismissible fade show" role="alert">
-                                <div class="alert-flex">
-                                    <div class="alert-icon">
-                                        <div class="alert-icon-warning">
-                                            <div class="alert-icon-warning-body"></div>
-                                            <div class="alert-icon-warning-dot"></div>
-                                        </div>
-                                    </div>
-                                    <div class="alert-big-desc">
-                                        <h4 class="alert-heading">Warning!</h4>
-                                        <p>Aww yeah, you successfully read this important alert message.</p>
-                                    </div>
-                                </div>
-                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="alert alert-big alert-sweet alert-sweet-small alert-danger alert-dismissible fade show" role="alert">
-                                <div class="alert-flex">
-                                    <div class="alert-icon">
-                                        <div class="alert-icon-error">
-                                            <div class="alert-icon-error-x">
-                                                <div class="alert-icon-error-left"></div>
-                                                <div class="alert-icon-error-right"></div>
-                                            </div>
-                                            <div class="alert-icon-error-placeholder"></div>
-                                            <div class="alert-icon-error-fix"></div>
-                                        </div>
-                                    </div>
-                                    <div class="alert-big-desc">
-                                        <h4 class="alert-heading">Oops...</h4>
-                                        <p>Aww yeah, you successfully read this important alert message.</p>
-                                    </div>
-                                </div>
-                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                        </div>
-                        <!-- Alert -->
-                        <!-- Alert Sweet Small -->
-                        <script>
-                            $(document).ready(function(){
-                                $(".alert-sweet-small").fadeTo(750, 500).slideUp(500, function() {
-                                    $(".alert-sweet-small").slideUp(500);
-                                });
-                            });
-                        </script>
-                        <!-- Alert Sweet Small -->
-
-                        <div class="tab-pane fade show active" id="MARKET" role="tabpanel" aria-labelledby="tab-MARKET">
-                            <!-- Buy/Sell Start -->
-                            <div class="order-orders-column row">
-                                <div class="order-orders-buy col-6">
-                                    <div class="boxcolumn-boxtitle">
-                                        <h3 class="boxcolumn-boxtitle-title">BTC ALIŞ</h3>
-                                        <span class="boxcolumn-boxtitle-wallet d-flex align-items-center"><i class="icon-svg icon-svg-orderwallet"></i> 763,300.000 TRY</span>
-                                    </div>
-                                    <form class="order-orders-form row formuinew" autocomplete="off" novalidate>
-                                        <div class="form-row">
-                                            <div class="form-group fontsize20px colorsetdisabled col mobile1200width100100">
-                                                <label>PRICE</label>
-                                                <div class="input-group">
-                                                    <div class="form-control">22,430.000</div>
-                                                    <div class="input-group-append">
-                                                        <span class="input-group-text">TRY</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="form-group fontsize20px colorsetdarkblue col">
-                                                <label>AMOUNT</label>
-                                                <div class="input-group">
-                                                    <input type="text" class="form-control" placeholder="" value="10">
-                                                    <div class="input-group-append">
-                                                        <span class="input-group-text">BTC</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="form-group fontsize20px colorsetdarkblue col-md-auto maxwidth110">
-                                                <label>+%</label>
-                                                <select class="form-control custom-select">
-                                                    <option value="01">100%</option>
-                                                    <option value="02">75%</option>
-                                                    <option value="03">50%</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="form-group button maxwidth100100">
-                                            <button class="button-buy btn btn-success btnwidth100100" type="button">ALIŞ YAP - <span>10 BTC</span> <span>224,300.000 TRY</span></button>
-                                        </div>
-                                    </form>
-                                </div>
-                                <div class="order-orders-sell col-6">
-                                    <div class="boxcolumn-boxtitle">
-                                        <h3 class="boxcolumn-boxtitle-title">BTC SATIŞ</h3>
-                                        <span class="boxcolumn-boxtitle-wallet d-flex align-items-center"><i class="icon-svg icon-svg-orderwallet"></i> 0.123456789 BTC</span>
-                                    </div>
-                                    <form class="order-orders-form formuinew row" autocomplete="off" novalidate>
-                                        <div class="form-row">
-                                            <div class="form-group fontsize20px colorsetdarkblue col mobile1200width100100">
-                                                <label>PRICE</label>
-                                                <div class="input-group">
-                                                    <div class="form-control">22,430.000</div>
-                                                    <div class="input-group-append">
-                                                        <span class="input-group-text">TRY</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="form-group fontsize20px colorsetdarkblue col">
-                                                <label>AMOUNT</label>
-                                                <div class="input-group">
-                                                    <input type="text" class="form-control" placeholder="" value="10">
-                                                    <div class="input-group-append">
-                                                        <span class="input-group-text">BTC</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="form-group button maxwidth100100">
-                                            <button class="button-sell btn btn btn-danger btnwidth100100" type="button">SATIŞ YAP - <span>10 BTC</span> <span>224,300.000 TRY</span></button>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                            <!-- Buy/Sell End -->
-                            <!-- Info -->
-                            <div class="order-orders-info">
-                                <strong>VIP ÜCRET</strong> TAKER 0.750% - MAKER 0.750%
-                                <i class="icon-svg icon-svg-orderinformation" data-toggle="popover" data-trigger="focus" tabindex="0" data-container=".order-orders-tooltiparea" data-html="true" data-placement="bottom" data-content="
-                                <div class='tooltip-html'>
-                                <div class='boxcolumn-boxtitle'><span class='boxcolumn-boxtitle-title'>VIP ÜCRET</span><span class='boxcolumn-boxtitle-info'>DESTEK 0850 255 1079</span></div>
-                                <div class='tooltip-html-cont'>
-                                <table class='commision-table sitetable table'><thead><tr><th class='widthpercent30'>TRY HACİM <br class='d-sm-none'>/ 30 GÜN</th><th class='widthpercent30 widthpercent30-responsive sitebggraylight'>PİYASA YAPICI EMİRLER <br class='d-sm-none'>[MAKER]</th><th class='widthpercentspace'></th><th class='widthpercent30 widthpercent30-responsive sitebggraylight'>PİYASA ALICI EMİRLER <br class='d-sm-none'>[TAKER]</th></tr></thead><tbody><tr><td>0-100.000</td><td class='sitebggraylight'>0.0015</td><td></td><td class='sitebggraylight'>0.0035</td></tr><tr><td>100.000-500.000</td><td class='sitebggraylight'>0.0010</td><td></td><td class='sitebggraylight'>0.0030</td></tr><tr><td>500.000-1.000.000</td><td class='sitebggraylight'>0.0005</td><td></td><td class='sitebggraylight'>0.0025</td></tr><tr><td>1.000.000+</td><td class='sitebggraylight'>Sorunuz</td><td></td><td class='sitebggraylight'>Sorunuz</td></tr></tbody></table>
-                                </div>
-                                </div>
-                                "></i>
-                            </div>
-                            <!-- Info -->
-                        </div>
-                        <div class="tab-pane fade" id="LIMIT" role="tabpanel" aria-labelledby="tab-LIMIT">LIMIT</div>
-                        <div class="tab-pane fade" id="STOPLIMIT" role="tabpanel" aria-labelledby="tab-STOPLIMIT">
-                            <!-- Buy/Sell Start -->
-                            <div class="order-orders-column row">
-                                <div class="order-orders-buy col-6">
-                                    <div class="boxcolumn-boxtitle">
-                                        <h3 class="boxcolumn-boxtitle-title">BTC ALIŞ</h3>
-                                        <span class="boxcolumn-boxtitle-wallet d-flex align-items-center"><i class="icon-svg icon-svg-orderwallet"></i> 763,300.000 TRY</span>
-                                    </div>
-                                    <form class="order-orders-form row formuinew" autocomplete="off" novalidate>
-                                        <div class="form-row">
-                                            <div class="form-group fontsize20px colorsetdarkblue col">
-                                                <label class="d-flex align-items-center">STOP FİYATI <i class="icon-svg icon-svg-profileinformationyellow formuitooltipgrayautowidth" data-placement="top" data-original-title="Tetikleme Fiyatı"></i></label>
-                                                <div class="input-group">
-                                                    <input type="text" class="form-control" value="" data-type="currency">
-                                                    <div class="input-group-append">
-                                                        <span class="input-group-text">TRY</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="form-group fontsize20px colorsetdarkblue col">
-                                                <label>LİMİT FİYATI</label>
-                                                <div class="input-group">
-                                                    <input type="text" class="form-control" placeholder="" value="10">
-                                                    <div class="input-group-append">
-                                                        <span class="input-group-text">TRY</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="form-row">
-                                            <div class="form-group fontsize20px colorsetdarkblue col">
-                                                <label>MİKTAR</label>
-                                                <div class="input-group">
-                                                    <div class="form-control">22,430.000</div>
-                                                    <div class="input-group-append">
-                                                        <span class="input-group-text">BTC</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="form-group fontsize20px colorsetdarkblue col">
-                                                <label>PORTFÖY %</label>
-                                                <select class="form-control custom-select">
-                                                    <option value="01">100%</option>
-                                                    <option value="02">75%</option>
-                                                    <option value="03">50%</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="form-group button maxwidth100100">
-                                            <button class="button-buy btn btn-success btnwidth100100" type="button">ALIŞ YAP - <span>10 BTC</span> <span>224,300.000 TRY</span></button>
-                                        </div>
-                                    </form>
-                                </div>
-                                <div class="order-orders-sell col-6">
-                                    <div class="boxcolumn-boxtitle">
-                                        <h3 class="boxcolumn-boxtitle-title">BTC SATIŞ</h3>
-                                        <span class="boxcolumn-boxtitle-wallet d-flex align-items-center"><i class="icon-svg icon-svg-orderwallet"></i> 0.123456789 BTC</span>
-                                    </div>
-                                    <form class="order-orders-form formuinew row" autocomplete="off" novalidate>
-                                        <div class="form-row">
-                                            <div class="form-group fontsize20px colorsetdarkblue col">
-                                                <label class="d-flex align-items-center">STOP FİYATI <i class="icon-svg icon-svg-profileinformationyellow formuitooltipgrayautowidth" data-placement="top" data-original-title="Tetikleme Fiyatı"></i></label>
-                                                <div class="input-group">
-                                                    <input type="text" class="form-control" placeholder="" value="10">
-                                                    <div class="input-group-append">
-                                                        <span class="input-group-text">TRY</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="form-group fontsize20px colorsetdarkblue col">
-                                                <label>LİMİT FİYATI</label>
-                                                <div class="input-group">
-                                                    <input type="text" class="form-control" placeholder="" value="10">
-                                                    <div class="input-group-append">
-                                                        <span class="input-group-text">TRY</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="form-row">
-                                            <div class="form-group fontsize20px colorsetdarkblue col">
-                                                <label>MİKTAR</label>
-                                                <div class="input-group">
-                                                    <div class="form-control">22,430.000</div>
-                                                    <div class="input-group-append">
-                                                        <span class="input-group-text">BTC</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="form-group fontsize20px colorsetdarkblue col">
-                                                <label>PORTFÖY %</label>
-                                                <select class="form-control custom-select">
-                                                    <option value="01">100%</option>
-                                                    <option value="02">75%</option>
-                                                    <option value="03">50%</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="form-group button maxwidth100100">
-                                            <button class="button-sell btn btn btn-danger btnwidth100100" type="button">SATIŞ YAP - <span>10 BTC</span> <span>224,300.000 TRY</span></button>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                            <!-- Buy/Sell End -->
-                            <!-- Info -->
-                            <div class="order-orders-info"><strong>VIP ÜCRET</strong> TAKER 0.750% - MAKER 0.750% <i class="icon-svg icon-svg-orderinformation"></i></div>
-                            <!-- Info -->
-                        </div>
-                    </div>
                     <div class="formuinew-tooltipgrayautowidth"></div>
                     <div class="order-orders-tooltiparea"></div>
                 </div>
                 <!-- Order Tab -->
 
                 <!-- Order Book -->
-                <div class="trader-order-book">
+                <div class="trader-order-book onlymobile">
                     <div class="order-book-contentbox">
                         <div class="order-book-contentbox-rowhead row">
                             <div class="order-book-buy order-book-buy-headtitle col">
@@ -1011,273 +989,206 @@
                             </div>
                         </div>
                         <div class="order-book-contentbox-rowchart row">
-                            <link id="css-perfect-scrollbar" rel="stylesheet" href="../assets/cdn/perfect-scrollbar.min.css">
-                            <script id="script-perfect-scrollbar-jquery" src="../assets/cdn/perfect-scrollbar.jquery.min.js"></script>
-                            <script id="script-perfect-scrollbar" src="../assets/cdn/perfect-scrollbar.min.js"></script>
-                            <script>
-                                if($(window).width() <= 767){
-
-                                    // Centered Depth Charts
-                                    $(window).resize(function() {
-                                        var scrollbarOut    = $('.order-book-contentbox-scrollbar');
-                                        var scrollbarIn     = $('.order-book-contentbox-scrollbar > .order-book-contentbox-chartbox');
-                                        scrollbarOut.scrollLeft((scrollbarIn.width() - scrollbarOut.width()) / 2);
-                                    });
-
-                                    // Perfect Scrollbar
-                                    $(document).ready(function($){
-                                        $('#depthscrollbar').perfectScrollbar();
-                                    });
-
-                                } else {}
-                            </script>
-                            <div id="depthscrollbar" class="order-book-contentbox-scrollbar">
-                                <div class="order-book-contentbox-chartbox">
-                                    <div class="order-book-buy order-book-buy-chart col">
-                                        <div class="order-book-box">
-                                            <div class="order-book-box-rectangle rectangle">
-                                                <div class="order-book-box-chart order-book-box-chart-green"><img src="../assets/img/tradepage/elements/Depth_Bar_Green.svg" alt="Rectangle" width="421" height="401" /></div>
-                                            </div>
-                                            <div class="order-book-box-container">
-                                                <table class="order-book-box-table sitetable table sitetableweburllink hovercellbggreen">
-                                                    <thead>
-                                                    <tr>
-                                                        <th class="depthtable-total">TOPLAM</th>
-                                                        <!-- <th class="depthtable-type">TRY</th> -->
-                                                        <th class="depthtable-amount">MİKTAR</th>
-                                                        <th class="depthtable-price">FİYAT</th>
-                                                    </tr>
-                                                    </thead>
-                                                    <tbody id="buytable">
-                                                    <tr data-href="#">
-                                                        <td class="depthtable-total"> 6160.45 TRY</td>
-                                                        <td class="depthtable-amount">0.13653175 BTC</td>
-                                                        <td class="depthtable-price">45121.00</td>
-                                                    </tr>
-                                                    <tr data-href="#" class="orderactive buy">
-                                                        <td class="depthtable-total"> 18980.53 TRY</td>
-                                                        <td class="depthtable-amount">0.42132142 BTC</td>
-                                                        <td class="depthtable-price">45050.00</td>
-                                                    </tr>
-                                                    <tr data-href="#">
-                                                        <td class="depthtable-total"> 11460.55 TRY</td>
-                                                        <td class="depthtable-amount">0.25454321 BTC</td>
-                                                        <td class="depthtable-price">45024.00</td>
-                                                    </tr>
-                                                    <tr data-href="#">
-                                                        <td class="depthtable-total"> 18954.70 TRY</td>
-                                                        <td class="depthtable-amount">0.42123433 BTC</td>
-                                                        <td class="depthtable-price">44998.00</td>
-                                                    </tr>
-                                                    <tr data-href="#">
-                                                        <td class="depthtable-total"> 5633.42 TRY</td>
-                                                        <td class="depthtable-amount">0.12543242 BTC</td>
-                                                        <td class="depthtable-price">44912.00</td>
-                                                    </tr>
-                                                    <tr data-href="#">
-                                                        <td class="depthtable-total"> 14417.73 TRY</td>
-                                                        <td class="depthtable-amount">0.32145132 BTC</td>
-                                                        <td class="depthtable-price">44852.00</td>
-                                                    </tr>
-                                                    <tr data-href="#">
-                                                        <td class="depthtable-total"> 9642.33 TRY</td>
-                                                        <td class="depthtable-amount">0.21543262 BTC</td>
-                                                        <td class="depthtable-price">44758.00</td>
-                                                    </tr>
-                                                    <tr data-href="#">
-                                                        <td class="depthtable-total"> 39269.26 TRY</td>
-                                                        <td class="depthtable-amount">0.87945121 BTC</td>
-                                                        <td class="depthtable-price">44652.00</td>
-                                                    </tr>
-                                                    <tr data-href="#">
-                                                        <td class="depthtable-total"> 98056.52 TRY</td>
-                                                        <td class="depthtable-amount">2.20351730 BTC</td>
-                                                        <td class="depthtable-price">44500.00</td>
-                                                    </tr>
-                                                    <tr data-href="#">
-                                                        <td class="depthtable-total"> 1043.22 TRY</td>
-                                                        <td class="depthtable-amount">0.02349595 BTC</td>
-                                                        <td class="depthtable-price">44400.00</td>
-                                                    </tr>
-                                                    <tr data-href="#">
-                                                        <td class="depthtable-total"> 300.00 TRY</td>
-                                                        <td class="depthtable-amount">0.00676437 BTC</td>
-                                                        <td class="depthtable-price">44350.00</td>
-                                                    </tr>
-                                                    <tr data-href="#">
-                                                        <td class="depthtable-total"> 2986.95 TRY</td>
-                                                        <td class="depthtable-amount">0.06739197 BTC</td>
-                                                        <td class="depthtable-price">44322.00</td>
-                                                    </tr>
-                                                    <tr data-href="#">
-                                                        <td class="depthtable-total"> 926.62 TRY</td>
-                                                        <td class="depthtable-amount">0.02091693 BTC</td>
-                                                        <td class="depthtable-price">44300.00</td>
-                                                    </tr>
-                                                    <tr data-href="#">
-                                                        <td class="depthtable-total"> 74306.16 TRY</td>
-                                                        <td class="depthtable-amount">1.68056458 BTC</td>
-                                                        <td class="depthtable-price">44215.00</td>
-                                                    </tr>
-                                                    <tr data-href="#">
-                                                        <td class="depthtable-total"> 93985.63 TRY</td>
-                                                        <td class="depthtable-amount">2.13356395 BTC</td>
-                                                        <td class="depthtable-price">44051.00</td>
-                                                    </tr>
-                                                    <tr data-href="#">
-                                                        <td class="depthtable-total"> 948.28 TRY</td>
-                                                        <td class="depthtable-amount">0.02154213 BTC</td>
-                                                        <td class="depthtable-price">44020.00</td>
-                                                    </tr>
-                                                    <tr data-href="#">
-                                                        <td class="depthtable-total"> 48444.20 TRY</td>
-                                                        <td class="depthtable-amount">1.10100455 BTC</td>
-                                                        <td class="depthtable-price">44000.00</td>
-                                                    </tr>
-                                                    <tr data-href="#">
-                                                        <td class="depthtable-total"> 44933.60 TRY</td>
-                                                        <td class="depthtable-amount">1.02154321 BTC</td>
-                                                        <td class="depthtable-price">43986.00</td>
-                                                    </tr>
-                                                    <tr data-href="#">
-                                                        <td class="depthtable-total"> 47490.94 TRY</td>
-                                                        <td class="depthtable-amount">1.08303160 BTC</td>
-                                                        <td class="depthtable-price">43850.00</td>
-                                                    </tr>
-                                                    <tr data-href="#">
-                                                        <td class="depthtable-total"> 400.00 TRY</td>
-                                                        <td class="depthtable-amount">0.00919540 BTC</td>
-                                                        <td class="depthtable-price">43500.00</td>
-                                                    </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
+                            <div class="order-book-contentbox-chartbox">
+                                <div class="order-book-buy order-book-buy-chart col">
+                                    <div class="order-book-box">
+                                        <div class="order-book-box-rectangle rectangle">
+                                            <div class="order-book-box-chart order-book-box-chart-green"><img src="../assets/img/tradepage/elements/Depth_Bar_Green.svg" alt="Rectangle" width="421" height="401" /></div>
+                                        </div>
+                                        <div class="order-book-box-container">
+                                            <table class="order-book-box-table sitetable table sitetableweburllink hovercellbggreen">
+                                                <thead>
+                                                <tr>
+                                                    <th class="depthtable-amount">MİKTAR</th>
+                                                    <th class="depthtable-price">FİYAT</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody id="buytable">
+                                                <tr data-href="#">
+                                                    <td class="depthtable-amount">0.13653175 BTC</td>
+                                                    <td class="depthtable-price">45121.00</td>
+                                                </tr>
+                                                <tr data-href="#" class="orderactive buy">
+                                                    <td class="depthtable-amount">0.42132142 BTC</td>
+                                                    <td class="depthtable-price">45050.00</td>
+                                                </tr>
+                                                <tr data-href="#">
+                                                    <td class="depthtable-amount">0.25454321 BTC</td>
+                                                    <td class="depthtable-price">45024.00</td>
+                                                </tr>
+                                                <tr data-href="#">
+                                                    <td class="depthtable-amount">0.42123433 BTC</td>
+                                                    <td class="depthtable-price">44998.00</td>
+                                                </tr>
+                                                <tr data-href="#">
+                                                    <td class="depthtable-amount">0.12543242 BTC</td>
+                                                    <td class="depthtable-price">44912.00</td>
+                                                </tr>
+                                                <tr data-href="#">
+                                                    <td class="depthtable-amount">0.32145132 BTC</td>
+                                                    <td class="depthtable-price">44852.00</td>
+                                                </tr>
+                                                <tr data-href="#">
+                                                    <td class="depthtable-amount">0.21543262 BTC</td>
+                                                    <td class="depthtable-price">44758.00</td>
+                                                </tr>
+                                                <tr data-href="#">
+                                                    <td class="depthtable-amount">0.87945121 BTC</td>
+                                                    <td class="depthtable-price">44652.00</td>
+                                                </tr>
+                                                <tr data-href="#">
+                                                    <td class="depthtable-amount">2.20351730 BTC</td>
+                                                    <td class="depthtable-price">44500.00</td>
+                                                </tr>
+                                                <tr data-href="#">
+                                                    <td class="depthtable-amount">0.02349595 BTC</td>
+                                                    <td class="depthtable-price">44400.00</td>
+                                                </tr>
+                                                <tr data-href="#">
+                                                    <td class="depthtable-amount">0.00676437 BTC</td>
+                                                    <td class="depthtable-price">44350.00</td>
+                                                </tr>
+                                                <tr data-href="#">
+                                                    <td class="depthtable-amount">0.06739197 BTC</td>
+                                                    <td class="depthtable-price">44322.00</td>
+                                                </tr>
+                                                <tr data-href="#">
+                                                    <td class="depthtable-amount">0.02091693 BTC</td>
+                                                    <td class="depthtable-price">44300.00</td>
+                                                </tr>
+                                                <tr data-href="#">
+                                                    <td class="depthtable-amount">1.68056458 BTC</td>
+                                                    <td class="depthtable-price">44215.00</td>
+                                                </tr>
+                                                <tr data-href="#">
+                                                    <td class="depthtable-amount">2.13356395 BTC</td>
+                                                    <td class="depthtable-price">44051.00</td>
+                                                </tr>
+                                                <tr data-href="#">
+                                                    <td class="depthtable-amount">0.02154213 BTC</td>
+                                                    <td class="depthtable-price">44020.00</td>
+                                                </tr>
+                                                <tr data-href="#">
+                                                    <td class="depthtable-amount">1.10100455 BTC</td>
+                                                    <td class="depthtable-price">44000.00</td>
+                                                </tr>
+                                                <tr data-href="#">
+                                                    <td class="depthtable-amount">1.02154321 BTC</td>
+                                                    <td class="depthtable-price">43986.00</td>
+                                                </tr>
+                                                <tr data-href="#">
+                                                    <td class="depthtable-amount">1.08303160 BTC</td>
+                                                    <td class="depthtable-price">43850.00</td>
+                                                </tr>
+                                                <tr data-href="#">
+                                                    <td class="depthtable-amount">0.00919540 BTC</td>
+                                                    <td class="depthtable-price">43500.00</td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
                                         </div>
                                     </div>
-                                    <div class="order-book-sell order-book-sell-chart col">
-                                        <div class="order-book-box">
-                                            <div class="order-book-box-rectangle rectangle">
-                                                <div class="order-book-box-chart order-book-box-chart-red"><img src="../assets/img/tradepage/elements/Depth_Bar_Red.svg" alt="Rectangle" width="421" height="401" /></div>
-                                            </div>
-                                            <div class="order-book-box-container">
-                                                <table class="order-book-box-table sitetable table sitetableweburllink hovercellbgred">
-                                                    <thead>
-                                                    <tr>
-                                                        <th class="depthtable-price">FİYAT</th>
-                                                        <th class="depthtable-amount">MİKTAR</th>
-                                                        <!-- <th class="depthtable-type">TRY</th> -->
-                                                        <th class="depthtable-total">TOPLAM</th>
-                                                    </tr>
-                                                    </thead>
-                                                    <tbody id="selltable">
-                                                    <tr data-href="#">
-                                                        <td class="depthtable-price">45255.00</td>
-                                                        <td class="depthtable-amount">0.00239200 BTC</td>
-                                                        <td class="depthtable-total">108.25 TRY</td>
-                                                    </tr>
-                                                    <tr data-href="#">
-                                                        <td class="depthtable-price">45354.00</td>
-                                                        <td class="depthtable-amount">0.05336213 BTC</td>
-                                                        <td class="depthtable-total">2420.19 TRY</td>
-                                                    </tr>
-                                                    <tr data-href="#">
-                                                        <td class="depthtable-price">45411.00</td>
-                                                        <td class="depthtable-amount">0.18608730 BTC</td>
-                                                        <td class="depthtable-total">8450.41 TRY</td>
-                                                    </tr>
-                                                    <tr data-href="#">
-                                                        <td class="depthtable-price">45412.00</td>
-                                                        <td class="depthtable-amount">0.21455332 BTC</td>
-                                                        <td class="depthtable-total">9743.30 TRY</td>
-                                                    </tr>
-                                                    <tr data-href="#">
-                                                        <td class="depthtable-price">45445.00</td>
-                                                        <td class="depthtable-amount">0.15543214 BTC</td>
-                                                        <td class="depthtable-total">7063.61 TRY</td>
-                                                    </tr>
-                                                    <tr data-href="#">
-                                                        <td class="depthtable-price">45453.00</td>
-                                                        <td class="depthtable-amount">0.10120690 BTC</td>
-                                                        <td class="depthtable-total">4600.16 TRY</td>
-                                                    </tr>
-                                                    <tr data-href="#">
-                                                        <td class="depthtable-price">45480.00</td>
-                                                        <td class="depthtable-amount">0.02155410 BTC</td>
-                                                        <td class="depthtable-total">980.28 TRY</td>
-                                                    </tr>
-                                                    <tr class="orderactive sell">
-                                                        <td class="depthtable-price">45500.00</td>
-                                                        <td class="depthtable-amount">0.01648909 BTC</td>
-                                                        <td class="depthtable-total">750.25 TRY</td>
-                                                    </tr>
-                                                    <tr data-href="#">
-                                                        <td class="depthtable-price">45561.00</td>
-                                                        <td class="depthtable-amount">0.11215431 BTC</td>
-                                                        <td class="depthtable-total">5109.86 TRY</td>
-                                                    </tr>
-                                                    <tr data-href="#">
-                                                        <td class="depthtable-price">45700.00</td>
-                                                        <td class="depthtable-amount">0.00188877 BTC</td>
-                                                        <td class="depthtable-total">86.32 TRY</td>
-                                                    </tr>
-                                                    <tr data-href="#">
-                                                        <td class="depthtable-price">45751.00</td>
-                                                        <td class="depthtable-amount">0.60237179 BTC</td>
-                                                        <td class="depthtable-total">27559.11 TRY</td>
-                                                    </tr>
-                                                    <tr data-href="#">
-                                                        <td class="depthtable-price">46051.00</td>
-                                                        <td class="depthtable-amount">1.15393240 BTC</td>
-                                                        <td class="depthtable-total">53139.74 TRY</td>
-                                                    </tr>
-                                                    <tr data-href="#">
-                                                        <td class="depthtable-price">46652.00</td>
-                                                        <td class="depthtable-amount">1.12468525 BTC</td>
-                                                        <td class="depthtable-total">52468.82 TRY</td>
-                                                    </tr>
-                                                    <tr data-href="#">
-                                                        <td class="depthtable-price">47000.00</td>
-                                                        <td class="depthtable-amount">0.00074937 BTC</td>
-                                                        <td class="depthtable-total">35.22 TRY</td>
-                                                    </tr>
-                                                    <tr data-href="#">
-                                                        <td class="depthtable-price">47052.00</td>
-                                                        <td class="depthtable-amount">0.25075588 BTC</td>
-                                                        <td class="depthtable-total">11798.57 TRY</td>
-                                                    </tr>
-                                                    <tr data-href="#">
-                                                        <td class="depthtable-price">47550.00</td>
-                                                        <td class="depthtable-amount">1.28089555 BTC</td>
-                                                        <td class="depthtable-total">60906.58 TRY</td>
-                                                    </tr>
-                                                    <tr data-href="#">
-                                                        <td class="depthtable-price">47811.00</td>
-                                                        <td class="depthtable-amount">1.20099505 BTC</td>
-                                                        <td class="depthtable-total">57420.77 TRY</td>
-                                                    </tr>
-                                                    <tr data-href="#">
-                                                        <td class="depthtable-price">47850.00</td>
-                                                        <td class="depthtable-amount">0.01209001 BTC</td>
-                                                        <td class="depthtable-total">578.51 TRY</td>
-                                                    </tr>
-                                                    <tr data-href="#">
-                                                        <td class="depthtable-price">48000.00</td>
-                                                        <td class="depthtable-amount">0.00174754 BTC</td>
-                                                        <td class="depthtable-total">83.88 TRY</td>
-                                                    </tr>
-                                                    <tr data-href="#">
-                                                        <td class="depthtable-price">48101.00</td>
-                                                        <td class="depthtable-amount">1.29329557 BTC</td>
-                                                        <td class="depthtable-total">62208.81 TRY</td>
-                                                    </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
+                                </div>
+                                <div class="order-book-sell order-book-sell-chart col">
+                                    <div class="order-book-box">
+                                        <div class="order-book-box-rectangle rectangle">
+                                            <div class="order-book-box-chart order-book-box-chart-red"><img src="../assets/img/tradepage/elements/Depth_Bar_Red.svg" alt="Rectangle" width="421" height="401" /></div>
+                                        </div>
+                                        <div class="order-book-box-container">
+                                            <table class="order-book-box-table sitetable table sitetableweburllink hovercellbgred">
+                                                <thead>
+                                                <tr>
+                                                    <th class="depthtable-price">FİYAT</th>
+                                                    <th class="depthtable-amount">MİKTAR</th>
+                                                </tr>
+                                                </thead>
+                                                <tbody id="selltable">
+                                                <tr data-href="#">
+                                                    <td class="depthtable-price">45255.00</td>
+                                                    <td class="depthtable-amount">0.00239200 BTC</td>
+                                                </tr>
+                                                <tr data-href="#">
+                                                    <td class="depthtable-price">45354.00</td>
+                                                    <td class="depthtable-amount">0.05336213 BTC</td>
+                                                </tr>
+                                                <tr data-href="#">
+                                                    <td class="depthtable-price">45411.00</td>
+                                                    <td class="depthtable-amount">0.18608730 BTC</td>
+                                                </tr>
+                                                <tr data-href="#">
+                                                    <td class="depthtable-price">45412.00</td>
+                                                    <td class="depthtable-amount">0.21455332 BTC</td>
+                                                </tr>
+                                                <tr data-href="#">
+                                                    <td class="depthtable-price">45445.00</td>
+                                                    <td class="depthtable-amount">0.15543214 BTC</td>
+                                                </tr>
+                                                <tr data-href="#">
+                                                    <td class="depthtable-price">45453.00</td>
+                                                    <td class="depthtable-amount">0.10120690 BTC</td>
+                                                </tr>
+                                                <tr data-href="#">
+                                                    <td class="depthtable-price">45480.00</td>
+                                                    <td class="depthtable-amount">0.02155410 BTC</td>
+                                                </tr>
+                                                <tr class="orderactive sell">
+                                                    <td class="depthtable-price">45500.00</td>
+                                                    <td class="depthtable-amount">0.01648909 BTC</td>
+                                                </tr>
+                                                <tr data-href="#">
+                                                    <td class="depthtable-price">45561.00</td>
+                                                    <td class="depthtable-amount">0.11215431 BTC</td>
+                                                </tr>
+                                                <tr data-href="#">
+                                                    <td class="depthtable-price">45700.00</td>
+                                                    <td class="depthtable-amount">0.00188877 BTC</td>
+                                                </tr>
+                                                <tr data-href="#">
+                                                    <td class="depthtable-price">45751.00</td>
+                                                    <td class="depthtable-amount">0.60237179 BTC</td>
+                                                </tr>
+                                                <tr data-href="#">
+                                                    <td class="depthtable-price">46051.00</td>
+                                                    <td class="depthtable-amount">1.15393240 BTC</td>
+                                                </tr>
+                                                <tr data-href="#">
+                                                    <td class="depthtable-price">46652.00</td>
+                                                    <td class="depthtable-amount">1.12468525 BTC</td>
+                                                </tr>
+                                                <tr data-href="#">
+                                                    <td class="depthtable-price">47000.00</td>
+                                                    <td class="depthtable-amount">0.00074937 BTC</td>
+                                                </tr>
+                                                <tr data-href="#">
+                                                    <td class="depthtable-price">47052.00</td>
+                                                    <td class="depthtable-amount">0.25075588 BTC</td>
+                                                </tr>
+                                                <tr data-href="#">
+                                                    <td class="depthtable-price">47550.00</td>
+                                                    <td class="depthtable-amount">1.28089555 BTC</td>
+                                                </tr>
+                                                <tr data-href="#">
+                                                    <td class="depthtable-price">47811.00</td>
+                                                    <td class="depthtable-amount">1.20099505 BTC</td>
+                                                </tr>
+                                                <tr data-href="#">
+                                                    <td class="depthtable-price">47850.00</td>
+                                                    <td class="depthtable-amount">0.01209001 BTC</td>
+                                                </tr>
+                                                <tr data-href="#">
+                                                    <td class="depthtable-price">48000.00</td>
+                                                    <td class="depthtable-amount">0.00174754 BTC</td>
+                                                </tr>
+                                                <tr data-href="#">
+                                                    <td class="depthtable-price">48101.00</td>
+                                                    <td class="depthtable-amount">1.29329557 BTC</td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-
                         </div>
                     </div>
                 </div>
