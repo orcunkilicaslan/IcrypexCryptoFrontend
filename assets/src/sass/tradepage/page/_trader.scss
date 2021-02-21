@@ -323,6 +323,12 @@ $tradepageHomepageImgPath : "../../img/tradepage";
         }
       }
 
+      > .sidebar-tradepage.onlymobile{
+        @include ReSassWidthResponsive(992){
+          display: none !important;
+        }
+      }
+
     }
 
     &-wrapper{
