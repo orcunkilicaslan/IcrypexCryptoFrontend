@@ -228,7 +228,7 @@ $tradepageHomepageImgPath : "../../img/tradepage";
 
     &.onlymobile{
 
-      .collapse:not(.show){display: block}
+      //.collapse:not(.show){display: block}
 
       @include ReSassWidthResponsive(992){
         padding: 0;
@@ -238,7 +238,7 @@ $tradepageHomepageImgPath : "../../img/tradepage";
           padding-bottom: 0;
         }
 
-        .collapse:not(.show){display: none}
+        //.collapse:not(.show){display: none}
 
         .bigchart-chart{
           padding-top: 15px;
