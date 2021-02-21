@@ -569,12 +569,8 @@
                                             <td data-title="ALIŞ" style="cursor: pointer;" class="sidebar-marketdata-table-bid p_r sitecolorgreen" id="b-MPAYTRY">0.0651</td>
                                             <td data-title="SATIŞ" style="cursor: pointer;" class="sidebar-marketdata-table-ask p_r sitecolorred" id="a-MPAYTRY">0.1009</td>
                                         </tr>
-
-
-
                                         </tbody>
                                     </table>
-                                    <div class="ps__scrollbar-x-rail" style="left: 0px; bottom: 0px;"><div class="ps__scrollbar-x" tabindex="0" style="left: 0px; width: 0px;"></div></div><div class="ps__scrollbar-y-rail" style="top: 0px; height: 325px; right: 0px;"><div class="ps__scrollbar-y" tabindex="0" style="top: 0px; height: 162px;"></div></div></div>
                             </div>
                         </div>
 
@@ -587,6 +583,9 @@
                                 });
                             });
                         </script>
+                        <link id="css-perfect-scrollbar" rel="stylesheet" href="../assets/cdn/perfect-scrollbar.min.css">
+                        <script id="script-perfect-scrollbar-jquery" src="../assets/cdn/perfect-scrollbar.jquery.min.js"></script>
+                        <script id="script-perfect-scrollbar" src="../assets/cdn/perfect-scrollbar.min.js"></script>
                         <script>
                             // Perfect Scrollbar
                             $(document).ready(function($){
@@ -596,7 +595,7 @@
                     </div>
 
                 </div>
-
+                </div>
             </div>
             <!-- Market Data End -->
 
@@ -875,6 +874,15 @@
                                             </div>
                                         </div>
                                         <div class="form-group colorsetdarkblue">
+                                            <label>AMOUNT</label>
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" placeholder="" value="0,003.000">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text">BTC</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group colorsetdarkblue">
                                             <label>TOTAL</label>
                                             <div class="input-group">
                                                 <input type="text" class="form-control" placeholder="" value="22,500.000">
@@ -918,6 +926,15 @@
                                                 <input type="text" class="form-control" placeholder="" value="10">
                                                 <div class="input-group-append">
                                                     <span class="input-group-text">TRY</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group colorsetdarkblue">
+                                            <label>AMOUNT</label>
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" placeholder="" value="0,003.000">
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text">BTC</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -999,89 +1016,89 @@
                                             <table class="order-book-box-table sitetable table sitetableweburllink hovercellbggreen">
                                                 <thead>
                                                 <tr>
-                                                    <th class="depthtable-amount">MİKTAR</th>
-                                                    <th class="depthtable-price">FİYAT</th>
+                                                    <th class="depthtable-amount">MİKTAR (BTC)</th>
+                                                    <th class="depthtable-price">FİYAT (TRY)</th>
                                                 </tr>
                                                 </thead>
                                                 <tbody id="buytable">
                                                 <tr data-href="#">
-                                                    <td class="depthtable-amount">0.13653175 BTC</td>
+                                                    <td class="depthtable-amount">0.13653175 </td>
                                                     <td class="depthtable-price">45121.00</td>
                                                 </tr>
                                                 <tr data-href="#" class="orderactive buy">
-                                                    <td class="depthtable-amount">0.42132142 BTC</td>
+                                                    <td class="depthtable-amount">0.42132142</td>
                                                     <td class="depthtable-price">45050.00</td>
                                                 </tr>
                                                 <tr data-href="#">
-                                                    <td class="depthtable-amount">0.25454321 BTC</td>
+                                                    <td class="depthtable-amount">0.25454321</td>
                                                     <td class="depthtable-price">45024.00</td>
                                                 </tr>
                                                 <tr data-href="#">
-                                                    <td class="depthtable-amount">0.42123433 BTC</td>
+                                                    <td class="depthtable-amount">0.42123433</td>
                                                     <td class="depthtable-price">44998.00</td>
                                                 </tr>
                                                 <tr data-href="#">
-                                                    <td class="depthtable-amount">0.12543242 BTC</td>
+                                                    <td class="depthtable-amount">0.12543242</td>
                                                     <td class="depthtable-price">44912.00</td>
                                                 </tr>
                                                 <tr data-href="#">
-                                                    <td class="depthtable-amount">0.32145132 BTC</td>
+                                                    <td class="depthtable-amount">0.32145132</td>
                                                     <td class="depthtable-price">44852.00</td>
                                                 </tr>
                                                 <tr data-href="#">
-                                                    <td class="depthtable-amount">0.21543262 BTC</td>
+                                                    <td class="depthtable-amount">0.21543262</td>
                                                     <td class="depthtable-price">44758.00</td>
                                                 </tr>
                                                 <tr data-href="#">
-                                                    <td class="depthtable-amount">0.87945121 BTC</td>
+                                                    <td class="depthtable-amount">0.87945121</td>
                                                     <td class="depthtable-price">44652.00</td>
                                                 </tr>
                                                 <tr data-href="#">
-                                                    <td class="depthtable-amount">2.20351730 BTC</td>
+                                                    <td class="depthtable-amount">2.20351730</td>
                                                     <td class="depthtable-price">44500.00</td>
                                                 </tr>
                                                 <tr data-href="#">
-                                                    <td class="depthtable-amount">0.02349595 BTC</td>
+                                                    <td class="depthtable-amount">0.02349595</td>
                                                     <td class="depthtable-price">44400.00</td>
                                                 </tr>
                                                 <tr data-href="#">
-                                                    <td class="depthtable-amount">0.00676437 BTC</td>
+                                                    <td class="depthtable-amount">0.00676437</td>
                                                     <td class="depthtable-price">44350.00</td>
                                                 </tr>
                                                 <tr data-href="#">
-                                                    <td class="depthtable-amount">0.06739197 BTC</td>
+                                                    <td class="depthtable-amount">0.06739197</td>
                                                     <td class="depthtable-price">44322.00</td>
                                                 </tr>
                                                 <tr data-href="#">
-                                                    <td class="depthtable-amount">0.02091693 BTC</td>
+                                                    <td class="depthtable-amount">0.02091693</td>
                                                     <td class="depthtable-price">44300.00</td>
                                                 </tr>
                                                 <tr data-href="#">
-                                                    <td class="depthtable-amount">1.68056458 BTC</td>
+                                                    <td class="depthtable-amount">1.68056458</td>
                                                     <td class="depthtable-price">44215.00</td>
                                                 </tr>
                                                 <tr data-href="#">
-                                                    <td class="depthtable-amount">2.13356395 BTC</td>
+                                                    <td class="depthtable-amount">2.13356395</td>
                                                     <td class="depthtable-price">44051.00</td>
                                                 </tr>
                                                 <tr data-href="#">
-                                                    <td class="depthtable-amount">0.02154213 BTC</td>
+                                                    <td class="depthtable-amount">0.02154213</td>
                                                     <td class="depthtable-price">44020.00</td>
                                                 </tr>
                                                 <tr data-href="#">
-                                                    <td class="depthtable-amount">1.10100455 BTC</td>
+                                                    <td class="depthtable-amount">1.10100455</td>
                                                     <td class="depthtable-price">44000.00</td>
                                                 </tr>
                                                 <tr data-href="#">
-                                                    <td class="depthtable-amount">1.02154321 BTC</td>
+                                                    <td class="depthtable-amount">1.02154321</td>
                                                     <td class="depthtable-price">43986.00</td>
                                                 </tr>
                                                 <tr data-href="#">
-                                                    <td class="depthtable-amount">1.08303160 BTC</td>
+                                                    <td class="depthtable-amount">1.08303160</td>
                                                     <td class="depthtable-price">43850.00</td>
                                                 </tr>
                                                 <tr data-href="#">
-                                                    <td class="depthtable-amount">0.00919540 BTC</td>
+                                                    <td class="depthtable-amount">0.00919540</td>
                                                     <td class="depthtable-price">43500.00</td>
                                                 </tr>
                                                 </tbody>
@@ -1098,90 +1115,90 @@
                                             <table class="order-book-box-table sitetable table sitetableweburllink hovercellbgred">
                                                 <thead>
                                                 <tr>
-                                                    <th class="depthtable-price">FİYAT</th>
-                                                    <th class="depthtable-amount">MİKTAR</th>
+                                                    <th class="depthtable-price">FİYAT (TRY)</th>
+                                                    <th class="depthtable-amount">MİKTAR (BTC)</th>
                                                 </tr>
                                                 </thead>
                                                 <tbody id="selltable">
                                                 <tr data-href="#">
                                                     <td class="depthtable-price">45255.00</td>
-                                                    <td class="depthtable-amount">0.00239200 BTC</td>
+                                                    <td class="depthtable-amount">0.00239200</td>
                                                 </tr>
                                                 <tr data-href="#">
                                                     <td class="depthtable-price">45354.00</td>
-                                                    <td class="depthtable-amount">0.05336213 BTC</td>
+                                                    <td class="depthtable-amount">0.05336213</td>
                                                 </tr>
                                                 <tr data-href="#">
                                                     <td class="depthtable-price">45411.00</td>
-                                                    <td class="depthtable-amount">0.18608730 BTC</td>
+                                                    <td class="depthtable-amount">0.18608730</td>
                                                 </tr>
                                                 <tr data-href="#">
                                                     <td class="depthtable-price">45412.00</td>
-                                                    <td class="depthtable-amount">0.21455332 BTC</td>
+                                                    <td class="depthtable-amount">0.21455332</td>
                                                 </tr>
                                                 <tr data-href="#">
                                                     <td class="depthtable-price">45445.00</td>
-                                                    <td class="depthtable-amount">0.15543214 BTC</td>
+                                                    <td class="depthtable-amount">0.15543214</td>
                                                 </tr>
                                                 <tr data-href="#">
                                                     <td class="depthtable-price">45453.00</td>
-                                                    <td class="depthtable-amount">0.10120690 BTC</td>
+                                                    <td class="depthtable-amount">0.10120690</td>
                                                 </tr>
                                                 <tr data-href="#">
                                                     <td class="depthtable-price">45480.00</td>
-                                                    <td class="depthtable-amount">0.02155410 BTC</td>
+                                                    <td class="depthtable-amount">0.02155410</td>
                                                 </tr>
                                                 <tr class="orderactive sell">
                                                     <td class="depthtable-price">45500.00</td>
-                                                    <td class="depthtable-amount">0.01648909 BTC</td>
+                                                    <td class="depthtable-amount">0.01648909</td>
                                                 </tr>
                                                 <tr data-href="#">
                                                     <td class="depthtable-price">45561.00</td>
-                                                    <td class="depthtable-amount">0.11215431 BTC</td>
+                                                    <td class="depthtable-amount">0.11215431</td>
                                                 </tr>
                                                 <tr data-href="#">
                                                     <td class="depthtable-price">45700.00</td>
-                                                    <td class="depthtable-amount">0.00188877 BTC</td>
+                                                    <td class="depthtable-amount">0.00188877</td>
                                                 </tr>
                                                 <tr data-href="#">
                                                     <td class="depthtable-price">45751.00</td>
-                                                    <td class="depthtable-amount">0.60237179 BTC</td>
+                                                    <td class="depthtable-amount">0.60237179</td>
                                                 </tr>
                                                 <tr data-href="#">
                                                     <td class="depthtable-price">46051.00</td>
-                                                    <td class="depthtable-amount">1.15393240 BTC</td>
+                                                    <td class="depthtable-amount">1.15393240</td>
                                                 </tr>
                                                 <tr data-href="#">
                                                     <td class="depthtable-price">46652.00</td>
-                                                    <td class="depthtable-amount">1.12468525 BTC</td>
+                                                    <td class="depthtable-amount">1.12468525</td>
                                                 </tr>
                                                 <tr data-href="#">
                                                     <td class="depthtable-price">47000.00</td>
-                                                    <td class="depthtable-amount">0.00074937 BTC</td>
+                                                    <td class="depthtable-amount">0.00074937</td>
                                                 </tr>
                                                 <tr data-href="#">
                                                     <td class="depthtable-price">47052.00</td>
-                                                    <td class="depthtable-amount">0.25075588 BTC</td>
+                                                    <td class="depthtable-amount">0.25075588</td>
                                                 </tr>
                                                 <tr data-href="#">
                                                     <td class="depthtable-price">47550.00</td>
-                                                    <td class="depthtable-amount">1.28089555 BTC</td>
+                                                    <td class="depthtable-amount">1.28089555</td>
                                                 </tr>
                                                 <tr data-href="#">
                                                     <td class="depthtable-price">47811.00</td>
-                                                    <td class="depthtable-amount">1.20099505 BTC</td>
+                                                    <td class="depthtable-amount">1.20099505</td>
                                                 </tr>
                                                 <tr data-href="#">
                                                     <td class="depthtable-price">47850.00</td>
-                                                    <td class="depthtable-amount">0.01209001 BTC</td>
+                                                    <td class="depthtable-amount">0.01209001</td>
                                                 </tr>
                                                 <tr data-href="#">
                                                     <td class="depthtable-price">48000.00</td>
-                                                    <td class="depthtable-amount">0.00174754 BTC</td>
+                                                    <td class="depthtable-amount">0.00174754</td>
                                                 </tr>
                                                 <tr data-href="#">
                                                     <td class="depthtable-price">48101.00</td>
-                                                    <td class="depthtable-amount">1.29329557 BTC</td>
+                                                    <td class="depthtable-amount">1.29329557</td>
                                                 </tr>
                                                 </tbody>
                                             </table>
@@ -1213,7 +1230,6 @@
                                     <th class="order-open-table-purchase-price">FİYAT <span class="tableicon"><i class="tableicon-arrowup"></i><i class="tableicon-arrowdown"></i></span></th>
                                     <th class="order-open-table-amount">MİKTAR <span class="tableicon"><i class="tableicon-arrowup"></i><i class="tableicon-arrowdown"></i></span></th>
                                     <th class="order-open-table-commission">KOMİSYON <span class="tableicon"><i class="tableicon-arrowup"></i><i class="tableicon-arrowdown"></i></span></th>
-                                    <!-- <th class="order-open-box-table-time">TIME <span class="tableicon"><i class="tableicon-arrowup"></i><i class="tableicon-arrowdown"></i></span></th> -->
                                     <th class="order-open-table-edit">SİL</th>
                                 </tr>
                                 </thead>
