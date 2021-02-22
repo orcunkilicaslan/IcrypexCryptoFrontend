@@ -690,6 +690,75 @@
                     </ul>
                     <!-- Mobile Tab Nav -->
 
+                    <!-- Mobile Alert Sweet -->
+                    <div class="order-orders-alert p-0">
+                        <div class="alert alert-big alert-sweet alert-sweet-small alert-success alert-dismissible fade show" role="alert">
+                            <div class="alert-flex">
+                                <div class="alert-icon">
+                                    <div class="alert-icon-success">
+                                        <div class="alert-icon-success-tip"></div>
+                                        <div class="alert-icon-success-long"></div>
+                                        <div class="alert-icon-success-placeholder"></div>
+                                        <div class="alert-icon-success-fix"></div>
+                                    </div>
+                                </div>
+                                <div class="alert-big-desc">
+                                    <h4 class="alert-heading">Well done!</h4>
+                                    <p>Aww yeah, you successfully read this important alert message.</p>
+                                </div>
+                            </div>
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="alert alert-big alert-sweet alert-sweet-small alert-warning alert-dismissible fade show" role="alert">
+                            <div class="alert-flex">
+                                <div class="alert-icon">
+                                    <div class="alert-icon-warning">
+                                        <div class="alert-icon-warning-body"></div>
+                                        <div class="alert-icon-warning-dot"></div>
+                                    </div>
+                                </div>
+                                <div class="alert-big-desc">
+                                    <h4 class="alert-heading">Warning!</h4>
+                                    <p>Aww yeah, you successfully read this important alert message.</p>
+                                </div>
+                            </div>
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="alert alert-big alert-sweet alert-sweet-small alert-danger alert-dismissible fade show" role="alert">
+                            <div class="alert-flex">
+                                <div class="alert-icon">
+                                    <div class="alert-icon-error">
+                                        <div class="alert-icon-error-x">
+                                            <div class="alert-icon-error-left"></div>
+                                            <div class="alert-icon-error-right"></div>
+                                        </div>
+                                        <div class="alert-icon-error-placeholder"></div>
+                                        <div class="alert-icon-error-fix"></div>
+                                    </div>
+                                </div>
+                                <div class="alert-big-desc">
+                                    <h4 class="alert-heading">Oops...</h4>
+                                    <p>Aww yeah, you successfully read this important alert message.</p>
+                                </div>
+                            </div>
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                    </div>
+                    <script>
+                        $(document).ready(function(){
+                            $(".alert-sweet-small").fadeTo(750, 500).slideUp(500, function() {
+                                $(".alert-sweet-small").slideUp(500);
+                            });
+                        });
+                    </script>
+                    <!-- Mobile Alert Sweet -->
+
                     <!-- Mobile Tab Content -->
                     <div class="trader-order-orders-tabmobilecont tab-content">
 
@@ -1026,6 +1095,20 @@
 
                     </div>
                     <!-- Mobile Tab Content -->
+
+                    <!-- Mobile Commission Info -->
+                    <div class="order-orders-info d-none">
+                        <strong>VIP ÜCRET</strong> TAKER 0.750% - MAKER 0.750%
+                        <i class="icon-svg icon-svg-orderinformation" data-toggle="popover" data-trigger="focus" tabindex="0" data-container=".order-orders-tooltiparea" data-html="true" data-placement="bottom" data-content="
+                                <div class='tooltip-html'>
+                                <div class='boxcolumn-boxtitle'><span class='boxcolumn-boxtitle-title'>VIP ÜCRET</span><span class='boxcolumn-boxtitle-info'>DESTEK 0850 255 1079</span></div>
+                                <div class='tooltip-html-cont'>
+                                <table class='commision-table sitetable table'><thead><tr><th class='widthpercent30'>TRY HACİM <br class='d-sm-none'>/ 30 GÜN</th><th class='widthpercent30 widthpercent30-responsive sitebggraylight'>PİYASA YAPICI EMİRLER <br class='d-sm-none'>[MAKER]</th><th class='widthpercentspace'></th><th class='widthpercent30 widthpercent30-responsive sitebggraylight'>PİYASA ALICI EMİRLER <br class='d-sm-none'>[TAKER]</th></tr></thead><tbody><tr><td>0-100.000</td><td class='sitebggraylight'>0.0015</td><td></td><td class='sitebggraylight'>0.0035</td></tr><tr><td>100.000-500.000</td><td class='sitebggraylight'>0.0010</td><td></td><td class='sitebggraylight'>0.0030</td></tr><tr><td>500.000-1.000.000</td><td class='sitebggraylight'>0.0005</td><td></td><td class='sitebggraylight'>0.0025</td></tr><tr><td>1.000.000+</td><td class='sitebggraylight'>Sorunuz</td><td></td><td class='sitebggraylight'>Sorunuz</td></tr></tbody></table>
+                                </div>
+                                </div>
+                                "></i>
+                    </div>
+                    <!-- Mobile Commission Info -->
 
                     <div class="formuinew-tooltipgrayautowidth"></div>
                     <div class="order-orders-tooltiparea"></div>
