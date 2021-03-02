@@ -1,0 +1,16 @@
+$globalSvgIconImgPath : "../../img/global/svg";
+
+.icon {
+  &-svg {
+    font-family: $global-font-family-barlow;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    overflow: hidden;
+    display: block;
+
+    &-icrypexsymbol{
+      background-image: url(#{$globalSvgIconImgPath}/Icrypex_Symbol.svg);
+    }
+  }
+}
