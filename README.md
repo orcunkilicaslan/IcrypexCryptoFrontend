@@ -123,6 +123,21 @@
 - [99_Component_Notiflix](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/tradepage/99_Component_Notiflix.html)
 
 
+#### MobileApp Pages
+- [21_MobileApp_Company_Legal_Terms_01_Light](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mobileapp/21_MobileApp_Company_Legal_Terms_01_Light.html)
+- [21_MobileApp_Company_Legal_Terms_01_Dark](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mobileapp/21_MobileApp_Company_Legal_Terms_01_Dark.html)
+- [22_MobileApp_Company_Legal_Terms_02_Light](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mobileapp/22_MobileApp_Company_Legal_Terms_02_Light.html)
+- [22_MobileApp_Company_Legal_Terms_02_Dark](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mobileapp/22_MobileApp_Company_Legal_Terms_02_Dark.html)
+- [23_MobileApp_Company_Legal_Privacy_Light](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mobileapp/23_MobileApp_Company_Legal_Privacy_Light.html)
+- [23_MobileApp_Company_Legal_Privacy_Dark](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mobileapp/23_MobileApp_Company_Legal_Privacy_Dark.html)
+- [24_MobileApp_Company_Legal_Aml_Light](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mobileapp/24_MobileApp_Company_Legal_Aml_Light.html)
+- [24_MobileApp_Company_Legal_Aml_Dark](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mobileapp/24_MobileApp_Company_Legal_Aml_Dark.html)
+- [25_MobileApp_Company_Legal_Cookie_Light](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mobileapp/25_MobileApp_Company_Legal_Cookie_Light.html)
+- [25_MobileApp_Company_Legal_Cookie_Dark](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mobileapp/25_MobileApp_Company_Legal_Cookie_Dark.html)
+- [26_MobileApp_Company_Legal_Kvkk_Light](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mobileapp/26_MobileApp_Company_Legal_Kvkk_Light.html)
+- [26_MobileApp_Company_Legal_Kvkk_Dark](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mobileapp/26_MobileApp_Company_Legal_Kvkk_Dark.html)
+
+
 #### Xtras
 - [01_Xtras_Construction_Page](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/xtras/01_Xtras_Construction_Page.html)
 - [01_Xtras_Construction_Page_Inline](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/xtras/01_Xtras_Construction_Page_Inline.html)
