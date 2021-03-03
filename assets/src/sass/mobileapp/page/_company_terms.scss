@@ -1,0 +1,15 @@
+
+// Global Company
+@import "../../mainpage/page/company";
+
+.mobileapp-terms{
+  > div{
+    padding: 0;
+  }
+}
+
+.mobileapp-dark{
+  .company-content *{
+    color: $global-clr-white;
+  }
+}

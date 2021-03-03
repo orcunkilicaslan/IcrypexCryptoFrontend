@@ -1,0 +1,33 @@
+.mobileapp{
+  padding: 20px;
+
+  &-light{
+    color: $global-clr-dark-blue;
+    background-color: $global-clr-white;
+
+    *{
+      color: $global-clr-dark-blue;
+    }
+  }
+
+  &-dark{
+    color: $global-clr-white;
+    background-color: $global-sitebg-darkblue01;
+
+    *{
+      color: $global-clr-white;
+    }
+  }
+
+  .urllink{
+    color: $global-clr-soft-blue !important;
+    text-decoration: underline !important;
+    @include transition(all, 0.3s, ease-in-out);
+
+    &:hover{
+      color: transparentize($global-clr-soft-blue, 0.3) !important;
+      text-decoration: underline !important;
+    }
+  }
+
+}

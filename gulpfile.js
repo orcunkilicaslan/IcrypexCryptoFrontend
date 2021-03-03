@@ -162,6 +162,33 @@ gulp.task('sass-xtras', () => {
 });
 /* XTRAS END */
 
+/* MOBILEAPP START */
+gulp.task('sass-mobileapp', () => {
+    return gulp.src([
+        folder_src_main + 'sass/mobileapp/**/*.scss',
+        folder_src_main + 'sass/mobileapp/**/*.sass'
+    ])
+        .pipe(gulppif(cfgprod.sourceMaps, sourcemaps.init()))
+        .pipe(plumber())
+        .pipe(sass())
+        .pipe(autoprefixer({
+            flexbox: 'no-2009'
+        }))
+        .pipe(cfgprod.production ? cssnano({
+            reduceIdents: false,
+            discardComments: {
+                removeAll: true
+            },
+            discardUnused: false,
+            zindex: false,
+        }) : util.noop())
+        .pipe(concat('mobileapp.css'))
+        .pipe(sourcemaps.write('.'))
+        .pipe(gulp.dest(folder_dist_main + 'css'))
+        .pipe(browserSync.stream());
+});
+/* MOBILEAPP END */
+
 /* GENERAL START */
 gulp.task('clear', () => del([ folder_dist_main, folder_dist_node_modules ]));
 
@@ -234,9 +261,10 @@ gulp.task('watch', () => {
 gulp.task('custom', gulp.series('sass-custom', 'script-custom'));
 gulp.task('client', gulp.series('sass-client', 'script-client'));
 gulp.task('xtras', gulp.series('sass-xtras'));
+gulp.task('mobileapp', gulp.series('sass-mobileapp'));
 
-gulp.task('build', gulp.series('clear', 'vendor', 'custom', 'client', 'xtras'));
-gulp.task('devel', gulp.series('custom', 'client', 'xtras', gulp.parallel('watch')));
+gulp.task('build', gulp.series('clear', 'vendor', 'custom', 'client', 'xtras', 'mobileapp'));
+gulp.task('devel', gulp.series('custom', 'client', 'xtras', 'mobileapp', gulp.parallel('watch')));
 
 gulp.task('start', gulp.series('build', gulp.parallel('serve', 'watch')));
 gulp.task('default', gulp.series('build', 'devel'));
