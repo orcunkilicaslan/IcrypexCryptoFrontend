@@ -225,6 +225,11 @@
               background-color: $global-clr-currency-avax;
             }
           }
+          &.lineftm{
+            &::after {
+              background-color: $global-clr-currency-ftm;
+            }
+          }
           &.linedot{
             &::after {
               background-color: $global-clr-currency-dot;

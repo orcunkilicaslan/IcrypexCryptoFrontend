@@ -183,6 +183,9 @@ $globalSvgIconImgPath : "../../img/global/svg";
             i[class*="avax"]{
               background-color: transparentize($global-clr-currency-avax, 0.15);
             }
+            i[class*="ftm"]{
+              background-color: transparentize($global-clr-currency-ftm, 0.15);
+            }
             i[class*="dot"]{
               background-color: transparentize($global-clr-currency-dot, 0.15);
             }
@@ -639,6 +642,9 @@ $globalSvgIconImgPath : "../../img/global/svg";
             }
             i[class*="avax"]{
               background-color: transparentize($global-clr-currency-avax, 0.15);
+            }
+            i[class*="ftm"]{
+              background-color: transparentize($global-clr-currency-ftm, 0.15);
             }
             i[class*="dot"]{
               background-color: transparentize($global-clr-currency-dot, 0.15);
