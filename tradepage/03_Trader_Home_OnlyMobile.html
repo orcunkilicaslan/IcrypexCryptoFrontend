@@ -804,12 +804,26 @@
                                         </div>
                                         <div class="form-group">
                                             <label>PORTFOY</label>
-                                            <div class="percbtns">
-                                                <button class="btn btn-sm" type="button">25%</button>
-                                                <button class="btn btn-sm" type="button">50%</button>
-                                                <button class="btn btn-sm active" type="button">75%</button>
-                                                <button class="btn btn-sm" type="button">100%</button>
+                                            <div class="percbtns selectButton">
+                                                <button class="btn btn-sm" type="button" data-value="25">25%</button>
+                                                <button class="btn btn-sm" type="button" data-value="50">50%</button>
+                                                <button class="btn btn-sm" type="button" data-value="75">75%</button>
+                                                <button class="btn btn-sm" type="button" data-value="100">100%</button>
                                             </div>
+                                            <script>
+                                                let percbtnsButtons = document.querySelectorAll(".selectButton button");
+                                                for (let button of percbtnsButtons) {
+                                                    button.addEventListener('click', (e) => {
+                                                        const btnPerc = e.target;
+                                                        const active = document.querySelector(".selectButton button.active");
+                                                        if (active) {
+                                                            active.classList.remove("active");
+                                                        }
+                                                        btnPerc.classList.add("active");
+                                                        console.log(btnPerc.getAttribute('data-value'));
+                                                    });
+                                                }
+                                            </script>
                                         </div>
                                         <div class="form-group button maxwidth100100">
                                             <button class="button-buy btn btn-success btnwidth100100" type="button">ALIŞ İŞLEMİNİ ONAYLA</button>
