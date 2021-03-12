@@ -1,0 +1,25 @@
+
+// Global What How
+@import "../../mainpage/page/what_how";
+
+.mobileapp-whathow{
+
+  @include ReSassWidthResponsive(992){
+    .whathow-wrapper-column{
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  .whathow-section-navigation{
+
+    > a, button{
+      color: $global-clr-white;
+      background-color: $global-clr-dark-blue;
+      padding: 5px 20px;
+      @include border-radius(3px);
+    }
+
+  }
+
+}
