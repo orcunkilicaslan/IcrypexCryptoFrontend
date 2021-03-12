@@ -1,0 +1,89 @@
+
+.depositandwithdraw{
+
+  &-infoarea{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &-title{
+      color: $global-clr-dark-blue;
+      margin: 0;
+      margin-bottom: 10px;
+      font-size: 20px;
+      font-weight: normal;
+
+      @include ReSassWidthResponsive(576){
+        font-size: 18px;
+      }
+      @include ReSassWidthResponsive(480){
+        br.d-none{
+          display: block !important;
+        }
+      }
+    }
+    &-desc{
+      color: $global-clr-dark-blue;
+      font-size: 17px;
+      line-height: 1.18;
+
+      @include ReSassWidthResponsive(576){
+        font-size: 15px;
+      }
+
+      a.link{
+        color: $global-clr-soft-blue;
+        text-decoration: underline;
+      }
+
+    }
+    &-contlist{
+      color: $global-clr-dark-blue;
+      font-size: 17px;
+      line-height: 1.5;
+      text-align: left;
+      margin: auto;
+
+      @include ReSassWidthResponsive(576){
+        font-size: 15px;
+      }
+
+      li{
+        position: relative;
+        padding-left: 15px;
+        line-height: 1.2;
+        margin-bottom: 5px;
+
+        @include ReSassWidthResponsive(480){
+          padding-left: 13px;
+          line-height: 1.1;
+        }
+
+        &:last-child{
+          margin-bottom: 0;
+        }
+
+        &::before{
+          content:"";
+          position:absolute;
+          width: 9px;
+          height: 9px;
+          top: 7px;
+          left: 0;
+          border-top:2px solid $global-clr-soft-blue;
+          border-right:2px solid $global-clr-soft-blue;
+          @include rotate(45);
+
+          @include ReSassWidthResponsive(480){
+            width: 8px;
+            height: 8px;
+            top: 5px;
+          }
+        }
+      }
+
+    }
+  }
+
+}
