@@ -137,6 +137,8 @@
 - [25_MobileApp_Company_Legal_Cookie_Dark](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mobileapp/25_MobileApp_Company_Legal_Cookie_Dark.html)
 - [26_MobileApp_Company_Legal_Kvkk_Light](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mobileapp/26_MobileApp_Company_Legal_Kvkk_Light.html)
 - [26_MobileApp_Company_Legal_Kvkk_Dark](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mobileapp/26_MobileApp_Company_Legal_Kvkk_Dark.html)
+- [31_MobileApp_What_How](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mobileapp/31_MobileApp_What_How.html)
+- [31_MobileApp_What_How_Detail](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mobileapp/31_MobileApp_What_How_Detail.html)
 
 
 #### Xtras
