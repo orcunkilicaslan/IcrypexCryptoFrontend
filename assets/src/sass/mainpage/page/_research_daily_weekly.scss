@@ -90,6 +90,35 @@
           }
         }
 
+        ul{
+          margin-bottom: 10px;
+
+          li{
+            br{display: none;}
+          }
+          li{
+            position: relative;
+            padding-left: 17px;
+            margin-bottom: 10px;
+
+            &:last-child{
+              margin-bottom: 0;
+            }
+
+            &::before{
+              content:"";
+              position:absolute;
+              width: 9px;
+              height: 9px;
+              top: 6px;
+              left: 0;
+              border-top:2px solid $global-clr-soft-blue;
+              border-right:2px solid $global-clr-soft-blue;
+              @include rotate(45);
+            }
+          }
+        }
+
         .contentdate{
           font-size: 14px;
           font-weight: 500;
