@@ -139,7 +139,18 @@
 - [26_MobileApp_Company_Legal_Kvkk_Dark](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mobileapp/26_MobileApp_Company_Legal_Kvkk_Dark.html)
 - [31_MobileApp_What_How](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mobileapp/31_MobileApp_What_How.html)
 - [31_MobileApp_What_How_Detail](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mobileapp/31_MobileApp_What_How_Detail.html)
-- [99_MobileApp_Deposit_Bank_Info_Desc](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mobileapp/99_MobileApp_Deposit_Bank_Info_Desc.html)
+- [99_MobileApp_Deposit_Bank_Info_Desc_Light](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mobileapp/99_MobileApp_Deposit_Bank_Info_Desc_Light.html)
+- [99_MobileApp_Deposit_Bank_Info_Desc_Dark](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mobileapp/99_MobileApp_Deposit_Bank_Info_Desc_Light.html)
+- [99_MobileApp_Deposit_Papara_Info_Desc_Light](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mobileapp/99_MobileApp_Deposit_Papara_Info_Desc_Light.html)
+- [99_MobileApp_Deposit_Papara_Info_Desc_Dark](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mobileapp/99_MobileApp_Deposit_Papara_Info_Desc_Light.html)
+- [99_MobileApp_Deposit_Crypto_Info_Desc_Light](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mobileapp/99_MobileApp_Deposit_Crypto_Info_Desc_Light.html)
+- [99_MobileApp_Deposit_Crypto_Info_Desc_Dark](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mobileapp/99_MobileApp_Deposit_Crypto_Info_Desc_Light.html)
+- [99_MobileApp_Withdraw_Bank_Info_Desc_Light](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mobileapp/99_MobileApp_Withdraw_Bank_Info_Desc_Light.html)
+- [99_MobileApp_Withdraw_Bank_Info_Desc_Dark](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mobileapp/99_MobileApp_Withdraw_Bank_Info_Desc_Dark.html)
+- [99_MobileApp_Withdraw_Papara_Info_Desc_Light](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mobileapp/99_MobileApp_Withdraw_Papara_Info_Desc_Light.html)
+- [99_MobileApp_Withdraw_Papara_Info_Desc_Dark](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mobileapp/99_MobileApp_Withdraw_Papara_Info_Desc_Dark.html)
+- [99_MobileApp_Withdraw_Crypto_Info_Desc_Light](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mobileapp/99_MobileApp_Withdraw_Crypto_Info_Desc_Light.html)
+- [99_MobileApp_Withdraw_Crypto_Info_Desc_Dark](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mobileapp/99_MobileApp_Withdraw_Crypto_Info_Desc_Dark.html)
 
 
 #### Xtras

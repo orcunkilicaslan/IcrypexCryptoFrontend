@@ -87,3 +87,9 @@
   }
 
 }
+
+.mobileapp-dark{
+  .depositandwithdraw-infoarea *{
+    color: $global-clr-white !important;
+  }
+}
