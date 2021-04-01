@@ -160,6 +160,8 @@
 - [03_Xtras_Maintenance_Page](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/xtras/03_Xtras_Maintenance_Page.html)
 - [03_Xtras_Maintenance_Page_One_Page](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/xtras/03_Xtras_Maintenance_Page_One_Page.html)
 - [04_Xtras_Book_QR_Source](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/xtras/04_Xtras_Book_QR_Source.html)
+- [21_Xtras_Cloudflare_Loading](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/xtras/21_Xtras_Cloudflare_Loading.html)
+- [21_Xtras_Cloudflare_Loading_Inline](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/xtras/21_Xtras_Cloudflare_Loading_Inline.html)
 
 
 #### System E-Mail Template List

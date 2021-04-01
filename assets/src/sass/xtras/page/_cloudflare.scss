@@ -1,0 +1,81 @@
+$xtrasHomepageImgPath : "../../img/xtras";
+
+.cloudflare{
+  background-color: #1a243f;
+  background-image: url(#{$xtrasHomepageImgPath}/cloudflare_section_bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  @include ReSassWidthResponsive(576){
+    background-color: #FFFFFF;
+    background-image: url(#{$xtrasHomepageImgPath}/cloudflare_content_bg.jpg);
+    background-position: top center;
+    background-size: contain;
+  }
+
+  &-page{
+  }
+
+  &-infocont{
+    color: #6A7289;
+    background-color: #FFFFFF;
+    background-image: url(#{$xtrasHomepageImgPath}/cloudflare_content_bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    text-align: center;
+    @include border-radius(10px);
+
+    @include ReSassWidthResponsive(992){
+      padding: 30px;
+    }
+    @include ReSassWidthResponsive(768){
+      padding: 20px;
+    }
+    @include ReSassWidthResponsive(576){
+      background-color: transparent;
+      background-image: none;
+    }
+
+    &-logo{
+      margin-bottom: 10px;
+
+      @include ReSassWidthResponsive(992){
+        @include scale(0.75);
+        margin-bottom: 0;
+      }
+      @include ReSassWidthResponsive(768){
+        @include scale(0.6);
+      }
+    }
+
+    &-loading{
+      margin-bottom: 20px;
+      position: relative;
+
+      @include ReSassWidthResponsive(992){
+        @include scale(0.75);
+        margin-bottom: 0;
+        top: -5px;
+      }
+      @include ReSassWidthResponsive(768){
+        @include scale(0.6);
+        top: -10px;
+      }
+    }
+
+    &-cont{
+      font-size: 22px;
+      line-height: 1.5;
+
+      @include ReSassWidthResponsive(992){
+        font-size: 18px;
+      }
+      @include ReSassWidthResponsive(768){
+        font-size: 16px;
+      }
+    }
+  }
+}
