@@ -8,69 +8,55 @@ $globalSvgIconImgPath : "../../img/global/svg";
     padding: 5px !important;
   }
 
-  html,
-  body,
-  .container,
-  .container-fluid{
-    min-width: 1140px !important;
-    margin: 5px !important;
-    padding: 5px !important;
+  body{
+    padding: 15px;
   }
 
-  .header,
-  .footer{
-    display: none !important;
+  .container,
+  .container-fluid{
+    width: 100%;
+    max-width: inherit;
+    min-width: 992px !important
   }
 
   .header{
     display: block !important;
     background: none !important;
+    position: static !important;
+    margin-bottom: 40px !important;
 
-    .header-alert{
-      display: none !important;
+    &.navscroll{
+      position: static !important;
     }
 
-    .dfn-mobilemenu-mask{
-      display: none !important;
-    }
-
+    .header-alert,
+    .header-web,
+    .header-spacebottom,
+    .dfn-mobilemenu-mask,
     .dfn-mobilemenu-header{
-      display: block !important;
-      height: 50px !important;
-      position: relative !important;
-      margin-bottom: 10px !important;
-
-      &::before{
-        display: none !important;
-      }
-
-      .header-navigation-logo{
-        content:url(#{$globalSvgIconImgPath}/Print_Icrypex_Logo_Header_Dark.svg) !important;
-        display: block !important;
-        width: 150px !important;
-        margin: 0 !important;
-        position: relative !important;
-
-        .header-navigation-logo-symbol,
-        .header-navigation-logo-icrypex,
-        .header-navigation-logo-cryptoexchange{
-          display: none !important;
-        }
-      }
-
-      .dfn-mobilemenu-btn,
-      .dfn-mobilemenu-livechat{
-        display: none !important;
-      }
-    }
-
-    .header-web{
       display: none !important;
     }
 
-    .header-spacebottom{
-      display: none !important;
+    .header-print{
+      color: $global-clr-dark-blue;
+      display: block;
+      opacity: 1;
+      visibility: visible;
+      width: auto;
+      height: auto;
+      font-size: 12pt !important;
+      line-height: 1.2;
+
+      .printusername{
+        font-size: 18pt !important;
+        font-weight: 500;
+      }
     }
+  }
+
+  .footer,
+  .footer-mobilebar-spacebottom{
+    display: none !important;
   }
 
 }

@@ -1204,6 +1204,10 @@ $globalSvgIconImgPath : "../../img/global/svg";
         max-width: calc(100% / 3);
         padding: 2px;
 
+        @include ReSassWidthResponsive(992){
+          flex: 0 0 calc(100% / 4);
+          max-width: calc(100% / 4);
+        }
         @include ReSassWidthResponsive(480){
           flex: 0 0 calc(100% / 2);
           max-width: calc(100% / 2);
@@ -1213,12 +1217,12 @@ $globalSvgIconImgPath : "../../img/global/svg";
       .walletbox{
         background-color: transparentize($global-clr-soft-gray, 0.85);
         color: $global-clr-soft-gray;
-        height: 46px;
+        height: 40px;
         text-align: center;
-        font-size: 16px;
+        font-size: 15px;
         line-height: 1;
         padding: 5px 0 7px;
-        border-bottom: 2px solid transparent;
+        border-bottom: 1px solid transparent;
         overflow: hidden;
         @include border-radii(4px,4px,0,0);
 
@@ -1240,8 +1244,8 @@ $globalSvgIconImgPath : "../../img/global/svg";
         &.linetryb{border-bottom-color: $global-clr-currency-tryb; border-bottom-color: $global-clr-white;}
         &.lineusdt{border-bottom-color: $global-clr-currency-usdt;}
 
-        small, span{display: block; font-size: 100%;}
-        span{color: $global-clr-white;}
+        small, span{display: block; font-size: 90%;}
+        span{color: $global-clr-white; margin-top: 4px;}
       }
 
     }

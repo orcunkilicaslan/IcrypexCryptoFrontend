@@ -86,6 +86,14 @@ $globalSvgIconImgPath : "../../img/global/svg";
     }
   }
 
+  &-print{
+    display: none;
+    height: 0;
+    width: 0;
+    opacity: 0;
+    visibility: hidden;
+  }
+
   &-web{
     @include ReSassWidthResponsive(400){
       //padding-left: 10px !important;
