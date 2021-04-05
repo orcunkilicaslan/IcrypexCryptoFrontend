@@ -467,6 +467,72 @@ $globalSvgIconImgPath : "../../img/global/svg";
           font-weight: normal;
         }
       }
+
+      &-currency{
+
+        span{
+          position: relative;
+          top: -4px;
+        }
+
+        i[class*="icon-svg"]{
+          background-color: $global-clr-btn-blue;
+          display: inline-block;
+          position: relative;
+          width: 20px;
+          height: 20px;
+          margin-right: 2px;
+          @include border-radius(50%);
+
+          @include ReSassWidthResponsive(992){
+          }
+        }
+
+        i[class*="btc"]{
+          background-color: transparentize($global-clr-currency-btc, 0.15);
+        }
+        i[class*="ltc"]{
+          background-color: transparentize($global-clr-currency-ltc, 0.15);
+        }
+        i[class*="eth"]{
+          background-color: transparentize($global-clr-currency-eth, 0.15);
+        }
+        i[class*="xrp"]{
+          background-color: transparentize($global-clr-currency-xrp, 0.15);
+        }
+        i[class*="xlm"]{
+          background-color: transparentize($global-clr-currency-xlm, 0.15);
+        }
+        i[class*="bat"]{
+          background-color: transparentize($global-clr-currency-bat, 0.15);
+        }
+        i[class*="mpay"]{
+          background-color: transparentize($global-clr-currency-mpay, 0.15);
+        }
+        i[class*="link"]{
+          background-color: transparentize($global-clr-currency-link, 0.15);
+        }
+        i[class*="avax"]{
+          background-color: transparentize($global-clr-currency-avax, 0.15);
+        }
+        i[class*="ftm"]{
+          background-color: transparentize($global-clr-currency-ftm, 0.15);
+        }
+        i[class*="dot"]{
+          background-color: transparentize($global-clr-currency-dot, 0.15);
+        }
+        i[class*="algo"]{
+          background-color: transparentize($global-clr-currency-algo, 0.15);
+        }
+        i[class*="tryb"]{
+          background-color: transparentize($global-clr-currency-tryb, 0.15);
+        }
+        i[class*="usdt"]{
+          background-color: transparentize($global-clr-currency-usdt, 0.15);
+        }
+      }
+
+      &-amount{}
     }
   }
   /* Balance */
