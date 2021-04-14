@@ -42,7 +42,9 @@ $globalSvgIconImgPath : "../../img/global/svg";
         order: 1;
         max-width: 100%;
         padding-right: 0;
+        padding-bottom: 5px;
         margin-bottom: 10px;
+        overflow: hidden;
       }
     }
     &-right{
