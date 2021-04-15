@@ -238,10 +238,14 @@ $tradepageHomepageImgPath : "../../img/tradepage";
           padding-bottom: 0;
         }
 
-        .collapse:not(.show){display: none}
+        .collapse:not(.show){
+          display: none;
+        }
 
         .bigchart-chart{
           padding-top: 15px;
+          padding-left: 10px;
+          padding-right: 10px;
         }
       }
     }

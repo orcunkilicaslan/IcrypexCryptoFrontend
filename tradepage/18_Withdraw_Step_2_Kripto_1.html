@@ -310,7 +310,7 @@
                             <!-- Title -->
                             <!-- Form -->
                             <div class="stepwizard-tabcont-form-wrapper">
-                                <div class="stepwizard-tabcont-form-tags900 mb-4">
+                                <div class="stepwizard-tabcont-form-tags900 mb-4 d-none">
                                     <div class="form-row">
                                         <div class="boxcolumn-boxtitle col-md-auto maxwidth220 flex-column border-0">
                                             <small class="boxcolumn-boxtitle-title d-block text-center">TRY BAKİYENİZ</small>
@@ -325,7 +325,7 @@
                                 <div class="stepwizard-tabcont-form-tags700">
                                     <div class="form-row justify-content-center">
                                         <div class="form-group fontsize20px colorsetdarkblue col-md-auto">
-                                            <label class="text-center d-block">KRİPTO PARA CİNSİ</label>
+                                            <label class="text-center d-block">KRİPTO PARA CİNSİ - BAKİYENİZ</label>
                                             <select class="form-control custom-select">
                                                 <option data-symbol="BTC" data-min="0.001" data-name="BITCOIN" data-balance=" 0.00000000 " value="4">BITCOIN [BTC] -  0.00000000 </option>
                                                 <option data-symbol="ETH" data-min="0.04" data-name="ETHEREUM" data-balance=" 0.00000000 " value="6">ETHEREUM [ETH] -  0.00000000 </option>
@@ -347,7 +347,7 @@
                                 </div>
                                 <div class="stepwizard-tabcont-form-tags900">
                                     <div class="form-row">
-                                        <div class="form-group fontsize20px colorsetdarkblue col-md-auto maxwidth350 mobile768width100100">
+                                        <div class="form-group fontsize20px colorsetdarkblue col-md-auto maxwidth400 mobile768width100100">
                                             <label>ADRES</label>
                                             <input type="text" class="form-control" placeholder="" value="1CfaunqrVpcXmpLheUVWeSP1KPsKDha1Nb">
                                         </div>
@@ -355,7 +355,53 @@
                                             <label>DESTINATION TAG</label>
                                             <input type="text" class="form-control" placeholder="" value="10002653">
                                         </div>
-                                        <div class="form-group fontsize20px colorsetdarkblue col-md-auto maxwidth160">
+                                        <div class="form-group fontsize20px colorsetdarkblue col-md-auto maxwidth250">
+                                            <label>AÇIKLAMA</label>
+                                            <input type="text" class="form-control" placeholder="" value="Alıcı Adı Soyadı">
+                                        </div>
+                                    </div>
+                                    <hr class="hrline hrline-graydownarrow" />
+                                    <div class="transfer-network">
+                                        <label class="text-center d-flex align-items-center">
+                                            TRANSFER AĞI
+                                            <i class="icon-svg icon-svg-profilehelp profilelabelhelp" data-toggle="popover" data-trigger="focus" tabindex="0" data-container=".profile-popoverarea" data-html="true" data-placement="right" data-content="<div class='tooltip-html'><div class='boxcolumn-boxtitle'><span class='boxcolumn-boxtitle-title'>TRANSFER AĞI</span><span class='boxcolumn-boxtitle-info'>DESTEK 0850 255 1079</span></div><div class='tooltip-html-cont'><p class='desc'>Yatırma ve çekme adreslerinin aynı ağ üzerinde olduğundan lütfen emin olun. Aksi takdirde, çekim işlemi başarısız olacaktır. Ağdaki etki eden diğer faktörler oranlar, minimum çekim tutarı ve transfer süresidir.</p></div></div>" data-original-title="" title=""></i>
+                                        </label>
+                                        <div class="form-group">
+                                            <div class="custom-control custom-radio transfercheckbox">
+                                                <input type="radio" id="radioPaymentSimplex" name="checkboxKoinal" class="custom-control-input">
+                                                <label class="custom-control-label transfermethod" for="radioPaymentSimplex">
+                                                    <div class="transfermethod-text">
+                                                        <span>Binance Smart Chain (BSC)</span>
+                                                        <small>BEP20 (BSC)</small>
+                                                    </div>
+                                                    <div class="transfermethod-info">
+                                                        <small>Komisyon: 0.0000043 BTC</small>
+                                                        <small>≈ $0.271889</small>
+                                                    </div>
+                                                </label>
+                                                <i class="checkboxborder"></i>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="custom-control custom-radio transfercheckbox">
+                                                <input type="radio" id="radioPaymentKoinal" name="checkboxKoinal" class="custom-control-input">
+                                                <label class="custom-control-label transfermethod" for="radioPaymentKoinal">
+                                                    <div class="transfermethod-text">
+                                                        <span>Ethereum (ETH)</span>
+                                                        <small>ERC20</small>
+                                                    </div>
+                                                    <div class="transfermethod-info">
+                                                        <small>Komisyon: 0.00039 BTC</small>
+                                                        <small>≈ $24.66</small>
+                                                    </div>
+                                                </label>
+                                                <i class="checkboxborder"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr class="hrline hrline-graydownarrow" />
+                                    <div class="form-row">
+                                        <div class="form-group fontsize20px colorsetdarkblue col-md-auto maxwidth190">
                                             <label>MİKTAR</label>
                                             <div class="input-group">
                                                 <input type="text" class="form-control" placeholder="" value="1.02992777">
@@ -365,7 +411,7 @@
                                             </div>
                                             <a href="#" class="form-group-inputiconlink"><i class="iconplus"></i> TÜMÜNÜ AKTAR</a>
                                         </div>
-                                        <div class="form-group fontsize20px colorsetdisabled colorsetgray col-md-auto maxwidth160">
+                                        <div class="form-group fontsize20px colorsetdisabled colorsetgray col-md-auto maxwidth190">
                                             <label>TRANSFER ÜCRETİ</label>
                                             <div class="input-group">
                                                 <div class="form-control">0.00000177</div>
@@ -374,7 +420,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="form-group fontsize20px colorsetdisabled colorsetred col-md-auto maxwidth160">
+                                        <div class="form-group fontsize20px colorsetdisabled colorsetred col-md-auto maxwidth190 mobile768width100100">
                                             <label>HESABA GEÇECEK <span>MİKTAR</span></label>
                                             <div class="input-group">
                                                 <div class="form-control">0.02992777</div>
@@ -401,6 +447,7 @@
                                         <label class="custom-control-label" for="WinzardiReadCheck">Okudum, anladım.</label>
                                     </div>
                                 </div>
+                                <div class="profile-popoverarea"></div>
                             </div>
                             <!-- Form -->
                             <!-- Button -->
