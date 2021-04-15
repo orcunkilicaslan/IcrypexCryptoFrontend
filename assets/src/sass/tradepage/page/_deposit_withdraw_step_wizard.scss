@@ -612,6 +612,214 @@ $globalSvgIconImgPath : "../../img/global/svg";
         line-height: 1.1;
       }
 
+      .hrline{
+        width: 100%;
+        height: 15px;
+        border: none;
+        position: relative;
+        margin: 35px 0 25px;
+
+        @include ReSassWidthResponsive(768){
+          margin: 15px 0 5px;
+        }
+
+        &::before,
+        &::after{
+          content: "";
+          position: absolute;
+          z-index: 0;
+        }
+
+        &::before{
+          width: 100%;
+          height: 1px;
+          left: 0;
+          top: 0;
+        }
+
+        &::after{
+          width: 14px;
+          height: 14px;
+          background-color: $global-clr-white;
+        }
+
+        &-graydownarrow{
+          &::before{background-color: transparentize($global-clr-soft-gray, 0.7);}
+          &::after{
+            background-color: $global-clr-white;
+            border-right: 1px solid transparentize($global-clr-soft-gray, 0.7);
+            border-bottom: 1px solid transparentize($global-clr-soft-gray, 0.7);
+            top: -6px;
+            left: 50%;
+            @include transform-multiple(translateX(-50%) rotate(45deg));
+          }
+        }
+      }
+
+      .transfer-network{
+        width: 610px;
+        margin-left: auto;
+        margin-right: auto;
+
+        @include ReSassWidthResponsive(768){
+          width: 100%;
+        }
+
+        .custom-radio{
+
+          .custom-control-input:focus ~ .custom-control-label::before {
+            box-shadow:none !important;
+          }
+
+          &.transfercheckbox{
+            min-height: 52px;
+            padding-left: 0;
+            padding-right: 54px;
+            @include border-radius(4px);
+            //overflow: hidden;
+
+            @include ReSassWidthResponsive(400){
+              min-height: 96px;
+            }
+
+            .custom-control-label{
+              background-color: $global-clr-light-gray;
+              width: 100%;
+              height: 52px;
+              @include border-radii(3px,0,0,3px);
+              z-index: 1;
+
+              @include ReSassWidthResponsive(400){
+                height: 96px;
+              }
+
+              &::before,
+              &::after{
+                left: auto;
+                @include transition-multiple(all 0.1s ease-in-out);
+              }
+              &::before{
+                width: 54px;
+                height: 54px;
+                right: -54px;
+                top: -1px;
+                background-color: $global-clr-soft-gray;
+                @include border-radii(0,3px,3px,0);
+
+                @include ReSassWidthResponsive(400){
+                  height: 98px;
+                }
+              }
+              &::after{
+                width: 14px;
+                height: 14px;
+                border-bottom: 2px solid #fff;
+                border-left: 2px solid #fff;
+                right: -31px;
+                top: 19px;
+                @include rotate(-135);
+
+                @include ReSassWidthResponsive(400){
+                  top: 42px;
+                }
+              }
+            }
+
+            .custom-control-input{
+              width: 54px;
+              height: 54px;
+              right: 0;
+              left: auto;
+              z-index: 1;
+
+              @include ReSassWidthResponsive(400){
+                height: 96px;
+              }
+
+              &:checked ~ .checkboxborder{
+                border-color: $global-clr-soft-blue;
+              }
+
+              &:checked ~ .custom-control-label::before{
+                background-color: $global-clr-soft-blue;
+              }
+
+              &:checked ~ .custom-control-label::after{
+                width: 20px;
+                height: 10px;
+                right: -38px;
+                top: 18px;
+                @include rotate(-45);
+
+                @include ReSassWidthResponsive(400){
+                  top: 42px;
+                }
+              }
+            }
+
+            .checkboxborder{
+              width: calc(100% + 1px);
+              height: 54px;
+              display: block;
+              position: absolute;
+              z-index: 0;
+              top: -1px;
+              left: -1px;
+              border: 1px solid transparentize($global-clr-soft-gray, 0.7);
+              @include border-radius(4px);
+
+              @include ReSassWidthResponsive(400){
+                height: 98px;
+              }
+            }
+          }
+
+          .transfermethod{
+            color: $global-clr-dark-blue;
+            font-size: 17px;
+            line-height: 1.2;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 0;
+            padding: 10px;
+
+            @include ReSassWidthResponsive(400){
+              display: block !important;
+            }
+
+            &-text{
+              text-align: left;
+
+              span,small{
+                display: block;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+              }
+            }
+
+            &-info{
+              text-align: right;
+              height: 35px;
+
+              @include ReSassWidthResponsive(400){
+                text-align: left;
+                height: auto;
+                margin-top: 5px;
+              }
+
+              span,small{
+                display: block;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+              }
+            }
+          }
+        }
+      }
+
       &-check{
 
         &-single{
