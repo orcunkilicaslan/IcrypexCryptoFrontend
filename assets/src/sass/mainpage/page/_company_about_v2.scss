@@ -34,6 +34,7 @@
 
   &-directors{
     width: 100%;
+    padding-top: 30px;
 
     @include ReSassWidthResponsive(992){
       padding-top: 30px;
@@ -141,6 +142,302 @@
           &.linkedin{
             background-color: #0A93EA;
           }
+        }
+      }
+    }
+
+    &-avatar{
+      width: 270px;
+
+      @include ReSassWidthResponsive(992){
+        width: 220px;
+      }
+      @include ReSassWidthResponsive(576){
+        width: 100%;
+        margin-bottom: 30px;
+      }
+
+      &-img{
+
+        img{
+          width: 100%;
+          @include border-radius(4px);
+        }
+      }
+
+      &-social{
+
+        a{
+          color: $global-clr-white;
+          background-color: transparentize($global-clr-white, 0.5);
+          position: relative;
+          padding: 0 40px 0 0;
+          margin-top: 5px;
+          @include border-radius(4px);
+          overflow: hidden;
+          display: flex;
+          align-items: center;
+          line-height: 1;
+
+          &::before,
+          &::after{
+            content: "";
+            position: absolute;
+          }
+
+          &::before{
+            //background-color: #098CDF;
+            width: 26px;
+            height: 26px;
+            right: 10px;
+            top: 50%;
+            @include border-radius(50%);
+            overflow: hidden;
+            @include translateY(-50%);
+          }
+
+          &::after{
+            width: 9px;
+            height: 9px;
+            border-top: 2px solid $global-clr-white;
+            border-right: 2px solid $global-clr-white;
+            right: 23px;
+            top: calc(50% - 1px);
+            @include transform-multiple(rotate(45deg) translateY(-50%));
+          }
+
+          > i{
+            width: 40px;
+            height: 40px;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: 22px;
+            margin-right: 10px;
+            display: block;
+            @include border-radius(4px);
+          }
+
+          &.linkedin{
+            background-color: #0771B4;
+
+            &::before{
+              background-color: #098CDF;
+            }
+
+            > i{
+              background-color: #098CDF;
+              background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyMS4wNzEiIGhlaWdodD0iMjEuMjExIiB2aWV3Qm94PSIwIDAgMjEuMDcxIDIxLjIxMSI+DQogIDxwYXRoIGlkPSJQYXRoXzQ0MSIgZGF0YS1uYW1lPSJQYXRoIDQ0MSIgZD0iTTkuOTM3LDI0Ljg4YS43MTYuNzE2LDAsMCwxLS43MTYuNzE2SDYuMTcyYS43MTYuNzE2LDAsMCwxLS43MTYtLjcxNlYxMi4xYS43MTYuNzE2LDAsMCwxLC43MTYtLjcxNkg5LjIyMWEuNzE2LjcxNiwwLDAsMSwuNzE2LjcxNlpNNy43LDEwLjE3OGEyLjksMi45LDAsMSwxLDIuOS0yLjlBMi45LDIuOSwwLDAsMSw3LjcsMTAuMTc4Wk0yNS44NywyNC45MzhhLjY1OS42NTksMCwwLDEtLjY1OS42NTlIMjEuOTRhLjY1OS42NTksMCwwLDEtLjY1OS0uNjU5VjE4Ljk0M2MwLS44OTQuMjYyLTMuOTE5LTIuMzM3LTMuOTE5LTIuMDE2LDAtMi40MjUsMi4wNy0yLjUwNywzdjYuOTE1YS42NTkuNjU5LDAsMCwxLS42NTkuNjU5SDEyLjYxNGEuNjU5LjY1OSwwLDAsMS0uNjU5LS42NTl2LTEyLjlhLjY1OS42NTksMCwwLDEsLjY1OS0uNjU5aDMuMTY0YS42NTkuNjU5LDAsMCwxLC42NTkuNjU5djEuMTE1Yy43NDgtMS4xMjIsMS44NTktMS45ODgsNC4yMjUtMS45ODgsNS4yMzksMCw1LjIwOSw0Ljg5NCw1LjIwOSw3LjU4NHY2LjE4NloiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC00LjggLTQuMzg1KSIgZmlsbD0iI2ZmZiIvPg0KPC9zdmc+DQo=");
+            }
+          }
+        }
+      }
+
+    }
+
+    &-detail{
+      border-left: 1px solid transparentize($global-clr-soft-gray, 0.7);
+
+      @include ReSassWidthResponsive(576){
+        border-left: none;
+      }
+
+      &-head{
+        *[class*="boxtitle"]{
+          color: $global-clr-dark-blue;
+          padding-bottom: 7px;
+          border-bottom: 1px solid transparentize($global-clr-soft-gray, 0.7);
+        }
+
+        h6{
+          color: $global-clr-soft-gray;
+          margin-bottom: 10px;
+          margin-top: 5px;
+        }
+      }
+
+      &-content{
+        margin-top: 20px;
+        line-height: 1;
+
+        h2,h3{
+          font-size: 20px;
+          margin-bottom: 0;
+        }
+
+        p,ul,li{
+          font-size: 19px;
+        }
+
+        a{
+          color: $global-clr-soft-blue !important;
+          text-decoration: underline !important;
+          @include transition(all, 0.3s, ease-in-out);
+
+          &:hover{
+            color: transparentize($global-clr-soft-blue, 0.3) !important;
+            text-decoration: underline !important;
+          }
+        }
+
+        ul{
+          margin-bottom: 10px;
+
+          li{
+            br{display: none;}
+          }
+          li{
+            position: relative;
+            padding-left: 17px;
+            margin-bottom: 10px;
+
+            &:last-child{
+              margin-bottom: 0;
+            }
+
+            &::before{
+              content:"";
+              position:absolute;
+              width: 9px;
+              height: 9px;
+              top: 6px;
+              left: 0;
+              border-top:2px solid $global-clr-soft-blue;
+              border-right:2px solid $global-clr-soft-blue;
+              @include rotate(45);
+            }
+          }
+        }
+      }
+    }
+
+    &-sharenavigation{
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      margin-top: 20px;
+      position: relative;
+
+      @include ReSassWidthResponsive(768){
+        display: block;
+      }
+
+      &::before{
+        content: "";
+        background-color: transparentize($global-clr-soft-gray, 0.7);
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        left: 0;
+        top: calc(50% - 1px);
+        z-index: 0;
+      }
+
+      .navigationbackbutton{
+        color: $global-clr-soft-blue;
+        background-color: $global-clr-white;
+        display: flex;
+        align-items: center;
+        font-size: 17px;
+        padding-right: 10px;
+        text-decoration: none !important;
+        position: relative;
+        top: -3px;
+        z-index: 1;
+
+        i.iconcircleback{
+          width: 20px;
+          height: 20px;
+          margin-right: 5px;
+          position:relative;
+          display: block;
+          border: 1px solid transparentize($global-clr-soft-gray, 0.7);
+          @include border-radius(100%);
+
+          &::after{
+            content:"";
+            position:absolute;
+            width: 6px;
+            height: 6px;
+            top: calc(50% - 3px);
+            left: calc(50% - 2px);
+            border-bottom:1px solid $global-clr-soft-blue;
+            border-left:1px solid $global-clr-soft-blue;
+            @include rotate(45);
+          }
+        }
+
+        span{
+          color: $global-clr-soft-blue;
+          position: relative;
+        }
+      }
+
+      .sharesocial{
+        &-list{
+          background-color: $global-clr-white;
+          display: flex;
+          align-items: center;
+          margin: 0;
+          padding-left: 10px;
+          position: relative;
+          z-index: 1;
+
+          @include ReSassWidthResponsive(768){
+            margin-top: 30px;
+          }
+
+          li{
+            height: 30px;
+            margin: 0 2px;
+
+            &:first-child{
+              margin-left: 0 !important;
+            }
+            &:last-child{
+              margin-right: 0 !important;
+            }
+          }
+
+          &-text{
+            font-size: 17px;
+
+            span{
+              display: block;
+              margin-right: 3px;
+            }
+          }
+
+          &-item{
+            position: relative;
+            top: -2px;
+
+            a{
+              background-color: $global-clr-btn-blue;
+              width: 30px;
+              height: 30px;
+              text-align: center;
+              @include border-radius(30px);
+              @include transition(background, 0.3s, ease-in-out);
+
+              &:hover{
+                background-color: $global-clr-soft-blue;
+              }
+            }
+          }
+        }
+        &-icon{
+          background-repeat: no-repeat;
+          background-position: center center;
+          background-size: contain;
+          overflow: hidden;
+          width: 14px;
+          height: 14px;
+          display: block;
+          margin: 8px auto;
+
+          &.facebook{background-image: url(#{$globalSvgIconImgPath}/Footer_Facebook_Logo.svg);}
+          &.twitter{background-image: url(#{$globalSvgIconImgPath}/Footer_Twitter_Logo.svg);}
+          &.linkedin{background-image: url(#{$globalSvgIconImgPath}/Footer_Linkedin_Logo.svg);}
         }
       }
     }
