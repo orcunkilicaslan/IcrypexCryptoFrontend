@@ -42,6 +42,7 @@
 - [20_Technology_Segwit](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mainpage/20_Technology_Segwit.html)
 - [21_Company_About](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mainpage/21_Company_About.html)
 - [21_Company_About_New](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mainpage/21_Company_About_New.html)
+- [21_Company_Directors_Details](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mainpage/21_Company_Directors_Details.html)
 - [22_Company_Legal_Terms_01](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mainpage/22_Company_Legal_Terms_01.html)
 - [22_Company_Legal_Terms_02](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mainpage/22_Company_Legal_Terms_02.html)
 - [23_Company_Legal_Privacy](https://orcunkilicaslan.github.io/IcrypexCryptoFrontend/mainpage/23_Company_Legal_Privacy.html)
