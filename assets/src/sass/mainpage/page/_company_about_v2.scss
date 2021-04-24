@@ -137,6 +137,10 @@
             top: 9px;
             @include rotate(45);
           }
+
+          &.linkedin{
+            background-color: #0A93EA;
+          }
         }
       }
     }
