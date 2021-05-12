@@ -444,7 +444,7 @@ class GeneralValidForm {
                 }
                 break;
 
-            case "inputSurameProcess":
+            case "inputSurnameProcess":
                 if(val.length===0){
                     this.setGeneralValidFormErrorMessages(messageSpanSelector, Translation.translate('tr','SurnameAlert'), "error", "check");
                     this.setGeneralValidFormErrorIcon(messageIconSelector,"error", "check");

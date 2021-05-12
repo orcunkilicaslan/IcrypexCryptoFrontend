@@ -72,6 +72,15 @@ $globalSvgIconImgPath : "../../img/global/svg";
     &-productslistftm{
       background-image: url(#{$globalSvgIconImgPath}/Icon_Ftm.svg);
     }
+    &-productslisthot{
+      background-image: url(#{$globalSvgIconImgPath}/Icon_Hot.svg);
+    }
+    &-productslistmkr{
+      background-image: url(#{$globalSvgIconImgPath}/Icon_Mkr.svg);
+    }
+    &-productslistaave{
+      background-image: url(#{$globalSvgIconImgPath}/Icon_Aave.svg);
+    }
     &-productslistxlm{
       background-image: url(#{$globalSvgIconImgPath}/Icon_Xlm.svg);
     }
@@ -216,6 +225,15 @@ $globalSvgIconImgPath : "../../img/global/svg";
     &-titleiconftm{
       background-image: url(#{$globalSvgIconImgPath}/Icon_Title_Ftm.svg);
     }
+    &-titleiconhot{
+      background-image: url(#{$globalSvgIconImgPath}/Icon_Title_Hot.svg);
+    }
+    &-titleiconmkr{
+      background-image: url(#{$globalSvgIconImgPath}/Icon_Title_Mkr.svg);
+    }
+    &-titleiconaave{
+      background-image: url(#{$globalSvgIconImgPath}/Icon_Title_Aave.svg);
+    }
     &-titleiconxlm{
       background-image: url(#{$globalSvgIconImgPath}/Icon_Title_Xlm.svg);
     }
@@ -312,6 +330,15 @@ $globalSvgIconImgPath : "../../img/global/svg";
     }
     &-currencyiconftm{
       background-image: url(#{$globalSvgIconImgPath}/Currency_Icon_Ftm.svg);
+    }
+    &-currencyiconhot{
+      background-image: url(#{$globalSvgIconImgPath}/Currency_Icon_Hot.svg);
+    }
+    &-currencyiconmkr{
+      background-image: url(#{$globalSvgIconImgPath}/Currency_Icon_Mkr.svg);
+    }
+    &-currencyiconaave{
+      background-image: url(#{$globalSvgIconImgPath}/Currency_Icon_Aave.svg);
     }
     &-currencyiconmpay{
       background-image: url(#{$globalSvgIconImgPath}/Currency_Icon_Mpay.svg);
