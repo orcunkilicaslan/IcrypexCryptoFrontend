@@ -488,48 +488,23 @@ $globalSvgIconImgPath : "../../img/global/svg";
           }
         }
 
-        i[class*="btc"]{
-          background-color: transparentize($global-clr-currency-btc, 0.15);
-        }
-        i[class*="ltc"]{
-          background-color: transparentize($global-clr-currency-ltc, 0.15);
-        }
-        i[class*="eth"]{
-          background-color: transparentize($global-clr-currency-eth, 0.15);
-        }
-        i[class*="xrp"]{
-          background-color: transparentize($global-clr-currency-xrp, 0.15);
-        }
-        i[class*="xlm"]{
-          background-color: transparentize($global-clr-currency-xlm, 0.15);
-        }
-        i[class*="bat"]{
-          background-color: transparentize($global-clr-currency-bat, 0.15);
-        }
-        i[class*="mpay"]{
-          background-color: transparentize($global-clr-currency-mpay, 0.15);
-        }
-        i[class*="link"]{
-          background-color: transparentize($global-clr-currency-link, 0.15);
-        }
-        i[class*="avax"]{
-          background-color: transparentize($global-clr-currency-avax, 0.15);
-        }
-        i[class*="ftm"]{
-          background-color: transparentize($global-clr-currency-ftm, 0.15);
-        }
-        i[class*="dot"]{
-          background-color: transparentize($global-clr-currency-dot, 0.15);
-        }
-        i[class*="algo"]{
-          background-color: transparentize($global-clr-currency-algo, 0.15);
-        }
-        i[class*="tryb"]{
-          background-color: transparentize($global-clr-currency-tryb, 0.15);
-        }
-        i[class*="usdt"]{
-          background-color: transparentize($global-clr-currency-usdt, 0.15);
-        }
+        i[class*="btc"]{background-color: transparentize($global-clr-currency-btc, 0.15);}
+        i[class*="ltc"]{background-color: transparentize($global-clr-currency-ltc, 0.15);}
+        i[class*="eth"]{background-color: transparentize($global-clr-currency-eth, 0.15);}
+        i[class*="xrp"]{background-color: transparentize($global-clr-currency-xrp, 0.15);}
+        i[class*="xlm"]{background-color: transparentize($global-clr-currency-xlm, 0.15);}
+        i[class*="bat"]{background-color: transparentize($global-clr-currency-bat, 0.15);}
+        i[class*="mpay"]{background-color: transparentize($global-clr-currency-mpay, 0.15);}
+        i[class*="link"]{background-color: transparentize($global-clr-currency-link, 0.15);}
+        i[class*="avax"]{background-color: transparentize($global-clr-currency-avax, 0.15);}
+        i[class*="ftm"]{background-color: transparentize($global-clr-currency-ftm, 0.15);}
+        i[class*="hot"]{background-color: transparentize($global-clr-currency-hot, 0.15);}
+        i[class*="mkr"]{background-color: transparentize($global-clr-currency-mkr, 0.15);}
+        i[class*="aave"]{background-color: transparentize($global-clr-currency-aave, 0.15);}
+        i[class*="dot"]{background-color: transparentize($global-clr-currency-dot, 0.15);}
+        i[class*="algo"]{background-color: transparentize($global-clr-currency-algo, 0.15);}
+        i[class*="tryb"]{background-color: transparentize($global-clr-currency-tryb, 0.15);}
+        i[class*="usdt"]{background-color: transparentize($global-clr-currency-usdt, 0.15);}
       }
 
       &-amount{}
@@ -749,11 +724,13 @@ $globalSvgIconImgPath : "../../img/global/svg";
           div[class*="link"]{border-color: $global-clr-currency-link;}
           div[class*="avax"]{border-color: $global-clr-currency-avax;}
           div[class*="ftm"]{border-color: $global-clr-currency-ftm;}
+          div[class*="hot"]{border-color: $global-clr-currency-hot;}
+          div[class*="mkr"]{border-color: $global-clr-currency-mkr;}
+          div[class*="aave"]{border-color: $global-clr-currency-aave;}
           div[class*="dot"]{border-color: $global-clr-currency-dot;}
           div[class*="algo"]{border-color: $global-clr-currency-algo;}
           div[class*="tryb"]{border-color: $global-clr-currency-tryb;}
           div[class*="usdt"]{border-color: $global-clr-currency-usdt;}
-
         }
       }
 

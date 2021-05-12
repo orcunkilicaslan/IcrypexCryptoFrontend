@@ -74,86 +74,25 @@
             position: absolute;
           }
 
-          &.lineorange{
-            &::before {
-              background-color: $global-clr-orange;
-            }
-          }
-          &.linebtc{
-            &::before {
-              background-color: $global-clr-currency-btc;
-            }
-          }
-          &.lineeth{
-            &::before {
-              background-color: $global-clr-currency-eth;
-            }
-          }
-          &.lineltc{
-            &::before {
-              background-color: $global-clr-currency-ltc;
-            }
-          }
-          &.linexrp{
-            &::before {
-              background-color: $global-clr-currency-xrp;
-            }
-          }
-          &.linebat{
-            &::before {
-              background-color: $global-clr-currency-bat;
-            }
-          }
-          &.linexlm{
-            &::before {
-              background-color: $global-clr-currency-xlm;
-            }
-          }
-          &.linempay{
-            &::before {
-              background-color: $global-clr-currency-mpay;
-            }
-          }
-          &.linelink{
-            &::before {
-              background-color: $global-clr-currency-link;
-            }
-          }
-          &.lineavax{
-            &::before {
-              background-color: $global-clr-currency-avax;
-            }
-          }
-          &.lineftm{
-            &::before {
-              background-color: $global-clr-currency-ftm;
-            }
-          }
-          &.linedot{
-            &::before {
-              background-color: $global-clr-currency-dot;
-            }
-          }
-          &.linealgo{
-            &::before {
-              background-color: $global-clr-currency-algo;
-            }
-          }
-          &.linetryb{
-            &::before {
-              background-color: $global-clr-currency-tryb;
-            }
-          }
-          &.lineusdt{
-            &::before {
-              background-color: $global-clr-currency-usdt;
-            }
-          }
-          &.linedefault{
-            &::before {
-              background-color: transparentize($global-clr-soft-gray, 0.7);
-            }
-          }
+          &.lineorange::before{background-color: $global-clr-orange;}
+          &.linebtc::before{background-color: $global-clr-currency-btc;}
+          &.lineeth::before{background-color: $global-clr-currency-eth;}
+          &.lineltc::before{background-color: $global-clr-currency-ltc;}
+          &.linexrp::before{background-color: $global-clr-currency-xrp;}
+          &.linebat::before{background-color: $global-clr-currency-bat;}
+          &.linexlm::before{background-color: $global-clr-currency-xlm;}
+          &.linempay::before{background-color: $global-clr-currency-mpay;}
+          &.linelink::before{background-color: $global-clr-currency-link;}
+          &.lineavax::before{background-color: $global-clr-currency-avax;}
+          &.lineftm::before{background-color: $global-clr-currency-ftm;}
+          &.linehot::before{background-color: $global-clr-currency-hot;}
+          &.linemkr::before{background-color: $global-clr-currency-mkr;}
+          &.lineaave::before{@include background-linear($global-clr-currency-aave1, $global-clr-currency-aave2, 225);}
+          &.linedot::before{background-color: $global-clr-currency-dot;}
+          &.linealgo::before{background-color: $global-clr-currency-algo;}
+          &.linetryb::before{background-color: $global-clr-currency-tryb;}
+          &.lineusdt::before{background-color: $global-clr-currency-usdt;}
+          &.linedefault::before{background-color: transparentize($global-clr-soft-gray, 0.7);}
 
           &-buttons{
             background-color: $global-clr-light-gray;
