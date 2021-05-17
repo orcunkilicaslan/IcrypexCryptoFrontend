@@ -1089,8 +1089,11 @@ $globalSvgIconImgPath : "../../img/global/svg";
           opacity: 1;
           width: 100%;
           height: 2px;
-          left: 0;
+          //left: 0;
 
+          @include ReSassWidthResponsive(1400){
+            left: 0;
+          }
           @include ReSassWidthResponsive(992){
             max-width: inherit;
           }
@@ -1253,6 +1256,111 @@ $globalSvgIconImgPath : "../../img/global/svg";
         span{color: $global-clr-white; margin-top: 4px;}
       }
 
+    }
+
+    &-assetslist{
+      background-color: transparentize($global-clr-soft-blue, 0.95);
+      color: $global-clr-soft-gray;
+      padding: 9px 7px;
+      margin-top: 12px;
+      border: 1px solid transparentize($global-clr-soft-gray, 0.7);
+      @include border-radius(4px);
+
+      .hpassetlist{
+
+        > li{
+          flex: 0 0 calc(100% / 3);
+          width: calc(100% / 3);
+          max-width: 100%;
+          padding: 2px 5px;
+
+          @include ReSassWidthResponsive(992){
+            flex: 0 0 calc(100% / 4);
+            width: calc(100% / 4);
+            padding: 5px;
+          }
+          @include ReSassWidthResponsive(576){
+            flex: 0 0 calc(100% / 3);
+            width: calc(100% / 3);
+          }
+          @include ReSassWidthResponsive(480){
+            flex: 0 0 calc(100% / 2);
+            width: calc(100% / 2);
+          }
+        }
+
+        .asscurr{
+          display: flex;
+
+          &.currtry .asscircle{background-color: $global-clr-red;}
+          &.currusd .asscircle{background-color: $global-clr-green;}
+          &.currbtc .asscircle{background-color: $global-clr-currency-btc;}
+          &.curreth .asscircle{background-color: $global-clr-currency-eth;}
+          &.currltc .asscircle{background-color: $global-clr-currency-ltc;}
+          &.currxrp .asscircle{background-color: $global-clr-currency-xrp;}
+          &.currbat .asscircle{background-color: $global-clr-currency-bat;}
+          &.currxlm .asscircle{background-color: $global-clr-currency-xlm; background-color: $global-clr-white;}
+          &.currmpay .asscircle{background-color: $global-clr-currency-mpay;}
+          &.currlink .asscircle{background-color: $global-clr-currency-link;}
+          &.curravax .asscircle{background-color: $global-clr-currency-avax;}
+          &.currftm .asscircle{background-color: $global-clr-currency-ftm;}
+          &.currhot .asscircle{background-color: $global-clr-currency-hot;}
+          &.currmkr .asscircle{background-color: $global-clr-currency-mkr;}
+          &.curraave .asscircle{background-color: $global-clr-currency-aave;}
+          &.currdot .asscircle{background-color: $global-clr-currency-dot; background-color: $global-clr-white;}
+          &.curralgo .asscircle{background-color: $global-clr-currency-algo; background-color: $global-clr-white;}
+          &.currtryb .asscircle{background-color: $global-clr-currency-tryb; background-color: $global-clr-white;}
+          &.currusdt .asscircle{background-color: $global-clr-currency-usdt;}
+
+
+          .asscircle{
+            background-color: transparentize($global-clr-soft-gray, 0.7);
+            width: 9px;
+            height: 9px;
+            display: block;
+            margin-right: 5px;
+            @include border-radius(2px);
+            position: relative;
+            top: 3px;
+
+            @include ReSassWidthResponsive(992){
+              width: 11px;
+              height: 11px;
+              top: 2px;
+            }
+          }
+
+          .assinfo{
+            line-height: 1;
+
+            h6, p{
+              margin: 0;
+              padding: 0;
+              white-space: nowrap;
+              text-overflow: ellipsis;
+              overflow: hidden;
+            }
+
+            h6{
+              font-size: 13px;
+              color: $global-clr-white;
+
+              @include ReSassWidthResponsive(992){
+                font-size: 14px;
+              }
+            }
+
+            p{
+              font-size: 15px;
+
+              @include ReSassWidthResponsive(992){
+                font-size: 16px;
+              }
+            }
+          }
+        }
+
+      }
     }
 
     &-btngroup{
