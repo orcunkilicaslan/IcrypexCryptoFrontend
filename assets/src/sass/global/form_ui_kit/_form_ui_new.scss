@@ -1109,6 +1109,10 @@
   .g-recaptcha{
     display: flex;
     justify-content: center;
+
+    @include ReSassWidthResponsive(400){
+      @include scale(0.9);
+    }
   }
 
   .maxwidth90{width: 90px;}

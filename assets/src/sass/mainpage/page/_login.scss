@@ -163,9 +163,17 @@
     justify-content: space-between;
     height: 100%;
 
+    @include ReSassWidthResponsive(576){
+      display: block !important;
+    }
+
     &-tags-300{
       width: 300px;
       margin: 25px auto;
+
+      @include ReSassWidthResponsive(400){
+        width: auto;
+      }
     }
 
     &-tags-530{
