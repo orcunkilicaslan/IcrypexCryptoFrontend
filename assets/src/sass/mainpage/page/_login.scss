@@ -84,7 +84,7 @@
           max-width: 100%;
           color: $global-clr-green;
           background-color: transparentize($global-clr-soft-gray, 0.85);
-          padding: 3px 8px;
+          padding: 3px 10px;
           @include border-radius(2px);
 
           @include ReSassWidthResponsive(400){
@@ -111,10 +111,8 @@
           flex-grow: 1;
           max-width: 100%;
           color: $global-clr-dark-blue;
-          padding: 3px 8px;
+          padding: 3px 10px;
           white-space: nowrap;
-          text-overflow: ellipsis;
-          overflow: hidden;
 
           @include ReSassWidthResponsive(400){
             padding: 2px 6px;
@@ -127,7 +125,7 @@
         font-size: 17px;
         line-height: 1.2;
         text-align: center;
-        margin-top: 10px;
+        margin-top: 5px;
 
         @include ReSassWidthResponsive(400){
           font-size: 15px;
