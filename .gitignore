@@ -28,11 +28,13 @@ assets/vendor/dropzone/dist/dropzone.css
 assets/vendor/dropzone/dist/dropzone-amd-module.js
 assets/vendor/dropzone/dist/min/
 assets/vendor/dropzone/dist/readme.md
+assets/vendor/dropzone/src/
 assets/vendor/dropzone/bower.json
 assets/vendor/dropzone/CHANGELOG.md
 assets/vendor/dropzone/component.json
 assets/vendor/dropzone/composer.json
 assets/vendor/dropzone/CONTRIBUTING.md
+assets/vendor/dropzone/CODE_OF_CONDUCT.md
 assets/vendor/dropzone/index.js
 assets/vendor/dropzone/package.json
 assets/vendor/dropzone/README.md

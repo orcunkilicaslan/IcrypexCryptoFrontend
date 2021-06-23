@@ -60,6 +60,10 @@ $globalSvgIconImgPath : "../../img/global/svg";
       height: 60px;
       opacity: 0.8;
 
+      @include ReSassWidthResponsive(400){
+        height: 44px;
+      }
+
       &:hover{
         opacity: 1;
       }

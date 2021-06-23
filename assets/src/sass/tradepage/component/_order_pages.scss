@@ -385,6 +385,9 @@ $globalSvgIconImgPath : "../../img/global/svg";
           @include ReSassWidthResponsive(480){
             font-size: 17px !important;
           }
+          @include ReSassWidthResponsive(400){
+            font-size: 15px !important;
+          }
         }
 
         h3[class*="boxtitle-"],
@@ -394,6 +397,9 @@ $globalSvgIconImgPath : "../../img/global/svg";
           }
           @include ReSassWidthResponsive(576){
             font-size: 20px;
+          }
+          @include ReSassWidthResponsive(400){
+            font-size: 17px;
           }
         }
       }
@@ -681,6 +687,10 @@ $globalSvgIconImgPath : "../../img/global/svg";
               line-height: 0.7;
               white-space: nowrap;
               position: relative;
+
+              @include ReSassWidthResponsive(400){
+                font-size: 15px;
+              }
 
               &[class*="total"]{
                 &::before,

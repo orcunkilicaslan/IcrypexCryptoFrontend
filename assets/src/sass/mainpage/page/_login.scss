@@ -56,6 +56,82 @@
         left: calc(50% - 37px);
       }
     }
+
+    .phishingalert{
+      margin: 15px auto 25px;
+
+      &-addressbar{
+        background-color: $global-clr-white;
+        border: 1px solid transparentize($global-clr-soft-gray, 0.7);
+        display: flex;
+        flex-wrap: wrap;
+        @include border-radius(3px);
+        width: 100%;
+        font-size: 15px;
+        font-weight: 500;
+        padding: 2px;
+
+        @include ReSassWidthResponsive(400){
+          font-size: 14px;
+        }
+
+        .securearea{
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          flex: 0 0 auto;
+          width: auto;
+          max-width: 100%;
+          color: $global-clr-green;
+          background-color: transparentize($global-clr-soft-gray, 0.85);
+          padding: 3px 10px;
+          @include border-radius(2px);
+
+          @include ReSassWidthResponsive(400){
+            padding: 2px 6px;
+          }
+
+          svg{
+            margin-right: 7px;
+            position: relative;
+            top: -1px;
+
+            @include ReSassWidthResponsive(400){
+              margin-right: 4px;
+            }
+
+            path{
+              fill: $global-clr-green;
+            }
+          }
+        }
+
+        .domainarea{
+          flex-basis: 0;
+          flex-grow: 1;
+          max-width: 100%;
+          color: $global-clr-dark-blue;
+          padding: 3px 10px;
+          white-space: nowrap;
+
+          @include ReSassWidthResponsive(400){
+            padding: 2px 6px;
+          }
+        }
+      }
+
+      &-infotext{
+        color: $global-clr-dark-blue;
+        font-size: 17px;
+        line-height: 1.2;
+        text-align: center;
+        margin-top: 5px;
+
+        @include ReSassWidthResponsive(400){
+          font-size: 15px;
+        }
+      }
+    }
   }
 
   &-bigicon{
@@ -163,9 +239,18 @@
     justify-content: space-between;
     height: 100%;
 
+    @include ReSassWidthResponsive(576){
+      display: block !important;
+    }
+
     &-tags-300{
-      width: 300px;
+      width: 100%;
+      max-width: 320px;
       margin: 25px auto;
+
+      @include ReSassWidthResponsive(400){
+        width: auto;
+      }
     }
 
     &-tags-530{
