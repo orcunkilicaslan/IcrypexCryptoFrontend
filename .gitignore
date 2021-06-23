@@ -39,11 +39,10 @@ assets/vendor/dropzone/index.js
 assets/vendor/dropzone/package.json
 assets/vendor/dropzone/README.md
 
-assets/vendor/inputmask/css/
-assets/vendor/inputmask/dist/inputmask/
-assets/vendor/inputmask/dist/min/inputmask/
+assets/vendor/inputmask/dist/bindings/
+assets/vendor/inputmask/lib/
+assets/vendor/inputmask/bundle.js
 assets/vendor/inputmask/CHANGELOG.md
-assets/vendor/inputmask/index.js
 assets/vendor/inputmask/LICENSE.txt
 assets/vendor/inputmask/package.json
 assets/vendor/inputmask/README.md
