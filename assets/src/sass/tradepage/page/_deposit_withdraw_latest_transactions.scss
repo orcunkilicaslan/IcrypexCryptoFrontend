@@ -46,17 +46,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
   }
 
   &-table{
-    table-layout: fixed;
-
-    thead{
-      tr{
-        th{
-          &:last-child{
-            width: 20%;
-          }
-        }
-      }
-    }
+    //table-layout: fixed;
 
     tbody{
 
@@ -113,44 +103,25 @@ $globalSvgIconImgPath : "../../img/global/svg";
       }
     }
 
-    &-status{
-      width: 10%;
-    }
-    &-type{
-      width: 10%;
-    }
-    &-method{
-      width: 10%;
-    }
-    &-date{
-      width: 10%;
-    }
-    &-hour{
-      width: 10%;
-    }
-    &-unit{
-      width: 10%;
-    }
-    &-amount{
-      width: 10%;
-    }
-    &-iban-address{
-      width: 23%;
-    }
-    &-code{
-      width: 15%;
-    }
-    &-cancel{
-      width: 60px !important;
-      .btn{
-        width: 100%;
-        font-size: 15px;
-        padding: 0 5px;
-        white-space: nowrap;
+    //&-status{width: 10%;}
+    //&-type{width: 10%;}
+    //&-method{width: 10%;}
+    //&-date{width: 10%;}
+    //&-hour{width: 10%;}
+    //&-unit{width: 10%;}
+    //&-amount{width: 10%;}
+    //&-iban-address{width: 23%;}
+    //&-code{width: 15%;}
+    //&-cancel{width: 60px !important;}
 
-        @include ReSassWidthResponsive(768){
-          padding: 5px;
-        }
+    .btn-danger{
+      width: 100%;
+      font-size: 15px;
+      padding: 0 5px;
+      white-space: nowrap;
+
+      @include ReSassWidthResponsive(768){
+        padding: 5px;
       }
     }
   }
