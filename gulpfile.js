@@ -5,6 +5,7 @@ const   gulp                        = require('gulp'),
         sourcemaps                  = require('gulp-sourcemaps'),
         plumber                     = require('gulp-plumber'),
         sass                        = require('gulp-sass'),
+        tildeImporter               = require('node-sass-tilde-importer'),
         autoprefixer                = require('gulp-autoprefixer'),
         cssnano                     = require('gulp-cssnano'),
         babel                       = require('gulp-babel'),
@@ -36,7 +37,9 @@ gulp.task('sass-custom', () => {
     ])
         .pipe(gulppif(cfgprod.sourceMaps, sourcemaps.init()))
         .pipe(plumber())
-        .pipe(sass())
+        .pipe(sass({
+            importer: tildeImporter
+        }))
         .pipe(autoprefixer({
             flexbox: 'no-2009'
         }))
@@ -94,7 +97,9 @@ gulp.task('sass-client', () => {
     ])
         .pipe(gulppif(cfgprod.sourceMaps, sourcemaps.init()))
         .pipe(plumber())
-        .pipe(sass())
+        .pipe(sass({
+            importer: tildeImporter
+        }))
         .pipe(autoprefixer({
             flexbox: 'no-2009'
         }))
@@ -143,7 +148,9 @@ gulp.task('sass-xtras', () => {
     ])
         .pipe(gulppif(cfgprod.sourceMaps, sourcemaps.init()))
         .pipe(plumber())
-        .pipe(sass())
+        .pipe(sass({
+            importer: tildeImporter
+        }))
         .pipe(autoprefixer({
             flexbox: 'no-2009'
         }))
@@ -170,7 +177,9 @@ gulp.task('sass-mobileapp', () => {
     ])
         .pipe(gulppif(cfgprod.sourceMaps, sourcemaps.init()))
         .pipe(plumber())
-        .pipe(sass())
+        .pipe(sass({
+            importer: tildeImporter
+        }))
         .pipe(autoprefixer({
             flexbox: 'no-2009'
         }))
