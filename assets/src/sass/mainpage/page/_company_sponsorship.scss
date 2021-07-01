@@ -1,0 +1,203 @@
+$mainpageHomepageImgPath : "../../img/mainpage";
+
+.company{
+
+  &-sponsorship{
+
+    .sponsorship{
+
+      &-headimg{
+        background-color: #090a0f;
+        background-image: url(#{$mainpageHomepageImgPath}/company/company_sponsorship_headbanner.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: 420px;
+
+        @include ReSassMinWidthResponsive(1920){
+          background-size: contain;
+        }
+      }
+
+      &-content{
+
+        .sponsorheadtitle{
+          padding-bottom: 40px;
+        }
+
+        .sponsorcontlayout{
+          display: flex;
+          flex-wrap: wrap;
+          padding-bottom: 50px;
+
+          @include ReSassWidthResponsive(992){
+            display: block;
+          }
+
+          .sponsorconttxt,
+          .sponsorcontimg{
+            flex: 0 0 50%;
+            max-width: 50%;
+
+            img{
+              @include border-radius(14px);
+            }
+
+            @include ReSassWidthResponsive(992){
+              max-width: 100%;
+              padding-left: 0 !important;
+              padding-right: 0 !important;
+
+              img{
+                width: 100%;
+                margin-bottom: 15px;
+              }
+            }
+          }
+
+          &.conttextright{
+            .sponsorconttxt{
+              order: 2;
+              padding-left: 15px;
+            }
+            .sponsorcontimg{
+              order: 1;
+              padding-right: 15px;
+            }
+          }
+
+          &.conttextleft{
+            .sponsorconttxt{
+              order: 1;
+              padding-right: 15px;
+            }
+            .sponsorcontimg{
+              order: 2;
+              padding-left: 15px;
+            }
+          }
+        }
+      }
+
+      &-memforest{
+        background-color: #94B428;
+        background-image: url(#{$mainpageHomepageImgPath}/company/company_sponsorship_memforest_bgleaf.svg);
+        background-repeat: repeat;
+        background-position: left top;
+        width: 100%;
+        height: 440px;
+        padding: 0 !important;
+        margin-bottom: 20px;
+        overflow: hidden;
+        position: relative;
+
+        &::before{
+          content: "";
+          background-color: #0a0b10;
+          width: calc(50% - 500px);
+          height: 100%;
+          position: absolute;
+          left: 0;
+          top: 0;
+        }
+
+        .container{
+          height: 100%;
+
+          .row{
+            height: 100%;
+            align-items: center;
+          }
+        }
+
+        .sponsorconttxt,
+        .sponsorcontimg{}
+
+        .sponsorcontimg{
+          background-image: url(#{$mainpageHomepageImgPath}/company/company_sponsorship_memforest_bgsapling.png);
+          background-repeat: no-repeat;
+          background-position: right center;
+          //background-size: cover;
+          width: calc(50% - 15px);
+          height: 440px;
+          position: absolute;
+          left: 0;
+        }
+
+        .sponsorconttxt{
+          padding-left: calc(50% + 15px);
+          padding-top: 50px;
+          padding-bottom: 50px;
+          position: relative;
+
+          *{color: $global-clr-white;}
+
+          .columntitle::before,
+          .columntitle::after{
+            background-color: $global-clr-white;
+          }
+        }
+      }
+
+      &-edeneruc{
+        background-color: #0058FF;
+        background-image: url(#{$mainpageHomepageImgPath}/company/company_sponsorship_erdeneruc_bgwave.svg);
+        background-repeat: repeat;
+        background-position: left top;
+        width: 100%;
+        height: 440px;
+        padding: 0 !important;
+        overflow: hidden;
+        position: relative;
+
+        &::before{
+          content: "";
+          background-color: #010a35;
+          width: calc(50% - 500px);
+          height: 100%;
+          position: absolute;
+          right: 0;
+          top: 0;
+        }
+
+        .container{
+          height: 100%;
+
+          .row{
+            height: 100%;
+            align-items: center;
+          }
+        }
+
+        .sponsorconttxt,
+        .sponsorcontimg{}
+
+        .sponsorcontimg{
+          background-image: url(#{$mainpageHomepageImgPath}/company/company_sponsorship_erdeneruc_bgsea.png);
+          background-repeat: no-repeat;
+          background-position: left center;
+          //background-size: cover;
+          width: calc(50% - 15px);
+          height: 440px;
+          position: absolute;
+          left: calc(50% + 15px);
+        }
+
+        .sponsorconttxt{
+          padding-right: calc(50% + 15px);
+          padding-top: 50px;
+          padding-bottom: 50px;
+          position: relative;
+
+          *{color: $global-clr-white;}
+
+          .columntitle::before,
+          .columntitle::after{
+            background-color: $global-clr-white;
+          }
+        }
+      }
+    }
+  }
+}

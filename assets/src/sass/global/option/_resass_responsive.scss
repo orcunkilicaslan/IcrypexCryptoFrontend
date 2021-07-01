@@ -153,6 +153,16 @@
 			@content;
 		}
 	}
+	@if $point==900 {
+		@media ( max-height: 899px ) {
+			@content;
+		}
+	}
+	@if $point==1000 {
+		@media ( max-height: 999px ) {
+			@content;
+		}
+	}
 	@if $point==1100 {
 		@media ( max-height: 1099px ) {
 			@content;
