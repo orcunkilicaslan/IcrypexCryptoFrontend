@@ -5,6 +5,7 @@ package-lock.json
 assets/dist/css/client.css.map
 assets/dist/css/custom.css.map
 assets/dist/css/xtras.css.map
+assets/dist/css/mobileapp.css.map
 assets/dist/js/client-app.js.map
 assets/dist/js/custom-app.js.map
 

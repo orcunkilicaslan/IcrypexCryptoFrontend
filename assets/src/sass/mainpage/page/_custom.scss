@@ -1,0 +1,119 @@
+$globalSvgIconImgPath : "../../img/global/svg";
+
+.maincont{
+  &-left{
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  &-right{
+    padding-right: 0;
+  }
+}
+
+.sitesubmenutabs{
+  flex: inherit!important;
+}
+
+.container-1890{
+  //max-width: 1890px;
+}
+
+.form-control{
+  font-size: $global-font-size;
+}
+
+.sidesectioncont{
+  &-left{
+    flex: 0 0 260px;
+    max-width: 260px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  &-right{
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    max-width: 100%;
+    padding-right: 0;
+  }
+}
+
+img.imgsize{
+  &-1080p{
+    display: none;
+    @include ReSassWidthResponsive(1400){
+      display: block;
+    }
+  }
+  &-2K{
+    display: block;
+    @include ReSassWidthResponsive(1400){
+      display: none;
+    }
+  }
+}
+
+.ps>.ps__scrollbar-x-rail{
+  opacity: 1 !important;
+}
+.ps:hover>.ps__scrollbar-x-rail:hover{
+  background-color: transparent !important;
+}
+.ps>.ps__scrollbar-x-rail>.ps__scrollbar-x,
+.ps:hover>.ps__scrollbar-x-rail:hover>.ps__scrollbar-x{
+  background-color: transparentize($global-clr-soft-gray, 0.7) !important;
+}
+.ps>.ps__scrollbar-x-rail:hover>.ps__scrollbar-x,
+.ps>.ps__scrollbar-x-rail:active>.ps__scrollbar-x{
+  height: 6px !important;
+}
+
+.content{
+  &-list{
+
+    li{
+      position: relative;
+      padding-left: 10px;
+      &::before{
+        content: "";
+        position: absolute;
+        background-image: url(#{$globalSvgIconImgPath}/Arrow_Li.svg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: contain;
+        width: 6px;
+        height: 12px;
+        top: calc(50% - 6px);
+        left: 0;
+      }
+    }
+  }
+}
+
+.urllink{
+  color: $global-clr-soft-blue !important;
+  text-decoration: underline !important;
+  @include transition(all, 0.3s, ease-in-out);
+
+  &:hover{
+    color: transparentize($global-clr-soft-blue, 0.3) !important;
+    text-decoration: underline !important;
+  }
+}
+
+.progress{
+  background-color: #ccd5dd;
+}
+.progress-bar{
+  background-color: $global-clr-soft-blue;
+  border-radius: .25rem;
+}
+
+/* Cross Browser Start */
+html.IExplorer{
+
+}
+/* Cross Browser End */
