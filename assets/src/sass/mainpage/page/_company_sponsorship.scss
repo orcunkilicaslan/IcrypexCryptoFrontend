@@ -18,12 +18,33 @@ $mainpageHomepageImgPath : "../../img/mainpage";
         @include ReSassMinWidthResponsive(1920){
           background-size: contain;
         }
+        @include ReSassWidthResponsive(768){
+          height: 300px;
+        }
+        @include ReSassWidthResponsive(576){
+          height: 250px;
+          width: calc(100% + 30px);
+          position: relative;
+          left: -15px;
+        }
+        @include ReSassWidthResponsive(480){
+          height: 220px;
+        }
+        @include ReSassWidthResponsive(400){
+          height: 180px;
+        }
       }
 
       &-content{
 
         .sponsorheadtitle{
+          width: 100%;
           padding-bottom: 40px;
+          text-align: center;
+
+          @include ReSassWidthResponsive(768){
+            padding-bottom: 25px;
+          }
         }
 
         .sponsorcontlayout{
@@ -34,6 +55,9 @@ $mainpageHomepageImgPath : "../../img/mainpage";
           @include ReSassWidthResponsive(992){
             display: block;
           }
+          @include ReSassWidthResponsive(768){
+            padding-bottom: 30px;
+          }
 
           .sponsorconttxt,
           .sponsorcontimg{
@@ -42,6 +66,10 @@ $mainpageHomepageImgPath : "../../img/mainpage";
 
             img{
               @include border-radius(14px);
+
+              @include ReSassWidthResponsive(992){
+                @include border-radius(6px);
+              }
             }
 
             @include ReSassWidthResponsive(992){
@@ -92,14 +120,28 @@ $mainpageHomepageImgPath : "../../img/mainpage";
         overflow: hidden;
         position: relative;
 
-        &::before{
-          content: "";
-          background-color: #0a0b10;
-          width: calc(50% - 500px);
-          height: 100%;
-          position: absolute;
-          left: 0;
-          top: 0;
+        @include ReSassMinWidthResponsive(1920){
+          &::before{
+            content: "";
+            background-color: #0a0b10;
+            width: calc(50% - 500px);
+            height: 100%;
+            position: absolute;
+            left: 0;
+            top: 0;
+          }
+        }
+        @include ReSassWidthResponsive(1600){
+          height: auto;
+          min-height: 440px;
+        }
+        @include ReSassWidthResponsive(992){
+          min-height: auto;
+        }
+        @include ReSassWidthResponsive(576){
+          width: calc(100% + 30px);
+          position: relative;
+          left: -15px;
         }
 
         .container{
@@ -123,13 +165,35 @@ $mainpageHomepageImgPath : "../../img/mainpage";
           height: 440px;
           position: absolute;
           left: 0;
+
+          @include ReSassWidthResponsive(992){
+            height: 100%;
+            background-size: cover;
+          }
+          @include ReSassWidthResponsive(576){
+            display: none;
+          }
         }
 
         .sponsorconttxt{
           padding-left: calc(50% + 15px);
-          padding-top: 50px;
-          padding-bottom: 50px;
+          padding-top: 20px;
+          padding-bottom: 20px;
           position: relative;
+
+          @include ReSassWidthResponsive(992){
+            background-color: transparentize($global-grdint-darkblue01, 0.25);
+            padding: 20px 25px;
+            margin: 20px 0;
+            @include border-radius(6px);
+            @include backdrop-filter-multiple(blur(5px));
+          }
+          @include ReSassWidthResponsive(576){
+            background-color: transparent;
+            padding: 20px 15px;
+            margin: 0;
+            @include backdrop-filter-multiple(blur(0));
+          }
 
           *{color: $global-clr-white;}
 
@@ -152,14 +216,28 @@ $mainpageHomepageImgPath : "../../img/mainpage";
         overflow: hidden;
         position: relative;
 
-        &::before{
-          content: "";
-          background-color: #010a35;
-          width: calc(50% - 500px);
-          height: 100%;
-          position: absolute;
-          right: 0;
-          top: 0;
+        @include ReSassMinWidthResponsive(1920){
+          &::before{
+            content: "";
+            background-color: #010a35;
+            width: calc(50% - 500px);
+            height: 100%;
+            position: absolute;
+            right: 0;
+            top: 0;
+          }
+        }
+        @include ReSassWidthResponsive(1600){
+          height: auto;
+          min-height: 440px;
+        }
+        @include ReSassWidthResponsive(992){
+          min-height: auto;
+        }
+        @include ReSassWidthResponsive(576){
+          width: calc(100% + 30px);
+          position: relative;
+          left: -15px;
         }
 
         .container{
@@ -183,13 +261,35 @@ $mainpageHomepageImgPath : "../../img/mainpage";
           height: 440px;
           position: absolute;
           left: calc(50% + 15px);
+
+          @include ReSassWidthResponsive(992){
+            height: 100%;
+            background-size: cover;
+          }
+          @include ReSassWidthResponsive(576){
+            display: none;
+          }
         }
 
         .sponsorconttxt{
           padding-right: calc(50% + 15px);
-          padding-top: 50px;
-          padding-bottom: 50px;
+          padding-top: 20px;
+          padding-bottom: 20px;
           position: relative;
+
+          @include ReSassWidthResponsive(992){
+            background-color: transparentize($global-grdint-darkblue01, 0.25);
+            padding: 20px 25px;
+            margin: 20px 0;
+            @include border-radius(6px);
+            @include backdrop-filter-multiple(blur(5px));
+          }
+          @include ReSassWidthResponsive(576){
+            background-color: transparent;
+            padding: 20px 15px;
+            margin: 0;
+            @include backdrop-filter-multiple(blur(0));
+          }
 
           *{color: $global-clr-white;}
 

@@ -152,7 +152,7 @@
           @include border-radius(0);
           @include transition(color, 0.2s, linear);
 
-          @include ReSassWidthResponsive(992){
+          @include ReSassWidthResponsive(1400){
             min-width: 120px;
           }
 
