@@ -2129,7 +2129,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
           &.apple{
             width: 135px;
             height: 44px;
-            background-image: url(#{$globalSvgIconImgPath}/Sprite_App_Store_Button.svg);
+            background-image: url(#{$globalSvgIconImgPath}/Sprite_App_Store_Button.svg?v=2);
             background-position: 0 5px;
             &:hover{
               background-position: 0 -44px;
@@ -2138,7 +2138,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
           &.android{
             width: 146px;
             height: 44px;
-            background-image: url(#{$globalSvgIconImgPath}/Sprite_Google_Play_Button.svg);
+            background-image: url(#{$globalSvgIconImgPath}/Sprite_Google_Play_Button.svg?v=2);
             background-position: 0 5px;
             &:hover{
               background-position: 0 -44px;
