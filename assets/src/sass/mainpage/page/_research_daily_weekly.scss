@@ -222,6 +222,7 @@
           &.lineftm::before{background-color: $global-clr-currency-ftm;}
           &.linehot::before{background-color: $global-clr-currency-hot;}
           &.linemkr::before{background-color: $global-clr-currency-mkr;}
+          &.lineshib::before{background-color: $global-clr-currency-shib;}
           &.lineaave::before{@include background-linear($global-clr-currency-aave1, $global-clr-currency-aave2, 225);}
           &.linedot::before{background-color: $global-clr-currency-dot;}
           &.linealgo::before{background-color: $global-clr-currency-algo;}

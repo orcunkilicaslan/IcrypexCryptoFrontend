@@ -33,10 +33,10 @@ html[lang="en"]{
 
   .homepage-mobiletrader-content-btn-item{
     &.apple{
-      background-image: url(#{$globalSvgIconImgPath}/Sprite_App_Store_Button_EN.svg);
+      background-image: url(#{$globalSvgIconImgPath}/Sprite_App_Store_Button_EN.svg?v=2);
     }
     &.android{
-      background-image: url(#{$globalSvgIconImgPath}/Sprite_Google_Play_Button_EN.svg);
+      background-image: url(#{$globalSvgIconImgPath}/Sprite_Google_Play_Button_EN.svg?v=2);
     }
   }
 

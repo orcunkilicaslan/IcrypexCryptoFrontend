@@ -501,6 +501,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
         i[class*="hot"]{background-color: transparentize($global-clr-currency-hot, 0.15);}
         i[class*="mkr"]{background-color: transparentize($global-clr-currency-mkr, 0.15);}
         i[class*="aave"]{background-color: transparentize($global-clr-currency-aave, 0.15);}
+        i[class*="shib"]{background-color: transparentize($global-clr-currency-shib, 0.15);}
         i[class*="dot"]{background-color: transparentize($global-clr-currency-dot, 0.15);}
         i[class*="algo"]{background-color: transparentize($global-clr-currency-algo, 0.15);}
         i[class*="tryb"]{background-color: transparentize($global-clr-currency-tryb, 0.15);}
@@ -727,6 +728,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
           div[class*="hot"]{border-color: $global-clr-currency-hot;}
           div[class*="mkr"]{border-color: $global-clr-currency-mkr;}
           div[class*="aave"]{border-color: $global-clr-currency-aave;}
+          div[class*="shib"]{border-color: $global-clr-currency-shib;}
           div[class*="dot"]{border-color: $global-clr-currency-dot;}
           div[class*="algo"]{border-color: $global-clr-currency-algo;}
           div[class*="tryb"]{border-color: $global-clr-currency-tryb;}
