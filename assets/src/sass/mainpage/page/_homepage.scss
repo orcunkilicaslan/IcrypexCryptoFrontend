@@ -1247,6 +1247,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
         &.linehot{border-bottom-color: $global-clr-currency-hot;}
         &.linemkr{border-bottom-color: $global-clr-currency-mkr;}
         &.lineaave{border-bottom-color: $global-clr-currency-aave;}
+        &.lineshib{border-bottom-color: $global-clr-currency-shib;}
         &.linedot{border-bottom-color: $global-clr-currency-dot; border-bottom-color: $global-clr-white;}
         &.linealgo{border-bottom-color: $global-clr-currency-algo; border-bottom-color: $global-clr-white;}
         &.linetryb{border-bottom-color: $global-clr-currency-tryb; border-bottom-color: $global-clr-white;}
@@ -1307,6 +1308,7 @@ $globalSvgIconImgPath : "../../img/global/svg";
           &.currhot .asscircle{background-color: $global-clr-currency-hot;}
           &.currmkr .asscircle{background-color: $global-clr-currency-mkr;}
           &.curraave .asscircle{background-color: $global-clr-currency-aave;}
+          &.currshib .asscircle{background-color: $global-clr-currency-shib;}
           &.currdot .asscircle{background-color: $global-clr-currency-dot; background-color: $global-clr-white;}
           &.curralgo .asscircle{background-color: $global-clr-currency-algo; background-color: $global-clr-white;}
           &.currtryb .asscircle{background-color: $global-clr-currency-tryb; background-color: $global-clr-white;}
