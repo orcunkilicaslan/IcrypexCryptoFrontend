@@ -239,6 +239,13 @@
           border: 5px solid $global-clr-soft-gray;
           margin-bottom: 15px;
         }
+
+        p,ul,li{
+          a{
+            color: $global-clr-soft-blue;
+            text-decoration: underline;
+          }
+        }
       }
     }
   }
