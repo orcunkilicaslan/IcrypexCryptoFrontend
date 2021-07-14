@@ -341,19 +341,36 @@ $(".inputfilter-hexadecimal").inputFilter(function(value) {
 /* Input Filter */
 
 /* Footer Fresh Chat */
-$(window).on("load resize",function(e){
+$(window).on("load resize", function(e){
     if($(window).width() >= 768){
 
         if(!$('.cookies-notification').hasClass('show')){
-            $("#sc924I > div[style*='fixed']").css("bottom", ("5")+"px");
+            $("#sc924I > .psmtc_924I]").css("bottom", ("5")+"px");
         } else {
-            $("#sc924I > div[style*='fixed']").css("bottom", ("71")+"px");
+            $("#sc924I > .psmtc_924I").css("bottom", ("71")+"px");
         }
 
         $(".cookies-notification a.notificationclose").click(function() {
-            $("#sc924I > div[style*='fixed']").css("bottom", ("5")+"px");
+            $("#sc924I > .psmtc_924I").css("bottom", ("5")+"px");
         });
     }
+});
+
+$(document).ready(function() {
+    setTimeout(function() {
+        if($(window).width() >= 768){
+
+            if(!$('.cookies-notification').hasClass('show')){
+                $("#sc924I > .psmtc_924I]").css("bottom", ("5")+"px");
+            } else {
+                $("#sc924I > .psmtc_924I").css("bottom", ("71")+"px");
+            }
+
+            $(".cookies-notification a.notificationclose").click(function() {
+                $("#sc924I > .psmtc_924I").css("bottom", ("5")+"px");
+            });
+        }
+    }, 2000);
 });
 /* Footer Fresh Chat */
 
